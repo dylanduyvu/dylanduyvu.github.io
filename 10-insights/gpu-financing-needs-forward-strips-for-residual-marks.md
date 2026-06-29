@@ -48,7 +48,7 @@ This connects compute derivatives directly to the residual-value pricing thesis.
 - Sources: [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
 - Projects: [[gpu-compute-derivatives|GPU Compute Derivatives]], [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 - Areas: [[gpu-finance|GPU Finance]]
-- People: Dave Friedman
+- People: [[dave-friedman|Dave Friedman]]
 
 ## Updates
 

@@ -47,7 +47,7 @@ The right analogy affects instrument design. Freight and power markets center da
 - Sources: [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
 - Projects: [[gpu-compute-derivatives|GPU Compute Derivatives]]
 - Areas: [[gpu-finance|GPU Finance]]
-- People: Dave Friedman
+- People: [[dave-friedman|Dave Friedman]]
 
 ## Updates
 
