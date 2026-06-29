@@ -5,8 +5,8 @@ created: 2026-06-29
 updated: 2026-06-29
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
-people: [harry-page, thomas-galbraith]
-orgs: [usd-ai, barkr]
+people: [harry-page, thomas-galbraith, bernie-margulies]
+orgs: [usd-ai, barkr, american-compute]
 tags: [gpu, lending, infrastructure]
 ---
 
@@ -20,6 +20,8 @@ The most interesting live pain from the 2026-06-29 USD.AI call is not contract n
 
 The residual-value pricing path is still alive, but should be framed around lender recovery floors and guaranteed valuations rather than a generic public GPU price index. Barkr's 2026-06-18 call suggests GPU clients pay for guarantee-backed marks and institutional trust, not just standalone data.
 
+American Compute adds that RVI demand may be suppressed by operator residual overconfidence and by customers using quotes as free gut checks. Residual products may sell better to lessors or after a correction than to lenders in the current scarcity market.
+
 ## Useful Patterns
 
 - Hardware recovery matters more than bare contract cash flows.
@@ -30,6 +32,9 @@ The residual-value pricing path is still alive, but should be framed around lend
 - GPU collateral marks become more commercially useful when expressed as recoverable floor value.
 - Banks may prefer guarantee or swap-like structures over insurance if they distrust insurance claim mechanics.
 - Private/public pricing data is necessary but may not be sufficient without diligence and a credible risk-transfer counterparty.
+- GPU pricing opacity is partly structural because OEMs, VARs, and suppliers benefit from bespoke margins.
+- Lenders and lessors use residual values differently: recovery protection vs return enhancement.
+- Reinsurer or warranty backer credibility can matter more than advertised data-point counts.
 
 ## Active Projects
 
@@ -46,6 +51,10 @@ The residual-value pricing path is still alive, but should be framed around lend
 - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
 - [[banks-may-prefer-guarantees-or-swaps-over-insurance-for-gpu-collateral-risk|Banks may prefer guarantees or swaps over insurance for GPU collateral risk]]
 - [[gpu-residual-data-alone-is-not-the-bottleneck-for-guarantee-products|GPU residual data alone is not the bottleneck for guarantee products]]
+- [[gpu-pricing-opacity-is-structural-not-just-immature|GPU pricing opacity is structural, not just immature]]
+- [[gpu-residual-risk-matters-more-to-lessors-than-lenders|GPU residual risk matters more to lessors than lenders]]
+- [[gpu-rvi-demand-may-need-a-residual-correction|GPU RVI demand may need a residual correction]]
+- [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]
 
 ## Open Questions
 
@@ -54,3 +63,4 @@ The residual-value pricing path is still alive, but should be framed around lend
 - How does GPU residual-value insurance interact with performance risk and offtake credit risk?
 - What happens to this market if GPU supply loosens or AI demand becomes less frantic?
 - What guarantee fee, exclusion structure, or lender term change proves residual-value protection has budget?
+- Which GPU finance segment has the sharpest residual-value WTP: lessors, equipment finance, banks, private credit, insurers, or crypto lenders?
