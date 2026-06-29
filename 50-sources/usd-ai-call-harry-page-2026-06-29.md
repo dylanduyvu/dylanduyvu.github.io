@@ -90,6 +90,7 @@ USD.AI described its product as fundamentally GPU-backed lending. Contracts and 
 - [[Bare compute contracts have no recovery value after default]]
 - [[Committed GPU capacity is supply-constrained, not over-committed]]
 - [[SLA and uptime verification is a sharper GPU lender pain than novation]]
+- [[GPU value warranties can synthetically insure lender loss given default]]
 
 ## Open Questions
 
