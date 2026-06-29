@@ -77,6 +77,16 @@ Auto-maintain sparse project and domain hubs. Update a hub only when new materia
 
 Auto-maintain people/org notes only when useful. Create or update them when a person/org appears repeatedly, is strategically important, or contributes a strong claim/source. These are retrieval hubs, not manual CRM.
 
+## Links
+
+Use Obsidian wiki links that resolve to the actual filename. Because most notes use slug filenames, prefer slug target plus readable alias:
+
+```text
+[[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
+```
+
+Do not link only by the H1/title when the filename is slugified, or Obsidian may create a duplicate note.
+
 ## Git
 
 This vault is local Git only in v0.
