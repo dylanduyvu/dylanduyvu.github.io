@@ -6,9 +6,9 @@ updated: 2026-06-29
 confidence: high
 domains: [gpu-finance, residual-value, asset-backed-lending]
 projects: [gpu-residual-value-pricing]
-sources: [barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18]
-people: [thomas-galbraith]
-orgs: [barkr]
+sources: [barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16]
+people: [thomas-galbraith, bernie-margulies]
+orgs: [barkr, american-compute]
 aliases: [gpu collateral valuation is floor value not fmv, lenders need minimum sale value for gpus]
 tags: [gpu, valuation, lending, collateral]
 ---
@@ -29,12 +29,15 @@ This changes the product shape for a GPU pricing data company. A generic public 
 - 2026-06-18: He said Barkr is less focused on a Kelley Blue Book or rating-agency approach and more focused on helping financial institutions understand a definitive hard-asset price.
 - 2026-06-18: For lender use cases, Thomas said Barkr is generally trying to tell the lender what the asset will at least sell for, while Kelley Blue Book would be closer to fair market value.
 - 2026-06-18: He framed the output as bespoke, custom pricing for client-specific use cases rather than a generic replacement for existing pricing services.
+- 2026-06-16: Bernie said lenders usually do not bank on GPU residual value as part of return; they treat it as a worst-case recovery path if the borrower defaults.
+- 2026-06-16: Bernie said lenders focus 99% on offtake, which means residual value matters as collateral recovery rather than primary deal economics.
 
 ## Implications
 
 - A GPU valuation wedge should probably be underwritten around recovery floors, default scenarios, and deal-specific collateral, not only marketplace marks.
 - The best customers may be lenders, insurers, lessors, and structured-finance participants rather than generic operators seeking an asset price lookup.
 - If building data infrastructure, the deliverable should translate data into lender-usable recovery assumptions.
+- Lessors may be a stronger ICP than lenders because residual value can directly affect their return profile.
 
 ## Counterpoints / Uncertainty
 
@@ -44,14 +47,18 @@ This changes the product shape for a GPU pricing data company. A generic public 
 
 ## Links
 
-- Sources: [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
+- Sources: [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]], [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 - Projects: [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 - Areas: [[gpu-finance|GPU Finance]]
-- People: [[thomas-galbraith|Thomas Galbraith]]
-- Orgs: [[barkr|Barkr]]
+- People: [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
+- Orgs: [[barkr|Barkr]], [[american-compute|American Compute]]
 
 ## Updates
 
 ### 2026-06-29
 
 Initial capture from Barkr call transcript.
+
+### 2026-06-29
+
+Updated with American Compute evidence distinguishing lender residual recovery from lessor residual return.

@@ -6,9 +6,9 @@ updated: 2026-06-29
 confidence: high
 domains: [gpu-finance, ai-infrastructure]
 projects: [gpu-compute-novation, gpu-residual-value-pricing]
-sources: [usd-ai-call-harry-page-2026-06-29, barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18]
-people: [harry-page, thomas-galbraith]
-orgs: [usd-ai, barkr]
+sources: [usd-ai-call-harry-page-2026-06-29, barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16]
+people: [harry-page, thomas-galbraith, bernie-margulies]
+orgs: [usd-ai, barkr, american-compute]
 aliases: [gpu value warranty as synthetic default swap, barkr gpu warranty de-risks lender collateral]
 tags: [gpu, lending, insurance, collateral]
 ---
@@ -45,14 +45,15 @@ This shows that GPU finance risk transfer is already being built around hardware
 - The exact legal structure, coverage limits, exclusions, and reinsurance terms are not captured in the transcript.
 - USD.AI's description is enough for internal discovery, not a full underwriting model.
 - The vault should standardize the org name as Barkr while preserving aliases like Barker / the Barker Price.
+- American Compute is a direct counterparty critique: Bernie said Barkr's warranty is not an insurance policy, may lack regulatory protection, and allegedly does not pay out if the market decreases by 20%. This needs document verification before external use.
 
 ## Links
 
-- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
+- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]], [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 - Projects: [[gpu-compute-novation|GPU Compute Novation]], [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 - Areas: [[gpu-finance|GPU Finance]]
-- People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]]
-- Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]]
+- People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
+- Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]], [[american-compute|American Compute]]
 
 ## Updates
 
@@ -63,3 +64,7 @@ Initial capture from USD.AI call transcript.
 ### 2026-06-29
 
 Updated with Barkr call evidence from Thomas, raising confidence and replacing the uncertain Baracco/Barco reference with Barkr.
+
+### 2026-06-29
+
+Added American Compute counterparty critique of Barkr warranty mechanics.

@@ -6,9 +6,9 @@ updated: 2026-06-29
 confidence: high
 domains: [gpu-finance, residual-value, asset-backed-lending]
 projects: [gpu-residual-value-pricing]
-sources: [barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18]
-people: [thomas-galbraith]
-orgs: [barkr]
+sources: [barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16]
+people: [thomas-galbraith, bernie-margulies]
+orgs: [barkr, american-compute]
 aliases: [gpu lenders want valuation plus guarantee, guaranteed marks beat standalone valuations]
 tags: [gpu, valuation, guarantees, customer-discovery]
 ---
@@ -41,17 +41,23 @@ This is a strong warning against a data-only GPU pricing product as the primary 
 - Valuation-only demand may grow as the market matures or as non-lender users enter.
 - Barkr's customer mix may skew toward buyers who already want risk transfer.
 - The transcript does not include conversion rates or guarantee pricing.
+- American Compute is a counterpoint: Bernie said customers often want residual gut checks but do not buy insurance or appraisals, so guaranteed/insured mark demand is not uniform across wrappers.
+- This may be a wrapper/ICP difference rather than contradiction: Barkr says GPU customers mostly want valuation plus guarantee, while American Compute experiences quote shoppers and RVI non-conversion.
 
 ## Links
 
-- Sources: [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
+- Sources: [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]], [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 - Projects: [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 - Areas: [[gpu-finance|GPU Finance]]
-- People: [[thomas-galbraith|Thomas Galbraith]]
-- Orgs: [[barkr|Barkr]]
+- People: [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
+- Orgs: [[barkr|Barkr]], [[american-compute|American Compute]]
 
 ## Updates
 
 ### 2026-06-29
 
 Initial capture from Barkr call transcript.
+
+### 2026-06-29
+
+Added American Compute counterpoint: RVI quote interest can become free gut-check behavior rather than purchase.

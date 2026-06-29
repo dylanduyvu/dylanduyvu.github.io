@@ -6,9 +6,9 @@ updated: 2026-06-29
 confidence: high
 domains: [gpu-finance, residual-value, asset-backed-lending]
 projects: [gpu-residual-value-pricing]
-sources: [barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18]
-people: [thomas-galbraith]
-orgs: [barkr]
+sources: [barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16]
+people: [thomas-galbraith, bernie-margulies]
+orgs: [barkr, american-compute]
 aliases: [banks distrust insurance claims, gpu guarantees can be more bankable than insurance]
 tags: [gpu, insurance, guarantees, banks]
 ---
@@ -41,17 +41,22 @@ This explains why Barkr's guarantee structure can be a stronger wedge than resid
 - Guarantees may be easier to sell to some clients but could be weaker, less regulated, or harder to recognize for others.
 - American Compute's residual value insurance may work better for customers that prefer regulated insurance products.
 - The transcript does not capture exact legal terms or payout triggers for Barkr's guarantee.
+- 2026-06-16 counterpoint: Bernie argued that insurance can have regulatory protection that warranties lack, and criticized Barkr's alleged market-crash exclusion. This makes wrapper choice segment-specific rather than universally pro-guarantee.
 
 ## Links
 
-- Sources: [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
+- Sources: [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]], [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 - Projects: [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 - Areas: [[gpu-finance|GPU Finance]]
-- People: [[thomas-galbraith|Thomas Galbraith]]
-- Orgs: [[barkr|Barkr]]
+- People: [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
+- Orgs: [[barkr|Barkr]], [[american-compute|American Compute]]
 
 ## Updates
 
 ### 2026-06-29
 
 Initial capture from Barkr call transcript.
+
+### 2026-06-29
+
+Added American Compute counterpoint: insurance can offer regulatory protection that warranties may lack, despite bank skepticism about claim payment.
