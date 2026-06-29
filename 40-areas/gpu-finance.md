@@ -3,10 +3,10 @@ type: area
 status: active
 created: 2026-06-29
 updated: 2026-06-29
-domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives]
+domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
-people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman]
-orgs: [usd-ai, barkr, american-compute]
+people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee]
+orgs: [usd-ai, barkr, american-compute, coreweave]
 tags: [gpu, lending, infrastructure]
 ---
 
@@ -24,6 +24,8 @@ American Compute adds that RVI demand may be suppressed by operator residual ove
 
 The compute-derivatives path points toward dated futures/forward strips rather than perps. That matters because a dated curve could feed residual marks, amortization schedules, and hedges for GPU financing.
 
+The compute-commoditization path does not require perfect fungibility. The more useful frame is reference grade plus priced basis: DGX/spec may define grade, while operator performance, topology, scale, duration, priority, goodput, MFU, and SLA become basis spreads. This ties directly back to lender verification and residual-value marks.
+
 ## Useful Patterns
 
 - Hardware recovery matters more than bare contract cash flows.
@@ -39,6 +41,8 @@ The compute-derivatives path points toward dated futures/forward strips rather t
 - Reinsurer or warranty backer credibility can matter more than advertised data-point counts.
 - Compute derivatives need tenor because compute value changes by delivery date and silicon generation.
 - Perps may concentrate speculative liquidity but do not produce the dated curve GPU finance needs.
+- Compute commoditization can work through basis pricing rather than perfect fungibility.
+- Non-commodity neocloud framing is partly a valuation argument about useful life, margins, and multiples.
 
 ## Active Projects
 
@@ -69,6 +73,11 @@ The compute-derivatives path points toward dated futures/forward strips rather t
 - [[compute-derivatives-should-look-like-freight-and-power-not-crypto|Compute derivatives should look like freight and power, not crypto]]
 - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 - [[compute-perps-need-a-spot-index-anchor-compute-does-not-have|Compute perps need a spot-index anchor compute does not have]]
+- [[compute-can-commoditize-without-full-fungibility|Compute can commoditize without full fungibility]]
+- [[compute-commoditization-needs-convergence-plumbing-more-than-homogeneity|Compute commoditization needs convergence plumbing more than homogeneity]]
+- [[dgx-reference-spec-is-a-compute-grade-not-a-market-hub|DGX reference spec is a compute grade, not a market hub]]
+- [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
+- [[non-commodity-compute-framing-supports-neocloud-valuation-premiums|Non-commodity compute framing supports neocloud valuation premiums]]
 
 ## Open Questions
 
@@ -79,3 +88,5 @@ The compute-derivatives path points toward dated futures/forward strips rather t
 - What guarantee fee, exclusion structure, or lender term change proves residual-value protection has budget?
 - Which GPU finance segment has the sharpest residual-value WTP: lessors, equipment finance, banks, private credit, insurers, or crypto lenders?
 - What compute index is robust enough for dated derivative settlement?
+- Which compute-basis spread is easiest to verify and monetize first?
+- How much neocloud valuation depends on compute remaining non-commodity versus merely having credible contracted flows?
