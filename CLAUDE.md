@@ -22,6 +22,8 @@ The vault is insight-driven. Raw notes, transcripts, stream-of-consciousness mat
 
 ## Search Before Create
 
+Search before create.
+
 Before creating a new insight note, search for overlapping claims, aliases, sources, projects, domains, people, orgs, and body text.
 
 If new material reinforces, revises, weakens, or adds evidence to an existing insight, update the existing note instead of creating a duplicate. Create a new insight only when the claim is meaningfully distinct.
@@ -81,7 +83,7 @@ This vault is local Git only in v0.
 
 - Do not set a GitHub remote unless Dylan explicitly asks.
 - Do not use the Obsidian Git plugin in v0.
-- Commit after every capture or update by default.
+- Commit after every capture/update by default.
 - Git history is the capture log.
 - Use boring, explicit commit messages.
 
