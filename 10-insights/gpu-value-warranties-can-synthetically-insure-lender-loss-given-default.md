@@ -3,13 +3,13 @@ type: insight
 status: distilled
 created: 2026-06-29
 updated: 2026-06-29
-confidence: medium
+confidence: high
 domains: [gpu-finance, ai-infrastructure]
-projects: [gpu-compute-novation]
-sources: [usd-ai-call-harry-page-2026-06-29]
-people: [harry-page]
-orgs: [usd-ai]
-aliases: [gpu value warranty as synthetic default swap, baracco gpu warranty de-risks lender collateral]
+projects: [gpu-compute-novation, gpu-residual-value-pricing]
+sources: [usd-ai-call-harry-page-2026-06-29, barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18]
+people: [harry-page, thomas-galbraith]
+orgs: [usd-ai, barkr]
+aliases: [gpu value warranty as synthetic default swap, barkr gpu warranty de-risks lender collateral]
 tags: [gpu, lending, insurance, collateral]
 ---
 
@@ -17,7 +17,7 @@ tags: [gpu, lending, insurance, collateral]
 
 ## Claim
 
-GPU lenders can use value warranties and reinsurance to reduce loss-given-default on hardware collateral. In USD.AI's framing, the Baracco warranty functions like first-loss protection and effectively creates a synthetic default swap on GPU-backed loans.
+GPU lenders can use value warranties, guarantees, and reinsurance to reduce loss-given-default on hardware collateral. In USD.AI's framing, Barkr's warranty functions like first-loss protection and effectively creates a synthetic default swap on GPU-backed loans.
 
 ## Why It Matters
 
@@ -25,33 +25,41 @@ This shows that GPU finance risk transfer is already being built around hardware
 
 ## Evidence
 
-- 2026-06-29: USD.AI said Baracco provides a value warranty on GPU servers and that the warranty is reinsured.
+- 2026-06-29: USD.AI said Barkr/Barker provides a value warranty on GPU servers and that the warranty is reinsured.
 - 2026-06-29: Harry described the warranty as covering the difference if a default sale produces a loss relative to the warranted value.
 - 2026-06-29: USD.AI said this let them effectively create a synthetic default swap on their loans and was valuable for scaling.
 - 2026-06-29: USD.AI locks in GPU pricing for the whole term of the loan on day one.
+- 2026-06-18: Thomas from Barkr said Barkr prices assets over the course of the loan and provides a guarantee to back up that price, so if there is a default, the client knows what value Barkr thinks the asset is worth.
+- 2026-06-18: Thomas said the guarantee is currently Barkr's biggest business and that Barkr has done almost half a billion dollars in guarantees.
+- 2026-06-18: Thomas said Barkr charges a platform access fee for valuation-only use and a percentage of asset value when the client purchases a guarantee.
+- 2026-06-18: He said Munich Re backing is important because a major insurer performed diligence and chose to partner with Barkr to deliver the product.
 
 ## Implications
 
 - The market may reward products that stabilize recovery value, not products that assume contract cash flows are independently financeable.
 - A verification or insurance wedge may need to complement hardware collateral rather than replace it.
-- Baracco-style warranties are a useful reference point when mapping who bears GPU residual value risk.
+- Barkr-style warranties are a useful reference point when mapping who bears GPU residual value risk.
 
 ## Counterpoints / Uncertainty
 
-- Transcript text renders the company name as "Barker's" in one line and "barco" in another; Dylan previously referenced the loan page and likely meant Baracco, but this should be verified before external use.
 - The exact legal structure, coverage limits, exclusions, and reinsurance terms are not captured in the transcript.
 - USD.AI's description is enough for internal discovery, not a full underwriting model.
+- The vault should standardize the org name as Barkr while preserving aliases like Barker / the Barker Price.
 
 ## Links
 
-- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
-- Projects: [[gpu-compute-novation|GPU Compute Novation]]
+- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
+- Projects: [[gpu-compute-novation|GPU Compute Novation]], [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 - Areas: [[gpu-finance|GPU Finance]]
-- People: [[harry-page|Harry Page]]
-- Orgs: [[usd-ai|USD.AI]]
+- People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]]
+- Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]]
 
 ## Updates
 
 ### 2026-06-29
 
 Initial capture from USD.AI call transcript.
+
+### 2026-06-29
+
+Updated with Barkr call evidence from Thomas, raising confidence and replacing the uncertain Baracco/Barco reference with Barkr.
