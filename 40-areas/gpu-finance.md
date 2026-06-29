@@ -41,6 +41,10 @@ American Compute adds that RVI demand may be suppressed by operator residual ove
 - [[gpu-compute-novation|GPU Compute Novation]]
 - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 
+## Useful Source Lists
+
+- [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]: 32-source CSV corpus for GPU financing, residual value, neocloud debt, compute economics, and data center infrastructure research.
+
 ## Best Insights
 
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]

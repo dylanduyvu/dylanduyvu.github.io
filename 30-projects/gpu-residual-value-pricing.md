@@ -33,6 +33,7 @@ This keeps the residual-value track alive, but pushes against a data-only produc
 
 - [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
 - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
+- [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]
 
 ## Open Questions
 

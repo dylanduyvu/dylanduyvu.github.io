@@ -32,6 +32,7 @@ American Compute is a useful counterpoint: Bernie volunteered a hunch that some 
 
 - [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
 - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
+- [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]
 
 ## Open Questions
 
