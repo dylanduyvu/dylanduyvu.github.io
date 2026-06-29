@@ -45,11 +45,11 @@ This weakens the core contract novation hypothesis that there is a latent pool o
 
 ## Links
 
-- Sources: [[usd-ai-call-harry-page-2026-06-29]]
-- Projects: [[gpu-compute-novation]]
-- Areas: [[gpu-finance]]
-- People: [[harry-page]]
-- Orgs: [[usd-ai]]
+- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
+- Projects: [[gpu-compute-novation|GPU Compute Novation]]
+- Areas: [[gpu-finance|GPU Finance]]
+- People: [[harry-page|Harry Page]]
+- Orgs: [[usd-ai|USD.AI]]
 
 ## Updates
 

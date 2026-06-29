@@ -28,14 +28,14 @@ The most interesting live pain from the 2026-06-29 USD.AI call is not contract n
 
 ## Active Projects
 
-- [[gpu-compute-novation]]
+- [[gpu-compute-novation|GPU Compute Novation]]
 
 ## Best Insights
 
-- [[Bare compute contracts have no recovery value after default]]
-- [[Committed GPU capacity is supply-constrained, not over-committed]]
-- [[SLA and uptime verification is a sharper GPU lender pain than novation]]
-- [[GPU value warranties can synthetically insure lender loss given default]]
+- [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
+- [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
+- [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
 
 ## Open Questions
 

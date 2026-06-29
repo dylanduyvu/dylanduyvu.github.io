@@ -27,20 +27,20 @@ USD.AI is strategically relevant because it lends against GPU-backed infrastruct
 
 ## Related People
 
-- [[harry-page]]
+- [[harry-page|Harry Page]]
 
 ## Related Sources
 
-- [[usd-ai-call-harry-page-2026-06-29]]
+- [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
 
 ## Related Insights
 
-- [[Bare compute contracts have no recovery value after default]]
-- [[Committed GPU capacity is supply-constrained, not over-committed]]
-- [[SLA and uptime verification is a sharper GPU lender pain than novation]]
-- [[GPU value warranties can synthetically insure lender loss given default]]
+- [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
+- [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
+- [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
 
 ## Related Projects / Areas
 
-- [[gpu-compute-novation]]
-- [[gpu-finance]]
+- [[gpu-compute-novation|GPU Compute Novation]]
+- [[gpu-finance|GPU Finance]]

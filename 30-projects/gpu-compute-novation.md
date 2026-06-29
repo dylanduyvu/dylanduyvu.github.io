@@ -19,14 +19,14 @@ The better near-term problem may be SLA and uptime performance verification for 
 
 ## Key Insights
 
-- [[Committed GPU capacity is supply-constrained, not over-committed]]: Seller-side contract liquidity may be thin because customers need reserved compute and have paid meaningful deposits.
-- [[Bare compute contracts have no recovery value after default]]: Contract-only financing lacks a recovery asset if the cash flow defaults.
-- [[SLA and uptime verification is a sharper GPU lender pain than novation]]: USD.AI volunteered a lender pain tied to pricing and revenue-risk reduction.
-- [[GPU value warranties can synthetically insure lender loss given default]]: Existing risk transfer is centered on GPU hardware value, not naked contract cash flows.
+- [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]: Seller-side contract liquidity may be thin because customers need reserved compute and have paid meaningful deposits.
+- [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]: Contract-only financing lacks a recovery asset if the cash flow defaults.
+- [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]: USD.AI volunteered a lender pain tied to pricing and revenue-risk reduction.
+- [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]: Existing risk transfer is centered on GPU hardware value, not naked contract cash flows.
 
 ## Sources
 
-- [[usd-ai-call-harry-page-2026-06-29]]
+- [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
 
 ## Open Questions
 

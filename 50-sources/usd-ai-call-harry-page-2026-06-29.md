@@ -87,10 +87,10 @@ USD.AI described its product as fundamentally GPU-backed lending. Contracts and 
 
 ## Promoted Insights
 
-- [[Bare compute contracts have no recovery value after default]]
-- [[Committed GPU capacity is supply-constrained, not over-committed]]
-- [[SLA and uptime verification is a sharper GPU lender pain than novation]]
-- [[GPU value warranties can synthetically insure lender loss given default]]
+- [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
+- [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
+- [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
 
 ## Open Questions
 
@@ -101,8 +101,8 @@ USD.AI described its product as fundamentally GPU-backed lending. Contracts and 
 
 ## Links
 
-- Projects: [[gpu-compute-novation]]
-- Areas: [[gpu-finance]]
-- People: [[harry-page]]
-- Orgs: [[usd-ai]]
+- Projects: [[gpu-compute-novation|GPU Compute Novation]]
+- Areas: [[gpu-finance|GPU Finance]]
+- People: [[harry-page|Harry Page]]
+- Orgs: [[usd-ai|USD.AI]]
 - Attachments:
