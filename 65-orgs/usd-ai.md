@@ -23,7 +23,7 @@ USD.AI is strategically relevant because it lends against GPU-backed infrastruct
 - It has not seen customers trying to offload termed-out GPU capacity in the current market.
 - It sees supply scarcity as a bottleneck: customers wait for GPUs or pay premiums to skip the line.
 - It volunteered SLA/uptime operator-performance verification as a current lender pain.
-- It uses value warranties/reinsurance around GPU residual value, at least in the Baracco-style structure described on the call.
+- It uses value warranties/reinsurance around GPU residual value, at least in the Barkr/Barker-style structure described on the call.
 
 ## Related People
 
