@@ -98,4 +98,4 @@ The financing implication is the sharpest piece for the vault: lenders need date
 
 - Projects: [[gpu-compute-derivatives|GPU Compute Derivatives]], [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 - Areas: [[gpu-finance|GPU Finance]]
-- People: Dave Friedman
+- People: [[dave-friedman|Dave Friedman]]

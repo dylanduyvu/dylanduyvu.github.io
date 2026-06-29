@@ -3,9 +3,9 @@ type: area
 status: active
 created: 2026-06-29
 updated: 2026-06-29
-domains: [gpu-finance, ai-infrastructure, compute-contracts]
-projects: [gpu-compute-novation]
-people: [harry-page, thomas-galbraith, bernie-margulies]
+domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives]
+projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
+people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman]
 orgs: [usd-ai, barkr, american-compute]
 tags: [gpu, lending, infrastructure]
 ---
@@ -22,6 +22,8 @@ The residual-value pricing path is still alive, but should be framed around lend
 
 American Compute adds that RVI demand may be suppressed by operator residual overconfidence and by customers using quotes as free gut checks. Residual products may sell better to lessors or after a correction than to lenders in the current scarcity market.
 
+The compute-derivatives path points toward dated futures/forward strips rather than perps. That matters because a dated curve could feed residual marks, amortization schedules, and hedges for GPU financing.
+
 ## Useful Patterns
 
 - Hardware recovery matters more than bare contract cash flows.
@@ -35,11 +37,14 @@ American Compute adds that RVI demand may be suppressed by operator residual ove
 - GPU pricing opacity is partly structural because OEMs, VARs, and suppliers benefit from bespoke margins.
 - Lenders and lessors use residual values differently: recovery protection vs return enhancement.
 - Reinsurer or warranty backer credibility can matter more than advertised data-point counts.
+- Compute derivatives need tenor because compute value changes by delivery date and silicon generation.
+- Perps may concentrate speculative liquidity but do not produce the dated curve GPU finance needs.
 
 ## Active Projects
 
 - [[gpu-compute-novation|GPU Compute Novation]]
 - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
+- [[gpu-compute-derivatives|GPU Compute Derivatives]]
 
 ## Useful Source Lists
 
@@ -59,6 +64,11 @@ American Compute adds that RVI demand may be suppressed by operator residual ove
 - [[gpu-residual-risk-matters-more-to-lessors-than-lenders|GPU residual risk matters more to lessors than lenders]]
 - [[gpu-rvi-demand-may-need-a-residual-correction|GPU RVI demand may need a residual correction]]
 - [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]
+- [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
+- [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]]
+- [[compute-derivatives-should-look-like-freight-and-power-not-crypto|Compute derivatives should look like freight and power, not crypto]]
+- [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
+- [[compute-perps-need-a-spot-index-anchor-compute-does-not-have|Compute perps need a spot-index anchor compute does not have]]
 
 ## Open Questions
 
@@ -68,3 +78,4 @@ American Compute adds that RVI demand may be suppressed by operator residual ove
 - What happens to this market if GPU supply loosens or AI demand becomes less frantic?
 - What guarantee fee, exclusion structure, or lender term change proves residual-value protection has budget?
 - Which GPU finance segment has the sharpest residual-value WTP: lessors, equipment finance, banks, private credit, insurers, or crypto lenders?
+- What compute index is robust enough for dated derivative settlement?
