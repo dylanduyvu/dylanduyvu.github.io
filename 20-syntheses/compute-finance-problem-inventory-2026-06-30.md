@@ -25,7 +25,7 @@ Status: live probe.
 
 Why it is live: USD.AI volunteered this as an active lender pain and connected it to pricing more aggressively by reducing top-line revenue risk.
 
-Cheapest fatal test: ask Barkr, plus one or two lenders/insurers/offtakers, whether they also see a budgeted need for trusted operator uptime/SLA verification.
+Cheapest fatal test: send targeted email follow-ups to Thomas at Barkr and Bernie at American Compute asking whether USD.AI's SLA/uptime verification pain matches what they see from their positions in the stack. If useful, add one or two more async lender/insurer/offtaker outreaches.
 
 Kill or demote if: other qualified counterparties do not recognize it as a painful underwriting or pricing problem, or existing monitoring/data-room processes already satisfy lender trust.
 
@@ -67,11 +67,13 @@ Kill or demote if: supply stays tight and no offloader-side demand appears.
 
 Foreground if: stranded commitments reappear with clear buyer/seller liquidity.
 
-## Next Week Test Plan
+## Next Test Plan
 
-- Barkr call: test whether SLA/uptime verification pain appears from a valuation/insurance position in the stack, and ask what problem they wish someone solved.
-- One or two more lender/insurer/offtaker calls: test SLA replication and harvest volunteered pain for the inventory.
-- Keep updating this inventory after each call so the process stays portfolio-based, not single-threaded.
+- No upcoming Barkr call is scheduled. The Barkr call already happened and is historical evidence.
+- Email Thomas at Barkr and Bernie at American Compute about the SLA/uptime verification pain USD.AI volunteered.
+- Use those emails to test whether SLA verification replicates beyond USD.AI, and to ask whether they see a different higher-priority compute-finance pain.
+- If responses warrant it, send one or two more async lender/insurer/offtaker follow-ups for SLA replication plus problem inventory mining.
+- Keep updating this inventory after each response so the process stays portfolio-based, not single-threaded.
 
 ## Links
 

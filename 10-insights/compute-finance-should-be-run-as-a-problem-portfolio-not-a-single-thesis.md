@@ -34,8 +34,8 @@ This turns failed theses into compounding domain knowledge instead of sunk cost.
 
 - Hold SLA as a probe, not the new foreground, until it replicates across Barkr and other lenders/insurers/offtakers.
 - Maintain an explicit compute-finance problem inventory and test it in sequence by cheapest fatal uncertainty.
-- Use calls for two jobs: validate the active probe and harvest volunteered pain to expand the inventory.
-- Treat Barkr as a double-purpose call because it can test SLA from a valuation/insurance angle and reveal different stack-level pain than USD.AI.
+- Treat Thomas/Barkr and Bernie/American Compute as async follow-up tests because they can validate whether USD.AI's SLA pain appears from adjacent positions in the stack.
+- Use emails for two jobs: validate the active probe and harvest volunteered pain to expand the inventory. No upcoming Barkr call is scheduled.
 - Keep tripwires for shelved ideas instead of deleting them.
 
 ## Counterpoints / Uncertainty

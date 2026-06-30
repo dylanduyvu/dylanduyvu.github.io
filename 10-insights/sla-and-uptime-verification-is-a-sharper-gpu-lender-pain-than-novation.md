@@ -39,7 +39,8 @@ The 2026-06-30 compute-finance portfolio memo adds an important constraint: SLA 
 - Run one cheap discovery round around SLA/uptime verification before spending more cycles on novation.
 - Treat this as the follow-on discovery lane after shelving current-market novation, but do not over-rotate onto it before replication.
 - Test who owns the budget: GPU lenders, borrowers, insurers, offtakers, marketplaces, or data center operators.
-- Use Barkr as the first double-purpose test: SLA replication plus "what do you wish someone solved?" problem mining.
+- Do not treat Barkr as an upcoming call. The Barkr call already happened; the next lightweight move is an email to Thomas at Barkr and Bernie at American Compute about USD.AI's volunteered SLA pain.
+- Use those emails as the first double-purpose test: SLA replication plus "what pain are you seeing instead?" problem mining.
 - Map the required evidence stack: telemetry, contract terms, monitoring data, incident reporting, revenue-credit exposure, and lender-facing auditability.
 - A useful product may look more like verification, monitoring, underwriting infrastructure, or insurance enablement than contract trading.
 
@@ -70,4 +71,8 @@ Updated after the novation shelving decision. SLA/uptime verification is now the
 
 ### 2026-06-30
 
-Reframed SLA as a live probe inside a compute-finance problem portfolio, not the automatic new foreground. Barkr should be the first cheap replication and problem-mining call.
+Reframed SLA as a live probe inside a compute-finance problem portfolio, not the automatic new foreground. Barkr was initially described as the first cheap replication and problem-mining call.
+
+### 2026-06-30
+
+Corrected the next action: no Barkr call is scheduled; test SLA replication through async emails to Thomas/Barkr and Bernie/American Compute.

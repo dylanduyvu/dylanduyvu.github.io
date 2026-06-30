@@ -18,6 +18,8 @@ tags: [gpu, compute-finance, customer-discovery, problem-inventory]
 
 This memo marks a space-level decision: compute-finance is the deliberate arena, so individual thesis failures should be treated as probes in a compounding search process rather than as resets. Novation is one probe down, SLA verification is the immediate cheap test, and the next upgrade is to maintain an explicit portfolio of compute-finance problems instead of single-threading the next volunteered pain.
 
+Correction: the raw memo below talks about a future Barkr call, but no upcoming Barkr call is scheduled. The only Barkr call was the already-logged 2026-06-18 Thomas call. The current next step is async email follow-up to Thomas at Barkr and Bernie at American Compute about USD.AI's SLA/uptime verification pain.
+
 ## Durable Takeaways
 
 - Compute-finance is now the chosen search space, not just a sequence of disconnected startup ideas.
@@ -25,7 +27,7 @@ This memo marks a space-level decision: compute-finance is the deliberate arena,
 - SLA/uptime verification is the best immediate lead because USD.AI volunteered it and tied it to pricing/WTP, but it should stay a probe until it replicates.
 - The larger upgrade is deliberate problem inventory: list the unsolved compute-finance pains and test them cheapest-fatal-first.
 - The current portfolio includes SLA/performance verification, naked valuation/KBB demand-side testing, bare compute-contract underwriting, and a novation tripwire.
-- Barkr is a double-purpose next call: test SLA from a different stack position and mine for volunteered pain.
+- Thomas/Barkr and Bernie/American Compute are the first async follow-up tests for the SLA pain USD.AI volunteered.
 
 ## Raw Context
 
@@ -72,8 +74,8 @@ Write the problem inventory down - even rough - so you're explicitly running a p
 
 ## Open Questions
 
-- Does SLA/uptime verification replicate across Barkr, other lenders, insurers, or offtakers?
-- What volunteered pain does Barkr name from its valuation/insurance position in the stack?
+- Does SLA/uptime verification replicate across Barkr, American Compute, other lenders, insurers, or offtakers?
+- What volunteered pain do Thomas/Barkr or Bernie/American Compute name from their positions in the stack?
 - Can bare compute-contract lending be made financeable through structure, collateral, assignment rights, escrow, or insurance?
 - Which candidate problem has the cheapest fatal test next?
 
