@@ -6,9 +6,9 @@ updated: 2026-06-30
 confidence: high
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
-sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30]
-people: [harry-page]
-orgs: [usd-ai]
+sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, compute-finance-space-commitment-and-problem-inventory-2026-06-30]
+people: [harry-page, thomas-galbraith]
+orgs: [usd-ai, barkr]
 aliases: [gpu lenders need sla verification, uptime performance verification is a lender pain]
 tags: [gpu, lending, sla, uptime, customer-discovery]
 ---
@@ -25,6 +25,8 @@ This is an unprompted, willingness-to-pay-shaped problem from a highly relevant 
 
 The 2026-06-30 novation shelving decision makes this sharper: if novation is shelved under LBH0, SLA/uptime verification is the better adjacent problem to test rather than a side quest.
 
+The 2026-06-30 compute-finance portfolio memo adds an important constraint: SLA should be treated as a live probe, not the new foreground, until the pain replicates across Barkr and other lenders, insurers, or offtakers.
+
 ## Evidence
 
 - 2026-06-29: When asked what problem USD.AI wishes someone would solve, Harry pointed to ensuring contract-related operator performance.
@@ -35,8 +37,9 @@ The 2026-06-30 novation shelving decision makes this sharper: if novation is she
 ## Implications
 
 - Run one cheap discovery round around SLA/uptime verification before spending more cycles on novation.
-- Treat this as the follow-on discovery lane after shelving current-market novation.
+- Treat this as the follow-on discovery lane after shelving current-market novation, but do not over-rotate onto it before replication.
 - Test who owns the budget: GPU lenders, borrowers, insurers, offtakers, marketplaces, or data center operators.
+- Use Barkr as the first double-purpose test: SLA replication plus "what do you wish someone solved?" problem mining.
 - Map the required evidence stack: telemetry, contract terms, monitoring data, incident reporting, revenue-credit exposure, and lender-facing auditability.
 - A useful product may look more like verification, monitoring, underwriting infrastructure, or insurance enablement than contract trading.
 
@@ -45,14 +48,15 @@ The 2026-06-30 novation shelving decision makes this sharper: if novation is she
 - This is one lender's volunteered pain; it still needs validation across other lenders and operators.
 - Existing monitoring tools may solve part of the problem but may not be trusted, standardized, or lender-facing.
 - Data access, confidentiality, and liability could make third-party verification hard.
+- The broader compute-finance search space has multiple candidate problems, so SLA needs to earn foreground attention rather than inherit it from novation's failure.
 
 ## Links
 
-- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]]
+- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]], [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]]
 - Projects: [[gpu-compute-novation|GPU Compute Novation]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]]
-- Orgs: [[usd-ai|USD.AI]]
+- Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]]
 
 ## Updates
 
@@ -63,3 +67,7 @@ Initial capture from USD.AI call transcript.
 ### 2026-06-30
 
 Updated after the novation shelving decision. SLA/uptime verification is now the preferred adjacent discovery lane if Dylan continues exploring GPU lender pain.
+
+### 2026-06-30
+
+Reframed SLA as a live probe inside a compute-finance problem portfolio, not the automatic new foreground. Barkr should be the first cheap replication and problem-mining call.

@@ -16,7 +16,9 @@ tags: [gpu, lending, infrastructure]
 
 GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
-The GPU compute novation track is now shelved with a tripwire rather than active. The most interesting live pain from the 2026-06-29 USD.AI call is not contract novation, but lender-grade verification of operator uptime and SLA performance.
+Compute-finance is now the deliberate search space. Individual theses should be managed as probes inside a problem portfolio, not as isolated all-or-nothing pivots. Novation dying is one probe down in a chosen domain; the context, relationships, and stack map remain compounding capital.
+
+The GPU compute novation track is now shelved with a tripwire rather than active. The most interesting live pain from the 2026-06-29 USD.AI call is not contract novation, but lender-grade verification of operator uptime and SLA performance. SLA should be tested cheaply, but held as a probe until it replicates across Barkr and other lenders, insurers, or offtakers.
 
 The residual-value pricing path is still alive, but should be framed around lender recovery floors and guaranteed valuations rather than a generic public GPU price index. Barkr's 2026-06-18 call suggests GPU clients pay for guarantee-backed marks and institutional trust, not just standalone data.
 
@@ -35,6 +37,8 @@ The compute-commoditization path does not require perfect fungibility. The more 
 - Supply bottlenecks reduce near-term seller-side liquidity for novation.
 - Current-market novation should be shelved when two independent sources say customers are short capacity rather than long capacity.
 - Market-conditional ideas should keep tripwires instead of being buried permanently.
+- Space-level conviction turns failed theses into compounding context, but each candidate problem still needs a cheap fatal test.
+- Compute-finance should be run as a portfolio of probes, not a single-thread replacement for the last failed thesis.
 - Risk transfer products can wrap GPU residual value through warranties and reinsurance.
 - Lenders may price defensively when they cannot verify operator performance against SLAs.
 - GPU collateral marks become more commercially useful when expressed as recoverable floor value.
@@ -59,8 +63,13 @@ The compute-commoditization path does not require perfect fungibility. The more 
 
 - [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]: 32-source CSV corpus for GPU financing, residual value, neocloud debt, compute economics, and data center infrastructure research.
 
+## Syntheses
+
+- [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]: Current portfolio of compute-finance problem probes and cheapest fatal tests.
+
 ## Best Insights
 
+- [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
@@ -90,6 +99,9 @@ The compute-commoditization path does not require perfect fungibility. The more 
 
 - What tripwire would prove the supply-constrained/no-offloading pattern has flipped?
 - Which parties can provide lender-trusted SLA evidence?
+- Does SLA/uptime verification replicate across Barkr, other lenders, insurers, or offtakers?
+- What structure would make bare compute-contract underwriting financeable despite no hardware recovery?
+- Which compute-finance candidate problem has the cheapest fatal test next?
 - How does GPU residual-value insurance interact with performance risk and offtake credit risk?
 - What happens to this market if GPU supply loosens or AI demand becomes less frantic?
 - What guarantee fee, exclusion structure, or lender term change proves residual-value protection has budget?
@@ -98,3 +110,9 @@ The compute-commoditization path does not require perfect fungibility. The more 
 - What compute index is robust enough for dated derivative settlement?
 - Which compute-basis spread is easiest to verify and monetize first?
 - How much neocloud valuation depends on compute remaining non-commodity versus merely having credible contracted flows?
+
+## Near-Term Tests
+
+- Run the Barkr call as a double-purpose call: test SLA/uptime verification from the valuation/insurance side of the stack, and ask what problem they wish someone solved.
+- Run one or two more lender/insurer/offtaker calls with the same dual purpose: SLA replication plus problem inventory mining.
+- Keep [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]] updated after each call.
