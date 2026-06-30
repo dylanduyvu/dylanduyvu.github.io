@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 aliases: [American Compute]
 people: [bernie-margulies]
 projects: [gpu-residual-value-pricing, gpu-compute-novation]
@@ -23,6 +23,7 @@ American Compute is strategically relevant because it sells residual value insur
 - Bernie says GPU pricing opacity is structural across Nvidia, OEMs, and VARs.
 - American Compute's data is mostly proprietary iTAD transaction data, not generic public scrape data.
 - Customers often use American Compute as a free residual-pricing gut check and then do not buy RVI.
+- The weak traction for American Compute's appraisal-style product is a key reason the pure GPU KBB / naked residual-data thesis is demoted.
 - Bernie thinks operators are overconfident about GPU residuals and that RVI sales will get easier after a correction.
 - Lenders focus mostly on offtake and use residual as worst-case recovery; lessors rely on residual value more directly in return profiles.
 - Bernie views Barkr as ahead in market education but critiques Barkr's warranty structure and alleged market-crash exclusion.
@@ -35,10 +36,12 @@ American Compute is strategically relevant because it sells residual value insur
 ## Related Sources
 
 - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
+- [[gpu-kbb-demotion-decision-2026-06-30|GPU KBB demotion decision memo]]
 
 ## Related Insights
 
 - [[gpu-pricing-opacity-is-structural-not-just-immature|GPU pricing opacity is structural, not just immature]]
+- [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]]
 - [[gpu-residual-risk-matters-more-to-lessors-than-lenders|GPU residual risk matters more to lessors than lenders]]
 - [[gpu-rvi-demand-may-need-a-residual-correction|GPU RVI demand may need a residual correction]]
 - [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]

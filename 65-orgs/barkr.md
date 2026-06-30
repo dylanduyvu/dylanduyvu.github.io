@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 aliases: [Barkr, Barker, The Barker Price, barkr.ai]
 people: [thomas-galbraith]
 projects: [gpu-residual-value-pricing]
@@ -22,6 +22,7 @@ Barkr is strategically relevant because it prices hard assets used as loan colla
 - For lenders, Barkr's valuation is closer to a minimum sale / recovery floor than generic fair market value.
 - Barkr offers both valuation-only platform access and valuation plus guarantee.
 - Thomas said GPU clients mostly want the guarantee because the mark is backed.
+- Barkr's valuation-only tier is also a counter-signal against killing the naked-data thesis: inbound demand exists for marks without guarantees, even if guarantee-backed marks appear higher-WTP.
 - Thomas said Barkr has done almost half a billion dollars in guarantees.
 - Barkr uses a mix of public scraping and private client data.
 - Data quality is messy, but Barkr does not currently see data as the bottleneck because it can price assets comfortably enough for Munich Re to back.
@@ -35,11 +36,13 @@ Barkr is strategically relevant because it prices hard assets used as loan colla
 ## Related Sources
 
 - [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
+- [[gpu-kbb-demotion-decision-2026-06-30|GPU KBB demotion decision memo]]
 
 ## Related Insights
 
 - [[lender-gpu-valuations-need-recovery-floor-not-fair-market-value|Lender GPU valuations need recovery floor, not fair market value]]
 - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
+- [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]]
 - [[banks-may-prefer-guarantees-or-swaps-over-insurance-for-gpu-collateral-risk|Banks may prefer guarantees or swaps over insurance for GPU collateral risk]]
 - [[gpu-residual-data-alone-is-not-the-bottleneck-for-guarantee-products|GPU residual data alone is not the bottleneck for guarantee products]]
 - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]

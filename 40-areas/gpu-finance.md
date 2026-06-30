@@ -20,6 +20,8 @@ The GPU compute novation track is now shelved with a tripwire rather than active
 
 The residual-value pricing path is still alive, but should be framed around lender recovery floors and guaranteed valuations rather than a generic public GPU price index. Barkr's 2026-06-18 call suggests GPU clients pay for guarantee-backed marks and institutional trust, not just standalone data.
 
+The pure GPU KBB / naked residual-data wedge is now shelved pending buyer-side evidence. Supplier calls point toward wrappers, but the evidence is biased enough that S&P, KBRA, Fitch, and lessor demand should decide whether standalone residual data deserves foreground attention.
+
 American Compute adds that RVI demand may be suppressed by operator residual overconfidence and by customers using quotes as free gut checks. Residual products may sell better to lessors or after a correction than to lenders in the current scarcity market.
 
 The compute-derivatives path points toward dated futures/forward strips rather than perps. That matters because a dated curve could feed residual marks, amortization schedules, and hedges for GPU financing.
@@ -38,6 +40,7 @@ The compute-commoditization path does not require perfect fungibility. The more 
 - GPU collateral marks become more commercially useful when expressed as recoverable floor value.
 - Banks may prefer guarantee or swap-like structures over insurance if they distrust insurance claim mechanics.
 - Private/public pricing data is necessary but may not be sufficient without diligence and a credible risk-transfer counterparty.
+- Data-only GPU KBB should stay demoted until direct buyers show standalone willingness to pay.
 - GPU pricing opacity is partly structural because OEMs, VARs, and suppliers benefit from bespoke margins.
 - Lenders and lessors use residual values differently: recovery protection vs return enhancement.
 - Reinsurer or warranty backer credibility can matter more than advertised data-point counts.
@@ -63,6 +66,7 @@ The compute-commoditization path does not require perfect fungibility. The more 
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - [[clean-kill-criteria-only-work-if-clean-kills-stop-work|Clean kill criteria only work if clean kills stop work]]
 - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
+- [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]]
 - [[lender-gpu-valuations-need-recovery-floor-not-fair-market-value|Lender GPU valuations need recovery floor, not fair market value]]
 - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
 - [[banks-may-prefer-guarantees-or-swaps-over-insurance-for-gpu-collateral-risk|Banks may prefer guarantees or swaps over insurance for GPU collateral risk]]
@@ -89,6 +93,7 @@ The compute-commoditization path does not require perfect fungibility. The more 
 - How does GPU residual-value insurance interact with performance risk and offtake credit risk?
 - What happens to this market if GPU supply loosens or AI demand becomes less frantic?
 - What guarantee fee, exclusion structure, or lender term change proves residual-value protection has budget?
+- Would rating agencies or lessors pay for neutral GPU residual data without a guarantee wrapper?
 - Which GPU finance segment has the sharpest residual-value WTP: lessors, equipment finance, banks, private credit, insurers, or crypto lenders?
 - What compute index is robust enough for dated derivative settlement?
 - Which compute-basis spread is easiest to verify and monetize first?

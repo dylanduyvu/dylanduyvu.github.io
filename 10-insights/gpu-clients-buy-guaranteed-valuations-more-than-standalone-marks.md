@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 confidence: high
 domains: [gpu-finance, residual-value, asset-backed-lending]
 projects: [gpu-residual-value-pricing]
-sources: [barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16]
+sources: [barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16, gpu-kbb-demotion-decision-2026-06-30]
 people: [thomas-galbraith, bernie-margulies]
 orgs: [barkr, american-compute]
 aliases: [gpu lenders want valuation plus guarantee, guaranteed marks beat standalone valuations]
@@ -29,12 +29,14 @@ This is a strong warning against a data-only GPU pricing product as the primary 
 - 2026-06-18: He said the guarantee is currently the biggest part of Barkr's business and that Barkr has done almost half a billion dollars in guarantees.
 - 2026-06-18: Barkr only recently started offering platform access without the guarantee, and that came from inbound demand from people asking for valuation-only access.
 - 2026-06-18: Thomas said almost all conversations start with interest in the valuation with a guarantee; valuation-only demand is more recent and includes non-lenders such as insurers and asset managers.
+- 2026-06-30: The KBB demotion memo treats Bernie and Barkr as two independent supplier-side signals that wrappers sell more strongly than naked GPU residual marks.
 
 ## Implications
 
 - A pure GPU valuation platform may have less pricing power than a guaranteed valuation or insurance-adjacent product.
 - Standalone valuation could work as top-of-funnel, but the business model likely needs a deeper risk-transfer product.
 - The most important diligence questions are guarantee economics, triggers, exclusions, and backing, not just model accuracy.
+- The pure KBB/data-only thesis should stay shelved until buyer-side tests show standalone willingness to pay.
 
 ## Counterpoints / Uncertainty
 
@@ -43,10 +45,12 @@ This is a strong warning against a data-only GPU pricing product as the primary 
 - The transcript does not include conversion rates or guarantee pricing.
 - American Compute is a counterpoint: Bernie said customers often want residual gut checks but do not buy insurance or appraisals, so guaranteed/insured mark demand is not uniform across wrappers.
 - This may be a wrapper/ICP difference rather than contradiction: Barkr says GPU customers mostly want valuation plus guarantee, while American Compute experiences quote shoppers and RVI non-conversion.
+- The KBB demotion remains supplier-biased because both Barkr and American Compute chose wrapper businesses.
+- Barkr's valuation-only tier is a meaningful counter-signal; buyer-side conversations with rating agencies and lessors are still needed.
 
 ## Links
 
-- Sources: [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]], [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
+- Sources: [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]], [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]], [[gpu-kbb-demotion-decision-2026-06-30|GPU KBB demotion decision memo]]
 - Projects: [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
@@ -61,3 +65,7 @@ Initial capture from Barkr call transcript.
 ### 2026-06-29
 
 Added American Compute counterpoint: RVI quote interest can become free gut-check behavior rather than purchase.
+
+### 2026-06-30
+
+Added KBB demotion interpretation: the wrapper-over-number signal is strong enough to shelve the data-only thesis, but not clean enough to kill it before buyer-side WTP testing.
