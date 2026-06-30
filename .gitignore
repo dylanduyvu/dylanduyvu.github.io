@@ -3,3 +3,10 @@
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/cache/
+node_modules/
+public/
+prof/
+tsconfig.tsbuildinfo
+.quartz/
+.quartz-cache/
+quartz/cli/tui/dist/
