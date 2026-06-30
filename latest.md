@@ -8,18 +8,18 @@ updated: 2026-06-30
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jun 30, 2026, 1:59 PM EDT
+Generated: Jun 30, 2026, 2:05 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 42 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 43 note commits. The most recent movement is:
 
+- Source capture: link friedman coreweave debt confluence.
 - Insight update: log gpu-backed debt inversion.
 - Project decision: demote gpu kbb data thesis.
 - Project decision: shelve gpu compute novation.
 - Hub update: wire compute commoditization notes.
 - Insight update: add compute commoditization claims.
-- Source capture: capture compute commoditization article.
 
 ## Current Hub Signals
 
@@ -31,6 +31,18 @@ In the past 7 days, the public vault changed through 42 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jun 30, 2026, 2:05 PM EDT - source: link friedman coreweave debt confluence
+
+Source capture: link friedman coreweave debt confluence.
+
+Changed notes:
+  - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
+  - [[gpu-finance|GPU Finance]]
+  - [[coreweave-issued-yet-more-debt-2026-05-28|CoreWeave Issued Yet More Debt]]
+  - [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
+  - [[dave-friedman|Dave Friedman]]
+  - [[coreweave|CoreWeave]]
 
 ### Jun 30, 2026, 1:59 PM EDT - insight: log gpu-backed debt inversion
 
@@ -149,17 +161,11 @@ Insight update: add GPU financing forward strip claim.
 Changed notes:
   - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 
-### Jun 29, 2026, 7:03 PM EDT - insight: add compute derivatives freight analogy
-
-Insight update: add compute derivatives freight analogy.
-
-Changed notes:
-  - [[compute-derivatives-should-look-like-freight-and-power-not-crypto|Compute derivatives should look like freight and power, not crypto]]
-
-_Showing the newest 12 of 42 updates in this window._
+_Showing the newest 12 of 43 updates in this window._
 
 ## Past 7 Days
 
+- Jun 30, 2026: source: link friedman coreweave debt confluence - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: project: demote gpu kbb data thesis - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
@@ -184,12 +190,12 @@ _Showing the newest 12 of 42 updates in this window._
 - Jun 29, 2026: insight: add GPU RVI correction demand claim - [[gpu-rvi-demand-may-need-a-residual-correction|GPU RVI demand may need a residual correction]]
 - Jun 29, 2026: insight: add GPU lessor residual risk claim - [[gpu-residual-risk-matters-more-to-lessors-than-lenders|GPU residual risk matters more to lessors than lenders]]
 - Jun 29, 2026: insight: add structural GPU pricing opacity claim - [[gpu-pricing-opacity-is-structural-not-just-immature|GPU pricing opacity is structural, not just immature]]
-- Jun 29, 2026: source: capture American Compute CEO call - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 
-_Showing the newest 25 of 42 updates in this window._
+_Showing the newest 25 of 43 updates in this window._
 
 ## Past 30 Days
 
+- Jun 30, 2026: source: link friedman coreweave debt confluence - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: project: demote gpu kbb data thesis - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
@@ -214,6 +220,5 @@ _Showing the newest 25 of 42 updates in this window._
 - Jun 29, 2026: insight: add GPU RVI correction demand claim - [[gpu-rvi-demand-may-need-a-residual-correction|GPU RVI demand may need a residual correction]]
 - Jun 29, 2026: insight: add GPU lessor residual risk claim - [[gpu-residual-risk-matters-more-to-lessors-than-lenders|GPU residual risk matters more to lessors than lenders]]
 - Jun 29, 2026: insight: add structural GPU pricing opacity claim - [[gpu-pricing-opacity-is-structural-not-just-immature|GPU pricing opacity is structural, not just immature]]
-- Jun 29, 2026: source: capture American Compute CEO call - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 
-_Showing the newest 25 of 42 updates in this window._
+_Showing the newest 25 of 43 updates in this window._
