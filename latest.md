@@ -8,11 +8,11 @@ updated: 2026-06-30
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jun 30, 2026, 2:05 PM EDT
+Generated: Jun 30, 2026, 2:57 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 43 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 44 note commits. The most recent movement is:
 
 - Source capture: link friedman coreweave debt confluence.
 - Insight update: log gpu-backed debt inversion.
@@ -31,6 +31,17 @@ In the past 7 days, the public vault changed through 43 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jun 30, 2026, 2:57 PM EDT - plan: correct sla follow-up to async emails
+
+plan: correct sla follow-up to async emails.
+
+Changed notes:
+  - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
+  - [[gpu-finance|GPU Finance]]
+  - [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]]
 
 ### Jun 30, 2026, 2:05 PM EDT - source: link friedman coreweave debt confluence
 
@@ -154,17 +165,11 @@ Insight update: add compute perp spot index claim.
 Changed notes:
   - [[compute-perps-need-a-spot-index-anchor-compute-does-not-have|Compute perps need a spot-index anchor compute does not have]]
 
-### Jun 29, 2026, 7:03 PM EDT - insight: add GPU financing forward strip claim
-
-Insight update: add GPU financing forward strip claim.
-
-Changed notes:
-  - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
-
-_Showing the newest 12 of 43 updates in this window._
+_Showing the newest 12 of 44 updates in this window._
 
 ## Past 7 Days
 
+- Jun 30, 2026: plan: correct sla follow-up to async emails - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: source: link friedman coreweave debt confluence - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
@@ -189,12 +194,12 @@ _Showing the newest 12 of 43 updates in this window._
 - Jun 29, 2026: insight: add GPU lender segmentation claim - [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]
 - Jun 29, 2026: insight: add GPU RVI correction demand claim - [[gpu-rvi-demand-may-need-a-residual-correction|GPU RVI demand may need a residual correction]]
 - Jun 29, 2026: insight: add GPU lessor residual risk claim - [[gpu-residual-risk-matters-more-to-lessors-than-lenders|GPU residual risk matters more to lessors than lenders]]
-- Jun 29, 2026: insight: add structural GPU pricing opacity claim - [[gpu-pricing-opacity-is-structural-not-just-immature|GPU pricing opacity is structural, not just immature]]
 
-_Showing the newest 25 of 43 updates in this window._
+_Showing the newest 25 of 44 updates in this window._
 
 ## Past 30 Days
 
+- Jun 30, 2026: plan: correct sla follow-up to async emails - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: source: link friedman coreweave debt confluence - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
@@ -219,6 +224,5 @@ _Showing the newest 25 of 43 updates in this window._
 - Jun 29, 2026: insight: add GPU lender segmentation claim - [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]
 - Jun 29, 2026: insight: add GPU RVI correction demand claim - [[gpu-rvi-demand-may-need-a-residual-correction|GPU RVI demand may need a residual correction]]
 - Jun 29, 2026: insight: add GPU lessor residual risk claim - [[gpu-residual-risk-matters-more-to-lessors-than-lenders|GPU residual risk matters more to lessors than lenders]]
-- Jun 29, 2026: insight: add structural GPU pricing opacity claim - [[gpu-pricing-opacity-is-structural-not-just-immature|GPU pricing opacity is structural, not just immature]]
 
-_Showing the newest 25 of 43 updates in this window._
+_Showing the newest 25 of 44 updates in this window._
