@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: "10 12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -43,6 +45,8 @@ jobs:
         run: npm ci
       - name: Install Quartz plugins
         run: npx quartz plugin install
+      - name: Generate latest updates
+        run: npm run latest
       - name: Build Quartz
         run: npx quartz build -d .
       - name: Upload artifact

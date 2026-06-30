@@ -9,6 +9,10 @@ This is a public view of Dylan's insight-driven note vault.
 
 The vault is organized around durable claims, source captures, projects, and areas. Start with the main area and project hubs:
 
+## Updates
+
+- [[latest|Latest Updates]]
+
 ## Areas
 
 - [[gpu-finance|GPU Finance]]
