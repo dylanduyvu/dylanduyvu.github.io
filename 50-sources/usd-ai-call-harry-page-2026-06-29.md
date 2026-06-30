@@ -83,11 +83,12 @@ Them: All right.
 
 ## Summary
 
-USD.AI described its product as fundamentally GPU-backed lending. Contracts and offtaker credit matter because they support debt service, but the recoverable asset is the GPU collateral, not the contract itself. Harry said USD.AI has not seen customers offloading long-term capacity or swapping termed-out contracts; instead, customers generally need the capacity, have made meaningful deposits, and face supply uncertainty. When asked for an unsolved problem, USD.AI pointed to verifying operator performance against service-level agreements and uptime requirements, because better visibility could let lenders price more aggressively by reducing top-line revenue risk.
+USD.AI described its product as fundamentally GPU-backed lending. Contracts and offtaker credit matter because they support debt service, but the recoverable asset is the GPU collateral, not the contract itself. The sharper reading is that GPU-backed debt behaves like contract-backed debt with a hardware recovery floor: the offtaker's ability to pay is the engine, and the GPU is the backstop. Harry said USD.AI has not seen customers offloading long-term capacity or swapping termed-out contracts; instead, customers generally need the capacity, have made meaningful deposits, and face supply uncertainty. When asked for an unsolved problem, USD.AI pointed to verifying operator performance against service-level agreements and uptime requirements, because better visibility could let lenders price more aggressively by reducing top-line revenue risk.
 
 ## Promoted Insights
 
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
+- [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]

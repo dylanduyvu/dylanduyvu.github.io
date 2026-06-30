@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 confidence: high
 domains: [gpu-finance, residual-value, asset-backed-lending]
 projects: [gpu-residual-value-pricing]
-sources: [barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16]
+sources: [barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16, gpu-backed-debt-contract-backed-inversion-2026-06-30]
 people: [thomas-galbraith, bernie-margulies]
 orgs: [barkr, american-compute]
 aliases: [gpu collateral valuation is floor value not fmv, lenders need minimum sale value for gpus]
@@ -38,6 +38,7 @@ This changes the product shape for a GPU pricing data company. A generic public 
 - The best customers may be lenders, insurers, lessors, and structured-finance participants rather than generic operators seeking an asset price lookup.
 - If building data infrastructure, the deliverable should translate data into lender-usable recovery assumptions.
 - Lessors may be a stronger ICP than lenders because residual value can directly affect their return profile.
+- In GPU-backed debt, recovery-floor valuation is necessary but incomplete unless paired with contract and offtaker-credit underwriting.
 
 ## Counterpoints / Uncertainty
 
@@ -48,6 +49,7 @@ This changes the product shape for a GPU pricing data company. A generic public 
 ## Links
 
 - Sources: [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]], [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
+- Related Insights: [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Projects: [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
@@ -62,3 +64,7 @@ Initial capture from Barkr call transcript.
 ### 2026-06-29
 
 Updated with American Compute evidence distinguishing lender residual recovery from lessor residual return.
+
+### 2026-06-30
+
+Connected recovery-floor valuation to the broader contract-backed debt framing.

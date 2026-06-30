@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 confidence: high
 domains: [gpu-finance, compute-contracts]
 projects: [gpu-compute-novation]
-sources: [usd-ai-call-harry-page-2026-06-29]
+sources: [usd-ai-call-harry-page-2026-06-29, gpu-backed-debt-contract-backed-inversion-2026-06-30]
 people: [harry-page]
 orgs: [usd-ai]
 aliases: [contract-only gpu lending has no recovery, bare offtake contracts are not recoverable collateral]
@@ -34,6 +34,7 @@ This directly weakens any financing model that depends on lending against contra
 - Contract assignment, novation, or secondary liquidity products need a recovery story beyond the assigned contract.
 - Useful wedges may require GPU collateral, escrowed deposits, insurance, first-loss guarantees, lender step-in rights, or verified operator performance that reduces default probability.
 - If the product is still about contracts, it should probably focus on underwriting, verification, or risk transfer rather than pure contract-backed lending.
+- The inverse is also true: GPU-backed debt cannot be understood only as asset-backed finance because the contract is still the debt-service engine.
 
 ## Counterpoints / Uncertainty
 
@@ -43,7 +44,8 @@ This directly weakens any financing model that depends on lending against contra
 
 ## Links
 
-- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
+- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
+- Related Insights: [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Projects: [[gpu-compute-novation|GPU Compute Novation]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]]
@@ -54,3 +56,7 @@ This directly weakens any financing model that depends on lending against contra
 ### 2026-06-29
 
 Initial capture from USD.AI call transcript.
+
+### 2026-06-30
+
+Added the broader inversion: GPU-backed debt is often contract-backed debt with GPU collateral as the recovery floor.

@@ -16,6 +16,8 @@ tags: [gpu, lending, infrastructure]
 
 GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
+The sharper inversion is that "GPU-backed debt" may be contract-backed debt with GPU collateral as the recovery floor. The rating-agency and lender problem is therefore the combined underwriting of offtaker payment ability, contract durability, SLA performance, and hardware recovery value. The asset is the backstop, not the engine.
+
 Compute-finance is now the deliberate search space. Individual theses should be managed as probes inside a problem portfolio, not as isolated all-or-nothing pivots. Novation dying is one probe down in a chosen domain; the context, relationships, and stack map remain compounding capital.
 
 The GPU compute novation track is now shelved with a tripwire rather than active. The most interesting live pain from the 2026-06-29 USD.AI call is not contract novation, but lender-grade verification of operator uptime and SLA performance. SLA should be tested cheaply, but held as a probe until it replicates across Barkr and other lenders, insurers, or offtakers.
@@ -33,6 +35,7 @@ The compute-commoditization path does not require perfect fungibility. The more 
 ## Useful Patterns
 
 - Hardware recovery matters more than bare contract cash flows.
+- GPU-backed debt may be contract-backed debt with a hardware recovery floor.
 - Long-term GPU offtake can include large deposits, making reserved take-or-pay capacity valuable to keep.
 - Supply bottlenecks reduce near-term seller-side liquidity for novation.
 - Current-market novation should be shelved when two independent sources say customers are short capacity rather than long capacity.
@@ -70,6 +73,7 @@ The compute-commoditization path does not require perfect fungibility. The more 
 ## Best Insights
 
 - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
+- [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
@@ -110,6 +114,7 @@ The compute-commoditization path does not require perfect fungibility. The more 
 - What compute index is robust enough for dated derivative settlement?
 - Which compute-basis spread is easiest to verify and monetize first?
 - How much neocloud valuation depends on compute remaining non-commodity versus merely having credible contracted flows?
+- How do rating agencies weight offtaker credit, contract term, SLA performance, and GPU recovery value in GPU-backed debt?
 
 ## Near-Term Tests
 
