@@ -8,11 +8,11 @@ updated: 2026-06-30
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jun 30, 2026, 1:14 PM EDT
+Generated: Jun 30, 2026, 1:25 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 40 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 41 note commits. The most recent movement is:
 
 - Project decision: demote gpu kbb data thesis.
 - Project decision: shelve gpu compute novation.
@@ -31,6 +31,17 @@ In the past 7 days, the public vault changed through 40 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jun 30, 2026, 1:25 PM EDT - strategy: log compute finance problem portfolio
+
+strategy: log compute finance problem portfolio.
+
+Changed notes:
+  - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
+  - [[gpu-finance|GPU Finance]]
+  - [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]]
 
 ### Jun 30, 2026, 12:25 PM EDT - project: demote gpu kbb data thesis
 
@@ -140,17 +151,11 @@ Insight update: add compute perishability curve claim.
 Changed notes:
   - [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]]
 
-### Jun 29, 2026, 7:03 PM EDT - insight: add dated compute derivatives claim
-
-Insight update: add dated compute derivatives claim.
-
-Changed notes:
-  - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
-
-_Showing the newest 12 of 40 updates in this window._
+_Showing the newest 12 of 41 updates in this window._
 
 ## Past 7 Days
 
+- Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: project: demote gpu kbb data thesis - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
 - Jun 30, 2026: project: shelve gpu compute novation - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 - Jun 29, 2026: hubs: wire compute commoditization notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
@@ -175,12 +180,12 @@ _Showing the newest 12 of 40 updates in this window._
 - Jun 29, 2026: insight: add structural GPU pricing opacity claim - [[gpu-pricing-opacity-is-structural-not-just-immature|GPU pricing opacity is structural, not just immature]]
 - Jun 29, 2026: source: capture American Compute CEO call - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 - Jun 29, 2026: source: link Barkr promoted insights - [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
-- Jun 29, 2026: hubs: add Barkr residual value pricing notes - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 
-_Showing the newest 25 of 40 updates in this window._
+_Showing the newest 25 of 41 updates in this window._
 
 ## Past 30 Days
 
+- Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: project: demote gpu kbb data thesis - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
 - Jun 30, 2026: project: shelve gpu compute novation - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 - Jun 29, 2026: hubs: wire compute commoditization notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
@@ -205,6 +210,5 @@ _Showing the newest 25 of 40 updates in this window._
 - Jun 29, 2026: insight: add structural GPU pricing opacity claim - [[gpu-pricing-opacity-is-structural-not-just-immature|GPU pricing opacity is structural, not just immature]]
 - Jun 29, 2026: source: capture American Compute CEO call - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 - Jun 29, 2026: source: link Barkr promoted insights - [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
-- Jun 29, 2026: hubs: add Barkr residual value pricing notes - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 
-_Showing the newest 25 of 40 updates in this window._
+_Showing the newest 25 of 41 updates in this window._
