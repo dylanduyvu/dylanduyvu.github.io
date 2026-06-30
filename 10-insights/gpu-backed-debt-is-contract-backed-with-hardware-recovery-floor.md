@@ -47,6 +47,7 @@ Together, they make the claim much stronger than either source alone. Friedman s
 - A useful GPU finance product likely has to bridge cash-flow underwriting and collateral recovery, not choose one side.
 - SLA/uptime verification matters because it protects the contract cash-flow engine before the lender has to rely on hardware recovery.
 - Residual valuation still matters, but mainly as the downside backstop that determines loss-given-default and advance rates.
+- If offtaker credit drives debt pricing, the market may centralize around operators with investment-grade anchor customers, because cheap capital compounds into more bankable customer wins.
 
 ## Counterpoints / Uncertainty
 
@@ -59,7 +60,7 @@ Together, they make the claim much stronger than either source alone. Friedman s
 
 - Source: [[coreweave-issued-yet-more-debt-2026-05-28|CoreWeave Issued Yet More Debt]], [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
 - Related Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]], [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
-- Related Insights: [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]], [[lender-gpu-valuations-need-recovery-floor-not-fair-market-value|Lender GPU valuations need recovery floor, not fair market value]], [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- Related Insights: [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]], [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]], [[lender-gpu-valuations-need-recovery-floor-not-fair-market-value|Lender GPU valuations need recovery floor, not fair market value]], [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[dave-friedman|Dave Friedman]], [[harry-page|Harry Page]]
 - Orgs: [[coreweave|CoreWeave]], [[usd-ai|USD.AI]]
@@ -73,3 +74,7 @@ Initial capture from original synthesis.
 ### 2026-06-30
 
 Attributed the inversion to Dave Friedman's CoreWeave DDTL article and added confluence with the USD.AI lender-underwriting call.
+
+### 2026-06-30
+
+Added the market-structure consequence that offtake-based lending may systematically centralize GPU infrastructure capital.

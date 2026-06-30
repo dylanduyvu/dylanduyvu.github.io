@@ -27,6 +27,7 @@ The key signal is that two CoreWeave facilities with similar issuer, arranger, S
 
 - GPU-backed debt is being priced primarily through the customer contract and offtaker credit, with the GPU collateral acting as a recovery floor.
 - The two CoreWeave DDTLs create an empirical anchor for how much customer-credit quality can move rating and spread inside this asset class.
+- Offtake-based lending appears structurally centralizing: the operators with the strongest customers get cheaper capital, which helps them scale and win more bankable customers.
 - The same framing converges with the USD.AI call: contracts support debt service, while hardware is the recoverable collateral after default.
 - SLA/performance verification matters because it protects the contractual cash-flow engine before the lender has to fall back to hardware recovery.
 - If rating agencies keep pricing contract-credit quality this explicitly, compute finance may bifurcate between issuers with investment-grade anchor customers and everyone else.
@@ -34,6 +35,7 @@ The key signal is that two CoreWeave facilities with similar issuer, arranger, S
 ## Promoted Insights
 
 - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
+- [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 
 ## Links
 
