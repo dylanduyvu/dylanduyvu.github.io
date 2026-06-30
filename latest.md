@@ -8,18 +8,18 @@ updated: 2026-06-30
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jun 30, 2026, 2:57 PM EDT
+Generated: Jun 30, 2026, 6:13 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 44 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 45 note commits. The most recent movement is:
 
+- Insight update: log offtake centralization.
 - Source capture: link friedman coreweave debt confluence.
 - Insight update: log gpu-backed debt inversion.
 - Project decision: demote gpu kbb data thesis.
 - Project decision: shelve gpu compute novation.
 - Hub update: wire compute commoditization notes.
-- Insight update: add compute commoditization claims.
 
 ## Current Hub Signals
 
@@ -31,6 +31,16 @@ In the past 7 days, the public vault changed through 44 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jun 30, 2026, 6:13 PM EDT - insight: log offtake centralization
+
+Insight update: log offtake centralization.
+
+Changed notes:
+  - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
+  - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
+  - [[gpu-finance|GPU Finance]]
+  - [[coreweave-issued-yet-more-debt-2026-05-28|CoreWeave Issued Yet More Debt]]
 
 ### Jun 30, 2026, 2:57 PM EDT - plan: correct sla follow-up to async emails
 
@@ -158,17 +168,11 @@ Changed notes:
   - [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
   - [[dave-friedman|Dave Friedman]]
 
-### Jun 29, 2026, 7:03 PM EDT - insight: add compute perp spot index claim
-
-Insight update: add compute perp spot index claim.
-
-Changed notes:
-  - [[compute-perps-need-a-spot-index-anchor-compute-does-not-have|Compute perps need a spot-index anchor compute does not have]]
-
-_Showing the newest 12 of 44 updates in this window._
+_Showing the newest 12 of 18 updates in this window._
 
 ## Past 7 Days
 
+- Jun 30, 2026: insight: log offtake centralization - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: plan: correct sla follow-up to async emails - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: source: link friedman coreweave debt confluence - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
@@ -193,12 +197,12 @@ _Showing the newest 12 of 44 updates in this window._
 - Jun 29, 2026: inbox: add locked compute offtake resale hunch - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 - Jun 29, 2026: insight: add GPU lender segmentation claim - [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]
 - Jun 29, 2026: insight: add GPU RVI correction demand claim - [[gpu-rvi-demand-may-need-a-residual-correction|GPU RVI demand may need a residual correction]]
-- Jun 29, 2026: insight: add GPU lessor residual risk claim - [[gpu-residual-risk-matters-more-to-lessors-than-lenders|GPU residual risk matters more to lessors than lenders]]
 
-_Showing the newest 25 of 44 updates in this window._
+_Showing the newest 25 of 45 updates in this window._
 
 ## Past 30 Days
 
+- Jun 30, 2026: insight: log offtake centralization - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: plan: correct sla follow-up to async emails - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: source: link friedman coreweave debt confluence - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
@@ -223,6 +227,5 @@ _Showing the newest 25 of 44 updates in this window._
 - Jun 29, 2026: inbox: add locked compute offtake resale hunch - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 - Jun 29, 2026: insight: add GPU lender segmentation claim - [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]
 - Jun 29, 2026: insight: add GPU RVI correction demand claim - [[gpu-rvi-demand-may-need-a-residual-correction|GPU RVI demand may need a residual correction]]
-- Jun 29, 2026: insight: add GPU lessor residual risk claim - [[gpu-residual-risk-matters-more-to-lessors-than-lenders|GPU residual risk matters more to lessors than lenders]]
 
-_Showing the newest 25 of 44 updates in this window._
+_Showing the newest 25 of 45 updates in this window._
