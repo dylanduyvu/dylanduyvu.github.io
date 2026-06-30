@@ -2,14 +2,14 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-06-29
-confidence: high
+updated: 2026-06-30
+confidence: very-high
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
-sources: [usd-ai-call-harry-page-2026-06-29, american-compute-bernie-ceo-call-2026-06-16]
+sources: [usd-ai-call-harry-page-2026-06-29, american-compute-bernie-ceo-call-2026-06-16, novation-shelving-decision-2026-06-30]
 people: [harry-page, bernie-margulies]
-orgs: [usd-ai, american-compute]
-aliases: [gpu customers are not offloading committed capacity, long-term gpu offtake is supply constrained]
+orgs: [usd-ai, nebius, american-compute]
+aliases: [gpu customers are not offloading committed capacity, long-term gpu offtake is supply constrained, current-market novation is falsified]
 tags: [gpu, customer-discovery, novation, supply]
 ---
 
@@ -17,11 +17,11 @@ tags: [gpu, customer-discovery, novation, supply]
 
 ## Claim
 
-In USD.AI's current market view, long-term GPU offtake customers are not generally stuck with excess committed capacity. They need the capacity, have paid meaningful deposits, and face future supply uncertainty, so they are not trying to offload termed-out contracts.
+In the current market, long-term GPU offtake appears supply-constrained rather than over-committed. USD.AI and Dylan's Nebius evidence both point to customers needing capacity rather than offloading term commitments.
 
 ## Why It Matters
 
-This weakens the core contract novation hypothesis that there is a latent pool of over-committed GPU customers who need secondary liquidity. If the market problem is supply scarcity rather than over-commitment, a novation marketplace may lack urgent seller-side supply in the current market.
+This falsifies the current-market version of the contract novation hypothesis under its LBH0 kill criteria: exit demand exists. If the market problem is supply scarcity rather than over-commitment, a novation marketplace lacks urgent seller-side supply.
 
 ## Evidence
 
@@ -30,27 +30,29 @@ This weakens the core contract novation hypothesis that there is a latent pool o
 - 2026-06-29: Harry explained that customers signing multi-year commitments with deposits are doing so because they need capacity for a long period.
 - 2026-06-29: Longer-term GPU deals commonly include deposits around 16-25%, which can be several million dollars, giving customers a strong reason to hold onto reserved take-or-pay capacity.
 - 2026-06-29: USD.AI named supply as a bottleneck: there are not enough GPUs for what people want, so customers wait or pay premiums to skip the line.
+- 2026-06-30: Dylan's decision memo treats Nebius as independent neocloud-side corroboration that current-market customers are not trying to offload committed capacity.
 
 ## Implications
 
-- Do not assume seller-side liquidity exists for a GPU contract novation product without fresh evidence from buyers, operators, and lenders.
+- Shelve the current-market GPU compute novation project rather than keep searching for redundant disconfirmation.
 - The immediate pain may be around access, financing, underwriting, or performance verification rather than exit liquidity.
-- If novation remains worth testing, look for edge cases: failed startups, strategy pivots, underused reserved clusters, distressed borrowers, or contracts with weak deposits.
+- Revisit only if a tripwire fires: supply loosens, next-gen GPUs create a glut, GPU prices crash, deposits weaken, or direct buyer/operator sources name committed capacity they want to offload.
 
 ## Counterpoints / Uncertainty
 
 - USD.AI sees a lender-filtered slice of the market, not necessarily every buyer or contract type.
-- The claim may change if GPU supply loosens, deposits fall, AI demand cools, or customers overbuy during a hype cycle.
+- The claim is market-conditional. It may change if GPU supply loosens, deposits fall, AI demand cools, or customers overbuy during a hype cycle.
 - Smaller customers, distressed startups, or non-core GPU buyers may behave differently from USD.AI's borrowers and offtakers.
 - 2026-06-16 counterpoint: Bernie from American Compute guessed that some startups may have bought three-year offtake to satisfy lenders or investor narratives and may not actually use all the compute. This is useful, but weaker than observed offloading evidence because he did not cite a named transfer, failed transfer, or specific customer.
+- The raw Nebius source still needs to be captured if available; current Nebius evidence is represented through Dylan's 2026-06-30 decision memo.
 
 ## Links
 
-- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
+- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]]
 - Projects: [[gpu-compute-novation|GPU Compute Novation]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]], [[bernie-margulies|Bernie Margulies]]
-- Orgs: [[usd-ai|USD.AI]], [[american-compute|American Compute]]
+- Orgs: [[usd-ai|USD.AI]], [[nebius|Nebius]], [[american-compute|American Compute]]
 
 ## Updates
 
@@ -61,3 +63,7 @@ Initial capture from USD.AI call transcript.
 ### 2026-06-29
 
 Added American Compute counterpoint and linked the locked-compute hunch. Status remains distilled because Bernie's version was framed as a guess, while USD.AI's signal was direct observed market behavior.
+
+### 2026-06-30
+
+Updated from the novation shelving decision memo. Confidence increased because Nebius independently corroborates the USD.AI no-offloading signal from the neocloud side. Current-market novation is now treated as shelved with a tripwire, not as an active thesis needing more generic invalidation calls.

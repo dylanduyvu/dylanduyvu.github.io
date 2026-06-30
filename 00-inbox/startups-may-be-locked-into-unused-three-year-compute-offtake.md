@@ -1,14 +1,14 @@
 ---
 type: insight
-status: hunch
+status: weakened
 created: 2026-06-29
-updated: 2026-06-29
-confidence: low
+updated: 2026-06-30
+confidence: very-low
 domains: [gpu-finance, compute-contracts, ai-infrastructure]
 projects: [gpu-compute-novation]
-sources: [american-compute-bernie-ceo-call-2026-06-16]
+sources: [american-compute-bernie-ceo-call-2026-06-16, novation-shelving-decision-2026-06-30]
 people: [bernie-margulies]
-orgs: [american-compute]
+orgs: [american-compute, usd-ai, nebius]
 aliases: [startups may overbuy three year compute contracts, locked compute offtake resale hunch]
 tags: [gpu, novation, hunch, customer-discovery]
 possible_duplicates: [committed-gpu-capacity-is-supply-constrained-not-over-committed]
@@ -23,6 +23,8 @@ Some startups may be locked into three-year compute offtake contracts they will 
 ## Why It Matters
 
 This is a direct counter-signal to the current stronger conclusion that committed GPU capacity is supply-constrained rather than over-committed. Bernie volunteered it as a possible problem worth exploring, but framed it as a guess rather than observed deal evidence.
+
+As of 2026-06-30, this hunch is weakened enough that it should not drive more generic novation discovery. It remains useful only as a tripwire: revive it if a direct buyer/operator names unused committed capacity or if the GPU market flips from supply-constrained to over-supplied.
 
 ## Evidence
 
@@ -42,10 +44,11 @@ This is a direct counter-signal to the current stronger conclusion that committe
 - USD.AI later said it has not seen customers trying to offload committed capacity and that the market is supply-constrained.
 - Dylan has Nebius evidence that also weakens the current-market over-commitment premise.
 - Bernie did not cite a named customer, transaction, or failed resale attempt; he presented this as a bet.
+- 2026-06-30 decision update: the novation track is now shelved with a tripwire because USD.AI and Nebius jointly killed current-market LBH0.
 
 ## Links
 
-- Sources: [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
+- Sources: [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]]
 - Projects: [[gpu-compute-novation|GPU Compute Novation]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[bernie-margulies|Bernie Margulies]]
@@ -57,3 +60,7 @@ This is a direct counter-signal to the current stronger conclusion that committe
 ### 2026-06-29
 
 Initial hunch capture from American Compute call transcript.
+
+### 2026-06-30
+
+Marked weakened after the novation shelving decision memo. Preserve as a market-conditional tripwire rather than an active discovery path.

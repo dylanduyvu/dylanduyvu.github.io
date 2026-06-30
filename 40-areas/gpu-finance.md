@@ -2,11 +2,11 @@
 type: area
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee]
-orgs: [usd-ai, barkr, american-compute, coreweave]
+orgs: [usd-ai, nebius, barkr, american-compute, coreweave]
 tags: [gpu, lending, infrastructure]
 ---
 
@@ -14,9 +14,9 @@ tags: [gpu, lending, infrastructure]
 
 ## Current Understanding
 
-GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
+GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
-The most interesting live pain from the 2026-06-29 USD.AI call is not contract novation, but lender-grade verification of operator uptime and SLA performance.
+The GPU compute novation track is now shelved with a tripwire rather than active. The most interesting live pain from the 2026-06-29 USD.AI call is not contract novation, but lender-grade verification of operator uptime and SLA performance.
 
 The residual-value pricing path is still alive, but should be framed around lender recovery floors and guaranteed valuations rather than a generic public GPU price index. Barkr's 2026-06-18 call suggests GPU clients pay for guarantee-backed marks and institutional trust, not just standalone data.
 
@@ -31,6 +31,8 @@ The compute-commoditization path does not require perfect fungibility. The more 
 - Hardware recovery matters more than bare contract cash flows.
 - Long-term GPU offtake can include large deposits, making reserved take-or-pay capacity valuable to keep.
 - Supply bottlenecks reduce near-term seller-side liquidity for novation.
+- Current-market novation should be shelved when two independent sources say customers are short capacity rather than long capacity.
+- Market-conditional ideas should keep tripwires instead of being buried permanently.
 - Risk transfer products can wrap GPU residual value through warranties and reinsurance.
 - Lenders may price defensively when they cannot verify operator performance against SLAs.
 - GPU collateral marks become more commercially useful when expressed as recoverable floor value.
@@ -59,6 +61,7 @@ The compute-commoditization path does not require perfect fungibility. The more 
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- [[clean-kill-criteria-only-work-if-clean-kills-stop-work|Clean kill criteria only work if clean kills stop work]]
 - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
 - [[lender-gpu-valuations-need-recovery-floor-not-fair-market-value|Lender GPU valuations need recovery floor, not fair market value]]
 - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
@@ -81,7 +84,7 @@ The compute-commoditization path does not require perfect fungibility. The more 
 
 ## Open Questions
 
-- How broad is the supply-constrained/no-offloading pattern across the GPU market?
+- What tripwire would prove the supply-constrained/no-offloading pattern has flipped?
 - Which parties can provide lender-trusted SLA evidence?
 - How does GPU residual-value insurance interact with performance risk and offtake credit risk?
 - What happens to this market if GPU supply loosens or AI demand becomes less frantic?

@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 confidence: high
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
-sources: [usd-ai-call-harry-page-2026-06-29]
+sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30]
 people: [harry-page]
 orgs: [usd-ai]
 aliases: [gpu lenders need sla verification, uptime performance verification is a lender pain]
@@ -23,6 +23,8 @@ USD.AI volunteered operator SLA and uptime performance verification as a more im
 
 This is an unprompted, willingness-to-pay-shaped problem from a highly relevant lender. Instead of forcing a novation thesis into a market that appears supply-constrained, the next cheap test should probe whether lenders, insurers, borrowers, or offtakers will pay for trustworthy SLA and uptime verification.
 
+The 2026-06-30 novation shelving decision makes this sharper: if novation is shelved under LBH0, SLA/uptime verification is the better adjacent problem to test rather than a side quest.
+
 ## Evidence
 
 - 2026-06-29: When asked what problem USD.AI wishes someone would solve, Harry pointed to ensuring contract-related operator performance.
@@ -33,6 +35,7 @@ This is an unprompted, willingness-to-pay-shaped problem from a highly relevant 
 ## Implications
 
 - Run one cheap discovery round around SLA/uptime verification before spending more cycles on novation.
+- Treat this as the follow-on discovery lane after shelving current-market novation.
 - Test who owns the budget: GPU lenders, borrowers, insurers, offtakers, marketplaces, or data center operators.
 - Map the required evidence stack: telemetry, contract terms, monitoring data, incident reporting, revenue-credit exposure, and lender-facing auditability.
 - A useful product may look more like verification, monitoring, underwriting infrastructure, or insurance enablement than contract trading.
@@ -45,7 +48,7 @@ This is an unprompted, willingness-to-pay-shaped problem from a highly relevant 
 
 ## Links
 
-- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
+- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]]
 - Projects: [[gpu-compute-novation|GPU Compute Novation]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]]
@@ -56,3 +59,7 @@ This is an unprompted, willingness-to-pay-shaped problem from a highly relevant 
 ### 2026-06-29
 
 Initial capture from USD.AI call transcript.
+
+### 2026-06-30
+
+Updated after the novation shelving decision. SLA/uptime verification is now the preferred adjacent discovery lane if Dylan continues exploring GPU lender pain.
