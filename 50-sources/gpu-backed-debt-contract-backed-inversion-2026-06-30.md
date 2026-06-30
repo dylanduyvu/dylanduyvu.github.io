@@ -3,11 +3,12 @@ type: source
 status: processed
 created: 2026-06-30
 updated: 2026-06-30
-source_type: original-thought
+source_type: user-captured-article-claim
+source: coreweave-issued-yet-more-debt-2026-05-28
 domains: [gpu-finance, asset-backed-lending, compute-contracts]
 projects: [gpu-residual-value-pricing, gpu-compute-novation]
-people: []
-orgs: []
+people: [dave-friedman]
+orgs: [coreweave]
 tags: [gpu, lending, collateral, credit]
 ---
 
@@ -15,11 +16,11 @@ tags: [gpu, lending, collateral, credit]
 
 ## Raw Context
 
-This is the inversion: GPU-backed debt is not actually an asset-backed product in the way market participants describe it. It's a contract-backed product with GPU collateral providing a recovery floor. The rating agencies are pricing the off-taker's ability to pay through the contract term. The asset is the backstop, not the engine.
+User pointed to Dave Friedman's CoreWeave debt article as the source of the inversion. The relevant claim is that GPU-backed debt is better understood through contract-credit pricing, with the GPU acting as the recovery floor. Short quoted fragment: "the backstop, not the engine."
 
 ## Durable Takeaway
 
-GPU-backed debt may be mislabeled if described as pure asset-backed finance. The debt-service engine is the offtake contract and the credit quality of the counterparty; the GPU matters because it provides recoverable downside value if the contract breaks.
+GPU-backed debt may be mislabeled if described as pure asset-backed finance. The debt-service engine is the offtake contract and the credit quality of the counterparty; the GPU matters because it provides recoverable downside value if the contract breaks. Friedman's CoreWeave DDTL 4.0 / 5.0 comparison gives the public-market print, while the USD.AI call gives the lender-underwriting confirmation.
 
 ## Promoted Insights
 
@@ -27,5 +28,8 @@ GPU-backed debt may be mislabeled if described as pure asset-backed finance. The
 
 ## Links
 
+- Sources: [[coreweave-issued-yet-more-debt-2026-05-28|CoreWeave Issued Yet More Debt]]
 - Areas: [[gpu-finance|GPU Finance]]
+- People: [[dave-friedman|Dave Friedman]]
+- Orgs: [[coreweave|CoreWeave]]
 - Related Insights: [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]], [[lender-gpu-valuations-need-recovery-floor-not-fair-market-value|Lender GPU valuations need recovery floor, not fair market value]]

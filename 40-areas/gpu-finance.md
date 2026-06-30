@@ -16,7 +16,7 @@ tags: [gpu, lending, infrastructure]
 
 GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
-The sharper inversion is that "GPU-backed debt" may be contract-backed debt with GPU collateral as the recovery floor. The rating-agency and lender problem is therefore the combined underwriting of offtaker payment ability, contract durability, SLA performance, and hardware recovery value. The asset is the backstop, not the engine.
+The sharper inversion, from Dave Friedman's CoreWeave DDTL analysis and independently confirmed by the USD.AI call, is that "GPU-backed debt" may be contract-backed debt with GPU collateral as the recovery floor. The rating-agency and lender problem is therefore the combined underwriting of offtaker payment ability, contract durability, SLA performance, and hardware recovery value. The asset is the backstop, not the engine.
 
 Compute-finance is now the deliberate search space. Individual theses should be managed as probes inside a problem portfolio, not as isolated all-or-nothing pivots. Novation dying is one probe down in a chosen domain; the context, relationships, and stack map remain compounding capital.
 

@@ -14,7 +14,7 @@ tags: [gpu, derivatives, source]
 
 ## Context
 
-Dave Friedman is a relevant public source for GPU/neocloud finance and compute market structure. His Substack appeared in Dylan's GPU financing blog/source corpus. His 2026-06-12 article on compute perps and 2026-06-11 article on compute commoditization produced several durable market-design claims.
+Dave Friedman is a relevant public source for GPU/neocloud finance and compute market structure. His Substack appeared in Dylan's GPU financing blog/source corpus. His 2026-06-12 article on compute perps and 2026-06-11 article on compute commoditization produced several durable market-design claims. His 2026-05-28 CoreWeave debt article is the public-market source for the claim that GPU-backed debt is effectively contract-backed debt with hardware collateral as recovery floor.
 
 ## Relationship
 
@@ -34,6 +34,7 @@ No direct relationship captured in the vault yet.
 
 - [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
 - [[can-compute-commoditize-if-its-not-fungible-2026-06-11|Can Compute Commoditize if it's Not Fungible?]]
+- [[coreweave-issued-yet-more-debt-2026-05-28|CoreWeave Issued Yet More Debt]]
 - [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]
 
 ## Related Insights
