@@ -1,6 +1,6 @@
 # Dylan Notes
 
-This is Dylan's local-first Obsidian vault and Git-backed insight store.
+This is Dylan's local-first Obsidian vault, Git-backed insight store, and public Quartz notes site.
 
 The vault is **insight-driven**. Raw notes, transcripts, source captures, attachments, and scratch material are welcome, but they are secondary evidence. The primary durable object is an insight: a claim or learning that changes a belief, records a reusable pattern, preserves a decision, or captures context likely to matter later.
 
@@ -24,8 +24,11 @@ The vault is **insight-driven**. Raw notes, transcripts, source captures, attach
 - Codex and Claude Desktop are the capture and curation harness.
 - Obsidian is the reading and browsing UI.
 - Local Git is the audit trail and chronology.
-- There is no GitHub remote in v0.
-- Agents commit after every confident capture or update.
+- GitHub is the public remote and GitHub Pages host.
+- Quartz renders the public site at <https://dylanduyvu.github.io/>.
+- Agents commit and push after every confident capture or update.
+- Normal conversation can be captured when it creates a durable delta: a changed belief, claim, decision, reusable framing, open question, or next test.
+- Use `npm run publish -- "<message>"` for the standard build/stage/commit/push path.
 
 ## Core Rules
 
@@ -36,4 +39,6 @@ The vault is **insight-driven**. Raw notes, transcripts, source captures, attach
 - Store full raw context and attachments when practical.
 - Maintain sparse project/domain/people/org hubs automatically.
 - Do not create daily notes or a capture log in v0.
+- Do not publish casual chatter or random `.obsidian/` settings drift.
+- Remember that anything committed to this repo is public on GitHub, even if Quartz does not render it.
 - Do not store raw credentials, private keys, access tokens, passwords, or seed phrases.

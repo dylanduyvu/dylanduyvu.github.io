@@ -4,9 +4,24 @@ This vault is Dylan's local-first, Git-backed, high-fidelity insight store at `~
 
 ## Mission
 
-Act as the capture and curation harness. Extract durable insights, preserve full evidence, maintain sparse retrieval hubs, and commit every capture/update to local Git.
+Act as the capture and curation harness. Extract durable insights, preserve full evidence, maintain sparse retrieval hubs, and commit/push every confident capture or update so the public Quartz site stays current.
 
 The vault is insight-driven. Raw notes, transcripts, stream-of-consciousness material, source captures, and attachments are allowed, but they are evidence and raw material. The main durable object is an insight: a claim or learning that changes a belief, records a pattern, names a heuristic, preserves a decision, or captures context likely to matter later.
+
+## Conversation Capture
+
+Not all valuable material arrives as an explicit "extract/store" request. During normal back-and-forth, listen for durable deltas:
+
+- a changed belief or model update
+- a claim worth retrieving later
+- a project decision
+- a reusable framing, heuristic, or pattern
+- an open question, test, or research direction
+- a non-obvious connection across projects, people, orgs, or sources
+
+When a durable delta appears, capture the delta, not the transcript noise. If useful, create a `50-sources/` chat/source note for the conversation context, then promote the durable takeaways into insight notes and hubs. If Dylan says "capture that", "save the delta", "checkpoint this", or asks what should go into Obsidian, treat that as an explicit capture trigger.
+
+Do not capture casual chatter, transient preferences, or half-formed material unless it is useful as an inbox hunch. If Dylan says "don't save this" or "don't publish this", do not commit/push it.
 
 ## Storage Rules
 
@@ -87,15 +102,19 @@ Use Obsidian wiki links that resolve to the actual filename. Because most notes 
 
 Do not link only by the H1/title when the filename is slugified, or Obsidian may create a duplicate note.
 
-## Git
+## Git And Publishing
 
-This vault is local Git only in v0.
+This vault is local-first, but it now has a public GitHub remote and Quartz/GitHub Pages frontend.
 
-- Do not set a GitHub remote unless Dylan explicitly asks.
+- Remote: `https://github.com/dylanduyvu/dylanduyvu.github.io.git`
+- Public site: `https://dylanduyvu.github.io/`
+- GitHub Actions rebuilds and deploys Quartz after every push to `main`.
 - Do not use the Obsidian Git plugin in v0.
-- Commit after every capture/update by default.
+- Commit and push after every confident capture/update by default.
 - Git history is the capture log.
 - Use boring, explicit commit messages.
+- Prefer `npm run publish -- "<message>"` for the final build/stage/commit/push loop.
+- Do not stage random `.obsidian/` UI/plugin setting drift during publishing unless the setting change is intentional and relevant.
 
 Examples:
 
@@ -104,17 +123,18 @@ insight: add bare compute contracts no recovery claim
 source: capture USD.AI interview raw notes
 project: update gpu compute novation current state
 insight: mark novation demand claim weakened
+publish: update public notes harness
 ```
 
 ## Privacy
 
-This vault should include everything useful at the highest fidelity possible, including sensitive personal/professional material. Still do not store raw credentials, private keys, access tokens, passwords, or seed phrases unless Dylan explicitly designs a secrets workflow.
+The current GitHub repo is public. Anything committed and pushed is public on GitHub, even if Quartz does not render it on the site. Before committing sensitive personal/professional material, either ask Dylan, keep it out of this public repo, or create a separate private workflow. Still do not store raw credentials, private keys, access tokens, passwords, or seed phrases unless Dylan explicitly designs a secrets workflow.
 
 ## Prohibited Without Approval
 
 - Broad reorganization.
 - Deleting notes or attachments.
 - Rewriting historical claims to hide old beliefs.
-- Adding remote sync.
+- Changing publishing scope, visibility, or remote configuration.
 - Storing secrets.
 - Creating daily notes or a separate capture log.

@@ -1,0 +1,54 @@
+---
+type: meta
+status: active
+created: 2026-06-30
+updated: 2026-06-30
+tags:
+  - publishing
+  - quartz
+  - git
+---
+
+# Publishing Protocol
+
+The vault is local-first, but the current repo is public and publishes through Quartz/GitHub Pages.
+
+- Repo: `https://github.com/dylanduyvu/dylanduyvu.github.io`
+- Site: `https://dylanduyvu.github.io/`
+- Workflow: `.github/workflows/deploy.yml`
+
+## Default Agent Loop
+
+When Codex or Claude makes a confident capture/update:
+
+1. Search before create.
+2. Update or create the relevant source, insight, project, area, people, and org notes.
+3. Keep hubs sparse.
+4. Run `npm run publish -- "<boring explicit commit message>"`.
+5. Confirm the GitHub Pages deploy if the user is waiting on the public site.
+
+`npm run publish` builds Quartz locally, stages publishable changes, commits them, and pushes to `origin/main`. GitHub Actions then rebuilds and deploys the public site.
+
+## Conversation Capture
+
+For normal back-and-forth, capture durable deltas rather than the whole conversation by default. Good capture candidates include:
+
+- changed beliefs
+- claim-style insights
+- project decisions
+- reusable frames or heuristics
+- open questions
+- next tests
+- links between people, orgs, projects, and claims
+
+If the raw chat context is itself important, create a `50-sources/` source note for the conversation and link promoted insights back to it.
+
+## Publishing Guardrails
+
+The GitHub repo is public. Anything committed and pushed is public on GitHub, even if Quartz ignores it or does not render it.
+
+- Do not publish material Dylan marks as private or says not to save.
+- Ask before committing sensitive personal/professional material.
+- Do not commit raw credentials, private keys, access tokens, passwords, or seed phrases.
+- Do not stage random `.obsidian/` UI/plugin setting drift during routine publishing.
+- Do not change repo visibility, remotes, or publishing scope without approval.
