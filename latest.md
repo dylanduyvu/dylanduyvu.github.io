@@ -8,18 +8,18 @@ updated: 2026-07-01
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 1, 2026, 12:06 PM EDT
+Generated: Jul 1, 2026, 12:12 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 50 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 51 note commits. The most recent movement is:
 
+- Source capture: capture bernie sla reply.
 - Insight update: log sla product form factor fork.
 - Insight update: log nvidia sla verification incentive.
 - Source capture: capture barkr sla reply.
 - Project decision: log sla outreach sent.
 - Insight update: add hyperscaler compute supply nuance.
-- Insight update: log offtake centralization.
 
 ## Current Hub Signals
 
@@ -31,6 +31,21 @@ In the past 7 days, the public vault changed through 50 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jul 1, 2026, 12:12 PM EDT - source: capture bernie sla reply
+
+Source capture: capture bernie sla reply.
+
+Changed notes:
+  - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
+  - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
+  - [[gpu-finance|GPU Finance]]
+  - [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
+  - [[bernie-margulies|Bernie Margulies]]
+  - [[american-compute|American Compute]]
+  - and 1 more
 
 ### Jul 1, 2026, 12:06 PM EDT - insight: log sla product form factor fork
 
@@ -161,22 +176,11 @@ Changed notes:
   - [[american-compute|American Compute]]
   - [[barkr|Barkr]]
 
-### Jun 30, 2026, 12:16 PM EDT - project: shelve gpu compute novation
-
-Project decision: shelve gpu compute novation.
-
-Changed notes:
-  - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
-  - [[clean-kill-criteria-only-work-if-clean-kills-stop-work|Clean kill criteria only work if clean kills stop work]]
-  - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[gpu-compute-novation|GPU Compute Novation]]
-  - [[gpu-finance|GPU Finance]]
-  - [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]]
-  - [[nebius|Nebius]]
+_Showing the newest 12 of 13 updates in this window._
 
 ## Past 7 Days
 
+- Jul 1, 2026: source: capture bernie sla reply - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
 - Jul 1, 2026: insight: log sla product form factor fork - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 1, 2026: insight: log nvidia sla verification incentive - [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
 - Jul 1, 2026: source: capture barkr sla reply - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
@@ -201,12 +205,12 @@ Changed notes:
 - Jun 29, 2026: insight: add dated compute derivatives claim - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
 - Jun 29, 2026: source: capture compute derivatives perps article - [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
 - Jun 29, 2026: hubs: link GPU financing blog source list - [[gpu-compute-novation|GPU Compute Novation]]
-- Jun 29, 2026: source: capture GPU financing blog list - [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]
 
-_Showing the newest 25 of 50 updates in this window._
+_Showing the newest 25 of 51 updates in this window._
 
 ## Past 30 Days
 
+- Jul 1, 2026: source: capture bernie sla reply - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
 - Jul 1, 2026: insight: log sla product form factor fork - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 1, 2026: insight: log nvidia sla verification incentive - [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
 - Jul 1, 2026: source: capture barkr sla reply - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
@@ -231,6 +235,5 @@ _Showing the newest 25 of 50 updates in this window._
 - Jun 29, 2026: insight: add dated compute derivatives claim - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
 - Jun 29, 2026: source: capture compute derivatives perps article - [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
 - Jun 29, 2026: hubs: link GPU financing blog source list - [[gpu-compute-novation|GPU Compute Novation]]
-- Jun 29, 2026: source: capture GPU financing blog list - [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]
 
-_Showing the newest 25 of 50 updates in this window._
+_Showing the newest 25 of 51 updates in this window._
