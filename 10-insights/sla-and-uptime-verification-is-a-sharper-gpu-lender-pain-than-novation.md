@@ -35,6 +35,8 @@ Bernie's 2026-07-01 reply changes the shape of the wedge: some lenders may not b
 
 Dylan's 2026-07-01 analysis adds an important constraint: SLA monitoring is backward-looking. It cannot directly prove future performance for hardware that has not been built. The forward-looking value has to come from prior operator history, credible underwriting proxies, insurance/coverage structure, lender levers, or future financing.
 
+Bernie's follow-up weakens the "make unknown operators fundable through SLA evidence" version. Asked how unknown / less-proven operators get funded anyway, he pointed to more equity in the deal: for example, $5M of operator cash against $10M of equipment. That suggests the exception-case lever may be capital structure / lower lender exposure, not verified uptime.
+
 ## Evidence
 
 - 2026-06-29: When asked what problem USD.AI wishes someone would solve, Harry pointed to ensuring contract-related operator performance.
@@ -49,6 +51,7 @@ Dylan's 2026-07-01 analysis adds an important constraint: SLA monitoring is back
 - 2026-07-01: Bernie said a lender he spoke with normally passes on unknown or unproven operators when SLA/operator performance is uncertain.
 - 2026-07-01: Bernie suggested Dylan could help lenders evaluate the operators they currently skip.
 - 2026-07-01: Dylan identified the core time mismatch: live monitoring only measures operating clusters, so pre-build underwriting needs prior performance data or proxies.
+- 2026-07-01: Asked how unknown / less-proven operators get funded anyway, Bernie said they bring more equity to the deal, such as $5M cash against $10M of equipment.
 
 ## Implications
 
@@ -66,6 +69,7 @@ Dylan's 2026-07-01 analysis adds an important constraint: SLA monitoring is back
 - A useful product may look more like verification, monitoring, underwriting infrastructure, or insurance enablement than contract trading.
 - Treat existing/repeat operators as the cleaner first wedge; their current deployments can become evidence for the next facility, refi, or insurance policy.
 - Do not pitch pure live monitoring unless the lender/insurer has a lever: delayed draws, covenants, reserves, borrowing-base eligibility, claims, renewals, repricing, or future underwriting.
+- Test whether SLA/ops diligence can reduce required equity contribution or improve LTV. If it cannot, the priced wedge may be capital structure rather than verification.
 
 ## Counterpoints / Uncertainty
 
@@ -76,6 +80,7 @@ Dylan's 2026-07-01 analysis adds an important constraint: SLA monitoring is back
 - Data access, confidentiality, and liability could make third-party verification hard.
 - The "credit insurance or business interruption" framing may point away from pure software verification and toward an insurance-enabled product that requires balance sheet, underwriting, or carrier partnerships.
 - SLA monitoring is backward-looking; totally greenfield operators with no prior deployment history may still be skipped unless there are strong proxies, exclusions, deductibles, or sponsor support.
+- Bernie has now named equity cushion, not SLA proof, as the observed mechanism for financing less-proven operators. This weakens the "turn skipped operators into underwritable operators" version of the thesis.
 - The broader compute-finance search space has multiple candidate problems, so SLA needs to earn foreground attention rather than inherit it from novation's failure.
 
 ## Links
@@ -85,7 +90,7 @@ Dylan's 2026-07-01 analysis adds an important constraint: SLA monitoring is back
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
 - Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]], [[american-compute|American Compute]], [[nvidia|NVIDIA]]
-- Related Insight: [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]], [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
+- Related Insight: [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]], [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]], [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
 
 ## Updates
 
@@ -124,3 +129,7 @@ Bernie replied that most lenders do not dig deeply into SLA performance or opera
 ### 2026-07-01
 
 Added the backward-looking caveat: live SLA monitoring cannot prove the future performance of unbuilt hardware. The stronger product shape is underwriting plus monitoring infrastructure for repeat operators, lender levers, insurance claims, renewals, and future financing rather than pure dashboard monitoring.
+
+### 2026-07-01
+
+Bernie's follow-up weakened the SLA wedge further: when less-proven operators get funded anyway, he has seen them bring more equity to the deal, e.g. $5M cash against $10M of equipment. This shifts the next test from "can SLA proof make unknown operators fundable?" to "can SLA/ops diligence actually reduce the required equity cushion, improve LTV, or change terms?"

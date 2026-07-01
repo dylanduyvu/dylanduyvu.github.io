@@ -30,6 +30,7 @@ American Compute is strategically relevant because it sells residual value insur
 - Bernie volunteered locked compute/offtake resale and energy/interconnection as possible problem areas.
 - Bernie later said lenders often do not dig deeply into SLA/operator performance; they use prior deployments as a proxy and may pass on unknown or unproven operators.
 - The SLA reply points toward repeat-operator underwriting: monitored prior deployments could make an operator more financeable or insurable for the next deployment.
+- Bernie then said unknown / less-proven operators can get funded by bringing more equity, e.g. $5M cash against $10M of equipment.
 
 ## Related People
 
@@ -53,6 +54,7 @@ American Compute is strategically relevant because it sells residual value insur
 - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
+- [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
 
 ## Related Projects / Areas
 

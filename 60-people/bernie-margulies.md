@@ -26,6 +26,8 @@ Bernie replied that most lenders do not dig deeply into SLAs or operator ability
 
 Dylan's follow-up analysis: Bernie's "prior deployments" point matters because SLA monitoring is backward-looking. The clean first wedge may be existing/repeat operators whose monitored current deployments can support financing or insurance for the next deployment, not totally greenfield operators with no history.
 
+Bernie later clarified the exception case: he has seen unknown / less-proven operators get funded when they bring more equity, e.g. $10M of equipment with $5M of operator cash. That points toward equity cushion / lower lender exposure as the workaround, not necessarily SLA diligence.
+
 ## Useful Signals
 
 - He framed American Compute as RVI for GPU servers, with reinsurance partners taking most risk and American Compute earning premium share.
@@ -38,6 +40,7 @@ Dylan's follow-up analysis: Bernie's "prior deployments" point matters because S
 - He volunteered locked compute/offtake resale and energy/interconnection as possible areas for Dylan to explore.
 - On SLA/uptime, he said lenders may skip unknown or unproven operators instead of evaluating them deeply.
 - His SLA reply implies that monitored prior deployments may be the bridge from "unknown operator" to underwritable operator.
+- Follow-up weakened that bridge: the funded exception he has seen was solved by more operator equity.
 
 ## Related Sources
 
@@ -55,6 +58,7 @@ Dylan's follow-up analysis: Bernie's "prior deployments" point matters because S
 - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
+- [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
 
 ## Related Projects / Areas
 

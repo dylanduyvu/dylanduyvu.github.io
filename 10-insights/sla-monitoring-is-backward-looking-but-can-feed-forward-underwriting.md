@@ -25,12 +25,15 @@ This constrains the SLA opportunity. A standalone lender dashboard is weak if th
 
 It also narrows the likely first market. The clean first customers are probably repeat operators with current or prior deployments, not totally unknown greenfield operators. Existing monitored deployments become evidence for the next loan, refi, larger facility, or insurance policy.
 
+Bernie's follow-up adds a harsher test: less-proven operators may get funded by bringing more equity, not by producing better SLA evidence. For SLA monitoring to matter commercially, it likely needs to reduce required equity, improve LTV, unlock insurance/guarantee eligibility, or otherwise change financing terms.
+
 ## Evidence
 
 - 2026-06-29: USD.AI said SLA/uptime assurance could let them price more aggressively by reducing top-line revenue risk.
 - 2026-07-01: Thomas at Barkr framed the product shape as credit insurance or business interruption against the offtaker / contract cash-flow risk, not as a hardware-value warranty input.
 - 2026-07-01: Bernie at American Compute said lenders usually ask whether an operator has done prior deployments and may pass on unknown or unproven operators.
 - 2026-07-01: Dylan identified the core time mismatch: if the hardware is not operating yet, live monitoring cannot directly establish whether the future SLA will be met.
+- 2026-07-01: Bernie said unknown / less-proven operators can get funded by bringing more equity, e.g. $5M cash on $10M of equipment.
 
 ## Implications
 
@@ -40,6 +43,7 @@ It also narrows the likely first market. The clean first customers are probably 
 - SLA insurance can be agreed or conditionally committed before operation, but coverage probably attaches after commissioning or go-live verification.
 - The product should probably be framed as underwriting plus monitoring infrastructure for an insurer, lender, or guarantee provider, not only a dashboard.
 - A direct discovery test should ask whether verified prior performance would change approval, terms, insurance eligibility, or coverage for the next deployment.
+- The sharpest commercial test is whether verified SLA/ops history lowers the equity cushion or lender protection needed for a less-proven operator.
 
 ## Counterpoints / Uncertainty
 
@@ -47,11 +51,13 @@ It also narrows the likely first market. The clean first customers are probably 
 - Some lenders may value live monitoring for internal risk management even without strong contractual levers, but willingness to pay is likely lower.
 - A high-quality insurer or lender may already have its own due diligence and monitoring process.
 - Totally greenfield operators might still be insurable with enough exclusions, deductibles, pricing, or sponsor support, but that is probably a narrower or less attractive initial wedge.
+- If lenders solve operator uncertainty by requiring much more equity, a monitoring product may be nice-to-have unless it moves that capital requirement.
 
 ## Links
 
 - Source: [[codex-chat-sla-insurance-monitoring-2026-07-01|Codex chat on SLA insurance and monitoring]]
 - Related Insight: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- Related Insight: [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
 - Related Source: [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]]
 - Related Source: [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
 - Area: [[gpu-finance|GPU Finance]]
@@ -61,3 +67,7 @@ It also narrows the likely first market. The clean first customers are probably 
 ### 2026-07-01
 
 Initial capture from Dylan's reasoning after Thomas's SLA insurance suggestion and Bernie's lender-evaluation reply.
+
+### 2026-07-01
+
+Added Bernie's equity-cushion follow-up. Less-proven operators may get funded by bringing more cash into the deal, which means the key test is whether SLA/ops evidence can reduce required equity or improve lender terms.
