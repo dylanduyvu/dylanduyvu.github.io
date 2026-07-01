@@ -8,18 +8,18 @@ updated: 2026-07-01
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 1, 2026, 1:12 PM EDT
+Generated: Jul 1, 2026, 1:56 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 52 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 53 note commits. The most recent movement is:
 
+- Insight update: log equity cushion weakens sla wedge.
 - Insight update: log sla monitoring underwriting caveat.
 - Source capture: capture bernie sla reply.
 - Insight update: log sla product form factor fork.
 - Insight update: log nvidia sla verification incentive.
 - Source capture: capture barkr sla reply.
-- Project decision: log sla outreach sent.
 
 ## Current Hub Signals
 
@@ -31,6 +31,20 @@ In the past 7 days, the public vault changed through 52 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jul 1, 2026, 1:56 PM EDT - insight: log equity cushion weakens sla wedge
+
+Insight update: log equity cushion weakens sla wedge.
+
+Changed notes:
+  - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
+  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
+  - [[gpu-finance|GPU Finance]]
+  - [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
+  - [[bernie-margulies|Bernie Margulies]]
+  - [[american-compute|American Compute]]
 
 ### Jul 1, 2026, 1:12 PM EDT - insight: log sla monitoring underwriting caveat
 
@@ -166,19 +180,9 @@ Changed notes:
   - [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
   - [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
 
-### Jun 30, 2026, 1:25 PM EDT - strategy: log compute finance problem portfolio
-
-strategy: log compute finance problem portfolio.
-
-Changed notes:
-  - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
-  - [[gpu-finance|GPU Finance]]
-  - [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]]
-
 ## Past 7 Days
 
+- Jul 1, 2026: insight: log equity cushion weakens sla wedge - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
 - Jul 1, 2026: insight: log sla monitoring underwriting caveat - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
 - Jul 1, 2026: source: capture bernie sla reply - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
 - Jul 1, 2026: insight: log sla product form factor fork - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
@@ -203,12 +207,12 @@ Changed notes:
 - Jun 29, 2026: insight: add compute derivatives freight analogy - [[compute-derivatives-should-look-like-freight-and-power-not-crypto|Compute derivatives should look like freight and power, not crypto]]
 - Jun 29, 2026: insight: add compute perishability curve claim - [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]]
 - Jun 29, 2026: insight: add dated compute derivatives claim - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
-- Jun 29, 2026: source: capture compute derivatives perps article - [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
 
-_Showing the newest 25 of 52 updates in this window._
+_Showing the newest 25 of 53 updates in this window._
 
 ## Past 30 Days
 
+- Jul 1, 2026: insight: log equity cushion weakens sla wedge - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
 - Jul 1, 2026: insight: log sla monitoring underwriting caveat - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
 - Jul 1, 2026: source: capture bernie sla reply - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
 - Jul 1, 2026: insight: log sla product form factor fork - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
@@ -233,6 +237,5 @@ _Showing the newest 25 of 52 updates in this window._
 - Jun 29, 2026: insight: add compute derivatives freight analogy - [[compute-derivatives-should-look-like-freight-and-power-not-crypto|Compute derivatives should look like freight and power, not crypto]]
 - Jun 29, 2026: insight: add compute perishability curve claim - [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]]
 - Jun 29, 2026: insight: add dated compute derivatives claim - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
-- Jun 29, 2026: source: capture compute derivatives perps article - [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
 
-_Showing the newest 25 of 52 updates in this window._
+_Showing the newest 25 of 53 updates in this window._
