@@ -49,6 +49,7 @@ The NVIDIA mention suggests this may be more than lender-by-lender diligence. If
 - Do not treat Barkr as an upcoming call. The Barkr call already happened; Dylan sent async emails to Thomas at Barkr and Bernie at American Compute on 2026-07-01 about USD.AI's volunteered SLA pain.
 - Use their replies as the first double-purpose test: SLA replication plus "what pain are you seeing instead?" problem mining.
 - Treat Thomas's reply as partial validation and as a product-category correction: the pain may sit closer to credit insurance / business interruption / contract cash-flow protection than Barkr-style hardware warranty.
+- Dylan's initial product-shape intuition was SaaS / dashboard / FDE around trusted SLA visibility; Thomas's reply opens an insurance or business-interruption wrapper branch worth testing.
 - Follow up with Thomas to clarify what NVIDIA raised and whether the buyer/problem owner is lender, operator, offtaker, or insurer.
 - Map the required evidence stack: telemetry, contract terms, monitoring data, incident reporting, revenue-credit exposure, and lender-facing auditability.
 - A useful product may look more like verification, monitoring, underwriting infrastructure, or insurance enablement than contract trading.
@@ -96,3 +97,7 @@ Dylan sent the async SLA/uptime follow-ups to Thomas/Barkr and Bernie/American C
 ### 2026-07-01
 
 Thomas replied that SLA/uptime is separate from Barkr's warranty process, but he has heard it as an issue and NVIDIA brought up something similar. This is partial replication outside USD.AI and a product-shape correction toward credit insurance / business interruption rather than hardware-value warranty.
+
+### 2026-07-01
+
+Logged Dylan's current product-shape fork: initial instinct was SaaS / dashboard / FDE for trusted SLA visibility, but Thomas's insurance framing may be a meaningful alternative wrapper.

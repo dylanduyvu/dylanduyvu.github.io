@@ -59,6 +59,7 @@ A second external signal (2026-07-01) cuts at the supply/competitive layer: Meta
 - Risk transfer products can wrap GPU residual value through warranties and reinsurance.
 - Lenders may price defensively when they cannot verify operator performance against SLAs.
 - SLA/uptime verification may need an insurance or business-interruption wrapper, not just a monitoring dashboard.
+- The current product-shape fork is SaaS / dashboard / FDE for trusted visibility versus insurance / business interruption as the commercial wrapper.
 - NVIDIA raising a similar issue is a stronger ecosystem signal than a single lender complaint.
 - NVIDIA may care because bankable contracts finance GPU fleet expansion; SLA trust is one input into contract bankability.
 - GPU collateral marks become more commercially useful when expressed as recoverable floor value.
@@ -131,6 +132,7 @@ A second external signal (2026-07-01) cuts at the supply/competitive layer: Meta
 - Does SLA/uptime verification replicate across Barkr, other lenders, insurers, or offtakers?
 - What exactly did NVIDIA raise around SLA/uptime, and with whom?
 - Does the paid product need to be credit insurance / business interruption, or can verification alone change terms?
+- Is the right first product SaaS / dashboard / FDE, insurance, or an insurance-enabled verification product?
 - What structure would make bare compute-contract underwriting financeable despite no hardware recovery?
 - Which compute-finance candidate problem has the cheapest fatal test next?
 - How does GPU residual-value insurance interact with performance risk and offtake credit risk?

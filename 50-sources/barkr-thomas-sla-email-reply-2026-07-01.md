@@ -38,6 +38,10 @@ NVIDIA may care because GPU sales depend on the financing and deployment chain w
 
 NVIDIA may also care because weak operator performance can reflect badly on GPU cloud deployments even if the chips themselves are not the problem.
 
+## Product Shape Fork
+
+Dylan's initial instinct was some kind of SaaS / dashboard / FDE form factor for trusted SLA visibility. Thomas's reply suggests insurance or business interruption could be an interesting wrapper, either instead of or alongside pure verification software.
+
 ## Links
 
 - Related Insights: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]], [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
