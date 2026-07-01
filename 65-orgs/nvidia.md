@@ -20,6 +20,8 @@ NVIDIA is the core GPU supplier and reference-spec anchor across Dylan's compute
 
 - Dave Friedman framed DGX reference spec as a potential compute grade rather than a market hub.
 - Thomas at Barkr said NVIDIA had brought up something similar to operator SLA / uptime verification as an issue.
+- Working inference: NVIDIA may care because operator reliability affects whether customer contracts are bankable, and bankable contracts help finance large GPU fleet purchases.
+- A second reason NVIDIA may care: poor operator uptime can damage trust in GPU cloud deployments even when the underlying chips are not the failure point.
 
 ## Related Sources
 
@@ -30,6 +32,7 @@ NVIDIA is the core GPU supplier and reference-spec anchor across Dylan's compute
 
 - [[dgx-reference-spec-is-a-compute-grade-not-a-market-hub|DGX reference spec is a compute grade, not a market hub]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
 - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
 
 ## Related Projects / Areas

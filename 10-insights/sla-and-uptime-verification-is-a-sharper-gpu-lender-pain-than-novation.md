@@ -29,6 +29,8 @@ The 2026-06-30 compute-finance portfolio memo adds an important constraint: SLA 
 
 Thomas's 2026-07-01 reply gives the first replication outside USD.AI, but also sharpens the lane: this is separate from Barkr's hardware warranty / valuation product and may map better to credit insurance or business interruption against the offtaker / contract cash-flow risk.
 
+The NVIDIA mention suggests this may be more than lender-by-lender diligence. If unreliable operator delivery makes customer contracts less bankable, the issue can bottleneck GPU fleet financing and therefore downstream chip demand.
+
 ## Evidence
 
 - 2026-06-29: When asked what problem USD.AI wishes someone would solve, Harry pointed to ensuring contract-related operator performance.
@@ -67,6 +69,7 @@ Thomas's 2026-07-01 reply gives the first replication outside USD.AI, but also s
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
 - Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]], [[american-compute|American Compute]], [[nvidia|NVIDIA]]
+- Related Insight: [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
 
 ## Updates
 
