@@ -27,6 +27,8 @@ It also narrows the likely first market. The clean first customers are probably 
 
 Bernie's follow-up adds a harsher test: less-proven operators may get funded by bringing more equity, not by producing better SLA evidence. For SLA monitoring to matter commercially, it likely needs to reduce required equity, improve LTV, unlock insurance/guarantee eligibility, or otherwise change financing terms.
 
+Bernie's second follow-up sharpens the caution: extra equity can resolve almost any lender concern. That means an equity cushion is not clean evidence that SLA opacity is the binding issue. It is the generic lender answer to discomfort.
+
 Thomas's follow-up broadens the relevant metric set. The useful monitoring layer may not be SLA uptime alone; it may be usage and operating data that predicts default or distress. That makes live monitoring more coherent because the goal is not only proving a past SLA breach, but spotting risk early enough to change exposure, coverage, or terms.
 
 ## Evidence
@@ -36,6 +38,7 @@ Thomas's follow-up broadens the relevant metric set. The useful monitoring layer
 - 2026-07-01: Bernie at American Compute said lenders usually ask whether an operator has done prior deployments and may pass on unknown or unproven operators.
 - 2026-07-01: Dylan identified the core time mismatch: if the hardware is not operating yet, live monitoring cannot directly establish whether the future SLA will be met.
 - 2026-07-01: Bernie said unknown / less-proven operators can get funded by bringing more equity, e.g. $5M cash on $10M of equipment.
+- 2026-07-01: Bernie said extra equity can generally resolve any kind of lender concern.
 - 2026-07-01: Thomas clarified that a lender in a specific deal asked whether this kind of product existed.
 - 2026-07-01: Thomas said monitoring usage to predict default would be useful and that insurance depends on cost and accuracy.
 
@@ -48,6 +51,7 @@ Thomas's follow-up broadens the relevant metric set. The useful monitoring layer
 - The product should probably be framed as underwriting plus monitoring infrastructure for an insurer, lender, or guarantee provider, not only a dashboard.
 - A direct discovery test should ask whether verified prior performance would change approval, terms, insurance eligibility, or coverage for the next deployment.
 - The sharpest commercial test is whether verified SLA/ops history lowers the equity cushion or lender protection needed for a less-proven operator.
+- Compare diligence against the same capital structure. If more equity solves the concern regardless of telemetry, monitoring is not the primary lever.
 - Add usage/default-risk telemetry to the discovery scope; SLA may be one signal inside a broader distress-prediction product.
 
 ## Counterpoints / Uncertainty
@@ -57,6 +61,7 @@ Thomas's follow-up broadens the relevant metric set. The useful monitoring layer
 - A high-quality insurer or lender may already have its own due diligence and monitoring process.
 - Totally greenfield operators might still be insurable with enough exclusions, deductibles, pricing, or sponsor support, but that is probably a narrower or less attractive initial wedge.
 - If lenders solve operator uncertainty by requiring much more equity, a monitoring product may be nice-to-have unless it moves that capital requirement.
+- Because equity solves generic lender discomfort, do not treat equity-cushion cases as evidence of SLA-specific WTP without direct confirmation.
 - "Usage" is under-specified and needs buyer-language clarification before productizing.
 
 ## Links
@@ -82,3 +87,7 @@ Added Bernie's equity-cushion follow-up. Less-proven operators may get funded by
 ### 2026-07-01
 
 Added Thomas's follow-up clarification. The specific signal came from a lender in a deal, and the sharper monitoring frame may be usage/default-risk telemetry rather than pure SLA uptime.
+
+### 2026-07-01
+
+Added Bernie's second equity follow-up. Extra equity is a generic lender-risk mitigant, so SLA/ops monitoring has to prove it can change terms relative to the same equity cushion, not just explain why lenders want more borrower capital.

@@ -33,6 +33,14 @@ Bernie replied on 2026-07-01:
 
 > Yes I have. They bring more equity to the deal. E.g. $10M of equipment, the operator brings $5M of cash themselves.
 
+## Second Follow-up Reply
+
+Dylan asked whether the extra equity is the blunt way to get comfortable when the operator is less proven, instead of trying to diligence whether they will be able to deliver against the SLA once live.
+
+Bernie replied on 2026-07-01:
+
+> Yep - generally, extra equity can resolve any kind of lender concern.
+
 ## Extracted Signal
 
 - Lenders often do not deeply underwrite SLA mechanics or an operator's ability to meet SLAs.
@@ -41,7 +49,9 @@ Bernie replied on 2026-07-01:
 - The wedge may be lender evaluation infrastructure for skipped operators, not only pricing improvement for already-bankable operators.
 - This supports SLA/uptime verification as a real diligence gap, but suggests the immediate buyer value may be deal eligibility / approval rather than just better terms.
 - The follow-up reply weakens the pure SLA wedge: the exception case Bernie has seen gets solved by more equity / lower lender exposure, not necessarily better SLA evidence.
+- Bernie's second follow-up makes the equity point broader: extra equity is a general-purpose lender-risk mitigant, not a clean signal that SLA/operator transparency is the binding gap.
 - A sharper test is whether SLA/ops diligence can reduce the required equity cushion or improve LTV, rather than whether lenders abstractly care about uptime.
+- The sharper counter-test is whether better operator diligence changes terms beyond what generic deleveraging already solves.
 
 ## Links
 

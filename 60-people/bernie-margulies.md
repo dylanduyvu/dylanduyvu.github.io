@@ -28,6 +28,8 @@ Dylan's follow-up analysis: Bernie's "prior deployments" point matters because S
 
 Bernie later clarified the exception case: he has seen unknown / less-proven operators get funded when they bring more equity, e.g. $10M of equipment with $5M of operator cash. That points toward equity cushion / lower lender exposure as the workaround, not necessarily SLA diligence.
 
+Bernie then generalized the point: extra equity can resolve any kind of lender concern. That makes the equity answer less diagnostic for SLA specifically and more like generic lender risk mitigation.
+
 ## Useful Signals
 
 - He framed American Compute as RVI for GPU servers, with reinsurance partners taking most risk and American Compute earning premium share.
@@ -41,6 +43,7 @@ Bernie later clarified the exception case: he has seen unknown / less-proven ope
 - On SLA/uptime, he said lenders may skip unknown or unproven operators instead of evaluating them deeply.
 - His SLA reply implies that monitored prior deployments may be the bridge from "unknown operator" to underwritable operator.
 - Follow-up weakened that bridge: the funded exception he has seen was solved by more operator equity.
+- Second follow-up weakened the SLA-specific read further: extra equity can resolve generic lender concerns, not only operator/SLA uncertainty.
 
 ## Related Sources
 

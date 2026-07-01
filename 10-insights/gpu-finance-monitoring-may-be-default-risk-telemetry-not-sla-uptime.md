@@ -34,6 +34,7 @@ It also weakens the NVIDIA-specific interpretation. The better read is not "NVID
 - 2026-07-01: Thomas framed the useful signal as monitoring usage to predict default.
 - 2026-07-01: Thomas said wrapping this with insurance could be possible, but cost and accuracy are the bottlenecks.
 - 2026-07-01: Bernie at American Compute said less-proven operators can get funded by bringing more equity, which means monitoring has to prove it changes required cushion, LTV, eligibility, or coverage.
+- 2026-07-01: Bernie later clarified that extra equity can generally resolve any kind of lender concern.
 
 ## Implications
 
@@ -42,6 +43,7 @@ It also weakens the NVIDIA-specific interpretation. The better read is not "NVID
 - Data centers may be a separate buyer/user because they care about tenant/operator health even without a loan in the structure.
 - Insurance is plausible only if the telemetry is accurate enough to underwrite and price. Otherwise it remains a monitoring product or diligence tool, not a risk-transfer product.
 - The best discovery question is probably not "would you pay for SLA verification?" It is "what operating data would let you predict distress/default early enough to change terms, coverage, or exposure?"
+- Because equity is a generic risk solvent, ask whether the data changes terms at the same equity level, not only whether lenders would ask for more equity when they are uncomfortable.
 
 ## Counterpoints / Uncertainty
 
@@ -49,6 +51,7 @@ It also weakens the NVIDIA-specific interpretation. The better read is not "NVID
 - "Usage" needs clarification: it could mean GPU utilization, contracted-capacity drawdown, customer revenue, workload stability, cash-flow proxy, or something else.
 - Existing data center and observability tooling may already capture raw metrics; the missing piece may be lender trust, standardization, interpretation, or liability.
 - If better monitoring cannot change financing terms, insurance price, required equity, or operational intervention, the wedge may stay advisory.
+- Equity cushions may overwhelm the monitoring wedge if lenders can solve uncertainty by deleveraging instead of buying more information.
 
 ## Links
 
@@ -66,3 +69,7 @@ It also weakens the NVIDIA-specific interpretation. The better read is not "NVID
 ### 2026-07-01
 
 Initial capture from Thomas's follow-up clarification after Dylan asked what NVIDIA had raised. Logged as a pivot from pure SLA verification toward lender-grade usage/default-risk telemetry.
+
+### 2026-07-01
+
+Added Bernie's second equity clarification. The monitoring/default-risk product needs to prove it changes exposure, terms, or insurance relative to generic extra equity.

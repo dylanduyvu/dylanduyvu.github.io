@@ -31,6 +31,7 @@ American Compute is strategically relevant because it sells residual value insur
 - Bernie later said lenders often do not dig deeply into SLA/operator performance; they use prior deployments as a proxy and may pass on unknown or unproven operators.
 - The SLA reply points toward repeat-operator underwriting: monitored prior deployments could make an operator more financeable or insurable for the next deployment.
 - Bernie then said unknown / less-proven operators can get funded by bringing more equity, e.g. $5M cash against $10M of equipment.
+- Bernie then clarified that extra equity can generally resolve any kind of lender concern, so equity cushions are not clean evidence that SLA/operator transparency is the binding issue.
 
 ## Related People
 
