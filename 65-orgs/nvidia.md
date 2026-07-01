@@ -19,9 +19,10 @@ NVIDIA is the core GPU supplier and reference-spec anchor across Dylan's compute
 ## Useful Signals
 
 - Dave Friedman framed DGX reference spec as a potential compute grade rather than a market hub.
-- Thomas at Barkr said NVIDIA had brought up something similar to operator SLA / uptime verification as an issue.
-- Working inference: NVIDIA may care because operator reliability affects whether customer contracts are bankable, and bankable contracts help finance large GPU fleet purchases.
-- A second reason NVIDIA may care: poor operator uptime can damage trust in GPU cloud deployments even when the underlying chips are not the failure point.
+- Thomas at Barkr initially said NVIDIA had brought up something similar to operator SLA / uptime verification as an issue.
+- Thomas later clarified that the concrete product ask was not for NVIDIA per se. It came from a lender they work with in a specific deal.
+- Working inference, now weakened: NVIDIA may still care indirectly because operator reliability affects whether customer contracts are bankable, and bankable contracts help finance large GPU fleet purchases.
+- The stronger customer-discovery signal is lender-triggered demand for monitoring/default-risk telemetry, not direct NVIDIA demand.
 
 ## Related Sources
 
@@ -33,6 +34,7 @@ NVIDIA is the core GPU supplier and reference-spec anchor across Dylan's compute
 - [[dgx-reference-spec-is-a-compute-grade-not-a-market-hub|DGX reference spec is a compute grade, not a market hub]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
+- [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
 
 ## Related Projects / Areas

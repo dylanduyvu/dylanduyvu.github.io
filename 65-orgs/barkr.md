@@ -29,7 +29,10 @@ Barkr is strategically relevant because it prices hard assets used as loan colla
 - Munich Re backing matters heavily in sales to major institutions.
 - Barkr's guarantee structure may be easier for some banks to trust than insurance, depending on risk-transfer recognition and payout mechanics.
 - Thomas said operator SLA / uptime performance is separate from Barkr's warranty process, but he has heard it as an issue and NVIDIA brought up something similar.
+- Thomas later clarified that the concrete signal was not NVIDIA as the buyer/problem-owner; it was a lender in a specific deal asking whether such a product existed.
 - Thomas's product-shape instinct for SLA/uptime was credit insurance or business interruption against the offtaker, not hardware recovery-floor valuation.
+- Thomas broadened the useful data gap from SLA uptime to usage monitoring that predicts default.
+- Thomas thinks insurance around that monitoring is possible but hard, with cost and accuracy as the gating issues.
 - That framing makes the monitoring layer more coherent: live SLA data is backward-looking, but it can support insurance eligibility, claims, repricing, renewals, lender levers, and future underwriting.
 
 ## Related People
@@ -52,6 +55,7 @@ Barkr is strategically relevant because it prices hard assets used as loan colla
 - [[gpu-residual-data-alone-is-not-the-bottleneck-for-guarantee-products|GPU residual data alone is not the bottleneck for guarantee products]]
 - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
 
 ## Related Projects / Areas
