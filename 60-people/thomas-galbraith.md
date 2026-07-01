@@ -22,6 +22,8 @@ Dylan spoke with Thomas on 2026-06-18 while exploring GPU residual-value pricing
 
 On 2026-07-01, Dylan sent Thomas a follow-up asking whether operator uptime / SLA performance factors into Barkr's warranty process at all, or whether lenders raise it as a separate diligence gap outside Barkr's hardware-value / recovery-risk inputs.
 
+Thomas replied the same morning: SLA/uptime is separate from Barkr's warranty process, but he has heard it as an issue and NVIDIA brought up something similar. He suggested the wrapper may be credit insurance or business interruption against the offtaker.
+
 ## Useful Signals
 
 - He framed Barkr's lender product as bespoke recovery-floor pricing, not generic fair-market-value indexing.
@@ -31,10 +33,13 @@ On 2026-07-01, Dylan sent Thomas a follow-up asking whether operator uptime / SL
 - He said banks often dislike insurance because they do not believe claims will pay.
 - He said Barkr's data is roughly half public scrape and half private client data.
 - He said data is not currently Barkr's bottleneck because Munich Re is comfortable backing them.
+- He said SLA/uptime performance is separate from Barkr's hardware warranty process, but he has heard it as an issue and NVIDIA raised something similar.
+- He framed the potential wrapper as credit insurance or business interruption against the offtaker rather than a hardware-value warranty input.
 
 ## Related Sources
 
 - [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
+- [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]]
 
 ## Related Insights
 
@@ -43,6 +48,7 @@ On 2026-07-01, Dylan sent Thomas a follow-up asking whether operator uptime / SL
 - [[banks-may-prefer-guarantees-or-swaps-over-insurance-for-gpu-collateral-risk|Banks may prefer guarantees or swaps over insurance for GPU collateral risk]]
 - [[gpu-residual-data-alone-is-not-the-bottleneck-for-guarantee-products|GPU residual data alone is not the bottleneck for guarantee products]]
 - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
+- [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
 ## Related Projects / Areas
 

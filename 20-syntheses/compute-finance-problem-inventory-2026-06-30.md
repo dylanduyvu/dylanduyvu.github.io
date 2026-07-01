@@ -2,12 +2,12 @@
 type: synthesis
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 domains: [gpu-finance, ai-infrastructure, compute-contracts, residual-value, compute-derivatives]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
-sources: [compute-finance-space-commitment-and-problem-inventory-2026-06-30, usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, gpu-kbb-demotion-decision-2026-06-30]
+sources: [compute-finance-space-commitment-and-problem-inventory-2026-06-30, usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, gpu-kbb-demotion-decision-2026-06-30, barkr-thomas-sla-email-reply-2026-07-01]
 people: [harry-page, thomas-galbraith]
-orgs: [usd-ai, nebius, barkr]
+orgs: [usd-ai, nebius, barkr, nvidia]
 tags: [gpu, compute-finance, problem-inventory, customer-discovery]
 ---
 
@@ -23,9 +23,9 @@ Compute-finance is now the deliberate search space. Individual ideas should be m
 
 Status: live probe.
 
-Why it is live: USD.AI volunteered this as an active lender pain and connected it to pricing more aggressively by reducing top-line revenue risk.
+Why it is live: USD.AI volunteered this as an active lender pain and connected it to pricing more aggressively by reducing top-line revenue risk. Thomas at Barkr then confirmed that he has heard this as an issue and that NVIDIA brought up something similar, while clarifying that it is separate from Barkr's hardware warranty lane.
 
-Cheapest fatal test: send targeted email follow-ups to Thomas at Barkr and Bernie at American Compute asking whether USD.AI's SLA/uptime verification pain matches what they see from their positions in the stack. If useful, add one or two more async lender/insurer/offtaker outreaches.
+Cheapest fatal test: Thomas/Barkr has partially replicated the pain. Next cheapest step is to clarify what NVIDIA raised and whether the actual product category is verification alone, credit insurance, business interruption, or some hybrid. Await Bernie/American Compute; if useful, add one or two more async lender/insurer/offtaker outreaches.
 
 Kill or demote if: other qualified counterparties do not recognize it as a painful underwriting or pricing problem, or existing monitoring/data-room processes already satisfy lender trust.
 
@@ -70,8 +70,9 @@ Foreground if: stranded commitments reappear with clear buyer/seller liquidity.
 ## Next Test Plan
 
 - No upcoming Barkr call is scheduled. The Barkr call already happened and is historical evidence.
-- Email Thomas at Barkr and Bernie at American Compute about the SLA/uptime verification pain USD.AI volunteered.
-- Use those emails to test whether SLA verification replicates beyond USD.AI, and to ask whether they see a different higher-priority compute-finance pain.
+- Thomas/Barkr replied that SLA/uptime is separate from Barkr's warranty process, but he has heard it as an issue and NVIDIA brought up something similar.
+- Follow up with Thomas to clarify what NVIDIA raised and whether the paid product is verification, credit insurance, business interruption, or a hybrid.
+- Await Bernie/American Compute's reply to see whether American Compute sees this as RVI-adjacent, deal-comfort-adjacent, or irrelevant.
 - If responses warrant it, send one or two more async lender/insurer/offtaker follow-ups for SLA replication plus problem inventory mining.
 - Keep updating this inventory after each response so the process stays portfolio-based, not single-threaded.
 
@@ -80,4 +81,4 @@ Foreground if: stranded commitments reappear with clear buyer/seller liquidity.
 - Area: [[gpu-finance|GPU Finance]]
 - Source Memo: [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]]
 - Core Insight: [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
-- Related: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]], [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]], [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]], [[gpu-compute-novation|GPU Compute Novation]]
+- Related: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]], [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]], [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]], [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]], [[gpu-compute-novation|GPU Compute Novation]]

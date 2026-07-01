@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-01
 aliases: [Barkr, Barker, The Barker Price, barkr.ai]
 people: [thomas-galbraith]
 projects: [gpu-residual-value-pricing]
@@ -28,6 +28,8 @@ Barkr is strategically relevant because it prices hard assets used as loan colla
 - Data quality is messy, but Barkr does not currently see data as the bottleneck because it can price assets comfortably enough for Munich Re to back.
 - Munich Re backing matters heavily in sales to major institutions.
 - Barkr's guarantee structure may be easier for some banks to trust than insurance, depending on risk-transfer recognition and payout mechanics.
+- Thomas said operator SLA / uptime performance is separate from Barkr's warranty process, but he has heard it as an issue and NVIDIA brought up something similar.
+- Thomas's product-shape instinct for SLA/uptime was credit insurance or business interruption against the offtaker, not hardware recovery-floor valuation.
 
 ## Related People
 
@@ -36,6 +38,7 @@ Barkr is strategically relevant because it prices hard assets used as loan colla
 ## Related Sources
 
 - [[barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18|Barkr call with Thomas]]
+- [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]]
 - [[gpu-kbb-demotion-decision-2026-06-30|GPU KBB demotion decision memo]]
 
 ## Related Insights
@@ -46,6 +49,7 @@ Barkr is strategically relevant because it prices hard assets used as loan colla
 - [[banks-may-prefer-guarantees-or-swaps-over-insurance-for-gpu-collateral-risk|Banks may prefer guarantees or swaps over insurance for GPU collateral risk]]
 - [[gpu-residual-data-alone-is-not-the-bottleneck-for-guarantee-products|GPU residual data alone is not the bottleneck for guarantee products]]
 - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
+- [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
 ## Related Projects / Areas
 
