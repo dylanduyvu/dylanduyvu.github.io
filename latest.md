@@ -8,18 +8,18 @@ updated: 2026-07-01
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 1, 2026, 11:29 AM EDT
+Generated: Jul 1, 2026, 11:35 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 46 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 47 note commits. The most recent movement is:
 
+- Project decision: log sla outreach sent.
 - Insight update: add hyperscaler compute supply nuance.
 - Insight update: log offtake centralization.
 - Source capture: link friedman coreweave debt confluence.
 - Insight update: log gpu-backed debt inversion.
 - Project decision: demote gpu kbb data thesis.
-- Project decision: shelve gpu compute novation.
 
 ## Current Hub Signals
 
@@ -31,6 +31,16 @@ In the past 7 days, the public vault changed through 46 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jul 1, 2026, 11:35 AM EDT - project: log sla outreach sent
+
+Project decision: log sla outreach sent.
+
+Changed notes:
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[gpu-finance|GPU Finance]]
+  - [[bernie-margulies|Bernie Margulies]]
+  - [[thomas-galbraith|Thomas Galbraith]]
 
 ### Jul 1, 2026, 11:29 AM EDT - insight: add hyperscaler compute supply nuance
 
@@ -133,6 +143,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 1, 2026: project: log sla outreach sent - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 1, 2026: insight: add hyperscaler compute supply nuance - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - Jun 30, 2026: insight: log offtake centralization - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: plan: correct sla follow-up to async emails - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
@@ -157,12 +168,12 @@ Changed notes:
 - Jun 29, 2026: hubs: add American Compute residual value notes - [[gpu-compute-novation|GPU Compute Novation]]
 - Jun 29, 2026: insight: add American Compute evidence to GPU finance claims - [[banks-may-prefer-guarantees-or-swaps-over-insurance-for-gpu-collateral-risk|Banks may prefer guarantees or swaps over insurance for GPU collateral risk]]
 - Jun 29, 2026: inbox: add locked compute offtake resale hunch - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
-- Jun 29, 2026: insight: add GPU lender segmentation claim - [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]
 
-_Showing the newest 25 of 46 updates in this window._
+_Showing the newest 25 of 47 updates in this window._
 
 ## Past 30 Days
 
+- Jul 1, 2026: project: log sla outreach sent - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 1, 2026: insight: add hyperscaler compute supply nuance - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - Jun 30, 2026: insight: log offtake centralization - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: plan: correct sla follow-up to async emails - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
@@ -187,6 +198,5 @@ _Showing the newest 25 of 46 updates in this window._
 - Jun 29, 2026: hubs: add American Compute residual value notes - [[gpu-compute-novation|GPU Compute Novation]]
 - Jun 29, 2026: insight: add American Compute evidence to GPU finance claims - [[banks-may-prefer-guarantees-or-swaps-over-insurance-for-gpu-collateral-risk|Banks may prefer guarantees or swaps over insurance for GPU collateral risk]]
 - Jun 29, 2026: inbox: add locked compute offtake resale hunch - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
-- Jun 29, 2026: insight: add GPU lender segmentation claim - [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]
 
-_Showing the newest 25 of 46 updates in this window._
+_Showing the newest 25 of 47 updates in this window._
