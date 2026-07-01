@@ -136,7 +136,7 @@ A second external signal (2026-07-01) cuts at the supply/competitive layer: Meta
 ## Near-Term Tests
 
 - No upcoming Barkr call is scheduled; the prior Barkr call is already logged.
-- Email Thomas at Barkr and Bernie at American Compute about USD.AI's volunteered SLA/uptime verification pain.
-- Use those emails for two jobs: test SLA replication outside USD.AI and ask whether another compute-finance pain is more urgent from their seat.
+- 2026-07-01: Dylan emailed Thomas at Barkr and Bernie at American Compute about USD.AI's volunteered SLA/uptime verification pain.
+- Use their replies for two jobs: test SLA replication outside USD.AI and ask whether another compute-finance pain is more urgent from their seat.
 - If the email responses show heat, send one or two more async lender/insurer/offtaker follow-ups for SLA replication plus problem inventory mining.
 - Keep [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]] updated after each response.

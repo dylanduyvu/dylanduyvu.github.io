@@ -2,13 +2,13 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-01
 confidence: high
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
 sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, compute-finance-space-commitment-and-problem-inventory-2026-06-30]
-people: [harry-page, thomas-galbraith]
-orgs: [usd-ai, barkr]
+people: [harry-page, thomas-galbraith, bernie-margulies]
+orgs: [usd-ai, barkr, american-compute]
 aliases: [gpu lenders need sla verification, uptime performance verification is a lender pain]
 tags: [gpu, lending, sla, uptime, customer-discovery]
 ---
@@ -39,8 +39,8 @@ The 2026-06-30 compute-finance portfolio memo adds an important constraint: SLA 
 - Run one cheap discovery round around SLA/uptime verification before spending more cycles on novation.
 - Treat this as the follow-on discovery lane after shelving current-market novation, but do not over-rotate onto it before replication.
 - Test who owns the budget: GPU lenders, borrowers, insurers, offtakers, marketplaces, or data center operators.
-- Do not treat Barkr as an upcoming call. The Barkr call already happened; the next lightweight move is an email to Thomas at Barkr and Bernie at American Compute about USD.AI's volunteered SLA pain.
-- Use those emails as the first double-purpose test: SLA replication plus "what pain are you seeing instead?" problem mining.
+- Do not treat Barkr as an upcoming call. The Barkr call already happened; Dylan sent async emails to Thomas at Barkr and Bernie at American Compute on 2026-07-01 about USD.AI's volunteered SLA pain.
+- Use their replies as the first double-purpose test: SLA replication plus "what pain are you seeing instead?" problem mining.
 - Map the required evidence stack: telemetry, contract terms, monitoring data, incident reporting, revenue-credit exposure, and lender-facing auditability.
 - A useful product may look more like verification, monitoring, underwriting infrastructure, or insurance enablement than contract trading.
 
@@ -56,8 +56,8 @@ The 2026-06-30 compute-finance portfolio memo adds an important constraint: SLA 
 - Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]], [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]]
 - Projects: [[gpu-compute-novation|GPU Compute Novation]]
 - Areas: [[gpu-finance|GPU Finance]]
-- People: [[harry-page|Harry Page]]
-- Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]]
+- People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
+- Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]], [[american-compute|American Compute]]
 
 ## Updates
 
@@ -76,3 +76,7 @@ Reframed SLA as a live probe inside a compute-finance problem portfolio, not the
 ### 2026-06-30
 
 Corrected the next action: no Barkr call is scheduled; test SLA replication through async emails to Thomas/Barkr and Bernie/American Compute.
+
+### 2026-07-01
+
+Dylan sent the async SLA/uptime follow-ups to Thomas/Barkr and Bernie/American Compute. Next state is waiting for replies before deciding whether to broaden the replication test.

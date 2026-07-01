@@ -2,7 +2,7 @@
 type: person
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-01
 aliases: [Thomas, Thomas Galbraith]
 orgs: [barkr]
 projects: [gpu-residual-value-pricing]
@@ -19,6 +19,8 @@ Thomas is Dylan's Barkr/Barker contact for GPU asset pricing, hard-asset collate
 ## Relationship
 
 Dylan spoke with Thomas on 2026-06-18 while exploring GPU residual-value pricing and guarantee structures. Thomas offered to help with further intros and to reconnect when Dylan has a clearer direction.
+
+On 2026-07-01, Dylan sent Thomas a follow-up asking whether operator uptime / SLA performance factors into Barkr's warranty process at all, or whether lenders raise it as a separate diligence gap outside Barkr's hardware-value / recovery-risk inputs.
 
 ## Useful Signals
 

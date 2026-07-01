@@ -2,7 +2,7 @@
 type: person
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-01
 aliases: [Bernie, Bernie Margulies]
 orgs: [american-compute]
 projects: [gpu-residual-value-pricing, gpu-compute-novation]
@@ -19,6 +19,8 @@ Bernie Margulies is the CEO of American Compute and a high-signal contact for GP
 ## Relationship
 
 Dylan spoke with Bernie on 2026-06-16 after outreach about GPU residual floors. Bernie said he is happy to make intros if Dylan sends a specific thesis/blurb rather than a vague ask.
+
+On 2026-07-01, Dylan sent Bernie a follow-up saying the stranded/offtake resale angle currently looks weak because customers still seem short capacity rather than long capacity, while noting Meta/SpaceX hyperscaler excess compute as a separate supply-loosening tripwire. The email then asked whether operator SLA/uptime verification is a real lender diligence gap that affects advance rate, RVI, lender comfort, or deal approval.
 
 ## Useful Signals
 
