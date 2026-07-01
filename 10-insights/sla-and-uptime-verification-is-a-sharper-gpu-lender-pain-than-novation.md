@@ -6,7 +6,7 @@ updated: 2026-07-01
 confidence: high
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
-sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, compute-finance-space-commitment-and-problem-inventory-2026-06-30, barkr-thomas-sla-email-reply-2026-07-01]
+sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, compute-finance-space-commitment-and-problem-inventory-2026-06-30, barkr-thomas-sla-email-reply-2026-07-01, american-compute-bernie-sla-email-reply-2026-07-01]
 people: [harry-page, thomas-galbraith, bernie-margulies]
 orgs: [usd-ai, barkr, american-compute, nvidia]
 aliases: [gpu lenders need sla verification, uptime performance verification is a lender pain]
@@ -31,6 +31,8 @@ Thomas's 2026-07-01 reply gives the first replication outside USD.AI, but also s
 
 The NVIDIA mention suggests this may be more than lender-by-lender diligence. If unreliable operator delivery makes customer contracts less bankable, the issue can bottleneck GPU fleet financing and therefore downstream chip demand.
 
+Bernie's 2026-07-01 reply changes the shape of the wedge: some lenders may not be pricing SLA risk at all; they skip unknown or unproven operators instead of evaluating them. That moves the value proposition from only "better terms if visible" toward "turn skipped operators into evaluable operators."
+
 ## Evidence
 
 - 2026-06-29: When asked what problem USD.AI wishes someone would solve, Harry pointed to ensuring contract-related operator performance.
@@ -40,6 +42,10 @@ The NVIDIA mention suggests this may be more than lender-by-lender diligence. If
 - 2026-07-01: Thomas at Barkr said operator uptime / SLA performance is separate from Barkr's warranty process, but he has heard it as an issue.
 - 2026-07-01: Thomas said NVIDIA brought up something similar.
 - 2026-07-01: Thomas suggested the product shape may be credit insurance or business interruption against the offtaker, rather than an input to hardware recovery-floor valuation.
+- 2026-07-01: Bernie at American Compute said most lenders do not dig deep into SLAs or the operator's ability to meet them.
+- 2026-07-01: Bernie said lenders mainly ask whether the operator has completed a few deployments before.
+- 2026-07-01: Bernie said a lender he spoke with normally passes on unknown or unproven operators when SLA/operator performance is uncertain.
+- 2026-07-01: Bernie suggested Dylan could help lenders evaluate the operators they currently skip.
 
 ## Implications
 
@@ -50,6 +56,8 @@ The NVIDIA mention suggests this may be more than lender-by-lender diligence. If
 - Use their replies as the first double-purpose test: SLA replication plus "what pain are you seeing instead?" problem mining.
 - Treat Thomas's reply as partial validation and as a product-category correction: the pain may sit closer to credit insurance / business interruption / contract cash-flow protection than Barkr-style hardware warranty.
 - Dylan's initial product-shape intuition was SaaS / dashboard / FDE around trusted SLA visibility; Thomas's reply opens an insurance or business-interruption wrapper branch worth testing.
+- Bernie adds a second product-shape wedge: evaluation infrastructure that converts unknown or unproven operators from automatic pass to underwritable.
+- The commercial outcome may be deal eligibility or approval before better pricing.
 - Follow up with Thomas to clarify what NVIDIA raised and whether the buyer/problem owner is lender, operator, offtaker, or insurer.
 - Map the required evidence stack: telemetry, contract terms, monitoring data, incident reporting, revenue-credit exposure, and lender-facing auditability.
 - A useful product may look more like verification, monitoring, underwriting infrastructure, or insurance enablement than contract trading.
@@ -58,6 +66,7 @@ The NVIDIA mention suggests this may be more than lender-by-lender diligence. If
 
 - This is one lender's volunteered pain; it still needs validation across other lenders and operators.
 - Barkr's confirmation is secondhand and compact: Thomas has heard the issue and cites NVIDIA, but did not yet describe a paid workflow, buyer, budget, or failed deal.
+- Bernie's signal is still indirect: it reflects American Compute's market map plus one lender conversation, not direct lender willingness to pay.
 - Existing monitoring tools may solve part of the problem but may not be trusted, standardized, or lender-facing.
 - Data access, confidentiality, and liability could make third-party verification hard.
 - The "credit insurance or business interruption" framing may point away from pure software verification and toward an insurance-enabled product that requires balance sheet, underwriting, or carrier partnerships.
@@ -65,7 +74,7 @@ The NVIDIA mention suggests this may be more than lender-by-lender diligence. If
 
 ## Links
 
-- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]], [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]], [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]]
+- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]], [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]], [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]], [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
 - Projects: [[gpu-compute-novation|GPU Compute Novation]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
@@ -101,3 +110,7 @@ Thomas replied that SLA/uptime is separate from Barkr's warranty process, but he
 ### 2026-07-01
 
 Logged Dylan's current product-shape fork: initial instinct was SaaS / dashboard / FDE for trusted SLA visibility, but Thomas's insurance framing may be a meaningful alternative wrapper.
+
+### 2026-07-01
+
+Bernie replied that most lenders do not dig deeply into SLA performance or operator ability to meet SLAs. Instead, they use prior deployments as a shortcut and often pass on unknown or unproven operators. This reframes the wedge as lender evaluation infrastructure that could make skipped operators underwritable, not only a tool for improving terms on already-bankable deals.

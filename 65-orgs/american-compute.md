@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-01
 aliases: [American Compute]
 people: [bernie-margulies]
 projects: [gpu-residual-value-pricing, gpu-compute-novation]
@@ -28,6 +28,7 @@ American Compute is strategically relevant because it sells residual value insur
 - Lenders focus mostly on offtake and use residual as worst-case recovery; lessors rely on residual value more directly in return profiles.
 - Bernie views Barkr as ahead in market education but critiques Barkr's warranty structure and alleged market-crash exclusion.
 - Bernie volunteered locked compute/offtake resale and energy/interconnection as possible problem areas.
+- Bernie later said lenders often do not dig deeply into SLA/operator performance; they use prior deployments as a proxy and may pass on unknown or unproven operators.
 
 ## Related People
 
@@ -37,6 +38,7 @@ American Compute is strategically relevant because it sells residual value insur
 
 - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 - [[gpu-kbb-demotion-decision-2026-06-30|GPU KBB demotion decision memo]]
+- [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
 
 ## Related Insights
 
@@ -47,6 +49,7 @@ American Compute is strategically relevant because it sells residual value insur
 - [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]
 - [[gpu-residual-data-alone-is-not-the-bottleneck-for-guarantee-products|GPU residual data alone is not the bottleneck for guarantee products]]
 - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
+- [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
 ## Related Projects / Areas
 

@@ -8,7 +8,7 @@ domains: [ai-infrastructure, compute-commoditization, model-training, financial-
 projects: []
 sources: [bridgewater-tinker-expert-judgment-finetuning-2026-06-30]
 people: []
-orgs: []
+orgs: [thinking-machines-lab]
 aliases: [differentiated intelligence beats frontier scale, tuned open models beat frontier per task, moat is proprietary labels not compute]
 tags: [fine-tuning, open-weights, commoditization, differentiated-intelligence, expert-judgment]
 ---
@@ -49,5 +49,6 @@ It also sharpens the "judgment as a product" theses. A "KBB of compute" or an SL
 ## Links
 
 - Source: [[bridgewater-tinker-expert-judgment-finetuning-2026-06-30|Bridgewater x Thinking Machines expert-judgment article]]
-- Related Insights: [[compute-can-commoditize-without-full-fungibility|Compute can commoditize without full fungibility]], [[compute-commoditization-needs-convergence-plumbing-more-than-homogeneity|Compute commoditization needs convergence plumbing more than homogeneity]], [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
+- Related Insights: [[compute-can-commoditize-without-full-fungibility|Compute can commoditize without full fungibility]], [[compute-commoditization-needs-convergence-plumbing-more-than-homogeneity|Compute commoditization needs convergence plumbing more than homogeneity]], [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]], [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
 - Areas: [[gpu-finance|GPU Finance]]
+- Orgs: [[thinking-machines-lab|Thinking Machines Lab]]
