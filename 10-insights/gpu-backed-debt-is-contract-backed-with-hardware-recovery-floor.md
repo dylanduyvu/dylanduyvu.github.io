@@ -34,6 +34,7 @@ It also explains why bare compute contracts and naked residual-value data both f
 - 2026-06-29: Harry Page said USD.AI would not lend against only the contract because if the contract defaults, the cash-flow stream no longer exists.
 - 2026-06-18: Barkr's lender-facing valuation product is framed around what the asset will at least sell for, which maps to recovery floor rather than primary repayment engine.
 - 2026-06-16: Bernie said lenders focus overwhelmingly on offtake and treat residual value as worst-case recovery.
+- USD.AI's underwriting mechanics make the size/rate split explicit: hardware sets loan size and recovery floor (~80% LTV, perfectable-title jurisdictions), while the graded offtake contract sets the rate (IG ~7-9%, multi-year non-IG ~10-12%, spot ~12-15%, with 24+ months required for the top two tiers). Provenance: compiled model of USD.AI, not from the 2026-06-29 transcript; see [[usd-ai|USD.AI]] Underwriting Model.
 
 ## Confluence
 
@@ -78,3 +79,7 @@ Attributed the inversion to Dave Friedman's CoreWeave DDTL article and added con
 ### 2026-06-30
 
 Added the market-structure consequence that offtake-based lending may systematically centralize GPU infrastructure capital.
+
+### 2026-06-30
+
+Added USD.AI's explicit size-vs-rate underwriting mechanics as concrete evidence (hardware sizes the loan and floors recovery; the graded contract prices the rate). Flagged as compiled-model provenance, not from the call transcript. Full detail lives in the [[usd-ai|USD.AI]] org hub.
