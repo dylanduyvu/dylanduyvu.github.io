@@ -6,7 +6,7 @@ updated: 2026-07-01
 confidence: high
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
-sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, compute-finance-space-commitment-and-problem-inventory-2026-06-30, barkr-thomas-sla-email-reply-2026-07-01, american-compute-bernie-sla-email-reply-2026-07-01]
+sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, compute-finance-space-commitment-and-problem-inventory-2026-06-30, barkr-thomas-sla-email-reply-2026-07-01, american-compute-bernie-sla-email-reply-2026-07-01, codex-chat-sla-insurance-monitoring-2026-07-01]
 people: [harry-page, thomas-galbraith, bernie-margulies]
 orgs: [usd-ai, barkr, american-compute, nvidia]
 aliases: [gpu lenders need sla verification, uptime performance verification is a lender pain]
@@ -33,6 +33,8 @@ The NVIDIA mention suggests this may be more than lender-by-lender diligence. If
 
 Bernie's 2026-07-01 reply changes the shape of the wedge: some lenders may not be pricing SLA risk at all; they skip unknown or unproven operators instead of evaluating them. That moves the value proposition from only "better terms if visible" toward "turn skipped operators into evaluable operators."
 
+Dylan's 2026-07-01 analysis adds an important constraint: SLA monitoring is backward-looking. It cannot directly prove future performance for hardware that has not been built. The forward-looking value has to come from prior operator history, credible underwriting proxies, insurance/coverage structure, lender levers, or future financing.
+
 ## Evidence
 
 - 2026-06-29: When asked what problem USD.AI wishes someone would solve, Harry pointed to ensuring contract-related operator performance.
@@ -46,6 +48,7 @@ Bernie's 2026-07-01 reply changes the shape of the wedge: some lenders may not b
 - 2026-07-01: Bernie said lenders mainly ask whether the operator has completed a few deployments before.
 - 2026-07-01: Bernie said a lender he spoke with normally passes on unknown or unproven operators when SLA/operator performance is uncertain.
 - 2026-07-01: Bernie suggested Dylan could help lenders evaluate the operators they currently skip.
+- 2026-07-01: Dylan identified the core time mismatch: live monitoring only measures operating clusters, so pre-build underwriting needs prior performance data or proxies.
 
 ## Implications
 
@@ -61,6 +64,8 @@ Bernie's 2026-07-01 reply changes the shape of the wedge: some lenders may not b
 - Follow up with Thomas to clarify what NVIDIA raised and whether the buyer/problem owner is lender, operator, offtaker, or insurer.
 - Map the required evidence stack: telemetry, contract terms, monitoring data, incident reporting, revenue-credit exposure, and lender-facing auditability.
 - A useful product may look more like verification, monitoring, underwriting infrastructure, or insurance enablement than contract trading.
+- Treat existing/repeat operators as the cleaner first wedge; their current deployments can become evidence for the next facility, refi, or insurance policy.
+- Do not pitch pure live monitoring unless the lender/insurer has a lever: delayed draws, covenants, reserves, borrowing-base eligibility, claims, renewals, repricing, or future underwriting.
 
 ## Counterpoints / Uncertainty
 
@@ -70,16 +75,17 @@ Bernie's 2026-07-01 reply changes the shape of the wedge: some lenders may not b
 - Existing monitoring tools may solve part of the problem but may not be trusted, standardized, or lender-facing.
 - Data access, confidentiality, and liability could make third-party verification hard.
 - The "credit insurance or business interruption" framing may point away from pure software verification and toward an insurance-enabled product that requires balance sheet, underwriting, or carrier partnerships.
+- SLA monitoring is backward-looking; totally greenfield operators with no prior deployment history may still be skipped unless there are strong proxies, exclusions, deductibles, or sponsor support.
 - The broader compute-finance search space has multiple candidate problems, so SLA needs to earn foreground attention rather than inherit it from novation's failure.
 
 ## Links
 
-- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]], [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]], [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]], [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
+- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]], [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]], [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]], [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]], [[codex-chat-sla-insurance-monitoring-2026-07-01|Codex chat on SLA insurance and monitoring]]
 - Projects: [[gpu-compute-novation|GPU Compute Novation]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
 - Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]], [[american-compute|American Compute]], [[nvidia|NVIDIA]]
-- Related Insight: [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
+- Related Insight: [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]], [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
 
 ## Updates
 
@@ -114,3 +120,7 @@ Logged Dylan's current product-shape fork: initial instinct was SaaS / dashboard
 ### 2026-07-01
 
 Bernie replied that most lenders do not dig deeply into SLA performance or operator ability to meet SLAs. Instead, they use prior deployments as a shortcut and often pass on unknown or unproven operators. This reframes the wedge as lender evaluation infrastructure that could make skipped operators underwritable, not only a tool for improving terms on already-bankable deals.
+
+### 2026-07-01
+
+Added the backward-looking caveat: live SLA monitoring cannot prove the future performance of unbuilt hardware. The stronger product shape is underwriting plus monitoring infrastructure for repeat operators, lender levers, insurance claims, renewals, and future financing rather than pure dashboard monitoring.

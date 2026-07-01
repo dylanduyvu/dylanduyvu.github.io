@@ -24,6 +24,8 @@ On 2026-07-01, Dylan sent Bernie a follow-up saying the stranded/offtake resale 
 
 Bernie replied that most lenders do not dig deeply into SLAs or operator ability to meet them. They mainly ask whether the operator has completed a few deployments already, and one lender he spoke with normally passes on unknown or unproven operators. He suggested Dylan might help lenders evaluate operators they currently skip.
 
+Dylan's follow-up analysis: Bernie's "prior deployments" point matters because SLA monitoring is backward-looking. The clean first wedge may be existing/repeat operators whose monitored current deployments can support financing or insurance for the next deployment, not totally greenfield operators with no history.
+
 ## Useful Signals
 
 - He framed American Compute as RVI for GPU servers, with reinsurance partners taking most risk and American Compute earning premium share.
@@ -35,11 +37,13 @@ Bernie replied that most lenders do not dig deeply into SLAs or operator ability
 - He said lessors rely on residuals more directly in return profiles and can be higher-quality customers.
 - He volunteered locked compute/offtake resale and energy/interconnection as possible areas for Dylan to explore.
 - On SLA/uptime, he said lenders may skip unknown or unproven operators instead of evaluating them deeply.
+- His SLA reply implies that monitored prior deployments may be the bridge from "unknown operator" to underwritable operator.
 
 ## Related Sources
 
 - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 - [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
+- [[codex-chat-sla-insurance-monitoring-2026-07-01|Codex chat on SLA insurance and monitoring]]
 
 ## Related Insights
 
@@ -50,6 +54,7 @@ Bernie replied that most lenders do not dig deeply into SLAs or operator ability
 - [[gpu-residual-data-alone-is-not-the-bottleneck-for-guarantee-products|GPU residual data alone is not the bottleneck for guarantee products]]
 - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
 
 ## Related Projects / Areas
 

@@ -29,6 +29,7 @@ American Compute is strategically relevant because it sells residual value insur
 - Bernie views Barkr as ahead in market education but critiques Barkr's warranty structure and alleged market-crash exclusion.
 - Bernie volunteered locked compute/offtake resale and energy/interconnection as possible problem areas.
 - Bernie later said lenders often do not dig deeply into SLA/operator performance; they use prior deployments as a proxy and may pass on unknown or unproven operators.
+- The SLA reply points toward repeat-operator underwriting: monitored prior deployments could make an operator more financeable or insurable for the next deployment.
 
 ## Related People
 
@@ -39,6 +40,7 @@ American Compute is strategically relevant because it sells residual value insur
 - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 - [[gpu-kbb-demotion-decision-2026-06-30|GPU KBB demotion decision memo]]
 - [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
+- [[codex-chat-sla-insurance-monitoring-2026-07-01|Codex chat on SLA insurance and monitoring]]
 
 ## Related Insights
 
@@ -50,6 +52,7 @@ American Compute is strategically relevant because it sells residual value insur
 - [[gpu-residual-data-alone-is-not-the-bottleneck-for-guarantee-products|GPU residual data alone is not the bottleneck for guarantee products]]
 - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
 
 ## Related Projects / Areas
 

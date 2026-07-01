@@ -39,6 +39,8 @@ Do not bury the thesis permanently. Revisit only if a tripwire fires:
 
 Tripwire watch (2026-07-01): Meta ("Meta Compute") and SpaceX/xAI moving to resell excess AI compute is a partial supply-loosening signal. It is not yet a trigger, because this is hyperscaler *older-gen excess* at scale rather than *startup committed-offtake* overhang. Watch whether it spreads to committed-contract resale. See [[hyperscalers-are-becoming-compute-sellers-pressuring-neoclouds|Hyperscalers are becoming compute sellers, pressuring neoclouds]].
 
+Early demand-crack watch (2026-06-09): Crusoe paused its 1.8GW Project Jade at an undisclosed customer's request (reportedly customers including Google balked at cost/construction time). This is a development pause, not an offtake default, but customer-requested pauses are the kind of leading indicator that would precede committed-capacity offloading if the market softens. See [[the-neocloud-risk-is-the-balance-sheet-not-compute-performance|The neocloud risk is the balance sheet, not compute performance]].
+
 ## Key Insights
 
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]: Seller-side contract liquidity may be thin because customers need reserved compute and have paid meaningful deposits.

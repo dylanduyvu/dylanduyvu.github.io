@@ -8,6 +8,7 @@ domains: [ai-infrastructure, compute-commoditization, model-training, neolabs]
 projects: []
 sources: []
 orgs: [thinking-machines-lab]
+people: [dylan-patel]
 aliases: [tinker is the highest-revenue neolab, post-training tooling captures outsized revenue, picks and shovels for fine-tuning]
 tags: [fine-tuning, post-training, tinker, neolabs, value-migration, differentiated-intelligence]
 ---
@@ -50,3 +51,4 @@ It also marks Tinker/TML as a large compute-demand node: to serve a few hundred 
 - Related Insights: [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]], [[compute-can-commoditize-without-full-fungibility|Compute can commoditize without full fungibility]]
 - Areas: [[gpu-finance|GPU Finance]]
 - Orgs: [[thinking-machines-lab|Thinking Machines Lab]]
+- People: [[dylan-patel|Dylan Patel]]
