@@ -54,6 +54,8 @@ A second external signal (2026-07-01) cuts at the supply/competitive layer: Meta
 
 Dylan Patel (SemiAnalysis, 2026-06-30) names the sharper neocloud risk: the balance sheet, not the chips. Performance is competitive (CoreWeave reportedly benchmarks above hyperscalers), but neoclouds pre-sell compute before it is live and finance the build with debt on contracts, so the contract book is the fragile part. Crusoe pausing its 1.8GW Project Jade at a customer's request (2026-06-09) is an early crack: the gap between contracted and energized capacity. This is the risk-side of the contract-backed-debt inversion - watch the contract book, not the benchmarks.
 
+Bernie's AC article (2026-07-01) supplies the causal machine underneath, especially for the small-operator tier. Demand for small operators is a 2-3x price arbitrage against hyperscalers, conditional on delivering "in the next few months"; customers LOI-race multiple operators and walk without breach on missed milestones, so the contract is a free option until delivered. The serial delay stack (3-6 month loan closes, 6-9 month GPU lead times, scarce high-density colo, ~10,300-project grid queue; 26% of 2025 projects delayed) makes slips the expected output. Offtake therefore dies from two sides - customer credit (underwritten in tiers) and operator execution (no instrument, only proxies) - and the same delay that kills the contract engine pushes recovery down the obsolescence curve, so engine and floor fail together. Structurally, the whole asset class sits in private credit because Basel III/Dodd-Frank pushed banks out, which is why bank-grade infrastructure (ratings, appraisal standards, verification) does not exist yet: the vault's problem portfolio is, in one frame, that missing infrastructure.
+
 ## Useful Patterns
 
 - Hardware recovery matters more than bare contract cash flows.
@@ -95,6 +97,11 @@ Dylan Patel (SemiAnalysis, 2026-06-30) names the sharper neocloud risk: the bala
 - Hyperscalers reselling excess compute (Meta Compute, SpaceX/xAI) can turn a neocloud's biggest customer into its competitor, pressuring operator growth, margins, and the credit behind GPU-backed debt.
 - The post-training/customization tooling layer (e.g. Tinker) may capture outsized revenue versus frontier model-building; value is concentrating in the abstraction tier above raw GPUs.
 - The neocloud risk is financial, not technical: performance can be competitive while the contract book (pre-sold, debt-financed builds) is the fragile part. Watch build pauses and renegotiations as leading indicators.
+- Demand-tracing: a funded inference platform's compute spend is someone downstream's revenue - follow it to locate real compute businesses, and watch lease-to-own migrations as GPU-financing origination events.
+- Small-operator GPU demand is a price arbitrage conditional on delivery: it exists while hyperscalers cost 2-3x more and dies if the operator cannot ship in months.
+- GPU offtake dies from two sides; the market underwrites customer credit but has no instrument for operator execution (walk-without-breach on missed milestones).
+- Timeline slips hit the contract engine and the hardware floor together, so GPU loan collateral and cash flows are delay-correlated, not independent.
+- GPU lending grew up outside banks (Basel III/Dodd-Frank pushed them out), so bank-grade infrastructure - ratings, appraisal standards, verification - is missing until institutionalization forces it.
 
 ## Active Projects
 
@@ -149,6 +156,10 @@ Dylan Patel (SemiAnalysis, 2026-06-30) names the sharper neocloud risk: the bala
 - [[hyperscalers-are-becoming-compute-sellers-pressuring-neoclouds|Hyperscalers are becoming compute sellers, pressuring neoclouds]]
 - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
 - [[the-neocloud-risk-is-the-balance-sheet-not-compute-performance|The neocloud risk is the balance sheet, not compute performance]]
+- [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
+- [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
+- [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
+- [[timeline-slips-hit-gpu-loan-engine-and-backstop-together|Timeline slips hit GPU loan engine and backstop together]]
 
 ## Open Questions
 

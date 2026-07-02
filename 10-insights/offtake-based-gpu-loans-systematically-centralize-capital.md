@@ -33,6 +33,7 @@ That means "GPU financing" may not democratize compute ownership by default. It 
 - 2026-05-28: The 225 bps spread gap and four-notch rating gap suggest customer-credit quality can dominate the GPU-collateral story.
 - 2026-06-29: USD.AI independently described contracts and offtaker credit as debt-service support, while GPU hardware is the recoverable collateral.
 - 2026-06-16: Bernie said lenders focus overwhelmingly on offtake and treat residual value as worst-case recovery.
+- 2026-07-01: Bernie's AC article puts hard numbers on the tiered capital map: Blackstone/Magnetar $2.3B (Aug 2023) and Blackstone $7.5B (May 2024) into CoreWeave, Apollo $3.5B for xAI/Valor (Jan 2026), PIMCO/Blue Owl/LuminArx $1.4B to Nscale (Feb 2026) at the top - versus boutique private credit and family offices at 12-15% funding small operators at the bottom. The mega-firm/mega-operator pairings are the centralization mechanism in the wild.
 
 ## Mechanism
 
@@ -71,3 +72,7 @@ The loop can run the other way for smaller operators: weaker customers produce m
 ### 2026-06-30
 
 Initial capture from Dylan's reading of Dave Friedman's CoreWeave debt article and the existing USD.AI / American Compute confluence.
+
+### 2026-07-01
+
+Added the hard capital-map numbers from Bernie's AC article (Blackstone/Apollo/PIMCO mega-deals vs boutique 12-15% tier) as evidence of the centralization mechanism operating.

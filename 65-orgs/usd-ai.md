@@ -28,7 +28,7 @@ USD.AI is strategically relevant because it lends against GPU-backed infrastruct
 
 ## Underwriting Model
 
-> Provenance: this section is Dylan's compiled understanding of USD.AI's underwriting model. It is **not** stated in the 2026-06-29 Harry Page transcript, which only covers the GPU-backed framing, no-recovery-on-bare-contract, supply scarcity, the Barkr warranty, and the SLA pain. Treat the specifics below as unverified until confirmed against a USD.AI source (docs, site, or a follow-up with Sam/Harry).
+> Provenance: this section is Dylan's compiled understanding of USD.AI's underwriting model. It is **not** stated in the 2026-06-29 Harry Page transcript, which only covers the GPU-backed framing, no-recovery-on-bare-contract, supply scarcity, the Barkr warranty, and the SLA pain. Treat the specifics below as unverified until confirmed against a USD.AI source (docs, site, or a follow-up with Sam/Harry). Partial corroboration (2026-07-01): Bernie's AC article independently reports boutique private credit lending to small operators at 12-15%, matching the Tier 2/3 range - the rate ladder looks like market-wide structure, not just one firm's pricing.
 
 The model separates loan *size* from loan *rate*:
 

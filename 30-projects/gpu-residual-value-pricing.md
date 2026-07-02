@@ -2,10 +2,10 @@
 type: project
 status: active
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-01
 domains: [gpu-finance, residual-value, asset-backed-lending, compute-derivatives]
 people: [thomas-galbraith, bernie-margulies, dave-friedman]
-orgs: [barkr, american-compute]
+orgs: [barkr, american-compute, ornn]
 tags: [gpu, valuation, guarantees, customer-discovery]
 ---
 
@@ -73,3 +73,4 @@ Do not treat Bernie alone as the kill. The demotion comes from the combined evid
 - Compare guarantee vs insurance acceptance across banks, private credit, insurers, lessors, and asset managers.
 - Ask Bernie for one prior quote or policy with target guarantee, premium, source data, and lender/reinsurer pushback.
 - Test whether lenders/lessors would use a surveyed forward strip before exchange liquidity exists.
+- Talk to [[ornn|Ornn]] (Wayne / Jack) about their GPU Residual Value Swap, specifically how the reference value is set (internal mark vs external reference vs negotiated deal-by-deal). A live RVS product is a direct probe of who trusts what GPU residual number. Intro from Bernie on 2026-06-17; conversation at scheduling stage.

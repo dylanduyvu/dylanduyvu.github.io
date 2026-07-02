@@ -32,6 +32,7 @@ American Compute is strategically relevant because it sells residual value insur
 - The SLA reply points toward repeat-operator underwriting: monitored prior deployments could make an operator more financeable or insurable for the next deployment.
 - Bernie then said unknown / less-proven operators can get funded by bringing more equity, e.g. $5M cash against $10M of equipment.
 - Bernie then clarified that extra equity can generally resolve any kind of lender concern, so equity cushions are not clean evidence that SLA/operator transparency is the binding issue.
+- The AC blog article "Who Is Building Compute" (2026-07-01) lays out Bernie's written market model: small-operator demand is a 2-3x price arbitrage conditional on near-term delivery; timeline is the biggest risk (LOI racing, walk-without-breach on missed milestones, a serial delay stack); boutique private credit and family offices fund small operators at 12-15%; and the asset class sits in private credit because Basel III/Dodd-Frank pushed banks out.
 
 ## Related People
 
@@ -43,6 +44,7 @@ American Compute is strategically relevant because it sells residual value insur
 - [[gpu-kbb-demotion-decision-2026-06-30|GPU KBB demotion decision memo]]
 - [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
 - [[codex-chat-sla-insurance-monitoring-2026-07-01|Codex chat on SLA insurance and monitoring]]
+- [[american-compute-who-is-building-compute-article-2026-07-01|American Compute: Who Is Building Compute article]]
 
 ## Related Insights
 
@@ -56,6 +58,9 @@ American Compute is strategically relevant because it sells residual value insur
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
 - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
+- [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
+- [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
+- [[timeline-slips-hit-gpu-loan-engine-and-backstop-together|Timeline slips hit GPU loan engine and backstop together]]
 
 ## Related Projects / Areas
 

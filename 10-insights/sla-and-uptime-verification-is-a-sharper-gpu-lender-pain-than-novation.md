@@ -103,7 +103,7 @@ Thomas's follow-up refines the Barkr/NVIDIA signal. The concrete ask was not "NV
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
 - Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]], [[american-compute|American Compute]], [[nvidia|NVIDIA]]
-- Related Insight: [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]], [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]], [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]], [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
+- Related Insight: [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]], [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]], [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]], [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]], [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
 
 ## Updates
 
@@ -154,3 +154,7 @@ Thomas clarified the NVIDIA mention: the specific ask came from a lender in a de
 ### 2026-07-01
 
 Logged Bernie's second equity clarification: extra equity can generally resolve any kind of lender concern. This makes equity-cushion evidence less diagnostic for SLA/operator transparency and raises the bar for proving monitoring changes credit terms.
+
+### 2026-07-01
+
+Bernie's AC article reframes the pain as market structure: offtake dies from customer credit (underwritten in tiers) or from operator execution misses where the customer walks without breaching (no underwriting instrument, only proxies). The sharpest unverifiable window may be go-live/milestone delivery, where the contract itself lives or dies pre-revenue. See [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]].

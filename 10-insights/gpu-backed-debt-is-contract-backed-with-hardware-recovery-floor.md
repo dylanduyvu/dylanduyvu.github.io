@@ -35,6 +35,7 @@ It also explains why bare compute contracts and naked residual-value data both f
 - 2026-06-18: Barkr's lender-facing valuation product is framed around what the asset will at least sell for, which maps to recovery floor rather than primary repayment engine.
 - 2026-06-16: Bernie said lenders focus overwhelmingly on offtake and treat residual value as worst-case recovery.
 - USD.AI's underwriting mechanics make the size/rate split explicit: hardware sets loan size and recovery floor (~80% LTV, perfectable-title jurisdictions), while the graded offtake contract sets the rate (IG ~7-9%, multi-year non-IG ~10-12%, spot ~12-15%, with 24+ months required for the top two tiers). Provenance: compiled model of USD.AI, not from the 2026-06-29 transcript; see [[usd-ai|USD.AI]] Underwriting Model.
+- 2026-07-01: Bernie's AC article independently reports boutique private credit lending to small GPU operators at 12-15% (vs 4-5% IG corporates), corroborating the rate ladder as market-wide structure.
 
 ## Confluence
 
@@ -53,6 +54,7 @@ Together, they make the claim much stronger than either source alone. Friedman s
 ## Counterpoints / Uncertainty
 
 - Some structures may be more asset-backed if advance rates are low, collateral liquidity is high, and offtaker exposure is diversified.
+- The recovery floor is not independent of the engine: timeline slips can kill the offtake and simultaneously push recovery later down the depreciation curve, so the floor is time-decaying and delay-correlated rather than fixed. See [[timeline-slips-hit-gpu-loan-engine-and-backstop-together|Timeline slips hit GPU loan engine and backstop together]].
 - Part of the DDTL 4.0 / 5.0 spread gap may reflect public syndication, recourse posture, rating-bucket effects, and facility-specific structure rather than pure contract-credit pricing.
 - Market participants may still use "GPU-backed" accurately to mean "secured by GPUs," even if repayment underwriting is contract-led.
 - This note is a financing model inference from the current call evidence, not a rating-methodology document.
@@ -83,3 +85,7 @@ Added the market-structure consequence that offtake-based lending may systematic
 ### 2026-06-30
 
 Added USD.AI's explicit size-vs-rate underwriting mechanics as concrete evidence (hardware sizes the loan and floors recovery; the graded contract prices the rate). Flagged as compiled-model provenance, not from the call transcript. Full detail lives in the [[usd-ai|USD.AI]] org hub.
+
+### 2026-07-01
+
+Added independent corroboration of the rate ladder from Bernie's AC article (boutique tier at 12-15%), and the correlated-failure caveat: delay is a common cause that stalls the contract engine while sinking the hardware floor.
