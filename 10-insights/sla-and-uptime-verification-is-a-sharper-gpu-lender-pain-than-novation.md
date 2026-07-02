@@ -83,6 +83,7 @@ Thomas's follow-up refines the Barkr/NVIDIA signal. The concrete ask was not "NV
 - Test whether SLA/ops diligence can reduce required equity contribution or improve LTV. If it cannot, the priced wedge may be capital structure rather than verification.
 - Do not infer SLA-specific pain from equity cushions alone; test whether better operator evidence changes terms at a fixed equity level.
 - Position against the existing layer: USD.AI already has collateral-existence verification (Aravolta). The open layer is contract-performance and revenue-crediting verification - what infrastructure telemetry cannot see. Ask Harry what Aravolta-style data still fails to tell them that shows up in pricing.
+- Consent asymmetry reshapes the product: operators want verification at origination (credential) and resist it post-close (surveillance), so the natural wedge is operator-volunteered credentialing of completed deployments for the next facility, with post-close monitoring riding on loan docs. See [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]].
 
 ## Counterpoints / Uncertainty
 
@@ -106,7 +107,7 @@ Thomas's follow-up refines the Barkr/NVIDIA signal. The concrete ask was not "NV
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
 - Orgs: [[usd-ai|USD.AI]], [[barkr|Barkr]], [[american-compute|American Compute]], [[nvidia|NVIDIA]]
-- Related Insight: [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]], [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]], [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]], [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]], [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
+- Related Insight: [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]], [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]], [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]], [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]], [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]], [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 
 ## Updates
 
@@ -165,3 +166,7 @@ Bernie's AC article reframes the pain as market structure: offtake dies from cus
 ### 2026-07-02
 
 Found Aravolta's USD.AI case study while the Harry follow-up was in flight. USD.AI already procures continuous infrastructure-level collateral verification from Aravolta ("verify, don't trust"), which is the strongest behavioral WTP evidence yet - a lender pays for verification. But Aravolta's scope explicitly excludes tenant usage, workloads, and application performance, so the collateral-existence layer is claimed while the contract-performance / revenue-crediting layer remains open, sitting behind the confidentiality boundary Aravolta chose not to cross. Expect Aravolta to appear in Harry's answer; the sharper follow-up is what infrastructure-level data still fails to tell them that shows up in pricing.
+
+### 2026-07-02
+
+Dylan's pushback (verification also helps operators get funded) produced the consent-asymmetry sharpening: verification is a credential at origination and a threat post-close, so the willing party is the operator credentialing completed deployments for the next facility. Restates kill #2 as: does verified prior delivery reduce the equity cushion or improve terms at fixed equity?

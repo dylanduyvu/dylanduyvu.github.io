@@ -103,6 +103,7 @@ Bernie's AC article (2026-07-01) supplies the causal machine underneath, especia
 - Timeline slips hit the contract engine and the hardware floor together, so GPU loan collateral and cash flows are delay-correlated, not independent.
 - GPU lending grew up outside banks (Basel III/Dodd-Frank pushed them out), so bank-grade infrastructure - ratings, appraisal standards, verification - is missing until institutionalization forces it.
 - NVIDIA may keep the demand side deliberately fragmented (neocloud allocation and equity) because only hyperscalers can fund defection to custom silicon; the neocloud borrower tier is partly an artifact of that strategy, which makes NVIDIA posture an upstream concentration risk for GPU credit.
+- Verification consent is asymmetric across the loan lifecycle: operators want it at origination (credential to get funded) and resist it post-close (surveillance), so verification products should sell as operator-side credentialing for the next facility, with post-close monitoring written into loan docs.
 
 ## Active Projects
 
@@ -162,6 +163,7 @@ Bernie's AC article (2026-07-01) supplies the causal machine underneath, especia
 - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
 - [[timeline-slips-hit-gpu-loan-engine-and-backstop-together|Timeline slips hit GPU loan engine and backstop together]]
 - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
+- [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 
 ## Open Questions
 
