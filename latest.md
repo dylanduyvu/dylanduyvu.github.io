@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-01
+updated: 2026-07-02
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 1, 2026, 10:01 PM EDT
+Generated: Jul 2, 2026, 6:01 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 57 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 58 note commits. The most recent movement is:
 
 - Insight update: log equity as generic lender risk mitigant.
 - Insight update: log thomas default-risk monitoring signal.
@@ -31,6 +31,17 @@ In the past 7 days, the public vault changed through 57 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jul 2, 2026, 6:01 PM EDT - capture: update note harness sharing context
+
+capture: update note harness sharing context.
+
+Changed notes:
+  - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[aravolta-usdai-collateral-verification-case-study-2026-07-02|Aravolta x USD.AI case study: infrastructure-level collateral verification]]
+  - [[aravolta|Aravolta]]
+  - [[usd-ai|USD.AI]]
 
 ### Jul 1, 2026, 10:01 PM EDT - capture: update latest notes
 
@@ -57,141 +68,9 @@ Changed notes:
   - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
   - and 8 more
 
-### Jul 1, 2026, 3:37 PM EDT - insight: log equity as generic lender risk mitigant
-
-Insight update: log equity as generic lender risk mitigant.
-
-Changed notes:
-  - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
-  - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
-  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
-  - [[gpu-finance|GPU Finance]]
-  - [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
-  - [[bernie-margulies|Bernie Margulies]]
-  - and 1 more
-
-### Jul 1, 2026, 2:45 PM EDT - insight: log thomas default-risk monitoring signal
-
-Insight update: log thomas default-risk monitoring signal.
-
-Changed notes:
-  - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
-  - [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
-  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
-  - [[gpu-finance|GPU Finance]]
-  - [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]]
-  - [[thomas-galbraith|Thomas Galbraith]]
-  - and 2 more
-
-### Jul 1, 2026, 1:56 PM EDT - insight: log equity cushion weakens sla wedge
-
-Insight update: log equity cushion weakens sla wedge.
-
-Changed notes:
-  - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
-  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
-  - [[gpu-finance|GPU Finance]]
-  - [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
-  - [[bernie-margulies|Bernie Margulies]]
-  - [[american-compute|American Compute]]
-
-### Jul 1, 2026, 1:12 PM EDT - insight: log sla monitoring underwriting caveat
-
-Insight update: log sla monitoring underwriting caveat.
-
-Changed notes:
-  - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
-  - [[the-neocloud-risk-is-the-balance-sheet-not-compute-performance|The neocloud risk is the balance sheet, not compute performance]]
-  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
-  - [[gpu-compute-novation|GPU Compute Novation]]
-  - [[gpu-finance|GPU Finance]]
-  - [[codex-chat-sla-insurance-monitoring-2026-07-01|Codex chat on SLA insurance and monitoring]]
-  - and 7 more
-
-### Jul 1, 2026, 12:12 PM EDT - source: capture bernie sla reply
-
-Source capture: capture bernie sla reply.
-
-Changed notes:
-  - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
-  - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
-  - [[gpu-finance|GPU Finance]]
-  - [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]]
-  - [[bernie-margulies|Bernie Margulies]]
-  - [[american-compute|American Compute]]
-  - and 1 more
-
-### Jul 1, 2026, 12:06 PM EDT - insight: log sla product form factor fork
-
-Insight update: log sla product form factor fork.
-
-Changed notes:
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
-  - [[gpu-finance|GPU Finance]]
-  - [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]]
-
-### Jul 1, 2026, 11:49 AM EDT - insight: log nvidia sla verification incentive
-
-Insight update: log nvidia sla verification incentive.
-
-Changed notes:
-  - [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[gpu-finance|GPU Finance]]
-  - [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]]
-  - [[nvidia|NVIDIA]]
-
-### Jul 1, 2026, 11:39 AM EDT - source: capture barkr sla reply
-
-Source capture: capture barkr sla reply.
-
-Changed notes:
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
-  - [[gpu-finance|GPU Finance]]
-  - [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]]
-  - [[thomas-galbraith|Thomas Galbraith]]
-  - [[barkr|Barkr]]
-  - [[nvidia|NVIDIA]]
-
-### Jul 1, 2026, 11:35 AM EDT - project: log sla outreach sent
-
-Project decision: log sla outreach sent.
-
-Changed notes:
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[gpu-finance|GPU Finance]]
-  - [[bernie-margulies|Bernie Margulies]]
-  - [[thomas-galbraith|Thomas Galbraith]]
-
-### Jul 1, 2026, 11:29 AM EDT - insight: add hyperscaler compute supply nuance
-
-Insight update: add hyperscaler compute supply nuance.
-
-Changed notes:
-  - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
-  - [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]]
-  - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
-  - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
-  - [[hyperscalers-are-becoming-compute-sellers-pressuring-neoclouds|Hyperscalers are becoming compute sellers, pressuring neoclouds]]
-  - [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]]
-  - [[gpu-compute-novation|GPU Compute Novation]]
-  - [[gpu-finance|GPU Finance]]
-  - and 5 more
-
 ## Past 7 Days
 
+- Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
 - Jul 1, 2026: insight: log equity as generic lender risk mitigant - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
@@ -216,12 +95,12 @@ Changed notes:
 - Jun 29, 2026: source: capture compute commoditization article - [[can-compute-commoditize-if-its-not-fungible-2026-06-11|Can Compute Commoditize if it's Not Fungible?]]
 - Jun 29, 2026: links: connect compute derivatives insights to source person - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
 - Jun 29, 2026: hubs: add compute derivatives project notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
-- Jun 29, 2026: insight: add compute perp spot index claim - [[compute-perps-need-a-spot-index-anchor-compute-does-not-have|Compute perps need a spot-index anchor compute does not have]]
 
-_Showing the newest 25 of 57 updates in this window._
+_Showing the newest 25 of 58 updates in this window._
 
 ## Past 30 Days
 
+- Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
 - Jul 1, 2026: insight: log equity as generic lender risk mitigant - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
@@ -246,6 +125,5 @@ _Showing the newest 25 of 57 updates in this window._
 - Jun 29, 2026: source: capture compute commoditization article - [[can-compute-commoditize-if-its-not-fungible-2026-06-11|Can Compute Commoditize if it's Not Fungible?]]
 - Jun 29, 2026: links: connect compute derivatives insights to source person - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
 - Jun 29, 2026: hubs: add compute derivatives project notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
-- Jun 29, 2026: insight: add compute perp spot index claim - [[compute-perps-need-a-spot-index-anchor-compute-does-not-have|Compute perps need a spot-index anchor compute does not have]]
 
-_Showing the newest 25 of 57 updates in this window._
+_Showing the newest 25 of 58 updates in this window._
