@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-02
 aliases: [USD.AI, USD AI]
 people: [harry-page]
 projects: [gpu-compute-novation]
@@ -24,6 +24,7 @@ USD.AI is strategically relevant because it lends against GPU-backed infrastruct
 - It sees supply scarcity as a bottleneck: customers wait for GPUs or pay premiums to skip the line.
 - It volunteered SLA/uptime operator-performance verification as a current lender pain.
 - It uses value warranties/reinsurance around GPU residual value, at least in the Barkr/Barker-style structure described on the call.
+- It already procures continuous infrastructure-level collateral verification from [[aravolta|Aravolta]] (published case study, seen 2026-07-02): "verify, don't trust" - real-time physical presence, serial identity, health, and availability of the GPU collateral, explicitly excluding tenant usage and application performance. Aravolta is plausibly the "verify" in the escrow-on-install-and-verify structure. New name: Conor Moore, co-founder & COO, quoted in the case study.
 - Scale reference: on the order of $100M+ deployed against a ~$1.2B pipeline (compiled figures, see provenance note below).
 
 ## Underwriting Model
@@ -46,12 +47,14 @@ This is the cleanest worked example so far of the [[gpu-backed-debt-is-contract-
 ## Related People
 
 - [[harry-page|Harry Page]] — originations; did the 2026-06-29 call.
+- Conor Moore — co-founder & COO; quoted endorsing Aravolta's verification. No hub yet (no direct contact).
 - Sam McCulloch — the intro path into USD.AI originations (reached via Manav). No hub yet.
 - Evan Meagher — ex-CoreWeave CFO and USD.AI advisor; named routing target for GPU contract-transferability questions (relevant if the novation tripwire fires). No hub yet.
 
 ## Related Sources
 
 - [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
+- [[aravolta-usdai-collateral-verification-case-study-2026-07-02|Aravolta x USD.AI case study]]
 
 ## Related Insights
 

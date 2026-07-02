@@ -9,7 +9,7 @@ projects: []
 sources: [semianalysis-dylan-patel-neocloud-thesis-2026-06-30]
 people: [dylan-patel]
 orgs: [nvidia, coreweave]
-aliases: [nvidia keeps demand fragmented on purpose, jensen funds neoclouds to weaken hyperscaler silicon, commoditize your complements applied to gpus, neoclouds exist because nvidia needs fragmented distribution]
+aliases: [nvidia keeps demand fragmented on purpose, jensen funds neoclouds to weaken hyperscaler silicon, commoditize your complements applied to gpus, neoclouds exist because nvidia needs fragmented distribution, nvidia promotes neoclouds and resists gpu-as-a-service to avoid competing with hyperscalers]
 tags: [nvidia, neoclouds, market-structure, allocation, channel-strategy]
 ---
 

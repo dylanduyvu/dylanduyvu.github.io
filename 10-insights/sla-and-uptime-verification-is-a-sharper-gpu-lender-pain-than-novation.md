@@ -2,13 +2,13 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-07-01
+updated: 2026-07-02
 confidence: high
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
-sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, compute-finance-space-commitment-and-problem-inventory-2026-06-30, barkr-thomas-sla-email-reply-2026-07-01, american-compute-bernie-sla-email-reply-2026-07-01, codex-chat-sla-insurance-monitoring-2026-07-01]
+sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, compute-finance-space-commitment-and-problem-inventory-2026-06-30, barkr-thomas-sla-email-reply-2026-07-01, american-compute-bernie-sla-email-reply-2026-07-01, codex-chat-sla-insurance-monitoring-2026-07-01, aravolta-usdai-collateral-verification-case-study-2026-07-02]
 people: [harry-page, thomas-galbraith, bernie-margulies]
-orgs: [usd-ai, barkr, american-compute, nvidia]
+orgs: [usd-ai, barkr, american-compute, nvidia, aravolta]
 aliases: [gpu lenders need sla verification, uptime performance verification is a lender pain]
 tags: [gpu, lending, sla, uptime, customer-discovery]
 ---
@@ -60,6 +60,7 @@ Thomas's follow-up refines the Barkr/NVIDIA signal. The concrete ask was not "NV
 - 2026-07-01: Dylan identified the core time mismatch: live monitoring only measures operating clusters, so pre-build underwriting needs prior performance data or proxies.
 - 2026-07-01: Asked how unknown / less-proven operators get funded anyway, Bernie said they bring more equity to the deal, such as $5M cash against $10M of equipment.
 - 2026-07-01: Bernie then clarified that extra equity can generally resolve any kind of lender concern.
+- 2026-07-02: Aravolta's published case study shows USD.AI already buys continuous infrastructure-level collateral verification (physical presence, serial identity, health, availability) under the principle "verify, don't trust" - behavioral proof a lender pays for verification. Aravolta explicitly does NOT collect tenant usage, workloads, or application performance.
 
 ## Implications
 
@@ -81,6 +82,7 @@ Thomas's follow-up refines the Barkr/NVIDIA signal. The concrete ask was not "NV
 - Do not pitch pure live monitoring unless the lender/insurer has a lever: delayed draws, covenants, reserves, borrowing-base eligibility, claims, renewals, repricing, or future underwriting.
 - Test whether SLA/ops diligence can reduce required equity contribution or improve LTV. If it cannot, the priced wedge may be capital structure rather than verification.
 - Do not infer SLA-specific pain from equity cushions alone; test whether better operator evidence changes terms at a fixed equity level.
+- Position against the existing layer: USD.AI already has collateral-existence verification (Aravolta). The open layer is contract-performance and revenue-crediting verification - what infrastructure telemetry cannot see. Ask Harry what Aravolta-style data still fails to tell them that shows up in pricing.
 
 ## Counterpoints / Uncertainty
 
@@ -95,10 +97,11 @@ Thomas's follow-up refines the Barkr/NVIDIA signal. The concrete ask was not "NV
 - Bernie has now named equity cushion, not SLA proof, as the observed mechanism for financing less-proven operators. This weakens the "turn skipped operators into underwritable operators" version of the thesis.
 - Bernie's second follow-up makes the equity signal broad rather than SLA-specific, so it should be treated as a generic lender-risk workaround.
 - The broader compute-finance search space has multiple candidate problems, so SLA needs to earn foreground attention rather than inherit it from novation's failure.
+- Aravolta cuts both ways: it proves lenders pay for verification, but it also means the monitoring/dashboard layer is partially claimed at the anchor prospect, and infrastructure-level "continuous availability" may already capture enough uptime that the marginal value of true SLA/tenant-layer verification is small. The remaining wedge also sits behind the exact confidentiality boundary Aravolta chose not to cross.
 
 ## Links
 
-- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]], [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]], [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]], [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]], [[codex-chat-sla-insurance-monitoring-2026-07-01|Codex chat on SLA insurance and monitoring]]
+- Sources: [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]], [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]], [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]], [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]], [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]], [[codex-chat-sla-insurance-monitoring-2026-07-01|Codex chat on SLA insurance and monitoring]], [[aravolta-usdai-collateral-verification-case-study-2026-07-02|Aravolta x USD.AI case study]]
 - Projects: [[gpu-compute-novation|GPU Compute Novation]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]], [[thomas-galbraith|Thomas Galbraith]], [[bernie-margulies|Bernie Margulies]]
@@ -158,3 +161,7 @@ Logged Bernie's second equity clarification: extra equity can generally resolve 
 ### 2026-07-01
 
 Bernie's AC article reframes the pain as market structure: offtake dies from customer credit (underwritten in tiers) or from operator execution misses where the customer walks without breaching (no underwriting instrument, only proxies). The sharpest unverifiable window may be go-live/milestone delivery, where the contract itself lives or dies pre-revenue. See [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]].
+
+### 2026-07-02
+
+Found Aravolta's USD.AI case study while the Harry follow-up was in flight. USD.AI already procures continuous infrastructure-level collateral verification from Aravolta ("verify, don't trust"), which is the strongest behavioral WTP evidence yet - a lender pays for verification. But Aravolta's scope explicitly excludes tenant usage, workloads, and application performance, so the collateral-existence layer is claimed while the contract-performance / revenue-crediting layer remains open, sitting behind the confidentiality boundary Aravolta chose not to cross. Expect Aravolta to appear in Harry's answer; the sharper follow-up is what infrastructure-level data still fails to tell them that shows up in pricing.
