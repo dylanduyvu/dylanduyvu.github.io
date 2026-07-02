@@ -8,11 +8,11 @@ updated: 2026-07-01
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 1, 2026, 3:37 PM EDT
+Generated: Jul 1, 2026, 9:39 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 55 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 56 note commits. The most recent movement is:
 
 - Insight update: log equity as generic lender risk mitigant.
 - Insight update: log thomas default-risk monitoring signal.
@@ -31,6 +31,21 @@ In the past 7 days, the public vault changed through 55 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jul 1, 2026, 9:39 PM EDT - capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch
+
+capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch.
+
+Changed notes:
+  - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
+  - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
+  - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
+  - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
+  - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[timeline-slips-hit-gpu-loan-engine-and-backstop-together|Timeline slips hit GPU loan engine and backstop together]]
+  - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
+  - and 8 more
 
 ### Jul 1, 2026, 3:37 PM EDT - insight: log equity as generic lender risk mitigant
 
@@ -165,18 +180,9 @@ Changed notes:
   - [[gpu-finance|GPU Finance]]
   - and 5 more
 
-### Jun 30, 2026, 6:13 PM EDT - insight: log offtake centralization
-
-Insight update: log offtake centralization.
-
-Changed notes:
-  - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
-  - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
-  - [[gpu-finance|GPU Finance]]
-  - [[coreweave-issued-yet-more-debt-2026-05-28|CoreWeave Issued Yet More Debt]]
-
 ## Past 7 Days
 
+- Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
 - Jul 1, 2026: insight: log equity as generic lender risk mitigant - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - Jul 1, 2026: insight: log thomas default-risk monitoring signal - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - Jul 1, 2026: insight: log equity cushion weakens sla wedge - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
@@ -201,12 +207,12 @@ Changed notes:
 - Jun 29, 2026: hubs: add compute derivatives project notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 - Jun 29, 2026: insight: add compute perp spot index claim - [[compute-perps-need-a-spot-index-anchor-compute-does-not-have|Compute perps need a spot-index anchor compute does not have]]
 - Jun 29, 2026: insight: add GPU financing forward strip claim - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
-- Jun 29, 2026: insight: add compute derivatives freight analogy - [[compute-derivatives-should-look-like-freight-and-power-not-crypto|Compute derivatives should look like freight and power, not crypto]]
 
-_Showing the newest 25 of 55 updates in this window._
+_Showing the newest 25 of 56 updates in this window._
 
 ## Past 30 Days
 
+- Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
 - Jul 1, 2026: insight: log equity as generic lender risk mitigant - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - Jul 1, 2026: insight: log thomas default-risk monitoring signal - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - Jul 1, 2026: insight: log equity cushion weakens sla wedge - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
@@ -231,6 +237,5 @@ _Showing the newest 25 of 55 updates in this window._
 - Jun 29, 2026: hubs: add compute derivatives project notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 - Jun 29, 2026: insight: add compute perp spot index claim - [[compute-perps-need-a-spot-index-anchor-compute-does-not-have|Compute perps need a spot-index anchor compute does not have]]
 - Jun 29, 2026: insight: add GPU financing forward strip claim - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
-- Jun 29, 2026: insight: add compute derivatives freight analogy - [[compute-derivatives-should-look-like-freight-and-power-not-crypto|Compute derivatives should look like freight and power, not crypto]]
 
-_Showing the newest 25 of 55 updates in this window._
+_Showing the newest 25 of 56 updates in this window._
