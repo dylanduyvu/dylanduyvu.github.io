@@ -8,11 +8,11 @@ updated: 2026-07-01
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 1, 2026, 9:39 PM EDT
+Generated: Jul 1, 2026, 10:01 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 56 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 57 note commits. The most recent movement is:
 
 - Insight update: log equity as generic lender risk mitigant.
 - Insight update: log thomas default-risk monitoring signal.
@@ -31,6 +31,16 @@ In the past 7 days, the public vault changed through 56 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jul 1, 2026, 10:01 PM EDT - capture: update latest notes
+
+capture: update latest notes.
+
+Changed notes:
+  - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
+  - [[gpu-finance|GPU Finance]]
+  - [[dylan-patel|Dylan Patel]]
+  - [[nvidia|NVIDIA]]
 
 ### Jul 1, 2026, 9:39 PM EDT - capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch
 
@@ -182,6 +192,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
 - Jul 1, 2026: insight: log equity as generic lender risk mitigant - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - Jul 1, 2026: insight: log thomas default-risk monitoring signal - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
@@ -206,12 +217,12 @@ Changed notes:
 - Jun 29, 2026: links: connect compute derivatives insights to source person - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
 - Jun 29, 2026: hubs: add compute derivatives project notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 - Jun 29, 2026: insight: add compute perp spot index claim - [[compute-perps-need-a-spot-index-anchor-compute-does-not-have|Compute perps need a spot-index anchor compute does not have]]
-- Jun 29, 2026: insight: add GPU financing forward strip claim - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 
-_Showing the newest 25 of 56 updates in this window._
+_Showing the newest 25 of 57 updates in this window._
 
 ## Past 30 Days
 
+- Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
 - Jul 1, 2026: insight: log equity as generic lender risk mitigant - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - Jul 1, 2026: insight: log thomas default-risk monitoring signal - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
@@ -236,6 +247,5 @@ _Showing the newest 25 of 56 updates in this window._
 - Jun 29, 2026: links: connect compute derivatives insights to source person - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
 - Jun 29, 2026: hubs: add compute derivatives project notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 - Jun 29, 2026: insight: add compute perp spot index claim - [[compute-perps-need-a-spot-index-anchor-compute-does-not-have|Compute perps need a spot-index anchor compute does not have]]
-- Jun 29, 2026: insight: add GPU financing forward strip claim - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 
-_Showing the newest 25 of 56 updates in this window._
+_Showing the newest 25 of 57 updates in this window._
