@@ -8,11 +8,11 @@ updated: 2026-07-02
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 2, 2026, 6:01 PM EDT
+Generated: Jul 2, 2026, 6:24 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 58 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 59 note commits. The most recent movement is:
 
 - Insight update: log equity as generic lender risk mitigant.
 - Insight update: log thomas default-risk monitoring signal.
@@ -31,6 +31,15 @@ In the past 7 days, the public vault changed through 58 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jul 2, 2026, 6:24 PM EDT - capture: update notes
+
+capture: update notes.
+
+Changed notes:
+  - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[gpu-finance|GPU Finance]]
 
 ### Jul 2, 2026, 6:01 PM EDT - capture: update note harness sharing context
 
@@ -70,6 +79,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 2, 2026: capture: update notes - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 - Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
@@ -94,12 +104,12 @@ Changed notes:
 - Jun 29, 2026: insights: add compute commoditization claims - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
 - Jun 29, 2026: source: capture compute commoditization article - [[can-compute-commoditize-if-its-not-fungible-2026-06-11|Can Compute Commoditize if it's Not Fungible?]]
 - Jun 29, 2026: links: connect compute derivatives insights to source person - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
-- Jun 29, 2026: hubs: add compute derivatives project notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 
-_Showing the newest 25 of 58 updates in this window._
+_Showing the newest 25 of 59 updates in this window._
 
 ## Past 30 Days
 
+- Jul 2, 2026: capture: update notes - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 - Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
@@ -124,6 +134,5 @@ _Showing the newest 25 of 58 updates in this window._
 - Jun 29, 2026: insights: add compute commoditization claims - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
 - Jun 29, 2026: source: capture compute commoditization article - [[can-compute-commoditize-if-its-not-fungible-2026-06-11|Can Compute Commoditize if it's Not Fungible?]]
 - Jun 29, 2026: links: connect compute derivatives insights to source person - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
-- Jun 29, 2026: hubs: add compute derivatives project notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 
-_Showing the newest 25 of 58 updates in this window._
+_Showing the newest 25 of 59 updates in this window._
