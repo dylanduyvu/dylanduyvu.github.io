@@ -36,6 +36,7 @@ No direct relationship captured; a public source whose podcast/writeup claims ar
 
 - [[the-neocloud-risk-is-the-balance-sheet-not-compute-performance|The neocloud risk is the balance sheet, not compute performance]]
 - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
+- [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 
 ## Related Areas
 

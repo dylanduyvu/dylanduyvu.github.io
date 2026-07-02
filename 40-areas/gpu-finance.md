@@ -102,6 +102,7 @@ Bernie's AC article (2026-07-01) supplies the causal machine underneath, especia
 - GPU offtake dies from two sides; the market underwrites customer credit but has no instrument for operator execution (walk-without-breach on missed milestones).
 - Timeline slips hit the contract engine and the hardware floor together, so GPU loan collateral and cash flows are delay-correlated, not independent.
 - GPU lending grew up outside banks (Basel III/Dodd-Frank pushed them out), so bank-grade infrastructure - ratings, appraisal standards, verification - is missing until institutionalization forces it.
+- NVIDIA may keep the demand side deliberately fragmented (neocloud allocation and equity) because only hyperscalers can fund defection to custom silicon; the neocloud borrower tier is partly an artifact of that strategy, which makes NVIDIA posture an upstream concentration risk for GPU credit.
 
 ## Active Projects
 
@@ -160,6 +161,7 @@ Bernie's AC article (2026-07-01) supplies the causal machine underneath, especia
 - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
 - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
 - [[timeline-slips-hit-gpu-loan-engine-and-backstop-together|Timeline slips hit GPU loan engine and backstop together]]
+- [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 
 ## Open Questions
 
