@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-02
+updated: 2026-07-05
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 2, 2026, 6:24 PM EDT
+Generated: Jul 5, 2026, 6:45 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 59 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 60 note commits. The most recent movement is:
 
 - Insight update: log equity as generic lender risk mitigant.
 - Insight update: log thomas default-risk monitoring signal.
@@ -32,53 +32,24 @@ In the past 7 days, the public vault changed through 59 note commits. The most r
 
 ## Past 24 Hours
 
-### Jul 2, 2026, 6:24 PM EDT - capture: update notes
+### Jul 5, 2026, 6:45 PM EDT - capture: update notes
 
 capture: update notes.
 
 Changed notes:
+  - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
+  - [[gpu-pricing-opacity-is-structural-not-just-immature|GPU pricing opacity is structural, not just immature]]
+  - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
+  - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
+  - [[offtake-contracts-legislate-what-the-market-cannot-verify|Offtake contracts legislate what the market cannot verify]]
   - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
   - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[gpu-finance|GPU Finance]]
-
-### Jul 2, 2026, 6:01 PM EDT - capture: update note harness sharing context
-
-capture: update note harness sharing context.
-
-Changed notes:
-  - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[aravolta-usdai-collateral-verification-case-study-2026-07-02|Aravolta x USD.AI case study: infrastructure-level collateral verification]]
-  - [[aravolta|Aravolta]]
-  - [[usd-ai|USD.AI]]
-
-### Jul 1, 2026, 10:01 PM EDT - capture: update latest notes
-
-capture: update latest notes.
-
-Changed notes:
-  - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
-  - [[gpu-finance|GPU Finance]]
-  - [[dylan-patel|Dylan Patel]]
-  - [[nvidia|NVIDIA]]
-
-### Jul 1, 2026, 9:39 PM EDT - capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch
-
-capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch.
-
-Changed notes:
-  - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
-  - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
-  - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
-  - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
-  - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[timeline-slips-hit-gpu-loan-engine-and-backstop-together|Timeline slips hit GPU loan engine and backstop together]]
-  - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
-  - and 8 more
+  - [[sla-remedies-are-toothless-so-reputation-carries-delivery-risk|SLA remedies are toothless, so reputation carries delivery risk]]
+  - and 6 more
 
 ## Past 7 Days
 
+- Jul 5, 2026: capture: update notes - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jul 2, 2026: capture: update notes - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 - Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
@@ -103,12 +74,12 @@ Changed notes:
 - Jun 29, 2026: hubs: wire compute commoditization notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 - Jun 29, 2026: insights: add compute commoditization claims - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
 - Jun 29, 2026: source: capture compute commoditization article - [[can-compute-commoditize-if-its-not-fungible-2026-06-11|Can Compute Commoditize if it's Not Fungible?]]
-- Jun 29, 2026: links: connect compute derivatives insights to source person - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
 
-_Showing the newest 25 of 59 updates in this window._
+_Showing the newest 25 of 60 updates in this window._
 
 ## Past 30 Days
 
+- Jul 5, 2026: capture: update notes - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jul 2, 2026: capture: update notes - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 - Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
@@ -133,6 +104,5 @@ _Showing the newest 25 of 59 updates in this window._
 - Jun 29, 2026: hubs: wire compute commoditization notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 - Jun 29, 2026: insights: add compute commoditization claims - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
 - Jun 29, 2026: source: capture compute commoditization article - [[can-compute-commoditize-if-its-not-fungible-2026-06-11|Can Compute Commoditize if it's Not Fungible?]]
-- Jun 29, 2026: links: connect compute derivatives insights to source person - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]
 
-_Showing the newest 25 of 59 updates in this window._
+_Showing the newest 25 of 60 updates in this window._
