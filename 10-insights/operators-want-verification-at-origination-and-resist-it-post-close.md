@@ -34,6 +34,7 @@ It resolves who the willing party is in the verification thesis, which was the c
 - 2026-07-01: Bernie - unknown/unproven operators get skipped or fund via heavy equity ($5M cash on $10M gear); prior deployments are the proxy lenders actually use. Verification-as-credential targets exactly this gate.
 - 2026-06-29: Harry - USD.AI would price more aggressively with performance assurance; the lender side of the same trade.
 - Credit-market precedent: thin-file borrowers volunteering bank-statement access; startups buying their own SOC 2; covenants existing precisely because post-close consent decays.
+- 2026-07-02: AC's offtake review shows flagship MSAs contain benchmarking gag clauses and publicity-as-material-breach terms, so customer-side or scraped performance data is contractually blocked at the top of the market - the operator-volunteered path is not just the willing-party path, it is the only legally clean one, which makes consent-first credentialing a moat rather than a workaround.
 - Provenance: synthesized in chat (2026-07-02) from Dylan's pushback ("doesn't verification help the operator get funded as well?") against the confidentiality-barrier framing. Reasoned structure with supporting anecdotes, not yet directly confirmed by any operator.
 
 ## Implications
@@ -54,7 +55,7 @@ It resolves who the willing party is in the verification thesis, which was the c
 ## Links
 
 - Source: [[aravolta-usdai-collateral-verification-case-study-2026-07-02|Aravolta x USD.AI case study]]
-- Related Insights: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]], [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]], [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]], [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
+- Related Insights: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]], [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]], [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]], [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]], [[offtake-contracts-legislate-what-the-market-cannot-verify|Offtake contracts legislate what the market cannot verify]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[bernie-margulies|Bernie Margulies]], [[harry-page|Harry Page]]
 - Orgs: [[aravolta|Aravolta]], [[usd-ai|USD.AI]], [[american-compute|American Compute]]

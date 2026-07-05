@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-02
 confidence: high
 domains: [gpu-finance, residual-value, ai-infrastructure]
 projects: [gpu-residual-value-pricing]
-sources: [american-compute-bernie-ceo-call-2026-06-16]
+sources: [american-compute-bernie-ceo-call-2026-06-16, american-compute-compute-offtake-agreements-article-2026-07-02]
 people: [bernie-margulies]
 orgs: [american-compute]
 aliases: [gpu pricing opacity is incentive aligned, gpu market transparency is structurally resisted]
@@ -30,6 +30,7 @@ This weakens any naive "build GPU Kelley Blue Book and the market gets transpare
 - 2026-06-16: He described direct Nvidia access as rare except for the largest buyers; most buyers go through OEMs and often VARs, creating layers of middlemen that all want margin.
 - 2026-06-16: He said OEMs benefit from unclear differentiation claims, such as premium claims around liquid cooling, because transparency would compress margins.
 - 2026-06-16: He had not seen governments or sovereign AI buyers exerting transparency pressure yet.
+- 2026-07-02: AC's contract review adds legal-form evidence: force majeure terms differ completely across three CoreWeave contracts with NVIDIA, OpenAI, and Meta (delayed-not-excused vs 30-day exit vs exempt) - the same provider negotiating everything bespoke, nothing standardized. Benchmarking gag clauses and publicity-as-material-breach terms contractually wall off performance and customer data. And the only public contract database the industry has is CoreWeave's SEC exhibits, forced by its IPO - institutionalization producing the market's first transparency, exactly as predicted. Rare hard price points exist but are scarce (Bit Digital H200 at $2.15-3.40/card-hour).
 
 ## Implications
 
@@ -46,7 +47,7 @@ This weakens any naive "build GPU Kelley Blue Book and the market gets transpare
 
 ## Links
 
-- Sources: [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
+- Sources: [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]], [[american-compute-compute-offtake-agreements-article-2026-07-02|American Compute: Compute Offtake Agreements]]
 - Projects: [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[bernie-margulies|Bernie Margulies]]
@@ -57,3 +58,7 @@ This weakens any naive "build GPU Kelley Blue Book and the market gets transpare
 ### 2026-06-29
 
 Initial capture from American Compute call transcript.
+
+### 2026-07-02
+
+Added contract-level evidence from AC's offtake review: bespoke force majeure across same-provider deals, benchmarking/publicity gag clauses, SEC filings as the industry's only public contract database, and the scarcity of hard public price points.

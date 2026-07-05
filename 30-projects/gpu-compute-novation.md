@@ -2,7 +2,7 @@
 type: project
 status: shelved
 created: 2026-06-29
-updated: 2026-07-01
+updated: 2026-07-02
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 people: [harry-page, bernie-margulies]
 orgs: [usd-ai, nebius, american-compute, meta]
@@ -18,6 +18,8 @@ Shelved with tripwire. The original hypothesis that long-term GPU offtake custom
 The clean kill is two-source and mechanism-backed: USD.AI reports that customers generally need more capacity, not less, and Dylan's Nebius evidence provides independent neocloud-side corroboration. The market appears supply-constrained rather than over-committed, so customers are short capacity rather than long capacity.
 
 2026-07-01 nuance: Meta's reported plan to sell excess AI compute is a real supply-loosening signal, but it does not directly resurrect the original novation thesis. Hyperscaler fleet externalization is not the same workflow as a customer novating a committed offtake contract. It does mean the tripwire should watch hyperscaler N-1 / excess-capacity sales as a leading indicator for looser compute supply.
+
+2026-07-02 contract-machinery note: AC's review of CoreWeave's SEC-filed MSAs surfaced the OpenAI "alternate operator option": on material provider breach, OpenAI can force the entire contract onto a replacement operator of its choosing within two business days, GPUs staying racked. This is provider substitution rather than payer substitution (the reverse direction from this project's thesis), but it proves the legal machinery for swapping a party out of a live compute contract exists and gets signed at the largest scale. Countervailing find in the same review: no-subcontracting clauses are standard (OpenAI prohibits CoreWeave from subcontracting the bare-metal environment), which blocks provider-side re-routing of workloads and is one more structural barrier to capacity-resale liquidity. Both belong in any tripwire-fired revival analysis, and both are questions for Evan Meagher if that conversation ever happens. See [[american-compute-compute-offtake-agreements-article-2026-07-02|AC: Compute Offtake Agreements]].
 
 The better near-term problem may be SLA and uptime performance verification for GPU lenders, because trusted performance evidence could reduce top-line revenue risk and allow more aggressive lending.
 
@@ -58,6 +60,7 @@ Early demand-crack watch (2026-06-09): Crusoe paused its 1.8GW Project Jade at a
 - [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]
 - [[novation-shelving-decision-2026-06-30|Novation shelving decision memo]]
 - [[meta-compute-hyperscalers-selling-excess-compute-2026-07-01|Meta Compute: hyperscalers moving to sell excess AI compute]]
+- [[american-compute-compute-offtake-agreements-article-2026-07-02|American Compute: Compute Offtake Agreements]]
 
 ## Open Questions
 

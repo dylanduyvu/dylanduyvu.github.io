@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-05
 confidence: medium
 domains: [gpu-finance, ai-infrastructure, semiconductors, market-structure, neoclouds]
 projects: []
@@ -30,6 +30,7 @@ The neocloud borrower universe that GPU-backed credit is built on is, in part, a
 - Mechanism: every neocloud GPU builds a channel that cannot defect and that drains cloud workloads/pricing power from the hyperscalers who could. Neolabs are the same play one layer up (~75 model companies on NVIDIA vs 3 labs big enough to co-design with a rival chip).
 - Margin logic reinforces it: NVIDIA runs ~mid-70s gross margins at the chip layer; OEM box-building runs low teens. Integration would dilute margin while consolidating and antagonizing the counterparties.
 - Precedent: Intel ran the same play for ~25 years - feed a swarm of interchangeable PC OEMs, never build the PC, capture essentially all Wintel-era profit. "Commoditize your complements": keep your own layer scarce and every adjacent layer hyper-competitive.
+- 2026-07-01: the AI Compute Partnership confirms the mechanism at product scale - NVIDIA now formally backstops neocloud utilization (rent-back of idle capacity) for a revenue share, converting bespoke support (CoreWeave $6.3B, Lambda $1.5B) into a named capital product explicitly framed as keeping the independent-cloud ecosystem alive rather than letting compute concentrate in a handful of giants. Note the nuance it adds: NVIDIA is verticalizing *financially* (taking cloud economics as lender/insurer) while still not operating clouds - vertical integration by instrument, not operations, which preserves the no-channel-conflict logic while capturing the economics.
 - Provenance note: the fragmentation mechanism is chat synthesis (Dylan/Claude, 2026-07-01) built on Patel's claim, public NVIDIA behavior (allocation, neocloud investments, DGX reference spec), and the Intel precedent - a strategy model, not a documented NVIDIA policy.
 
 ## Implications
@@ -43,7 +44,7 @@ The neocloud borrower universe that GPU-backed credit is built on is, in part, a
 
 - Inference-heavy: NVIDIA has never stated this strategy; the model is assembled from Patel's claim, observed behavior, and analogy.
 - DGX systems, NVL72 rack-scale, and DGX Cloud show NVIDIA does integrate selectively where differentiation lives; the line between "reference-design layer" and creeping first-party is blurry and moving.
-- Alternative explanation: neocloud investment could be simple demand stimulation / revenue round-tripping in a boom, not a decade-scale anti-hyperscaler channel play. Both can be true.
+- Alternative explanation: neocloud investment could be simple demand stimulation / revenue round-tripping in a boom, not a decade-scale anti-hyperscaler channel play. Both can be true. The backstop program strengthens the round-tripping reading too: critics note vendor-financed demand can appear organic when it is financially engineered.
 - Hyperscaler silicon may succeed regardless of distribution fragmentation if the software gap closes (open models co-designed for non-NVIDIA silicon would break the neolab half of the play).
 - Antitrust risk: allocation favoritism as strategic weapon is the kind of behavior regulators eventually examine, which could force posture changes independent of strategy.
 

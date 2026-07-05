@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-05
 confidence: medium-high
 domains: [gpu-finance, asset-backed-lending, residual-value, compute-contracts]
 projects: [gpu-residual-value-pricing, gpu-compute-novation]
@@ -42,6 +42,17 @@ This puts a caveat on the vault's core inversion. "Contract-backed with a hardwa
 - The correlation is asymmetric and partial: architecture releases compress residuals on a market-wide clock regardless of any single loan's delays; the loan-specific correlation runs through delay duration, which varies.
 - Strong secondary-market demand (current scarcity) can hold residuals up even across an architecture release, muting the effect while supply stays tight.
 - Escrow-on-install structures (USD.AI/Wilmington) mean some lenders do not fund fully until delivery, which truncates the exposure window to the pre-delivery slice.
+- 2026-07-05 (Dave Friedman, "The GPU Debt Treadmill"): in fully-amortizing structures backed by 5-year IG take-or-pay contracts, depreciation is genuinely irrelevant to the lender - the debt retires within the contract term and residual value, whatever it is, accrues to equity. On that tier, the engine/floor correlation is an equity problem and a *refinancing* problem (the next tranche must be raised against older hardware), not a current-lender problem. This insight's claim therefore binds mainly where contracts can die pre-amortization: the mid-market walk-without-breach tier, shorter or weaker offtakes, and any loan funded ahead of delivery.
+
+## Updates
+
+### 2026-07-01
+
+Initial capture from Bernie's AC article FAQ.
+
+### 2026-07-05
+
+Added the Friedman counterpoint scoping the claim by tier: irrelevant to lenders in fully-amortizing IG structures (residual accrues to equity; risk migrates to refinancing), binding where contracts are evaporable pre-amortization. Sharper statement of where the correlated-failure risk actually lives.
 
 ## Links
 

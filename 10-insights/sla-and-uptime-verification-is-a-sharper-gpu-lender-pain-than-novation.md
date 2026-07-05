@@ -61,6 +61,7 @@ Thomas's follow-up refines the Barkr/NVIDIA signal. The concrete ask was not "NV
 - 2026-07-01: Asked how unknown / less-proven operators get funded anyway, Bernie said they bring more equity to the deal, such as $5M cash against $10M of equipment.
 - 2026-07-01: Bernie then clarified that extra equity can generally resolve any kind of lender concern.
 - 2026-07-02: Aravolta's published case study shows USD.AI already buys continuous infrastructure-level collateral verification (physical presence, serial identity, health, availability) under the principle "verify, don't trust" - behavioral proof a lender pays for verification. Aravolta explicitly does NOT collect tenant usage, workloads, or application performance.
+- 2026-07-02: AC's offtake contract review documents the SLA remedy mechanics: service credits only (future-use, no cash, customer-filed claims within 30-60 days), with Bernie's own editorial that customers should pick reputable providers over generous SLAs - conceding the paper protection is weak and only operator delivery behavior matters. The customer's selection problem is the same unpriced operator-quality problem as the lender's underwriting problem.
 
 ## Implications
 
@@ -170,3 +171,11 @@ Found Aravolta's USD.AI case study while the Harry follow-up was in flight. USD.
 ### 2026-07-02
 
 Dylan's pushback (verification also helps operators get funded) produced the consent-asymmetry sharpening: verification is a credential at origination and a threat post-close, so the willing party is the operator credentialing completed deployments for the next facility. Restates kill #2 as: does verified prior delivery reduce the equity cushion or improve terms at fixed equity?
+
+### 2026-07-02
+
+AC's offtake-agreements article closes the loop from the customer seat: SLA remedies are structurally toothless (credits, future-use only, claims windows), so customers also select on reputation - the third seat converging on unmeasured operator delivery quality. Benchmarking gags and publicity clauses in flagship MSAs define the legal perimeter: any credential must be operator-volunteered and consent-first. See [[sla-remedies-are-toothless-so-reputation-carries-delivery-risk|SLA remedies are toothless, so reputation carries delivery risk]] and [[offtake-contracts-legislate-what-the-market-cannot-verify|Offtake contracts legislate what the market cannot verify]].
+
+### 2026-07-05
+
+NVIDIA's AI Compute Partnership (launched 2026-07-01) may migrate the verification buyer up the stack: NVIDIA now guarantees floor utilization and takes usage-linked revenue share, so the program's economics run through utilization metering and revenue truth - verification as program plumbing rather than deal diligence. Retroactively consistent with the NVIDIA-adjacent monitoring interest Thomas reported. New discovery question for any NVIDIA-adjacent seat: who measures utilization for the backstop and revenue for the share? See [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]].

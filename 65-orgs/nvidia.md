@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-05
 aliases: [NVIDIA, Nvidia]
 people: [dylan-patel]
 projects: []
@@ -24,20 +24,23 @@ NVIDIA sits upstream of everything in this vault: it makes the GPUs, controls al
 - Selective up-stack integration: DGX systems (reference machines), NVL72 rack-scale, DGX Cloud - it takes the reference-design layer, not the box-building layer, and offloads capital intensity (inventory, depreciation, debt) down the chain while holding none of the residual risk its cadence creates.
 - Via Thomas/Barkr (2026-07-01): an NVIDIA-adjacent conversation raised operator usage/SLA monitoring; the concrete ask traced to a lender in a specific deal. NVIDIA's interest in bankable contracts makes sense structurally: financeable operators buy more chips.
 - NVIDIA reportedly supplies compute to Thinking Machines Lab (with Google Cloud), part of the neolab-side fragmentation play.
+- 2026-07-01: launched the AI Compute Partnership - a formalized revenue-sharing + credit-support product in which NVIDIA guarantees floor utilization on partner GPUs (rent-back of idle capacity at predetermined rates) in exchange for a usage-linked revenue share. First partners Sharon AI and Firmus (~210k GB300s, Australia/Indonesia). Converts bespoke backstops (CoreWeave $6.3B unsold-capacity obligation through 2032, Lambda $1.5B) into a named capital product; reportedly negotiating similar for OpenAI. NVIDIA has moved from equipment vendor to lender/insurer of its own channel. See [[nvidia-ai-compute-partnership-backstop-2026-07-05|the source note]] and [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|the verification-buyer hypothesis]].
 
 ## Open Questions
 
 - How durable is the neocloud allocation tailwind if hyperscaler silicon matures or the strategic need recedes? (Concentration risk upstream of all contract-book risk.)
 - Is DGX Cloud a contained hedge or the start of a first-party posture shift that would compete with the borrower universe?
-- Does NVIDIA's interest in operator financeability ever become a product or program (vendor financing, certification, telemetry standards) that reshapes the verification space?
+- Does NVIDIA's interest in operator financeability ever become a product or program (vendor financing, certification, telemetry standards) that reshapes the verification space? ANSWERED 2026-07-01: yes - the AI Compute Partnership. Live successor questions: who verifies utilization for the backstop and revenue for the share, and does the program crowd out or create demand for third-party verification and residual products?
 
 ## Related Sources
 
 - [[semianalysis-dylan-patel-neocloud-thesis-2026-06-30|SemiAnalysis (Dylan Patel) on the neocloud thesis]]
+- [[nvidia-ai-compute-partnership-backstop-2026-07-05|NVIDIA AI Compute Partnership: the utilization backstop as a capital product]]
 
 ## Related Insights
 
 - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
+- [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
 - [[dgx-reference-spec-is-a-compute-grade-not-a-market-hub|DGX reference spec is a compute grade, not a market hub]]
 - [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]]

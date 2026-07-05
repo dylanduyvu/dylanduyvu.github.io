@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-02
 confidence: high
 domains: [gpu-finance, compute-contracts]
 projects: [gpu-compute-novation]
@@ -28,6 +28,7 @@ This directly weakens any financing model that depends on lending against contra
 - 2026-06-29: In the USD.AI call, Harry Page said USD.AI will always be fundamentally backed by GPUs because if there is a default, the lender can resell the GPU.
 - 2026-06-29: Harry described the contract as support for repayment, not a recoverable asset. In his framing, if the contract defaults, it becomes a contractual cash flow stream that no longer exists.
 - 2026-06-29: USD.AI explicitly prefers long-term committed take-or-pay offtake contracts, but still treats the hardware as primary collateral and the offtake as debt-service support.
+- 2026-07-02: AC's contract review shows the market pricing the same distrust from both directions: operators post deposits (16-30%) and equity cushions against delivery risk, while offtakers post prepayments and even bank LCs (SharonAI/ESDS: $140M in letters of credit on a $1.25B MSA) against payment risk. When both parties to a contract must over-collateralize their own promises, the naked contract is trusted by nobody - this insight expressed as market behavior rather than one lender's opinion.
 
 ## Implications
 
@@ -60,3 +61,7 @@ Initial capture from USD.AI call transcript.
 ### 2026-06-30
 
 Added the broader inversion: GPU-backed debt is often contract-backed debt with GPU collateral as the recovery floor.
+
+### 2026-07-02
+
+Added both-sides collateralization from AC's contract review (operator deposits/equity vs offtaker prepay/LCs) as behavioral market-wide corroboration. The LC cost (~1-2%/yr on $140M is $1.5-3M/yr on one contract) also benchmarks what any trust-substituting product competes against: posted collateral.

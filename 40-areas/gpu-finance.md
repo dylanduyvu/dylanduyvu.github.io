@@ -104,6 +104,8 @@ Bernie's AC article (2026-07-01) supplies the causal machine underneath, especia
 - GPU lending grew up outside banks (Basel III/Dodd-Frank pushed them out), so bank-grade infrastructure - ratings, appraisal standards, verification - is missing until institutionalization forces it.
 - NVIDIA may keep the demand side deliberately fragmented (neocloud allocation and equity) because only hyperscalers can fund defection to custom silicon; the neocloud borrower tier is partly an artifact of that strategy, which makes NVIDIA posture an upstream concentration risk for GPU credit.
 - Verification consent is asymmetric across the loan lifecycle: operators want it at origination (credential to get funded) and resist it post-close (surveillance), so verification products should sell as operator-side credentialing for the next facility, with post-close monitoring written into loan docs.
+- Offtake contract clauses (no-subcontracting, benchmarking gags, concentration caps) are the market's substitute for missing verification infrastructure: parties legislate what they cannot measure.
+- SLA remedies are structurally toothless (future-use service credits, customer-filed claims), so operator reputation carries delivery risk on the customer side too - the same unpriced operator-quality problem as lender underwriting.
 
 ## Active Projects
 
@@ -164,6 +166,8 @@ Bernie's AC article (2026-07-01) supplies the causal machine underneath, especia
 - [[timeline-slips-hit-gpu-loan-engine-and-backstop-together|Timeline slips hit GPU loan engine and backstop together]]
 - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
+- [[offtake-contracts-legislate-what-the-market-cannot-verify|Offtake contracts legislate what the market cannot verify]]
+- [[sla-remedies-are-toothless-so-reputation-carries-delivery-risk|SLA remedies are toothless, so reputation carries delivery risk]]
 
 ## Open Questions
 
