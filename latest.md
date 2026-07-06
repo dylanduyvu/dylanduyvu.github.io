@@ -8,11 +8,11 @@ updated: 2026-07-06
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 6, 2026, 11:49 AM EDT
+Generated: Jul 6, 2026, 11:52 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 62 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 63 note commits. The most recent movement is:
 
 - Insight update: log equity as generic lender risk mitigant.
 - Insight update: log thomas default-risk monitoring signal.
@@ -31,6 +31,13 @@ In the past 7 days, the public vault changed through 62 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jul 6, 2026, 11:52 AM EDT - capture: update vault
+
+capture: update vault.
+
+Changed notes:
+  - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 
 ### Jul 6, 2026, 11:49 AM EDT - capture: update vault
 
@@ -70,6 +77,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - Jul 5, 2026: capture: update notes - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
@@ -94,12 +102,12 @@ Changed notes:
 - Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: project: demote gpu kbb data thesis - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
 - Jun 30, 2026: project: shelve gpu compute novation - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
-- Jun 29, 2026: hubs: wire compute commoditization notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 
-_Showing the newest 25 of 62 updates in this window._
+_Showing the newest 25 of 63 updates in this window._
 
 ## Past 30 Days
 
+- Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - Jul 5, 2026: capture: update notes - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
@@ -124,6 +132,5 @@ _Showing the newest 25 of 62 updates in this window._
 - Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: project: demote gpu kbb data thesis - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
 - Jun 30, 2026: project: shelve gpu compute novation - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
-- Jun 29, 2026: hubs: wire compute commoditization notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 
-_Showing the newest 25 of 62 updates in this window._
+_Showing the newest 25 of 63 updates in this window._
