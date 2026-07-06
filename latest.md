@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-05
+updated: 2026-07-06
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 5, 2026, 6:45 PM EDT
+Generated: Jul 6, 2026, 11:45 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 60 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 61 note commits. The most recent movement is:
 
 - Insight update: log equity as generic lender risk mitigant.
 - Insight update: log thomas default-risk monitoring signal.
@@ -32,6 +32,19 @@ In the past 7 days, the public vault changed through 60 note commits. The most r
 
 ## Past 24 Hours
 
+### Jul 6, 2026, 11:45 AM EDT - capture: update vault
+
+capture: update vault.
+
+Changed notes:
+  - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
+  - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
+  - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
+  - [[deep-research-gpu-credit-post-pressure-test-2026-07-05|Deep research: pressure-test of the ununderwritten-half blog post claims]]
+  - [[nvidia-ai-compute-partnership-backstop-2026-07-05|NVIDIA AI Compute Partnership: the utilization backstop as a capital product]]
+
 ### Jul 5, 2026, 6:45 PM EDT - capture: update notes
 
 capture: update notes.
@@ -49,6 +62,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 6, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - Jul 5, 2026: capture: update notes - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jul 2, 2026: capture: update notes - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 - Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
@@ -73,12 +87,12 @@ Changed notes:
 - Jun 30, 2026: project: shelve gpu compute novation - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 - Jun 29, 2026: hubs: wire compute commoditization notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 - Jun 29, 2026: insights: add compute commoditization claims - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
-- Jun 29, 2026: source: capture compute commoditization article - [[can-compute-commoditize-if-its-not-fungible-2026-06-11|Can Compute Commoditize if it's Not Fungible?]]
 
-_Showing the newest 25 of 60 updates in this window._
+_Showing the newest 25 of 61 updates in this window._
 
 ## Past 30 Days
 
+- Jul 6, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - Jul 5, 2026: capture: update notes - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jul 2, 2026: capture: update notes - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 - Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
@@ -103,6 +117,5 @@ _Showing the newest 25 of 60 updates in this window._
 - Jun 30, 2026: project: shelve gpu compute novation - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 - Jun 29, 2026: hubs: wire compute commoditization notes - [[gpu-compute-derivatives|GPU Compute Derivatives]]
 - Jun 29, 2026: insights: add compute commoditization claims - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
-- Jun 29, 2026: source: capture compute commoditization article - [[can-compute-commoditize-if-its-not-fungible-2026-06-11|Can Compute Commoditize if it's Not Fungible?]]
 
-_Showing the newest 25 of 60 updates in this window._
+_Showing the newest 25 of 61 updates in this window._
