@@ -53,7 +53,7 @@ stage_collected_paths
 if git diff --cached --quiet; then
   echo "No note/source changes staged."
 else
-  git status --short
+  git diff --cached --name-status
   git commit -m "$message"
 fi
 
@@ -69,7 +69,7 @@ stage_collected_paths
 if git diff --cached --quiet; then
   echo "No generated updates changes staged."
 else
-  git status --short
+  git diff --cached --name-status
   git commit -m "site: refresh latest updates"
 fi
 
