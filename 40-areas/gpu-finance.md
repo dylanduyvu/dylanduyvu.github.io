@@ -123,6 +123,8 @@ Bernie's AC article (2026-07-01) supplies the causal machine underneath, especia
 
 ## Best Insights
 
+- [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]] (published synthesis, Substack, 2026-07-06)
+
 - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]

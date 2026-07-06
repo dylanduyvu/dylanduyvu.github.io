@@ -1,8 +1,10 @@
 ---
 type: synthesis
-status: draft
+status: published
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-07-06
+published: 2026-07-06
+canonical: https://dylanvu.substack.com/p/the-ununderwritten-half-of-gpu-credit
 projects: []
 domains: [gpu-finance, compute-contracts, verification, asset-backed-lending]
 sources: [american-compute-who-is-building-compute-article-2026-07-01, american-compute-compute-offtake-agreements-article-2026-07-02, aravolta-usdai-collateral-verification-case-study-2026-07-02, nvidia-ai-compute-partnership-backstop-2026-07-05, deep-research-gpu-credit-post-pressure-test-2026-07-05]
@@ -12,6 +14,8 @@ tags: [gpu, lending, verification, offtake, blogpost]
 ---
 
 # The Ununderwritten Half of GPU Credit
+
+> Published 2026-07-06 on Substack: https://dylanvu.substack.com/p/the-ununderwritten-half-of-gpu-credit (canonical). This vault copy is the text archive; on Substack the two comparison tables appear as captioned images.
 
 GPU-backed lending grades whether the customer can pay. It has no instrument for whether the operator will deliver. And so far, the deals that have broken have broken on delivery, not on payment. This post is about that gap: how the market papers over it today, what exists next to it and what is still missing, and why NVIDIA's new financing program makes the question urgent.
 
