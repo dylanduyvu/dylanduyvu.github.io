@@ -8,11 +8,11 @@ updated: 2026-07-06
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 6, 2026, 12:03 PM EDT
+Generated: Jul 6, 2026, 4:40 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 63 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 64 note commits. The most recent movement is:
 
 - Insight update: log equity as generic lender risk mitigant.
 - Insight update: log thomas default-risk monitoring signal.
@@ -31,6 +31,21 @@ In the past 7 days, the public vault changed through 63 note commits. The most r
 - [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jul 6, 2026, 4:40 PM EDT - capture: update vault
+
+capture: update vault.
+
+Changed notes:
+  - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
+  - [[loan-covenants-are-enforced-by-self-reporting-not-measurement|Loan covenants are enforced by self-reporting, not measurement]]
+  - [[mid-term-monitoring-moves-money-through-loan-events-not-the-rate|Mid-term monitoring moves money through loan events, not the rate]]
+  - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
+  - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]]
+  - [[anthropic-terawulf-19b-kentucky-lease-2026-07-06|Anthropic x TeraWulf: 20-year, ~$19B Kentucky lease]]
+  - and 1 more
 
 ### Jul 6, 2026, 11:52 AM EDT - capture: update vault
 
@@ -77,6 +92,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
 - Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
@@ -101,12 +117,12 @@ Changed notes:
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: project: demote gpu kbb data thesis - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
-- Jun 30, 2026: project: shelve gpu compute novation - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 
-_Showing the newest 25 of 63 updates in this window._
+_Showing the newest 25 of 64 updates in this window._
 
 ## Past 30 Days
 
+- Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
 - Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
@@ -131,6 +147,5 @@ _Showing the newest 25 of 63 updates in this window._
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: project: demote gpu kbb data thesis - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
-- Jun 30, 2026: project: shelve gpu compute novation - [[startups-may-be-locked-into-unused-three-year-compute-offtake|Startups may be locked into unused three-year compute offtake]]
 
-_Showing the newest 25 of 63 updates in this window._
+_Showing the newest 25 of 64 updates in this window._
