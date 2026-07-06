@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-06
 aliases: [Aravolta]
 people: []
 projects: []
@@ -28,9 +28,12 @@ Aravolta is a data center infrastructure monitoring (DCIM) company (EPMS/BMS/SCA
 
 Aravolta's existence is behavioral proof that lenders pay for verification, and its scope boundary maps the unclaimed territory: SLA delivery to tenants, revenue crediting, offtake performance. Competitor-adjacent rather than competitor - unless it crosses its own boundary.
 
+Scope refinement (2026-07-06): "utilization" and "tenant usage" are different layers. Aravolta CAN see aggregate hardware utilization (powered, busy, thermals - chip-level, tenant-blind) and its lender page monetizes exactly that, marketing facilities where borrowing capacity and rates tie to actual GPU-hour utilization. What it does not collect is tenant identity, workloads, and application performance. So the precise open layer is contract-defined delivery and revenue truth: a busy, healthy GPU can still fail its SLA as the contract defines it, and utilization says nothing about whether revenue was credited.
+
 ## Open Questions
 
-- Will it move up into tenant/SLA-layer verification, or is the exclusion structural?
+- Will it move up into tenant/SLA-layer verification, or is the exclusion structural? Working answer (2026-07-06, chat analysis): the exclusion is structural on three axes - (1) channel conflict: its original customers are operators/datacenters, and attesting contract failure grades its own installed base with data operators consented to share ("without creating operational friction" is the sales promise); (2) different business: contract-level truth needs contracts, service-level data, and invoices/credit memos, none of which flow through DCIM pipes - it is an assurance/audit motion, not telemetry SaaS; (3) liability: "contract honored, revenue true" is an opinion others move money on (auditor-grade liability), not a data feed. BUT the origination/credential model (operator volunteers) dissolves the channel conflict, and Aravolta already creeps along the performance axis (utilization-linked rates), so it remains one product decision away. Watch triggers: an Aravolta attestation/report product, hiring assurance/audit talent, or contract-terms ingestion.
+- Strategic option (not either/or): layer on them rather than compete - their tenant-blind telemetry as a corroborating input to a contract-level delivery report (the historical data-provider-underneath / assurance-on-top split). Testable in the same anchor conversations as the lender kill question.
 - Deployment breadth at USD.AI and across other lenders?
 
 ## Related Sources

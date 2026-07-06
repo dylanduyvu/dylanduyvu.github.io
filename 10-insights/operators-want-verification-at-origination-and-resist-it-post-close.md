@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-02
-updated: 2026-07-05
+updated: 2026-07-06
 confidence: medium
 domains: [gpu-finance, verification, asset-backed-lending, compute-contracts]
 projects: []
@@ -18,6 +18,10 @@ tags: [gpu, verification, lending, consent, origination, customer-discovery]
 ## Claim
 
 Operator consent to performance verification is asymmetric across the loan lifecycle. At origination, verification helps the operator: it is the credential that converts skipped/unproven operators into fundable ones (or reduces the equity cushion), and it is a pricing weapon for strong operators. Post-close, ongoing verification can only hurt: the loan is already funded, so new data can only reveal underperformance (covenant triggers, frozen draws, repricing). The operator who happily consents on day one has every incentive to let the feed degrade in month nine. This is a standard credit pattern: borrowers volunteer diligence to get money in the door, then resist surveillance, which is why covenants, reporting, and audit rights get hard-written into loan docs rather than left voluntary.
+
+Refinement (2026-07-06, Dylan's correction): the asymmetry is about WHEN CONSENT IS OBTAINABLE, not backward-vs-forward product. At origination a cash-strapped operator will consent to almost anything that gets them funded, including ongoing forward surveillance, the same way borrowers accept covenants and controlled accounts. So the unified product shape is one moment, two parts: the backward delivery credential qualifies the operator, and consent to forward monitoring (plus pricing grids/ratchets that make the monitoring pay) gets embedded in the loan documents as the price of better terms. Bonus screening effect: willingness to be watched self-selects operators confident in their own delivery - the consent itself is a sorting device, like a deductible. See [[mid-term-monitoring-moves-money-through-loan-events-not-the-rate|the loan-event mechanics]] for why origination is structurally the only installation moment.
+
+Second refinement (2026-07-06, Dylan's correction): the "unified product shape" above is CONDITIONAL SPECULATION, not a finding. The credential and the forward monitoring solve different problems (eligibility vs live-deal visibility) and are separate hypotheses with separate kill tests - see the hypothesis split in [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|the SLA thesis note]]. The consent-asymmetry claim itself (this note's core) stands independently of whether either product hypothesis survives; the two-part bundle only becomes a product shape if both do.
 
 ## Why It Matters
 

@@ -34,6 +34,7 @@ That means "GPU financing" may not democratize compute ownership by default. It 
 - 2026-06-29: USD.AI independently described contracts and offtaker credit as debt-service support, while GPU hardware is the recoverable collateral.
 - 2026-06-16: Bernie said lenders focus overwhelmingly on offtake and treat residual value as worst-case recovery.
 - 2026-07-01: Bernie's AC article puts hard numbers on the tiered capital map: Blackstone/Magnetar $2.3B (Aug 2023) and Blackstone $7.5B (May 2024) into CoreWeave, Apollo $3.5B for xAI/Valor (Jan 2026), PIMCO/Blue Owl/LuminArx $1.4B to Nscale (Feb 2026) at the top - versus boutique private credit and family offices at 12-15% funding small operators at the bottom. The mega-firm/mega-operator pairings are the centralization mechanism in the wild.
+- 2026-07-06: Anthropic signed a 20-year, ~$19B lease with TeraWulf (401MW, Kentucky), which TeraWulf says is "expected to be supported by an investment-grade credit." The IG-anchored mega-lease is precisely the bankable paper that concentrates capital on whoever holds the anchor; WULF rose 10-17% on announcement and the lease is positioned to anchor future debt raises the way Meta's contract anchored CoreWeave's A3 facility.
 
 ## Mechanism
 

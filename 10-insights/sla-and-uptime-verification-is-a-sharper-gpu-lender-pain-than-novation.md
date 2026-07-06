@@ -183,3 +183,25 @@ NVIDIA's AI Compute Partnership (launched 2026-07-01) may migrate the verificati
 ### 2026-07-05
 
 Status correction: the lender-intro path via Thomas is closed. He declined (2026-07-01 evening) - NVIDIA never shared the lender's identity with him and he isn't comfortable asking. The "lender who proactively asked if the product existed" remains the strongest known demand signal but is currently unreachable through this channel. Remaining paths to a lender seat: Harry follow-up (in flight), Bernie's network, or new outreach.
+
+### 2026-07-06
+
+Gap definition tightened and split into its own note: the open layer is contract-defined delivery and revenue truth - everything between "hardware is working hard" (Aravolta reaches this, including tenant-blind utilization) and "the customer's contract was honored" (nothing reaches this). See [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]]. Companion mechanics: [[loan-covenants-are-enforced-by-self-reporting-not-measurement|covenants run on self-reporting]] and [[mid-term-monitoring-moves-money-through-loan-events-not-the-rate|monitoring moves money through loan events]].
+
+### 2026-07-06
+
+Three-product map, to stop conflation (chat, Dylan's push). Product 1: sensor feed (Aravolta) - hardware on/busy; solves neither seat's stated problem, ingredient to both. Product 2: delivery record - past contracts honored; solves BERNIE's problem (unproven operators at origination: eligibility/cushion), helps Harry only indirectly (better priors on new-deal pricing). Product 3: live contract-level monitoring - SLA hit now, revenue real; solves HARRY's problem (defensive pricing on funded deals); does not exist. Sale structure: Product 2 gets the operator in the door at origination; consent to Product 3 is written into the loan docs as part of the price. Kill-question variants map 1:1 - Bernie-shaped ("would a verified track record cut the cash requirement?") tests Product 2; Harry-shaped ("would live delivery visibility change how you price?") tests Product 3. Which one a lender lights up at determines which product to build first.
+
+### 2026-07-06
+
+WEDGE DECISION (Dylan's call: one wedge, one MVP - the map above is analysis, this is the decision). The wedge is Product 2: verified delivery records that turn skipped operators into fundable ones. Why: (1) zero-build MVP - one manually assembled record for one real operator, put in front of one lender, tested against terms; (2) the strongest evidence backs its problem (Bernie's eligibility gate is observed behavior; Harry's pricing pain is a stated wish); (3) it contains Product 3 as a later upsell (monitoring consent rides in the loan docs), while the reverse produces no time-zero credential. Operational consequence: lender outreach leads with the Bernie-shaped kill question ONLY ("would a verified track record cut the cash requirement, at the same price?"); the Harry-shaped question becomes a listen-for, not an ask. Products 1 and 3 are context, not roadmap, until the record survives the one-report test.
+
+### 2026-07-06
+
+HYPOTHESIS SPLIT (Dylan's correction, supersedes the bundling language above). Products 2 and 3 solve different problems and are SEPARATE HYPOTHESES with separate kill criteria, not one product architecture:
+
+- H2 (eligibility hypothesis): lenders skip unproven operators for lack of a verifiable track record, and a verified delivery record would change eligibility or the equity cushion at fixed price. Evidence: Bernie, observed lender behavior. Status: FOREGROUND. Kill test: the one-report / fixed-equity question.
+- H3 (visibility hypothesis): lenders price already-funded deals defensively for lack of live contract-level delivery visibility, and such visibility would behaviorally change pricing or terms. Evidence: Harry, stated wish, n=1, plus a secondhand lender ask via Thomas. Status: SEPARATE, UNTESTED. Passive listen-for during H2 outreach; earns its own test only on its own evidence.
+- The bundle (a P2 sale carrying P3 consent in loan docs) is a THIRD, conditional speculation, meaningful only if H2 and H3 both survive independently. It is not a sale structure and not a roadmap. The "sale structure" phrasing in the three-product-map entry and reason (3) of the wedge decision ("contains Product 3 as a later upsell") are hereby marked as speculation that got ahead of the evidence - the wedge decision itself stands on reasons (1) and (2) alone.
+
+Note also: this note's own LBH statement blends H2 and H3 into one claim ("...lack of trusted verification changes financing terms"). Read it as the umbrella pain; H2/H3 are its separable, separately-killable components. The [[operators-want-verification-at-origination-and-resist-it-post-close|consent-asymmetry insight]]'s "unified product shape" refinement and [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|the execution-risk insight]]'s "two faces of one underwritable object" line carry the same blending and should be read under this split.
