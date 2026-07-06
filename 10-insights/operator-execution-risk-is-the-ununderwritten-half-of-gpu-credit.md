@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-05
 confidence: medium-high
 domains: [gpu-finance, ai-infrastructure, neoclouds, compute-contracts]
 projects: [gpu-compute-novation, gpu-residual-value-pricing]
@@ -42,7 +42,7 @@ This states the vault's SLA/delivery-verification thesis as market structure rat
 ## Counterpoints / Uncertainty
 
 - Supplier-side source: timeline risk is the demand engine for Bernie's RVI product; he has an incentive to foreground it.
-- "Walk without breach" frequency is not quantified; the 26% delay rate is for data center projects broadly, not offtake deaths specifically.
+- "Walk without breach" frequency is not quantified; the 26% delay rate is for data center projects broadly, not offtake deaths specifically. A 2026-07-05 research pass confirmed the realized, documented failures to date skew delivery-side, but the asset class is young - large customer-credit events may simply not have happened yet, so treat the delivery-dominance reading as an early pattern, not a base rate. The instrumented-vs-uninstrumented asymmetry holds regardless of which mode ultimately dominates.
 - Some lenders may already partially underwrite execution via delayed-draw structures and escrow-on-install (USD.AI's Wilmington escrow releases on install + verify) - the gap may be narrower than "no instrument."
 - Equity cushions are generic risk absorption (Bernie's own clarification), so their existence does not prove execution risk is the binding unpriced variable.
 

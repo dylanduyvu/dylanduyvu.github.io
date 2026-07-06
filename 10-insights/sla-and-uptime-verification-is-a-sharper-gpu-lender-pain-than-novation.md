@@ -179,3 +179,7 @@ AC's offtake-agreements article closes the loop from the customer seat: SLA reme
 ### 2026-07-05
 
 NVIDIA's AI Compute Partnership (launched 2026-07-01) may migrate the verification buyer up the stack: NVIDIA now guarantees floor utilization and takes usage-linked revenue share, so the program's economics run through utilization metering and revenue truth - verification as program plumbing rather than deal diligence. Retroactively consistent with the NVIDIA-adjacent monitoring interest Thomas reported. New discovery question for any NVIDIA-adjacent seat: who measures utilization for the backstop and revenue for the share? See [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]].
+
+### 2026-07-05
+
+Status correction: the lender-intro path via Thomas is closed. He declined (2026-07-01 evening) - NVIDIA never shared the lender's identity with him and he isn't comfortable asking. The "lender who proactively asked if the product existed" remains the strongest known demand signal but is currently unreachable through this channel. Remaining paths to a lender seat: Harry follow-up (in flight), Bernie's network, or new outreach.

@@ -19,10 +19,13 @@ tags: [nvidia, backstop, vendor-financing, revenue-share, utilization]
 
 On 2026-07-01, NVIDIA published a blog post (co-authored by CFO Colette Kress) launching the "AI Compute Partnership": a formalized revenue-sharing and credit-support model in which NVIDIA financially backstops neocloud GPU buildouts. Logged 2026-07-05 from multi-outlet coverage (DCD, Forbes, MLQ, TechTimes, Silicon Report, 24/7 Wall St). Major structural event for the vault: it converts NVIDIA's bespoke backstops into a named, repeatable capital product, and it answers - within days - the NVIDIA hub's open question about whether NVIDIA's interest in operator financeability would become a product.
 
-## The Mechanics (as reported; NVIDIA's post is thin on terms)
+## The Mechanics (IMPORTANT provenance split: NVIDIA's post vs press reporting)
 
-- NVIDIA guarantees a floor utilization rate on deployed GPUs: if partner demand falls short, NVIDIA rents back unused capacity at predetermined rates (or buys back capacity), absorbing downside that would otherwise sit with lenders/equity.
-- In exchange, NVIDIA takes a recurring usage-linked share of the partner's cloud revenue (percentage undisclosed) and/or equity.
+What NVIDIA's own post actually says (verified against the primary source 2026-07-05): a "revenue-sharing and credit-support model" - AI clouds procure NVIDIA infrastructure and sell NVIDIA-powered cloud services, with NVIDIA earning standard product revenue plus a share of cloud revenue on the supported capacity, described as a "recurring, usage-linked earnings stream." It notes capacity needs to "stay highly utilized" but does NOT state a formal utilization floor, buy-back terms, or backstop mechanics.
+
+What the press reporting adds (attributed to reporting, first surfaced via The Information; treat as reported-not-confirmed):
+- NVIDIA reportedly guarantees a floor utilization rate: if partner demand falls short, NVIDIA rents back or buys back unused capacity at predetermined rates, absorbing downside that would otherwise sit with lenders/equity.
+- The floor trigger, revenue-share percentage, and exit conditions have not been made public.
 - First partners: Sharon AI and Firmus Technologies, committing up to 210,000 Grace Blackwell GB300 GPUs across Australia and Indonesia, targeting inference workloads (Baseten, Fireworks, Together AI named as target customers).
 - Formalizes prior bespoke deals: the CoreWeave arrangement obligates NVIDIA to purchase residual unsold capacity through April 2032 (initial value $6.3B); Lambda $1.5B; reportedly negotiating a similar backstop for OpenAI datacenter projects.
 - Undisclosed: the revenue-share percentage, the utilization floor that triggers the backstop, exit conditions.

@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-05
 confidence: medium
 domains: [gpu-finance, verification, asset-backed-lending, compute-contracts]
 projects: []
@@ -35,6 +35,8 @@ It resolves who the willing party is in the verification thesis, which was the c
 - 2026-06-29: Harry - USD.AI would price more aggressively with performance assurance; the lender side of the same trade.
 - Credit-market precedent: thin-file borrowers volunteering bank-statement access; startups buying their own SOC 2; covenants existing precisely because post-close consent decays.
 - 2026-07-02: AC's offtake review shows flagship MSAs contain benchmarking gag clauses and publicity-as-material-breach terms, so customer-side or scraped performance data is contractually blocked at the top of the market - the operator-volunteered path is not just the willing-party path, it is the only legally clean one, which makes consent-first credentialing a moat rather than a workaround.
+- 2026-07-05 (research pass): an adjacent instrument exists and moves money. SemiAnalysis ClusterMAX independently rates 80+ GPU clouds (10 criteria incl. reliability; CoreWeave sole Platinum), and tier ratings already command customer-side pricing premiums. It is a capability rating on the rater's schedule, not a deal-level, operator-consented delivery attestation, and no lender is known to price a loan off it - so it partially serves the customer-selection audience while leaving the finance-grade delivery record open. It also demonstrates operators respond to ratings (vendors sell ClusterMAX-compliance tooling).
+- 2026-07-05 (research pass): historical anchoring lesson - ISTAT came from an industry association, PayNet from lenders pooling data, IICL from the leasing trade body; operator-pays audits (classification societies, SOC 2) stayed credible only with third-party governance. The credential likely needs a lender/insurer/association anchor rather than standalone-startup distribution.
 - Provenance: synthesized in chat (2026-07-02) from Dylan's pushback ("doesn't verification help the operator get funded as well?") against the confidentiality-barrier framing. Reasoned structure with supporting anecdotes, not yet directly confirmed by any operator.
 
 ## Implications
@@ -48,7 +50,7 @@ It resolves who the willing party is in the verification thesis, which was the c
 
 - No operator has actually said they would pay for or volunteer this; the willing-party logic is inferred from incentives plus analogies.
 - Lenders may not honor the credential: Bernie's equity clarification (extra equity resolves any concern) means a working substitute exists, and cash may simply be more trusted than any audit.
-- Prior-deployment reputation may already circulate informally (reference calls), making formal credentialing marginal.
+- Prior-deployment reputation may already circulate informally (reference calls), making formal credentialing marginal. ClusterMAX partially formalizes reputation on the customer side already; the untested premise is that lenders need the deal-level delivery version.
 - Strong operators may see no need (they fund fine) and weak operators may fail verification, leaving a thin middle who both need it and pass it.
 - The tenant-confidentiality problem shrinks but does not vanish; even historical aggregate delivery data touches contract terms someone considers confidential.
 

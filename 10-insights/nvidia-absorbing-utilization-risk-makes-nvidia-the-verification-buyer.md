@@ -25,7 +25,7 @@ If true, it re-ranks the buyer landscape for the verification thesis. Lenders pr
 
 ## Evidence / Reasoning
 
-- 2026-07-01: NVIDIA launches the AI Compute Partnership - floor utilization guarantee (rent-back of idle capacity at predetermined rates) plus usage-linked revenue share; terms like the floor trigger and share percentage undisclosed.
+- 2026-07-01: NVIDIA launches the AI Compute Partnership. Its own post states only "revenue-sharing and credit-support" plus a usage-linked earnings stream; the floor-utilization-guarantee / idle-capacity-rent-back mechanics come from press reporting (via The Information) and are reported-not-confirmed. The undisclosed floor trigger and share percentage remain unknown.
 - Structure implies metering: a utilization floor cannot pay out without agreed measurement of utilization; a revenue share cannot settle without visibility into partner cloud revenue. Verification is not optional to this product; it is the product's plumbing.
 - 2026-07-01 (Thomas/Barkr email): an NVIDIA-adjacent conversation had already raised operator usage/performance monitoring, traced to a lender in a specific deal - consistent with NVIDIA-side interest predating the launch.
 - Provenance: the migration claim is our inference from the program's structure, days after announcement; NVIDIA has not said who verifies utilization or how.
@@ -39,7 +39,7 @@ If true, it re-ranks the buyer landscape for the verification thesis. Lenders pr
 
 ## Counterpoints / Uncertainty
 
-- Days-old news; the program may be small, slow, or reshaped (two partners, terms undisclosed).
+- Days-old news; the program may be small, slow, or reshaped (two partners, terms undisclosed). The backstop/floor mechanics themselves are press characterization of "credit support," not NVIDIA's stated terms - if the credit support turns out to be something weaker (e.g. referrals, guarantees to lenders without capacity rent-back), the utilization-risk premise of this insight softens accordingly.
 - NVIDIA plausibly self-verifies with its own telemetry stack and needs no one - the wedge may be zero at the NVIDIA tier, leaving lenders/insurers as the buyers after all.
 - The Thomas NVIDIA anecdote traced to a lender's ask, not NVIDIA's own program; connecting it to the backstop is pattern-matching, not evidence.
 - Revenue-share metering may run through ordinary accounting/audit, not technical verification.
