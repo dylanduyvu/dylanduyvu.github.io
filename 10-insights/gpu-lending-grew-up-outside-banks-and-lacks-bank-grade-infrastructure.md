@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-06
 confidence: medium
 domains: [gpu-finance, private-credit, asset-backed-lending, market-structure]
 projects: [gpu-residual-value-pricing]
@@ -28,6 +28,7 @@ This is the frame that unifies the vault's problem portfolio under one causal st
 - 2026-07-01 (Bernie/AC article): Basel III and Dodd-Frank made banks hold more capital against risky loans post-2008; private credit filled the gap, growing past $2.1T (2023); GPU-backed lending is one of the newer asset classes absorbing that capital.
 - Same source: the capital map runs from mega private credit at the top (Blackstone/Magnetar into CoreWeave, Apollo $3.5B for xAI/Valor, PIMCO/Blue Owl/LuminArx $1.4B for Nscale) down to boutique private credit and family offices "speculating" at 12-15% on small operators.
 - Vault-wide corroboration of the infrastructure absence: pricing opacity is structural (Bernie call), lenders use prior-deployment proxies and equity cushions instead of verification (Bernie emails), no trusted standalone residual mark exists (KBB thread), SLA/delivery verification does not exist (Harry, Thomas).
+- 2026-07-06 (SemiAnalysis): the forcing function got a size and a date - AI debt outstanding projected at ~$7.1T by 2029, the second-largest asset-backed market after US mortgages, with banks described as "still on the learning curve" and hiding behind IG offtake shields. Their list of what lenders are missing (rental price index, residual value framework, operator quality differentiation, demand mapping) is this insight's missing-infrastructure claim stated as a product catalog - and they are building it, from the research-firm seat.
 
 ## Implications
 

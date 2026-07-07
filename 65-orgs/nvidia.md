@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-07-01
-updated: 2026-07-05
+updated: 2026-07-06
 aliases: [NVIDIA, Nvidia]
 people: [dylan-patel]
 projects: []
@@ -25,6 +25,7 @@ NVIDIA sits upstream of everything in this vault: it makes the GPUs, controls al
 - Via Thomas/Barkr (2026-07-01): an NVIDIA-adjacent conversation raised operator usage/SLA monitoring; the concrete ask traced to a lender in a specific deal. NVIDIA's interest in bankable contracts makes sense structurally: financeable operators buy more chips.
 - NVIDIA reportedly supplies compute to Thinking Machines Lab (with Google Cloud), part of the neolab-side fragmentation play.
 - 2026-07-01: launched the AI Compute Partnership - a formalized revenue-sharing + credit-support product in which NVIDIA guarantees floor utilization on partner GPUs (rent-back of idle capacity at predetermined rates) in exchange for a usage-linked revenue share. First partners Sharon AI and Firmus (~210k GB300s, Australia/Indonesia). Converts bespoke backstops (CoreWeave $6.3B unsold-capacity obligation through 2032, Lambda $1.5B) into a named capital product; reportedly negotiating similar for OpenAI. NVIDIA has moved from equipment vendor to lender/insurer of its own channel. See [[nvidia-ai-compute-partnership-backstop-2026-07-05|the source note]] and [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|the verification-buyer hypothesis]].
+- 2026-07-06 (SemiAnalysis detail): mechanics = ~6y take-or-pay minimum revenue guarantee at declining floors (illustrative avg $2.36/hr GB300), 40-60% rev share above floor (~18-20% take). Modeled contingent exposure ~$5.9B per 100MW, $77.5B (F1/27) to ~$175.3B (F1/29), off-balance-sheet unless triggered; "Central Bank of AI" frame - explicitly a bridge until neoclouds "establish a track record" and bank standalone. Concentric-pools monetization: buyers -> neoclouds -> NCP -> NCP+backstop, allocation following the pools. Also now DIRECTLY leasing datacenters (700MW+ in two quarters, multi-GW in talks) and subleasing to neoclouds. Rivals: AMD backstops since 2025; Google runs a TPU backstop (Fluidstack, Anthropic). Note: Sharon AI is ClusterMAX Underperforming-rated - NVIDIA guaranteed revenue on an operator the rating layer flags. See [[semianalysis-nvidia-backstop-trinity-2026-07-06|the Trinity source note]] and [[the-nvidia-backstop-is-a-track-record-bridge-not-a-floor|the bridge insight]].
 
 ## Open Questions
 
@@ -36,6 +37,7 @@ NVIDIA sits upstream of everything in this vault: it makes the GPUs, controls al
 
 - [[semianalysis-dylan-patel-neocloud-thesis-2026-06-30|SemiAnalysis (Dylan Patel) on the neocloud thesis]]
 - [[nvidia-ai-compute-partnership-backstop-2026-07-05|NVIDIA AI Compute Partnership: the utilization backstop as a capital product]]
+- [[semianalysis-nvidia-backstop-trinity-2026-07-06|SemiAnalysis: Nvidia GPU Debt Backstop / AI Project Trinity]]
 
 ## Related Insights
 

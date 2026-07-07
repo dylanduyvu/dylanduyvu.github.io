@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-01
-updated: 2026-07-05
+updated: 2026-07-06
 confidence: medium
 domains: [gpu-finance, ai-infrastructure, semiconductors, market-structure, neoclouds]
 projects: []
@@ -31,6 +31,7 @@ The neocloud borrower universe that GPU-backed credit is built on is, in part, a
 - Margin logic reinforces it: NVIDIA runs ~mid-70s gross margins at the chip layer; OEM box-building runs low teens. Integration would dilute margin while consolidating and antagonizing the counterparties.
 - Precedent: Intel ran the same play for ~25 years - feed a swarm of interchangeable PC OEMs, never build the PC, capture essentially all Wintel-era profit. "Commoditize your complements": keep your own layer scarce and every adjacent layer hyper-competitive.
 - 2026-07-01: the AI Compute Partnership confirms the mechanism at product scale - NVIDIA now formally backstops neocloud utilization (rent-back of idle capacity) for a revenue share, converting bespoke support (CoreWeave $6.3B, Lambda $1.5B) into a named capital product explicitly framed as keeping the independent-cloud ecosystem alive rather than letting compute concentrate in a handful of giants. Note the nuance it adds: NVIDIA is verticalizing *financially* (taking cloud economics as lender/insurer) while still not operating clouds - vertical integration by instrument, not operations, which preserves the no-channel-conflict logic while capturing the economics.
+- 2026-07-06 (SemiAnalysis): the strategy now has a monetization ladder - concentric pools (all buyers -> neoclouds -> NCP-certified -> NCP+backstop), each narrower pool deeper economics (one-time hardware margin -> ~18-20% recurring revenue take), with allocation following the pools. The play is systemic, not idiosyncratic: AMD has run backstops since 2025 (Crusoe, Vultr, Tensorwave et al.), and Google runs a rival TPU backstop (Fluidstack, Anthropic) - backstop wars as the new front of the fragmentation game. NVIDIA has also begun DIRECTLY leasing datacenter capacity (700MW+ in two quarters) and subleasing to neoclouds - creeping one layer further down the stack while still not operating clouds.
 - Provenance note: the fragmentation mechanism is chat synthesis (Dylan/Claude, 2026-07-01) built on Patel's claim, public NVIDIA behavior (allocation, neocloud investments, DGX reference spec), and the Intel precedent - a strategy model, not a documented NVIDIA policy.
 
 ## Implications

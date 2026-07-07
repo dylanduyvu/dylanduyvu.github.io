@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-01
-updated: 2026-07-05
+updated: 2026-07-06
 confidence: medium-high
 domains: [gpu-finance, ai-infrastructure, neoclouds, compute-contracts]
 projects: [gpu-compute-novation, gpu-residual-value-pricing]
@@ -31,6 +31,7 @@ This states the vault's SLA/delivery-verification thesis as market structure rat
 - 2026-06-29 (Harry/USD.AI): underwriting grades the offtake contract and offtaker credit in tiers; operator evaluation is "experience of the operator" - the proxy, not an instrument.
 - 2026-07-01 (Bernie email thread): lenders skip unknown operators or require equity cushions ($5M cash on $10M equipment) - capital-structure workarounds, not execution underwriting.
 - 2026-06-09 (Crusoe): Project Jade paused at a customer's request - the execution/delivery side wobbling in the wild.
+- 2026-07-06 (SemiAnalysis spread decomposition): execution risk now has a market price - a stable ~105-132bps premium across deal structures (CoreWeave/Meta IG tranche: ~5.9% vs base + Meta credit, execution slice ~132bps; ~$80-110M/yr on the $8.5B facility). PRICED BUT BLIND: the premium is a reputation spread with no verification instrument behind it. Their 5y pricing stack for backstopped varied-book deals literally labels the platform-risk slice "???" - the market's admitted unpriced void.
 
 ## Implications
 
