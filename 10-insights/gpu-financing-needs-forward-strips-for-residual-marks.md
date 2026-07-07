@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-07
 confidence: high
 domains: [gpu-finance, compute-derivatives, residual-value, asset-backed-lending]
 projects: [gpu-compute-derivatives, gpu-residual-value-pricing]
-sources: [perps-dont-work-for-compute-derivatives-2026-06-12]
+sources: [perps-dont-work-for-compute-derivatives-2026-06-12, semianalysis-nvidia-backstop-trinity-2026-07-06]
 people: [dave-friedman]
 orgs: []
 aliases: [futures strips feed gpu loan collateral marks, dated compute curves support residual value underwriting]
@@ -51,6 +51,10 @@ This connects compute derivatives directly to the residual-value pricing thesis.
 - People: [[dave-friedman|Dave Friedman]]
 
 ## Updates
+
+### 2026-07-07 - A rent curve now exists; the residual curve still does not
+
+The NVIDIA backstop schedule (per SemiAnalysis's illustrative model: $3.68 to $1.04/hr/GPU over 6 years) plus SemiAnalysis's rental index term structure means dated RENTAL price curves for compute now exist in embryonic form. Precision matters here: these are rent curves ($/hr a GPU earns per year), NOT residual value curves (what the box sells for). The object this insight says is missing - a dated resale/residual mark a lender can underwrite LTV and amortization against - still does not exist. The rent curve is an input one inferential step removed: resale value approximates discounted remaining earning power, so an implied residual view can be DERIVED from rent strips, but the derivation has real gaps (floors are set deliberately below expected market rates; resale prices embody scarcity and expectations, not just current rent - H100 resale in 2024-25 held far above naive rent-decay; a used-GPU buyer purchases all remaining years plus optionality, not one year's rate). Net: the insight stands; what changed is that the derivation input got published. Watch for anyone (SemiAnalysis's TCO residual framework, an appraiser, a lender) publishing the derived residual curve itself - that would be the actual solve.
 
 ### 2026-06-29
 

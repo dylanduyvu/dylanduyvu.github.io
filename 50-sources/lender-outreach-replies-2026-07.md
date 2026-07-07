@@ -52,7 +52,7 @@ Reading:
 
 Score: CONFIRM-WITH-REFINEMENT. Mechanism = cushion (LTV) + amort speed + sponsor proxy.
 
-Follow-up: kill question sent same day (would a verified delivery record, past clusters stood up on time with third-party-confirmed uptime, move the LTV or amort, or does the equity story still set those?). Answer pending; will log as kill-confirm or kill-falsify.
+Follow-up: kill question drafted, NOT yet sent as of 2026-07-07 evening. Final text: "If a young operator could prove their earlier clusters went live on time and stayed up, would that change the LTV or amort, or not really?" Design notes: record-only per the pre-committed criterion (monitoring deliberately NOT prompted, to preserve the unprompted-H3 observable); "or not really" licenses the negative so the falsifying answer is the cheap one; "young operator" = has history that is not legible, not a blank slate. Will update to sent + timestamp, then log the answer as kill-confirm or kill-falsify.
 
 ## Promoted Insights
 
