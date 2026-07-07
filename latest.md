@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-06
+updated: 2026-07-07
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 6, 2026, 8:59 PM EDT
+Generated: Jul 7, 2026, 12:59 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 27 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 26 note commits. The most recent movement is:
 
 - Insight update: log equity as generic lender risk mitigant.
 - Insight update: log thomas default-risk monitoring signal.
@@ -29,6 +29,16 @@ In the past 7 days, the public vault changed through 27 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 7, 2026, 12:59 PM EDT - capture: update vault
+
+capture: update vault.
+
+Changed notes:
+  - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
+  - [[sla-remedies-are-toothless-so-reputation-carries-delivery-risk|SLA remedies are toothless, so reputation carries delivery risk]]
+  - [[lender-outreach-replies-2026-07|Lender outreach replies: running log (Jul 2026 wave)]]
+  - [[semianalysis-nvidia-backstop-trinity-2026-07-06|SemiAnalysis: "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity"]]
 
 ### Jul 6, 2026, 8:59 PM EDT - capture: update vault
 
@@ -60,36 +70,9 @@ Changed notes:
   - [[anthropic-terawulf-19b-kentucky-lease-2026-07-06|Anthropic x TeraWulf: 20-year, ~$19B Kentucky lease]]
   - and 1 more
 
-### Jul 6, 2026, 11:52 AM EDT - capture: update vault
-
-capture: update vault.
-
-Changed notes:
-  - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
-
-### Jul 6, 2026, 11:49 AM EDT - capture: update vault
-
-capture: update vault.
-
-Changed notes:
-  - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
-  - [[gpu-finance|GPU Finance]]
-
-### Jul 6, 2026, 11:45 AM EDT - capture: update vault
-
-capture: update vault.
-
-Changed notes:
-  - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
-  - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
-  - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
-  - [[deep-research-gpu-credit-post-pressure-test-2026-07-05|Deep research: pressure-test of the ununderwritten-half blog post claims]]
-  - [[nvidia-ai-compute-partnership-backstop-2026-07-05|NVIDIA AI Compute Partnership: the utilization backstop as a capital product]]
-
 ## Past 7 Days
 
+- Jul 7, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - Jul 6, 2026: capture: update vault - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
 - Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
 - Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
@@ -114,12 +97,12 @@ Changed notes:
 - Jun 30, 2026: plan: correct sla follow-up to async emails - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: source: link friedman coreweave debt confluence - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
-- Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 
-_Showing the newest 25 of 27 updates in this window._
+_Showing the newest 25 of 26 updates in this window._
 
 ## Past 30 Days
 
+- Jul 7, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - Jul 6, 2026: capture: update vault - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
 - Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
 - Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
@@ -144,6 +127,5 @@ _Showing the newest 25 of 27 updates in this window._
 - Jun 30, 2026: plan: correct sla follow-up to async emails - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Jun 30, 2026: source: link friedman coreweave debt confluence - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
-- Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 
-_Showing the newest 25 of 65 updates in this window._
+_Showing the newest 25 of 66 updates in this window._
