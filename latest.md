@@ -8,11 +8,11 @@ updated: 2026-07-06
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 6, 2026, 4:40 PM EDT
+Generated: Jul 6, 2026, 8:59 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 64 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 27 note commits. The most recent movement is:
 
 - Insight update: log equity as generic lender risk mitigant.
 - Insight update: log thomas default-risk monitoring signal.
@@ -23,14 +23,27 @@ In the past 7 days, the public vault changed through 64 note commits. The most r
 
 ## Current Hub Signals
 
-- [[gpu-compute-derivatives|GPU Compute Derivatives]]: The first serious compute derivative should likely be dated, not perpetual. Compute is perishable productive capacity with an obsolescence curve, so the useful market object is a forward/futures strip that exposes dated capacity, decay, and residual-value assumptions.
 - [[gpu-compute-novation|GPU Compute Novation]]: Shelved with tripwire. The original hypothesis that long-term GPU offtake customers are over-committed and need contract novation is effectively falsified for the current market. LBH0 - exit demand exists - was the pre-committed kill-switch, and the current evidence says exit demand is not there.
 - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]: The broader residual-value pricing track remains active, but the pure GPU KBB / naked residual-data wedge is shelved pending buyer-side evidence. The demotion happened in stages: Bernie showed that appraisal-style naked data can become free gut-check behavior and that lenders mostly focus on offtake; Barkr showed that even a quality-adjusted GPU valuation index sells more...
 - [[obsidian-git-note-harness|Obsidian Git Note Harness]]: The v0 vault is local-first at ~/notes, backed by local Git only. It is insight-driven, agent-maintained, and designed for full-fidelity private capture.
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
-- [[personal-knowledge-management|Personal Knowledge Management]]: Dylan's PKM system should prioritize durable insights and new learnings over generic note accumulation. Raw material matters, but mainly as evidence for claims, decisions, patterns, and future retrieval.
 
 ## Past 24 Hours
+
+### Jul 6, 2026, 8:59 PM EDT - capture: update vault
+
+capture: update vault.
+
+Changed notes:
+  - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
+  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
+  - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
+  - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
+  - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
+  - [[the-nvidia-backstop-is-a-track-record-bridge-not-a-floor|The NVIDIA backstop is a track-record bridge, not a floor]]
+  - [[deep-research-operator-verification-industry-analogies-2026-07-06|Deep research: how other industries verify operator delivery (analogies report)]]
+  - [[semianalysis-nvidia-backstop-trinity-2026-07-06|SemiAnalysis: "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity"]]
+  - and 2 more
 
 ### Jul 6, 2026, 4:40 PM EDT - capture: update vault
 
@@ -75,23 +88,9 @@ Changed notes:
   - [[deep-research-gpu-credit-post-pressure-test-2026-07-05|Deep research: pressure-test of the ununderwritten-half blog post claims]]
   - [[nvidia-ai-compute-partnership-backstop-2026-07-05|NVIDIA AI Compute Partnership: the utilization backstop as a capital product]]
 
-### Jul 5, 2026, 6:45 PM EDT - capture: update notes
-
-capture: update notes.
-
-Changed notes:
-  - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
-  - [[gpu-pricing-opacity-is-structural-not-just-immature|GPU pricing opacity is structural, not just immature]]
-  - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
-  - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
-  - [[offtake-contracts-legislate-what-the-market-cannot-verify|Offtake contracts legislate what the market cannot verify]]
-  - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[sla-remedies-are-toothless-so-reputation-carries-delivery-risk|SLA remedies are toothless, so reputation carries delivery risk]]
-  - and 6 more
-
 ## Past 7 Days
 
+- Jul 6, 2026: capture: update vault - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
 - Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
 - Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
@@ -116,12 +115,12 @@ Changed notes:
 - Jun 30, 2026: source: link friedman coreweave debt confluence - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
-- Jun 30, 2026: project: demote gpu kbb data thesis - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
 
-_Showing the newest 25 of 64 updates in this window._
+_Showing the newest 25 of 27 updates in this window._
 
 ## Past 30 Days
 
+- Jul 6, 2026: capture: update vault - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
 - Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
 - Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
@@ -146,6 +145,5 @@ _Showing the newest 25 of 64 updates in this window._
 - Jun 30, 2026: source: link friedman coreweave debt confluence - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - Jun 30, 2026: insight: log gpu-backed debt inversion - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jun 30, 2026: strategy: log compute finance problem portfolio - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
-- Jun 30, 2026: project: demote gpu kbb data thesis - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
 
-_Showing the newest 25 of 64 updates in this window._
+_Showing the newest 25 of 65 updates in this window._
