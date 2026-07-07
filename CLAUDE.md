@@ -110,6 +110,7 @@ This vault is local-first, but it now has a public GitHub remote and Quartz/GitH
 - Public site: `https://dylanduyvu.github.io/`
 - GitHub Actions rebuilds and deploys Quartz after every push to `main`.
 - Do not use the Obsidian Git plugin in v0.
+- As of 2026-07-06: a separate agent handles regular commits/pushes as edits accumulate. Agents without shell access (e.g. Claude via Filesystem MCP) should NOT repeatedly remind Dylan to publish; assume captures reach the public site shortly after writing. This also means the vault is a multi-agent workspace: always re-read a file immediately before editing it, since another agent may have changed it.
 - Commit and push after every confident capture/update by default.
 - Git history is the capture log.
 - Use boring, explicit commit messages.
