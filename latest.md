@@ -8,15 +8,12 @@ updated: 2026-07-08
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 8, 2026, 1:37 PM EDT
+Generated: Jul 8, 2026, 6:50 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 16 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 14 note commits. The most recent movement is:
 
-- Insight update: log equity as generic lender risk mitigant.
-- Insight update: log thomas default-risk monitoring signal.
-- Insight update: log equity cushion weakens sla wedge.
 
 ## Current Hub Signals
 
@@ -26,6 +23,21 @@ In the past 7 days, the public vault changed through 16 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 8, 2026, 6:50 PM EDT - capture: update vault
+
+capture: update vault.
+
+Changed notes:
+  - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
+  - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
+  - [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]]
+  - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
+  - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
+  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
+  - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
+  - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
+  - and 4 more
 
 ### Jul 8, 2026, 1:37 PM EDT - capture: update vault
 
@@ -42,17 +54,9 @@ Changed notes:
   - [[dave-friedman-where-gpu-debt-starts-to-break-2026-04-19|Dave Friedman: Where GPU Debt Starts to Break]]
   - and 3 more
 
-### Jul 7, 2026, 5:15 PM EDT - capture: update vault
-
-capture: update vault.
-
-Changed notes:
-  - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
-  - [[lender-outreach-replies-2026-07|Lender outreach replies: running log (Jul 2026 wave)]]
-  - [[semianalysis-nvidia-backstop-trinity-2026-07-06|SemiAnalysis: "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity"]]
-
 ## Past 7 Days
 
+- Jul 8, 2026: capture: update vault - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
 - Jul 8, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 7, 2026: capture: update vault - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 - Jul 7, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
@@ -66,12 +70,10 @@ Changed notes:
 - Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
-- Jul 1, 2026: insight: log equity as generic lender risk mitigant - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
-- Jul 1, 2026: insight: log thomas default-risk monitoring signal - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
-- Jul 1, 2026: insight: log equity cushion weakens sla wedge - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
 
 ## Past 30 Days
 
+- Jul 8, 2026: capture: update vault - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
 - Jul 8, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 7, 2026: capture: update vault - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 - Jul 7, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
@@ -96,6 +98,5 @@ Changed notes:
 - Jul 1, 2026: project: log sla outreach sent - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 1, 2026: insight: add hyperscaler compute supply nuance - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - Jun 30, 2026: insight: log offtake centralization - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
-- Jun 30, 2026: plan: correct sla follow-up to async emails - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 
-_Showing the newest 25 of 68 updates in this window._
+_Showing the newest 25 of 69 updates in this window._
