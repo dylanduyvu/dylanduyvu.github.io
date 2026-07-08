@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-07
 source_date: 2026-07-06
 source_type: research
 projects: []
@@ -35,6 +35,12 @@ Deep-research report (2026-07-06) commissioned by Dylan: how energy/project fina
 - Read-only billing access (SaaS/RBF lending, Stripe pattern): instrument the operator's billing/usage systems instead of trusting periodic self-reports.
 - Performance tests gate risk conversion (solar performance-ratio tests convert construction loans to term loans; debt sized on conservative P90 not P50).
 - Aviation's answer to no-track-record operators: security deposits + maintenance reserves + tight covenants - i.e., MORE COLLATERAL, not a credential.
+
+## Post-Report Additions (2026-07-07 discussion, Dylan + Claude - NOT from the report)
+
+- Factoring / invoice finance, the report's biggest omission and the strongest ancestor for the delivery record: financiers verify PROOF OF DELIVERY before advancing (signed receipt, bill of lading) and confirm the invoice directly with the paying customer, then usually collect directly. Per-transaction delivery credential + counterparty confirmation + cash control, all internal to the lender's process because the factor bears the risk. Suggests an unclaimed compute product shape: invoice finance for compute contracts, where verification is the underwriting itself.
+- Cash observation collapses into cash control, everywhere: lockboxes and cash dominion in asset-based lending, springing lockboxes in commercial mortgage securitizations, trustee waterfall accounts in project finance, deduction at the payment rail in merchant advances. Standalone "money watching" as a subscription has no durable precedent; the durable revenue-based lenders are the payment rails themselves (risk-bearer owns the monitor, again).
+- Evolutionary synthesis of the whole record: lenders converged on structure, checkpoints, and pooled outcome records; continuous monitoring evolved only where the risk-bearer owned it. This gives H3 (standalone visibility feed) a precedent-based prior against it, and re-endorses the record wedge in checkpoint-certification form. Full argument logged as the 2026-07-07 update on [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|the thesis note]].
 
 ## Failure Modes (warnings)
 

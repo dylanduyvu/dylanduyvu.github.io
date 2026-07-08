@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-07
 confidence: medium
 domains: [gpu-finance, asset-backed-lending, verification, loan-mechanics]
 projects: []
@@ -51,3 +51,9 @@ It tells the verification product exactly where to plug in and what to promise. 
 - Related Insights: [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]], [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]], [[timeline-slips-hit-gpu-loan-engine-and-backstop-together|Timeline slips hit GPU loan engine and backstop together]], [[offtake-contracts-legislate-what-the-market-cannot-verify|Offtake contracts legislate what the market cannot verify]]
 - Areas: [[gpu-finance|GPU Finance]]
 - Orgs: [[aravolta|Aravolta]], [[usd-ai|USD.AI]]
+
+## Updates
+
+### 2026-07-07 - Historical corollary: lenders convert observation into possession
+
+Precedent audit strengthens the claim from history: wherever borrower cash became observable, lenders did not stay observers - they took control (lockboxes in asset-based lending, springing lockboxes triggered by coverage-ratio drops in commercial mortgage lending, trustee-controlled waterfall accounts in project finance, direct deduction at the payment rail in merchant advances). Monitoring that terminates in a dashboard rather than an actuator has essentially no durable precedent; monitoring that IS an actuator (the lockbox both observes and routes) is centuries old. This is the same claim as this note's title, stated as evolutionary outcome rather than loan mechanics: the feed only matters where it is wired to draws, sweeps, gates, or possession, and the market's revealed preference is to wire it or ignore it.

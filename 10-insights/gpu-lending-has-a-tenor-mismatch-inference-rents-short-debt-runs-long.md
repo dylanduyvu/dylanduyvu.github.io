@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-07
 confidence: medium-high
 domains: [gpu-finance, credit-markets, compute-contracts, market-structure]
 projects: []
-sources: [semianalysis-nvidia-backstop-trinity-2026-07-06]
+sources: [semianalysis-nvidia-backstop-trinity-2026-07-06, dave-friedman-where-gpu-debt-starts-to-break-2026-04-19]
 people: [dylan-patel]
 orgs: [nvidia, semianalysis]
 aliases: [inference wont sign long but debt needs long, the gpu curve trade, maturity transformation in gpu lending, short-tenor demand is structurally unfinanceable]
@@ -29,6 +29,7 @@ This names a structural problem distinct from the vault's delivery-risk thread: 
 - Same source: only a few neoclouds offer 1y rentals, some at up to 100% prepay of total contract value; startups forced into longer contracts, fewer GPUs, wrong SKUs, delayed start dates.
 - Same source: curve-trade framing is theirs - the operator investing long and renting short should earn above the 6y fixed price (~$4.00 GB300) to be compensated for price risk; their scenario prices year-1 1y rentals at $6.75 decaying thereafter.
 - Same source: the backstopped 1y-book scenario models 25.4% IRR vs 40.7% unbackstopped - the price of bridging the mismatch is the NVIDIA revenue share.
+- 2026-04-19 (Friedman, Abilene): the mismatch realized in a physical deal. OpenAI declined to extend at the Stargate Abilene facility beyond the underwritten term because it wants newer-generation chips: the anchor's appetite ran shorter than the asset's financing life, and lenders were suddenly holding terminal-value risk the structure had assumed away. Friedman's trophy-deal frame states this insight's claim inverted: the market's own bankability bar (precondition three of the CoreWeave/Meta structure) is that debt fully pays down INSIDE the customer contract's term, which is exactly the condition the fastest-growing demand cannot meet.
 
 ## Implications
 

@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-07-02
+updated: 2026-07-07
 confidence: high
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
@@ -205,3 +205,33 @@ HYPOTHESIS SPLIT (Dylan's correction, supersedes the bundling language above). P
 - The bundle (a P2 sale carrying P3 consent in loan docs) is a THIRD, conditional speculation, meaningful only if H2 and H3 both survive independently. It is not a sale structure and not a roadmap. The "sale structure" phrasing in the three-product-map entry and reason (3) of the wedge decision ("contains Product 3 as a later upsell") are hereby marked as speculation that got ahead of the evidence - the wedge decision itself stands on reasons (1) and (2) alone.
 
 Note also: this note's own LBH statement blends H2 and H3 into one claim ("...lack of trusted verification changes financing terms"). Read it as the umbrella pain; H2/H3 are its separable, separately-killable components. The [[operators-want-verification-at-origination-and-resist-it-post-close|consent-asymmetry insight]]'s "unified product shape" refinement and [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|the execution-risk insight]]'s "two faces of one underwritable object" line carry the same blending and should be read under this split.
+
+### 2026-07-07 - Precedent audit: monitoring-first is weakly precedented; the record's true ancestors are checkpoints and pooled outcomes
+
+Dylan's challenge ("is monitoring a naive / cope solution given how analogous industries evolved?") is substantially supported by the analogies record. Across the industries studied, lenders converged on STRUCTURE (cushions, deposits, reserves, fast amortization - Ryan/Lender A's "LTV and amort play" is this verbatim), CHECKPOINTS at risk-conversion moments (draw gates, performance tests, completion certificates), and POOLED OUTCOME RECORDS (payment-history consortiums, no sensors, no operator consent) - not continuous surveillance. Where continuous monitoring did evolve, the risk-bearer owned the monitor (engine maker selling engine-hours, insurer's tracking device, the meter that settles a power contract). Nobody in the record durably sold monitoring TO lenders as a standalone service; and wherever cash became observable, lenders converted observation into POSSESSION (lockboxes, cash dominion, trustee waterfall accounts, deduction at the payment rail) rather than subscribing to a feed.
+
+Three-layer taxonomy this produces (supersedes the two-way machine-vs-contract framing): (1) MACHINE WATCHING - leading signal, two inferential steps from the lender's cash, occupied (Aravolta), no lender-adoption precedent; (2) MONEY WATCHING - zero steps from exposure but lagging, historically collapses into cash control, durable versions owned by the payment rail; (3) the CONTRACT JOIN - was delivery to spec, were the revenue credits legitimate, is the agreement alive. Layer 3 is the genuinely empty seat, and it is adjudication, not monitoring.
+
+Harry re-read under this taxonomy: a billing-tap (read-only into the operator's billing system) would give him revenue truth and near-live credit visibility - most of the visibility half of his wish - but it is still self-reporting with better plumbing unless reconciled against bank receipts or the customer, and it cannot answer the question his defensive pricing hinges on: were the credits LEGITIMATE per the contract? Even full cash control fails there. So H3 in standalone-feed form carries a PRECEDENT-BASED PRIOR AGAINST IT; if the visibility product emerges, precedent says it belongs to the risk-bearer (NVIDIA settling its own floor-and-share, an insurer pricing a wrap) or arrives shaped as control/adjudication, not a dashboard.
+
+Strongest ancestor for the delivery record, newly identified: FACTORING. Invoice financiers verify PROOF OF DELIVERY before advancing (signed receipt, bill of lading) and confirm the invoice directly with the paying customer - per-transaction delivery credentials plus counterparty confirmation, internal to the lender's own process because the factor bears the risk. This both strengthens the checkpoint-shaped version of the record and hints at an unclaimed product shape: invoice finance for compute contracts, where verification IS the underwriting rather than a service sold alongside it.
+
+The one compute-specific counter to the pooled-outcomes precedent, held as hypothesis: default data may be too slow here. The asset lives four to six years and delivery failure destroys value long before a default prints, so a payment-outcome bureau might spend its whole cold-start waiting for a default cycle the hardware outruns - an argument that compute needs a faster (delivery-based) record than history's default-based one. Flagged: this is also exactly what a monitoring vendor would want to believe.
+
+Net effect on the wedge: re-endorses H2-as-record (reframed as checkpoint certification that accumulates, not monitoring-lite), adds the precedent prior against H3, and marks the deal-one-monitoring bootstrap as legitimate ONLY under the narrow job of manufacturing the record for deal two.
+
+### 2026-07-07 - Business shape is a separate question from the problem hypothesis: agency, file business, or lender
+
+Dylan's objection to the inspector-shaped product: one person checking one deployment and writing one report for one lender is billable hours, a consultancy or agency, not a scalable technology business. Correct as stated, and the history contains the resolution: the inspector shape produced two completely different kinds of company, and the difference is not technology versus manual labor. It is what happens to the write-up after it is written.
+
+- Shape A, agency: the report dies with the deal. The lender pays, files it, and every new deal means new hours. Project-finance engineering firms live here permanently.
+- Shape B, file business: the write-ups stack into a file on the operator that MANY parties pay to read. Dun and Bradstreet started as human correspondents visiting merchants and writing down whether they paid their bills; the reports stacked into files and the files became a data company. Same story: Carfax (car damage records), PayNet (pooled payment histories, sold to Equifax), the credit rating agencies (one analyst's rating, read by thousands, software-grade margins). Front labor identical to the agency; back economics unrecognizable, because one unit of verification work is resold many times.
+- Shape C, be the lender: the factoring pattern. Verification of delivery is internal to the financier's own underwriting, the cost of advancing money, and the data asset accrues as a side effect. Financing compute invoices with delivery verification built in is lending economics, not agency economics. Noted, not adopted: it matches Dylan's on-chain origination background (Spice), but it is a different company than a verification product.
+
+Two testable questions decide between A and B, both askable on lender calls:
+1. Does one verification serve many readers? The vault already shows four parties pricing the same blind variable (lenders, insurers, customers, datacenter landlords). Call question: would you rely on a delivery report produced for another lender's deal? If reports travel, Shape B is open. If every lender demands fresh work done for them alone, it is Shape A.
+2. Can the rulebook standardize? If every compute contract defines delivered differently and confidentially, hours per report never compress. If a standard methodology emerges (the way ship inspections follow one written rule set), hours fall and the brand becomes the moat. The confidential, bespoke nature of current offtake contracts is the main force pushing toward Shape A.
+
+Honest branch held open: some industries only ever produced large inspection firms, no file business. Fine companies, not the intended one. Whether compute lands there turns mostly on question 2.
+
+The one-report test is upstream of this fork and unchanged: a manual first report is also how Dun and Bradstreet started, and the kill question it answers (does a verified record move terms) must survive before any of the three shapes matters.

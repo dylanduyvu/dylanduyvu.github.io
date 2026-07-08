@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-07
 confidence: medium-high
 domains: [gpu-finance, verification, compute-contracts, sla]
 projects: []
@@ -49,3 +49,9 @@ The precision matters commercially: it names exactly what the product must measu
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]]
 - Orgs: [[aravolta|Aravolta]], [[usd-ai|USD.AI]]
+
+## Updates
+
+### 2026-07-07 - The gap restated as the contract join, with the legitimacy question at its center
+
+Precedent discussion (monitoring-is-cope challenge) produced a three-layer restatement: machine watching (occupied, two steps from cash), money watching (zero steps but lagging, and historically collapses into cash control rather than persisting as observation), and the CONTRACT JOIN this note names. The sharpest single question in the join, per the Harry re-read: not "did revenue arrive" (cash control answers that) and not "did revenue shrink from credits" (a billing tap answers that, since credit memos are labeled) but WERE THE CREDITS LEGITIMATE per the contract - real breach, correctly sized, not a friendly concession or disguised discount. That is adjudication against contract terms, not monitoring of any system, which is why neither telemetry nor cash control reaches it and why the counterpoint about lenders with cash controls seeing revenue arrive is now sharper: they see less money and have no basis to dispute why. Closest historical ancestor: the factoring compound (proof of delivery gates the advance, invoice confirmed directly with the paying customer).

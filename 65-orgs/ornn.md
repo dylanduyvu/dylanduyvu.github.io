@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-07
 aliases: [Ornn, Ornn AI, ornnai]
 people: []
 projects: [gpu-residual-value-pricing]
@@ -14,7 +14,7 @@ tags: [gpu, residual-value, swap, lead]
 
 ## Context
 
-Ornn (Ornn AI Inc.) offers a GPU "Residual Value Swap." Strategically relevant because a residual-value swap is a live, productized instrument in exactly the space the residual-value pricing project is probing: it depends on a defensible GPU residual/reference number, which is the same bottleneck the KBB/naked-data and guarantee threads circle.
+Ornn (Ornn AI Inc.) offers a GPU "Residual Value Swap." Strategically relevant because a residual-value swap is a live, productized instrument in exactly the space the residual-value pricing project is probing: it depends on a defensible GPU residual/reference number, which is the same bottleneck the KBB/naked-data and guarantee threads circle. Market-structure frame added 2026-07-07: in Friedman's basis taxonomy the swap is a TRANSITION INSTRUMENT, a hedge for the generational handoff itself, which is the category his vintage-curve market shape says must exist for compute markets to work. Ornn is the first candidate sighted on the sell side of that category.
 
 ## Relationship
 
@@ -36,3 +36,4 @@ Introduced by Bernie (American Compute) on 2026-06-17 to Wayne (wayne@ornnai.com
 
 - [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]]
 - [[gpu-clients-buy-guaranteed-valuations-more-than-standalone-marks|GPU clients buy guaranteed valuations more than standalone marks]]
+- [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]

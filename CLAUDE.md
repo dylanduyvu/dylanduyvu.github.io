@@ -127,6 +127,14 @@ insight: mark novation demand claim weakened
 publish: update public notes harness
 ```
 
+## Writing Style For Dylan
+
+- No em dashes anywhere.
+- No acronyms. Spell every term out in plain words (write "loan-to-value" not "LTV", "master service agreement" not "MSA", "power purchase agreement" not "PPA"). If a source quote contains an acronym, gloss it in plain words immediately after. This applies to chat replies, vault notes, and drafted emails.
+- No coined jargon or compressed abstractions. Do not invent shorthand phrases and then use them as if they are established terms. If a concept needs a name, first explain it in one plain sentence a smart outsider would understand, and prefer a concrete everyday analogy (a home inspector, a security camera, a meter) over an abstract label. When catching yourself writing a phrase like "checkpoint certification that accumulates" or "treat a feed as an actuator", stop and say the plain version instead: "someone independent checks the work at key moments and writes it down, and the write-ups add up to a track record" or "the lender actually does something automatic with the data, like holding back money".
+- Say it simply first, add precision second. Plain sentence, then the technical detail if it earns its place.
+- Succinct, low-jargon, plain language throughout.
+
 ## Privacy
 
 The current GitHub repo is public. Anything committed and pushed is public on GitHub, even if Quartz does not render it on the site. Before committing sensitive personal/professional material, either ask Dylan, keep it out of this public repo, or create a separate private workflow. Still do not store raw credentials, private keys, access tokens, passwords, or seed phrases unless Dylan explicitly designs a secrets workflow.

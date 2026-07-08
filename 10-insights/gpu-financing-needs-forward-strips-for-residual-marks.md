@@ -6,7 +6,7 @@ updated: 2026-07-07
 confidence: high
 domains: [gpu-finance, compute-derivatives, residual-value, asset-backed-lending]
 projects: [gpu-compute-derivatives, gpu-residual-value-pricing]
-sources: [perps-dont-work-for-compute-derivatives-2026-06-12, semianalysis-nvidia-backstop-trinity-2026-07-06]
+sources: [perps-dont-work-for-compute-derivatives-2026-06-12, semianalysis-nvidia-backstop-trinity-2026-07-06, dave-friedman-compute-basis-risk-primer-2026-07-02]
 people: [dave-friedman]
 orgs: []
 aliases: [futures strips feed gpu loan collateral marks, dated compute curves support residual value underwriting]
@@ -51,6 +51,10 @@ This connects compute derivatives directly to the residual-value pricing thesis.
 - People: [[dave-friedman|Dave Friedman]]
 
 ## Updates
+
+### 2026-07-07 - The strips must be vintage-specific
+
+Friedman's basis-risk primer (sequel to the perps piece) adds a shape constraint: a generic compute benchmark cannot anchor obsolescence drift, so the dated strips this insight calls for will form as GENERATION-SPECIFIC curves (an H100 strip, a GB300 strip), each with a useful life tied to that generation's deployment window, plus transition instruments bridging handoffs. The residual curve a lender derives from rent strips therefore inherits the vintage structure too: one derived residual curve per generation, with a rollover convention, not one eternal curve. Consistent with this, the first vintage-shaped rent curve to actually exist is NVIDIA's GB300 backstop floor schedule. See [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|the vintage-curves insight]].
 
 ### 2026-07-07 - A rent curve now exists; the residual curve still does not
 
