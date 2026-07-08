@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-07-01
+updated: 2026-07-08
 confidence: high
 domains: [gpu-finance, compute-derivatives, ai-infrastructure, residual-value]
 projects: [gpu-compute-derivatives, gpu-residual-value-pricing]
@@ -61,3 +61,7 @@ Initial capture from Dave Friedman compute derivatives article.
 ### 2026-07-01
 
 Added Meta excess-compute reporting as live evidence that older or surplus hyperscaler capacity can be repurposed into external market supply.
+
+### 2026-07-08 - The obsolescence curve is three curves
+
+Friedman's March piece (read today, working back through his archive) decomposes this note's singular "obsolescence curve" into three stacked ones: training (steep, 12-18 month clock), inference (shallow, protected by switching costs and down-stack migration; CoreWeave rebooked off-contract H100s at 95 percent of original price), and long-tail (nearly flat; V100s still employed). The claim here survives fully, and two of this note's own counterpoints ("scarcity can keep older GPUs relevant longer" and "some workloads value compatibility over speed") turn out to be the second and third curves, stated before they had names. Residual-value consequence promoted to its own insight: the mark is a workload-demand waterfall, not a single price forecast. See [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]].

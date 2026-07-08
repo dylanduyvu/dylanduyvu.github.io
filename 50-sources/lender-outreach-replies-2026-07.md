@@ -27,7 +27,7 @@ Scoring rubric per reply:
 - FALSIFY: lender says they underwrite operator delivery quality directly, or says a verified record would change nothing while cushions also do not bind
 - H3 PULL: lender raises delivery/revenue visibility unprompted
 
-## Running tally (n=1)
+## Running tally (n=2 replies; 1 mechanism answer)
 
 - Equity cushion / LTV: 1
 - Amortization speed as protection: 1
@@ -35,7 +35,8 @@ Scoring rubric per reply:
 - Skip entirely: 0
 - Verification / measurement mentioned unprompted: 0
 - H3 pull: 0
-- Kill question answered: 0 (1 pending)
+- Identity-check replies (no mechanism yet): 1
+- Kill question answered: 0 (1 drafted)
 
 ## Entries
 
@@ -53,6 +54,18 @@ Reading:
 Score: CONFIRM-WITH-REFINEMENT. Mechanism = cushion (LTV) + amort speed + sponsor proxy.
 
 Follow-up: kill question drafted, NOT yet sent as of 2026-07-07 evening. Final text: "If a young operator could prove their earlier clusters went live on time and stayed up, would that change the LTV or amort, or not really?" Design notes: record-only per the pre-committed criterion (monitoring deliberately NOT prompted, to preserve the unprompted-H3 observable); "or not really" licenses the negative so the falsifying answer is the cheap one; "young operator" = has history that is not legible, not a blank slate. Will update to sent + timestamp, then log the answer as kill-confirm or kill-falsify.
+
+### 2026-07-08 - Lender B
+
+Seat: managing director co-heading technology private credit and heading venture debt at a large middle-market private credit firm; also sits on the operating committee of a venture-lending business the firm acquired (which has its own row on the outreach list - sends into that family now sequenced through this thread).
+
+Reply, verbatim: "Hi Dylan - have we met before?"
+
+Reading: identity check, not a brush-off. He read closely enough to wonder whether he should know the sender, which means the personalization landed as insider-familiar. No mechanism content yet; does not enter the mechanism tally. Reply type logged so the wave can track how often "who are you" precedes engagement.
+
+Response strategy: answer the identity question generously (Spice background + the published piece as the credential), ground the outreach reason in his verifiable seat (technology private credit) rather than the panel reference from the research file, which could not be independently confirmed and should not be re-asserted. Lesson propagated: evidence-column claims are hook-grade, not double-down-grade; when challenged, retreat to independently verifiable facts.
+
+Score: none yet. Awaiting mechanism answer.
 
 ## Promoted Insights
 

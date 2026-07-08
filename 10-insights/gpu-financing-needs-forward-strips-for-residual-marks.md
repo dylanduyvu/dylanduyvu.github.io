@@ -6,7 +6,7 @@ updated: 2026-07-07
 confidence: high
 domains: [gpu-finance, compute-derivatives, residual-value, asset-backed-lending]
 projects: [gpu-compute-derivatives, gpu-residual-value-pricing]
-sources: [perps-dont-work-for-compute-derivatives-2026-06-12, semianalysis-nvidia-backstop-trinity-2026-07-06, dave-friedman-compute-basis-risk-primer-2026-07-02]
+sources: [perps-dont-work-for-compute-derivatives-2026-06-12, semianalysis-nvidia-backstop-trinity-2026-07-06, dave-friedman-compute-basis-risk-primer-2026-07-02, dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06]
 people: [dave-friedman]
 orgs: []
 aliases: [futures strips feed gpu loan collateral marks, dated compute curves support residual value underwriting]
@@ -51,6 +51,10 @@ This connects compute derivatives directly to the residual-value pricing thesis.
 - People: [[dave-friedman|Dave Friedman]]
 
 ## Updates
+
+### 2026-07-07 - Rating agencies stated the missing mark as their own constraint
+
+From the trophy-deal piece (Friedman/Mellor, April): the CoreWeave/Meta structure bundles hardware with the contract precisely because "the data points for GPU residual values are either insufficient or too volatile to sustain an investment-grade rating," and their proposed fix is mark-to-market replacing book depreciation "the way auto lenders reference residual value guides," with the forward curve named the BINDING CONSTRAINT for any pooled GPU securitization: without it agencies are "flying blind on the single most important variable... what the collateral will be worth in three years." As of April they noted forward-curve entrants "widely anticipated in the next 12 months." This is the strongest third-party statement of this insight to date, from the buy-side of the mark: the raters themselves.
 
 ### 2026-07-07 - The strips must be vintage-specific
 
