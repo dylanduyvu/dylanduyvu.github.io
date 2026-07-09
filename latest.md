@@ -1,28 +1,39 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-08
+updated: 2026-07-09
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 8, 2026, 6:50 PM EDT
+Generated: Jul 9, 2026, 11:23 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 14 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 13 note commits. The most recent movement is:
 
 
 ## Current Hub Signals
 
 - [[gpu-compute-novation|GPU Compute Novation]]: Shelved with tripwire. The original hypothesis that long-term GPU offtake customers are over-committed and need contract novation is effectively falsified for the current market. LBH0 - exit demand exists - was the pre-committed kill-switch, and the current evidence says exit demand is not there.
-- [[gpu-residual-value-pricing|GPU Residual Value Pricing]]: The broader residual-value pricing track remains active, but the pure GPU KBB / naked residual-data wedge is shelved pending buyer-side evidence. The demotion happened in stages: Bernie showed that appraisal-style naked data can become free gut-check behavior and that lenders mostly focus on offtake; Barkr showed that even a quality-adjusted GPU valuation index sells more...
-- [[obsidian-git-note-harness|Obsidian Git Note Harness]]: The v0 vault is local-first at ~/notes, backed by local Git only. It is insight-driven, agent-maintained, and designed for full-fidelity private capture.
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 9, 2026, 11:23 AM EDT - capture: update vault
+
+capture: update vault.
+
+Changed notes:
+  - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
+  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[the-nvidia-backstop-is-a-track-record-bridge-not-a-floor|The NVIDIA backstop is a track-record bridge, not a floor]]
+  - [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]]
+  - [[lender-outreach-replies-2026-07|Lender outreach replies: running log (Jul 2026 wave)]]
+  - [[neil-tiwari-magnetar-no-priors-podcast-2026-07-08|Neil Tiwari (Magnetar) on No Priors: how the term-sheet shop actually lends]]
 
 ### Jul 8, 2026, 6:50 PM EDT - capture: update vault
 
@@ -56,6 +67,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 9, 2026: capture: update vault - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jul 8, 2026: capture: update vault - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
 - Jul 8, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 7, 2026: capture: update vault - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
@@ -68,11 +80,10 @@ Changed notes:
 - Jul 5, 2026: capture: update notes - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jul 2, 2026: capture: update notes - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 - Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
-- Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
-- Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
 
 ## Past 30 Days
 
+- Jul 9, 2026: capture: update vault - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jul 8, 2026: capture: update vault - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
 - Jul 8, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 7, 2026: capture: update vault - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
@@ -97,6 +108,5 @@ Changed notes:
 - Jul 1, 2026: source: capture barkr sla reply - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 1, 2026: project: log sla outreach sent - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 1, 2026: insight: add hyperscaler compute supply nuance - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
-- Jun 30, 2026: insight: log offtake centralization - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 
-_Showing the newest 25 of 69 updates in this window._
+_Showing the newest 25 of 70 updates in this window._
