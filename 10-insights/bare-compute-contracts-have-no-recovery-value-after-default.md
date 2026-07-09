@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-07-02
+updated: 2026-07-08
 confidence: high
 domains: [gpu-finance, compute-contracts]
 projects: [gpu-compute-novation]
-sources: [usd-ai-call-harry-page-2026-06-29, gpu-backed-debt-contract-backed-inversion-2026-06-30]
+sources: [usd-ai-call-harry-page-2026-06-29, gpu-backed-debt-contract-backed-inversion-2026-06-30, neil-tiwari-magnetar-no-priors-podcast-2026-07-08]
 people: [harry-page]
 orgs: [usd-ai]
 aliases: [contract-only gpu lending has no recovery, bare offtake contracts are not recoverable collateral]
@@ -65,3 +65,15 @@ Added the broader inversion: GPU-backed debt is often contract-backed debt with 
 ### 2026-07-02
 
 Added both-sides collateralization from AC's contract review (operator deposits/equity vs offtaker prepay/LCs) as behavioral market-wide corroboration. The LC cost (~1-2%/yr on $140M is $1.5-3M/yr on one contract) also benchmarks what any trust-substituting product competes against: posted collateral.
+
+### 2026-07-08 - How lenders "seize" a cash flow, and why the machinery still rests on performance
+
+Tiwari (Magnetar) calls contracted cash flows from investment-grade counterparties "the primary collateral" in the big GPU facilities. Dylan's question, worth answering precisely because the phrase glides past it: can you actually seize a cash flow? Answer: yes, it is legally real collateral, but seizure means owning the plumbing, not repossessing money. Three mechanisms, visible in the CoreWeave/Meta structure:
+
+1. ACCOUNT CONTROL: the customer pays into an account the lenders' agent controls, and the payment waterfall services debt before anything reaches the operator. On default, "seizure" is mostly ceasing to pass leftovers upstream. This is the observation-collapses-into-possession pattern (lockboxes, trustee waterfalls) pre-installed at origination.
+2. EQUITY PLEDGE OF THE SHELL: the borrower is a special-purpose company holding only the GPUs, the assigned contract, and the accounts, with 100 percent of its shares pledged. Lenders foreclose on the shares, taking the whole box (contract included) in one legal step, instead of repossessing ten thousand servers.
+3. STEP-IN RIGHTS: lenders can replace the operator to keep the contract being performed and paying. Precondition two of the trophy structure; without it the rest fails.
+
+Same logic as older markets: office-tower lenders treat signed leases as the real collateral and appoint a receiver to collect rent; a solar farm's collateral is the power purchase agreement, not the panels; a factor's collateral is the invoice.
+
+THE CONDITIONALITY, which is this note's claim restated from the structuring side: a bond pays because you hold it; a service contract pays because someone keeps performing it. Take-or-pay obligations attach to capacity that must exist and meet the service terms; if the operator collapses and step-in fails, the customer eventually terminates for cause and the "primary collateral" evaporates exactly when it is needed. That is why Moody's still docked the trophy deal three notches for operator dependency inside a fortress structure, and why Abilene is the soft version: the anchor does not have to default, it can simply decline to stay past the term, and the residual question the structure was built to avoid returns. Tiwari's sentence is true with an unstated second half: primary collateral is the contracted cash flows, CONDITIONAL on the operator layer that gets a ratings haircut and otherwise goes unmeasured.

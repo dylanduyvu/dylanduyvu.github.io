@@ -235,3 +235,15 @@ Two testable questions decide between A and B, both askable on lender calls:
 Honest branch held open: some industries only ever produced large inspection firms, no file business. Fine companies, not the intended one. Whether compute lands there turns mostly on question 2.
 
 The one-report test is upstream of this fork and unchanged: a manual first report is also how Dun and Bradstreet started, and the kill question it answers (does a verified record move terms) must survive before any of the three shapes matters.
+
+### 2026-07-08 - The wedge restated: portable lender memory, and the repeat-lending fork
+
+The Magnetar podcast supplied the cleanest statement yet of both the wedge's proof and its sharpest challenge, worth holding consciously.
+
+The proof: CoreWeave's rate fell from roughly 10 percent (2023, Magnetar/Blackstone first facility at ~SOFR+960) to roughly 6 percent (2026 trophy facility at SOFR+225) across five facilities in three years, and lenders even began accepting riskier customers inside the structures. Tiwari's one-line explanation: early on "the operators had no experience," now "you have the history." A delivery track record really does convert into cheaper money, at billion-dollar scale, in this exact market. The mechanism the wedge sells is real.
+
+The challenge: nobody built anything for that to happen. No credential, no report, no certifier. The lenders knew the history because THE LENDERS WERE THERE, watching their own borrower perform on their own loans, deal after deal. Call it LENDER MEMORY: the track record lived in the lender's head. If lender memory does the job for free, why would anyone pay for a record?
+
+The reconciliation, which is now the wedge's honest pitch: lender memory works only when the SAME lender does REPEAT deals with the SAME operator. CoreWeave had that (one operator, a few big lenders, five deals). A $30M operator almost certainly does not: loan one comes from lender A, loan two from lender B who never saw loan one perform, so lender B starts from zero and the operator posts the full cushion again despite now having a real record. The record exists; it is trapped in lender A's head, invisible to the person who would pay for it. The product in one sentence: MOVE THE TRACK RECORD OUT OF ONE LENDER'S HEAD AND INTO A DOCUMENT ANY LENDER CAN READ. CoreWeave never needed that because its lenders stuck around; small operators need it because their lenders do not.
+
+New fork question added to the discovery kit (logged deliberately as an extension of the pre-committed kill criteria, not in-flight drift): "Have you ever lent to the same GPU operator twice, and did the second loan get better terms?" Both branches are codable. Repeat deals rare: small operators cannot build reputation the CoreWeave way, the pooling argument carries itself, wedge strengthened. Repeat deals common and round two prices cheaper: lender memory works at this tier too, and the wedge has a real problem - this is a SECOND FALSIFICATION ROUTE alongside the original kill question, and should be tallied per reply in the outreach log.

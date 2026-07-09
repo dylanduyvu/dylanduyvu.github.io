@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-06
-updated: 2026-07-07
+updated: 2026-07-08
 confidence: medium-high
 domains: [gpu-finance, verification, compute-contracts, sla]
 projects: []
@@ -51,6 +51,10 @@ The precision matters commercially: it names exactly what the product must measu
 - Orgs: [[aravolta|Aravolta]], [[usd-ai|USD.AI]]
 
 ## Updates
+
+### 2026-07-08 - The heterogeneity premise, stated by the money
+
+Tiwari (Magnetar, No Priors): citing Silicon Data, "two pieces of compute that look identical on paper have wildly different performances. Everything from reliability to cost to speed." And his open question for financing distributed inference: how to "mash together very different types of compute and try to optimize for reliability." A $22B lender volunteering that paper-identical compute is not identical is the premise under this whole note, said unprompted from the capital side; the question behind his question is who measures. Also relevant: performance-truth vendors (Silicon Data on pricing/performance telemetry) are becoming lender-visible, which pressures the machine-watching layer's occupancy but not the contract join this note names.
 
 ### 2026-07-07 - The gap restated as the contract join, with the legitimacy question at its center
 

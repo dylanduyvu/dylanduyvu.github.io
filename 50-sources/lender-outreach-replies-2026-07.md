@@ -37,6 +37,7 @@ Scoring rubric per reply:
 - H3 pull: 0
 - Identity-check replies (no mechanism yet): 1
 - Kill question answered: 0 (1 drafted)
+- Repeat-lending fork asked: 0 (question added 2026-07-08: "have you lent to the same GPU operator twice, and did the second loan price better?"; second falsification route, see thesis note update)
 
 ## Entries
 
@@ -75,6 +76,7 @@ Score: none yet. Awaiting mechanism answer.
 
 - Does ANY lender mention verification, measurement, or delivery data unprompted? (H3 pull; zero so far.)
 - Does anyone answer the kill question with "wouldn't change anything"? (Direct H2 falsification at that shop.)
+- Repeat-lending fork: do boutique lenders re-lend to the same GPU operators, and does round two price better? Repeat-rare strengthens the portable-record wedge; repeat-common-and-cheaper is a second falsification route (lender memory suffices at this tier).
 - Do equipment lenders and venture debt shops name different mechanisms? (Track by firm type as n grows.)
 - Does amort speed recur? If cushion + clock is the standard pair, the credential's pitch is "move both."
 
