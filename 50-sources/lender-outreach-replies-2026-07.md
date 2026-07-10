@@ -24,7 +24,7 @@ PRIVACY: lenders are anonymized here (Lender A, B, ...) with seat descriptions o
 Scoring rubric per reply:
 - CONFIRM: mechanism matches pattern (skip, or equity cushion) with no verification instrument mentioned
 - CONFIRM-WITH-REFINEMENT: pattern holds but adds mechanism detail
-- FALSIFY: lender says they underwrite operator delivery quality directly, or says a verified record would change nothing while cushions also do not bind
+- FALSIFY: lender says they underwrite operator delivery quality directly, or says a verified record would change nothing while cushions also do not bind. Refined 2026-07-08: a "no" to the kill question means PROOF ADDS NOTHING BEYOND CLAIMS AND REFERENCES (claimed history already prices, per Bernie's "prior deployments are the proxy" and the Magnetar repricing arc), not "track record does not matter"
 - H3 PULL: lender raises delivery/revenue visibility unprompted
 
 ## Running tally (n=2 replies; 1 mechanism answer)

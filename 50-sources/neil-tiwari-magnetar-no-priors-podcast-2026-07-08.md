@@ -3,7 +3,7 @@ type: source
 status: captured
 created: 2026-07-08
 updated: 2026-07-08
-source_date: 2026-07-08
+source_date: 2026-02-26
 source_type: podcast
 projects: [gpu-residual-value-pricing]
 domains: [gpu-finance, credit-markets, neoclouds, verification, ai-infrastructure]
@@ -17,7 +17,7 @@ tags: [magnetar, lender, spv, amortization, distributed-inference, silicon-data]
 
 ## Context
 
-No Priors podcast episode with Neil Tiwari, head of AI infrastructure at Magnetar Capital ($22B alternative asset manager), listened to by Dylan 2026-07-08. Why it matters as a source: Magnetar is the firm Friedman's March obsolescence piece named as the kind that models GPU risk properly and "writes term sheets, not blog posts," and per CoreWeave's proxy it was co-lead lender (with Blackstone) on the FIRST facility in 2023 at roughly SOFR + 960 basis points. This is the founding lender of the GPU credit market explaining its playbook in public. First Magnetar primary source in the vault.
+No Priors podcast episode 152 (aired 2026-02-26) with Neil Tiwari, head of AI infrastructure at Magnetar Capital ($22B alternative asset manager), listened to by Dylan 2026-07-08. DATE CORRECTION 2026-07-08: initially captured as if current; the episode aired in February, so every "now" and "next" in his statements is as of Feb 2026, four-plus months stale by capture date. This matters twice: his "stated next problem" (distributed inference) may have moved by now, and his eligibility quote predates the May DDTL 5.0 print, making it PREDICTIVE (see below). Why it matters as a source: Magnetar is the firm Friedman's March obsolescence piece named as the kind that models GPU risk properly and "writes term sheets, not blog posts," and per CoreWeave's proxy it was co-lead lender (with Blackstone) on the FIRST facility in 2023 at roughly SOFR + 960 basis points. This is the founding lender of the GPU credit market explaining its playbook in public. First Magnetar primary source in the vault.
 
 Podcast: No Priors (Sarah Guo). Transcript reviewed in full.
 
@@ -36,11 +36,11 @@ Met CoreWeave in 2021 during the Ethereum-mining-to-high-performance-compute tra
 
 On how the structures evolved: "Early on, these were all ONLY investment grade counterparties because the space was so nascent, THE OPERATORS HAD NO EXPERIENCE. And I think now what you're starting to see is a blend of investment grade and non-investment grade... because NOW YOU HAVE THE HISTORY that you can do this."
 
-Reading: the founding lender states that eligibility expanded as accumulated operator history de-risked the deals. Both dials moved together: customer credit quality in the pool loosened AS operator experience accumulated. This is the graduation mechanism (track record converts to lending eligibility) described as having actually happened at market scale, and it is DDTL 5.0 explained: the May 2026 facility blending two non-investment-grade customers IS this sentence as a transaction. Caveat: he is describing CoreWeave-tier operators; whether the same history-unlocks-terms dynamic operates at the $5-100M tier is exactly what the outreach wave is testing.
+Reading: the founding lender states that eligibility expanded as accumulated operator history de-risked the deals. Both dials moved together: customer credit quality in the pool loosened AS operator experience accumulated. This is the graduation mechanism (track record converts to lending eligibility) described as having actually happened at market scale. And the timeline sharpens it: he said this on 2026-02-26, ten weeks BEFORE the May DDTL 5.0 print (first publicly syndicated GPU facility, two non-investment-grade customers). The blend he described became a public transaction after he described it: predictive, not retrospective. Caveat: he is describing CoreWeave-tier operators; whether the same history-unlocks-terms dynamic operates at the $5-100M tier is exactly what the outreach wave is testing.
 
 ## The Heterogeneity Quote (verification-adjacent)
 
-Citing Silicon Data (Kerman Lee): "two pieces of compute that look identical on paper have wildly different performances. Everything from reliability to cost to speed." And his forward-looking question for distributed inference: how do you "mash together very different types of compute and try to optimize for reliability."
+Citing Silicon Data (CEO Carmen Li; the auto-transcript renders the name as "Kerman Lee", corrected against Silicon Data's own materials 2026-07-08): "two pieces of compute that look identical on paper have wildly different performances. Everything from reliability to cost to speed." And his forward-looking question for distributed inference: how do you "mash together very different types of compute and try to optimize for reliability."
 
 Reading: a $22B lender volunteering, unprompted, that paper-identical compute is not identical is the heterogeneity premise under the verification thesis, stated by the money. The question behind his question is who measures.
 
@@ -69,7 +69,7 @@ Reading: every attribute that made the trophy structure bankable is absent at th
 
 - Does Magnetar's distributed-inference financing, when it arrives, price operator delivery quality explicitly, or structure around it again (portfolio effects, cross-collateralization)?
 - Does the history-unlocks-the-blend dynamic operate at the $5-100M tier, or only at CoreWeave scale? (The outreach wave's question, now with a market-scale precedent.)
-- Silicon Data as a source and possible actor: who buys their heterogeneity data today, and is it lender-facing? (Kerman Lee; already in the June reading-list corpus.)
+- Silicon Data as a source and possible actor: who buys their heterogeneity data today, and is it lender-facing? (CEO Carmen Li; already in the June reading-list corpus; since captured properly after the CME futures partnership surfaced.)
 - Who measures reliability for stitched-together distributed inference fleets, where his own framing says paper-identical compute is not identical?
 
 ## Links

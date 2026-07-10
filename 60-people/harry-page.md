@@ -2,7 +2,7 @@
 type: person
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-08
 aliases: [Harry Page]
 orgs: [usd-ai]
 projects: [gpu-compute-novation]
@@ -19,6 +19,8 @@ Harry Page is a USD.AI contact who provided lender-side customer discovery on GP
 ## Relationship
 
 Dylan connected through Sam and spoke with Harry / the USD.AI team on 2026-06-29. Harry was open to keeping in touch and bouncing ideas back and forth.
+
+2026-07-08 status: follow-ups going unanswered; treat the thread as dormant. What the call yielded is what this relationship yields. Consequences tracked on the thesis note: the visibility wish stays stated-preference at n=1, and the one-report test needs a counterpart from the outreach wave instead. The route-via-Harry path into USD.AI colleagues is closed for now.
 
 ## Useful Signals
 

@@ -135,6 +135,13 @@ publish: update public notes harness
 - Say it simply first, add precision second. Plain sentence, then the technical detail if it earns its place.
 - Succinct, low-jargon, plain language throughout.
 
+## Verify Before Asserting
+
+- Never state a person's name, title, firm, or affiliation from memory. Verify against the vault (60-people, 65-orgs, 50-sources) or the private outreach CSV first, and if it is in neither, say so instead of guessing. A wrong name asserted confidently is worse than a checked "I don't know."
+- Do not convert absence of evidence into a claim of absence. "I found no sign of X" and "X does not exist" are different sentences; write the first one. When a sentence rests on not having seen something (no clients shown, no competitors found, nobody has done Y), flag it as an inference at the moment of writing.
+- Auto-generated transcripts, marketing pages, and secondary summaries are capture-grade, not assertion-grade. Names, dates, titles, and quotes taken from them get verified against a primary before they are asserted in chat, published, or sent in an email.
+- These rules bind every agent working in this vault, in chat replies as much as in notes.
+
 ## Privacy
 
 The current GitHub repo is public. Anything committed and pushed is public on GitHub, even if Quartz does not render it on the site. Before committing sensitive personal/professional material, either ask Dylan, keep it out of this public repo, or create a separate private workflow. Still do not store raw credentials, private keys, access tokens, passwords, or seed phrases unless Dylan explicitly designs a secrets workflow.

@@ -42,7 +42,7 @@ This hands the residual-value project its missing method. The Kelley-Blue-Book t
 
 - Single-author framework; the three-way split is analytically clean but boundaries blur in practice (fine-tuning sits between training and inference; "long tail" is a residual category).
 - Inference-curve shallowness is scarcity-dependent: if demand growth slows or new architectures orphan old chips (his own listed uncertainty), the middle curve steepens toward the training curve, and the 95 percent rebooking becomes a boom artifact rather than structure.
-- Demand depth at lower tiers is the load-bearing unknown: down-stack migration only works if the tiers below can absorb the volume coming off the tier above. Nobody has published tier-depth data.
+- Demand depth at lower tiers is the load-bearing unknown: down-stack migration only works if the tiers below can absorb the volume coming off the tier above. Nobody has published tier-depth data. Partial first instrument, 2026-07-09 (Friedman, Hugging Face downloads): text-generation models are only 17.6% of top-3,000 download activity, with embedding/similarity/classification work collectively larger - a public, author-caveated gesture at how broad and cheap-per-invocation the lower workload tiers are. Weak proxy (downloads are not executions or accelerator-hours), but it demonstrates the public-data path this note's open question asks about.
 - The waterfall method requires workload-tier price and demand data that may only exist inside the term-sheet shops; the method being right does not make it runnable from outside.
 
 ## Links
