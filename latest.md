@@ -8,11 +8,11 @@ updated: 2026-07-10
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 10, 2026, 11:44 AM EDT
+Generated: Jul 10, 2026, 1:18 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 13 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 14 note commits. The most recent movement is:
 
 
 ## Current Hub Signals
@@ -21,6 +21,15 @@ In the past 7 days, the public vault changed through 13 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 10, 2026, 1:18 PM EDT - capture: update vault
+
+capture: update vault.
+
+Changed notes:
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[research-behind-the-track-record-that-cant-travel|Research behind "The Track Record That Can't Travel"]]
+  - [[lender-outreach-replies-2026-07|Lender outreach replies: running log (Jul 2026 wave)]]
 
 ### Jul 10, 2026, 11:44 AM EDT - capture: update vault
 
@@ -46,6 +55,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 10, 2026: capture: update vault - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 10, 2026: capture: update vault - [[zile-cao-blockchain-capital-call-prep-2026-07|Call prep: Zile Cao, Blockchain Capital]]
 - Jul 9, 2026: capture: update vault - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
 - Jul 9, 2026: capture: update vault - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
@@ -62,6 +72,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 10, 2026: capture: update vault - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 10, 2026: capture: update vault - [[zile-cao-blockchain-capital-call-prep-2026-07|Call prep: Zile Cao, Blockchain Capital]]
 - Jul 9, 2026: capture: update vault - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
 - Jul 9, 2026: capture: update vault - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
@@ -86,6 +97,5 @@ Changed notes:
 - Jul 1, 2026: source: capture bernie sla reply - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
 - Jul 1, 2026: insight: log sla product form factor fork - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 1, 2026: insight: log nvidia sla verification incentive - [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
-- Jul 1, 2026: source: capture barkr sla reply - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
-_Showing the newest 25 of 72 updates in this window._
+_Showing the newest 25 of 73 updates in this window._
