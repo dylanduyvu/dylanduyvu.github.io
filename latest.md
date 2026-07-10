@@ -8,11 +8,11 @@ updated: 2026-07-10
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 10, 2026, 1:18 PM EDT
+Generated: Jul 10, 2026, 4:05 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 14 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 15 note commits. The most recent movement is:
 
 
 ## Current Hub Signals
@@ -21,6 +21,17 @@ In the past 7 days, the public vault changed through 14 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 10, 2026, 4:05 PM EDT - capture: update vault
+
+capture: update vault.
+
+Changed notes:
+  - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
+  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
+  - [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]]
+  - [[zile-cao-blockchain-capital-call-2026-07-10|Call: Zile Cao (Blockchain Capital) on the crypto-compute stack]]
+  - [[zile-cao-blockchain-capital-call-prep-2026-07|Call prep: Zile Cao, Blockchain Capital]]
 
 ### Jul 10, 2026, 1:18 PM EDT - capture: update vault
 
@@ -55,6 +66,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 10, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 10, 2026: capture: update vault - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 10, 2026: capture: update vault - [[zile-cao-blockchain-capital-call-prep-2026-07|Call prep: Zile Cao, Blockchain Capital]]
 - Jul 9, 2026: capture: update vault - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
@@ -72,6 +84,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 10, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 10, 2026: capture: update vault - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 10, 2026: capture: update vault - [[zile-cao-blockchain-capital-call-prep-2026-07|Call prep: Zile Cao, Blockchain Capital]]
 - Jul 9, 2026: capture: update vault - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
@@ -96,6 +109,5 @@ Changed notes:
 - Jul 1, 2026: insight: log sla monitoring underwriting caveat - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
 - Jul 1, 2026: source: capture bernie sla reply - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
 - Jul 1, 2026: insight: log sla product form factor fork - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-- Jul 1, 2026: insight: log nvidia sla verification incentive - [[nvidia-cares-about-sla-verification-because-bankable-contracts-drive-gpu-demand|NVIDIA cares about SLA verification because bankable contracts drive GPU demand]]
 
-_Showing the newest 25 of 73 updates in this window._
+_Showing the newest 25 of 74 updates in this window._
