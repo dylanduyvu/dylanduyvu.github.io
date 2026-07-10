@@ -30,16 +30,22 @@ One borrower, three prices: CoreWeave paid roughly 15 percent in 2023, then 4.5 
 
 ## Question list, in order
 
-1. The stakes question first: has Blockchain Capital invested in any of these companies, or is this all pipeline so far? (Everything he says after passes through this filter. A portfolio position makes his thesis answers book-talk and tightens what I share.)
-2. You said various parts of the stack. How do you slice it? Where are the pitches concentrated?
-3. Which layers have you seen no pitches in at all?
-4. When these companies pitch, what lender pain do they claim they solve? Is there anything recurring?
+1. You said various parts of the stack. How do you slice it? Where are the pitches concentrated?
+2. Which layers have you seen no pitches in at all?
+3. When these companies pitch, what lender pain do they claim they solve? Is there anything recurring?
+4. Has bcap invested in any of these companies?
 5. What has made you pass so far?
 6. Have any gone past pitch into real diligence? Where did the stories crack: did claimed lender demand hold up when you checked, or is it mostly build-first? Did the data room get thin anywhere? (His unique knowledge: the verified failure map of the space.)
 7. Did you end up talking to lenders yourselves during any of that? What did they tell you? (If yes: compare tallies against the cushion, amortization, sponsor pattern. Independent convergence is the strongest corroboration available. If no: a month of primary lender evidence is something nobody in his pipeline has.)
 8. Where do you think the durable business in this stack is?
 9. Anyone building lender-facing data or verification? Ratings, delivery records, attestation? (Deliberately late: get his unprompted map before telegraphing the thesis.)
 10. Technical read: would you trust a compute index built from marketplace prints? (Silicon Data and Ornn both have exchange partnerships now; his answer is also prep for the Ornn call.)
+
+===
+
+where's the compute supply coming from for these long tail players? how is that getting built out
+what are customers doing with 2 week compute rentals?
+
 
 Must-asks if time compresses: questions 1, 3, and 6.
 
@@ -64,3 +70,15 @@ Landscape one-liners:
 Crypto-side hooks he will know: USD.AI (GPU collateral, 80 percent value warranty from an insurer, first-loss), GAIB, Hyperbolic. My frame if it comes up: onchain rails are one distribution channel; the evidence says the customers are boutique equipment and private credit lenders.
 
 Deeper dives if needed mid-call: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|thesis note]], [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|tenor mismatch]], [[the-nvidia-backstop-is-a-track-record-bridge-not-a-floor|backstop bridge]], [[a-gpu-has-three-obsolescence-curves-not-one|three curves]].
+
+## Outcome (2026-07-10, scored after the call)
+
+Call happened 2026-07-10, Dylan and Jakub with Zile. Full capture: [[zile-cao-blockchain-capital-call-2026-07-10|call notes]].
+
+- Q1 (invested or pipeline): pipeline so far; one documented pass (silicon.net), no portfolio positions mentioned. Filter applied: his thesis answers read as genuine research, not book-talk.
+- Q3 (zero-pitch layers): ANSWERED BY OMISSION, the call's headline. His unprompted map of the whole stack never contained a verification or credit layer; his own census puts 10-15 companies above $100M in every category except financialization (~4 players), with the credit stack below it at zero. Scope: crypto pitch-flow only.
+- Q6 (diligence-crack): partially. The silicon.net pass is the one worked example, and its pass reasons are the missing-residual-mark thesis making a capital decision.
+- Q7 (talked to lenders): no. The prep's if-no branch confirmed: a month of primary lender evidence is something nobody in his pipeline has.
+- Q9 (verification builders, direct): ran out of room; moved to the open Telegram channel as a one-line follow-up.
+- Unexpected yields: the ~2x tenor premium number; the marketplaces-run-their-own-books correction (now annotated onto the Shkreli console evidence in two insights); fifth-seat heterogeneity convergence; Jasper at Hyperbolic triple-warm (Jakub's prior contact plus Zile's endorsement); Kinjal's market map pending sign-off, nudge in a week.
+- Seat calibration confirmed: validation of lender-behavior claims is not available here; do not spend future slots on it. The relationship value runs the other direction.
