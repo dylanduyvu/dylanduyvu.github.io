@@ -43,6 +43,8 @@ The claim that lenders describe cushions, amortization speed, and sponsor qualit
 
 The post carries its three weaknesses in the text; the sharpest is the third. Venture debt re-lends to existing borrowers as standard practice, so at least one corner of small-ticket lending builds lender memory by design. Whether GPU-specific lenders do the same, and whether round two prices better when they do, is the open factual question, and the reason the post ends by asking it.
 
+A fourth uncertainty the post does not carry but should be named here: segment size. The argument matters in proportion to how many skipped operators have real prior builds (versus no builds at all, whom no record can help). That ratio is not established anywhere, including in my own notes, and it is now a standing question in the field work: when lenders pass on an unproven operator, how often is it someone who has actually built before?
+
 ## Related notes in this vault
 
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|The running thesis note]] (the lender-memory reframe and its two falsification routes live here)

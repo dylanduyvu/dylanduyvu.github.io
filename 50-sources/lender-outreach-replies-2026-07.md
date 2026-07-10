@@ -37,7 +37,9 @@ Scoring rubric per reply:
 - H3 pull: 0
 - Identity-check replies (no mechanism yet): 1
 - Kill question answered: 0 (1 drafted)
-- Repeat-lending fork asked: 0 (question added 2026-07-08: "have you lent to the same GPU operator twice, and did the second loan price better?"; second falsification route, see thesis note update)
+- Repeat-lending fork asked: 0 (question added 2026-07-08: "have you lent to the same GPU operator twice, and did the second loan price better?"; second falsification route, see thesis note update. Sub-question added 2026-07-10: if yes, what did round two rest on, the payment record or the operational side?)
+- Show-docs question asked: 0 (added 2026-07-10: "when an operator shows you documentation from a previous lender's deal, how much does that move you versus calling that lender?")
+- Segment-ratio question asked: 0 (MUST-ASK, added 2026-07-10: "when you pass on an unproven operator, how often has that operator actually built GPU capacity before, versus never built at all?" Sizes the type-B market from the lender's chair; the most important unverified number in the ICP.)
 
 ## Entries
 
@@ -76,7 +78,10 @@ Score: none yet. Awaiting mechanism answer.
 
 - Does ANY lender mention verification, measurement, or delivery data unprompted? (H3 pull; zero so far.)
 - Does anyone answer the kill question with "wouldn't change anything"? (Direct H2 falsification at that shop.)
-- Repeat-lending fork: do boutique lenders re-lend to the same GPU operators, and does round two price better? Repeat-rare strengthens the portable-record wedge; repeat-common-and-cheaper is a second falsification route (lender memory suffices at this tier).
+- Repeat-lending fork: do boutique lenders re-lend to the same GPU operators, and does round two price better? Repeat-rare strengthens the portable-record wedge; repeat-common-and-cheaper is a second falsification route (lender memory suffices at this tier). Follow-up when yes: did round two rest on the payment record or the operational side? "They paid us back, that's all we needed" from several shops = partial kill on the delivery-record premise where repeat lending exists.
+- Show-docs: when an operator brings documentation from a previous lender's deal, does it move terms or does everything still route through calling that lender? Tests whether borrower-held documents are discounted the way the lemons logic predicts.
+- Acceptance-certificate: who signs off that the cluster is live before the final draw releases? (De-primed probe of the lender's own verification event; self-attested acceptance at the small end = the empty seat located to a document.)
+- Step-down: does pricing or structure change at acceptance, or is it flat through the term? (A step-down is a lender admitting in pricing that the build was the risk.)
 - Do equipment lenders and venture debt shops name different mechanisms? (Track by firm type as n grows.)
 - Does amort speed recur? If cushion + clock is the standard pair, the credential's pitch is "move both."
 
