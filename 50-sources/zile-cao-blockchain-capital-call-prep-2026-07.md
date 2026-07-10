@@ -15,58 +15,52 @@ tags: [call-prep, venture-capital, gpu-financing, landscape]
 
 # Call prep: Zile Cao, Blockchain Capital
 
-Scheduled via the Slate and Blockchain Capital Telegram group, 2026-07-09. 30 minutes. This note is the prep; the call capture will be a separate source note after, and a person hub follows if the relationship continues.
+30 minutes, booked via the Slate and Blockchain Capital Telegram group. Post-call: capture to a source note, tally any secondhand signal into the outreach log labeled as venture-filtered.
 
-## Who he is (verified 2026-07-09)
+## Him, in four lines
 
-Zile Cao, Research Engineer at Blockchain Capital, joined June 2024 out of their Research Scholar Program. University of Pennsylvania; previously Solana Foundation and Metaversal. Does technical due diligence and research support, not check-writing. Stated interests: crypto AI agents, private data, gaming. His GitHub includes contributions to Hyperbolic's agent toolkit, so he has hands-on contact with a GPU marketplace's plumbing. His message: Blockchain Capital has "talked with companies in various parts of the stack in this category lately," which from his seat most likely means he has been running or supporting technical diligence on GPU-financing pitches.
+- Research Engineer at Blockchain Capital since June 2024 (Research Scholar Program; UPenn; ex-Solana Foundation). Technical diligence and research, not check-writing.
+- Has contributed to Hyperbolic's agent toolkit on GitHub: hands-on with GPU marketplace plumbing.
+- His words: "we've talked with companies in various parts of the stack in this category lately." From his seat that likely means he ran or supported the technical diligence.
+- Blockchain Capital: crypto-native, 2013, 110+ investments (Coinbase, Kraken, Aave tier), equity and tokens, multi-stage. Whether they have invested in GPU financing: unknown, ask (question 1).
 
-Blockchain Capital: crypto-native venture firm, founded 2013, San Francisco, 110-plus investments across equity and tokens (Coinbase, Kraken, Aave tier). Whether they have already invested in the GPU-financing stack is unknown; ask, do not assume.
+## The 90-second opener
 
-## Why this call is different
-
-Every conversation so far has been with people who hold the risk: lenders, an insurer, a vendor. Zile holds the one thing none of them have: the pitch map. Which companies are being built in this space right now, in which layers, and what sophisticated money thinks of them. In exchange, a month of primary lender conversations plus two published syntheses is a view he almost certainly does not have. This is a trade between researchers, not an ask.
-
-## The 90-second version of my side (opens the call, earns the rest)
-
-One borrower, three prices: CoreWeave paid roughly ten percent in 2023, then 4.5 points over the benchmark in May against weaker customers, then 2.25 points over against Meta. The chips did not change; the history did. The mechanism was lender memory: the same lenders watching their own borrower repeat. Memory does not travel down-market, where operators switch lenders. And in a month of asking lenders how they handle unproven operators, the answers are cushions, amortization speed, and sponsor quality. Nobody has described verifying claimed history. The seat that checks whether an operator actually delivered, portably, is empty at every layer of the market.
-
-## Goals, ranked
-
-1. The builder map. How does he slice the stack when pitches arrive, which layers are crowded, and which layers have seen ZERO pitches. The zero-pitch layers are the most valuable answer in the call. Direct probe: has anyone pitched a verification, track-record, or delivery-attestation product? Either answer pays: yes means the seat is contested and how those pitches landed matters; no means early or no market, and his read on which is itself data.
-2. Secondhand hypothesis signal, correctly weighted. He cannot validate a claim about lender behavior; his opinion of it would be a cheap yes. What he can give: aggregated pitch-pain. Every GPU-financing startup that pitched Blockchain Capital had to describe the lender problem it solves. Ask what lender pain the pitches claim. Convergence on skip-or-cushion from companies that each did their own discovery is real corroboration; total absence of track-record language is either white space or a warning.
-3. Pass reasons. What made them pass on things in this space. Venture pass reasons are compressed market wisdom and a preview of every objection the thesis must eventually survive.
-4. Relationship seed. He is the scout, not the check. Win condition: he leaves thinking this person knows the lender side better than anyone who has pitched us. Intros follow from that, not from asking today. Specific-ask discipline applies later: name one founder, request twenty minutes.
+One borrower, three prices: CoreWeave paid roughly 15 percent in 2023, then 4.5 points over the benchmark this May against weaker customers, then 2.25 points over against Meta. The chips did not change; the history did. The mechanism was lender memory: the same lenders watching their own borrower repeat across five facilities. Memory does not travel down-market, where operators switch lenders. A month of asking lenders how they handle unproven operators keeps returning cushions, amortization speed, and sponsor quality. Nobody has described verifying claimed history. The seat that checks whether an operator actually delivered, portably, is empty at every layer.
 
 ## Question list, in order
 
-1. You said various parts of the stack. How do you slice it? Where are the pitches concentrated?
-2. Which layers have you seen no pitches in at all?
-3. Anyone building lender-facing data or verification? Ratings, delivery records, attestation?
-4. When these companies pitch, what lender pain do they claim they solve?
+1. The stakes question first: has Blockchain Capital invested in any of these companies, or is this all pipeline so far? (Everything he says after passes through this filter. A portfolio position makes his thesis answers book-talk and tightens what I share.)
+2. You said various parts of the stack. How do you slice it? Where are the pitches concentrated?
+3. Which layers have you seen no pitches in at all?
+4. When these companies pitch, what lender pain do they claim they solve? Is there anything recurring?
 5. What has made you pass so far?
-6. Where do you think the durable business in this stack is?
-7. Do any pitches arrive with actual lender demand attached, or is it build-first?
-8. Technical read: would you trust a compute index built from marketplace prints? (Silicon Data and Ornn both have exchange partnerships now; his answer is also prep for the Ornn call.)
-9. If flow allows: what were you building on Hyperbolic's agent toolkit?
+6. Have any gone past pitch into real diligence? Where did the stories crack: did claimed lender demand hold up when you checked, or is it mostly build-first? Did the data room get thin anywhere? (His unique knowledge: the verified failure map of the space.)
+7. Did you end up talking to lenders yourselves during any of that? What did they tell you? (If yes: compare tallies against the cushion, amortization, sponsor pattern. Independent convergence is the strongest corroboration available. If no: a month of primary lender evidence is something nobody in his pipeline has.)
+8. Where do you think the durable business in this stack is?
+9. Anyone building lender-facing data or verification? Ratings, delivery records, attestation? (Deliberately late: get his unprompted map before telegraphing the thesis.)
+10. Technical read: would you trust a compute index built from marketplace prints? (Silicon Data and Ornn both have exchange partnerships now; his answer is also prep for the Ornn call.)
 
-Must-asks if time compresses: questions 2 and 4. Everything else is recoverable by email.
+Must-asks if time compresses: questions 1, 3, and 6.
 
-## My own rules for this call
+## On-call insights
 
-- Share what I would publish; hold what I would not. He is a diligence engineer, and anything said may reach the companies he evaluates.
-- Wave findings at pattern level only, never named threads.
-- Do not pitch. There is no product. If asked what I would build: the portable delivery record hypothesis, stated with its two kill routes (would proof move terms; does repeat lending already solve this privately). Leading with kill criteria is the honest answer and the strongest founder signal anyway.
-- Take his map, keep my compass. Blockchain Capital's lens is crypto rails; my evidence says the customers are boutique equipment and private credit lenders. If his thesis and my evidence disagree, the evidence wins until better evidence arrives.
+The ladder (all public, primary-sourced):
+- 2023: $2.3B facility, led by Magnetar and Blackstone, margin ~9.6 points over the benchmark, roughly 15 percent money (proxy filing).
+- March 2026: $8.5B against the Meta contract, ~5.9 percent, Moody's A3. Meta itself Aa3, CoreWeave itself Ba3: the structure lifts the deal six notches above its operator, and the remaining three-notch gap to Meta is the priced operator-dependency layer.
+- May 2026: $3.1B, Ba2/BB+, benchmark +4.5, TWO non-investment-grade customers, oversubscribed, tightened 50bps in syndication, first publicly syndicated deal of its kind per the company.
 
-## Follow-up plan
+Magnetar (No Priors ep. 152, aired Feb 26): early deals were investment-grade only "because the space was so nascent, the operators had no experience"; now blended "because now you have the history." Said ten weeks BEFORE the May deal printed the blend. Also his: "the primary collateral was the contracted cash flows," GPUs second or third; and the next build he wants to finance is distributed inference (small stitched sites, variable demand, no take-or-pay).
 
-- On booking: send a two-line Telegram note with post one as pre-read, so the first five minutes of context become unnecessary.
-- Within a day after: thanks, one specific follow-up from the conversation, and post two once published.
-- Post-call capture: source note with the map and quotes, person hub for Zile if the relationship has legs, tally any secondhand pitch-pain signal into the outreach log as its own evidence class (secondhand, venture-filtered, labeled as such).
+SemiAnalysis (the trinity piece, July): riskiest pricing tier literally named "first-execution" (heavy equity, 10-15 percent, 3 years). Execution risk priced at ~1 point on essentially every deal, with no instrument behind it. NVIDIA backstop: ~6-year revenue floors declining $3.68 to $1.04/hr, 40-60 percent share above, contingent book modeled toward ~$175B. First backstop partner sits in ClusterMAX's underperforming band.
 
-## Open questions this call could close
+Landscape one-liners:
+- SemiAnalysis is alone at GPU-cloud ratings plus lender diligence; every neighbor verifies an adjacent layer (Uptime the building, MLPerf the chip, Artificial Analysis the API, independent engineers the power).
+- Benchmark seat claimed twice in one week of May: CME x Silicon Data, ICE x Ornn. Both futures suites are per-GPU-model: the market independently chose vintage-scoped contracts.
+- Rating agencies verbatim: GPU residual data "insufficient or too volatile to sustain an investment-grade rating."
+- Lawyers arriving: Clifford Chance forecasts measurement standards and audit rights becoming bankability requirements; Quinn Emanuel pre-positioning for GPU valuation litigation ("no one agrees on what GPUs are actually worth").
+- Three obsolescence curves: dead for frontier training ~18 months; off-contract H100s rebooked at 95 percent of original price for inference; 2017 chips still earn. Residual = lowest workload the chip can still serve times demand at that tier.
 
-- Does a verification-layer competitor exist in the venture pipeline that public searching cannot see?
-- Is the crypto-native lending crowd (the USD.AI and GAIB class) converging on delivery verification from their side, or treating collateral insurance as sufficient?
-- Where does the most informed pitch-flow in crypto-compute think value accrues?
+Crypto-side hooks he will know: USD.AI (GPU collateral, 80 percent value warranty from an insurer, first-loss), GAIB, Hyperbolic. My frame if it comes up: onchain rails are one distribution channel; the evidence says the customers are boutique equipment and private credit lenders.
+
+Deeper dives if needed mid-call: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|thesis note]], [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|tenor mismatch]], [[the-nvidia-backstop-is-a-track-record-bridge-not-a-floor|backstop bridge]], [[a-gpu-has-three-obsolescence-curves-not-one|three curves]].
