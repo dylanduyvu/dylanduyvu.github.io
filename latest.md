@@ -8,12 +8,13 @@ updated: 2026-07-12
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 12, 2026, 2:42 PM EDT
+Generated: Jul 12, 2026, 6:37 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 16 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 17 note commits. The most recent movement is:
 
+- Source capture: refine SemiAnalysis call run sheet and rating checks.
 
 ## Current Hub Signals
 
@@ -21,6 +22,14 @@ In the past 7 days, the public vault changed through 16 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 12, 2026, 6:37 PM EDT - source: refine SemiAnalysis call run sheet and rating checks
+
+Source capture: refine SemiAnalysis call run sheet and rating checks.
+
+Changed notes:
+  - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
+  - [[semianalysis-nvidia-backstop-trinity-2026-07-06|SemiAnalysis: "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity"]]
 
 ### Jul 12, 2026, 2:42 PM EDT - capture: update vault
 
@@ -33,10 +42,11 @@ Changed notes:
   - [[the-track-record-that-cant-travel|The Track Record That Can't Travel]]
   - [[dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06|Friedman + Mellor: The Trophy Deal Trap (CoreWeave's Investment-Grade Rating)]]
   - [[neil-tiwari-magnetar-no-priors-podcast-2026-07-08|Neil Tiwari (Magnetar) on No Priors: how the term-sheet shop actually lends]]
-  - [[semianalysis-call-prep-2026-07-13|Call prep: SemiAnalysis (Monday 2026-07-13)]]
+  - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 
 ## Past 7 Days
 
+- Jul 12, 2026: source: refine SemiAnalysis call run sheet and rating checks - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 - Jul 12, 2026: capture: update vault - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
 - Jul 10, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 10, 2026: capture: update vault - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
@@ -56,6 +66,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 12, 2026: source: refine SemiAnalysis call run sheet and rating checks - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 - Jul 12, 2026: capture: update vault - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
 - Jul 10, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 10, 2026: capture: update vault - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
@@ -80,6 +91,5 @@ Changed notes:
 - Jul 1, 2026: insight: log thomas default-risk monitoring signal - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - Jul 1, 2026: insight: log equity cushion weakens sla wedge - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
 - Jul 1, 2026: insight: log sla monitoring underwriting caveat - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
-- Jul 1, 2026: source: capture bernie sla reply - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
 
-_Showing the newest 25 of 75 updates in this window._
+_Showing the newest 25 of 76 updates in this window._
