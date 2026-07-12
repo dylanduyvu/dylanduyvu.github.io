@@ -17,13 +17,13 @@ This page collects the sources, numbers, and open uncertainties behind [[the-tra
 
 ## The three prices (all primary sources)
 
-- 2023 facility: $2.3B, announced August 3, 2023, led by Magnetar Capital and Blackstone Tactical Opportunities. The margin figure (north of nine and a half points over the benchmark) is from CoreWeave's own proxy filing on [SEC EDGAR](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001769628&type=DEF+14A); press coverage at the time reported a coupon around 14 percent, consistent with it.
+- 2023 facility: $2.3B, announced August 3, 2023, led by Magnetar Capital and Blackstone Tactical Opportunities. The margin: 8.75 points over three-month SOFR, 14.13 percent all-in as of September 2023, per [an independent holder's SEC portfolio filing](https://www.sec.gov/Archives/edgar/data/710826/000175272423273576/NPORT_4827_34211727_0923.htm) (Brighthouse Funds, which held the loan). A proxy-filing excerpt suggested a higher figure near 9.6 points, plausibly an effective rate including fees; the post uses the holder-reported contractual margin, which is the checkable one.
 - March 2026 facility: $8.5B against the Meta contract, about 5.9 percent, rated A3. [Moody's rating action](https://ratings.moodys.com/ratings-news/462400) is the primary document, and it also carries the detail the post leans on: Meta itself is rated Aa3 and CoreWeave itself Ba3, so the structure lifts the deal six notches above its own operator while the remaining three-notch gap to Meta is priced operator dependency.
 - May 2026 facility: $3.1B, SOFR + 4.50 percent, Ba2/BB+, two non-investment-grade customers, oversubscribed with pricing tightening 50 basis points during syndication. [CoreWeave's announcement](https://investors.coreweave.com/news/news-details/2026/CoreWeave-Closes-3-1-Billion-Loan-Facility-Expanding-Access-to-Public-Markets-for-GPU-Backed-Financing/default.aspx) is the source of the "first publicly syndicated" claim, in their scope (HPC infrastructure-backed).
 
 ## The lender memory quote
 
-Neil Tiwari, head of AI infrastructure at Magnetar, on the No Priors podcast, episode 152, aired February 26, 2026. The two quoted lines ("the operators had no experience" / "now you have the history") are from the episode transcript; the surrounding reading is mine. Working notes: [[neil-tiwari-magnetar-no-priors-podcast-2026-07-08|the full capture]]. Timeline worth noticing: he described the investment-grade and non-investment-grade blend ten weeks before the May facility printed it as a public transaction.
+Neil Tiwari, head of AI infrastructure at Magnetar, on the [No Priors podcast, episode 152, aired February 26, 2026](https://www.youtube.com/watch?v=WSxVh5WvWZ4). The two quoted lines ("the operators had no experience" / "now you have the history") are from the episode transcript; the surrounding reading is mine. Working notes: [[neil-tiwari-magnetar-no-priors-podcast-2026-07-08|the full capture]]. Timeline worth noticing: he described the investment-grade and non-investment-grade blend eleven weeks before the May facility printed it as a public transaction.
 
 ## The pricing matrix
 
@@ -32,7 +32,7 @@ SemiAnalysis, ["NVIDIA GPU Debt Backstop Unleashes $1T of Credit"](https://newsl
 ## The precedents
 
 - Dun and Bradstreet began as the Mercantile Agency (1841), correspondents writing down whether merchants paid their bills; the files became the product. The Lincoln-as-correspondent detail appears in Dun and Bradstreet's own corporate histories.
-- PayNet: equipment lenders pooling how their loans actually performed so payment history could travel between lenders; acquired by Equifax in 2019.
+- PayNet: equipment lenders pooling how their loans actually performed so a borrower's payment history could travel between lenders; by acquisition it held over 24 million contracts worth more than $1.6 trillion. [Equifax acquired it in April 2019](https://investor.equifax.com/news-events/press-releases/detail/123/equifax-acquires-paynet-to-help-expand-access-to-capital). PayNet's co-founder, in that announcement, stated the eligibility thesis in one sentence: "when commercial lenders are assured of risks, they are more likely to make credit available."
 - Factoring: invoice financiers advancing money only after verifying proof of delivery, and often confirming the invoice directly with the paying customer. The oldest working version of delivery verification gating credit.
 
 ## The field-notes paragraph

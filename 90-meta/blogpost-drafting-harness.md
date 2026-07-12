@@ -198,12 +198,17 @@ Authenticity:
 
 Overclaiming:
 
-- Search for: `everyone`, `always`, `clearly`, `proved`, `the market`, `nobody`, `no one`
-- Replace with what the evidence actually supports.
+- Search for the pattern CLASS, not a wordlist: absolutes attached to any group noun ("no industry", "no lender", "none exists", "every market", "the whole market", "only form of"), plus unscoped superlatives ("the first", "the only"). The literal strings `everyone`, `always`, `clearly`, `proved`, `nobody`, `no one` are members of the class, not the class. Every hit gets scoped to what the evidence supports, attributed, or cut. (Upgraded 2026-07-11: "No industry watches its borrowers" sailed through a wordlist search that would have caught "nobody watches.")
+
+Belonging:
+
+- Run the evidence-fit gate on CONCLUSIONS, not just evidence. For every paragraph, ask what question THE POST raised that it answers. If the justification for a sentence lives in the research corpus rather than on the page, the sentence either gets the bridge that raises its question or gets cut. Findings that are load-bearing for product decisions but answer no reader question belong in the vault, not the post.
+- Once per lint, read the full draft as the naive reader: no corpus context, no memory of why anything was researched. Author-authored favorite findings are the highest-risk imports, because every prior pass checked them for correctness and none for necessity.
 
 Voice:
 
 - Remove methodology padding, early defensive caveats, duplicated epistemic labels, unearned contrasts, and repeated "not X; it was Y" sentence shapes.
+- Colon audit: count colons in the body. More than roughly one per 250 words is a flag, but the real tell is TEMPLATE UNIFORMITY: the "short claim: elaborating list" construction repeated throughout reads as machine-generated even when each instance is individually fine. Keep colons that do irreplaceable work (a definition, a spec list after a quoted term, the lead-in to a closing question); convert the rest to periods, commas, or restructures. Period-plus-fragment ("So lender B starts from zero. Heavy cash down, fast repayment.") usually lands harder than the colon version in the simple-declarative register anyway. (Added 2026-07-11 from "The Track Record That Can't Travel": 13 colons in 1,150 words, nearly all the same construction, caught by Dylan's ear, not the lint.)
 - Make counterweights concrete: name the conditions where the thesis weakens or the simple version is enough.
 - When an observation sparks a product hunch, label it as a hypothesis to explore.
 
@@ -235,6 +240,16 @@ New entries from "The Ununderwritten Half of GPU Credit" (2026-07-05):
 - frontmatter anonymization -> on public posts, keep `people: []` and restrict `sources:` to public-artifact notes so the published page does not footer-link anonymized quotes to named person hubs.
 - preempting who-pays conflicts -> when the post proposes an operator-pays audit model, the conflict-of-interest objection is one the target reader WILL have; a one-sentence historical answer (classification societies, SOC 2 governance) is earned, not defensive.
 - no em dashes -> Dylan's standing preference across emails, bullets, and published prose. Use commas, colons, parentheses, and periods.
+- colon density and colon-template uniformity -> punctuation habits repeat as templates, and repeated templates read as machine-generated regardless of the individual sentence quality. Audit for any construction (colon-then-list, paired fragments, identical paragraph closers) appearing more than a handful of times; break the pattern by converting instances to varied syntax, keeping only the ones doing irreplaceable work. Full rule in section 14 Voice. (2026-07-11)
+
+New entries from "The Track Record That Can't Travel" (2026-07-08 to 2026-07-11):
+
+- podcast captures need an air-date check at capture time -> "I just listened to it" is not "it just aired." Every dated intention in a podcast ("our next problem is X") is stale by the gap between air date and capture date.
+- auto-generated transcripts are capture-grade, not quote-grade -> they produced a date error and a garbled name in one capture. Verify quote wording and names against audio or an official transcript before publication.
+- interval arithmetic is a fact -> verifying both endpoint dates against primaries and then subtracting in your head produced two wrong week-counts in one post. Date math gets checked like names and numbers.
+- the register drifts back -> a flatten pass runs once, then new paragraphs added afterward arrive unaudited. Any paragraph added after the register pass gets the register check individually, or the final lint re-runs the register scan across the whole document.
+- holder filings beat issuer summaries -> a fund's SEC portfolio filing reporting the exact rate of a loan it held is stronger evidence than the issuer's proxy summary or any press figure, and it is publicly linkable. For private-credit terms, search fund NPORT filings before settling for secondary numbers.
+- conclusions need the evidence-fit gate too -> a finding can be true, load-bearing in the vault, and still not belong in the post, because the post never raised the question it answers. Imported conclusions rebut objections the reader has not had (rule 11) and carry corpus-context the reader lacks. The author cannot detect this by rereading, because the author cannot unknow the context; the belonging lint and the naive-reader pass exist for exactly this, and the ownership pass remains the terminal gate. (2026-07-11, the continuous-surveillance paragraph.)
 
 ## 16. Voice Register Option: Simple Declarative (The American Compute Register)
 

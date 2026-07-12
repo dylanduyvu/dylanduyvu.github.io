@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-08
-updated: 2026-07-08
+updated: 2026-07-12
 source_date: 2026-02-26
 source_type: podcast
 projects: [gpu-residual-value-pricing]
@@ -17,9 +17,9 @@ tags: [magnetar, lender, spv, amortization, distributed-inference, silicon-data]
 
 ## Context
 
-No Priors podcast episode 152 (aired 2026-02-26) with Neil Tiwari, head of AI infrastructure at Magnetar Capital ($22B alternative asset manager), listened to by Dylan 2026-07-08. DATE CORRECTION 2026-07-08: initially captured as if current; the episode aired in February, so every "now" and "next" in his statements is as of Feb 2026, four-plus months stale by capture date. This matters twice: his "stated next problem" (distributed inference) may have moved by now, and his eligibility quote predates the May DDTL 5.0 print, making it PREDICTIVE (see below). Why it matters as a source: Magnetar is the firm Friedman's March obsolescence piece named as the kind that models GPU risk properly and "writes term sheets, not blog posts," and per CoreWeave's proxy it was co-lead lender (with Blackstone) on the FIRST facility in 2023 at roughly SOFR + 960 basis points. This is the founding lender of the GPU credit market explaining its playbook in public. First Magnetar primary source in the vault.
+No Priors podcast episode 152 (aired 2026-02-26) with Neil Tiwari, head of AI infrastructure at Magnetar Capital ($22B alternative asset manager), listened to by Dylan 2026-07-08. DATE CORRECTION 2026-07-08: initially captured as if current; the episode aired in February, so every "now" and "next" in his statements is as of Feb 2026, four-plus months stale by capture date. This matters twice: his "stated next problem" (distributed inference) may have moved by now, and his eligibility quote predates the May DDTL 5.0 print, making it PREDICTIVE (see below). Why it matters as a source: Magnetar is the firm Friedman's March obsolescence piece named as the kind that models GPU risk properly and "writes term sheets, not blog posts," and per an independent holder's SEC portfolio filing it was co-lead lender (with Blackstone) on the FIRST facility in 2023 at three-month SOFR + 875 basis points, 14.13 percent all-in as of September 2023 (an earlier proxy-snippet figure of ~960 superseded 2026-07-11). This is the founding lender of the GPU credit market explaining its playbook in public. First Magnetar primary source in the vault.
 
-Podcast: No Priors (Sarah Guo). Transcript reviewed in full.
+Podcast: No Priors (Sarah Guo), episode "Who's Actually Funding the AI Buildout?", published 2026-02-26 (air date independently confirmed via the episode page). URL: https://www.youtube.com/watch?v=WSxVh5WvWZ4. Transcript reviewed in full; the eligibility quote sits in the "How Deal Structures Evolve" chapter at 11:42. Note his title per the episode description: Managing Director at Magnetar Capital, introduced on-air as leading AI infrastructure.
 
 ## The Origin Story
 
@@ -36,7 +36,9 @@ Met CoreWeave in 2021 during the Ethereum-mining-to-high-performance-compute tra
 
 On how the structures evolved: "Early on, these were all ONLY investment grade counterparties because the space was so nascent, THE OPERATORS HAD NO EXPERIENCE. And I think now what you're starting to see is a blend of investment grade and non-investment grade... because NOW YOU HAVE THE HISTORY that you can do this."
 
-Reading: the founding lender states that eligibility expanded as accumulated operator history de-risked the deals. Both dials moved together: customer credit quality in the pool loosened AS operator experience accumulated. This is the graduation mechanism (track record converts to lending eligibility) described as having actually happened at market scale. And the timeline sharpens it: he said this on 2026-02-26, ten weeks BEFORE the May DDTL 5.0 print (first publicly syndicated GPU facility, two non-investment-grade customers). The blend he described became a public transaction after he described it: predictive, not retrospective. Caveat: he is describing CoreWeave-tier operators; whether the same history-unlocks-terms dynamic operates at the $5-100M tier is exactly what the outreach wave is testing.
+CROSS-CHECK 2026-07-12: compared against a second independent ASR (podscripts.co full transcript). Sentence one verbatim. Sentence two there carries a mid-quote "you know," filler ("...now you have, you know, the history...") that this rendering and the post drop without ellipsis. The intervening elaboration between the two quoted fragments (IG counterparties mixed alongside AI-native companies) matches, so the post's two-fragment quoting with its own connective prose is faithful. Audio or the official no-priors.com transcript arbitrates the filler; the official episode page does not surface in search.
+
+Reading: the founding lender states that eligibility expanded as accumulated operator history de-risked the deals. Both dials moved together: customer credit quality in the pool loosened AS operator experience accumulated. This is the graduation mechanism (track record converts to lending eligibility) described as having actually happened at market scale. And the timeline sharpens it: he said this on 2026-02-26, eleven weeks BEFORE the May DDTL 5.0 print (first publicly syndicated GPU facility, two non-investment-grade customers). The blend he described became a public transaction after he described it: predictive, not retrospective. Caveat: he is describing CoreWeave-tier operators; whether the same history-unlocks-terms dynamic operates at the $5-100M tier is exactly what the outreach wave is testing.
 
 ## The Heterogeneity Quote (verification-adjacent)
 
