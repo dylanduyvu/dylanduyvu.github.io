@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-10
+updated: 2026-07-12
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 10, 2026, 4:05 PM EDT
+Generated: Jul 12, 2026, 2:42 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 15 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 16 note commits. The most recent movement is:
 
 
 ## Current Hub Signals
@@ -22,50 +22,22 @@ In the past 7 days, the public vault changed through 15 note commits. The most r
 
 ## Past 24 Hours
 
-### Jul 10, 2026, 4:05 PM EDT - capture: update vault
+### Jul 12, 2026, 2:42 PM EDT - capture: update vault
 
 capture: update vault.
 
 Changed notes:
-  - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
-  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
-  - [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]]
-  - [[zile-cao-blockchain-capital-call-2026-07-10|Call: Zile Cao (Blockchain Capital) on the crypto-compute stack]]
-  - [[zile-cao-blockchain-capital-call-prep-2026-07|Call prep: Zile Cao, Blockchain Capital]]
-
-### Jul 10, 2026, 1:18 PM EDT - capture: update vault
-
-capture: update vault.
-
-Changed notes:
+  - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
   - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[research-behind-the-track-record-that-cant-travel|Research behind "The Track Record That Can't Travel"]]
-  - [[lender-outreach-replies-2026-07|Lender outreach replies: running log (Jul 2026 wave)]]
-
-### Jul 10, 2026, 11:44 AM EDT - capture: update vault
-
-capture: update vault.
-
-Changed notes:
-  - [[zile-cao-blockchain-capital-call-prep-2026-07|Call prep: Zile Cao, Blockchain Capital]]
-
-### Jul 9, 2026, 10:21 PM EDT - capture: update vault
-
-capture: update vault.
-
-Changed notes:
-  - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
-  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
-  - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[the-nvidia-backstop-is-a-track-record-bridge-not-a-floor|The NVIDIA backstop is a track-record bridge, not a floor]]
-  - [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]]
   - [[research-behind-the-track-record-that-cant-travel|Research behind "The Track Record That Can't Travel"]]
   - [[the-track-record-that-cant-travel|The Track Record That Can't Travel]]
-  - and 7 more
+  - [[dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06|Friedman + Mellor: The Trophy Deal Trap (CoreWeave's Investment-Grade Rating)]]
+  - [[neil-tiwari-magnetar-no-priors-podcast-2026-07-08|Neil Tiwari (Magnetar) on No Priors: how the term-sheet shop actually lends]]
+  - [[semianalysis-call-prep-2026-07-13|Call prep: SemiAnalysis (Monday 2026-07-13)]]
 
 ## Past 7 Days
 
+- Jul 12, 2026: capture: update vault - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
 - Jul 10, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 10, 2026: capture: update vault - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 10, 2026: capture: update vault - [[zile-cao-blockchain-capital-call-prep-2026-07|Call prep: Zile Cao, Blockchain Capital]]
@@ -84,6 +56,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 12, 2026: capture: update vault - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
 - Jul 10, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 10, 2026: capture: update vault - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 10, 2026: capture: update vault - [[zile-cao-blockchain-capital-call-prep-2026-07|Call prep: Zile Cao, Blockchain Capital]]
@@ -108,6 +81,5 @@ Changed notes:
 - Jul 1, 2026: insight: log equity cushion weakens sla wedge - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
 - Jul 1, 2026: insight: log sla monitoring underwriting caveat - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
 - Jul 1, 2026: source: capture bernie sla reply - [[expert-labeled-fine-tuning-can-beat-frontier-models-per-task-and-per-dollar|Expert-labeled fine-tuning can beat frontier models per task and per dollar]]
-- Jul 1, 2026: insight: log sla product form factor fork - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
-_Showing the newest 25 of 74 updates in this window._
+_Showing the newest 25 of 75 updates in this window._
