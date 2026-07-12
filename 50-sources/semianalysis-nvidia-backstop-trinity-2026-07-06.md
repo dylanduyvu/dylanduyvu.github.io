@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-12
 source_date: 2026-07-06
 source_type: article
 projects: [gpu-residual-value-pricing]
@@ -34,6 +34,7 @@ Caveats: single source; the backstop pricing is SemiAnalysis's ILLUSTRATIVE mode
 - Structure: ~6-year take-or-pay MINIMUM REVENUE GUARANTEE on GPU capacity at pre-agreed, declining price levels; NVIDIA takes 40-60% of revenue ABOVE the floor (works out to ~18-20% average take rate in their scenario). Negotiated per-neocloud; intent is the backstop is never invoked.
 - Illustrative floor schedule ($/hr/GPU, GB300): Y1 3.68, Y2 3.15, Y3 2.62, Y4 2.10, Y5 1.57, Y6 1.04; average 2.36. They call this the LOW end; most neoclouds expected to negotiate higher. Note: this is a published, declining forward RENTAL price curve (-72% over 6 years) from the party controlling the depreciation clock. It is NOT a residual value curve: it prices what a GPU-hour earns per year, not what the box resells for. A residual view can be derived from it (resale ~ discounted remaining earning power) but only one inferential step removed, and the derivation has gaps (floors sit deliberately below expected market rates; resale embodies scarcity and expectations, not just rent). Residual marks still have no public term structure - see [[gpu-financing-needs-forward-strips-for-residual-marks|the forward-strips insight]], updated accordingly.
 - Underwriting: lenders substitute NVIDIA's Aa2/AA rating, size loans to DSCR >= ~1.3x IN THE BACKSTOP-TRIGGERED SCENARIO, 70-80% LTV. Triggered-scenario IRRs ~zero/slightly negative but debt-covering - which is exactly what makes it financeable.
+- RATING CHECK 2026-07-12: the piece's Moody's letter for NVIDIA was stale at publication. Moody's upgraded NVIDIA Aa2 -> Aa1 on 2026-01-20 (positive outlook, Raj Joshi quoted in same-day coverage); S&P upgraded AA- -> AA on 2026-06-11, so the piece's S&P letter is current. Meta separately confirmed Aa3: Moody's affirmed 2026-02-27, and Meta's own SEC pricing term sheets (May 2026 offering) list Aa3 / AA-. The "Aa2/AA" in the bullet above stays as-written because it records what the piece said; the current letters are Aa1/AA.
 - Scenario returns (their model): 1y rental book with backstop 25.4% IRR; same book no backstop 40.7%; renting to NVIDIA at floor ~0/negative.
 - Stated objectives: (1) broaden compute access beyond hyperscalers/big labs, incl. short tenors; (2) ease lenders up the learning curve; (3) grow neoclouds so they "establish a track record... and become platforms that can be banked" standalone. "Central Bank of AI" frame: liquidity provider until the market matures.
 - Balance-sheet treatment: contingent guarantee on a cloud-service-agreement line, off-balance-sheet unless triggered. SemiAnalysis models ~$5.9B contingent per 100MW backstopped; $77.5B by F1/27 growing to ~$175.3B by F1/29; incremental NVIDIA revenue $1.8B (F1/27) to $13.9B (F1/29). Near-pure margin, recurring.
