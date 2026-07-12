@@ -8,20 +8,28 @@ updated: 2026-07-12
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 12, 2026, 6:37 PM EDT
+Generated: Jul 12, 2026, 7:32 PM EDT
 
 ## State Shift Summary
 
 In the past 7 days, the public vault changed through 17 note commits. The most recent movement is:
 
+- Insight update: add SemiAnalysis modeled residual value claim.
 - Source capture: refine SemiAnalysis call run sheet and rating checks.
 
 ## Current Hub Signals
 
-- [[gpu-compute-novation|GPU Compute Novation]]: Shelved with tripwire. The original hypothesis that long-term GPU offtake customers are over-committed and need contract novation is effectively falsified for the current market. LBH0 - exit demand exists - was the pre-committed kill-switch, and the current evidence says exit demand is not there.
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 12, 2026, 7:32 PM EDT - insight: add SemiAnalysis modeled residual value claim
+
+Insight update: add SemiAnalysis modeled residual value claim.
+
+Changed notes:
+  - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
+  - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 
 ### Jul 12, 2026, 6:37 PM EDT - source: refine SemiAnalysis call run sheet and rating checks
 
@@ -46,6 +54,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 12, 2026: insight: add SemiAnalysis modeled residual value claim - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
 - Jul 12, 2026: source: refine SemiAnalysis call run sheet and rating checks - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 - Jul 12, 2026: capture: update vault - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
 - Jul 10, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
@@ -62,10 +71,10 @@ Changed notes:
 - Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
-- Jul 5, 2026: capture: update notes - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 
 ## Past 30 Days
 
+- Jul 12, 2026: insight: add SemiAnalysis modeled residual value claim - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
 - Jul 12, 2026: source: refine SemiAnalysis call run sheet and rating checks - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 - Jul 12, 2026: capture: update vault - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
 - Jul 10, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
@@ -90,6 +99,5 @@ Changed notes:
 - Jul 1, 2026: insight: log equity as generic lender risk mitigant - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - Jul 1, 2026: insight: log thomas default-risk monitoring signal - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - Jul 1, 2026: insight: log equity cushion weakens sla wedge - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
-- Jul 1, 2026: insight: log sla monitoring underwriting caveat - [[post-training-tooling-is-monetizing-faster-than-frontier-model-building|Post-training tooling is monetizing faster than frontier model-building]]
 
-_Showing the newest 25 of 76 updates in this window._
+_Showing the newest 25 of 77 updates in this window._
