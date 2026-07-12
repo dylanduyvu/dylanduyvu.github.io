@@ -28,16 +28,17 @@ The residual work lives inside the AI CLOUD TCO MODEL: rental price history and 
 ## The ladder (each answer sets up the next)
 
 1. We have read the TCO Model page; give us the tour, we care most about the rental price scenarios and the residual value analysis. (his pitch, but informed; calibrates everything)
-2. The page says residual value is derived from future earning power. Is anything in it anchored to observed secondary-market prints: resales, auctions, lessor returns? And is the output a term structure by SKU and vintage, or point estimates? (the real question; defines what we would buy, and whether observed residual data exists anywhere)
-3. What validates the residual side, the way bilateral transactions validate your rental index? (methodology depth; reveals whether anyone contributes real resale data)
-4. Who uses this data today, and for what: lenders, lessors, operators? (reference-customer question that doubles as the map of who prices residual risk)
-5. When one lender has commissioned diligence on an operator and a second lender shows up on the same operator, does that work get reused or rebuilt? (portability, asked as a buyer)
-6. ClusterMAX: who pays, and do operators participate willingly? (adjacent-product mechanics)
-7. Why your residual numbers over the CME x Silicon Data or ICE x Ornn lines? (competition, his favorite subject)
-8. Terms (Jakub): price per model (models are separate institutional offerings), whether the GPU Pricing API is bundled or separate, pilot options, refresh cadence, and the full licensing menu, internal use now with commercial and derived-works terms as forward planning. (if a product ever touches this data, upgrade the license first)
-9. Close (Dylan): the TCO Model ships with an initial methodology call and ad-hoc follow-ups; confirm that, and ask for it to be with whoever owns the residual framework. Credential if useful: sent over two rating corrections on the Trinity piece. (the walkthrough is part of the product, not a favor, and still the route to the research side)
+2. The page says residual value is derived from future earning power. Is anything in it anchored to observed secondary-market prints: resales, auctions, lessor returns? And is the output a term structure by SKU and vintage, or point estimates? (THE residual question, asked once. If he says there is observed anchoring: one follow-up, where do the prints come from and what validates them. If he says it is modeled: the insight note is confirmed, nod, MOVE ON. Digging further is the tell; the derivation gets dug at the methodology call, not here.)
+3. Who buys the model today, and what do they use it for: lenders, lessors, operators? (reference-customer question that doubles as the map of who prices residual risk)
+4. When one lender has commissioned diligence on an operator and a second lender shows up on the same operator, does that work get reused or rebuilt? (portability, asked as a buyer)
+5. ClusterMAX: who pays, and do operators participate willingly? (adjacent-product mechanics)
+6. On the rental side, why your index over the CME x Silicon Data or ICE x Ornn lines? (competition, his favorite subject; also visibly moves the conversation off residual)
+7. Terms (Jakub): price per model (models are separate institutional offerings), whether the GPU Pricing API is bundled or separate, pilot options, refresh cadence, and the full licensing menu, internal use now with commercial and derived-works terms as forward planning. (if a product ever touches this data, upgrade the license first)
+8. Close (Dylan): the TCO Model ships with an initial methodology call and ad-hoc follow-ups; confirm that, and ask for it to be with whoever owns the residual framework. Credential if useful: sent over two rating corrections on the Trinity piece. (the walkthrough is part of the product, not a favor, and still the route to the research side)
 
-Must-gets if time compresses: 2, 8, 9.
+Must-gets if time compresses: 2, 7, 8.
+
+Residual pacing rule: it appears three times by design (the open as framing, question 1 as tour steer, question 2 as the one hard question) and then never again. One thread, resolved, then the call moves to market and terms. Repetition after the answer is what would read as hunting for a residual dataset.
 
 ## Guardrails, four lines
 
