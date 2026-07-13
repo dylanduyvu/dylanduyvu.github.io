@@ -8,12 +8,13 @@ updated: 2026-07-13
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 13, 2026, 6:28 PM EDT
+Generated: Jul 13, 2026, 7:00 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 23 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 24 note commits. The most recent movement is:
 
+- Source capture: repair GPU lender wave two contact addresses.
 - Source capture: add cleaned GPU lender wave two draft packet.
 - Source capture: capture Silicon operator vetting exchange.
 - Insight update: add SemiAnalysis modeled residual value claim.
@@ -24,6 +25,14 @@ In the past 7 days, the public vault changed through 23 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 13, 2026, 7:00 PM EDT - source: repair GPU lender wave two contact addresses
+
+Source capture: repair GPU lender wave two contact addresses.
+
+Changed notes:
+  - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
+  - [[gpu-underwriting-wave-bump-plan-2026-07-13|Draft packet: GPU underwriting wave bump]]
 
 ### Jul 13, 2026, 6:28 PM EDT - source: add cleaned GPU lender wave two draft packet
 
@@ -126,16 +135,9 @@ Changed notes:
   - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
   - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 
-### Jul 12, 2026, 6:37 PM EDT - source: refine SemiAnalysis call run sheet and rating checks
-
-Source capture: refine SemiAnalysis call run sheet and rating checks.
-
-Changed notes:
-  - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
-  - [[semianalysis-nvidia-backstop-trinity-2026-07-06|SemiAnalysis: "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity"]]
-
 ## Past 7 Days
 
+- Jul 13, 2026: source: repair GPU lender wave two contact addresses - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
@@ -162,6 +164,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 13, 2026: source: repair GPU lender wave two contact addresses - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
@@ -186,6 +189,5 @@ Changed notes:
 - Jul 7, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - Jul 6, 2026: capture: update vault - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
 - Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
-- Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 
-_Showing the newest 25 of 87 updates in this window._
+_Showing the newest 25 of 88 updates in this window._
