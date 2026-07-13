@@ -208,6 +208,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 
 ## Near-Term Tests
 
+- 2026-07-13: [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two]] is cleaned to 19 one-contact-per-firm targets: 11 ready on public direct addresses and 8 held for address or routing checks. The copy tests whether a successful first deployment changes the next facility's terms.
 - No upcoming Barkr call is scheduled; the prior Barkr call is already logged.
 - 2026-07-01: Dylan emailed Thomas at Barkr and Bernie at American Compute about USD.AI's volunteered SLA/uptime verification pain.
 - 2026-07-01: Thomas replied that SLA/uptime is separate from Barkr's warranty process, but he has heard it as an issue and NVIDIA brought up something similar.
