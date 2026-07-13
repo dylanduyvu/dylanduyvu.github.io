@@ -51,7 +51,8 @@ Default order: 1, 2, 6, 3, 4, 5. Asking 6 after three questions of track-record 
 
 ## Deployment log
 
-- Pending, 2026-07: Jakub's private-credit contact (name TBD, seat unknown, calibrator pending). Context going in: firm has evaluated several GPU deals, near first commitment, reports residual value "hanging in better than we originally expected." Capture note on return.
+- 2026-07-13, deployment 1 (partial): Jakub's contact PHIL (surname/firm TBD). The calibrator answered itself: PARTICIPANT, Apollo/BX-led tier, so he reclassifies out of the wave-two ICP and into syndication-mechanism informant. Jakub opened with the outside-diligence question CUT from v1, and it earned its keep: it produced the seat read and the participant verification stack. Sharpened follow-ups and full reading: [[phil-private-credit-jakub-relay-2026-07-13|capture note]].
+- Needed, not yet built: a BORROWER-CHAIR variant of this set (first target: yida/Refinery, see that capture when filed). Different instrument, same discipline.
 
 ## Links
 
