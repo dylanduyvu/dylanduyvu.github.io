@@ -8,11 +8,11 @@ updated: 2026-07-13
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 13, 2026, 12:06 PM EDT
+Generated: Jul 13, 2026, 2:40 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 17 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 18 note commits. The most recent movement is:
 
 - Insight update: add SemiAnalysis modeled residual value claim.
 - Source capture: refine SemiAnalysis call run sheet and rating checks.
@@ -22,6 +22,13 @@ In the past 7 days, the public vault changed through 17 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 13, 2026, 2:40 PM EDT - publish: add GPU lender question set
+
+publish: add GPU lender question set.
+
+Changed notes:
+  - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 
 ### Jul 13, 2026, 12:06 PM EDT - outreach: record remaining nine bump sends
 
@@ -84,6 +91,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 13, 2026: publish: add GPU lender question set - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: outreach: record remaining nine bump sends - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
 - Jul 13, 2026: outreach: record 20-thread bump send - [[gpu-underwriting-wave-bump-plan-2026-07-13|Draft packet: GPU underwriting wave bump]]
 - Jul 13, 2026: publish: archive track-record post and update research map - [[research-behind-the-track-record-that-cant-travel|Research behind "The Track Record That Can't Travel"]]
@@ -104,6 +112,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 13, 2026: publish: add GPU lender question set - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: outreach: record remaining nine bump sends - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
 - Jul 13, 2026: outreach: record 20-thread bump send - [[gpu-underwriting-wave-bump-plan-2026-07-13|Draft packet: GPU underwriting wave bump]]
 - Jul 13, 2026: publish: archive track-record post and update research map - [[research-behind-the-track-record-that-cant-travel|Research behind "The Track Record That Can't Travel"]]
@@ -128,6 +137,5 @@ Changed notes:
 - Jul 2, 2026: capture: update notes - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 - Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 - Jul 1, 2026: capture: update latest notes - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
-- Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
 
-_Showing the newest 25 of 80 updates in this window._
+_Showing the newest 25 of 81 updates in this window._
