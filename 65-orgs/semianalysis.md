@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-13
 aliases: [SemiAnalysis, ClusterMAX]
 people: [dylan-patel]
 projects: []
@@ -21,6 +21,7 @@ Dylan Patel's semiconductor/AI-infrastructure research firm - simultaneously the
 - ClusterMAX (v2.1, April 2026 rankings seen): the only neocloud rating system; 5 tiers (Platinum: CoreWeave alone; Gold: Oracle, Nebius, Azure, Crusoe, FluidStack; Silver: Together, Lambda, GCP, AWS, Firmus, Tensorwave et al.; Bronze: ~25 incl. Vast, Prime Intellect, RunPod; Not Recommended/Underperforming: Sharon AI, Hyperbolic, Akash, Hetzner, OVHcloud et al.). Explicitly positioned for capital providers to assess counterparty/collateral risk; tier ratings already move customer pricing; not usable commercially without authorization.
 - Lender toolkit (per their 2026-07-06 backstop piece): GPU Rental Pricing Index (bilateral-transaction-validated, term structure, H100 1y public), AI TCO Model (rental forecasts, three-statement returns, GPU residual value framework), tokenomics practice (lab-level ARR/token demand), InferenceX (throughput benchmarking = revenue capacity of a financed cluster), plus diligence consulting - they state top lenders already use them to scrutinize "operational quality, go to market plan, customer book and pricing strategy," with tens of billions of lender capital advised.
 - Their stated thesis: the backstop era is transitional; lenders will eventually finance neoclouds standalone, using tools like theirs - i.e., they are building the pricing/quality layer of the missing bank-grade infrastructure.
+- 2026-07-13 sales-call additions and one TENSION (source: [[semianalysis-rob-howle-sales-call-2026-07-13|Rob Howle call]]): ~95 employees, 40-50 analysts, new Chicago office. Models $75K/yr/5 seats (Tokenomics $100K); core research $65-75K and FRONT-RUNS the newsletter by 1-2 months; pricing series $20K (scrape-only, rentals); APIs $20K per product. Lender diligence is bespoke consulting from $250-300K per engagement. TENSION: the sales chair describes ClusterMAX as "just an article we released in the newsletter," not productized, freely accessible with a sub. Held against the Trinity-piece framing above (capital-provider positioning, pricing-moving tiers) rather than resolving; a sales seat can underdescribe a strategic asset, or the rating layer is editorial. Discriminating evidence: whether lender engagements reference it contractually (open question below).
 
 ## Read For The Thesis
 

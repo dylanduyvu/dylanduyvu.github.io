@@ -19,7 +19,7 @@ Wave context: 46 original cold threads sent 2026-07-07 across several GPU-financ
 
 Publication state: [The Track Record That Can't Travel](https://dylanvu.substack.com/p/the-track-record-that-cant-travel) published 2026-07-13. The Gmail bump bodies remained no-link by design.
 
-This packet was translated into Gmail drafts on 2026-07-12. On 2026-07-13 Dylan explicitly authorized a partial send before the planned seven-day baseline freeze: 20 no-response drafts were sent, one per firm. Gmail now holds 25 campaign drafts: 9 eligible no-response threads, 14 failed-address threads, and the 2 replied threads.
+This packet was translated into Gmail drafts on 2026-07-12. On 2026-07-13 Dylan explicitly authorized the full no-response cohort before the planned seven-day baseline freeze: 20 drafts first, then the remaining 9. All 29 delivered or assumed-delivered no-response threads have now been bumped. Gmail holds 16 campaign drafts: 14 failed-address threads and the 2 replied threads.
 
 ## Expected Gmail state after translation
 
@@ -478,9 +478,9 @@ When Dylan says to translate this packet into Gmail drafts:
 ## Outcome
 
 - Naked-cold baseline at send time: 2 replies among 31 delivered or assumed-delivered originals (6.5%); 2 replies among 46 gross attempts (4.3%); 15 failed deliveries. Frozen early on 2026-07-13, not after a full seven days.
-- Silent-thread bumps sent: 20 on 2026-07-13, one per firm: David Woo, Keri Findley, Nik Nunes, Carlos Mendez, Matthew Borstein, John Slonieski, Denise Garcia, Jeremiah Silkowski, Phil Gager, Josh Kalish, Ted Cavan, Morgan Russom, Mark Fiorentino, Shari Williams, Steve Aronson, Billy Libby, John Ahn, Rick Shrotri, Connell Hasten, and Pem Hutchinson.
+- Silent-thread bumps sent: 29 on 2026-07-13. First cohort: David Woo, Keri Findley, Nik Nunes, Carlos Mendez, Matthew Borstein, John Slonieski, Denise Garcia, Jeremiah Silkowski, Phil Gager, Josh Kalish, Ted Cavan, Morgan Russom, Mark Fiorentino, Shari Williams, Steve Aronson, Billy Libby, John Ahn, Rick Shrotri, Connell Hasten, and Pem Hutchinson. Second cohort: David Lindstrom, Deven Soni, Sam Tabar, Brian Geraghty, Michael Bogdan, Dan Kosinski, Bobby Campbell, Kony Kwong, and Andy Moore.
 - Personalized bumps sent: 0.
-- Held or skipped: 9 deliverable no-response drafts remain unsent; 2 replied threads remain drafted; 15 addresses failed delivery, including Danny Hurwitz's held thread.
+- Held or skipped: no deliverable no-response drafts remain. Two replied threads remain drafted. Fifteen addresses failed delivery, including Danny Hurwitz's held thread; 14 of those failed-address threads still have drafts.
 - Replies within 72 hours: 
 - Substantive repeat-lending answers: 
 - Reply quality notes: 

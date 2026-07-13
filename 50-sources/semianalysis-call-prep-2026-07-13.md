@@ -54,3 +54,15 @@ Segment ratio of built-but-unprovable vs never-built; the Sharon AI read; how cl
 ## After
 
 Same-day thanks to Rob; the one follow-up is walkthrough scheduling. Post two shipped 2026-07-13: [The Track Record That Can't Travel](https://dylanvu.substack.com/p/the-track-record-that-cant-travel). Send it to Rob and the walkthrough attendee with the follow-up. Then capture to a source note and score these questions in an Outcome section.
+
+## Outcome (scored 2026-07-13, capture at [[semianalysis-rob-howle-sales-call-2026-07-13|the call note]])
+
+- Q1 tour: DELIVERED via his pitch; calibration worked, no reverse-discovery pressure arrived.
+- Q2 anchored-or-modeled (must-get): ANSWERED, modeled confirmed at product level. Pricing series rentals-only on direct ask (11M records, 244 sources, 2017 onward). Pacing rule held: asked once, moved on. Consulting archive still untested; thread open.
+- Q3 who buys: NOT ASKED. Time went to terms instead. Carry to the analyst thread.
+- Q4 portability: NOT ASKED directly. Adjacent probe ("data beyond ClusterMAX that lenders ask for") opened Rob's ask-the-team thread; the real question waits for research side.
+- Q5 ClusterMAX mechanics: HALF-DISSOLVED. Sales chair says it is an article, not a product; who-pays is moot at product level; lender money flows through consulting ($250-300K entry). Tension logged in the org note.
+- Q6 competition: SPENT, THIN. "Don't come up with them too much," different clientele. Sales-grade non-answer.
+- Q7 terms (must-get): COMPLETE. Full price sheet captured incl. API bundling. Licensing menu NOT stated; moved to the follow-up email.
+- Q8 walkthrough close (must-get): MISSED live. Recoverable: the reply asks for a shell session with whoever owns the residual framework. Corrections credential unused by design; stays holstered for the research side.
+- Must-gets: 2 of 3 landed, the third recoverable by email.
