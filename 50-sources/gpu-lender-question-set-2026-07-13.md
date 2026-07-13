@@ -52,7 +52,7 @@ Default order: 1, 2, 6, 3, 4, 5. Asking 6 after three questions of track-record 
 ## Deployment log
 
 - 2026-07-13, deployment 1 (partial): Jakub's contact PHIL (surname/firm TBD). The calibrator answered itself: PARTICIPANT, Apollo/BX-led tier, so he reclassifies out of the wave-two ICP and into syndication-mechanism informant. Jakub opened with the outside-diligence question CUT from v1, and it earned its keep: it produced the seat read and the participant verification stack. Sharpened follow-ups and full reading: [[phil-private-credit-jakub-relay-2026-07-13|capture note]].
-- Needed, not yet built: a BORROWER-CHAIR variant of this set (first target: yida/Refinery, see that capture when filed). Different instrument, same discipline.
+- Needed, not yet built: a BORROWER-CHAIR variant of this set. DEFERRED 2026-07-13 evening: the first candidate (yida/Refinery) downgraded to keep-warm periscope, probably shell-side; build the variant when a genuine borrower-chair target exists, or if yida's discriminator answers come back our-balance-sheet / we-operate.
 
 ## Links
 
