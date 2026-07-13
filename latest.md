@@ -8,12 +8,13 @@ updated: 2026-07-13
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 13, 2026, 6:05 PM EDT
+Generated: Jul 13, 2026, 6:28 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 22 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 23 note commits. The most recent movement is:
 
+- Source capture: add cleaned GPU lender wave two draft packet.
 - Source capture: capture Silicon operator vetting exchange.
 - Insight update: add SemiAnalysis modeled residual value claim.
 - Source capture: refine SemiAnalysis call run sheet and rating checks.
@@ -23,6 +24,14 @@ In the past 7 days, the public vault changed through 22 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 13, 2026, 6:28 PM EDT - source: add cleaned GPU lender wave two draft packet
+
+Source capture: add cleaned GPU lender wave two draft packet.
+
+Changed notes:
+  - [[gpu-finance|GPU Finance]]
+  - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 
 ### Jul 13, 2026, 6:05 PM EDT - notes: update vault
 
@@ -127,6 +136,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: research: distinguish Silicon Network from Silicon Data - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
@@ -152,6 +162,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: research: distinguish Silicon Network from Silicon Data - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
@@ -176,6 +187,5 @@ Changed notes:
 - Jul 6, 2026: capture: update vault - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
 - Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
 - Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
-- Jul 6, 2026: capture: update vault - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
 
-_Showing the newest 25 of 86 updates in this window._
+_Showing the newest 25 of 87 updates in this window._
