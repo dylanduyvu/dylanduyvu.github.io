@@ -8,11 +8,11 @@ updated: 2026-07-13
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 13, 2026, 5:54 PM EDT
+Generated: Jul 13, 2026, 6:05 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 21 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 22 note commits. The most recent movement is:
 
 - Source capture: capture Silicon operator vetting exchange.
 - Insight update: add SemiAnalysis modeled residual value claim.
@@ -23,6 +23,14 @@ In the past 7 days, the public vault changed through 21 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 13, 2026, 6:05 PM EDT - notes: update vault
+
+notes: update vault.
+
+Changed notes:
+  - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
+  - [[yida-gao-refinery-telegram-2026-07-13|Yida (Refinery, via Telegram): powered-colo bet forming inside our own cap table]]
 
 ### Jul 13, 2026, 5:54 PM EDT - source: capture Silicon operator vetting exchange
 
@@ -62,7 +70,7 @@ publish: add lender relays and question updates.
 Changed notes:
   - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
   - [[phil-private-credit-jakub-relay-2026-07-13|Phil (private credit, via Jakub): how a participant diligences GPU deals]]
-  - [[yida-gao-refinery-telegram-2026-07-13|Yida (Refinery, via Telegram): a first-execution operator forming inside our own cap table]]
+  - [[yida-gao-refinery-telegram-2026-07-13|Yida (Refinery, via Telegram): powered-colo bet forming inside our own cap table]]
 
 ### Jul 13, 2026, 2:40 PM EDT - publish: add GPU lender question set
 
@@ -119,6 +127,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: research: distinguish Silicon Network from Silicon Data - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
 - Jul 13, 2026: research: audit Silicon Network product and operator risk - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
@@ -143,6 +152,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: research: distinguish Silicon Network from Silicon Data - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
 - Jul 13, 2026: research: audit Silicon Network product and operator risk - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
@@ -167,6 +177,5 @@ Changed notes:
 - Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
 - Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
-- Jul 6, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 
-_Showing the newest 25 of 85 updates in this window._
+_Showing the newest 25 of 86 updates in this window._
