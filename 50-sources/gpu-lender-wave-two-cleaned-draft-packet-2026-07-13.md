@@ -25,8 +25,8 @@ No Gmail drafts have been created from this packet yet.
 
 - Raw file: 34 people across 27 firm labels.
 - Retained: 19 people, one primary contact per firm.
-- Ready: 11 public direct addresses tied to official firm pages, official PDFs, or a public legal filing.
-- Hold: 8 useful targets that still need an individual address or routing check.
+- Ready: 16 addresses. Fourteen are exact public addresses; two are strong pattern matches backed by multiple named public examples.
+- Hold: 3 useful targets whose direct address or current routing still cannot be defended.
 - Cut: 15 rows because they were duplicates, lacked a usable address, had no GPU/compute-credit relevance, or relied on an unsupported deal attribution.
 
 ## Corrections to the CSV
@@ -36,8 +36,15 @@ No Gmail drafts have been created from this packet yet.
 - Nscale's announcement names PIMCO, Blue Owl, and LuminArx as leads on its $1.4 billion GPU facility. It does not name Neuberger Berman or Stonepeak, so those two rows are cut.
 - DigitalBridge publishes Chris Moon's address directly. He is ready, not pattern-inferred.
 - Two Prime's public loan agreement lists Brendon Kelley's address directly. He is ready, not merely high-confidence.
+- MonitorDaily publishes Kyle Parks's Eldridge address directly as `kyle.parks@eldridge.com`.
+- A public transaction filing prints Eric Wittleder's Brookfield address as `eric.wittleder@brookfield.com`.
+- Data Sales's archived employee page prints Pat Ponzio's address as `pponzio@datasales.com`; current public addresses still use first initial plus surname. The prior `dan@datasales.com` message bounced and must not be reused.
+- Magnetar uses `first.last@magnetar.com` across multiple SEC-filed documents. Neil Tiwari's address is a strong pattern match, not an exact public address.
+- Blue Owl uses `first.last@blueowl.com` across current public announcements and SEC filings. Ian Curtin's address is a strong pattern match, not an exact public address.
+- LuminArx has one named public employee address in surname-only form, making `fitch@luminarx.com` the best candidate. One example is not enough to stage it, and the prior `mhtoo@luminarx.com` message bounced.
+- Hydra's published and enrichment evidence conflicts on address format, Grant Benson is absent from the current team page, and the prior `kai@hydrahost.com` message bounced. No direct address clears the bar.
+- SLYD's enrichment sources conflict on address format and the prior `ljoshi@slyd.com` message bounced. `sales@slyd.com` is the relevant public commercial route, but it is not Hayden Gill's verified address.
 - Linkhome announced an expansion into AI infrastructure and GPU cloud services, not a GPU-financing division. That row is cut.
-- Hydra's current team page does not list Grant Benson, and neither proposed address is public. The target remains useful but is held.
 
 ## Send rules
 
@@ -46,7 +53,8 @@ No Gmail drafts have been created from this packet yet.
 3. Keep the body plain text with no links, attachments, meeting request, or em dash.
 4. Each email gets one question. The question changes with the recipient's seat.
 5. Do not imply that a person worked on a deal unless the source names them. Firm-level evidence stays phrased at the firm level.
-6. Do not stage the hold cohort until the address or routing issue is resolved.
+6. `ready, strong-pattern` means the person's current role and the firm's employee format are well-supported, but the exact mailbox is not public. Keep that distinction visible when translating the packet.
+7. Do not stage the hold cohort until the address or routing issue is resolved.
 
 ## Cohort manifest
 
@@ -63,14 +71,14 @@ No Gmail drafts have been created from this packet yet.
 | 9 | ready | Alex Gafford | Blue Street Capital | `Alex@BlueStreetCapital.com` | Originator at a firm with a dedicated AI-infrastructure financing product; corrected public address. |
 | 10 | ready, adjacent | Carl Boccuti | TD Equipment Finance | `Carl.Boccuti@td.com` | Public data-center equipment-finance contact. |
 | 11 | ready, adjacent | Eric S. Miller | Ansley Park Capital | `Eric.Miller@AnsleyParkCapital.com` | Public contact at large-ticket technology equipment lender. |
-| 12 | hold: address | Neil Tiwari | Magnetar Capital | `neil.tiwari@magnetar.com` | Best thesis-specific target, but address remains pattern-inferred. |
-| 13 | hold: address | Andrew Fitch | LuminArx Capital Management | `andrew.fitch@luminarx.com` | Relevant deal runner at Nscale lead lender; official site publishes only `ir@luminarx.com`. |
-| 14 | hold: address | Pat Ponzio | Data Sales Co. | `pat@datasales.com` or `pponzio@datasales.com` | Direct GPU lessor with repeat-customer evidence; neither proposed address is public. |
-| 15 | hold: address | Ian Curtin | Blue Owl Capital | `ian.curtin@blueowl.com` | Digital Infrastructure Principal at Nscale lead lender; address remains pattern-inferred. |
-| 16 | hold: address | Kyle Parks | Eldridge Capital Management | `kyle.parks@eldridge.com` | Asset-Based Equipment MD at CoreWeave facility participant; address remains guessed. |
-| 17 | hold: identity/address | Grant Benson | Hydra Capital | `grant@hydrahost.com` or `gbenson@hydrahost.com` | High product relevance, but not on current team page and neither address is public. |
-| 18 | hold: routing | Hayden Gill | SLYD Group | `contact@slyd.com` | Founder of a GPU infrastructure and financing platform; only a general inbox is public. |
-| 19 | hold: address | Eric Wittleder | Brookfield | `eric.wittleder@brookfield.com` | Infrastructure Credit CIO tied directly to Brookfield's $750M Crusoe facility; address remains pattern-inferred. |
+| 12 | ready, strong-pattern | Neil Tiwari | Magnetar Capital | `neil.tiwari@magnetar.com` | Best thesis-specific target; current role is official and multiple SEC filings establish Magnetar's `first.last` format. |
+| 13 | hold: address | Andrew Fitch | LuminArx Capital Management | `fitch@luminarx.com` | Best candidate follows the only named public employee example, but one surname-only sample is insufficient. |
+| 14 | ready | Pat Ponzio | Data Sales Co. | `pponzio@datasales.com` | Address appeared on an archived official employee page and matches current public Data Sales addresses. |
+| 15 | ready, strong-pattern | Ian Curtin | Blue Owl Capital | `ian.curtin@blueowl.com` | Current role is official and multiple public Blue Owl addresses establish the `first.last` format. |
+| 16 | ready | Kyle Parks | Eldridge Capital Management | `kyle.parks@eldridge.com` | Public funding-source profile prints his direct address. |
+| 17 | hold: identity/address | Grant Benson | Hydra Capital | none verified; public route `info@hydrahost.com` | High product relevance, but current role and direct-address format remain unresolved. |
+| 18 | hold: routing | Hayden Gill | SLYD Group | none verified; public route `sales@slyd.com` | Founder of a GPU infrastructure and financing platform; direct-address patterns conflict. |
+| 19 | ready | Eric Wittleder | Brookfield | `eric.wittleder@brookfield.com` | Public transaction filing prints his direct address; he leads Brookfield's infrastructure credit strategy. |
 
 ## Final copy
 
@@ -252,8 +260,8 @@ No Gmail drafts have been created from this packet yet.
 
 ### 12. Neil Tiwari, Magnetar Capital
 
-- Status: `hold: address`
-- Proposed To: `neil.tiwari@magnetar.com`
+- Status: `ready, strong-pattern`
+- To: `neil.tiwari@magnetar.com`
 - Subject: `Operator history in GPU credit`
 - Evidence: In his No Priors discussion, Neil described early GPU financings requiring investment-grade counterparties while young operators built a record.
 
@@ -269,7 +277,7 @@ No Gmail drafts have been created from this packet yet.
 ### 13. Andrew Fitch, LuminArx Capital Management
 
 - Status: `hold: address`
-- Proposed To: `andrew.fitch@luminarx.com`
+- Proposed To: `fitch@luminarx.com`
 - Subject: `Nscale underwriting`
 - Evidence: LuminArx was a lead lender on Nscale's $1.4B GPU-backed delayed-draw facility; Andrew originates, structures, and executes financings.
 
@@ -284,8 +292,8 @@ No Gmail drafts have been created from this packet yet.
 
 ### 14. Pat Ponzio, Data Sales Co.
 
-- Status: `hold: address`
-- Proposed To: `pat@datasales.com` or `pponzio@datasales.com`
+- Status: `ready`
+- To: `pponzio@datasales.com`
 - Subject: `Ori lease expansion`
 - Evidence: Data Sales says its Ori GPU lease began in the tens of millions and expanded during the first year.
 
@@ -300,8 +308,8 @@ No Gmail drafts have been created from this packet yet.
 
 ### 15. Ian Curtin, Blue Owl Capital
 
-- Status: `hold: address`
-- Proposed To: `ian.curtin@blueowl.com`
+- Status: `ready, strong-pattern`
+- To: `ian.curtin@blueowl.com`
 - Subject: `Nscale underwriting`
 - Evidence: Blue Owl was a lead lender on Nscale's $1.4B GPU-backed delayed-draw facility; Ian is on the Digital Infrastructure Investment Team.
 
@@ -316,8 +324,8 @@ No Gmail drafts have been created from this packet yet.
 
 ### 16. Kyle Parks, Eldridge Capital Management
 
-- Status: `hold: address`
-- Proposed To: `kyle.parks@eldridge.com`
+- Status: `ready`
+- To: `kyle.parks@eldridge.com`
 - Subject: `GPU equipment credit`
 - Evidence: Eldridge participated in CoreWeave's $7.5B facility; Kyle is a Managing Director in Asset-Based Equipment.
 
@@ -333,7 +341,7 @@ No Gmail drafts have been created from this packet yet.
 ### 17. Grant Benson, Hydra Capital
 
 - Status: `hold: identity/address`
-- Proposed To: `grant@hydrahost.com` or `gbenson@hydrahost.com`
+- Route: `info@hydrahost.com`
 - Subject: `Lender dashboard`
 - Evidence: Hydra has built a lender dashboard for live GPU asset visibility and publishes work on GPU residuals. Grant is not listed on the current team page.
 
@@ -349,7 +357,7 @@ No Gmail drafts have been created from this packet yet.
 ### 18. Hayden Gill, SLYD Group
 
 - Status: `hold: routing`
-- Route: `contact@slyd.com`
+- Route: `sales@slyd.com`
 - Subject: `GPU financing`
 - Evidence: SLYD offers GPU financing alongside hardware sourcing and deployment; the public address is a general inbox.
 
@@ -364,8 +372,8 @@ No Gmail drafts have been created from this packet yet.
 
 ### 19. Eric Wittleder, Brookfield
 
-- Status: `hold: address`
-- Proposed To: `eric.wittleder@brookfield.com`
+- Status: `ready`
+- To: `eric.wittleder@brookfield.com`
 - Subject: `Crusoe financing`
 - Evidence: Brookfield provided Crusoe a $750M facility; Eric is CIO of Brookfield's infrastructure credit strategy and was quoted in the announcement.
 
@@ -400,10 +408,10 @@ No Gmail drafts have been created from this packet yet.
 
 ## Gmail translation checklist
 
-- Create 11 new Gmail drafts from the ready cohort only.
+- Create 16 new Gmail drafts from the ready cohort only.
 - Re-check inbox and sent mail for any existing thread with the same recipient before creating each draft.
 - Preserve the subjects and bodies exactly unless a thread collision creates new context.
-- Keep the 8 hold drafts in this file until each address or route is resolved.
+- Keep the 3 hold drafts in this file until each address or route is resolved.
 - Report the resulting Gmail draft count and any rejected or duplicate recipient before asking for send authorization.
 
 ## Sources
@@ -414,21 +422,21 @@ No Gmail drafts have been created from this packet yet.
 - Crestline capital solutions and Chirisa financing: https://www.crestlineinvestors.com/capital-solutions/ and https://www.crestlineinvestors.com/news-insights/crestline-investors-completes-additional-debt-facility-for-chirisa-technology-parks-data-center-platform/
 - White Oak technology financing and John Felix: https://whiteoaksf.com/industry-expertise/technology/ and https://whiteoaksf.com/leadership-and-professionals/
 - Two Prime public loan agreement and CleanSpark facility: https://www.sec.gov/Archives/edgar/data/1946573/000121390025096183/ea026027001ex10-1_kindly.htm and https://investors.cleanspark.com/news/news-details/2025/CleanSpark-Opens-100M-Bitcoin-Backed-Credit-Facility-with-Two-Prime/default.aspx
-- Magnetar and Neil Tiwari: https://www.magnetar.com/insights/magnetars-neil-tiwari-on-no-priors-podcast
+- Magnetar and Neil Tiwari, plus public `first.last` examples: https://www.magnetar.com/insights/magnetars-neil-tiwari-on-no-priors-podcast and https://www.sec.gov/Archives/edgar/data/1593547/000139834424013259/fp0089266-1_ex9928d2xv.htm and https://www.sec.gov/Archives/edgar/data/23795/000155837019009007/ex-10d1.htm
 - CoreWeave $7.5B facility participants: https://www.blackstone.com/news/press/coreweave-secures-7-5-billion-debt-financing-facility-led-by-blackstone-and-magnetar/
 - DigitalBridge credit team and Chris Moon contact: https://www.digitalbridge.com/business/digital-credit
 - Nscale $1.4B GPU facility: https://www.nscale.com/press-releases/nscale-signs-1-4bn-delayed-draw-term-loan
-- LuminArx Andrew Fitch profile: https://www.luminarx.com/team/andrew-fitch
-- Data Sales Ori case study and Pat Ponzio profile: https://www.datasales.com/growth-stories/ori/ and https://www.datasales.com/peter-johnson.php
-- Blue Owl Ian Curtin profile: https://www.blueowl.com/our-team/ian-curtin
+- LuminArx Andrew Fitch profile and surname-only employee-address example: https://www.luminarx.com/team/andrew-fitch and https://www.nystrs.org/getmedia/a5de2743-5832-4b13-ae09-f39e75f7983d/MWBE_Attendees_2024.pdf
+- Data Sales Ori case study, current team, archived Pat Ponzio page, and current employee-address examples: https://www.datasales.com/growth-stories/ori/ and https://www.datasales.com/our-team/ and https://web.archive.org/web/20200128185145/http://www.datasales.com/pat-ponzio.php and https://www.datasales.com/images/pdf/sales/4-parts.pdf
+- Blue Owl Ian Curtin profile and public employee-address examples: https://www.blueowl.com/our-team/ian-curtin and https://www.blueowl.com/news/blue-owl-capital-launches-talon-tax-education-platform-empowering-financial-advisors-private and https://www.sec.gov/Archives/edgar/data/1668630/000166863025000002/bosfs123124.pdf
 - Nicola CoreWeave participation and corrected Eddie Angus contact: https://nicolawealth.com/insights/nicola-private-debt-fund-announces-co-investment-in-financing-to-coreweave and https://nicolawealth.com/our-team/eduardo-angus
-- Eldridge Kyle Parks profile: https://www.eldridge.com/people/kyle-parks
+- Eldridge Kyle Parks profile and public direct address: https://www.eldridge.com/people/kyle-parks and https://www.monitordaily.com/profile/2026-funding-source-eldridge-capital-management/
 - Blue Street AI infrastructure offering and corrected Alex Gafford address: https://bluestreetcapital.com/ai-infrastructure/ and https://bluestreetcapital.com/wp-content/uploads/2025/05/Blue-Street-Capital_Financing-Training-for-Sales.pdf
 - TD data-center equipment financing and Carl Boccuti contact: https://www.td.com/us/en/commercial-banking/data-center-financing
 - Ansley Park fact sheet and Eric Miller contact: https://ansleyparkcapital.com/wp-content/uploads/2025/04/Ansley-Park-Capital-Fact-Sheet-Who-We-Are-April-2025-vfinal-multiple-contacts-with-tombstones-v8.pdf
 - Hydra lender dashboard, current team, and public contact: https://hydrahost.com/post/lender-dashboard-gpu-asset-visibility/ and https://hydrahost.com/about/ and https://hydrahost.com/contact/
-- SLYD financing, team, and public contact: https://slyd.com/financing and https://slyd.com/about and https://slyd.com/terms-of-service/cloud-marketplace
-- Brookfield Crusoe facility and Eric Wittleder profile: https://www.crusoe.ai/resources/newsroom/crusoe-secures-usd750-million-credit-facility-from-brookfield-to-accelerate and https://www.brookfield.com/about-us/leadership/eric-wittleder
+- SLYD financing, team, and public commercial route: https://slyd.com/financing and https://slyd.com/about and https://www.linkedin.com/company/slyd-group
+- Brookfield Crusoe facility, Eric Wittleder profile, and public direct address: https://www.crusoe.ai/resources/newsroom/crusoe-secures-usd750-million-credit-facility-from-brookfield-to-accelerate and https://www.brookfield.com/about-us/leadership/eric-wittleder and https://documents.elevenflo.com/uuid_database_8_14_23/bc8517e6-cbd3-429f-ae62-3e8a0a33a4bf.pdf
 - Linkhome AI infrastructure announcement used to correct the CSV: https://www.globenewswire.com/news-release/2026/07/08/3324015/0/en/Linkhome-Holdings-Board-Approves-Strategic-Expansion-into-AI-Infrastructure.html
 
 ## Links

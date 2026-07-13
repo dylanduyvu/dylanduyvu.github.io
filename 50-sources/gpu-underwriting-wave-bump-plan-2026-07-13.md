@@ -21,6 +21,8 @@ Publication state: [The Track Record That Can't Travel](https://dylanvu.substack
 
 This packet was translated into Gmail drafts on 2026-07-12. On 2026-07-13 Dylan explicitly authorized the full no-response cohort before the planned seven-day baseline freeze: 20 drafts first, then the remaining 9. All 29 delivered or assumed-delivered no-response threads have now been bumped. Gmail holds 16 campaign drafts: 14 failed-address threads and the 2 replied threads.
 
+Address correction, 2026-07-13: `dan@datasales.com`, `mhtoo@luminarx.com`, `kai@hydrahost.com`, and `ljoshi@slyd.com` all bounced and must not be reused. This packet preserves the historical recipients below; current replacement research lives in [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]].
+
 ## Expected Gmail state after translation
 
 - 43 silent-thread bump drafts.
