@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-07-10
-updated: 2026-07-12
+updated: 2026-07-13
 source_date: 
 source_type: call_prep
 projects: [gpu-residual-value-pricing]
@@ -53,4 +53,4 @@ Segment ratio of built-but-unprovable vs never-built; the Sharon AI read; how cl
 
 ## After
 
-Same-day thanks to Rob; the one follow-up is walkthrough scheduling; post two to Rob and the walkthrough attendee when shipped. Then capture to a source note and score these questions in an Outcome section.
+Same-day thanks to Rob; the one follow-up is walkthrough scheduling. Post two shipped 2026-07-13: [The Track Record That Can't Travel](https://dylanvu.substack.com/p/the-track-record-that-cant-travel). Send it to Rob and the walkthrough attendee with the follow-up. Then capture to a source note and score these questions in an Outcome section.

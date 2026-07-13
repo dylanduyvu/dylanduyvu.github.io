@@ -1,33 +1,28 @@
 ---
 type: synthesis
-status: draft
+status: published
 created: 2026-07-08
-updated: 2026-07-12
-canonical: 
+updated: 2026-07-13
+published: 2026-07-13
+canonical: https://dylanvu.substack.com/p/the-track-record-that-cant-travel
 domains: [gpu-finance, credit-markets, verification]
 projects: []
 people: []
 sources: [neil-tiwari-magnetar-no-priors-podcast-2026-07-08, semianalysis-nvidia-backstop-trinity-2026-07-06, dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06]
-tags: [blogpost, draft, lender-memory, track-record, gpu-credit]
+tags: [blogpost, published, lender-memory, track-record, gpu-credit]
 ---
 
 # The Track Record That Can't Travel
 
 %%
-DRAFT. Publishes to Substack first, then canonical: gets the URL and status flips to published, like post one.
-pre-publish checklist:
-- [ ] Dylan ownership pass (retype in own voice, per harness rule 15: AI-drafted prose under personal byline requires it)
-- [x] 2023 margin RESOLVED against an independent holder's SEC portfolio filing (Brighthouse NPORT, Sept 2023: 14.130%, three-month SOFR + 8.750%). The earlier proxy-snippet figure (~9.6 points) is superseded, plausibly an effective rate including fees; post now uses the holder-reported contractual margin
-- [ ] decide: keep or cut the "past month asking lenders" provenance line (publishes the wave's existence)
-- [x] Lincoln aside CUT 2026-07-12 (unverified, carried its own verify item, paragraph loses nothing)
-- [x] link pass COMPLETE: Moody's release, CoreWeave May facility release, SemiAnalysis piece, No Priors episode (YouTube), 2023 holder filing (SEC), PayNet/Equifax release
-- [ ] Tiwari quotes CROSS-CHECKED 2026-07-12 against a second independent ASR transcript (podscripts.co full episode transcript): quote 1 verbatim; quote 2 identical except podscripts renders a mid-quote "you know," filler that our version drops without ellipsis. The official no-priors.com episode transcript does not surface in search. Remaining: ~30s audio listen at the tail of the 11:42 chapter (https://www.youtube.com/watch?v=WSxVh5WvWZ4) to arbitrate the filler, then keep the silent drop (standard practice for fillers) or add it. Attribution supported: intro'd on-air as leading AI infrastructure; formal title Managing Director
-- [x] if the Lincoln aside stays, verify via Dun and Bradstreet / Mercantile Agency histories (moot, aside cut)
-- [ ] at publish: flip this note and the research companion to status published, set canonical to the Substack URL, link both from the gpu-finance hub
-- [ ] after the next site publish, confirm the vault-companion link at the end resolves (the slug is constructed from the filename; post one's companion followed the same pattern)
-- [ ] re-run pre-publish lint (harness section 14) after ownership pass
-- [ ] companion: mirror 2026-07-12 changes (chips claim cut, causal split made non-exhaustive, syndication/conversion-layer paragraph added) before the publish diff
+PUBLICATION RECORD
+- Published 2026-07-13 on Substack.
+- Canonical: https://dylanvu.substack.com/p/the-track-record-that-cant-travel
+- Live post checked against this archive on 2026-07-13. The prose and links match; Substack adds its subscription widgets and chart image.
+- The Magnetar quotes were cross-checked against a second independent ASR transcript before publication. Direct audio arbitration of one omitted filler remains optional post-publication QA.
 %%
+
+> Published 2026-07-13 on Substack: https://dylanvu.substack.com/p/the-track-record-that-cant-travel (canonical). This vault copy is the text archive; the chart appears as an image on Substack.
 
 GPU lenders already pay for operator track records. The biggest borrower in the market proved it. Same company, three years, and the margin it pays over the benchmark rate fell by six and a half points. Customer quality explains part of that fall. The operator's own history explains another part, and the mechanism that priced it only works for big operators. Small ones build the same record, and what they can carry to the next lender is claims, not proof. This post is about why, and what other lending markets built when they hit the same wall.
 

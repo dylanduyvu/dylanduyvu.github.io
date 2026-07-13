@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-06-29
-updated: 2026-07-01
+updated: 2026-07-13
 domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee]
@@ -55,6 +55,8 @@ A second external signal (2026-07-01) cuts at the supply/competitive layer: Meta
 Dylan Patel (SemiAnalysis, 2026-06-30) names the sharper neocloud risk: the balance sheet, not the chips. Performance is competitive (CoreWeave reportedly benchmarks above hyperscalers), but neoclouds pre-sell compute before it is live and finance the build with debt on contracts, so the contract book is the fragile part. Crusoe pausing its 1.8GW Project Jade at a customer's request (2026-06-09) is an early crack: the gap between contracted and energized capacity. This is the risk-side of the contract-backed-debt inversion - watch the contract book, not the benchmarks.
 
 Bernie's AC article (2026-07-01) supplies the causal machine underneath, especially for the small-operator tier. Demand for small operators is a 2-3x price arbitrage against hyperscalers, conditional on delivering "in the next few months"; customers LOI-race multiple operators and walk without breach on missed milestones, so the contract is a free option until delivered. The serial delay stack (3-6 month loan closes, 6-9 month GPU lead times, scarce high-density colo, ~10,300-project grid queue; 26% of 2025 projects delayed) makes slips the expected output. Offtake therefore dies from two sides - customer credit (underwritten in tiers) and operator execution (no instrument, only proxies) - and the same delay that kills the contract engine pushes recovery down the obsolescence curve, so engine and floor fail together. Structurally, the whole asset class sits in private credit because Basel III/Dodd-Frank pushed banks out, which is why bank-grade infrastructure (ratings, appraisal standards, verification) does not exist yet: the vault's problem portfolio is, in one frame, that missing infrastructure.
+
+The July 2026 lender-memory refinement is that a track record becomes portable at CoreWeave scale through public filings, ratings, arrangers, and syndication. Below that scale, no equivalent conversion layer has been found. The live falsifier is repeat lending: if small GPU lenders routinely finance the same operator twice and improve round-two terms, lender memory already works down-market.
 
 ## Useful Patterns
 
@@ -120,10 +122,12 @@ Bernie's AC article (2026-07-01) supplies the causal machine underneath, especia
 ## Syntheses
 
 - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]: Current portfolio of compute-finance problem probes and cheapest fatal tests.
+- [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]] (published synthesis, Substack, 2026-07-06)
+- [[research-behind-the-ununderwritten-half|Research behind The Ununderwritten Half of GPU Credit]] (public research companion)
+- [[the-track-record-that-cant-travel|The Track Record That Can't Travel]] (published synthesis, Substack, 2026-07-13)
+- [[research-behind-the-track-record-that-cant-travel|Research behind The Track Record That Can't Travel]] (public research companion)
 
 ## Best Insights
-
-- [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]] (published synthesis, Substack, 2026-07-06)
 
 - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]

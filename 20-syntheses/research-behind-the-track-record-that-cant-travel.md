@@ -1,19 +1,23 @@
 ---
 type: synthesis
-status: draft
+status: published
 created: 2026-07-09
-updated: 2026-07-09
-canonical: 
+updated: 2026-07-13
+published: 2026-07-13
 domains: [gpu-finance, credit-markets, verification]
 projects: []
 people: []
 sources: [neil-tiwari-magnetar-no-priors-podcast-2026-07-08, semianalysis-nvidia-backstop-trinity-2026-07-06, dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06, deep-research-track-record-post-pressure-test-2026-07-08]
-tags: [blogpost, research-companion, lender-memory, gpu-credit]
+tags: [blogpost, published, research-companion, lender-memory, gpu-credit]
 ---
 
 # Research behind "The Track Record That Can't Travel"
 
-This page collects the sources, numbers, and open uncertainties behind [[the-track-record-that-cant-travel|the post]], the same way [[research-behind-the-ununderwritten-half|the first post's companion]] did. Everything here is public; where a claim rests on my own field notes, that is labeled.
+This page collects the sources, numbers, and open uncertainties behind [The Track Record That Can't Travel](https://dylanvu.substack.com/p/the-track-record-that-cant-travel) (Substack, 2026-07-13), the same way [[research-behind-the-ununderwritten-half|the first post's companion]] did. Everything here is public; where a claim rests on my own field notes, that is labeled.
+
+## The Post
+
+- [[the-track-record-that-cant-travel|The Track Record That Can't Travel]] (archived text of the published post)
 
 ## The three prices (all primary sources)
 
