@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-12
+updated: 2026-07-13
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 12, 2026, 7:32 PM EDT
+Generated: Jul 13, 2026, 9:22 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 17 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 18 note commits. The most recent movement is:
 
 - Insight update: add SemiAnalysis modeled residual value claim.
 - Source capture: refine SemiAnalysis call run sheet and rating checks.
@@ -22,6 +22,17 @@ In the past 7 days, the public vault changed through 17 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 13, 2026, 9:22 AM EDT - publish: archive track-record post and update research map
+
+publish: archive track-record post and update research map.
+
+Changed notes:
+  - [[research-behind-the-track-record-that-cant-travel|Research behind "The Track Record That Can't Travel"]]
+  - [[the-track-record-that-cant-travel|The Track Record That Can't Travel]]
+  - [[gpu-finance|GPU Finance]]
+  - [[gpu-underwriting-wave-bump-plan-2026-07-13|Draft packet: GPU underwriting wave bump]]
+  - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 
 ### Jul 12, 2026, 7:32 PM EDT - insight: add SemiAnalysis modeled residual value claim
 
@@ -54,6 +65,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 13, 2026: publish: archive track-record post and update research map - [[research-behind-the-track-record-that-cant-travel|Research behind "The Track Record That Can't Travel"]]
 - Jul 12, 2026: insight: add SemiAnalysis modeled residual value claim - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
 - Jul 12, 2026: source: refine SemiAnalysis call run sheet and rating checks - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 - Jul 12, 2026: capture: update vault - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
@@ -74,6 +86,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 13, 2026: publish: archive track-record post and update research map - [[research-behind-the-track-record-that-cant-travel|Research behind "The Track Record That Can't Travel"]]
 - Jul 12, 2026: insight: add SemiAnalysis modeled residual value claim - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
 - Jul 12, 2026: source: refine SemiAnalysis call run sheet and rating checks - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 - Jul 12, 2026: capture: update vault - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
@@ -98,6 +111,5 @@ Changed notes:
 - Jul 1, 2026: capture: usd-ai underwriting, up-stack signals, meta-compute + neocloud risk, ornn lead, venice demand-tracing, ac who-is-building-compute batch - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
 - Jul 1, 2026: insight: log equity as generic lender risk mitigant - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - Jul 1, 2026: insight: log thomas default-risk monitoring signal - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
-- Jul 1, 2026: insight: log equity cushion weakens sla wedge - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
 
-_Showing the newest 25 of 77 updates in this window._
+_Showing the newest 25 of 78 updates in this window._
