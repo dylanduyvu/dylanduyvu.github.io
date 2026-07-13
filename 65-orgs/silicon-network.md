@@ -4,7 +4,7 @@ status: active
 created: 2026-07-13
 updated: 2026-07-13
 aliases: [Silicon Network, Silicon.net, Berkeley Compute, Berkeley Compute Inc.]
-people: []
+people: [mcdavid-stoddard]
 projects: [gpu-residual-value-pricing]
 domains: [gpu-finance, tokenization, compute-markets]
 tags: [gpu, rwa, depin, compute]
@@ -39,11 +39,18 @@ Strategic relevance: it is a live example of outside capital funding GPU infrast
 ## Known People
 
 - Paul Hainsworth: founder and CEO.
-- McDavid Stoddard: founder contact in the current email thread.
+- [[mcdavid-stoddard|McDavid Stoddard]]: founder contact in the current email thread.
+
+## Current Outreach
+
+On 2026-07-13, Dylan asked what a third-party operator must prove before Silicon is comfortable placing a cluster in front of investors. McDavid initially interpreted this as asking who manages SLAs and day-to-day operations. Dylan clarified using the actual Cluster 01 flow: FarmGPU operates the hardware while the pool funds it, so how does Silicon evaluate FarmGPU before deploying that capital? Substantive response pending.
+
+The exchange is not evidence that Silicon performs no diligence. It does show that operating responsibility and capital approval are easy to collapse unless the question names the operator, capital source, decision, and timing.
 
 ## Related Sources
 
 - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
+- [[mcdavid-stoddard-silicon-network-operator-vetting-email-2026-07-13|McDavid Stoddard / Silicon Network email on operator vetting]]
 - [[zile-cao-blockchain-capital-call-2026-07-10|Zile Cao / Blockchain Capital call]]
 
 ## Related Insights

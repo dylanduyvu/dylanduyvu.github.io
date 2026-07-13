@@ -7,7 +7,7 @@ source_date: 2026-07-13
 source_type: web-research
 projects: [gpu-residual-value-pricing]
 domains: [gpu-finance, tokenization, compute-markets, operator-underwriting]
-people: []
+people: [mcdavid-stoddard]
 orgs: [silicon-network, farmgpu, pantheon-compute, runpod]
 attachments: []
 tags: [company-audit, gpu-tokenization, operator-risk, cashflow-verification]
@@ -135,13 +135,17 @@ The missing public answer is not who runs the cluster; the docs clearly assign t
 - Partner documentation still describes a `$SIL` burn/mint economy, while Silicon's January 2026 Terms say `$SIL` may launch in the future and current cash flows settle in USDC. Treat the partner description as stale.
 - Product copy alternates among one NFT per GPU, one NFT per server, and "fractional ownership through NFTs"; the clean fractional instrument is actually the ERC-20 pool token.
 
-## Outreach Implication
+## Outreach Exchange
 
-The precise follow-up to McDavid is:
+McDavid initially read the operator-vetting question as asking who manages SLAs and day-to-day cluster operations. That response does not establish that Silicon lacks diligence; it shows that the original question did not isolate the capital decision cleanly enough.
 
-> Not exactly. I'm asking from the capital side. For something like Cluster 01, FarmGPU deploys and operates the hardware while the pool funds it. Before Silicon deploys that capital, how do you get comfortable with FarmGPU as the operator?
+Dylan sent the following clarification on 2026-07-13:
 
-This asks about Silicon's real risk-management role without assuming it operates every cluster, endorses every provider, or leaves all diligence to retail buyers.
+> Not exactly. I'm asking from the capital side. For something like Cluster 01, FarmGPU deploys and operates the hardware while the pool funds it. Before deploying that capital, how does Silicon evaluate FarmGPU as the operator?
+
+This asks about Silicon's real risk-management role without assuming it operates every cluster, endorses every provider, or leaves all diligence to retail buyers. It also yields a reusable discovery pattern for multi-sided platforms: name the capital, operator, decision, and timing instead of asking generally what a provider must "prove."
+
+Full thread: [[mcdavid-stoddard-silicon-network-operator-vetting-email-2026-07-13|McDavid Stoddard / Silicon Network email on operator vetting]]. Substantive answer pending.
 
 ## Sources
 
@@ -156,8 +160,10 @@ This asks about Silicon's real risk-management role without assuming it operates
 - [Cluster 01 pre-deposit announcement](https://silicon.net/blog/cluster01)
 - [FarmGPU provider profile](https://silicon.net/providers/farmgpu)
 - [Pantheon Compute provider profile](https://silicon.net/providers/pantheon-compute)
+- [[mcdavid-stoddard-silicon-network-operator-vetting-email-2026-07-13|McDavid Stoddard / Silicon Network email on operator vetting]]
 
 ## Promoted
 
 - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - [[silicon-network|Silicon Network]]
+- [[mcdavid-stoddard|McDavid Stoddard]]
