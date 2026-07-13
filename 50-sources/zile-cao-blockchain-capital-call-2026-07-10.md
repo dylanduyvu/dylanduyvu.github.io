@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-07-13
 source_date: 2026-07-10
 source_type: call
 projects: [gpu-residual-value-pricing]
@@ -43,6 +43,10 @@ The one financing-adjacent deal he has seen: silicon.net, tokenizing fractional 
 
 He PASSED. His reasons, near-verbatim: GPU values depreciate rapidly, so why would holders keep the token rather than dump it; "who are these silicon.net guys that think they can manage this risk"; and is there even enough secondary liquidity to offload that much hardware when it ages out. Reading: a capital allocator declined a GPU-financing deal BECAUSE nobody can price depreciation or trust the residual risk management. The missing-residual-mark thesis causing an allocation decision, from an unexpected seat. Behavioral-grade evidence.
 
+### 2026-07-13 audit correction
+
+The initial description was directionally right but compressed several products. Silicon supports specific-GPU NFT pre-sales, a pooled ERC-20 claim on GPU NFTs and USDC, provider servicing/payout software, secondary trading, and now a direct-compute surface. Cluster 01 specifically used pre-deposits to fund a FarmGPU deployment. The core pass signal survives: tokenization makes ownership and payouts more legible but leaves operator deployment, reporting, remittance, and residual-management risk offchain. Full audit: [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]].
+
 ## Seat calibration (prep prediction confirmed)
 
 He has never talked to a lender; the credit stack is untouched in his research; his sharpest market takes are secondhand (the Hyperbolic founder, whose "narrative shifts week by week" and is drifting toward book-running and hedge-fund dynamics). The Blockchain Capital pipeline contains nothing resembling primary lender evidence, which makes that evidence upstream-unique in this relationship. Validation of lender-behavior claims is not available from this seat; do not spend future slots on it.
@@ -58,16 +62,17 @@ He has never talked to a lender; the credit stack is untouched in his research; 
 - 2x tenor premium and the book-running caveat into [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|the tenor mismatch insight]]
 - Book-running caveat into [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|the vintage curves insight]] (Shkreli evidence annotation)
 - Standardization blocker as fifth-seat evidence into [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|the verification gap insight]]
+- Silicon audit into [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|the tokenization does not verify operator performance insight]]
 
 ## Open Questions
 
 - The Telegram follow-up: anyone building lender-facing verification or track records, across everything pitched?
-- silicon.net: worth a landscape look (who, how big, live or dead)?
+- Silicon provider diligence remains open after the landscape audit: what standards sit behind its public claim of "strict standards"?
 - Does Kinjal's market map have a credit or verification column at all?
 
 ## Links
 
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[zile-cao-blockchain-capital-call-prep-2026-07|Zile Cao (prep note)]]
-- Orgs: Blockchain Capital (no hub yet; create if relationship deepens)
+- Orgs: Blockchain Capital (no hub yet; create if relationship deepens), [[silicon-network|Silicon Network]]
 - Related Insights: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|thesis note]], [[a-gpu-has-three-obsolescence-curves-not-one|three curves]]

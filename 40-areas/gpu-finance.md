@@ -6,7 +6,7 @@ updated: 2026-07-13
 domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee]
-orgs: [usd-ai, nebius, barkr, american-compute, coreweave, meta, spacex, nvidia]
+orgs: [usd-ai, nebius, barkr, american-compute, coreweave, meta, spacex, nvidia, silicon-network]
 tags: [gpu, lending, infrastructure]
 ---
 
@@ -58,6 +58,8 @@ Bernie's AC article (2026-07-01) supplies the causal machine underneath, especia
 
 The July 2026 lender-memory refinement is that a track record becomes portable at CoreWeave scale through public filings, ratings, arrangers, and syndication. Below that scale, no equivalent conversion layer has been found. The live falsifier is repeat lending: if small GPU lenders routinely finance the same operator twice and improve round-two terms, lender memory already works down-market.
 
+The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU NFTs, and pool tokens can finance hardware and make ownership/transfers/payouts legible, but the operator still controls deployment, marketplace integrations, earnings calculations, and remittance. Onchain auditability begins after these offchain facts enter the system. Tokenization therefore packages operator risk rather than independently underwriting it, which preserves the verification problem underneath the financing wrapper.
+
 ## Useful Patterns
 
 - Hardware recovery matters more than bare contract cash flows.
@@ -108,6 +110,7 @@ The July 2026 lender-memory refinement is that a track record becomes portable a
 - Verification consent is asymmetric across the loan lifecycle: operators want it at origination (credential to get funded) and resist it post-close (surveillance), so verification products should sell as operator-side credentialing for the next facility, with post-close monitoring written into loan docs.
 - Offtake contract clauses (no-subcontracting, benchmarking gags, concentration caps) are the market's substitute for missing verification infrastructure: parties legislate what they cannot measure.
 - SLA remedies are structurally toothless (future-use service credits, customer-filed claims), so operator reputation carries delivery risk on the customer side too - the same unpriced operator-quality problem as lender underwriting.
+- GPU tokenization can make ownership and payouts auditable without making operator-reported deployment, performance, or revenue independently true.
 
 ## Active Projects
 
@@ -174,6 +177,7 @@ The July 2026 lender-memory refinement is that a track record becomes portable a
 - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 - [[offtake-contracts-legislate-what-the-market-cannot-verify|Offtake contracts legislate what the market cannot verify]]
 - [[sla-remedies-are-toothless-so-reputation-carries-delivery-risk|SLA remedies are toothless, so reputation carries delivery risk]]
+- [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 
 ## Open Questions
 

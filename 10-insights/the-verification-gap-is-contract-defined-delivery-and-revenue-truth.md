@@ -2,13 +2,13 @@
 type: insight
 status: distilled
 created: 2026-07-06
-updated: 2026-07-08
+updated: 2026-07-13
 confidence: medium-high
 domains: [gpu-finance, verification, compute-contracts, sla]
 projects: []
-sources: [aravolta-usdai-collateral-verification-case-study-2026-07-02, usd-ai-call-harry-page-2026-06-29, deep-research-gpu-credit-post-pressure-test-2026-07-05]
+sources: [aravolta-usdai-collateral-verification-case-study-2026-07-02, usd-ai-call-harry-page-2026-06-29, deep-research-gpu-credit-post-pressure-test-2026-07-05, silicon-network-product-and-risk-model-audit-2026-07-13]
 people: [harry-page]
-orgs: [aravolta, usd-ai]
+orgs: [aravolta, usd-ai, silicon-network]
 aliases: [the gap sits between hardware working hard and the contract honored, busy healthy gpus can still fail their sla, delivery and revenue truth is the open layer]
 tags: [gpu, verification, sla, revenue-crediting, gap-definition]
 ---
@@ -35,6 +35,7 @@ The precision matters commercially: it names exactly what the product must measu
 - 2026-07-02 (Aravolta case study): verified scope stops at infrastructure (presence, identity, health, availability); explicitly not collected: tenant usage, workloads, application performance.
 - 2026-07-06 (scope refinement in chat): utilization is not tenant data - Aravolta monetizes GPU-hour utilization for lenders while remaining tenant-blind, which pins the open layer one notch tighter than "tenant layer."
 - Contract review (AC, SEC exhibits): SLA definitions, credit formulas, and claims windows are deal-specific and confidential - contract-level truth requires the contract, not just telemetry.
+- 2026-07-13 (Silicon Network audit): tokenized GPU ownership and payouts remain downstream of provider-controlled marketplace/API or CSV inputs. The provider calculates earnings, holds payout liquidity, and initiates owner payments. Onchain auditability makes reported cash-flow history legible but does not independently establish deployment, service delivery, or revenue completeness.
 
 ## Counterpoints / Uncertainty
 
@@ -45,12 +46,16 @@ The precision matters commercially: it names exactly what the product must measu
 ## Links
 
 - Sources: [[aravolta-usdai-collateral-verification-case-study-2026-07-02|Aravolta x USD.AI case study]], [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
-- Related Insights: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]], [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]], [[loan-covenants-are-enforced-by-self-reporting-not-measurement|Loan covenants are enforced by self-reporting, not measurement]], [[mid-term-monitoring-moves-money-through-loan-events-not-the-rate|Mid-term monitoring moves money through loan events, not the rate]]
+- Related Insights: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]], [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]], [[loan-covenants-are-enforced-by-self-reporting-not-measurement|Loan covenants are enforced by self-reporting, not measurement]], [[mid-term-monitoring-moves-money-through-loan-events-not-the-rate|Mid-term monitoring moves money through loan events, not the rate]], [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[harry-page|Harry Page]]
-- Orgs: [[aravolta|Aravolta]], [[usd-ai|USD.AI]]
+- Orgs: [[aravolta|Aravolta]], [[usd-ai|USD.AI]], [[silicon-network|Silicon Network]]
 
 ## Updates
+
+### 2026-07-13 - Silicon shows where onchain auditability stops
+
+Silicon's workflow makes the boundary concrete. Ownership and completed payments can be auditable while the underlying operational and revenue facts still enter through provider-controlled marketplace integrations or CSV. The ledger preserves what was reported; it does not independently prove the contract was delivered or all revenue was reported. See [[silicon-network-product-and-risk-model-audit-2026-07-13|the full audit]].
 
 ### 2026-07-08 - The heterogeneity premise, stated by the money
 
