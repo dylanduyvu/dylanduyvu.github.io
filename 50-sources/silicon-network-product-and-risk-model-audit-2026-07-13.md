@@ -21,6 +21,8 @@ Audit of Silicon Network's live website, product documentation, terms, provider 
 
 Legal entity: Berkeley Compute Inc., branded as Silicon Network.
 
+Do not confuse it with [Silicon Data](https://www.silicondata.com/), Carmen Li's separate GPU pricing, benchmarking, and market-data company.
+
 ## Straight Read
 
 Silicon is not a conventional physical-GPU marketplace and not quite a conventional ICO platform. Its documented model is a hybrid of:
@@ -159,4 +161,3 @@ This asks about Silicon's real risk-management role without assuming it operates
 
 - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - [[silicon-network|Silicon Network]]
-

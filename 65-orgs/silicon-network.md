@@ -16,6 +16,8 @@ tags: [gpu, rwa, depin, compute]
 
 Silicon Network is the Berkeley Compute Inc. brand for tokenized GPU ownership, pool-based GPU capital formation, asset/earnings servicing, and secondary trading. Its live homepage now also markets long-term dedicated compute from clusters it says it owns and operates.
 
+This is not Silicon Data, Carmen Li's separate GPU pricing and performance-data company.
+
 Strategic relevance: it is a live example of outside capital funding GPU infrastructure through tokenized claims, and a behavioral proof point for the unresolved operator-underwriting and residual-risk questions.
 
 ## Product Model
@@ -56,4 +58,3 @@ Strategic relevance: it is a live example of outside capital funding GPU infrast
 - Are the new Silicon-operated clusters financed by the token pools, or is direct compute a separate business/pivot?
 - Who guarantees the documented end-of-life liquidation floor?
 - Which operational and revenue fields come directly from RunPod versus the provider?
-
