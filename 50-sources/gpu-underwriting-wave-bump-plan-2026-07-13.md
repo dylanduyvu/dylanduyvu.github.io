@@ -15,11 +15,11 @@ tags: [outreach, bump-wave, draft-packet]
 
 # Draft packet: GPU underwriting wave bump
 
-Wave context: 46 original cold threads sent 2026-07-07 across several GPU-financing subject lines. Two received inbound replies: Mark Solovy and Ryan Bohlert. No visible bounces were found as of 2026-07-12, which means no known delivery failure; it does not distinguish inbox placement, reading, or ignoring.
+Wave context: 46 original cold threads sent 2026-07-07 across several GPU-financing subject lines. A full thread scan on 2026-07-13 found two real replies (Mark Solovy and Ryan Bohlert), 15 failed deliveries, and 29 delivered or assumed-delivered threads with no response.
 
-Publication state: [The Track Record That Can't Travel](https://dylanvu.substack.com/p/the-track-record-that-cant-travel) published 2026-07-13. The Gmail bump bodies remain no-link by design; publication does not change the frozen packet or the Tuesday baseline rule.
+Publication state: [The Track Record That Can't Travel](https://dylanvu.substack.com/p/the-track-record-that-cant-travel) published 2026-07-13. The Gmail bump bodies remained no-link by design.
 
-This packet was translated into Gmail drafts on 2026-07-12. Draft creation was not send approval; all 45 campaign drafts remain staged.
+This packet was translated into Gmail drafts on 2026-07-12. On 2026-07-13 Dylan explicitly authorized a partial send before the planned seven-day baseline freeze: 20 no-response drafts were sent, one per firm. Gmail now holds 25 campaign drafts: 9 eligible no-response threads, 14 failed-address threads, and the 2 replied threads.
 
 ## Expected Gmail state after translation
 
@@ -35,7 +35,7 @@ This packet was translated into Gmail drafts on 2026-07-12. Draft creation was n
 3. Create drafts only. Never send as part of the translation step.
 4. One draft per eligible thread. Update the two existing personalized drafts instead of creating duplicates.
 5. Plain text, no links, no attachments, no em dashes, no "just following up," and no "floating this up."
-6. Do not send before the naked-cold baseline is frozen. For a full seven-day window across the original sends, record the baseline after 2:00 PM ET on Tuesday 2026-07-14, immediately before any bumps are sent.
+6. The original plan was to freeze a full seven-day naked-cold baseline after 2:00 PM ET on Tuesday 2026-07-14. Dylan explicitly overrode that timing on 2026-07-13 for a 20-thread partial send, so this wave no longer has a clean full-seven-day baseline.
 
 ## Drafting rules applied
 
@@ -477,10 +477,10 @@ When Dylan says to translate this packet into Gmail drafts:
 
 ## Outcome
 
-- Naked-cold baseline at send time: 
-- Silent-thread bumps sent: 
-- Personalized bumps sent: 
-- Held or skipped: 
+- Naked-cold baseline at send time: 2 replies among 31 delivered or assumed-delivered originals (6.5%); 2 replies among 46 gross attempts (4.3%); 15 failed deliveries. Frozen early on 2026-07-13, not after a full seven days.
+- Silent-thread bumps sent: 20 on 2026-07-13, one per firm: David Woo, Keri Findley, Nik Nunes, Carlos Mendez, Matthew Borstein, John Slonieski, Denise Garcia, Jeremiah Silkowski, Phil Gager, Josh Kalish, Ted Cavan, Morgan Russom, Mark Fiorentino, Shari Williams, Steve Aronson, Billy Libby, John Ahn, Rick Shrotri, Connell Hasten, and Pem Hutchinson.
+- Personalized bumps sent: 0.
+- Held or skipped: 9 deliverable no-response drafts remain unsent; 2 replied threads remain drafted; 15 addresses failed delivery, including Danny Hurwitz's held thread.
 - Replies within 72 hours: 
 - Substantive repeat-lending answers: 
 - Reply quality notes: 
