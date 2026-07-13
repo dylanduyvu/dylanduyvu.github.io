@@ -8,12 +8,13 @@ updated: 2026-07-13
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 13, 2026, 5:44 PM EDT
+Generated: Jul 13, 2026, 5:54 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 19 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 21 note commits. The most recent movement is:
 
+- Source capture: capture Silicon operator vetting exchange.
 - Insight update: add SemiAnalysis modeled residual value claim.
 - Source capture: refine SemiAnalysis call run sheet and rating checks.
 
@@ -22,6 +23,25 @@ In the past 7 days, the public vault changed through 19 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 13, 2026, 5:54 PM EDT - source: capture Silicon operator vetting exchange
+
+Source capture: capture Silicon operator vetting exchange.
+
+Changed notes:
+  - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
+  - [[mcdavid-stoddard-silicon-network-operator-vetting-email-2026-07-13|McDavid Stoddard / Silicon Network email on operator vetting]]
+  - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
+  - [[mcdavid-stoddard|McDavid Stoddard]]
+  - [[silicon-network|Silicon Network]]
+
+### Jul 13, 2026, 5:45 PM EDT - research: distinguish Silicon Network from Silicon Data
+
+research: distinguish Silicon Network from Silicon Data.
+
+Changed notes:
+  - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
+  - [[silicon-network|Silicon Network]]
 
 ### Jul 13, 2026, 5:44 PM EDT - research: audit Silicon Network product and operator risk
 
@@ -99,6 +119,8 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
+- Jul 13, 2026: research: distinguish Silicon Network from Silicon Data - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
 - Jul 13, 2026: research: audit Silicon Network product and operator risk - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: publish: add lender relays and question updates - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: publish: add GPU lender question set - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
@@ -121,6 +143,8 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
+- Jul 13, 2026: research: distinguish Silicon Network from Silicon Data - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
 - Jul 13, 2026: research: audit Silicon Network product and operator risk - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: publish: add lender relays and question updates - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: publish: add GPU lender question set - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
@@ -144,7 +168,5 @@ Changed notes:
 - Jul 6, 2026: capture: update vault - [[research-behind-the-ununderwritten-half|Research Behind: The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
 - Jul 6, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
-- Jul 5, 2026: capture: update notes - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
-- Jul 2, 2026: capture: update notes - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
 
-_Showing the newest 25 of 83 updates in this window._
+_Showing the newest 25 of 85 updates in this window._
