@@ -8,7 +8,7 @@ updated: 2026-07-13
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 13, 2026, 3:35 PM EDT
+Generated: Jul 13, 2026, 5:44 PM EDT
 
 ## State Shift Summary
 
@@ -22,6 +22,18 @@ In the past 7 days, the public vault changed through 19 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 13, 2026, 5:44 PM EDT - research: audit Silicon Network product and operator risk
+
+research: audit Silicon Network product and operator risk.
+
+Changed notes:
+  - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
+  - [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]]
+  - [[gpu-finance|GPU Finance]]
+  - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
+  - [[zile-cao-blockchain-capital-call-2026-07-10|Call: Zile Cao (Blockchain Capital) on the crypto-compute stack]]
+  - [[silicon-network|Silicon Network]]
 
 ### Jul 13, 2026, 3:35 PM EDT - publish: add lender relays and question updates
 
@@ -87,6 +99,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 13, 2026: research: audit Silicon Network product and operator risk - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: publish: add lender relays and question updates - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: publish: add GPU lender question set - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: outreach: record remaining nine bump sends - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
@@ -105,10 +118,10 @@ Changed notes:
 - Jul 7, 2026: capture: update vault - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 - Jul 7, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - Jul 6, 2026: capture: update vault - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
-- Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
 
 ## Past 30 Days
 
+- Jul 13, 2026: research: audit Silicon Network product and operator risk - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: publish: add lender relays and question updates - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: publish: add GPU lender question set - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: outreach: record remaining nine bump sends - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
@@ -133,6 +146,5 @@ Changed notes:
 - Jul 6, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - Jul 5, 2026: capture: update notes - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - Jul 2, 2026: capture: update notes - [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]]
-- Jul 2, 2026: capture: update note harness sharing context - [[nvidia-fragments-its-demand-side-because-only-hyperscalers-can-defect|NVIDIA fragments its demand side because only hyperscalers can defect]]
 
-_Showing the newest 25 of 82 updates in this window._
+_Showing the newest 25 of 83 updates in this window._
