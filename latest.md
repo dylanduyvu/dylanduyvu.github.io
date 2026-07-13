@@ -8,7 +8,7 @@ updated: 2026-07-13
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 13, 2026, 2:40 PM EDT
+Generated: Jul 13, 2026, 3:25 PM EDT
 
 ## State Shift Summary
 
@@ -75,19 +75,6 @@ Source capture: refine SemiAnalysis call run sheet and rating checks.
 Changed notes:
   - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
   - [[semianalysis-nvidia-backstop-trinity-2026-07-06|SemiAnalysis: "Nvidia GPU Debt Backstop Unleashes the AI Project Trinity"]]
-
-### Jul 12, 2026, 2:42 PM EDT - capture: update vault
-
-capture: update vault.
-
-Changed notes:
-  - [[operator-execution-risk-is-the-ununderwritten-half-of-gpu-credit|Operator execution risk is the ununderwritten half of GPU credit]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[research-behind-the-track-record-that-cant-travel|Research behind "The Track Record That Can't Travel"]]
-  - [[the-track-record-that-cant-travel|The Track Record That Can't Travel]]
-  - [[dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06|Friedman + Mellor: The Trophy Deal Trap (CoreWeave's Investment-Grade Rating)]]
-  - [[neil-tiwari-magnetar-no-priors-podcast-2026-07-08|Neil Tiwari (Magnetar) on No Priors: how the term-sheet shop actually lends]]
-  - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 
 ## Past 7 Days
 
