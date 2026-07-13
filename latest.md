@@ -8,12 +8,13 @@ updated: 2026-07-13
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 13, 2026, 7:00 PM EDT
+Generated: Jul 13, 2026, 7:35 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 24 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 25 note commits. The most recent movement is:
 
+- Source capture: expand GPU lender wave two cohort.
 - Source capture: repair GPU lender wave two contact addresses.
 - Source capture: add cleaned GPU lender wave two draft packet.
 - Source capture: capture Silicon operator vetting exchange.
@@ -25,6 +26,13 @@ In the past 7 days, the public vault changed through 24 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 13, 2026, 7:35 PM EDT - source: expand GPU lender wave two cohort
+
+Source capture: expand GPU lender wave two cohort.
+
+Changed notes:
+  - [[gpu-lender-wave-two-expansion-draft-packet-2026-07-13|GPU lender wave two: expansion draft packet]]
 
 ### Jul 13, 2026, 7:00 PM EDT - source: repair GPU lender wave two contact addresses
 
@@ -127,16 +135,9 @@ Changed notes:
   - [[gpu-underwriting-wave-bump-plan-2026-07-13|Draft packet: GPU underwriting wave bump]]
   - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
 
-### Jul 12, 2026, 7:32 PM EDT - insight: add SemiAnalysis modeled residual value claim
-
-Insight update: add SemiAnalysis modeled residual value claim.
-
-Changed notes:
-  - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
-  - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
-
 ## Past 7 Days
 
+- Jul 13, 2026: source: expand GPU lender wave two cohort - [[gpu-lender-wave-two-expansion-draft-packet-2026-07-13|GPU lender wave two: expansion draft packet]]
 - Jul 13, 2026: source: repair GPU lender wave two contact addresses - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
@@ -164,6 +165,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Jul 13, 2026: source: expand GPU lender wave two cohort - [[gpu-lender-wave-two-expansion-draft-packet-2026-07-13|GPU lender wave two: expansion draft packet]]
 - Jul 13, 2026: source: repair GPU lender wave two contact addresses - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
@@ -188,6 +190,5 @@ Changed notes:
 - Jul 7, 2026: capture: update vault - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 - Jul 7, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
 - Jul 6, 2026: capture: update vault - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
-- Jul 6, 2026: capture: update vault - [[brownfield-power-sites-route-around-the-grid-queue|Hunch: brownfield power sites are how operators route around the grid queue]]
 
-_Showing the newest 25 of 88 updates in this window._
+_Showing the newest 25 of 89 updates in this window._
