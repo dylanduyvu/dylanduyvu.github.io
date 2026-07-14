@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-14
 source_date: 2026-07-13
 source_type: email
 projects: [gpu-residual-value-pricing]
@@ -59,6 +59,16 @@ Subject: `cluster 00 economics`
 >
 > Best,
 
+## Telegram Follow-up - 2026-07-14
+
+After McDavid invited Dylan to continue on Telegram, Dylan asked the unresolved new-operator question directly:
+
+> Dylan: oh yea, following up on the diligence process you mentioned. how do you guys verify a new operator's track record?
+>
+> McDavid: we just use farm
+>
+> McDavid: we havent had to diligence anyone else
+
 ## Read
 
 - McDavid's reply does not answer the underwriting question and does not prove Silicon lacks operator diligence. The substantive answer is still pending.
@@ -74,9 +84,18 @@ Subject: `cluster 00 economics`
 - "Full diligence process" is self-described and unspecified. What it can check independently versus what arrives as operator-provided material is the open fork. A final question forcing that fork was drafted; the exact version sent and the send status were not confirmed at capture time.
 - Answer quality: three-hour latency, substantive, no deflection. The concrete framing (named deal, named parties, capital side) converted a confused first reply into a structured answer; the abstract version had stumbled.
 
+## Read, After The Telegram Clarification (2026-07-14)
+
+- Silicon has not yet diligenced a new operator. Its entire observed operator-selection history is FarmGPU, an operator it already knew and had worked with.
+- The earlier phrase "any new operator goes through a full diligence process" describes what Silicon says it would do, not a process it has exercised in a real second-operator decision. Silicon may have a checklist, but this exchange provides no practiced evidence for it.
+- The actual mechanism is simpler and stronger than the earlier email implied: "we just use farm." Familiarity is not merely one input into diligence here; it has so far replaced the need to diligence another operator at all.
+- This supports the portable-history thesis's mechanism but does not validate willingness to pay. Silicon is not yet a buyer seat for new-operator verification because it has avoided the decision the product would help with.
+- McDavid is mined out on the current diligence question. The useful re-entry trigger is Silicon considering a second operator, not another hypothetical question now.
+
 ## What Remains Open
 
-- What the named "full diligence process" consists of in practice: what Silicon can verify independently versus what it receives from the operator. CONFIRMED SENT 2026-07-14 from sent mail: the fork question went out 2026-07-13 22:20 ET in the confirm-my-guess form. REPLY 2026-07-14 12:26 ET: McDavid neither confirmed nor corrected the guess; he escalated to live chat ("Happy to chat live for a bit if thats helpful. Im @mcdmcdmcdmcd on Telegram. Ping me there."). Fork remains open and moves to Telegram; grade the live answer by what he says can be checked independently, in his own words. Prepared card for the live chat, three questions maximum: (1) the fork in his vocabulary (for a new operator, what can Silicon actually check itself versus what the operator hands over); (2) what is on the full-diligence checklist in practice; (3) does the attestation layer give the OPERATOR anything they could carry to the next capital source. Optional fourth if rapport allows: the owner-payouts ($455K) versus sales-volume ($255K) reconciliation. Never name Zile.
+- HISTORICAL, SUPERSEDED 2026-07-14: What the named "full diligence process" consists of in practice: what Silicon can verify independently versus what it receives from the operator. CONFIRMED SENT 2026-07-14 from sent mail: the fork question went out 2026-07-13 22:20 ET in the confirm-my-guess form. REPLY 2026-07-14 12:26 ET: McDavid neither confirmed nor corrected the guess; he escalated to live chat ("Happy to chat live for a bit if thats helpful. Im @mcdmcdmcdmcd on Telegram. Ping me there."). The fork moved to Telegram. The Telegram answer established that Silicon has not yet diligenced another operator, so the question cannot be answered from its practiced history.
+- What Silicon would actually do when it considers its first operator beyond FarmGPU. Revisit only when that decision becomes real.
 - Whether Silicon itself makes the provider-approval decision for pooled deployments or relies on RunPod validation, contractual protections, investor choice, or some combination.
 - Whether prior-cluster performance changes provider eligibility, capital cost, reserves, economics, or the amount Silicon will fund.
 - Whether the direct-compute business shown on Silicon's current homepage uses the same operator and capital controls as the tokenized products.
@@ -87,4 +106,3 @@ Subject: `cluster 00 economics`
 - Insight: [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Org: [[silicon-network|Silicon Network]]
 - Person: [[mcdavid-stoddard|McDavid Stoddard]]
-

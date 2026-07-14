@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-14
 source_date: 2026-07-13
 source_type: chat
 projects: []
@@ -53,6 +53,8 @@ CALL: conditional, not scheduled. Triggers: discriminator answers come back our-
 
 ## Thread state and question ladder
 
+- SENT 2026-07-14 after Yida asked whether Dylan was building onchain verification for GPU lenders so smaller borrowers could get lower rates: "yea roughly, that's my current best angle. doesn't necessarily need to be onchain tho, could be a trusted centralized entity more like semianalysis\n\nstill just exploring and trying to validate/invalidate whether the problem is real + anyone would pay (via term structure diffs). idea maze has gone moody's for gpu residuals -> secondary offtake exchange -> portable verified operator history"
+- Read: Dylan described the current thesis as an exploration, not a committed build; named financing-term changes as the willingness-to-pay signal; preserved the progression from residual data to offtake liquidity to portable operator history; and explicitly left centralized delivery open.
 - SENT or sending 2026-07-13 evening, Dylan's wording (merged discriminator, cites the site-vs-message tension): "wait are you guys operating the gpus? or just hosting. cuz you mention operations on the website but from what i can gather you're providing the powered dc for the neoclouds to fill (and operate) right?"
 - ANSWERED 2026-07-13 late evening: the operating-or-hosting discriminator. "Idea is both but base case is hosting only." No call trigger fires (base case stays shell-side); keep-warm stands.
 - STAGED, re-scoped to the both-branch, unhurried: "so the superx servers would sit on the tenants' books, not yours?" (whose-balance-sheet; only matters if the both-branch activates)

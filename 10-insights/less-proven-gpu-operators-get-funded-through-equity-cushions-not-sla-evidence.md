@@ -61,6 +61,20 @@ It does not fully kill SLA as a problem. SLA evidence may still matter for repea
 
 ## Updates
 
+### 2026-07-14 - The artifact question, asked and answered at this seat
+
+Dylan ran the sharpened test from this note's implications (same equipment and customer, operator arrives with a third-party record a lender trusts: does the $5M come down?). Bernie's reply, 2026-07-14 4:30 PM ET, verbatim from the thread:
+
+> That's a good question that I don't know the answer to. Might need to team up with an operator and ask a lender yourself.
+>
+> Also, if an operator had previous deployments, it'd show up as historical revenue. Lender will diligence the historical revenue a bit, so they check it indirectly that way.
+>
+> Most lenders (not all) don't really want to dig into uptime metrics and nitty gritty of operating the equipment. Lenders would rather diligence financials.
+
+Note the hedges the first relayed summary dropped: "a bit" (the indirect check is shallow) and "(not all)" (an explicit minority of lenders DO dig into operations).
+
+Reading: the claim of this note holds and gains its mechanism. The equity cushion is not competing against absent evidence; it coexists with an incumbent evidence channel, AUDITED FINANCIALS, which carry the track record for any operator old enough to have them, in the language lenders already read. The record's addressable moment therefore narrows to operators BEFORE bankable financials exist (the tier Bernie said lenders "just pass" on), plus what financials cannot show: attribution of performance to the operator, and whether revenue started when the deployment was promised. A motivated, thesis-sympathetic seat could not say yes to the equity-reduction story; logged as soft-negative on that half, not spun. He independently prescribed the operator-plus-lender direct test, the third convergence on the artifact experiment.
+
 ### 2026-07-01
 
 Initial capture from Bernie's follow-up email.

@@ -29,6 +29,8 @@ Context: strategy checkpoint. A first "solid answers" list was delivered from an
 
 ## The next rung, in plain words
 
+REFINED 2026-07-14 evening after Bernie's answer to the equity question (see the equity-cushions insight's dated update): the incumbent the artifact competes with is not just reference calls, it is AUDITED FINANCIALS, which carry the track record for any operator old enough to have them. Three consequences for the rung. First, the target lender conversation should involve an operator whose financials are thin or absent (first or second deployment), because that is where the incumbent evidence does not exist. Second, the artifact's content spec sharpens: it must show what financials cannot, milestone dates against promises (did revenue start when the cluster was supposed to launch), performance attributed to the operator rather than to demand, and delivery against the contract's own definitions. A bridge between operations and accounting, not an uptime dashboard. Third, Bernie independently prescribed this exact test (partner with an operator, ask a lender directly), the third convergence on it after this vault's July 1 implication and this morning's audit.
+
 The gap is confirmed and the substitutes are mapped, but nobody has ever been shown a record and asked to act on it. Every conversation so far asked whether history matters in the abstract. The next rung is a forced choice with a real document.
 
 The test: take one operator's verified delivery record, a real document showing what they built, when it went live, how it ran, and whether they got paid (draw-file material from a live loan, or a realistic mock). Put it in front of one lender. Ask them to price the same deal twice, once without the document and once with it, everything else held still.
@@ -49,6 +51,41 @@ Asked directly by Dylan 2026-07-14: this experiment was not in Monday's notes be
 4. The scoreboard predates the idea (2026-07-01, [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|equity cushions note]], first read 2026-07-14): same equity level, with and without the evidence. Today's audit connected it to the artifact.
 
 No new lender input demanded this rung. The connection is the new thing, which is why it postdates the notes.
+
+## End-of-day state, 2026-07-14: the strong version is disconfirmed, the thesis is tier-scoped
+
+Three independent instruments landed the same day and agreed: the facility dataset (documents), Phil's nine answers (mega-tier participant, thirdhand), and Bernie's verbatim reply (small-tier adjacent, friendly seat). Grading, stated plainly per epistemic discipline: this is REAL DISCONFIRMATION of the strong version of the thesis, the one where a portable record unlocks financing market-wide. Logged as such, not spun.
+
+The morning version: lenders skip operators without a verifiable track record or charge them through equity cushions; a portable verified delivery record would change eligibility or financing terms.
+
+The evening version, tier-scoped:
+
+- MEGA TIER (Phil): closed for unlocking. Gates are conjunctive: a trusted record without investment-grade offtake is still an automatic decline, because the missing ingredient is committed demand matching debt duration (his WeWork mechanism), which no operator document supplies. Operator diligence is already served by a four-source reference network (former employees, customers, consultants, local general contractor). Surviving wedge: diligence efficiency INSIDE already-bankable deals, and it is not hypothetical: his own near-commit deals are stalling on installation track record today (answer 2). The cost-saving buyer at this tier is the LEAD's $250-300K consultant spend (Rob datapoint), not the participant's free phone calls.
+- SEASONED TIER (Bernie): closed for the generic record. The incumbent is audited financials: prior deployments show up as historical revenue, which lenders diligence "a bit," and lenders would rather diligence financials than operations. Surviving wedge: what financials cannot show, attribution and revenue-started-on-time timing, plus diligence speed. Hedge preserved: "most lenders (not all)."
+- SMALL TIER: the live tier, and the only one where the eligibility and equity axes remain open. Unproven operators DO get funded here, through $5M-class cushions or USD.AI-style structural verification at 10-15 percent, so something CAN substitute for history, which means a cheaper substitute has a price to beat. Whether a record moves the cushion is UNTESTED, not disconfirmed: the friendliest seat answered "I don't know" today. The test is scheduled: the operator wave (38 drafts, Pool A is this tier's financed population) and the one-artifact-one-lender experiment.
+
+Guard against the symmetric error: the second-assistant read compressed the day to "the wedge shrinks to improving diligence inside already-financeable deals." That is correct at the mega tier and silently universalized. Do not export one tier's disconfirmation to a tier whose evidence says the opposite; the small tier's question is open and testable this week. That is the same over-resolving failure mode, pointed the other direction.
+
+Net: the record's opportunity, if it exists, lives in one corner: operators between first deployment and bankable financials, at the small tier, scored on equity and eligibility, never rate. The next rung is unchanged; only its aim narrowed to that corner.
+
+Provenance for this section: facility dataset first pass ([[gpu-debt-facility-dataset-first-pass-2026-07-14|note]]), Phil relay with follow-ups ([[phil-private-credit-jakub-relay-2026-07-13|note]]), Bernie verbatim ([[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|dated update]]), tenor insight evidence line ([[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|kill-condition entry]]).
+
+## Pre-registered decision criterion (set by Dylan, 2026-07-14 evening)
+
+DECISION DATE: Friday 2026-07-17, end of day. Merged with the already-committed three-way format read.
+
+CONTINUE only if at least one of these fires by then:
+1. A lender or lessor states a SPECIFIC TERM MOVEMENT conditional on a verified record: required equity down, advance rate up, amortization eased, or an approval flipped.
+2. Someone commits resources: pays for a pilot, or names real budget they would redirect (diligence spend counts ONLY as displaced paid spend, e.g. part of a lead's $250-300K consultant budget; analyst-hours-saved and "makes our calls easier" never count).
+3. An operator documents having paid for or lost financing specifically because history was unprovable, and a lender confirms proof would have changed the outcome.
+
+SHELVE if 5 or more lender-side seats have produced only useful / faster / nice-to-have, and zero triggers fired. Lender-side count as of registration: Bernie, Phil, McDavid (live), plus any bump or wave-two repliers by Friday. No retreating into workflow improvement to keep the idea alive (Dylan's words).
+
+RATE is pre-registered NEGATIVE: three instruments on 2026-07-14 showed customer credit sets it. A test that can only pass by moving rate is a test designed to fail; rate movement neither saves nor kills.
+
+NO-BUILD RULE: nothing gets built before the call, with one carve-out: a test artifact (borrowed draw file or realistic mock) is experiment material, not product.
+
+Timing honesty, logged at registration: the operator wave has a 3-day window to contribute. Sends must fire Wednesday morning for any operator conversation to exist by Friday; absence of operator data does not block the call. If the call is CONTINUE, the operator conversations become week two's primary instrument and the criterion's trigger 3 stays open through them.
 
 ## Open
 

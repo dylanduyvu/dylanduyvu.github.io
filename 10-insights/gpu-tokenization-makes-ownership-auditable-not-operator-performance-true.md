@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-14
 confidence: high
 domains: [gpu-finance, verification, tokenization, operator-underwriting]
 projects: [gpu-residual-value-pricing]
@@ -39,6 +39,7 @@ That is why a capital allocator could understand the product and still pass over
 - Blockchain Capital's Zile Cao passed on Silicon partly because he did not trust who would manage depreciation and residual risk.
 - When Dylan asked how Silicon gets comfortable with third-party operators before showing clusters to investors, McDavid initially interpreted the question as asking who manages SLAs and day-to-day operations. That is not evidence that diligence is absent, but it confirms that the capital-approval layer is distinct from the publicly legible operating-role layer and must be asked about explicitly.
 - 2026-07-13 evening (email): the substantive answer. Asked how Silicon evaluates FarmGPU before deploying pool capital, McDavid named operational track record, technical competency of the team, and downside protection / collateralization, said FarmGPU carries "a degree of familiarity" from prior work together, and said "any new operator goes through a full diligence process." What that process checks independently versus what it receives from the operator remains unstated.
+- 2026-07-14 (Telegram): asked how Silicon verifies a new operator's track record, McDavid answered, "we just use farm" and "we havent had to diligence anyone else." The full-diligence process is therefore unexercised in Silicon's observed history; its practiced solution has been to stay with FarmGPU.
 
 ## Implications
 
@@ -51,6 +52,7 @@ That is why a capital allocator could understand the product and still pass over
 ## Counterpoints / Uncertainty
 
 - Silicon says it maintains strict provider standards, and FarmGPU participates in RunPod Secure Cloud; meaningful diligence may exist but remain unpublished.
+- Silicon may have a designed new-operator diligence process, but it has not used that process on another operator. This evidence cannot establish whether that process would work, what it would verify, or whether Silicon would pay for outside verification.
 - McDavid's first reply only clarified the question; it provides no substantive evidence yet about Silicon's actual operator-vetting process.
 - Direct marketplace API feeds are stronger than unaudited self-reporting even when the provider configures them.
 - Service agreements reportedly require uptime, replacement insurance, and end-of-life liquidation floors; enforceability and guarantor quality were not publicly established in this audit.
@@ -64,6 +66,10 @@ That is why a capital allocator could understand the product and still pass over
 - Area: [[gpu-finance|GPU Finance]]
 
 ## Updates
+
+### 2026-07-14 - Silicon has avoided the new-operator decision
+
+The Telegram clarification changes the interpretation of the evening email. Silicon's "full diligence process" is a stated future process, not an observed one: it has only used FarmGPU and has not had to diligence anyone else. This strengthens the same-counterparty-familiarity mechanism while weakening Silicon as evidence for a current paid verification gap. Its real behavior is concentration in a known operator, not purchasing or conducting repeatable third-party verification. The next useful signal comes only if Silicon evaluates a second operator.
 
 ### 2026-07-13 - The evening reply: a triad, with familiarity carrying the history leg
 

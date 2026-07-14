@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-14
 aliases: [Silicon Network, Silicon.net, Berkeley Compute, Berkeley Compute Inc.]
 people: [mcdavid-stoddard]
 projects: [gpu-residual-value-pricing]
@@ -43,9 +43,9 @@ Strategic relevance: it is a live example of outside capital funding GPU infrast
 
 ## Current Outreach
 
-On 2026-07-13, Dylan asked what a third-party operator must prove before Silicon is comfortable placing a cluster in front of investors. McDavid initially interpreted this as asking who manages SLAs and day-to-day operations. Dylan clarified using the actual Cluster 01 flow: FarmGPU operates the hardware while the pool funds it, so how does Silicon evaluate FarmGPU before deploying that capital? Substantive response pending.
+On 2026-07-13, Dylan asked what a third-party operator must prove before Silicon is comfortable placing a cluster in front of investors. McDavid initially interpreted this as asking who manages SLAs and day-to-day operations. Dylan clarified using the actual Cluster 01 flow: FarmGPU operates the hardware while the pool funds it. McDavid named operational track record, technical competency, and downside protection / collateralization, while noting Silicon's prior familiarity with FarmGPU.
 
-The exchange is not evidence that Silicon performs no diligence. It does show that operating responsibility and capital approval are easy to collapse unless the question names the operator, capital source, decision, and timing.
+On Telegram on 2026-07-14, McDavid clarified the practiced reality: "we just use farm" and "we havent had to diligence anyone else." Silicon may have a process designed for a future new operator, but it has not exercised it. The company is therefore evidence that known-counterparty concentration can substitute for portable operator history, not yet evidence of willingness to pay for a verification product.
 
 ## Related Sources
 
@@ -61,7 +61,7 @@ The exchange is not evidence that Silicon performs no diligence. It does show th
 
 ## Open Questions
 
-- What provider diligence does Silicon perform before pool or buyer capital is deployed?
+- What diligence would Silicon actually perform when it considers its first operator beyond FarmGPU?
 - Are the new Silicon-operated clusters financed by the token pools, or is direct compute a separate business/pivot?
 - Who guarantees the documented end-of-life liquidation floor?
 - Which operational and revenue fields come directly from RunPod versus the provider?
