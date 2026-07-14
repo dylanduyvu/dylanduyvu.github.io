@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-13
+updated: 2026-07-14
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 13, 2026, 7:35 PM EDT
+Generated: Jul 14, 2026, 1:08 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 25 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 24 note commits. The most recent movement is:
 
 - Source capture: expand GPU lender wave two cohort.
 - Source capture: repair GPU lender wave two contact addresses.
@@ -26,6 +26,21 @@ In the past 7 days, the public vault changed through 25 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 14, 2026, 1:08 PM EDT - notes: capture operator diligence and gpu debt research
+
+notes: capture operator diligence and gpu debt research.
+
+Changed notes:
+  - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
+  - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
+  - [[gpu-debt-facility-dataset-first-pass-2026-07-14|GPU debt facility dataset: repeat-financing pairs, first pass]]
+  - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
+  - [[gpu-lender-wave-three-boutique-futuresearch-prompt-2026-07-14|Wave three: boutique-tier list, FutureSearch prompt (ready to fire)]]
+  - [[gpu-lender-wave-two-expansion-draft-packet-2026-07-13|GPU lender wave two: expansion draft packet]]
+  - [[mcdavid-stoddard-silicon-network-operator-vetting-email-2026-07-13|McDavid Stoddard / Silicon Network email on operator vetting]]
+  - [[semianalysis-rob-howle-sales-call-2026-07-13|Call: Rob Howle (SemiAnalysis sales) on the TCO model and product suite]]
+  - and 2 more
 
 ### Jul 13, 2026, 7:35 PM EDT - source: expand GPU lender wave two cohort
 
@@ -105,38 +120,9 @@ publish: add GPU lender question set.
 Changed notes:
   - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 
-### Jul 13, 2026, 12:06 PM EDT - outreach: record remaining nine bump sends
-
-outreach: record remaining nine bump sends.
-
-Changed notes:
-  - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
-  - [[gpu-underwriting-wave-bump-plan-2026-07-13|Draft packet: GPU underwriting wave bump]]
-  - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
-  - [[semianalysis-rob-howle-sales-call-2026-07-13|Call: Rob Howle (SemiAnalysis sales) on the TCO model and product suite]]
-  - [[usdai-david-choi-touchcraft-podcast-gpu-financing-2026-07|David Choi (USD.AI) on Touchcraft: the state of GPU financing]]
-  - [[semianalysis|SemiAnalysis]]
-
-### Jul 13, 2026, 10:36 AM EDT - outreach: record 20-thread bump send
-
-outreach: record 20-thread bump send.
-
-Changed notes:
-  - [[gpu-underwriting-wave-bump-plan-2026-07-13|Draft packet: GPU underwriting wave bump]]
-
-### Jul 13, 2026, 9:22 AM EDT - publish: archive track-record post and update research map
-
-publish: archive track-record post and update research map.
-
-Changed notes:
-  - [[research-behind-the-track-record-that-cant-travel|Research behind "The Track Record That Can't Travel"]]
-  - [[the-track-record-that-cant-travel|The Track Record That Can't Travel]]
-  - [[gpu-finance|GPU Finance]]
-  - [[gpu-underwriting-wave-bump-plan-2026-07-13|Draft packet: GPU underwriting wave bump]]
-  - [[semianalysis-call-prep-2026-07-13|Call run sheet: SemiAnalysis, Monday 2026-07-13]]
-
 ## Past 7 Days
 
+- Jul 14, 2026: notes: capture operator diligence and gpu debt research - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 13, 2026: source: expand GPU lender wave two cohort - [[gpu-lender-wave-two-expansion-draft-packet-2026-07-13|GPU lender wave two: expansion draft packet]]
 - Jul 13, 2026: source: repair GPU lender wave two contact addresses - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
@@ -160,11 +146,10 @@ Changed notes:
 - Jul 8, 2026: capture: update vault - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
 - Jul 8, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 7, 2026: capture: update vault - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
-- Jul 7, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
-- Jul 6, 2026: capture: update vault - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
 
 ## Past 30 Days
 
+- Jul 14, 2026: notes: capture operator diligence and gpu debt research - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 13, 2026: source: expand GPU lender wave two cohort - [[gpu-lender-wave-two-expansion-draft-packet-2026-07-13|GPU lender wave two: expansion draft packet]]
 - Jul 13, 2026: source: repair GPU lender wave two contact addresses - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
@@ -189,6 +174,5 @@ Changed notes:
 - Jul 8, 2026: capture: update vault - [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Compute derivatives need vintage curves, not a generic benchmark]]
 - Jul 7, 2026: capture: update vault - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 - Jul 7, 2026: capture: update vault - [[nvidia-absorbing-utilization-risk-makes-nvidia-the-verification-buyer|NVIDIA absorbing utilization risk makes NVIDIA the verification buyer]]
-- Jul 6, 2026: capture: update vault - [[gpu-lending-grew-up-outside-banks-and-lacks-bank-grade-infrastructure|GPU lending grew up outside banks and lacks bank-grade infrastructure]]
 
-_Showing the newest 25 of 89 updates in this window._
+_Showing the newest 25 of 90 updates in this window._
