@@ -80,13 +80,13 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 - Status: `ready, inferred, catch-all`
 - To: `brittany@alphacompute.ai`
 - Subject: `Alpha Compute's GPU facilities`
-- Hook: Alpha used a $52.5M Vertical Data facility and later signed a $31.9M non-recourse GPU facility.
+- Hook: Alpha used a $52.5M Vertical Data facility and later signed a binding term sheet for a $31.9M non-recourse GPU facility.
 
 > Hi Brittany,
 >
-> Saw Alpha Compute has now used both the Vertical Data facility and the newer $31.9M non-recourse GPU loan. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
+> Saw Alpha Compute finance its first cluster with Vertical Data and later sign the $31.9M non-recourse term sheet. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Did the first facility make the second one easier or cheaper, or did the new lender underwrite Alpha from scratch?
+> Did the first facility help with the second lender, or did they underwrite Alpha from scratch?
 >
 > Thanks,
 > Dylan
@@ -118,7 +118,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw the 70% LTV USD.AI loan for Crucible's B300 deployment. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> What did USD.AI need to get comfortable with about Crucible as the operator, separate from the hardware and offtake?
+> What did USD.AI need to get comfortable with about Crucible as the borrower, separate from the hardware and offtake?
 >
 > Thanks,
 > Dylan
@@ -142,6 +142,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 ### 05. Cesar Maklary, Fluidstack
 
 - Status: `ready, public, catch-all domain`
+- COHORT LABEL: mega-tier exception. Fluidstack (100,000+ GPUs, multi-billion valuation) is far above the small/mid tier this packet targets; kept for its unique seat (Macquarie GPU-backed structure, tenant in multiple Google-backstopped deals). Score its answers separately from the small-tier cohort, same convention as the wave-two top-tier syndicate packet.
 - To: `cesar@fluidstack.io`
 - Subject: `Fluidstack / Macquarie`
 - Hook: Fluidstack announced GPU-backed financing from Macquarie for European deployments.
@@ -150,7 +151,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw the GPU-backed financing Fluidstack put together with Macquarie for the European fleet. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Did Fluidstack's existing deployment record change the facility's terms, or was the underwriting mostly tied to the GPUs and customers?
+> What did Macquarie diligence about Fluidstack beyond the GPUs and customer contracts?
 >
 > Thanks,
 > Dylan
@@ -180,9 +181,9 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 
 > Hi Sunny,
 >
-> Saw the structured backing Massed put together with Digital Alpha for the fleet expansion. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
+> Saw the equity and revenue-share structure Massed put together with Digital Alpha. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Did Massed's operating history affect the economics, or were the customer pipeline and hardware the main drivers?
+> Did equipment debt come up before you landed on that structure, or was the Digital Alpha structure always the better fit?
 >
 > Thanks,
 > Dylan
@@ -198,7 +199,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw NexGen's $34M USD.AI facility for the Sweden deployment. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Did NexGen's prior deployment history change the equity or pricing, or was the lender mostly underwriting the customer and GPUs?
+> What did USD.AI diligence about NexGen beyond the customer contracts and GPUs?
 >
 > Thanks,
 > Dylan
@@ -224,13 +225,13 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 - Status: `ready, inferred, catch-all`
 - To: `s.krosnowski@qumulusai.com`
 - Subject: `QumulusAI financing`
-- Hook: QumulusAI has used equipment lease financing and convertible facilities in close succession.
+- Hook: ATW doubled its convertible-note commitment to QumulusAI from $45M to $90M.
 
 > Hi Scott,
 >
-> Saw QumulusAI put together the $26M equipment lease and the ATW facilities in close succession. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
+> Saw ATW double its commitment to QumulusAI from $45M to $90M. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Did having one financing in place make the next one easier or cheaper, or did each provider start from scratch?
+> When they came back with the second facility, what did they rely on from QumulusAI's performance under the first one?
 >
 > Thanks,
 > Dylan
@@ -240,13 +241,13 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 - Status: `ready, adjacent, public and SMTP-confirmed`
 - To: `youssef@sesterce.com`
 - Subject: `Sesterce project financing`
-- Hook: Sesterce publicly prepared a EUR450M first infrastructure tranche with Macquarie, Credit Agricole CIB, and Bpifrance; no closed singular debt facility is claimed.
+- Hook: Sesterce announced plans for a EUR450M first buildout in Valence; no closed singular debt facility is claimed.
 
 > Hi Youssef,
 >
-> Saw the work around Sesterce's first EUR450M infrastructure tranche. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
+> Saw Sesterce's plans for the EUR450M Valence buildout. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> What did prospective lenders need to see from Sesterce as the operator before they would underwrite the buildout?
+> As you work through financing it, what have prospective lenders cared about most?
 >
 > Thanks,
 > Dylan
@@ -254,15 +255,16 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 ### 12. James Manning, Sharon AI
 
 - Status: `ready, SMTP-confirmed`
+- GRADING NOTE: a live short-seller report (Bleecker Street Research) accuses Sharon AI's CEO of self-dealing tied to his Mawson history. His answer to the operating-record question comes from a CEO publicly defending that exact record; capture verbatim, grade with that context, corroborate before promoting anything he says.
 - To: `james@sharonai.com`
 - Subject: `Sharon's USD.AI facility`
-- Hook: Sharon announced a $500M non-recourse USD.AI facility.
+- Hook: USD.AI approved a facility of up to $500M for Sharon, subject to definitive documentation.
 
 > Hi James,
 >
-> Saw Sharon's $500M USD.AI facility for the Australia and APAC expansion. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
+> Saw the up-to-$500M USD.AI approval for Sharon's Australia and APAC expansion. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Did Sharon's existing operating record reduce the equity or improve the terms, or did the structure mostly rest on the GPUs and contracts?
+> What did USD.AI need to see from Sharon before approving the facility?
 >
 > Thanks,
 > Dylan
@@ -294,7 +296,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw Nordea and Armada's debt financing for Verda's expansion. I've been digging into GPU financing full time. Before this I built Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> What part of DataCrunch's operating history, if any, made it into the pricing or structure of that financing?
+> When lenders diligenced the debt piece, what, if anything, did they use from DataCrunch's operating history?
 >
 > Thanks,
 > Dylan
@@ -320,13 +322,13 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 - Status: `ready, public and SMTP-confirmed`
 - To: `justin@arccompute.io`
 - Subject: `ARC deployment financing`
-- Hook: ARC publishes named customer deployments, including 65 HGX H100 systems for Boson AI.
+- Hook: ARC operates GPU deployments on behalf of investor and customer owners, including Boson AI.
 
 > Hi Justin,
 >
 > Saw ARC's named deployments for Boson and Nuway. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for those deployments, and if so, what did lenders have the hardest time getting comfortable with?
+> What do investor groups diligence about ARC before backing a deployment?
 >
 > Thanks,
 > Dylan
@@ -342,7 +344,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw AceCloud is running H100 and H200 capacity across India and the US. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for new GPU deployments, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for new GPU deployments, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -352,13 +354,13 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 - Status: `ready, inferred, catch-all`
 - To: `jerry.tang@atlascloud.ai`
 - Subject: `Atlas Cloud fleet financing`
-- Hook: Atlas offers H100/H200 capacity but has publicly emphasized avoiding giant speculative GPU purchases.
+- Hook: Atlas offers H100/H200 capacity and has publicly described the company as bootstrapped.
 
 > Hi Jerry,
 >
-> Saw Atlas has scaled H100 and H200 capacity while avoiding the giant speculative GPU purchases others have made. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
+> Saw Atlas has scaled H100 and H200 capacity while staying bootstrapped. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the fleet, or has staying asset-light been deliberate?
+> Have you looked at debt or equipment financing for the fleet, or has bootstrapping it been deliberate?
 >
 > Thanks,
 > Dylan
@@ -374,7 +376,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw Cirrascale's B200 rollout and the broader multi-vendor fleet. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for new deployments, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for new deployments, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -390,7 +392,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw Civo has expanded from H100s into B200 and B300 capacity. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for that expansion, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for that expansion, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -422,7 +424,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw the H100 deployment Consensus Core brought online in Montreal. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the fleet, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for the fleet, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -438,7 +440,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw Cyfuture's H100 clusters across the India data-center footprint. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for GPU expansion, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for GPU expansion, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -454,7 +456,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw DeepInfra is scaling dedicated clusters across eight US data centers after the Series B. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the hardware, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for the hardware, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -463,14 +465,14 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 
 - Status: `ready, SMTP-confirmed`
 - To: `geoff@denvrdata.com`
-- Subject: `Denvr capital formation`
-- Hook: Denvr publicly engaged an adviser for a $10.65M capital formation while operating a 1,024-H100 platform.
+- Subject: `Denvr financing`
+- Hook: Denvr publicly engaged US Capital as adviser for a proposed $10.65M equity raise while operating a 1,024-H100 platform.
 
 > Hi Geoff,
 >
-> Saw Denvr's 1,024-H100 build and the $10.65M capital-formation process. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
+> Saw Denvr's 1,024-H100 build and that US Capital was brought in for the proposed $10.65M equity raise. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> What did prospective capital providers push hardest on about Denvr as the operator?
+> Did debt come up in that process, or was equity always the better fit?
 >
 > Thanks,
 > Dylan
@@ -486,7 +488,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw EdgeUno's bare-metal GPU rollout across the LatAm footprint. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for that capacity, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for that capacity, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -502,7 +504,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw GreenNode is operating H100 and H200 capacity across six APAC availability zones. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for new deployments, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for new deployments, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -518,7 +520,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw Hikube's GPU service across the three Swiss data centers. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the GPU fleet, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for the GPU fleet, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -534,7 +536,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw the 128-GPU MI300X cluster Hot Aisle brought online at Switch. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the fleet, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for the fleet, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -550,7 +552,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw IonStream's B300 rollout and the Juniper infrastructure work. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the GPU fleet, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for the GPU fleet, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -582,7 +584,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw Latitude is running thousands of servers across 20 markets and now offers dedicated metal GPUs. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the GPU expansion, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for the GPU expansion, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -614,7 +616,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw OpenMetal added H200 and RTX PRO 6000 private servers in Ashburn. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the GPU expansion, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for the GPU expansion, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -630,7 +632,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw Parasail is both aggregating capacity and operating its own clusters across a broad datacenter footprint. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the owned clusters, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for the owned clusters, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -646,7 +648,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw STN's 2,304-B200 deployment at CoreSite Chicago. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for that build, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for that build, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -662,7 +664,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw Serenity is now offering H100 through B300 capacity in Europe. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the fleet, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for the fleet, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
@@ -678,7 +680,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 >
 > Saw greenai.cloud is operating H100, H200, and B200 capacity from northern Sweden. I've been digging into GPU financing full time after building Spice Finance, which did $2bn+ of onchain loan origination.
 >
-> Have you looked at debt or equipment financing for the fleet, and if so, what did lenders have the hardest time getting comfortable with?
+> Have you looked at debt or equipment financing for the fleet, and if so, what did lenders care about most?
 >
 > Thanks,
 > Dylan
