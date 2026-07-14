@@ -43,11 +43,28 @@ Sales chair: ClusterMAX is "not part of the model, just an article we released i
 - Silicon Data, asked directly: "don't come up with them too much," different clientele, high confidence in own niche. Sales-grade non-answer; Q6 spent for little.
 - He is sending: the pricing deck, core research samples, and a TCO SHELL (structure visible, data pulled). The shell is the pre-purchase inspection object.
 
-## Follow-up draft (send as reply when Rob's deck email lands; post URL is live)
+## Follow-up
+
+### Prepared after the call, not sent
 
 Rob, thanks for the walkthrough today, clear and useful. Three things as we review on our end. First, before we decide on the TCO model, could we get a short session on the shell with whoever owns the residual framework? That is the piece our decision leans on. Second, could you send licensing terms in writing, internal use versus commercial and derived-works, for the model and the API? Third, you offered to ask the team what lenders request beyond ClusterMAX in those engagements; we would genuinely value that answer. Also, the piece from the research side of our work published this morning, in case it is useful context for the team: https://dylanvu.substack.com/p/the-track-record-that-cant-travel
 
 Dylan
+
+### Sent 2026-07-14
+
+The reply isolated Rob's consulting-team offer rather than burying it in the full three-item follow-up:
+
+> Hi Rob,
+>
+> Thank you again for the walkthrough and for sending these materials over.
+>
+> You mentioned that you could ask the team what lenders typically request beyond ClusterMAX in the bespoke consulting engagements. We'd appreciate any examples they're comfortable sharing, as it would help us understand how the model fits alongside the bespoke work.
+>
+> Best,  
+> Dylan
+
+Status: awaiting Rob's answer after he checks with the consulting team. The residual-owner session and written licensing questions remain unsent.
 
 ## Open Questions
 

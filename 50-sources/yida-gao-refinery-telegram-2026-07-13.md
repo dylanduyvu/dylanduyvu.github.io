@@ -29,6 +29,8 @@ THEIR BET, compressed: powered-colo arbitrage. Grid interconnection queues for l
 
 2026-07-13 4:51 PM (to the equity-or-lenders question): "we are aggregating our modular DC's up to 1GW is the high end goal" / "since we are DC, our customers are the neoclouds" / "equity most likely" / "and we may partner with superx or supermicro to get the servers contributed in kind."
 
+2026-07-13 late evening (to the operating-or-hosting discriminator): "Idea is both but base case is hosting only."
+
 ## Model facts (two screenshots, same day)
 
 V1 (~3:14 PM): DSCR by leverage, Y2 with 2% hosting escalation, target >1.25x; hosting fee columns $0.180-0.350/kWh ($130-252 /kW/month equiv); debt 55-80%; DSCR 0.73-2.35. DSCR by power cost annotated power nets to zero at PUE pass-through (power-cost-invariant). Equity IRR proxy header cut off.
@@ -37,7 +39,9 @@ V2 (~5:16 PM): columns re-anchored to $0.225-0.350 with "Yellow = base case" leg
 
 ## Open tensions, deliberately unresolved
 
-1. LANDLORD-TO-OPERATOR SPECTRUM. "We are DC, our customers are the neoclouds" reads landlord; the site's "operated as one AI inference fleet" reads operator-flavored; the in-kind server exploration is the hinge (Dylan's catch: a pure landlord has no use for servers). Bridge readings, ranked by commonness not thesis-fit: (a) seed capacity for the format's cold start, landlord eventually, operator temporarily; (b) hybrid by design, Refinery runs vendor-contributed compute and neoclouds rent capacity; (c) pass-through of vendor hardware to tenants who cannot finance their own (speculative). SuperX verified as a real counterpart: Nasdaq-listed AI server maker shipping 8x B200 boxes, challenger-OEM profile for in-kind deals; Supermicro is the giant version.
+1. LANDLORD-TO-OPERATOR SPECTRUM. ANSWERED at the base-case level 2026-07-13 late evening: "Idea is both but base case is hosting only." Base case is the landlord reading; the operator branch is explicit optionality, not dead, and is where the site's "one AI inference fleet" language and the vendor in-kind exploration live. The spectrum question graduates from open tension to tracked branch: watch whether the both-branch activates (servers on their books, or Refinery selling compute).
+For reference, the superseded bridge readings from earlier tonight, kept per belief history: (a) seed capacity for the format's cold start; (b) hybrid by design; (c) vendor pass-through to tenants (speculative). His answer is closest to (a)/(b) held as optionality. SuperX context stands: Nasdaq-listed AI server maker shipping 8x B200 boxes, challenger-OEM profile for in-kind deals; Supermicro is the giant version.
+
 2. EQUITY VS THE MODEL. "Equity most likely" for initial sites coexists with a debt-sizing model. Relationship unknown: later-phase leverage, deck furniture showing debt capacity, or debt sought and not yet available. Do not rank without his answer.
 3. VENDOR IN-KIND. "May" = exploratory. Terms, title, and balance sheet all unknown. If servers land on Refinery's books, they cross into the unfinanceable 70% layer.
 
@@ -50,7 +54,8 @@ CALL: conditional, not scheduled. Triggers: discriminator answers come back our-
 ## Thread state and question ladder
 
 - SENT or sending 2026-07-13 evening, Dylan's wording (merged discriminator, cites the site-vs-message tension): "wait are you guys operating the gpus? or just hosting. cuz you mention operations on the website but from what i can gather you're providing the powered dc for the neoclouds to fill (and operate) right?"
-- STAGED, born from his answer: "so the superx servers would sit on the tenants' books, not yours?" (whose-balance-sheet)
+- ANSWERED 2026-07-13 late evening: the operating-or-hosting discriminator. "Idea is both but base case is hosting only." No call trigger fires (base case stays shell-side); keep-warm stands.
+- STAGED, re-scoped to the both-branch, unhurried: "so the superx servers would sit on the tenants' books, not yours?" (whose-balance-sheet; only matters if the both-branch activates)
 - POCKETED: what hosting fee are real conversations landing at.
 - CALL-TIER (only if a call happens): the recontract step-down in the MOIC table; the occupancy/lease-up assumption; the cost of debt the model assumes; who racks and runs day to day; incubating means what (advisor to acting CEO); the Zile-style dealflow walk.
 - Earlier five-question draft from the first capture: partially overtaken; send status of the original set was never confirmed.

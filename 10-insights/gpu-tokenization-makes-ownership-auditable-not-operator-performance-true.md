@@ -38,6 +38,7 @@ That is why a capital allocator could understand the product and still pass over
 - Silicon markets asset-level monitoring and public performance history as verified/auditable, but publishes no independent telemetry, revenue attestation, or provider-underwriting standard.
 - Blockchain Capital's Zile Cao passed on Silicon partly because he did not trust who would manage depreciation and residual risk.
 - When Dylan asked how Silicon gets comfortable with third-party operators before showing clusters to investors, McDavid initially interpreted the question as asking who manages SLAs and day-to-day operations. That is not evidence that diligence is absent, but it confirms that the capital-approval layer is distinct from the publicly legible operating-role layer and must be asked about explicitly.
+- 2026-07-13 evening (email): the substantive answer. Asked how Silicon evaluates FarmGPU before deploying pool capital, McDavid named operational track record, technical competency of the team, and downside protection / collateralization, said FarmGPU carries "a degree of familiarity" from prior work together, and said "any new operator goes through a full diligence process." What that process checks independently versus what it receives from the operator remains unstated.
 
 ## Implications
 
@@ -63,6 +64,10 @@ That is why a capital allocator could understand the product and still pass over
 - Area: [[gpu-finance|GPU Finance]]
 
 ## Updates
+
+### 2026-07-13 - The evening reply: a triad, with familiarity carrying the history leg
+
+McDavid's substantive answer names three legs: operational track record, technical competency of the team, and downside protection / collateralization. For the repeat counterparty, the history leg is carried by familiarity ("we've worked with them before"), which is the mechanism from the track-record post working at the tokenized tier: the platform trusts what it watched itself, and that trust does not transfer to operators it has not worked with. The claim of this note is unchanged and slightly strengthened: tokenization packages operator risk, and when the platform underwrites, it leans on its own memory plus a self-described process whose independently checkable content is still the open fork. A final question forcing that fork (verify independently versus operator-provided materials) was drafted; send status unconfirmed at capture.
 
 ### 2026-07-13 - Outreach separates operating responsibility from capital approval
 

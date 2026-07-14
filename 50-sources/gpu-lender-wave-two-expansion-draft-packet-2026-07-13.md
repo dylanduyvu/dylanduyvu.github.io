@@ -19,6 +19,15 @@ Purpose: expand the cleaned wave-two cohort to an experiment-sized group without
 
 No Gmail drafts have been created from this packet yet.
 
+SEND RECORD 2026-07-14: all 19 ready entries sent from Dylan's Gmail 2026-07-14 09:48-09:49 ET, one message per recipient, matching this manifest exactly; the three holds were honored. BOUNCE STATE UNKNOWN: mailer-daemon searches cannot detect failed deliveries in this mailbox (wave one had 15 failures that were invisible to that search), so verify by full thread scan after 24 hours; eleven of these addresses are strong-pattern inferences, so real failure risk exists. EXPERIMENT LABEL: this cohort is TOP-TIER SYNDICATE (named deal-team people on CoreWeave, Nscale, Lambda, Mistral, Applied Digital, Crusoe facilities), a different population from wave one's boutique tier and from the bump experiment. Score it separately; a route-one answer here describes where the conversion layer already works, not the tier the thesis lives in.
+
+## Outcome (fill from 2026-07-17)
+
+- Replies: 
+- Reply quality and which question forms landed: 
+- Route-one signal (does history move terms at the top tier): 
+- Verdict vs wave one's naked-cold rate: 
+
 ## Result
 
 - Expansion researched: 22 people across 19 firms.
@@ -80,9 +89,9 @@ No Gmail drafts have been created from this packet yet.
 
 > Hi Jeremy,
 >
-> Read TD's data-center financing piece and saw you work directly on the equipment side. I've been digging into whether a clean first deployment changes a borrower's next facility.
+> Read TD's data-center financing piece and saw you work directly on the equipment side. I've been digging into how a successful first deployment affects the next facility.
 >
-> When a repeat data-center borrower gets better economics after a successful first deployment, what usually moves first, pricing, advance rate, or amortization?
+> After a successful first deployment, does a repeat borrower usually get better pricing, a higher advance rate, or longer amortization?
 >
 > Thanks,
 > Dylan
@@ -96,7 +105,7 @@ No Gmail drafts have been created from this packet yet.
 
 > Hi Thomas,
 >
-> Saw your post on CoreWeave's first rated $8.5B GPU financing. I've been digging into what makes an operator's track record carry into its next facility.
+> Saw your post on CoreWeave's first rated $8.5B GPU financing. I've been digging into whether lenders give an operator credit once its first deployment goes live and performs.
 >
 > When the same operator returns after a clean deployment, does that history improve the next deal on its own or only when it comes with stronger customer contracts?
 >
@@ -112,7 +121,7 @@ No Gmail drafts have been created from this packet yet.
 
 > Hi Aydin,
 >
-> Saw you worked on Natixis's side of Mistral's first GPU financing. I've been digging into what a new operator earns by delivering the first fleet cleanly.
+> Saw you worked on Natixis's side of Mistral's first GPU financing. I've been digging into whether getting the first fleet live and performing earns the operator better terms next time.
 >
 > If Mistral returned for another fleet, would that history improve the terms or would customer contracts and upfront equity still drive the facility?
 >
@@ -144,9 +153,9 @@ No Gmail drafts have been created from this packet yet.
 
 > Hi Valtin,
 >
-> Read Societe Generale's account of financing CoreWeave across GPU and data-center facilities. I've been digging into what a repeat operator earns from that history.
+> Read Societe Generale's account of financing CoreWeave across GPU and data-center facilities. I've been digging into how much credit lenders give an operator for having already delivered.
 >
-> Across those financings, did CoreWeave's execution record change pricing or structure independently, or did each deal still turn mainly on the customer contract?
+> Across those financings, did CoreWeave's own execution record change pricing or structure, or did each deal still turn mainly on the customer contract?
 >
 > Thanks,
 > Dylan
@@ -272,9 +281,9 @@ No Gmail drafts have been created from this packet yet.
 
 > Hi Harin,
 >
-> Saw PIMCO led Nscale's $1.4B GPU-backed facility. I've been digging into whether a first deployment creates a financing advantage that survives into the next deal.
+> Saw PIMCO led Nscale's $1.4B GPU-backed facility. I've been digging into whether lenders give an operator better terms after its first deployment performs.
 >
-> If Nscale returns after delivering cleanly, would its track record move pricing or structure independently of the customer contracts?
+> If Nscale came back after delivering as expected, would its own record change pricing or structure, or would the customer contracts still drive the deal?
 >
 > Thanks,
 > Dylan
@@ -288,9 +297,9 @@ No Gmail drafts have been created from this packet yet.
 
 > Hi Rahul,
 >
-> Saw Mizuho joined Nscale's new $900M revolving facility. I've been digging into what lets an AI-infrastructure operator graduate from project-specific debt into flexible corporate liquidity.
+> Saw Mizuho joined Nscale's new $900M revolving facility. I've been digging into how an operator gets from project-level financing to an RCF.
 >
-> Did Nscale's delivery history help make the RCF possible, or was the step-up mainly a function of scale and contracted demand?
+> Did Nscale's delivery history help make the RCF possible, or did that mostly come from scale and contracted demand?
 >
 > Thanks,
 > Dylan
@@ -306,7 +315,7 @@ No Gmail drafts have been created from this packet yet.
 >
 > Read about SMBC's repeat QTS data-center financings and saw the bank also joined Nscale's new RCF. I've been digging into how operating history changes a repeat facility.
 >
-> When the same operator returns after a clean deployment, which term tends to move first, pricing, leverage, or completion support?
+> When the same operator returns after a successful deployment, does the benefit usually show up first in pricing, leverage, or completion support?
 >
 > Thanks,
 > Dylan
@@ -320,9 +329,9 @@ No Gmail drafts have been created from this packet yet.
 
 > Hi Yaniv,
 >
-> Saw Deutsche Bank joined Nscale's new $900M RCF. I've been digging into what makes an AI-infrastructure operator's track record carry into the next financing.
+> Saw Deutsche Bank joined Nscale's new $900M RCF. I've been digging into whether lenders give an operator credit for delivering earlier clusters.
 >
-> Does clean delivery on prior clusters change the next facility's economics, or do the customer contracts still do nearly all the credit work?
+> Does clean delivery on prior clusters change the next facility's terms, or do the customer contracts still do nearly all the credit work?
 >
 > Thanks,
 > Dylan
@@ -352,9 +361,9 @@ No Gmail drafts have been created from this packet yet.
 
 > Hi Nick,
 >
-> Saw you arranged the $7.1B construction loan for Crusoe and Blue Owl's AI data-center buildout. I've been digging into how an operator's prior delivery gets reflected in a new project financing.
+> Saw you arranged the $7.1B construction loan for Crusoe and Blue Owl's AI data-center buildout. I've been digging into whether a developer's operating history matters on the next project.
 >
-> Did Crusoe's operating record change the financing terms independently, or did Blue Owl's sponsorship and the underlying lease do most of the work?
+> Did Crusoe's record change the terms, or did Blue Owl's sponsorship and the underlying lease do most of the work?
 >
 > Thanks,
 > Dylan
@@ -384,7 +393,7 @@ No Gmail drafts have been created from this packet yet.
 
 > Hi Brad,
 >
-> Saw Blackstone led CoreWeave's $7.5B debt facility. I've been digging into what a repeat GPU operator earns from having delivered prior fleets cleanly.
+> Saw Blackstone led CoreWeave's $7.5B debt facility. I've been digging into whether repeat GPU operators get better terms after delivering prior fleets.
 >
 > Does that execution history change pricing or structure on the next facility, or do customer contracts and collateral still carry the underwriting?
 >

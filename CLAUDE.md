@@ -135,9 +135,23 @@ publish: update public notes harness
 - Say it simply first, add precision second. Plain sentence, then the technical detail if it earns its place.
 - Succinct, low-jargon, plain language throughout.
 
+## Drafting Messages In Dylan's Voice
+
+Codified 2026-07-13 after a live email thread where an assistant draft opened on three stacked abstractions and handed the counterpart the research vocabulary before the question. These rules sit on top of Writing Style For Dylan above and bind every agent drafting anything Dylan sends (email, telegram, slack, comments).
+
+- Continue the other person's last message, not Dylan's thesis. Any setup sentence that restates what Dylan already believes gets deleted before sending.
+- One idea per message, and the question is the message. Framing sentences are overhead.
+- Never hand a counterpart the research vocabulary inside a question. Mirror their own words back (if they said "operational track record", ask about that, not about "verifiable history"), because an answer shaped by our words is worth little as evidence.
+- Concrete beats abstract: named deals, named people, real numbers. A sentence that stacks two abstractions gets rewritten as one plain sentence or cut.
+- Match the channel and the hour. A telegram reply or a late-evening email should read like one, not like an analyst settling in, a website review, or a questionnaire.
+- Final check before anything ships: would the recipient suspect an assistant drafted it? Cut until the answer is no.
+- Chat drafts are proposals. Dylan's edit is the style authority; when he shortens a draft, the shortened version becomes the example to match.
+
 ## Verify Before Asserting
 
 - Never state a person's name, title, firm, or affiliation from memory. Verify against the vault (60-people, 65-orgs, 50-sources) or the private outreach CSV first, and if it is in neither, say so instead of guessing. A wrong name asserted confidently is worse than a checked "I don't know."
+- Confidence words are earned by a lookup, not by vividness of recall. Codified 2026-07-14 after an agent delivered a "solid answers" list built from session memory that omitted fresh findings and overrode the vault's own sharper boundary. Any claim delivered to Dylan as solid, established, confirmed, or high confidence must name the vault note it stands on, inline, and the agent must have read that note in the current session. If the note has not been re-read, either check it first or label the claim "from memory, unverified." No citation, no confidence language. This applies to chat takes, strategy answers, and status summaries, not just published material; Dylan makes allocation decisions off chat answers.
+- The same rule applies to operational state: send counts, bounce counts, reply tallies, and draft states come from a fresh scan of the actual system (Gmail, the packet file), never from memory of an earlier scan. Method note from 2026-07-14: mailer-daemon searches cannot detect failed deliveries in this mailbox; delivery failures are found only by full thread scans.
 - Do not convert absence of evidence into a claim of absence. "I found no sign of X" and "X does not exist" are different sentences; write the first one. When a sentence rests on not having seen something (no clients shown, no competitors found, nobody has done Y), flag it as an inference at the moment of writing.
 - Auto-generated transcripts, marketing pages, and secondary summaries are capture-grade, not assertion-grade. Names, dates, titles, and quotes taken from them get verified against a primary before they are asserted in chat, published, or sent in an email.
 - These rules bind every agent working in this vault, in chat replies as much as in notes.
