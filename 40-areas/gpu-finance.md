@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-06-29
-updated: 2026-07-13
+updated: 2026-07-14
 domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee]
@@ -35,6 +35,8 @@ The current SLA caveat is timing: live monitoring is backward-looking. It cannot
 Bernie's follow-up weakens the SLA wedge further: the unknown / less-proven operator exception he has seen gets solved by more equity, not better SLA evidence. Example: $10M of equipment where the operator brings $5M of cash. The sharper question is whether SLA/ops diligence can reduce that equity cushion or improve LTV.
 
 Bernie's second follow-up makes the equity signal less diagnostic: extra equity can generally resolve any kind of lender concern. So equity cushions should be treated as generic lender-risk mitigation, not proof that SLA/operator transparency is the binding gap.
+
+Phil adds the mega-tier boundary: his firm still passes when an operator has a trusted deployment record but lacks investment-grade offtake. At that seat, the record and the wrapper are separate requirements, not substitutes. He points to speculative building, site problems, and long lease liabilities supported by short rental contracts as risks no operating record can cure. The record wedge can therefore clear only the operator-diligence gate inside an otherwise bankable deal at this tier.
 
 2026-07-01 hyperscaler nuance: Meta's reported move to sell excess AI compute, alongside SpaceX/xAI-style compute leasing, is a real supply-loosening signal. It does not directly contradict the USD.AI/Nebius no-novation finding because hyperscaler fleet externalization is different from customers offloading committed offtake. But it does strengthen the tripwire: watch whether hyperscaler N-1 / excess capacity pressures neocloud pricing or utilization.
 
@@ -86,6 +88,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - Less-proven operators may get funded by bringing more equity, meaning capital structure can substitute for operator reputation.
 - SLA/ops diligence must prove it can reduce required equity or improve LTV to be a financing wedge.
 - Extra equity can resolve generic lender discomfort, so operator/SLA evidence must prove incremental value at the same equity level.
+- At the mega tier, a trusted operator record does not substitute for investment-grade offtake; both can be independent eligibility gates.
 - GPU collateral marks become more commercially useful when expressed as recoverable floor value.
 - Banks may prefer guarantee or swap-like structures over insurance if they distrust insurance claim mechanics.
 - Private/public pricing data is necessary but may not be sufficient without diligence and a credible risk-transfer counterparty.

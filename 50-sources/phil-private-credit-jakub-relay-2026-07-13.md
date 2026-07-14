@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-14
 source_date: 2026-07-13
 source_type: relay
 projects: []
@@ -35,24 +35,48 @@ PARTICIPANT, mega-tier. "Whoever is leading the deal" plus Apollo and Blackstone
 - ABSENT FROM HIS TOOLKIT, unprompted: ratings, ClusterMAX, any data product. Pack plus experts is the entire stack from his seat.
 - What surprised Jakub, named: not the structure (textbook syndication) but how thin the participant's own verification layer is, and that it satisfies a credit committee. Real money, operator-shaped risk, phone calls about the market.
 
+## The six answers (relayed 2026-07-14, verbatim per Dylan's paste; ask order unconfirmed)
+
+1. Residual view: "model off rental curves. Which recently had been flat to even up. But you can indeed make residual assumption based on resale value by estimate compute demand vs TSMS production forecast." (TSMS read as TSMC.) MODELED, third seat: rental curves plus a demand-versus-chip-supply fundamentals model. No observed prints. The observed-resale census still has one member.
+2. Sticking point on the near-commit deals: "quality of the counterparty. Loopholes in the cancellation clauses. If neoclouds, installation track record." Customer quality first (matches the facility dataset), CONTRACT LOOPHOLES second (the contract-defined-truth layer, live), and installation track record NAMED as a current blocker on real deals.
+3. Operator profile and auto-decline: "track record in large scale deployment. Power derisked. Equip secured. Automatic pass would be bad track record or no record or no IG offtake (IG wrapper)." INITIAL READING, NOW SUPERSEDED: record or wrapper; either leg opens the door. Phil's follow-up below resolves the ambiguity the other way. At his seat, a trusted record does not substitute for investment-grade offtake. The requirements are conjunctive: credible operator record AND investment-grade offtake / wrapper.
+4. Verify versus deck's word: "you actually must verify and dig in on track record. Industry calls. Verification done in real world. Think of it like a new hire being reference checked." Verification EXISTS and it is phone-based reference checking through industry calls. This REFINES the 2026-07-13 reading below (dated correction per belief history): the participant stack is not verification-free; its track-record layer is informal human reference calls. The incumbent competitor for any portable record is a free phone call, not nothing.
+5. Does the record move pricing: "pricing is based on ultimately credit counterparty risk. If you have IG wrapper, you start with that IG SUNs and build 150-250 bps on top based on contract tightness." A PRICING FORMULA: base is the customer's own senior unsecured curve, plus 150 to 250 basis points set by contract tightness. The operator's record is not in the formula. Pricing half of the hypothesis DISCONFIRMED at this tier; contract quality is a priced variable inside the band.
+6. Biggest problem zoomed out: "many don't have track record or they don't have IG wrapper." The gap named from the buyer's chair: many operators hold NEITHER leg. GRADING CAVEAT: this arrived after several track-record questions, so partially primed; but answers 2 and 3 named track record before the priming compounded.
+
+## Three follow-up answers (relayed 2026-07-14)
+
+1. Dylan asked: "on the automatic-pass point: if a neocloud has a deployment record you trust but its offtaker isn't investment grade, do you still pass on the deal? or can the record get it considered?"
+   Phil: "Yes. Cause the reason to be in that position is either (i) spec building, (ii) issue with site, (iii) potentially end up mismatched on long term lease liability and short term rental agreement (wework issue )"
+2. Dylan asked: "in the deals you've seen, has an operator ever brought a diligence or performance report from a prior financing that the new group actually relied on?"
+   Phil: "don't know"
+3. Dylan asked: "when you reference-check an operator, who do you usually call and what, if anything, remains unresolved afterward?"
+   Phil: "former employees. Customers. Consultants. Local GC"
+
+The first answer resolves the load-bearing ambiguity. Even a trusted deployment record does not get a deal considered without investment-grade offtake at this participant's tier. Phil's mechanisms are not missing operator telemetry: speculative building, a site problem, or a WeWork-style duration mismatch in which long-lived lease obligations are supported by short rental contracts. A record cannot cure those risks.
+
+The second answer is UNKNOWN, not evidence that prior reports do or do not travel. The third maps the incumbent reference-checking network: former employees for team execution, customers for delivered service, consultants for technical / market diligence, and the local general contractor for site and construction execution. Phil did not answer what remains unresolved after those calls, so no gap should be inferred from that half of the question.
+
+## Composite read after the nine
+
+The hypothesis is narrower at this tier than the six-answer read suggested. The operator record is a necessary but insufficient eligibility input. Investment-grade offtake / wrapper is an independent gate, and customer credit plus contract tightness sets the rate. A portable record therefore cannot turn an otherwise unbankable merchant build into a financeable mega-tier deal. Its possible value is limited to satisfying the operator-diligence gate inside a deal that already has bankable offtake, power, equipment, and site.
+
+The incumbent it must beat is also stronger than "phone calls": former employees, customers, consultants, and local contractors form a real reference network. The record product would have to make that evidence cheaper, more consistent, more portable, or more reliable. The equity axis remains a separate small-tier question because this seat uses investment-grade wrappers rather than equity cushions.
+
 ## Candidate insight, staged NOT promoted
 
-The conversion layer has a private form: inside club deals, lead reputation and lead-commissioned diligence substitute for ratings and filings, so the record travels exactly one syndicate wide and dies with the deal. Corollary hypothesis, untested: a PARTICIPANT may be a better early customer for a portable record than a lead, because the lead has consultants and the participant has nothing independent at all. Promote only if a second seat corroborates.
+The conversion layer has a private form: inside club deals, lead reputation and lead-commissioned diligence substitute for ratings and filings, so the record travels exactly one syndicate wide and dies with the deal. Corollary hypothesis, untested: a PARTICIPANT may be a better early customer for a portable record than a lead, because the lead has consultants and the participant has nothing independent at all. Promote only if a second seat corroborates. WEAKENED 2026-07-14 by answer 4: participants do hold an independent layer, informal industry reference calls, so the corollary's premise (nothing independent) overstated. The follow-up weakens it again by showing those calls reach former employees, customers, consultants, and local contractors. The sharper version: a portable record must arm or compress a functioning reference process, not replace an empty seat.
 
 ## Boundaries
 
 - n=1 firm, thirdhand, casual channel. Some participants shadow-underwrite fully; his firm's practice is not the category's.
 - His tier is Apollo/BX-led. Whether lead-participant structures exist at the $5-100M tier AT ALL is unknown and load-bearing: if they do not, small-tier deals are sole-balance-sheet, and memory travels even less down there than post two claims.
 - The improved residual view likely derives from the lead's materials. Untested.
+- "Yes" in follow-up answer 1 is read as "yes, still an automatic pass," based on the exact question order. This is a thirdhand relay and should be corrected if Jakub says Phil meant the opposite.
 
-## Next asks for Jakub's thread (sharpened from the v1 set)
+## Thread status
 
-1. Where did the residual numbers in the pack come from: actual sale prices from somewhere, or modeled off rents? (Q1, aimed at the pack)
-2. What is in the pack about the OPERATOR specifically: ever seen prior-build or delivery history in one?
-3. What do the expert calls actually validate: the market, the customer, or the operator?
-4. Do these lead-participant structures exist on small deals ($5-100M), or is that tier sole-balance-sheet?
-5. How much does the lead retain? (skin-in-the-game sets how much the pack can be trusted)
-6. Housekeeping: name, firm, whether his seat runs the GPU look or borrows it.
+Stop extracting for now. Phil has answered nine questions through a thirdhand relay, the marginal value is falling, and the key ambiguity is resolved. The only natural housekeeping left is his surname / firm. Reopen the thread only with a real operator artifact or deal packet that lets him react to something concrete.
 
 ## Links
 
