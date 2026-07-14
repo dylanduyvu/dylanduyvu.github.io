@@ -356,7 +356,7 @@ Also flagged: post two's research companion lists three weaknesses and does not 
 
 ### 2026-07-14 - Phil follow-up: a record cannot substitute for investment-grade offtake at the mega tier
 
-Phil resolved the ambiguity in his automatic-pass answer. Asked whether his firm would still pass on a neocloud with a trusted deployment record but no investment-grade offtaker, he said yes. His reasons were speculative building, a problem with the site, or a WeWork-style mismatch between long-term lease liabilities and short-term rental agreements.
+Phil resolved the ambiguity in his auto-decline answer. Asked whether a neocloud with a trusted deployment record but no investment-grade offtaker would still be an automatic decline, he said yes. His reasons were speculative building, a problem with the site, or a WeWork-style mismatch between long-term lease liabilities and short-term rental agreements.
 
 This narrows H2 materially. At his Apollo / Blackstone participant tier, a verified record can at most clear the operator-diligence gate inside a deal that already has bankable offtake. It cannot turn merchant capacity into a financeable deal. The "record turns skipped operators into fundable ones" formulation is false at this seat unless the missing item is operator legibility and the offtake, site, power, and equipment gates already pass. This does not kill the small-tier hypothesis, where equity cushions or different credit tolerance may substitute for investment-grade offtake.
 

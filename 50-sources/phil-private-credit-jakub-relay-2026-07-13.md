@@ -46,11 +46,11 @@ PARTICIPANT, mega-tier. "Whoever is leading the deal" plus Apollo and Blackstone
 
 ## Three follow-up answers (relayed 2026-07-14)
 
-1. Dylan asked: "on the automatic-pass point: if a neocloud has a deployment record you trust but its offtaker isn't investment grade, do you still pass on the deal? or can the record get it considered?"
+1. Dylan asked: "if a neocloud has a deployment record you trust but no IG offtaker, is it still an automatic decline?"
    Phil: "Yes. Cause the reason to be in that position is either (i) spec building, (ii) issue with site, (iii) potentially end up mismatched on long term lease liability and short term rental agreement (wework issue )"
-2. Dylan asked: "in the deals you've seen, has an operator ever brought a diligence or performance report from a prior financing that the new group actually relied on?"
+2. Dylan asked: "have you seen a new lender group rely on a diligence or performance report produced for an operator's prior financing?"
    Phil: "don't know"
-3. Dylan asked: "when you reference-check an operator, who do you usually call and what, if anything, remains unresolved afterward?"
+3. Dylan asked: "on the industry ref calls, who do you usually speak with and what, if anything, remains unresolved?"
    Phil: "former employees. Customers. Consultants. Local GC"
 
 The first answer resolves the load-bearing ambiguity. Even a trusted deployment record does not get a deal considered without investment-grade offtake at this participant's tier. Phil's mechanisms are not missing operator telemetry: speculative building, a site problem, or a WeWork-style duration mismatch in which long-lived lease obligations are supported by short rental contracts. A record cannot cure those risks.
@@ -72,7 +72,7 @@ The conversion layer has a private form: inside club deals, lead reputation and 
 - n=1 firm, thirdhand, casual channel. Some participants shadow-underwrite fully; his firm's practice is not the category's.
 - His tier is Apollo/BX-led. Whether lead-participant structures exist at the $5-100M tier AT ALL is unknown and load-bearing: if they do not, small-tier deals are sole-balance-sheet, and memory travels even less down there than post two claims.
 - The improved residual view likely derives from the lead's materials. Untested.
-- "Yes" in follow-up answer 1 is read as "yes, still an automatic pass," based on the exact question order. This is a thirdhand relay and should be corrected if Jakub says Phil meant the opposite.
+- "Yes" in follow-up answer 1 is read as "yes, it is still an automatic decline," based on the exact question wording. This is a thirdhand relay and should be corrected if Jakub says Phil meant the opposite.
 
 ## Thread status
 
