@@ -69,6 +69,14 @@ After McDavid invited Dylan to continue on Telegram, Dylan asked the unresolved 
 >
 > McDavid: we havent had to diligence anyone else
 
+Dylan then asked how Silicon originally got comfortable with FarmGPU:
+
+> Dylan: got it. how'd you guys originally get comfortable with farm?
+>
+> McDavid: JM is an advisor to us
+
+JM's identity and relationship to FarmGPU were not established in the thread. Preserve the initials as given.
+
 ## Read
 
 - McDavid's reply does not answer the underwriting question and does not prove Silicon lacks operator diligence. The substantive answer is still pending.
@@ -89,6 +97,7 @@ After McDavid invited Dylan to continue on Telegram, Dylan asked the unresolved 
 - Silicon has not yet diligenced a new operator. Its entire observed operator-selection history is FarmGPU, an operator it already knew and had worked with.
 - The earlier phrase "any new operator goes through a full diligence process" describes what Silicon says it would do, not a process it has exercised in a real second-operator decision. Silicon may have a checklist, but this exchange provides no practiced evidence for it.
 - The actual mechanism is simpler and stronger than the earlier email implied: "we just use farm." Familiarity is not merely one input into diligence here; it has so far replaced the need to diligence another operator at all.
+- McDavid attributed Silicon's original comfort with FarmGPU to an existing advisor relationship: "JM is an advisor to us." This is relationship-based trust, not evidence of a repeatable operator-verification process. The exchange does not identify JM or establish the exact connection between JM and FarmGPU.
 - This supports the portable-history thesis's mechanism but does not validate willingness to pay. Silicon is not yet a buyer seat for new-operator verification because it has avoided the decision the product would help with.
 - McDavid is mined out on the current diligence question. The useful re-entry trigger is Silicon considering a second operator, not another hypothetical question now.
 

@@ -79,7 +79,7 @@ CONTINUE only if at least one of these fires by then:
 2. Someone commits resources: pays for a pilot, or names real budget they would redirect (diligence spend counts ONLY as displaced paid spend, e.g. part of a lead's $250-300K consultant budget; analyst-hours-saved and "makes our calls easier" never count).
 3. An operator documents having paid for or lost financing specifically because history was unprovable, and a lender confirms proof would have changed the outcome.
 
-SHELVE if 5 or more lender-side seats have produced only useful / faster / nice-to-have, and zero triggers fired. Lender-side count as of registration: Bernie, Phil, McDavid (live), plus any bump or wave-two repliers by Friday. No retreating into workflow improvement to keep the idea alive (Dylan's words).
+SHELVE if 5 or more lender-side seats have produced only useful / faster / nice-to-have, and zero triggers fired. Lender-side count as of registration: Bernie and Phil, plus any bump or wave-two repliers by Friday. CORRECTION 2026-07-14 19:03 ET: McDavid does not belong in this denominator. Silicon's practiced decision was provider selection through an advisor relationship ("JM is an advisor to us"), not lender underwriting or term setting. His evidence grades the familiarity substitute, not the lender-side kill test. No retreating into workflow improvement to keep the idea alive (Dylan's words).
 
 RATE is pre-registered NEGATIVE: three instruments on 2026-07-14 showed customer credit sets it. A test that can only pass by moving rate is a test designed to fail; rate movement neither saves nor kills.
 

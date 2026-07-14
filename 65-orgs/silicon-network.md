@@ -45,7 +45,7 @@ Strategic relevance: it is a live example of outside capital funding GPU infrast
 
 On 2026-07-13, Dylan asked what a third-party operator must prove before Silicon is comfortable placing a cluster in front of investors. McDavid initially interpreted this as asking who manages SLAs and day-to-day operations. Dylan clarified using the actual Cluster 01 flow: FarmGPU operates the hardware while the pool funds it. McDavid named operational track record, technical competency, and downside protection / collateralization, while noting Silicon's prior familiarity with FarmGPU.
 
-On Telegram on 2026-07-14, McDavid clarified the practiced reality: "we just use farm" and "we havent had to diligence anyone else." Silicon may have a process designed for a future new operator, but it has not exercised it. The company is therefore evidence that known-counterparty concentration can substitute for portable operator history, not yet evidence of willingness to pay for a verification product.
+On Telegram on 2026-07-14, McDavid clarified the practiced reality: "we just use farm" and "we havent had to diligence anyone else." Asked how Silicon originally got comfortable with FarmGPU, he replied, "JM is an advisor to us." JM was not identified in the exchange. Silicon may have a process designed for a future new operator, but it has not exercised it; its observed comfort with FarmGPU rests on an advisor relationship. The company is therefore evidence that relationship-based trust can substitute for portable operator history, not evidence of willingness to pay for a verification product.
 
 ## Related Sources
 
