@@ -3,7 +3,7 @@ type: source
 status: captured
 created: 2026-07-12
 updated: 2026-07-12
-source_date: 
+source_date: 2026-05
 source_type: podcast
 projects: [gpu-residual-value-pricing]
 domains: [gpu-finance, verification, credit-markets, financialization]
@@ -17,7 +17,7 @@ tags: [podcast, usdai, gpu-backed-lending, residual-value, kill-tests, route-aro
 
 ## Context
 
-Touchcraft podcast episode, "The State of GPU Financing, ft David, Founder of USD.AI." Listened 2026-07-12 from an auto-generated transcript. Episode date not pinned; content places it early July 2026 (references the SpaceX x Anthropic compute deal and ~$750B capex figures). Speaker pinned via search: DAVID CHOI, co-founder of USD.AI (Permian Labs), ex-Deutsche Bank, background lending against hard-to-price assets; co-founders Conor Moore (ex-DB, structured credit) and Dan (mining infra, DRW FPGA).
+Touchcraft podcast episode, "The State of GPU Financing, ft David, Founder of USD.AI." Listened 2026-07-12 from an auto-generated transcript. FULL RAW TRANSCRIPT stored 2026-07-15 at [[usdai-david-choi-touchcraft-podcast-gpu-financing-transcript.txt]] (the raw file is the completeness guarantee, this note is the curation). DATING REVISED 2026-07-15 from the raw text: the original early-July placement was the weakest anchor. Stronger internal evidence points months earlier: "the work that we've been doing over the last seven eight months" against the September 2025 public launch puts recording at April-May 2026, and the host places the Burry depreciation Substack "two months ago in January," pointing near March. Best estimate: roughly April-May 2026, so all time-sensitive numbers (7.4 percent staked yield, sub-half utilization, the $96M "next" loan, monthly loan records since January) are roughly two months old at capture, not fresh. The $96M next loan plausibly matches the Duos $98.1M facility later visible in the operator dataset. Speaker pinned via search: DAVID CHOI, co-founder of USD.AI (Permian Labs), ex-Deutsche Bank, background lending against hard-to-price assets; co-founders Conor Moore (ex-DB, structured credit) and Dan (mining infra, DRW FPGA).
 
 CAPTURE GRADE: promotional venue. A founder selling yield to a crypto audience. Numbers are his box and his book, uncorroborated unless marked. Transcript garbles corrected in this note: "50%" starting rate read as 15% (his own stated range is 7-15); "Munich agree and Barker" read as Munich Re (CONFIRMED cross-venue: the DCo episode description independently states Munich Re covers resale shortfall) plus possibly Barkr (UNCONFIRMED, plausible given our Thomas contact there); "ITAZ" read as ITADs; "UC 12" read as UCC Article 12 electronic documents of title.
 
@@ -78,9 +78,9 @@ Google and AMD guarantee rent on their chip deals because no secondary market ex
 - Loan-map probe: define the tracking cadence (monthly?) and what counts as the route-around succeeding or failing on their book.
 - Harry re-entry: use the episode as the hook, or leave frozen?
 - Does their draw verification produce a document the OPERATOR receives and could carry to the next lender? If yes, the liberation thesis has a partner shape, not just a competitor.
-- Confirm the reinsurance counterparty set (Barkr in or out?).
+- Confirm the reinsurance counterparty set (Barkr in or out?). ANSWERED 2026-07-15: Barkr IN, confirmed by the Connor Moore Messari capture (Barkr fronts the coverage, Munich Re reinsures Barkr, 100-150 basis points a year on loan balance) and consistent with the Choi Decentralised capture's payout mechanics. See [[usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15|Connor capture]].
 - Read the Pine Analytics critique.
-- Pin the episode date and archive the audio link.
+- Pin the episode date and archive the audio link. PARTIALLY ANSWERED 2026-07-15: dating revised to roughly April-May 2026 from internal evidence (see Context). Audio link still unarchived.
 
 ## Links
 

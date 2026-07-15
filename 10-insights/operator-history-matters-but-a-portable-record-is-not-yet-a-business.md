@@ -23,6 +23,8 @@ At the observed mega tier, history can be a necessary eligibility gate, but it c
 
 The remaining product window is timing-constrained. Before the first deployment, there is little operator history to verify. After successful deployments, financials, reference calls, and lender familiarity begin to carry it. A portable record can matter only if it improves financing during the transition between those states.
 
+The financing stack therefore looks barbelled by underwriting regime. At the large end, investment-grade offtake and contract quality carry repayment risk. At the smallest structured end, lenders such as USD.AI control the hardware, draws, reserves, amortization, and recovery path closely enough to minimize the operator variable. The unresolved middle is an operator with real but thin delivery history, non-investment-grade or shorter-duration demand, and a need for better economics than hardware-first credit offers. That is a credit-graduation problem before it is a verification-product thesis.
+
 ## Why It Matters
 
 "Lenders care about track record" is not product validation. It establishes that history is part of diligence, not that the market lacks a way to observe it, that a third party can represent it better, or that anyone will pay for portability.
@@ -40,6 +42,7 @@ The strong thesis should therefore stay disconfirmed: a portable record is not a
 
 - Treat operator history as a diligence input, not a business, until a trusted record moves a real financing term or approval.
 - The decisive test holds equipment, customer, and structure constant, then asks whether the record reduces required equity or reserves, improves advance rate or amortization, lowers insurance cost, or flips approval.
+- Test the middle as a graduation event: what lets an operator move from hardware-first, heavily structured credit toward contract-backed financing before audited financials exist, and does portable evidence contribute anything beyond customer quality, payment history, and sponsor support?
 - Do not use general statements that lenders care about history as evidence of willingness to pay.
 - Do not describe operator history as missing from underwriting. The existing channels are financials, reference calls, lead-commissioned diligence, lender memory, and structural risk controls.
 - Do not use the unverified $5 billion flow, $20 million revenue ceiling, one-to-three-year customer life, or shrinking-pool estimates as decision-grade market sizing.
@@ -63,3 +66,5 @@ The strong thesis should therefore stay disconfirmed: a portable record is not a
 ### 2026-07-15
 
 Initial capture after comparing Phil's investment-grade-offtake gate, Bernie's financials-based shortcut, and USD.AI's operator-blind structural model. Logged with the explicit boundary that history matters while portability and standalone commercial value remain unproven.
+
+Added Dylan's barbell framing: large deals lean on offtake and contract credit, while the smallest structured deals lean on hardware control and recovery. The only unresolved zone sits between those regimes and is better framed as credit graduation than as a generic verification gap.
