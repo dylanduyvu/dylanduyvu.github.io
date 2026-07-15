@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-06-29
-updated: 2026-07-02
+updated: 2026-07-15
 aliases: [USD.AI, USD AI]
 people: [harry-page]
 projects: [gpu-compute-novation]
@@ -24,6 +24,9 @@ USD.AI is strategically relevant because it lends against GPU-backed infrastruct
 - It sees supply scarcity as a bottleneck: customers wait for GPUs or pay premiums to skip the line.
 - It volunteered SLA/uptime operator-performance verification as a current lender pain.
 - It uses value warranties/reinsurance around GPU residual value, at least in the Barkr/Barker-style structure described on the call.
+- In a roughly February 2026 Messari interview, Connor Moore described USD.AI's transaction wedge as standardized, nonrecourse, asset-secured execution for $300 thousand to hundreds of millions, with the typical cluster around $30-50 million. His claim is that bespoke private-credit legal economics make that middle unattractive.
+- In the same interview, he priced the Barkr/Munich Re placement at 100-150 basis points annually on the loan balance, payable only when borrower default and collateral impairment occur together. It transfers loss severity, not the operating cause of default.
+- USD.AI's planned regional hub-and-spoke model relies on local credit funds as originators and underwriters, meaning the front end standardizes execution and distribution more than it eliminates expert credit judgment.
 - It already procures continuous infrastructure-level collateral verification from [[aravolta|Aravolta]] (published case study, seen 2026-07-02): "verify, don't trust" - real-time physical presence, serial identity, health, and availability of the GPU collateral, explicitly excluding tenant usage and application performance. Aravolta is plausibly the "verify" in the escrow-on-install-and-verify structure. New name: Conor Moore, co-founder & COO, quoted in the case study.
 - Scale reference: on the order of $100M+ deployed against a ~$1.2B pipeline (compiled figures, see provenance note below).
 
@@ -55,6 +58,7 @@ This is the cleanest worked example so far of the [[gpu-backed-debt-is-contract-
 
 - [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
 - [[aravolta-usdai-collateral-verification-case-study-2026-07-02|Aravolta x USD.AI case study]]
+- [[usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15|Connor Moore on Messari Fully Diluted]]
 
 ## Related Insights
 
@@ -62,6 +66,7 @@ This is the cleanest worked example so far of the [[gpu-backed-debt-is-contract-
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
+- [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
 
 ## Related Projects / Areas
 

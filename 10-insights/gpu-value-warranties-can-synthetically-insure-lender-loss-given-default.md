@@ -2,12 +2,12 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-15
 confidence: high
 domains: [gpu-finance, ai-infrastructure]
 projects: [gpu-compute-novation, gpu-residual-value-pricing]
-sources: [usd-ai-call-harry-page-2026-06-29, barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16]
-people: [harry-page, thomas-galbraith, bernie-margulies]
+sources: [usd-ai-call-harry-page-2026-06-29, barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16, usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15]
+people: [harry-page, thomas-galbraith, bernie-margulies, connor-moore]
 orgs: [usd-ai, barkr, american-compute]
 aliases: [gpu value warranty as synthetic default swap, barkr gpu warranty de-risks lender collateral]
 tags: [gpu, lending, insurance, collateral]
@@ -33,12 +33,15 @@ This shows that GPU finance risk transfer is already being built around hardware
 - 2026-06-18: Thomas said the guarantee is currently Barkr's biggest business and that Barkr has done almost half a billion dollars in guarantees.
 - 2026-06-18: Thomas said Barkr charges a platform access fee for valuation-only use and a percentage of asset value when the client purchases a guarantee.
 - 2026-06-18: He said Munich Re backing is important because a major insurer performed diligence and chose to partner with Barkr to deliver the product.
+- 2026-07-15 capture of Connor Moore's roughly February 2026 Messari interview: lenders pay 100-150 basis points per year on the full loan balance for the USD.AI placement. The payout requires BOTH borrower default and collateral depreciation below the outstanding loan balance.
+- Same source: Connor said USD.AI had historically capped loan tenor around three years and intended to push duration longer after placing the coverage. This was stated intent, not evidence that longer insured facilities were subsequently originated.
 
 ## Implications
 
 - The market may reward products that stabilize recovery value, not products that assume contract cash flows are independently financeable.
 - A verification or insurance wedge may need to complement hardware collateral rather than replace it.
 - Barkr-style warranties are a useful reference point when mapping who bears GPU residual value risk.
+- The product transfers loss severity after default, not the probability or operating cause of default. It does not cure weak offtake, utilization shortfalls, delayed deployment, or a long-debt / short-rental mismatch.
 
 ## Counterpoints / Uncertainty
 
@@ -46,6 +49,7 @@ This shows that GPU finance risk transfer is already being built around hardware
 - USD.AI's description is enough for internal discovery, not a full underwriting model.
 - The vault should standardize the org name as Barkr while preserving aliases like Barker / the Barker Price.
 - American Compute is a direct counterparty critique: Bernie said Barkr's warranty is not an insurance policy, may lack regulatory protection, and allegedly does not pay out if the market decreases by 20%. This needs document verification before external use.
+- Connor's "credit default swap" label is an analogy. The exact policy form, attachment point, exclusions, claim process, counterparty chain, and coverage capacity still require primary documents.
 
 ## Links
 
@@ -68,3 +72,7 @@ Updated with Barkr call evidence from Thomas, raising confidence and replacing t
 ### 2026-06-29
 
 Added American Compute counterparty critique of Barkr warranty mechanics.
+
+### 2026-07-15
+
+Added the 100-150 basis point annual price and dual payout trigger from Connor Moore's earlier Messari interview. Clarified the boundary: the wrapper reduces loss-given-default uncertainty and may support longer tenor, but it does not solve the cash-flow conditions that cause default.
