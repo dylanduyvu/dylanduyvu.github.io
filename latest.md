@@ -8,11 +8,11 @@ updated: 2026-07-15
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 15, 2026, 6:15 PM EDT
+Generated: Jul 15, 2026, 6:21 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 36 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 37 note commits. The most recent movement is:
 
 - Insight update: frame operator verification as a credit graduation problem.
 - Source capture: tighten Zile verification interpretation.
@@ -26,6 +26,13 @@ In the past 7 days, the public vault changed through 36 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 15, 2026, 6:21 PM EDT - notes: update vault
+
+notes: update vault.
+
+Changed notes:
+  - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
 
 ### Jul 15, 2026, 6:15 PM EDT - insight: frame operator verification as a credit graduation problem
 
@@ -129,6 +136,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 15, 2026: notes: update vault - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
 - Jul 15, 2026: insight: frame operator verification as a credit graduation problem - [[operator-history-matters-but-a-portable-record-is-not-yet-a-business|Operator history matters, but a portable record is not yet a business]]
 - Jul 15, 2026: research: clarify experiment decision and preserve USD.AI transcripts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 - Jul 15, 2026: research: update GPU credit branches and source findings - [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
@@ -153,12 +161,12 @@ Changed notes:
 - Jul 13, 2026: research: audit Silicon Network product and operator risk - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: publish: add lender relays and question updates - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: publish: add GPU lender question set - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
-- Jul 13, 2026: outreach: record remaining nine bump sends - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
 
-_Showing the newest 25 of 36 updates in this window._
+_Showing the newest 25 of 37 updates in this window._
 
 ## Past 30 Days
 
+- Jul 15, 2026: notes: update vault - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
 - Jul 15, 2026: insight: frame operator verification as a credit graduation problem - [[operator-history-matters-but-a-portable-record-is-not-yet-a-business|Operator history matters, but a portable record is not yet a business]]
 - Jul 15, 2026: research: clarify experiment decision and preserve USD.AI transcripts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 - Jul 15, 2026: research: update GPU credit branches and source findings - [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
@@ -183,6 +191,5 @@ _Showing the newest 25 of 36 updates in this window._
 - Jul 13, 2026: research: audit Silicon Network product and operator risk - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: publish: add lender relays and question updates - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: publish: add GPU lender question set - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
-- Jul 13, 2026: outreach: record remaining nine bump sends - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
 
-_Showing the newest 25 of 104 updates in this window._
+_Showing the newest 25 of 105 updates in this window._
