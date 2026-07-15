@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-07-14
+updated: 2026-07-15
 confidence: high
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
-sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, compute-finance-space-commitment-and-problem-inventory-2026-06-30, barkr-thomas-sla-email-reply-2026-07-01, american-compute-bernie-sla-email-reply-2026-07-01, codex-chat-sla-insurance-monitoring-2026-07-01, aravolta-usdai-collateral-verification-case-study-2026-07-02, phil-private-credit-jakub-relay-2026-07-13]
+sources: [usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, compute-finance-space-commitment-and-problem-inventory-2026-06-30, barkr-thomas-sla-email-reply-2026-07-01, american-compute-bernie-sla-email-reply-2026-07-01, codex-chat-sla-insurance-monitoring-2026-07-01, aravolta-usdai-collateral-verification-case-study-2026-07-02, phil-private-credit-jakub-relay-2026-07-13, zile-cao-blockchain-capital-call-2026-07-10]
 people: [harry-page, thomas-galbraith, bernie-margulies]
 orgs: [usd-ai, barkr, american-compute, nvidia, aravolta]
 aliases: [gpu lenders need sla verification, uptime performance verification is a lender pain]
@@ -361,3 +361,9 @@ Phil resolved the ambiguity in his auto-decline answer. Asked whether a neocloud
 This narrows H2 materially. At his Apollo / Blackstone participant tier, a verified record can at most clear the operator-diligence gate inside a deal that already has bankable offtake. It cannot turn merchant capacity into a financeable deal. The "record turns skipped operators into fundable ones" formulation is false at this seat unless the missing item is operator legibility and the offtake, site, power, and equipment gates already pass. This does not kill the small-tier hypothesis, where equity cushions or different credit tolerance may substitute for investment-grade offtake.
 
 Phil also named the incumbent reference sources: former employees, customers, consultants, and the local general contractor. That is a functioning diligence process, not an empty verification seat. A portable record must make this process cheaper, more consistent, or reusable. Asked whether a prior financing report had ever traveled to a new group, Phil said he did not know; portability remains untested rather than disproven.
+
+### 2026-07-15 - Adjacent verification company won large contracts and still pivoted
+
+Zile relayed a secondhand case from a college friend who built customer-facing software that plugged into data centers to verify genuine, correctly specified work and track metrics / uptime. The company reportedly signed a few seven-figure contracts with data centers, then pivoted after roughly a year. Zile's interpretation was that they became jaded because "nobody really cares about verification."
+
+This is adverse to a generic verification pitch. Large initial contracts show that budget can be won, but a rapid pivot despite them suggests weak durable pull: the output may not have changed decisions, renewed, expanded, or supported a scalable product. The company and failure mechanism remain unknown, so none of those explanations should be promoted yet. It is adjacent rather than dispositive for H2/H3 because the buyers were data centers, not lenders, and the product verified live infrastructure rather than portable financing history. The required next evidence is the post-mortem: why pivot after landing those contracts?
