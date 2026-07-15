@@ -1,0 +1,1525 @@
+Provenance: auto-generated transcript of "Building GPU Finance Rails | David Choi from USD.AI" (Decentralised.co podcast), recorded roughly June 2026, supplied verbatim by Dylan 2026-07-15. Heavy transcription garble throughout: "David Troy" = David Choi, "Flatstone" = Blackstone (probable), "error volta" = Aravolta, "A6" = ASICs, "core we" / "the core" = CoreWeave, "USDA"/"USC.AI"/"USCI" = USD.AI, "Perian" = Permian, "TSMS" not present here but same class of errors possible in names. Timestamps preserved as supplied. Curated capture: usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06.md
+
+---
+
+Nvidia reached out to us. They're like, "We heard you finance chips. You're going to be on the list." There's Flatstone, there's Black Rockck, and
+0:06
+then there's a startup called USDA. We're the only guys who are not that is not a private equity, not a private try
+0:12
+fund on the list. That's David Troy, co-founder of USDA and Perian Labs. Every asset class that
+0:19
+ever scaled had a moment when someone invented the debt market. David Troy believes he's that person for GPUs. We
+0:26
+really are trying to become the the Fanny May but for GPUs. Every dollar in the US being printed is subsidizing AI
+0:32
+indirect because it has to otherwise the dollar is uh it's gone. The capex spend that we're doing in the last year was
+0:39
+more capex for any project in the US highways [music] to oil refineries in
+0:44
+the last 10 years combined. You can't give a loan to an AI company, right? You're giving a loan against the GPUs
+0:49
+because that's the only thing that's hard and that's physical. Instead of paying three times the cost of the house
+0:54
+that I'm renting, why not just buy the house? Well, the answer is you can't get a loan unless it's a novice building. What
+1:00
+we're saying like let's introduce the loan against a single chip. That is the feature model. So every single AI company will eventually own a chip in 10
+1:06
+years like Bloomberg. Are you really going to be trading corporate line credit or are you going to be trading GPU alone?
+1:19
+Typically I want to avoid questions related to background and whatnot because people kind of know uh most most
+1:27
+of the founders coming on but I want to dive into yours because it's been it's
+1:33
+like what I've seen is quite diverse. So yeah I mean let's just dive into that. Sure. Now actually before traditional
+1:39
+markets I was in more esoteric markets. Um my first job out of college was
+1:44
+actually doing uh financing for artwork um like Warh Halls and Frank Stellas and Upper East Side worked at a gallery. Um
+1:52
+and uh yeah worked at Deutsche also doing more exotic assets and the real estate gaming and lodging leisure. So
+1:58
+like large casinos with large properties all the way to time shares. Um and yeah
+2:04
+kind of always been around um liquid assets in my traditional career. um got into ME because it was also like an
+2:11
+interesting bearer asset. Um, and we were just I was just kind of like, well, first off, I was just trying to get into ICOs back in the old days. Um, 2017,
+2:19
+2018. Um, and it wasn't cold. It was just, you know, trying to make money,
+2:25
+trying to get into um, which evolved into that interest in um, in doing that kind of design. Eventually, it evolved
+2:32
+to like all the all these other strategies. Um but yeah and then um kind
+2:38
+of built what I understood from my previous experience along with the MV um
+2:44
+to build um effectively layer DeFi that dealt with assets that didn't have
+2:49
+price. Um and that was kind of the origins of what was originally called Meta Street. um which was how do you how
+2:57
+do you finance the rest of the assets in the world that isn't Oracle based um
+3:03
+which is you know if you work not in trading and sales but if you worked in
+3:09
+investment banking um there is no price for anything um the more you know the price of something the less money you
+3:15
+make um is a common saying in finance um uh the more you know the price of something yeah because it's perfect
+3:22
+information um even in the art world the our fairs and our pricing was clear.
+3:27
+Dealers just started making less money. Um, so yeah, it was um it it was like
+3:33
+how do you effectively create DeFi but for the rest of the assets, the NFTts,
+3:39
+the the Tesla chargers, the GPUs of the world. Um, we eventually narrowed down
+3:45
+because we realized a generalized protocol um it worked, it was just not the best to scale. Um and after some
+3:53
+soul searching it's so about like a couple of pivots um we found GPUs because um we were farming Bit Tensor
+4:00
+ourselves and we realized it was just an incomplete market. um you were paying a
+4:05
+cap rate, you know, rental income divided by how much you actually how much the act actually the asset is worth
+4:13
+and we were like this 100%. I'm paying 100% of the value of the chip in rent
+4:19
+over the course of the year um during the hype of the the tensor like you know secondary markets for renting was so
+4:25
+high and I'm like I should just buy the chip. So we bought the chip. We bought like a 300k server um H100s um and
+4:35
+I couldn't get a I couldn't get a loan against it. It's like buying a house and you and you're Airbnbing it and you're like ah I want to get liquidity and then
+4:42
+there's no market for liquidity. Um and yeah know it's kind of like where we
+4:48
+found the sector. Um and and then we started getting inbounds from all these other customers in the AI space because they were just really trying to get
+4:54
+liquidity because there really was no loan book for individual chips. It was
+5:00
+really against companies but not against chips which is something we specialist in which was um against liquid assets
+5:07
+like in terms of giving your idea enough time and on the other side market is
+5:13
+telling you something and you realize and you change course how do you make that judgment call? uh we've gone
+5:18
+through about 13 different asset selection uh mini pivots. The thesis has
+5:23
+always been true which is what I was describing like how do you how do you create a protocol which just deals with
+5:30
+an asset that's productive but not liquid. Um and that people might divide
+5:37
+this definition as what is margin divided by or what is margin versus what is loans. Margin is money markets um
+5:45
+things that are liquid. Um you you might also call them money markets or capital markets. Um a tractor is not money but
+5:52
+bitcoin is. Um and bitcoin is not as productive in terms of cash flow generation. People are trying to like
+5:58
+retrofit it. This is what the basis of ien layer and like east staking was oh yeah it's a it's a very very liquid
+6:04
+thing we created. Uh let's make it productive somehow. And it's never going
+6:09
+to be that productive. It just no matter what you do um it's always going to be a currency. Um, and yeah, that thesis was
+6:17
+always true. Like, how do you give a loan to the uh to the tractor? How do you give a loan to the NFT, which was
+6:22
+semifable with floors and but it wasn't a bid as spread? That was a perfect market. It was an ask, you know, and
+6:30
+sometimes there were bids. Um, but really it was an ask market um an incomplete one. Um, and we we we
+6:38
+iterated the product um continuously. Um the final conclusion was that you need to create a derivative. Um kind of like
+6:45
+LSTFI, right? If if remember that like you stake and you got to make the wrap stick tradeable. Um you had to um
+6:52
+originally we we had tanches um very very early on. We actually have something called infinite tunchmaker. So
+6:59
+you know classic banking like verticals versus industries like we were looking at a lot of industries but also looking
+7:04
+at financial products you can build on top of each of them. um whether it was like you know tanches and that that's a
+7:10
+product um or um uh making the the the bond tradable um and effect effectively
+7:18
+compressing the entire securization sector into a single click um which is
+7:23
+not very easy to do. You can't really do that. Um and what we made is like effectively the entire circularization
+7:29
+market we've turned into a a decentralized protocol that is governed by the token holders um decentralizing
+7:35
+the investment bank. Um and yeah so uh it it was pretty it's fairly obvious um
+7:42
+from purely mathematics like if your sector is worth tackling. Um NFTTS don't
+7:49
+generate income. Um axis did it was pretty interesting to see labor kind of
+7:54
+form on chain but obviously it didn't work out. Um then we looked at art. Artwork just doesn't rank doesn't
+8:01
+generate cash. So, your best solution is to do low LTV um uh short duration
+8:07
+rollover loans, which you know is frankly what balloon loans were um in the 1920s before any came about. Like in
+8:15
+order to get a house loan, you got a loan every 5 years and you just rolled it till the great depression and then
+8:22
+the banks recalled all their loans against houses and then you're like, "Okay, I understand why they created fine, you know, like let's make the debt
+8:28
+tradeable. let's not hold it on the balance sheet because it sucks. You know, you're holding the punk loan. Um
+8:35
+then we looked at Tesla chargers and then um we're looking at Tesla chargers and we're like, you know, the debt
+8:40
+service coverage ratio isn't very good for the liquidity needs of our yield farmers, even if you like made meet the
+8:46
+LTBs, you know, even if you had a high cash reserve to repay the liquidity needs, um it just wasn't a complete
+8:53
+market. And we found GPUs because it was such high cash flow generating assets that really accommodated for a few
+9:00
+things. One, it was hot. Um, it was cool. It was it was GPUs. We've actually
+9:06
+one of our most successful products before this quote unquote successful um was actually a watch lending. Um, and
+9:12
+watch lending those high high demand. Like a lot of people want to collateralize their watches, but nobody
+9:18
+wanted deposit. I'm like, I'm earning 20% on watch lending. Like cool. Nah, I'm gonna I'm gonna do my e
+9:25
+staking or something even though it's not dollar denominated. Um but you know AI um having a like it does matter what
+9:33
+collateral you use. Um Tesla charger was cool. It was like energy energy like based um but then um it wasn't you know
+9:41
+like it wasn't feasible um from a cash flow perspective. So the product is uh
+9:47
+the product revolves when it comes to financial products it does it does have a few elements that you can adjust um in
+9:53
+order to make it PMF based I think a lot of people think um financial instruments are just an APR um very much isn't you
+10:01
+know like it's uh the collateral matters the the position matters and all these other things and construing the
+10:07
+mechanics of the financial instrument to deliver to an end audience um uh was just a series of continuous iterations
+10:15
+Um and you know we say 13 pivots but it was it was really 13 iterations. Can you break down that service coverage
+10:22
+ratio for everyone? So pretty much um in order to avoid paying for the entire um asset at once,
+10:29
+you obviously cut it up into multiple mortgage payments. Um and there's
+10:35
+there's the mortgage payment which is the principal and then also the the interest. Um and if it's a million
+10:41
+dollar house for example and you you know cut it up across 100 months um so you know uh 10k a month um and there's
+10:50
+also some interest uh you have to make sure that the cash flows generated from
+10:55
+uh the house whether it's their ability to pay is making more than that. Uh uh
+11:02
+you know 100 months is actually very short uh for a house loan as you can imagine. So longer the duration of the loan, the higher the cash um the shorter
+11:09
+the c less cash flows you need. Um so that's actually how we get to like an interest rate and that's how we get to
+11:14
+an amortization rate because we're just back calculating what is the maximum um
+11:20
+and most aggressive terms we can do without it going negative because they'll be like okay I'm like I'm I'm
+11:25
+making 500 bucks a month um I'm not making uh but I have to cover $1,000. So
+11:31
+if if that ratio is uh down then this doesn't make any sense. Um we'll be making this a lot more um prevailent and
+11:38
+the analysis a lot more clear um in the governance forums um that which we will will be will be launching pretty soon
+11:44
+just explaining the math of like what exactly is this we actually require debt service reserve asset and that you need
+11:50
+to have at least 3 months of prepayment um in case maybe you miss a payment or
+11:55
+here or there and it gets drawn down automatically. It's kind of like your um checking account and a credit card, you
+12:01
+know, like just automatic draws down. You have to maintain at least $5,000. Um you know, kind of thing. Um so making
+12:07
+sure that every single month um is matching with like how much money you're making is most important, which implies
+12:12
+the existence of cash flows. Um nothing in DeFi. Um uh from an asset perspective
+12:18
+generates any cash flows. What ETH ETH like staking like 2% a year. Yeah, it's
+12:25
+very productive. does this there's not a service people use this was proven with uh restaking right the only time you
+12:32
+actually see people use was actually cat money which is like 99% of the use cases but even then like the productive use is
+12:38
+like for taking on risk um but in terms of the people actually paying money to
+12:45
+to use something um which you know the the easiest litmus test of this um in in
+12:52
+a market and or an economy is actually the existence of a fixed income market. If people are willing to pay 7% flat,
+12:59
+not floating, but flat, it's because they know they'll make at least 50% a
+13:04
+year in revenues um or uh net expenses. Eat it. Um and they'll pay 7%. They
+13:12
+don't want that fluctuating 20% like you saw and a down to three and then five and six. Um they want fixed uh income.
+13:19
+Um and once you start seeing that, that's when you know the economy is starting to stabilize and you actually
+13:25
+see productive businesses kind of come about. Um GPUs being obviously one of
+13:30
+the most productive and arguably the most important asset in the world today. What led you to GPUs over something like
+13:36
+let's say Bitcoin mining? Uh Bitcoin mining we looked at um frankly it's one of the many interesting
+13:42
+assets we looked at. Um we have three co-founders and we're like a nice blend. Um I'll just describe us very quickly.
+13:49
+Um, Ivan actually used to work at 21.co and doing Bitcoin mining. He actually saw the first Bitcoin mining blow up in
+13:54
+the US which was 21.co. Uh, and then Bology came in and like kind of it was actually Lily from Salana who actually
+14:00
+saved the the the company and just restructured everything and fire sold the GPUs which was very hard to do by
+14:06
+the way not GPUs A6 which is yeah it was brand new back then and they're like fire selling that requires
+14:13
+a lot of talent. Um that was that's what Lily runs a lot at like very talented. Um and uh and then he did uh TPUs and uh
+14:21
+and uh um other chips at DRW doing HFT. Um and he's very inaccurate in like very
+14:27
+inaccurate capitalist. Um and then you have Connor who's a private equity um background. Um you know real private
+14:33
+equity um wants to make sure a business is actually created. Um and then you have me who's far more interested in
+14:39
+novelty. um that I I do believe that innovation pushes the efficient frontier um that we can actually solve our way
+14:46
+out of um trade-offs. I don't think trade-offs exist. I think abundance is um uh
+14:53
+can be created and yeah, Bitcoin mining was a step backwards. Um and we we saw
+15:00
+the entire world kind of move toward AI um with very very similar mindsets, right? We like without Bitcoin mining
+15:07
+really AI today wouldn't really exist as a as a sector like you wouldn't have the core we staking like transitioning out
+15:14
+of um staking or [clears throat] proof of work to prove stake and finding new sectors um and all this energy build up
+15:21
+that we did um that's why every single Bitcoin miner is moving over to AI AI HPC um and yeah it was just kind of like
+15:27
+the writing was in the wall um and I could have the model that we created might service it but like um you you
+15:34
+know, Bitcoin mining is uh um it is again like my question of um 100%
+15:41
+exposure to a single asset um uh price that that's what Bitcoin mining is. Um
+15:46
+there's extreme people trying to create hedge markets which is developing you know this is why you have NY digs of the
+15:52
+world. Um and uh yeah it's it it wasn't
+15:57
+an end market that was um extremely productive like you don't have
+16:02
+sovereignties and nations and uh AI companies and the hyperscalers and um
+16:09
+fortune 500 companies trying to get access to um to using the chips for productive value which is to service
+16:15
+provide AI services. So, it it was a natural allure given our many many
+16:21
+different assets that we're looking at that just wasn't um productive. And Bitcoin m bit Bitcoin isn't a productive
+16:28
+asset. It is a reserve asset. Um it's a liquid asset. It's is a and this is this
+16:33
+is um people might be like no no it's like no no let's just do a quick math. What is the daily volume? What is the
+16:40
+market cap divided by daily volume? This is like it's like 25x. That means in 25 days the entire market cap of Bitcoin
+16:47
+circulated um uh the volume. Yeah. Yeah. And then you look at like real
+16:53
+estate, you know, how what is it? What is the market cap divided by the daily volume? It's going to take 2,000 years
+16:59
+um some or something crazy, you know, like um it's going to take a very long time u before you could cycle the entire
+17:04
+asset. Um, but it still has a value that's so so high and the multiples high because it's productive
+17:09
+because they're looking at cash flows to under liquidity, not um not the capital appreciation price.
+17:16
+Yeah, exactly. Not not just for liquidity. Um, liquidity is um only needed if um cash flows aren't very
+17:22
+good. It it's weird because GPUs are very um um GPUs are very uh uh shy cash
+17:29
+flow generating um but also very productive um and pretty liquid as well
+17:34
+um because it's an emerging market demand so high and a lot of eyes on um anyway yeah GPUs just um it was right it
+17:41
+was the right decision um and it was fairly obvious we have to think more about it most of the times whatever we
+17:47
+see on social media etc is pretty much focused on the software or the digital
+17:52
+side of it. But like as far as information goes or as far as uh the discourse goes, people are not talking a
+17:59
+lot about uh what's happening behind the scenes like how are they using these
+18:04
+GPUs and where are they sourcing all this energy from and stuff like that. So can you um tell us what that market is?
+18:12
+Uh who the participants are who controls like significant chunk of these GPUs and
+18:17
+what would it take for someone new to enter into these markets? Yeah, let's um
+18:24
+quick history lesson, right? Like uh of of of a very bad um explosion of growth,
+18:29
+which is fiber optics. Um I you know, Cisco um which you know, fun fun fact, they call it Cisco because San Fran
+18:36
+Cisco. Um and it's what they were really what they were really doing was that
+18:42
+they were a drug dealer and they're doing their own drugs. Um that's literally what it was. They they were doing something called vendor financing
+18:48
+which is like hey um I'm going to give you a loan as Cisco you buy my products
+18:54
+and then the price of the assets just kept on going up obviously because they're like oh more loans yeah
+19:00
+more uh more sales kind of like lowering interest rates. Um people just do weird stuff. Um and that's kind of what they
+19:06
+were. They were just trying to lower the rate the cost of a loan in order for you to buy the product. Um and that was the
+19:12
+only use case and obviously that blew up very quick. Um and uh that was just like
+19:18
+moral hazard um in a sense in terms of the flow. People say people accuse Nvidia of doing this and I'm like that's
+19:24
+not true at all. Like most of the deals that are financed in the market, Nvidia might like rile up interest in terms of
+19:31
+um hey like you you're about to do $2 billion of sales with us. Um um but the core difference here is that Nvidia
+19:38
+doesn't finance their own chips ever. There's actually a huge internal policy. Um actually Nvidia reached out to us.
+19:44
+They're like, "We heard you finance checks. We're gonna we're g and like and you're doing it like quite impressively." So, um, you're going to
+19:51
+be on a list. Um, the, you know, here there's Flatstone, there's Black Rockck,
+19:57
+there's, um, you just go down the list. Um, there's Upper 90, there's like, uh, um, like I said, many of the active
+20:04
+funds in the space, and then there's a startup called USDA. Uh we're the only
+20:09
+guys who are not that is not a private equity, not a private credit fund on the list. Um and this list is important
+20:17
+because it it shows that they don't finance their own chips. Um and because they say if you if you want a loan for
+20:22
+your chips, you have to find somebody who's willing to take the risk, the debt, and the equity. Um and it's not
+20:28
+going to be us. Um, which means that really like the size of the capex that we're doing like it really does come
+20:34
+from a real end user. Like the somebody wants to buy that wants to use those
+20:40
+chips. You can't finance the chips unless you have a tenant. It's like uh you're not going to get an office loan
+20:45
+unless you know it's going to get filled. And that's why it's very very important that like you have the law firms, not just Weii works, right? And
+20:51
+that's why people should have Weiworks. It's like oh yeah, they're the first ones out. Um, but you know, if you have like a large hyperscaler um, uh, that
+21:00
+wants to come in and rent for 5 years and they're like, "This is a guaranteed contract." Yeah, I'm going to build it out easy. I'll build it out the next
+21:08
+day. Um, I just need the money. Um, now if you're big, if you're huge, money is
+21:15
+relatively easy to get. Just ask Oracle. Yeah, let's uh, let's sparse money. Um,
+21:22
+neither tapped out. Um, and then even Meta went to like a private credit fund like Blue Owl, which is weird, right?
+21:29
+Usually you go to like um a massive fund, but then they went to Blue Owl. Interesting. Um, which means people are
+21:35
+just kind of going to different parts of the market to get money. Um, and if you're small, good luck. You're not
+21:40
+going to get any money. You have to like sponsor that with your own cash or a friendly loan. Uh, you're seeing the
+21:46
+cracks of this market starting to appear. People are doing side missions to get money. Um why why why don't they
+21:53
+just go to a bank because a bank won't give you a loan um but but the a bank is
+21:59
+how you get a loan for everything uh you know like a house um an airplane um or
+22:04
+these other things but they won't give a loan against GPU um the reason being is that the debt's not tradable um the not
+22:11
+tradable and people try you know core we try but if the core issues their own loan against their own GTUs with their
+22:18
+own clients it's not it's not a it's not an asset security anymore It's a cory flow.
+22:23
+Um it's like depending on their success. It's not against 10,000 different diversified assets where it's a
+22:29
+probability of default um and a probability of return. You know, like that's when if I give a loan to you,
+22:34
+it's different from me giving a loan to 10,000 uh individuals with a probability of repayment, right? And then you just
+22:39
+hedge for that metric. Um me against you is just yeah, what's your what do I
+22:45
+trust you? Um kind of thing. Um, so this market doesn't exist because um that that's not tradable. Um, anyway, I kind
+22:52
+I kind of ded away from your original question. Yes, the the capex is driven by by
+22:59
+demand. It's not driven by supply side injection of liquidity. It's dri driven by like insane amount of
+23:06
+demand. um like literally a claude might have solved their temporary uh the um uh
+23:13
+issue with with XAI but they are still significantly computer restraint and and
+23:18
+to give you an example like how intense this is remember when everyone's like oh
+23:25
+my god there's a guy sp 100 mil at meta the work oh 50 mil and I'm like that's
+23:31
+still like a tenth of the cost related to compute you Like it these insane
+23:37
+salaries for the best talent. Like yeah, I'll pay that any day of the week cuz my compute bill is in the is in the
+23:44
+billions, right? Is in the tens and hundreds of billions. Yeah. Like this guy's paid 100 mil. Like
+23:50
+it doesn't matter. If you can optimize my compute bill, but a little bit. Um I'll definitely uh definitely hire him.
+23:57
+Um and the capex spend that we're doing in the last year was more capex for any
+24:03
+project in the US highways to oil refineries in the last 10 years combined
+24:08
+was done in a single year. Um but yeah these big companies right
+24:13
+that's that's what you're referring to. Yeah. Yeah. It's just like all of the US um capex um by hyperscalers and smaller
+24:21
+guys just it's it's it's an insane amount of I I mean to describe it it's my go-to metaphor. like the the and I used to
+24:27
+cover like leisure. Um, one of the biggest projects in the US was the the
+24:32
+sphere on Las Vegas sphere. Yeah.$2 to3 billion. Um, but a gigawatt is like
+24:38
+15 of these Las Vegas spheres in terms of financing costs. Um, and we're
+24:44
+building like 50 of these. It's like project tail mary. Um, but instead of saving the world, we're trying to, you
+24:51
+know, increase our token amounts. you know, like it's a it's uh it is like an
+24:57
+insane amount of uh of demand. It's crazy. Um and it's people like I don't
+25:04
+know people are so short into this market. Um uh uh and I'm like I don't
+25:10
+know like it just there there really is a new wave of usage and it's like
+25:17
+imagine the world going back from AI. It's not going to happen. Um we're just going to we're really marching forward
+25:22
+and we're not we're barely keeping up. Um I think we will always be compute restraint. Um that's great. I think um
+25:29
+um the models um I think open clock I showed like you really can use all the
+25:35
+tokens in the world. Um it's not like block space where it's going to get infinitely more uh more available. It's
+25:41
+like yeah I I think it's going to be um very very big constraint. It's like it's a function of energy. as a function of
+25:46
+supply chains, um as a function of financing, um all of which are all of which are bottl necks.
+25:52
+What happens if the models themselves get better and more efficient? I think a good example just seeing what
+25:57
+we saw with the hoppers to the black wells where the models just got insane, right? Um it's kind of why mythos is
+26:04
+like, oh yeah, this is it got mythos because it's a mystery because it's run on black wells. Um thing is the next
+26:10
+generation after that is going to be even better. Um the ops license nature of chips is actually is actually pretty
+26:16
+important. Um right um and that's why something like USDI exists because we can accommodate for how fast these
+26:22
+things go uh go obsolete um and make it that instrument for something that doesn't just u blow up. Um, and
+26:31
+even if the models get better, um, even if the chips are getting better, you still have to replace the chips. Um,
+26:38
+which means you have to create a debt instrument for that replacement cost. Um, it's not like you're going to skip a
+26:44
+generation. No way. Like you're going to lose your entire business objective.
+26:50
+We're seeing the massive massive move from cloud to open AI. It wasn't it's not because of model quality. It's
+26:56
+because of compute access. Um, opening actually spent the money to scale out the compute. It's why people are using
+27:02
+codecs. Um, and and that that is massive like it completely changes your trajectory of revenues from here to
+27:08
+there just because of your access strategic access to compute. So you're saying that the hardware the
+27:14
+fact that the hardware itself is getting better um every few years uh the
+27:19
+implies that you need to replace it and you pay money for it. Right. Right. You have to keep um Yeah. that that's that's the vision that
+27:26
+you're describing. It's like what if token costs get cheaper? What if we get more efficient? I'm like well if the
+27:31
+next guy is 10 times more than you and you can have a better model by even 30%. Yeah.
+27:37
+He's going to pay 10 times the price every time. You don't you don't want the cheap model that's convenient. You want the best,
+27:42
+right? Every time. Um yeah. I mean the the AI spray today
+27:49
+would if you could access methos for 10 times the cost, 15 times the cost, would you? Yes, absolutely. Um, and you will
+27:57
+pay more as a result. Um, because the quality is getting better. Is that is that the reason why every now
+28:04
+and then you'll see these models? I mean, uh, the next version is not as good as the previous version because of
+28:10
+the compute access. Yeah. Every time. Yeah. It's that's literally the just it's a it's a supply
+28:16
+constraint. I mean, you know, the a lot of the models aren't even trained on the black wells because there's not enough black wells out there installed even
+28:22
+though it's been announced for two years. Um this the supply chain has been like really horrendous for for the black
+28:27
+wells. Um just getting installed, getting the financing and getting things lined up and then getting them all trained. Um and because they're like
+28:32
+like this just take too long. We can't transition the entire um training in
+28:38
+order to for a very limited asset availability. Um I think you're starting to see the transitions over which is why
+28:45
+um which is why we're so comfortable with this that the US government is like yeah we can sell the H200s to China we
+28:52
+don't care about that the new stuff we get the we get the Ver Rubins and we get the Fman after that. Um and that is how
+28:59
+drastic of a improvement it is is that we're willing to send it to China because we're like yeah it's not
+29:04
+strategically important like who cares about the hoarders now we got the black wells. How big is the market? Who are the
+29:11
+manufacturers? Who's using most amount of compute and stuff like that? Yeah. Um Jensen calls it the fiveletter
+29:17
+cake. Um there's energy, chips, infra models, and then apps. Apps being like
+29:22
+agents and stuff. Um chips obviously is right after energy. Um but chips is the
+29:28
+hardest the hardest part of this formula actually because um it doesn't have a debt financing market. Um energy is
+29:33
+pretty easy. Um you actually see Sarah Frier, the CFO of Open like energy, the land, the shell, it's easy. we it's like
+29:40
+30-year mortgages. It chips. This is 70% of the data center. It's
+29:46
+just chips. Like we don't know how to secure types of debt. So, it's very very hard to finance it. Um it makes our jobs
+29:52
+very hard. Um but the side of the market is that there's $500 billion of the GPU
+29:58
+sales um you know, earnings reports expected by Nvidia every year um every
+30:03
+five quarters and it's it's it's accelerating um and this is 500 billion every year. So you know the spend is
+30:10
+going to be at least $5 trillion um for next few years. Probably it's closer to 10 trillion um because of the demand um
+30:18
+because we're replacing every single SAS in the world. Um the entire Silicon Valley is being replaced by itself um
+30:24
+and that's worth many many trillions um uh inside of the software use everything
+30:30
+is obviously dead. It's um now AI replaces everything. Um and the TAM of
+30:36
+that is just too big. Um so capex is a drip in the bucket versus the effect is going to have um in the rest of the
+30:42
+market. Um but yeah in terms of trillions yes this is more spend than
+30:48
+the build out of China um arguably um this is more spend in the US in its history since uh even like post World
+30:55
+War II. Um maybe I think World War II still has a little nit above uh the
+31:00
+current spend today. Um but for the most part, yeah, it was the last time we did that was that was really existential
+31:06
+threat. Um which really AI is like if we lose AI or there is no sovereignty of
+31:11
+the US anymore. Um that's why every dollar in the US being printed is subsidizing AI indirectly. Um because it
+31:19
+has to otherwise the dollar is uh it's gone. So the reason it cannot be
+31:25
+securitized is it because it quickly depreciates. Yeah. Okay. So, and banks don't know how to
+31:32
+the the time it takes to secure tax is too long. Um, versus the half life of the assets um half is like 1.5. So, in 3
+31:41
+years it's um worst case uh worst case scenario which is what we assumed really the the market is settling to like a six
+31:47
+year useful life as we see with operas. Um obviously the the chips are coming at faster pace but their their installation
+31:54
+speed isn't keeping up with that pace. Um so it might come out but it just takes longer and longer to get
+31:59
+installed. Um so and that that's why you see actually um typically the rental ratio go like
+32:05
+this but you see like this like just comes back up because the the black walls are just not getting installed. Um
+32:11
+and um and that that really is a um energy thing. Um so actually people are
+32:18
+like oh yeah energy is a big reason why there's a bomb. I mean it's a big it's a big reason for the biggest guys which is fair. That's where most of the sales go
+32:24
+to. But like hyperscalers, because if they want a 200 megawatt, if they want a a gigawatt, you gigawatt's very hard to
+32:31
+find in the US. A gigawatt's enough energy is the energy you spend in Denver, the entire city of Denver,
+32:36
+[ __ ] 80 miles across, right? That's Denver. Um, and that's a one gawatt. It
+32:41
+It's not easy to find. Um whereas smaller megawatt all over the US, it's
+32:47
+very easy. You can always find five megawatts here or there, but you can't get financing because you're like, why
+32:53
+would I finance this? I'd rather just do the convertible with core, you know, massive um with a very big client. Um so
+33:00
+you have this different differential in terms of uh um user behaviors.
+33:06
+I think we are nicely set up to talk about USC now. So how are you solving this problem? um the the time it takes
+33:13
+to coming from Deny yourself but also like the time it takes to like go through an
+33:18
+um uh an ABS process and and to contextualize why an ABS market um is
+33:25
+important or asset back finance market is because this is how every asset in
+33:30
+the world scales um every asset um every trillion dollar market has this market
+33:37
+um and it's the main tool it's it's the hammer that you use in tool set, not the pincher, not the screwdriver, but really
+33:44
+the hammer. Um, and uh, it's all connected like it's um, you
+33:51
+know, or you see the headline Oracle's max leverage or you see the headline that like private credits in retreat.
+33:57
+Um, you see this headline that financing is just like um, just tough um, and
+34:04
+there's not enough supply of chips. Um, and yeah, that's kind of been uh a scale
+34:12
+issue uh because you know, airplanes, houses, um, auto
+34:17
+loans, um, all of these have an uh, ABS market because you make the debt
+34:22
+tradeable. If your audience is crypto, it's kind of like imagine ETH staking without rough
+34:29
+stake ETH like it's it' be very very illquid. Um, it would actually be very good for the ETH price.
+34:36
+is also what but then wrap state is what makes it uh liquid um and you're effectively doing wrap state but for
+34:42
+data centers like money goes in and it takes a while for it to get out um in
+34:49
+totality you should make the debt tradable because if the debt's tradable um a lender is far more likely to give
+34:54
+you a loan because they'll be like hey I'm going to deposit because I can just sell it I can just trade it I can just
+34:59
+borrow against it now if I put money in this and it's stuck there and I'm like all right cut you back in 3 years. Um
+35:06
+it's just so much harder to raise capital and that's why scaling financing
+35:12
+has been tough because once a private private fund gives you money they
+35:19
+they're not doing anything else. They're just monitoring it. Um that's how private
+35:25
+credit works. So you have to raise another LP fund before you give another loan. Now if you could borrow against it or if you could like but get back
+35:31
+leverage from your existing deals. to do a new one and then do a new one. Um that's when it's liquid. Um that's not
+35:37
+possible unless yet that that is tradable. Um just very very very illquid. Um we try to solve this issue
+35:45
+by creating that instrument. It's required. It's it's inevitable um that we have to create this but thing is like
+35:52
+traditionally the time it takes to actually get that product issued and traded and added to indices to like make
+35:59
+it liquid um just takes so long. But in D5 we can do this instantly the moment it's created. Um which you know for us
+36:05
+as a single multi call it's not a year-long process two year long process for some it takes three years to do a
+36:11
+first issuance like three years like we're at definements you know like we're
+36:16
+past the we're past the rub we're the third generation fourth generation fifth generation um you have to do it instant
+36:24
+um you have to do it in an adverine format and that's why um like really a stable coin is a perpetual debt
+36:30
+instrument um it's not a perpetual equities instrument like uh our features instrument like uh per um but it's
+36:36
+really like a continuous debt yielding instrument where you can refresh and res um and uh replenish the liquidity
+36:43
+instantaneously. Um it's why you don't really need a warehouse facility which is just when you get a loan from a bank to do the 10,000 loans. Um it's not
+36:51
+synchronous, it's asynchronous. Um and it it really is the fastest horse for
+36:57
+the fastest uh spend in the world. Um and the the the bank tech that we have today is just really not accommodating.
+37:04
+Um whereas you you need that speed of DeFi to uh accommodate the speed of AI.
+37:10
+Um and our process to issue these instruments is instantaneous. The moment a loan is created, it's immediately
+37:15
+added to that instrument. Um just SUSDI. Um and there's ways to innovate beyond
+37:22
+this. It's not just the loan book. It's also a stable coin. Um we actually do have a stable coin. The more people use it, the lower your interest rate is. um
+37:28
+you know, Tether just keeps that rate. Um it's kind of like a um like a tokenized money market fund. That's really what the USDC is. Um but if you
+37:35
+can use that to optimize for if you use payments to subsidize the capex um you've solved a commerce um in a sense.
+37:44
+Um I think um not we can talk about that in a minute, but like I think a commerce is completely poorly designed um and all
+37:50
+the startup money is going to go to zero because they're ignoring the most important thing. So everything's paying for compute. Um anyway um we we we solve
+37:59
+this by creating um a very very easy way a very very fast way to issue the debt
+38:06
+instrumentation and the engine the liquidity engine behind um GPU debt and
+38:12
+if you can solve this problem um well you become the reference right everyone
+38:18
+looks at you for liquidity um we we're doing our first deal right now where there's an existing loan and they can
+38:24
+sell it into the um for liquidity and I'm like we really are
+38:31
+trying to become the the Fanny May but for GPUs. So like you are you guys are the underwires for for these loans.
+38:38
+Yeah, we we're the ones that structure liquidity for the loans. These teams worked with decentralized.co [music]
+38:43
+to sharpen their narrative and reach the investors and builders who matter. We offer consulting on fundraising, [music]
+38:49
+token design and go to market and research retainers that put your project in front of 140 plus senior executives
+38:56
+via [music] our Substack. If you're building something worth knowing about, DMI us on X or see the link below.
+39:02
+Where are these GPUs? How are you making sure that this money is going into
+39:07
+purchasing GPU? Like how how does it work basically now? Yeah, so we're very very stringent on
+39:13
+that. Um but it's fortunately that these are machines so like you can verify that they're there um via harpy is and you
+39:20
+can't really like get around it. Um so we actually um ask the capital so we
+39:26
+don't actually give a loan until they're installed. Um so and this is standard practice. Nobody does this. Nobody does
+39:32
+it the um pre-release. That's ridiculous unless it's against a corporate guarantee. We only give um financing
+39:38
+against the [ __ ] not against a company. The company could be Alberts, you know. Okay. It could be whatever. I I I actually
+39:44
+don't care what they do. I care about the chip. Um the chip is the most important thing because that's what has value. Um you don't have these contracts
+39:51
+unless you have the chips. Um it's actually way easier to get a contract if the chips are already installed. Um ironically. Um so um the chip is the
+39:59
+most important thing. It's much like a doesn't care about your um about your FICO score. They care about
+40:06
+your ETH, you know, like and then they can take it. They can take it. So aren't like there
+40:13
+there's a a DeFi engine component which is completely permissionless um and then
+40:18
+which only accepts certain types of loan to be ingested um and the only types of loans that can be ingested um and all
+40:25
+dictated by governance is um perfectly um clean um assets one it has
+40:33
+to be verified that you're there. So we so if it's a you know very very sensitive client um you would literally
+40:38
+put video cameras um in a data center um and verified by a large data center company like a tier tier 4 um and um
+40:48
+yeah and then uh or you have these like new boxes we call them error volta nodes that plug into
+40:54
+the GPS directly and verify that they're there and then you guys can see all the utilization and everything like that. We
+41:00
+don't actually reveal all the information um for now because our um our our borrowers don't want to reveal
+41:05
+that. But you get to know that it's always working in there. Um and um and
+41:10
+then how easy is it to retake these? Well, they're all under like UCCC law um
+41:16
+at least in the US. And then how um the most important thing is that these borrowers don't actually own the chips
+41:22
+during the loan. Um it's not under their ownership. um if they steal it um from
+41:28
+the data center say they got active somehow and they got past the all the contracts and like pass security we do
+41:35
+have theft insurance um so like uh we really did build a product that accommodated to the stringency of um
+41:42
+traditional finance but even better um and um yeah the most important thing is
+41:47
+can we take the can can we take the chips and fire sell them like yes um and
+41:52
+we we don't even have an onchain auction anymore but used to um in the first iteration of this product um like
+41:58
+literally 3 months 4 months ago um we no longer have that component because um first off I think on market pricing is
+42:04
+great um is actually very good um but we we actually have a uh loss insurance
+42:09
+like if the value of the chip it has to be sold on an approved platform um so um
+42:15
+we we probably have to go to something called like a IT asset disposition where they give us a price we're like well
+42:20
+that covers 100% of my loss value um and if it's underneath if 95 cents uh to the
+42:26
+dollar of our expected loss value. Um they uh Munich agree pays out the delta. It's a backto-back insurance policy. So
+42:32
+they pay out everything. Um so yeah, it's um it's institutional product
+42:39
+to make sure that um the chips are there um that they're that they are properly installed um that they're generating
+42:46
+cash flows because at post installation that means you're making cash. Pre-installation they're not making cash
+42:51
+at all. We also have debt service reserve um assets to make sure that they're paying at least a couple of months. Um so uh it's it's it's not hard
+43:01
+to to think about and like derisk. It just takes well somebody has to do the dirty work. Somebody has to create the
+43:07
+liquidity engine. So, so this is like our kind of remote is that we've we we are like a very um uh horizontally um
+43:16
+specialized company where we kind of know a lot of the things um and know the knowhow both the DeFi side and the AI
+43:22
+side um and the structuring in between um that bridges the the wide gap between
+43:28
+these piece um and the most important thing like I said is just making sure
+43:33
+that we can take the chips when we need to. How does that work? I mean, currently
+43:38
+the borrowers own the chips, right? Um um yeah, indirectly. Y right. And in case uh let's say they are
+43:46
+not generating cash flows or they do something that violates the contract. So are you like legally uh authorized to go
+43:54
+and fire say those chips? How does that go? Yeah. Or if they break the contract then
+43:59
+we get a payout legally speaking as almost like a legal finance. Um uh so there's like an offt take that that gave
+44:05
+us a guarantee. Um let me get that. Now if there's no guarantee um say it's like the riskiest deal. Um like oh yeah
+44:11
+there's it's it's called a no offake. Um which is no rental agreement. It's just purely like they're just going to do it
+44:16
+spec on like um run pot or something. Um it's the highest interest rate. Um but
+44:21
+we also have a wider debt reserve asset um or service reserve asset where they
+44:28
+they will derisk it. So 80% LTB is really like a 68 to like 60% LTB because
+44:33
+they're paying at least that much in the service of asset. Um and um yeah and the
+44:40
+process would be like um there's there's a lean against against the chips um and we just take it back um like hey you
+44:47
+default um and and the data center knows they're like yeah this is under a loan. Um you
+44:54
+you literally can't you literally can't apply by contract. Um, and remember these data centers are rectangular um,
+45:01
+metallic boxes with a fence around it. Um, with multiple layers of security get
+45:07
+inside. It's just like it's it's it's a product. Um, if they're tiered, they even have their own insurance, you know,
+45:12
+like tier three, tier four, tier tier two, tier one. Um, uptime differentiates, but the security is
+45:18
+relatively similar. Um, it's like it's almost like the perfect way to transport something on chain. It's like data
+45:25
+literally like 5,000 data centers at least in the US um just like perfectly
+45:30
+designed for you to teleport things on chain like yes once you get through all the security installed and like verified
+45:37
+that's when you can properly tokenize it now if it's like a pseudo promise yeah
+45:42
+like tokenize it like it's no trust it for us we went to very very wide extents
+45:47
+and long extents to make sure that really um the asset we're lending to is
+45:52
+in fact Um people actually gave us some criticism for like hey why don't you release money faster? I want yield. I'm
+45:59
+like no. Um we actually figured out a way around it where people have to pay
+46:04
+um the end customer has to pay for escrow and that like hey if we put up capital before we release you have to
+46:10
+pay us for even locking up that capital for you before the release. Um so we we
+46:15
+have helped with the yield generation in the interim. Um and they they take a while like like well in one deal like
+46:21
+the truck literally crashed with the chips and stuff like okay yeah to return the chips and get new ones. Um that
+46:29
+happens it's the meat space. Um that's why we don't release money until installing like yeah like if that if we
+46:34
+release money before then they would have already defaulted because it would have been like 6 months um by the time we signed and we escroed and we released
+46:42
+money and I'm like you have already burned us through your debt service reserve assets. um you're a default, you
+46:47
+have to pay out more money. And they're like, they don't have the money um because they're really depending on the debt service coverage uh uh ratio or the
+46:54
+ability to pay prepaid to get the financing. Um anyway, um we uh yeah, a
+47:01
+lot of uh a lot of like what could go wrong simulation kind of uh the the the
+47:08
+main objective. Yeah, I mean you are kind of taking that risk, right? whenever someone is
+47:13
+tokenizing something and especially uh I mean it's easy to tokenize tables right
+47:18
+because uh it's everything's happening under your watch and in the same
+47:24
+like whatever digitally right but the moment uh you have to be the bridge between something physical and digital
+47:30
+uh I think the number of things that can go wrong probably increases like exponentially
+47:36
+yeah and that's why it's so beautiful that we have the perfect um free ports
+47:42
+effectively like the free port is like the golden stand maybe like a Swiss vault right a Swiss gold vault um that's
+47:49
+why Swiss ETFs for gold are like the best um but um
+47:56
+really the best the closest thing to a gold mold in Switzerland it's going to be data centers in the US where there's
+48:02
+literally security outside and um there's insurance policies to make sure in case where in case of catastrophic
+48:08
+risks um that's fully insured um So putting we we don't give lots of people
+48:14
+assets in people's houses. We only do it in like third party locations that are extremely secure.
+48:19
+Right. Data center. Yeah. So it's um like and this is actually one of the issues we had with like Tesla chargers.
+48:24
+It's in middle is nobody could actually destroy them, right? Um these like it's the residual value
+48:31
+the the resids uh as we call them um is so so good. Um is really one of the best
+48:38
+in in the world like better even better than real estate. um uh uh in terms of like represent like hey what comes like
+48:45
+the deed of the house because you still have squatters. Um watch a video of a guy trying to repo a car from Harlem um
+48:51
+on YouTube like you're going to get shot um and and the the the the chance of you
+48:56
+getting your money back is um extremely low, but it's almost it's almost 100% in
+49:02
+this case. You're always going to get your chip back because we designed it so we can take it back. So on one side you
+49:08
+have Nvidia and energy providers who are who act as like the raw materials for uh all the I compute on the other side you
+49:15
+have companies like Meta, OpenAI, Cloud, Enthropic and all of these who are actually using uh these chips and you
+49:24
+are in between trying to make sure that the chips or the dollars that they are putting to use. I mean there's a debt market around it so that the time to
+49:30
+reinvest is is shorter than what it originally what it is with the traditional infrastructure. Yeah, it's
+49:36
+um it's the info providers that sit in between like the Neoclouds, like um the Corwe and those are typically our
+49:43
+clients. Um and we we we we finance we're we used to just finance the smaller deals, but we actually have um a
+49:50
+very uh well, we're getting larger clients. Um but we're financing the the
+49:56
+landlord. You know, it's we're not financing the tenants. Um we're financing the landlord, the guys who own the chips and then rents it out. Um, but
+50:04
+really what we've seen is that everyone wants to landlord. Um, pretty much every
+50:09
+AI company we talked to, if they last long enough, they will buy chips. Like
+50:14
+we we we chat with like um uh LLMs that are like, "Yeah, I think we're going to buy chips." Um, we chat with the rental
+50:21
+platforms. Um, they're like, "Yeah, you know, we're renting, but we want to own the vertical stack. We want to get the
+50:27
+mortgage." and they they when they hear the pitch from us, they um they realize
+50:33
+it's a possibility in the very beginning when they're starting a company like there's no way I can just buy these chips. It's not
+50:40
+feasible. Like it's just not um there's there's no there's no way for me to get it as a good deal and then I tell them what about a mortgage? What if what if
+50:46
+you get a mortgage for your chips instead of paying rent? Pay effectively the same thing. And then they realize I
+50:52
+could just own these chips. Why why would I pay rent? Um, so our our TAM is
+50:57
+actually starting to be not just NeoClouds, but it's really every AI company in the world. You see why why is
+51:02
+Claude and Open AI building their own data centers because they're like the economics are in the chips. Um, like the
+51:09
+XAI is like big move. It's like yeah, they're kind of a new cloud now. Um, and uh that's that is the feature models
+51:17
+that every single AI company will eventually own a chip. Okay. So um why does it make sense for these guys to
+51:22
+vertically integrate? uh because um they're paying out the
+51:27
+wazu for GPUs. Um it's it's it's 90% of their costs um
+51:32
+or expenses of an AI company is compute. um pretty much everything is um is
+51:39
+paying down GPUs and GPU debt in AI like well what even like the it's kind of a
+51:46
+meme but like truth terminal you know like why did he ask for money from and recent horitz as a meme had a 50k grant
+51:54
+cuz he wants to live forever he wants [clears throat] he wants he wants a compute grant um and that even though
+52:00
+it's kind of a joke it's actually if a is real like it's going to subsidize GPU financing That's like the first thing
+52:06
+it's going to do, right? Going to build the energy and then it's going to finance the debt and then it's going to be what whatever it takes to live forever.
+52:11
+So, are these companies like paying what are the approximate multiple that paying on the actual cost of the GPU over uh
+52:20
+Yeah. Um a good example would be like um uh it was a while ago, but you know that
+52:26
+uh um Microsoft investment in Open AI that $10 billion something obviously is
+52:33
+much bigger. Um, you know, most of that was in Azor credits, right?
+52:38
+Yeah. It was it wasn't it wasn't $10 billion of cash. It was actually nine billion in Azor credits. Which kind of
+52:45
+like like everything that we have in terms of costs is just compute. Um,
+52:50
+that's it there. There there is no other costs. Um, everything else is dimminimous compared to the cost of
+52:55
+compute. um it's 80% of the cost per there's even charts of analyses of open AAI spending and it's just it's just
+53:02
+compute and comput related services um so it is the it is the the blood of the
+53:09
+entire um of the entire sector it's like instead of paying three times
+53:14
+the uh cost of a house that I'm renting why not just buy the house
+53:20
+exactly right makes sense and why not buy the house well the answer is you can't get a Oh, you can't
+53:26
+get a loan unless it's a novice building, right? If you want to what we're saying like let's introduce the loan against um
+53:33
+single offices against single uh house um against a single chip. We can do we
+53:39
+can we can do financings for like um RTS 6000s like even smaller deals like
+53:45
+$100,000 all the way to um $300 million. It to us it's like the same process
+53:52
+because we only care about the trip. Nobody else in the market thinks like this. They they think uh yeah, we have to do a loan against you as a company
+53:58
+and like um because we're a large company, we only have 10 analysts. Um I can only give loans of minimum $500
+54:04
+mill. And they're like, "Yeah, that's it." Um otherwise get out doors that
+54:09
+way. Um and even and then the smaller guys don't give me financings anymore because they're like, "Yeah, like is it
+54:15
+really worth the effort of like all the legal fees do a single $10 million loan?"
+54:20
+No, dude. you you really need the boilerplate scalability of the of the unit economics per loan. Um which is
+54:26
+done through blockchains. Um like bigger is doing it for ELOs, right? Um um but we're saying why don't just do
+54:34
+it for the largest buildout in human history. Um that has a financing issue. Um
+54:40
+not not real estate. I I think real estate is like one of the worst cases of use cases of uh uh and even Mike Kag
+54:49
+says this. It's like, yeah, tokenized uh tokenized real estate really like the
+54:54
+best capital markets in the world. Do you really need to bring bring it on chain? No, you need to bring something
+54:59
+on chain that really needs it. Um and the speed and um low latency nature of
+55:05
+um uh and of the of the structuring behind the debt is something that
+55:10
+desperately needs something like a blockchain. Um and that's what we solve in order to solve the
+55:17
+one of the biggest problems AI today. What part of the traditional process bringing it onchain makes it incredibly
+55:24
+more efficient is that oh first thing uh I mean I'll describe the process um in order to um
+55:31
+an ads first off you need a billion dollars from a bank you know hey here's a billion dollars um and it's called a
+55:38
+warehouse facility and that that actually that's actually what figure really is same with like USDI it's like it's the sitting capital is just
+55:44
+somewhere and it's some t bills um in the meanwhile for us or PUSD which gets 4 and a half% for us. Um, and typically
+55:52
+you need to get that loan. Um, and then you you need to do 10,000 loans.
+55:58
+Yeah. Yeah. Exactly. With the billion dollar. Yeah. Then you have to that takes a while to do
+56:03
+to do it all at once. Um, and it just takes time and it's not tradable yet. It's just
+56:09
+sitting there until you fill it up. Then you have to, you know, go on the road show, tunch it up, get buyers, um, and
+56:15
+to to reby the warehouse facility because Deutsch 10,000 back, you bucket
+56:20
+them into, let's say, three, four different branches, uh, and then
+56:26
+it it be 10 it'll be 10,000 10,000. So you have to get you have to find 10,000 um um interested parties who want the
+56:32
+loan, right? Um, yeah. So let's let's give that example. Um and then
+56:38
+and then you need to uh um ask for you need to go on the road show to
+56:44
+advertise. Hey 10,000 loans the risk analysis we did. So you have to do the risk analysis and and this is how you
+56:50
+price the tanches. So you have to like cut it up and then you have to cut it up and then you have to go on the road show to sell
+56:55
+it. Um then once you sell it um then you have all these billion dollars of trade
+57:00
+and then Deutsche gets their money back cuz they they obviously it was a warehouse facility. It's called facility. They want their money back. Um
+57:07
+they did their short-term financing short term. Um and now it's tradable and then now they need to make it
+57:14
+liquidable. Um this entire process can take up to three years.
+57:20
+But the life is 30 years. Yeah. It's fine. That's easy. They're like,
+57:25
+"Yeah, I'm going to I'm going to go on my summer vacation. I'll be back." Um
+57:31
+that's the guys in the bank. Um that's fine if it's there. It's even fine for like a 10-year asset um like auto loans
+57:38
+um because they do it really fast. They actually invented a new UCCC law for electronic documents and title to accommodate for car loans and that was
+57:44
+like the fastest that we can do it and then now we're looking at three years like no way there's absolutely no way a
+57:51
+bank could do this. Um and that's why these um these neocons went to private
+57:57
+credit funds. You don't want to go to private credit fund. Private credit fund is vultures. They they're going to screw
+58:04
+you left and right. They're going to they're going to [ __ ] you in covenants. Um they're trying to make the rate interest rate you'll have to
+58:10
+pay then if you're going to 25%. Oh wow. Um all in Yeah. Um and they'll screw
+58:17
+you. They're like, "Yeah, you know, it's only 10%." But then there's a fair market value buyout at the very end of the loan. You're like, "Wait, wait. I I
+58:23
+need to pay this much to like get get my cash back or to get get the chips." I'm like, "Yeah, it's two-year lease. Like
+58:30
+as a lease, I thought I signed a loan." and then they think it's um anyways um
+58:35
+they're they're they're not your friends. They never are. Um whereas um when it comes to like debt instrumentation, making it liquid, the
+58:41
+the business of a bank is not necessarily just um the most amount of fees. It's about AOM. It's about size and scale and like creating a product to
+58:48
+sell to the end users. Um which is what we're doing. We're trying to sell a product at yield to an end user. We're
+58:54
+not trying to ink every like fast return. We're just trying to do loans in an efficient way to scale the platform.
+59:00
+um they're very different and this is why we ended up using um Munich agree or our reinsurance instead of a first loss
+59:05
+like headphone operator to like scalp out every return possible with a convertible debt on USDA like yeah not
+59:12
+the best part um it's and this is the most important thing this is like how
+59:18
+assets are financed and it just doesn't exist for GPUs right it just I'm like
+59:24
+dude this is the largest buildout in history and you tell me we don't have the main hammer we're using like Uh
+59:29
+we're literally using toothpicks to like uh build this out. Um we're using like all these alternative assets like the
+59:36
+back of a of a coffee cup like yeah I just don't have a hammer. I got to figure out how to do this. Um and in
+59:41
+this case it's like the most it is the structuring. Um this is why blockchain is so powerful said all this can be done
+59:48
+almost instantly. So can we talk a little bit about your economics? Where are you making money? Uh where are you saving money for
+59:54
+someone else? Yeah, the protocol generates income through two main methods and then
+59:59
+there's also ancillary methodologies um to earn income. Um the main one being um
+1:00:05
+uh origination fee the the oe um and that is um you know we get uh and then
+1:00:11
+there there's a net interest margin which is 10% on the interest generated by the protocol um and the fee switch is
+1:00:16
+already on uh core um because like most of the money we make is actually not
+1:00:22
+from DeFi users um uh um it's actually from uh
+1:00:29
+uh AI companies that are willing to pay Um and that's where the the generation
+1:00:35
+of income is. Um but yeah, so the origination fee is that is that what you mean?
+1:00:41
+Uh origination fees and entry margin. It's a very simple book value disc just like you can literally model this out.
+1:00:49
+Um and um yeah, that's pretty much it. It's kind of similar to Maple um you know OI and um NIM.
+1:00:55
+You're saying the fee switch is on which means that it goes towards buying chip. uh it goes to the treasury which the chip users will decide what to do with.
+1:01:02
+Okay. Uh we we we are trying to design a better structure for this. Um I think
+1:01:08
+the implicit um requirement by every DeFi company or not DeFi but every token company is that you have to do buybacks
+1:01:15
+um as some like sacrificial ritual to like demonstrate that you actually do believe in this token god. And I'm like
+1:01:23
+I I don't know like it's people are obsessed with like buybacks. Like this isn't how you build a this isn't how you
+1:01:29
+build a trillion dollar company by doing buybacks. Um like look at Amazon like yeah single dividend. No not yet. Um
+1:01:37
+because like uh it just doesn't let you reinvest in the business and this is a eternal debate. Um now the governance
+1:01:44
+holders if they really choose to do buybacks they can. It's just that the business won't grow. Um it's it's going
+1:01:49
+to be very linear. But how do we make it exponential? Um we we are ideulating ways to like demonstrate to the users
+1:01:56
+that the that their that their ownership of chip does truly represent something um without breaking the hobby test of
+1:02:02
+course um uh that they actually own something in the network and the network can be improved with ancillary network
+1:02:09
+partners um to scale the network um in a way that's not as abusive as grants um
+1:02:14
+and I I think it's done with um a sponsorship model um with um with a
+1:02:20
+benevolent actor um that can operate and attract more interest. Um kind of like what consensus was to Ethereum um which
+1:02:27
+I think did better work than the Ethereum Foundation. Um it's like they they got the use cases and everything
+1:02:32
+else there. Um and driving some cash flows toward that entity. Um is like an
+1:02:38
+experiment we're trying to like uh run through, but no, we're still kind this is kind of why we haven't done an announcement yet on like hey, what is
+1:02:44
+the utility of chip? um is because we're actually reviewing with lawyers what we can actually do to test the very
+1:02:50
+frontier of what is possible with tokconomics. Um and um we don't some
+1:02:56
+there's some interesting work being done but it's a product in of itself and we don't want to take it lightly. We don't want to say that I was just buy like no
+1:03:02
+like this is a product you should iterate you should make it better you should push the frontier. I think what um uh uh uh what curve finance did was
+1:03:10
+was great for tokconomics but it just wasn't the final model like it people ended up like moving off boat escrow and
+1:03:17
+more towards state models um which you know I think uh was a better more attractive way to get institutional
+1:03:22
+capital because there's there's the theory true which is what was and then there's actually realistic true which is
+1:03:29
+like what institutions what the the next layer of the onions actually of the buyers actually want um And yeah, like
+1:03:38
+we we're going to do something better than buybacks. Um um as a proposal
+1:03:44
+coming soon. Um for now, um uh there there there are some interesting use cases that exceed
+1:03:50
+beyond this utility um that is attracting institutional interest. Um and that will also be um relatively soon
+1:03:58
+as once the deals get signed and done. uh but once that happens I think we'll be very very um direct exposure to the
+1:04:05
+AI ecosystem um more so than just a yield there will be a a yield a debt
+1:04:11
+play and there will also be an equity play u both of which will play into um potentially u governance sty propos
+1:04:19
+right I think the problem with crypto founder is they have to make sure that the actual business grows uh they have
+1:04:25
+to make sure that obviously equity is a byproduct of that if the business grows the equity will grow and then you also
+1:04:31
+have to deal with with tokens uh which I don't know it's a weird quy equity thing
+1:04:38
+I mean it is an equity it is in debt and and stuff like that and you have to make sure that some value passes gets passed
+1:04:44
+on to the token as well and yeah I mean uh I think because the regulations are not clear what it's it's
+1:04:51
+uh it's a tough job to make sure that uh all of these three pieces kind of move
+1:04:56
+uh when the business is disclosed I I I think what we need to do is um resurrect ads. I think dads were used as
+1:05:03
+like a very simple function of like, hey, yeah, we're buying 5% network. That's that was their purpose of
+1:05:09
+existence because that's they're frankly very lazy, right? Like, oh yeah, I'm going to go on my road show do that. But
+1:05:15
+they're not, you know, coming me as my my obsession with like innovation as a way to push that official frontier. Um,
+1:05:21
+I I do think there's the trade-offs um can can go beyond that. I I think what we can do with an equity vehicle that
+1:05:27
+can attract institutional interest and maybe even generate cash flows beyond just, you know, purchase back. I I I
+1:05:32
+think what STRC was trying to do is interesting. Um but um there's there's
+1:05:38
+more things you can do that's far more with the protocol. Um and that's um one of the things we're exploring. Um still
+1:05:44
+early. Um still checking with lawyers and and and like strong partners on
+1:05:49
+methodologies. Um but um the way we can align a unified capital markets both
+1:05:55
+token holders and equity holders where they're not you're not just tokenizing equity we're not just tokenized uh
+1:06:02
+equitizing token. Um I think there there's something that could be done that makes it uniquely distinct. Uh but at the same time the
+1:06:08
+token is the ultimate winner of all because I think that is the common denominator of you can't tokenizing
+1:06:15
+equity doesn't really do much. Um but and I think tokens are superior in terms of what you can do with um the
+1:06:21
+engagement of a protocol because a protocol is not a company. The protocol is a it's a function. It's a smart contract that we are unified by. It's a
+1:06:28
+network. Um and I think what A16 does with like describing how network value increases is very very the reason why
+1:06:34
+token is more valuable than equity. Um um but right now we're in this discovery
+1:06:40
+phase. We've been in the discovery phase for 10 years for for tokens. I think um
+1:06:45
+we're very close in what what could be the ideal design um and we're willing to take some experimental frontiers to make
+1:06:51
+that happen. Yeah. And I think um I mean in the market most of the users or most of the
+1:06:58
+participants why they are saying I mean why they seek the clarity or why
+1:07:03
+they seek buybacks is partly also because in the traditional world you know that when you hold a share of or or
+1:07:09
+a stock of a company and if the company grows does well eventually the share price is going to increase
+1:07:16
+right? The same is not necessarily true uh in crypto and and especially what
+1:07:22
+we've seen with these protocols like A etc. the protocols have done like really well but the token prices have kind of
+1:07:28
+stalled uh and I think even if there is some inclination of okay this is the linkage between the protocol growth and
+1:07:35
+the token I think the market uh kind of calms down but I think that's what is missing uh right now from the larger
+1:07:42
+markets as crypto market and this was something that was um was endemic as well to uh with tech
+1:07:50
+companies in the early days right like they have so many users but they don't have any cash flow those to turn on the
+1:07:55
+advertising switch and then suddenly it's worth a lot. Um and I I think um we're going through the same thing like
+1:08:01
+hey there's a lot of money a lot of money running through these protocols. Um yeah is it just a fee switch or is
+1:08:08
+there some other monetization that can be done? Um and how do how does that uh value accured back to the token holders?
+1:08:13
+Um I think value cruel is a word that people use without really um digesting
+1:08:18
+like how exactly that could be explicit. Um technically there is no value cruel to the equity of Amazon, right? There's
+1:08:24
+no dividends. We still believe in it. Um, how come there's some companies that do dividends that are worth a lot less
+1:08:29
+than the companies without it? Um, well, that's how come there are companies that don't
+1:08:35
+do buybacks and dividends are still worth more than a trillion. I mean, yeah. Yeah, exactly. Uh, it's because um
+1:08:42
+the the growth is there. Um, I I think um I think growth is like the best
+1:08:47
+driver of um as long as you you show the ability to continue growth at scale, um
+1:08:53
+I I think people are buying into it. um it's a it's a one of belief structures. Um now I I do think there are more
+1:08:59
+mechanisms that tokens should uh capitalize on that equity can't do um as
+1:09:04
+a way to demonstrate unique value. Um but at the same time we should also accommodate for the equities market.
+1:09:10
+Can you share a couple of examples of that? Um not yet. Okay. I'm trying to I'm trying to word very
+1:09:17
+carefully what I can I can't say. Um not specific but in general you have
+1:09:22
+Oh yeah. Yeah. I mean what Sky is doing with their new entity is pretty interesting. Um just you can look into
+1:09:28
+it like it was like cleanly structured. I think people were trying to do like lock token instruments um into these entities. Um that was also pretty
+1:09:35
+interesting. Um and then uh hyped entities. Um I'm just trying to give like DAT examples of uh of how they
+1:09:43
+brought value back. Um, now in terms of actually token token on token pure play,
+1:09:49
+like I haven't seen much like there's some uh governance voting and like some
+1:09:54
+sway, but really that hasn't really driven value. Um, really the best value of token value has been prioritization
+1:10:00
+fees. Um, that's been like Salana's big push. just like hey that's why they're doing so many like exchange listings or
+1:10:07
+they want to it's not really exchange listings but prioritization fee is usually a big driver of um of behaviors
+1:10:13
+like oh yeah there's only 5% allocation for this and you have to stake it like yes it's going to fill up really fast because people are going to buy a ton to
+1:10:19
+hit the threshold um so being able to play into prioritization cues and that's
+1:10:26
+kind of what um exchange fees really are you stake hype you stake BMBB you're really paying for a a maker uh take um
+1:10:33
+prioritization fee um uh and that's where you've seen like most um token
+1:10:39
+acral behaviors based on momentum um so I think that's been interesting well we have an element there that we'll be
+1:10:44
+introducing as well that uh which is like if you want to redeem in our protocol um you have to stake chip um is
+1:10:50
+one of the concept we're exploring um but a lot of these things um we want to just kind of like do it right before we
+1:10:57
+publish it um and like really verify um to some degree um but at the same time
+1:11:02
+we we're also done with this experiment. Let it be. Um we haven't had much redemption um prioritization Q issues
+1:11:08
+yet. So um we have yet to capitalize on that as a revenue source. Um but in
+1:11:15
+terms of getting distribution which is a different priority. Um in terms of actually having token utility um and in
+1:11:21
+terms of where the token utility would would be most used there three different questions and also three different um
+1:11:27
+products on top of the token. Um one is an equity vehicle. The other one is um just like clear demonstration of where
+1:11:34
+cash flows go. And the last one is like hey what is what new um uh functions can
+1:11:39
+you introduce to the protocol based on what people are willing to pay uh from the end user of the product.
+1:11:44
+Um all questions to ask um I I think there's there's two hard
+1:11:50
+problems at a startup which is um how do you make money and how do you share it and uh we're trying to answer that second question correctly. Um and we are
+1:11:58
+trying we we are trying to share like I I I personally own 5% of the network. Um there's also still still 95% that needs
+1:12:04
+to be uh aligned and in order for the network to grow uh without my personal intervention. Okay, last couple of questions. Um what
+1:12:11
+would be like in a crazy scenario? What is the TAM that you are going after? The TAM is uh the entirety of credit. Um
+1:12:20
+it is all of credit in of itself. Um especially SAS credit as a first stop.
+1:12:26
+Uh when you look at like the last wave of private credit, why is private going
+1:12:32
+through a $3 trillion blow up right now? It's because of software. Um at one point software was stable cash flows
+1:12:38
+based on subscription models that you could underwrite. Feel like last five years were great. I can give a 10-year
+1:12:43
+loan, 20 year loan, 30-year loan on this company. So it's generating it's going to keep keep on making money.
+1:12:49
+And then AI was introduced. And then now every single software like company is now going down because of like this
+1:12:56
+we're just one prompt away from your cash flow is going to zero. Um uh so we know SAS especially SAS credit
+1:13:04
+it's like bidding altcoins on the way down not going to come back you know like there's no way that that's going to
+1:13:09
+come back because unless they just introduce AI themselves but then if if they can do a why can't the next day um
+1:13:16
+so SAS has been going through like a blow a SAS apocalypse that's I call it. Um and then um the credit is even worse,
+1:13:23
+right? Like credits they have no up the only upside is their yield, but there's infinite downside. Um so SAS credit is
+1:13:31
+questionable. Um now the answer is who's going to eat that cash flow? It's going
+1:13:37
+to be the AI companies. Thing is you can't you can't give a loan to an AI company, right? You're not you really
+1:13:44
+you're not giving a loan to an AI you're giving a loan against the GPUs, right? uh because that's the only thing that's
+1:13:50
+hard and that's physical um that they own that really is the value like it's there how much value is there in in the
+1:13:56
+app versus the LLM how much value is there in the LM versus Nvidia which is 80% of the costs um and um yeah
+1:14:05
+everything is paying down the GP loans everything um it is it is interest rate of intelligence um and
+1:14:13
+the the idea is that like if if everything is driven by an AI basis
+1:14:18
+Um, it's not the cash flows of the app. It's not the cash flows around. It's really what you can actually give a loan
+1:14:24
+to. You can't you can no longer give unsecurized corporate loan because I theory of the firm is being questioned
+1:14:30
+um with uh with uh with AI um because you're one prompt away. Really the only
+1:14:36
+thing you can give a loan to in the entire stack here not it's not in the company in the corporate it's not in the
+1:14:43
+uh transaction structure. It's it's not in the AI company. is in the GPU. So the
+1:14:49
+concept is like in 10 years like on Bloomberg um are you really gonna be
+1:14:55
+trading corporate uh like credit or are you going to be trading GPU loans? Um and I think GPU depth uh backed
+1:15:02
+financing is not a niche sector. It's a replacement of all SAS credit of all
+1:15:08
+credit in every single sector um eventually. Um I I think it's the
+1:15:13
+entirety of print um that could be replaced. Um and you know the fear-mongering you you see with like
+1:15:19
+Daario like hey yeah like it's going to replace every job like if it does well you're not financing humans anymore.
+1:15:24
+You're financing AI and AI can it's only financed through it number one cost
+1:15:30
+structure which is the cost of token generation which is the cost of the GT financing. Um and the interest rate of
+1:15:36
+intelligence is really um the replacement of all of all of all credit.
+1:15:42
+Um anyway, that's my T. That's my largest T. My short-term TAM is about 20% of Nvidia sales of small
+1:15:49
+financings. So that's my next three years. It's about about 100 million every year.
+1:15:55
+100 billion. 100 billion every year. Yeah. That's 20% of 500. Yeah. 100 billion. Yeah.
+1:16:01
+Um okay. Okay. So, if USDI fails, what would the top two three reasons be?
+1:16:07
+Well, there's two two sides of the formula. Um, there's the borrowers and there's the depositors. If we stop
+1:16:12
+getting either one of those, um, then the project helps. Um,
+1:16:17
+and you're you're not short of borrowers because clearly there are a lot
+1:16:22
+and yeah, I'm not sure about the depositor side. Yeah. But if there are borrowers willing to pay decent
+1:16:28
+interest, then why would there be no depositors? Yeah. Um there could be a host of reasons. Maybe our liquidity mechanisms
+1:16:34
+that we generate um very new ways of creating liquidity for um SUSDI. We've
+1:16:39
+studied pretty much every single AR way collateralized stable coin blow up. Um I was in a great scale trade myself that I
+1:16:45
+know exactly what it means to not be able to redeem um very very very clearly. Um and you know when you lose
+1:16:51
+your own money you're like wow this sucks. Like you can't get BTC for your
+1:16:56
+GBTC. No you in fact you can't. You have to wait for an ETF. and I'm like, "Oh
+1:17:01
+my, oh man, what what should I put my money in?" Um, we make it so they can't get your money out. Um, but maybe some
+1:17:07
+people aren't happy with like how how it's structured. Um, uh, but we're always iterating to make sure that the product is accommodating to their needs.
+1:17:13
+Um, they have specific yield hurdles and they have some certain uh, liquidity mechanisms. Now, you can't get risk
+1:17:20
+riskless um, 10% yield. I'm not terra um but there can't be trade-offs and how
+1:17:25
+how to make the trade-offs better each time um with new instruments and new partners and new derivatives sed on top.
+1:17:30
+Um losing control of how those derivatives are priced and represented could be like a existential risk which
+1:17:37
+we have yet to see because there's not many there's a few but not many. Um, like if I mean a green can't reinsure
+1:17:43
+the loans that we did because they couldn't cover the three 200 300
+1:17:49
+billion dollars on their balance sheet to cover our small loan. Maybe that could be risk. Um, now if AI comes down
+1:17:56
+like maybe this AI thing was all for us. Yeah, we have macroeconomic exposure,
+1:18:01
+but I really don't think it's um is it's costful. So,
+1:18:06
+all right, that was fun. Um, is there anything that you want to leave us with? What should we look forward to? I
+1:18:12
+I think um we'll be pushing out the the governance for the protocol pretty soon. Um, and some other things that kind of
+1:18:18
+like intertwine quite organic like through it. Um, I think you should see some more loans kind of come about and
+1:18:24
+um, hopefully more TVL as a result. Um, cuz uh, once you run out of cash then um, find more money. Um, I think those
+1:18:31
+are like the the more immediate paths of uh of of success for what we we we see
+1:18:37
+in the next year. And lastly, I didn't even get to it, which is like how do we like create the the next big business in
+1:18:43
+AI? Um, I think it's a stable coin. I think a stable coin is one of the biggest
+1:18:50
+businesses you can create in the AI sector. Um, and that's that is our that is our long-term objective that every
+1:18:56
+single dollar in in the space is settled coin. Um, when it comes to anything related to compute that's more agenda
+1:19:02
+commerce but that's worth another call if you need you can have me talk for hours on end um but um yeah that's
+1:19:10
+another part of the business um which is once you have an interest rate of intelligence you can create the you can
+1:19:15
+create a central bank when should we talk about that within the next
+1:19:22
+sure uh all right thanks thanks a lot this was a lot of fun for sure and thanks thanks for having me
+1:19:27
+[music]

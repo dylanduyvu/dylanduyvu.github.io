@@ -16,7 +16,7 @@ tags: [podcast, usdai, nvidia-list, no-offtake, aravolta, insurance-mechanics, p
 
 ## Context
 
-Decentralised.co podcast with David Choi, co-founder of USD.AI (Permian Labs). RECORDED ROUGHLY MID-JUNE 2026 per Dylan ("a month ago"); captured 2026-07-15. Fourth Permian voice-capture in the vault (Harry Page call, Choi Touchcraft, Connor Moore Messari). Auto-transcript with heavy garble: "David Troy" is Choi, "Flatstone" read as Blackstone, "error volta nodes" read as Aravolta, "A6" read as ASICs, "core we" read as CoreWeave. Single-source founder claims throughout; capture-grade, not assertion-grade.
+Decentralised.co podcast with David Choi, co-founder of USD.AI (Permian Labs). RECORDED ROUGHLY MID-JUNE 2026 per Dylan ("a month ago"); captured 2026-07-15. Fourth Permian voice-capture in the vault (Harry Page call, Choi Touchcraft, Connor Moore Messari). FULL RAW TRANSCRIPT stored at [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06-transcript.txt]] (added 2026-07-15 after Dylan flagged granular details missing from the curated layer; the raw file is the completeness guarantee, this note is the curation). Auto-transcript with heavy garble: "David Troy" is Choi, "Flatstone" read as Blackstone, "error volta nodes" read as Aravolta, "A6" read as ASICs, "core we" read as CoreWeave. Single-source founder claims throughout; capture-grade, not assertion-grade.
 
 ## New against the vault, ranked
 

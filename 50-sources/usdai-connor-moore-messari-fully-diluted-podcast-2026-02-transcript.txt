@@ -1,0 +1,813 @@
+Provenance: auto-generated transcript of Connor Moore (co-founder and COO, USD.AI / Permian Labs) on Messari's "Fully Diluted" podcast, recorded roughly February 2026, supplied verbatim by Dylan 2026-07-15. Transcription garble: "USC.AI"/"USDA"/"USCI" = USD.AI, "Barker" = Barkr, "TSMS" = TSMC, "Munichree"/"Munich agree" = Munich Re, "tanches"/"trunch" = tranches, "SIG" = Susquehanna (probable), "Brevin Howard" = Brevan Howard, "Athena" = Ethena. Curated capture: usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15.md
+
+---
+
+And keep in mind that in the background here, this was all during the Gary Gendzer era where, you know, for anyone
+0:06
+to to try to do interact on chain, you had this um big question of like
+0:12
+regulatory concerns as well as, you know, risks around smart contract hacks and things like this. And so,
+0:17
+fundamentally, it was very challenging for anyone to uh come to the market and
+0:24
+to support a collateral type in a lending capacity without there being adverse selection.
+0:31
+Hi everyone, welcome to Fully Diluted, the enterprise research team's podcast here at Misari. We're joined here today
+0:37
+by Connor Moore, co-founder and COO at USD.AI, one of the more interesting emerging
+0:44
+protocols in the onchain credit space doing GPUbacked loans. Welcome to the
+0:49
+show, Connor. Thanks for having me. Yeah, so it would be great if we could just get a little background on what you
+0:57
+guys are building at USC.AI. AI um how do you got to you know start this
+1:02
+project and um what really is the problem that you guys are solving?
+1:07
+For sure. Yeah. So um my background is all in traditional finance. Uh worked in
+1:13
+investment banking and private equity. We started this company in 2021
+1:18
+originally. Um, and what we first went to market with was an attempt at a sort
+1:23
+of generalized structured credit product, a DeFi primitive that would basically allow for capital market
+1:30
+formation within lending markets. The same way that, you know, you had these 0ero to1 moments with unis swap and a
+1:38
+supporting liquid tokens, we thought there would be a natural progression of supporting more of capital market hard
+1:44
+asset lending and um, capital formation. What we found with that go to market was just that building kind of generalized
+1:51
+D5 primitives for um actual RWAS is pretty challenging um to go to market
+1:58
+with something that doesn't have any one specific category that you're servicing. And so over the the kind of few years
+2:03
+that we spent iterating on product design and and protocol design tried a bunch of different asset types. So, we
+2:10
+serviced RWAS, we serviced NFTTS, um tokenized land, gold bars, watches, um
+2:18
+basically lots of different esoteric asset types. And keep in mind that in the background here, this was all during
+2:24
+the Gary Gendzer era where, you know, for anyone to to try to do interact on
+2:30
+chain, you had this um big question of like regulatory concerns as well as, you
+2:36
+know, risks around smart contract hacks and things like this. And so fundamentally it was very challenging
+2:42
+for anyone to uh come to the market and to support a collateral type in a
+2:48
+lending capacity without there being adverse selection. Like the only people who are willing to come and do crypto
+2:54
+things had the reason which was that their assets sucked and they weren't really creditw worthy. And so then what
+2:59
+happens is you have this like AI capex boom happening over the last couple of
+3:04
+years. Um simultaneously you have Trump come into office and and sort of tacitly
+3:10
+bless uh crypto and and you know using smart contracts for financial settlements. you know, confluence of
+3:17
+factors that led us to supporting, you know, GPUs today and doing this
+3:22
+specifically focused on financing GPUs and then also having the benefit of the
+3:27
+last few years of product design, having the right structure to actually support, you know, both the tokenization and
+3:34
+borrower facing side of the business, but also the distribution on the back side. We originally tried having
+3:40
+multiple different tanches and users depositing into every trunch for a variety of reasons. That's a terrible
+3:46
+product that nobody wants. And what people really like is, you know, uh all
+3:51
+of these underlying machinations of like smart contract logic and governance requirements and and first loss, you
+3:57
+know, allocation of uh economic interest and all these great things, but like what is my actual execution is just like
+4:03
+buy a token, right? Whether you're highly sophisticated or retail, that's by far the best execution to, you know,
+4:10
+put on a trade and to earn yield from these underlying products. And so basically that was that got us to where
+4:16
+we basically are today which is we you know have launched this protocol. We've had sort of the beginnings of success I
+4:23
+would say with you know attracting some TVL attracting some borrowers to the to the to the market but it's really now in
+4:30
+that stage of like grow from you know something that is early PMF to actually
+4:35
+a dominant player in in this like GPU financing space and we're where we're
+4:40
+competing directly with you know private credit funds um and and traditional capital sources as as the alternative to
+4:46
+these neoclouds. Just to start off, could you walk us a bit more through like what are the, you
+4:52
+know, the real options for NeoClouds for financing today, whether that's Yeah. Cash flows or raising equity um or just
+5:00
+like private credit. What can they do today? Yeah. So, and this is why um the reason
+5:06
+why this works specifically for GPUs, there's a few reasons. One is the the
+5:11
+underlying legal structure fits perfectly to be able to tokenize title for GPUs. uh something that you can't
+5:18
+really do for other asset types super well. But also and most importantly the borrowers um have a reason to borrow
+5:25
+that from trai- from non-traditional sources of funding that is not pure
+5:30
+adverse selection. What I mean by that is if you think about the kind of spectrum of capital sources for this
+5:37
+capex, you would have traditionally you'd have like bank lenders, but GPUs being a brand new asset type, bank
+5:44
+lenders um really aren't that excited about financing this. They generally want to finance the data center, the
+5:50
+actual like real estate. But the servers, they're not interested in the bank lenders think, "Oh, I'm financing a
+5:56
+computer. Don't those depreciate quickly?" Right? and and they're they're really not first movers in anything. So
+6:03
+then you you you work your way down the capital stack. Next thing is private credit funds. Okay, so private credit funds will do these deals. The thing is
+6:10
+that they generally want to be deploying $500 million plus per transaction
+6:16
+because they are spending hundreds of thousands of dollars in legal fees. And
+6:21
+the way that they'll structure a deal is generally an effort to make things as complex as possible. So there are as
+6:27
+many opportunities for them to scrape extra points of yield from their borrowers um on behalf of their LPS.
+6:35
+Right? Private credit funds fundamentally are structured in a way that uh they get the more complex their
+6:42
+product is to their borrowers the better from the LP's perspective because that means that they're creating value for
+6:47
+their LPS and then you have like traditional you know raise equity which is the most expensive way to finance
+6:54
+hardware which is a depreciating asset right where we fit into that capital stack is we basically say okay we can
+7:00
+underwrite and isolate the risk associated with these buildouts to just
+7:06
+the hardware as a as a commodity. So the resale value of the hardware and then the cash flows of renting out compute.
+7:13
+And I don't really care who the actual counterparty is, who the borrower is besides some, you know, standard KYC
+7:19
+requirements because fundamentally these businesses beyond uh like an offtake
+7:24
+agreement, a contract with a customer and the hardware that you own, there's not a ton of like equity value in the
+7:31
+business. So why not just strip it out alto together and say all I care about is having clean clean title to these
+7:38
+assets and then I can just have a boilerplate debt product where my borrowers just know like these are the
+7:44
+terms this is the cost of capital we can go and get financing we can grow our business and we're secured by you know
+7:51
+the the hardware is securing the loan itself. The whole idea is like you you can take something where these private
+7:58
+credit funds are treating this like some investment banking process where it's you know you get equity warrants in the
+8:04
+business. It's very complex 100page MLA agreements like all these different stuff. And we're saying this is really
+8:10
+just like project finance. You should be treating this like a rocket mortgage type of borrower experience where
+8:17
+everything is predefined. You come to a front-end portal. You fill out your information. you're getting secured by
+8:23
+the hardware and then the hardware is being escrowed in a data center which is literally like the you know highest
+8:30
+security tier that you can get that's not military data centers if you guys have ever if you've ever been to a data
+8:35
+center you have to go through like four biometric scans in order to get in you you like it's the highest security and
+8:43
+and so you know you think about your your custodian of your hardware of your assets that's securing your collateral
+8:49
+uh for the loan is literally this militaryra box in the middle of the desert. Um, so
+8:55
+of course you should treat that as a standalone asset and not, you know, underwrite years of corporate credit
+9:01
+history. So, so that's kind of how how we think about it is like you basically you have bank lenders, you have private
+9:08
+credit funds, you have project finance or like lease structures, which we didn't talk about but are very
+9:13
+expensive, you have equity raising, and then you have USDA. And we think USCI is
+9:18
+by far the most cost-effective and fastest uh form of funding for these
+9:24
+borrowers because we have rather than taking this all on balance sheet we're recycling that exposure into this yield
+9:31
+token and so our depositors can have a lower you know expected return lower cost of capital as compared to
+9:37
+everything else that is available to these guys today. Okay, that makes that starts to make
+9:43
+sense. Could you walk us a bit more into the depreciation to GPUs just given that
+9:48
+the loans are backed a lot of collateral? So we actually just placed um something
+9:54
+called value insurance which I would think of as a credit default swap effectively which is basically insurance
+10:02
+against defaults. So the way it works is we bought insurance from a massive
+10:08
+reinsurer called Munich RE. The lenders pay somewhere between 100 to 150 bips on
+10:16
+the entire uh loan basis each year and in exchange if the depreciation
+10:23
+is super high and the assets depreciate underneath the loan balance and the
+10:29
+borrower defaults the value insurance pays out. So you've basically so so what
+10:34
+what happened here is basically you said okay I have a 12% interest rate on my loan there's some probability of default
+10:41
+and so my effective riskadjusted return might be 10% if the probability of loss
+10:47
+given default is you know results in two points of loss right the market maybe
+10:53
+doesn't know what the right number is and the market doesn't understand the
+10:58
+complexity or whatever supply demand dynamics whatever So the market might say actually that 12 I think is like a
+11:04
+six. I think that the probability of logs given default is super high or maybe it's like a two, right? It just
+11:10
+doesn't know. So instead you say okay instead of there being some uncertainty around loss given default and maybe
+11:16
+maybe it's not 150 bips a year but that uncertainty is very expensive. Instead
+11:22
+you can say it's 11% nominal. It's 11% uh risk adjusted. No matter what you're
+11:29
+getting 11% because this this probability this uncertainty has been farmed off to to Munichree. Now we have
+11:37
+our own view on depreciation and useful life and value and like we can talk about that and that's typically what we
+11:42
+do talk about but because we offloaded that risk it's almost a moot point. It almost doesn't matter per my perspective
+11:49
+is that the useful life of servers today is somewhere between five to seven
+11:54
+years. H100s today trade for 150k a server. When they came out in 2023, they
+12:00
+traded for 300k a server. So depreciated by about 50%. In three years, so about
+12:06
+six years of use of life. We we've historically underwritten three years, three-year loan terms because that uh is
+12:14
+as conservative a view on depreciation as you can take and still be a useful
+12:19
+product to the borrowers. Like if you make a one-year loan, right, it's not useful to the borrower. Can't do
+12:25
+anything with that. But three years is useful enough, but still conservative enough that we felt like that was the right place to be in the market. Now
+12:32
+that we have this value insurance though, we actually will most likely try to push those durations as long as we
+12:37
+possibly can. Reason being, you don't you're not taking that risk anymore. So if you can offer a longer duration loan
+12:45
+product, you can win deals that other participants wouldn't be able to get. And this value insurance that we placed
+12:50
+over the product is the first of its kind. Doesn't exist anywhere else. Not
+12:56
+even in traditional capital markets. Nobody else has this besides us. So it's a a huge uh value prop for all of our
+13:04
+depositors and all of our users. The the whole benefit right to having everything be traded as a you know deposit token,
+13:12
+debt token, whatever you want to call it is you can the velocity of money is so
+13:17
+fast. you know, the the ability to attract a bunch of TVL into the protocol because the depositors are viewing this
+13:23
+as a token that they can buy and sell or mint and redeem rather than a specific
+13:31
+counterparty, specific loan that you're holding for, you know, three years of duration. That's why we've been able to
+13:37
+attract TVL really quickly because it's a different risk profile fundamentally. And adding that value insurance on top
+13:43
+makes that even more attractive. And so you start to think like okay where do you go from here? Well for one you go
+13:49
+and pursue like a looping and and whatever you know lending markets looping but there's a whole host of like
+13:55
+second and third order effects of having certainty around that yield that starts to make that super exciting and
+14:00
+programmatic and have the ability to to really raise lots of capital and deploy it into these strategies. On the
+14:06
+borrower side you know next year Nvidia will sell $500 billion worth of servers.
+14:13
+If you do, you know,5 billion dollars of of loans through USDA, you'd be at 1% of
+14:20
+Nvidia's next uh next year sales. So, it's just like the quantum of capital is
+14:26
+it's hard to even like wrap your head around. It it is certainly, you know, orders of magnitude larger than DeFi
+14:32
+today as a whole, the whole industry of DeFi, right? And that's why we're super excited about this category because
+14:38
+there is just no upper limit basically to the size that you could do through here and then ultimately have a tradable
+14:45
+debt product where we can force the rest of capital markets to reference the
+14:50
+pricing of this debt token for them to then price their loans. On the depreciation, I've seen some
+14:58
+estimates um at like one to two years. Maybe that's more like for a hyperscaler
+15:03
+doing or for a AI you know company doing intensive training. Um what makes you
+15:08
+confident in like three years as a as a timeline like is that more for you know
+15:14
+secondary markets for resales or like how do you think about all that? I've never seen we've never seen any
+15:21
+GPUs have one to two years of useful life. The like A100s today are are still
+15:27
+used and still have uh residual value. H100s, like I said, have been tracking for three years. I think part of the the
+15:34
+disconnect though is is like how you define what your starting and ending
+15:39
+points are for useful life in the first place. So, for example, Blackwells um
+15:45
+the the latest uh Nvidia GPU chip have really just started to hit the market to
+15:52
+be available for non-hyperscaler customers. But most people would have said Blackwells dropped almost two years
+15:58
+ago now. Then once the black walls get shipped and installed into data centers, it takes another 12 months for the
+16:05
+software layer to catch up to be to actually allow for the performance improvements that the hardware layer is
+16:12
+is offering. So there is like a lot of just uh fundamental gaps in in timing,
+16:18
+not to mention the fact that you have tremendous delays across the value chain and and supply chain globally that also
+16:24
+just like make everything much slower. So you know the first Vera Rubin that gets announced by Nvidia from that
+16:31
+announcement to actually having Vera Rubins in the market is most likely
+16:36
+almost 3 years alone. So there's just like a lot of delays you know that cause
+16:42
+the whole process to be much slower than people realize. Um, and this is also why
+16:48
+there there is this extended useful life of H100s or of the A100s
+16:56
+is because on the backside your rental contracts are typically a couple of
+17:02
+years long. Um, and then you have some level of comfort in using the
+17:09
+architecture that is being provided to the engineer for this A100, right? And
+17:15
+so like there is switching costs to learning how to uh to use the latest
+17:22
+generation of chips. There's also just a long tale of use cases that don't
+17:27
+necessarily need a lot of you know uh cutting edge uh compute power the way
+17:34
+that like you're you're going to get you're only going to train you know on B300's because that's the latest chip
+17:40
+and you need max compute power for training. But if you're doing like image generation or you know running some
+17:47
+small parameter LLM for chatbot inference, you don't really need a super
+17:54
+high-owered chip, right? And so there's just like so much there's there's so much surface area for the industry that
+18:01
+I think is what causes much longer useful life. We actually we've talked to
+18:07
+um many Neocloud participants who have been running the same servers for north of 10 years. And so it's just like you
+18:15
+know what happens is your customer maybe at the first three years was trying to
+18:21
+do super cutting edge stuff and you know in years 8 n 10 is maybe using that for
+18:27
+like a very vanilla lowcost you know use case but you still hit a minimum you
+18:32
+know return profile that is in excess of your power such that it still makes sense to keep those servers turned on.
+18:38
+Um, and just like the reinsurer, I think you said Munich Re. Um,
+18:44
+why do you think they're more comfortable with this level of risk and depreciation compared to the banks? I
+18:51
+guess some listeners might think an insurance company might be even more conservative, but what are the the dynamics here?
+18:57
+Yeah, so that's really it's a good point. So the insurance is technically coming from a company called Barker
+19:03
+which is a uh a startup and then Barker has insurance from Munich Re. So really
+19:10
+what's happening is Barker has a way to
+19:15
+uh price insurance and price assets using more cutting edge technology
+19:22
+primarily AI then they're selling Munich Re on their ability to underwrite. So
+19:27
+it's not that Munich Re is taking some directional view on the useful life of
+19:32
+servers, but what's actually happening is Barker has access to the real data just like we do that says, okay, you can
+19:39
+go into the gray market today and sell H100's in serious size at 150k a server.
+19:46
+So H100's being three years old and selling for 150k is an important data
+19:51
+point for me to, you know, price insurance. And then what happened? So Barker then, you know, over time is
+19:57
+going to have some amount of uh of payouts and they will have the ability
+20:02
+to show Munich Re that their pricing has been more accurate and Munich Re can make a spread on that. Right? So
+20:09
+basically that's it's all like offsetting or offloading risk from certain parties to to different parties
+20:16
+where Munich resend outcome is that they get a premium and they if Barker did a good job valuing the servers and USDA
+20:24
+does a good job in sourcing counterparties for loans that's just a free 150 bits that they never you know
+20:30
+lose money on basically. Let's talk a bit more about the onchain side. I think you started talking about
+20:36
+the uh the value proposition, but could you make the the case for why this needs
+20:42
+to be on chain or like what you know what values unlocked versus just doing the underwriting offchain? There is no
+20:49
+ABS market for GPUbacked loans today and we don't we don't think there will be
+20:55
+for some time maybe ever and the reason is just that the duration of these loans
+21:00
+is much shorter than uh the the time it takes to issue new new ABS new assets.
+21:08
+It it it all just comes back to like really the fundamental value prop for any crypto-based financial product,
+21:14
+which is that it's faster and more efficient and less expensive than using traditional rails. And the same logic
+21:21
+holds true here. So, like I said, the the banks aren't playing because the banks aren't playing. The private credit
+21:27
+funds are, you know, you know, V 1.1 of innovation over over the banks because
+21:34
+they don't have as much regulatory oversight. So they can play, but then they need to be they're humanpowered,
+21:40
+you know, investment managers. They need to be um doing large deal sizes. The ABS
+21:47
+market isn't in play because the process to issue a new ABS, we spoke with McQuary who issued a new an ABS for a
+21:54
+new asset that didn't have one before, it took them three years to go through the approval process. You contrast that
+22:01
+with USDA. You deposit one stable coin and you mint one staked USDA and that's
+22:08
+it. You now have a tradable instrument that that instrument can trade freely if
+22:14
+there are loss given default. If there is uncertainty on you know performance
+22:19
+or anything like that the asset can trade at a discount and you have immediate you know market pricing over
+22:26
+all these assets. So the our view is once you have about a billion dollars of loans outstanding and you have a billion
+22:33
+dollars that can trade freely of that underlying loan book, it starts to be a forcing mechanism to actually drive
+22:41
+pricing for the rest of the market. So if all of the borrowers know, and this
+22:46
+is how it works, it's all 100% transparent. If all the borrowers know exactly what the cost of capital is for
+22:52
+a billion dollars worth of GPUbacked loans, then at a minimum, if they're,
+22:57
+you know, have any level of education on their cost of capital, when they talk to a private credit fund or a bank or any
+23:04
+other capital source, they should be able to say, well, I know at a minimum I can get, you know, these debt terms,
+23:10
+these financing terms. And so, it becomes a forcing mechanism for, you know, the rest of financial markets. uh
+23:16
+it doesn't have to be that large, right? Like a billion dollars in the context of of the GPU, you know, scale is small,
+23:24
+but it's still a billion dollars of assets of value that has been uh priced in the market and it tra trades freely.
+23:31
+So I think that the main benefits are just the speed and simplicity with which you can execute onchain transactions and
+23:39
+then the fact that uh you can aggregate capital really quickly and that all of
+23:45
+that capital can trade freely and then forces a price back to the rest of the market. That's kind of where we feel
+23:51
+like there's real unlock and innovation. And we think that the internally to DeFi
+23:57
+because we've been in this space for a while now. I think a lot of these users are starving for real use cases and real
+24:04
+yield and feeling like they're not, you know, just funding speculation on the
+24:10
+nth airdrop and, you know, pricing some Pendle PT yield on that, right? Like I
+24:17
+think users fundamentally want to be financing productive use cases and that
+24:22
+capital is there for protocols that are able to offer you know uncorrelated
+24:29
+yields to the rest of crypto. Well what what do you really think is the extent of that demand? Like we see Maple has you know maybe two two and a
+24:36
+half billion TVL centrifug over a billion. What makes you think there there's more demand than that for
+24:43
+private credit onchain for you know stable coin holders? Yeah, there's like 250 billion or
+24:48
+something of total DeFi assets something like that. The way I think about this is kind of how we thought about our go to
+24:54
+market on the deposit side. So you have first you need to derisk the offering and so that that first you know 50 100
+25:02
+million bucks needs to come from actual funds who can underwrite what you're
+25:08
+doing. they feel comfortable enough to deposit into the protocol and feel comfortable with the upside that they're
+25:13
+you know possibly getting. So those are like liquid funds uh like SIG and and Brevin Howard and all these guys
+25:20
+participated in that first you know slice of capital. Then you go to like your open it up broad DeFi user base
+25:26
+right. I think that user base can get you, you know, five, 10, 15 billion dollars of deposits, which is obviously
+25:34
+a lot of money's material and that is going to come from all the DeFi integrations, the onchain users, whether
+25:40
+those are funds or individuals, doesn't matter. And those are that's your like DeFi native source of capital. I think
+25:48
+from there up you go back to traditional institutions who you would classify as
+25:54
+like crypto curious institutions right so like everything that black rockck has done with bidd and this is basically
+26:02
+what I'm describing is the Athena playbook right so Athena after getting
+26:07
+you know some critical mass of TVL went back to traditional capital sources to
+26:13
+you know really cement them as as a interesting yield product and once you
+26:18
+have like proven size and operational ability to like execute the thing that
+26:23
+you're ultimately selling to the market um I think that traditional capital
+26:28
+markets quite like what you can get from a DeFi yield product that you can't get
+26:34
+elsewhere. So again like there is no tradable GPUbacked debt product. So if
+26:40
+you can you know successfully create that using crypto rails and then the market views that as something that is
+26:47
+cryptonative yield that is unavailable to traditional capital markets but for this source which is USDA then that's a
+26:55
+really attractive offering just like tokenized basis trade is something that traditional capital markets can't create
+27:02
+and so when you create a tokenized basis trade you're selling a brand new source of yield to these uh market
+27:09
+participants. I think we we benefit even more because for people to like our
+27:14
+product, you don't really have to have any sort of opinion about crypto at all. You're really just financing hardware
+27:21
+assets. And so that's honestly a that's an easier thing to sell to traditional capital sources than you know even the
+27:27
+basis trade is which is also you know obviously it's very low risk. I mean basically
+27:33
+riskless. So yeah that that's kind of how we think about it. I think there's I I don't think you need to believe that DeFi exists in a vacuum and that you you
+27:41
+you can never touch traditional capital sources, but I think you start with DeFi native capital and then you expand to,
+27:48
+you know, the rest of the broad capital market. Could you tell us a bit more about why
+27:53
+design with a stable coin in mind versus just like a you know a yield acrewing
+28:00
+credit product? like why why have a stable coin that you know you require to stake in order to get yield?
+28:06
+Yeah. So I think this is um this is sort of like the moonshot angle of this
+28:12
+product as a whole. So when you think about um the success of stables so far
+28:19
+to date that's tether and circle. Tether was the first mover. Tether was the
+28:25
+primary centralized exchange pair for trading. Um when DeFi summer happened in
+28:31
+2020, Tether was not super present in DeFi and Circle was. Circle was the
+28:37
+deacto pair for DeFi markets. So you had Tether kind of dominating centralized exchange trading. Then DeFi happens.
+28:45
+Circle starts to take share and dominate the DeFi market. Our view is basically that for any stable coin to be
+28:52
+successful. First of all, no stable coin is successful on the basis of actual payments. I mean that use case, you
+28:59
+know, despite what people might say is is barely used at all in 99% of the
+29:04
+cases. You're using stable coins to access things in crypto, right? And so our view is that any new stable coin
+29:11
+that's issued cannot just be I'm better at, you know, being worth a dollar. You
+29:18
+need to have some unique angle that is going to give users a reason to mint
+29:23
+more and more of that supply. The reason why we have the payments token, the stable coin and the yield token is that
+29:30
+these businesses play off of each other really naturally because with the
+29:35
+payments stable, you have these T bills and you can choose how to use that yield
+29:41
+to basically incentivize the overall growth of the ecosystem. So if I can get
+29:47
+more increased supply of the payments stable, then I can increase the yield to SEOCAI with the T bills, the back the T-
+29:55
+bills back in the stable. That means that I can then use that increased yield to offer lower interest rates to
+30:01
+borrowers and increasingly win more deals. So the way this the way we think
+30:06
+about this mousetrap is basically the following. You say, okay, the cost of capital to you borrower is 10%. If you
+30:13
+want to borrow from us to buy your GPUs, then you have to pay us 10%. But if you
+30:19
+hold X amount of this stable coin on your balance sheet at all times, then I
+30:25
+can discount your interest rate to 9%. My SUSCAI depositors still get 10%
+30:31
+regardless because the increased amount of payments uh uh stable is going to add
+30:37
+yield back to SUSCI. depositors, no change in cost of capital. Obviously, your risk profile is different, right?
+30:44
+Because you're earning yield from T bills as opposed to earning yield from these GPU loans. However comfortable we
+30:50
+are with, you know, that product, it's obviously riskier than T- bills. And so the the borrower then has these stable
+30:57
+coins on their balance sheet. So what do they use that for? Like how does that help them? Well, then the borrower can
+31:04
+say to the borrower is the Neocloud that owns the GPUs, operates the GPUs, right?
+31:10
+Their business model is borrowing money from me to buy GPUs and then rent
+31:15
+compute out of those GPUs. So, if that borrower can convince their customers to
+31:23
+hold that stable coin, then they don't have to hold it. The way they convince their customers to hold it is they say,
+31:28
+"If you settle payments in this stable coin, then we will charge you instead of
+31:34
+two bucks an hour, we'll charge you $1.90 an hour." Now, the customer has a reason to use that payment stable,
+31:40
+right? Because now they get a discount. They're getting a discount because the uh NeoCloud is getting a discount on
+31:45
+their interest rate. So, your customer, your Anthropic or Open AI or whomever then has a reason to hold stable on
+31:52
+their balance sheet. Then they can go to their customers and say, "Okay, instead of this being 200 bucks a month for your
+31:57
+cloud subscription, it's 190 bucks a month." Right? These are all just like madeup numbers, but that's how we think
+32:03
+of that stable as being this potential like moonshot flyer to get into a much stickier payments business. And you can,
+32:11
+this only works if you have both sides. You you can't do this with just one side or the other. Because if I just go to
+32:17
+the Neocod and say, "Hey, use my stable coin to settle your compute contracts." They'd be like, "This doesn't help me. like I I don't how can I use this to my
+32:23
+benefit, right? But because you have the lending business, they need that loan in the first place. I can jam the payments
+32:30
+business down their throats and then they can force that down their customers throats and then you end up with
+32:35
+hopefully being able to settle a bunch of, you know, compute contracts and all of this value chain in your stable coin.
+32:42
+So, this is like, you know, this is an upside thing. It's not immediately actionable. Right now, the focus is on
+32:48
+building out the the lending business and making that a nice healthy sustainable product. But that's why you
+32:55
+want both, right? Because it gives you that flexibility to then take a totally different business and and combine the
+33:01
+two and um have something that you know drives tons of value back to users. I guess like you know, let's assume that
+33:08
+USD.AI model scales and got tons of TVL and and loan volume on the demand side.
+33:15
+Um, what do you guys think is is your moat in the space? Um, like why why
+33:21
+would people stick with USD.AI on the borrower side? Um, I guess more on the I guess both,
+33:27
+but maybe more on the the supply side. So like, you know, why why continue contributing liquidity?
+33:33
+It's just a source of yield. So it's just a cost of capital equation, right? It's just like uh these loans are 9 to
+33:43
+13%. Typically, maybe a little bit higher if it's a smaller borrower, but somewhere around there. So, can you get
+33:50
+scalable liquid 10% yield call it in other sources of yield? If yes, then
+33:59
+allocate to that. If no, then allocate to this. Um so I think that that's the
+34:05
+you know simple equation on the supply side just like it's just cost of capital and if this is an attractive yield for
+34:11
+depositors then they'll they will seek it out and be happy with the yield profile regardless of emissions and
+34:17
+incentives and you know all the other stuff that you can do but you also can you know once SUSDI is added as a into
+34:25
+DeFi lending markets then you can loop that right so it's like a native 10%
+34:30
+yield is pretty attractive um return profile in my opinion for a debt product. And then on the borrower
+34:37
+side, I think that we service a piece of the market today that is very hard to
+34:42
+service without having the ability to uh simplify all of your paperwork and
+34:47
+execution into a couple of contract calls. You know, a lot of the borrower profiles that we're servicing are, you
+34:54
+know, buying clusters of 30 to $50 million. If if I'm a private credit fund
+34:59
+and I do if I'm originating $50 million loans, but you know, I spend $2 million
+35:05
+in legal fees for every single deal, it's not worth my time to do a $50 million loan. So, they really need to be
+35:12
+doing like a $500 million loan. So, being able to offer sort of a boilerplate product to the borrowers
+35:18
+that's nonreourse, right? So, it's secured by the assets um that can deploy
+35:23
+up and down in terms of size. We we've done loans for like $300,000 and we're
+35:29
+doing loans for hundreds of millions of dollars. Um so I think that is a moat
+35:35
+from a borrower standpoint and then just generally being something that is a flexible source of financing. So, you
+35:41
+know, you can look at the protocol, you can see how much cash is in there, you
+35:46
+can see what the terms are out of the gate, and then you can go and have confidence that you can place a purchase
+35:53
+order and draw financing, you know, for that product, uh, for that purchase. So,
+35:58
+that's kind of how I think about it. I think we're servicing a piece of the market that's hard to service. And in
+36:03
+doing so, we're creating a yield that should be attractive to onchain depositors and to, you know, broader
+36:09
+capital markets at scale. I also had a question on just like GPU
+36:14
+prices versus rental rates. Like, you know, a lot of discourse online
+36:20
+tends to like confuse the two when thinking about depreciation and like decline in in rental prices.
+36:26
+Um, what do you think are like the dynamics there? like is like the the core risk more that borrowers um you
+36:35
+know their rental rates are declining and they can't cover payments or that the the you know value of their
+36:40
+collateral is dropping? That's a good question. So, um, the value of the collateral is most likely
+36:49
+tied pretty heavily to that rental income, but it's not 100% tied to the
+36:56
+rental income because there's also just a broad question of supply and demand of these servers. Like there's a lot of
+37:02
+people that buy servers, i.e. governments, that are not exactly thinking of their unit economics, but
+37:08
+rather are thinking about sovereign compute control, right? And so this is also why we we like to just underwrite
+37:15
+the assets and their resale value and their rental income potential as opposed
+37:20
+to underwriting a the broader business is you can just price all this stuff on
+37:26
+standalone basis of the assets, their ability to be resold and your ability to rent those out. But I think the majority
+37:32
+of the value of the wholesale market comes from the topline rental income of
+37:38
+of the servers. Um, but like I so semi analysis, we like their stuff a lot. For
+37:43
+a long time, semi analysis was projecting, you know, basically just linear decline in H100 rental rates.
+37:50
+Very like academic approach. Made a lot of sense to me. It just didn't happen.
+37:55
+And now you've seen H100s and H200 rental prices go up. And it's like
+38:01
+there's these, you know, major inflection points every 18 months or 12
+38:06
+months where a new LLM comes out and all of a sudden now it's like things that
+38:12
+people didn't think were possible or possible and you know compute prices go up and so I think it's it's way more uh
+38:19
+complicated than just like all right these are the you know T-flops of this GPU and there's a new one coming out and
+38:26
+so rental rate will go down. It's like not really, you know, it's a it's a much more complicated
+38:32
+process, I guess, than just than just like doing it that way. And that's why it's really good to know what the resale
+38:37
+values are. Like H100s were trading for 150k a server on our internal math. We
+38:44
+we couldn't figure out why that would make sense. And I was really heavily indexing towards semi analysis's work
+38:50
+and saying, "Okay, these are these rates are going to keep dropping precipitously. you know, you there's no
+38:56
+reason to buy these for 150k a server, but that's what everyone was paying. And
+39:01
+the guys that are actually in the business, the Neocloud business are paying 150K a server. And so there was
+39:07
+like, you know, there's two sources of information. Which one do you trust? Well, I couldn't make sense of what the
+39:13
+market was pricing it at, but I know that's what the market was pricing at. So, you have to give a lot of credit to where the market was. Now, you know, 8
+39:20
+months later, whatever, 6 months later, now H100 rental rates are going up. And
+39:25
+so, it's like, okay, maybe the market knew a lot more than I did at that point in time, the this this wholesale market
+39:30
+for for NeoClouds. So, it's just complicated, right? There's a lot of moving pieces. That's why it's really helpful to be able to just reference
+39:37
+what is the actual market pricing these at today. Take a haircut to that, you know, look at the rental rates, project
+39:43
+the rental rates, and try to be as conservative as you possibly can, but still be able to meet the market where
+39:48
+it's actually going to be useful to them. Just in terms of future milestones this year for um
+39:56
+USC.AI, what's on the road map? I know Chip is going to be launching sometime later in the year. uh love just for you
+40:04
+to let our our listeners know. Yeah, I think um this year the last year
+40:09
+was all like getting to market with a product that worked and uh you know was
+40:16
+brand new right halfway through last year this didn't exist. We launched uh publicly in September. This year is all
+40:23
+about scale and growth. So the number one thing is originations of loans and
+40:30
+the goal would be to do about a billion dollars of loans this year and also really expand not only just like that
+40:36
+topline number but the scalability of the model as a whole. So we've designed this in a way where you can have like a
+40:44
+hub and spokes approach. So you have modular originators and underwriters who
+40:49
+then can go out and source deals. Now, it's not as simple as like um you know
+40:54
+getting a curator on on Morpho or something like you you have to go and find an actual credit fund where it's
+41:02
+worth their time and energy and they actually have the local expertise to be the guys that do all of the Asia deals
+41:09
+for USDA depositors and and users and and chip token holders, right? And then
+41:15
+the same for the US partner and the same for the European partner and so on. So, not only do we want to hit those topline
+41:21
+numbers and actually see origination volumes increase by a lot, but we also
+41:27
+want to establish the partnerships that allow that to be really scaled beyond
+41:32
+just, you know, Perian Labs, our Delaware CC Corp's ability to go and drum up business, which isn't really the
+41:38
+intention. The intention is that you have a network of originators that are purposebuilt for exactly the role of you
+41:46
+know sourcing deals for the USDI network. So those are the two things that we're really focused on and then I
+41:51
+think in the background we'll continue to push this payments angle as well and see if we can start to make inroads with
+41:57
+some of these guys on on the payment side. Very cool. Um yeah, where should
+42:03
+listeners go to learn more about USD.ai? Just Twitter, USDA_official.
+42:11
+That's probably the best best place. And Telegram. Awesome. Thanks so much for coming on, Connor.
+42:17
+Thanks for having me.

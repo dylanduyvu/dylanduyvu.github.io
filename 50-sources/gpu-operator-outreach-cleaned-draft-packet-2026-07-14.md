@@ -71,7 +71,7 @@ SMTP confirmation is a useful routing signal, not proof that a human will read t
 3. Each message contains one substantive question.
 4. Do not imply debt where the source only supports structured equity, project preparation, or a mixed financing round.
 5. The ten `inferred, catch-all` routes should be watched separately from direct routes when measuring bounces and replies.
-6. Stop the wave when 8-10 operator conversations are booked or the borrower-side answers become repetitive.
+6. Stop the wave when 8-10 operator conversations are booked or the borrower-side answers become repetitive. SUBORDINATION NOTE 2026-07-15: this is the instrument's stop condition, not the experiment's goal. The canonical goal is the pre-registered Friday 2026-07-17 decision in [[solid-findings-audit-and-next-rung-2026-07-14|the audit note]]; this wave feeds that call first, and the 8-10 target governs only if Friday's call is CONTINUE.
 
 ## Gmail drafts
 
