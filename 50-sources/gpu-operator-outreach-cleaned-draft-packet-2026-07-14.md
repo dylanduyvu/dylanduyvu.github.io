@@ -2,7 +2,7 @@
 type: source
 status: active
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-15
 source_date: 2026-07-14
 source_type: outreach_plan
 projects: []
@@ -22,10 +22,10 @@ Purpose: reach the borrower/operator side of GPU financing. Pool A asks operator
 ## Clean result
 
 - Raw export: 69 people across 53 company labels.
-- Gmail queue: 38 drafts, one contact per retained company.
+- Gmail queue: 38 messages, one contact per retained company.
 - Route quality: 28 public or SMTP-confirmed direct routes; 10 catch-all or pattern-inferred routes retained because the target is unusually relevant.
 - Duplicate check: no prior sent mail to any of the 38 selected addresses as of 2026-07-14.
-- Send status: drafts only. Nothing in this packet has been sent.
+- Send status: all 38 sent 2026-07-15 between 09:44 and 09:48 ET. Gmail reported zero send failures and zero drafts remaining immediately afterward. Delivery and bounce outcomes remain pending.
 
 ## Address corrections
 

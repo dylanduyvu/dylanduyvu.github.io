@@ -85,7 +85,7 @@ RATE is pre-registered NEGATIVE: three instruments on 2026-07-14 showed customer
 
 NO-BUILD RULE: nothing gets built before the call, with one carve-out: a test artifact (borrowed draw file or realistic mock) is experiment material, not product.
 
-Timing honesty, logged at registration: the operator wave has a 3-day window to contribute. Sends must fire Wednesday morning for any operator conversation to exist by Friday; absence of operator data does not block the call. If the call is CONTINUE, the operator conversations become week two's primary instrument and the criterion's trigger 3 stays open through them.
+Timing honesty, logged at registration: the operator wave has a 3-day window to contribute. EXECUTED 2026-07-15, 09:44-09:48 ET: all 38 messages sent with zero immediate API failures; delivery and bounce outcomes pending. Absence of operator data does not block Friday's call. If the call is CONTINUE, the operator conversations become week two's primary instrument and the criterion's trigger 3 stays open through them.
 
 ## Open
 
