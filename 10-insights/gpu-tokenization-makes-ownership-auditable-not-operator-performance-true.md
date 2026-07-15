@@ -40,6 +40,7 @@ That is why a capital allocator could understand the product and still pass over
 - When Dylan asked how Silicon gets comfortable with third-party operators before showing clusters to investors, McDavid initially interpreted the question as asking who manages SLAs and day-to-day operations. That is not evidence that diligence is absent, but it confirms that the capital-approval layer is distinct from the publicly legible operating-role layer and must be asked about explicitly.
 - 2026-07-13 evening (email): the substantive answer. Asked how Silicon evaluates FarmGPU before deploying pool capital, McDavid named operational track record, technical competency of the team, and downside protection / collateralization, said FarmGPU carries "a degree of familiarity" from prior work together, and said "any new operator goes through a full diligence process." What that process checks independently versus what it receives from the operator remains unstated.
 - 2026-07-14 (Telegram): asked how Silicon verifies a new operator's track record, McDavid answered, "we just use farm" and "we havent had to diligence anyone else." The full-diligence process is therefore unexercised in Silicon's observed history; its practiced solution has been to stay with FarmGPU.
+- 2026-07-14 (Telegram, later clarification): McDavid said Silicon originally got comfortable because "JM is an advisor to us," identified JM as FarmGPU's CEO, and added that "a lot of this portion of the industry is very relationship driven." The observed trust path is therefore a direct operator-CEO/advisor relationship, not tokenized performance evidence.
 
 ## Implications
 
@@ -69,7 +70,7 @@ That is why a capital allocator could understand the product and still pass over
 
 ### 2026-07-14 - Silicon has avoided the new-operator decision
 
-The Telegram clarification changes the interpretation of the evening email. Silicon's "full diligence process" is a stated future process, not an observed one: it has only used FarmGPU and has not had to diligence anyone else. This strengthens the same-counterparty-familiarity mechanism while weakening Silicon as evidence for a current paid verification gap. Its real behavior is concentration in a known operator, not purchasing or conducting repeatable third-party verification. The next useful signal comes only if Silicon evaluates a second operator.
+The Telegram clarification changes the interpretation of the evening email. Silicon's "full diligence process" is a stated future process, not an observed one: it has only used FarmGPU and has not had to diligence anyone else. Its original comfort came through FarmGPU's CEO already serving as a Silicon advisor. This strengthens the relationship-trust mechanism while weakening Silicon as evidence for a current paid verification gap. Its real behavior is concentration in a known operator, not purchasing or conducting repeatable third-party verification. The next useful signal comes only if Silicon evaluates a second operator.
 
 ### 2026-07-13 - The evening reply: a triad, with familiarity carrying the history leg
 
