@@ -2,7 +2,7 @@
 type: source
 status: processed
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-15
 source_type: user-captured-article-claim
 source: coreweave-issued-yet-more-debt-2026-05-28
 domains: [gpu-finance, asset-backed-lending, compute-contracts]
@@ -25,6 +25,12 @@ GPU-backed debt may be mislabeled if described as pure asset-backed finance. The
 ## Promoted Insights
 
 - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
+
+## Updates
+
+### 2026-07-15 - Choi pushes the inversion one step further (Decentralised podcast, recorded ~June 2026)
+
+The inversion says the contract is the engine and the GPU the recovery floor. Choi's SaaS-apocalypse claim attacks the engine side: corporate and subscription cash flows are becoming un-underwritable in his view ("we're just one prompt away from your cash flow is going to zero"), so credit formation migrates to the only hard physical thing in the stack. His ten-year line: "are you really going to be trading corporate credit or are you going to be trading GPU loans?" If he is right, the floor becomes the loan at the margin. Held as one founder's macro claim, not adopted: his own book still underwrites rental cash flows and offtake guarantees, so even the claimant runs on the engine today. Capture: [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|Choi Decentralised capture]], non-thesis alpha section.
 
 ## Links
 

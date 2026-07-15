@@ -153,6 +153,7 @@ Before drafting, approving, or sending cold outreach, read `90-meta/outreach-dra
 - Ask one question in the first touch and use at most one short credential clause. Earn the deeper question through the reply.
 - For a new first-touch structure, default to a five-to-ten-recipient canary before the full batch unless Dylan explicitly chooses an immediate full send.
 - Explain any objection before changing Dylan's proposed wording, and make the smallest possible fix.
+- Gist over draft for any recipient who may test for AI (codified 2026-07-15 after an operator CEO ran a placeholder trap on a wave email and declared "checkmate"). For live threads, Dylan types the reply himself at thumb speed; agents contribute the gist, never finished sentences. Live-thread replies match the counterpart's register and length, not the writer's: no greetings mid-thread, one thought, never restate what the thread already knows, a stray typo is fine. A Claude draft that could be sent without Dylan rewriting it is a defect, not a goal. Templated bumps on an already-templated wave are prohibited; a row either earns an individual second touch or gets none.
 
 ## Verify Before Asserting
 
