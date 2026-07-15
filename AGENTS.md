@@ -102,6 +102,20 @@ Use Obsidian wiki links that resolve to the actual filename. Because most notes 
 
 Do not link only by the H1/title when the filename is slugified, or Obsidian may create a duplicate note.
 
+## Outbound Outreach
+
+Before drafting, approving, or sending cold outreach in Dylan's name, read `90-meta/outreach-drafting-harness.md`.
+
+- Audit message architecture, not only words that sound machine-written.
+- Reject the standard sequence of scraped fact, compressed credential block, and generic survey question.
+- A personalized fact must directly create or change the question.
+- Ask one question in the first touch. Earn the deeper question through a reply.
+- Use at most one short credential clause.
+- Run the noun-swap test: if only the names and company facts need to change across the list, the draft fails.
+- For a new first-touch structure, default to a five-to-ten-recipient canary before the full batch unless Dylan explicitly chooses an immediate full send.
+- Match the channel's register. Human does not automatically mean lowercase or text-message casual.
+- Dylan's edit is authoritative. Explain any objection before changing his wording, and make the smallest possible fix.
+
 ## Git And Publishing
 
 This vault is local-first, but it now has a public GitHub remote and Quartz/GitHub Pages frontend.

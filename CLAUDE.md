@@ -139,6 +139,8 @@ publish: update public notes harness
 
 Codified 2026-07-13 after a live email thread where an assistant draft opened on three stacked abstractions and handed the counterpart the research vocabulary before the question. These rules sit on top of Writing Style For Dylan above and bind every agent drafting anything Dylan sends (email, telegram, slack, comments).
 
+Before drafting, approving, or sending cold outreach, read `90-meta/outreach-drafting-harness.md`.
+
 - Continue the other person's last message, not Dylan's thesis. Any setup sentence that restates what Dylan already believes gets deleted before sending.
 - One idea per message, and the question is the message. Framing sentences are overhead.
 - Never hand a counterpart the research vocabulary inside a question. Mirror their own words back (if they said "operational track record", ask about that, not about "verifiable history"), because an answer shaped by our words is worth little as evidence.
@@ -146,6 +148,11 @@ Codified 2026-07-13 after a live email thread where an assistant draft opened on
 - Match the channel and the hour. A telegram reply or a late-evening email should read like one, not like an analyst settling in, a website review, or a questionnaire.
 - Final check before anything ships: would the recipient suspect an assistant drafted it? Cut until the answer is no.
 - Chat drafts are proposals. Dylan's edit is the style authority; when he shortens a draft, the shortened version becomes the example to match.
+- Audit message architecture, not only words that sound machine-written. Reject the sequence of scraped fact, compressed credential block, and generic survey question.
+- A personalized fact must directly create or change the question. If only names and company facts need to change across a list, the draft fails.
+- Ask one question in the first touch and use at most one short credential clause. Earn the deeper question through the reply.
+- For a new first-touch structure, default to a five-to-ten-recipient canary before the full batch unless Dylan explicitly chooses an immediate full send.
+- Explain any objection before changing Dylan's proposed wording, and make the smallest possible fix.
 
 ## Verify Before Asserting
 
