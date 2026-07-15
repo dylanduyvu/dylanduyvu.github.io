@@ -100,6 +100,23 @@ Friday's rule stays unchanged: if no registered trigger fires, shelve the thesis
 
 Process note: multiple assistants summarizing the same source corpus are not independent evidence. Agreement can stabilize the decision frame, but it cannot increase confidence in the market claim.
 
+## The barbell frame (Dylan's hypothesis, 2026-07-15 evening; the structural map Friday's what-next inherits)
+
+Dylan's formulation: GPU financing is sorting into a barbell. The big pole underwrites the PROMISE (investment-grade offtake at Phil's tier, historical financials at the seasoned tier). The small pole underwrites the OBJECT (title, escrow, resale, insurance at USD.AI's tier). Operator verification is information about the party connecting promise to object, and neither pole needs that party to be anything but non-fraudulent. The middle tier is an interim inefficiency, not a durable market: deals there either climb to a pole, get carried by a balance sheet extending a pole, or die.
+
+Evidence arranged under it, all from this week's captures:
+- Interim paper built to be refinanced toward a pole: the bridges, CIM's 12 percent plus warrants, Applied Digital's whole ladder from community banks to Goldman.
+- Balance sheets extending poles: Google and AMD backstops reaching down (five sightings in the facility dataset); insurance stretching the hardware pole up (USD.AI now at $96-200M-plus deals with Barkr and Munich Re behind it).
+- Relationship capital as the middle's native instrument: the same-lender ladders, familiarity wearing a financing structure. Does not scale, does not trade.
+- Death where no balance sheet shows up: Firmus's failed syndication, Phil's auto-pass.
+- And it explains the previously unexplained finding: boutique middle-tier lenders are nearly absent from the small-operator deal record because the middle-tier DEAL class is thin and transient, not because discovery failed.
+
+THE HONEST FORK, unresolved: disappear-by-sorting (Dylan's version) versus institutionalize-as-lessors (the aircraft path, where a permanent lessor class underwrites asset and credit together). The lessor branch is Bernie's world forming, and its blocker is residual-data immaturity, which is why the observed-prints scarcity keeps mattering. BOTH branches agree on the dead thesis: a vanishing middle needs no operator verification, and a lessor middle prices assets and credit, not operator competence.
+
+Guards: this is a hypothesis, not a finding. And it is a DIFFERENT barbell from Friedman's (his is demand-side, head models versus tail workloads; this is financing-structure-side). Do not cross-wire the two.
+
+Watchables that would settle it over months: (1) does a GPU lessor class emerge; (2) do USD.AI-style books climb past $200M per deal sustainably; (3) do $200-500M non-investment-grade deals keep requiring backstops or relationship ladders.
+
 ## Calls made early, 2026-07-15 evening (Dylan asked what can be called now; both assistants answered independently over the same corpus)
 
 Convergent verdict: SHELVE-LEAN. Assistant one at roughly 90 percent shelve, assistant two at 80-85 percent shelve, both landing on the identical operating rule: shelve Friday end of day unless a registered trigger fires. Process note applies: same corpus, two summarizers, convergence stabilizes the frame but is not independent evidence.
