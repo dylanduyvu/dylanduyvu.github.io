@@ -8,24 +8,32 @@ updated: 2026-07-15
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 15, 2026, 5:22 PM EDT
+Generated: Jul 15, 2026, 6:15 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 35 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 36 note commits. The most recent movement is:
 
+- Insight update: frame operator verification as a credit graduation problem.
 - Source capture: tighten Zile verification interpretation.
 - Insight update: operator history matters but portability is unproven.
 - Source capture: capture adjacent verification company postmortem.
 - Source capture: mark operator outreach wave sent.
 - Source capture: identify Silicon FarmGPU trust relationship.
-- Source capture: capture Silicon advisor trust path.
 
 ## Current Hub Signals
 
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 15, 2026, 6:15 PM EDT - insight: frame operator verification as a credit graduation problem
+
+Insight update: frame operator verification as a credit graduation problem.
+
+Changed notes:
+  - [[operator-history-matters-but-a-portable-record-is-not-yet-a-business|Operator history matters, but a portable record is not yet a business]]
+  - [[usdai-david-choi-touchcraft-podcast-gpu-financing-2026-07|David Choi (USD.AI) on Touchcraft: the state of GPU financing]]
 
 ### Jul 15, 2026, 5:22 PM EDT - research: clarify experiment decision and preserve USD.AI transcripts
 
@@ -119,18 +127,9 @@ Changed notes:
   - [[mcdavid-stoddard-silicon-network-operator-vetting-email-2026-07-13|McDavid Stoddard / Silicon Network email on operator vetting]]
   - and 4 more
 
-### Jul 14, 2026, 5:24 PM EDT - correct Phil follow-up question mapping
-
-correct Phil follow-up question mapping.
-
-Changed notes:
-  - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[gpu-finance|GPU Finance]]
-  - [[phil-private-credit-jakub-relay-2026-07-13|Phil (private credit, via Jakub): how a participant diligences GPU deals]]
-
 ## Past 7 Days
 
+- Jul 15, 2026: insight: frame operator verification as a credit graduation problem - [[operator-history-matters-but-a-portable-record-is-not-yet-a-business|Operator history matters, but a portable record is not yet a business]]
 - Jul 15, 2026: research: clarify experiment decision and preserve USD.AI transcripts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 - Jul 15, 2026: research: update GPU credit branches and source findings - [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
 - Jul 15, 2026: source: tighten Zile verification interpretation - [[zile-cao-blockchain-capital-call-2026-07-10|Call: Zile Cao (Blockchain Capital) on the crypto-compute stack]]
@@ -155,12 +154,12 @@ Changed notes:
 - Jul 13, 2026: publish: add lender relays and question updates - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: publish: add GPU lender question set - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: outreach: record remaining nine bump sends - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
-- Jul 13, 2026: outreach: record 20-thread bump send - [[gpu-underwriting-wave-bump-plan-2026-07-13|Draft packet: GPU underwriting wave bump]]
 
-_Showing the newest 25 of 35 updates in this window._
+_Showing the newest 25 of 36 updates in this window._
 
 ## Past 30 Days
 
+- Jul 15, 2026: insight: frame operator verification as a credit graduation problem - [[operator-history-matters-but-a-portable-record-is-not-yet-a-business|Operator history matters, but a portable record is not yet a business]]
 - Jul 15, 2026: research: clarify experiment decision and preserve USD.AI transcripts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 - Jul 15, 2026: research: update GPU credit branches and source findings - [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
 - Jul 15, 2026: source: tighten Zile verification interpretation - [[zile-cao-blockchain-capital-call-2026-07-10|Call: Zile Cao (Blockchain Capital) on the crypto-compute stack]]
@@ -185,6 +184,5 @@ _Showing the newest 25 of 35 updates in this window._
 - Jul 13, 2026: publish: add lender relays and question updates - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: publish: add GPU lender question set - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: outreach: record remaining nine bump sends - [[semianalysis-residual-value-is-modeled-not-observed|SemiAnalysis residual value is modeled, not observed]]
-- Jul 13, 2026: outreach: record 20-thread bump send - [[gpu-underwriting-wave-bump-plan-2026-07-13|Draft packet: GPU underwriting wave bump]]
 
-_Showing the newest 25 of 103 updates in this window._
+_Showing the newest 25 of 104 updates in this window._
