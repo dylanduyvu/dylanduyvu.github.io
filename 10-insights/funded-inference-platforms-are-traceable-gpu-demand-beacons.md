@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-07-01
-updated: 2026-07-01
-confidence: medium
+updated: 2026-07-16
+confidence: medium-high
 domains: [gpu-finance, ai-infrastructure, inference, depin, compute-supply]
 projects: []
-sources: [venice-ai-gpu-sourcing-morpheus-depin-2026-07-01]
+sources: [venice-ai-gpu-sourcing-morpheus-depin-2026-07-01, inference-rent-to-controlled-capacity-evidence-audit-2026-07-16]
 people: []
 orgs: [venice-ai]
 aliases: [trace inference spend to find compute revenue, inference platforms as gpu demand beacons, lease to own is a gpu financing trigger]
@@ -42,6 +42,7 @@ This is a repeatable sourcing method for the compute-finance space: instead of a
 - Venice's supply detail is partly from secondary sources; the widely circulated "it's all Morpheus" answer overclaims (multi-network pool in reality), a reminder that AI-generated supply-chain answers need verification before use.
 - DePIN operators may not be financeable in the USD.AI sense (perfectable title, jurisdiction, identifiable operators); the demand beacon does not guarantee a bankable borrower.
 - Venice's verticalization plan is stated intent, not executed; margins math could change it.
+- A move away from metered cloud does not guarantee direct ownership. Perplexity instead committed to dedicated CoreWeave clusters, so the financing event may sit with a neocloud, lessor, or SPV rather than the inference company.
 
 ## Links
 
@@ -49,3 +50,7 @@ This is a repeatable sourcing method for the compute-finance space: instead of a
 - Related Insights: [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]], [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]], [[hyperscalers-are-becoming-compute-sellers-pressuring-neoclouds|Hyperscalers are becoming compute sellers, pressuring neoclouds]]
 - Areas: [[gpu-finance|GPU Finance]]
 - Orgs: [[venice-ai|Venice AI]]
+
+## Updates
+
+- 2026-07-16: Company-level research strengthens demand-tracing but narrows the lease-to-own trigger. Deepgram and Boson are direct cloud-to-controlled/owned cases; DeepL shows repeated dedicated buildout; Perplexity shows that the same economic transition can occur through a long-term dedicated lease. See [[steady-inference-baseload-moves-to-controlled-capacity-not-always-owned-gpus|Steady inference baseload moves to controlled capacity, not always owned GPUs]].

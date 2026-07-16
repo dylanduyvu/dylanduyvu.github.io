@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-06-29
-updated: 2026-07-15
+updated: 2026-07-16
 domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee, connor-moore]
@@ -107,6 +107,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - The post-training/customization tooling layer (e.g. Tinker) may capture outsized revenue versus frontier model-building; value is concentrating in the abstraction tier above raw GPUs.
 - The neocloud risk is financial, not technical: performance can be competitive while the contract book (pre-sold, debt-financed builds) is the fragile part. Watch build pauses and renegotiations as leading indicators.
 - Demand-tracing: a funded inference platform's compute spend is someone downstream's revenue - follow it to locate real compute businesses, and watch lease-to-own migrations as GPU-financing origination events.
+- Predictable inference baseload tends to move from metered cloud into owned or long-term dedicated capacity, while cloud remains for bursts and geography. The financing demand is real, but title and residual risk may sit with the AI company, an SPV, a lessor, or a neocloud.
 - Small-operator GPU demand is a price arbitrage conditional on delivery: it exists while hyperscalers cost 2-3x more and dies if the operator cannot ship in months.
 - GPU offtake dies from two sides; the market underwrites customer credit but has no instrument for operator execution (walk-without-breach on missed milestones).
 - Timeline slips hit the contract engine and the hardware floor together, so GPU loan collateral and cash flows are delay-correlated, not independent.
@@ -148,6 +149,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]]
 - [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]]
 - [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]]
+- [[steady-inference-baseload-moves-to-controlled-capacity-not-always-owned-gpus|Steady inference baseload moves to controlled capacity, not always owned GPUs]]
 - [[clean-kill-criteria-only-work-if-clean-kills-stop-work|Clean kill criteria only work if clean kills stop work]]
 - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
 - [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]]
