@@ -103,6 +103,48 @@ The best evidence that this continues is behavior after the first deployment, no
 
 The honest probability statement: controlled/dedicated inference baseload should keep growing; the share expressed as direct end-user ownership remains unresolved.
 
+## Is There A Trendline?
+
+There is a visible trendline toward private and dedicated inference infrastructure, but there is no clean public time series for the narrower variable that matters to GPU lenders: AI companies taking legal title to GPUs.
+
+The strongest directional proxies:
+
+- Broadcom's vendor-sponsored survey of 1,800 information-technology leaders found public cloud as the primary production-inference environment fell from 56 percent in 2025 to 41 percent in 2026. The share considering workload repatriation rose from 69 percent to 83 percent, and 56 percent said they were running or planning production inference in private cloud. The year-over-year comparison is useful, but Broadcom sells private-cloud infrastructure, so treat the level as biased and the direction as more credible than the exact percentages.
+- Dell's AI-optimized server revenue rose from $1.9 billion in its first fiscal quarter of 2026 to $16.1 billion one year later. This proves physical AI-server demand is accelerating, not who owns the systems or whether they serve inference; hyperscalers, neoclouds, governments, and enterprises are mixed together.
+- HPE reported that traditional server orders more than doubled year over year as customers invested in inference, Private Cloud AI orders increased again, and 61 percent of cumulative AI orders since 2023 came from enterprise and sovereign buyers. The enterprise share is more useful than Dell's aggregate, but it still mixes end users, governments, and hosting structures.
+- The company sequences are consistent with those aggregate proxies: Deepgram has run owned racks for years and expanded again; DeepL moved from Mercury to Arion; Boson moved from public cloud to a dedicated cluster; Venice says it is next. Perplexity shows that some of the same demand lands in a specialist cloud instead of on the application's balance sheet.
+
+Conclusion: the share of inference running on committed private or dedicated capacity appears to be rising. Direct AI-company GPU ownership is probably rising in absolute dollars, but the public evidence cannot yet establish its market share or growth rate.
+
+## Expected Shape: An S-Curve, Not An Infinite Trend
+
+The migration should move through three phases:
+
+1. Experimentation: variable demand, changing models, and little operating capability make metered cloud rational.
+2. Conversion: a stable baseline emerges; the company reserves a cluster, leases dedicated capacity, or buys hardware to reduce unit cost and gain control.
+3. Saturation: the baseline is internalized, while bursts, new regions, closed models, and uncertain workloads remain in cloud. Additional ownership occurs only as the stable baseline itself grows.
+
+This produces two different trendlines:
+
+- Absolute owned/dedicated capacity can keep growing for a long time as total inference demand expands.
+- Owned capacity as a share of all inference cannot rise indefinitely. It should flatten at a hybrid equilibrium because clouds retain structural advantages in traffic pooling, burst absorption, geography, hardware refresh, and closed-model access.
+
+The long-run claim is therefore not "every AI company becomes a hardware owner." It is "a growing share of mature inference demand becomes long-term committed capacity, and somebody must finance and own it."
+
+## Likely Hiccups And Reversals
+
+The current technology can run the workloads, but the path will be uneven:
+
+- UTILIZATION MISS: the largest risk. A company buys against an optimistic demand forecast and cannot keep the fleet busy, making owned capacity more expensive than cloud.
+- CLOUD PRICE COMPRESSION: specialist clouds can pool customers, use custom accelerators, and spread operations across more traffic. If they pass enough savings through, the ownership crossover moves to larger buyers.
+- HARDWARE AND MODEL CHURN: a new chip, model architecture, quantization method, or serving engine can change the best hardware before the old fleet is paid off.
+- POWER AND DEPLOYMENT: dense racks require power, cooling, networking, colocation, and integration. These are available today but can delay or shrink deployments.
+- OPERATING COMPLEXITY: Deepgram's own account requires dedicated infrastructure and site-reliability teams. Integrators reduce this burden but take part of the savings.
+- MODEL PORTABILITY: a workload tied to a closed model cannot move onto owned GPUs, however stable its demand becomes.
+- BURST AND GEOGRAPHY: global, latency-sensitive products still need spare capacity and regions that one owned fleet cannot economically cover.
+
+These are not reasons the trend stops. They determine the boundary between direct ownership, dedicated leasing, and metered cloud, and they can move that boundary in either direction over time.
+
 ## What Is Still Missing
 
 Public case studies rarely disclose the facts needed to prove realized unit economics:
@@ -147,4 +189,4 @@ The most valuable single receipt is not another statement that owning is cheaper
 ## Promoted
 
 - [[steady-inference-baseload-moves-to-controlled-capacity-not-always-owned-gpus|Steady inference baseload moves to controlled capacity, not always owned GPUs]]
-
+- [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]

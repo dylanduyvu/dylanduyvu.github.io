@@ -53,6 +53,7 @@ The distinction changes the GPU-finance addressable market. A direct purchase ca
 ## Links
 
 - Research audit: [[inference-rent-to-controlled-capacity-evidence-audit-2026-07-16|Do AI companies with steady inference demand buy GPUs?]]
+- Trend shape: [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Related insight: [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
 - Related source: [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi on GPU financing rails]]
 - Area: [[gpu-finance|GPU Finance]]
@@ -61,4 +62,3 @@ The distinction changes the GPU-finance addressable market. A direct purchase ca
 ## Updates
 
 - 2026-07-16: Created after a company-level evidence audit. The audit narrows Choi's "every AI company buys chips" claim to predictable inference baseload moving into controlled or dedicated capacity.
-
