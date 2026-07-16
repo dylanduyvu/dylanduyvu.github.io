@@ -8,24 +8,34 @@ updated: 2026-07-16
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 16, 2026, 7:18 PM EDT
+Generated: Jul 16, 2026, 7:24 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 38 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 39 note commits. The most recent movement is:
 
+- Insight update: define inference capacity trendline and hybrid end state.
 - Source capture: deepen Connor Moore GPU credit transcript analysis.
 - Insight update: frame operator verification as a credit graduation problem.
 - Source capture: tighten Zile verification interpretation.
 - Insight update: operator history matters but portability is unproven.
 - Source capture: capture adjacent verification company postmortem.
-- Source capture: mark operator outreach wave sent.
 
 ## Current Hub Signals
 
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 16, 2026, 7:24 PM EDT - insight: define inference capacity trendline and hybrid end state
+
+Insight update: define inference capacity trendline and hybrid end state.
+
+Changed notes:
+  - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
+  - [[steady-inference-baseload-moves-to-controlled-capacity-not-always-owned-gpus|Steady inference baseload moves to controlled capacity, not always owned GPUs]]
+  - [[gpu-finance|GPU Finance]]
+  - [[inference-rent-to-controlled-capacity-evidence-audit-2026-07-16|Do AI companies with steady inference demand buy GPUs? Evidence audit, 2026-07-16]]
 
 ### Jul 16, 2026, 7:18 PM EDT - research: audit inference rent-to-controlled-capacity evidence
 
@@ -64,6 +74,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
 - Jul 15, 2026: notes: publish vault updates - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
 - Jul 15, 2026: source: deepen Connor Moore GPU credit transcript analysis - [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
@@ -88,12 +99,12 @@ Changed notes:
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
-- Jul 13, 2026: research: distinguish Silicon Network from Silicon Data - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
 
-_Showing the newest 25 of 38 updates in this window._
+_Showing the newest 25 of 39 updates in this window._
 
 ## Past 30 Days
 
+- Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
 - Jul 15, 2026: notes: publish vault updates - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
 - Jul 15, 2026: source: deepen Connor Moore GPU credit transcript analysis - [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
@@ -118,6 +129,5 @@ _Showing the newest 25 of 38 updates in this window._
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
-- Jul 13, 2026: research: distinguish Silicon Network from Silicon Data - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
 
-_Showing the newest 25 of 108 updates in this window._
+_Showing the newest 25 of 109 updates in this window._
