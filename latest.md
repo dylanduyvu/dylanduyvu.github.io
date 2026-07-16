@@ -1,14 +1,14 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 15, 2026, 9:25 PM EDT
+Generated: Jul 16, 2026, 7:18 PM EDT
 
 ## State Shift Summary
 
@@ -26,6 +26,20 @@ In the past 7 days, the public vault changed through 38 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 16, 2026, 7:18 PM EDT - research: audit inference rent-to-controlled-capacity evidence
+
+research: audit inference rent-to-controlled-capacity evidence.
+
+Changed notes:
+  - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
+  - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
+  - [[steady-inference-baseload-moves-to-controlled-capacity-not-always-owned-gpus|Steady inference baseload moves to controlled capacity, not always owned GPUs]]
+  - [[gpu-finance|GPU Finance]]
+  - [[inference-rent-to-controlled-capacity-evidence-audit-2026-07-16|Do AI companies with steady inference demand buy GPUs? Evidence audit, 2026-07-16]]
+  - [[personalized-models-compute-fragmentation-cross-assistant-2026-07-16|Commoditization, concentration, and personalized models: the cross-assistant discussion, 2026-07-16]]
+  - [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
+  - [[usd-ai|USD.AI]]
 
 ### Jul 15, 2026, 9:25 PM EDT - notes: publish vault updates
 
@@ -48,78 +62,9 @@ Changed notes:
   - [[usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15|Connor Moore (USD.AI) on Messari Fully Diluted: value insurance, operator-blind underwriting, duration push]]
   - [[usd-ai|USD.AI]]
 
-### Jul 15, 2026, 6:21 PM EDT - notes: update vault
-
-notes: update vault.
-
-Changed notes:
-  - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
-
-### Jul 15, 2026, 6:15 PM EDT - insight: frame operator verification as a credit graduation problem
-
-Insight update: frame operator verification as a credit graduation problem.
-
-Changed notes:
-  - [[operator-history-matters-but-a-portable-record-is-not-yet-a-business|Operator history matters, but a portable record is not yet a business]]
-  - [[usdai-david-choi-touchcraft-podcast-gpu-financing-2026-07|David Choi (USD.AI) on Touchcraft: the state of GPU financing]]
-
-### Jul 15, 2026, 5:22 PM EDT - research: clarify experiment decision and preserve USD.AI transcripts
-
-research: clarify experiment decision and preserve USD.AI transcripts.
-
-Changed notes:
-  - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
-  - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
-  - [[usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15|Connor Moore (USD.AI) on Messari Fully Diluted: value insurance, operator-blind underwriting, duration push]]
-  - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
-
-### Jul 15, 2026, 3:12 PM EDT - research: update GPU credit branches and source findings
-
-research: update GPU credit branches and source findings.
-
-Changed notes:
-  - [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
-  - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
-  - [[usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15|Connor Moore (USD.AI) on Messari Fully Diluted: value insurance, operator-blind underwriting, duration push]]
-  - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
-
-### Jul 15, 2026, 1:10 PM EDT - source: tighten Zile verification interpretation
-
-Source capture: tighten Zile verification interpretation.
-
-Changed notes:
-  - [[zile-cao-blockchain-capital-call-2026-07-10|Call: Zile Cao (Blockchain Capital) on the crypto-compute stack]]
-
-### Jul 15, 2026, 1:00 PM EDT - insight: operator history matters but portability is unproven
-
-Insight update: operator history matters but portability is unproven.
-
-Changed notes:
-  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
-  - [[operator-history-matters-but-a-portable-record-is-not-yet-a-business|Operator history matters, but a portable record is not yet a business]]
-  - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
-  - [[usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15|Connor Moore (USD.AI) on Messari Fully Diluted: value insurance, operator-blind underwriting, duration push]]
-  - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
-  - [[aravolta|Aravolta]]
-
-### Jul 15, 2026, 11:02 AM EDT - source: capture adjacent verification company postmortem
-
-Source capture: capture adjacent verification company postmortem.
-
-Changed notes:
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-  - [[zile-cao-blockchain-capital-call-2026-07-10|Call: Zile Cao (Blockchain Capital) on the crypto-compute stack]]
-
-### Jul 15, 2026, 9:48 AM EDT - source: mark operator outreach wave sent
-
-Source capture: mark operator outreach wave sent.
-
-Changed notes:
-  - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
-  - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
-
 ## Past 7 Days
 
+- Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
 - Jul 15, 2026: notes: publish vault updates - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
 - Jul 15, 2026: source: deepen Connor Moore GPU credit transcript analysis - [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
 - Jul 15, 2026: notes: update vault - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
@@ -144,12 +89,12 @@ Changed notes:
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: research: distinguish Silicon Network from Silicon Data - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
-- Jul 13, 2026: research: audit Silicon Network product and operator risk - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 
 _Showing the newest 25 of 38 updates in this window._
 
 ## Past 30 Days
 
+- Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
 - Jul 15, 2026: notes: publish vault updates - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
 - Jul 15, 2026: source: deepen Connor Moore GPU credit transcript analysis - [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
 - Jul 15, 2026: notes: update vault - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
@@ -174,6 +119,5 @@ _Showing the newest 25 of 38 updates in this window._
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 - Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - Jul 13, 2026: research: distinguish Silicon Network from Silicon Data - [[silicon-network-product-and-risk-model-audit-2026-07-13|Silicon Network product and risk model audit]]
-- Jul 13, 2026: research: audit Silicon Network product and operator risk - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 
-_Showing the newest 25 of 107 updates in this window._
+_Showing the newest 25 of 108 updates in this window._
