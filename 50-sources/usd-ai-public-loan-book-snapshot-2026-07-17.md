@@ -63,7 +63,8 @@ The literal statement that USD.AI has more money currently deployed than sitting
 
 ## Interpretation
 
-- Behavioral book evidence qualifies USD.AI's asset-first rhetoric. Hardware still sets collateral value and recovery, but contracted or demonstrated revenue is doing substantial origination and pricing work in the visible pipeline.
+- The book contradicts the simplified "we lend purely against GPUs" reading, but not USD.AI's full podcast account. Connor Moore said he does not care much about the borrower as a corporate-credit entity, then named the two things he does care about: the offtake agreement and the hardware. David Choi separately described a no-offtake tier at 15% with a larger debt-service reserve, adding that such deals tend to gain customers and reprice to 10-12% before installation.
+- The visible pipeline is therefore consistent with USD.AI avoiding traditional operator-credit underwriting while still relying heavily on project cash flow. Hardware sets collateral value and recovery; offtake or demonstrated rental revenue shapes pricing and the deal's mature form.
 - Borrower demand is ahead of capital currently ready for the full upcoming book. That is consistent with a capital-formation or distribution bottleneck.
 - The snapshot does **not** prove the offered risk-adjusted return is unattractive. USD.AI had already attracted roughly $398M of TVL by its 2026-06-08 report, term sheets may not all close, and new deposits can arrive as loans approach funding.
 - A stronger test would track the funding gap through time: vault net flows, how long deals remain in each stage, whether deals stall for capital, and whether higher projected yield closes the gap.

@@ -17,13 +17,15 @@ tags: [gpu, lending, offtake, underwriting, loan-book]
 
 ## Claim
 
-USD.AI presents its underwriting as lending to recoverable GPU assets rather than relying on borrower credit, but its public 2026-07-17 pipeline was overwhelmingly revenue-backed: eight of nine upcoming loans, representing 97.9% of principal, were labeled `Contract`; the ninth was `On-Demand`; none was labeled `No Offtake`.
+USD.AI presents its underwriting as lending to recoverable GPU assets rather than relying on borrower corporate credit, while its public 2026-07-17 pipeline was overwhelmingly revenue-backed: eight of nine upcoming loans, representing 97.9% of principal, were labeled `Contract`; the ninth was `On-Demand`; none was labeled `No Offtake`.
 
-The correct read is not that USD.AI refuses merchant exposure. One on-demand loan remains. It is that the behavioral book looks much more contract-dependent than the strongest version of the hardware-first positioning suggests.
+This is not the opposite of USD.AI's full podcast claim. Connor Moore's "I don't really care who the actual counterparty is" referred to the borrower/operator as a corporate-credit entity; in the same answer, he said the relevant assets were the offtake agreement and hardware. David Choi explicitly described a no-offtake tier at 15% with a larger reserve, then said those deals usually gain customers and reprice to 10-12% by installation.
+
+The correct read is narrower: USD.AI can begin with pure GPU collateral, but the mature visible book still converges toward contracted or demonstrated revenue. The pipeline contradicts a literal collateral-only interpretation, not the detailed underwriting model they described.
 
 ## Why It Matters
 
-This is stronger than a statement of policy because it shows what USD.AI is actually preparing to fund. Hardware appears to determine the recovery floor and possible loan size, while contracted or demonstrated compute revenue still determines which large deals enter the visible book and how they price.
+This is stronger than a statement of policy because it shows what USD.AI is actually preparing to fund. Hardware appears to determine the recovery floor and possible loan size, while contracted or demonstrated compute revenue shapes pricing and the deal's mature form.
 
 It reinforces the broader inversion that GPU-backed debt is contract-backed cash flow with hardware collateral underneath, while preserving the small but real Tier 3 route for on-demand operators.
 
@@ -33,6 +35,8 @@ It reinforces the broader inversion that GPU-backed debt is contract-backed cash
 - Eight `Contract` deals totaled $399.03M, or 97.9% of upcoming principal.
 - One $8.42M deal was `On-Demand`; zero were `No Offtake`.
 - USD.AI's published underwriting policy says rates are set by offtake quality and LTV, and closing requires an executed offtake agreement or documented on-demand revenue history.
+- Connor Moore's podcast claim de-emphasized borrower corporate credit, not offtake: he reduced the business to the customer contract plus clean title to the hardware.
+- David Choi said no-offtake loans can start at 15% with a wider reserve but typically acquire offtake and reprice to 10-12% before installation.
 
 ## Counterpoints / Uncertainty
 
