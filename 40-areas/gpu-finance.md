@@ -70,6 +70,8 @@ USD.AI's [[usd-ai-differentiates-on-standardization-and-distribution-not-residua
 
 That ambition contains a [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|counterparty-credit contradiction]]. If SaaS and AI-company cash flows are too fragile to finance, their compute offtake is equally fragile. The end state only reconciles if GPUs can be re-rented quickly and a large pool diversifies individual customer failures. Current bankability still comes mainly from investment-grade customers, prepayment, guarantees, or demonstrated merchant revenue.
 
+The asset-level object underneath that merchant revenue is [[gpu-earning-power-is-macro-level-offtake|GPU earning power]]: lifetime net cash from realized rental rates and utilization across successive customers, after operating and redeployment costs. This is macro-level offtake. A named contract fixes part of the curve; hardware-first lending must underwrite the curve itself.
+
 The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU NFTs, and pool tokens can finance hardware and make ownership/transfers/payouts legible, but the operator still controls deployment, marketplace integrations, earnings calculations, and remittance. Onchain auditability begins after these offchain facts enter the system. Tokenization therefore packages operator risk rather than independently underwriting it, which preserves the verification problem underneath the financing wrapper.
 
 ## Useful Patterns
@@ -159,6 +161,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
+- [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]

@@ -35,6 +35,7 @@ USD.AI is strategically relevant because it lends against GPU-backed infrastruct
 - The real differentiation is not residual-value underwriting, which large lenders already perform. Today it is standardized smaller-loan origination, a narrower asset/project underwriting boundary, and onchain funding and distribution; the novel end state is a liquid diversified GPU-loan pool. See [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|the differentiation audit]].
 - Key semantic correction: USD.AI is anti-borrower-corporate-credit, not anti-offtake. Its hardware-first language removes the operator's broader equity story from underwriting, while customer contracts and rental cash flow remain central to repayment and pricing.
 - This creates a real contradiction in David Choi's macro thesis: if AI-company cash flows are too fragile for corporate credit, the same company's compute offtake is not automatically bankable. The coherent end state requires replaceable customers and pooled default risk, not permanently reliable contracts. See [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|the contradiction audit]].
+- The underlying asset-level variable is [[gpu-earning-power-is-macro-level-offtake|GPU earning power]]: lifetime net cash across successive customers, including realized rental rates, utilization, re-rental time, operating costs, and resale. Named contracts become optional only if this merchant demand is deep and measurable.
 
 ## Underwriting Model
 
@@ -109,6 +110,7 @@ SUPERSEDED FIRST PASS, kept for method history: EVIDENCE CHECK ON THE BASE CASE,
 - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
+- [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 
 ## Related Projects / Areas
 
