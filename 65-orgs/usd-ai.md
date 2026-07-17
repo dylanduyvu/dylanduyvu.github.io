@@ -34,6 +34,7 @@ USD.AI is strategically relevant because it lends against GPU-backed infrastruct
 - Current model versus end state: USD.AI currently prices named offtaker credit, but David Choi's long-term vision is a diversified GPU asset-backed market where no single operator or customer controls the instrument. That vision diversifies named credit risk; it does not eliminate the need for aggregate compute revenue. See [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|the distilled distinction]].
 - The real differentiation is not residual-value underwriting, which large lenders already perform. Today it is standardized smaller-loan origination, a narrower asset/project underwriting boundary, and onchain funding and distribution; the novel end state is a liquid diversified GPU-loan pool. See [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|the differentiation audit]].
 - Key semantic correction: USD.AI is anti-borrower-corporate-credit, not anti-offtake. Its hardware-first language removes the operator's broader equity story from underwriting, while customer contracts and rental cash flow remain central to repayment and pricing.
+- This creates a real contradiction in David Choi's macro thesis: if AI-company cash flows are too fragile for corporate credit, the same company's compute offtake is not automatically bankable. The coherent end state requires replaceable customers and pooled default risk, not permanently reliable contracts. See [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|the contradiction audit]].
 
 ## Underwriting Model
 
@@ -107,6 +108,7 @@ SUPERSEDED FIRST PASS, kept for method history: EVIDENCE CHECK ON THE BASE CASE,
 - [[usd-ai-upcoming-book-outruns-idle-capital-but-does-not-prove-poor-risk-reward|USD.AI's upcoming book outruns idle capital but does not prove poor risk-reward]]
 - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
+- [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 
 ## Related Projects / Areas
 

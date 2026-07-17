@@ -68,6 +68,8 @@ David Choi's long-term vision goes beyond that current book. He wants diversifie
 
 USD.AI's [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|actual differentiation]] is therefore not noticing GPU residual value. Large lenders already mark collateral and recovery. Its current wedge is standardizing and funding smaller nonrecourse loans that bespoke private credit serves inefficiently; its genuinely distinct but unproven ambition is continuous onchain distribution of a diversified GPU-loan pool.
 
+That ambition contains a [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|counterparty-credit contradiction]]. If SaaS and AI-company cash flows are too fragile to finance, their compute offtake is equally fragile. The end state only reconciles if GPUs can be re-rented quickly and a large pool diversifies individual customer failures. Current bankability still comes mainly from investment-grade customers, prepayment, guarantees, or demonstrated merchant revenue.
+
 The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU NFTs, and pool tokens can finance hardware and make ownership/transfers/payouts legible, but the operator still controls deployment, marketplace integrations, earnings calculations, and remittance. Onchain auditability begins after these offchain facts enter the system. Tokenization therefore packages operator risk rather than independently underwriting it, which preserves the verification problem underneath the financing wrapper.
 
 ## Useful Patterns
@@ -156,6 +158,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - [[usd-ai-upcoming-book-outruns-idle-capital-but-does-not-prove-poor-risk-reward|USD.AI's upcoming book outruns idle capital but does not prove poor risk-reward]]
 - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
+- [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
