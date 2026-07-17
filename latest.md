@@ -1,31 +1,42 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-16
+updated: 2026-07-17
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 16, 2026, 7:24 PM EDT
+Generated: Jul 17, 2026, 12:38 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 39 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 38 note commits. The most recent movement is:
 
+- Insight update: usd.ai public pipeline is contract-heavy and ahead of idle capital.
 - Insight update: define inference capacity trendline and hybrid end state.
 - Source capture: deepen Connor Moore GPU credit transcript analysis.
 - Insight update: frame operator verification as a credit graduation problem.
 - Source capture: tighten Zile verification interpretation.
 - Insight update: operator history matters but portability is unproven.
-- Source capture: capture adjacent verification company postmortem.
 
 ## Current Hub Signals
 
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 17, 2026, 12:38 PM EDT - insight: usd.ai public pipeline is contract-heavy and ahead of idle capital
+
+Insight update: usd.ai public pipeline is contract-heavy and ahead of idle capital.
+
+Changed notes:
+  - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
+  - [[usd-ai-upcoming-book-outruns-idle-capital-but-does-not-prove-poor-risk-reward|USD.AI's upcoming book outruns idle capital but does not prove poor risk-reward]]
+  - [[gpu-finance|GPU Finance]]
+  - [[usd-ai-public-loan-book-snapshot-2026-07-17|USD.AI public loan-book snapshot, 2026-07-17]]
+  - [[usd-ai|USD.AI]]
 
 ### Jul 16, 2026, 7:24 PM EDT - insight: define inference capacity trendline and hybrid end state
 
@@ -51,29 +62,9 @@ Changed notes:
   - [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
   - [[usd-ai|USD.AI]]
 
-### Jul 15, 2026, 9:25 PM EDT - notes: publish vault updates
-
-notes: publish vault updates.
-
-Changed notes:
-  - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
-  - [[usdai-david-choi-touchcraft-podcast-gpu-financing-2026-07|David Choi (USD.AI) on Touchcraft: the state of GPU financing]]
-
-### Jul 15, 2026, 7:29 PM EDT - source: deepen Connor Moore GPU credit transcript analysis
-
-Source capture: deepen Connor Moore GPU credit transcript analysis.
-
-Changed notes:
-  - [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
-  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
-  - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
-  - [[operator-history-matters-but-a-portable-record-is-not-yet-a-business|Operator history matters, but a portable record is not yet a business]]
-  - [[gpu-finance|GPU Finance]]
-  - [[usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15|Connor Moore (USD.AI) on Messari Fully Diluted: value insurance, operator-blind underwriting, duration push]]
-  - [[usd-ai|USD.AI]]
-
 ## Past 7 Days
 
+- Jul 17, 2026: insight: usd.ai public pipeline is contract-heavy and ahead of idle capital - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
 - Jul 15, 2026: notes: publish vault updates - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
@@ -98,12 +89,12 @@ Changed notes:
 - Jul 13, 2026: source: repair GPU lender wave two contact addresses - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
-- Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 
-_Showing the newest 25 of 39 updates in this window._
+_Showing the newest 25 of 38 updates in this window._
 
 ## Past 30 Days
 
+- Jul 17, 2026: insight: usd.ai public pipeline is contract-heavy and ahead of idle capital - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
 - Jul 15, 2026: notes: publish vault updates - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
@@ -128,6 +119,5 @@ _Showing the newest 25 of 39 updates in this window._
 - Jul 13, 2026: source: repair GPU lender wave two contact addresses - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
 - Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
-- Jul 13, 2026: source: capture Silicon operator vetting exchange - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 
-_Showing the newest 25 of 109 updates in this window._
+_Showing the newest 25 of 110 updates in this window._
