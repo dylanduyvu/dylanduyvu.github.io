@@ -32,6 +32,7 @@ USD.AI is strategically relevant because it lends against GPU-backed infrastruct
 - Public-book snapshot, 2026-07-17: eight of nine upcoming loans, representing 97.9% of upcoming principal, were labeled `Contract`; the ninth was `On-Demand`; none was `No Offtake`. This contradicts a collateral-only reading but fits the full podcast model: de-emphasize borrower corporate credit, then lend against hardware plus offtake or demonstrated rental cash flow. See [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|the distilled read]].
 - The same snapshot showed a pipeline-funding gap rather than a current deployed-capital excess: $308.60M of API-labeled `newDealsCapital` versus $206.36M of idle PYUSD. Active loans were only $100.74M. This is consistent with capital formation lagging origination demand but does not prove unattractive risk-adjusted returns.
 - Current model versus end state: USD.AI currently prices named offtaker credit, but David Choi's long-term vision is a diversified GPU asset-backed market where no single operator or customer controls the instrument. That vision diversifies named credit risk; it does not eliminate the need for aggregate compute revenue. See [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|the distilled distinction]].
+- The real differentiation is not residual-value underwriting, which large lenders already perform. Today it is standardized smaller-loan origination, a narrower asset/project underwriting boundary, and onchain funding and distribution; the novel end state is a liquid diversified GPU-loan pool. See [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|the differentiation audit]].
 
 ## Underwriting Model
 
@@ -104,6 +105,7 @@ SUPERSEDED FIRST PASS, kept for method history: EVIDENCE CHECK ON THE BASE CASE,
 - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - [[usd-ai-upcoming-book-outruns-idle-capital-but-does-not-prove-poor-risk-reward|USD.AI's upcoming book outruns idle capital but does not prove poor risk-reward]]
 - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
+- [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 
 ## Related Projects / Areas
 

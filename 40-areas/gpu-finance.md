@@ -66,6 +66,8 @@ USD.AI's live public book on 2026-07-17 adds behavioral evidence. Eight of nine 
 
 David Choi's long-term vision goes beyond that current book. He wants diversified pools of GPU loans across operators and customers, so investors trade standardized hardware-backed exposure rather than CoreWeave, Lambda, or one named offtaker. The accurate distinction is [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|named credit risk becoming diversified, not compute revenue becoming irrelevant]]. A residential-mortgage analogy works only for pooling: GPU loans are closer to rental-property or equipment finance because the financed asset's customers generate the repayment cash. The unresolved failure mode is correlation: if AI demand weakens, both rental cash flow and GPU recovery value can fall together.
 
+USD.AI's [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|actual differentiation]] is therefore not noticing GPU residual value. Large lenders already mark collateral and recovery. Its current wedge is standardizing and funding smaller nonrecourse loans that bespoke private credit serves inefficiently; its genuinely distinct but unproven ambition is continuous onchain distribution of a diversified GPU-loan pool.
+
 The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU NFTs, and pool tokens can finance hardware and make ownership/transfers/payouts legible, but the operator still controls deployment, marketplace integrations, earnings calculations, and remittance. Onchain auditability begins after these offchain facts enter the system. Tokenization therefore packages operator risk rather than independently underwriting it, which preserves the verification problem underneath the financing wrapper.
 
 ## Useful Patterns
@@ -153,6 +155,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - [[usd-ai-upcoming-book-outruns-idle-capital-but-does-not-prove-poor-risk-reward|USD.AI's upcoming book outruns idle capital but does not prove poor risk-reward]]
 - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
+- [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
