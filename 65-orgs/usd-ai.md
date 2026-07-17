@@ -2,7 +2,7 @@
 type: org
 status: active
 created: 2026-06-29
-updated: 2026-07-16
+updated: 2026-07-17
 aliases: [USD.AI, USD AI]
 people: [harry-page]
 projects: [gpu-compute-novation]
@@ -29,6 +29,8 @@ USD.AI is strategically relevant because it lends against GPU-backed infrastruct
 - USD.AI's planned regional hub-and-spoke model relies on local credit funds as originators and underwriters, meaning the front end standardizes execution and distribution more than it eliminates expert credit judgment.
 - It already procures continuous infrastructure-level collateral verification from [[aravolta|Aravolta]] (published case study, seen 2026-07-02): "verify, don't trust" - real-time physical presence, serial identity, health, and availability of the GPU collateral, explicitly excluding tenant usage and application performance. Aravolta is plausibly the "verify" in the escrow-on-install-and-verify structure. New name: Conor Moore, co-founder & COO, quoted in the case study.
 - Scale reference: on the order of $100M+ deployed against a ~$1.2B pipeline (compiled figures, see provenance note below).
+- Public-book snapshot, 2026-07-17: eight of nine upcoming loans, representing 97.9% of upcoming principal, were labeled `Contract`; the ninth was `On-Demand`; none was `No Offtake`. See [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|the distilled read]].
+- The same snapshot showed a pipeline-funding gap rather than a current deployed-capital excess: $308.60M of API-labeled `newDealsCapital` versus $206.36M of idle PYUSD. Active loans were only $100.74M. This is consistent with capital formation lagging origination demand but does not prove unattractive risk-adjusted returns.
 
 ## Underwriting Model
 
@@ -89,6 +91,7 @@ SUPERSEDED FIRST PASS, kept for method history: EVIDENCE CHECK ON THE BASE CASE,
 - [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
 - [[aravolta-usdai-collateral-verification-case-study-2026-07-02|Aravolta x USD.AI case study]]
 - [[usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15|Connor Moore on Messari Fully Diluted]]
+- [[usd-ai-public-loan-book-snapshot-2026-07-17|USD.AI public loan-book snapshot, 2026-07-17]]
 
 ## Related Insights
 
@@ -97,6 +100,8 @@ SUPERSEDED FIRST PASS, kept for method history: EVIDENCE CHECK ON THE BASE CASE,
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - [[gpu-value-warranties-can-synthetically-insure-lender-loss-given-default|GPU value warranties can synthetically insure lender loss given default]]
 - [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
+- [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
+- [[usd-ai-upcoming-book-outruns-idle-capital-but-does-not-prove-poor-risk-reward|USD.AI's upcoming book outruns idle capital but does not prove poor risk-reward]]
 
 ## Related Projects / Areas
 

@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-06-29
-updated: 2026-07-16
+updated: 2026-07-17
 domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee, connor-moore]
@@ -62,6 +62,8 @@ The July 2026 lender-memory refinement is that a track record becomes portable a
 
 The full Connor Moore/USD.AI transcript adds a competing explanation for the unresolved middle. USD.AI's typical $30-50 million cluster is allegedly too small for bespoke private-credit transaction economics, while its wedge is boilerplate nonrecourse documents, predictable terms, and visible committed liquidity from $300 thousand upward. The gap may therefore be caused by the fixed cost of manufacturing a loan before it is caused by missing operator evidence. Separately, Barkr/Munich Re value insurance reduces collateral loss after default; it may support longer debt but does not cure short rental demand against long liabilities.
 
+USD.AI's live public book on 2026-07-17 adds behavioral evidence. Eight of nine upcoming loans, 97.9% of principal, were contract-backed; one was on-demand; none was no-offtake. The same API showed $308.60M of new-deal capital against $206.36M of idle PYUSD. The book therefore looks contract-heavy and capital-hungry, but the latter is only a pipeline-funding gap until persistent failed capital formation is observed.
+
 The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU NFTs, and pool tokens can finance hardware and make ownership/transfers/payouts legible, but the operator still controls deployment, marketplace integrations, earnings calculations, and remittance. Onchain auditability begins after these offchain facts enter the system. Tokenization therefore packages operator risk rather than independently underwriting it, which preserves the verification problem underneath the financing wrapper.
 
 ## Useful Patterns
@@ -69,6 +71,8 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - Hardware recovery matters more than bare contract cash flows.
 - GPU-backed debt may be contract-backed debt with a hardware recovery floor.
 - Offtake-based GPU loans may systematically centralize capital around operators with investment-grade customers.
+- USD.AI's visible upcoming book can be overwhelmingly contract-backed even while its underwriting is described as asset-first.
+- A future loan pipeline exceeding idle vault capital is a capital-formation watchpoint, not proof by itself that the offered risk-return fails to clear.
 - Hyperscaler excess or N-1 compute supply is a different signal from customer offtake novation, but it can still loosen the market.
 - Long-term GPU offtake can include large deposits, making reserved take-or-pay capacity valuable to keep.
 - Supply bottlenecks reduce near-term seller-side liquidity for novation.
@@ -144,6 +148,8 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
 - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
+- [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
+- [[usd-ai-upcoming-book-outruns-idle-capital-but-does-not-prove-poor-risk-reward|USD.AI's upcoming book outruns idle capital but does not prove poor risk-reward]]
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
