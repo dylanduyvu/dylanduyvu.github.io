@@ -8,24 +8,33 @@ updated: 2026-07-17
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 17, 2026, 1:49 PM EDT
+Generated: Jul 17, 2026, 1:52 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 40 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 41 note commits. The most recent movement is:
 
+- Insight update: separate usd.ai underwriting from its real differentiation.
 - Insight update: correct the mortgage analogy for gpu credit.
 - Insight update: separate usd.ai current offtake model from pooled gpu credit end state.
 - Insight update: usd.ai public pipeline is contract-heavy and ahead of idle capital.
 - Insight update: define inference capacity trendline and hybrid end state.
 - Source capture: deepen Connor Moore GPU credit transcript analysis.
-- Insight update: frame operator verification as a credit graduation problem.
 
 ## Current Hub Signals
 
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 17, 2026, 1:52 PM EDT - insight: separate usd.ai underwriting from its real differentiation
+
+Insight update: separate usd.ai underwriting from its real differentiation.
+
+Changed notes:
+  - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
+  - [[gpu-finance|GPU Finance]]
+  - [[usd-ai|USD.AI]]
 
 ### Jul 17, 2026, 1:49 PM EDT - insight: correct the mortgage analogy for gpu credit
 
@@ -91,6 +100,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: correct the mortgage analogy for gpu credit - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - Jul 17, 2026: insight: separate usd.ai current offtake model from pooled gpu credit end state - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - Jul 17, 2026: correction: distinguish borrower credit from project cash flow in usd.ai model - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
@@ -115,12 +125,12 @@ Changed notes:
 - Jul 14, 2026: source: correct gpu operator outreach drafts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 - Jul 14, 2026: source: add cleaned gpu operator outreach packet - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 - Jul 14, 2026: notes: capture operator diligence and gpu debt research - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
-- Jul 13, 2026: source: expand GPU lender wave two cohort - [[gpu-lender-wave-two-expansion-draft-packet-2026-07-13|GPU lender wave two: expansion draft packet]]
 
-_Showing the newest 25 of 40 updates in this window._
+_Showing the newest 25 of 41 updates in this window._
 
 ## Past 30 Days
 
+- Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: correct the mortgage analogy for gpu credit - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - Jul 17, 2026: insight: separate usd.ai current offtake model from pooled gpu credit end state - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - Jul 17, 2026: correction: distinguish borrower credit from project cash flow in usd.ai model - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
@@ -145,6 +155,5 @@ _Showing the newest 25 of 40 updates in this window._
 - Jul 14, 2026: source: correct gpu operator outreach drafts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 - Jul 14, 2026: source: add cleaned gpu operator outreach packet - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 - Jul 14, 2026: notes: capture operator diligence and gpu debt research - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
-- Jul 13, 2026: source: expand GPU lender wave two cohort - [[gpu-lender-wave-two-expansion-draft-packet-2026-07-13|GPU lender wave two: expansion draft packet]]
 
-_Showing the newest 25 of 113 updates in this window._
+_Showing the newest 25 of 114 updates in this window._
