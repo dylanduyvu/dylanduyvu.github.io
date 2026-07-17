@@ -1,0 +1,47 @@
+---
+type: insight
+status: distilled
+created: 2026-07-17
+updated: 2026-07-17
+confidence: medium-high
+domains: [gpu-finance, asset-backed-lending, securitization, ai-infrastructure]
+projects: []
+sources: [usdai-david-choi-touchcraft-podcast-gpu-financing-2026-07, usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06, usd-ai-public-loan-book-snapshot-2026-07-17]
+people: [david-choi]
+orgs: [usd-ai]
+aliases: [usdai long term credit vision, gpu credit without named offtake, diversified gpu abs vision]
+tags: [gpu, lending, offtake, securitization, capital-markets]
+---
+
+# USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue
+
+## Claim
+
+USD.AI's current underwriting and David Choi's long-term vision are different layers.
+
+Today, USD.AI prices named offtake credit directly: stronger customers get lower rates, while on-demand or no-offtake deals pay more and carry larger cushions. David's intended end state is a standardized, diversified pool of GPU loans in which investors no longer have to underwrite one operator or one customer by name. The GPU becomes the standardized collateral and customer-specific default risk becomes a portfolio statistic.
+
+That does not make compute demand or revenue irrelevant. A GPU does not pay debt service by itself. The long-term thesis still requires many customers paying for compute, sufficient utilization, and liquid recovery values. What disappears is dependence on any single named offtaker, not dependence on aggregate cash flow.
+
+## Evidence
+
+- Touchcraft, ~9:34: David says the missing product is a diversified asset-backed security across GPUs and different customers. A CoreWeave or Lambda bond is still single-company credit, not the pooled instrument he wants.
+- Touchcraft, ~19:46: he says current large loans are sound because actual cash flows, balance sheets, demand, income, and jobs exist on the other side.
+- Touchcraft, ~20:53-21:43: he predicts negative-cash-flow AI companies will replace declining SaaS borrowers and that future credit will be secured by GPUs rather than unsecured corporate cash flows.
+- Touchcraft, ~32:46: his current rate box still gives Amazon/Fortune 500 offtake lower rates and charges 15% for no offtake.
+- Decentralised, ~1:13:44-1:15:08: he repeats the end-state thesis that the financeable hard asset is the GPU, not the AI company's corporate credit.
+- Public book, 2026-07-17: eight of nine upcoming loans were contract-backed, showing that the end state has not yet replaced current underwriting practice.
+
+## Why It Matters
+
+USD.AI's present product mostly extends the existing contract-plus-collateral model down-market. Its larger ambition is different: turn GPU credit from bespoke operator/offtaker exposure into a tradable asset class resembling a mortgage pool.
+
+This also identifies the thesis's hardest unresolved problem. GPU values and compute revenue depend on the same underlying AI demand. If weak AI-company credit reflects collapsing compute economics, both the payment stream and the collateral value can fall together. Pooling removes single-name risk but not correlated market risk.
+
+## Links
+
+- Current-book evidence: [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
+- Correlation problem: [[timeline-slips-hit-gpu-loan-engine-and-backstop-together|Timeline slips hit GPU loan engine and backstop together]]
+- Core inversion: [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
+- Org: [[usd-ai|USD.AI]]
+- Area: [[gpu-finance|GPU Finance]]

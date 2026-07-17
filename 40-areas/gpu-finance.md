@@ -64,6 +64,8 @@ The full Connor Moore/USD.AI transcript adds a competing explanation for the unr
 
 USD.AI's live public book on 2026-07-17 adds behavioral evidence. Eight of nine upcoming loans, 97.9% of principal, were contract-backed; one was on-demand; none was no-offtake. This contradicts a pure collateral-only reading but fits the detailed podcast model: borrower corporate credit is stripped out while hardware and project cash flow remain. The same API showed $308.60M of new-deal capital against $206.36M of idle PYUSD. The book therefore looks contract-heavy and capital-hungry, but the latter is only a pipeline-funding gap until persistent failed capital formation is observed.
 
+David Choi's long-term vision goes beyond that current book. He wants diversified pools of GPU loans across operators and customers, so investors trade standardized hardware-backed exposure rather than CoreWeave, Lambda, or one named offtaker. The accurate distinction is [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|named credit risk becoming diversified, not compute revenue becoming irrelevant]]. The unresolved failure mode is correlation: if AI demand weakens, both rental cash flow and GPU recovery value can fall together.
+
 The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU NFTs, and pool tokens can finance hardware and make ownership/transfers/payouts legible, but the operator still controls deployment, marketplace integrations, earnings calculations, and remittance. Onchain auditability begins after these offchain facts enter the system. Tokenization therefore packages operator risk rather than independently underwriting it, which preserves the verification problem underneath the financing wrapper.
 
 ## Useful Patterns
@@ -150,6 +152,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - [[usd-ai-upcoming-book-outruns-idle-capital-but-does-not-prove-poor-risk-reward|USD.AI's upcoming book outruns idle capital but does not prove poor risk-reward]]
+- [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
