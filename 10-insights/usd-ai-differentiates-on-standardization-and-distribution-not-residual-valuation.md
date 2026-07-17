@@ -21,6 +21,8 @@ Estimating GPU residual value is not USD.AI's differentiated insight. Any compet
 
 USD.AI currently uses most of the same economic ingredients. Its real product claim is that it can package them more cheaply and repeatedly: isolate hardware and project cash flow from the operator's broader corporate credit, use standardized nonrecourse documents and collateral controls, originate loans too small for bespoke private-credit economics, and recycle the exposure into an onchain pool funded by sUSD.AI depositors.
 
+The crucial distinction is that USD.AI is contrarian about **borrower corporate credit**, not about **offtake**. Connor Moore's claim that he does not care who the borrower is is immediately qualified by his focus on the hardware, the customer contract, and rental cash flow. Harry Page stated the same split directly: the GPU is recoverable collateral, while the offtake contract and the offtaker's credit support debt service. Reading the rhetoric as a present-day rejection of offtake overstates the model.
+
 Its long-term claim is more ambitious and more differentiated: replace single-operator loans with a liquid, diversified pool of machine-level GPU credit. That is a capital-markets and distribution thesis, not a superior-residual-model thesis.
 
 ## What Is Standard
@@ -40,6 +42,8 @@ Its long-term claim is more ambitious and more differentiated: replace single-op
 ## Honest Read
 
 Today, USD.AI looks less like a new theory of lending and more like tech-enabled, crypto-funded equipment or project finance for a segment that bespoke private credit serves inefficiently. That can be a real business, but it is differentiation through process, capital source, deal size, and speed rather than through recognizing that GPUs have residual value.
+
+The strongest hardware-only interpretation is not supported by current behavior. A serious rejection of offtake would show a meaningful no-offtake book, pricing largely independent of customer credit, and realized recoveries proving that liquidation value can carry the loan. USD.AI instead prices strong offtake materially cheaper, expects pre-offtake builds to acquire customers before installation, and showed no `No Offtake` loans in its public upcoming pipeline on 2026-07-17.
 
 The genuinely novel part remains prospective: machine-level origination plus a liquid diversified GPU-loan pool that becomes a market benchmark. It is unproven whether the onchain wrapper lowers funding and transaction costs enough, whether the pool develops real secondary liquidity, and whether diversification survives the correlated risk that compute revenue and GPU values can fall together.
 

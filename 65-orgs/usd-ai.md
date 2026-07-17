@@ -33,6 +33,7 @@ USD.AI is strategically relevant because it lends against GPU-backed infrastruct
 - The same snapshot showed a pipeline-funding gap rather than a current deployed-capital excess: $308.60M of API-labeled `newDealsCapital` versus $206.36M of idle PYUSD. Active loans were only $100.74M. This is consistent with capital formation lagging origination demand but does not prove unattractive risk-adjusted returns.
 - Current model versus end state: USD.AI currently prices named offtaker credit, but David Choi's long-term vision is a diversified GPU asset-backed market where no single operator or customer controls the instrument. That vision diversifies named credit risk; it does not eliminate the need for aggregate compute revenue. See [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|the distilled distinction]].
 - The real differentiation is not residual-value underwriting, which large lenders already perform. Today it is standardized smaller-loan origination, a narrower asset/project underwriting boundary, and onchain funding and distribution; the novel end state is a liquid diversified GPU-loan pool. See [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|the differentiation audit]].
+- Key semantic correction: USD.AI is anti-borrower-corporate-credit, not anti-offtake. Its hardware-first language removes the operator's broader equity story from underwriting, while customer contracts and rental cash flow remain central to repayment and pricing.
 
 ## Underwriting Model
 
