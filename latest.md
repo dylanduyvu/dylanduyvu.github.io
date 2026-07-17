@@ -8,24 +8,33 @@ updated: 2026-07-17
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 17, 2026, 1:57 PM EDT
+Generated: Jul 17, 2026, 2:11 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 42 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 43 note commits. The most recent movement is:
 
+- Insight update: ai offtake inherits the credit risk usd.ai says is dying.
 - Insight update: usd.ai is anti-corporate-credit, not anti-offtake.
 - Insight update: separate usd.ai underwriting from its real differentiation.
 - Insight update: correct the mortgage analogy for gpu credit.
 - Insight update: separate usd.ai current offtake model from pooled gpu credit end state.
 - Insight update: usd.ai public pipeline is contract-heavy and ahead of idle capital.
-- Insight update: define inference capacity trendline and hybrid end state.
 
 ## Current Hub Signals
 
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 17, 2026, 2:11 PM EDT - insight: ai offtake inherits the credit risk usd.ai says is dying
+
+Insight update: ai offtake inherits the credit risk usd.ai says is dying.
+
+Changed notes:
+  - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
+  - [[gpu-finance|GPU Finance]]
+  - [[usd-ai|USD.AI]]
 
 ### Jul 17, 2026, 1:57 PM EDT - insight: usd.ai is anti-corporate-credit, not anti-offtake
 
@@ -108,6 +117,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: correct the mortgage analogy for gpu credit - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
@@ -132,12 +142,12 @@ Changed notes:
 - Jul 14, 2026: correct Phil follow-up question mapping - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 - Jul 14, 2026: insight: narrow operator record wedge at mega tier - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 - Jul 14, 2026: source: correct gpu operator outreach drafts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
-- Jul 14, 2026: source: add cleaned gpu operator outreach packet - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 
-_Showing the newest 25 of 42 updates in this window._
+_Showing the newest 25 of 43 updates in this window._
 
 ## Past 30 Days
 
+- Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: correct the mortgage analogy for gpu credit - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
@@ -162,6 +172,5 @@ _Showing the newest 25 of 42 updates in this window._
 - Jul 14, 2026: correct Phil follow-up question mapping - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 - Jul 14, 2026: insight: narrow operator record wedge at mega tier - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 - Jul 14, 2026: source: correct gpu operator outreach drafts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
-- Jul 14, 2026: source: add cleaned gpu operator outreach packet - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 
-_Showing the newest 25 of 115 updates in this window._
+_Showing the newest 25 of 116 updates in this window._
