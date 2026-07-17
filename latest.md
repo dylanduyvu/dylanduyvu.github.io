@@ -8,24 +8,33 @@ updated: 2026-07-17
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 17, 2026, 2:11 PM EDT
+Generated: Jul 17, 2026, 2:14 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 43 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 44 note commits. The most recent movement is:
 
+- Insight update: gpu earning power is macro-level offtake.
 - Insight update: ai offtake inherits the credit risk usd.ai says is dying.
 - Insight update: usd.ai is anti-corporate-credit, not anti-offtake.
 - Insight update: separate usd.ai underwriting from its real differentiation.
 - Insight update: correct the mortgage analogy for gpu credit.
 - Insight update: separate usd.ai current offtake model from pooled gpu credit end state.
-- Insight update: usd.ai public pipeline is contract-heavy and ahead of idle capital.
 
 ## Current Hub Signals
 
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 17, 2026, 2:14 PM EDT - insight: gpu earning power is macro-level offtake
+
+Insight update: gpu earning power is macro-level offtake.
+
+Changed notes:
+  - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
+  - [[gpu-finance|GPU Finance]]
+  - [[usd-ai|USD.AI]]
 
 ### Jul 17, 2026, 2:11 PM EDT - insight: ai offtake inherits the credit risk usd.ai says is dying
 
@@ -117,6 +126,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
@@ -141,12 +151,12 @@ Changed notes:
 - Jul 14, 2026: notes: update gpu financing strategy and outreach - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 14, 2026: correct Phil follow-up question mapping - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 - Jul 14, 2026: insight: narrow operator record wedge at mega tier - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
-- Jul 14, 2026: source: correct gpu operator outreach drafts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 
-_Showing the newest 25 of 43 updates in this window._
+_Showing the newest 25 of 44 updates in this window._
 
 ## Past 30 Days
 
+- Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
@@ -171,6 +181,5 @@ _Showing the newest 25 of 43 updates in this window._
 - Jul 14, 2026: notes: update gpu financing strategy and outreach - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 14, 2026: correct Phil follow-up question mapping - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 - Jul 14, 2026: insight: narrow operator record wedge at mega tier - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
-- Jul 14, 2026: source: correct gpu operator outreach drafts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
 
-_Showing the newest 25 of 116 updates in this window._
+_Showing the newest 25 of 117 updates in this window._
