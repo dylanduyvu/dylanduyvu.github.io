@@ -8,11 +8,11 @@ updated: 2026-07-17
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 17, 2026, 12:38 PM EDT
+Generated: Jul 17, 2026, 12:48 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 38 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 39 note commits. The most recent movement is:
 
 - Insight update: usd.ai public pipeline is contract-heavy and ahead of idle capital.
 - Insight update: define inference capacity trendline and hybrid end state.
@@ -26,6 +26,16 @@ In the past 7 days, the public vault changed through 38 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 17, 2026, 12:48 PM EDT - correction: distinguish borrower credit from project cash flow in usd.ai model
+
+correction: distinguish borrower credit from project cash flow in usd.ai model.
+
+Changed notes:
+  - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
+  - [[gpu-finance|GPU Finance]]
+  - [[usd-ai-public-loan-book-snapshot-2026-07-17|USD.AI public loan-book snapshot, 2026-07-17]]
+  - [[usd-ai|USD.AI]]
 
 ### Jul 17, 2026, 12:38 PM EDT - insight: usd.ai public pipeline is contract-heavy and ahead of idle capital
 
@@ -64,6 +74,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 17, 2026: correction: distinguish borrower credit from project cash flow in usd.ai model - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - Jul 17, 2026: insight: usd.ai public pipeline is contract-heavy and ahead of idle capital - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
@@ -88,12 +99,12 @@ Changed notes:
 - Jul 13, 2026: source: expand GPU lender wave two cohort - [[gpu-lender-wave-two-expansion-draft-packet-2026-07-13|GPU lender wave two: expansion draft packet]]
 - Jul 13, 2026: source: repair GPU lender wave two contact addresses - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
-- Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 
-_Showing the newest 25 of 38 updates in this window._
+_Showing the newest 25 of 39 updates in this window._
 
 ## Past 30 Days
 
+- Jul 17, 2026: correction: distinguish borrower credit from project cash flow in usd.ai model - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - Jul 17, 2026: insight: usd.ai public pipeline is contract-heavy and ahead of idle capital - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
@@ -118,6 +129,5 @@ _Showing the newest 25 of 38 updates in this window._
 - Jul 13, 2026: source: expand GPU lender wave two cohort - [[gpu-lender-wave-two-expansion-draft-packet-2026-07-13|GPU lender wave two: expansion draft packet]]
 - Jul 13, 2026: source: repair GPU lender wave two contact addresses - [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two: cleaned list and draft packet]]
 - Jul 13, 2026: source: add cleaned GPU lender wave two draft packet - [[gpu-finance|GPU Finance]]
-- Jul 13, 2026: notes: update vault - [[gpu-lender-question-set-2026-07-13|GPU lender question set, v1 (2026-07-13)]]
 
-_Showing the newest 25 of 110 updates in this window._
+_Showing the newest 25 of 111 updates in this window._
