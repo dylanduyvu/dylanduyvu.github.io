@@ -1,14 +1,14 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 17, 2026, 2:14 PM EDT
+Generated: Jul 18, 2026, 12:19 PM EDT
 
 ## State Shift Summary
 
@@ -26,6 +26,18 @@ In the past 7 days, the public vault changed through 44 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 18, 2026, 12:19 PM EDT - publish: GPU finance second-customer thesis and forward-market insight
+
+publish: GPU finance second-customer thesis and forward-market insight.
+
+Changed notes:
+  - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
+  - [[gpu-finance-has-no-public-forward-price-for-second-customer-revenue|GPU finance has no public forward price for second-customer revenue]]
+  - [[the-gpu-backed-credit-market-does-not-exist-yet|GPU Finance Has a Second-Customer Problem]]
+  - [[gpu-finance|GPU Finance]]
+  - [[dave-friedman-compute-offtake-is-private-forward-market-2026-07-18|Dave Friedman: compute offtake is a private forward market]]
+  - [[nebius-775m-contract-backed-gpu-financing-2026-07-17|Nebius $775M contract-backed GPU financing, 2026-07-17]]
 
 ### Jul 17, 2026, 2:14 PM EDT - insight: gpu earning power is macro-level offtake
 
@@ -100,32 +112,9 @@ Changed notes:
   - [[usd-ai-public-loan-book-snapshot-2026-07-17|USD.AI public loan-book snapshot, 2026-07-17]]
   - [[usd-ai|USD.AI]]
 
-### Jul 16, 2026, 7:24 PM EDT - insight: define inference capacity trendline and hybrid end state
-
-Insight update: define inference capacity trendline and hybrid end state.
-
-Changed notes:
-  - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
-  - [[steady-inference-baseload-moves-to-controlled-capacity-not-always-owned-gpus|Steady inference baseload moves to controlled capacity, not always owned GPUs]]
-  - [[gpu-finance|GPU Finance]]
-  - [[inference-rent-to-controlled-capacity-evidence-audit-2026-07-16|Do AI companies with steady inference demand buy GPUs? Evidence audit, 2026-07-16]]
-
-### Jul 16, 2026, 7:18 PM EDT - research: audit inference rent-to-controlled-capacity evidence
-
-research: audit inference rent-to-controlled-capacity evidence.
-
-Changed notes:
-  - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
-  - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
-  - [[steady-inference-baseload-moves-to-controlled-capacity-not-always-owned-gpus|Steady inference baseload moves to controlled capacity, not always owned GPUs]]
-  - [[gpu-finance|GPU Finance]]
-  - [[inference-rent-to-controlled-capacity-evidence-audit-2026-07-16|Do AI companies with steady inference demand buy GPUs? Evidence audit, 2026-07-16]]
-  - [[personalized-models-compute-fragmentation-cross-assistant-2026-07-16|Commoditization, concentration, and personalized models: the cross-assistant discussion, 2026-07-16]]
-  - [[usd-ai-call-harry-page-2026-06-29|USD.AI call with Harry Page]]
-  - [[usd-ai|USD.AI]]
-
 ## Past 7 Days
 
+- Jul 18, 2026: publish: GPU finance second-customer thesis and forward-market insight - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
@@ -150,12 +139,12 @@ Changed notes:
 - Jul 14, 2026: source: capture Silicon advisor trust path - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 14, 2026: notes: update gpu financing strategy and outreach - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 14, 2026: correct Phil follow-up question mapping - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
-- Jul 14, 2026: insight: narrow operator record wedge at mega tier - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 
 _Showing the newest 25 of 44 updates in this window._
 
 ## Past 30 Days
 
+- Jul 18, 2026: publish: GPU finance second-customer thesis and forward-market insight - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
@@ -180,6 +169,5 @@ _Showing the newest 25 of 44 updates in this window._
 - Jul 14, 2026: source: capture Silicon advisor trust path - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 14, 2026: notes: update gpu financing strategy and outreach - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 14, 2026: correct Phil follow-up question mapping - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
-- Jul 14, 2026: insight: narrow operator record wedge at mega tier - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 
-_Showing the newest 25 of 117 updates in this window._
+_Showing the newest 25 of 118 updates in this window._
