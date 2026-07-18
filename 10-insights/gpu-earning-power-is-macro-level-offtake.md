@@ -52,3 +52,9 @@ USD.AI's contract-heavy public book suggests lenders still prefer hard contractu
 - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
 - [[compute-can-commoditize-without-full-fungibility|Compute can commoditize without full fungibility]]
 - [[usd-ai|USD.AI]]
+
+## Updates
+
+### 2026-07-17
+
+Nebius announced a $775M senior secured facility backed by deployed GPU infrastructure and contracted cash flows from an investment-grade customer, priced at SOFR + 2.50%. The asset was already operational, but the attractive financing still leaned on one long customer agreement. This strengthens the distinction between hardware as the operating asset and collateral, and contracted earning power as the current repayment anchor. Source: [[nebius-775m-contract-backed-gpu-financing-2026-07-17|Nebius $775M contract-backed GPU financing]].

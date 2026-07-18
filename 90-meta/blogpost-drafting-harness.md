@@ -2,7 +2,7 @@
 type: meta
 status: active
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-07-17
 tags: [writing, blogpost, harness, style]
 ---
 
@@ -174,6 +174,8 @@ Good default structure:
 
 The final compression should leave the reader with a reusable product test, question, or decision rule, not merely a summary.
 
+Use the nearest economic peer for analogies. An asset-finance argument about GPUs should start with aircraft, leased equipment, data centers, or power projects before reaching for houses or consumer products. If the analogy only proves an obvious category difference, cut it. The comparison should expose a financing mechanism the reader may not have noticed.
+
 Order sections by the argument's escalation, not by the neatness of the taxonomy. If a section moves, rewrite the seams around it. Keep the intro roadmap and dek aligned with the actual order and scope after any move. Watch the middle of the essay hardest: if one section carries evidence, taxonomy, proof, and inference all at once, split or cut before adding. Analogy sections do one job and leave.
 
 ## 14. Pre-Publish Lint
@@ -208,6 +210,7 @@ Belonging:
 Voice:
 
 - Remove methodology padding, early defensive caveats, duplicated epistemic labels, unearned contrasts, and repeated "not X; it was Y" sentence shapes.
+- Remove narrator-certainty headings such as "X says it plainly," "Y gives it away," "the real story," or "here is the tension." They announce the interpretation instead of naming the evidence. Use a plain claim such as "Nebius still borrowed against the contract."
 - Colon audit: count colons in the body. More than roughly one per 250 words is a flag, but the real tell is TEMPLATE UNIFORMITY: the "short claim: elaborating list" construction repeated throughout reads as machine-generated even when each instance is individually fine. Keep colons that do irreplaceable work (a definition, a spec list after a quoted term, the lead-in to a closing question); convert the rest to periods, commas, or restructures. Period-plus-fragment ("So lender B starts from zero. Heavy cash down, fast repayment.") usually lands harder than the colon version in the simple-declarative register anyway. (Added 2026-07-11 from "The Track Record That Can't Travel": 13 colons in 1,150 words, nearly all the same construction, caught by Dylan's ear, not the lint.)
 - Make counterweights concrete: name the conditions where the thesis weakens or the simple version is enough.
 - When an observation sparks a product hunch, label it as a hypothesis to explore.

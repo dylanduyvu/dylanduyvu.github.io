@@ -150,6 +150,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - [[research-behind-the-ununderwritten-half|Research behind The Ununderwritten Half of GPU Credit]] (public research companion)
 - [[the-track-record-that-cant-travel|The Track Record That Can't Travel]] (published synthesis, Substack, 2026-07-13)
 - [[research-behind-the-track-record-that-cant-travel|Research behind The Track Record That Can't Travel]] (public research companion)
+- [[the-gpu-backed-credit-market-does-not-exist-yet|GPU Finance Has a Second-Customer Problem]] (draft synthesis, 2026-07-17)
 
 ## Best Insights
 
@@ -162,6 +163,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
+- [[gpu-finance-has-no-public-forward-price-for-second-customer-revenue|GPU finance has no public forward price for second-customer revenue]]
 - [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]]
 - [[committed-gpu-capacity-is-supply-constrained-not-over-committed|Committed GPU capacity is supply-constrained, not over-committed]]
 - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
