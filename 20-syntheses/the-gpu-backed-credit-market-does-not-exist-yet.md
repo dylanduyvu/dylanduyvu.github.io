@@ -111,7 +111,9 @@ Together, the forward curve and futures contracts could solve part of the proble
 
 But fleet revenue has two main inputs.
 
-> Fleet revenue = rental price per hour x hours rented
+![The two components of GPU fleet revenue](../70-attachments/fleet-revenue-price-times-hours.png)
+
+_The same fleet can earn less because hourly prices fall or because fewer hours are rented._
 
 A price-index futures contract can protect against a broad decline in market rental prices. It does not guarantee the hours rented or the exact price this fleet earns.
 
