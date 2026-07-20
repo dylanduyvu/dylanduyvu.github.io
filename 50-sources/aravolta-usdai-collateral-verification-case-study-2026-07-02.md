@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-20
 source_date: 2026-07-02
 source_type: article
 projects: []
@@ -10,7 +10,7 @@ domains: [gpu-finance, verification, dcim, asset-backed-lending]
 people: []
 orgs: [usd-ai, aravolta]
 attachments: []
-tags: [verification, collateral, monitoring, dcim, sla]
+tags: [verification, collateral, monitoring, dcim, sla, draw-gate, escrow]
 ---
 
 # Aravolta x USD.AI case study: infrastructure-level collateral verification
@@ -36,6 +36,12 @@ URL: https://www.aravolta.com/case-studies/usdai-case-study
 - Narrows the open wedge: infrastructure-layer collateral verification (exists, is on, is healthy) is claimed. The unclaimed layer is contract-performance verification: SLA delivery to the tenant, revenue crediting, offtake performance - exactly what Aravolta's scope excludes, and exactly where Harry located the cashflow risk (missed SLA means revenue not credited).
 - Explains why the remaining layer is unclaimed: it requires tenant-adjacent data that operators/customers resist sharing. The trusted-proof question is the hard part, not the telemetry.
 - Pre-answers part of the in-flight Harry follow-up; expect Aravolta to appear in his account of what USD.AI has already tried.
+
+## 2026-07-20 Draw-Gate Clarification
+
+Dylan clarified that USD.AI's specific economic use for this verification was deciding whether to release the next stage of loan money. The founder transcripts support that reading: David Choi says the capital remains escrowed until the GPUs are installed and verified, then is released; elsewhere he says, "we don't release money until we verify" and the equipment must be installed.
+
+The strongest proven job for Aravolta-style verification at USD.AI is therefore installation / collateral verification tied to a draw-release gate. Continuous telemetry remains active after installation, but the available evidence does not show that ongoing availability or utilization changes the interest rate, borrowing capacity, reserves, or another loan term. This is evidence that verification has value when it directly controls disbursement, not evidence that contract-level SLA monitoring is already used in servicing.
 
 ## Promoted Insights
 

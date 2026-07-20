@@ -387,3 +387,11 @@ One additional unnamed lender, relayed through Thomas at Barkr, asked whether a 
 The contrary evidence points toward low current penetration. Bernie said most lenders do not dig deeply into SLAs and rely on prior deployments, financials, or passing on the operator. Phil's mega-tier participant process uses lead diligence, consultants, and industry reference calls rather than continuous telemetry. SemiAnalysis sells bespoke lender diligence, not live contract monitoring.
 
 Current count: one named infrastructure-monitoring adopter; one unnamed interested lender; zero confirmed contract-level SLA-to-revenue monitoring adopters. This is not enough to estimate market prevalence, but it does mean the exact H3 product may be uncommon or nonexistent rather than an already crowded lender workflow.
+
+### 2026-07-20 - Correction: USD.AI is a draw-gate case, not an H3 adoption case
+
+Dylan clarified the specific USD.AI use of Aravolta-style verification: determine whether to release the next stage of loan money. Choi's transcripts support this directly. Capital remains escrowed until the GPUs are installed and verified; only then is it released.
+
+This changes the adoption census classification. USD.AI is one confirmed user of installation / collateral verification that controls disbursement. It is not a confirmed user of ongoing contract-level SLA monitoring that changes pricing or servicing terms. The nodes continue showing presence, utilization, and availability after installation, but the vault has no evidence that those live signals move money after the initial draw gate.
+
+Revised count: one named draw-gate verification adopter; one unnamed lender interested in performance monitoring; zero confirmed lenders using ongoing SLA-to-revenue monitoring to change loan terms. This strengthens the rule that verification earns budget when wired to a financial action, while leaving H3 itself unvalidated.

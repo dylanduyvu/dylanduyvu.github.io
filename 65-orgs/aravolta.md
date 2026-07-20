@@ -2,12 +2,12 @@
 type: org
 status: active
 created: 2026-07-02
-updated: 2026-07-06
+updated: 2026-07-20
 aliases: [Aravolta]
 people: []
 projects: []
 domains: [gpu-finance, verification, dcim]
-tags: [verification, dcim, monitoring, lenders, competitor-adjacent]
+tags: [verification, dcim, monitoring, lenders, competitor-adjacent, draw-gate]
 ---
 
 # Aravolta
@@ -21,12 +21,13 @@ Aravolta is a data center infrastructure monitoring (DCIM) company (EPMS/BMS/SCA
 - USD.AI is a published customer (case study, seen 2026-07-02): real-time verification of GPU-backed credit positions - physical presence, serial-number identity, configuration, health/fault status, thermals, continuous availability. Endorsed by Conor Moore (co-founder & COO, USD.AI).
 - Explicit scope boundary: does NOT collect customer workloads, tenant-specific usage, or application performance. The confidentiality line is a design choice ("without creating operational friction for our infrastructure partners").
 - Positions as a transparency layer between physical infrastructure and credit protocols; plausibly the "verify" in USD.AI's escrow-on-install-and-verify.
+- 2026-07-20 clarification: USD.AI's confirmed economic use is installation / collateral verification before releasing escrowed loan proceeds. Choi says money is not released until the GPUs are installed and verified. The nodes continue collecting telemetry afterward, but no available evidence shows ongoing telemetry repricing or resizing the loan.
 - Has a general "Lenders" page, suggesting the lender product is a vertical, not a one-off.
 - Apparent relation to Central Axis (DCIM lineage per site metadata).
 
 ## Read For The Thesis
 
-Aravolta's existence is behavioral proof that lenders pay for verification, and its scope boundary maps the unclaimed territory: SLA delivery to tenants, revenue crediting, offtake performance. Competitor-adjacent rather than competitor - unless it crosses its own boundary.
+Aravolta's existence is behavioral proof that lenders pay for verification when it controls a draw release. Its scope boundary maps the unclaimed territory: SLA delivery to tenants, revenue crediting, offtake performance. Competitor-adjacent rather than competitor - unless it crosses its own boundary.
 
 Scope refinement (2026-07-06): "utilization" and "tenant usage" are different layers. Aravolta CAN see aggregate hardware utilization (powered, busy, thermals - chip-level, tenant-blind) and its lender page monetizes exactly that, marketing facilities where borrowing capacity and rates tie to actual GPU-hour utilization. What it does not collect is tenant identity, workloads, and application performance. So the precise open layer is contract-defined delivery and revenue truth: a busy, healthy GPU can still fail its SLA as the contract defines it, and utilization says nothing about whether revenue was credited.
 
