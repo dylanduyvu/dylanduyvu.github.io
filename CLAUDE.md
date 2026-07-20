@@ -116,6 +116,9 @@ This vault is local-first, but it now has a public GitHub remote and Quartz/GitH
 - Use boring, explicit commit messages.
 - Prefer `npm run publish -- "<message>"` for the final build/stage/commit/push loop.
 - Do not stage random `.obsidian/` UI/plugin setting drift during publishing unless the setting change is intentional and relevant.
+- During article development, a material pass is not complete until its checkpoint has been committed and pushed. A shell-capable agent must run `npm run publish -- "<message>"` before reporting the pass complete, without waiting for Dylan to ask whether it was published.
+- New evidence or counterevidence, a changed claim or confidence level, a structural rewrite, and a completed global/full-read review are material publish triggers. Batch tiny wording and punctuation fixes into the next checkpoint.
+- If the current Claude instance cannot run shell commands, it must not claim the checkpoint was published. Leave the edit for the configured publishing agent and report the publish as pending without asking Dylan to run the command.
 
 Examples:
 

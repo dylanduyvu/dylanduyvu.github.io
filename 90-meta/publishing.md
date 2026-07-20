@@ -46,6 +46,8 @@ For research articles, publish meaningful intermediate revisions rather than wai
 
 Checkpoint commits should capture the claim ledger or outline, first complete draft, material thesis or structural changes, evidence corrections, and the final readability pass. Push each checkpoint immediately. Batch typo-level edits, but never amend, squash, or force-push away an article revision that has already been published.
 
+A material article pass is not complete until its checkpoint is committed and pushed. Before an agent reports the pass complete, a shell-capable agent must run `npm run publish -- "<message>"` automatically rather than waiting for Dylan to request publication. New evidence or counterevidence, a changed claim or confidence level, a structural rewrite, and a completed global/full-read review all trigger this rule. Tiny wording and punctuation fixes can be batched into the next checkpoint.
+
 Use commit messages that name what changed in the argument, for example:
 
 ```text

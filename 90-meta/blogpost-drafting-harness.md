@@ -327,6 +327,8 @@ Rules:
 
 - Each commit should describe the intellectual change, not merely say `update article`.
 - Push each checkpoint immediately so the remote file history is the durable record.
+- A material pass is not complete until the checkpoint is committed and pushed. Before reporting the pass complete, a shell-capable agent must publish it automatically and must not wait for Dylan to ask.
+- New evidence or counterevidence, a changed claim or confidence level, a structural rewrite, and a completed global/full-read review are material publish triggers.
 - Do not create a commit for every typo. Batch small wording and punctuation fixes into the nearest coherent revision.
 - Do not amend, squash, force-push, or rewrite article history after it has been pushed. If a claim was wrong, preserve it and add a correction commit.
 - Add a file-specific `Revision history` link near the top of the article once the article is externally shared.
