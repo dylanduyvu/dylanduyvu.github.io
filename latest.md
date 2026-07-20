@@ -8,7 +8,7 @@ updated: 2026-07-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 20, 2026, 3:18 PM EDT
+Generated: Jul 20, 2026, 4:31 PM EDT
 
 ## State Shift Summary
 
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 50 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 20, 2026, 4:31 PM EDT - article: remove transaction-cost detour
+
+article: remove transaction-cost detour.
+
+Changed notes:
+  - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
 
 ### Jul 20, 2026, 3:11 PM EDT - article: strengthen verification gap evidence
 
@@ -118,18 +125,11 @@ Changed notes:
   - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
   - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
 
-### Jul 20, 2026, 12:01 PM EDT - research: clarify first-fleet short-demand question
-
-research: clarify first-fleet short-demand question.
-
-Changed notes:
-  - [[gpu-finance|GPU Finance]]
-  - [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|Claim ledger: GPU loans without a long-term customer]]
-
-_Showing the newest 12 of 13 updates in this window._
+_Showing the newest 12 of 14 updates in this window._
 
 ## Past 7 Days
 
+- Jul 20, 2026: article: remove transaction-cost detour - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
 - Jul 20, 2026: article: strengthen verification gap evidence - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
 - Jul 20, 2026: insight: close Harry as SLA test route - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 20, 2026: insight: classify USD.AI verification as a draw gate - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
@@ -154,12 +154,12 @@ _Showing the newest 12 of 13 updates in this window._
 - Jul 17, 2026: insight: usd.ai public pipeline is contract-heavy and ahead of idle capital - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
-- Jul 15, 2026: notes: publish vault updates - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
 
 _Showing the newest 25 of 50 updates in this window._
 
 ## Past 30 Days
 
+- Jul 20, 2026: article: remove transaction-cost detour - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
 - Jul 20, 2026: article: strengthen verification gap evidence - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
 - Jul 20, 2026: insight: close Harry as SLA test route - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 20, 2026: insight: classify USD.AI verification as a draw gate - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
@@ -184,6 +184,5 @@ _Showing the newest 25 of 50 updates in this window._
 - Jul 17, 2026: insight: usd.ai public pipeline is contract-heavy and ahead of idle capital - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
-- Jul 15, 2026: notes: publish vault updates - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
 
-_Showing the newest 25 of 131 updates in this window._
+_Showing the newest 25 of 132 updates in this window._
