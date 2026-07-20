@@ -8,10 +8,16 @@ projects: []
 people: []
 sources:
   [
+    phil-private-credit-jakub-relay-2026-07-13,
+    american-compute-bernie-sla-email-reply-2026-07-01,
+    gpu-debt-facility-dataset-first-pass-2026-07-14,
+    neil-tiwari-magnetar-no-priors-podcast-2026-07-08,
+    semianalysis-rob-howle-sales-call-2026-07-13,
+    dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06,
     usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15,
     aravolta-usdai-collateral-verification-case-study-2026-07-02,
   ]
-orgs: []
+orgs: [usd-ai, american-compute, semianalysis, coreweave, nvidia]
 tags: [blogpost, draft, gpu, underwriting, verification, capital-structure]
 ---
 
@@ -33,7 +39,7 @@ The broad thesis did not survive. Lenders care whether an operator can deploy an
 
 Direct performance data may be missing. But the risk is not untreated.
 
-This came from outreach, not a survey. It includes an investor evaluating large private-credit facilities, people working around smaller GPU equipment loans, operators, and public material from USD.AI. The sample is uneven. The pattern was still strong enough to kill the broad version of the idea.
+This came from outreach and public deal data, not a survey. It includes an investor evaluating large private-credit facilities, people working around smaller GPU equipment loans, and public material from USD.AI. The sample is uneven, and I described the record rather than putting a finished report in front of a lender. The pattern was still strong enough to kill the broad version of the idea.
 
 ## The question behind the record
 
@@ -47,19 +53,23 @@ That left one practical test. Hold the equipment and customer constant. Give the
 
 The record only matters as a product if the answer is yes.
 
-## In one large-deal seat, the contract still decided
+## For large deals, the customer contract still decided
 
 A private-credit investor evaluating large GPU facilities, whose answers were relayed to me through a colleague, described three separate requirements. The operator needs a deployment history. Power must be secured and the equipment committed. The deal also needs a long contract with an investment-grade customer, one rated as relatively likely to pay, or a comparable guarantee from another creditworthy company.
 
-I asked whether a trusted deployment record could compensate for a weaker customer. His answer was no. A strong operator without an investment-grade customer contract was still an automatic decline. The risks he named were speculative building, site problems, and a long lease supported by short customer rentals.
+I asked whether a trusted deployment record could compensate for a weaker customer. His answer was no. A strong operator without an investment-grade customer contract was still an automatic decline. The risks he named were speculative building and site problems. He also worried that an operator could owe years of lease payments while its customers committed for much shorter periods.
 
-Operator history could not fix a mismatch between a long liability and short revenue.
+A strong track record could not guarantee replacement customers when those rentals ended.
 
 The operator's record was also absent from the pricing formula he described. Pricing began with the customer's own credit curve, meaning the borrowing rates implied by its existing debt. The lender then added roughly 1.5 to 2.5 percentage points based on the protections in the contract. Operator diligence determined whether the team could execute the deal. Customer credit and contract quality determined what the debt cost.
 
-The diligence was not missing. His group relied on materials from the lead lender, outside consultants, and industry calls. For operator references, the calls reached former employees, customers, consultants, and the local general contractor.
+A first pass through roughly 100 public GPU financing records showed the same pattern. In two CoreWeave facilities from 2026, debt backed by Meta cost 2.25 percentage points over the benchmark rate. Debt backed by two customers without investment-grade ratings cost 4.50 points over the benchmark. CoreWeave was the borrower in both, and the loans closed in the same period. The most visible difference was customer credit.
 
-A new performance record would therefore compete with an existing process. It would not fill an empty seat.
+That does not mean operator history had no effect. [Magnetar's Neil Tiwari](https://www.youtube.com/watch?v=WSxVh5WvWZ4) said early GPU financings used only investment-grade customers because operators lacked experience. Later deals could blend investment-grade and weaker customers once operators had built a history. Experience widened what lenders would consider, but it did not replace customer credit. It accumulated through repeat dealings rather than a record bought from a third party.
+
+The private-credit investor also had an existing process for checking the operator. His group relied on materials from the lead lender, outside consultants, and industry calls. For operator references, the calls reached former employees, customers, consultants, and the local general contractor. He did not identify anything those calls left unresolved.
+
+Any new performance record would have to improve on that process.
 
 ## At the smaller end, cash solves many concerns
 
@@ -85,7 +95,9 @@ Its [published underwriting policy](https://usd.ai/insights/usdai-underwriting-a
 
 The GPUs, customer contract, data-center agreement, and revenue accounts sit inside a separate legal entity created for the deal. USD.AI holds the first lien, giving it the first claim on those assets after a default.
 
-The borrower contributes at least 20 percent equity and funds a three-month debt-service reserve, enough cash to cover three months of loan payments. Capital stays in escrow until the hardware is installed and independently verified. The loan uses straight-line amortization, repaying the same amount of principal each month over three years. A collateral warranty covers part of any shortfall if the GPUs sell for less than the value listed in an agreed schedule.
+The borrower contributes at least 20 percent equity and funds a three-month debt-service reserve, enough cash to cover three months of loan payments. Capital stays in escrow until the hardware is installed and independently verified.
+
+The loan uses straight-line amortization, repaying the same amount of principal each month over three years. A collateral warranty covers part of any shortfall if the GPUs sell for less than the value listed in an agreed schedule.
 
 USD.AI still checks whether the operator can install the hardware, run it, and generate enough revenue to repay the loan. A lien cannot make a cluster work.
 
@@ -97,19 +109,21 @@ Lenders still buy and require plenty of information.
 
 Large lead lenders hire consultants. Participants validate their work through expert calls. USD.AI requires financial statements, purchase orders, contracts, checks for other claims on the assets, and operating revenue history. It also requires independent installation and collateral verification before releasing capital.
 
-The information that gets bought is attached to a transaction and a decision. It can help the lender approve the deal, release money from escrow, decide how much to lend, check whether the borrower kept its promises, or act after a breach.
+A SemiAnalysis sales representative told me that ClusterMAX, its published rating of GPU clouds, is distributed through its newsletter rather than sold separately as a lender product. The rating may still help sell subscriptions or influence customers. But its lender-facing work takes the form of custom consulting starting around $250,000 to $300,000. The six-figure budget pays for analysis made for a particular client, not the rating alone.
+
+In these examples, the expensive work is tied to a specific client or deal. It can help the lender approve the deal, release money from escrow, decide how much to lend, check whether the borrower kept its promises, or act after a breach.
 
 But a portable operator score sits outside any one transaction. It may duplicate financials, references, or a lender's own prior experience. To become a product, it has to earn a budget and change something those substitutes do not change.
 
 This is where my original argument went wrong. I treated the absence of a clean measurement as evidence of missing underwriting. Credit markets often handle risks they cannot measure directly by demanding more protection. The risk can be expensive without being ignored.
 
-## The middle may be expensive to manufacture
+## Mid-sized loans may be too expensive to arrange
 
 The search also produced a competing explanation for the financing gap.
 
 In a [February interview with Messari](https://open.spotify.com/episode/3gxodvhx8c9qarj30jOVrS), USD.AI cofounder Connor Moore said its typical cluster is around $30 million to $50 million. He argued that conventional private-credit processes are too customized for many deals in that range. Legal work, diligence, and custom documents make each loan expensive to arrange before the lender has taken any risk.
 
-His numbers should be treated as a founder describing his own wedge. The mechanism is plausible. A portable record cannot unlock a loan that is already understood but too expensive to manufacture.
+His numbers come from a founder describing his own market, not an independent study. But fixed legal and diligence costs can still make a smaller loan uneconomic. A portable record cannot unlock a loan that lenders already understand but find too expensive to arrange.
 
 USD.AI combines standard documents, a visible pool of committed capital, and direct claims on the GPUs and project revenue. Its advantage is packaging familiar lender protections cheaply and repeatedly, not discovering that GPUs have resale value.
 
@@ -117,13 +131,13 @@ That points toward a different problem. Mid-sized GPU operators may need faster 
 
 ## What survives
 
-Operator performance still matters. A bad or absent track record can kill a large deal. Historical revenue can make a seasoned operator easier to finance. Installation verification can determine whether loan proceeds leave escrow.
+Operator performance still matters. A bad or absent track record can kill a large deal. Historical revenue can make a seasoned operator easier to finance. But the clearest value for independent verification appears when it controls money inside a current transaction.
 
-The product test I took from the search is that verification should control money.
+That already happens at both ends of the market. USD.AI does not release escrowed capital until the installed hardware has been independently verified. In CoreWeave's Meta-backed facility, lender funds could only be drawn after NVIDIA testing confirmed that the GPUs performed as designed in a stable environment. Both checks control the release of loan money. Neither produces a portable record for the operator's next lender.
 
-It needs to change approval or a loan term. That could mean the borrower's equity contribution, the repayment schedule, required cash reserves, insurance cost, when funds are released, or the share of the purchase the lender funds, known as the advance rate. A dashboard that makes diligence cleaner but leaves the deal unchanged is a feature inside someone else's underwriting process.
+That distinction became my product test. A verification product needs to change approval or a loan term. That could mean the borrower's equity contribution, the repayment schedule, required cash reserves, insurance cost, when funds are released, or the share of the purchase the lender funds, known as the advance rate. A dashboard that makes diligence cleaner but leaves the deal unchanged is a feature inside someone else's underwriting process.
 
-There may still be a window for operators that have completed a few deployments but do not yet have financial histories lenders are willing to rely on. I have not found evidence that this window is large, durable, or willing to pay for a standalone record. It remains a testable corner, not a market-wide thesis.
+There may still be a window for operators that have completed a few deployments but do not yet have financial histories lenders are willing to rely on. I have not found evidence that many operators occupy this window, remain there for long, or would pay for a standalone record. It remains a testable corner, not a market-wide thesis.
 
 The question I will carry into the next idea is simple. When someone says a lender needs better data, which line of the term sheet moves?
 
