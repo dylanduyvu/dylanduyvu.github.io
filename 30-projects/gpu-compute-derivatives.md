@@ -2,9 +2,9 @@
 type: project
 status: active
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-20
 domains: [gpu-finance, compute-derivatives, compute-commodities, ai-infrastructure]
-people: [dave-friedman, brannin-mcbee]
+people: [dave-friedman, brannin-mcbee, jakub-janiak]
 orgs: [coreweave]
 tags: [gpu, derivatives, futures, market-structure]
 ---
@@ -19,6 +19,8 @@ This derivative layer matters because it could feed the rest of GPU finance: len
 
 The commoditization question now looks less like "are all GPU-hours identical?" and more like "can the market define a reference grade, settlement hub, and priced basis for operator/topology/SLA differences?" Fungibility is not binary; the first useful product may be a cash-settled reference exposure with messy but explicit basis spreads.
 
+Jakub's tenor-mismatch framing adds a second design requirement: the risk cannot be removed, only transferred. Cash-settled price futures hedge what each GPU-hour earns, not how many hours one fleet rents. A fixed-volume, physical-delivery, or revenue-linked contract could transfer more of the utilization risk, but economically begins to resemble standardized offtake.
+
 ## Key Insights
 
 - [[compute-derivatives-need-dated-term-structures-not-perps|Compute derivatives need dated term structures, not perps]]: Perps collapse the curve into current funding and cannot isolate maturity-specific exposure.
@@ -31,11 +33,13 @@ The commoditization question now looks less like "are all GPU-hours identical?" 
 - [[dgx-reference-spec-is-a-compute-grade-not-a-market-hub|DGX reference spec is a compute grade, not a market hub]]: DGX can define grade, but index and settlement define the hub.
 - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]: The non-fungible details become spreads.
 - [[non-commodity-compute-framing-supports-neocloud-valuation-premiums|Non-commodity compute framing supports neocloud valuation premiums]]: Market-structure framing affects depreciation and multiples.
+- [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]: A price hedge leaves the lender exposed if one fleet rents too few hours.
 
 ## Sources
 
 - [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
 - [[can-compute-commoditize-if-its-not-fungible-2026-06-11|Can Compute Commoditize if it's Not Fungible?]]
+- [[jakub-compute-futures-tenor-mismatch-take-2026-07-20|Jakub: compute futures as the cleanest way to transfer the tenor mismatch]]
 
 ## Open Questions
 
@@ -46,6 +50,7 @@ The commoditization question now looks less like "are all GPU-hours identical?" 
 - What settlement window best resists manipulation while remaining useful for hedgers?
 - Which compute attributes become standardized grade versus traded basis?
 - Can SLA/goodput/MFU be measured well enough for basis settlement?
+- Does the first useful credit hedge settle only on price, or also commit a volume of GPU-hours or a minimum amount of revenue?
 
 ## Next Tests
 
@@ -55,3 +60,4 @@ The commoditization question now looks less like "are all GPU-hours identical?" 
 - Map natural buyers/sellers of dated compute risk.
 - Build a simple reference-grade versus basis-spread map for H100/H200/B200 capacity.
 - Ask lenders and operators which compute-basis attribute they would actually pay to hedge or verify first.
+- Ask whether a price hedge plus a conservative utilization assumption changes loan size or repayment terms, and compare that answer with a fixed-volume or revenue-floor contract.

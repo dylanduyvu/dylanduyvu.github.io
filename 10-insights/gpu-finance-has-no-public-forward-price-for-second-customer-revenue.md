@@ -2,7 +2,7 @@
 type: insight
 status: superseded
 created: 2026-07-18
-updated: 2026-07-19
+updated: 2026-07-20
 confidence: high
 domains: [gpu-finance, compute-markets, compute-derivatives, offtake]
 projects: []
@@ -30,6 +30,8 @@ That leaves merchant GPU lenders without a common market price for what a cluste
 
 Silicon Data launched a public, calculated GPU forward curve in April 2026, before this note was written. CME and ICE have also announced compute futures, although neither product had begun trading as of 2026-07-19. The corrected claim is narrower: market-price tools are emerging, but their payout does not directly track how many GPU-hours a particular operator sells.
 
+Replacement claim: [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]].
+
 ## Why It Matters
 
 - Long offtake makes a project bankable by fixing future revenue inside one bilateral agreement.
@@ -49,8 +51,13 @@ Source: [[dave-friedman-compute-offtake-is-private-forward-market-2026-07-18|Dav
 - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
 - [[the-gpu-backed-credit-market-does-not-exist-yet|GPU Finance Has a Second-Customer Problem]]
+- [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
 
 ## Updates
+
+### 2026-07-20
+
+Linked the replacement claim that separates market-price risk from fleet-level rental-volume risk.
 
 ### 2026-07-19
 

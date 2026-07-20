@@ -2,12 +2,12 @@
 type: insight
 status: distilled
 created: 2026-07-06
-updated: 2026-07-15
+updated: 2026-07-20
 confidence: medium-high
 domains: [gpu-finance, credit-markets, compute-contracts, market-structure]
-projects: []
-sources: [semianalysis-nvidia-backstop-trinity-2026-07-06, dave-friedman-where-gpu-debt-starts-to-break-2026-04-19, usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15]
-people: [dylan-patel, connor-moore]
+projects: [gpu-compute-derivatives]
+sources: [semianalysis-nvidia-backstop-trinity-2026-07-06, dave-friedman-where-gpu-debt-starts-to-break-2026-04-19, usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15, jakub-compute-futures-tenor-mismatch-take-2026-07-20]
+people: [dylan-patel, connor-moore, jakub-janiak]
 orgs: [nvidia, semianalysis, usd-ai, barkr, munich-re]
 aliases: [inference wont sign long but debt needs long, the gpu curve trade, maturity transformation in gpu lending, short-tenor demand is structurally unfinanceable]
 tags: [gpu, tenor, inference, curve-trade, financing, market-structure]
@@ -36,18 +36,20 @@ This names a structural problem distinct from the vault's delivery-risk thread: 
 - 2026-07-09 (Friedman, Hugging Face downloads): demand-side microstructure for the unfinanced tier, weak proxy but public. Text-generation models are only 17.6% of top-3,000 download activity; the bulk is thousands of embedding, similarity, and classification models whose serving demand is small, unpredictable, and pooled - his read is a few head models justifying dedicated committed "factories" while the tail wants shared serverless flexibility. The tail he measures IS the demand shape lenders cannot finance (no committed offtake possible). Caveats his own: downloads are not executions, tokens, or accelerator-hours. Note his "barbell" coinage is ours to use carefully: the data is a power law, not bimodal, and on the contract-tenor axis the middle (1-5yr reserved) is currently the entire financed market.
 - 2026-07-14 (Phil, mega-tier private-credit participant, thirdhand relay, deployment 1 of the question set): the mismatch upgraded from priced premium to KILL CONDITION, named unprompted from the lender's chair. Asked whether a trusted deployment record without investment-grade offtake is still an automatic decline, his "Yes" reasoning listed three mechanisms, the third verbatim: "potentially end up mismatched on long term lease liability and short term rental agreement (wework issue)." A lender who declines deals BECAUSE of duration mismatch, not one who prices it: the strongest form of this insight yet, and independent of the SemiAnalysis lineage above. Also the cleanest statement of why operator evidence cannot cure this gap: the missing ingredient is committed demand matching the debt's duration, not information about the operator. Capture: [[phil-private-credit-jakub-relay-2026-07-13|Phil relay]].
 - 2026-07-15 capture of a Messari podcast RECORDED ROUGHLY FEBRUARY 2026 (Connor Moore, USD.AI co-founder): a partial countermove through loss protection. Having placed value insurance (Barkr fronting Munich Re, 100 to 150 basis points a year on loan balance, paying only when depreciation sinks below the loan balance AND the borrower defaults), his stated plan was to "push those durations as long as we possibly can... you can win deals that other participants wouldn't be able to get." Three-year terms were previously their conservative ceiling. The wrapper can reduce loss-given-default enough for a lender to tolerate longer debt. It does not extend customer contracts, refill utilization, or prevent the WeWork-style cash-flow mismatch Phil described. TIMING CAVEAT: intent stated five months before capture, so check tenors on the SEC-visible USD.AI borrower facilities before treating the duration push as real. Capture: [[usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15|Connor Moore Messari capture]].
+- 2026-07-20 (Jakub, direct relay from Dylan): the maturity mismatch is "unsolveable without shifting risk," and compute futures are the cleanest mechanism. The risk-transfer framing holds. The instrument claim needs one distinction: cash-settled price futures transfer rental-price risk, not the risk that a particular fleet rents too few hours. A fixed-volume or revenue-linked contract transfers more of the latter risk but begins to resemble standardized offtake. Capture: [[jakub-compute-futures-tenor-mismatch-take-2026-07-20|Jakub relay]].
 
 ## Implications
 
 - The ??? in the pricing stack (unpriced platform risk on varied books) is the tenor mismatch expressed in spread form; whoever prices it (tools or structure) unlocks the short-tenor market.
 - Demand verification becomes underwriting-relevant: a lender financing a short-tenor book needs to believe the operator can keep REFILLING it - customer-book quality and re-rental velocity become the credit variables, which is verification territory one level up from delivery.
 - Watch tenor spread data (SemiAnalysis's rental index now publishes term structure) as the market's live pricing of this mismatch.
+- Separate price from volume in every proposed solution. A market-price hedge does not guarantee that one fleet stays rented; the risk only moves when another party commits to quantity or revenue.
 - For the problem portfolio: this is a candidate problem in its own right (financing short-tenor books), currently addressed only by vendor backstops; park unless a lender raises it unprompted.
 
 ## Counterpoints / Uncertainty
 
 - Single source, and the tenor-preference claims are stated without published survey data; inference-provider behavior may shift as the market matures or if compute prices stabilize.
-- The mismatch may be self-resolving: if rental price indices and forward curves mature (SemiAnalysis's own bet), lenders may underwrite curve trades directly, no new institution needed.
+- Better rental-price indices and forward curves may make the mismatch easier to underwrite. Cash-settled price futures alone still leave fleet-level utilization risk; a fixed-volume or revenue-linked contract would transfer more of it.
 - 100%-prepay anecdotes may be scarcity-era artifacts rather than durable structure.
 - Hyperscaler on-demand capacity partially serves short-tenor demand already (at 2-3x price) - the unfinanceable pool is the price-sensitive slice.
 - Residual-value insurance can reduce default severity, but it cannot by itself fix the cash-flow cause of default. A longer insured loan may still be mismatched against short or unstable rental demand.
@@ -55,11 +57,15 @@ This names a structural problem distinct from the vault's delivery-risk thread: 
 ## Links
 
 - Source: [[semianalysis-nvidia-backstop-trinity-2026-07-06|SemiAnalysis: Nvidia GPU Debt Backstop / AI Project Trinity]]
-- Related Insights: [[the-nvidia-backstop-is-a-track-record-bridge-not-a-floor|The NVIDIA backstop is a track-record bridge, not a floor]], [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]], [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]], [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
+- Related Insights: [[the-nvidia-backstop-is-a-track-record-bridge-not-a-floor|The NVIDIA backstop is a track-record bridge, not a floor]], [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]], [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]], [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]], [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
 - Areas: [[gpu-finance|GPU Finance]]
 - Orgs: [[nvidia|NVIDIA]], [[semianalysis|SemiAnalysis]]
 
 ## Updates
+
+### 2026-07-20
+
+Jakub sharpened the problem as risk transfer: the mismatch cannot be measured away. Narrowed the earlier forward-curve counterpoint accordingly. Price futures can transfer market-price risk, but not fleet-level rental-volume risk unless the contract also commits quantity or revenue.
 
 ### 2026-07-15
 
