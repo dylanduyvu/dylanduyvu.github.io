@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-07-20
 source_date: 2026-07-19
 source_type: research
 projects: []
@@ -34,6 +34,26 @@ tags:
 ## Purpose
 
 This ledger fixes the argument before another prose revision of [[the-gpu-backed-credit-market-does-not-exist-yet|The Missing Playbook for GPU Loans Without a Long-Term Customer]]. It separates direct evidence from inference, records the strongest objections, and defines the claims the article may and may not make.
+
+## Current Research Direction
+
+Keep three layers separate:
+
+1. **Settled finding:** A compute shortage does not show that one new fleet will stay rented throughout a multi-year loan. Market demand is broad; repayment depends on revenue from one specific fleet.
+2. **Live question:** Can a lender finance a new fleet based on an expected stream of short-term rentals before the operator has rental history or a multi-year customer contract? If so, what proof or protection makes that possible, and what loan terms change?
+3. **Possible product hypothesis:** Evidence, contracts, or an underwriting method might make short-term rental demand dependable enough to change approval or terms. Do not assume this is a technical problem until lenders show that better evidence would change a decision.
+
+The next research should prioritize actual transactions over abstract opinions:
+
+> Have you seen a new fleet financed without prior rental history or a long customer contract? What did the lender rely on, and how was the loan structured?
+
+The outcomes are distinct:
+
+- If accepted evidence changes approval, the share of hardware cost financed, required borrower cash, interest rate, cash reserves, or repayment speed, there may be a product or standardization opportunity.
+- If only more borrower equity, stronger collateral, or a third-party revenue guarantee works, the uncertainty must be absorbed rather than measured away.
+- If lenders already make these loans repeatedly using private methods, the apparent gap is already being solved without a public standard.
+
+Do not spend more research effort asking why excess demand alone is insufficient. That mechanism is already understood. The unresolved issue is whether short-term demand can become financeable for a fleet that has not operated yet.
 
 ## Locked Thesis
 

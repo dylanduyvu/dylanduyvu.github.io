@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-06-29
-updated: 2026-07-17
+updated: 2026-07-20
 domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee, connor-moore]
@@ -74,6 +74,8 @@ The asset-level object underneath that merchant revenue is [[gpu-earning-power-i
 
 The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU NFTs, and pool tokens can finance hardware and make ownership/transfers/payouts legible, but the operator still controls deployment, marketplace integrations, earnings calculations, and remittance. Onchain auditability begins after these offchain facts enter the system. Tokenization therefore packages operator risk rather than independently underwriting it, which preserves the verification problem underneath the financing wrapper.
 
+The current research direction is now narrower. It is already understood why a compute shortage does not guarantee that one new fleet will stay rented throughout a multi-year loan. The live question is whether a lender can finance a new fleet against an expected stream of short-term rentals before the operator has rental history or a multi-year customer contract, what evidence or protection would make that possible, and which loan terms would change. Actual transactions are the priority. If better evidence changes approval or terms, there may be a standardization opportunity. If only equity, collateral, or a third-party guarantee works, the uncertainty must be absorbed rather than measured away. Full framing: [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|GPU loans without a long-term customer claim ledger]].
+
 ## Useful Patterns
 
 - Hardware recovery matters more than bare contract cash flows.
@@ -132,6 +134,7 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 - GPU tokenization can make ownership and payouts auditable without making operator-reported deployment, performance, or revenue independently true.
 - The GPU-finance missing middle may be a transaction-execution problem before it is a verification problem: artisanal legal and documentation costs make $30-50 million loans unattractive even when risk is understood.
 - Residual-value insurance transfers loss severity after default, not the short-demand / long-debt cash-flow mismatch that causes default.
+- The live first-fleet question is whether expected short-term rentals can support a loan before rental history exists; the test is what evidence changes approval, borrower equity, amount financed, rate, reserves, or repayment speed.
 
 ## Active Projects
 
