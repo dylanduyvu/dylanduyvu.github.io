@@ -8,39 +8,140 @@ updated: 2026-07-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 20, 2026, 9:09 AM EDT
+Generated: Jul 20, 2026, 3:11 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 42 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 50 note commits. The most recent movement is:
 
-- Insight update: gpu earning power is macro-level offtake.
-- Insight update: ai offtake inherits the credit risk usd.ai says is dying.
-- Insight update: usd.ai is anti-corporate-credit, not anti-offtake.
-- Insight update: separate usd.ai underwriting from its real differentiation.
-- Insight update: correct the mortgage analogy for gpu credit.
-- Insight update: separate usd.ai current offtake model from pooled gpu credit end state.
+- Insight update: close Harry as SLA test route.
+- Insight update: classify USD.AI verification as a draw gate.
+- Insight update: add lender monitoring adoption census.
+- Insight update: preserve direct live-monitoring test.
+- Insight update: clarify Jakub fixed-volume futures proposal.
+- Insight update: separate compute price and utilization risk.
 
 ## Current Hub Signals
 
+- [[gpu-compute-derivatives|GPU Compute Derivatives]]: The first serious compute derivative should likely be dated, not perpetual. Compute is perishable productive capacity with an obsolescence curve, so the useful market object is a forward/futures strip that exposes dated capacity, decay, and residual-value assumptions.
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
 
-### Jul 20, 2026, 9:09 AM EDT - synthesis: add GPU financing gap research and drafts
+### Jul 20, 2026, 3:11 PM EDT - article: strengthen verification gap evidence
 
-synthesis: add GPU financing gap research and drafts.
+article: strengthen verification gap evidence.
 
 Changed notes:
-  - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
+  - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
+  - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
+
+### Jul 20, 2026, 2:15 PM EDT - insight: close Harry as SLA test route
+
+Insight update: close Harry as SLA test route.
+
+Changed notes:
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+
+### Jul 20, 2026, 2:13 PM EDT - insight: classify USD.AI verification as a draw gate
+
+Insight update: classify USD.AI verification as a draw gate.
+
+Changed notes:
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+  - [[aravolta-usdai-collateral-verification-case-study-2026-07-02|Aravolta x USD.AI case study: infrastructure-level collateral verification]]
+  - [[aravolta|Aravolta]]
+
+### Jul 20, 2026, 1:53 PM EDT - insight: add lender monitoring adoption census
+
+Insight update: add lender monitoring adoption census.
+
+Changed notes:
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+
+### Jul 20, 2026, 1:51 PM EDT - insight: preserve direct live-monitoring test
+
+Insight update: preserve direct live-monitoring test.
+
+Changed notes:
+  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+
+### Jul 20, 2026, 1:43 PM EDT - insight: clarify Jakub fixed-volume futures proposal
+
+Insight update: clarify Jakub fixed-volume futures proposal.
+
+Changed notes:
+  - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
+  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
+  - [[gpu-compute-derivatives|GPU Compute Derivatives]]
+  - [[jakub-compute-futures-tenor-mismatch-take-2026-07-20|Jakub: compute futures as the cleanest way to transfer the tenor mismatch]]
+
+### Jul 20, 2026, 1:06 PM EDT - insight: separate compute price and utilization risk
+
+Insight update: separate compute price and utilization risk.
+
+Changed notes:
+  - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
   - [[gpu-finance-has-no-public-forward-price-for-second-customer-revenue|GPU finance has no public forward price for second-customer revenue]]
+  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
+  - [[gpu-compute-derivatives|GPU Compute Derivatives]]
+  - [[jakub-compute-futures-tenor-mismatch-take-2026-07-20|Jakub: compute futures as the cleanest way to transfer the tenor mismatch]]
+
+### Jul 20, 2026, 12:20 PM EDT - article: link file revision histories
+
+article: link file revision histories.
+
+Changed notes:
   - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
   - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
+
+### Jul 20, 2026, 12:14 PM EDT - article: separate research links from body
+
+article: separate research links from body.
+
+Changed notes:
+  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
+  - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
+
+### Jul 20, 2026, 12:10 PM EDT - article: move research and disclosure links to top
+
+article: move research and disclosure links to top.
+
+Changed notes:
+  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
+
+### Jul 20, 2026, 12:09 PM EDT - research: add verification article evidence companion
+
+research: add verification article evidence companion.
+
+Changed notes:
+  - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
+  - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
+
+### Jul 20, 2026, 12:01 PM EDT - research: clarify first-fleet short-demand question
+
+research: clarify first-fleet short-demand question.
+
+Changed notes:
+  - [[gpu-finance|GPU Finance]]
   - [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|Claim ledger: GPU loans without a long-term customer]]
-  - [[lambda-on-demand-gpu-financing-ladder-2024-2026|Lambda's on-demand GPU financing ladder, 2024-2026]]
+
+_Showing the newest 12 of 13 updates in this window._
 
 ## Past 7 Days
 
+- Jul 20, 2026: article: strengthen verification gap evidence - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
+- Jul 20, 2026: insight: close Harry as SLA test route - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- Jul 20, 2026: insight: classify USD.AI verification as a draw gate - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- Jul 20, 2026: insight: add lender monitoring adoption census - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- Jul 20, 2026: insight: preserve direct live-monitoring test - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- Jul 20, 2026: insight: clarify Jakub fixed-volume futures proposal - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
+- Jul 20, 2026: insight: separate compute price and utilization risk - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
+- Jul 20, 2026: article: link file revision histories - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
+- Jul 20, 2026: article: separate research links from body - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
+- Jul 20, 2026: article: move research and disclosure links to top - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
+- Jul 20, 2026: research: add verification article evidence companion - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
+- Jul 20, 2026: research: clarify first-fleet short-demand question - [[gpu-finance|GPU Finance]]
 - Jul 20, 2026: synthesis: add GPU financing gap research and drafts - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 18, 2026: publish: GPU finance second-customer thesis and forward-market insight - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
@@ -54,23 +155,23 @@ Changed notes:
 - Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
 - Jul 15, 2026: notes: publish vault updates - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
-- Jul 15, 2026: source: deepen Connor Moore GPU credit transcript analysis - [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
-- Jul 15, 2026: notes: update vault - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
-- Jul 15, 2026: insight: frame operator verification as a credit graduation problem - [[operator-history-matters-but-a-portable-record-is-not-yet-a-business|Operator history matters, but a portable record is not yet a business]]
-- Jul 15, 2026: research: clarify experiment decision and preserve USD.AI transcripts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
-- Jul 15, 2026: research: update GPU credit branches and source findings - [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
-- Jul 15, 2026: source: tighten Zile verification interpretation - [[zile-cao-blockchain-capital-call-2026-07-10|Call: Zile Cao (Blockchain Capital) on the crypto-compute stack]]
-- Jul 15, 2026: insight: operator history matters but portability is unproven - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
-- Jul 15, 2026: source: capture adjacent verification company postmortem - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-- Jul 15, 2026: source: mark operator outreach wave sent - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
-- Jul 14, 2026: source: identify Silicon FarmGPU trust relationship - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
-- Jul 14, 2026: source: capture Silicon advisor trust path - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
-- Jul 14, 2026: notes: update gpu financing strategy and outreach - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 
-_Showing the newest 25 of 42 updates in this window._
+_Showing the newest 25 of 50 updates in this window._
 
 ## Past 30 Days
 
+- Jul 20, 2026: article: strengthen verification gap evidence - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
+- Jul 20, 2026: insight: close Harry as SLA test route - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- Jul 20, 2026: insight: classify USD.AI verification as a draw gate - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- Jul 20, 2026: insight: add lender monitoring adoption census - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- Jul 20, 2026: insight: preserve direct live-monitoring test - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
+- Jul 20, 2026: insight: clarify Jakub fixed-volume futures proposal - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
+- Jul 20, 2026: insight: separate compute price and utilization risk - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
+- Jul 20, 2026: article: link file revision histories - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
+- Jul 20, 2026: article: separate research links from body - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
+- Jul 20, 2026: article: move research and disclosure links to top - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
+- Jul 20, 2026: research: add verification article evidence companion - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
+- Jul 20, 2026: research: clarify first-fleet short-demand question - [[gpu-finance|GPU Finance]]
 - Jul 20, 2026: synthesis: add GPU financing gap research and drafts - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 18, 2026: publish: GPU finance second-customer thesis and forward-market insight - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
@@ -84,17 +185,5 @@ _Showing the newest 25 of 42 updates in this window._
 - Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 - Jul 16, 2026: research: audit inference rent-to-controlled-capacity evidence - [[commoditization-amplifies-the-cost-curve-it-does-not-predict-concentration|Commoditization amplifies the cost curve; it does not predict concentration]]
 - Jul 15, 2026: notes: publish vault updates - [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|David Choi (USD.AI) on Building GPU Finance Rails: the NVIDIA list, no-offtake pricing, borrower-refused disclosure]]
-- Jul 15, 2026: source: deepen Connor Moore GPU credit transcript analysis - [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
-- Jul 15, 2026: notes: update vault - [[solid-findings-audit-and-next-rung-2026-07-14|Solid findings audit and the next invalidation rung (2026-07-14)]]
-- Jul 15, 2026: insight: frame operator verification as a credit graduation problem - [[operator-history-matters-but-a-portable-record-is-not-yet-a-business|Operator history matters, but a portable record is not yet a business]]
-- Jul 15, 2026: research: clarify experiment decision and preserve USD.AI transcripts - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
-- Jul 15, 2026: research: update GPU credit branches and source findings - [[gpu-backed-debt-contract-backed-inversion-2026-06-30|GPU-backed debt contract-backed inversion]]
-- Jul 15, 2026: source: tighten Zile verification interpretation - [[zile-cao-blockchain-capital-call-2026-07-10|Call: Zile Cao (Blockchain Capital) on the crypto-compute stack]]
-- Jul 15, 2026: insight: operator history matters but portability is unproven - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
-- Jul 15, 2026: source: capture adjacent verification company postmortem - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-- Jul 15, 2026: source: mark operator outreach wave sent - [[gpu-operator-outreach-cleaned-draft-packet-2026-07-14|GPU operator outreach: cleaned list and Gmail draft packet]]
-- Jul 14, 2026: source: identify Silicon FarmGPU trust relationship - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
-- Jul 14, 2026: source: capture Silicon advisor trust path - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
-- Jul 14, 2026: notes: update gpu financing strategy and outreach - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 
-_Showing the newest 25 of 119 updates in this window._
+_Showing the newest 25 of 131 updates in this window._
