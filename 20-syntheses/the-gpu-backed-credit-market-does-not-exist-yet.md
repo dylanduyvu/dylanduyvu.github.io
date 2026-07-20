@@ -107,9 +107,7 @@ The compute market is beginning to publish prices for future GPU rentals. [Silic
 
 [CME](https://www.cmegroup.com/media-room/press-releases/2026/5/12/cme_group_and_silicondatapartnertolaunchfirstcomputefutures.html) and [ICE](https://ir.theice.com/press/news-details/2026/ICE-and-Ornn-to-Launch-GPU-Compute-Futures-Contracts/default.aspx) have announced plans for financial contracts tied to published GPU rental-price indexes. If those contracts attract enough trading, an operator could protect itself against a broad fall in rental prices.
 
-Together, the forward curve and futures contracts could solve part of the problem. The curve gives lenders a shared estimate of future rental prices. If the futures attract enough trading, they could offset losses when the published price falls.
-
-But fleet revenue has two main inputs.
+Those tools address only one part of fleet revenue.
 
 ![The two components of GPU fleet revenue](../70-attachments/fleet-revenue-price-times-hours.png)
 
@@ -119,13 +117,13 @@ A price-index futures contract can protect against a broad decline in market ren
 
 Suppose the market rental price stays at $3 per hour, but a young operator loses its main customer and half its GPUs sit idle. The price index has not fallen, so the futures contract does not pay. The operator's revenue still drops by half.
 
-A different kind of futures contract could cover the missing variable. If someone promised to pay for a fixed number of GPU-hours over several years, the lender would have a longer payment stream even if the operator could not find enough short-term renters.
+A different contract could cover the missing variable. If a buyer or financial firm promised to pay for a fixed number of GPU-hours over several years, the lender would still receive payments when ordinary renters did not show up.
 
-But that contract would not make the risk disappear. It would move the risk to the buyer or financial counterparty making the promise. Economically, it would start to look like a standardized, tradable offtake agreement.
+That would move the risk rather than remove it. Whoever made the promise would have to pay. In practice, the contract would start to resemble a standardized form of offtake.
 
 ## NVIDIA may be supplying the long revenue promise customers will not
 
-NVIDIA's program may be one version of that risk transfer. A price hedge cannot promise that customers will rent enough hours, but a revenue guarantee can.
+NVIDIA may be making that promise itself. A price hedge cannot promise that customers will rent enough hours, but a revenue guarantee can.
 
 NVIDIA announced a [revenue-sharing and credit-support program](https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/) for partner clouds in July. Its public post does not disclose the detailed terms.
 
