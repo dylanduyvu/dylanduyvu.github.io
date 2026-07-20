@@ -17,9 +17,13 @@ tags: [blogpost, draft, gpu, underwriting, verification, capital-structure]
 
 # The Verification Gap Wasn't the Financing Gap
 
+---
+
 *[Associated research](https://dylanduyvu.github.io/20-syntheses/research-behind-the-verification-gap-was-not-the-financing-gap)*
 
 *[Disclosure](https://dylanvu.substack.com/about)*
+
+---
 
 In my last two posts, I argued that GPU credit was missing a portable record of operator performance. Then I tried to find out whether that record would actually change a loan.
 

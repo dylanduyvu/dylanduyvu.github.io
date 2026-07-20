@@ -20,9 +20,13 @@ tags: [blogpost, draft, gpu, customer-contracts, on-demand-compute, utilization]
 
 # Why New GPU Fleets Can Go Unfunded in a Compute Shortage
 
+---
+
 *[Associated research](https://dylanduyvu.github.io/50-sources/gpu-loans-without-long-term-customer-claim-ledger-2026-07-19)*
 
 *[Disclosure](https://dylanvu.substack.com/about)*
+
+---
 
 In June, the USD.AI team told me customers were waiting for GPUs or paying premiums to skip the line. In the deals they saw, there were not enough GPUs for what customers wanted. Buyers were not trying to escape long rental contracts because they still needed the compute.
 
