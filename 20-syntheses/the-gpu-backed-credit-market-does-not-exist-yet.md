@@ -2,7 +2,7 @@
 type: synthesis
 status: draft
 created: 2026-07-17
-updated: 2026-07-19
+updated: 2026-07-20
 domains: [gpu-finance, credit-markets, compute-contracts, asset-backed-lending]
 projects: []
 people: []
@@ -19,6 +19,10 @@ tags: [blogpost, draft, gpu, customer-contracts, on-demand-compute, utilization]
 ---
 
 # Why New GPU Fleets Can Go Unfunded in a Compute Shortage
+
+*[Associated research](https://dylanduyvu.github.io/50-sources/gpu-loans-without-long-term-customer-claim-ledger-2026-07-19)*
+
+*[Disclosure](https://dylanvu.substack.com/about)*
 
 In June, the USD.AI team told me customers were waiting for GPUs or paying premiums to skip the line. In the deals they saw, there were not enough GPUs for what customers wanted. Buyers were not trying to escape long rental contracts because they still needed the compute.
 
@@ -151,7 +155,3 @@ Three observations would weaken this argument.
 Until lenders have a repeatable way to estimate what a new fleet will earn when its customers may change before the loan is repaid, a compute shortage can coexist with viable new capacity going unbuilt.
 
 If you lend against GPUs or have structured one of these loans, I would like to compare notes. I am at dylanduyvu@gmail.com.
-
-_[Associated research](https://dylanduyvu.github.io/50-sources/gpu-loans-without-long-term-customer-claim-ledger-2026-07-19)_
-
-_[Disclosure](https://dylanvu.substack.com/about)_
