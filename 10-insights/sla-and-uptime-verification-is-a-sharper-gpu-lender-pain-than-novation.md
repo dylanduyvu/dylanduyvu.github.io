@@ -395,3 +395,9 @@ Dylan clarified the specific USD.AI use of Aravolta-style verification: determin
 This changes the adoption census classification. USD.AI is one confirmed user of installation / collateral verification that controls disbursement. It is not a confirmed user of ongoing contract-level SLA monitoring that changes pricing or servicing terms. The nodes continue showing presence, utilization, and availability after installation, but the vault has no evidence that those live signals move money after the initial draw gate.
 
 Revised count: one named draw-gate verification adopter; one unnamed lender interested in performance monitoring; zero confirmed lenders using ongoing SLA-to-revenue monitoring to change loan terms. This strengthens the rule that verification earns budget when wired to a financial action, while leaving H3 itself unvalidated.
+
+### 2026-07-20 - Execution correction: do not route the test through Harry
+
+The proposed next action above incorrectly routed the H3 test back to Harry. The vault already marked that relationship dormant on 2026-07-08 after follow-ups went unanswered. The USD.AI source note also says the thread was ghosted, the evidence froze at one stated wish, and the route through Harry into USD.AI colleagues is closed for now.
+
+Do not send another Harry follow-up. Preserve his original statement as evidence, but run any behavioral test through a fresh lender that retains contract-cash-flow or revenue exposure. The first question should establish current behavior: whether ongoing operating or SLA data has ever changed a reserve, covenant, later draw, refinancing decision, or another term. Aravolta can separately answer the vendor-side census question - whether any facility beyond USD.AI actually wires its telemetry into a financial action - but it cannot substitute for the lender decision-maker.
