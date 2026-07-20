@@ -8,11 +8,11 @@ updated: 2026-07-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 20, 2026, 6:02 PM EDT
+Generated: Jul 20, 2026, 7:06 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 51 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 49 note commits. The most recent movement is:
 
 - Insight update: close Harry as SLA test route.
 - Insight update: classify USD.AI verification as a draw gate.
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 51 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 20, 2026, 7:06 PM EDT - article: add fleet revenue figure
+
+article: add fleet revenue figure.
+
+Changed notes:
+  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
 ### Jul 20, 2026, 6:02 PM EDT - article: qualify USD.AI history policy and trim futures repetition
 
@@ -111,21 +118,11 @@ Changed notes:
   - [[gpu-compute-derivatives|GPU Compute Derivatives]]
   - [[jakub-compute-futures-tenor-mismatch-take-2026-07-20|Jakub: compute futures as the cleanest way to transfer the tenor mismatch]]
 
-### Jul 20, 2026, 1:06 PM EDT - insight: separate compute price and utilization risk
-
-Insight update: separate compute price and utilization risk.
-
-Changed notes:
-  - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
-  - [[gpu-finance-has-no-public-forward-price-for-second-customer-revenue|GPU finance has no public forward price for second-customer revenue]]
-  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
-  - [[gpu-compute-derivatives|GPU Compute Derivatives]]
-  - [[jakub-compute-futures-tenor-mismatch-take-2026-07-20|Jakub: compute futures as the cleanest way to transfer the tenor mismatch]]
-
-_Showing the newest 12 of 18 updates in this window._
+_Showing the newest 12 of 19 updates in this window._
 
 ## Past 7 Days
 
+- Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen shortage versus contract-backed lending opening - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: add fixed-volume compute futures distinction - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
@@ -150,12 +147,12 @@ _Showing the newest 12 of 18 updates in this window._
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: correct the mortgage analogy for gpu credit - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
-- Jul 17, 2026: insight: separate usd.ai current offtake model from pooled gpu credit end state - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 
-_Showing the newest 25 of 51 updates in this window._
+_Showing the newest 25 of 49 updates in this window._
 
 ## Past 30 Days
 
+- Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen shortage versus contract-backed lending opening - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: add fixed-volume compute futures distinction - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
@@ -180,6 +177,5 @@ _Showing the newest 25 of 51 updates in this window._
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: correct the mortgage analogy for gpu credit - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
-- Jul 17, 2026: insight: separate usd.ai current offtake model from pooled gpu credit end state - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 
-_Showing the newest 25 of 136 updates in this window._
+_Showing the newest 25 of 137 updates in this window._
