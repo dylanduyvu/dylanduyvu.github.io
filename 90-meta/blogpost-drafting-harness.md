@@ -2,7 +2,7 @@
 type: meta
 status: active
 created: 2026-07-05
-updated: 2026-07-17
+updated: 2026-07-20
 tags: [writing, blogpost, harness, style]
 ---
 
@@ -309,3 +309,25 @@ Tradeoff with section 3: the scene-first lead and the abstract-first open confli
 What this register drops from the essayistic default: metaphor chains, "trapped capital and legal language"-style compound imagery, ironic asides, and any sentence whose main job is sounding smart. If a phrase would make a reader pause to admire it, replace it with the fact.
 
 What survives from the harness in this register: evidence gradients, provenance statements, hypothesis labels, and the closing reusable test. They are stated in the same short declarative sentences as everything else.
+
+## 17. Revision History Is Part Of The Article
+
+For research essays, the Git history should show how the argument changed. A single final commit proves only that a finished file exists. Meaningful intermediate commits show when evidence narrowed the thesis, where counterexamples changed the structure, and which claims were corrected before publication.
+
+Commit and push at these checkpoints:
+
+1. Claim ledger and causal outline are stable enough to draft from.
+2. The first complete draft exists, even if the prose is rough.
+3. A material change alters the thesis, evidence boundary, section order, or conclusion.
+4. A pressure test adds counterevidence, removes an unsupported claim, or changes confidence.
+5. The normal-English and full-read pass produces a publishable draft.
+6. Publication metadata, associated research, disclosure, and final links are ready.
+
+Rules:
+
+- Each commit should describe the intellectual change, not merely say `update article`.
+- Push each checkpoint immediately so the remote file history is the durable record.
+- Do not create a commit for every typo. Batch small wording and punctuation fixes into the nearest coherent revision.
+- Do not amend, squash, force-push, or rewrite article history after it has been pushed. If a claim was wrong, preserve it and add a correction commit.
+- Add a file-specific `Revision history` link near the top of the article once the article is externally shared.
+- Remember that every pushed draft is public. Keep private or permission-sensitive material outside the public vault rather than relying on later deletion.

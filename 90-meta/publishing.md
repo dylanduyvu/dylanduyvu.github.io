@@ -2,7 +2,7 @@
 type: meta
 status: active
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-20
 tags:
   - publishing
   - quartz
@@ -39,6 +39,22 @@ When Codex or Claude makes a confident capture/update:
 - compact archives for the past 7 and 30 days
 
 The GitHub Pages workflow also runs `npm run latest` before every deploy and on a daily schedule, so the public page refreshes even on days with no new manual publish.
+
+## Article Revision History
+
+For research articles, publish meaningful intermediate revisions rather than waiting for one final commit. The file-specific GitHub history is part of the public evidence trail.
+
+Checkpoint commits should capture the claim ledger or outline, first complete draft, material thesis or structural changes, evidence corrections, and the final readability pass. Push each checkpoint immediately. Batch typo-level edits, but never amend, squash, or force-push away an article revision that has already been published.
+
+Use commit messages that name what changed in the argument, for example:
+
+```text
+article: draft short-demand financing argument
+article: narrow claim to first-fleet underwriting
+article: add Lambda counterexample and limits
+article: correct USD.AI no-offtake interpretation
+article: complete normal-English read
+```
 
 ## Conversation Capture
 

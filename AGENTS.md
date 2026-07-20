@@ -129,6 +129,9 @@ This vault is local-first, but it now has a public GitHub remote and Quartz/GitH
 - Use boring, explicit commit messages.
 - Prefer `npm run publish -- "<message>"` for the final build/stage/commit/push loop.
 - Do not stage random `.obsidian/` UI/plugin setting drift during publishing unless the setting change is intentional and relevant.
+- During article development, commit and push meaningful revisions as they happen. The public file history is part of the evidence trail, not merely a final backup.
+- Use one commit per coherent article checkpoint: claim ledger or outline, first complete draft, material thesis or structural revision, evidence correction, and final readability/publish pass. Batch typo-level edits into the nearest checkpoint.
+- Do not amend, squash, force-push, or otherwise erase published article revisions. Correct mistakes with a new explicit commit.
 
 Examples:
 
