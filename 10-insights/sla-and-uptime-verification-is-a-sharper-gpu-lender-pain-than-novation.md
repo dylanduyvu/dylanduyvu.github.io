@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-07-15
+updated: 2026-07-20
 confidence: high
 domains: [gpu-finance, ai-infrastructure, compute-contracts]
 projects: [gpu-compute-novation]
@@ -367,3 +367,13 @@ Phil also named the incumbent reference sources: former employees, customers, co
 Zile relayed a secondhand case from a college friend who built customer-facing software that plugged into data centers to verify genuine, correctly specified work and track metrics / uptime. The company reportedly signed a few seven-figure contracts with data centers, then pivoted after roughly a year. Zile's interpretation was that they became jaded because "nobody really cares about verification."
 
 This is adverse to a generic verification pitch. Large initial contracts show that budget can be won, but a rapid pivot despite them suggests weak durable pull: the output may not have changed decisions, renewed, expanded, or supported a scalable product. The company and failure mechanism remain unknown, so none of those explanations should be promoted yet. It is adjacent rather than dispositive for H2/H3 because the buyers were data centers, not lenders, and the product verified live infrastructure rather than portable financing history. The required next evidence is the post-mortem: why pivot after landing those contracts?
+
+### 2026-07-20 - H3 still warrants one direct, behavioral test
+
+The invalidation of portable operator history (H2) does not invalidate live contract-performance monitoring (H3). Harry's original claim was narrower: on an operating financed cluster, visibility into whether promised uptime is actually being delivered could reduce lost-revenue risk and justify more aggressive financing terms.
+
+Aravolta proves that USD.AI already procures live infrastructure verification. Aravolta's current lender pages also market example structures with utilization-linked borrowing capacity, rates, reserves, and performance triggers. Its public USD.AI scope still stops before tenant application performance, contract-defined SLA compliance, and resulting revenue credits. Aravolta therefore occupies the telemetry input, not publicly the full contract-to-revenue decision layer.
+
+Zile's counterexample raises the bar rather than closing this branch. A customer-facing data-center verification company reportedly won several seven-figure contracts and still pivoted within a year. That is strong evidence against selling a generic verification dashboard whose output does not control a decision. It is not direct evidence against lender-required monitoring that releases a draw, changes a reserve, adjusts borrowing capacity, triggers a covenant, or affects the next facility.
+
+The next test should be one live-deal question to Harry, not another broad discovery wave: if a borrower agreed before closing to third-party monitoring that reconciled actual uptime against the customer contract and any revenue credits, which term would USD.AI change - amount financed, rate, reserve, amortization, draw release, or approval - and would it test that structure on one live deal? A vague statement that the data would be "helpful" does not pass. The branch survives only if a lender names a term lever or offers a real pilot path.
