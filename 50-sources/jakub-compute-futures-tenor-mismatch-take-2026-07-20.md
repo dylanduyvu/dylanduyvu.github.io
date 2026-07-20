@@ -25,9 +25,13 @@ The first claim holds: better measurement cannot remove the risk that short-term
 
 The futures claim depends on the contract. A cash-settled compute-price future protects against a fall in the market rental price. It does not pay merely because one operator fails to rent its fleet. A fixed-volume delivery contract, minimum-revenue contract, or similar instrument could transfer more of that rental-volume risk, but economically it begins to resemble standardized offtake.
 
-## Follow-Up For Jakub
+## Clarification
 
-When you say compute futures, do you mean cash-settled price futures, or a contract that locks in payment for a fixed number of GPU-hours? The first hedges price but not idle capacity; the second is closer to standardized offtake.
+Dylan clarified that Jakub meant the second structure: a contract that locks in payment for a fixed number of future GPU-hours.
+
+That instrument directly shifts the risk that the fleet does not find enough short-term renters to the buyer or contract counterparty. It can give the lender a payment stream aligned with the loan term. The clean description is therefore a standardized, potentially tradable form of offtake rather than an ordinary cash-settled price future.
+
+The remaining design questions are who commits to pay, how that counterparty posts collateral or is credit-underwritten, whether delivery is physical or financial, and what happens when either side cannot perform.
 
 ## Links
 

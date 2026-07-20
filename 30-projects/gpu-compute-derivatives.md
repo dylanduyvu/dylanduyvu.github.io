@@ -19,7 +19,7 @@ This derivative layer matters because it could feed the rest of GPU finance: len
 
 The commoditization question now looks less like "are all GPU-hours identical?" and more like "can the market define a reference grade, settlement hub, and priced basis for operator/topology/SLA differences?" Fungibility is not binary; the first useful product may be a cash-settled reference exposure with messy but explicit basis spreads.
 
-Jakub's tenor-mismatch framing adds a second design requirement: the risk cannot be removed, only transferred. Cash-settled price futures hedge what each GPU-hour earns, not how many hours one fleet rents. A fixed-volume, physical-delivery, or revenue-linked contract could transfer more of the utilization risk, but economically begins to resemble standardized offtake.
+Jakub's tenor-mismatch framing adds a second design requirement: the risk cannot be removed, only transferred. He means a contract that locks in payment for a fixed amount of future compute, not an ordinary cash-settled price future. That contract would transfer utilization risk to the buyer or counterparty and give lenders a payment stream aligned with the debt. Economically, it is a standardized and potentially tradable form of offtake.
 
 ## Key Insights
 
