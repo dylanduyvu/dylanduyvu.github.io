@@ -8,11 +8,11 @@ updated: 2026-07-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 20, 2026, 4:34 PM EDT
+Generated: Jul 20, 2026, 5:29 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 51 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 52 note commits. The most recent movement is:
 
 - Insight update: close Harry as SLA test route.
 - Insight update: classify USD.AI verification as a draw gate.
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 51 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 20, 2026, 5:29 PM EDT - article: add fixed-volume compute futures distinction
+
+article: add fixed-volume compute futures distinction.
+
+Changed notes:
+  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
 ### Jul 20, 2026, 4:34 PM EDT - article: fix rendered dollar amounts
 
@@ -117,17 +124,11 @@ Changed notes:
   - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
   - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
 
-### Jul 20, 2026, 12:10 PM EDT - article: move research and disclosure links to top
-
-article: move research and disclosure links to top.
-
-Changed notes:
-  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-
-_Showing the newest 12 of 15 updates in this window._
+_Showing the newest 12 of 16 updates in this window._
 
 ## Past 7 Days
 
+- Jul 20, 2026: article: add fixed-volume compute futures distinction - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: fix rendered dollar amounts - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
 - Jul 20, 2026: article: remove transaction-cost detour - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
 - Jul 20, 2026: article: strengthen verification gap evidence - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
@@ -152,12 +153,12 @@ _Showing the newest 12 of 15 updates in this window._
 - Jul 17, 2026: insight: separate usd.ai current offtake model from pooled gpu credit end state - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - Jul 17, 2026: correction: distinguish borrower credit from project cash flow in usd.ai model - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - Jul 17, 2026: insight: usd.ai public pipeline is contract-heavy and ahead of idle capital - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
-- Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 
-_Showing the newest 25 of 51 updates in this window._
+_Showing the newest 25 of 52 updates in this window._
 
 ## Past 30 Days
 
+- Jul 20, 2026: article: add fixed-volume compute futures distinction - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: fix rendered dollar amounts - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
 - Jul 20, 2026: article: remove transaction-cost detour - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
 - Jul 20, 2026: article: strengthen verification gap evidence - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
@@ -182,6 +183,5 @@ _Showing the newest 25 of 51 updates in this window._
 - Jul 17, 2026: insight: separate usd.ai current offtake model from pooled gpu credit end state - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 - Jul 17, 2026: correction: distinguish borrower credit from project cash flow in usd.ai model - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
 - Jul 17, 2026: insight: usd.ai public pipeline is contract-heavy and ahead of idle capital - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
-- Jul 16, 2026: insight: define inference capacity trendline and hybrid end state - [[inference-capacity-internalization-is-an-s-curve-toward-a-hybrid-end-state|Inference-capacity internalization is an S-curve toward a hybrid end state]]
 
-_Showing the newest 25 of 133 updates in this window._
+_Showing the newest 25 of 134 updates in this window._
