@@ -24,6 +24,8 @@ tags: [blogpost, draft, gpu, customer-contracts, on-demand-compute, utilization]
 
 *[Associated research](https://dylanduyvu.github.io/50-sources/gpu-loans-without-long-term-customer-claim-ledger-2026-07-19)*
 
+*[Revision history](https://github.com/dylanduyvu/dylanduyvu.github.io/commits/main/20-syntheses/the-gpu-backed-credit-market-does-not-exist-yet.md)*
+
 *[Disclosure](https://dylanvu.substack.com/about)*
 
 ---

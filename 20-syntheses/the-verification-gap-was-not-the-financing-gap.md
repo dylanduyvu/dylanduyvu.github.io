@@ -21,6 +21,8 @@ tags: [blogpost, draft, gpu, underwriting, verification, capital-structure]
 
 *[Associated research](https://dylanduyvu.github.io/20-syntheses/research-behind-the-verification-gap-was-not-the-financing-gap)*
 
+*[Revision history](https://github.com/dylanduyvu/dylanduyvu.github.io/commits/main/20-syntheses/the-verification-gap-was-not-the-financing-gap.md)*
+
 *[Disclosure](https://dylanvu.substack.com/about)*
 
 ---
