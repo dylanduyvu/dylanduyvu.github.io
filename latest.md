@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-18
+updated: 2026-07-20
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 18, 2026, 12:19 PM EDT
+Generated: Jul 20, 2026, 9:09 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 44 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 42 note commits. The most recent movement is:
 
 - Insight update: gpu earning power is macro-level offtake.
 - Insight update: ai offtake inherits the credit risk usd.ai says is dying.
@@ -27,93 +27,21 @@ In the past 7 days, the public vault changed through 44 note commits. The most r
 
 ## Past 24 Hours
 
-### Jul 18, 2026, 12:19 PM EDT - publish: GPU finance second-customer thesis and forward-market insight
+### Jul 20, 2026, 9:09 AM EDT - synthesis: add GPU financing gap research and drafts
 
-publish: GPU finance second-customer thesis and forward-market insight.
+synthesis: add GPU financing gap research and drafts.
 
 Changed notes:
   - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
   - [[gpu-finance-has-no-public-forward-price-for-second-customer-revenue|GPU finance has no public forward price for second-customer revenue]]
-  - [[the-gpu-backed-credit-market-does-not-exist-yet|GPU Finance Has a Second-Customer Problem]]
-  - [[gpu-finance|GPU Finance]]
-  - [[dave-friedman-compute-offtake-is-private-forward-market-2026-07-18|Dave Friedman: compute offtake is a private forward market]]
-  - [[nebius-775m-contract-backed-gpu-financing-2026-07-17|Nebius $775M contract-backed GPU financing, 2026-07-17]]
-
-### Jul 17, 2026, 2:14 PM EDT - insight: gpu earning power is macro-level offtake
-
-Insight update: gpu earning power is macro-level offtake.
-
-Changed notes:
-  - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
-  - [[gpu-finance|GPU Finance]]
-  - [[usd-ai|USD.AI]]
-
-### Jul 17, 2026, 2:11 PM EDT - insight: ai offtake inherits the credit risk usd.ai says is dying
-
-Insight update: ai offtake inherits the credit risk usd.ai says is dying.
-
-Changed notes:
-  - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
-  - [[gpu-finance|GPU Finance]]
-  - [[usd-ai|USD.AI]]
-
-### Jul 17, 2026, 1:57 PM EDT - insight: usd.ai is anti-corporate-credit, not anti-offtake
-
-Insight update: usd.ai is anti-corporate-credit, not anti-offtake.
-
-Changed notes:
-  - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
-  - [[usd-ai|USD.AI]]
-
-### Jul 17, 2026, 1:52 PM EDT - insight: separate usd.ai underwriting from its real differentiation
-
-Insight update: separate usd.ai underwriting from its real differentiation.
-
-Changed notes:
-  - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
-  - [[gpu-finance|GPU Finance]]
-  - [[usd-ai|USD.AI]]
-
-### Jul 17, 2026, 1:49 PM EDT - insight: correct the mortgage analogy for gpu credit
-
-Insight update: correct the mortgage analogy for gpu credit.
-
-Changed notes:
-  - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
-  - [[gpu-finance|GPU Finance]]
-
-### Jul 17, 2026, 1:40 PM EDT - insight: separate usd.ai current offtake model from pooled gpu credit end state
-
-Insight update: separate usd.ai current offtake model from pooled gpu credit end state.
-
-Changed notes:
-  - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
-  - [[gpu-finance|GPU Finance]]
-  - [[usd-ai|USD.AI]]
-
-### Jul 17, 2026, 12:48 PM EDT - correction: distinguish borrower credit from project cash flow in usd.ai model
-
-correction: distinguish borrower credit from project cash flow in usd.ai model.
-
-Changed notes:
-  - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
-  - [[gpu-finance|GPU Finance]]
-  - [[usd-ai-public-loan-book-snapshot-2026-07-17|USD.AI public loan-book snapshot, 2026-07-17]]
-  - [[usd-ai|USD.AI]]
-
-### Jul 17, 2026, 12:38 PM EDT - insight: usd.ai public pipeline is contract-heavy and ahead of idle capital
-
-Insight update: usd.ai public pipeline is contract-heavy and ahead of idle capital.
-
-Changed notes:
-  - [[usd-ai-public-pipeline-is-overwhelmingly-contract-backed|USD.AI's public pipeline is overwhelmingly contract-backed]]
-  - [[usd-ai-upcoming-book-outruns-idle-capital-but-does-not-prove-poor-risk-reward|USD.AI's upcoming book outruns idle capital but does not prove poor risk-reward]]
-  - [[gpu-finance|GPU Finance]]
-  - [[usd-ai-public-loan-book-snapshot-2026-07-17|USD.AI public loan-book snapshot, 2026-07-17]]
-  - [[usd-ai|USD.AI]]
+  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
+  - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
+  - [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|Claim ledger: GPU loans without a long-term customer]]
+  - [[lambda-on-demand-gpu-financing-ladder-2024-2026|Lambda's on-demand GPU financing ladder, 2024-2026]]
 
 ## Past 7 Days
 
+- Jul 20, 2026: synthesis: add GPU financing gap research and drafts - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 18, 2026: publish: GPU finance second-customer thesis and forward-market insight - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
@@ -138,12 +66,12 @@ Changed notes:
 - Jul 14, 2026: source: identify Silicon FarmGPU trust relationship - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 14, 2026: source: capture Silicon advisor trust path - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 14, 2026: notes: update gpu financing strategy and outreach - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
-- Jul 14, 2026: correct Phil follow-up question mapping - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 
-_Showing the newest 25 of 44 updates in this window._
+_Showing the newest 25 of 42 updates in this window._
 
 ## Past 30 Days
 
+- Jul 20, 2026: synthesis: add GPU financing gap research and drafts - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 18, 2026: publish: GPU finance second-customer thesis and forward-market insight - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
@@ -168,6 +96,5 @@ _Showing the newest 25 of 44 updates in this window._
 - Jul 14, 2026: source: identify Silicon FarmGPU trust relationship - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 14, 2026: source: capture Silicon advisor trust path - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
 - Jul 14, 2026: notes: update gpu financing strategy and outreach - [[same-counterparty-familiarity-substitutes-for-history-at-every-observed-tier|Same-counterparty familiarity is the working substitute for verifiable history at every tier observed so far]]
-- Jul 14, 2026: correct Phil follow-up question mapping - [[offtake-based-gpu-loans-systematically-centralize-capital|Offtake-based GPU loans systematically centralize capital]]
 
-_Showing the newest 25 of 118 updates in this window._
+_Showing the newest 25 of 119 updates in this window._
