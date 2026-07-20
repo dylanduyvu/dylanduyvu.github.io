@@ -377,3 +377,13 @@ Aravolta proves that USD.AI already procures live infrastructure verification. A
 Zile's counterexample raises the bar rather than closing this branch. A customer-facing data-center verification company reportedly won several seven-figure contracts and still pivoted within a year. That is strong evidence against selling a generic verification dashboard whose output does not control a decision. It is not direct evidence against lender-required monitoring that releases a draw, changes a reserve, adjusts borrowing capacity, triggers a covenant, or affects the next facility.
 
 The next test should be one live-deal question to Harry, not another broad discovery wave: if a borrower agreed before closing to third-party monitoring that reconciled actual uptime against the customer contract and any revenue credits, which term would USD.AI change - amount financed, rate, reserve, amortization, draw release, or approval - and would it test that structure on one live deal? A vague statement that the data would be "helpful" does not pass. The branch survives only if a lender names a term lever or offers a real pilot path.
+
+### 2026-07-20 - Current lender-monitoring census
+
+The vault currently contains one named lender confirmed to use continuous GPU infrastructure telemetry: USD.AI through Aravolta. That deployment verifies collateral presence, identity, health, utilization, and continuous availability. It does not publicly verify contract-defined SLA performance or reconcile downtime with customer revenue credits.
+
+One additional unnamed lender, relayed through Thomas at Barkr, asked whether a usage / performance monitoring product existed for a specific deal. That is evidence of interest, not a confirmed deployment. Aravolta markets lender structures in which telemetry affects borrowing capacity, rates, reserves, and triggers, but the vault has no second named lender or executed facility proving those examples are in use.
+
+The contrary evidence points toward low current penetration. Bernie said most lenders do not dig deeply into SLAs and rely on prior deployments, financials, or passing on the operator. Phil's mega-tier participant process uses lead diligence, consultants, and industry reference calls rather than continuous telemetry. SemiAnalysis sells bespoke lender diligence, not live contract monitoring.
+
+Current count: one named infrastructure-monitoring adopter; one unnamed interested lender; zero confirmed contract-level SLA-to-revenue monitoring adopters. This is not enough to estimate market prevalence, but it does mean the exact H3 product may be uncommon or nonexistent rather than an already crowded lender workflow.
