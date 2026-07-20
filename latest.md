@@ -8,11 +8,11 @@ updated: 2026-07-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 20, 2026, 7:06 PM EDT
+Generated: Jul 20, 2026, 7:21 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 49 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 50 note commits. The most recent movement is:
 
 - Insight update: close Harry as SLA test route.
 - Insight update: classify USD.AI verification as a draw gate.
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 49 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 20, 2026, 7:21 PM EDT - article: simplify futures risk transfer section
+
+article: simplify futures risk transfer section.
+
+Changed notes:
+  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
 ### Jul 20, 2026, 7:06 PM EDT - article: add fleet revenue figure
 
@@ -108,20 +115,11 @@ Insight update: preserve direct live-monitoring test.
 Changed notes:
   - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
-### Jul 20, 2026, 1:43 PM EDT - insight: clarify Jakub fixed-volume futures proposal
-
-Insight update: clarify Jakub fixed-volume futures proposal.
-
-Changed notes:
-  - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
-  - [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|GPU lending has a tenor mismatch: inference rents short, debt runs long]]
-  - [[gpu-compute-derivatives|GPU Compute Derivatives]]
-  - [[jakub-compute-futures-tenor-mismatch-take-2026-07-20|Jakub: compute futures as the cleanest way to transfer the tenor mismatch]]
-
-_Showing the newest 12 of 19 updates in this window._
+_Showing the newest 12 of 20 updates in this window._
 
 ## Past 7 Days
 
+- Jul 20, 2026: article: simplify futures risk transfer section - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen shortage versus contract-backed lending opening - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
@@ -146,12 +144,12 @@ _Showing the newest 12 of 19 updates in this window._
 - Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
-- Jul 17, 2026: insight: correct the mortgage analogy for gpu credit - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 
-_Showing the newest 25 of 49 updates in this window._
+_Showing the newest 25 of 50 updates in this window._
 
 ## Past 30 Days
 
+- Jul 20, 2026: article: simplify futures risk transfer section - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen shortage versus contract-backed lending opening - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
@@ -176,6 +174,5 @@ _Showing the newest 25 of 49 updates in this window._
 - Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 - Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
-- Jul 17, 2026: insight: correct the mortgage analogy for gpu credit - [[usd-ai-wants-to-diversify-away-named-offtaker-credit-not-eliminate-compute-revenue|USD.AI wants to diversify away named offtaker credit, not eliminate compute revenue]]
 
-_Showing the newest 25 of 137 updates in this window._
+_Showing the newest 25 of 138 updates in this window._
