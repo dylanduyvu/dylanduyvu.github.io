@@ -149,6 +149,19 @@ Avoid: too many named frameworks, branded layer-speak, unexplained product/UI no
 
 If a sentence sounds like it is preempting an objection the reader has not had yet, soften it or move it later.
 
+### Normal English Is A Hard Gate
+
+Write for a smart reader who has no finance background and has never seen the vault. The draft fails if that reader cannot explain each paragraph back after one reading.
+
+This gate applies **before** any prose is shown to Dylan or written into a draft. It is not merely a final editing check. Do not use Dylan's reaction as the first test of whether the language is understandable.
+
+- Prefer the ordinary action to the industry label. Write "cash set aside for future loan payments" before `debt-service reserve`, "the share of the hardware cost the lender pays" before `advance rate`, and "a customer promises to pay for capacity for several years" before `offtake`.
+- If a technical term is necessary, define it in normal English the first time it appears. Do not make the reader wait for a later paragraph or glossary.
+- Never use jargon to carry a logical step. The prose must say who pays whom, what could go wrong, and what changes as a result.
+- Keep one idea per sentence and one job per paragraph. Split a sentence when understanding it requires holding several new concepts at once.
+- Familiarity is not clarity. Run the final pass as someone who does not know the research, the companies, or the argument already.
+- A replacement fails if it swaps one specialist label for another. Describe what happens before trying to name it.
+
 ## 12. Media Rule
 
 Use media only when it teaches a distinction faster than prose. Zero graphics is often fine. Never add decorative media. If generating a graphic: crisp and editable, real example from the piece, visually inspect for overflow and overlap.
@@ -178,6 +191,12 @@ Use the nearest economic peer for analogies. An asset-finance argument about GPU
 
 Order sections by the argument's escalation, not by the neatness of the taxonomy. If a section moves, rewrite the seams around it. Keep the intro roadmap and dek aligned with the actual order and scope after any move. Watch the middle of the essay hardest: if one section carries evidence, taxonomy, proof, and inference all at once, split or cut before adding. Analogy sections do one job and leave.
 
+Outline order is necessary but insufficient. Before approving structure, write the thesis as one sentence and reduce it to a short causal chain. Every section must prove one link in that chain while preserving the same governing question in the reader's working memory. Run this as a naive reader with no vault or research context. If the connections feel obvious only because the author already knows the corpus, the flow is not working. Do not rate narrative flow from headings alone.
+
+Connective tissue is not transition prose. Use the shortest phrase that names why the next sentence follows: `but`, `so`, `because`, `for example`, `instead`, or `still`. If the reader must supply that relationship, the seam is unfinished.
+
+Every local edit triggers a seam check and a global check. First reread the changed sentence with the paragraph before and after it. Then scan the full article for stale transitions, repeated claims, changed scope, broken definitions, and later sentences that relied on the old wording. A locally improved sentence is not finished until the whole article still reads as one completed argument.
+
 ## 14. Pre-Publish Lint
 
 Evidence:
@@ -193,6 +212,12 @@ Specificity:
 
 - Search for vague placeholders: `one`, `some`, `someone`, `a tool`, `a market`, `a builder`, `thing`, `stuff`
 - Replace with product/company names, links, dates, or explicit role-based anonymization.
+
+Normal English:
+
+- Circle every domain term. Replace it with the underlying action unless the term is necessary, then define it immediately.
+- For every paragraph, ask: who is doing what, why does it matter, and could a smart non-specialist paraphrase this after one reading?
+- Treat a failed paraphrase as a failed draft. Rewrite the paragraph before continuing the lint.
 
 Authenticity:
 

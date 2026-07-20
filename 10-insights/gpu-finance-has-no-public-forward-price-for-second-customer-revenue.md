@@ -1,12 +1,16 @@
 ---
 type: insight
-status: distilled
+status: superseded
 created: 2026-07-18
-updated: 2026-07-18
+updated: 2026-07-19
 confidence: high
 domains: [gpu-finance, compute-markets, compute-derivatives, offtake]
 projects: []
-sources: [dave-friedman-compute-offtake-is-private-forward-market-2026-07-18]
+sources:
+  [
+    dave-friedman-compute-offtake-is-private-forward-market-2026-07-18,
+    gpu-loans-without-long-term-customer-claim-ledger-2026-07-19,
+  ]
 people: [dave-friedman]
 orgs: [coreweave]
 aliases:
@@ -18,9 +22,13 @@ tags: [compute, forward-curve, offtake, merchant-revenue, basis-risk]
 
 ## Claim
 
+**Superseded on 2026-07-19.** The original claim below was too broad.
+
 Compute offtake agreements are the market's private substitute for a forward curve. They give lenders a future output price and a named counterparty, but the price remains locked inside a contract that also bundles capacity, configuration, location, service, credit, and flexibility.
 
 That leaves merchant GPU lenders without a common market price for what a cluster should earn after its current customer leaves. The second-customer problem is therefore partly a forward-price problem, not only a utilization or operator-history problem.
+
+Silicon Data launched a public, calculated GPU forward curve in April 2026, before this note was written. CME and ICE have also announced compute futures, although neither product had begun trading as of 2026-07-19. The corrected claim is narrower: market-price tools are emerging, but their payout does not directly track how many GPU-hours a particular operator sells.
 
 ## Why It Matters
 
@@ -41,3 +49,9 @@ Source: [[dave-friedman-compute-offtake-is-private-forward-market-2026-07-18|Dav
 - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]
 - [[compute-basis-will-price-operator-topology-duration-and-sla-differences|Compute basis will price operator, topology, duration, and SLA differences]]
 - [[the-gpu-backed-credit-market-does-not-exist-yet|GPU Finance Has a Second-Customer Problem]]
+
+## Updates
+
+### 2026-07-19
+
+Marked the original claim superseded after finding Silicon Data's April 2026 forward curve and the announced CME and ICE futures. The underlying credit problem survives in narrower form. A market-price curve can help price or hedge GPU rentals, but lenders still need to forecast how much capacity a particular operator will sell. Full correction and evidence: [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|Claim ledger: GPU loans without a long-term customer]].

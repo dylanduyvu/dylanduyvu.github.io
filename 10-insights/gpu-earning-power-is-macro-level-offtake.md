@@ -2,14 +2,25 @@
 type: insight
 status: distilled
 created: 2026-07-17
-updated: 2026-07-17
+updated: 2026-07-19
 confidence: high
 domains: [gpu-finance, compute-markets, asset-backed-lending, residual-value]
 projects: []
-sources: [usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15, usdai-david-choi-touchcraft-podcast-gpu-financing-2026-07, semianalysis-rob-howle-sales-call-2026-07-13]
+sources:
+  [
+    usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15,
+    usdai-david-choi-touchcraft-podcast-gpu-financing-2026-07,
+    semianalysis-rob-howle-sales-call-2026-07-13,
+  ]
 people: [connor-moore, david-choi]
 orgs: [usd-ai, semianalysis]
-aliases: [gpu productivity as offtake, macro gpu offtake, gpu lifetime earning power, merchant compute demand]
+aliases:
+  [
+    gpu productivity as offtake,
+    macro gpu offtake,
+    gpu lifetime earning power,
+    merchant compute demand,
+  ]
 tags: [gpu, offtake, utilization, rental-rates, underwriting]
 ---
 
@@ -58,3 +69,7 @@ USD.AI's contract-heavy public book suggests lenders still prefer hard contractu
 ### 2026-07-17
 
 Nebius announced a $775M senior secured facility backed by deployed GPU infrastructure and contracted cash flows from an investment-grade customer, priced at SOFR + 2.50%. The asset was already operational, but the attractive financing still leaned on one long customer agreement. This strengthens the distinction between hardware as the operating asset and collateral, and contracted earning power as the current repayment anchor. Source: [[nebius-775m-contract-backed-gpu-financing-2026-07-17|Nebius $775M contract-backed GPU financing]].
+
+### 2026-07-19
+
+Silicon Data already publishes a calculated GPU forward curve, and CME and ICE have announced compute futures. This corrects the earlier implication that no public forward-price tool exists. The deeper claim still holds: a futures payout follows the market rental-price index, not the number of GPU-hours a particular operator sells. Market-price tools address one input in lifetime earning power, while operator-specific rental volume, actual pricing, operating costs, and recovery remain. See [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|the article claim ledger]].
