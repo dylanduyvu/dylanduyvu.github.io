@@ -14,7 +14,6 @@ sources:
     neil-tiwari-magnetar-no-priors-podcast-2026-07-08,
     semianalysis-rob-howle-sales-call-2026-07-13,
     dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06,
-    usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15,
     aravolta-usdai-collateral-verification-case-study-2026-07-02,
   ]
 orgs: [usd-ai, american-compute, semianalysis, coreweave, nvidia]
@@ -117,17 +116,7 @@ But a portable operator score sits outside any one transaction. It may duplicate
 
 This is where my original argument went wrong. I treated the absence of a clean measurement as evidence of missing underwriting. Credit markets often handle risks they cannot measure directly by demanding more protection. The risk can be expensive without being ignored.
 
-## Mid-sized loans may be too expensive to arrange
-
-The search also produced a competing explanation for the financing gap.
-
-In a [February interview with Messari](https://open.spotify.com/episode/3gxodvhx8c9qarj30jOVrS), USD.AI cofounder Connor Moore said its typical cluster is around $30 million to $50 million. He argued that conventional private-credit processes are too customized for many deals in that range. Legal work, diligence, and custom documents make each loan expensive to arrange before the lender has taken any risk.
-
-His numbers come from a founder describing his own market, not an independent study. But fixed legal and diligence costs can still make a smaller loan uneconomic. A portable record cannot unlock a loan that lenders already understand but find too expensive to arrange.
-
-USD.AI combines standard documents, a visible pool of committed capital, and direct claims on the GPUs and project revenue. Its advantage is packaging familiar lender protections cheaply and repeatedly, not discovering that GPUs have resale value.
-
-That points toward a different problem. Mid-sized GPU operators may need faster closing, predictable terms, standard documents, and capital willing to write the check. Better evidence only matters if it changes one of those outcomes.
+The search pointed toward other possible bottlenecks, including the cost of arranging bespoke mid-sized loans, but I have not tested that explanation yet.
 
 ## What survives
 
