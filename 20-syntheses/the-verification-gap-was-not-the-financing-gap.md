@@ -74,9 +74,9 @@ Any new performance record would have to improve on that process.
 
 The response was different around smaller equipment deals, but it did not favor a verification product.
 
-One residual-value insurer, a company that guarantees lenders a minimum recovery value if the GPUs must be sold, gave a simple example. An unproven operator could get $10 million of equipment financed by contributing $5 million of its own cash. Asked why, he said extra equity can resolve almost any lender concern.
+One residual-value insurer, a company that guarantees lenders a minimum recovery value if the GPUs must be sold, gave a simple example. An unproven operator could get \$10 million of equipment financed by contributing \$5 million of its own cash. Asked why, he said extra equity can resolve almost any lender concern.
 
-I later held the equipment and customer constant and added the trusted operator record. Would the $5 million contribution fall? He did not know. He added that prior deployments already appear in historical revenue, and most lenders would rather diligence financials than uptime metrics or equipment operations.
+I later held the equipment and customer constant and added the trusted operator record. Would the \$5 million contribution fall? He did not know. He added that prior deployments already appear in historical revenue, and most lenders would rather diligence financials than uptime metrics or equipment operations.
 
 That answer does not prove a record has no value. But it shows what the record has to beat. Before an operator has deployed anything, there is no history to verify. After it has operated long enough, revenue, financial statements, references, and lender familiarity begin to carry the history. The portable record therefore lives in the narrow period between those states.
 
@@ -108,7 +108,7 @@ Lenders still buy and require plenty of information.
 
 Large lead lenders hire consultants. Participants validate their work through expert calls. USD.AI requires financial statements, purchase orders, contracts, checks for other claims on the assets, and operating revenue history. It also requires independent installation and collateral verification before releasing capital.
 
-A SemiAnalysis sales representative told me that ClusterMAX, its published rating of GPU clouds, is distributed through its newsletter rather than sold separately as a lender product. The rating may still help sell subscriptions or influence customers. But its lender-facing work takes the form of custom consulting starting around $250,000 to $300,000. The six-figure budget pays for analysis made for a particular client, not the rating alone.
+A SemiAnalysis sales representative told me that ClusterMAX, its published rating of GPU clouds, is distributed through its newsletter rather than sold separately as a lender product. The rating may still help sell subscriptions or influence customers. But its lender-facing work takes the form of custom consulting starting around \$250,000 to \$300,000. The six-figure budget pays for analysis made for a particular client, not the rating alone.
 
 In these examples, the expensive work is tied to a specific client or deal. It can help the lender approve the deal, release money from escrow, decide how much to lend, check whether the borrower kept its promises, or act after a breach.
 
