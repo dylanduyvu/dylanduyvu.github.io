@@ -13,6 +13,7 @@ sources:
     usd-ai-public-loan-book-snapshot-2026-07-17,
     nebius-775m-contract-backed-gpu-financing-2026-07-17,
     semianalysis-nvidia-backstop-trinity-2026-07-06,
+    jakub-compute-futures-tenor-mismatch-take-2026-07-20,
   ]
 orgs: []
 tags: [blogpost, draft, gpu, customer-contracts, on-demand-compute, utilization]
@@ -118,15 +119,19 @@ Suppose the market rental price stays at $3 per hour, but a young operator loses
 
 The curve still matters because it gives lenders a shared reference price. Futures could add protection against a broad price decline. Neither tells lenders how many hours this particular fleet will sell.
 
+A different kind of futures contract could cover the missing variable. If someone promised to pay for a fixed number of GPU-hours over several years, the lender would have a longer payment stream even if the operator could not find enough short-term renters.
+
+But that contract would not make the risk disappear. It would move the risk to the buyer or financial counterparty making the promise. Economically, it would start to look like a standardized, tradable offtake agreement.
+
 ## NVIDIA may be supplying the long revenue promise customers will not
 
-A price hedge cannot promise that customers will rent enough hours. But NVIDIA's program may protect lenders when customers rent fewer hours than expected.
+NVIDIA's program may be one version of that risk transfer. A price hedge cannot promise that customers will rent enough hours, but a revenue guarantee can.
 
 NVIDIA announced a [revenue-sharing and credit-support program](https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/) for partner clouds in July. Its public post does not disclose the detailed terms.
 
 [SemiAnalysis reports](https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes) that NVIDIA promises partners a minimum amount of revenue for several years. If ordinary customers rent less capacity than expected, the lender can still assume that minimum when deciding how much to lend.
 
-That support covers more than future rental prices. It also covers some of the risk that customers do not rent enough hours. The risk has not disappeared. Instead, NVIDIA has agreed to take part of it.
+That support covers more than future rental prices. It shifts some of the risk that customers do not rent enough hours to NVIDIA.
 
 ## The remaining problem is a new operator with no history and no promised revenue
 
