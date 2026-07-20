@@ -31,11 +31,11 @@ tags: [blogpost, draft, gpu, customer-contracts, on-demand-compute, utilization]
 
 ---
 
-In June, the USD.AI team told me customers were waiting for GPUs or paying premiums to skip the line. In the deals they saw, there were not enough GPUs for what customers wanted. Buyers were not trying to escape long rental contracts because they still needed the compute.
+In June, the USD.AI team told me the compute market was supply-constrained. Customers were waiting for GPUs or paying premiums to skip the line.
 
-Three weeks later, I checked [USD.AI's public list of upcoming loans](https://dylanduyvu.github.io/50-sources/usd-ai-public-loan-book-snapshot-2026-07-17). Eight of nine loans, representing 98 percent of the money, were backed by customer contracts. The only exception was a group of GPUs already earning rental revenue.
+Yet [USD.AI's own upcoming loan book](https://dylanduyvu.github.io/50-sources/usd-ai-public-loan-book-snapshot-2026-07-17) was overwhelmingly contract-backed. Eight of nine loans, representing 98 percent of the money, were backed by signed customer contracts. The only exception involved GPUs already earning rental revenue.
 
-Put those facts together. If customers want more compute than providers can supply, why are nearly all of USD.AI's upcoming loans backed by signed customer contracts? More broadly, why do GPU lenders still care so much about long customer commitments?
+If customers want more compute than providers can supply, why do lenders still want revenue from specific customers locked in for years?
 
 USD.AI's pipeline is one snapshot, not the whole market. It does not show rejected applications and therefore cannot prove that USD.AI requires a contract. But it captures the distinction between market demand and one fleet's revenue. A compute shortage says customers want GPUs somewhere. A loan depends on revenue from one specific set of GPUs.
 
@@ -49,7 +49,7 @@ Strong demand may also be for a different fleet. Customers care about the chip, 
 
 Even a customer that chooses the fleet may not commit for as long as the lender needs. [SemiAnalysis reports](https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes) that companies renting GPUs to run AI products often want capacity for one year or less because they do not know how much demand their own products will have. Loans are easiest to finance when customers commit payments for several years.
 
-That does not contradict what USD.AI told me. Customers already holding long contracts may want to keep them, while inference companies choosing capacity today may still refuse multi-year commitments.
+Short customer commitments do not mean demand is weak. An inference company can urgently need compute today while refusing to promise that it will need the same capacity several years from now.
 
 The lender therefore needs to know more than whether compute is scarce. It needs a reason to expect payments from these GPUs over the life of the loan. A long customer contract does that directly. In GPU finance, this kind of contract is usually called an offtake agreement.
 
