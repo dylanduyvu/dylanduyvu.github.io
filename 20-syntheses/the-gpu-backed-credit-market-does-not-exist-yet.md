@@ -93,7 +93,7 @@ A younger operator does not have that history. USD.AI offers a different route. 
 
 Its [lending policy](https://usd.ai/insights/usdai-underwriting-and-risk-management) lists annual interest rates of 7 to 9 percent when a highly rated customer has signed a long contract. A long contract with a less creditworthy customer costs 10 to 12 percent. A loan supported by short-term rentals costs 12 to 15 percent.
 
-But a borrower cannot rely on projected rentals alone. USD.AI requires documented history showing that the operator has already earned revenue from on-demand customers. It also lends no more than 80 percent of the hardware cost, so the borrower supplies the rest. The borrower sets aside enough cash for three months of loan payments and repays the loan over three years.
+Under USD.AI's published policy, a borrower cannot rely on projected rentals alone. Tier 3 borrowers must show documented history of on-demand revenue. USD.AI also lends no more than 80 percent of the hardware cost, so the borrower supplies the rest. The borrower sets aside enough cash for three months of loan payments and repays the loan over three years.
 
 This is a working method for financing on-demand revenue, but it still requires evidence from an existing rental business. The higher rate pays the lender for the remaining uncertainty around who rents the financed GPUs.
 
@@ -117,8 +117,6 @@ A price-index futures contract can protect against a broad decline in market ren
 
 Suppose the market rental price stays at $3 per hour, but a young operator loses its main customer and half its GPUs sit idle. The price index has not fallen, so the futures contract does not pay. The operator's revenue still drops by half.
 
-The curve still matters because it gives lenders a shared reference price. Futures could add protection against a broad price decline. Neither tells lenders how many hours this particular fleet will sell.
-
 A different kind of futures contract could cover the missing variable. If someone promised to pay for a fixed number of GPU-hours over several years, the lender would have a longer payment stream even if the operator could not find enough short-term renters.
 
 But that contract would not make the risk disappear. It would move the risk to the buyer or financial counterparty making the promise. Economically, it would start to look like a standardized, tradable offtake agreement.
@@ -135,7 +133,7 @@ That support covers more than future rental prices. It shifts some of the risk t
 
 ## The remaining problem is a new operator with no history and no promised revenue
 
-None of the examples above relies on the general compute shortage alone. USD.AI requires a documented rental history. Macquarie financed Lambda after it had operated for years and built a large customer base. Lambda and Vultr later received broader loans as established companies. SemiAnalysis says NVIDIA's program promises revenue for years even when customers will not make equally long commitments.
+None of the examples above relies on the general compute shortage alone. USD.AI's published policy requires a documented rental history. Macquarie financed Lambda after it had operated for years and built a large customer base. Lambda and Vultr later received broader loans as established companies. SemiAnalysis says NVIDIA's program promises revenue for years even when customers will not make equally long commitments.
 
 But the unresolved case is a young operator with no rental history and no customer or vendor promising years of revenue.
 
