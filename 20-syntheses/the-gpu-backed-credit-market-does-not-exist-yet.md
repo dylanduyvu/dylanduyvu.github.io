@@ -57,7 +57,7 @@ A lender can lean more heavily on the hardware by lending less than the GPUs sho
 
 A long contract solves much of the lender's problem, but only if the operator can secure years of payments before the GPUs are installed.
 
-Can a lender finance the fleet without one long customer carrying the loan?
+Is it possible to finance a fleet without one long customer carrying the loan?
 
 ## Lambda borrowed against an on-demand fleet
 
@@ -113,7 +113,7 @@ The public examples do not show a repeatable way to finance enough of a new flee
 
 ## Why this matters for compute buildout
 
-Not every new operator should receive debt. In most industries, uncertain demand for a first project belongs to equity until the company has enough history to borrow. GPU fleets may be no different. Can short-term compute demand provide enough evidence to move some of that risk from equity to debt?
+Not every new operator should receive debt. In most industries, uncertain demand for a first project belongs to equity until the company has enough history to borrow. GPU fleets may be no different. Can GPU collateral and observable short-term demand move some of that risk from equity to debt earlier than in a typical startup?
 
 Under current lending models, the first fleet faces a circular problem. Without a long customer contract or outside revenue promise, the operator needs rental history to borrow. But it needs financing to build the fleet that would produce that history.
 
