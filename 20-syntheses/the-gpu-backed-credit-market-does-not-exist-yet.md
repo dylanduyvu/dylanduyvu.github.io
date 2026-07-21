@@ -31,9 +31,9 @@ tags: [blogpost, draft, gpu, customer-contracts, on-demand-compute, utilization]
 
 ---
 
-Lenders prefer contracted revenue. That part is not surprising. A market-wide shortage of GPU compute does not guarantee that the particular fleet securing a loan will stay rented.
+Lenders prefer contracted revenue. That part is not surprising. [In April, SemiAnalysis argued](https://newsletter.semianalysis.com/p/the-great-gpu-shortage-rental-capacity) that GPU scarcity was likely to persist and rental prices were more likely to rise than fall as token demand grew and supply tightened.
 
-The harder question is why the public examples still do not show a repeatable way to finance a new fleet against expected short-term rentals, even when the market appears supply-constrained.
+Even if that forecast is right, a market-wide shortage of GPU compute does not guarantee that the particular fleet securing a loan will stay rented. The harder question is why the public examples still do not show a repeatable way to finance a new fleet against expected short-term rentals.
 
 USD.AI's own pipeline makes the problem visible. In June, its team told me customers were waiting for GPUs or paying premiums to skip the line. Yet [eight of its nine upcoming loans](https://dylanduyvu.github.io/50-sources/usd-ai-public-loan-book-snapshot-2026-07-17), representing 98 percent of the money, were backed by signed customer contracts. The only exception involved GPUs already earning rental revenue.
 
@@ -43,7 +43,7 @@ The issue is not whether demand exists. It is whether a lender can rely on both 
 
 ## The lender needs this fleet to stay rented for years
 
-The first problem is timing. The loan may begin before the GPUs are installed and remain outstanding for three years or longer. Today's shortage can disappear before the GPUs start operating.
+The first problem is timing. The loan may begin before the GPUs are installed and remain outstanding for three years or longer. Even if the broader shortage persists, demand for this particular fleet can weaken before the GPUs start operating or while the loan remains outstanding.
 
 Strong demand may also be for a different fleet. Customers care about the chip, the cluster size, the networking, the location, and whether the company operating it can keep it running. A customer waiting for one configuration is not automatically a customer for another.
 

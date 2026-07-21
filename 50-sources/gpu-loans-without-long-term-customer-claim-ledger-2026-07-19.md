@@ -104,6 +104,7 @@ A compute shortage is not a repayment stream. A forward price can tell a lender 
 **Direct evidence:**
 
 - In a June 29 conversation, the USD.AI team said there were not enough GPUs for what customers wanted. Customers were waiting or paying premiums to skip the line. The team had not seen buyers trying to shed long capacity contracts because those buyers still needed the capacity and had paid deposits of roughly 16 to 25 percent.
+- In April, SemiAnalysis argued that GPU scarcity was likely to persist and rental prices were more likely to rise than fall as token demand grew and supply tightened. This is a bullish forecast for the market as a whole, not a guarantee that one particular fleet will stay rented.
 - USD.AI's public pipeline showed the other side of the same market. On July 17, eight of nine upcoming loans, representing 97.9 percent of principal, had customer contracts. The only exception already had on-demand rental revenue. No upcoming loan relied on an unproved expectation of future demand.
 - SemiAnalysis reports that inference customers often want contracts of one year or less, while the easiest loans to finance have several years of committed customer payments. This suggests that strong demand can exist in a form that does not match the loan's payment period.
 
