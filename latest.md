@@ -1,25 +1,25 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 20, 2026, 10:34 PM EDT
+Generated: Jul 21, 2026, 4:59 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 59 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 58 note commits. The most recent movement is:
 
+- Insight update: add first-fleet capital mismatch.
 - Source capture: capture buyer visibility and GPU bidding discussion.
 - Insight update: add cross-provider GPU rental search hunch.
 - Insight update: close Harry as SLA test route.
 - Insight update: classify USD.AI verification as a draw gate.
 - Insight update: add lender monitoring adoption census.
-- Insight update: preserve direct live-monitoring test.
 
 ## Current Hub Signals
 
@@ -27,6 +27,14 @@ In the past 7 days, the public vault changed through 59 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 21, 2026, 4:59 PM EDT - insight: add first-fleet capital mismatch
+
+Insight update: add first-fleet capital mismatch.
+
+Changed notes:
+  - [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
+  - [[gpu-finance|GPU Finance]]
 
 ### Jul 20, 2026, 10:34 PM EDT - article: frame the first-fleet debt boundary
 
@@ -111,17 +119,11 @@ article: simplify futures risk transfer section.
 Changed notes:
   - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-### Jul 20, 2026, 7:06 PM EDT - article: add fleet revenue figure
-
-article: add fleet revenue figure.
-
-Changed notes:
-  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-
-_Showing the newest 12 of 30 updates in this window._
+_Showing the newest 12 of 16 updates in this window._
 
 ## Past 7 Days
 
+- Jul 21, 2026: insight: add first-fleet capital mismatch - [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
 - Jul 20, 2026: article: frame the first-fleet debt boundary - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: address equity-risk objection - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen Lambda demand-history counterexample - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
@@ -146,12 +148,12 @@ _Showing the newest 12 of 30 updates in this window._
 - Jul 20, 2026: insight: preserve direct live-monitoring test - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 20, 2026: insight: clarify Jakub fixed-volume futures proposal - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
 - Jul 20, 2026: insight: separate compute price and utilization risk - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
-- Jul 20, 2026: article: link file revision histories - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 59 updates in this window._
+_Showing the newest 25 of 58 updates in this window._
 
 ## Past 30 Days
 
+- Jul 21, 2026: insight: add first-fleet capital mismatch - [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
 - Jul 20, 2026: article: frame the first-fleet debt boundary - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: address equity-risk objection - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen Lambda demand-history counterexample - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
@@ -176,6 +178,5 @@ _Showing the newest 25 of 59 updates in this window._
 - Jul 20, 2026: insight: preserve direct live-monitoring test - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 20, 2026: insight: clarify Jakub fixed-volume futures proposal - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
 - Jul 20, 2026: insight: separate compute price and utilization risk - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
-- Jul 20, 2026: article: link file revision histories - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 148 updates in this window._
+_Showing the newest 25 of 149 updates in this window._
