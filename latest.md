@@ -8,7 +8,7 @@ updated: 2026-07-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 20, 2026, 7:21 PM EDT
+Generated: Jul 20, 2026, 9:04 PM EDT
 
 ## State Shift Summary
 
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 50 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 20, 2026, 9:04 PM EDT - article: sharpen finance-native framing
+
+article: sharpen finance-native framing.
+
+Changed notes:
+  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
 ### Jul 20, 2026, 7:21 PM EDT - article: simplify futures risk transfer section
 
@@ -108,17 +115,11 @@ Insight update: add lender monitoring adoption census.
 Changed notes:
   - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
-### Jul 20, 2026, 1:51 PM EDT - insight: preserve direct live-monitoring test
-
-Insight update: preserve direct live-monitoring test.
-
-Changed notes:
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-
-_Showing the newest 12 of 20 updates in this window._
+_Showing the newest 12 of 21 updates in this window._
 
 ## Past 7 Days
 
+- Jul 20, 2026: article: sharpen finance-native framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: simplify futures risk transfer section - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
@@ -143,12 +144,12 @@ _Showing the newest 12 of 20 updates in this window._
 - Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
-- Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 
 _Showing the newest 25 of 50 updates in this window._
 
 ## Past 30 Days
 
+- Jul 20, 2026: article: sharpen finance-native framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: simplify futures risk transfer section - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
@@ -173,6 +174,5 @@ _Showing the newest 25 of 50 updates in this window._
 - Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 - Jul 17, 2026: insight: ai offtake inherits the credit risk usd.ai says is dying - [[ai-offtake-inherits-the-credit-risk-david-choi-says-is-dying|AI offtake inherits the credit risk David Choi says is dying]]
 - Jul 17, 2026: insight: usd.ai is anti-corporate-credit, not anti-offtake - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
-- Jul 17, 2026: insight: separate usd.ai underwriting from its real differentiation - [[usd-ai-differentiates-on-standardization-and-distribution-not-residual-valuation|USD.AI differentiates on standardization and distribution, not residual valuation]]
 
-_Showing the newest 25 of 138 updates in this window._
+_Showing the newest 25 of 139 updates in this window._
