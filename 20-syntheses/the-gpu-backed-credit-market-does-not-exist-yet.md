@@ -31,15 +31,15 @@ tags: [blogpost, draft, gpu, customer-contracts, on-demand-compute, utilization]
 
 ---
 
-In June, the USD.AI team told me the compute market was supply-constrained. Customers were waiting for GPUs or paying premiums to skip the line.
+Lenders prefer contracted revenue. That part is not surprising. A market shortage does not repay a specific loan.
 
-Yet [USD.AI's own upcoming loan book](https://dylanduyvu.github.io/50-sources/usd-ai-public-loan-book-snapshot-2026-07-17) was overwhelmingly contract-backed. Eight of nine loans, representing 98 percent of the money, were backed by signed customer contracts. The only exception involved GPUs already earning rental revenue.
+The harder question is why the public examples still do not show a repeatable way to finance a new fleet against expected short-term rentals, even when the market appears supply-constrained.
 
-If customers want more compute than providers can supply, why do lenders still want revenue from specific customers locked in for years?
+USD.AI's own pipeline makes the problem visible. In June, its team told me customers were waiting for GPUs or paying premiums to skip the line. Yet [eight of its nine upcoming loans](https://dylanduyvu.github.io/50-sources/usd-ai-public-loan-book-snapshot-2026-07-17), representing 98 percent of the money, were backed by signed customer contracts. The only exception involved GPUs already earning rental revenue.
 
-USD.AI's pipeline is one snapshot, not the whole market. It does not show rejected applications and therefore cannot prove that USD.AI requires a contract. But it captures the distinction between market demand and one fleet's revenue. A compute shortage says customers want GPUs somewhere. A loan depends on revenue from one specific set of GPUs.
+The pipeline is one snapshot, not the whole market. It does not show rejected applications and cannot prove that USD.AI requires contracts. But it shows the gap between market demand and one fleet's revenue.
 
-That creates a narrower financing problem: how to estimate what a new fleet will earn when its customers may change before the loan is repaid. The examples below handle that risk with long customer contracts, an operator's existing rental and financial history, or a third party promising revenue.
+The issue is not whether demand exists. It is whether a lender can rely on both the price each GPU-hour earns and the number of hours the fleet sells before the operator has rental history. The examples below handle that risk with long contracts, an established operator's financial history, or a third party promising revenue.
 
 ## The lender needs this fleet to stay rented for years
 
@@ -53,19 +53,15 @@ Short customer commitments do not mean demand is weak. An inference company can 
 
 The lender therefore needs to know more than whether compute is scarce. It needs a reason to expect payments from these GPUs over the life of the loan. A long customer contract does that directly. In GPU finance, this kind of contract is usually called an offtake agreement.
 
-## A customer contract gives the lender specific payments
+## Long contracts turn market demand into loan payments
 
-A long contract names the customer. It sets the price, the amount of capacity the customer will pay for, and how long the payments will continue. If the contract lasts through the loan, the lender does not have to guess who rents the GPUs next.
+The customer's ability to pay matters as much as the contract length. In June 2026, IREN raised $3.6 billion through loans and notes tied directly to a Microsoft contract. The [public documents](https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm) gave lenders claims on the financed hardware and the Microsoft payments.
 
-The contract is only as reliable as the customer making the promise. That is why lenders care about the customer's credit as well as the length of the contract.
-
-For example, IREN tied its GPU debt directly to a Microsoft contract in June 2026. It raised $3.6 billion through loans and notes. The [public documents](https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm) gave lenders claims on the financed hardware and the Microsoft payments.
-
-The loan required project cash to exceed debt payments and let lenders demand early repayment if that cushion remained thin for six months. The contract did more than suggest that demand existed. It gave the lenders a defined source of cash and rules for what happened if that cash weakened.
+If project cash remained too close to debt payments for six months, the lenders could demand early repayment. The contract provided both a defined source of cash and rules for what happened if that cash weakened.
 
 Nebius used a similar idea in July. Its [$775 million facility](https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout) was backed by installed GPUs and payments from a customer with a strong credit rating.
 
-The GPUs still mattered in both deals. Lenders could recover value by taking and selling them if the projects failed. But while the loans were working, customer payments supplied the cash.
+In both deals, the GPUs supplied recovery if the projects failed. Customer payments supplied the cash while the loans were working.
 
 A lender can rely more heavily on the hardware by keeping the loan below a conservative estimate of what the GPUs would fetch in a sale. But a smaller loan leaves the operator to fund more of the build itself. That can protect the lender without providing enough debt for the project to proceed.
 
