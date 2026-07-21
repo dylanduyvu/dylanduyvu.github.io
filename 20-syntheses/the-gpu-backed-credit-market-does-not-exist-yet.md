@@ -67,7 +67,7 @@ A lender can rely more heavily on the hardware by keeping the loan below a conse
 
 A long contract can solve much of the lender's problem, but it moves the burden to the operator. To use this structure, the operator must find a customer willing to promise years of payments, often before the GPUs are installed. That is a high bar when customers running AI products often want capacity for one year or less.
 
-The question is whether a lender can finance the fleet without one long customer carrying the loan.
+Can a lender finance the fleet without one long customer carrying the loan?
 
 ## Lambda borrowed without requiring long customer contracts
 
