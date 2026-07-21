@@ -2,7 +2,7 @@
 type: person
 status: active
 created: 2026-06-29
-updated: 2026-07-07
+updated: 2026-07-20
 aliases: [Dave Friedman]
 orgs: []
 projects: [gpu-compute-derivatives]
@@ -33,6 +33,7 @@ No direct relationship captured in the vault yet.
 - His March 2026 obsolescence decomposition is the foundation of the whole arc: three stacked curves (training steep, inference shallow via down-stack migration and switching costs, long-tail nearly flat), the accounting constraint that forces the public debate onto one number, and the observation that the shops who model it properly (Magnetar, Castlake) write term sheets, not blog posts. His residual reframe: the mark is the lowest workload tier a chip can still serve times demand depth at that tier. Note the internal tension worth raising with him: this piece's 95 percent H100 rebooking data is the strongest counterevidence to his own July primer's "no anchor" rhetoric.
 - His July 2026 Hugging Face piece extends the arc into demand microstructure: a public-dataset read (top-3,000 downloads, power law, text generation only 17.6% of activity) concluding infrastructure splits into dedicated "model factories" for head models and pooled serverless capacity for the tail. Second correspondence-file entry: his "barbell" coinage outruns the data (a power law is not bimodal, and the financed GPU market lives in the tenor middle his metaphor hollows out), same pattern as the no-anchor tension.
 - His April 2026 trophy/anti-trophy frame (with co-author Luke Mellor, Partner and Head of Structuring at Optio Investment Partners, a firm on the lender outreach list): bankable GPU debt rests on four preconditions (counterparty credit passthrough, operator step-in rights, full pay-down inside the contract term, hedged power), and the named distress cases (Oracle, Abilene, CoreWeave's pre-Meta book) each map to a missing leg. His unifying diagnosis, "no market mechanism to price what remains when the contract stops doing the full job," is the vault's missing-pricing-layer thesis stated independently. He named in April the hole the NVIDIA backstop plugged in July, and the trophy piece's market-scaling list (multi-obligor models, operator ratings, forward curve as the binding constraint) is the problem portfolio written from the rating-agency side.
+- In a 2026-07-20 Compute Markets discussion about buyer visibility and auditable compute requirements, he pointed to Silicon Data's SiliconMark as solving part of the performance-comparison problem.
 
 ## Related Sources
 
@@ -44,6 +45,7 @@ No direct relationship captured in the vault yet.
 - [[dave-friedman-hugging-face-downloads-compute-markets-2026-07-09|Reading Hugging Face's Download Distribution]]
 - [[dave-friedman-where-gpu-debt-starts-to-break-2026-04-19|Where GPU Debt Starts to Break]]
 - [[dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06|The Trophy Deal Trap]]
+- [[compute-markets-cooper-veit-buyer-visibility-telegram-2026-07-20|Compute Markets discussion on buyer visibility]]
 - [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]
 
 ## Related Insights

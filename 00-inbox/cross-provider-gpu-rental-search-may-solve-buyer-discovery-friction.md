@@ -6,9 +6,9 @@ updated: 2026-07-20
 confidence: low
 domains: [gpu-finance, gpu-marketplaces, ai-infrastructure]
 projects: []
-sources: [zile-cao-blockchain-capital-call-2026-07-10, gpu-loans-without-long-term-customer-claim-ledger-2026-07-19]
-people: []
-orgs: []
+sources: [zile-cao-blockchain-capital-call-2026-07-10, gpu-loans-without-long-term-customer-claim-ledger-2026-07-19, compute-markets-cooper-veit-buyer-visibility-telegram-2026-07-20]
+people: [cooper-veit]
+orgs: [aravolta, usd-ai, silicon-data]
 aliases: [neocloud rental aggregator, cross-provider gpu rental search, gpu availability frontend]
 tags: [hunch, gpu-rentals, neoclouds, aggregation, customer-discovery]
 ---
@@ -37,7 +37,13 @@ A better search layer could reduce the time needed to match buyers with availabl
 
 - The current GPU-loan research shows that demand for one configuration does not automatically transfer to another. The proposed product attacks that matching problem directly.
 - Zile Cao described marketplaces and aggregators as an established category, including Modal, Lightning, Hyperbolic, Vast, and SF Compute. Their value includes bringing smaller operators online and buying capacity long to resell it short.
+- Cooper Veit described buyer visibility and specification as underdeveloped after spending six months on the problem. His ideal workflow lets a buyer state auditable requirements and receive bids from multiple vetted providers. This is direct support for a structured search and bidding need, but not yet evidence that buyers will pay.
+- Dave Friedman pointed to Silicon Data's SiliconMark as an adjacent solution. Its public page covers performance benchmarking and provider comparison, but does not present live availability, structured buyer requests, or provider bidding.
 - That existing category is not proof that discovery is solved. The open question is whether buyers can compare live inventory across providers using the configuration details that determine whether a cluster is usable.
+
+## Product Boundary
+
+The full problem has four layers: finding capacity, stating requirements and receiving bids, comparing performance independently, and enforcing delivery during the job. This hunch starts with the first two. SiliconMark addresses part of performance comparison. Continuous verification and enforcement are a harder separate product.
 
 ## Counterpoints / Uncertainty
 
@@ -48,7 +54,7 @@ A better search layer could reduce the time needed to match buyers with availabl
 
 ## Cheapest Test
 
-Ask buyers who recently sourced GPU capacity how many providers they contacted, which configuration details were hardest to compare, how long the search took, and what they used instead. Then manually source a few real requests across providers and measure whether a shared inventory view finds a better match faster.
+Start with Cooper because he has spent six months on the problem and offered to discuss it. Then ask buyers who recently sourced GPU capacity how many providers they contacted, which configuration details were hardest to compare, how long the search took, and what they used instead. Manually source a few real requests across providers and measure whether a shared inventory view finds a better match faster.
 
 Promote this hunch if several buyers describe the same search failure and agree to use or pay for a better workflow. Demote it if buyers already find suitable capacity quickly or if the missing ingredient is supply or trust rather than discovery.
 
@@ -56,6 +62,7 @@ Promote this hunch if several buyers describe the same search failure and agree 
 
 - Area: [[gpu-finance|GPU Finance]]
 - Market map: [[zile-cao-blockchain-capital-call-2026-07-10|Zile Cao call]]
+- Buyer-side source: [[compute-markets-cooper-veit-buyer-visibility-telegram-2026-07-20|Cooper Veit on buyer visibility and structured requirements]]
 - Related research: [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|GPU loans without a long-term customer claim ledger]]
 - Related insight: [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 
@@ -64,3 +71,5 @@ Promote this hunch if several buyers describe the same search failure and agree 
 ### 2026-07-20
 
 Initial capture as a low-confidence buyer-discovery hunch. Kept separate from the established marketplace category until direct buyer evidence shows that cross-provider search and configuration filtering remain broken.
+
+Later the same day, added the Compute Markets discussion that inspired the hunch. Cooper Veit's six months of work and explicit buyer-visibility complaint strengthen the reason to investigate. Confidence remains low because he described a problem and technical ambition, not a buyer purchase or willingness to pay.
