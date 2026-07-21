@@ -31,123 +31,91 @@ tags: [blogpost, draft, gpu, customer-contracts, on-demand-compute, utilization]
 
 ---
 
-Lenders prefer contracted revenue. That part is not surprising. [In April, SemiAnalysis argued](https://newsletter.semianalysis.com/p/the-great-gpu-shortage-rental-capacity) that GPU scarcity was likely to persist and rental prices were more likely to rise than fall as token demand grew and supply tightened.
+Lenders prefer contracted revenue. That is not surprising. [In April, SemiAnalysis argued](https://newsletter.semianalysis.com/p/the-great-gpu-shortage-rental-capacity) that GPU scarcity was likely to persist and rental prices were more likely to rise than fall as token demand grew and supply tightened. But even if that forecast is right, a shortage across the market does not guarantee that one fleet securing a loan will stay rented.
 
-Even if that forecast is right, a market-wide shortage of GPU compute does not guarantee that the particular fleet securing a loan will stay rented. The harder question is why the public examples still do not show a repeatable way to finance a new fleet against expected short-term rentals.
+USD.AI's pipeline makes the problem visible. In June, its team told me customers were waiting for GPUs or paying premiums to skip the line. Yet [eight of its nine upcoming loans](https://dylanduyvu.github.io/50-sources/usd-ai-public-loan-book-snapshot-2026-07-17), representing 98 percent of the money, were backed by signed customer contracts. The only exception involved GPUs already earning rental revenue. This snapshot cannot show rejected applications or prove that USD.AI requires contracts, but it shows the gap between market demand and revenue a lender can count on from one fleet.
 
-USD.AI's own pipeline makes the problem visible. In June, its team told me customers were waiting for GPUs or paying premiums to skip the line. Yet [eight of its nine upcoming loans](https://dylanduyvu.github.io/50-sources/usd-ai-public-loan-book-snapshot-2026-07-17), representing 98 percent of the money, were backed by signed customer contracts. The only exception involved GPUs already earning rental revenue.
-
-The pipeline is one snapshot, not the whole market. It does not show rejected applications and cannot prove that USD.AI requires contracts. But it shows the gap between market demand and one fleet's revenue.
-
-The issue is not whether demand exists. It is whether a lender can rely on both the price each GPU-hour earns and the number of hours the fleet sells before the operator has rental history. The examples below handle that risk with long contracts, an established operator's financial history, or a third party promising revenue.
+The lender must predict both the price each GPU-hour will earn and the number of hours the fleet will sell before the operator has rental history. Lenders handle that uncertainty with long customer contracts, an established company's financial history, or another company's promise to pay.
 
 ## The lender needs this fleet to stay rented for years
 
-The first problem is timing. The loan may begin before the GPUs are installed and remain outstanding for three years or longer. Even if the broader shortage persists, demand for this particular fleet can weaken before the GPUs start operating or while the loan remains outstanding.
+The loan may begin before the GPUs are installed and remain outstanding for three years or longer. Even if the broader shortage persists, demand for this fleet can weaken during the loan.
 
-Strong demand may also be for a different fleet. Customers care about the chip, the cluster size, the networking, the location, and whether the company operating it can keep it running. A customer waiting for one configuration is not automatically a customer for another.
+Demand may also be for a different fleet. Customers care about the chip, cluster size, networking, location, and whether the operator can keep it running. Even a customer that chooses the fleet may not commit for as long as the lender needs. [SemiAnalysis reports](https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes) that companies renting GPUs to run AI products often want capacity for one year or less because they cannot predict demand for their own products.
 
-Even a customer that chooses the fleet may not commit for as long as the lender needs. [SemiAnalysis reports](https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes) that companies renting GPUs to run AI products often want capacity for one year or less because they do not know how much demand their own products will have. Loans are easiest to finance when customers commit payments for several years.
-
-Short customer commitments do not mean demand is weak. An inference company can urgently need compute today while refusing to promise that it will need the same capacity several years from now.
-
-The lender therefore needs to know more than whether compute is scarce. It needs a reason to expect payments from these GPUs over the life of the loan. A long customer contract does that directly. In GPU finance, this kind of contract is usually called an offtake agreement.
+A company can urgently need compute today and still refuse to promise years of payments. The lender needs a reason to expect cash from these GPUs over the life of the loan. A long customer contract, usually called an offtake agreement in GPU finance, provides one.
 
 ## Long contracts turn market demand into loan payments
 
-The customer's ability to pay matters as much as the contract length. In June 2026, IREN raised $3.6 billion through loans and notes tied directly to a Microsoft contract. The [public documents](https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm) gave lenders claims on the financed hardware and the Microsoft payments.
+Contract length is not enough. The customer must also be able to pay. In June 2026, IREN raised $3.6 billion through loans and notes tied to a Microsoft contract. The [public documents](https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm) gave lenders claims on the hardware and Microsoft payments. The lenders could demand early repayment if the project's cash flow stayed less than 10 percent above its debt payments for six months.
 
-If project cash remained too close to debt payments for six months, the lenders could demand early repayment. The contract provided both a defined source of cash and rules for what happened if that cash weakened.
+Nebius used a similar structure in July. Its [$775 million facility](https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout) was backed by installed GPUs and payments from a customer with a strong credit rating.
 
-Nebius used a similar idea in July. Its [$775 million facility](https://nebius.com/newsroom/nebius-raises-775-million-in-first-secured-debt-financing-to-accelerate-global-buildout) was backed by installed GPUs and payments from a customer with a strong credit rating.
+In both deals, customer payments supplied cash while the loans were working. The GPUs supplied recovery if the projects failed.
 
-In both deals, the GPUs supplied recovery if the projects failed. Customer payments supplied the cash while the loans were working.
+A lender can lean more heavily on the hardware by lending less than the GPUs should fetch in a sale. But that forces the operator to fund more of the build and may leave the project short of money.
 
-A lender can rely more heavily on the hardware by keeping the loan below a conservative estimate of what the GPUs would fetch in a sale. But a smaller loan leaves the operator to fund more of the build itself. That can protect the lender without providing enough debt for the project to proceed.
-
-A long contract can solve much of the lender's problem, but it moves the burden to the operator. To use this structure, the operator must find a customer willing to promise years of payments, often before the GPUs are installed. That is a high bar when customers running AI products often want capacity for one year or less.
+A long contract solves much of the lender's problem, but only if the operator can secure years of payments before the GPUs are installed.
 
 Can a lender finance the fleet without one long customer carrying the loan?
 
 ## Lambda borrowed without requiring long customer contracts
 
-In April 2024, Macquarie arranged up to [$500 million](https://www.businesswire.com/news/home/20240402148086/en/Lambda-Announces-%24500M-GPU-Backed-Facility-to-Expand-Cloud-for-AI/) of financing for Lambda's on-demand cloud. Lambda's customers could rent the financed GPUs without signing long contracts.
+In April 2024, Macquarie arranged up to [$500 million](https://www.businesswire.com/news/home/20240402148086/en/Lambda-Announces-%24500M-GPU-Backed-Facility-to-Expand-Cloud-for-AI/) for Lambda's on-demand cloud. Customers could rent the financed GPUs without signing long contracts.
 
-So, Macquarie was willing to finance a fleet whose customers change. But the public release does not reveal the rules it used.
+Macquarie was willing to finance a fleet whose customers change. But the public release omitted how much Lambda drew, the interest rate, the share of hardware cost funded, the repayment schedule, and the minimum rental revenue.
 
-Specifically, it did not disclose how much Lambda drew, the interest rate, the share of the hardware cost Macquarie funded, the required repayment schedule, or the minimum rental revenue.
+Lambda was not a new operator. It was founded in 2012 and reported more than 100,000 customer sign-ups by the time of the loan. Macquarie may have relied on that history and customer base alongside income from the new fleet. That makes the deal less useful as a model for a young operator.
 
-Those missing terms are only part of the problem. Lambda, of course, was not a new operator. It was founded in 2012 and reported more than 100,000 customer sign-ups by the time of the loan. Macquarie may therefore have relied on Lambda's operating history and customer base alongside the expected income from the new fleet. That makes the deal less useful as a model for a young operator.
-
-Lambda has since graduated from a loan tied to one GPU fleet to financing for its broader business. In May 2026, it closed a [$1 billion loan](https://lambda.ai/blog/lambda-closes-1-billion-senior-secured-credit-facility) for GPUs and general company needs. Vultr, another established cloud with hundreds of thousands of active customers, raised a similar [$329 million package](https://www.businesswire.com/news/home/20250623608954/en/Vultr-Secures-%24329-Million-in-Credit-Financing-to-Expand-Global-AI-Infrastructure-and-Cloud-Computing-Platform) in 2025.
-
-By then, both operators had large customer bases and years of financial history. Lenders could judge whether the company as a whole could repay, rather than relying only on rentals from one fleet.
+Lambda later graduated from a fleet-level loan to financing for its broader business, including a [$1 billion facility](https://lambda.ai/blog/lambda-closes-1-billion-senior-secured-credit-facility) in 2026. Vultr, another established cloud with hundreds of thousands of active customers, raised a [$329 million package](https://www.businesswire.com/news/home/20250623608954/en/Vultr-Secures-%24329-Million-in-Credit-Financing-to-Expand-Global-AI-Infrastructure-and-Cloud-Computing-Platform) in 2025. Both had enough financial history for lenders to judge the company as a whole rather than one fleet.
 
 ## USD.AI charges for the uncertainty
 
-A younger operator does not have that history. USD.AI offers a different route. It will lend against a GPU fleet with short-term rental revenue, but the uncertainty changes the terms.
+A younger operator lacks that history. USD.AI will lend against a GPU fleet with short-term rental revenue, but the uncertainty changes the terms.
 
 Its [lending policy](https://usd.ai/insights/usdai-underwriting-and-risk-management) lists annual interest rates of 7 to 9 percent when a highly rated customer has signed a long contract. A long contract with a less creditworthy customer costs 10 to 12 percent. A loan supported by short-term rentals costs 12 to 15 percent.
 
-Under USD.AI's published policy, a borrower cannot rely on projected rentals alone. Tier 3 borrowers must show documented history of on-demand revenue. USD.AI also lends no more than 80 percent of the hardware cost, so the borrower supplies the rest. The borrower sets aside enough cash for three months of loan payments and repays the loan over three years.
+Under USD.AI's published policy, borrowers relying on short-term rentals must show documented history of on-demand revenue. Projected rentals alone are not enough. USD.AI also lends no more than 80 percent of the hardware cost, requires cash for three months of loan payments, and expects repayment over three years.
 
-This is a working method for financing on-demand revenue, but it still requires evidence from an existing rental business. The higher rate pays the lender for the remaining uncertainty around who rents the financed GPUs.
+This method finances an existing rental business, not projected demand for a new one. The higher rate and added protections cover uncertainty about who will rent the GPUs and for how long.
 
-That explains why a market can look short while its loan book still leans on contracts. Lenders do not dispute that customers want compute. They charge for the uncertainty around which fleet those customers will choose and how long they will stay.
-
-One part of that uncertainty is the price those future rentals will earn. Can a market price for future GPU rentals make these loans cheaper and easier for more lenders to make?
+One unknown is the price those future rentals will earn. Can a market price make these loans easier?
 
 ## A forward price solves one variable
 
-The compute market is beginning to publish prices for future GPU rentals. [Silicon Data launched a forward curve](https://www.silicondata.com/news-room/silicon-data-unveils-first-gpu-forward-curve) in April 2026. It estimates future rental rates from observed agreements lasting up to three years.
-
-[CME](https://www.cmegroup.com/media-room/press-releases/2026/5/12/cme_group_and_silicondatapartnertolaunchfirstcomputefutures.html) and [ICE](https://ir.theice.com/press/news-details/2026/ICE-and-Ornn-to-Launch-GPU-Compute-Futures-Contracts/default.aspx) have announced plans for financial contracts tied to published GPU rental-price indexes. If those contracts attract enough trading, an operator could protect itself against a broad fall in rental prices.
-
-Those tools address only one part of fleet revenue.
+The compute market is beginning to publish prices for future GPU rentals. [Silicon Data launched a forward curve](https://www.silicondata.com/news-room/silicon-data-unveils-first-gpu-forward-curve) in April 2026 using observed agreements lasting up to three years. [CME](https://www.cmegroup.com/media-room/press-releases/2026/5/12/cme_group_and_silicondatapartnertolaunchfirstcomputefutures.html) and [ICE](https://ir.theice.com/press/news-details/2026/ICE-and-Ornn-to-Launch-GPU-Compute-Futures-Contracts/default.aspx) have announced financial contracts tied to rental-price indexes. If those contracts attract enough trading, an operator could protect itself against a broad fall in prices.
 
 ![The two components of GPU fleet revenue](../70-attachments/fleet-revenue-price-times-hours.png)
 
 _The same fleet can earn less because hourly prices fall or because fewer hours are rented._
 
-A price-index futures contract can protect against a broad decline in market rental prices. It does not guarantee the hours rented or the exact price this fleet earns.
+A price-index futures contract protects against a broad decline in rental prices. It does not guarantee how many hours this fleet rents.
 
 Suppose the market rental price stays at $3 per hour, but a young operator loses its main customer and half its GPUs sit idle. The price index has not fallen, so the futures contract does not pay. The operator's revenue still drops by half.
 
-A different contract could cover the missing variable. If a buyer or financial firm promised to pay for a fixed number of GPU-hours over several years, the lender would still receive payments when ordinary renters did not show up.
-
-That would move the risk rather than remove it. Whoever made the promise would have to pay. In practice, the contract would start to resemble a standardized form of offtake.
+A contract for a fixed number of GPU-hours could cover the missing variable. If a buyer or financial firm promised to pay for those hours over several years, the lender would still receive payments when ordinary renters did not show up. The risk would move to whoever made the promise. In practice, this would resemble standardized offtake.
 
 ## NVIDIA may be supplying the long revenue promise customers will not
 
-NVIDIA may be making that promise itself. A price hedge cannot promise that customers will rent enough hours, but a revenue guarantee can.
-
-NVIDIA announced a [revenue-sharing and credit-support program](https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/) for partner clouds in July. Its public post does not disclose the detailed terms.
-
-[SemiAnalysis reports](https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes) that NVIDIA promises partners a minimum amount of revenue for several years. If ordinary customers rent less capacity than expected, the lender can still assume that minimum when deciding how much to lend.
-
-That support covers more than future rental prices. It shifts some of the risk that customers do not rent enough hours to NVIDIA.
+NVIDIA may be making that revenue promise itself. It announced a [revenue-sharing and credit-support program](https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/) for partner clouds in July, although its public post does not disclose the terms. [SemiAnalysis reports](https://newsletter.semianalysis.com/p/nvidia-gpu-debt-backstop-unleashes) that NVIDIA promises partners a minimum amount of revenue for several years. If ordinary rentals fall short, the lender can still count on that minimum. This shifts some of the risk that the GPUs do not rent enough hours to NVIDIA.
 
 ## The remaining problem is a new operator with no history and no promised revenue
 
-None of the examples above relies on the general compute shortage alone. USD.AI's published policy requires a documented rental history. Macquarie financed Lambda after it had operated for years and built a large customer base. Lambda and Vultr later received broader loans as established companies. SemiAnalysis says NVIDIA's program promises revenue for years even when customers will not make equally long commitments.
+In every example, the lender relies on more than the general compute shortage: past rental revenue, an established company's financial history, or an outside promise of revenue. The unresolved case is a young operator with none of the three.
 
-But the unresolved case is a young operator with no rental history and no customer or vendor promising years of revenue.
+A missing long-term contract is not evidence of a weak operator. Inference customers often avoid multi-year commitments because they cannot predict demand for their own products. A capable operator serving them may face real demand without having years of payments locked in before the fleet is built.
 
-The absence of a long customer contract is not itself evidence of a weak operator. Inference customers often avoid multi-year commitments because they cannot predict demand for their own products. A capable operator built for those customers may therefore face real demand without having years of payments locked in before the fleet is built.
+Forward prices estimate what each rented hour may earn, not how many hours the operator will sell. Because the operator is new, there is no past rental performance to examine. A specialist lender may still investigate the operator and require more cash, but the public record does not reveal a method another lender could apply to the next one.
 
-Forward prices do not solve that problem. They can estimate what each rented hour may earn, but not how many hours this operator will sell. Because the operator is new, there is no past rental performance to examine.
-
-A specialist lender may still make the loan after investigating the operator and requiring it to contribute more cash. The terms may work for that deal, but the public record does not reveal a method another lender could apply to the next operator.
-
-The public record therefore does not show a repeatable way to finance enough of a new fleet's hardware cost for the project to proceed when the operator has no rental history and no one promising minimum revenue. Expected market demand alone has not filled that gap.
+The public examples do not show a repeatable way to finance enough of a new fleet for the project to proceed when the operator has no rental history and no one promising minimum revenue.
 
 ## Why this matters for compute buildout
 
-This is not an argument that every new operator should receive debt. Debt should favor projects with clearer repayment, and equity may be the right funding for an unproven operator. The open question is whether lenders have a repeatable way to distinguish a capable operator targeting short-term customers from a weak one.
+Not every new operator should receive debt. Equity may be the right funding for an unproven project. The question is whether lenders can consistently distinguish a capable operator serving short-term customers from a weak one.
 
-That creates a loop in the visible lending models. Without a long customer contract or third-party revenue promise, the operator needs rental history to borrow enough for the project to proceed. But it needs financing to build the fleet that would produce that history.
+That creates a loop. Without a long customer contract or outside revenue promise, the operator needs rental history to borrow. But it needs financing to build the fleet that would produce that history.
 
-If the demand described at the start persists and existing fleets remain full, meeting it will require more compute capacity. If capable operators targeting short-term customers cannot finance new fleets because customer commitments are shorter than the loans, viable capacity may go unbuilt even while customers are waiting for compute. The evidence in this article shows that mismatch, but not how much new capacity it prevents.
+If the demand described at the start persists and existing fleets remain full, the market will need more capacity. But viable fleets may go unbuilt when customer commitments are shorter than the loans. The evidence here shows that mismatch, not how much capacity it prevents.
 
 ## What would change my mind
 
