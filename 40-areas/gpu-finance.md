@@ -76,6 +76,8 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 
 The current research direction is now narrower. It is already understood why a compute shortage does not guarantee that one new fleet will stay rented throughout a multi-year loan. The live question is whether a lender can finance a new fleet against an expected stream of short-term rentals before the operator has rental history or a multi-year customer contract, what evidence or protection would make that possible, and which loan terms would change. Actual transactions are the priority. If better evidence changes approval or terms, there may be a standardization opportunity. If only equity, collateral, or a third-party guarantee works, the uncertainty must be absorbed rather than measured away. Full framing: [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|GPU loans without a long-term customer claim ledger]].
 
+A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|cross-provider GPU rental search may still be broken]]. A well-organized interface could combine neocloud availability and filter by the hardware, cluster, networking, location, timing, and contract terms a buyer needs. Existing marketplaces make this a discovery test, not a category-creation claim. It could improve matching and utilization, but it does not by itself solve long-term revenue risk or financing.
+
 ## Useful Patterns
 
 - Hardware recovery matters more than bare contract cash flows.
