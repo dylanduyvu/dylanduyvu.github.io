@@ -59,7 +59,7 @@ A long contract solves much of the lender's problem, but only if the operator ca
 
 Can a lender finance the fleet without one long customer carrying the loan?
 
-## Lambda borrowed without requiring long customer contracts
+## Lambda borrowed against an on-demand fleet
 
 In April 2024, Macquarie arranged up to [$500 million](https://www.businesswire.com/news/home/20240402148086/en/Lambda-Announces-%24500M-GPU-Backed-Facility-to-Expand-Cloud-for-AI/) for Lambda's on-demand cloud. Customers could rent the financed GPUs without signing long contracts.
 
@@ -113,11 +113,11 @@ The public examples do not show a repeatable way to finance enough of a new flee
 
 ## Why this matters for compute buildout
 
-Not every new operator should receive debt. Equity may be the right funding for an unproven project. The question is whether lenders can consistently distinguish a capable operator serving short-term customers from a weak one.
+Not every new operator should receive debt. In most industries, uncertain demand for a first project belongs to equity until the company has enough history to borrow. GPU fleets may be no different. Can short-term compute demand provide enough evidence to move some of that risk from equity to debt?
 
-That creates a loop. Without a long customer contract or outside revenue promise, the operator needs rental history to borrow. But it needs financing to build the fleet that would produce that history.
+Under current lending models, the first fleet faces a circular problem. Without a long customer contract or outside revenue promise, the operator needs rental history to borrow. But it needs financing to build the fleet that would produce that history.
 
-If the demand described at the start persists and existing fleets remain full, the market will need more capacity. But viable fleets may go unbuilt when customer commitments are shorter than the loans. The evidence here shows that mismatch, not how much capacity it prevents.
+If the demand described at the start persists and existing fleets remain full, the market will need more capacity. But some fleets may go unbuilt even if they could have served real demand, because customer commitments are shorter than the loans. The evidence here shows that mismatch, not how much capacity it prevents.
 
 ## What would change my mind
 
@@ -127,6 +127,6 @@ Three observations would weaken this argument.
 2. Several unrelated lenders make these loans using similar terms and assumptions.
 3. Once compute futures begin trading, lenders reduce their need for long customer contracts or guarantees from companies like NVIDIA.
 
-Until lenders have a repeatable way to estimate what a new fleet will earn when its customers may change before the loan is repaid, a compute shortage can coexist with viable new capacity going unbuilt.
+Until lenders have a repeatable way to estimate what a new fleet will earn when its customers may change before the loan is repaid, new fleets can go unfunded even while the market is short of compute.
 
 If you lend against GPUs or have structured one of these loans, I would like to compare notes. I am at dylanduyvu@gmail.com.
