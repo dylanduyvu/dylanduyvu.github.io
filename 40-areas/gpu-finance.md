@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-06-29
-updated: 2026-07-20
+updated: 2026-07-21
 domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee, connor-moore]
@@ -76,6 +76,8 @@ The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU 
 
 The current research direction is now narrower. It is already understood why a compute shortage does not guarantee that one new fleet will stay rented throughout a multi-year loan. The live question is whether a lender can finance a new fleet against an expected stream of short-term rentals before the operator has rental history or a multi-year customer contract, what evidence or protection would make that possible, and which loan terms would change. Actual transactions are the priority. If better evidence changes approval or terms, there may be a standardization opportunity. If only equity, collateral, or a third-party guarantee works, the uncertainty must be absorbed rather than measured away. Full framing: [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|GPU loans without a long-term customer claim ledger]].
 
+That unresolved first-fleet case may be a [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|capital-type mismatch]]. A young operator with no history or offtake carries equity risk, but one fleet may offer only bounded infrastructure returns rather than venture-scale upside. Credit does not want the demand risk, venture equity wants a much larger platform outcome, and infrastructure equity usually wants contracted cash flows. The next test is therefore not only whether debt can arrive earlier, but who can hold first-fleet demand risk at a return that works for both sides.
+
 A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|cross-provider GPU rental search may still be broken]]. Cooper Veit described an underdeveloped market where buyers cannot clearly specify or verify what they receive and imagined multiple vetted providers bidding against auditable requirements. A simpler first product could combine neocloud availability and filter by hardware, cluster, networking, location, timing, and contract terms. Existing marketplaces and SiliconMark make this a workflow test, not a category-creation claim. It could improve matching and utilization, but it does not by itself solve long-term revenue risk or financing.
 
 ## Useful Patterns
@@ -137,6 +139,7 @@ A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve
 - The GPU-finance missing middle may be a transaction-execution problem before it is a verification problem: artisanal legal and documentation costs make $30-50 million loans unattractive even when risk is understood.
 - Residual-value insurance transfers loss severity after default, not the short-demand / long-debt cash-flow mismatch that causes default.
 - The live first-fleet question is whether expected short-term rentals can support a loan before rental history exists; the test is what evidence changes approval, borrower equity, amount financed, rate, reserves, or repayment speed.
+- A young no-offtake fleet may carry equity risk without clear venture-scale project upside, leaving it between venture equity, infrastructure equity, and credit.
 
 ## Active Projects
 
@@ -215,6 +218,7 @@ A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve
 - [[sla-remedies-are-toothless-so-reputation-carries-delivery-risk|SLA remedies are toothless, so reputation carries delivery risk]]
 - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
+- [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
 
 ## Open Questions
 
