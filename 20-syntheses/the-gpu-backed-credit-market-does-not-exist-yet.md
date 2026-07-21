@@ -31,7 +31,7 @@ tags: [blogpost, draft, gpu, customer-contracts, on-demand-compute, utilization]
 
 ---
 
-Lenders prefer contracted revenue. That is not surprising. [In April, SemiAnalysis argued](https://newsletter.semianalysis.com/p/the-great-gpu-shortage-rental-capacity) that GPU scarcity was likely to persist and rental prices were more likely to rise than fall as token demand grew and supply tightened. But even if that forecast is right, a shortage across the market does not guarantee that one fleet securing a loan will stay rented.
+Lenders prefer contracted revenue. That is not surprising. What needs explaining is why they still rely on it when compute is expected to remain scarce. [In April, SemiAnalysis argued](https://newsletter.semianalysis.com/p/the-great-gpu-shortage-rental-capacity) that GPU scarcity was likely to persist and rental prices were more likely to rise than fall as token demand grew and supply tightened. Even if that forecast is right, a shortage across the market does not guarantee that one fleet securing a loan will stay rented.
 
 USD.AI's pipeline makes the problem visible. In June, its team told me customers were waiting for GPUs or paying premiums to skip the line. Yet [eight of its nine upcoming loans](https://dylanduyvu.github.io/50-sources/usd-ai-public-loan-book-snapshot-2026-07-17), representing 98 percent of the money, were backed by signed customer contracts. The only exception involved GPUs already earning rental revenue. This snapshot cannot show rejected applications or prove that USD.AI requires contracts, but it shows the gap between market demand and revenue a lender can count on from one fleet.
 
@@ -65,7 +65,9 @@ In April 2024, Macquarie arranged up to [$500 million](https://www.businesswire.
 
 Macquarie was willing to finance a fleet whose customers change. But the public release omitted how much Lambda drew, the interest rate, the share of hardware cost funded, the repayment schedule, and the minimum rental revenue.
 
-Lambda was not a new operator. It was founded in 2012 and reported more than 100,000 customer sign-ups by the time of the loan. Macquarie may have relied on that history and customer base alongside income from the new fleet. That makes the deal less useful as a model for a young operator.
+Lambda was not a new operator. It was founded in 2012 and reported more than 100,000 customer sign-ups by the time of the loan. That history did not guarantee future demand because its customers could still leave. But Macquarie could use it as evidence that Lambda had repeatedly found customers for an on-demand cloud.
+
+The deal shows that changing customer demand can be financed for an established operator. It does not show whether a young operator can get the same loan before building that history.
 
 Lambda later graduated from a fleet-level loan to financing for its broader business, including a [$1 billion facility](https://lambda.ai/blog/lambda-closes-1-billion-senior-secured-credit-facility) in 2026. Vultr, another established cloud with hundreds of thousands of active customers, raised a [$329 million package](https://www.businesswire.com/news/home/20250623608954/en/Vultr-Secures-%24329-Million-in-Credit-Financing-to-Expand-Global-AI-Infrastructure-and-Cloud-Computing-Platform) in 2025. Both had enough financial history for lenders to judge the company as a whole rather than one fleet.
 
