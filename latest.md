@@ -8,18 +8,18 @@ updated: 2026-07-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 20, 2026, 9:10 PM EDT
+Generated: Jul 20, 2026, 9:16 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 52 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 54 note commits. The most recent movement is:
 
+- Insight update: add cross-provider GPU rental search hunch.
 - Insight update: close Harry as SLA test route.
 - Insight update: classify USD.AI verification as a draw gate.
 - Insight update: add lender monitoring adoption census.
 - Insight update: preserve direct live-monitoring test.
 - Insight update: clarify Jakub fixed-volume futures proposal.
-- Insight update: separate compute price and utilization risk.
 
 ## Current Hub Signals
 
@@ -27,6 +27,21 @@ In the past 7 days, the public vault changed through 52 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 20, 2026, 9:16 PM EDT - insight: add cross-provider GPU rental search hunch
+
+Insight update: add cross-provider GPU rental search hunch.
+
+Changed notes:
+  - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
+  - [[gpu-finance|GPU Finance]]
+
+### Jul 20, 2026, 9:16 PM EDT - article: make financing question direct
+
+article: make financing question direct.
+
+Changed notes:
+  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
 ### Jul 20, 2026, 9:10 PM EDT - article: strengthen persistent shortage framing
 
@@ -99,25 +114,12 @@ article: remove transaction-cost detour.
 Changed notes:
   - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
 
-### Jul 20, 2026, 3:11 PM EDT - article: strengthen verification gap evidence
-
-article: strengthen verification gap evidence.
-
-Changed notes:
-  - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
-  - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
-
-### Jul 20, 2026, 2:15 PM EDT - insight: close Harry as SLA test route
-
-Insight update: close Harry as SLA test route.
-
-Changed notes:
-  - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-
-_Showing the newest 12 of 23 updates in this window._
+_Showing the newest 12 of 25 updates in this window._
 
 ## Past 7 Days
 
+- Jul 20, 2026: insight: add cross-provider GPU rental search hunch - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
+- Jul 20, 2026: article: make financing question direct - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: strengthen persistent shortage framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: clarify compute shortage framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen finance-native framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
@@ -141,13 +143,13 @@ _Showing the newest 12 of 23 updates in this window._
 - Jul 20, 2026: research: add verification article evidence companion - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
 - Jul 20, 2026: research: clarify first-fleet short-demand question - [[gpu-finance|GPU Finance]]
 - Jul 20, 2026: synthesis: add GPU financing gap research and drafts - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
-- Jul 18, 2026: publish: GPU finance second-customer thesis and forward-market insight - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
-- Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 
-_Showing the newest 25 of 52 updates in this window._
+_Showing the newest 25 of 54 updates in this window._
 
 ## Past 30 Days
 
+- Jul 20, 2026: insight: add cross-provider GPU rental search hunch - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
+- Jul 20, 2026: article: make financing question direct - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: strengthen persistent shortage framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: clarify compute shortage framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen finance-native framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
@@ -171,7 +173,5 @@ _Showing the newest 25 of 52 updates in this window._
 - Jul 20, 2026: research: add verification article evidence companion - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
 - Jul 20, 2026: research: clarify first-fleet short-demand question - [[gpu-finance|GPU Finance]]
 - Jul 20, 2026: synthesis: add GPU financing gap research and drafts - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
-- Jul 18, 2026: publish: GPU finance second-customer thesis and forward-market insight - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
-- Jul 17, 2026: insight: gpu earning power is macro-level offtake - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
 
-_Showing the newest 25 of 141 updates in this window._
+_Showing the newest 25 of 143 updates in this window._
