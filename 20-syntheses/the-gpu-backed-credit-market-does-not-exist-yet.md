@@ -31,7 +31,7 @@ tags: [blogpost, draft, gpu, customer-contracts, on-demand-compute, utilization]
 
 ---
 
-Lenders prefer contracted revenue. That part is not surprising. A market shortage does not repay a specific loan.
+Lenders prefer contracted revenue. That part is not surprising. A market-wide shortage of GPU compute does not guarantee that the particular fleet securing a loan will stay rented.
 
 The harder question is why the public examples still do not show a repeatable way to finance a new fleet against expected short-term rentals, even when the market appears supply-constrained.
 
