@@ -8,11 +8,11 @@ updated: 2026-07-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 20, 2026, 9:44 PM EDT
+Generated: Jul 20, 2026, 9:56 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 57 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 58 note commits. The most recent movement is:
 
 - Source capture: capture buyer visibility and GPU bidding discussion.
 - Insight update: add cross-provider GPU rental search hunch.
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 57 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 20, 2026, 9:56 PM EDT - article: address equity-risk objection
+
+article: address equity-risk objection.
+
+Changed notes:
+  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
 ### Jul 20, 2026, 9:44 PM EDT - article: sharpen Lambda demand-history counterexample
 
@@ -111,17 +118,11 @@ article: qualify USD.AI history policy and trim futures repetition.
 Changed notes:
   - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-### Jul 20, 2026, 5:33 PM EDT - article: sharpen shortage versus contract-backed lending opening
-
-article: sharpen shortage versus contract-backed lending opening.
-
-Changed notes:
-  - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-
-_Showing the newest 12 of 28 updates in this window._
+_Showing the newest 12 of 29 updates in this window._
 
 ## Past 7 Days
 
+- Jul 20, 2026: article: address equity-risk objection - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen Lambda demand-history counterexample - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: compress new GPU fleet financing argument - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: source: capture buyer visibility and GPU bidding discussion - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
@@ -146,12 +147,12 @@ _Showing the newest 12 of 28 updates in this window._
 - Jul 20, 2026: insight: separate compute price and utilization risk - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
 - Jul 20, 2026: article: link file revision histories - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: separate research links from body - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: move research and disclosure links to top - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 57 updates in this window._
+_Showing the newest 25 of 58 updates in this window._
 
 ## Past 30 Days
 
+- Jul 20, 2026: article: address equity-risk objection - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen Lambda demand-history counterexample - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: compress new GPU fleet financing argument - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: source: capture buyer visibility and GPU bidding discussion - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
@@ -176,6 +177,5 @@ _Showing the newest 25 of 57 updates in this window._
 - Jul 20, 2026: insight: separate compute price and utilization risk - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
 - Jul 20, 2026: article: link file revision histories - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: separate research links from body - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: move research and disclosure links to top - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 146 updates in this window._
+_Showing the newest 25 of 147 updates in this window._
