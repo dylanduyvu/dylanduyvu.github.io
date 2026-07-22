@@ -8,18 +8,18 @@ updated: 2026-07-22
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 22, 2026, 5:46 PM EDT
+Generated: Jul 22, 2026, 6:31 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 55 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 54 note commits. The most recent movement is:
 
+- Source capture: add GDM evolving norms implications.
 - Source capture: complete tab autocomplete slack exchange.
 - Insight update: publish personal AI study and USD.AI policy.
 - Insight update: audit CCIR against GPU finance theses.
 - Insight update: separate GPU rental price from utilization.
 - Insight update: connect big worlds to personal agent tracking.
-- Insight update: add borrower-side loan test and bandwidth pricing.
 
 ## Current Hub Signals
 
@@ -29,6 +29,17 @@ In the past 7 days, the public vault changed through 55 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 22, 2026, 6:31 PM EDT - source: add GDM evolving norms implications
+
+Source capture: add GDM evolving norms implications.
+
+Changed notes:
+  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+  - [[a-personal-predictor-can-improve-by-making-its-user-more-predictable|A personal predictor can improve by making its user more predictable]]
+  - [[niyant-personal-ai-thesis-study-guide|Niyant’s personal-AI thesis: a beginner’s study guide]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+  - [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
 
 ### Jul 22, 2026, 5:34 PM EDT - source: complete tab autocomplete slack exchange
 
@@ -125,6 +136,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 22, 2026: source: add GDM evolving norms implications - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: capture tab prediction entropy objection - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: expand tab autocomplete intent compression thesis - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
@@ -149,12 +161,12 @@ Changed notes:
 - Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen shortage versus contract-backed lending opening - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: add fixed-volume compute futures distinction - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 55 updates in this window._
+_Showing the newest 25 of 54 updates in this window._
 
 ## Past 30 Days
 
+- Jul 22, 2026: source: add GDM evolving norms implications - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: capture tab prediction entropy objection - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: expand tab autocomplete intent compression thesis - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
@@ -179,6 +191,5 @@ _Showing the newest 25 of 55 updates in this window._
 - Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen shortage versus contract-backed lending opening - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: add fixed-volume compute futures distinction - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 158 updates in this window._
+_Showing the newest 25 of 159 updates in this window._
