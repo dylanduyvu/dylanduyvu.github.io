@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-16
-updated: 2026-07-16
+updated: 2026-07-22
 source_date: 2026-07-16
 source_type: chat_discussion
 projects: []
@@ -82,8 +82,15 @@ Dylan: personalized models with continuously updating weights that get exponenti
 - [[usd-ai|USD.AI org note]]: The Contrarian Bet Reframed section (2026-07-16)
 - Held in this note, promotable later: returns-to-traffic-density-per-model and saturation thresholds; the 10-100x weight-divergence premium as a niche-sizing condition; the information-budget argument (a person cannot fund divergence, a tireless agent can); the two escape valves.
 
+## 2026-07-22: Big World connection
+
+Javed and Sutton's [[oak-lab-big-world-hypothesis-2024|Big World Hypothesis]] gives external theoretical support to the claim that a tireless agent's experience matters. If the world remains permanently larger than the agent, a personal system must continually track the locally relevant part of one user's environment rather than learn a complete static solution.
+
+This strengthens the need for continual personalization but leaves the implementation open. Tracking can live in external memory, retrieval, adapters, or weight updates. The paper therefore supports the workload thesis without proving the infrastructure thesis that personalized agents require separate full-weight models or dedicated GPU ownership. Promoted as [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]].
+
 ## Links
 
 - Org: [[usd-ai|USD.AI]]
 - Related sources: [[usdai-david-choi-decentralised-podcast-gpu-finance-rails-2026-06|Choi Decentralised capture]] (everyone-becomes-a-landlord, compute-access-beats-model-quality), [[usd-ai-call-harry-page-2026-06-29|Harry Page call]] (proprietary-models borrowers)
 - Related frame: the barbell hypothesis in [[solid-findings-audit-and-next-rung-2026-07-14|the audit note]] (financing-structure barbell; this discussion is the serving-economics companion to it)
+- Related research: [[oak-lab-big-world-hypothesis-2024|Oak Lab's Big World Hypothesis]]
