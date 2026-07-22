@@ -28,3 +28,8 @@ The vault is organized around durable claims, source captures, projects, and are
 ## Notes
 
 Use the Explorer to browse insights, sources, people, and organizations.
+
+## Contact
+
+- **Dylan:** [Email](mailto:dylanduyvu@gmail.com) · [Substack](https://substack.com/@dylanvu) · [X @dylanduyvu](https://x.com/dylanduyvu) · [X @bicep_pump](https://x.com/bicep_pump) · [Telegram](https://t.me/dylanduyvu)
+- **Precursor Labs:** [Website](https://precursorlabs.org/) · [Substack](https://precursorlabs.substack.com/) · [X @precursorlabs](https://x.com/precursorlabs)
