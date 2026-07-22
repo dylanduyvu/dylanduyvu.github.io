@@ -49,6 +49,48 @@ The shorthand is: **Tab completes the workflow, not the text.**
 
 The value is not merely avoiding Cmd-Tab. A good completion should preserve working context by landing on the exact app, window, project, and control needed for the next thought.
 
+## Product thesis: intent compression
+
+Dylan is especially drawn to high-craft, keyboard-first UX products such as Superhuman and Cursor Tab. Their shared appeal is **intent compression**: anticipate a likely intention, surface it without interrupting the user, and let one reversible confirmation replace several operations.
+
+- Superhuman compresses known workflows into fast keyboard actions.
+- Cursor Tab predicts and compresses the next code edit.
+- This concept predicts and compresses the next meaningful computer action.
+
+The standalone product thesis is: **autocomplete should extend beyond text and code to the next meaningful computer action.** A strong version would be frequent, instantly legible, effortless to ignore, cheap when wrong, and valuable before the system is trusted with consequential authority.
+
+This creates a different starting lens from the broad personal-AI thesis. Next-action prediction can be valuable as a user-facing interaction primitive even before it demonstrates that a system understands a person's goals. Felt acceleration and interface quality are first-class evidence, not merely packaging around a model.
+
+## Product and forcing function
+
+Prediction can play two roles at once:
+
+- **As the product**, it saves interactions, preserves attention, and moves the user into the right working state.
+- **As a forcing function**, it gives the context system a concrete test: using only information available beforehand, can it identify the next useful action?
+
+Requiring prediction forces the underlying pipeline to preserve timing, visibility, provenance, meaningful action boundaries, and user-specific patterns. But strong prediction does not automatically imply deep understanding. A transition model could learn "after Arc, Dylan usually opens Codex" without knowing why the article matters or what Dylan intends to accomplish.
+
+Prediction is therefore a useful forcing function only if improvements eventually transfer into lower briefing cost, better context selection, saved work, or better outcomes. Otherwise the system may be optimizing an interesting benchmark rather than the painful workflow.
+
+## Capability gradient
+
+Better intent compression should require progressively stronger personalization, intent prediction, and goal understanding, but the requirements are graded rather than binary.
+
+| Compressed action | Likely requirement |
+|---|---|
+| Focus Codex after Arc | Immediate state plus personal habits |
+| Focus the correct Codex task and input | Task-state and local-intent inference |
+| Bring the relevant article passages | Relevance judgment plus a representation of the local goal |
+| Draft the prompt Dylan was about to write | Semantic personalization |
+| Produce a better prompt than Dylan would have written | Goal understanding plus proposal quality |
+| Complete several steps | Persistent goals, world state, safety, and authority |
+
+The progression is:
+
+> predict my behavior → infer my immediate intent → represent my objective → propose a better route to it
+
+App switching can test the first step. It cannot by itself establish the later ones. Operationally, "goal understanding" would mean choosing useful actions across changed contexts and plausible alternatives, not merely reproducing routine behavior.
+
 ## Why this could be a strong first wedge
 
 - It turns Phase 1 next-action prediction into an immediate product interaction.
@@ -82,6 +124,37 @@ Start in shadow mode on an allowlist of Arc, Codex, and Obsidian. Record structu
 
 Compare personalized top-one and top-three accuracy with recency and transition-frequency baselines. If the model cannot beat those cheap baselines at useful coverage, stop. If it can, expose one visible, non-destructive completion for one frequent bridge and measure acceptance, time saved, dismissals, and reversals.
 
+A concrete first interaction could be:
+
+- Trigger only after a predefined handoff state, such as reaching the end of an Arc article after meaningful dwell time.
+- Predict only the next app and control focused within a fixed horizon, such as 60 seconds.
+- Show `Tab → Codex composer`.
+- On acceptance, change focus only. Do not stage context, draft, or execute anything yet.
+- Compare against Cmd-Tab, the previous app, and the most common transition from Arc.
+- Measure precision, coverage, actions saved, false-trigger cost, and reversals.
+
+This version tests whether destination prediction can become a non-annoying shortcut. Context selection remains the next conditional test.
+
+## Niyant's initial reaction
+
+In Slack on 2026-07-22, Dylan asked whether the concept fit Niyant's vision:
+
+> **Dylan:** a personalized tab autocomplete nap like feature for navigating your computer
+>
+> e.g., once i scroll to the end of an article on arc, the model predicts i'll want to focus on my codex app input field and allows me to hit "tab" to do so. can even present like top 3 picks of next actions hotkeyed to tab, shift, whatever
+>
+> do you have a reaction to something like this? could something like this within your vision or is it outside
+>
+> **Niyant:** too vague imo
+>
+> **Dylan:** vague in terms of what specific actions would be tab-able or which part
+
+"Too vague" does not yet distinguish whether the objection is underspecification, insufficient product value, a weak test of semantic personalization, or a prediction target outside the intended vision. The concrete navigation-only test above is designed to force that distinction.
+
+The sharper follow-up is:
+
+> At a defined handoff point, predict only the next app/control I focus within 60 seconds, show `Tab → Codex composer`, and change focus without staging context or executing. Compare it with Cmd-Tab and the most common transition. Is that inside the vision but too weak, or is the prediction target itself wrong?
+
 ## Nested action ladder
 
 These are normally conditional layers rather than independent products:
@@ -103,6 +176,8 @@ The natural product sequence is therefore navigation first, then context handoff
 - A top-three deck may become visual noise and make the experiment about menu design rather than prediction.
 - Accessibility and screen observation create a surveillance-shaped permission request.
 - Acceptance is not a clean preference label because seeing the suggestion can cause the action.
+- Generic routines may produce useful completions without supporting any claim of goal understanding.
+- The research program and the predictive-UX product can appear aligned while optimizing different outcomes: model understanding versus felt acceleration.
 
 ## Promote this hunch if
 

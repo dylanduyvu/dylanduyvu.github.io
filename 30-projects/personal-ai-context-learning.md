@@ -34,6 +34,8 @@ Niyant's near-term execution is narrower than that program. In the July 21 Slack
 
 The business thesis is that producing and transmitting context to LLMs is a growing enterprise cost. Niyant treats that thesis as the reason to do the work. The immediate build is meant to demonstrate ability publicly, build legitimacy, and attract inbound interest. Enterprise outreach is not a short-term milestone; outbound becomes relevant if the set of inbound strategies fails.
 
+Dylan is exploring a more interaction-first product wedge: personalized intent compression for computer use. The initial example predicts the next app and control at a natural handoff point and offers a one-key, non-destructive completion. This could make next-action prediction both a product and a forcing function for context quality, but app-switching success would demonstrate behavioral signal and felt acceleration—not goal understanding. The proposed ladder is destination focus → conditional context staging → semantic drafting → separately authorized execution.
+
 ## Evidence Boundary
 
 - A coherent thesis can justify an experiment. It does not validate the size, urgency, or buyer ownership of the enterprise problem.
@@ -72,6 +74,9 @@ The business thesis is that producing and transmitting context to LLMs is a grow
 
 - What exact claim is the static implementation designed to test?
 - Is the first product navigation-only, or does it carry context into the next app as an unsent draft?
+- Is next-action prediction primarily the daily product, a forcing function for building a faithful context system, or both?
+- At what rung does intent compression require genuine local-goal representation rather than shallow personal transition habits?
+- Does Niyant regard the concrete navigation-only test as inside the vision but weak, or as the wrong prediction target?
 - Which formal Phase 1 rungs are included, and which are intentionally deferred?
 - What separates informational background from context that expresses a person's desires and judgment?
 - What evidence would show that the broad enterprise context cost is urgent, budgeted, and owned by a specific buyer?
@@ -86,3 +91,4 @@ The business thesis is that producing and transmitting context to LLMs is a grow
 - Keep proof of builder quality, proof of technical efficacy, and proof of market demand as separate outputs.
 - Record which inbound artifact produces each conversation and what the respondent actually wants.
 - Before calling the pipeline an enterprise MVP, test whether it reconstructs context for one real team workflow with tolerable capture and privacy costs.
+- For the Tab wedge, freeze one handoff trigger and destination-only target; compare with Cmd-Tab and transition-frequency baselines before testing context staging.
