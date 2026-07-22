@@ -155,11 +155,33 @@ The sharper follow-up is:
 
 > At a defined handoff point, predict only the next app/control I focus within 60 seconds, show `Tab → Codex composer`, and change focus without staging context or executing. Compare it with Cmd-Tab and the most common transition. Is that inside the vision but too weak, or is the prediction target itself wrong?
 
-After Dylan clarified the intended ladder, Niyant updated toward alignment:
+Dylan's full clarification at 2:55 PM was:
+
+> **Dylan:** yeah, tab or one of 3 hotkeys (for top 3 nap) would take me to where i’d likely want to go next within or across apps, like the next window, input field, or gui button click. basically moving toward replacing most mouse navigation
+>
+> if it only ever replaces one click then yea that’s too weak as a forever value prop. but i could see it feeling or looking magical and making waves as a demo if the prediction is good and well personalized
+>
+> i was imagining climbing from:
+>
+> where i’d likely go next on computer
+> ↓
+> what i’d likely do there
+> ↓
+> what context i’d need
+> ↓
+> what desire / goal is driving it
+> ↓
+> a better next action toward that goal
+>
+> but i’m remembering now you and jakub already considered computer use nap and narrowed to next sentence / prompt prediction. idk to what complexity you guys were considering for computer use nap before you had decided against it
+
+Niyant then updated toward alignment:
 
 > **Niyant:** Internalized a bit more and I think it aligns overall yeah. The ideal goal was to predict the content of the next write given information since to me that implies actually understanding me. But I can see the argument for starting simpler and working up to it. Biggest issue imo from starting that simple tho is I think there's only like 3 apps I really use so it might just learn to always suggest those which isn’t useful
 >
 > **Dylan:** yeah but i think there could be potentially more diversity when you expand the scope slightly to both intra and inter apps (e.g., webpage navigation + app switching)
+
+Niyant reacted to Dylan's final message with a thumbs-up and did not add another reply. The thread therefore closed with overall alignment and the low-entropy concern still open, rather than with agreement on an implementation.
 
 This narrows the disagreement. Niyant sees the concept as aligned with the overall vision and accepts a simpler starting point in principle. His remaining objection is that app-level prediction may have very low entropy: if three apps dominate, a frequency baseline can look accurate while producing little value. His preferred target remains the content of the next bounded write because novel semantic content is more likely than a routine app transition to require a representation of what the user is trying to accomplish.
 
