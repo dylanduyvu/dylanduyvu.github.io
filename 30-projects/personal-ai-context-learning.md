@@ -57,6 +57,10 @@ The business thesis is that producing and transmitting context to LLMs is a grow
 - [[personal-ai-phase-3-bounded-multi-step-assistance|Phase 3: Can an AI help with more than the next move?]]
 - [[personal-ai-strategy-and-evidence-sequencing|Personal AI strategy and evidence sequencing]]
 
+## Hunches
+
+- [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+
 ## Sources
 
 - [[dylan-niyant-personal-ai-slack-2026-07-21|Dylan and Niyant: personal-AI strategy Slack exchange]]
@@ -67,6 +71,7 @@ The business thesis is that producing and transmitting context to LLMs is a grow
 ## Open Questions
 
 - What exact claim is the static implementation designed to test?
+- Is the first product navigation-only, or does it carry context into the next app as an unsent draft?
 - Which formal Phase 1 rungs are included, and which are intentionally deferred?
 - What separates informational background from context that expresses a person's desires and judgment?
 - What evidence would show that the broad enterprise context cost is urgent, budgeted, and owned by a specific buyer?
