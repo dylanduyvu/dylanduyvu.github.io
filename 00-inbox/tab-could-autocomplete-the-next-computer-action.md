@@ -9,7 +9,8 @@ domains:
   - human-computer-interaction
 projects:
   - personal-ai-context-learning
-sources: []
+sources:
+  - google-deepmind-ai-value-alignment-for-evolving-social-norms-2026
 people:
   - dylan-vu
 orgs: []
@@ -117,6 +118,27 @@ This can directly test whether personal event history improves top-one or top-th
 A live version can then test whether accepted completions reduce time or interactions without creating annoyance or mistakes.
 
 It would not by itself validate continual learning, broad computer autonomy, the enterprise context-cost thesis, or Phase 2 preference learning. Once suggestions are displayed, they change the history being predicted. The system must log the exact suggestion set and retain withheld periods.
+
+## Self-fulfilling accuracy risk
+
+A deployed predictor can become more accurate partly by influencing the behavior it later predicts. The loop is:
+
+> past navigation → personal model → visible destinations → selected destination → new training data
+
+This sharpens Niyant's three-app objection. If Arc, Codex, and Obsidian dominate the slate, Dylan may select them because they are convenient and immediately available. Future accuracy then rises even if the system has not learned more about his underlying intent. Destination diversity may fall while the dashboard looks better.
+
+Acceptance therefore cannot be the only success metric. The pilot should:
+
+- preserve shadow-mode predictions and randomized no-suggestion periods;
+- randomize slate order so hotkey placement is not mistaken for preference;
+- report accuracy separately before and after exposure;
+- test recovery when the active project or declared next goal changes;
+- include washout periods where Tab suggestions disappear;
+- track exact-destination entropy, novel destinations, overrides, reversals, time saved, and task outcomes.
+
+The failure condition is not merely low accuracy. The wedge should also fail if exposure raises accuracy or acceptance while slowing adaptation, narrowing useful exploration, or producing no meaningful work savings.
+
+The design principle is: **compress intentional navigation without compressing the person into their most common destinations.**
 
 ## Cheapest test
 
@@ -248,3 +270,5 @@ Demote it if switching heuristics perform just as well, suggestions need constan
 - Phase 1: [[personal-ai-phase-1-next-action-prediction|Can an AI learn what matters to you by watching you work?]]
 - Phase 2: [[personal-ai-phase-2-local-preference-learning|Can a better next move train a better AI?]]
 - Related: [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]]
+- Insight: [[a-personal-predictor-can-improve-by-making-its-user-more-predictable|A personal predictor can improve by making its user more predictable]]
+- Source: [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]

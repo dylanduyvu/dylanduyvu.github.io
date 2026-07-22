@@ -38,6 +38,8 @@ Dylan is exploring a more interaction-first product wedge: personalized intent c
 
 The resulting formulation is a structured-resolution ladder rather than an unrestricted computer-use branch: domain or app → exact object or control → operation → content. This mirrors Phase 1's domain, location, operation, and content decomposition. Each level must beat its own trivial baseline and demonstrate felt acceleration; easier location predictions do not automatically imply goal understanding or progress on semantic content prediction.
 
+A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence for feasibility. Once a personalized predictor shows suggestions, it helps cause the future behavior it learns from. Exposed-history accuracy may rise because the model understands the person better, because the person is conforming to the model's historical predictions, or both. This makes shadow mode, randomized exposure, goal-change tests, washout periods, and agency/diversity measures necessary before treating online accuracy or acceptance as evidence of deeper personalization.
+
 ## Evidence Boundary
 
 - A coherent thesis can justify an experiment. It does not validate the size, urgency, or buyer ownership of the enterprise problem.
@@ -45,6 +47,7 @@ The resulting formulation is a structured-resolution ladder rather than an unres
 - Obsidian and browser data make the first experiment feasible. They do not identify the best enterprise workflow.
 - Public demos and inbound can establish legitimacy or interest. They do not establish deployment value, retention, or willingness to pay.
 - The formal Phase 1-3 ladder remains useful as a map, but omitted rungs remain untested.
+- The GDM paper formalizes a plausible value-lock-in mechanism with equations and simulated populations. It contains no new human, LLM-agent, or product experiment and does not validate that the effect occurs at a material magnitude.
 
 ## Key Insights
 
@@ -52,6 +55,7 @@ The resulting formulation is a structured-resolution ladder rather than an unres
 - [[a-static-personal-demo-cannot-validate-a-dynamic-enterprise-context-system|A static personal demo cannot validate a dynamic enterprise context system]]
 - [[available-personal-data-can-scope-a-demo-without-identifying-the-enterprise-wedge|Available personal data can scope a demo without identifying the enterprise wedge]]
 - [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]]
+- [[a-personal-predictor-can-improve-by-making-its-user-more-predictable|A personal predictor can improve by making its user more predictable]]
 
 ## Syntheses
 
@@ -68,6 +72,7 @@ The resulting formulation is a structured-resolution ladder rather than an unres
 ## Sources
 
 - [[dylan-niyant-personal-ai-slack-2026-07-21|Dylan and Niyant: personal-AI strategy Slack exchange]]
+- [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
 - [World Models public notes](https://handsdiff.github.io/)
 - [Pinned public notes snapshot](https://github.com/handsdiff/notes/tree/3151afa93fd81719a6e9dc7862c269ea1f1a70e6)
 - Internal Notion page: [All hands 7.20](https://app.notion.com/p/3a3307288ccf800c9d43e5386a0a1b4f)
@@ -80,6 +85,7 @@ The resulting formulation is a structured-resolution ladder rather than an unres
 - At what rung does intent compression require genuine local-goal representation rather than shallow personal transition habits?
 - Does Niyant regard the concrete navigation-only test as inside the vision but weak, or as the wrong prediction target?
 - Is there enough out-of-time entropy among semantic UI destinations for personalization to beat most-common and transition-frequency baselines?
+- After suggestions are exposed, can accuracy improve without narrowing useful behavior or slowing adaptation after a project or goal change?
 - Should domain, location, operation, and content be predicted jointly, hierarchically, or treated only as separate diagnostic heads?
 - Which formal Phase 1 rungs are included, and which are intentionally deferred?
 - What separates informational background from context that expresses a person's desires and judgment?
@@ -97,3 +103,4 @@ The resulting formulation is a structured-resolution ladder rather than an unres
 - Before calling the pipeline an enterprise MVP, test whether it reconstructs context for one real team workflow with tolerable capture and privacy costs.
 - For the Tab wedge, freeze one handoff trigger and destination-only target; compare with Cmd-Tab and transition-frequency baselines before testing context staging.
 - Measure label frequency and baseline accuracy separately at app, exact semantic destination, operation, and content resolution before choosing the first Tab target.
+- Before interpreting online accuracy or acceptance, randomize suggestion exposure, preserve hidden predictions, introduce a declared goal change, and measure adaptation speed, outcomes, overrides, novel actions, and washout behavior.

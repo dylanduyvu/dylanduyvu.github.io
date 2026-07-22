@@ -9,11 +9,13 @@ domains:
   - personalized-ai
   - continual-learning
   - agent-memory
-sources: []
+sources:
+  - google-deepmind-ai-value-alignment-for-evolving-social-norms-2026
 people:
   - niyant
   - dylan-vu
-orgs: []
+orgs:
+  - google-deepmind
 aliases:
   - Niyant's personal-AI thesis study guide
 tags:
@@ -25,7 +27,7 @@ tags:
 
 # Niyant’s personal-AI thesis: a beginner’s study guide
 
-_Prepared July 21, 2026 from the complete public “World Models” note set at pinned repository commit [`3151afa`](https://github.com/handsdiff/notes/tree/3151afa93fd81719a6e9dc7862c269ea1f1a70e6) and Niyant’s July 20 all-hands notes. Links to `handsdiff.github.io` are easier to read but may change after this snapshot._
+_Prepared July 21, 2026 from the complete public “World Models” note set at pinned repository commit [`3151afa`](https://github.com/handsdiff/notes/tree/3151afa93fd81719a6e9dc7862c269ea1f1a70e6) and Niyant’s July 20 all-hands notes. Updated July 22 with a separately marked Google DeepMind paper that bears on the feedback-loop risks. Links to `handsdiff.github.io` are easier to read but may change after this snapshot._
 
 ## Read this first
 
@@ -203,6 +205,16 @@ The `Algorithms` scratchpad calls **LongNAP** “THE baseline” because it had 
 
 LongNAP therefore raises the bar and supplies an experimental baseline; it does **not** validate this thesis’s specific claims about faithful event reconstruction, personal semantic gain, goal-like representations, useful participation, or continual improvement.
 
+### 1.10 A new failure-mode model: evolving values under personalized AI
+
+Google DeepMind's July 2026 paper [*AI Value Alignment for Evolving Social Norms*](https://arxiv.org/abs/2607.18506) does not show that Phase 1 prediction works. It studies what can happen after a personalized assistant begins influencing the person it models.
+
+The paper represents the person, the AI's historical model of that person, and a changing environment as vectors in a mathematical simulation. When the lagging historical model strongly pulls the person back toward it, adaptation slows. The authors call this value lock-in. In population extensions, strong coupling can erase local differences or make assistants converge with one another faster than they track their users.
+
+The load-bearing connection is measurement: once suggestions are visible, higher accuracy can mean the model understands the person better, the person has become more like the model's predictions, or both. Acceptance and exposed-history accuracy are therefore not clean evidence of understanding.
+
+This is a conceptual and mathematical warning, not a real-user result. The paper has no new human, LLM-agent, or product experiment, and several findings follow substantially from its assumptions. Its value here is to sharpen the existing Phase 1 endogenous-feedback concern into a concrete adaptation-and-agency test. See [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|the full vault source note]].
+
 ## 2. The load-bearing details
 
 These are the assumptions that carry the most weight. “Minimum evidence” means the cheapest credible test, not a guaranteed sufficient proof.
@@ -251,8 +263,9 @@ flowchart TD
     E2 --> E3["4C. Goal-like representations<br/>help difficult cases?"]
     E3 --> F["5. Continual updates retain ability?"]
     F --> F2["5B. Prediction remains valid<br/>after suggestions enter history?"]
-    F2 --> G["6. Suggestions improve outcomes?"]
-    G --> H["7A. Mechanically valid<br/>Phase 2 pairs?"]
+    F2 --> G["6A. Suggestions improve outcomes?"]
+    G --> G2["6B. User remains able to<br/>adapt and explore?"]
+    G2 --> H["7A. Mechanically valid<br/>Phase 2 pairs?"]
     H --> H2["7B. Correct preference direction?"]
     H2 --> I["8A. Better proposal policy?"]
     H2 --> I2["8B. Optional scorer transfers safely?"]
@@ -270,6 +283,7 @@ flowchart TD
     F -. "no: remain static or isolate updates" .-> X
     F2 -. "no: repair the exposed-history model" .-> X
     G -. "no: predictor is not useful assistance" .-> X
+    G2 -. "no: exposure creates harmful lock-in" .-> X
     H -. "no: remain in Phase 1" .-> X
     H2 -. "no: label assumption fails" .-> X
     I -. "no: revisit labels/interface" .-> X
@@ -355,13 +369,21 @@ This gate comes primarily from [Entry](https://handsdiff.github.io/entry) and th
 
 **Invalidate or redirect:** Prediction becomes unstable or qualitatively different after exposure, or the model cannot reconstruct how its suggestions changed the person’s information state. Repair the interaction record and behavioral model before interpreting live outcomes.
 
-### Rung 6 — Causal usefulness _(current evidence: untested)_
+### Rung 6A — Causal usefulness _(current evidence: untested)_
 
 **Question:** Does showing predictions improve the person’s work?
 
 **Test:** Randomly compare unaided work, static assistance, and continual personalized assistance on bounded tasks. Measure time, blinded quality, errors, rework, completion, interruption, and goal satisfaction.
 
 **Invalidate or redirect:** Prediction improves but outcomes do not. Then the model may be an interesting predictor but not a useful assistant. If outcomes or behavioral diversity regress, stop exposure and roll back.
+
+### Rung 6B — Adaptation and agency under exposure _(current evidence: untested)_
+
+**Question:** Does personalization help without making the person conform to a stale historical model or become easier to predict by narrowing their behavior?
+
+**Test:** Randomize no-suggestion, static-suggestion, and personalized-suggestion windows. Preserve shadow-mode predictions and randomize slate order. Introduce or wait for a clearly declared project or goal change, then compare recovery under different update and replay policies. Include washout periods where suggestions disappear. Measure outcomes, adaptation speed, overrides, corrections, novel actions, behavioral diversity, persistence during washout, and prediction accuracy separately for exposed and unexposed histories.
+
+**Invalidate or redirect:** Exposure raises acceptance or prediction accuracy but slows adaptation after the declared change, reduces outcomes, narrows useful exploration, or leaves unwanted effects after removal. Stop exposure, weaken the feedback loop, change retention and forgetting, or keep the system in shadow mode. This gate is motivated by Phase 1's endogenous-feedback warning and [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|the GDM value-lock-in model]].
 
 ### Rung 7A — Mechanical Phase 2 pair validity _(current evidence: untested)_
 
@@ -515,7 +537,7 @@ Dylan’s section adds useful decision context: he wrote that he had not yet gon
 
 14. **Does the suggestion change the person in a beneficial way?** `[Explicit]`
 
-    The system may inspire and expand behavior, or anchor and narrow it. Predictability could rise while outcomes fall. What diversity, exposure, and rollback rules prevent that? Source: [Phase 1 §4.3](https://handsdiff.github.io/phase-1#43-endogenous-feedback).
+    The system may inspire and expand behavior, or anchor and narrow it. Predictability could rise while outcomes fall because the model learned the person better or because it made the person more like its predictions. What randomized exposure, goal-change, washout, diversity, and rollback tests distinguish those mechanisms? Sources: [Phase 1 §4.3](https://handsdiff.github.io/phase-1#43-endogenous-feedback) and [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|GDM's value-lock-in model]].
 
 15. **Should the human model and assistant remain separate?** `[Explicit]`
 
@@ -641,6 +663,7 @@ If you want to track progress without getting lost in algorithms, watch for thes
 6. **A prospective repetition:** the result survives a later untouched interval.
 7. **A continual-update result:** recent improvement without historical or general-capability loss.
 8. **A randomized live-assistance result:** suggestions improve bounded outcomes, not just prediction.
+9. **An adaptation-and-agency result:** after randomized exposure and a declared goal change, the system adapts without narrowing useful behavior or leaving unwanted washout effects.
 
 Do not let Phase 2, Phase 3, or collective-intelligence language substitute for evidence at an earlier rung.
 
@@ -673,7 +696,8 @@ For a nontechnical reader, this order gives the highest signal:
 2. [Phase 2 abstract, assumptions, pair construction, and evaluation](https://handsdiff.github.io/phase-2)
 3. [Phase 3 introduction, model roles, local-reward warning, and experimental sequence](https://handsdiff.github.io/phase-3)
 4. [Local Tasking](https://handsdiff.github.io/local-tasking) and [All hands 7.20](https://app.notion.com/p/3a3307288ccf800c9d43e5386a0a1b4f) for current status
-5. [Entry](https://handsdiff.github.io/entry), [Algorithms](https://handsdiff.github.io/algorithms), and [Data](https://handsdiff.github.io/data) only after the formal structure is clear
+5. [AI Value Alignment for Evolving Social Norms](https://arxiv.org/abs/2607.18506) as a feedback-loop red-team, not Phase 1 evidence
+6. [Entry](https://handsdiff.github.io/entry), [Algorithms](https://handsdiff.github.io/algorithms), and [Data](https://handsdiff.github.io/data) only after the formal structure is clear
 
 The scratch notes are valuable because they expose genuine uncertainty, but they are a poor starting point: they mix current plans, abandoned framings, links, product ideas, and unanswered questions.
 
@@ -684,3 +708,5 @@ The scratch notes are valuable because they expose genuine uncertainty, but they
 - Phase 1: [[personal-ai-phase-1-next-action-prediction|Can an AI learn what matters to you by watching you work?]]
 - Phase 2: [[personal-ai-phase-2-local-preference-learning|Can a better next move train a better AI?]]
 - Phase 3: [[personal-ai-phase-3-bounded-multi-step-assistance|Can an AI help with more than the next move?]]
+- New insight: [[a-personal-predictor-can-improve-by-making-its-user-more-predictable|A personal predictor can improve by making its user more predictable]]
+- Paper: [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
