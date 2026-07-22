@@ -8,18 +8,18 @@ updated: 2026-07-22
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 22, 2026, 11:56 AM EDT
+Generated: Jul 22, 2026, 12:10 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 52 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 53 note commits. The most recent movement is:
 
+- Insight update: separate GPU rental price from utilization.
 - Insight update: connect big worlds to personal agent tracking.
 - Insight update: add borrower-side loan test and bandwidth pricing.
 - Insight update: add first-fleet capital mismatch.
 - Source capture: capture buyer visibility and GPU bidding discussion.
 - Insight update: add cross-provider GPU rental search hunch.
-- Insight update: close Harry as SLA test route.
 
 ## Current Hub Signals
 
@@ -28,6 +28,17 @@ In the past 7 days, the public vault changed through 52 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 22, 2026, 12:10 PM EDT - insight: separate GPU rental price from utilization
+
+Insight update: separate GPU rental price from utilization.
+
+Changed notes:
+  - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
+  - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
+  - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
+  - [[gpu-finance|GPU Finance]]
+  - [[ccir-memory-bandwidth-band-cross-generation-gpu-rents-2026-07-11|CCIR: cross-generation neocloud rents form a narrow memory-bandwidth band]]
 
 ### Jul 22, 2026, 11:56 AM EDT - insight: connect big worlds to personal agent tracking
 
@@ -60,6 +71,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 22, 2026: insight: separate GPU rental price from utilization - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
 - Jul 22, 2026: insight: connect big worlds to personal agent tracking - [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]]
 - Jul 22, 2026: insight: add borrower-side loan test and bandwidth pricing - [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
 - Jul 21, 2026: insight: add first-fleet capital mismatch - [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
@@ -84,12 +96,12 @@ Changed notes:
 - Jul 20, 2026: insight: close Harry as SLA test route - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 20, 2026: insight: classify USD.AI verification as a draw gate - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 20, 2026: insight: add lender monitoring adoption census - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-- Jul 20, 2026: insight: preserve direct live-monitoring test - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
-_Showing the newest 25 of 52 updates in this window._
+_Showing the newest 25 of 53 updates in this window._
 
 ## Past 30 Days
 
+- Jul 22, 2026: insight: separate GPU rental price from utilization - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
 - Jul 22, 2026: insight: connect big worlds to personal agent tracking - [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]]
 - Jul 22, 2026: insight: add borrower-side loan test and bandwidth pricing - [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
 - Jul 21, 2026: insight: add first-fleet capital mismatch - [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
@@ -114,6 +126,5 @@ _Showing the newest 25 of 52 updates in this window._
 - Jul 20, 2026: insight: close Harry as SLA test route - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 20, 2026: insight: classify USD.AI verification as a draw gate - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 20, 2026: insight: add lender monitoring adoption census - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-- Jul 20, 2026: insight: preserve direct live-monitoring test - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
-_Showing the newest 25 of 151 updates in this window._
+_Showing the newest 25 of 152 updates in this window._
