@@ -8,18 +8,18 @@ updated: 2026-07-22
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 22, 2026, 12:10 PM EDT
+Generated: Jul 22, 2026, 12:57 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 53 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 54 note commits. The most recent movement is:
 
+- Insight update: audit CCIR against GPU finance theses.
 - Insight update: separate GPU rental price from utilization.
 - Insight update: connect big worlds to personal agent tracking.
 - Insight update: add borrower-side loan test and bandwidth pricing.
 - Insight update: add first-fleet capital mismatch.
 - Source capture: capture buyer visibility and GPU bidding discussion.
-- Insight update: add cross-provider GPU rental search hunch.
 
 ## Current Hub Signals
 
@@ -28,6 +28,21 @@ In the past 7 days, the public vault changed through 53 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 22, 2026, 12:57 PM EDT - insight: audit CCIR against GPU finance theses
+
+Insight update: audit CCIR against GPU finance theses.
+
+Changed notes:
+  - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
+  - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
+  - [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
+  - [[ccir-is-building-the-public-compute-credit-data-layer|CCIR is building the public compute-credit data layer]]
+  - [[contract-rollover-risk-survives-investment-grade-offtake|Contract-rollover risk survives investment-grade offtake]]
+  - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
+  - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
+  - [[gpu-collateral-has-going-concern-and-liquidation-values|GPU collateral has separate going-concern and liquidation values]]
+  - and 14 more
 
 ### Jul 22, 2026, 12:10 PM EDT - insight: separate GPU rental price from utilization
 
@@ -71,6 +86,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 22, 2026: insight: audit CCIR against GPU finance theses - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
 - Jul 22, 2026: insight: separate GPU rental price from utilization - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
 - Jul 22, 2026: insight: connect big worlds to personal agent tracking - [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]]
 - Jul 22, 2026: insight: add borrower-side loan test and bandwidth pricing - [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
@@ -95,12 +111,12 @@ Changed notes:
 - Jul 20, 2026: article: strengthen verification gap evidence - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
 - Jul 20, 2026: insight: close Harry as SLA test route - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 20, 2026: insight: classify USD.AI verification as a draw gate - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-- Jul 20, 2026: insight: add lender monitoring adoption census - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
-_Showing the newest 25 of 53 updates in this window._
+_Showing the newest 25 of 54 updates in this window._
 
 ## Past 30 Days
 
+- Jul 22, 2026: insight: audit CCIR against GPU finance theses - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
 - Jul 22, 2026: insight: separate GPU rental price from utilization - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
 - Jul 22, 2026: insight: connect big worlds to personal agent tracking - [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]]
 - Jul 22, 2026: insight: add borrower-side loan test and bandwidth pricing - [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
@@ -125,6 +141,5 @@ _Showing the newest 25 of 53 updates in this window._
 - Jul 20, 2026: article: strengthen verification gap evidence - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
 - Jul 20, 2026: insight: close Harry as SLA test route - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 - Jul 20, 2026: insight: classify USD.AI verification as a draw gate - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
-- Jul 20, 2026: insight: add lender monitoring adoption census - [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]]
 
-_Showing the newest 25 of 152 updates in this window._
+_Showing the newest 25 of 153 updates in this window._
