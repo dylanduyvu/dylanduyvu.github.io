@@ -34,7 +34,9 @@ Niyant's near-term execution is narrower than that program. In the July 21 Slack
 
 The business thesis is that producing and transmitting context to LLMs is a growing enterprise cost. Niyant treats that thesis as the reason to do the work. The immediate build is meant to demonstrate ability publicly, build legitimacy, and attract inbound interest. Enterprise outreach is not a short-term milestone; outbound becomes relevant if the set of inbound strategies fails.
 
-Dylan is exploring a more interaction-first product wedge: personalized intent compression for computer use. The initial example predicts the next app and control at a natural handoff point and offers a one-key, non-destructive completion. This could make next-action prediction both a product and a forcing function for context quality, but app-switching success would demonstrate behavioral signal and felt acceleration—not goal understanding. The proposed ladder is destination focus → conditional context staging → semantic drafting → separately authorized execution.
+Dylan is exploring a more interaction-first product wedge: personalized intent compression for computer use. The initial example predicts the next app and control at a natural handoff point and offers a one-key, non-destructive completion. Niyant initially called the idea too vague, then said it aligns overall after Dylan clarified the progression. Niyant's ideal target remains the content of the next write because he sees that as stronger evidence of understanding; his main concern with starting at app prediction is that he uses roughly three apps, allowing a trivial frequency predictor to look accurate without being useful.
+
+The resulting formulation is a structured-resolution ladder rather than an unrestricted computer-use branch: domain or app → exact object or control → operation → content. This mirrors Phase 1's domain, location, operation, and content decomposition. Each level must beat its own trivial baseline and demonstrate felt acceleration; easier location predictions do not automatically imply goal understanding or progress on semantic content prediction.
 
 ## Evidence Boundary
 
@@ -77,6 +79,8 @@ Dylan is exploring a more interaction-first product wedge: personalized intent c
 - Is next-action prediction primarily the daily product, a forcing function for building a faithful context system, or both?
 - At what rung does intent compression require genuine local-goal representation rather than shallow personal transition habits?
 - Does Niyant regard the concrete navigation-only test as inside the vision but weak, or as the wrong prediction target?
+- Is there enough out-of-time entropy among semantic UI destinations for personalization to beat most-common and transition-frequency baselines?
+- Should domain, location, operation, and content be predicted jointly, hierarchically, or treated only as separate diagnostic heads?
 - Which formal Phase 1 rungs are included, and which are intentionally deferred?
 - What separates informational background from context that expresses a person's desires and judgment?
 - What evidence would show that the broad enterprise context cost is urgent, budgeted, and owned by a specific buyer?
@@ -92,3 +96,4 @@ Dylan is exploring a more interaction-first product wedge: personalized intent c
 - Record which inbound artifact produces each conversation and what the respondent actually wants.
 - Before calling the pipeline an enterprise MVP, test whether it reconstructs context for one real team workflow with tolerable capture and privacy costs.
 - For the Tab wedge, freeze one handoff trigger and destination-only target; compare with Cmd-Tab and transition-frequency baselines before testing context staging.
+- Measure label frequency and baseline accuracy separately at app, exact semantic destination, operation, and content resolution before choosing the first Tab target.

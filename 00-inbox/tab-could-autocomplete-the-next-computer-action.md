@@ -135,7 +135,7 @@ A concrete first interaction could be:
 
 This version tests whether destination prediction can become a non-annoying shortcut. Context selection remains the next conditional test.
 
-## Niyant's initial reaction
+## Niyant's reaction and low-entropy objection
 
 In Slack on 2026-07-22, Dylan asked whether the concept fit Niyant's vision:
 
@@ -154,6 +154,36 @@ In Slack on 2026-07-22, Dylan asked whether the concept fit Niyant's vision:
 The sharper follow-up is:
 
 > At a defined handoff point, predict only the next app/control I focus within 60 seconds, show `Tab → Codex composer`, and change focus without staging context or executing. Compare it with Cmd-Tab and the most common transition. Is that inside the vision but too weak, or is the prediction target itself wrong?
+
+After Dylan clarified the intended ladder, Niyant updated toward alignment:
+
+> **Niyant:** Internalized a bit more and I think it aligns overall yeah. The ideal goal was to predict the content of the next write given information since to me that implies actually understanding me. But I can see the argument for starting simpler and working up to it. Biggest issue imo from starting that simple tho is I think there's only like 3 apps I really use so it might just learn to always suggest those which isn’t useful
+>
+> **Dylan:** yeah but i think there could be potentially more diversity when you expand the scope slightly to both intra and inter apps (e.g., webpage navigation + app switching)
+
+This narrows the disagreement. Niyant sees the concept as aligned with the overall vision and accepts a simpler starting point in principle. His remaining objection is that app-level prediction may have very low entropy: if three apps dominate, a frequency baseline can look accurate while producing little value. His preferred target remains the content of the next bounded write because novel semantic content is more likely than a routine app transition to require a representation of what the user is trying to accomplish.
+
+The response should not be to indiscriminately include every click. That would add a large, unstable, noisy action space and much heavier capture requirements. The cleaner expansion is from app labels to **semantic destinations and structured macro-actions**.
+
+## Structured action resolution
+
+The formal Phase 1 write target already decomposes an action into domain, location, operation, and content. The Tab concept can use the same structure as a diagnostic ladder:
+
+1. **Domain:** Codex, Arc, Obsidian, Slack.
+2. **Location:** the exact thread, browser tab, document, block, or input control.
+3. **Operation:** focus, open, click, search, append, edit, or submit.
+4. **Content:** the actual prompt, sentence, query, message, or edit payload.
+
+For example, `Codex` is not a sufficiently useful prediction. `Focus the composer in the Personal AI task` is a semantic destination. `Draft a question about whether navigation prediction is too low-entropy` adds the operation and content that move toward Niyant's preferred target.
+
+These levels can be evaluated separately, but they are not guaranteed to teach one another. High app or control accuracy can still come from habit. The key questions at every level are:
+
+- How diverse are the labels?
+- How well does the most-common or transition-frequency baseline perform?
+- Does personal and semantic context add out-of-time accuracy?
+- Does a correct prediction remove meaningful navigation, search, typing, or thought reconstruction?
+
+The lowest rung is useful only if it beats the trivial baselines and delivers felt acceleration. Otherwise, skip directly to the more semantic write or prompt target.
 
 ## Nested action ladder
 
@@ -178,6 +208,8 @@ The natural product sequence is therefore navigation first, then context handoff
 - Acceptance is not a clean preference label because seeing the suggestion can cause the action.
 - Generic routines may produce useful completions without supporting any claim of goal understanding.
 - The research program and the predictive-UX product can appear aligned while optimizing different outcomes: model understanding versus felt acceleration.
+- Expanding from three apps to arbitrary clicks can manufacture label diversity while making collection, prediction, and evaluation much noisier.
+- A dominant-app or transition-frequency baseline may achieve high accuracy while exposing no meaningful personal signal.
 
 ## Promote this hunch if
 
