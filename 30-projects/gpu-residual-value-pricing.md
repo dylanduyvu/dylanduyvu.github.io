@@ -21,6 +21,8 @@ The strongest near-term wedge would need to change guarantee pricing, lender adv
 
 Compute derivatives add a possible market-data layer: a dated futures/forward strip could supply residual marks and amortization inputs in a way a perp cannot.
 
+CCIR adds a separate cross-generation rental lens. In one July 2026 neocloud on-demand snapshot, A100 through B300 posted rents clustered between $0.87 and $0.98 per TB/s-hour of nameplate memory bandwidth, much tighter than rents normalized by capacity, FLOPs, or power. This may become an inference-oriented anchor for rental earning power if it persists, but it is currently one cross-section of posted asks, not transaction evidence or a residual-value curve. See [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|the developing insight]].
+
 ## Key Insights
 
 - [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]]: The pure KBB/data-only wedge should stay shelved until buyer-side demand proves standalone willingness to pay.
@@ -35,6 +37,7 @@ Compute derivatives add a possible market-data layer: a dated futures/forward st
 - [[gpu-financing-lender-types-fragment-by-credit-tolerance|GPU financing lender types fragment by credit tolerance]]: Positioning should segment banks, equipment finance, private credit, crypto lenders, and lessors.
 - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]: Dated compute curves could become residual-value underwriting infrastructure.
 - [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]]: Residual marks need to account for perishable capacity and silicon decay.
+- [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]: One CCIR snapshot suggests an inference-oriented normalization worth monitoring, not yet a durable law.
 
 ## Sources
 
@@ -43,6 +46,7 @@ Compute derivatives add a possible market-data layer: a dated futures/forward st
 - [[american-compute-bernie-ceo-call-2026-06-16|American Compute CEO call with Bernie]]
 - [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
 - [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]
+- [[ccir-memory-bandwidth-band-cross-generation-gpu-rents-2026-07-11|CCIR memory-bandwidth band]]
 
 ## Decisions
 
@@ -62,6 +66,7 @@ Do not treat Bernie alone as the kill. The demotion comes from the combined evid
 - Could a dated compute strip become the market primitive for GPU residual marks?
 - Would S&P, KBRA, Fitch, or lessors pay for neutral GPU residual data without a guarantee wrapper?
 - Does Barkr's valuation-only inbound demand represent real standalone willingness to pay or just top-of-funnel curiosity?
+- Does CCIR's $/TB/s-hour rental band persist across dates, regions, provider classes, commitment terms, and realized transactions?
 
 ## Next Tests
 
@@ -73,4 +78,5 @@ Do not treat Bernie alone as the kill. The demotion comes from the combined evid
 - Compare guarantee vs insurance acceptance across banks, private credit, insurers, lessors, and asset managers.
 - Ask Bernie for one prior quote or policy with target guarantee, premium, source data, and lender/reinsurer pushback.
 - Test whether lenders/lessors would use a surveyed forward strip before exchange liquidity exists.
+- Track CCIR's bandwidth band through time and test it against realized rental revenue before using it in collateral or residual models.
 - Talk to [[ornn|Ornn]] (Wayne / Jack) about their GPU Residual Value Swap, specifically how the reference value is set (internal mark vs external reference vs negotiated deal-by-deal). A live RVS product is a direct probe of who trusts what GPU residual number. Intro from Bernie on 2026-06-17; conversation at scheduling stage.

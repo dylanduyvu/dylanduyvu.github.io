@@ -72,11 +72,15 @@ That ambition contains a [[ai-offtake-inherits-the-credit-risk-david-choi-says-i
 
 The asset-level object underneath that merchant revenue is [[gpu-earning-power-is-macro-level-offtake|GPU earning power]]: lifetime net cash from realized rental rates and utilization across successive customers, after operating and redeployment costs. This is macro-level offtake. A named contract fixes part of the curve; hardware-first lending must underwrite the curve itself.
 
+CCIR's first [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|memory-bandwidth-normalized rental print]] suggests one possible unit for the price component of that earning-power curve. In a controlled July 2026 neocloud on-demand sample, A100 through B300 rents clustered at $0.87-$0.98 per TB/s-hour. It is not yet a standard: one date of posted asks does not establish transaction prices, utilization, future decay, or residual value.
+
 The Silicon Network audit supplies a live tokenization case. Claim tickets, GPU NFTs, and pool tokens can finance hardware and make ownership/transfers/payouts legible, but the operator still controls deployment, marketplace integrations, earnings calculations, and remittance. Onchain auditability begins after these offchain facts enter the system. Tokenization therefore packages operator risk rather than independently underwriting it, which preserves the verification problem underneath the financing wrapper.
 
 The current research direction is now narrower. It is already understood why a compute shortage does not guarantee that one new fleet will stay rented throughout a multi-year loan. The live question is whether a lender can finance a new fleet against an expected stream of short-term rentals before the operator has rental history or a multi-year customer contract, what evidence or protection would make that possible, and which loan terms would change. Actual transactions are the priority. If better evidence changes approval or terms, there may be a standardization opportunity. If only equity, collateral, or a third-party guarantee works, the uncertainty must be absorbed rather than measured away. Full framing: [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|GPU loans without a long-term customer claim ledger]].
 
 That unresolved first-fleet case may be a [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|capital-type mismatch]]. A young operator with no history or offtake carries equity risk, but one fleet may offer only bounded infrastructure returns rather than venture-scale upside. Credit does not want the demand risk, venture equity wants a much larger platform outcome, and infrastructure equity usually wants contracted cash flows. The next test is therefore not only whether debt can arrive earlier, but who can hold first-fleet demand risk at a return that works for both sides.
+
+Jakub's 2026-07-21 strategy note changes the preferred research seat. Lenders can pass on difficult deals; the operator's CFO or debt-capital-markets team has to make the financing work. The next high-information experiment is therefore a [[jakub-borrower-side-gpu-finance-and-shadow-loan-experiment-2026-07-21|shadow GPU-loan transaction]] with Dylan and Jakub acting as the proposed operator: source indicative hardware and colocation, model the revenue, assemble the lender packet, and seek indicative terms without committing capital. This will test the related hypothesis that [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|bespoke GPU finance may make the neocloud the optimal finance firm]], or reveal a repeatable part of the operator finance function worth automating.
 
 A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|cross-provider GPU rental search may still be broken]]. Cooper Veit described an underdeveloped market where buyers cannot clearly specify or verify what they receive and imagined multiple vetted providers bidding against auditable requirements. A simpler first product could combine neocloud availability and filter by hardware, cluster, networking, location, timing, and contract terms. Existing marketplaces and SiliconMark make this a workflow test, not a category-creation claim. It could improve matching and utilization, but it does not by itself solve long-term revenue risk or financing.
 
@@ -140,6 +144,10 @@ A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve
 - Residual-value insurance transfers loss severity after default, not the short-demand / long-debt cash-flow mismatch that causes default.
 - The live first-fleet question is whether expected short-term rentals can support a loan before rental history exists; the test is what evidence changes approval, borrower equity, amount financed, rate, reserves, or repayment speed.
 - A young no-offtake fleet may carry equity risk without clear venture-scale project upside, leaving it between venture equity, infrastructure equity, and credit.
+- Memory bandwidth may be a useful inference-oriented unit for comparing cross-generation rental earning power, but the first CCIR print needs time-series and transaction validation.
+- Borrower-side debt-capital-markets work may be a better problem-search seat than lender diligence because the operator must make the transaction work while the lender can pass.
+- A shadow loan attempt can reveal the binding constraint without first committing to hardware, colocation, customer capacity, or debt.
+- If custom financing stays hard to standardize, the neocloud may be the natural finance firm; the external wedge would be automating its finance function.
 
 ## Active Projects
 
@@ -219,6 +227,8 @@ A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve
 - [[gpu-tokenization-makes-ownership-auditable-not-operator-performance-true|GPU tokenization makes ownership auditable, not operator performance true]]
 - [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
 - [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
+- [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
+- [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
 
 ## Open Questions
 
@@ -248,6 +258,9 @@ A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve
 - What structure could weaken the centralizing loop of investment-grade offtake -> cheaper capital -> more investment-grade offtake?
 
 ## Near-Term Tests
+
+- Build a shadow GPU-loan transaction from the operator seat: one real configuration, indicative hardware and colocation terms, contracted and short-term rental cases, a lender-ready packet, and at least one indicative structure or explicit decline. Do not commit capital merely to complete discovery.
+- During the shadow transaction, log every required artifact, counterparty, delay, fee, and negotiated term. Test whether the repeated pain belongs to the operator's finance team and whether it can be automated.
 
 - 2026-07-13: [[gpu-lender-wave-two-cleaned-draft-packet-2026-07-13|GPU lender wave two]] is cleaned to 19 one-contact-per-firm targets: 11 ready on public direct addresses and 8 held for address or routing checks. The copy tests whether a successful first deployment changes the next facility's terms.
 - No upcoming Barkr call is scheduled; the prior Barkr call is already logged.
