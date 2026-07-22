@@ -30,5 +30,9 @@ Use two compact Markdown list items so the links wrap naturally on narrow screen
 
 - Confirm all eight destinations appear once in `index.md`.
 - Run `git diff --check`.
-- Confirm the diff changes only `index.md` during implementation.
-- Commit and push the content update to `main`; GitHub Pages will rebuild asynchronously.
+- Review `git diff -- index.md` directly and confirm the Contact section is last, contains exactly two grouped rows, and leaves every existing homepage line unchanged.
+- Confirm the implementation diff changes only `index.md`.
+
+## Publishing
+
+Commit and push the content update to `main` as required by the vault's `AGENTS.md` publishing policy. GitHub Pages will rebuild asynchronously.
