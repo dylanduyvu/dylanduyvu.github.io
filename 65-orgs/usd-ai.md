@@ -54,6 +54,21 @@ The model separates loan *size* from loan *rate*:
 
 This is the cleanest worked example so far of the [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|contract-backed-with-hardware-recovery-floor]] inversion: the hardware backstops, the contract prices.
 
+## Policy-page precise deltas (fetched 2026-07-20, from the published Underwriting and Risk Management post dated 2026-05-15)
+
+Details the podcasts and prior captures lacked or stated differently:
+- Rates set by offtake quality and loan-to-value, verbatim "not the creditworthiness of the borrower." Operator-blindness in the lender's own published words.
+- Tier 1 and Tier 2 pricing require a minimum 24-month remaining offtake term at origination.
+- Tier 3 diligence: "executed offtake agreement (or documented on-demand revenue history for Tier 3 borrowers)." Tier 3 described as "revenue is real but uncontracted." Reconciles the apparent podcast tension: no offtake is not the same as no history; Choi's spec-build examples do not state the borrowers lacked prior rental revenue.
+- Ongoing monitoring: quarterly 1.15x debt service coverage floor tested on trailing receipts; two consecutive breach quarters open a 30-day cure requiring mandatory partial prepayment from the reserve or equity; failing that, default and acceleration.
+- Barkr warranty precision: warrantied value schedule set at origination; on liquidation shortfall, coverage runs UP TO 80 PERCENT OF THE WARRANTIED AMOUNT. FLAG, unresolved: the Connor capture describes Munich Re paying "the delta" below 95 cents of expected loss value; the 80-percent cap and the 95-cent trigger may describe different layers or a policy change. Do not treat the coverage as total.
+- Warranty cost 150 basis points a year, netted from the interest yield stream, not charged to the borrower and not affecting the stated loan rate.
+- Eligible collateral has GENERATION-SHIFTED: RTX Pro 6000, B200/B300, GB200/GB300 standard; H100 and H200 now case-by-case based on contract revenue and liquidation depth. The workhorse of the vault's residual analysis is already a case-by-case asset at this lender.
+- Amortization calibrated to depreciation: 80 percent loan-to-value deleverages to roughly 65 percent by end of year one. Standard three-year term extendable to five to match an offtake contract. Fixed rates, prepayable without penalty.
+- Escrow at Wilmington Trust earning up to 7 percent until installation verified by an independent third party; colocation operator executes a lien waiver before capital moves.
+- USDai treasury integration earns a rate discount that deepens with integration depth (the stablecoin flywheel from the Connor capture, now in written policy).
+- Scale claims: over $100M deployed, $1.2B pipeline, eight months.
+
 ## The Contrarian Bet, Reframed (2026-07-16, from Dylan's cross-assistant discussion on commoditization and personalization)
 
 The question was what USD.AI's fundamental bet is, against the current state of the market. Wrong version of the bet: small token PRODUCERS proliferate. Token production has steep scale economies (memory-bandwidth batching, prefix caching, expert parallelism), so serving concentrates, and small token-sellers get squeezed like farmers under concentrated aggregators. Right version of the bet: compute OWNERSHIP fragments even while serving concentrates. USD.AI finances ownership, not serving.
