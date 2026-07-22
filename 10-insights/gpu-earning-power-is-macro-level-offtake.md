@@ -2,7 +2,7 @@
 type: insight
 status: distilled
 created: 2026-07-17
-updated: 2026-07-19
+updated: 2026-07-22
 confidence: high
 domains: [gpu-finance, compute-markets, asset-backed-lending, residual-value]
 projects: []
@@ -11,9 +11,10 @@ sources:
     usdai-connor-moore-messari-fully-diluted-podcast-2026-07-15,
     usdai-david-choi-touchcraft-podcast-gpu-financing-2026-07,
     semianalysis-rob-howle-sales-call-2026-07-13,
+    ccir-memory-bandwidth-band-cross-generation-gpu-rents-2026-07-11,
   ]
-people: [connor-moore, david-choi]
-orgs: [usd-ai, semianalysis]
+people: [connor-moore, david-choi, jakub-janiak]
+orgs: [usd-ai, semianalysis, ccir]
 aliases:
   [
     gpu productivity as offtake,
@@ -73,3 +74,7 @@ Nebius announced a $775M senior secured facility backed by deployed GPU infrastr
 ### 2026-07-19
 
 Silicon Data already publishes a calculated GPU forward curve, and CME and ICE have announced compute futures. This corrects the earlier implication that no public forward-price tool exists. The deeper claim still holds: a futures payout follows the market rental-price index, not the number of GPU-hours a particular operator sells. Market-price tools address one input in lifetime earning power, while operator-specific rental volume, actual pricing, operating costs, and recovery remain. See [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|the article claim ledger]].
+
+### 2026-07-22
+
+CCIR's first memory-bandwidth analysis suggests cross-generation inference rents may cluster around a common price per TB/s-hour. If that relationship holds, it could standardize the expected revenue from an occupied GPU-hour. It would not estimate how many hours a fleet will rent. The result therefore narrows the unresolved financing problem from pricing each occupied hour to forecasting fleet utilization and replacement demand. See [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|the CCIR insight]].

@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-06-29
-updated: 2026-07-01
+updated: 2026-07-22
 domains: [gpu-finance, residual-value, asset-backed-lending, compute-derivatives]
 people: [thomas-galbraith, bernie-margulies, dave-friedman]
 orgs: [barkr, american-compute, ornn]
@@ -22,6 +22,8 @@ The strongest near-term wedge would need to change guarantee pricing, lender adv
 Compute derivatives add a possible market-data layer: a dated futures/forward strip could supply residual marks and amortization inputs in a way a perp cannot.
 
 CCIR adds a separate cross-generation rental lens. In one July 2026 neocloud on-demand snapshot, A100 through B300 posted rents clustered between $0.87 and $0.98 per TB/s-hour of nameplate memory bandwidth, much tighter than rents normalized by capacity, FLOPs, or power. This may become an inference-oriented anchor for rental earning power if it persists, but it is currently one cross-section of posted asks, not transaction evidence or a residual-value curve. See [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|the developing insight]].
+
+If that public normalization holds, it weakens the naked GPU-KBB wedge further. Cross-generation rental price may become easier to estimate without proprietary data, while the valuable private layer shifts toward completed hardware transactions, realized utilization, operating costs, and future demand. For lending, the band may price an occupied hour without proving how many hours a fleet will sell.
 
 ## Key Insights
 

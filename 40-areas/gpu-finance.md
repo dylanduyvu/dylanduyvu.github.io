@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-06-29
-updated: 2026-07-21
+updated: 2026-07-22
 domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee, connor-moore]
@@ -47,6 +47,8 @@ The pure GPU KBB / naked residual-data wedge is now shelved pending buyer-side e
 American Compute adds that RVI demand may be suppressed by operator residual overconfidence and by customers using quotes as free gut checks. Residual products may sell better to lessors or after a correction than to lenders in the current scarcity market.
 
 The compute-derivatives path points toward dated futures/forward strips rather than perps. That matters because a dated curve could feed residual marks, amortization schedules, and hedges for GPU financing.
+
+CCIR's first cross-generation analysis suggests memory bandwidth may standardize the price of an occupied inference hour. If the band persists, it makes GPU rental pricing easier but does not show how many hours a new fleet will rent. The pricing problem weakens while the utilization and offtake problem becomes more clearly the financing bottleneck. It also pushes a naked GPU-KBB product toward realized utilization, operating costs, completed transactions, and demand forecasts rather than simple cross-generation price normalization.
 
 The compute-commoditization path does not require perfect fungibility. The more useful frame is reference grade plus priced basis: DGX/spec may define grade, while operator performance, topology, scale, duration, priority, goodput, MFU, and SLA become basis spreads. This ties directly back to lender verification and residual-value marks.
 
@@ -145,6 +147,7 @@ A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve
 - The live first-fleet question is whether expected short-term rentals can support a loan before rental history exists; the test is what evidence changes approval, borrower equity, amount financed, rate, reserves, or repayment speed.
 - A young no-offtake fleet may carry equity risk without clear venture-scale project upside, leaving it between venture equity, infrastructure equity, and credit.
 - Memory bandwidth may be a useful inference-oriented unit for comparing cross-generation rental earning power, but the first CCIR print needs time-series and transaction validation.
+- A common price per TB/s-hour could standardize revenue from occupied GPUs without solving how many hours a fleet will rent; price risk and utilization risk remain separate.
 - Borrower-side debt-capital-markets work may be a better problem-search seat than lender diligence because the operator must make the transaction work while the lender can pass.
 - A shadow loan attempt can reveal the binding constraint without first committing to hardware, colocation, customer capacity, or debt.
 - If custom financing stays hard to standardize, the neocloud may be the natural finance firm; the external wedge would be automating its finance function.
