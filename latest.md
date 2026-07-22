@@ -8,18 +8,18 @@ updated: 2026-07-22
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 22, 2026, 1:45 PM EDT
+Generated: Jul 22, 2026, 5:46 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 54 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 55 note commits. The most recent movement is:
 
+- Source capture: complete tab autocomplete slack exchange.
 - Insight update: publish personal AI study and USD.AI policy.
 - Insight update: audit CCIR against GPU finance theses.
 - Insight update: separate GPU rental price from utilization.
 - Insight update: connect big worlds to personal agent tracking.
 - Insight update: add borrower-side loan test and bandwidth pricing.
-- Insight update: add first-fleet capital mismatch.
 
 ## Current Hub Signals
 
@@ -29,6 +29,29 @@ In the past 7 days, the public vault changed through 54 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 22, 2026, 5:34 PM EDT - source: complete tab autocomplete slack exchange
+
+Source capture: complete tab autocomplete slack exchange.
+
+Changed notes:
+  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+
+### Jul 22, 2026, 5:32 PM EDT - hunch: capture tab prediction entropy objection
+
+hunch: capture tab prediction entropy objection.
+
+Changed notes:
+  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+
+### Jul 22, 2026, 2:35 PM EDT - hunch: expand tab autocomplete intent compression thesis
+
+hunch: expand tab autocomplete intent compression thesis.
+
+Changed notes:
+  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
 
 ### Jul 22, 2026, 1:45 PM EDT - hunch: add personalized computer action autocomplete
 
@@ -100,16 +123,11 @@ Changed notes:
   - [[ccir-memory-bandwidth-band-cross-generation-gpu-rents-2026-07-11|CCIR: cross-generation neocloud rents form a narrow memory-bandwidth band]]
   - [[jakub-borrower-side-gpu-finance-and-shadow-loan-experiment-2026-07-21|Jakub: search from the borrower seat and try to assemble a GPU loan]]
 
-### Jul 21, 2026, 4:59 PM EDT - insight: add first-fleet capital mismatch
-
-Insight update: add first-fleet capital mismatch.
-
-Changed notes:
-  - [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
-  - [[gpu-finance|GPU Finance]]
-
 ## Past 7 Days
 
+- Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+- Jul 22, 2026: hunch: capture tab prediction entropy objection - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+- Jul 22, 2026: hunch: expand tab autocomplete intent compression thesis - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: add personalized computer action autocomplete - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: insight: publish personal AI study and USD.AI policy - [[a-static-personal-demo-cannot-validate-a-dynamic-enterprise-context-system|A static personal demo cannot validate a dynamic enterprise context system]]
 - Jul 22, 2026: insight: audit CCIR against GPU finance theses - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
@@ -132,14 +150,14 @@ Changed notes:
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen shortage versus contract-backed lending opening - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: add fixed-volume compute futures distinction - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: fix rendered dollar amounts - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
-- Jul 20, 2026: article: remove transaction-cost detour - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
-- Jul 20, 2026: article: strengthen verification gap evidence - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
 
-_Showing the newest 25 of 54 updates in this window._
+_Showing the newest 25 of 55 updates in this window._
 
 ## Past 30 Days
 
+- Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+- Jul 22, 2026: hunch: capture tab prediction entropy objection - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+- Jul 22, 2026: hunch: expand tab autocomplete intent compression thesis - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: add personalized computer action autocomplete - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: insight: publish personal AI study and USD.AI policy - [[a-static-personal-demo-cannot-validate-a-dynamic-enterprise-context-system|A static personal demo cannot validate a dynamic enterprise context system]]
 - Jul 22, 2026: insight: audit CCIR against GPU finance theses - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
@@ -162,8 +180,5 @@ _Showing the newest 25 of 54 updates in this window._
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen shortage versus contract-backed lending opening - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: add fixed-volume compute futures distinction - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: fix rendered dollar amounts - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
-- Jul 20, 2026: article: remove transaction-cost detour - [[the-verification-gap-was-not-the-financing-gap|The Verification Gap Wasn't the Financing Gap]]
-- Jul 20, 2026: article: strengthen verification gap evidence - [[research-behind-the-verification-gap-was-not-the-financing-gap|Research behind "The Verification Gap Wasn't the Financing Gap"]]
 
-_Showing the newest 25 of 155 updates in this window._
+_Showing the newest 25 of 158 updates in this window._
