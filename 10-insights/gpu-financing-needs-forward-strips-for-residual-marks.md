@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-06-29
-updated: 2026-07-07
+updated: 2026-07-22
 confidence: high
 domains: [gpu-finance, compute-derivatives, residual-value, asset-backed-lending]
 projects: [gpu-compute-derivatives, gpu-residual-value-pricing]
-sources: [perps-dont-work-for-compute-derivatives-2026-06-12, semianalysis-nvidia-backstop-trinity-2026-07-06, dave-friedman-compute-basis-risk-primer-2026-07-02, dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06]
+sources: [perps-dont-work-for-compute-derivatives-2026-06-12, semianalysis-nvidia-backstop-trinity-2026-07-06, dave-friedman-compute-basis-risk-primer-2026-07-02, dave-friedman-luke-mellor-trophy-deal-trap-2026-04-06, ccir-gpu-compute-credit-research-audit-2026-07-22]
 people: [dave-friedman]
 orgs: []
 aliases: [futures strips feed gpu loan collateral marks, dated compute curves support residual value underwriting]
@@ -51,6 +51,10 @@ This connects compute derivatives directly to the residual-value pricing thesis.
 - People: [[dave-friedman|Dave Friedman]]
 
 ## Updates
+
+### 2026-07-22 - CCIR shows the curve entering drafting before residual credit enters loans
+
+CCIR now publishes committed rental term curves and hypothetical loan provisions that tighten reserves, cash sweeps, amortization, and committed-revenue requirements when reference rental rates fall. This demonstrates a concrete path from a rent curve into credit documents, but not adoption. CCIR also found that all 17 disclosed GPU-collateral schedules in its sample amortize to zero and none cites market residual value. The curve input is arriving before lenders give formal residual credit. See [[public-gpu-loans-do-not-yet-credit-residual-value|the residual-credit insight]].
 
 ### 2026-07-07 - Rating agencies stated the missing mark as their own constraint
 

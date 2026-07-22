@@ -5,7 +5,7 @@ created: 2026-06-29
 updated: 2026-07-22
 domains: [gpu-finance, residual-value, asset-backed-lending, compute-derivatives]
 people: [thomas-galbraith, bernie-margulies, dave-friedman]
-orgs: [barkr, american-compute, ornn]
+orgs: [barkr, american-compute, ornn, ccir]
 tags: [gpu, valuation, guarantees, customer-discovery]
 ---
 
@@ -25,6 +25,10 @@ CCIR adds a separate cross-generation rental lens. In one July 2026 neocloud on-
 
 If that public normalization holds, it weakens the naked GPU-KBB wedge further. Cross-generation rental price may become easier to estimate without proprietary data, while the valuable private layer shifts toward completed hardware transactions, realized utilization, operating costs, and future demand. For lending, the band may price an occupied hour without proving how many hours a fleet will sell.
 
+The wider CCIR audit sharpens the competitive and data boundaries. CCIR already publishes retail sold-listing history, dealer asks, model-implied going-concern values, rental term curves, and public credit records. The vault should no longer say that no public observed resale record exists. The missing tape is institutional: bulk dealer sales, lessor returns, auctions, foreclosures, and portfolio liquidations.
+
+CCIR also found that all 17 disclosed GPU-collateral amortization schedules in its sample reduce the collateral balance to zero and none cites market residual value. That makes the first public partial-amortization or balloon facility tied to an external residual mark the cleanest adoption tripwire.
+
 ## Key Insights
 
 - [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]]: The pure KBB/data-only wedge should stay shelved until buyer-side demand proves standalone willingness to pay.
@@ -40,6 +44,9 @@ If that public normalization holds, it weakens the naked GPU-KBB wedge further. 
 - [[gpu-financing-needs-forward-strips-for-residual-marks|GPU financing needs forward strips for residual marks]]: Dated compute curves could become residual-value underwriting infrastructure.
 - [[compute-is-perishable-capacity-with-an-obsolescence-curve|Compute is perishable capacity with an obsolescence curve]]: Residual marks need to account for perishable capacity and silicon decay.
 - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]: One CCIR snapshot suggests an inference-oriented normalization worth monitoring, not yet a durable law.
+- [[gpu-collateral-has-going-concern-and-liquidation-values|GPU collateral has separate going-concern and liquidation values]]: Deployed earning value, dealer asks, completed retail sales, and bulk liquidation value are different objects.
+- [[public-gpu-loans-do-not-yet-credit-residual-value|Public GPU loans do not yet credit residual value]]: Recovery may matter in underwriting without earning the borrower a balloon or slower amortization.
+- [[ccir-is-building-the-public-compute-credit-data-layer|CCIR is building the public compute-credit data layer]]: Generic public pricing and facility data are already becoming crowded.
 
 ## Sources
 
@@ -49,6 +56,7 @@ If that public normalization holds, it weakens the naked GPU-KBB wedge further. 
 - [[perps-dont-work-for-compute-derivatives-2026-06-12|Perps Don't Work for Compute Derivatives]]
 - [[gpu-financing-blogs-relevance-list-2026-06-29|GPU financing blogs relevance list]]
 - [[ccir-memory-bandwidth-band-cross-generation-gpu-rents-2026-07-11|CCIR memory-bandwidth band]]
+- [[ccir-gpu-compute-credit-research-audit-2026-07-22|CCIR GPU compute-credit research audit]]
 
 ## Decisions
 
@@ -69,6 +77,8 @@ Do not treat Bernie alone as the kill. The demotion comes from the combined evid
 - Would S&P, KBRA, Fitch, or lessors pay for neutral GPU residual data without a guarantee wrapper?
 - Does Barkr's valuation-only inbound demand represent real standalone willingness to pay or just top-of-funnel curiosity?
 - Does CCIR's $/TB/s-hour rental band persist across dates, regions, provider classes, commitment terms, and realized transactions?
+- Can CCIR or another source assemble institutional bulk recovery evidence rather than retail sold listings?
+- What is the first disclosed loan to leave principal outstanding against an external GPU residual mark?
 
 ## Next Tests
 
@@ -81,4 +91,5 @@ Do not treat Bernie alone as the kill. The demotion comes from the combined evid
 - Ask Bernie for one prior quote or policy with target guarantee, premium, source data, and lender/reinsurer pushback.
 - Test whether lenders/lessors would use a surveyed forward strip before exchange liquidity exists.
 - Track CCIR's bandwidth band through time and test it against realized rental revenue before using it in collateral or residual models.
+- Watch for partial amortization, balloons, borrowing-base formulas, or advance-rate terms that explicitly cite an external GPU residual benchmark.
 - Talk to [[ornn|Ornn]] (Wayne / Jack) about their GPU Residual Value Swap, specifically how the reference value is set (internal mark vs external reference vs negotiated deal-by-deal). A live RVS product is a direct probe of who trusts what GPU residual number. Intro from Bernie on 2026-06-17; conversation at scheduling stage.

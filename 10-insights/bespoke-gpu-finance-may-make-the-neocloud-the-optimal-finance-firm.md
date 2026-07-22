@@ -2,13 +2,13 @@
 type: insight
 status: developing
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-22
 confidence: low
 domains: [gpu-finance, ai-infrastructure, capital-markets]
 projects: [gpu-residual-value-pricing]
-sources: [jakub-borrower-side-gpu-finance-and-shadow-loan-experiment-2026-07-21]
+sources: [jakub-borrower-side-gpu-finance-and-shadow-loan-experiment-2026-07-21, ccir-gpu-compute-credit-research-audit-2026-07-22]
 people: [jakub-janiak]
-orgs: []
+orgs: [ccir]
 aliases: [the optimal gpu finance firm may be a neocloud, neoclouds internalize bespoke financing work]
 tags: [neoclouds, vertical-integration, debt-capital-markets, finance-automation]
 ---
@@ -33,6 +33,8 @@ The external opportunity then splits in two:
 - Jakub proposed the hypothesis after reviewing the market's custom contracts and limited standardization.
 - The current research already shows fragmented lender requirements, expensive deal manufacturing, scarce colocation, hardware procurement, customer-credit analysis, and operator diligence.
 - Scaled operators repeatedly return to the capital markets, allowing them to spread specialist finance headcount and relationship costs across many transactions.
+- CCIR's facility and covenant records make the recurring borrower work concrete: maintain GPU and serial-number schedules, map contract expiries against debt maturity, calculate contract realization and debt-service coverage, manage reserves and draw conditions, prepare lender reports, and refinance.
+- CCIR's selected resolved-facility sample reports a seven-month median life excluding bridge loans. The sample is too small and selected for a market-wide conclusion, but it supports the possibility that refinancing is continuous work rather than an occasional event.
 
 ## Counterpoints / Uncertainty
 
@@ -50,4 +52,5 @@ Run a shadow GPU-loan transaction from the operator seat. Track each required ar
 - Source: [[jakub-borrower-side-gpu-finance-and-shadow-loan-experiment-2026-07-21|Jakub: search from the borrower seat and try to assemble a GPU loan]]
 - Related insight: [[gpu-finance-missing-middle-is-partly-a-transaction-cost-problem|GPU finance's missing middle is partly a transaction-cost problem]]
 - Related insight: [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
+- Competitive context: [[ccir-is-building-the-public-compute-credit-data-layer|CCIR is building the public compute-credit data layer]]
 - Area: [[gpu-finance|GPU Finance]]

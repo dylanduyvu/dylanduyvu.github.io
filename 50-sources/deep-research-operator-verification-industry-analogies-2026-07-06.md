@@ -68,5 +68,5 @@ Stage 1: ongoing delivery monitor wired into draw gates/covenants, lender-select
 ## Links
 
 - Synthesis: [[the-ununderwritten-half-of-gpu-credit|The Ununderwritten Half of GPU Credit]]
-- Related Insights: [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]], [[mid-term-monitoring-moves-money-through-loan-events-not-the-rate|Mid-term monitoring moves money through loan events, not the rate]], [[loan-covenants-are-enforced-by-self-reporting-not-measurement|Loan covenants are enforced by self-reporting, not measurement]], [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]]
+- Related Insights: [[operators-want-verification-at-origination-and-resist-it-post-close|Operators want verification at origination and resist it post-close]], [[mid-term-monitoring-moves-money-through-loan-events-not-the-rate|Mid-term monitoring moves money through loan events, not the rate]], [[loan-covenants-are-enforced-by-self-reporting-not-measurement|GPU-loan covenant enforcement mixes direct measurement and self-reporting]], [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]]
 - Areas: [[gpu-finance|GPU Finance]]

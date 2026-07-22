@@ -6,7 +6,7 @@ updated: 2026-07-22
 domains: [gpu-finance, ai-infrastructure, compute-contracts, compute-derivatives, compute-commodities]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 people: [harry-page, thomas-galbraith, bernie-margulies, dave-friedman, brannin-mcbee, connor-moore]
-orgs: [usd-ai, nebius, barkr, american-compute, coreweave, meta, spacex, nvidia, silicon-network]
+orgs: [usd-ai, nebius, barkr, american-compute, coreweave, meta, spacex, nvidia, silicon-network, ccir]
 tags: [gpu, lending, infrastructure]
 ---
 
@@ -49,6 +49,10 @@ American Compute adds that RVI demand may be suppressed by operator residual ove
 The compute-derivatives path points toward dated futures/forward strips rather than perps. That matters because a dated curve could feed residual marks, amortization schedules, and hedges for GPU financing.
 
 CCIR's first cross-generation analysis suggests memory bandwidth may standardize the price of an occupied inference hour. If the band persists, it makes GPU rental pricing easier but does not show how many hours a new fleet will rent. The pricing problem weakens while the utilization and offtake problem becomes more clearly the financing bottleneck. It also pushes a naked GPU-KBB product toward realized utilization, operating costs, completed transactions, and demand forecasts rather than simple cross-generation price normalization.
+
+The broader [[ccir-gpu-compute-credit-research-audit-2026-07-22|CCIR audit]] changes several vault claims. Public retail resale evidence now exists, but institutional bulk-recovery evidence does not. Large GPU facilities measure controlled cash, collateral, and coverage ratios more directly than the early verification thesis allowed, leaving service delivery and revenue causality as the narrower open layer. CCIR's Fitch work also shows that the second-customer problem reaches CoreWeave: the rating case assumes expiring contracts will be replaced at favorable lease rates.
+
+Strategically, [[ccir-is-building-the-public-compute-credit-data-layer|CCIR is already building much of the public compute-credit data layer]]. Generic public pricing, facility tracking, and simple residual-data products are crowded. The more defensible openings sit in institutional transaction data, realized utilization, live booking workflow, borrower/lender software, private underwriting decisions, or risk transfer.
 
 The compute-commoditization path does not require perfect fungibility. The more useful frame is reference grade plus priced basis: DGX/spec may define grade, while operator performance, topology, scale, duration, priority, goodput, MFU, and SLA become basis spreads. This ties directly back to lender verification and residual-value marks.
 
@@ -148,6 +152,11 @@ A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve
 - A young no-offtake fleet may carry equity risk without clear venture-scale project upside, leaving it between venture equity, infrastructure equity, and credit.
 - Memory bandwidth may be a useful inference-oriented unit for comparing cross-generation rental earning power, but the first CCIR print needs time-series and transaction validation.
 - A common price per TB/s-hour could standardize revenue from occupied GPUs without solving how many hours a fleet will rent; price risk and utilization risk remain separate.
+- GPU collateral has separate going-concern and liquidation values; dealer asks are not recovery marks, and retail executes are not bulk liquidation values.
+- The second-customer problem is general, not first-fleet-only. Mature operators can finance the replacement assumption because they have history, scale, ratings, and lender access.
+- Public GPU-loan schedules currently appear to amortize collateral to zero rather than leave a balance against expected residual value.
+- Large GPU loans already measure controlled cash and some contract realization directly; the less measured layer is why cash changed and whether service met the contract.
+- CCIR crowds generic public data products while strengthening the opportunity to automate recurring borrower-side capital-markets work.
 - Borrower-side debt-capital-markets work may be a better problem-search seat than lender diligence because the operator must make the transaction work while the lender can pass.
 - A shadow loan attempt can reveal the binding constraint without first committing to hardware, colocation, customer capacity, or debt.
 - If custom financing stays hard to standardize, the neocloud may be the natural finance firm; the external wedge would be automating its finance function.
@@ -232,6 +241,10 @@ A separate buyer-side hunch is that [[cross-provider-gpu-rental-search-may-solve
 - [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
 - [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
 - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
+- [[contract-rollover-risk-survives-investment-grade-offtake|Contract-rollover risk survives investment-grade offtake]]
+- [[gpu-collateral-has-going-concern-and-liquidation-values|GPU collateral has separate going-concern and liquidation values]]
+- [[public-gpu-loans-do-not-yet-credit-residual-value|Public GPU loans do not yet credit residual value]]
+- [[ccir-is-building-the-public-compute-credit-data-layer|CCIR is building the public compute-credit data layer]]
 
 ## Open Questions
 

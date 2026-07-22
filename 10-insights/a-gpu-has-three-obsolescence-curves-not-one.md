@@ -2,13 +2,13 @@
 type: insight
 status: distilled
 created: 2026-07-08
-updated: 2026-07-08
+updated: 2026-07-22
 confidence: medium-high
 domains: [gpu-finance, residual-value, ai-infrastructure, asset-backed-lending]
 projects: [gpu-residual-value-pricing]
-sources: [dave-friedman-gpu-obsolescence-is-complicated-2026-03-18]
+sources: [dave-friedman-gpu-obsolescence-is-complicated-2026-03-18, ccir-gpu-compute-credit-research-audit-2026-07-22]
 people: [dave-friedman]
-orgs: [nvidia, coreweave]
+orgs: [nvidia, coreweave, ccir]
 aliases: [gpu residual value is a workload waterfall, older chips take a pay cut not unemployment, training-obsolete is not inference-obsolete]
 tags: [obsolescence, residual-value, workload-waterfall, depreciation, underwriting]
 ---
@@ -30,6 +30,7 @@ This hands the residual-value project its missing method. The Kelley-Blue-Book t
 - Same source: V100s (2017) and T4s (2018) still economically employed in the long tail.
 - 2026-07-07 (Shkreli console screenshot, corroboration): the vintage gradient live, current-generation sold out at $4-7/hr while A100s sat bookable at $1.99: the down-stack tiers visibly priced and occupied.
 - Convergent: SemiAnalysis's AI TCO Model advertises a "GPU residual value framework," and NVIDIA's declining backstop floors ($3.68 to $1.04 over six years) are consistent with accelerated-not-cliff decay on the rental side.
+- 2026-07-22 (CCIR): executed secondary-market histories and rental cohorts for different generations do not collapse onto one common age curve. Rental declines happen in steps, and demand episodes can push older generations upward. This independently supports generation-specific, demand-sensitive paths while remaining retail and posted-price evidence rather than institutional recovery data.
 
 ## Implications
 
@@ -44,6 +45,7 @@ This hands the residual-value project its missing method. The Kelley-Blue-Book t
 - Inference-curve shallowness is scarcity-dependent: if demand growth slows or new architectures orphan old chips (his own listed uncertainty), the middle curve steepens toward the training curve, and the 95 percent rebooking becomes a boom artifact rather than structure.
 - Demand depth at lower tiers is the load-bearing unknown: down-stack migration only works if the tiers below can absorb the volume coming off the tier above. Nobody has published tier-depth data. Partial first instrument, 2026-07-09 (Friedman, Hugging Face downloads): text-generation models are only 17.6% of top-3,000 download activity, with embedding/similarity/classification work collectively larger - a public, author-caveated gesture at how broad and cheap-per-invocation the lower workload tiers are. Weak proxy (downloads are not executions or accelerator-hours), but it demonstrates the public-data path this note's open question asks about.
 - The waterfall method requires workload-tier price and demand data that may only exist inside the term-sheet shops; the method being right does not make it runnable from outside.
+- CCIR's generation histories strengthen the rejection of one smooth curve but do not prove Friedman's exact three-tier workload decomposition.
 
 ## Links
 

@@ -85,4 +85,4 @@ The Missing Primitive section: a liquid benchmark would give mark-to-market for 
 - People: [[dave-friedman|Dave Friedman]]
 - Orgs: [[coreweave|CoreWeave]], [[nvidia|NVIDIA]]
 - Related Sources: [[dave-friedman-where-gpu-debt-starts-to-break-2026-04-19|Where GPU Debt Starts to Break]] (the sequel), [[semianalysis-nvidia-backstop-trinity-2026-07-06|SemiAnalysis Trinity]]
-- Related Insights: [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]], [[loan-covenants-are-enforced-by-self-reporting-not-measurement|Loan covenants are enforced by self-reporting, not measurement]]
+- Related Insights: [[the-verification-gap-is-contract-defined-delivery-and-revenue-truth|The verification gap is contract-defined delivery and revenue truth]], [[loan-covenants-are-enforced-by-self-reporting-not-measurement|GPU-loan covenant enforcement mixes direct measurement and self-reporting]]

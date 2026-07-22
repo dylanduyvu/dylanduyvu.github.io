@@ -2,13 +2,13 @@
 type: inbox
 status: hunch
 created: 2026-07-20
-updated: 2026-07-20
+updated: 2026-07-22
 confidence: low
 domains: [gpu-finance, gpu-marketplaces, ai-infrastructure]
 projects: []
-sources: [zile-cao-blockchain-capital-call-2026-07-10, gpu-loans-without-long-term-customer-claim-ledger-2026-07-19, compute-markets-cooper-veit-buyer-visibility-telegram-2026-07-20]
+sources: [zile-cao-blockchain-capital-call-2026-07-10, gpu-loans-without-long-term-customer-claim-ledger-2026-07-19, compute-markets-cooper-veit-buyer-visibility-telegram-2026-07-20, ccir-gpu-compute-credit-research-audit-2026-07-22]
 people: [cooper-veit]
-orgs: [aravolta, usd-ai, silicon-data]
+orgs: [aravolta, usd-ai, silicon-data, ccir]
 aliases: [neocloud rental aggregator, cross-provider gpu rental search, gpu availability frontend]
 tags: [hunch, gpu-rentals, neoclouds, aggregation, customer-discovery]
 ---
@@ -40,6 +40,7 @@ A better search layer could reduce the time needed to match buyers with availabl
 - Cooper Veit described buyer visibility and specification as underdeveloped after spending six months on the problem. His ideal workflow lets a buyer state auditable requirements and receive bids from multiple vetted providers. This is direct support for a structured search and bidding need, but not yet evidence that buyers will pay.
 - Dave Friedman pointed to Silicon Data's SiliconMark as an adjacent solution. Its public page covers performance benchmarking and provider comparison, but does not present live availability, structured buyer requests, or provider bidding.
 - That existing category is not proof that discovery is solved. The open question is whether buyers can compare live inventory across providers using the configuration details that determine whether a cluster is usable.
+- CCIR already publishes provider-segmented rates, term curves, hardware observations, and an explorer. This further crowds a static comparison site. The remaining wedge would need live bookable inventory, buyer requests, routing, negotiation, or transaction execution rather than another public table.
 
 ## Product Boundary
 
@@ -73,3 +74,7 @@ Promote this hunch if several buyers describe the same search failure and agree 
 Initial capture as a low-confidence buyer-discovery hunch. Kept separate from the established marketplace category until direct buyer evidence shows that cross-provider search and configuration filtering remain broken.
 
 Later the same day, added the Compute Markets discussion that inspired the hunch. Cooper Veit's six months of work and explicit buyer-visibility complaint strengthen the reason to investigate. Confidence remains low because he described a problem and technical ambition, not a buyer purchase or willingness to pay.
+
+### 2026-07-22
+
+Added CCIR as another adjacent competitor. A useful test must now distinguish static comparison, which is increasingly supplied, from live discovery and booking, which may still be broken.

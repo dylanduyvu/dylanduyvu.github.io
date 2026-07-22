@@ -2,13 +2,13 @@
 type: insight
 status: distilled
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-22
 confidence: medium-high
 domains: [gpu-finance, asset-backed-lending, compute-contracts]
 projects: [gpu-residual-value-pricing, gpu-compute-novation]
-sources: [coreweave-issued-yet-more-debt-2026-05-28, gpu-backed-debt-contract-backed-inversion-2026-06-30, usd-ai-call-harry-page-2026-06-29, barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16]
+sources: [coreweave-issued-yet-more-debt-2026-05-28, gpu-backed-debt-contract-backed-inversion-2026-06-30, usd-ai-call-harry-page-2026-06-29, barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, american-compute-bernie-ceo-call-2026-06-16, ccir-gpu-compute-credit-research-audit-2026-07-22]
 people: [dave-friedman, harry-page, thomas-galbraith, bernie-margulies]
-orgs: [coreweave, usd-ai, barkr, american-compute]
+orgs: [coreweave, usd-ai, barkr, american-compute, ccir]
 aliases: [gpu-backed debt is really contract-backed, asset is backstop not engine, gpu collateral is recovery floor]
 tags: [gpu, lending, collateral, credit]
 ---
@@ -36,6 +36,7 @@ It also explains why bare compute contracts and naked residual-value data both f
 - 2026-06-16: Bernie said lenders focus overwhelmingly on offtake and treat residual value as worst-case recovery.
 - USD.AI's underwriting mechanics make the size/rate split explicit: hardware sets loan size and recovery floor (~80% LTV, perfectable-title jurisdictions), while the graded offtake contract sets the rate (IG ~7-9%, multi-year non-IG ~10-12%, spot ~12-15%, with 24+ months required for the top two tiers). Provenance: compiled model of USD.AI, not from the 2026-06-29 transcript; see [[usd-ai|USD.AI]] Underwriting Model.
 - 2026-07-01: Bernie's AC article independently reports boutique private credit lending to small GPU operators at 12-15% (vs 4-5% IG corporates), corroborating the rate ladder as market-wide structure.
+- 2026-07-22: CCIR's public-facility audit shows the legal package directly. A GPU SPV can pledge the machines, customer contract rights, datacenter rights, controlled accounts, and the borrower's equity. Public CoreWeave structures also test debt service and contract cash, confirming that the financed object is an operating project rather than loose hardware.
 
 ## Confluence
 
@@ -49,6 +50,7 @@ Together, they make the claim much stronger than either source alone. Friedman s
 - A useful GPU finance product likely has to bridge cash-flow underwriting and collateral recovery, not choose one side.
 - SLA/uptime verification matters because it protects the contract cash-flow engine before the lender has to rely on hardware recovery.
 - Residual valuation still matters, but mainly as the downside backstop that determines loss-given-default and advance rates.
+- Hardware recovery has at least two states: a higher going-concern value if the operating setup survives and a lower liquidation value if the hardware must be sold. See [[gpu-collateral-has-going-concern-and-liquidation-values|the collateral-value distinction]].
 - If offtaker credit drives debt pricing, the market may centralize around operators with investment-grade anchor customers, because cheap capital compounds into more bankable customer wins.
 
 ## Counterpoints / Uncertainty
@@ -89,3 +91,7 @@ Added USD.AI's explicit size-vs-rate underwriting mechanics as concrete evidence
 ### 2026-07-01
 
 Added independent corroboration of the rate ladder from Bernie's AC article (boutique tier at 12-15%), and the correlated-failure caveat: delay is a common cause that stalls the contract engine while sinking the hardware floor.
+
+### 2026-07-22
+
+Added CCIR's public SPV evidence. The collateral package combines GPUs, contracts, datacenter rights, controlled cash, and equity pledges, which supports the "packaged project credit" framing more directly than the prior inference alone.

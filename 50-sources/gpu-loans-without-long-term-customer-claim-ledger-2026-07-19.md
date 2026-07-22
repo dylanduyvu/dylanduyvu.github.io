@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-19
-updated: 2026-07-20
+updated: 2026-07-22
 source_date: 2026-07-19
 source_type: research
 projects: []
@@ -23,6 +23,7 @@ orgs:
     cme-group,
     ice,
     ornn,
+    ccir,
   ]
 attachments: []
 tags:
@@ -64,6 +65,16 @@ Forward prices and compute futures can make future rental prices easier to estim
 ## Thesis In One Sentence
 
 A compute shortage is not a repayment stream. A forward price can tell a lender what GPU-hours may rent for, but not how many hours a particular fleet will sell over the life of the loan.
+
+## 2026-07-22 CCIR Update
+
+CCIR adds three important refinements without changing the locked thesis:
+
+1. **Rollover risk reaches the top of the market.** Fitch's rating case for CoreWeave DDTL 5.5 assumes CoreWeave can renew or replace customer contracts that expire before the debt matures at favorable GPU lease rates. The problem is not unique to new operators. Mature operators have enough history, scale, and market access for lenders to underwrite the assumption.
+2. **The price tools are arriving.** CCIR publishes committed-term rental curves and hypothetical credit provisions that tighten reserves, cash sweeps, amortization, and committed-revenue requirements as reference rental rates fall. These are drafting examples, not evidence of lender adoption.
+3. **Utilization remains the weak input.** CCIR can increasingly measure posted rental price, but says only Vast.ai directly exposes rented units against total units. Public availability is not occupancy. The hard part remains how many hours one fleet will sell.
+
+Full audit: [[ccir-gpu-compute-credit-research-audit-2026-07-22|CCIR GPU compute-credit research audit]].
 
 ## Causal Chain
 

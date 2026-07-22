@@ -2,13 +2,13 @@
 type: insight
 status: distilled
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-22
 confidence: high
 domains: [gpu-finance, residual-value, asset-backed-lending, startup-validation]
 projects: [gpu-residual-value-pricing]
-sources: [gpu-kbb-demotion-decision-2026-06-30, american-compute-bernie-ceo-call-2026-06-16, barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, usd-ai-call-harry-page-2026-06-29]
+sources: [gpu-kbb-demotion-decision-2026-06-30, american-compute-bernie-ceo-call-2026-06-16, barkr-thomas-gpu-asset-pricing-guarantee-2026-06-18, usd-ai-call-harry-page-2026-06-29, ccir-gpu-compute-credit-research-audit-2026-07-22]
 people: [bernie-margulies, thomas-galbraith, harry-page]
-orgs: [american-compute, barkr, usd-ai]
+orgs: [american-compute, barkr, usd-ai, ccir]
 aliases: [gpu kbb thesis is shelved pending buyer test, data-only gpu residual thesis needs demand-side validation, naked gpu valuation product needs buyer willingness to pay]
 tags: [gpu, valuation, customer-discovery, thesis-status]
 ---
@@ -31,6 +31,8 @@ This prevents two opposite mistakes: overcommitting to a naked-data product afte
 - 2026-06-18: Thomas said GPU clients mostly want the guarantee, not just the valuation, though Barkr recently launched valuation-only platform access because of inbound demand.
 - 2026-06-30: The business-model analysis reframed KBB/Moody's-style residual data as a slow trust and standard-setting game where Barkr may already have a data, Munich Re credibility, and distribution lead.
 - 2026-06-29: USD.AI, as a *consumer* rather than a supplier, buys Barkr's reinsured value warranty (the wrapper) locked day one rather than raw valuation data. This is a demand-side data point in the same direction: the party actually deploying capital pays for the guarantee, not the naked number.
+- 2026-07-22: CCIR already publishes public rental rates, term curves, retail sold listings, asks, and model-implied going-concern values. This increases competitive pressure on a generic public data product without proving that buyers will pay for an institutional residual benchmark.
+- 2026-07-22: CCIR found 17 disclosed GPU-collateral amortization schedules that reduce the balance to zero and none that cites market residual value. The first real partial-amortization or balloon loan tied to an external GPU mark is now the sharper adoption test.
 
 ## Implications
 
@@ -39,6 +41,7 @@ This prevents two opposite mistakes: overcommitting to a naked-data product afte
 - Resurrect the data-only thesis only if three independent buyers say they would pay for neutral GPU residual data on its own.
 - If buyers do not show standalone willingness to pay, kill the naked-data thesis cleanly and focus residual-value work on wrappers, guarantees, lessors, or data inputs to risk-transfer products.
 - The broader GPU residual-value pricing project remains alive; only the pure KBB/data-only wedge is demoted.
+- Do not mistake public data supply for commercial demand. CCIR proves the category is being built; it does not prove a lender budget or change in loan terms.
 
 ## Counterpoints / Uncertainty
 
@@ -65,3 +68,7 @@ Initial capture from the KBB demotion decision memo.
 ### 2026-06-30
 
 Added USD.AI as a consumer-side data point (it buys Barkr's wrapped warranty, not raw data), which partially addresses the note's selection-bias caveat. Noted it is still a wrapper-chooser, so the neutral buyer batch remains the deciding test.
+
+### 2026-07-22
+
+Added CCIR as a live competitor and narrowed the adoption tripwire. The useful test is now a real loan that gives formal borrowing credit to an external residual mark through partial amortization, a balloon, or an advance-rate formula. See [[ccir-is-building-the-public-compute-credit-data-layer|the competitive read]] and [[public-gpu-loans-do-not-yet-credit-residual-value|the amortization insight]].

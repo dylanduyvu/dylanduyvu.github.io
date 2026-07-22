@@ -6,7 +6,7 @@ updated: 2026-07-22
 confidence: low
 domains: [gpu-finance, compute-markets, residual-value, inference]
 projects: [gpu-residual-value-pricing]
-sources: [ccir-memory-bandwidth-band-cross-generation-gpu-rents-2026-07-11]
+sources: [ccir-memory-bandwidth-band-cross-generation-gpu-rents-2026-07-11, ccir-gpu-compute-credit-research-audit-2026-07-22]
 people: [jakub-janiak]
 orgs: [ccir]
 aliases: [memory bandwidth may be the cross-generation gpu rental unit, gpu rents per TB per second]
@@ -46,7 +46,7 @@ That is the most important consequence for the current financing research. A len
 
 - **Mixed fleets become easier to compare.** Lenders could normalize different GPU generations using inference capacity instead of treating each chip as a separate asset.
 - **Rental-based residual forecasts become simpler.** Older GPUs may retain earning power in proportion to their memory bandwidth instead of losing value merely because a new generation launched.
-- **Purchasing shifts away from newest-is-best.** An operator should compare purchase price and operating cost per TB/s, not just the generation name.
+- **Purchasing needs a separate cost comparison.** The rental band does not show which generation is cheapest to own. CCIR's purchase-price work suggests acquisition cost per TB/s fell roughly 2.5 times from A100 to H200/B200 while posted rent per TB/s stayed flat, which can make newer silicon more attractive on gross economics.
 - **Compute becomes more commodity-like.** A durable standard unit could support indexes, forward contracts, and more repeatable loan models.
 - **Raw neocloud margins face more pressure.** Easier comparison moves differentiation toward utilization, reliability, networking, location, and service.
 
@@ -54,7 +54,7 @@ The same result would make a naked GPU-KBB product somewhat less attractive. If 
 
 ## Boundaries
 
-This is not evidence that GPUs are fully fungible, that bandwidth determines purchase or resale value, or that all inference is bandwidth-bound. The result is based on posted asks from one provider segment, region, term, and date. It uses nameplate bandwidth rather than measured throughput and does not capture memory capacity, interconnect, software, reliability, utilization, or realized discounts.
+This is not evidence that GPUs are fully fungible, that bandwidth determines purchase or resale value, that older GPUs are the better purchase, or that all inference is bandwidth-bound. The result is based on posted asks from one provider segment, region, term, and date. It uses nameplate bandwidth rather than measured throughput and does not capture acquisition cost, energy, memory capacity, interconnect, software, reliability, utilization, or realized discounts.
 
 The claim should gain confidence only if the band persists over time and reproduces in transaction prices or realized operator revenue. Today it is a strong hypothesis, not a market law.
 
@@ -65,3 +65,9 @@ The claim should gain confidence only if the band persists over time and reprodu
 - Related: [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
 - Related: [[compute-can-commoditize-without-full-fungibility|Compute can commoditize without full fungibility]]
 - Project: [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
+
+## Updates
+
+### 2026-07-22 - Purchase implication corrected
+
+The first version moved too quickly from flat rent per TB/s to "the best GPU may not be the newest." CCIR's own acquisition-cost analysis shows newer H200/B200 silicon costing much less per unit of bandwidth than A100 while earning a similar posted rent per unit. Bandwidth can normalize the revenue side; it does not select the best purchase without the cost side.
