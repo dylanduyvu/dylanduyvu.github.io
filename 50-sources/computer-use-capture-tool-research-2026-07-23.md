@@ -1,0 +1,151 @@
+---
+type: source
+status: captured
+created: 2026-07-23
+updated: 2026-07-23
+projects:
+  - personal-ai-context-learning
+domains:
+  - personalized-ai
+  - human-computer-interaction
+  - next-action-prediction
+tags:
+  - data-acquisition
+  - computer-use
+  - recorder-research
+  - napsack
+  - screenpipe
+---
+
+# Computer-use capture-tool research, July 23, 2026
+
+## Question
+
+After the live Screenpipe audit, the remaining acquisition problem was:
+
+> Is there an out-of-the-box recorder that can capture hours of Dylan's normal two-monitor Mac use while preserving exact Arc webpage targets, native application controls, timestamps, and leakage-safe pre-action visual state?
+
+## Bottom line
+
+No single available tool satisfies the complete requirement.
+
+The missing combination is:
+
+1. exact Arc DOM targets and webpage focus;
+2. exact native macOS control identity;
+3. both displays at every prediction point;
+4. raw, timestamped, machine-readable events;
+5. passive or low-friction recording for one to two hours or longer; and
+6. a clean frame from before the action rather than after it.
+
+Some tools solve two or three of these. None solves all six without validation or light integration.
+
+The lowest-engineering next move is not to abandon Screenpipe or begin a long collection. It is to run a short calibration with **Screenpipe plus NAPsack**, then add a browser recorder only if Arc remains the failing layer.
+
+## Recommended acquisition ladder
+
+### 1. First calibration: Screenpipe plus NAPsack
+
+[NAPsack 0.1.3](https://github.com/GeneralUserModels/napsack) is runnable today with `pip install napsack`. It is also the collection tool from the General User Models / LongNAP research line, making it directly relevant rather than merely adjacent tooling.
+
+Run it with accessibility capture and raw screenshot retention:
+
+```bash
+napsack-record \
+  --session-dir ./logs/dylan-calibration \
+  --accessibility \
+  --buffer-all-images
+```
+
+NAPsack adds:
+
+- timestamped mouse-down, mouse-up, mouse-move, scroll, key-press, and key-release events;
+- cursor coordinates and monitor metadata;
+- screenshot and event JSONL output;
+- a screenshot stream from the display containing the cursor; and
+- macOS Accessibility hit-testing on mouse-down, including best-effort role, title, description, identifier, DOM identifier, URL, value, and focused-element data.
+
+It does **not** add:
+
+- a simultaneous screenshot of both monitors;
+- a structured application, bundle, window, browser-tab, or page-URL event stream;
+- control bounds;
+- an authoritative DOM selector or node path; or
+- guaranteed Arc control identity.
+
+Screenpipe remains useful alongside it because Screenpipe supplies the two-monitor history, application and window transitions, Arc URLs, OCR, and existing raw events. NAPsack supplies a second event clock, per-action screenshots, and a different click-time Accessibility lookup. The calibration asks whether the two together reconstruct exact targets reliably enough without custom code.
+
+### 2. Add only if Arc is still weak: UI + API Recorder
+
+[UI + API Recorder](https://chromewebstore.google.com/detail/ui-%2B-api-recorder/dcjnljbaccofglbdpcmllnghchfjicfk) is the closest installable browser companion found.
+
+Its published requirements explicitly include Arc and other Chromium 109+ browsers. During an explicitly started recording, it exports local timestamped `events.json` data containing the clicked element's role, computed accessible name, test ID, label, placeholder, text, CSS path, iframe URL, semantic peers, and ancestor anchors. It can follow navigation and tabs opened from the recorded flow.
+
+Important limits:
+
+- it is very new and lightly exercised;
+- it records webpage content, not Arc's own sidebar, tab chrome, or URL bar;
+- its current events do not include click coordinates, element bounds, or `focus` and `blur`;
+- it follows tabs opened by the recorded flow rather than passively observing every unrelated Arc tab;
+- it requires explicit start and stop; and
+- its broad site and debugger permissions warrant using a dedicated or non-sensitive Arc profile for the pilot.
+
+This should be added only if the first calibration shows that exact webpage controls are the bottleneck. Its epoch-millisecond timestamps make it possible to join its events to Screenpipe and NAPsack.
+
+### 3. If the short hybrid still fails
+
+Do not collect hours of ambiguous data. At that point the available paths are:
+
+- make a small trusted Arc extension that records DOM target, bounds, focus, tab identity, URL, and epoch timestamp;
+- patch an existing recorder to add those fields; or
+- narrow the prediction target to the coarser level the recorders can observe honestly.
+
+## Short calibration protocol
+
+Before a one-to-two-hour natural session, perform 30 known interactions while Screenpipe and NAPsack run:
+
+- 10 native macOS or desktop-app controls;
+- 10 ordinary Arc DOM controls such as links, buttons, and text fields;
+- 5 custom or dynamic webpage controls such as menus, popovers, or SPA components; and
+- 5 interactions that alternate between the two monitors.
+
+Keep a simple independent checklist of the intended target for each action. Then audit:
+
+- whether every physical action appeared;
+- whether the pre-action frame is from the correct display and precedes the action;
+- whether app, window, page, and exact control can be recovered;
+- whether the semantic label came from direct DOM/Accessibility evidence or visual inference;
+- whether the resulting state confirms the label without leaking into model input; and
+- whether duplicate or missing events make the streams impossible to join.
+
+Do not move to a long collection unless browser and native targets each clear the existing roughly 90% exact-target gate, unresolved events remain in the denominator, and no second-monitor action is silently lost.
+
+## Other tools considered
+
+| Tool | Useful capability | Why it is not the default |
+|---|---|---|
+| [AgentNetTool](https://github.com/xlang-ai/AgentNetTool) | Records screen video, mouse and keyboard, native Accessibility data, and optional webpage HTML / exact DOM click targets | Highest browser-label ceiling, but its Mac setup requires OBS, officially records the main display, uses task-sized sessions, and Arc compatibility is unverified |
+| [Screencap](https://github.com/proteus-computer-use/screencap) | Whole-day, crash-safe chunks; raw SQLite and JSONL; click-time native AX role, title, identifier, position, and size | Strong long-session candidate, but no DOM instrumentation, its standard JSONL drops stored element state, and its current macOS multi-display capture is not trustworthy |
+| [OpenAdapt Capture](https://github.com/OpenAdaptAI/openadapt-capture) | Time-aligned local mouse, keyboard, window, combined-display video, coordinates, and SQLite | Its own documentation says desktop capture records pixels and coordinates rather than structural Accessibility locators; browser extension is experimental |
+| [Folge](https://folge.me/) | Mac app; screenshots on every click; active-window or multi-monitor capture; click markers; JSON export; automatic control names | Designed for guides, not a raw chronological research stream; its own docs estimate only 70–80% automatic element parsing |
+| [rrweb](https://github.com/rrweb-io/rrweb) | Precise browser DOM snapshots, mutations, pointer events, input, focus, blur, coordinates, and epoch timestamps | Requires post-processing node IDs into targets and does not cover browser chrome or native apps |
+| [UI.Vision](https://ui.vision/rpa/docs/) | Mature browser recorder with CSS/XPath-style selectors and JSON macros | Lacks useful wall-clock timestamps, bounds, and focus stream for joining to Screenpipe |
+| Chrome DevTools Recorder | Strong browser selectors and click offsets | Chrome-only developer workflow, not reliable for normal Arc use and lacks wall-clock timestamps |
+| Scribe and Tango | Easy cross-page workflow documentation | Export human-readable guides rather than a complete raw semantic event stream; Tango explicitly says Arc is unsupported |
+| Power Automate, UiPath Task Mining, and similar enterprise RPA recorders | Strong UI selectors on supported systems | Recorder clients are Windows-only |
+| Tada / powerNAP | Runnable personal-AI interface using NAPsack underneath | Adds prediction and UI, not higher-fidelity capture; its defaults retain less raw evidence than the proposed direct NAPsack run |
+| Markov | Rich private collection pipeline and released data samples | No public self-recorder; released samples lack exact control targets and browser URLs |
+
+## Consequence for the experiment
+
+The prediction LBH remains deferred behind acquisition. The immediate result worth producing is a recorder coverage result:
+
+> Can existing tools independently recover Dylan's exact next destination from normal Mac and Arc actions with little enough label noise to make a prediction result interpretable?
+
+If this fails, the conclusion is about the acquisition stack, not the predictability of Dylan's behavior.
+
+## Links
+
+- Experiment: [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Screenpipe audit: [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
+- Project: [[personal-ai-context-learning|Personal AI Context Learning]]

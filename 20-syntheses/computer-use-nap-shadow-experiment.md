@@ -13,6 +13,7 @@ sources:
   - dylan-niyant-computer-use-nap-followup-2026-07-22
   - omar-shaikh-computer-use-personalization-stack-2026-07-22
   - screenpipe-live-capture-audit-2026-07-23
+  - computer-use-capture-tool-research-2026-07-23
 people:
   - dylan-vu
   - niyant
@@ -67,6 +68,24 @@ Post-hoc coordinate mapping into Arc's accessibility tree recovered two button h
 Dylan also uses two monitors. Screenpipe stores them separately and uses combined-desktop pointer coordinates. Every pre-action observation must therefore include the most recent leakage-safe frame from both displays. `ui_events.frame_id` cannot be used blindly because linked frames can precede or follow the event by seconds, describe another monitor, or already show the destination.
 
 Full evidence and the raw acquisition schema are preserved in [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]].
+
+## Recorder research decision
+
+No single turnkey Mac recorder was found that combines exact Arc DOM targets, exact native controls, both monitors, raw timestamped events, and low-friction recording for hours of normal work.
+
+The next move is a short acquisition calibration, not a long collection:
+
+1. Keep Screenpipe running for both-monitor frames, applications, windows, URLs, OCR, and its existing event stream.
+2. Run NAPsack directly with `--accessibility --buffer-all-images` for a second raw action stream, active-monitor screenshots, and click-time macOS Accessibility hit-testing.
+3. Exercise 30 known native, ordinary-web, dynamic-web, and cross-monitor interactions.
+4. Add the Arc-compatible UI + API Recorder only if exact webpage controls remain the failing layer.
+5. Begin one-to-two-hour natural capture only if the short stack clears the exact-target gate.
+
+NAPsack is the preferred first addition because it is runnable today, comes from the same General User Models / LongNAP research line, and adds the specific click-time evidence Screenpipe lacks. It does not solve dual-monitor context or authoritative DOM identity by itself, which is why Screenpipe remains in the stack and browser instrumentation stays conditional.
+
+AgentNetTool has the highest out-of-the-box browser-label ceiling because its optional extension records DOM click targets and HTML, while its desktop tool captures input and Accessibility data. It is not the default because its Mac setup depends on OBS, officially records the main display, is designed around task-sized demonstrations, and has not been validated in Arc.
+
+Full comparisons and limitations are preserved in [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]].
 
 ## Acquisition-first scope
 

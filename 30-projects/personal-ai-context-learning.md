@@ -46,6 +46,8 @@ Dylan decided not to use Tabracadabra as a separate experiment. The planned pred
 
 The current LBH is therefore an acquisition gate: determine whether an out-of-the-box or minimally augmented recorder can reconstruct roughly 90% or more of 50–100 meaningful browser and native-app actions as exact semantic targets, paired with a leakage-safe pre-action frame from both monitors. Ambiguous and unresolved events remain in the denominator. Only after this passes should the project compare exact top-one and top-three destinations under recency, source-transition, screen-only, correct-history, mismatched-history, and declared-goal conditions.
 
+Recorder research found no single turnkey Mac tool that combines exact Arc DOM targets, native control identity, both displays, raw timestamps, and hours of passive capture. The lowest-engineering acquisition ladder is now: keep Screenpipe as the two-monitor application/window/URL backbone; run a short NAPsack calibration with Accessibility and raw screenshots enabled; add the Arc-compatible UI + API Recorder only if webpage controls remain the failing layer; and begin a long collection only after the hybrid passes the exact-target gate. See [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]].
+
 The NAP experiment is one side of Dylan's current branch-selection LBH, not yet the chosen next project. The competing GPU branch has been sharpened from “find an offtake customer” into a demand-informed configuration gate: determine which small-server GPU configuration, if any, deserves to be purchased based on workload-specific customer evidence or defensible marketplace behavior. See [[gpu-configuration-demand-gate|GPU configuration demand gate]].
 
 A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence for feasibility. Once a personalized predictor shows suggestions, it helps cause the future behavior it learns from. Exposed-history accuracy may rise because the model understands the person better, because the person is conforming to the model's historical predictions, or both. This makes shadow mode, randomized exposure, goal-change tests, washout periods, and agency/diversity measures necessary before treating online accuracy or acceptance as evidence of deeper personalization.
@@ -92,6 +94,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[dylan-niyant-computer-use-nap-followup-2026-07-22|Dylan and Niyant: computer-use NAP contribution follow-up]]
 - [[omar-shaikh-computer-use-personalization-stack-2026-07-22|Omar Shaikh's computer-use personalization stack]]
 - [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
+- [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 - [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
 - [World Models public notes](https://handsdiff.github.io/)
 - [Pinned public notes snapshot](https://github.com/handsdiff/notes/tree/3151afa93fd81719a6e9dc7862c269ea1f1a70e6)
