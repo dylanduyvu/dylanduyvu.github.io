@@ -205,7 +205,17 @@ The `Algorithms` scratchpad calls **LongNAP** “THE baseline” because it had 
 
 LongNAP therefore raises the bar and supplies an experimental baseline; it does **not** validate this thesis’s specific claims about faithful event reconstruction, personal semantic gain, goal-like representations, useful participation, or continual improvement.
 
-### 1.10 A new failure-mode model: evolving values under personalized AI
+### 1.10 The closest runnable interaction: Tada and Tabracadabra
+
+[Tada](https://generalusermodels.github.io/tada/) is Omar Shaikh's public research platform for testing personal-AI interfaces. Niyant directly links the Tada repository in his `Algorithms` note, which verifies that he knows the platform exists, although the note does not show whether he has installed or deeply inspected its first interaction.
+
+That first interaction, Tabracadabra, uses Option+Tab inside a field the user has already selected. It captures the current monitor and cursor, lets a research phase inspect relevant Tada activity records, and then streams a separate writer phase's continuation or inline answer into the field. The current implementation uses two inference phases with the same configured model identifier; it does not require a distinct research model and writer model.
+
+Tabracadabra is important prior art but not Phase 1 evidence. It retrieves personal records at inference time, does not demonstrate that a model trained on longitudinal behavior beats retrieval, and does not choose the user's next destination. It is a **writer**, while Dylan's proposed computer-use NAP first tests the **router**: which exact semantic field, document, thread, tab, or control will the user focus next?
+
+Dylan therefore decided not to make a Tabracadabra trial the next experiment. See [[omar-shaikh-computer-use-personalization-stack-2026-07-22|the prior-art source]], [[tabracadabra-is-a-retrieval-augmented-writer-not-a-computer-use-nap|the mechanism boundary]], and [[computer-use-nap-shadow-experiment|the direct shadow experiment]].
+
+### 1.11 A new failure-mode model: evolving values under personalized AI
 
 Google DeepMind's July 2026 paper [*AI Value Alignment for Evolving Social Norms*](https://arxiv.org/abs/2607.18506) does not show that Phase 1 prediction works. It studies what can happen after a personalized assistant begins influencing the person it models.
 
@@ -469,6 +479,8 @@ This identifies the current **planned work focus** as data design and a clean Ph
 
 Dylan’s section adds useful decision context: he wrote that he had not yet gone through Niyant’s notes or conviction ladder over the weekend. His goal was to understand the personalization interim thesis by Wednesday and then choose a new LBH either within that thesis or around GPU financing. The meeting note therefore records an active evaluation, not a settled team commitment to the full roadmap.
 
+In a July 22 follow-up, Dylan asked what Niyant would have him, or a second pair of hands generally, build to contribute to the vision. Dylan reported that Niyant's answer was to build the computer-use NAP concept. This makes exact semantic computer routing an endorsed complementary workstream rather than an outside alternative to Niyant's next-write experiment. The answer establishes relevance but leaves the target and implementation scope open. See [[dylan-niyant-computer-use-nap-followup-2026-07-22|the source capture]].
+
 ### A potentially confusing status label
 
 [Local Tasking](https://handsdiff.github.io/local-tasking) calls Phases 1–3 “DONE,” but the surrounding checklist shows that this means the documents were drafted and enriched with failure modes. Data design is still in progress; ingestion, experiment implementation, and experiment publication are later. The all-hands notes reinforce that interpretation.
@@ -696,8 +708,9 @@ For a nontechnical reader, this order gives the highest signal:
 2. [Phase 2 abstract, assumptions, pair construction, and evaluation](https://handsdiff.github.io/phase-2)
 3. [Phase 3 introduction, model roles, local-reward warning, and experimental sequence](https://handsdiff.github.io/phase-3)
 4. [Local Tasking](https://handsdiff.github.io/local-tasking) and [All hands 7.20](https://app.notion.com/p/3a3307288ccf800c9d43e5386a0a1b4f) for current status
-5. [AI Value Alignment for Evolving Social Norms](https://arxiv.org/abs/2607.18506) as a feedback-loop red-team, not Phase 1 evidence
-6. [Entry](https://handsdiff.github.io/entry), [Algorithms](https://handsdiff.github.io/algorithms), and [Data](https://handsdiff.github.io/data) only after the formal structure is clear
+5. [[omar-shaikh-computer-use-personalization-stack-2026-07-22|Omar Shaikh's computer-use personalization stack]] for LongNAP, Tada, and the writer-versus-router boundary
+6. [AI Value Alignment for Evolving Social Norms](https://arxiv.org/abs/2607.18506) as a feedback-loop red-team, not Phase 1 evidence
+7. [Entry](https://handsdiff.github.io/entry), [Algorithms](https://handsdiff.github.io/algorithms), and [Data](https://handsdiff.github.io/data) only after the formal structure is clear
 
 The scratch notes are valuable because they expose genuine uncertainty, but they are a poor starting point: they mix current plans, abandoned framings, links, product ideas, and unanswered questions.
 
@@ -709,4 +722,8 @@ The scratch notes are valuable because they expose genuine uncertainty, but they
 - Phase 2: [[personal-ai-phase-2-local-preference-learning|Can a better next move train a better AI?]]
 - Phase 3: [[personal-ai-phase-3-bounded-multi-step-assistance|Can an AI help with more than the next move?]]
 - New insight: [[a-personal-predictor-can-improve-by-making-its-user-more-predictable|A personal predictor can improve by making its user more predictable]]
+- Tada boundary: [[tabracadabra-is-a-retrieval-augmented-writer-not-a-computer-use-nap|Tabracadabra is a retrieval-augmented writer, not a computer-use NAP]]
+- Computer-use experiment: [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Prior art: [[omar-shaikh-computer-use-personalization-stack-2026-07-22|Omar Shaikh's computer-use personalization stack]]
+- Niyant follow-up: [[dylan-niyant-computer-use-nap-followup-2026-07-22|Dylan and Niyant: computer-use NAP contribution follow-up]]
 - Paper: [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]

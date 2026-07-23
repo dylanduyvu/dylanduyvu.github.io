@@ -2,7 +2,7 @@
 type: synthesis
 status: active
 created: 2026-06-30
-updated: 2026-07-01
+updated: 2026-07-22
 domains: [gpu-finance, ai-infrastructure, compute-contracts, residual-value, compute-derivatives]
 projects: [gpu-compute-novation, gpu-residual-value-pricing, gpu-compute-derivatives]
 sources: [compute-finance-space-commitment-and-problem-inventory-2026-06-30, usd-ai-call-harry-page-2026-06-29, novation-shelving-decision-2026-06-30, gpu-kbb-demotion-decision-2026-06-30, barkr-thomas-sla-email-reply-2026-07-01, american-compute-bernie-sla-email-reply-2026-07-01, codex-chat-sla-insurance-monitoring-2026-07-01]
@@ -16,6 +16,8 @@ tags: [gpu, compute-finance, problem-inventory, customer-discovery]
 ## Current Frame
 
 Compute-finance is now the deliberate search space. Individual ideas should be managed as probes inside this space, not as isolated all-or-nothing pivots. The operating system is: keep an explicit problem inventory, test the cheapest fatal uncertainty for each candidate, and let validated pain earn foreground attention.
+
+On July 22, Dylan added a more transaction-real operator branch. Before choosing cash purchase versus debt, or treating a signed offtake as the immediate objective, the first gate is to determine which small-server GPU configuration, if any, is justified by workload-specific customer demand or defensible marketplace evidence. The demand case must survive conservative utilization, net-cost, and downside assumptions. See [[gpu-configuration-demand-gate|GPU configuration demand gate]].
 
 ## Active Candidate Problems
 
@@ -67,6 +69,18 @@ Kill or demote if: supply stays tight and no offloader-side demand appears.
 
 Foreground if: stranded commitments reappear with clear buyer/seller liquidity.
 
+### 5. Operator-Side GPU Configuration Selection
+
+Status: candidate next LBH.
+
+Why it exists: Dylan can potentially fund a small first server, but hardware ownership should follow evidence about which workload and configuration can stay rented. A generic “compute is scarce” thesis, posted marketplace asks, or one sold-out console does not establish demand for a particular fleet.
+
+Cheapest fatal test: compare two or three purchasable configurations using workload-specific customer conversations and behavioral marketplace evidence, then model net economics and downside under conservative utilization.
+
+Kill or demote if: no configuration maps cleanly to credible demand, the economics require implausible utilization, marketplace evidence stops at posted asks, or the maximum downside exceeds the precommitted tolerance.
+
+Foreground if: one configuration has workload-level demand evidence, conservative positive economics, operational feasibility, and acceptable redeployment or resale downside.
+
 ## Next Test Plan
 
 - No upcoming Barkr call is scheduled. The Barkr call already happened and is historical evidence.
@@ -81,6 +95,7 @@ Foreground if: stranded commitments reappear with clear buyer/seller liquidity.
 - Separate greenfield build risk from operating SLA risk; do not assume live monitoring can solve pre-build underwriting without prior data or proxies.
 - If responses warrant it, send one or two more async lender/insurer/offtaker follow-ups for SLA replication plus problem inventory mining.
 - Keep updating this inventory after each response so the process stays portfolio-based, not single-threaded.
+- Before assembling a live loan or buying a server, run the [[gpu-configuration-demand-gate|configuration demand gate]] and preserve “do not buy” as a possible result.
 
 ## Links
 
@@ -88,3 +103,5 @@ Foreground if: stranded commitments reappear with clear buyer/seller liquidity.
 - Source Memo: [[compute-finance-space-commitment-and-problem-inventory-2026-06-30|Compute finance space commitment and problem inventory memo]]
 - Core Insight: [[compute-finance-should-be-run-as-a-problem-portfolio-not-a-single-thesis|Compute finance should be run as a problem portfolio, not a single thesis]]
 - Related: [[sla-and-uptime-verification-is-a-sharper-gpu-lender-pain-than-novation|SLA and uptime verification is a sharper GPU lender pain than novation]], [[gpu-finance-monitoring-may-be-default-risk-telemetry-not-sla-uptime|GPU finance monitoring may be default-risk telemetry, not SLA uptime]], [[sla-monitoring-is-backward-looking-but-can-feed-forward-underwriting|SLA monitoring is backward-looking but can feed forward underwriting]], [[less-proven-gpu-operators-get-funded-through-equity-cushions-not-sla-evidence|Less-proven GPU operators get funded through equity cushions, not SLA evidence]], [[barkr-thomas-sla-email-reply-2026-07-01|Barkr Thomas SLA email reply]], [[american-compute-bernie-sla-email-reply-2026-07-01|American Compute Bernie SLA email reply]], [[naked-gpu-residual-data-is-demoted-until-buyers-show-standalone-wtp|Naked GPU residual data is demoted until buyers show standalone WTP]], [[bare-compute-contracts-have-no-recovery-value-after-default|Bare compute contracts have no recovery value after default]], [[gpu-compute-novation|GPU Compute Novation]]
+- Operator-side branch: [[gpu-configuration-demand-gate|GPU configuration demand gate]]
+- Current branch-selection case file: [[nap-vs-gpu-configuration-experiment-fork|NAP versus GPU configuration experiment fork]]

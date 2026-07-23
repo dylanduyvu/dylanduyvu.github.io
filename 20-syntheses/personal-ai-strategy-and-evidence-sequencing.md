@@ -10,10 +10,14 @@ domains:
   - enterprise-ai
 sources:
   - dylan-niyant-personal-ai-slack-2026-07-21
+  - dylan-niyant-computer-use-nap-followup-2026-07-22
+  - omar-shaikh-computer-use-personalization-stack-2026-07-22
 people:
   - niyant
   - dylan-vu
-orgs: []
+  - omar-shaikh
+orgs:
+  - general-user-models
 tags:
   - strategy
   - evidence
@@ -55,6 +59,17 @@ There is no Phase 1 experiment that automatically triggers enterprise outreach. 
 
 Public proof may create access. Access is not the same as product fit.
 
+### Computer-use NAP is now an assigned complementary workstream
+
+On July 22, Dylan asked what Niyant would have him, or a second pair of hands generally, build to contribute to the vision. Dylan reported that Niyant's answer was to build the computer-use NAP concept. This resolves whether the direction is strategically inside the vision, but not the exact prediction target or implementation.
+
+The clean division is currently:
+
+- Niyant continues the static next-write and personal-context comparison on Obsidian and browser data.
+- Dylan tests whether the next exact semantic computer destination is diverse, predictable beyond trivial habits, and valuable enough for a Tab-style routing interface.
+
+Omar Shaikh's Tada and Tabracadabra are prior art for a context-aware writer after the user has already selected a field. Dylan decided to skip a separate Tabracadabra trial and go directly to the distinct routing test. That test should remain offline and navigation-only until it beats recency, transition, screen-only, and mismatched-history controls.
+
 ## What each stage can show
 
 | Stage | It may show | It does not show |
@@ -92,6 +107,8 @@ The first can survive an honest failed experiment. It should not be reported as 
 - What event counts as meaningful inbound: a reader, a technical collaborator, a buyer conversation, a pilot request, or revenue?
 - How long will inbound run before outbound begins?
 - Would this demo still be worth its cost if it generated legitimacy but no enterprise demand?
+- When Niyant says “computer-use NAP,” does he mean exact semantic destination routing, broader future-action trajectories, or the live Tab interaction?
+- Does correct personal history improve held-out semantic routing beyond screen-only context and simple source-transition habits?
 
 ## Links
 
@@ -101,3 +118,6 @@ The first can survive an honest failed experiment. It should not be reported as 
 - Related: [[public-proof-can-establish-builder-legitimacy-without-proving-enterprise-demand|Public proof can establish builder legitimacy without proving enterprise demand]]
 - Related: [[a-static-personal-demo-cannot-validate-a-dynamic-enterprise-context-system|A static personal demo cannot validate a dynamic enterprise context system]]
 - Related: [[available-personal-data-can-scope-a-demo-without-identifying-the-enterprise-wedge|Available personal data can scope a demo without identifying the enterprise wedge]]
+- Experiment: [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Niyant follow-up: [[dylan-niyant-computer-use-nap-followup-2026-07-22|Dylan and Niyant: computer-use NAP contribution follow-up]]
+- Prior art: [[omar-shaikh-computer-use-personalization-stack-2026-07-22|Omar Shaikh's computer-use personalization stack]]

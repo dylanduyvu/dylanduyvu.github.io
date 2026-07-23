@@ -11,9 +11,14 @@ projects:
   - personal-ai-context-learning
 sources:
   - google-deepmind-ai-value-alignment-for-evolving-social-norms-2026
+  - omar-shaikh-computer-use-personalization-stack-2026-07-22
+  - dylan-niyant-computer-use-nap-followup-2026-07-22
 people:
   - dylan-vu
-orgs: []
+  - niyant
+  - omar-shaikh
+orgs:
+  - general-user-models
 aliases:
   - tab autocomplete for computer navigation
   - next-action autocomplete for the desktop
@@ -24,6 +29,7 @@ tags:
   - autocomplete
   - computer-navigation
   - predictive-ui
+  - semantic-routing
 ---
 
 # Tab could autocomplete the next computer action
@@ -140,22 +146,27 @@ The failure condition is not merely low accuracy. The wedge should also fail if 
 
 The design principle is: **compress intentional navigation without compressing the person into their most common destinations.**
 
-## Cheapest test
+## Prior art: Tada and Tabracadabra
 
-Start in shadow mode on an allowlist of Arc, Codex, and Obsidian. Record structured focus changes, active controls, page identity, and scroll completion without executing anything. Define a semantic label such as "focus Codex project input" rather than a screen coordinate.
+[Tada](https://generalusermodels.github.io/tada/) is Omar Shaikh's runnable research platform for personal-AI interfaces. Its Tabracadabra interaction already uses Option+Tab in an existing text field. It captures the current monitor and cursor, runs a research phase that can inspect relevant Tada activity records, and then runs a separate writer phase that streams a continuation or inline answer into the field.
 
-Compare personalized top-one and top-three accuracy with recency and transition-frequency baselines. If the model cannot beat those cheap baselines at useful coverage, stop. If it can, expose one visible, non-destructive completion for one frequent bridge and measure acceptance, time saved, dismissals, and reversals.
+This is close to Dylan's preferred keyboard-first UX but answers a different question. Tabracadabra begins after the user has already chosen the field. It is a **writer**. Dylan's first computer-use NAP must decide which exact field, document, thread, tab, or control the user intends to reach. It is a **router**.
 
-A concrete first interaction could be:
+The current Tabracadabra interaction retrieves personal records at inference time and does not require a model trained on the user's longitudinal behavior. It therefore supplies prior art and a possible later baseline, not evidence that learned personal history improves exact destination prediction. See [[tabracadabra-is-a-retrieval-augmented-writer-not-a-computer-use-nap|Tabracadabra is a retrieval-augmented writer, not a computer-use NAP]].
 
-- Trigger only after a predefined handoff state, such as reaching the end of an Arc article after meaningful dwell time.
-- Predict only the next app and control focused within a fixed horizon, such as 60 seconds.
-- Show `Tab → Codex composer`.
-- On acceptance, change focus only. Do not stage context, draft, or execute anything yet.
-- Compare against Cmd-Tab, the previous app, and the most common transition from Arc.
-- Measure precision, coverage, actions saved, false-trigger cost, and reversals.
+Dylan decided not to make a Tabracadabra trial a prerequisite. The direct experiment should test the distinct routing claim.
 
-This version tests whether destination prediction can become a non-annoying shortcut. Context selection remains the next conditional test.
+## Agreed first experiment
+
+Start in shadow mode and record structured semantic focus changes without executing or displaying suggestions. Define a destination such as `Codex → Personal AI task → composer → focus`, not a screen coordinate or the app label `Codex`.
+
+Use one calibration session to freeze the label format, prompt, history window, and simple baselines. Then collect 30–50 chronologically held-out handoffs. Compare top-one and top-three predictions under recency, source-conditioned transition frequency, screen-only context, correct personal history, mismatched history, and correct history plus a declared work-block goal. Allow abstention.
+
+Measure exact-target accuracy, coverage, destination diversity, personal-history lift, label ambiguity, actions avoided, target-search avoided, and whether Dylan would actually use a correct suggestion. The wedge should fail or change target if three destinations dominate, a transition baseline nearly matches the model, correct history adds no lift, labels are unstable, or correct suggestions mostly save one click.
+
+If the offline result survives, replay 10–15 high-confidence cases through a Wizard-of-Oz top-three hotkey mock before building a global Tab interface. Do not add context staging, content generation, or consequential execution until the destination-only rung has independent evidence.
+
+The full contract is in [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]].
 
 ## Niyant's reaction and low-entropy objection
 
@@ -229,6 +240,14 @@ These levels can be evaluated separately, but they are not guaranteed to teach o
 
 The lowest rung is useful only if it beats the trivial baselines and delivers felt acceleration. Otherwise, skip directly to the more semantic write or prompt target.
 
+## Contribution decision
+
+On July 22, Dylan asked Niyant what he would have Dylan, or a second pair of hands generally, build to contribute to the vision. Dylan reported that Niyant's answer was to build the computer-use NAP concept.
+
+This converts the idea from an adjacent product interpretation into an explicitly useful contribution path inside Niyant's program. It also gives Dylan a personalization project that does not duplicate Niyant's current static next-write experiment.
+
+The endorsement establishes strategic relevance, not success or exact scope. “Computer-use NAP” could still mean semantic destination routing, broader next-action trajectories, or a live interaction. The agreed first proof remains navigation-only and offline so those later layers are not smuggled into the result. See [[dylan-niyant-computer-use-nap-followup-2026-07-22|the follow-up source note]].
+
 ## Nested action ladder
 
 These are normally conditional layers rather than independent products:
@@ -272,3 +291,7 @@ Demote it if switching heuristics perform just as well, suggestions need constan
 - Related: [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]]
 - Insight: [[a-personal-predictor-can-improve-by-making-its-user-more-predictable|A personal predictor can improve by making its user more predictable]]
 - Source: [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
+- Prior art: [[omar-shaikh-computer-use-personalization-stack-2026-07-22|Omar Shaikh's computer-use personalization stack]]
+- Decision: [[dylan-niyant-computer-use-nap-followup-2026-07-22|Dylan and Niyant: computer-use NAP contribution follow-up]]
+- Experiment: [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Tada boundary: [[tabracadabra-is-a-retrieval-augmented-writer-not-a-computer-use-nap|Tabracadabra is a retrieval-augmented writer, not a computer-use NAP]]

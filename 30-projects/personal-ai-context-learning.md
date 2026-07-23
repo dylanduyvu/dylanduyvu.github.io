@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-23
 aliases:
   - Personal AI Context Learning
   - Niyant's personal-AI thesis
@@ -38,6 +38,14 @@ Dylan is exploring a more interaction-first product wedge: personalized intent c
 
 The resulting formulation is a structured-resolution ladder rather than an unrestricted computer-use branch: domain or app → exact object or control → operation → content. This mirrors Phase 1's domain, location, operation, and content decomposition. Each level must beat its own trivial baseline and demonstrate felt acceleration; easier location predictions do not automatically imply goal understanding or progress on semantic content prediction.
 
+On July 22, Dylan asked what Niyant would have him, or a second pair of hands generally, build to contribute to the vision. Dylan reported that Niyant's answer was to build the computer-use NAP concept. This converts semantic computer routing from an adjacent product idea into an explicitly useful complementary workstream. It does not yet specify whether Niyant means exact destination routing, broader action trajectories, or a live Tab product.
+
+Omar Shaikh's public stack is the closest prior art. Markov and NAPsack address capture and semantic action labeling; LongNAP predicts personal action trajectories; GUM, Just-In-Time Objectives, Behavior Latticing, and Tempo move from user propositions toward objectives and goals; Tada packages several personal-AI interfaces. Tada's Tabracadabra already uses Option+Tab to write in a field after a research phase can inspect personal logs. It is a runnable **writer**, not Dylan's proposed **router**, and it relies on inference-time retrieval rather than proving that a trained personal model learned the user.
+
+Dylan decided not to use Tabracadabra as a separate experiment. The immediate plan is a direct shadow-mode benchmark of next semantic focus. It will compare exact top-one and top-three destinations under recency, source-transition, screen-only, correct-history, mismatched-history, and declared-goal conditions before any live interface is built.
+
+The NAP experiment is one side of Dylan's current branch-selection LBH, not yet the chosen next project. The competing GPU branch has been sharpened from “find an offtake customer” into a demand-informed configuration gate: determine which small-server GPU configuration, if any, deserves to be purchased based on workload-specific customer evidence or defensible marketplace behavior. See [[gpu-configuration-demand-gate|GPU configuration demand gate]].
+
 A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence for feasibility. Once a personalized predictor shows suggestions, it helps cause the future behavior it learns from. Exposed-history accuracy may rise because the model understands the person better, because the person is conforming to the model's historical predictions, or both. This makes shadow mode, randomized exposure, goal-change tests, washout periods, and agency/diversity measures necessary before treating online accuracy or acceptance as evidence of deeper personalization.
 
 ## Evidence Boundary
@@ -48,6 +56,9 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - Public demos and inbound can establish legitimacy or interest. They do not establish deployment value, retention, or willingness to pay.
 - The formal Phase 1-3 ladder remains useful as a map, but omitted rungs remain untested.
 - The GDM paper formalizes a plausible value-lock-in mechanism with equations and simulated populations. It contains no new human, LLM-agent, or product experiment and does not validate that the effect occurs at a material magnitude.
+- LongNAP establishes learnable personal action signal under its own phone-derived, trajectory-level setup. Its pass@1 is not next-app accuracy and it supplies no end-user routing-value result.
+- Tabracadabra establishes that the keyboard-first writer interaction is runnable. It does not establish learned personalization, exact semantic routing, or goal understanding.
+- Niyant's assignment establishes that computer-use NAP is strategically relevant to his vision. It does not validate Dylan's target, product value, or proposed implementation.
 
 ## Key Insights
 
@@ -56,14 +67,17 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[available-personal-data-can-scope-a-demo-without-identifying-the-enterprise-wedge|Available personal data can scope a demo without identifying the enterprise wedge]]
 - [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]]
 - [[a-personal-predictor-can-improve-by-making-its-user-more-predictable|A personal predictor can improve by making its user more predictable]]
+- [[tabracadabra-is-a-retrieval-augmented-writer-not-a-computer-use-nap|Tabracadabra is a retrieval-augmented writer, not a computer-use NAP]]
 
 ## Syntheses
 
+- [[nap-vs-gpu-configuration-experiment-fork|NAP versus GPU configuration experiment fork]]
 - [[niyant-personal-ai-thesis-study-guide|Niyant's personal-AI thesis: a beginner's study guide]]
 - [[personal-ai-phase-1-next-action-prediction|Phase 1: Can an AI learn what matters to you by watching you work?]]
 - [[personal-ai-phase-2-local-preference-learning|Phase 2: Can a better next move train a better AI?]]
 - [[personal-ai-phase-3-bounded-multi-step-assistance|Phase 3: Can an AI help with more than the next move?]]
 - [[personal-ai-strategy-and-evidence-sequencing|Personal AI strategy and evidence sequencing]]
+- [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 
 ## Hunches
 
@@ -72,6 +86,8 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 ## Sources
 
 - [[dylan-niyant-personal-ai-slack-2026-07-21|Dylan and Niyant: personal-AI strategy Slack exchange]]
+- [[dylan-niyant-computer-use-nap-followup-2026-07-22|Dylan and Niyant: computer-use NAP contribution follow-up]]
+- [[omar-shaikh-computer-use-personalization-stack-2026-07-22|Omar Shaikh's computer-use personalization stack]]
 - [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
 - [World Models public notes](https://handsdiff.github.io/)
 - [Pinned public notes snapshot](https://github.com/handsdiff/notes/tree/3151afa93fd81719a6e9dc7862c269ea1f1a70e6)
@@ -80,10 +96,10 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 ## Open Questions
 
 - What exact claim is the static implementation designed to test?
-- Is the first product navigation-only, or does it carry context into the next app as an unsent draft?
+- After a navigation-only signal gate, should the product remain a router or carry selected context into the accepted destination?
 - Is next-action prediction primarily the daily product, a forcing function for building a faithful context system, or both?
 - At what rung does intent compression require genuine local-goal representation rather than shallow personal transition habits?
-- Does Niyant regard the concrete navigation-only test as inside the vision but weak, or as the wrong prediction target?
+- When Niyant says “computer-use NAP,” does he mean exact semantic destination routing, a broader action trajectory, or the full live Tab interaction?
 - Is there enough out-of-time entropy among semantic UI destinations for personalization to beat most-common and transition-frequency baselines?
 - After suggestions are exposed, can accuracy improve without narrowing useful behavior or slowing adaptation after a project or goal change?
 - Should domain, location, operation, and content be predicted jointly, hierarchically, or treated only as separate diagnostic heads?
@@ -93,14 +109,19 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - What counts as successful inbound, and when does failure trigger outbound?
 - What would make the personal data pipeline transferable to an enterprise workflow rather than merely reusable code?
 - Would the work still be worth doing if no enterprise paid for it?
+- Which next experiment produces more decision-changing evidence for Dylan: the semantic-routing shadow test or the GPU configuration demand gate?
 
 ## Next Tests
 
 - State the demo's claim and nonclaims before publishing it.
 - Compare the static implementation against simple context, retrieval, and memory baselines on held-out personal events.
+- Send Niyant the navigation-only experiment contract and confirm that its exact semantic-destination target matches what he meant by computer-use NAP.
+- Run one calibration session, then freeze the ontology, prompt, history window, baselines, and scoring rules before collecting 30–50 chronological held-out handoffs.
+- Compare MRU-3, source-transition, screen-only, correct-history, mismatched-history, and correct-history-plus-declared-goal conditions with top-three prediction and abstention.
+- Kill or redirect the router if destinations have low entropy, trivial baselines nearly match the model, correct history adds no lift, labels are unstable, or hits mostly replace one click.
+- Treat Tabracadabra as prior art and a possible later writer baseline, not as a required experiment.
 - Keep proof of builder quality, proof of technical efficacy, and proof of market demand as separate outputs.
 - Record which inbound artifact produces each conversation and what the respondent actually wants.
 - Before calling the pipeline an enterprise MVP, test whether it reconstructs context for one real team workflow with tolerable capture and privacy costs.
-- For the Tab wedge, freeze one handoff trigger and destination-only target; compare with Cmd-Tab and transition-frequency baselines before testing context staging.
-- Measure label frequency and baseline accuracy separately at app, exact semantic destination, operation, and content resolution before choosing the first Tab target.
 - Before interpreting online accuracy or acceptance, randomize suggestion exposure, preserve hidden predictions, introduce a declared goal change, and measure adaptation speed, outcomes, overrides, novel actions, and washout behavior.
+- Decide whether to run this shadow experiment or [[gpu-configuration-demand-gate|the GPU configuration demand gate]] as the next LBH; do not treat either branch as selected yet.
