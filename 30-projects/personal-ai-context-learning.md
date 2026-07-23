@@ -42,7 +42,9 @@ On July 22, Dylan asked what Niyant would have him, or a second pair of hands ge
 
 Omar Shaikh's public stack is the closest prior art. Markov and NAPsack address capture and semantic action labeling; LongNAP predicts personal action trajectories; GUM, Just-In-Time Objectives, Behavior Latticing, and Tempo move from user propositions toward objectives and goals; Tada packages several personal-AI interfaces. Tada's Tabracadabra already uses Option+Tab to write in a field after a research phase can inspect personal logs. It is a runnable **writer**, not Dylan's proposed **router**, and it relies on inference-time retrieval rather than proving that a trained personal model learned the user.
 
-Dylan decided not to use Tabracadabra as a separate experiment. The immediate plan is a direct shadow-mode benchmark of next semantic focus. It will compare exact top-one and top-three destinations under recency, source-transition, screen-only, correct-history, mismatched-history, and declared-goal conditions before any live interface is built.
+Dylan decided not to use Tabracadabra as a separate experiment. The planned prediction target remains next semantic focus, but the immediate work moved one rung earlier after a live Screenpipe audit. Screenpipe captured screenshots, URLs, clicks, keys, scrolls, application switches, and window-focus events, but attached a direct element name to only 58 of 128 clicks and to none of four sampled Arc clicks. Its window-focus stream also does not guarantee explicit focus events for webpage controls.
+
+The current LBH is therefore an acquisition gate: determine whether an out-of-the-box or minimally augmented recorder can reconstruct roughly 90% or more of 50–100 meaningful browser and native-app actions as exact semantic targets, paired with a leakage-safe pre-action frame from both monitors. Ambiguous and unresolved events remain in the denominator. Only after this passes should the project compare exact top-one and top-three destinations under recency, source-transition, screen-only, correct-history, mismatched-history, and declared-goal conditions.
 
 The NAP experiment is one side of Dylan's current branch-selection LBH, not yet the chosen next project. The competing GPU branch has been sharpened from “find an offtake customer” into a demand-informed configuration gate: determine which small-server GPU configuration, if any, deserves to be purchased based on workload-specific customer evidence or defensible marketplace behavior. See [[gpu-configuration-demand-gate|GPU configuration demand gate]].
 
@@ -59,6 +61,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - LongNAP establishes learnable personal action signal under its own phone-derived, trajectory-level setup. Its pass@1 is not next-app accuracy and it supplies no end-user routing-value result.
 - Tabracadabra establishes that the keyboard-first writer interaction is runnable. It does not establish learned personalization, exact semantic routing, or goal understanding.
 - Niyant's assignment establishes that computer-use NAP is strategically relevant to his vision. It does not validate Dylan's target, product value, or proposed implementation.
+- Screenpipe establishes that Dylan's Mac can produce a continuous raw action and screen stream. It does not yet establish exact control-level labels. Running a predictor before that distinction is resolved would confound model quality with recorder quality.
 
 ## Key Insights
 
@@ -88,6 +91,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[dylan-niyant-personal-ai-slack-2026-07-21|Dylan and Niyant: personal-AI strategy Slack exchange]]
 - [[dylan-niyant-computer-use-nap-followup-2026-07-22|Dylan and Niyant: computer-use NAP contribution follow-up]]
 - [[omar-shaikh-computer-use-personalization-stack-2026-07-22|Omar Shaikh's computer-use personalization stack]]
+- [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
 - [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
 - [World Models public notes](https://handsdiff.github.io/)
 - [Pinned public notes snapshot](https://github.com/handsdiff/notes/tree/3151afa93fd81719a6e9dc7862c269ea1f1a70e6)
@@ -116,8 +120,11 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - State the demo's claim and nonclaims before publishing it.
 - Compare the static implementation against simple context, retrieval, and memory baselines on held-out personal events.
 - Send Niyant the navigation-only experiment contract and confirm that its exact semantic-destination target matches what he meant by computer-use NAP.
-- Run one calibration session, then freeze the ontology, prompt, history window, baselines, and scoring rules before collecting 30–50 chronological held-out handoffs.
-- Compare MRU-3, source-transition, screen-only, correct-history, mismatched-history, and correct-history-plus-declared-goal conditions with top-three prediction and abstention.
+- Research out-of-the-box recorders that combine exact browser DOM actions, native Accessibility controls, application and window state, and dual-monitor pre-action screens.
+- Audit 50–100 meaningful Screenpipe actions, report browser and native-app semantic-label coverage separately, and retain ambiguous or unresolved events in the denominator.
+- Begin model comparison only if the acquisition stack produces roughly 90% or better exact semantic labels without future leakage.
+- After acquisition passes, freeze the ontology, prompt, history window, baselines, and scoring rules before collecting chronological held-out handoffs.
+- Then compare MRU-3, source-transition, screen-only, correct-history, mismatched-history, and correct-history-plus-declared-goal conditions with top-three prediction and abstention.
 - Kill or redirect the router if destinations have low entropy, trivial baselines nearly match the model, correct history adds no lift, labels are unstable, or hits mostly replace one click.
 - Treat Tabracadabra as prior art and a possible later writer baseline, not as a required experiment.
 - Keep proof of builder quality, proof of technical efficacy, and proof of market demand as separate outputs.
