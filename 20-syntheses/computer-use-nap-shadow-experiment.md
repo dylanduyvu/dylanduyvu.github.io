@@ -373,14 +373,17 @@ Niyant-level technical depth becomes necessary after this gate if the work turns
 
 ## Immediate next step
 
-Research current out-of-the-box recorders and instrumentation that can capture exact browser DOM clicks and focus, native desktop controls, two-monitor pre-action state, application and window identity, and a unified chronological event stream.
+Build the repeatable Screenpipe plus patched NAPsack hybrid labeler described in [[computer-use-nap-build-log|Computer-use NAP build log]]. Run one clean 30-action acceptance test spanning native controls, ordinary and dynamic webpage controls, mixed action types, and both displays. Require all actions to appear, at least 27 exact semantic targets, at least 9/10 native targets, at least 14/15 combined webpage targets, at least 4/5 cross-monitor targets, and zero silent losses.
 
-In parallel, let Screenpipe continue recording normal work. Treat the next one to two hours as acquisition-audit material, not prediction-training data. Reconstruct and manually inspect 50–100 meaningful actions. If an existing tool or Screenpipe-only reconstruction reaches the semantic-label gate, freeze the event schema and begin the multi-day history collection.
+If that controlled test passes, record one to two hours of normal work as acquisition-audit material, not prediction-training data. Reconstruct and manually inspect 50–100 meaningful clicks, switches, focus changes, key commands, and page navigations. Only if that natural audit reaches the roughly 90% exact-target gate without silent losses should the project freeze the event schema and begin multi-day history collection.
+
+If the controlled or natural audit fails mainly on webpage controls, add Arc DOM instrumentation and rerun that category. If failures are broad, repair or replace the acquisition stack before collecting more work.
 
 Send Niyant the revised contract for a one-pass check that exact semantic routing is the intended first rung. That review does not need to block raw collection.
 
 ## Links
 
+- Build ledger: [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Project: [[personal-ai-context-learning|Personal AI Context Learning]]
 - Product hunch: [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Niyant follow-up: [[dylan-niyant-computer-use-nap-followup-2026-07-22|Dylan and Niyant: computer-use NAP contribution follow-up]]

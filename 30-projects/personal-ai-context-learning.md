@@ -85,6 +85,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[personal-ai-phase-3-bounded-multi-step-assistance|Phase 3: Can an AI help with more than the next move?]]
 - [[personal-ai-strategy-and-evidence-sequencing|Personal AI strategy and evidence sequencing]]
 - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- [[computer-use-nap-build-log|Computer-use NAP build log]]
 
 ## Hunches
 
@@ -122,6 +123,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
+- Complete the repeatable Screenpipe + patched NAPsack hybrid labeler and run the clean 30-action acceptance test documented in [[computer-use-nap-build-log|Computer-use NAP build log]]. Require all 30 physical actions, at least 27 exact semantic targets, at least 9/10 native targets, at least 14/15 combined webpage targets, at least 4/5 cross-monitor targets, and zero silent misses before a one-to-two-hour natural capture.
 - State the demo's claim and nonclaims before publishing it.
 - Compare the static implementation against simple context, retrieval, and memory baselines on held-out personal events.
 - Send Niyant the navigation-only experiment contract and confirm that its exact semantic-destination target matches what he meant by computer-use NAP.
