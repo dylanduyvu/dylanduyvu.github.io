@@ -75,6 +75,24 @@ The subsequent roughly 50-minute natural session makes the failure clearer. Afte
 
 Screenpipe successfully retained both-monitor frames, OCR, Accessibility trees, application and window changes, and active Arc URLs. It is therefore a useful contextual backbone. It is not sufficient as the exact action-label source. Starting the multi-day prediction comparison now would confound model quality with missing second-monitor and control-level labels.
 
+### NAPsack calibration result
+
+NAPsack `0.1.3` was installed under Python 3.13 and run concurrently with Screenpipe. The first run exposed a concrete dual-monitor bug rather than a failure of the underlying capture idea. NAPsack's input handler used `screeninfo` display coordinates, which placed Dylan's secondary display below the primary at positive `y`, while its screenshot worker and macOS pointer events used MSS physical coordinates, which placed that display above the primary at `y = -1440`. Secondary-display clicks therefore fell back to monitor 0 and could be paired with a primary-display screenshot.
+
+The local NAPsack installation was patched so the input handler uses the same MSS monitor bounds as the screenshot worker. Two regression tests now verify that a primary-display point maps to monitor 0 and a negative-`y` secondary-display point maps to monitor 1.
+
+The corrected run established:
+
+- all seven secondary-display clicks were assigned to the secondary display with bounds `left = -557`, `top = -1440`, `width = 2560`, `height = 1440`;
+- each click was paired with a pre-action screenshot from that display roughly 0.10 to 0.17 seconds before the click;
+- direct Accessibility hit-testing exactly identified an Arc Gmail account tab and the pinned X favorite;
+- Accessibility did not directly identify an X new-posts control or the Codex composer; and
+- a blind screenshot-plus-click-location review recovered both missing meaningful targets.
+
+This run does not yield a valid coverage percentage. Of the seven secondary-display clicks, only four were meaningful intended controls. The others landed on a window edge, static instruction text, or blank conversation space while Dylan was following or stopping the calibration. The four meaningful actions were reconstructable by combining Accessibility evidence with the pre-click image and coordinate, but four actions are far below the 30-action controlled calibration and the 50–100-action acquisition gate.
+
+The current result is therefore: **monitor capture and leakage-safe click alignment pass; Accessibility-only semantic labeling fails; hybrid semantic reconstruction is promising but not yet validated at the required scale.**
+
 ## Recorder research decision
 
 No single turnkey Mac recorder was found that combines exact Arc DOM targets, exact native controls, both monitors, raw timestamped events, and low-friction recording for hours of normal work.

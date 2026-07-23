@@ -83,6 +83,14 @@ Screenpipe remains useful alongside it because Screenpipe supplies the two-monit
 
 NAPsack's monitor number must not be assumed to match Screenpipe's monitor number. Join displays by their stored position and size. NAPsack assigns keyboard events to the monitor containing the cursor, which can be wrong for keyboard-only application changes when the cursor remains on the other display. Its recording is local, but literal keys and Accessibility values from text fields can be written to disk. Grant the launching Terminal Screen Recording, Accessibility, and Input Monitoring, and avoid sensitive typing during the controlled pilot.
 
+#### Live calibration finding
+
+The shipped `0.1.3` recorder initially mislabeled Dylan's upper secondary display as monitor 0. Its input handler used `screeninfo`, which reported that display at positive `y`, while macOS pointer events and the MSS screenshot worker used physical coordinates with the display at `top = -1440`. The local installation was patched so both paths use MSS bounds. Regression tests now cover primary and negative-`y` secondary points.
+
+After the patch, seven secondary-display clicks had the correct display geometry and a same-display pre-action screenshot roughly 0.10 to 0.17 seconds before the event. Only four clicks were meaningful intended targets because several actions landed on the on-screen instructions or blank space. Direct Accessibility evidence named two of those four. A blind visual audit using only the marked pre-click screenshot identified all four when combined with the direct labels.
+
+This is a diagnostic pass for display assignment and screenshot alignment, not a pass for the acquisition gate. The sample is too small and was not a valid 30-action checklist. It also shows that NAPsack Accessibility alone will not produce complete target labels. The next controlled audit must score the combined reconstruction path and retain every ambiguous action in the denominator.
+
 ### 2. Add only if Arc is still weak: UI + API Recorder
 
 [UI + API Recorder](https://chromewebstore.google.com/detail/ui-%2B-api-recorder/dcjnljbaccofglbdpcmllnghchfjicfk) is the closest installable browser companion found.
