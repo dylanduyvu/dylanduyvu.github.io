@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 22, 2026, 6:31 PM EDT
+Generated: Jul 23, 2026, 11:04 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 54 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 53 note commits. The most recent movement is:
 
 - Source capture: add GDM evolving norms implications.
 - Source capture: complete tab autocomplete slack exchange.
@@ -29,6 +29,21 @@ In the past 7 days, the public vault changed through 54 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 23, 2026, 11:04 AM EDT - synthesis: add nap versus gpu experiment fork
+
+synthesis: add nap versus gpu experiment fork.
+
+Changed notes:
+  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+  - [[tabracadabra-is-a-retrieval-augmented-writer-not-a-computer-use-nap|Tabracadabra is a retrieval-augmented writer, not a computer-use NAP]]
+  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
+  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+  - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
+  - [[nap-vs-gpu-configuration-experiment-fork|NAP versus GPU configuration experiment fork]]
+  - [[niyant-personal-ai-thesis-study-guide|Niyant’s personal-AI thesis: a beginner’s study guide]]
+  - [[personal-ai-strategy-and-evidence-sequencing|Personal AI strategy and evidence sequencing]]
+  - and 3 more
 
 ### Jul 22, 2026, 6:31 PM EDT - source: add GDM evolving norms implications
 
@@ -122,20 +137,9 @@ Changed notes:
   - [[oak-lab-big-world-hypothesis-2024|Oak Lab: The Big World Hypothesis and its ramifications for AI]]
   - [[personalized-models-compute-fragmentation-cross-assistant-2026-07-16|Commoditization, concentration, and personalized models: the cross-assistant discussion, 2026-07-16]]
 
-### Jul 22, 2026, 11:00 AM EDT - insight: add borrower-side loan test and bandwidth pricing
-
-Insight update: add borrower-side loan test and bandwidth pricing.
-
-Changed notes:
-  - [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
-  - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
-  - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
-  - [[gpu-finance|GPU Finance]]
-  - [[ccir-memory-bandwidth-band-cross-generation-gpu-rents-2026-07-11|CCIR: cross-generation neocloud rents form a narrow memory-bandwidth band]]
-  - [[jakub-borrower-side-gpu-finance-and-shadow-loan-experiment-2026-07-21|Jakub: search from the borrower seat and try to assemble a GPU loan]]
-
 ## Past 7 Days
 
+- Jul 23, 2026: synthesis: add nap versus gpu experiment fork - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: add GDM evolving norms implications - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: capture tab prediction entropy objection - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
@@ -160,12 +164,12 @@ Changed notes:
 - Jul 20, 2026: article: simplify futures risk transfer section - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: sharpen shortage versus contract-backed lending opening - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 54 updates in this window._
+_Showing the newest 25 of 53 updates in this window._
 
 ## Past 30 Days
 
+- Jul 23, 2026: synthesis: add nap versus gpu experiment fork - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: add GDM evolving norms implications - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: capture tab prediction entropy objection - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
@@ -190,6 +194,5 @@ _Showing the newest 25 of 54 updates in this window._
 - Jul 20, 2026: article: simplify futures risk transfer section - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: sharpen shortage versus contract-backed lending opening - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 159 updates in this window._
+_Showing the newest 25 of 160 updates in this window._
