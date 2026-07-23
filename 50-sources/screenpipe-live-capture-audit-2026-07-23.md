@@ -94,6 +94,41 @@ The associated Arc frames did contain URLs and accessibility trees with buttons 
 
 Screenpipe's `window_focus` event describes application or OS-window focus. It does not guarantee an explicit event whenever focus moves between webpage inputs, links, or buttons.
 
+## Natural-session follow-up
+
+A later read-only audit froze the first natural session at 19:40 UTC. It covered roughly 50 minutes of frames and 48 minutes of UI events.
+
+Screenpipe stored 484 UI-event rows:
+
+| Event | Rows |
+|---|---:|
+| Raw click rows | 169 |
+| Text bursts | 117 |
+| Window-focus events | 94 |
+| Application switches | 68 |
+| Scroll gestures | 22 |
+| Key events | 14 |
+
+Nineteen click rows were near-certain enrichment duplicates: the same coordinates appeared 2–44 milliseconds apart, with an empty first row and an Accessibility-enriched second row. Collapsing these pairs leaves an estimated 150 physical clicks.
+
+The longer session exposed a monitor-specific failure:
+
+| Physical-click target coverage | Primary display | Secondary display | Total |
+|---|---:|---:|---:|
+| Estimated clicks | 110 | 40 | 150 |
+| Role and bounds present | 86 | 0 | 86 |
+| Role, name, and bounds present | 78 | 0 | 78 |
+
+All 40 secondary-display clicks lacked direct semantic target fields. The four actual Arc or browser-surface clicks were on that display and all lacked a direct role, name, bounds, automation identifier, or DOM target. The two Arc-attributed clicks with semantic fields were actually primary-display Dock items.
+
+Both displays were nevertheless captured visually. The frozen interval contained 273 primary and 204 secondary frames. Almost every frame had full text, and most had an Accessibility tree. All 33 Arc frames had an active page URL, but zero of the 484 UI events carried a browser URL. Screenpipe therefore knows the active browser page in its frame stream without knowing the clicked DOM node in its action stream.
+
+Post-action application or window transitions recover a broad destination for some missing click labels, but not the exact input field, link, button, or task. On the secondary display, only 14 of 40 clicks had a nearby broad transition; 26 lacked even that.
+
+The longer session also confirms the leakage problem. Of 164 click rows with a frame link, 76 linked to a frame timestamped after the click. Strictly prior frames could be tens of seconds old because unchanged frames are deduplicated. This does not make them necessarily visually wrong, but it prevents treating `frame_id` as a guaranteed immediate pre-action observation.
+
+The natural session therefore passes the two-monitor context-backbone test and fails the exact-target label test. It should not be used alone for the multi-day prediction comparison.
+
 ## Why this is load-bearing
 
 Dylan's proposed product is not merely a next-application launcher. It should eventually route to an exact app, window, webpage, thread, document, input field, link, or button.

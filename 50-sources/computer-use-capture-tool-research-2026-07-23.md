@@ -46,16 +46,22 @@ The lowest-engineering next move is not to abandon Screenpipe or begin a long co
 
 ### 1. First calibration: Screenpipe plus NAPsack
 
-[NAPsack 0.1.3](https://github.com/GeneralUserModels/napsack) is runnable today with `pip install napsack`. It is also the collection tool from the General User Models / LongNAP research line, making it directly relevant rather than merely adjacent tooling.
+[NAPsack 0.1.3](https://github.com/GeneralUserModels/napsack) is runnable today. It is also the collection tool from the General User Models / LongNAP research line, making it directly relevant rather than merely adjacent tooling. Dylan's default Python 3.14 is outside NAPsack's supported Python 3.11–3.13 range, so use the installed Python 3.13 explicitly.
 
-Run it with accessibility capture and raw screenshot retention:
+Install and run it as a short local calibration:
 
 ```bash
-napsack-record \
-  --session-dir ./logs/dylan-calibration \
+uv tool install --python 3.13 'napsack==0.1.3'
+
+/Users/dylanvu/.local/bin/napsack-record \
+  --session-dir /Users/dylanvu/napsack-runs/calibration-2026-07-23 \
+  --fps 12 \
+  --buffer-seconds 12 \
   --accessibility \
-  --buffer-all-images
+  --disable move
 ```
+
+Use a fresh session directory for every run. Stop once with `Ctrl+C` and wait for sanitization to finish. Do not use `--buffer-all-images` for this calibration because it unnecessarily retains every captured frame. Do not run the VLM labeling step yet.
 
 NAPsack adds:
 
@@ -74,6 +80,8 @@ It does **not** add:
 - guaranteed Arc control identity.
 
 Screenpipe remains useful alongside it because Screenpipe supplies the two-monitor history, application and window transitions, Arc URLs, OCR, and existing raw events. NAPsack supplies a second event clock, per-action screenshots, and a different click-time Accessibility lookup. The calibration asks whether the two together reconstruct exact targets reliably enough without custom code.
+
+NAPsack's monitor number must not be assumed to match Screenpipe's monitor number. Join displays by their stored position and size. NAPsack assigns keyboard events to the monitor containing the cursor, which can be wrong for keyboard-only application changes when the cursor remains on the other display. Its recording is local, but literal keys and Accessibility values from text fields can be written to disk. Grant the launching Terminal Screen Recording, Accessibility, and Input Monitoring, and avoid sensitive typing during the controlled pilot.
 
 ### 2. Add only if Arc is still weak: UI + API Recorder
 
