@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-23
+updated: 2026-07-24
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 23, 2026, 11:04 AM EDT
+Generated: Jul 24, 2026, 12:45 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 53 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 56 note commits. The most recent movement is:
 
 - Source capture: add GDM evolving norms implications.
 - Source capture: complete tab autocomplete slack exchange.
@@ -30,115 +30,70 @@ In the past 7 days, the public vault changed through 53 note commits. The most r
 
 ## Past 24 Hours
 
-### Jul 23, 2026, 11:04 AM EDT - synthesis: add nap versus gpu experiment fork
+### Jul 24, 2026, 12:45 PM EDT - update NAP capture v2 notes
 
-synthesis: add nap versus gpu experiment fork.
+update NAP capture v2 notes.
 
 Changed notes:
-  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
-  - [[tabracadabra-is-a-retrieval-augmented-writer-not-a-computer-use-nap|Tabracadabra is a retrieval-augmented writer, not a computer-use NAP]]
-  - [[compute-finance-problem-inventory-2026-06-30|Compute Finance Problem Inventory]]
-  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
   - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
-  - [[nap-vs-gpu-configuration-experiment-fork|NAP versus GPU configuration experiment fork]]
-  - [[niyant-personal-ai-thesis-study-guide|Niyant’s personal-AI thesis: a beginner’s study guide]]
-  - [[personal-ai-strategy-and-evidence-sequencing|Personal AI strategy and evidence sequencing]]
-  - and 3 more
+  - [[computer-use-nap-build-log|Computer-use NAP build log]]
+  - [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Computer-use NAP: capture layer v2 plan]]
+  - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 
-### Jul 22, 2026, 6:31 PM EDT - source: add GDM evolving norms implications
+### Jul 23, 2026, 5:09 PM EDT - Add computer-use NAP build ledger
 
-Source capture: add GDM evolving norms implications.
-
-Changed notes:
-  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
-  - [[a-personal-predictor-can-improve-by-making-its-user-more-predictable|A personal predictor can improve by making its user more predictable]]
-  - [[niyant-personal-ai-thesis-study-guide|Niyant’s personal-AI thesis: a beginner’s study guide]]
-  - [[personal-ai-context-learning|Personal AI Context Learning]]
-  - [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
-
-### Jul 22, 2026, 5:34 PM EDT - source: complete tab autocomplete slack exchange
-
-Source capture: complete tab autocomplete slack exchange.
+Add computer-use NAP build ledger.
 
 Changed notes:
-  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
-
-### Jul 22, 2026, 5:32 PM EDT - hunch: capture tab prediction entropy objection
-
-hunch: capture tab prediction entropy objection.
-
-Changed notes:
-  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+  - [[computer-use-nap-build-log|Computer-use NAP build log]]
   - [[personal-ai-context-learning|Personal AI Context Learning]]
 
-### Jul 22, 2026, 2:35 PM EDT - hunch: expand tab autocomplete intent compression thesis
+### Jul 23, 2026, 4:34 PM EDT - Log corrected NAPsack calibration
 
-hunch: expand tab autocomplete intent compression thesis.
+Log corrected NAPsack calibration.
 
 Changed notes:
-  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
   - [[personal-ai-context-learning|Personal AI Context Learning]]
+  - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 
-### Jul 22, 2026, 1:45 PM EDT - hunch: add personalized computer action autocomplete
+### Jul 23, 2026, 3:46 PM EDT - experiment: audit natural screenpipe session
 
-hunch: add personalized computer action autocomplete.
+experiment: audit natural screenpipe session.
 
 Changed notes:
-  - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
+  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
   - [[personal-ai-context-learning|Personal AI Context Learning]]
+  - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
+  - [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
 
-### Jul 22, 2026, 1:01 PM EDT - insight: publish personal AI study and USD.AI policy
+### Jul 23, 2026, 3:33 PM EDT - research: compare computer-use capture options
 
-Insight update: publish personal AI study and USD.AI policy.
-
-Changed notes:
-  - [[a-static-personal-demo-cannot-validate-a-dynamic-enterprise-context-system|A static personal demo cannot validate a dynamic enterprise context system]]
-  - [[available-personal-data-can-scope-a-demo-without-identifying-the-enterprise-wedge|Available personal data can scope a demo without identifying the enterprise wedge]]
-  - [[public-proof-can-establish-builder-legitimacy-without-proving-enterprise-demand|Public proof can establish builder legitimacy without proving enterprise demand]]
-  - [[niyant-personal-ai-thesis-study-guide|Niyant’s personal-AI thesis: a beginner’s study guide]]
-  - [[personal-ai-phase-1-next-action-prediction|Can an AI Learn What Matters to You by Watching You Work?]]
-  - [[personal-ai-phase-2-local-preference-learning|Can a Better Next Move Train a Better AI?]]
-  - [[personal-ai-phase-3-bounded-multi-step-assistance|Can an AI Help With More Than the Next Move?]]
-  - [[personal-ai-strategy-and-evidence-sequencing|Personal AI strategy and evidence sequencing]]
-  - and 3 more
-
-### Jul 22, 2026, 12:57 PM EDT - insight: audit CCIR against GPU finance theses
-
-Insight update: audit CCIR against GPU finance theses.
+research: compare computer-use capture options.
 
 Changed notes:
-  - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
-  - [[a-gpu-has-three-obsolescence-curves-not-one|A GPU has three obsolescence curves, not one]]
-  - [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
-  - [[ccir-is-building-the-public-compute-credit-data-layer|CCIR is building the public compute-credit data layer]]
-  - [[contract-rollover-risk-survives-investment-grade-offtake|Contract-rollover risk survives investment-grade offtake]]
-  - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
-  - [[gpu-backed-debt-is-contract-backed-with-hardware-recovery-floor|GPU-backed debt is contract-backed with a hardware recovery floor]]
-  - [[gpu-collateral-has-going-concern-and-liquidation-values|GPU collateral has separate going-concern and liquidation values]]
-  - and 14 more
+  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+  - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 
-### Jul 22, 2026, 12:10 PM EDT - insight: separate GPU rental price from utilization
+### Jul 23, 2026, 3:20 PM EDT - experiment: add screenpipe acquisition gate
 
-Insight update: separate GPU rental price from utilization.
+experiment: add screenpipe acquisition gate.
 
 Changed notes:
-  - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
-  - [[gpu-earning-power-is-macro-level-offtake|GPU earning power is macro-level offtake]]
-  - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]
-  - [[gpu-finance|GPU Finance]]
-  - [[ccir-memory-bandwidth-band-cross-generation-gpu-rents-2026-07-11|CCIR: cross-generation neocloud rents form a narrow memory-bandwidth band]]
-
-### Jul 22, 2026, 11:56 AM EDT - insight: connect big worlds to personal agent tracking
-
-Insight update: connect big worlds to personal agent tracking.
-
-Changed notes:
-  - [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]]
-  - [[oak-lab-big-world-hypothesis-2024|Oak Lab: The Big World Hypothesis and its ramifications for AI]]
-  - [[personalized-models-compute-fragmentation-cross-assistant-2026-07-16|Commoditization, concentration, and personalized models: the cross-assistant discussion, 2026-07-16]]
+  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+  - [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
 
 ## Past 7 Days
 
+- Jul 24, 2026: update NAP capture v2 notes - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
+- Jul 23, 2026: Add computer-use NAP build ledger - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Jul 23, 2026: Log corrected NAPsack calibration - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Jul 23, 2026: experiment: audit natural screenpipe session - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Jul 23, 2026: research: compare computer-use capture options - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Jul 23, 2026: experiment: add screenpipe acquisition gate - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 23, 2026: synthesis: add nap versus gpu experiment fork - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: add GDM evolving norms implications - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
@@ -158,17 +113,17 @@ Changed notes:
 - Jul 20, 2026: source: capture buyer visibility and GPU bidding discussion - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
 - Jul 20, 2026: insight: add cross-provider GPU rental search hunch - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
 - Jul 20, 2026: article: make financing question direct - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: strengthen persistent shortage framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: clarify compute shortage framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: sharpen finance-native framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: simplify futures risk transfer section - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 53 updates in this window._
+_Showing the newest 25 of 56 updates in this window._
 
 ## Past 30 Days
 
+- Jul 24, 2026: update NAP capture v2 notes - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
+- Jul 23, 2026: Add computer-use NAP build ledger - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Jul 23, 2026: Log corrected NAPsack calibration - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Jul 23, 2026: experiment: audit natural screenpipe session - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Jul 23, 2026: research: compare computer-use capture options - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+- Jul 23, 2026: experiment: add screenpipe acquisition gate - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 23, 2026: synthesis: add nap versus gpu experiment fork - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: add GDM evolving norms implications - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
@@ -188,11 +143,5 @@ _Showing the newest 25 of 53 updates in this window._
 - Jul 20, 2026: source: capture buyer visibility and GPU bidding discussion - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
 - Jul 20, 2026: insight: add cross-provider GPU rental search hunch - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
 - Jul 20, 2026: article: make financing question direct - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: strengthen persistent shortage framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: clarify compute shortage framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: sharpen finance-native framing - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: simplify futures risk transfer section - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: add fleet revenue figure - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: qualify USD.AI history policy and trim futures repetition - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 160 updates in this window._
+_Showing the newest 25 of 166 updates in this window._
