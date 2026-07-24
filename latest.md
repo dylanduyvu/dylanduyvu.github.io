@@ -8,18 +8,18 @@ updated: 2026-07-24
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 24, 2026, 12:45 PM EDT
+Generated: Jul 24, 2026, 12:59 PM EDT
 
 ## State Shift Summary
 
 In the past 7 days, the public vault changed through 56 note commits. The most recent movement is:
 
+- Source capture: add computer-use capture tooling deep survey.
 - Source capture: add GDM evolving norms implications.
 - Source capture: complete tab autocomplete slack exchange.
 - Insight update: publish personal AI study and USD.AI policy.
 - Insight update: audit CCIR against GPU finance theses.
 - Insight update: separate GPU rental price from utilization.
-- Insight update: connect big worlds to personal agent tracking.
 
 ## Current Hub Signals
 
@@ -29,6 +29,15 @@ In the past 7 days, the public vault changed through 56 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 24, 2026, 12:59 PM EDT - source: add computer-use capture tooling deep survey
+
+Source capture: add computer-use capture tooling deep survey.
+
+Changed notes:
+  - [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
+  - [[computer-use-nap-build-log|Computer-use NAP build log]]
+  - [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Computer-use NAP: capture layer v2 plan]]
 
 ### Jul 24, 2026, 12:45 PM EDT - update NAP capture v2 notes
 
@@ -88,6 +97,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 24, 2026: source: add computer-use capture tooling deep survey - [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
 - Jul 24, 2026: update NAP capture v2 notes - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
 - Jul 23, 2026: Add computer-use NAP build ledger - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 23, 2026: Log corrected NAPsack calibration - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
@@ -112,12 +122,12 @@ Changed notes:
 - Jul 20, 2026: article: compress new GPU fleet financing argument - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: source: capture buyer visibility and GPU bidding discussion - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
 - Jul 20, 2026: insight: add cross-provider GPU rental search hunch - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
-- Jul 20, 2026: article: make financing question direct - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
 _Showing the newest 25 of 56 updates in this window._
 
 ## Past 30 Days
 
+- Jul 24, 2026: source: add computer-use capture tooling deep survey - [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
 - Jul 24, 2026: update NAP capture v2 notes - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
 - Jul 23, 2026: Add computer-use NAP build ledger - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 23, 2026: Log corrected NAPsack calibration - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
@@ -142,6 +152,5 @@ _Showing the newest 25 of 56 updates in this window._
 - Jul 20, 2026: article: compress new GPU fleet financing argument - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: source: capture buyer visibility and GPU bidding discussion - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
 - Jul 20, 2026: insight: add cross-provider GPU rental search hunch - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
-- Jul 20, 2026: article: make financing question direct - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 166 updates in this window._
+_Showing the newest 25 of 167 updates in this window._
