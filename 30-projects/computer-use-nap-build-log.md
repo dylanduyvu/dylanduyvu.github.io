@@ -24,7 +24,27 @@ tags:
 # Computer-use NAP build log
 
 > [!summary] Current status
-> As of 2026-07-24: capture is proven, semantic identity is not. Screenpipe plus patched NAPsack record both monitors durably, attribute clicks to the right display (11 of 11 in the latest smoke test, the two recorders agreeing on click position within roughly 13 milliseconds), and pair clicks with same-display pre-action screenshots. The open crux is exact semantic identity at scale: direct accessibility labels remain sparse where Dylan actually works, non-click actions have zero measured fidelity, and the repo contains a specification with no runner, joiner, snapshotter, or scorer yet. Position on the ladder: step zero-to-one of harness, 30-action calibration, natural-segmentation test, 50-100-action natural audit at roughly 90 percent, endurance, then multi-day collection. A second deep-research pass (see the 2026-07-24 update in the recorder survey) found reusable open-source components for capture but confirmed the verification harness itself exists nowhere and is the novel build. Details in the dated status section below.
+> As of 2026-07-24: Capture Layer v2’s six-action smoke passed every real-data checker gate, and the checker independently caught all 54 synthetic failure mutations. The validated stack combines Hammerspoon input and Accessibility evidence, one ScreenCaptureKit stream per display with shared decision-point freezes, and Arc webNavigation, DOM, and rrweb evidence. This proves the components can work together on the six named actions. It does not establish representative coverage or next-action predictability. The immediate next gate is a diagnostic 30-action walkthrough that measures component coverage and timing. The later blind, scored 30-action calibration remains a separate step after the capture contract and Spec B harness exist.
+
+## Capture Layer v2 smoke result, 2026-07-24
+
+Clean run `spike-20260724T191643Z-3e7c` passed:
+
+- exact Finder Back-button clicks on the secondary and primary displays;
+- same-window Hacker News DOM click and committed navigation;
+- literal `Command+Tab` and Finder activation;
+- Gmail search-field focus;
+- a secondary-display browser scroll and rrweb incremental events;
+- two live ScreenCaptureKit display streams and six matched shared freezes;
+- strictly prior, fresh, no-fallback freeze frames with decodable PNGs;
+- healthy Hammerspoon event taps and Accessibility notifications; and
+- complete browser run IDs and contiguous sequence numbers.
+
+The fixture suite reported `54/54` failure gates verified.
+
+An initial run failed three exact-native-target gates because the Finder coordinates were treated as window-relative rather than global Accessibility coordinates. The coordinates were corrected, the run was restarted from a fresh run ID, and the clean rerun passed without weakening the checker.
+
+The next step is documented in [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]. The immediate walkthrough is a diagnostic measurement pass. It should not be confused with the later blind, scored 30-action acquisition calibration.
 
 ## Status update, 2026-07-24
 
@@ -517,3 +537,4 @@ The recommended first implementation is therefore a deterministic local bundler,
 - Deep tooling survey: [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
 - Branch decision context: [[nap-vs-gpu-configuration-experiment-fork|NAP versus GPU configuration experiment fork]]
 - Capture v2 plan: [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Capture layer v2 plan and spike sequence, July 24, 2026]]
+- Capture v2 walkthrough: [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]

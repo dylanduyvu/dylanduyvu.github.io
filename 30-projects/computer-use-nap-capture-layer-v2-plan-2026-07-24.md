@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-24
 
-**Status:** Adopted — spike pending
+**Status:** Adopted. Six-action smoke passed; 30-action diagnostic walkthrough pending.
 
 **Context:** Follows three audit rounds of the hybrid action-labeler spec, the 2026-07-24 deep system audit, and the capture-tooling research survey.
 
@@ -45,6 +45,14 @@ Walk the 30-action manifest through it informally. Go/no-go questions:
 
 Output: one-page findings note (per component: works/doesn't on this setup + measured numbers).
 
+## Smoke result and next gate
+
+The clean six-action smoke run `spike-20260724T191643Z-3e7c` passed every real-data checker gate. The checker’s mutation suite also verified 54/54 failure gates. This proves that the current spike can join exact native controls on both displays, browser DOM and navigation events, focus and application switches, scrolling, shared two-display freezes, and correctly sequenced local evidence without the previously observed recorder failures.
+
+The smoke does not establish coverage across ordinary work. The next step is the diagnostic 30-action walkthrough described in [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]].
+
+This diagnostic walkthrough is distinct from the later blind, scored 30-action calibration. Its job is to measure capture-component behavior and produce the findings needed to write the capture contract and Spec B. The formal `27/30` acceptance gate applies only after the harness exists.
+
 ## Sequence
 
 1. Freeze the current spec hash as the protocol baseline (post latest agent patch).
@@ -64,6 +72,7 @@ Output: one-page findings note (per component: works/doesn't on this setup + mea
 ## Related notes
 
 - Build log: [[computer-use-nap-build-log|Computer-use NAP build log]]
+- Walkthrough: [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
 - Recorder survey: [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 - Deep tooling survey: [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
 - Screenpipe evidence: [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
