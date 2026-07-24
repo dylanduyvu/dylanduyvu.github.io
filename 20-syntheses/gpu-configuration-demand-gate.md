@@ -2,7 +2,7 @@
 type: synthesis
 status: draft
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-23
 domains:
   - gpu-finance
   - ai-infrastructure
@@ -107,6 +107,12 @@ This demand gate and the [[computer-use-nap-shadow-experiment|computer-use NAP s
 - the GPU experiment asks whether any purchasable configuration has enough credible demand and risk-adjusted economics to deserve capital.
 
 The branch has not yet been selected.
+
+## Current Demand Lead
+
+On July 23, Dylan reported that Jakub believes there is an on-demand GPU shortage because Hyperbolic, Runpod, and similar marketplaces were showing no H100 nodes available.
+
+Treat this as a timestamped, Jakub-attributed observation rather than a verified market-wide shortage. It becomes stronger behavioral marketplace evidence if repeated checks show that specific H100 configurations remain unavailable across providers, regions, quantities, and times despite customers attempting to launch them.
 
 ## Open Questions
 

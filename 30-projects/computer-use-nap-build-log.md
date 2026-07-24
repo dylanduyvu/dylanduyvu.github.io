@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-07-24
 aliases:
   - Computer-use NAP build log
   - Desktop next-action prediction build log
@@ -24,7 +24,28 @@ tags:
 # Computer-use NAP build log
 
 > [!summary] Current status
-> The project is still at the data-acquisition gate. Screenpipe plus a locally patched NAPsack can record both-monitor context, correctly locate secondary-monitor clicks, and pair clicks with same-display pre-action screenshots. Accessibility labels alone are incomplete. A four-action meaningful sample was fully reconstructable only after adding blind visual inspection, which is encouraging but too small and contaminated to pass the gate. The next build is a repeatable hybrid labeler followed by a clean 30-action acceptance test. A pass unlocks a one-to-two-hour natural capture and a separate audit of 50–100 mixed actions. Only that larger natural audit can unlock multi-day prediction recording.
+> As of 2026-07-24: capture is proven, semantic identity is not. Screenpipe plus patched NAPsack record both monitors durably, attribute clicks to the right display (11 of 11 in the latest smoke test, the two recorders agreeing on click position within roughly 13 milliseconds), and pair clicks with same-display pre-action screenshots. The open crux is exact semantic identity at scale: direct accessibility labels remain sparse where Dylan actually works, non-click actions have zero measured fidelity, and the repo contains a specification with no runner, joiner, snapshotter, or scorer yet. Position on the ladder: step zero-to-one of harness, 30-action calibration, natural-segmentation test, 50-100-action natural audit at roughly 90 percent, endurance, then multi-day collection. A second deep-research pass (see the 2026-07-24 update in the recorder survey) found reusable open-source components for capture but confirmed the verification harness itself exists nowhere and is the novel build. Details in the dated status section below.
+
+## Status update, 2026-07-24
+
+Snapshot reported from Dylan's other assistant's working session, logged verbatim in substance; sample sizes differ from the July 23 audit because these come from later, larger sessions, so the numbers below coexist with rather than correct the earlier ones.
+
+Proven as of this date:
+- Continuous raw evidence on both monitors: screens, OCR, accessibility trees, application, window, and URL metadata, physical input (Screenpipe), plus pre-action screenshots roughly 100-170 milliseconds before each click with coordinates and click-time accessibility (NAPsack).
+- Monitor attribution fixed and holding: 11 of 11 smoke clicks mapped to the correct physical display after the vertical-monitor patch, and the two recorders agree on click position within roughly 13 milliseconds.
+- Artifacts durable: database integrity, decodable screenshots, ample storage all check out.
+- On paper: a fully specified, three-times-audited fidelity protocol (blind labeling, sealed answers, deterministic scoring, hash-pinned inputs).
+
+Missing toward the goal:
+- THE CRUX, semantic identity where Dylan actually works: zero of 493 secondary-monitor clicks in the larger session carried direct role, name, and bounds from Screenpipe, and NAPsack got direct accessibility on only 5 of 11 smoke clicks. "What exactly did I click" currently rests on screenshot-plus-coordinate inference that has never been scored at scale; webpage controls will likely need the Arc extension as ground truth. This is the one genuinely open question; everything else is engineering.
+- Trustworthy pre-action context: Screenpipe's linked frames remain unsafe (roughly 43 percent land at or after the action in this sample, versus roughly 46 percent in the July 23 audit, different sessions), NAPsack buffers only the cursor's monitor, and the both-screens-at-decision-moment path, especially for keyboard actions on the other display, is designed but unvalidated. The decision-point cutoff fix is only landing now.
+- Coverage: every non-click action (keyboard navigation, focus, app switches, page navigation) has zero measured fidelity.
+- Code: the repository contains the specification and nothing else. No runner, joiner, snapshotter, or scorer.
+- Natural work: the controlled test uses manual markers; real work has none, and the rules for what counts as one action do not exist yet.
+
+Position and honest framing: step zero-to-one on the ladder (harness, 30-action calibration, natural-segmentation test, 50-100-action natural audit at roughly 90 percent, endurance, multi-day collection). Nothing found so far disproves the goal; every failure is unmeasured rather than impossible. Passing all capture gates deliberately proves nothing yet about whether the next actions are predictable; that question stays parked until the pipeline earns trust.
+
+Reuse conclusion adopted from the [[computer-use-capture-tool-research-2026-07-23|recorder survey's 2026-07-24 update]]: the big labs run this category internally (Meta's Model Capability Initiative confirmed), open components exist to glue (OpenAdapt's battle-tested macOS accessibility layer, openadapt-capture and openadapt-privacy, rrweb for the conditional Arc extension, AgentNetTool and PC Tracker as reference implementations), and the four things the gates require (dual-monitor decision-point-safe preframes, exact-semantic scoring with blind labels, zero-silent-loss accounting, natural-action segmentation) exist nowhere and remain the novel build.
 
 ## Product target
 
@@ -473,7 +494,7 @@ The recommended first implementation is therefore a deterministic local bundler,
 - Dylan reaffirmed the overall threshold of at least 27 of 30 and zero silent misses before proceeding.
 - Passing 30 does not replace the 50–100-action natural audit.
 - Human-understandable semantic identity counts at this rung; stable executable selectors do not.
-- Arc DOM recording remains conditional on browser-category failure.
+- Browser-side ground truth is required in Capture Layer v2 and is strictly label-only; it never enters predictor input. Current tooling (rrweb + CDP) is subject to spike results. (Supersedes: Arc DOM recording conditional on browser-category failure, 2026-07-23.)
 - No result from this acquisition work validates prediction quality, product usefulness, personalization, goal understanding, or Niyant's enterprise thesis.
 
 ## Local artifacts
@@ -494,3 +515,4 @@ The recommended first implementation is therefore a deterministic local bundler,
 - Screenpipe evidence: [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
 - Recorder survey: [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 - Branch decision context: [[nap-vs-gpu-configuration-experiment-fork|NAP versus GPU configuration experiment fork]]
+- Capture v2 plan: [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Capture layer v2 plan and spike sequence, July 24, 2026]]

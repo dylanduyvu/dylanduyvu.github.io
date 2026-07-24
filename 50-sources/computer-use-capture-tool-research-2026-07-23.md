@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-07-24
 projects:
   - personal-ai-context-learning
 domains:
@@ -159,6 +159,20 @@ The prediction LBH remains deferred behind acquisition. The immediate result wor
 > Can existing tools independently recover Dylan's exact next destination from normal Mac and Arc actions with little enough label noise to make a prediction result interpretable?
 
 If this fails, the conclusion is about the acquisition stack, not the predictability of Dylan's behavior.
+
+## Update, 2026-07-24: second deep-research pass on reusable software
+
+Provenance: Dylan's other assistant ran a deep-research sweep on preexisting capture software after Dylan asked whether something like this must already exist ("meta does this to their employees internally for example"). Findings pasted 2026-07-24 and logged here; the external claims are that assistant's research, not independently re-verified in this pass.
+
+Category confirmation, nothing downloadable: Meta's Model Capability Initiative (MCI), announced internally April 2026 out of Meta Superintelligence Labs under Alexandr Wang's data org, installs capture software on US employees' computers recording mouse movements, clicks, keystrokes, and periodic screenshots across designated work apps, explicitly to train computer-use agents on dropdowns, shortcuts, and app navigation, with no opt-out. The vendor ecosystem around it (Scale, Mercor-style contractor recording) sells labor and data, not software. Dylan's hunch was literally true and recent; the category is real and there is still nothing to install.
+
+Deltas against the July 23 table above:
+- AgentNetTool gains context: it is the collection app behind OpenCUA (xlang-ai, NeurIPS 2025 spotlight), used to collect 22.5K real task demonstrations including 5K on macOS, and it REUSED OpenAdapt's macOS Accessibility capture code. Practical consequence: that OpenAdapt macOS AX layer is battle-tested code to mine or import rather than rewrite. Caveats stand: task-scoped demonstration recording with annotator review, not continuous natural-work capture, and dual-monitor rigor unverified, which is exactly where recorders quietly lie.
+- OpenAdapt entry gains two pieces: openadapt-capture pairs every action event with an immediately-prior screenshot plus OS-accessibility window state (NAPsack's job, independently reinvented), and openadapt-privacy does PII scrubbing of recordings, mapping directly onto the blind-pack-leaves-the-machine concern. Note the flagship OpenAdapt project has since pivoted toward deterministic workflow replay; the capture components are the part to take.
+- rrweb's role UPGRADES from the July 23 dismissal. For the conditional Arc ground-truth layer, do not write a bespoke DOM recorder: rrweb is the mature open-source standard for DOM snapshots, mutations, and input events with timestamps (it powers most commercial session replay), and wrapping it in a WebExtension with chrome.webNavigation adds committed URLs, tab/frame/document identifiers, and actual event targets. Estimated roughly 80 percent of the label-only browser ground truth off the shelf. This coexists with, and may supersede, the UI + API Recorder option above if the browser category fails calibration.
+- New lesser fits: PC Tracker (PC Agent paper), lightweight background keyboard/mouse plus screenshot recording, worth reading as a second reference implementation; Microsoft Recall proves shipped continuous capture with OCR and element understanding but is Windows-only and closed; Rewind/Limitless closed with no element-level API; ActivityWatch app/window granularity only.
+
+What genuinely does not exist anywhere, per this sweep: dual-monitor decision-point-safe preframes, exact-semantic-destination scoring with blind labels, zero-silent-loss accounting, and a natural-action segmentation contract. Labs do not ship these because they solve fidelity with scale (22K trajectories or thousands of employees drown the noise); at N=1 that option does not exist, which is why this project's gates exist. Net conclusion adopted into the build: the reusable pieces shrink the work from "write two recorders and a browser instrument" to "glue proven capture components and write the verification harness," and the harness is the genuinely novel part.
 
 ## Links
 
