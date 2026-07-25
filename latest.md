@@ -8,18 +8,18 @@ updated: 2026-07-24
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 24, 2026, 3:26 PM EDT
+Generated: Jul 24, 2026, 9:56 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 51 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 52 note commits. The most recent movement is:
 
+- Project decision: checkpoint computer-use NAP walkthrough handoff.
 - Source capture: add computer-use capture tooling deep survey.
 - Source capture: add GDM evolving norms implications.
 - Source capture: complete tab autocomplete slack exchange.
 - Insight update: publish personal AI study and USD.AI policy.
 - Insight update: audit CCIR against GPU finance theses.
-- Insight update: separate GPU rental price from utilization.
 
 ## Current Hub Signals
 
@@ -29,6 +29,18 @@ In the past 7 days, the public vault changed through 51 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 24, 2026, 9:56 PM EDT - project: checkpoint computer-use NAP walkthrough handoff
+
+Project decision: checkpoint computer-use NAP walkthrough handoff.
+
+Changed notes:
+  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+  - [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
+  - [[computer-use-nap-build-log|Computer-use NAP build log]]
+  - [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Computer-use NAP: capture layer v2 plan]]
+  - [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
 
 ### Jul 24, 2026, 3:26 PM EDT - experiment: record capture v2 smoke and walkthrough
 
@@ -58,45 +70,9 @@ Changed notes:
   - [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Computer-use NAP: capture layer v2 plan]]
   - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 
-### Jul 23, 2026, 5:09 PM EDT - Add computer-use NAP build ledger
-
-Add computer-use NAP build ledger.
-
-Changed notes:
-  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[personal-ai-context-learning|Personal AI Context Learning]]
-
-### Jul 23, 2026, 4:34 PM EDT - Log corrected NAPsack calibration
-
-Log corrected NAPsack calibration.
-
-Changed notes:
-  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-  - [[personal-ai-context-learning|Personal AI Context Learning]]
-  - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
-
-### Jul 23, 2026, 3:46 PM EDT - experiment: audit natural screenpipe session
-
-experiment: audit natural screenpipe session.
-
-Changed notes:
-  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-  - [[personal-ai-context-learning|Personal AI Context Learning]]
-  - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
-  - [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
-
-### Jul 23, 2026, 3:33 PM EDT - research: compare computer-use capture options
-
-research: compare computer-use capture options.
-
-Changed notes:
-  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-  - [[personal-ai-context-learning|Personal AI Context Learning]]
-  - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
-
 ## Past 7 Days
 
+- Jul 24, 2026: project: checkpoint computer-use NAP walkthrough handoff - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 24, 2026: experiment: record capture v2 smoke and walkthrough - [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
 - Jul 24, 2026: source: add computer-use capture tooling deep survey - [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
 - Jul 24, 2026: update NAP capture v2 notes - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
@@ -121,12 +97,12 @@ Changed notes:
 - Jul 20, 2026: article: address equity-risk objection - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen Lambda demand-history counterexample - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: compress new GPU fleet financing argument - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: source: capture buyer visibility and GPU bidding discussion - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
 
-_Showing the newest 25 of 51 updates in this window._
+_Showing the newest 25 of 52 updates in this window._
 
 ## Past 30 Days
 
+- Jul 24, 2026: project: checkpoint computer-use NAP walkthrough handoff - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 24, 2026: experiment: record capture v2 smoke and walkthrough - [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
 - Jul 24, 2026: source: add computer-use capture tooling deep survey - [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
 - Jul 24, 2026: update NAP capture v2 notes - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
@@ -151,6 +127,5 @@ _Showing the newest 25 of 51 updates in this window._
 - Jul 20, 2026: article: address equity-risk objection - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: sharpen Lambda demand-history counterexample - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 - Jul 20, 2026: article: compress new GPU fleet financing argument - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: source: capture buyer visibility and GPU bidding discussion - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
 
-_Showing the newest 25 of 168 updates in this window._
+_Showing the newest 25 of 169 updates in this window._
