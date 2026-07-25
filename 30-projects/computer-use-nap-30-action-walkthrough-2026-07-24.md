@@ -20,6 +20,9 @@ tags:
 
 # Computer-use NAP: what the 30-action walkthrough is
 
+> [!status] Live state, paused July 24
+> The diagnostic is paused cleanly at **12/30 accepted checkpoints**. Steps 1–10 cover the native category; step 11 captured Gmail `Main menu`; step 12 captured Gmail `Advanced search options`. The next row is `step-013`, Gmail `Settings`. The last segment was preserved and both recorder processes were stopped. See [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]] for the exact checkpoint chain, artifacts, protocol drift, remaining validator work, and safe resume procedure.
+
 ## Thirty-second version
 
 The six-action smoke test showed that the new capture pieces can operate together without obvious data corruption.
@@ -94,7 +97,7 @@ The categories mean:
 - **Dynamic webpage:** controls rendered or changed by JavaScript, such as an X composer, menu, modal, or infinite-feed control.
 - **Cross-monitor:** an action whose source and destination span Dylan’s primary and secondary displays.
 
-The exact 30 targets are not yet frozen. The spike directory contains `checklist.md`, but it does not contain the referenced 30-step manifest. The next preparation step is therefore to write and freeze the exact action list before recording.
+The exact 30 targets are frozen in `spike/walkthrough-manifest.json`. The session copy has SHA-256 `1b9a75f09d01b4fc605d7147cf34b59f59d7acf68cec68deef194ccb01fbe494`. A resumable checkpoint controller now preserves every accepted action independently, so a later failure does not require repeating prior rows.
 
 ## What one walkthrough action looks like
 
@@ -184,18 +187,19 @@ The walkthrough succeeds if it gives enough evidence to write a capture contract
 
 ## What follows
 
-1. Freeze the exact 30-action diagnostic manifest.
-2. Run the walkthrough and write the component findings note.
-3. Draft the capture contract and Capture Layer v2 specification using the measured results.
-4. Re-audit the contract and specification once.
-5. Implement the formal harness.
-6. Run the blind, scored 30-action calibration.
-7. If that passes, run a short natural-session segmentation test and then audit 50–100 ordinary actions.
-8. Only then begin multi-day next-action prediction collection.
+1. Batch-complete and freeze the remaining browser validators.
+2. Resume the current checkpoint session at step 13 without repeating steps 1–12.
+3. Finish the walkthrough and write the component findings note.
+4. Draft the capture contract and Capture Layer v2 specification using the measured results.
+5. Re-audit the contract and specification once.
+6. Implement the formal harness.
+7. Run the blind, scored 30-action calibration.
+8. If that passes, run a short natural-session segmentation test and then audit 50–100 ordinary actions.
+9. Only then begin multi-day next-action prediction collection.
 
 ## Related notes
 
 - [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Capture Layer v2 plan]]
 - [[computer-use-nap-build-log|Computer-use NAP build log]]
+- [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]]
 - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-

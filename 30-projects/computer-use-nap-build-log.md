@@ -24,7 +24,34 @@ tags:
 # Computer-use NAP build log
 
 > [!summary] Current status
-> As of 2026-07-24: Capture Layer v2’s six-action smoke passed every real-data checker gate, and the checker independently caught all 54 synthetic failure mutations. The validated stack combines Hammerspoon input and Accessibility evidence, one ScreenCaptureKit stream per display with shared decision-point freezes, and Arc webNavigation, DOM, and rrweb evidence. This proves the components can work together on the six named actions. It does not establish representative coverage or next-action predictability. The immediate next gate is a diagnostic 30-action walkthrough that measures component coverage and timing. The later blind, scored 30-action calibration remains a separate step after the capture contract and Spec B harness exist.
+> As of 2026-07-24: Capture Layer v2’s six-action smoke passed every real-data checker gate, and the checker independently caught all 54 synthetic failure mutations. The diagnostic walkthrough is now paused cleanly at **12/30 accepted checkpoints**, with Gmail `Settings` next. Steps 1–10 cover native actions; steps 11–12 prove exact Gmail DOM clicks and browser export integrity. The raw recorder stack remained stable, but the checkpoint validator was repaired during the walkthrough, so this is a diagnostic with disclosed protocol drift rather than one frozen formal calibration. Full continuation state is in [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]].
+
+## Walkthrough checkpoint, 2026-07-24
+
+The fixed 30-row manifest is frozen at SHA-256 `1b9a75f09d01b4fc605d7147cf34b59f59d7acf68cec68deef194ccb01fbe494`. The checkpoint session is:
+
+`/Users/dylanvu/napsack-runs/walkthrough-sessions/walkthrough-20260724T235713Z`
+
+Accepted rows:
+
+- primary Finder Icon and List View clicks;
+- secondary Finder Column and Gallery View clicks;
+- Notes search focus;
+- Codex composer focus;
+- Finder and Notes window activation;
+- Finder `Command+1` and `Command+2`;
+- Gmail `Main menu`; and
+- Gmail `Advanced search options`.
+
+Every accepted row has a hash-addressed evidence inventory, two display-freeze PNGs, Hammerspoon and SCK prefixes, and a link to the prior checkpoint. The browser rows also contain a local export with exact DOM target identity, top-frame document identity, contiguous sequence metadata, and zero declared write failures.
+
+The procedure originally required a monolithic run. After missed markers and ambiguous live instructions threatened to erase valid progress, it was replaced with one immutable checkpoint per accepted action. Four partial runs are preserved as aborts. The latest is a clean pause after step 12; the step-13 ledger was opened but no ready marker or measured action occurred.
+
+Current code at commit `42eb09e` passes 102 Python tests, four Arc recorder JavaScript tests, and all 54 failure-mutation fixtures. The original source inventory now fails on exactly the semantic checkpoint validator and its test because support was added for real native and Gmail evidence after preflight. The recorder sources still verify. Before Dylan resumes, remaining browser validators should be implemented and tested in one batch, the runtime should be frozen once, and preserved checkpoints should be revalidated where practical.
+
+The walkthrough also surfaced two substantive capture-contract findings. First, five of the first 12 freezes had more than one second of cross-display skew, with a maximum of 3.765 seconds; the current checkpoint validator allows frames up to five seconds old and does not enforce the smoke test’s sub-second skew bar. Second, the supported browser validator proves the exact physical and DOM click but treats the declared UI postcondition as an operator observation rather than an independently required browser consequence. Both must be resolved or explicitly specified before the formal calibration.
+
+This walkthrough still proves nothing about next-action predictability or product value.
 
 ## Capture Layer v2 smoke result, 2026-07-24
 
@@ -538,3 +565,4 @@ The recommended first implementation is therefore a deterministic local bundler,
 - Branch decision context: [[nap-vs-gpu-configuration-experiment-fork|NAP versus GPU configuration experiment fork]]
 - Capture v2 plan: [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Capture layer v2 plan and spike sequence, July 24, 2026]]
 - Capture v2 walkthrough: [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
+- Walkthrough handoff: [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]]

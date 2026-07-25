@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-24
 
-**Status:** Adopted. Six-action smoke passed; 30-action diagnostic walkthrough pending.
+**Status:** Adopted. Six-action smoke passed; diagnostic walkthrough paused at 12/30 accepted checkpoints, with step 13 next.
 
 **Context:** Follows three audit rounds of the hybrid action-labeler spec, the 2026-07-24 deep system audit, and the capture-tooling research survey.
 
@@ -53,6 +53,8 @@ The smoke does not establish coverage across ordinary work. The next step is the
 
 This diagnostic walkthrough is distinct from the later blind, scored 30-action calibration. Its job is to measure capture-component behavior and produce the findings needed to write the capture contract and Spec B. The formal `27/30` acceptance gate applies only after the harness exists.
 
+The live diagnostic now has 12 immutable accepted checkpoints. The recorder sources remained frozen, but the semantic checkpoint validator was repaired during collection, so the repository source-inventory check now differs on the validator and its test. This protocol drift is disclosed in [[computer-use-nap-walkthrough-handoff-2026-07-24|the operational handoff]]. The run remains useful as a component diagnostic but is not one frozen formal calibration.
+
 ## Sequence
 
 1. Freeze the current spec hash as the protocol baseline (post latest agent patch).
@@ -73,6 +75,7 @@ This diagnostic walkthrough is distinct from the later blind, scored 30-action c
 
 - Build log: [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Walkthrough: [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
+- Operational handoff: [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]]
 - Recorder survey: [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 - Deep tooling survey: [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
 - Screenpipe evidence: [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]

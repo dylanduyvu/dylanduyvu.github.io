@@ -2,7 +2,7 @@
 type: synthesis
 status: active
 created: 2026-07-22
-updated: 2026-07-23
+updated: 2026-07-24
 projects:
   - personal-ai-context-learning
 domains:
@@ -39,6 +39,12 @@ Tabracadabra is useful prior art for the writer interaction, but Dylan's distinc
 The first artifact is now an acquisition audit. It must show that the data can distinguish exact application, window, webpage, document, input-field, link, and button targets without future leakage. Only after this gate passes should the project build a retrospective offline replay from the captured history.
 
 Build the Tab interface only if personal history improves prediction and the resulting routes would save meaningful work. The longer-term goal is a credible public demo, but the offline replay is the gate that keeps the demo from being a staged interaction with no evidence that personalization mattered.
+
+### July 24 execution update
+
+The Screenpipe-plus-patched-NAPsack plan below is now historical. Capture Layer v2 replaced it with Hammerspoon, one ScreenCaptureKit stream per display, and mandatory Arc browser evidence. The six-action smoke passed. A fixed 30-action component diagnostic is paused at 12/30 immutable accepted checkpoints, with Gmail `Settings` next.
+
+The raw recorder evidence is preserved, but the semantic checkpoint validator was repaired during live collection, creating explicit source-inventory drift. This run can diagnose capture components; it is not the later blind calibration under one frozen runtime. Before resumption, remaining browser validators should be completed and tested in one batch. The exact state and resume procedure are in [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]].
 
 ## Proposed LBH
 
@@ -373,9 +379,9 @@ Niyant-level technical depth becomes necessary after this gate if the work turns
 
 ## Immediate next step
 
-Build the repeatable Screenpipe plus patched NAPsack hybrid labeler described in [[computer-use-nap-build-log|Computer-use NAP build log]]. Run one clean 30-action acceptance test spanning native controls, ordinary and dynamic webpage controls, mixed action types, and both displays. Require all actions to appear, at least 27 exact semantic targets, at least 9/10 native targets, at least 14/15 combined webpage targets, at least 4/5 cross-monitor targets, and zero silent losses.
+Batch-complete and freeze the remaining Capture Layer v2 browser validators, revalidate the preserved diagnostic checkpoints where practical, and resume the existing session at step 13. Do not repeat steps 1–12.
 
-If that controlled test passes, record one to two hours of normal work as acquisition-audit material, not prediction-training data. Reconstruct and manually inspect 50–100 meaningful clicks, switches, focus changes, key commands, and page navigations. Only if that natural audit reaches the roughly 90% exact-target gate without silent losses should the project freeze the event schema and begin multi-day history collection.
+When the component diagnostic finishes, write the measured capture contract and implement the later blind 30-action calibration. Only after that formal calibration passes should the project record one to two hours of normal work as acquisition-audit material, not prediction-training data. Reconstruct and manually inspect 50–100 meaningful clicks, switches, focus changes, key commands, and page navigations. Only if that natural audit reaches the roughly 90% exact-target gate without silent losses should the project freeze the event schema and begin multi-day history collection.
 
 If the controlled or natural audit fails mainly on webpage controls, add Arc DOM instrumentation and rerun that category. If failures are broad, repair or replace the acquisition stack before collecting more work.
 
@@ -384,6 +390,7 @@ Send Niyant the revised contract for a one-pass check that exact semantic routin
 ## Links
 
 - Build ledger: [[computer-use-nap-build-log|Computer-use NAP build log]]
+- Operational handoff: [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]]
 - Project: [[personal-ai-context-learning|Personal AI Context Learning]]
 - Product hunch: [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Niyant follow-up: [[dylan-niyant-computer-use-nap-followup-2026-07-22|Dylan and Niyant: computer-use NAP contribution follow-up]]

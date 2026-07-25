@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-22
-updated: 2026-07-23
+updated: 2026-07-24
 aliases:
   - Personal AI Context Learning
   - Niyant's personal-AI thesis
@@ -50,6 +50,8 @@ Recorder research found no single turnkey Mac tool that combines exact Arc DOM t
 
 The first NAPsack calibration found and locally fixed a display-coordinate mismatch between its input handler and screenshot worker. A corrected run assigned all seven sampled secondary-display clicks to the right monitor and paired each with a same-display pre-action image roughly 0.10 to 0.17 seconds earlier. Direct Accessibility labels covered only two of the four meaningful intended controls, while blind screenshot-plus-coordinate reconstruction recovered all four. This is enough to keep the hybrid approach alive, but not enough to pass the gate: the run contained only four valid intended actions, so the required controlled and natural-session coverage audits remain undone.
 
+That Screenpipe-plus-NAPsack branch has now been superseded for the controlled diagnostic. Capture Layer v2 uses Hammerspoon for physical input and Accessibility evidence, one ScreenCaptureKit stream per display, and mandatory Arc DOM, navigation, and rrweb evidence. Its six-action smoke passed. The fixed diagnostic walkthrough is paused at 12/30 immutable checkpoints, with step 13 next. The raw evidence is preserved, but semantic validator patches during collection created disclosed source-inventory drift, so this remains a component diagnostic rather than the later frozen calibration. See [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]].
+
 The NAP experiment is one side of Dylan's current branch-selection LBH, not yet the chosen next project. The competing GPU branch has been sharpened from “find an offtake customer” into a demand-informed configuration gate: determine which small-server GPU configuration, if any, deserves to be purchased based on workload-specific customer evidence or defensible marketplace behavior. See [[gpu-configuration-demand-gate|GPU configuration demand gate]].
 
 A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence for feasibility. Once a personalized predictor shows suggestions, it helps cause the future behavior it learns from. Exposed-history accuracy may rise because the model understands the person better, because the person is conforming to the model's historical predictions, or both. This makes shadow mode, randomized exposure, goal-change tests, washout periods, and agency/diversity measures necessary before treating online accuracy or acceptance as evidence of deeper personalization.
@@ -86,6 +88,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[personal-ai-strategy-and-evidence-sequencing|Personal AI strategy and evidence sequencing]]
 - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - [[computer-use-nap-build-log|Computer-use NAP build log]]
+- [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]]
 
 ## Hunches
 
@@ -123,12 +126,12 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
-- Complete the repeatable Screenpipe + patched NAPsack hybrid labeler and run the clean 30-action acceptance test documented in [[computer-use-nap-build-log|Computer-use NAP build log]]. Require all 30 physical actions, at least 27 exact semantic targets, at least 9/10 native targets, at least 14/15 combined webpage targets, at least 4/5 cross-monitor targets, and zero silent misses before a one-to-two-hour natural capture.
+- Batch-complete and freeze the remaining Capture Layer v2 browser validators, then resume the existing diagnostic checkpoint session at step 13 without repeating the 12 accepted rows. Use [[computer-use-nap-walkthrough-handoff-2026-07-24|the handoff]] as the continuation source of truth.
+- After the diagnostic, write the measured capture contract and formal harness. The later blind calibration must retain all 30 rows, reach at least 27 exact semantic targets, at least 9/10 native targets, at least 14/15 combined webpage targets, at least 4/5 cross-monitor targets, and zero silent misses before a one-to-two-hour natural capture.
 - State the demo's claim and nonclaims before publishing it.
 - Compare the static implementation against simple context, retrieval, and memory baselines on held-out personal events.
 - Send Niyant the navigation-only experiment contract and confirm that its exact semantic-destination target matches what he meant by computer-use NAP.
-- Research out-of-the-box recorders that combine exact browser DOM actions, native Accessibility controls, application and window state, and dual-monitor pre-action screens.
-- Audit 50–100 meaningful Screenpipe actions, report browser and native-app semantic-label coverage separately, and retain ambiguous or unresolved events in the denominator.
+- Audit 50–100 meaningful natural actions only after the controlled capture stack and formal calibration pass. Report browser and native-app semantic-label coverage separately, and retain ambiguous or unresolved events in the denominator.
 - Begin model comparison only if the acquisition stack produces roughly 90% or better exact semantic labels without future leakage.
 - After acquisition passes, freeze the ontology, prompt, history window, baselines, and scoring rules before collecting chronological held-out handoffs.
 - Then compare MRU-3, source-transition, screen-only, correct-history, mismatched-history, and correct-history-plus-declared-goal conditions with top-three prediction and abstention.
