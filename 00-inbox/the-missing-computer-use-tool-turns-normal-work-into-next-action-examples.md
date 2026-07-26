@@ -1,6 +1,6 @@
 ---
 type: idea
-status: hunch
+status: superseded
 created: 2026-07-26
 updated: 2026-07-26
 projects:
@@ -20,7 +20,7 @@ tags:
 
 ## Status
 
-Article concept only. This is a framework for later reference, not the beginning of a draft.
+Superseded as stated. Primary-source review found that NAPsack and OpenCUA already create forms of state-action data, while Scribe AutoCapture already discovers workflows and provides a review queue. The original universal claim remains below as belief history. The bounded replacement and draft plan are in [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]].
 
 ## Core claim
 
@@ -135,4 +135,5 @@ The article should use the first-person investigation as its narrative, the tool
 
 ## Updates
 
+- 2026-07-26: Marked the universal claim superseded after primary-source review found direct counterexamples. The remaining claim is narrower: Dylan did not find one public tool that turned his passive dual-monitor, cross-app work into verified exact-navigation rows with prior-state evidence, correction, and reusable export. See [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]].
 - 2026-07-26: Framework captured after the first successful two-monitor Screenpipe test. Article drafting intentionally deferred.
