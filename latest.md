@@ -1,25 +1,25 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-24
+updated: 2026-07-26
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 24, 2026, 9:56 PM EDT
+Generated: Jul 26, 2026, 6:32 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 52 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 54 note commits. The most recent movement is:
 
+- Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
 - Source capture: add computer-use capture tooling deep survey.
 - Source capture: add GDM evolving norms implications.
 - Source capture: complete tab autocomplete slack exchange.
 - Insight update: publish personal AI study and USD.AI policy.
-- Insight update: audit CCIR against GPU finance theses.
 
 ## Current Hub Signals
 
@@ -30,48 +30,34 @@ In the past 7 days, the public vault changed through 52 note commits. The most r
 
 ## Past 24 Hours
 
-### Jul 24, 2026, 9:56 PM EDT - project: checkpoint computer-use NAP walkthrough handoff
+### Jul 26, 2026, 6:32 PM EDT - project: update computer-use NAP capture research
 
-Project decision: checkpoint computer-use NAP walkthrough handoff.
+Project decision: update computer-use NAP capture research.
+
+Changed notes:
+  - [[computer-use-nap-build-log|Computer-use NAP build log]]
+  - [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Computer-use NAP: capture layer v2 plan]]
+  - [[computer-use-nap-fidelity-research-2026-07-26|Computer-use NAP: dataset fidelity research, July 26, 2026]]
+
+### Jul 26, 2026, 6:24 PM EDT - idea: capture missing computer-use dataset recorder article
+
+idea: capture missing computer-use dataset recorder article.
+
+Changed notes:
+  - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
+
+### Jul 26, 2026, 12:49 PM EDT - document manual NAP prediction pilot
+
+document manual NAP prediction pilot.
 
 Changed notes:
   - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-  - [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Computer-use NAP: capture layer v2 plan]]
-  - [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]]
-  - [[personal-ai-context-learning|Personal AI Context Learning]]
-
-### Jul 24, 2026, 3:26 PM EDT - experiment: record capture v2 smoke and walkthrough
-
-experiment: record capture v2 smoke and walkthrough.
-
-Changed notes:
-  - [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Computer-use NAP: capture layer v2 plan]]
-
-### Jul 24, 2026, 12:59 PM EDT - source: add computer-use capture tooling deep survey
-
-Source capture: add computer-use capture tooling deep survey.
-
-Changed notes:
-  - [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Computer-use NAP: capture layer v2 plan]]
-
-### Jul 24, 2026, 12:45 PM EDT - update NAP capture v2 notes
-
-update NAP capture v2 notes.
-
-Changed notes:
-  - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Computer-use NAP: capture layer v2 plan]]
-  - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 
 ## Past 7 Days
 
+- Jul 26, 2026: project: update computer-use NAP capture research - [[computer-use-nap-build-log|Computer-use NAP build log]]
+- Jul 26, 2026: idea: capture missing computer-use dataset recorder article - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
+- Jul 26, 2026: document manual NAP prediction pilot - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 24, 2026: project: checkpoint computer-use NAP walkthrough handoff - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 24, 2026: experiment: record capture v2 smoke and walkthrough - [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
 - Jul 24, 2026: source: add computer-use capture tooling deep survey - [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
@@ -94,14 +80,14 @@ Changed notes:
 - Jul 22, 2026: insight: add borrower-side loan test and bandwidth pricing - [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
 - Jul 21, 2026: insight: add first-fleet capital mismatch - [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
 - Jul 20, 2026: article: frame the first-fleet debt boundary - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: address equity-risk objection - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: sharpen Lambda demand-history counterexample - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: compress new GPU fleet financing argument - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 52 updates in this window._
+_Showing the newest 25 of 54 updates in this window._
 
 ## Past 30 Days
 
+- Jul 26, 2026: project: update computer-use NAP capture research - [[computer-use-nap-build-log|Computer-use NAP build log]]
+- Jul 26, 2026: idea: capture missing computer-use dataset recorder article - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
+- Jul 26, 2026: document manual NAP prediction pilot - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 24, 2026: project: checkpoint computer-use NAP walkthrough handoff - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 24, 2026: experiment: record capture v2 smoke and walkthrough - [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
 - Jul 24, 2026: source: add computer-use capture tooling deep survey - [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
@@ -124,8 +110,5 @@ _Showing the newest 25 of 52 updates in this window._
 - Jul 22, 2026: insight: add borrower-side loan test and bandwidth pricing - [[bespoke-gpu-finance-may-make-the-neocloud-the-optimal-finance-firm|Bespoke GPU finance may make the neocloud the optimal finance firm]]
 - Jul 21, 2026: insight: add first-fleet capital mismatch - [[young-no-offtake-gpu-fleets-carry-equity-risk-without-clear-venture-upside|Young no-offtake GPU fleets carry equity risk without clear venture upside]]
 - Jul 20, 2026: article: frame the first-fleet debt boundary - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: address equity-risk objection - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: sharpen Lambda demand-history counterexample - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
-- Jul 20, 2026: article: compress new GPU fleet financing argument - [[the-gpu-backed-credit-market-does-not-exist-yet|Why New GPU Fleets Can Go Unfunded in a Compute Shortage]]
 
-_Showing the newest 25 of 169 updates in this window._
+_Showing the newest 25 of 172 updates in this window._
