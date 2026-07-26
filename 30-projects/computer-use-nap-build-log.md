@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-23
-updated: 2026-07-24
+updated: 2026-07-26
 aliases:
   - Computer-use NAP build log
   - Desktop next-action prediction build log
@@ -25,6 +25,12 @@ tags:
 
 > [!summary] Current status
 > As of 2026-07-24: Capture Layer v2’s six-action smoke passed every real-data checker gate, and the checker independently caught all 54 synthetic failure mutations. The diagnostic walkthrough is now paused cleanly at **12/30 accepted checkpoints**, with Gmail `Settings` next. Steps 1–10 cover native actions; steps 11–12 prove exact Gmail DOM clicks and browser export integrity. The raw recorder stack remained stable, but the checkpoint validator was repaired during the walkthrough, so this is a diagnostic with disclosed protocol drift rather than one frozen formal calibration. Full continuation state is in [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]].
+
+## Dataset-fidelity research, 2026-07-26
+
+Scoping decision verified by a cross-paper deep-research pass: the complete synchronized dataset (dual-monitor sync, joint AX+DOM identity, cryptographic provenance, zero-loss guarantees) is load-bearing for the eventual always-on router, not for the first retrospective prediction experiment. Published precedent (AITW, AgentNet/OpenCUA, AndroidControl in-domain scaling, next-app prediction literature) supports a simple first dataset: active-monitor pre-action frame, active app/window/URL, input events, approximate target identity, manually verified next-action labels. Two properties do not relax even in the minimal experiment: strict pre-action frame ordering (no future-information leakage) and verified next-action labels; approximate element identity and single-monitor capture are compensable. In-domain fine-tuning saturates at hundreds-to-low-thousands of examples — the regime a personal system occupies by construction. Full synthesis with numbers, the modality-vs-performance table, and the staged fidelity-escalation plan: [[computer-use-nap-fidelity-research-2026-07-26|NAP dataset fidelity research, July 26, 2026]].
+
+This does not change the gate ladder: the diagnostic walkthrough and capture-contract findings remain prerequisites, because even the simple dataset depends on the label pipeline they validate.
 
 ## Walkthrough checkpoint, 2026-07-24
 
@@ -562,6 +568,7 @@ The recommended first implementation is therefore a deterministic local bundler,
 - Screenpipe evidence: [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
 - Recorder survey: [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 - Deep tooling survey: [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
+- Fidelity research: [[computer-use-nap-fidelity-research-2026-07-26|NAP dataset fidelity research, July 26, 2026]]
 - Branch decision context: [[nap-vs-gpu-configuration-experiment-fork|NAP versus GPU configuration experiment fork]]
 - Capture v2 plan: [[computer-use-nap-capture-layer-v2-plan-2026-07-24|Capture layer v2 plan and spike sequence, July 24, 2026]]
 - Capture v2 walkthrough: [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]

@@ -78,5 +78,6 @@ The live diagnostic now has 12 immutable accepted checkpoints. The recorder sour
 - Operational handoff: [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]]
 - Recorder survey: [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 - Deep tooling survey: [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
+- Fidelity research: [[computer-use-nap-fidelity-research-2026-07-26|NAP dataset fidelity research, July 26, 2026]]
 - Screenpipe evidence: [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
 - Current spec: `/Users/dylanvu/Projects/computer-use-nap/docs/superpowers/specs/2026-07-23-hybrid-action-labeler-design.md`
