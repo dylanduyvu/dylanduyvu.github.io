@@ -2,7 +2,7 @@
 type: synthesis
 status: active
 created: 2026-07-22
-updated: 2026-07-24
+updated: 2026-07-26
 projects:
   - personal-ai-context-learning
 domains:
@@ -397,3 +397,180 @@ Send Niyant the revised contract for a one-pass check that exact semantic routin
 - Prior art: [[omar-shaikh-computer-use-personalization-stack-2026-07-22|Omar Shaikh's computer-use personalization stack]]
 - Tada boundary: [[tabracadabra-is-a-retrieval-augmented-writer-not-a-computer-use-nap|Tabracadabra is a retrieval-augmented writer, not a computer-use NAP]]
 - Live capture audit: [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
+
+
+## July 26 decision: manual retrospective prediction pilot
+
+This section supersedes the earlier Immediate next step and acquisition-first gate for the next LBH. The earlier capture plan remains in this note as historical context.
+
+After three days of acquisition work, pause the audit-grade capture build. The capture work established that high-fidelity computer-use data is obtainable by combining screen, input, accessibility, and browser evidence, but no current out-of-the-box tool produces the complete dataset reliably. Building that automatic acquisition layer is a separate product-development problem.
+
+That automatic layer is not required to answer the first product question. Human review can supply the missing event boundaries and exact destination labels. The immediate experiment therefore uses Screenpipe as a replayable record and Dylan as the ground-truth labeler.
+
+### Question
+
+Can the same off-the-shelf multimodal model generate top-three next-destination suggestions that Dylan finds useful during his normal work, and does giving the model Dylan's earlier activity improve those suggestions compared with the current screen alone?
+
+This is retrospective. There are no live suggestions, no fine-tuning, and no trained personal model.
+
+### Minimum sequence
+
+1. Run a five-event shakedown from one 30-minute work session.
+2. If the replay, labeling, prompt, and scoring workflow works, run the two-day minimum experiment.
+3. Only run the original four-day 0/1/2/3-day scaling study if the two-day test produces promising signal.
+
+### Recording protocol
+
+For the five-event shakedown, use Screenpipe only. Leave the custom Hammerspoon, ScreenCaptureKit freeze, browser recorder, markers, and 30-action calibration machinery off.
+
+- Confirm Screenpipe is recording both monitors.
+- Keep microphone, audio, and clipboard capture off.
+- Record the exact start and end time.
+- Work normally for 30 minutes on one real task, such as GPU customer or configuration research.
+- Do not stage actions, announce transitions, or change behavior for the experiment.
+- Afterward, select only moments that Screenpipe captured clearly.
+
+The experiment does not require Screenpipe to detect or label every action. It only requires enough visual evidence for a human to reconstruct a small set of clear transitions.
+
+### Unit of data
+
+One data point is one semantic transition:
+
+starting state A -> destination B
+
+This is not a pair of two actions. A is the place Dylan occupied immediately before navigating. B is the stable destination reached at the end of that navigation. The clicks and keystrokes between A and B are the route.
+
+A route may contain several low-level inputs while still counting as one data point if they are continuous and serve one destination.
+
+Example:
+
+- A: Arc -> LongNAP paper -> conclusion
+- Route: click Codex, select the NAP task, focus its composer
+- B: Codex -> NAP task -> composer -> focus
+
+The prediction point is immediately before the first navigation input. The model may see A and permitted earlier history. It may not see the route, B, or any post-action frame.
+
+### What Dylan does to label one event
+
+1. Replay the recording and find a clear, meaningful navigation.
+2. Pause immediately before the first click or keystroke that begins the navigation.
+3. Record the timestamp and save or reference the pre-action frame from each relevant monitor.
+4. Write the current semantic location.
+5. Play forward until the destination stabilizes.
+6. Write the route and exact destination as hidden ground truth.
+7. Estimate what a correct shortcut would have saved.
+8. Mark any ambiguity. Exclude the event if the source or destination cannot be labeled confidently.
+
+Example labeled event:
+
+Event D2-007
+
+- Timestamp: 2:17:42 PM
+- Current location: Arc -> LongNAP paper -> conclusion
+- Pre-action evidence: event-D2-007-before-primary.png and event-D2-007-before-secondary.png
+- Actual route, hidden from predictor: clicked Codex, selected NAP task, focused composer
+- Exact destination, hidden from predictor: Codex -> NAP task -> composer -> focus
+- Actual navigation cost: 3 clicks, approximately 6 seconds
+- Useful shortcut: yes
+- Ambiguity: none
+
+### Dataset structure
+
+The dataset has two related views of the same chronological activity.
+
+#### History log
+
+The history log is a compact chronological list of earlier meaningful destinations. Each entry should be one line and approximately 10 to 25 words, not a paragraph.
+
+Example:
+
+- 2:01 PM - Arc -> RunPod pricing page
+- 2:05 PM - Arc -> Google search for available H100 instances
+- 2:09 PM - Arc -> Hyperbolic pricing page
+- 2:12 PM - Codex -> GPU configuration research task -> composer
+- 2:15 PM - Arc -> LongNAP paper -> conclusion
+
+Do not include ordinary typing, every scroll, or every cursor movement. The log represents meaningful handoffs between working contexts.
+
+#### Evaluation rows
+
+Each evaluation row contains these fields:
+
+- event_id: stable identifier
+- timestamp: location in the replay
+- current_state: semantic location immediately before navigation
+- pre_action_evidence: screenshots or Screenpipe frame references available to the model
+- available_history: earlier history permitted for that condition
+- actual_route: held-out low-level path used by Dylan
+- actual_destination: held-out semantic answer
+- navigation_cost: clicks, keystrokes, and approximate time used
+- label_confidence: clear, ambiguous, or excluded
+- shortcut_usefulness: Dylan's qualitative judgment after seeing the prediction
+
+The predictor receives only current_state, pre_action_evidence, and the history allowed for that condition. Actual_route, actual_destination, and everything after the cutoff remain hidden until predictions are saved.
+
+### What counts as a navigation event
+
+Include:
+
+- switching to another application or window;
+- opening a specific browser tab or webpage;
+- opening a document, message thread, project, or Codex task;
+- focusing a meaningful input field;
+- activating a link or button that changes the working context; and
+- a continuous multi-click route to one specific destination.
+
+Exclude:
+
+- ordinary typing;
+- scrolling within the same page;
+- cursor repositioning;
+- text selection;
+- window resizing;
+- clicks that do not meaningfully change the working context; and
+- events whose pre-action state or final destination is unclear.
+
+### Five-event shakedown
+
+Use one 30-minute session and label five clear transitions. For each event, test the same model twice:
+
+1. Current pre-action state only.
+2. The same state plus the preceding ten meaningful navigation events from that session.
+
+Use the same prediction prompt and request up to three exact semantic destinations. Save both predictions before revealing the actual destination.
+
+The shakedown passes if all five examples can be reconstructed, prompted, and scored without rebuilding capture infrastructure. Its purpose is workflow validation, not a product conclusion.
+
+### Two-day minimum experiment
+
+Day 1 supplies the personal history. Day 2 supplies 20 held-out evaluation events.
+
+- Label Day 1 as a chronological one-line history log.
+- Label 20 clear Day 2 transitions using the evaluation schema.
+- For every Day 2 event, run the same model and prompt under two conditions: current pre-action state only, and the same state plus the Day 1 history log.
+- Neither condition may see the actual route, destination, or future frames.
+- Save all predictions before scoring them.
+
+This is the smallest credible version of the original Day 1 through Day 4 experiment. It tests whether earlier personal activity adds useful predictive signal without requiring a four-day commitment first.
+
+### Scoring and decision
+
+For every prediction, record:
+
+- whether the actual destination ranked first;
+- whether it appeared anywhere in the top three;
+- whether a suggested shortcut would have saved meaningful navigation or search;
+- what the shortcut would have saved; and
+- Dylan's qualitative reaction, including whether he would have wanted to invoke it while working.
+
+Report raw counts and representative successes and failures. Do not hide ambiguous or failed examples.
+
+The main decision remains qualitative: did the suggestions produce enough moments of genuine usefulness to justify building a live public demo?
+
+The history comparison is secondary but informative: did Day 1 context noticeably improve the suggestions over the same model seeing only the current state?
+
+If promising, write a public experiment post, describe the strongest proposed demo interactions, and then decide whether to build the live Tab-style router or run the longer history-scaling study. If unpromising, stop or change the navigation target before investing further in model or capture complexity.
+
+### What this experiment cannot establish
+
+This pilot cannot show that the model understands Dylan's goals, that fine-tuning is necessary, that the behavior generalizes to other people, that live suggestions improve outcomes, or that the automatic acquisition product is solved. It only tests whether one person's real work contains useful next-destination prediction opportunities and whether earlier personal activity appears to help an off-the-shelf model exploit them.
