@@ -8,11 +8,11 @@ updated: 2026-07-27
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 1:37 PM EDT
+Generated: Jul 27, 2026, 3:28 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 72 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 67 note commits. The most recent movement is:
 
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
@@ -23,12 +23,19 @@ In the past 7 days, the public vault changed through 72 note commits. The most r
 
 ## Current Hub Signals
 
-- [[gpu-compute-derivatives|GPU Compute Derivatives]]: The first serious compute derivative should likely be dated, not perpetual. Compute is perishable productive capacity with an obsolescence curve, so the useful market object is a forward/futures strip that exposes dated capacity, decay, and residual-value assumptions.
 - [[gpu-residual-value-pricing|GPU Residual Value Pricing]]: The broader residual-value pricing track remains active, but the pure GPU KBB / naked residual-data wedge is shelved pending buyer-side evidence. The demotion happened in stages: Bernie showed that appraisal-style naked data can become free gut-check behavior and that lenders mostly focus on offtake; Barkr showed that even a quality-adjusted GPU valuation index sells more...
 - [[personal-ai-context-learning|Personal AI Context Learning]]: The public World Models notes describe a three-phase research program: reconstruct a faithful personal event stream and predict the next action; learn bounded local comparisons from post-suggestion behavior; then test sandboxed multi-step assistance. The formal phases are specifications, not completed experiments.
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 27, 2026, 3:28 PM EDT - article: narrow gap to Screenpipe conversion layer
+
+article: narrow gap to Screenpipe conversion layer.
+
+Changed notes:
+  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 27, 2026, 1:37 PM EDT - article: clarify Screenpipe manual reconstruction boundary
 
@@ -113,17 +120,11 @@ article: format publication links inline.
 Changed notes:
   - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-### Jul 27, 2026, 11:40 AM EDT - article: add research history and disclosure links
-
-article: add research history and disclosure links.
-
-Changed notes:
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-_Showing the newest 12 of 27 updates in this window._
+_Showing the newest 12 of 28 updates in this window._
 
 ## Past 7 Days
 
+- Jul 27, 2026: article: narrow gap to Screenpipe conversion layer - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify Screenpipe manual reconstruction boundary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify Screenpipe event-driven frame timing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify dataset and navigation record structure - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
@@ -148,12 +149,12 @@ _Showing the newest 12 of 27 updates in this window._
 - Jul 26, 2026: article: add first complete Day 0 draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 26, 2026: research: clarify Mimica enterprise scope - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 26, 2026: research: fact-check computer-use tool gap - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 26, 2026: article: add Day 0 drafting prep - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
 
-_Showing the newest 25 of 72 updates in this window._
+_Showing the newest 25 of 67 updates in this window._
 
 ## Past 30 Days
 
+- Jul 27, 2026: article: narrow gap to Screenpipe conversion layer - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify Screenpipe manual reconstruction boundary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify Screenpipe event-driven frame timing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify dataset and navigation record structure - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
@@ -178,6 +179,5 @@ _Showing the newest 25 of 72 updates in this window._
 - Jul 26, 2026: article: add first complete Day 0 draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 26, 2026: research: clarify Mimica enterprise scope - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 26, 2026: research: fact-check computer-use tool gap - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 26, 2026: article: add Day 0 drafting prep - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
 
-_Showing the newest 25 of 197 updates in this window._
+_Showing the newest 25 of 198 updates in this window._
