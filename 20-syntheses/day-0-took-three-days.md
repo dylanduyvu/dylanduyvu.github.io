@@ -31,12 +31,13 @@ Completed 2026-07-27: connective-tissue pass added short causal and contrast wor
 Completed 2026-07-27: global epistemic pass removed wording that made the unrun prediction experiment sound like a negative result.
 Updated 2026-07-27: added the causal account of why the controlled capture stack stayed fragile and why making it dependable became product engineering.
 Completed 2026-07-27: second compression pass removed repeated setup, conclusions, and product requirements while preserving the causal account, evidence boundaries, counterargument, and experiment stages.
+Updated 2026-07-27: rewrote the deck to name the LLM, exact-destination scope, Tab-key interaction, unrun test, and automated dataset attempt; removed repeated opening lines.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; Celonis follow-up before any stronger product claim; final link verification after later edits.
 %%
 
 # The Missing Step Between Recording and Prediction
 
-*I wanted to know whether a model could predict the exact place I would go next on my computer. Instead, I spent three days learning what one trustworthy example had to contain.*
+*I wanted to test whether an LLM could predict the exact app, page, document, task, or field I would navigate to next, so pressing the Tab key could take me there. But the prediction test never started. Instead, I spent three days trying to automatically assemble the dataset it needed.*
 
 I needed examples of what I saw before each move and the exact place I went. Existing tools captured most of the raw material, but I found no public documentation for one that turned ordinary work into verified examples. This post separates what I can reuse now from what a dependable system would still need.
 
@@ -44,9 +45,7 @@ I needed examples of what I saw before each move and the exact place I went. Exi
 
 I planned a four-day experiment. Day 0 was supposed to be recorder setup, but it took three days.
 
-The plan was to replay each moment before I navigated and ask a model for its top three guesses. If they felt useful, I would bind them to the Tab key as autocomplete for computer navigation.
-
-Prediction never started. Instead, I spent those three days trying to assemble the examples automatically.
+For each navigation, I would replay what was visible just before it and ask the LLM for its top three guesses.
 
 I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records screens and inputs continuously. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups activity into captioned bursts, but patched its display assignment because my second monitor sits above my main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension. A 30-action diagnostic stopped at 12 accepted checkpoints. Even then, the monitors were still out of sync.
 
