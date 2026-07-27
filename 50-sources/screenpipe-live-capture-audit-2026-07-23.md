@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-07-27
 projects:
   - personal-ai-context-learning
 domains:
@@ -125,7 +125,7 @@ Both displays were nevertheless captured visually. The frozen interval contained
 
 Post-action application or window transitions recover a broad destination for some missing click labels, but not the exact input field, link, button, or task. On the secondary display, only 14 of 40 clicks had a nearby broad transition; 26 lacked even that.
 
-The longer session also confirms the leakage problem. Of 164 click rows with a frame link, 76 linked to a frame timestamped after the click. Strictly prior frames could be tens of seconds old because unchanged frames are deduplicated. This does not make them necessarily visually wrong, but it prevents treating `frame_id` as a guaranteed immediate pre-action observation.
+The longer session also confirms the leakage problem. The original audit counted 76 of 164 linked click frames as post-click at SQLite date-comparison precision. A July 27 recheck of the raw microsecond timestamps found that seven additional frames arrived 0.1 to 0.3 milliseconds after their clicks. The corrected split is 83 post-click frames and 81 pre-click frames. Five additional clicks had no frame link. Some pre-click links were as much as 25.3 seconds old because unchanged frames are deduplicated. This does not make them necessarily visually wrong, but it prevents treating `frame_id` as a guaranteed immediate pre-action observation.
 
 The natural session therefore passes the two-monitor context-backbone test and fails the exact-target label test. It should not be used alone for the multi-day prediction comparison.
 

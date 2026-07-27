@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-23
-updated: 2026-07-26
+updated: 2026-07-27
 aliases:
   - Computer-use NAP build log
   - Desktop next-action prediction build log
@@ -252,7 +252,7 @@ It cannot consistently answer:
 
 ### Frame-link leakage
 
-`ui_events.frame_id` is not a trustworthy pre-action observation. In the audit, linked frames sometimes occurred before the action and sometimes after it. Roughly 46% of click-linked frames in the later sample were timestamped after the click.
+`ui_events.frame_id` is not a trustworthy pre-action observation. In the audit, linked frames sometimes occurred before the action and sometimes after it. The original audit counted roughly 46% of click-linked frames as post-click. A July 27 recheck of the raw microsecond timestamps corrected the split to 83 of 164 after the click and 81 before it. Some pre-click links were up to 25.3 seconds old.
 
 The correct reconstruction must independently select the latest frame with a timestamp strictly earlier than the action for each display. A linked result frame may be preserved only as validation evidence, never as model input.
 

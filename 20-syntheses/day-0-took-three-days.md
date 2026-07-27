@@ -41,6 +41,7 @@ Updated 2026-07-27: rewrote the dataset section to establish chronological order
 Updated 2026-07-27: corrected the Screenpipe section to explain its event-driven screenshots, why a click-linked frame could show the post-click state, and how the raw streams could still produce candidates for manual review.
 Updated 2026-07-27: narrowed the thesis after recognizing that Screenpipe may already have recorded enough evidence. The untested gap is conversion into proposed records for Dylan to verify, and the custom capture stack was not shown to be necessary.
 Updated 2026-07-27: restored the broader dataset-assembly thesis after the Screenpipe reconstruction hypothesis overcorrected the article; kept the narrower concession that the raw-frame extraction path was not tested.
+Corrected 2026-07-27: replaced the precision-dependent `76 of 164` Screenpipe ordering figure with the raw-timestamp split of 83 post-click and 81 pre-click frames.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; final link verification after later edits.
 %%
 
@@ -54,7 +55,7 @@ Remaining before final publication: Dylan's personal read, including a per-cell 
 
 ---
 
-*I wanted to test whether an LLM could predict the exact app, page, document, task, or field I would navigate to next, so pressing the Tab key could take me there. But the prediction test never started. Instead, I spent three days trying to automatically assemble the dataset it needed.*
+*I wanted to test whether an LLM could predict the exact app, page, document, task, or field I would navigate to next, so pressing the Tab key could take me there. But the prediction test never started. Instead, I spent three days failing to assemble the dataset it needed.*
 
 I needed a personal dataset that paired what was on my screens before each move with my exact next destination. The tools I tested could record my screens, clicks, app switches, and browser activity. But no product I could use turned a normal workday into that dataset. This post separates what I can reuse now from what a dependable system would still need.
 
@@ -105,9 +106,9 @@ Turning recorded activity into the dataset required seven jobs:
 
 Screenpipe covered the first job and supplied much of the raw evidence needed for the rest. In my test, version 2.5.132 captured both monitors, inputs, app and window changes, web addresses, screenshot text, and the accessibility tree, which is how macOS describes on-screen controls to assistive software. Its [current architecture documentation](https://docs.screenpipe.com/architecture) explains that events such as clicks, app switches, scrolls, typing pauses, and idle periods trigger screenshots instead of fixed-rate video.
 
-But the screenshot Screenpipe linked to a click was not guaranteed to show the state before the click. In one 50-minute session, 76 of 164 click-linked screenshots were captured after the click.
+But the screenshot Screenpipe linked to a click was not guaranteed to show the state before the click. In one 50-minute session, 83 of 164 click-linked screenshots came after the click. The other 81 came before, but some were up to 25 seconds old. So an extractor could not treat the link as either the input state or proof of where I arrived.
 
-For clicks, the raw event still carried its own timestamp and coordinates. An extractor could ignore the linked screenshot, match the event to the most recent earlier frame from each monitor, and use later frames to propose the destination label. This would produce proposed records for me to verify, which was the intended workflow.
+For clicks, the raw event still carried its own timestamp and coordinates. An extractor could ignore the link, search each monitor's frame history for the most recent earlier image, decide whether that image was recent enough, and use separate later evidence to propose the destination label. This would produce proposed records for me to verify, which was the intended workflow.
 
 I did not test that path over the weekend. So I do not know how often the earlier frame would be recent enough or the destination evidence complete enough across clicks, keyboard navigation, app switches, and both monitors.
 

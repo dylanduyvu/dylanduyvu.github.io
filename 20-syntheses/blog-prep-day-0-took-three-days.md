@@ -217,7 +217,7 @@ Open tools provide most of the primitives but still require custom assembly. Ent
 |---|---|---|
 | Day 0 consumed three days and prediction had not begun. | Dylan's contemporaneous account; [[computer-use-nap-build-log]] | First-person only. Never say the model failed. |
 | Screenpipe 2.5.132 captured screenshots, clicks, keys, scrolling, app switches, focus changes, accessibility content, OCR, and Arc URLs on Dylan's Mac. | [[screenpipe-live-capture-audit-2026-07-23]] | Scope to the tested version and setup. |
-| In the natural Screenpipe session, 76 of 164 linked click frames were timestamped after the click. | [[screenpipe-live-capture-audit-2026-07-23]] | Say the linked frame was not a guaranteed pre-action frame. |
+| In the natural Screenpipe session, raw microsecond timestamps placed 83 of 164 linked click frames after the click and 81 before it. Some earlier frames were up to 25.3 seconds old. | [[screenpipe-live-capture-audit-2026-07-23]] | Say the linked frame was not a guaranteed immediate pre-action frame. The earlier `76 of 164` figure was a precision-dependent lower bound. |
 | In the same session, zero of 40 secondary-display clicks contained direct semantic role, name, and bounds fields. | [[screenpipe-live-capture-audit-2026-07-23]] | Scope to the measured session. Do not generalize to all installations. |
 | All 33 Arc frames had a page URL, while none of 484 UI-event rows directly carried one. | [[screenpipe-live-capture-audit-2026-07-23]] | Do not say Screenpipe failed to record URLs. The streams were not joined at the action row. |
 | NAPsack required a local monitor-geometry patch on Dylan's negative-coordinate display setup. | [[computer-use-nap-build-log]] | Local implementation fact, not a claim about every setup or current release. |
@@ -233,7 +233,7 @@ Open tools provide most of the primitives but still require custom assembly. Ent
 |---|---|---|
 | Existing tools solve real subsets of the capture problem. | Screenpipe, NAPsack, OpenCUA, OpenAdapt, and rrweb primary materials plus local tests | High. This should be stated before any gap claim. |
 | Screenpipe was a useful context backbone but did not automatically produce Dylan's exact next-destination rows. | Local Screenpipe audit | High for this setup and version. |
-| Screenpipe's raw click timestamp and coordinates may allow a converter to select an earlier frame instead of trusting the linked screenshot. | Local Screenpipe audit and database inspection | Plausible but unvalidated across the target navigation types. State as a later path to reduce labeling work, not a completed solution. |
+| Screenpipe's raw click timestamp and coordinates may allow a converter to select an earlier frame instead of trusting the linked screenshot. | Local Screenpipe audit and database inspection | Plausible but unvalidated across the target navigation types. The linked frame is not reliably an input or a result frame, and earlier links can be stale. State the required search, freshness judgment, and separate destination recovery as load-bearing conversion work. |
 | A post-action frame can invalidate retrospective next-destination evaluation. | Local timestamps plus OpenCUA's documented last-distinct-prior-frame matching | High. |
 | The custom stack shows the required evidence streams can be joined. | Controlled check and mutation suite | High for controlled actions. It does not show passive segmentation at useful scale. |
 | Bad acquisition can make recorder failure look like model failure. | Frame-ordering and label-coverage findings | Strong evaluation logic. |
@@ -294,7 +294,7 @@ Of the 128 clicks, 61 had a role, 58 had a name, and 61 had bounds. The four sam
 - an estimated 150 physical clicks after removing likely duplicate enrichments
 - 273 primary-display frames and 204 secondary-display frames
 - zero of 40 secondary-display clicks with complete direct semantic target fields
-- 76 of 164 linked click frames after the click
+- 83 of 164 linked click frames after the click and 81 before it, with some earlier frames up to 25.3 seconds old
 
 Do not use the later `0 of 493` formulation unless the underlying audit is recovered and the denominator is verified. Use `0 of 40`.
 
@@ -328,7 +328,7 @@ Allow roughly four memorable quantitative anchors in the article:
 
 1. the three-day delay;
 2. 12 of 30 diagnostic checkpoints;
-3. the local ordering result that 76 of 164 linked click frames came after the click; and
+3. the local ordering result that 83 of 164 linked click frames came after the click, while some earlier links were up to 25.3 seconds old; and
 4. one directly relevant prior next-action result. The primary [A Click Ahead paper](https://arxiv.org/abs/2309.12170) reports 34.63% exact top-one accuracy for a conventional GRU recurrent neural network choosing among 442 distinct user actions after training on roughly one week of one person's Windows activity.
 
 The `A Click Ahead` result is precedent, not a forecast. The study recorded 46.21 hours and 86,284 actions from one person's dual-monitor Windows setup, discarded interactive areas clicked no more than five times, and reduced the prediction space to 442 actions. Its 34.63% figure is exact top-one validation accuracy on an unseen sequence of 6,000 actions. The model was a GRU, not an LLM. It only had to choose from a fixed list of known actions. Dylan's LLM-based system may need to understand screenshots and name more specific destinations that are not confined to that list.
@@ -408,9 +408,9 @@ Explain why the timing and destination label must be right for the prediction te
 
 State the complete seven-part conversion contract. Then explain that Screenpipe runs continuously but takes event-driven screenshots. Neither its linked frame nor the recording alone determines meaningful boundaries, safe prior state, exact destination, or a reviewable record.
 
-Use Screenpipe as the concrete example. Lead with what worked: screenshots, both monitors, inputs, app and window events, URLs, OCR, and accessibility data. Then use the one local finding chosen in the checks section: 76 of 164 linked click frames were after the click. Keep zero of 40 and the remaining metrics in the linked audit unless the draft develops a specific need for them.
+Use Screenpipe as the concrete example. Lead with what worked: screenshots, both monitors, inputs, app and window events, URLs, OCR, and accessibility data. Then use the one local finding chosen in the checks section: raw timestamps placed 83 of 164 linked click frames after the click and 81 before it, with some earlier frames up to 25.3 seconds old. Keep zero of 40 and the remaining metrics in the linked audit unless the draft develops a specific need for them.
 
-Explain that for clicks, the raw event still carries its own timestamp and coordinates. An extractor could ignore the linked screenshot, match the event to the most recent earlier frame from each monitor, and use later evidence to propose the destination label. This would produce proposed records for Dylan to verify, which was the intended workflow. Bound the path by saying it was not tested over the weekend and may fail when the prior frame is stale or the destination evidence is incomplete.
+Explain that the inconsistent linkage is load-bearing. An extractor cannot treat `frame_id` as either the input state or proof of the destination. For clicks, it must use the raw timestamp and coordinates to search each monitor's frame history for the most recent earlier image, judge whether that image is recent enough, and recover the destination from separate later evidence. This would produce proposed records for Dylan to verify, which was the intended workflow. Bound the path by saying it was not tested over the weekend and may fail when the prior frame is stale or the destination evidence is incomplete.
 
 Add one sentence pre-empting the current-version reply: name the tested version (2.5.132) and dates, note that Screenpipe's current documentation claims expanded capture (full accessibility tree with OCR fallback, keyboard input, app switches, multiple capture methods), and state that the measurements stand for the tested version and setup.
 
@@ -575,7 +575,7 @@ Negative capability claims need the same discipline. Use bounded wording such as
    6. What minimum seats, administrative setup, data-access restrictions, and pricing apply after the proof of concept?
    These unanswered questions do not block the article, the manual pilot, or a later Screenpipe extractor test.
 5. Resolved for this experiment 2026-07-27: Celonis is Windows-only, so it is not usable on Dylan's Mac. It remains evidence that multi-screen screenshots, structured event tables, and task grouping exist in the enterprise category. A future market-wide novelty claim would still need to distinguish those capabilities from Dylan's strict row contract, but Celonis is not an immediate product option or a publication blocker.
-6. Resolved 2026-07-26: use `76 of 164` as the one local Screenpipe metric in the body because it directly explains the before-versus-after problem. Keep `zero of 40` and the remaining metrics in the linked audit unless the draft develops a specific need for them.
+6. Corrected 2026-07-27: use the raw-timestamp split of `83 of 164 after` and `81 before` in the body because it directly explains the ordering problem. Some earlier links were up to 25.3 seconds old. The original `76 of 164` figure treated seven sub-millisecond post-click frames as tied at SQLite date-comparison precision. Keep `zero of 40` and the remaining metrics in the linked audit unless the draft develops a specific need for them.
 7. Verify the public URLs after Quartz updates. Link primary tool sources in the final post.
 8. Do not state that Screenpipe plus a converter and human verification has passed until it actually produces valid records.
 9. Added 2026-07-26: Recheck Screenpipe's current release and documentation at draft time. Current documentation and marketing claim expanded capture, including a full accessibility tree with OCR fallback, keyboard input, app switches, and multiple capture methods. The tested version was 2.5.132 in July 2026. Keep every measured claim scoped to it and include the section 3 pre-empt sentence.
