@@ -8,11 +8,11 @@ updated: 2026-07-27
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 9:52 AM EDT
+Generated: Jul 27, 2026, 9:56 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 62 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 63 note commits. The most recent movement is:
 
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
@@ -29,6 +29,13 @@ In the past 7 days, the public vault changed through 62 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 27, 2026, 9:56 AM EDT - article: clarify prediction experiment never ran
+
+article: clarify prediction experiment never ran.
+
+Changed notes:
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 27, 2026, 9:52 AM EDT - article: smooth Day 0 causal transitions
 
@@ -113,15 +120,11 @@ idea: capture missing computer-use dataset recorder article.
 Changed notes:
   - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
 
-### Jul 26, 2026, 12:49 PM EDT - document manual NAP prediction pilot
-
-document manual NAP prediction pilot.
-
-Changed notes:
-  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+_Showing the newest 12 of 13 updates in this window._
 
 ## Past 7 Days
 
+- Jul 27, 2026: article: clarify prediction experiment never ran - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: smooth Day 0 causal transitions - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: retitle recording and prediction draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: add Mimica demo cancellation evidence - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
@@ -146,12 +149,12 @@ Changed notes:
 - Jul 23, 2026: synthesis: add nap versus gpu experiment fork - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: add GDM evolving norms implications - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
-- Jul 22, 2026: hunch: capture tab prediction entropy objection - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 
-_Showing the newest 25 of 62 updates in this window._
+_Showing the newest 25 of 63 updates in this window._
 
 ## Past 30 Days
 
+- Jul 27, 2026: article: clarify prediction experiment never ran - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: smooth Day 0 causal transitions - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: retitle recording and prediction draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: add Mimica demo cancellation evidence - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
@@ -176,6 +179,5 @@ _Showing the newest 25 of 62 updates in this window._
 - Jul 23, 2026: synthesis: add nap versus gpu experiment fork - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: add GDM evolving norms implications - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
-- Jul 22, 2026: hunch: capture tab prediction entropy objection - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 
-_Showing the newest 25 of 181 updates in this window._
+_Showing the newest 25 of 182 updates in this window._
