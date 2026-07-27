@@ -46,7 +46,8 @@ Completed 2026-07-27: compressed the untested Screenpipe reconstruction path int
 Corrected 2026-07-27: separated the core dataset, acquisition-calibration machinery, and post-failure manual fallback. Human inspection in the 30-action walkthrough graded the recorder; it was not the intended ongoing labeling workflow.
 Completed 2026-07-27: moved the acquisition-ladder explanation out of the dataset-schema section and into the capture-fragility section.
 Completed 2026-07-27: clarified the Codex destination example, removed the six-action smoke result from the narrative, and rewrote the walkthrough section around why it existed, why it stopped at 12 actions, and which validation gates never ran.
-Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; final link verification after later edits.
+Completed 2026-07-27: rebuilt the article around one six-section narrative, moved the prediction precedent into the setup, removed the body tool matrix and standalone objection, and combined the manual next step with the product-gap conclusion.
+Remaining before final publication: Dylan's personal read and final link verification after later edits.
 %%
 
 # The Missing Step Between Recording and Prediction
@@ -61,13 +62,13 @@ Remaining before final publication: Dylan's personal read, including a per-cell 
 
 *I wanted to test whether an LLM could predict the exact app, page, document, task, or field I would navigate to next, so pressing the Tab key could take me there. But the prediction test never started. Instead, I spent three days failing to assemble the dataset it needed.*
 
-I needed a personal dataset that paired what was on my screens before each move with my exact next destination. The tools I tested could record my screens, clicks, app switches, and browser activity. But no product I could use turned a normal workday into that dataset. This post separates what I can reuse now from what a dependable system would still need.
+The dataset itself was simple. Each record needed to pair what was on my screens immediately before I moved with the exact place I went next. The hard part was producing those records automatically from continuous screen activity. Existing tools captured my screens, clicks, app switches, and browser activity, but no product I could use converted that evidence into the dataset. I later realized that the first prediction test did not need an automatic system.
 
 ## Day 0 took three days
 
-I planned a five-day project: one setup day followed by four experiment days.
+I planned one setup day followed by four experiment days.
 
-- **Day 0:** Configure Screenpipe (or research relevant tools) and define how recorded work would become navigation records.
+- **Day 0:** Set up recording and define how captured activity would become navigation records.
 - **Day 1:** Record a day of work and create the first day of history.
 - **Day 2:** On the same navigation events, compare the LLM seeing only my current screen against the LLM seeing that screen plus Day 1 history.
 - **Day 3:** Repeat with zero, one, and two days of history.
@@ -75,132 +76,83 @@ I planned a five-day project: one setup day followed by four experiment days.
 
 If history made the top-three exact-destination guesses qualitatively more useful, I would build a live public demo where pressing Tab took me to the most likely destination.
 
-Day 0 was supposed to be setup. Three days later, it was still not complete.
+[A Click Ahead](https://arxiv.org/abs/2309.12170) made the experiment worth running. Its conventional recurrent neural network predicted the exact next action with 34.63 percent accuracy across a fixed set of 442 recurring actions. It did not use an LLM, and its closed list was easier than naming my specific destinations, so the result was a precedent rather than an accuracy forecast.
 
-I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which runs in the background and records screen and input activity. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups nearby clicks and keystrokes into short activity segments and generates a plain-English description of each one. But I had to patch its display assignment because my two-monitor setup places the second display above the main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension.
+Niyant first called my version of the idea vague. After I narrowed it, he said it aligned with his personalization thesis but warned that predicting which of a few apps I would open could look useful without being useful. So I chose a stricter target: the exact destination and whether reaching it would save meaningful effort.
 
-Then I ran a 30-action diagnostic to see whether those pieces worked together across the kinds of navigation I make. I spent most of the day patching failures as it exposed one edge case after another, then paused with only 12 of the 30 checkpoints accepted. Even in those accepted checkpoints, the two monitor streams were not reliably in sync.
+Then Day 0 took three days, and it was still not complete.
 
-The walkthrough stalled before it could establish that the components produced high-fidelity records across my workflow. I never reached formal calibration, a natural-work audit, or the prediction test.
+I started with [Screenpipe](https://github.com/screenpipe/screenpipe), which runs in the background and records screen and input activity. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups nearby clicks and keystrokes into short segments and describes each segment in plain language. Because my second monitor sits above my main one, I had to patch NAPsack's display assignment. Then I built a second capture system using Hammerspoon for Mac automation, Apple's ScreenCaptureKit, and an Arc browser extension.
 
-## What the dataset had to contain
+I tested that system with a 30-action diagnostic covering known clicks, focus changes, app switches, keyboard commands, and page navigations across Mac apps, websites, and both monitors. I stopped after 12 accepted checkpoints. Each new action required another rule for judging the capture, the remaining browser cases needed more code, and the two monitor streams were still not reliably synchronized. I stopped rather than spend another half day extending a system that had not produced data for the prediction test.
 
-The dataset had to keep the navigation records in the order they happened. Each record needed two parts:
+## What the dataset needed
+
+I needed a chronological dataset. Each navigation record had two parts:
 
 1. what was on my screens immediately before I moved;
 2. the exact place I went next.
 
-For example, suppose I finished reading an article in Arc, then moved to the message box in the Codex conversation where I was editing it. The record needed to show the article before I moved and identify that conversation and its message box rather than just "Codex."
+Suppose I finished reading an article in Arc, then moved to the message box in the Codex conversation where I was editing it. The record needed to show the article before I moved and name that conversation and message box rather than only "Codex."
 
-For the prediction test to mean anything, the timing and destination label had to be right. A screenshot taken after I moved could reveal the destination to the LLM, while a bad label could make it impossible to tell whether its prediction was right.
+Both parts had to be right for the prediction test to mean anything. A screenshot taken after I moved could reveal the destination to the LLM. A wrong destination label could make a correct prediction look wrong or a wrong prediction look correct.
 
-## Recording alone does not produce this dataset
+## Recording captured evidence, not dataset records
 
-Turning recorded activity into the dataset automatically required six jobs:
+[Screenpipe](https://github.com/screenpipe/screenpipe) handled continuous recording. Turning its output into the dataset required five more steps:
 
-1. run quietly while I worked across native apps and browsers;
-2. preserve what was on screen strictly before each move;
-3. keep correctly attributed evidence from both monitors for every record;
-4. name the exact destination in one consistent field, whether it is an app, window, page, document, task, input field, link, or button;
-5. identify meaningful boundaries between moves, instead of treating every keystroke as its own record;
-6. export the records in time order, in a format I could give to the LLM.
+1. identify meaningful navigation moments;
+2. select the screen state from before each move;
+3. join the correct evidence from both monitors;
+4. name the destination consistently across native apps and browsers;
+5. export the records in chronological order.
 
-Screenpipe covered the first job and supplied much of the raw evidence needed for the rest. In my test, version 2.5.132 captured both monitors, inputs, app and window changes, web addresses, screenshot text, and the accessibility tree, which is how macOS describes on-screen controls to assistive software. Its [current architecture documentation](https://docs.screenpipe.com/architecture) explains that events such as clicks, app switches, scrolls, typing pauses, and idle periods trigger screenshots instead of fixed-rate video.
+In my test, Screenpipe version 2.5.132 captured both monitors, clicks and keyboard input, app and window changes, web addresses, text from screenshots, and macOS descriptions of on-screen controls. Its [current architecture documentation](https://docs.screenpipe.com/architecture) explains that clicks, app switches, scrolls, typing pauses, and idle periods trigger screenshots instead of fixed-rate video.
 
-But the screenshot Screenpipe linked to a click was not guaranteed to show the state before the click. In one 50-minute session, 83 of 164 click-linked screenshots came after the click. The other 81 came before, but some were up to 25 seconds old. So an extractor could not treat the link as either the input state or proof of where I arrived.
+The screenshot linked to each click was unreliable in both directions. In one 50-minute session, 83 of 164 linked screenshots came after the click. The other 81 came before it, but some were up to 25 seconds old. I could not use the linked screenshot directly as either the screen the LLM should see or proof of where I went.
 
-That did not prove the raw recording was unusable though. A script could ignore Screenpipe's frame link, use the click timestamp to search both monitor histories for the latest earlier image, and use later evidence to propose the destination. I did not test that approach, so I do not know how often it would produce a usable record.
+The underlying recording may still contain enough evidence. A script could ignore the linked screenshot, use the click timestamp to find the latest earlier frame from each monitor, and use later evidence to identify the destination. I did not test that path, so I do not know how often it would produce a valid record.
 
-The full measurements are in [my audit](https://dylanduyvu.github.io/50-sources/screenpipe-live-capture-audit-2026-07-23). Screenpipe's current documentation describes a fuller accessibility tree and more input methods than I observed, so these numbers apply only to my version and setup.
+The full measurements are in [my Screenpipe audit](https://dylanduyvu.github.io/50-sources/screenpipe-live-capture-audit-2026-07-23). Screenpipe's current documentation describes more complete capture than I observed, so these results apply only to my tested version and setup.
 
-## Why my custom capture system stayed fragile
+## My custom system became an infrastructure project
 
-After building the custom capture system, I needed to know whether it was producing trustworthy records or quietly recording bad data. So I created a 30-action walkthrough of known clicks, focus changes, app switches, keyboard commands, and page navigations across Mac apps, websites, and both monitors. I performed them one at a time while Hammerspoon, ScreenCaptureKit, and the Arc extension ran together, then checked whether the system captured each one correctly.
+Instead of first testing the simpler Screenpipe extraction path, I tried to guarantee clean records at capture time. The 30-action diagnostic was the first validation gate for that custom system. I knew the intended result of each action and checked whether the system reconstructed it correctly.
 
-I paused after 12 actions because the walkthrough had turned into live infrastructure work. Several actions exposed new validator cases, the remaining browser steps required more code, and the two monitor streams were still not reliably synchronized. Continuing meant another round of implementation, testing, and revalidating the first 12 actions. I decided not to spend another half day on it.
+Four problems kept expanding the work:
 
-The walkthrough was fragile for five reasons:
+- **Each action required a controlled procedure.** I had to prepare the app, mark the start, capture a frozen image of both displays, perform one action, mark completion, and export browser evidence when needed. An extra click, missed marker, or delayed input could corrupt the interval.
 
-- **The protocol required perfect choreography.** I had to prepare the application, mark ready, freeze both displays, perform one action, mark completion, and export browser evidence when relevant. An extra click, missed marker, or delayed input could contaminate the interval.
+- **The evidence used different clocks and identifiers.** The system had to join input events, two display streams, macOS control data, browser events, and an action log. The browser did not know the Mac automation layer's action ID, so the join depended on timestamps, coordinates, and window identity. A monitor that had not changed might also lack a fresh frame.
 
-- **The evidence did not share one clock or identifier.** The system had to join input events, separate display streams, macOS Accessibility records, browser events, and an action ledger. The browser did not know the Mac automation layer's action ID, so the join depended on timestamps, coordinates, window and document identity, and a narrow interval.
+- **Native apps and webpages described destinations differently.** macOS might return the intended button, an image inside it, a generic container, an unnamed field, or nothing useful. Browser structure was more precise inside webpages but could not describe native controls or browser chrome. Focus changes and dynamic pages could also change the evidence during capture.
 
-- **The interfaces changed during capture.** Webpages responded to JavaScript events, focus arrived late, and browser tabs, split views, and temporary windows exposed different identities. A static monitor might not emit a fresh frame when the other monitor changed.
+- **The validator changed as new cases appeared.** Fixing those cases improved the system, but it also meant the same rules had not judged every checkpoint. A formal test would have required finishing the remaining cases, freezing the validator, and running the diagnostic again.
 
-- **Exact targets had no shared representation.** macOS might return the intended button, an image inside it, a generic container, an unnamed field, or nothing useful. Browser structure was more precise for webpages but could not describe native controls or browser chrome. Screenshots and coordinates filled gaps but required another inference step.
+Even a completed walkthrough would have shown only that the system could reconstruct known actions under controlled conditions. The next gates were a blind 30-action calibration and an audit of 50 to 100 actions from normal work. Only if all three gates passed would later records go directly into the prediction test.
 
-- **The validator was still changing.** The diagnostic exposed cases we had not anticipated. Fixing the validator helped preserve genuine evidence, but one frozen set of rules no longer judged every checkpoint. A formal test would have required implementing the remaining cases, freezing the validator, and running it again.
+That validation work was reasonable. If the timing or destination labels were wrong, I would not know whether a bad result came from the LLM or the data. The sequencing mistake was making a dependable automatic pipeline a prerequisite for a cheap qualitative test.
 
-Finishing the walkthrough would still have left two validation steps before I could test whether the LLM could predict my exact next destination: a blind 30-action calibration and an audit of 50 to 100 actions from normal work. I reached neither one, so the prediction test never began.
+## Existing products solve pieces of the problem
 
-Testing the capture stack first was reasonable. Otherwise, a wrong prediction could reflect my behavior, the LLM, the action boundary, the destination label, or a screenshot that already showed the answer.
+The research and self-serve tools each contribute useful parts. NAPsack groups passive activity into captioned segments and exports them as JSONL. But its [published prediction task](https://arxiv.org/abs/2603.05923) operates on those broad activity descriptions rather than my exact destinations. [OpenCUA](https://arxiv.org/abs/2508.09123) collects deliberate demonstrations, pairs actions with the last distinct prior screenshot, supports review, and exports standardized trajectories. Its [Mac setup](https://agentnet-tool.xlang.ai/quickstart/mac_quick_start/) records one display. [Scribe AutoCapture](https://support.scribehow.com/hc/en-us/articles/30708953411229-Using-Autocapture) discovers workflows across approved business apps and lets users review, edit, publish, or discard them. Its documented exports are finished guides, including [Markdown](https://support.scribehow.com/hc/en-us/articles/9254133020189-Exporting-a-Scribe-to-Markdown), rather than prediction records.
 
-But the diagnostic measured my custom stack. It did not show that Screenpipe's raw recording could not support a simpler extractor. I should have tested that path before building more capture infrastructure.
-
-## The closest tools already form a product category
-
-I first compared research tools and self-serve products. NAPsack groups nearby clicks and keystrokes into short activity segments and describes each one in plain language. But its [published task](https://arxiv.org/abs/2603.05923) predicts those descriptions rather than exact destinations. [OpenCUA](https://arxiv.org/abs/2508.09123) pairs actions with the last distinct prior screenshot, but collects declared demonstrations; its [macOS setup](https://agentnet-tool.xlang.ai/quickstart/mac_quick_start/) records one display. [Scribe](https://support.scribehow.com/hc/en-us/articles/30708953411229-Using-Autocapture) discovers workflows across approved business apps and lets users review, edit, publish, or discard them. Its documented exports are finished guides, including [Markdown](https://support.scribehow.com/hc/en-us/articles/9254133020189-Exporting-a-Scribe-to-Markdown), rather than raw prediction records.
-
-Then I looked at enterprise task mining, which records work to find repeated business processes. [Mimica](https://www.mimica.ai/product) advertises passive desktop capture, task discovery, step-level screenshots, spreadsheet export, and a [native macOS recorder](https://www.mimica.ai/articles/introducing-mimica-task-mining-for-macos). Its signup rejected my personal email with "This email is not enabled, please contact your admin." On the morning of my scheduled demo, Mimica canceled because my one-person request did not fit its focus on larger enterprises.
+[Mimica](https://www.mimica.ai/product) is the strongest enterprise counterexample. It advertises passive desktop capture, automatic task discovery, step screenshots, spreadsheet export, and a [native Mac recorder](https://www.mimica.ai/articles/introducing-mimica-task-mining-for-macos). But its signup rejected my personal email, and Mimica canceled my scheduled demo because a one-person evaluation did not fit its focus on larger companies.
 
 ![Mimica canceled my scheduled demo after deciding that my one-person request did not fit its focus on larger enterprise organizations.](../70-attachments/mimica-demo-canceled-enterprise-focus-2026-07-27.png)
 
-[Celonis Task Mining](https://docs.celonis.com/en/task-mining.html) is another enterprise counterexample. It documents background capture, raw and labeled event tables, and screenshots of [all attached desktops](https://docs.celonis.com/en/event-processing-rules.html), but runs only on Windows. [Skan](https://www.skan.ai/process-discovery-and-analysis) and [UiPath Task Mining](https://docs.uipath.com/task-mining/automation-cloud/latest/user-guide/introduction-as) are in the same category. UiPath's earlier [unassisted mode](https://docs.uipath.com/task-mining/automation-suite/2024.10/user-guide/unassisted-task-mining-analysis-guide) found workflows across monitors before it [was removed](https://docs.uipath.com/task-mining/automation-cloud/latest/release-notes/november-2024) from the cloud in December 2025.
+[Celonis Task Mining](https://docs.celonis.com/en/task-mining.html) documents background capture, raw and labeled event tables, and screenshots of [all attached displays](https://docs.celonis.com/en/event-processing-rules.html), but its recorder runs only on Windows.
 
-So the category exists, but not as an option for this experiment. Mimica would not take the one-person evaluation, and Celonis was Windows-only. Four parts of the original automatic pipeline also stayed unresolved in the public material. Does it find meaningful moves during normal work? Is the screenshot from before the move? Does the output name the exact native-app or browser destination? Can the records be exported in time order? For enterprise systems, these may be undocumented capabilities rather than gaps.
+These products corrected my initial conclusion. Computer activity capture, workflow discovery, and structured export already form a product category. My diagnostic also measured the limits of my custom protocol, not the limits of Screenpipe.
 
-The table maps documented capabilities and my tests to the six original jobs, plus the review flow I would now want in a dependable product. It does not mean that a product was usable in my setup. A question mark means the material did not answer. Vendor rows are vendor claims, while local measurements apply only to my July 2026 setup.
+The narrower finding is that I found no self-serve Mac product I could use that documented the complete conversion I needed: find meaningful navigation moments, recover the screen state from before each move across both monitors, name the exact destination across native apps and browsers, and export those records in order. An enterprise product may already do this without documenting it. The missing piece may also be an adapter on top of existing recording tools rather than a new product category.
 
-| Tool | 1. Ambient | 2. Prior state | 3. Both monitors | 4. Exact destination | 5. Boundaries | Later review | 6. Export |
-|---|---|---|---|---|---|---|---|
-| Screenpipe 2.5.132 | Yes (measured) | Partial (raw frames) | Partial (measured) | Partial (measured) | Partial (event triggers) | ? | Partial (raw data) |
-| NAPsack 0.1.3 | Yes | Yes (active display) | No (active display only) | Partial | Yes (bursts) | ? | Partial (JSONL) |
-| OpenCUA tool | No (declared tasks) | Yes (documented) | No (one display on macOS) | Partial | Partial (within tasks) | Yes (annotator review) | Yes (trajectories) |
-| Scribe Autocapture | Partial (approved apps) | ? | ? | ? | Yes | Partial (guide level) | No (guide formats) |
-| Mimica | Yes (vendor claim) | ? | ? | ? | Yes (vendor claim) | ? | Partial (spreadsheet export) |
-| Celonis Task Mining | Partial (Windows only) | ? | Partial (all-desktop screenshots) | Partial (event attributes) | Partial | ? | Yes (event tables) |
-| UiPath Task Mining | No (known tasks) | ? | ? | Partial (export fields) | Partial | Yes (review) | Yes (raw export) |
-| Skan | Partial (vendor claim) | ? | ? | ? | Yes (vendor claim) | Partial | ? |
-| My custom stack | Partial (controlled runs) | Yes (measured) | Partial (measured) | Partial (measured) | No | No | No |
+## I am running the experiment manually
 
-Several tools cover ambient capture, boundaries, and export. The unresolved questions cluster around prior state, exact destination, and dependable automatic assembly. My custom stack built much of the capture layer, but not the parts that made the data usable.
+I never needed to solve the automatic collection problem before testing whether the predictions were useful. I am now collecting the first navigation records with Screenpipe, then labeling them by hand for the LLM comparison.
 
-## The strongest objection, conceded
+I am publishing this as a record of the gap I encountered. Existing tools recorded most of the required evidence, but no product I could use automatically turned it into reliable chronological records of what I saw and the exact place I went next.
 
-The strongest objection is simple. I missed task mining, then overbuilt a benchmark. Enterprise products already capture, group, and export desktop activity. Screenpipe may already have recorded enough raw evidence for an extractor to reconstruct the records. Stopping at 12 of 30 checkpoints shows an over-scoped protocol, not a missing product category.
+If the predictions prove useful, the next step is to test the simpler Screenpipe extractor before building another capture system. A dependable automatic version would still need to find navigation moments, recover prior state from both monitors, identify native and browser destinations, handle missing evidence, and export stable records. I should build that only if the prediction result justifies it.
 
-Most of that is right. The diagnostic measured my over-scoped protocol, not the limits of Screenpipe's recording.
-
-But neither of the strongest enterprise counterexamples was usable in my setup. Mimica canceled the one-person evaluation, and Celonis only runs on Windows. I also found no public material showing a self-serve tool that finds meaningful moves, preserves prior state, names the exact destination, and exports the resulting records in order. A dependable product would also need a fast way to correct failures. That may be an undocumented enterprise capability or a thin layer on an existing platform.
-
-## A first version can be cobbled together
-
-The first experiment never required an automatic collection product. I had made one a prerequisite anyway. I could label the first records by hand and run the prediction test. If the prediction is useful, or if manual labeling becomes the bottleneck, Screenpipe can remain the recorder while a small offline script finds possible navigation moments, selects the latest usable prior frame, drafts a destination from later evidence, and writes the records to a table.
-
-I have not validated this plan, and I would check every proposed record by hand. The script skips live suggestions, a review interface, reliable boundaries, perfect monitor synchronization, and stable identification of every control. Its job is to reduce assembly to reviewing proposed records. If it becomes another project, I will keep labeling the records by hand.
-
-Low friction means install, record, and review, not querying a database, aligning clocks, or debugging monitor geometry.
-
-## What a dependable version still needs
-
-The stalled acquisition ladder also changed what I would require from a product. A dependable version still has to:
-
-1. notice meaningful moves while I work;
-2. select the screen state from before each move;
-3. identify the target from macOS interface labels, webpage structure, and pixels;
-4. match screen, click, app, and browser records across both monitors;
-5. flag missing or conflicting evidence;
-6. make corrections fast; and
-7. export corrected records consistently.
-
-Enterprise systems show that much of this machinery already exists, so I cannot call the category new. But neither Mimica nor Celonis was usable in my setup, and public material did not settle the original automatic-assembly questions or the later correction path. For this experiment, a dependable version would still require a custom layer.
-
-## Why this matters and what happens next
-
-The idea came from a conversation with [Niyant](https://handsdiff.github.io/phase-1) about personal AI that learns from how you work. I proposed using Tab, or one of three hotkeys, to route me to the likely next place. He first called the idea vague, then said the narrowed version aligned overall. He also warned that cycling among a few apps could look useful without understanding anything. That is why I care about the exact place, not the app, and useful predictions, not raw accuracy. The longer idea is in [my Tab note](https://dylanduyvu.github.io/00-inbox/tab-could-autocomplete-the-next-computer-action) and [experiment plan](https://dylanduyvu.github.io/20-syntheses/computer-use-nap-shadow-experiment).
-
-Still, [A Click Ahead](https://arxiv.org/abs/2309.12170) shows that a simpler version can work under easier conditions. Its conventional recurrent neural network, not a large language model, chose the exact next action correctly 34.63 percent of the time from 442 known actions. My destinations are more specific and not confined to a fixed list, so I read the result as precedent, not a forecast.
-
-So the corrected sequence is short. Run the manual pilot. Decide whether the predictions are useful. Use the offline script only if it actually reduces the labeling work. Build, or buy, the dependable version only if the prediction earns it.
-
-If you have built something that already produces these navigation records, or you are working on it, I want to see it. The automatic-assembly requirements above are the test. dylanduyvu@gmail.com.
+If you have built a system that already produces these navigation records, or you are working on one, I want to see it. dylanduyvu@gmail.com.
