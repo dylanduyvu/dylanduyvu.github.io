@@ -453,6 +453,8 @@ Important joins:
 
 The project will not move directly from the four-action sample to ordinary multi-day recording.
 
+Clarification added July 27: this ladder was intended to validate an automatic collection pipeline, not establish a permanent human-labeling workflow. Known actions, hidden answers, blind reconstruction, and scoring were calibration machinery. If the controlled diagnostic, formal calibration, and 50–100-action natural-work audit all passed, subsequent records would enter the prediction experiment directly. Manual per-record labeling became the fallback after the automatic stack was paused.
+
 The next sequence is:
 
 1. Make hybrid reconstruction repeatable.

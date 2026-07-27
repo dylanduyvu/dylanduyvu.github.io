@@ -2,7 +2,7 @@
 type: research
 status: reference
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-07-27
 projects:
   - personal-ai-context-learning
 domains:
@@ -18,6 +18,14 @@ tags:
 ---
 
 # Day 0 computer-use tool-gap web audit, July 26, 2026
+
+## Update, July 27
+
+The row definition and narrower verdict below conflated three different layers. The core prediction dataset contained chronological pairs of prior screen state and exact next destination. Captured evidence, hidden answers, blind reconstruction, and scoring belonged to the acquisition-calibration machinery. Manual per-record labeling or review became the fallback only after Dylan stopped pursuing the automatic stack.
+
+The original goal was for a component diagnostic, blind 30-action calibration, and 50–100-action natural-work audit to establish that later automatic records could enter prediction directly. Human inspection graded the recorder during those gates; it was not the intended everyday workflow.
+
+Read the narrower tool-gap question as whether a usable system automatically finds meaningful moves, preserves the prior state across Dylan's two monitors, assigns the exact destination, and exports the records in order. Fast correction remains a reasonable dependable-product requirement, but it was not a field in the original dataset.
 
 ## Research question
 

@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-27
 aliases:
   - Computer-use NAP 30-action walkthrough
 projects:
@@ -22,6 +22,9 @@ tags:
 
 > [!status] Live state, paused July 24
 > The diagnostic is paused cleanly at **12/30 accepted checkpoints**. Steps 1–10 cover the native category; step 11 captured Gmail `Main menu`; step 12 captured Gmail `Advanced search options`. The next row is `step-013`, Gmail `Settings`. The last segment was preserved and both recorder processes were stopped. See [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]] for the exact checkpoint chain, artifacts, protocol drift, remaining validator work, and safe resume procedure.
+
+> [!clarification] Added July 27
+> Human inspection in this walkthrough and the planned blind calibration was test instrumentation. It graded whether the automatic collection system reconstructed known actions correctly. It was not the intended everyday labeling workflow. If the component diagnostic, formal calibration, and 50–100-action natural-work audit all passed, later records would flow directly into the prediction experiment. Manual per-record labeling became the fallback after the automatic stack was paused.
 
 ## Thirty-second version
 
