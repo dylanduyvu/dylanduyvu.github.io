@@ -55,7 +55,7 @@ The article answers four questions:
 
 Recommended full wording:
 
-> I needed a personal dataset that paired what was on my screens before each move with the exact place I went next. Then I needed to verify every row. The tools I tested could record my screens, clicks, app switches, and browser activity. But no product I could use turned a normal workday into that dataset.
+> I needed a personal dataset that paired what was on my screens before each move with my exact next destination. Then I needed to verify every row. The tools I tested could record my screens, clicks, app switches, and browser activity. But no product I could use turned a normal workday into that dataset.
 
 Short compression:
 
@@ -88,7 +88,7 @@ The article opens with a short abstract that defines the prediction test and exp
 
 Then move into the concrete scene:
 
-> I planned a four-day experiment. Day 0 was recorder setup. Day 0 took three days.
+> I planned a five-day project: one setup day followed by four experiment days. Day 0 was recorder setup. Three days later, it was still not complete.
 
 Date check for the title-level fact:
 
@@ -101,7 +101,7 @@ Date check for the title-level fact:
 
 Then the concrete facts:
 
-- The intended experiment was to record normal work, replay navigation moments retrospectively, and test whether a model's top three guesses felt useful enough to justify a live Tab-style demo.
+- The intended experiment was to record a day of work, replay navigation moments retrospectively, and test whether an LLM's top three guesses felt useful enough to justify a live demo where pressing Tab took Dylan to the most likely destination.
 - Prediction had not begun.
 - Screenpipe was audited first.
 - NAPsack was added and patched for Dylan's negative-coordinate secondary monitor.
@@ -156,7 +156,7 @@ The first pilot does not require perfect cross-display synchronization, exact AX
 
 The eventual tool should:
 
-1. run passively during ordinary work across native apps and browsers;
+1. run passively while Dylan works across native apps and browsers;
 2. preserve the state that was available strictly before navigation;
 3. retain correctly attributed evidence from both monitors when the move crosses displays;
 4. represent the exact destination in one normalized field, whether it is an app, window, page, document, task, input field, link, or button;
@@ -174,7 +174,7 @@ After adding those systems, the clearest residual requirements are:
 
 The complete target workflow remains:
 
-> record ordinary work → find each meaningful move → save what Dylan saw before it → identify where he went → let Dylan approve or fix the answer → save the examples in time order
+> record work as it happens → find each meaningful move → save what Dylan saw before it → identify where he went → let Dylan approve or fix the answer → save the examples in time order
 
 The defensible claim is not that task-mining systems lack a conversion layer. They plainly have one. The claim is that the reviewed public materials do not show one tool completing all six steps above for Dylan's prediction experiment. Mimica's detailed data format and review behavior are not public enough to resolve the technical question, and its enterprise onboarding did not provide a self-serve or one-person evaluation path. Celonis documents rich event tables, multi-screen capture, and task grouping, but it is Windows-only and does not document a guarantee that the saved screen is from before the move or a way for Dylan to approve the exact destination for every example. These may be undocumented enterprise capabilities, but neither product is a current option for Dylan's setup.
 
@@ -254,7 +254,7 @@ The draft must flag or exclude these:
 - Personal history will improve prediction.
 - Top-three shortcuts will feel useful.
 - The result will justify a public live demo.
-- A recorder can segment ordinary work accurately with little review.
+- A recorder can segment work accurately with little review.
 - Navigation prediction leads naturally to understanding desires or goals.
 - There is enough market demand for a standalone recorder business.
 
@@ -357,7 +357,7 @@ The article should concede most of this.
 
 Recommended response:
 
-> I was wrong if I meant that nobody can capture ordinary work, discover workflows, or export structured traces. That is an established task-mining category. NAPsack turns interaction bursts into screenshot-and-action examples. OpenCUA pairs human demonstrations with the screen from before each action. Scribe discovers workflows in the background. Mimica and Celonis go further toward automatic process discovery and structured output. But neither was usable for my experiment. Mimica rejected my personal signup and canceled the one-person demo because it focuses on larger enterprises. Celonis runs only on Windows. Their public material also does not show one tool saving what I saw before each move, naming the exact destination, and letting me approve or fix every answer. That may still be an adapter problem or an undocumented enterprise capability rather than a new category. I also treated an automatic, product-grade dataset as a prerequisite for a small qualitative experiment. That was a sequencing mistake. Screenpipe recorded enough activity for me to attempt the prediction test with manual labeling.
+> I was wrong if I meant that nobody can capture work as it happens, discover workflows, or export structured traces. That is an established task-mining category. NAPsack turns interaction bursts into screenshot-and-action examples. OpenCUA pairs human demonstrations with the screen from before each action. Scribe discovers workflows in the background. Mimica and Celonis go further toward automatic process discovery and structured output. But neither was usable for my experiment. Mimica rejected my personal signup and canceled the one-person demo because it focuses on larger enterprises. Celonis runs only on Windows. Their public material also does not show one tool saving what I saw before each move, naming the exact destination, and letting me approve or fix every answer. That may still be an adapter problem or an undocumented enterprise capability rather than a new category. I also treated an automatic, product-grade dataset as a prerequisite for a small qualitative experiment. That was a sequencing mistake. Screenpipe recorded enough activity for me to attempt the prediction test with manual labeling.
 
 This section is load-bearing. Without it, the post mistakes self-imposed protocol complexity and an incomplete market search for external evidence.
 
@@ -366,6 +366,8 @@ Planned placement: its own section immediately after the tool comparison and bef
 ## Niyant origin section
 
 Keep this short.
+
+Above the three-link metadata line, add a standalone sentence labeling the article as a brief detour into Niyant's personalization thesis. Link `Niyant` to `https://substack.com/@handsdiff` and link only `personalization thesis` to [[niyant-personal-ai-thesis-study-guide|the public vault study guide]]. This is origin context, not disclosure.
 
 The idea came from trying to find a smaller first rung inside Niyant's broader personalization thesis. Dylan proposed Tab, or one of three hotkeys, routing him to the place he was most likely to want next: a specific app, window, webpage, task, input field, link, or button.
 
@@ -384,9 +386,9 @@ Public context:
 
 ### 1. Day 0 took three days
 
-Use the four-day plan and the fact that prediction never started as the hook. Describe the NAPsack patch, custom capture layer, controlled check, browser extension, and stopped 30-action diagnostic. State immediately that the delay mixed a real conversion-layer gap with Dylan's decision to overbuild the first experiment.
+Use the five-day plan and the fact that Day 0 was still incomplete after three days as the hook. Describe the NAPsack patch, custom capture layer, controlled check, browser extension, and stopped 30-action diagnostic. State immediately that the delay mixed a real conversion-layer gap with Dylan's decision to overbuild the first experiment.
 
-> The controlled run showed that the evidence streams could be joined. But it did not automatically produce enough dataset rows from ordinary work, so the prediction test never began.
+> The controlled run showed that the evidence streams could be joined. But it could not automatically assemble enough verified navigation records to start the prediction test.
 
 ### 2. What one dataset row needed
 
@@ -536,7 +538,7 @@ Negative capability claims need the same discipline. Use bounded wording such as
 
 - `The tool does not exist.`
 - `No existing tool creates state-action examples.`
-- `No product captures ordinary work and discovers workflows automatically.`
+- `No product captures work as it happens and discovers workflows automatically.`
 - `No existing product records multiple monitors.`
 - `The conversion layer is wholly net new.`
 - `Screenpipe records only screenshots or OCR.`

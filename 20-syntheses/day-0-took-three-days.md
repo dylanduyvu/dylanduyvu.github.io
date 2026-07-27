@@ -44,31 +44,33 @@ Remaining before final publication: Dylan's personal read, including a per-cell 
 
 ---
 
+*This article is a brief detour into [Niyant](https://substack.com/@handsdiff)'s [personalization thesis](https://dylanduyvu.github.io/20-syntheses/niyant-personal-ai-thesis-study-guide).*
+
 *[Associated research](https://dylanduyvu.github.io/30-projects/computer-use-nap-fidelity-research-2026-07-26) | [Revision history](https://github.com/dylanduyvu/dylanduyvu.github.io/commits/main/20-syntheses/day-0-took-three-days.md) | [Disclosure](https://dylanvu.substack.com/about)*
 
 ---
 
 *I wanted to test whether an LLM could predict the exact app, page, document, task, or field I would navigate to next, so pressing the Tab key could take me there. But the prediction test never started. Instead, I spent three days trying to automatically assemble the dataset it needed.*
 
-I needed a personal dataset that paired what was on my screens before each move with the exact place I went next. Then I needed to verify every row. The tools I tested could record my screens, clicks, app switches, and browser activity. But no product I could use turned a normal workday into that dataset. This post separates what I can reuse now from what a dependable system would still need.
+I needed a personal dataset that paired what was on my screens before each move with my exact next destination. Then I needed to verify every row. The tools I tested could record my screens, clicks, app switches, and browser activity. But no product I could use turned a normal workday into that dataset. This post separates what I can reuse now from what a dependable system would still need.
 
 ## Day 0 took three days
 
-I planned four experiment days after one setup day:
+I planned a five-day project: one setup day followed by four experiment days.
 
 - **Day 0:** Configure Screenpipe and define how recorded work would become dataset rows.
-- **Day 1:** Record my normal work and create the first day of history.
+- **Day 1:** Record a day of work and create the first day of history.
 - **Day 2:** On the same navigation events, compare the LLM seeing only my current screen against the LLM seeing that screen plus Day 1 history.
 - **Day 3:** Repeat with zero, one, and two days of history.
 - **Day 4:** Repeat with zero, one, two, and three days of history.
 
-If history made the top-three exact-destination guesses qualitatively more useful, I would build a live public demo.
+If history made the top-three exact-destination guesses qualitatively more useful, I would build a live public demo where pressing Tab took me to the most likely destination.
 
-Day 0 was supposed to be setup. It took three days.
+Day 0 was supposed to be setup. Three days later, it was still not complete.
 
 I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records screens and inputs continuously. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups activity into captioned bursts, but patched its display assignment because my second monitor sits above my main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension. A 30-action diagnostic stopped at 12 accepted checkpoints. Even then, the monitors were still out of sync.
 
-The stack worked during an initial controlled run and produced verified checkpoints. But it did not automatically produce enough rows from ordinary work, so I never reached the prediction test.
+The stack worked during an initial controlled run and produced verified checkpoints. But it could not automatically assemble enough verified navigation records to start the prediction test.
 
 The delay had two causes. The tools I could use did not assemble the dataset, but I also tried to build a dependable automatic system before running a small prediction test. This post separates the two.
 
@@ -93,7 +95,7 @@ The rest can be loose at first. I do not need perfectly synchronized monitors, a
 
 The tool I wanted has seven jobs:
 
-1. run quietly during ordinary work, across native apps and browsers;
+1. run quietly while I worked across native apps and browsers;
 2. preserve what was on screen strictly before each move;
 3. keep correctly attributed evidence from both monitors when a move crosses displays;
 4. name the exact destination in one consistent field, whether it is an app, window, page, document, task, input field, link, or button;
@@ -175,7 +177,7 @@ Low friction means install, record, and review, not querying a database, alignin
 
 A dependable automatic version still has to:
 
-1. notice when I make a meaningful move during ordinary work;
+1. notice meaningful moves while I work;
 2. identify the target from macOS interface labels, webpage structure, and pixels;
 3. match screen, click, app, and browser records across both monitors;
 4. flag missing or conflicting evidence;
