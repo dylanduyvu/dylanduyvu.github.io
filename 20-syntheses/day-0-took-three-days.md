@@ -37,6 +37,7 @@ Updated 2026-07-27: expanded the opening into a day-by-day experiment list that 
 Updated 2026-07-27: reorganized the capture-fragility section into five labeled causes while preserving its rationale, sequencing concession, and product implication.
 Updated 2026-07-27: reconciled every Mimica and Celonis reference after the canceled demo, distinguishing evidence that the enterprise category exists from products usable in Dylan's setup.
 Updated 2026-07-27: rewrote the opening thesis around the personal dataset, named the recorded inputs, and replaced the documentation-led gap claim with the stronger bounded finding that no product Dylan could use assembled the dataset.
+Updated 2026-07-27: rewrote the dataset section to establish chronological order once, then stay at the navigation-record level; removed the redundant pilot and research aside.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; final link verification after later edits.
 %%
 
@@ -52,13 +53,13 @@ Remaining before final publication: Dylan's personal read, including a per-cell 
 
 *I wanted to test whether an LLM could predict the exact app, page, document, task, or field I would navigate to next, so pressing the Tab key could take me there. But the prediction test never started. Instead, I spent three days trying to automatically assemble the dataset it needed.*
 
-I needed a personal dataset that paired what was on my screens before each move with my exact next destination. Then I needed to verify every row. The tools I tested could record my screens, clicks, app switches, and browser activity. But no product I could use turned a normal workday into that dataset. This post separates what I can reuse now from what a dependable system would still need.
+I needed a personal dataset that paired what was on my screens before each move with my exact next destination. The tools I tested could record my screens, clicks, app switches, and browser activity. But no product I could use turned a normal workday into that dataset. This post separates what I can reuse now from what a dependable system would still need.
 
 ## Day 0 took three days
 
 I planned a five-day project: one setup day followed by four experiment days.
 
-- **Day 0:** Configure Screenpipe and define how recorded work would become dataset rows.
+- **Day 0:** Configure Screenpipe (or research relevant tools) and define how recorded work would become navigation records.
 - **Day 1:** Record a day of work and create the first day of history.
 - **Day 2:** On the same navigation events, compare the LLM seeing only my current screen against the LLM seeing that screen plus Day 1 history.
 - **Day 3:** Repeat with zero, one, and two days of history.
@@ -72,22 +73,18 @@ I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records 
 
 The stack worked during an initial controlled run and produced verified checkpoints. But it could not automatically assemble enough verified navigation records to start the prediction test.
 
-## What one dataset row needed
+## What the dataset had to contain
 
-One usable row has four parts:
+The dataset had to keep the navigation records in the order they happened. Each record needed four parts:
 
-1. a screenshot or record of what I could see before I moved;
+1. what was on my screens immediately before I moved;
 2. the exact place I went next;
-3. later evidence showing I really went there;
-4. my approval or correction of that answer.
+3. evidence that I arrived there;
+4. my approval or correction of the proposed destination.
 
-A useful dataset also keeps the approved rows in the order they happened.
+For example, suppose I finished an article in Arc, then moved to the message box in one Codex task. The record needed to show the article before I moved, name that specific task and field rather than just "Codex," attach evidence that I arrived there, and include my verdict.
 
-Suppose I finish an article in Arc, then go to the message box in one Codex task. The row must show the article before I moved, name that task and field rather than just "Codex," attach later evidence, and carry my verdict.
-
-Two requirements stay strict. The observation must come from strictly before the move, and the recorded destination must be correct. That is because a post-click screenshot can reveal the answer, while a wrong destination makes the score meaningless.
-
-The rest can be loose at first. I do not need perfectly synchronized monitors, a tamper-proof record, or automatic identification of every control. OpenCUA's [collection method](https://arxiv.org/abs/2508.09123) also pairs each action with the last visually distinct screen from before it. The other studies are in [a separate research note](https://dylanduyvu.github.io/30-projects/computer-use-nap-fidelity-research-2026-07-26).
+For the prediction test to mean anything, the timing and destination label had to be right. A screenshot taken after I moved could give the LLM the answer, while a bad label could make it impossible to tell whether its prediction was right.
 
 ## The recorder is only one part of the tool
 
@@ -97,9 +94,9 @@ The tool I wanted has seven jobs:
 2. preserve what was on screen strictly before each move;
 3. keep correctly attributed evidence from both monitors when a move crosses displays;
 4. name the exact destination in one consistent field, whether it is an app, window, page, document, task, input field, link, or button;
-5. propose meaningful boundaries between moves, instead of treating every keystroke as its own row;
-6. show enough evidence that a person can approve, fix, reject, or park each row; and
-7. export the approved rows in time order, in a format a model can train on.
+5. propose meaningful boundaries between moves, instead of treating every keystroke as its own record;
+6. show enough evidence that a person can approve, fix, reject, or park each record; and
+7. export the approved records in time order, in a format a model can train on.
 
 A continuous recording covers the first job and supplies screen, input, app, and browser evidence for the rest. But it does not do the rest.
 
@@ -123,13 +120,13 @@ That broader check was fragile for five reasons:
 
 - **The validator was still changing.** The diagnostic exposed cases we had not anticipated. Fixing the validator helped preserve genuine evidence, but one frozen set of rules no longer judged every checkpoint. A formal test would have required implementing the remaining cases, freezing the validator, and running it again.
 
-Checking the rows first was reasonable. Otherwise, a wrong prediction could reflect my behavior, the model, the action boundary, the destination label, or a screenshot that already showed the answer. But requiring automatic rows before trying a small manually verified set was the sequencing mistake.
+Checking the records first was reasonable. Otherwise, a wrong prediction could reflect my behavior, the model, the action boundary, the destination label, or a screenshot that already showed the answer. But requiring automatic records before trying a small manually verified set was the sequencing mistake.
 
-A person could infer what happened from imperfect records. Automation had to handle missing evidence, align streams, normalize native and browser targets, detect action boundaries, and send uncertain rows to me. By then, I was building that product while trying to run the experiment.
+A person could infer what happened from imperfect records. Automation had to handle missing evidence, align streams, normalize native and browser targets, detect action boundaries, and send uncertain records to me. By then, I was building that product while trying to run the experiment.
 
 ## The closest tools already form a product category
 
-I first compared research tools and self-serve products. NAPsack groups passive activity into captioned bursts, but its [published task](https://arxiv.org/abs/2603.05923) predicts plain-language task descriptions rather than exact destinations. [OpenCUA](https://arxiv.org/abs/2508.09123) pairs actions with the last distinct prior screenshot, but collects declared demonstrations; its [macOS setup](https://agentnet-tool.xlang.ai/quickstart/mac_quick_start/) records one display. [Scribe](https://support.scribehow.com/hc/en-us/articles/30708953411229-Using-Autocapture) discovers workflows across approved business apps and lets users review, edit, publish, or discard them. Its documented exports are finished guides, including [Markdown](https://support.scribehow.com/hc/en-us/articles/9254133020189-Exporting-a-Scribe-to-Markdown), rather than raw prediction rows.
+I first compared research tools and self-serve products. NAPsack groups passive activity into captioned bursts, but its [published task](https://arxiv.org/abs/2603.05923) predicts plain-language task descriptions rather than exact destinations. [OpenCUA](https://arxiv.org/abs/2508.09123) pairs actions with the last distinct prior screenshot, but collects declared demonstrations; its [macOS setup](https://agentnet-tool.xlang.ai/quickstart/mac_quick_start/) records one display. [Scribe](https://support.scribehow.com/hc/en-us/articles/30708953411229-Using-Autocapture) discovers workflows across approved business apps and lets users review, edit, publish, or discard them. Its documented exports are finished guides, including [Markdown](https://support.scribehow.com/hc/en-us/articles/9254133020189-Exporting-a-Scribe-to-Markdown), rather than raw prediction records.
 
 Then I looked at enterprise task mining, which records work to find repeated business processes. [Mimica](https://www.mimica.ai/product) advertises passive desktop capture, task discovery, step-level screenshots, spreadsheet export, and a [native macOS recorder](https://www.mimica.ai/articles/introducing-mimica-task-mining-for-macos). Its signup rejected my personal email with "This email is not enabled, please contact your admin." On the morning of my scheduled demo, Mimica canceled because my one-person request did not fit its focus on larger enterprises.
 
@@ -137,11 +134,11 @@ Then I looked at enterprise task mining, which records work to find repeated bus
 
 [Celonis Task Mining](https://docs.celonis.com/en/task-mining.html) is another enterprise counterexample. It documents background capture, raw and labeled event tables, and screenshots of [all attached desktops](https://docs.celonis.com/en/event-processing-rules.html), but runs only on Windows. [Skan](https://www.skan.ai/process-discovery-and-analysis) and [UiPath Task Mining](https://docs.uipath.com/task-mining/automation-cloud/latest/user-guide/introduction-as) are in the same category. UiPath's earlier [unassisted mode](https://docs.uipath.com/task-mining/automation-suite/2024.10/user-guide/unassisted-task-mining-analysis-guide) found workflows across monitors before it [was removed](https://docs.uipath.com/task-mining/automation-cloud/latest/release-notes/november-2024) from the cloud in December 2025.
 
-So the category exists, but not as an option for this experiment. Mimica would not take the one-person evaluation, and Celonis was Windows-only. Four narrower questions also stayed unresolved in the public material. Is the screenshot from before the move? Does the output name the exact native-app or browser destination? Can the user fix each answer? Can approved rows be exported in time order? For enterprise systems, these may be undocumented capabilities rather than gaps.
+So the category exists, but not as an option for this experiment. Mimica would not take the one-person evaluation, and Celonis was Windows-only. Four narrower questions also stayed unresolved in the public material. Is the screenshot from before the move? Does the output name the exact native-app or browser destination? Can the user fix each answer? Can approved records be exported in time order? For enterprise systems, these may be undocumented capabilities rather than gaps.
 
 The table maps documented capabilities and my tests to the seven jobs. It does not mean that a product was usable in my setup. A question mark means the material did not answer. Vendor rows are vendor claims, while local measurements apply only to my July 2026 setup.
 
-| Tool | 1. Ambient | 2. Prior state | 3. Both monitors | 4. Exact destination | 5. Boundaries | 6. Row review | 7. Export |
+| Tool | 1. Ambient | 2. Prior state | 3. Both monitors | 4. Exact destination | 5. Boundaries | 6. Record review | 7. Export |
 |---|---|---|---|---|---|---|---|
 | Screenpipe 2.5.132 | Yes (measured) | No (measured) | Partial (measured) | Partial (measured) | ? | ? | Partial (raw data) |
 | NAPsack 0.1.3 | Yes | Yes (active display) | No (active display only) | Partial | Yes (bursts) | ? | Partial (JSONL) |
@@ -153,7 +150,7 @@ The table maps documented capabilities and my tests to the seven jobs. It does n
 | Skan | Partial (vendor claim) | ? | ? | ? | Yes (vendor claim) | Partial | ? |
 | My custom stack | Partial (controlled runs) | Yes (measured) | Partial (measured) | Partial (measured) | No | No | No |
 
-Several tools cover ambient capture, boundaries, and export. The questions cluster around prior state, exact destination, and row review. My custom stack is the concession in one row: I built much of the capture layer, but not the parts that made the data usable.
+Several tools cover ambient capture, boundaries, and export. The questions cluster around prior state, exact destination, and record review. My custom stack is the concession in one row: I built much of the capture layer, but not the parts that made the data usable.
 
 ## The strongest objection, conceded
 
@@ -161,13 +158,13 @@ The strongest objection is simple. I missed task mining, then overbuilt a benchm
 
 Most of that is right. Several tools capture work, discover workflows, and export records. I wrongly treated an automatic dataset as a prerequisite for a small test.
 
-But neither of the strongest enterprise counterexamples was usable in my setup. Mimica canceled the one-person evaluation, and Celonis only runs on Windows. I also found no public material showing a self-serve tool that preserves prior state, names the exact destination, supports row correction, and exports accepted rows in order. That may be an undocumented enterprise capability or a thin layer on an existing platform.
+But neither of the strongest enterprise counterexamples was usable in my setup. Mimica canceled the one-person evaluation, and Celonis only runs on Windows. I also found no public material showing a self-serve tool that preserves prior state, names the exact destination, supports record correction, and exports accepted records in order. That may be an undocumented enterprise capability or a thin layer on an existing platform.
 
 ## A first version can be cobbled together
 
-So the first experiment does not need that product. Screenpipe can remain the recorder, while a small offline script finds possible navigation moments, selects the latest usable prior frame, drafts a destination from later evidence, and writes the rows to a table. I have not validated this plan, and I would check every row by hand.
+So the first experiment does not need that product. Screenpipe can remain the recorder, while a small offline script finds possible navigation moments, selects the latest usable prior frame, drafts a destination from later evidence, and writes the records to a table. I have not validated this plan, and I would check every record by hand.
 
-The script skips live suggestions, a review interface, reliable boundaries, perfect monitor synchronization, and stable identification of every control. Its only job is to reduce labeling work. If it becomes another project, I will label the rows by hand.
+The script skips live suggestions, a review interface, reliable boundaries, perfect monitor synchronization, and stable identification of every control. Its only job is to reduce labeling work. If it becomes another project, I will label the records by hand.
 
 Low friction means install, record, and review, not querying a database, aligning clocks, or debugging monitor geometry.
 
@@ -180,7 +177,7 @@ A dependable automatic version still has to:
 3. match screen, click, app, and browser records across both monitors;
 4. flag missing or conflicting evidence;
 5. make corrections fast; and
-6. export corrected rows consistently.
+6. export corrected records consistently.
 
 Enterprise systems show that much of this machinery already exists, so I cannot call the category new. But neither Mimica nor Celonis was usable in my setup, and public material did not establish the four requirements above. For this experiment, a dependable version would still require a custom layer.
 
@@ -192,4 +189,4 @@ Still, [A Click Ahead](https://arxiv.org/abs/2309.12170) shows that a simpler ve
 
 So the corrected sequence is short. Run the manual pilot. Decide whether the predictions are useful. Use the offline script only if it actually reduces the labeling work. Build, or buy, the dependable version only if the prediction earns it.
 
-If you have built something that already produces these dataset rows, or you are working on it, I want to see it. The seven jobs above are the test. dylanduyvu@gmail.com.
+If you have built something that already produces these navigation records, or you are working on it, I want to see it. The seven jobs above are the test. dylanduyvu@gmail.com.
