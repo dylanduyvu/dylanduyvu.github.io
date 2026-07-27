@@ -8,11 +8,11 @@ updated: 2026-07-26
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 26, 2026, 8:22 PM EDT
+Generated: Jul 26, 2026, 8:27 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 58 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 59 note commits. The most recent movement is:
 
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
@@ -29,6 +29,13 @@ In the past 7 days, the public vault changed through 58 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 26, 2026, 8:27 PM EDT - article: tighten Day 0 ownership draft
+
+article: tighten Day 0 ownership draft.
+
+Changed notes:
+  - [[day-0-took-three-days|Day 0 Took Three Days]]
 
 ### Jul 26, 2026, 8:22 PM EDT - article: add first complete Day 0 draft
 
@@ -87,6 +94,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 26, 2026: article: tighten Day 0 ownership draft - [[day-0-took-three-days|Day 0 Took Three Days]]
 - Jul 26, 2026: article: add first complete Day 0 draft - [[day-0-took-three-days|Day 0 Took Three Days]]
 - Jul 26, 2026: research: clarify Mimica enterprise scope - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 26, 2026: research: fact-check computer-use tool gap - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -111,12 +119,12 @@ Changed notes:
 - Jul 22, 2026: hunch: add personalized computer action autocomplete - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: insight: publish personal AI study and USD.AI policy - [[a-static-personal-demo-cannot-validate-a-dynamic-enterprise-context-system|A static personal demo cannot validate a dynamic enterprise context system]]
 - Jul 22, 2026: insight: audit CCIR against GPU finance theses - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
-- Jul 22, 2026: insight: separate GPU rental price from utilization - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
 
-_Showing the newest 25 of 58 updates in this window._
+_Showing the newest 25 of 59 updates in this window._
 
 ## Past 30 Days
 
+- Jul 26, 2026: article: tighten Day 0 ownership draft - [[day-0-took-three-days|Day 0 Took Three Days]]
 - Jul 26, 2026: article: add first complete Day 0 draft - [[day-0-took-three-days|Day 0 Took Three Days]]
 - Jul 26, 2026: research: clarify Mimica enterprise scope - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 26, 2026: research: fact-check computer-use tool gap - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -141,6 +149,5 @@ _Showing the newest 25 of 58 updates in this window._
 - Jul 22, 2026: hunch: add personalized computer action autocomplete - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: insight: publish personal AI study and USD.AI policy - [[a-static-personal-demo-cannot-validate-a-dynamic-enterprise-context-system|A static personal demo cannot validate a dynamic enterprise context system]]
 - Jul 22, 2026: insight: audit CCIR against GPU finance theses - [[cross-provider-gpu-rental-search-may-solve-buyer-discovery-friction|A cross-provider GPU rental search layer may solve buyer discovery friction]]
-- Jul 22, 2026: insight: separate GPU rental price from utilization - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
 
-_Showing the newest 25 of 176 updates in this window._
+_Showing the newest 25 of 177 updates in this window._
