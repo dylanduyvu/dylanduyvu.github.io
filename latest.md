@@ -8,11 +8,11 @@ updated: 2026-07-27
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 11:31 AM EDT
+Generated: Jul 27, 2026, 11:40 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 66 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 67 note commits. The most recent movement is:
 
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
@@ -29,6 +29,13 @@ In the past 7 days, the public vault changed through 66 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 27, 2026, 11:40 AM EDT - article: add research history and disclosure links
+
+article: add research history and disclosure links.
+
+Changed notes:
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 27, 2026, 11:30 AM EDT - article: clarify LLM prediction test opening
 
@@ -108,19 +115,11 @@ Changed notes:
   - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
   - [[day-0-computer-use-tool-gap-web-audit-2026-07-26|Day 0 computer-use tool-gap web audit, July 26, 2026]]
 
-### Jul 26, 2026, 7:53 PM EDT - research: fact-check computer-use tool gap
-
-research: fact-check computer-use tool gap.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[computer-use-nap-fidelity-research-2026-07-26|Computer-use NAP: dataset fidelity research, July 26, 2026]]
-  - [[day-0-computer-use-tool-gap-web-audit-2026-07-26|Day 0 computer-use tool-gap web audit, July 26, 2026]]
-
-_Showing the newest 12 of 16 updates in this window._
+_Showing the newest 12 of 17 updates in this window._
 
 ## Past 7 Days
 
+- Jul 27, 2026: article: add research history and disclosure links - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: clarify LLM prediction test opening - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: tighten capture fragility draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: explain capture system fragility - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
@@ -145,12 +144,12 @@ _Showing the newest 12 of 16 updates in this window._
 - Jul 23, 2026: Log corrected NAPsack calibration - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 23, 2026: experiment: audit natural screenpipe session - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 23, 2026: research: compare computer-use capture options - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-- Jul 23, 2026: experiment: add screenpipe acquisition gate - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 
-_Showing the newest 25 of 66 updates in this window._
+_Showing the newest 25 of 67 updates in this window._
 
 ## Past 30 Days
 
+- Jul 27, 2026: article: add research history and disclosure links - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: clarify LLM prediction test opening - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: tighten capture fragility draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: explain capture system fragility - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
@@ -175,6 +174,5 @@ _Showing the newest 25 of 66 updates in this window._
 - Jul 23, 2026: Log corrected NAPsack calibration - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 23, 2026: experiment: audit natural screenpipe session - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 23, 2026: research: compare computer-use capture options - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-- Jul 23, 2026: experiment: add screenpipe acquisition gate - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 
-_Showing the newest 25 of 185 updates in this window._
+_Showing the newest 25 of 186 updates in this window._
