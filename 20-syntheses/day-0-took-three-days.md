@@ -35,7 +35,8 @@ Updated 2026-07-27: rewrote the deck to name the LLM, exact-destination scope, T
 Completed 2026-07-27: added the public associated-research, file-specific revision-history, and disclosure links required by the publication harness.
 Updated 2026-07-27: expanded the opening into a day-by-day experiment list that defines the baseline, accumulating-history comparison, and qualitative live-demo decision.
 Updated 2026-07-27: reorganized the capture-fragility section into five labeled causes while preserving its rationale, sequencing concession, and product implication.
-Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; Celonis follow-up before any stronger product claim; final link verification after later edits.
+Updated 2026-07-27: reconciled every Mimica and Celonis reference after the canceled demo, distinguishing evidence that the enterprise category exists from products usable in Dylan's setup.
+Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; final link verification after later edits.
 %%
 
 # The Missing Step Between Recording and Prediction
@@ -135,9 +136,9 @@ Then I looked at enterprise task mining, which records work to find repeated bus
 
 [Celonis Task Mining](https://docs.celonis.com/en/task-mining.html) is another enterprise counterexample. It documents background capture, raw and labeled event tables, and screenshots of [all attached desktops](https://docs.celonis.com/en/event-processing-rules.html), but runs only on Windows. [Skan](https://www.skan.ai/process-discovery-and-analysis) and [UiPath Task Mining](https://docs.uipath.com/task-mining/automation-cloud/latest/user-guide/introduction-as) are in the same category. UiPath's earlier [unassisted mode](https://docs.uipath.com/task-mining/automation-suite/2024.10/user-guide/unassisted-task-mining-analysis-guide) found workflows across monitors before it [was removed](https://docs.uipath.com/task-mining/automation-cloud/latest/release-notes/november-2024) from the cloud in December 2025.
 
-So the category exists. But four narrower questions stayed unresolved in the public material. Is the screenshot from before the move? Does the output name the exact native-app or browser destination? Can the user fix each answer? Can approved examples be exported in time order? For enterprise systems, these may be demo questions rather than gaps.
+So the category exists, but not as an option for this experiment. Mimica would not take the one-person evaluation, and Celonis was Windows-only. Four narrower questions also stayed unresolved in the public material. Is the screenshot from before the move? Does the output name the exact native-app or browser destination? Can the user fix each answer? Can approved examples be exported in time order? For enterprise systems, these may be undocumented capabilities rather than gaps.
 
-The table maps public documentation and my tests to the seven jobs. A question mark means the material did not answer. Vendor rows are vendor claims, while local measurements apply only to my July 2026 setup.
+The table maps documented capabilities and my tests to the seven jobs. It does not mean that a product was usable in my setup. A question mark means the material did not answer. Vendor rows are vendor claims, while local measurements apply only to my July 2026 setup.
 
 | Tool | 1. Ambient | 2. Prior state | 3. Both monitors | 4. Exact destination | 5. Boundaries | 6. Row review | 7. Export |
 |---|---|---|---|---|---|---|---|
@@ -155,11 +156,11 @@ Several tools cover ambient capture, boundaries, and export. The questions clust
 
 ## The strongest objection, conceded
 
-The strongest objection is simple. I missed task mining, then overbuilt a benchmark. Mimica and Celonis already capture and export desktop activity. Screenpipe captured enough raw material to attempt a manual test. Stopping at 12 of 30 checkpoints shows an over-scoped protocol, not a missing product.
+The strongest objection is simple. I missed task mining, then overbuilt a benchmark. Enterprise products already capture, group, and export desktop activity. Screenpipe captured enough raw material to attempt a manual test. Stopping at 12 of 30 checkpoints shows an over-scoped protocol, not a missing product category.
 
 Most of that is right. Several tools capture work, discover workflows, and export records. I wrongly treated an automatic dataset as a prerequisite for a small test.
 
-But the enterprise systems were not a self-serve path for my experiment, and I found no public material showing one tool that preserves prior state, names the exact destination, supports row correction, and exports accepted examples in order. That may be an undocumented capability or a thin layer on an existing platform. Mimica canceled before I could ask, so its technical answers remain unknown.
+But neither of the strongest enterprise counterexamples was usable in my setup. Mimica canceled the one-person evaluation, and Celonis only runs on Windows. I also found no public material showing a self-serve tool that preserves prior state, names the exact destination, supports row correction, and exports accepted examples in order. That may be an undocumented enterprise capability or a thin layer on an existing platform.
 
 ## A first version can be cobbled together
 
@@ -180,7 +181,7 @@ A dependable automatic version still has to:
 5. make corrections fast; and
 6. export corrected examples consistently.
 
-Whether that requires a new product or a layer on an existing platform is unresolved. Open tools require custom code, while enterprise systems may already provide enough recording, grouping, review, and export. So I will not call this a new product gap until a demo or trial answers the four questions above.
+Enterprise systems show that much of this machinery already exists, so I cannot call the category new. But neither Mimica nor Celonis was usable in my setup, and public material did not establish the four requirements above. For this experiment, a dependable version would still require a custom layer.
 
 ## Why this matters and what happens next
 

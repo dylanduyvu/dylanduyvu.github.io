@@ -2,7 +2,7 @@
 type: writing-prep
 status: ready-for-draft
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-07-27
 projects:
   - personal-ai-context-learning
 domains:
@@ -34,11 +34,11 @@ Prep document only. This freezes the evidence, scope, argument, and planned stru
 
 **Evidence posture:** First-person investigation. The article can say what happened on Dylan's Mac, what the reviewed public tools document, and what Dylan infers. It cannot prove that no internal, proprietary, or unreviewed tool solves the problem.
 
-**Recommended title:** `Day 0 Took Three Days`
+**Selected title:** `The Missing Step Between Recording and Prediction`
 
-**Recommended deck:**
+**Selected deck:**
 
-> I wanted to test whether a model could predict where I would go next on my computer. The hard part was turning normal work into correctly ordered, verified examples, and learning how much of that rigor the first test actually needed.
+> I wanted to test whether an LLM could predict the exact app, page, document, task, or field I would navigate to next, so pressing the Tab key could take me there. But the prediction test never started. Instead, I spent three days trying to automatically assemble the dataset it needed.
 
 ## The live crux
 
@@ -63,7 +63,7 @@ Short compression:
 
 Buildability conclusion:
 
-> I do not need to invent another recorder for the first experiment. I can test a bounded offline extractor that turns Screenpipe evidence into draft rows, then verify those rows manually in a table. Enterprise task-mining systems are not the low-friction path to this personal pilot. Before treating the dependable version as a net-new product, I should still evaluate whether a platform such as Mimica or Celonis can expose the required event data and review hooks.
+> I do not need to invent another recorder for the first experiment. I can test a bounded offline extractor that turns Screenpipe evidence into draft rows, then verify those rows manually in a table. Enterprise task-mining systems show that much of the machinery already exists, but they are not a usable path for this personal pilot. Mimica canceled the one-person evaluation, and Celonis runs only on Windows. A dependable version for Dylan's setup would still require a custom layer, but that does not establish a net-new product category.
 
 Do not write `the tool does not exist`. Write `I could not find one that did the whole job for my workflow`.
 
@@ -82,9 +82,9 @@ Every section in the draft must prove one link in this chain.
 
 ## Opening and central scene
 
-The article opens with a four-sentence abstract that compresses the claim:
+The article opens with a short abstract that defines the prediction test and explains why it did not begin:
 
-> I wanted to test whether a model could predict where I would navigate next. That test needed examples of what I saw before each move and where I went. The recording tools captured most of the raw material. I could not find one that assembled the examples for my ordinary work.
+> I wanted to test whether an LLM could predict the exact app, page, document, task, or field I would navigate to next, so pressing the Tab key could take me there. But the prediction test never started. Instead, I spent three days trying to automatically assemble the dataset it needed.
 
 Then move into the concrete scene:
 
@@ -105,7 +105,7 @@ Then the concrete facts:
 - Prediction had not begun.
 - Screenpipe was audited first.
 - NAPsack was added and patched for Dylan's negative-coordinate secondary monitor.
-- A custom Hammerspoon, ScreenCaptureKit, and browser stack was built and passed a six-action smoke test.
+- A custom Hammerspoon, ScreenCaptureKit, and browser stack was built and passed a six-action controlled check.
 - A supposedly simple 30-action diagnostic walkthrough consumed most of a day and stopped at 12 accepted checkpoints.
 - Five of those 12 freezes had more than one second of cross-display skew. The maximum was 3.765 seconds.
 - The walkthrough had protocol drift and was a diagnostic, not a formal calibration.
@@ -164,7 +164,7 @@ The eventual tool should:
 6. show enough evidence for a person to accept, correct, reject, or mark the row unresolved; and
 7. export accepted rows chronologically in a model-ready format.
 
-The original comparison against NAPsack, OpenCUA, and Scribe was too narrow. Enterprise task-mining products already document ambient capture, task discovery, structured event data, review, and export. Celonis even documents an `all desktops` screenshot mode for multiple screens. Mimica now documents a native macOS recorder with step-level data and screenshots. But Mimica is sold as an organization-wide process-intelligence system. Its free proof of concept is sales-led, and Dylan's attempt to register a Gmail address directly returned `This email is not enabled, please contact your admin.`
+The original comparison against NAPsack, OpenCUA, and Scribe was too narrow. Enterprise task-mining products already document ambient capture, task discovery, structured event data, review, and export. Celonis even documents an `all desktops` screenshot mode for multiple screens. Mimica now documents a native macOS recorder with step-level data and screenshots. But neither product was usable for Dylan's experiment. Mimica rejected his personal signup and later canceled the one-person demo because it focuses on larger enterprises. Celonis runs only on Windows.
 
 After adding those systems, the clearest residual requirements are:
 
@@ -176,7 +176,7 @@ The complete target workflow remains:
 
 > record ordinary work → find each meaningful move → save what Dylan saw before it → identify where he went → let Dylan approve or fix the answer → save the examples in time order
 
-The defensible claim is not that task-mining systems lack a conversion layer. They plainly have one. The claim is that the reviewed public materials do not show one tool completing all six steps above for Dylan's prediction experiment. Mimica's detailed data format and review behavior are not public enough to resolve the question, and its enterprise onboarding does not provide an immediate self-serve path for the personal pilot. Celonis documents rich event tables, multi-screen capture, and task grouping, but not a guarantee that the saved screen is from before the move or a way for Dylan to approve the exact destination for every example. This is an unresolved vendor-evaluation question, not proof that the capability is absent.
+The defensible claim is not that task-mining systems lack a conversion layer. They plainly have one. The claim is that the reviewed public materials do not show one tool completing all six steps above for Dylan's prediction experiment. Mimica's detailed data format and review behavior are not public enough to resolve the technical question, and its enterprise onboarding did not provide a self-serve or one-person evaluation path. Celonis documents rich event tables, multi-screen capture, and task grouping, but it is Windows-only and does not document a guarantee that the saved screen is from before the move or a way for Dylan to approve the exact destination for every example. These may be undocumented enterprise capabilities, but neither product is a current option for Dylan's setup.
 
 ## What can be cobbled together for the experiment
 
@@ -204,7 +204,7 @@ A dependable automatic system still needs:
 5. a fast correction workflow; and
 6. stable dataset export.
 
-Open tools provide most of the primitives but still require custom assembly. Enterprise task-mining systems already provide more of the conversion layer than the initial survey recognized. The remaining work may be a specialized adapter, schema, and review flow rather than a new system from scratch. Public documentation is not enough to determine that. A product claim should wait until Dylan tests data access and review behavior in a vendor demo or trial.
+Open tools provide most of the primitives but still require custom assembly. Enterprise task-mining systems already provide more of the conversion layer than the initial survey recognized. The remaining work may be a specialized adapter, schema, and review flow rather than a new system from scratch. Public documentation is not enough to support a market-wide novelty claim. But Mimica and Celonis are both nonstarters for Dylan's current setup, so the dependable path for this experiment still requires custom work. No pending vendor demo or trial blocks the article or the manual pilot.
 
 ## Claim ledger
 
@@ -220,7 +220,7 @@ Open tools provide most of the primitives but still require custom assembly. Ent
 | NAPsack required a local monitor-geometry patch on Dylan's negative-coordinate display setup. | [[computer-use-nap-build-log]] | Local implementation fact, not a claim about every setup or current release. |
 | The corrected NAPsack controlled run produced same-display pre-action screenshots 106 to 171 ms before seven secondary-display clicks. | [[computer-use-nap-build-log]] | Tiny controlled sample. Use only to show useful primitives existed. |
 | Direct Accessibility identified two of four meaningful targets. Screenshot-plus-coordinate review reconstructed the two misses. The combined AX and visual path resolved four of four, with AX resolving one visual disagreement. | [[computer-use-nap-build-log]] | Promising diagnostic, not production-level coverage. |
-| Capture Layer v2 passed a six-action real-data smoke test and the checker caught 54 of 54 synthetic failure mutations. | [[computer-use-nap-build-log]] | Validates controlled plumbing, not natural-work segmentation or prediction. |
+| Capture Layer v2 passed a six-action real-data check and the checker caught 54 of 54 synthetic failure mutations. | [[computer-use-nap-build-log]] | Validates controlled plumbing, not natural-work segmentation or prediction. |
 | The 30-action diagnostic stopped at 12 accepted checkpoints. Five freezes exceeded one second of cross-display skew, with a 3.765-second maximum. | [[computer-use-nap-build-log]] | Progress and engineering evidence, not accuracy. |
 | Niyant first called the idea too vague, later said it aligned overall, and warned that Dylan's small app distribution could make suggestions trivial. | [[tab-could-autocomplete-the-next-computer-action]] | Preserve both the alignment and the unresolved low-entropy concern. |
 
@@ -231,10 +231,10 @@ Open tools provide most of the primitives but still require custom assembly. Ent
 | Existing tools solve real subsets of the capture problem. | Screenpipe, NAPsack, OpenCUA, OpenAdapt, and rrweb primary materials plus local tests | High. This should be stated before any gap claim. |
 | Screenpipe was a useful context backbone but did not automatically produce Dylan's exact next-destination rows. | Local Screenpipe audit | High for this setup and version. |
 | A post-action frame can invalidate retrospective next-destination evaluation. | Local timestamps plus OpenCUA's documented last-distinct-prior-frame matching | High. |
-| The custom stack shows the required evidence streams can be joined. | Smoke test and mutation suite | High for controlled actions. It does not show passive segmentation at useful scale. |
+| The custom stack shows the required evidence streams can be joined. | Controlled check and mutation suite | High for controlled actions. It does not show passive segmentation at useful scale. |
 | Bad acquisition can make recorder failure look like model failure. | Frame-ordering and label-coverage findings | Strong evaluation logic. |
 | Enterprise task-mining systems already combine ambient desktop capture with task or process discovery, structured data, and analysis or review. | Mimica, Celonis, Skan, and UiPath primary materials | High as a capability-category correction. Product marketing is not proof of Dylan's exact row semantics. |
-| The reviewed public materials do not establish one workflow that combines strict pre-navigation state, exact cross-app destinations, Dylan's verdict on each label, and chronological training-row export. | Bounded tool survey and local tests | Defensible only as a public-documentation finding. A vendor trial could overturn it. |
+| The reviewed public materials do not establish one workflow that combines strict pre-navigation state, exact cross-app destinations, Dylan's verdict on each label, and chronological training-row export. | Bounded tool survey and local tests | Defensible only as a public-documentation finding. Direct vendor evidence could overturn it, but neither Mimica nor Celonis was a usable evaluation path for this setup. |
 
 ### Inference
 
@@ -296,9 +296,9 @@ Do not use the later `0 of 493` formulation unless the underlying audit is recov
 
 ### Custom stack
 
-- 11 of 11 smoke clicks mapped to the correct display after the NAPsack patch
-- recorder timestamps agreed within roughly 13 ms in that smoke sample
-- six real smoke actions passed
+- 11 of 11 controlled clicks mapped to the correct display after the NAPsack patch
+- recorder timestamps agreed within roughly 13 ms in that controlled sample
+- six real controlled actions passed
 - 54 of 54 synthetic failure mutations were caught
 - walkthrough stopped at 12 of 30 accepted checkpoints
 - five of 12 freezes exceeded one second of display skew
@@ -339,7 +339,7 @@ This table maps reusable primitives, existing conversion products, and the narro
 | [NAPsack](https://github.com/GeneralUserModels/napsack) | Passive natural-work recording, event-burst grouping, before-and-after evidence on the active display, generated action captions, and JSONL | Its public output does not document a correction inbox, synchronized both-monitor state, or one stable destination object spanning native and browser targets. The tested version also needed a local monitor-geometry patch. | Candidate-boundary heuristics and captioning patterns |
 | [OpenCUA / AgentNetTool](https://github.com/xlang-ai/OpenCUA) | Deliberate task demonstrations, video, inputs, accessibility trees, review, action reduction, last-distinct-prior-frame matching, and standardized trajectories | It is a curated task workflow with declared start and stop. Its macOS instructions document main-display capture. It does not publicly document ambient dual-monitor work becoming proposed exact cross-app destinations. | Safe prior-frame alignment and review patterns |
 | [Scribe AutoCapture](https://support.scribehow.com/hc/en-us/articles/30708953411229-Using-Autocapture) | Background workflow discovery across approved apps plus the ability to review, edit, publish, or discard the result | Its documented product output is a guide. It does not document strictly prior next-destination rows, synchronized dual-monitor evidence, a normalized cross-app destination object, or reusable raw dataset export. | Review-inbox interaction pattern |
-| [Mimica](https://www.mimica.ai/product) | Passive clicks, keystrokes, and application interactions across desktop apps; automatic task and process discovery; step-level screenshots; process maps; CSV, PDD, and BPMN exports; native macOS and Windows recording | This is the strongest current enterprise counterexample. It is designed for organization-wide process-discovery programs and uses sales-led, administrator-enabled onboarding. Public materials do not expose enough schema or timing detail to verify strict pre-action state, multi-monitor behavior, one exact destination object, or row-level label correction. | Evidence that the conversion machinery exists; possible eventual integration, not the low-friction personal pilot |
+| [Mimica](https://www.mimica.ai/product) | Passive clicks, keystrokes, and application interactions across desktop apps; automatic task and process discovery; step-level screenshots; process maps; CSV, PDD, and BPMN exports; native macOS and Windows recording | This is the strongest current enterprise counterexample. It is designed for organization-wide process-discovery programs and uses sales-led, administrator-enabled onboarding. Dylan's personal signup was rejected, and Mimica canceled his one-person demo. Public materials do not expose enough schema or timing detail to verify strict pre-action state, multi-monitor behavior, one exact destination object, or row-level label correction. | Evidence that the conversion machinery exists; not usable for the current experiment |
 | [Celonis Task Mining](https://docs.celonis.com/en/task-mining.html) | Background desktop and browser event capture, optional screenshots, raw and labeled event tables, UI Automation and web attributes, `all desktops` screenshots, manual task definitions, and private-preview AI task grouping | It is Windows-only. Public docs expose rich event data but do not document strict pre-action screenshot semantics or a review flow centered on accepting or correcting an exact next-destination label. | Strong evidence that much of the conversion layer already exists |
 | [UiPath Task Mining](https://docs.uipath.com/task-mining/automation-cloud/latest/user-guide/introduction-as) | Known-task recording, screenshot clustering, trace merging, action annotation, review, and raw CSV export with app, URL, button, selector, timestamp, and coordinates | The current product requires a known task and deliberate traces. Its earlier Unassisted Task Mining did ambient unknown-task discovery and multi-monitor capture but was removed from Automation Cloud in December 2025. Neither public workflow documents Dylan's strict prediction row. | Review, trace, and export reference; historical counterexample to novelty |
 | [Skan AI](https://www.skan.ai/process-discovery-and-analysis) | Automatic discovery across applications and handoffs, process maps, screenshots, and a separate recorded-task review flow with editable event names | Public product pages do not expose the event schema, timing contract, multi-monitor semantics, or reusable prediction-row export. ProcessDoc is Windows-only and task-declared. | Additional evidence that automatic workflow discovery is an established product category |
@@ -347,7 +347,7 @@ This table maps reusable primitives, existing conversion products, and the narro
 | [rrweb](https://github.com/rrweb-io/rrweb) | DOM serialization, mutations, interactions, and web-session replay | It does not cover native apps, browser chrome, or cross-app transitions. | Optional browser evidence |
 | Custom Hammerspoon + ScreenCaptureKit + Arc extension | Physical events, native Accessibility evidence, both-display images, browser events, timestamps, and controlled validation | It required custom engineering, multiple permissions, manual markers, frozen frames, validation rituals, and repeated repairs. | Evidence that the streams can be joined, not the recommended first-pilot stack |
 
-Do not write that NAPsack or AgentNetTool failed to create state-action data. They do create forms of it. Do not write that Scribe lacks workflow discovery or review. Do not write that the market lacks ambient task discovery, structured event export, or cross-app workflow mapping. The claim is narrower: the public materials reviewed do not establish Dylan's complete row contract, and the strongest enterprise systems require direct product evaluation before any novelty claim.
+Do not write that NAPsack or AgentNetTool failed to create state-action data. They do create forms of it. Do not write that Scribe lacks workflow discovery or review. Do not write that the market lacks ambient task discovery, structured event export, or cross-app workflow mapping. The claim is narrower: the public materials reviewed do not establish Dylan's complete row contract. Mimica and Celonis remain evidence against a broad novelty claim, but neither was usable for Dylan's current setup. Do not turn a hypothetical future vendor evaluation into a publication blocker.
 
 ## The strongest counterargument
 
@@ -357,7 +357,7 @@ The article should concede most of this.
 
 Recommended response:
 
-> I was wrong if I meant that nobody can capture ordinary work, discover workflows, or export structured traces. That is an established task-mining category. NAPsack turns interaction bursts into screenshot-and-action examples. OpenCUA pairs human demonstrations with the screen from before each action. Scribe discovers workflows in the background. Mimica and Celonis go further toward automatic process discovery and structured output. But they are enterprise process-intelligence systems, not self-serve personal recorders. Mimica would not even enable my account without an administrator or sales-led proof of concept. The public material still does not show one tool saving what I saw before each move, naming the exact destination, and letting me approve or fix every answer. That may still be an adapter problem or an undocumented enterprise capability rather than a new category. I also treated an automatic, product-grade dataset as a prerequisite for a small qualitative experiment. That was a sequencing mistake. Screenpipe gives me enough raw material to attempt the prediction test with manual labeling.
+> I was wrong if I meant that nobody can capture ordinary work, discover workflows, or export structured traces. That is an established task-mining category. NAPsack turns interaction bursts into screenshot-and-action examples. OpenCUA pairs human demonstrations with the screen from before each action. Scribe discovers workflows in the background. Mimica and Celonis go further toward automatic process discovery and structured output. But neither was usable for my experiment. Mimica rejected my personal signup and canceled the one-person demo because it focuses on larger enterprises. Celonis runs only on Windows. Their public material also does not show one tool saving what I saw before each move, naming the exact destination, and letting me approve or fix every answer. That may still be an adapter problem or an undocumented enterprise capability rather than a new category. I also treated an automatic, product-grade dataset as a prerequisite for a small qualitative experiment. That was a sequencing mistake. Screenpipe gives me enough raw material to attempt the prediction test with manual labeling.
 
 This section is load-bearing. Without it, the post mistakes self-imposed protocol complexity and an incomplete market search for external evidence.
 
@@ -384,9 +384,9 @@ Public context:
 
 ### 1. Day 0 took three days
 
-Use the four-day plan and the fact that prediction never started as the hook. Describe the NAPsack patch, custom capture layer, smoke test, browser extension, and stopped 30-action diagnostic. State immediately that the delay mixed a real conversion-layer gap with Dylan's decision to overbuild the first experiment.
+Use the four-day plan and the fact that prediction never started as the hook. Describe the NAPsack patch, custom capture layer, controlled check, browser extension, and stopped 30-action diagnostic. State immediately that the delay mixed a real conversion-layer gap with Dylan's decision to overbuild the first experiment.
 
-> It proved that higher-fidelity recording was technically obtainable. It did not prove that the place I would navigate next was predictable.
+> The controlled run showed that the evidence streams could be joined. But it did not automatically produce enough examples from ordinary work, so the prediction test never began.
 
 ### 2. The output I actually needed
 
@@ -408,13 +408,13 @@ Add one sentence pre-empting the current-version reply: name the tested version 
 
 ### 4. The closest tools already form a product category
 
-Treat NAPsack, OpenCUA, and Scribe as reusable components in one compact paragraph. Then focus the section on Mimica and Celonis as the strongest enterprise counterexamples to broad missing-product claims. State just as clearly that they target organization-wide process discovery rather than self-serve personal experiments. Mention Skan, current UiPath, and historical UiPath Unassisted Task Mining together in one short paragraph or note rather than giving each a separate tour. Answer explicitly:
+Treat NAPsack, OpenCUA, and Scribe as reusable components in one compact paragraph. Then use Mimica and Celonis as the strongest enterprise counterexamples to broad missing-product claims while stating just as clearly that neither was usable for Dylan's experiment. Mimica canceled the one-person evaluation, and Celonis is Windows-only. Mention Skan, current UiPath, and historical UiPath Unassisted Task Mining together in one short paragraph or note rather than giving each a separate tour. Answer explicitly:
 
 1. which primitive each already solves;
 2. which part could be reused in Dylan's prototype; and
 3. which parts of the complete contract remain unverified in public documentation.
 
-Do not say that multi-monitor capture, workflow discovery, structured export, or conversion layers are absent from the market. Celonis documents all-desktop screenshots. Mimica documents passive cross-app discovery and CSV export on macOS. Name the simpler residual questions: does the saved input show what Dylan saw before moving, does the output name the exact native-app or browser destination, can Dylan approve or fix each answer, and can the accepted examples be exported in time order?
+Do not say that multi-monitor capture, workflow discovery, structured export, or conversion layers are absent from the market. Celonis documents all-desktop screenshots. Mimica documents passive cross-app discovery and CSV export on macOS. Treat those as category evidence, not immediately usable alternatives. Name the simpler residual questions: does the saved input show what Dylan saw before moving, does the output name the exact native-app or browser destination, can Dylan approve or fix each answer, and can the accepted examples be exported in time order?
 
 ### 5. The strongest counterargument, conceded
 
@@ -439,7 +439,7 @@ Explain what still has to be guaranteed for Dylan's use case:
 5. fast correction; and
 6. stable export.
 
-Then state the unresolved build-versus-buy question. Open tools require custom assembly. Enterprise task-mining systems may already supply enough capture, segmentation, and export to reduce the work to an adapter and review schema. Public documentation does not settle that question.
+Then state the bounded conclusion. Open tools require custom assembly. Enterprise task-mining systems show that much of the machinery already exists, so Dylan cannot claim a new category. But Mimica and Celonis were both unusable for this experiment, and their public documentation does not settle the strict row-contract questions. A dependable version for Dylan's current setup would still require a custom layer.
 
 ### 8. Why this matters and what happens next
 
@@ -557,32 +557,29 @@ Negative capability claims need the same discipline. Use bounded wording such as
 1. Resolved 2026-07-26: NAPsack's current PyPI release is 0.1.3, uploaded 2026-04-04, with releases 0.1.0 through 0.1.3 and a Python requirement of >=3.11,<=3.13. Dylan tested the current release, so limitations can be stated against the current release at the time of writing rather than an old version. Repo HEAD was not audited. Re-verify the version once at draft time.
 2. Resolved 2026-07-26: AgentNetTool's macOS documentation records the screen through OBS with a single Display Capture source and instructs the annotator to set it to the main display. Webpage HTML comes from a separate browser extension. The bounded claim is that the documented macOS recording path is one display via OBS. Do not claim multi-display recording is impossible. OBS could be configured differently, but that configuration is not documented.
 3. Resolved 2026-07-26: Scribe's official Autocapture page was updated July 15, 2026. It is in beta for Pro Team and Enterprise customers and runs across a curated or admin-controlled approved-app list. It documents review, edit, publish, or discard. Older cached text used domain-whitelist language. Cite the current page and date rather than repeating the stale wording. Its documented exports are finished guide formats, not raw prediction rows.
-4. In progress 2026-07-26: Dylan scheduled a `Mimica Intro & Demo` for Monday, July 27, 2026, from 3:30 to 4:00 PM Eastern. Web-conferencing details are pending in the calendar invitation. Mimica advertises a [free 14-day proof of concept](https://www.mimica.ai/contact), and its [official FAQ](https://www.mimica.ai/use-cases/test) says users receive an email invitation before downloading and launching the recorder. Dylan previously tried its [public registration page](https://app.mimica.ai/register) with his Gmail address and received `This email is not enabled, please contact your admin.` Use the demo to ask:
+4. Resolved for this experiment 2026-07-27: Dylan scheduled a `Mimica Intro & Demo`, but Mimica canceled after deciding that a one-person request did not fit its focus on larger enterprise organizations. Dylan's earlier attempt to use the [public registration page](https://app.mimica.ai/register) with his Gmail address also returned `This email is not enabled, please contact your admin.` The cancellation is preserved in [[mimica-demo-canceled-enterprise-focus-2026-07-27.png]]. Mimica remains evidence that enterprise conversion machinery exists, but it was not a usable evaluation path for Dylan's setup. Its technical answers therefore remain unknown:
    1. Does the macOS recorder capture every attached monitor, and how are screenshots timed relative to the triggering action?
    2. Can it identify exact native-app and browser destinations such as a window, tab, document, input field, link, or button?
    3. What fields appear in the raw CSV, and can the original event-level data be exported in chronological order?
    4. Can a reviewer correct the destination or step label for an individual event?
    5. Can a one-person proof of concept run on ordinary cross-app work rather than a declared enterprise process?
    6. What minimum seats, administrative setup, data-access restrictions, and pricing apply after the proof of concept?
-   This demo does not block the first draft or the manual pilot.
-5. Before claiming a net-new automatic product gap, ask Celonis whether its `all desktops` screenshot is captured before or after the triggering event, whether macOS support is planned, and whether a reviewer can correct one exact destination label per event. This does not block the first draft.
+   These unanswered questions do not block the article or the manual pilot.
+5. Resolved for this experiment 2026-07-27: Celonis is Windows-only, so it is not usable on Dylan's Mac. It remains evidence that multi-screen screenshots, structured event tables, and task grouping exist in the enterprise category. A future market-wide novelty claim would still need to distinguish those capabilities from Dylan's strict row contract, but Celonis is not an immediate product option or a publication blocker.
 6. Resolved 2026-07-26: use `76 of 164` as the one local Screenpipe metric in the body because it directly explains the before-versus-after problem. Keep `zero of 40` and the remaining metrics in the linked audit unless the draft develops a specific need for them.
 7. Verify the public URLs after Quartz updates. Link primary tool sources in the final post.
 8. Do not state that Screenpipe plus manual review has passed until the manual pilot actually produces valid examples.
 9. Added 2026-07-26: Recheck Screenpipe's current release and documentation at draft time. Current documentation and marketing claim expanded capture, including a full accessibility tree with OCR fallback, keyboard input, app switches, and multiple capture methods. The tested version was 2.5.132 in July 2026. Keep every measured claim scoped to it and include the section 3 pre-empt sentence.
 
-## Candidate titles
+## Title decision
 
-1. **Day 0 Took Three Days**
-2. **Screen Recordings Are Not Next-Destination Examples**
-3. **I Wanted to Predict Where I Would Go Next. First I Had to Define the Data**
-4. **The Missing Layer Between Screen Recording and Personal AI**
+Selected: **The Missing Step Between Recording and Prediction**
 
-`Day 0 Took Three Days` remains the strongest hook. The deck and first paragraphs must establish that the article is answering the tool-gap and buildability questions, not merely recounting a difficult setup.
+`Day 0 took three days` remains the opening hook, not the title or thesis. The deck and first paragraphs must establish that the article is answering the tool-gap and buildability questions, not merely recounting a difficult setup.
 
 ## Candidate final compression
 
-> I started by asking whether a model could predict where I would go next. Three days later, I could finally specify the example I needed. Open recorders captured the ingredients, and enterprise task-mining systems already automate much of workflow discovery. I still could not verify a public path that saved what I saw before each move, named the exact place I went, and let me approve or fix the answer. A bounded offline extractor might be enough for the first experiment. I should prove the prediction matters before deciding whether the dependable version is a new product, an enterprise integration, or just a manual workflow.
+> I started by asking whether an LLM could predict where I would go next. Three days later, I could finally specify the example I needed. Open recorders captured the ingredients, and enterprise task-mining systems already automate much of workflow discovery. But the strongest enterprise examples were not usable for my setup, and I still could not verify a public path that saved what I saw before each move, named the exact place I went, and let me approve or fix the answer. A bounded offline extractor might be enough for the first experiment. I should prove the prediction matters before deciding whether the dependable version deserves custom work.
 
 ## Drafting constraints
 
