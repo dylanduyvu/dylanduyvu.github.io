@@ -26,11 +26,11 @@ Prep document only. This freezes the evidence, scope, argument, and planned stru
 
 **Primary audience:** AI builders, written clearly enough for a smart generalist.
 
-**Desired reader conclusion:** Most computer-use capture and workflow-discovery primitives already exist. Open tools did not produce Dylan's exact rows, and public materials for the stronger enterprise task-mining systems do not establish the complete contract either. Those systems are also built for organization-wide process-discovery programs, not self-serve personal experiments. An unvalidated offline prototype can reuse existing recording and ordering components while Dylan verifies the rows manually. A dependable automatic version may be a specialized adapter on top of an existing recorder or task-mining platform, but the strict prior-state, exact-destination, and row-verification contract still has to be implemented and validated.
+**Desired reader conclusion:** Screenpipe may already have recorded enough evidence for Dylan's dataset. The untested step is converting that raw history into proposed exact-destination records that Dylan can verify and export. Dylan spent three days building a stricter capture stack before testing that thinner path. No self-serve Mac workflow Dylan could use completed the conversion, although enterprise task-mining systems show that much of the machinery already exists. A dependable version may be a specialized adapter on top of an existing recorder or task-mining platform rather than a new recorder or product category.
 
 **Primary use case:** Predicting the exact place Dylan will navigate next. This is one narrow kind of next-action prediction. The article's dataset rows are `next-destination examples`, not general examples of everything Dylan might type, click, or do. Broader personal AI context is origin and motivation, not the article's main claim.
 
-**Author position:** Dylan is not an ML researcher or a computer-use data engineer. He used AI coding agents to inspect the tools, build glue, and validate the capture stack. The point is not that the agents failed. The point is that even with agents doing much of the technical work, producing this basic personal dataset imposed an unreasonable integration and review burden.
+**Author position:** Dylan is not an ML researcher or a computer-use data engineer. He used AI coding agents to inspect the tools, build glue, and validate the capture stack. The point is not that the agents failed. The point is that Dylan may have overbuilt capture when the missing work was conversion. Even if Screenpipe already recorded enough evidence, assembling it into proposed records for quick verification still required code Dylan had not tested.
 
 **Evidence posture:** First-person investigation. The article can say what happened on Dylan's Mac, what the reviewed public tools document, and what Dylan infers. It cannot prove that no internal, proprietary, or unreviewed tool solves the problem.
 
@@ -55,15 +55,15 @@ The article answers four questions:
 
 Recommended full wording:
 
-> I needed a personal dataset that paired what was on my screens before each move with my exact next destination. Then I needed to verify every row. The tools I tested could record my screens, clicks, app switches, and browser activity. But no product I could use turned a normal workday into that dataset.
+> I needed a personal dataset that paired what was on my screens before each move with my exact next destination. I also needed to approve or correct each proposed destination. Screenpipe may already have recorded enough raw evidence. But it did not give me an out-of-the-box workflow that assembled that evidence into records I could review and export. I built a new capture stack before testing a simple converter.
 
 Short compression:
 
-> The tools recorded the activity. No product I could use assembled the personal dataset.
+> Screenpipe may already have recorded enough. I had not tested the converter that would turn its raw history into records I could verify.
 
 Buildability conclusion:
 
-> I do not need to invent another recorder for the first experiment. I can test a bounded offline extractor that turns Screenpipe evidence into draft rows, then verify those rows manually in a table. Enterprise task-mining systems show that much of the machinery already exists, but they are not a usable path for this personal pilot. Mimica canceled the one-person evaluation, and Celonis runs only on Windows. A dependable version for Dylan's setup would still require a custom layer, but that does not establish a net-new product category.
+> I had not shown that I needed another recorder. I can first test a bounded offline extractor that turns Screenpipe evidence into proposed records, then approve, correct, or reject them in a table. That review is part of the target workflow, not a fallback from automation. Enterprise task-mining systems show that much of the conversion machinery already exists, but they were not usable for Dylan's setup. A dependable version may still require a custom adapter, but that does not establish a new product category.
 
 Do not write `the tool does not exist`. Write `I could not find one that did the whole job for my workflow`.
 
@@ -71,12 +71,12 @@ Do not write `the tool does not exist`. Write `I could not find one that did the
 
 1. This navigation-prediction test needs a personal dataset pairing the state available before a move with the destination reached next.
 2. Screenpipe, NAPsack, OpenCUA, Scribe, and enterprise task-mining systems already solve many of the underlying capture, ordering, segmentation, export, and review problems.
-3. The public materials reviewed do not show one tool producing the complete output Dylan needed: what was visible before each move, the exact place he went next, proof that the answer is correct, a quick way for Dylan to approve or fix it, and the accepted rows saved in time order.
-4. An unvalidated, bounded offline prototype can reuse Screenpipe, extract candidate rows, and leave verification to Dylan.
-5. A dependable automatic version still needs those guarantees integrated and validated. That may require a custom product layer, or it may be possible as an adapter over a task-mining platform with sufficient data access.
-6. Dylan initially treated that product-grade automatic pipeline as a prerequisite for a qualitative experiment. Building toward it consumed three days before he tested a model.
-7. That delay revealed both the integration burden in Dylan's workflow and the sequencing mistake.
-8. The manual pilot should establish whether the prediction is useful before Dylan automates the production of the rows.
+3. Screenpipe may already have recorded enough raw evidence, but Dylan did not test whether its events and earlier frames could be converted into the proposed records he wanted to verify.
+4. Human verification does not require manual assembly. The converter should find events, join evidence, draft the destination, and send the proposed record to Dylan for approval or correction.
+5. The public materials reviewed do not show one self-serve Mac tool completing that workflow and exporting accepted records in time order.
+6. Dylan built and debugged a stricter capture stack before establishing that the new recorder was necessary.
+7. The 30-action diagnostic shows the cost and fragility of that custom stack. It does not show that Screenpipe's existing recording was insufficient.
+8. Dylan should test the thin Screenpipe converter, improve capture only where evidence is genuinely missing, verify the records, and then run the prediction experiment.
 
 Every section in the draft must prove one link in this chain.
 
@@ -105,12 +105,13 @@ Then the concrete facts:
 - Prediction had not begun.
 - Screenpipe was audited first.
 - NAPsack was added and patched for Dylan's negative-coordinate secondary monitor.
+- Because Screenpipe's click-linked screenshot was not reliably prior, Dylan treated the problem as capture before testing whether the raw event could be relinked to an earlier frame.
 - A custom Hammerspoon, ScreenCaptureKit, and browser stack was built and passed a six-action controlled check.
 - A supposedly simple 30-action diagnostic walkthrough consumed most of a day and stopped at 12 accepted checkpoints.
 - Five of those 12 freezes had more than one second of cross-display skew. The maximum was 3.765 seconds.
 - The walkthrough had protocol drift and was a diagnostic, not a formal calibration.
 
-The scene proves cost and motivates the scope correction. It does not by itself prove a market-wide product gap.
+The scene proves the cost of the custom stack and motivates the scope correction. It does not prove that Screenpipe's existing recording was insufficient or that a market-wide product gap exists.
 
 ## The exact data unit
 
@@ -164,6 +165,8 @@ The eventual tool should:
 6. show enough evidence for a person to accept, correct, reject, or mark the record unresolved; and
 7. export accepted records chronologically in a format the LLM can use.
 
+The recorder handles job one and supplies raw evidence for jobs two through four. Jobs two through five still require the system to choose the safe prior state, join monitor evidence, normalize the destination, and group inputs into one move. Job six lets Dylan verify the proposed record, and job seven saves the verified dataset. Human review does not excuse manual assembly of every record.
+
 The original comparison against NAPsack, OpenCUA, and Scribe was too narrow. Enterprise task-mining products already document ambient capture, task discovery, structured event data, review, and export. Celonis even documents an `all desktops` screenshot mode for multiple screens. Mimica now documents a native macOS recorder with step-level data and screenshots. But neither product was usable for Dylan's experiment. Mimica rejected his personal signup and later canceled the one-person demo because it focuses on larger enterprises. Celonis runs only on Windows.
 
 After adding those systems, the clearest residual requirements are:
@@ -187,24 +190,25 @@ The first experiment does not require a new recorder or a custom review applicat
 3. use later evidence to draft the destination label; and
 4. export the draft rows chronologically to CSV or another simple table.
 
-This prototype is still unvalidated. It requires new code for the row schema, candidate-boundary logic, safe frame selection, destination drafting, and export. Dylan remains responsible for correcting each row. It deliberately skips live suggestions, a dedicated review interface, reliable automatic segmentation, perfect dual-monitor synchronization, and stable automatic identity for every interface target.
+This prototype is still unvalidated. It requires new code for the row schema, candidate-boundary logic, safe frame selection, destination drafting, and export. Dylan remains responsible for approving, correcting, or rejecting each proposed record. That verification is part of the intended system. The automated work is finding the events, joining the evidence, and drafting the destination before Dylan reviews it.
 
-Its purpose is narrower: determine whether existing evidence can reduce the work of assembling examples without becoming another capture-infrastructure project. If it cannot quickly produce a small set of reviewable rows, Dylan should label the first examples manually.
+The prototype deliberately skips live suggestions, a dedicated review interface, perfect dual-monitor synchronization, and stable automatic identity for every interface target. Its purpose is to determine whether Screenpipe's existing evidence can reduce the work to reviewing proposed records. If it cannot, Dylan can still assemble the first examples manually, but that is the fallback rather than the definition of verification.
 
 `Low friction` means install, record, and review. It does not mean query a SQLite database, join several clocks, run a marker ritual, or debug monitor geometry.
 
-## What a dependable version still needs
+## What a dependable conversion layer still needs
 
-A dependable automatic system still needs:
+A dependable version still needs:
 
 1. reliable ambient transition detection;
-2. target grounding across Accessibility data, browser structure, and visual evidence;
-3. robust multi-monitor and cross-stream time joins;
-4. explicit handling of missing, stale, or contradictory evidence;
-5. a fast correction workflow; and
-6. stable dataset export.
+2. safe earlier-state selection;
+3. target grounding across Accessibility data, browser structure, and visual evidence;
+4. robust multi-monitor and cross-stream time joins;
+5. explicit handling of missing, stale, or contradictory evidence;
+6. a fast correction workflow; and
+7. stable dataset export.
 
-Open tools provide most of the primitives but still require custom assembly. Enterprise task-mining systems already provide more of the conversion layer than the initial survey recognized. The remaining work may be a specialized adapter, schema, and review flow rather than a new system from scratch. Public documentation is not enough to support a market-wide novelty claim. But Mimica and Celonis are both nonstarters for Dylan's current setup, so the dependable path for this experiment still requires custom work. No pending vendor demo or trial blocks the article or the manual pilot.
+Open tools provide most of the primitives but still require custom assembly. Enterprise task-mining systems already provide more of the conversion layer than the initial survey recognized. The remaining work may be a specialized adapter, schema, and review flow rather than a new system from scratch. Public documentation is not enough to support a market-wide novelty claim. But Mimica and Celonis are both nonstarters for Dylan's current setup, so the dependable path for this experiment still requires custom work. No pending vendor demo or trial blocks the article or the converter test.
 
 ## Claim ledger
 
@@ -230,6 +234,7 @@ Open tools provide most of the primitives but still require custom assembly. Ent
 |---|---|---|
 | Existing tools solve real subsets of the capture problem. | Screenpipe, NAPsack, OpenCUA, OpenAdapt, and rrweb primary materials plus local tests | High. This should be stated before any gap claim. |
 | Screenpipe was a useful context backbone but did not automatically produce Dylan's exact next-destination rows. | Local Screenpipe audit | High for this setup and version. |
+| Screenpipe's raw click timestamp and coordinates may allow a converter to select an earlier frame instead of trusting the linked screenshot. | Local Screenpipe audit and database inspection | Plausible but unvalidated across the target navigation types. State as the next path to test, not a completed solution. |
 | A post-action frame can invalidate retrospective next-destination evaluation. | Local timestamps plus OpenCUA's documented last-distinct-prior-frame matching | High. |
 | The custom stack shows the required evidence streams can be joined. | Controlled check and mutation suite | High for controlled actions. It does not show passive segmentation at useful scale. |
 | Bad acquisition can make recorder failure look like model failure. | Frame-ordering and label-coverage findings | Strong evaluation logic. |
@@ -242,9 +247,9 @@ Open tools provide most of the primitives but still require custom assembly. Ent
 |---|---|
 | There may be a product or adapter opportunity in the exact prediction-example layer. | Dylan's conclusion from the investigation, not established novelty or market demand. Existing task-mining platforms are strong counterevidence to a broad product-gap claim. |
 | Automatic boundary proposals would remove most of the manual work. | Product requirement to test, not an achieved feature. |
-| Screenpipe plus manual review is enough for the first pilot. | The minimal protocol now being tested, not a completed result. |
+| Screenpipe plus a thin converter and human verification may be enough for the experiment. | The next path to test, not a completed result. Do not collapse manual assembly into verification. |
 | Approximate target identity will be enough to judge qualitative usefulness. | A scoped hypothesis for the first experiment. |
-| Perfect simultaneous capture of both monitors is unnecessary for the manual pilot. | Distinguish perfect synchronization from correct observation attribution, which remains necessary. |
+| Perfect simultaneous capture of both monitors is unnecessary for the first converter test. | Distinguish perfect synchronization from correct observation attribution, which remains necessary. |
 
 ### Speculation
 
@@ -335,7 +340,7 @@ This table maps reusable primitives, existing conversion products, and the narro
 
 | Tool | Reusable contribution | What remained outside the documented end-to-end contract | Role in a bounded prototype |
 |---|---|---|---|
-| [Screenpipe](https://github.com/screenpipe/screenpipe) | Always-on, event-driven screenshot capture, accessibility data, OCR, clicks, scrolls, app and window changes, URLs, search, local APIs, and programmable pipes | The tested version exposed raw ingredients, but its action-linked frame was not guaranteed to be prior, semantic targets were incomplete in important cases, and it did not create a correction queue of verified transitions. Current public materials are inconsistent about `all monitors` versus an event-time screenshot of the `active monitor`, so multi-monitor behavior should be scoped to Dylan's local audit. | Recording and evidence backbone |
+| [Screenpipe](https://github.com/screenpipe/screenpipe) | Always-on, event-driven screenshot capture, accessibility data, OCR, clicks, scrolls, app and window changes, URLs, search, local APIs, and programmable pipes | The tested version exposed raw ingredients, and its timestamps may allow a converter to replace a bad action-linked frame with an earlier one. That path is unvalidated. Screenpipe did not create the proposed exact-destination records or a queue for Dylan to approve or correct them. Current public materials are inconsistent about `all monitors` versus an event-time screenshot of the `active monitor`, so multi-monitor behavior should be scoped to Dylan's local audit. | Recording and evidence backbone for the converter test |
 | [NAPsack](https://github.com/GeneralUserModels/napsack) | Passive natural-work recording, event-burst grouping, before-and-after evidence on the active display, generated action captions, and JSONL | Its public output does not document a correction inbox, synchronized both-monitor state, or one stable destination object spanning native and browser targets. The tested version also needed a local monitor-geometry patch. | Candidate-boundary heuristics and captioning patterns |
 | [OpenCUA / AgentNetTool](https://github.com/xlang-ai/OpenCUA) | Deliberate task demonstrations, video, inputs, accessibility trees, review, action reduction, last-distinct-prior-frame matching, and standardized trajectories | It is a curated task workflow with declared start and stop. Its macOS instructions document main-display capture. It does not publicly document ambient dual-monitor work becoming proposed exact cross-app destinations. | Safe prior-frame alignment and review patterns |
 | [Scribe AutoCapture](https://support.scribehow.com/hc/en-us/articles/30708953411229-Using-Autocapture) | Background workflow discovery across approved apps plus the ability to review, edit, publish, or discard the result | Its documented product output is a guide. It does not document strictly prior next-destination rows, synchronized dual-monitor evidence, a normalized cross-app destination object, or reusable raw dataset export. | Review-inbox interaction pattern |
@@ -351,17 +356,17 @@ Do not write that NAPsack or AgentNetTool failed to create state-action data. Th
 
 ## The strongest counterargument
 
-> You did not discover a missing product category. You missed task mining, then overbuilt a benchmark. Mimica claims passive cross-app capture, automatic process discovery, step-level screenshots, CSV export, and native macOS support. Celonis documents granular events, UI and browser attributes, all-desktop screenshots, labeled tables, and task grouping. Screenpipe already recorded enough activity for a manual test. Stopping at 12 of 30 proves that the protocol was over-scoped, not that a product is missing.
+> You did not discover a missing product category. You missed task mining, then overbuilt a benchmark. Mimica claims passive cross-app capture, automatic process discovery, step-level screenshots, CSV export, and native macOS support. Celonis documents granular events, UI and browser attributes, all-desktop screenshots, labeled tables, and task grouping. Screenpipe already recorded both monitors and raw events. You treated a bad linked screenshot as a capture failure before testing whether an earlier frame could be relinked. Stopping at 12 of 30 proves that the custom protocol was over-scoped, not that a new recorder or product category is missing.
 
-The article should concede most of this.
+The article should concede most of this and add the stronger Screenpipe-specific objection.
 
 Recommended response:
 
-> I was wrong if I meant that nobody can capture work as it happens, discover workflows, or export structured traces. That is an established task-mining category. NAPsack turns interaction bursts into screenshot-and-action examples. OpenCUA pairs human demonstrations with the screen from before each action. Scribe discovers workflows in the background. Mimica and Celonis go further toward automatic process discovery and structured output. But neither was usable for my experiment. Mimica rejected my personal signup and canceled the one-person demo because it focuses on larger enterprises. Celonis runs only on Windows. Their public material also does not show one tool saving what I saw before each move, naming the exact destination, and letting me approve or fix every answer. That may still be an adapter problem or an undocumented enterprise capability rather than a new category. I also treated an automatic, product-grade dataset as a prerequisite for a small qualitative experiment. That was a sequencing mistake. Screenpipe recorded enough activity for me to attempt the prediction test with manual labeling.
+> I may have spent three days solving the wrong layer. Screenpipe already recorded both monitors and raw events. A screenshot linked after a click did not mean that every earlier frame was missing. But I built a new capture stack before testing whether those earlier frames could be relinked. At minimum, I had not shown that the new recorder was necessary. The remaining gap is narrower. I still did not find a self-serve Mac tool that assembled raw activity into proposed exact-destination records, let me correct each one, and exported the accepted records in order. That may be a thin adapter or an undocumented enterprise capability rather than a new category.
 
-This section is load-bearing. Without it, the post mistakes self-imposed protocol complexity and an incomplete market search for external evidence.
+This section is load-bearing. Without it, the post mistakes the fragility of Dylan's custom capture architecture for evidence that existing recordings were insufficient.
 
-Planned placement: its own section immediately after the tool comparison and before the cobbled-together pilot, so the pilot reads as the direct answer to the objection. Section 1 gestures at the concession and the closing section recalls it briefly, but the full block lives here, not split across the frame.
+Planned placement: its own section immediately after the tool comparison and before the converter section, so the converter reads as the direct answer to the objection. Section 1 gestures at the concession and the closing section recalls it briefly, but the full block lives here, not split across the frame.
 
 ## Niyant origin section
 
@@ -386,9 +391,9 @@ Public context:
 
 ### 1. Day 0 took three days
 
-Use the five-day plan and the fact that Day 0 was still incomplete after three days as the hook. Describe the NAPsack patch, custom capture layer, controlled check, browser extension, and stopped 30-action diagnostic. End once the section establishes that the controlled stack did not produce enough verified navigation records to start prediction. Do not restate the dataset gap or sequencing mistake here. The opening and sections 4 and 5 already carry those points.
+Use the five-day plan and the fact that Day 0 was still incomplete after three days as the hook. Describe the NAPsack patch, the decision to treat Screenpipe's linked-frame problem as a capture problem, the custom capture layer, controlled check, browser extension, and stopped 30-action diagnostic. End once the section establishes that the controlled stack did not produce enough navigation records for Dylan to verify and start prediction. Do not fully interpret the sequencing mistake here. Section 5 owns that conclusion.
 
-> The controlled run showed that the evidence streams could be joined. But it could not automatically assemble enough verified navigation records to start the prediction test.
+> The controlled run showed that the evidence streams could be joined. But it could not assemble enough navigation records for Dylan to verify and start the prediction test.
 
 ### 2. What the dataset had to contain
 
@@ -400,13 +405,13 @@ Give a concrete record: Dylan reaches the end of an article in Arc, then goes to
 
 Explain why the timing and destination label must be right for the prediction test to mean anything. A post-click screenshot can give the LLM the answer, while a bad label can make it impossible to tell whether the prediction was right.
 
-### 3. Recording alone does not produce this dataset
+### 3. The missing step was converting the recording
 
-State the complete seven-part conversion contract. Then explain that Screenpipe runs continuously but takes event-driven screenshots. Neither its linked frame nor the recording alone determines meaningful boundaries, safe prior state, exact destination, or a verified record.
+State the complete seven-part conversion contract. Explain that the recorder handles job one and supplies raw evidence for jobs two through four, but jobs two through five still require assembly. The sixth is Dylan's verification, and the seventh saves the verified dataset. Then explain that Screenpipe runs continuously but takes event-driven screenshots. Neither its linked frame nor the recording alone determines meaningful boundaries, safe prior state, exact destination, or a reviewable record.
 
 Use Screenpipe as the concrete example. Lead with what worked: screenshots, both monitors, inputs, app and window events, URLs, OCR, and accessibility data. Then use the one local finding chosen in the checks section: 76 of 164 linked click frames were after the click. Keep zero of 40 and the remaining metrics in the linked audit unless the draft develops a specific need for them.
 
-Explain that for clicks, the raw event still carries its own timestamp and coordinates. An extractor could ignore the linked screenshot, match the event to the most recent frame from each monitor whose timestamp was clearly before the click, and use later evidence only to propose the destination label. Bound this as candidate generation for Dylan to review, not records he can trust automatically. Some records would remain ambiguous if the prior frame were stale or the exact control unnamed.
+Explain that for clicks, the raw event still carries its own timestamp and coordinates. An extractor could ignore the linked screenshot, match the event to the most recent earlier frame from each monitor, and use later evidence to propose the destination label. State plainly that this is the assembly workflow Dylan wanted. The system proposes a record, then Dylan approves, corrects, rejects, or parks it. Do not add automatic trust as a requirement. Bound the path by saying it was not tested over the weekend and may fail when the prior frame is stale or the destination evidence is incomplete.
 
 Add one sentence pre-empting the current-version reply: name the tested version (2.5.132) and dates, note that Screenpipe's current documentation claims expanded capture (full accessibility tree with OCR fallback, keyboard input, app switches, multiple capture methods), and state that the measurements stand for the tested version and setup.
 
@@ -420,28 +425,29 @@ Treat NAPsack, OpenCUA, and Scribe as reusable components in one compact paragra
 
 Do not say that multi-monitor capture, workflow discovery, structured export, or conversion layers are absent from the market. Celonis documents all-desktop screenshots. Mimica documents passive cross-app discovery and CSV export on macOS. Treat those as category evidence, not immediately usable alternatives. Name the simpler residual questions: does the saved input show what Dylan saw before moving, does the output name the exact native-app or browser destination, can Dylan approve or fix each answer, and can the accepted examples be exported in time order?
 
-### 5. The strongest counterargument, conceded
+### 5. Dylan had not shown that a new recorder was necessary
 
-Run the full counterargument block from the section above: state the objection in its strongest form, concede the over-scoped protocol and the sequencing mistake, and narrow the residual gap to the target workflow plus the three residual requirements from the tool-contract section. Placing it here, before the pilot, makes the next section read as the answer to the objection rather than a retreat.
+State the Screenpipe-specific objection in its strongest form. A post-click linked screenshot did not prove that every earlier frame was missing. Dylan built a new capture stack before testing retrospective relinking. Concede that the 12-of-30 result shows an over-scoped custom protocol, not that Screenpipe's existing recording was insufficient. Then narrow the residual gap to a self-serve Mac workflow that converts raw evidence into proposed exact-destination records for correction and export.
 
-### 6. A first version can be cobbled together
+### 6. A small converter may be enough
 
-Describe the unvalidated offline Screenpipe extractor: propose candidate boundaries, select safe prior evidence, draft the destination from later evidence, and export chronological rows to a simple table for Dylan to verify manually.
+Describe the unvalidated offline Screenpipe converter: propose candidate boundaries, select safe prior evidence, draft the destination from later evidence, and export chronological records to a simple table.
 
-State what it deliberately skips: live suggestions, a custom review interface, reliable automatic segmentation, perfect synchronization, and stable identity for every interface target.
+Explain that Dylan still approves, corrects, or rejects every proposal because verification is part of the target workflow. The automated work is finding events, joining evidence, and drafting destinations. Without that assembly, Dylan would have to query the database, align events, choose frames, and construct every record himself.
 
-Make the fallback explicit: if even this bounded extractor becomes another infrastructure project, label the first examples manually.
+State what the converter deliberately skips: live suggestions, a custom review interface, perfect synchronization, and stable identity for every interface target. Make the fallback explicit: if even this bounded converter becomes another infrastructure project, assemble the first examples manually.
 
-### 7. What a dependable version still needs
+### 7. What a dependable conversion layer still needs
 
 Explain what still has to be guaranteed for Dylan's use case:
 
 1. reliable ambient segmentation;
-2. Accessibility, DOM, and visual target grounding;
-3. multi-monitor and cross-stream joining;
-4. missing-data handling;
-5. fast correction; and
-6. stable export.
+2. safe earlier-state selection;
+3. Accessibility, DOM, and visual target grounding;
+4. multi-monitor and cross-stream joining;
+5. missing-data handling;
+6. fast correction; and
+7. stable export.
 
 Then state the bounded conclusion. Open tools require custom assembly. Enterprise task-mining systems show that much of the machinery already exists, so Dylan cannot claim a new category. But Mimica and Celonis were both unusable for this experiment, and their public documentation does not settle the strict row-contract questions. A dependable version for Dylan's current setup would still require a custom layer.
 
@@ -449,14 +455,15 @@ Then state the bounded conclusion. Open tools require custom assembly. Enterpris
 
 Use the Niyant exchange to connect the narrow data problem to the larger personalization thesis. Keep the claim bounded: personal next-action prediction requires a personal interaction dataset, and producing verified rows remains an integration burden.
 
-Recall the concession from section 5 briefly rather than re-arguing it: Dylan tried to build the dependable automatic product before establishing that the prediction felt useful.
+Recall the concession from section 5 briefly rather than re-arguing it: Dylan built a stricter recorder before showing that Screenpipe's existing recording was insufficient.
 
 Explain the corrected sequence:
 
-1. run the manual pilot;
-2. decide whether the predictions are useful;
-3. try the bounded offline extractor only if it materially reduces labeling work; and
-4. build the dependable automatic product only if the prediction earns it.
+1. test the Screenpipe converter;
+2. improve capture only where the existing recording genuinely lacks evidence;
+3. verify the resulting records;
+4. run the LLM experiment; and
+5. build a live demo only if the predictions feel useful.
 
 Close the section and the article plainly, pointing the invitation at the contract so it is answerable:
 
@@ -568,11 +575,11 @@ Negative capability claims need the same discipline. Use bounded wording such as
    4. Can a reviewer correct the destination or step label for an individual event?
    5. Can a one-person proof of concept run on ordinary cross-app work rather than a declared enterprise process?
    6. What minimum seats, administrative setup, data-access restrictions, and pricing apply after the proof of concept?
-   These unanswered questions do not block the article or the manual pilot.
+   These unanswered questions do not block the article or the Screenpipe converter test.
 5. Resolved for this experiment 2026-07-27: Celonis is Windows-only, so it is not usable on Dylan's Mac. It remains evidence that multi-screen screenshots, structured event tables, and task grouping exist in the enterprise category. A future market-wide novelty claim would still need to distinguish those capabilities from Dylan's strict row contract, but Celonis is not an immediate product option or a publication blocker.
 6. Resolved 2026-07-26: use `76 of 164` as the one local Screenpipe metric in the body because it directly explains the before-versus-after problem. Keep `zero of 40` and the remaining metrics in the linked audit unless the draft develops a specific need for them.
 7. Verify the public URLs after Quartz updates. Link primary tool sources in the final post.
-8. Do not state that Screenpipe plus manual review has passed until the manual pilot actually produces valid examples.
+8. Do not state that Screenpipe plus a converter and human verification has passed until it actually produces valid records.
 9. Added 2026-07-26: Recheck Screenpipe's current release and documentation at draft time. Current documentation and marketing claim expanded capture, including a full accessibility tree with OCR fallback, keyboard input, app switches, and multiple capture methods. The tested version was 2.5.132 in July 2026. Keep every measured claim scoped to it and include the section 3 pre-empt sentence.
 
 ## Title decision
@@ -583,7 +590,7 @@ Selected: **The Missing Step Between Recording and Prediction**
 
 ## Candidate final compression
 
-> I started by asking whether an LLM could predict where I would go next. Three days later, I could finally specify the example I needed. Open recorders captured the ingredients, and enterprise task-mining systems already automate much of workflow discovery. But the strongest enterprise examples were not usable for my setup, and I still could not verify a public path that saved what I saw before each move, named the exact place I went, and let me approve or fix the answer. A bounded offline extractor might be enough for the first experiment. I should prove the prediction matters before deciding whether the dependable version deserves custom work.
+> I started by asking whether an LLM could predict where I would go next. Instead, I spent three days building a stricter capture stack. Screenpipe may already have recorded enough evidence, but I did not first test the thin converter that would turn its raw history into proposed records for me to verify. I still found no self-serve Mac workflow that completed that conversion. The next step is to test the converter, improve capture only where evidence is missing, and then run the prediction experiment.
 
 ## Drafting constraints
 
@@ -599,7 +606,7 @@ Selected: **The Missing Step Between Recording and Prediction**
 - Keep the Niyant section short.
 - When the NAPsack paper appears, add one sentence distinguishing this article's next-destination rows from the paper's next-action-prediction task, which operates at the granularity of natural-language task descriptions annotated by a VLM. Do not imply that the paper's problem is unsolved or identical to this one.
 - Use roughly four memorable quantitative anchors in the body. Do not turn the article into a metric parade. Link the detailed audits for readers who want the full record.
-- The article should end with the manual experiment ahead, not pretend the prediction result already exists.
+- The article should end with the converter and prediction experiment ahead, not pretend either has already worked.
 
 ## Draft gate
 
@@ -609,7 +616,7 @@ The first draft can begin only if it preserves all seven boundaries:
 2. The universal `missing tool` claim has been narrowed to a public-documentation finding about Dylan's exact row contract.
 3. Existing tools are treated as reusable components and counterexamples, not dismissed as failures.
 4. The article openly concedes that the first capture protocol was over-scoped.
-5. The manual pilot, bounded offline extractor, and dependable automatic product are treated as three different levels of work.
+5. Raw recording, automated assembly, human verification, and dependable conversion are treated as distinct jobs. Human verification is not confused with manual construction of every record.
 6. Nothing in the acquisition work is presented as evidence that prediction will work.
 7. The article acknowledges Mimica, Celonis, Skan, current UiPath, and historical UiPath Unassisted Task Mining before making any novelty or product-gap claim.
 
