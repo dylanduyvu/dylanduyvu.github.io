@@ -8,7 +8,7 @@ updated: 2026-07-27
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 5:46 PM EDT
+Generated: Jul 27, 2026, 6:24 PM EDT
 
 ## State Shift Summary
 
@@ -28,6 +28,14 @@ In the past 7 days, the public vault changed through 69 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 27, 2026, 6:24 PM EDT - article: clarify why the capture walkthrough stopped
+
+article: clarify why the capture walkthrough stopped.
+
+Changed notes:
+  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 27, 2026, 5:46 PM EDT - article: move calibration history into fragility section
 
@@ -121,18 +129,11 @@ Changed notes:
   - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
   - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-### Jul 27, 2026, 12:29 PM EDT - article: clarify experiment framing and opening context
-
-article: clarify experiment framing and opening context.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-_Showing the newest 12 of 34 updates in this window._
+_Showing the newest 12 of 35 updates in this window._
 
 ## Past 7 Days
 
+- Jul 27, 2026: article: clarify why the capture walkthrough stopped - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: move calibration history into fragility section - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: correct automatic pipeline sequencing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: restore automatic acquisition ladder - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -157,12 +158,12 @@ _Showing the newest 12 of 34 updates in this window._
 - Jul 27, 2026: article: explain capture system fragility - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: clarify prediction experiment never ran - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: smooth Day 0 causal transitions - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: retitle recording and prediction draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 _Showing the newest 25 of 69 updates in this window._
 
 ## Past 30 Days
 
+- Jul 27, 2026: article: clarify why the capture walkthrough stopped - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: move calibration history into fragility section - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: correct automatic pipeline sequencing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: restore automatic acquisition ladder - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -187,6 +188,5 @@ _Showing the newest 25 of 69 updates in this window._
 - Jul 27, 2026: article: explain capture system fragility - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: clarify prediction experiment never ran - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: smooth Day 0 causal transitions - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: retitle recording and prediction draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-_Showing the newest 25 of 204 updates in this window._
+_Showing the newest 25 of 205 updates in this window._
