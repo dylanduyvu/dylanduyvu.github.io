@@ -34,6 +34,7 @@ Completed 2026-07-27: second compression pass removed repeated setup, conclusion
 Updated 2026-07-27: rewrote the deck to name the LLM, exact-destination scope, Tab-key interaction, unrun test, and automated dataset attempt; removed repeated opening lines.
 Completed 2026-07-27: added the public associated-research, file-specific revision-history, and disclosure links required by the publication harness.
 Updated 2026-07-27: expanded the opening into a day-by-day experiment list that defines the baseline, accumulating-history comparison, and qualitative live-demo decision.
+Updated 2026-07-27: reorganized the capture-fragility section into five labeled causes while preserving its rationale, sequencing concession, and product implication.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; Celonis follow-up before any stronger product claim; final link verification after later edits.
 %%
 
@@ -106,21 +107,23 @@ But it still did not produce my examples. In one 50-minute session, 76 of 164 cl
 
 ## Why the capture system stayed fragile
 
-The 30 actions were a coverage check, not training data or a prediction test. That initial run did not establish that the stack worked across native controls, ordinary and dynamic webpages, focus and app changes, keyboard navigation, and both monitors. I needed to check those cases before trusting several days of recordings.
+The 30 actions were a coverage check, not training data or a prediction test. The initial controlled run did not establish that the stack worked across native controls, ordinary and dynamic webpages, focus and app changes, keyboard navigation, and both monitors. I needed a broader check before trusting several days of recordings.
 
-Checking the rows first was reasonable. Otherwise, a wrong prediction could reflect my behavior, the model, the action boundary, the destination label, or a screenshot that already showed the answer. Requiring automatic rows before trying a small manually verified set was the sequencing mistake.
+That broader check was fragile for five reasons:
 
-Each controlled action also required a ceremony: prepare the application, mark ready, freeze both displays, perform one action, mark completion, and export browser evidence when relevant. An extra click, missed marker, or delayed input could contaminate the interval.
+- **The protocol required perfect choreography.** I had to prepare the application, mark ready, freeze both displays, perform one action, mark completion, and export browser evidence when relevant. An extra click, missed marker, or delayed input could contaminate the interval.
 
-Then the system had to join input events, separate display streams, macOS Accessibility records, browser events, and an action ledger with different clocks and identifiers. The browser did not know the Mac automation layer's action ID, so the join depended on timestamps, coordinates, window and document identity, and a narrow interval.
+- **The evidence did not share one clock or identifier.** The system had to join input events, separate display streams, macOS Accessibility records, browser events, and an action ledger. The browser did not know the Mac automation layer's action ID, so the join depended on timestamps, coordinates, window and document identity, and a narrow interval.
 
-The interfaces also moved underneath the test. Webpages changed after JavaScript events, focus arrived late, and browser tabs, split views, and temporary windows exposed different identities. A static monitor might not emit a fresh frame when the other monitor changed.
+- **The interfaces changed during capture.** Webpages responded to JavaScript events, focus arrived late, and browser tabs, split views, and temporary windows exposed different identities. A static monitor might not emit a fresh frame when the other monitor changed.
 
-Exact target identity varied too. macOS might return the intended button, an image inside it, a generic container, an unnamed field, or nothing useful. Browser structure was more precise for webpages but could not describe native controls or browser chrome. Screenshots and coordinates filled gaps but required another inference step.
+- **Exact targets had no shared representation.** macOS might return the intended button, an image inside it, a generic container, an unnamed field, or nothing useful. Browser structure was more precise for webpages but could not describe native controls or browser chrome. Screenshots and coordinates filled gaps but required another inference step.
 
-The validator was still changing as the diagnostic exposed cases we had not anticipated. Those repairs helped preserve genuine evidence, but they also meant that one frozen set of rules did not judge every checkpoint. Turning the diagnostic into a formal test would have required implementing the remaining cases, freezing the validator, and running it again.
+- **The validator was still changing.** The diagnostic exposed cases we had not anticipated. Fixing the validator helped preserve genuine evidence, but one frozen set of rules no longer judged every checkpoint. A formal test would have required implementing the remaining cases, freezing the validator, and running it again.
 
-A person could infer what happened from imperfect records. Automation had to encode that judgment by handling missing evidence, aligning streams, normalizing native and browser targets, detecting action boundaries, and sending uncertain rows to me. I was beginning to build that product while trying to run the experiment.
+Checking the rows first was reasonable. Otherwise, a wrong prediction could reflect my behavior, the model, the action boundary, the destination label, or a screenshot that already showed the answer. But requiring automatic rows before trying a small manually verified set was the sequencing mistake.
+
+A person could infer what happened from imperfect records. Automation had to handle missing evidence, align streams, normalize native and browser targets, detect action boundaries, and send uncertain rows to me. By then, I was building that product while trying to run the experiment.
 
 ## The closest tools already form a product category
 
