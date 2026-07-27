@@ -42,6 +42,7 @@ Updated 2026-07-27: corrected the Screenpipe section to explain its event-driven
 Updated 2026-07-27: narrowed the thesis after recognizing that Screenpipe may already have recorded enough evidence. The untested gap is conversion into proposed records for Dylan to verify, and the custom capture stack was not shown to be necessary.
 Updated 2026-07-27: restored the broader dataset-assembly thesis after the Screenpipe reconstruction hypothesis overcorrected the article; kept the narrower concession that the raw-frame extraction path was not tested.
 Corrected 2026-07-27: replaced the precision-dependent `76 of 164` Screenpipe ordering figure with the raw-timestamp split of 83 post-click and 81 pre-click frames.
+Completed 2026-07-27: compressed the untested Screenpipe reconstruction path into a caveat so it qualifies the evidence without competing with the observed result.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; final link verification after later edits.
 %%
 
@@ -108,9 +109,7 @@ Screenpipe covered the first job and supplied much of the raw evidence needed fo
 
 But the screenshot Screenpipe linked to a click was not guaranteed to show the state before the click. In one 50-minute session, 83 of 164 click-linked screenshots came after the click. The other 81 came before, but some were up to 25 seconds old. So an extractor could not treat the link as either the input state or proof of where I arrived.
 
-For clicks, the raw event still carried its own timestamp and coordinates. An extractor could ignore the link, search each monitor's frame history for the most recent earlier image, decide whether that image was recent enough, and use separate later evidence to propose the destination label. This would produce proposed records for me to verify, which was the intended workflow.
-
-I did not test that path over the weekend. So I do not know how often the earlier frame would be recent enough or the destination evidence complete enough across clicks, keyboard navigation, app switches, and both monitors.
+That did not prove the raw recording was unusable. A script could ignore Screenpipe's frame link, use the click timestamp to search both monitor histories for the latest earlier image, and use later evidence to propose the destination. I did not test that approach, so I do not know how often it would produce a usable record.
 
 The full measurements are in [my audit](https://dylanduyvu.github.io/50-sources/screenpipe-live-capture-audit-2026-07-23). Screenpipe's current documentation describes a fuller accessibility tree and more input methods than I observed, so these numbers apply only to my version and setup.
 
