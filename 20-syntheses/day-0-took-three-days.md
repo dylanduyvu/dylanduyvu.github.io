@@ -56,9 +56,9 @@ For each navigation, I would replay what was visible just before it and ask the 
 
 I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records screens and inputs continuously. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups activity into captioned bursts, but patched its display assignment because my second monitor sits above my main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension. A 30-action diagnostic stopped at 12 accepted checkpoints. Even then, the monitors were still out of sync.
 
-The stack passed a smoke test and produced verified checkpoints. But it did not automatically produce enough examples from ordinary work, so I never reached the prediction test.
+The stack worked during an initial controlled run and produced verified checkpoints. But it did not automatically produce enough examples from ordinary work, so I never reached the prediction test.
 
-The delay had two causes. The tools I could use did not assemble the examples, but I also tried to build a dependable automatic system before running a small test. This post separates the two.
+The delay had two causes. The tools I could use did not assemble the examples, but I also tried to build a dependable automatic system before running a small prediction test. This post separates the two.
 
 ## The example I actually needed
 
@@ -97,7 +97,7 @@ But it still did not produce my examples. In one 50-minute session, 76 of 164 cl
 
 ## Why the capture system stayed fragile
 
-The 30 actions were a coverage check, not training data or a prediction test. The smoke test did not establish that the stack worked across native controls, ordinary and dynamic webpages, focus and app changes, keyboard navigation, and both monitors. I needed to check those cases before trusting several days of recordings.
+The 30 actions were a coverage check, not training data or a prediction test. That initial run did not establish that the stack worked across native controls, ordinary and dynamic webpages, focus and app changes, keyboard navigation, and both monitors. I needed to check those cases before trusting several days of recordings.
 
 Checking the rows first was reasonable. Otherwise, a wrong prediction could reflect my behavior, the model, the action boundary, the destination label, or a screenshot that already showed the answer. Requiring automatic rows before trying a small manually verified set was the sequencing mistake.
 
