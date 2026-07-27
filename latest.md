@@ -8,11 +8,11 @@ updated: 2026-07-27
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 11:42 AM EDT
+Generated: Jul 27, 2026, 11:45 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 68 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 69 note commits. The most recent movement is:
 
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
@@ -29,6 +29,13 @@ In the past 7 days, the public vault changed through 68 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 27, 2026, 11:45 AM EDT - article: replace smoke test phrasing
+
+article: replace smoke test phrasing.
+
+Changed notes:
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 27, 2026, 11:42 AM EDT - article: format publication links inline
 
@@ -107,17 +114,11 @@ article: tighten Day 0 ownership draft.
 Changed notes:
   - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-### Jul 26, 2026, 8:22 PM EDT - article: add first complete Day 0 draft
-
-article: add first complete Day 0 draft.
-
-Changed notes:
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-_Showing the newest 12 of 18 updates in this window._
+_Showing the newest 12 of 19 updates in this window._
 
 ## Past 7 Days
 
+- Jul 27, 2026: article: replace smoke test phrasing - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: format publication links inline - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: add research history and disclosure links - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: clarify LLM prediction test opening - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
@@ -142,12 +143,12 @@ _Showing the newest 12 of 18 updates in this window._
 - Jul 24, 2026: update NAP capture v2 notes - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
 - Jul 23, 2026: Add computer-use NAP build ledger - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 23, 2026: Log corrected NAPsack calibration - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-- Jul 23, 2026: experiment: audit natural screenpipe session - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 
-_Showing the newest 25 of 68 updates in this window._
+_Showing the newest 25 of 69 updates in this window._
 
 ## Past 30 Days
 
+- Jul 27, 2026: article: replace smoke test phrasing - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: format publication links inline - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: add research history and disclosure links - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: clarify LLM prediction test opening - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
@@ -172,6 +173,5 @@ _Showing the newest 25 of 68 updates in this window._
 - Jul 24, 2026: update NAP capture v2 notes - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
 - Jul 23, 2026: Add computer-use NAP build ledger - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 23, 2026: Log corrected NAPsack calibration - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-- Jul 23, 2026: experiment: audit natural screenpipe session - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 
-_Showing the newest 25 of 187 updates in this window._
+_Showing the newest 25 of 188 updates in this window._
