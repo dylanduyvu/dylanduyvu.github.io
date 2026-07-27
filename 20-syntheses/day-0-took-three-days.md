@@ -175,7 +175,7 @@ But neither of the strongest enterprise counterexamples was usable in my setup. 
 
 ## A first version can be cobbled together
 
-After the automatic acquisition ladder stalled, I no longer needed an automatic collection product to run the first experiment. I could label the first records by hand and run the prediction test. If the prediction is useful, or if manual labeling becomes the bottleneck, Screenpipe can remain the recorder while a small offline script finds possible navigation moments, selects the latest usable prior frame, drafts a destination from later evidence, and writes the records to a table.
+The first experiment never required an automatic collection product. I had made one a prerequisite anyway. I could label the first records by hand and run the prediction test. If the prediction is useful, or if manual labeling becomes the bottleneck, Screenpipe can remain the recorder while a small offline script finds possible navigation moments, selects the latest usable prior frame, drafts a destination from later evidence, and writes the records to a table.
 
 I have not validated this plan, and I would check every proposed record by hand. The script skips live suggestions, a review interface, reliable boundaries, perfect monitor synchronization, and stable identification of every control. Its job is to reduce assembly to reviewing proposed records. If it becomes another project, I will keep labeling the records by hand.
 

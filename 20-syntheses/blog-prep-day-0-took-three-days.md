@@ -63,7 +63,7 @@ Short compression:
 
 Buildability conclusion:
 
-> I do not need to invent another recorder for the first experiment. After the automatic acquisition ladder stalled, I can label the first records manually, then test a bounded offline extractor if it materially reduces that work. Enterprise task-mining systems show that much of the machinery already exists, but they are not a usable path for this personal pilot. A dependable version for Dylan's setup may still require a custom layer, but that does not establish a net-new product category. The Screenpipe extractor path remains unvalidated.
+> The first experiment never required another recorder or an automatic collection product. I made the automatic pipeline a prerequisite anyway. I can label the first records manually, then test a bounded offline extractor if it materially reduces that work. Enterprise task-mining systems show that much of the machinery already exists, but they are not a usable path for this personal pilot. A dependable version for Dylan's setup may still require a custom layer, but that does not establish a net-new product category. The Screenpipe extractor path remains unvalidated.
 
 Do not write `the tool does not exist`. Write `I could not find one that did the whole job for my workflow`.
 
