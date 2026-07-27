@@ -433,11 +433,11 @@ Close with the sequencing lesson. Testing data quality was reasonable because ba
 
 ### 5. Existing products solve pieces of the problem
 
-Treat NAPsack, OpenCUA, and Scribe as reusable components in one compact paragraph. Then use Mimica and Celonis as the strongest enterprise counterexamples to broad missing-product claims while stating just as clearly that neither was usable for Dylan's experiment. Mimica canceled the one-person evaluation, and Celonis is Windows-only.
+Group the tools into two scannable lists. The research and self-serve group contains NAPsack, OpenCUA, and Scribe. The enterprise task-mining group contains Mimica and Celonis. Give each product one bullet that states what it does well and the specific reason it did not complete Dylan's workflow. Mimica canceled the one-person evaluation, and Celonis is Windows-only.
 
 Remove Skan and UiPath from the article body. Keep their evidence in this prep and the linked research note. Also remove the full comparison matrix from the article body. It is useful research but interrupts the reader's causal path.
 
-Fold the strongest counterargument into the section. State that task mining is an established category and that the custom diagnostic measured Dylan's protocol rather than Screenpipe's limits. Then narrow the residual finding to a self-serve Mac workflow Dylan could use that automatically finds meaningful moves, recovers prior state across both monitors, names exact destinations across native apps and browsers, and exports chronological records.
+Fold the strongest counterargument into the section. State that task mining is an established category and that the custom diagnostic measured Dylan's protocol rather than Screenpipe's limits. Refer back to the five conversion steps defined in section 3 rather than listing the requirements again.
 
 Do not call this a proven new product category. It may be an undocumented enterprise capability or an adapter on top of existing recording tools.
 

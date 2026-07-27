@@ -47,6 +47,7 @@ Corrected 2026-07-27: separated the core dataset, acquisition-calibration machin
 Completed 2026-07-27: moved the acquisition-ladder explanation out of the dataset-schema section and into the capture-fragility section.
 Completed 2026-07-27: clarified the Codex destination example, removed the six-action smoke result from the narrative, and rewrote the walkthrough section around why it existed, why it stopped at 12 actions, and which validation gates never ran.
 Completed 2026-07-27: rebuilt the article around one six-section narrative, moved the prediction precedent into the setup, removed the body tool matrix and standalone objection, and combined the manual next step with the product-gap conclusion.
+Completed 2026-07-27: converted the product survey into two scannable groups and removed its repeated version of the conversion requirements.
 Remaining before final publication: Dylan's personal read and final link verification after later edits.
 %%
 
@@ -135,17 +136,27 @@ That validation work was reasonable. If the timing or destination labels were wr
 
 ## Existing products solve pieces of the problem
 
-The research and self-serve tools each contribute useful parts. NAPsack groups passive activity into captioned segments and exports them as JSONL. But its [published prediction task](https://arxiv.org/abs/2603.05923) operates on those broad activity descriptions rather than my exact destinations. [OpenCUA](https://arxiv.org/abs/2508.09123) collects deliberate demonstrations, pairs actions with the last distinct prior screenshot, supports review, and exports standardized trajectories. Its [Mac setup](https://agentnet-tool.xlang.ai/quickstart/mac_quick_start/) records one display. [Scribe AutoCapture](https://support.scribehow.com/hc/en-us/articles/30708953411229-Using-Autocapture) discovers workflows across approved business apps and lets users review, edit, publish, or discard them. Its documented exports are finished guides, including [Markdown](https://support.scribehow.com/hc/en-us/articles/9254133020189-Exporting-a-Scribe-to-Markdown), rather than prediction records.
+The closest tools fell into two groups.
 
-[Mimica](https://www.mimica.ai/product) is the strongest enterprise counterexample. It advertises passive desktop capture, automatic task discovery, step screenshots, spreadsheet export, and a [native Mac recorder](https://www.mimica.ai/articles/introducing-mimica-task-mining-for-macos). But its signup rejected my personal email, and Mimica canceled my scheduled demo because a one-person evaluation did not fit its focus on larger companies.
+**Research and self-serve tools**
+
+- **[NAPsack](https://github.com/GeneralUserModels/napsack):** Groups passive activity into captioned segments and exports JSONL. Its [published prediction task](https://arxiv.org/abs/2603.05923) predicts those broader activity descriptions rather than exact destinations.
+
+- **[OpenCUA](https://arxiv.org/abs/2508.09123):** Collects deliberate demonstrations, matches actions with the last distinct prior screenshot, supports review, and exports standardized trajectories. Its [Mac setup](https://agentnet-tool.xlang.ai/quickstart/mac_quick_start/) records one display.
+
+- **[Scribe AutoCapture](https://support.scribehow.com/hc/en-us/articles/30708953411229-Using-Autocapture):** Discovers workflows across approved business apps and lets users review, edit, publish, or discard them. Its documented exports are finished guides, including [Markdown](https://support.scribehow.com/hc/en-us/articles/9254133020189-Exporting-a-Scribe-to-Markdown), rather than prediction records.
+
+**Enterprise task-mining products**
+
+- **[Mimica](https://www.mimica.ai/product):** Advertises passive desktop capture, automatic task discovery, step screenshots, spreadsheet export, and a [native Mac recorder](https://www.mimica.ai/articles/introducing-mimica-task-mining-for-macos). But it rejected my personal signup and canceled my demo because a one-person evaluation did not fit its enterprise focus.
+
+- **[Celonis Task Mining](https://docs.celonis.com/en/task-mining.html):** Documents background capture, raw and labeled event tables, and screenshots of [all attached displays](https://docs.celonis.com/en/event-processing-rules.html). Its recorder only runs on Windows.
 
 ![Mimica canceled my scheduled demo after deciding that my one-person request did not fit its focus on larger enterprise organizations.](../70-attachments/mimica-demo-canceled-enterprise-focus-2026-07-27.png)
 
-[Celonis Task Mining](https://docs.celonis.com/en/task-mining.html) documents background capture, raw and labeled event tables, and screenshots of [all attached displays](https://docs.celonis.com/en/event-processing-rules.html), but its recorder runs only on Windows.
-
 These products corrected my initial conclusion. Computer activity capture, workflow discovery, and structured export already form a product category. My diagnostic also measured the limits of my custom protocol, not the limits of Screenpipe.
 
-The narrower finding is that I found no self-serve Mac product I could use that documented the complete conversion I needed: find meaningful navigation moments, recover the screen state from before each move across both monitors, name the exact destination across native apps and browsers, and export those records in order. An enterprise product may already do this without documenting it. The missing piece may also be an adapter on top of existing recording tools rather than a new product category.
+The narrower finding is that I found no self-serve Mac product I could use that completed the five conversion steps above. An enterprise product may already do this without documenting it. The missing piece may also be an adapter for an existing recorder rather than a new product category.
 
 ## I am running the experiment manually
 
