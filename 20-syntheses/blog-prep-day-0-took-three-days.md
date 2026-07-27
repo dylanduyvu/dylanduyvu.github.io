@@ -55,11 +55,11 @@ The article answers four questions:
 
 Recommended full wording:
 
-> Most of the recording pieces already exist. Some tools can also discover workflows and export structured data. I still could not find public documentation for one tool that reliably turns ordinary work into clean examples of what I saw, where I went next, and whether I confirmed that answer. An offline prototype can reuse existing components while I check each example manually.
+> I needed a personal dataset that paired what was on my screens before each move with the exact place I went next. Then I needed to verify every row. The tools I tested could record my screens, clicks, app switches, and browser activity. But no product I could use turned a normal workday into that dataset.
 
 Short compression:
 
-> The tools captured and organized much of the work. The public materials I reviewed did not establish that any one of them produced the exact verified rows I needed.
+> The tools recorded the activity. No product I could use assembled the personal dataset.
 
 Buildability conclusion:
 
@@ -69,9 +69,9 @@ Do not write `the tool does not exist`. Write `I could not find one that did the
 
 ## Causal chain
 
-1. This navigation-prediction test needs examples pairing the state available before a move with the destination reached next.
+1. This navigation-prediction test needs a personal dataset pairing the state available before a move with the destination reached next.
 2. Screenpipe, NAPsack, OpenCUA, Scribe, and enterprise task-mining systems already solve many of the underlying capture, ordering, segmentation, export, and review problems.
-3. The public materials reviewed do not show one tool producing the complete output Dylan needed: what was visible before each move, the exact place he went next, proof that the answer is correct, a quick way for Dylan to approve or fix it, and the accepted examples saved in time order.
+3. The public materials reviewed do not show one tool producing the complete output Dylan needed: what was visible before each move, the exact place he went next, proof that the answer is correct, a quick way for Dylan to approve or fix it, and the accepted rows saved in time order.
 4. An unvalidated, bounded offline prototype can reuse Screenpipe, extract candidate rows, and leave verification to Dylan.
 5. A dependable automatic version still needs those guarantees integrated and validated. That may require a custom product layer, or it may be possible as an adapter over a task-mining platform with sufficient data access.
 6. Dylan initially treated that product-grade automatic pipeline as a prerequisite for a qualitative experiment. Building toward it consumed three days before he tested a model.
@@ -114,7 +114,7 @@ The scene proves cost and motivates the scope correction. It does not by itself 
 
 ## The exact data unit
 
-One usable example is:
+One usable row is:
 
 > what was available strictly before I navigated → the exact place I went next → evidence → Dylan's verified verdict
 
@@ -124,13 +124,13 @@ Example:
 
 The destination may be an app, window, webpage, document, Codex task, input field, link, or button.
 
-In plain English, each example needs five things:
+In plain English, each row needs five things:
 
 1. a screenshot or record of what Dylan could see before he moved;
 2. the exact place he went next;
 3. later evidence showing that he really went there;
 4. Dylan's approval or correction of the answer; and
-5. the approved examples saved in the order they happened.
+5. the approved rows saved in the order they happened.
 
 The word `before` matters. If the model sees a screenshot taken after Dylan clicks or switches apps, the screenshot may reveal the answer it is supposed to predict.
 
@@ -351,13 +351,13 @@ Do not write that NAPsack or AgentNetTool failed to create state-action data. Th
 
 ## The strongest counterargument
 
-> You did not discover a missing product category. You missed task mining, then overbuilt a benchmark. Mimica claims passive cross-app capture, automatic process discovery, step-level screenshots, CSV export, and native macOS support. Celonis documents granular events, UI and browser attributes, all-desktop screenshots, labeled tables, and task grouping. Screenpipe already captured enough raw material for a manual test. Stopping at 12 of 30 proves that the protocol was over-scoped, not that a product is missing.
+> You did not discover a missing product category. You missed task mining, then overbuilt a benchmark. Mimica claims passive cross-app capture, automatic process discovery, step-level screenshots, CSV export, and native macOS support. Celonis documents granular events, UI and browser attributes, all-desktop screenshots, labeled tables, and task grouping. Screenpipe already recorded enough activity for a manual test. Stopping at 12 of 30 proves that the protocol was over-scoped, not that a product is missing.
 
 The article should concede most of this.
 
 Recommended response:
 
-> I was wrong if I meant that nobody can capture ordinary work, discover workflows, or export structured traces. That is an established task-mining category. NAPsack turns interaction bursts into screenshot-and-action examples. OpenCUA pairs human demonstrations with the screen from before each action. Scribe discovers workflows in the background. Mimica and Celonis go further toward automatic process discovery and structured output. But neither was usable for my experiment. Mimica rejected my personal signup and canceled the one-person demo because it focuses on larger enterprises. Celonis runs only on Windows. Their public material also does not show one tool saving what I saw before each move, naming the exact destination, and letting me approve or fix every answer. That may still be an adapter problem or an undocumented enterprise capability rather than a new category. I also treated an automatic, product-grade dataset as a prerequisite for a small qualitative experiment. That was a sequencing mistake. Screenpipe gives me enough raw material to attempt the prediction test with manual labeling.
+> I was wrong if I meant that nobody can capture ordinary work, discover workflows, or export structured traces. That is an established task-mining category. NAPsack turns interaction bursts into screenshot-and-action examples. OpenCUA pairs human demonstrations with the screen from before each action. Scribe discovers workflows in the background. Mimica and Celonis go further toward automatic process discovery and structured output. But neither was usable for my experiment. Mimica rejected my personal signup and canceled the one-person demo because it focuses on larger enterprises. Celonis runs only on Windows. Their public material also does not show one tool saving what I saw before each move, naming the exact destination, and letting me approve or fix every answer. That may still be an adapter problem or an undocumented enterprise capability rather than a new category. I also treated an automatic, product-grade dataset as a prerequisite for a small qualitative experiment. That was a sequencing mistake. Screenpipe recorded enough activity for me to attempt the prediction test with manual labeling.
 
 This section is load-bearing. Without it, the post mistakes self-imposed protocol complexity and an incomplete market search for external evidence.
 
@@ -386,15 +386,15 @@ Public context:
 
 Use the four-day plan and the fact that prediction never started as the hook. Describe the NAPsack patch, custom capture layer, controlled check, browser extension, and stopped 30-action diagnostic. State immediately that the delay mixed a real conversion-layer gap with Dylan's decision to overbuild the first experiment.
 
-> The controlled run showed that the evidence streams could be joined. But it did not automatically produce enough examples from ordinary work, so the prediction test never began.
+> The controlled run showed that the evidence streams could be joined. But it did not automatically produce enough dataset rows from ordinary work, so the prediction test never began.
 
-### 2. The output I actually needed
+### 2. What one dataset row needed
 
-Define the example in normal English:
+Define one row in normal English:
 
 > what was available strictly before I navigated → the exact place I went next → evidence → Dylan's verified verdict
 
-Give the concrete example: Dylan reaches the end of an article in Arc, then goes to `Codex → Personal AI task → composer`. Explain that the saved input must show what he saw before moving, the answer must name the exact destination rather than merely `Codex`, later evidence confirms the move, and Dylan approves or corrects the answer.
+Give a concrete row: Dylan reaches the end of an article in Arc, then goes to `Codex → Personal AI task → composer`. Explain that the saved input must show what he saw before moving, the answer must name the exact destination rather than merely `Codex`, later evidence confirms the move, and Dylan approves or corrects the answer.
 
 State the two validity requirements as a named pair, using the data-unit section's wording: the observation must be strictly prior, and the recorded destination must be correct. This pair is the article's most quotable constraint and should appear once, here.
 
@@ -443,7 +443,7 @@ Then state the bounded conclusion. Open tools require custom assembly. Enterpris
 
 ### 8. Why this matters and what happens next
 
-Use the Niyant exchange to connect the narrow data problem to the larger personalization thesis. Keep the claim bounded: personal next-action prediction requires personal interaction examples, and producing verified examples remains an integration burden.
+Use the Niyant exchange to connect the narrow data problem to the larger personalization thesis. Keep the claim bounded: personal next-action prediction requires a personal interaction dataset, and producing verified rows remains an integration burden.
 
 Recall the concession from section 5 briefly rather than re-arguing it: Dylan tried to build the dependable automatic product before establishing that the prediction felt useful.
 
