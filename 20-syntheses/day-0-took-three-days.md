@@ -38,7 +38,7 @@ Updated 2026-07-27: reorganized the capture-fragility section into five labeled 
 Updated 2026-07-27: reconciled every Mimica and Celonis reference after the canceled demo, distinguishing evidence that the enterprise category exists from products usable in Dylan's setup.
 Updated 2026-07-27: rewrote the opening thesis around the personal dataset, named the recorded inputs, and replaced the documentation-led gap claim with the stronger bounded finding that no product Dylan could use assembled the dataset.
 Updated 2026-07-27: rewrote the dataset section to establish chronological order once, then stay at the navigation-record level; removed the redundant pilot and research aside.
-Updated 2026-07-27: corrected the Screenpipe section to explain its event-driven screenshots and why a click-linked frame could show the post-click state.
+Updated 2026-07-27: corrected the Screenpipe section to explain its event-driven screenshots, why a click-linked frame could show the post-click state, and how the raw streams could still produce candidates for manual review.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; final link verification after later edits.
 %%
 
@@ -93,7 +93,7 @@ Turning recorded activity into the dataset required seven jobs:
 
 1. run quietly while I worked across native apps and browsers;
 2. preserve what was on screen strictly before each move;
-3. keep correctly attributed evidence from both monitors when a move crosses displays;
+3. keep correctly attributed evidence from both monitors for every record;
 4. name the exact destination in one consistent field, whether it is an app, window, page, document, task, input field, link, or button;
 5. propose meaningful boundaries between moves, instead of treating every keystroke as its own record;
 6. show enough evidence that a person can approve, fix, reject, or park each record; and
@@ -101,7 +101,9 @@ Turning recorded activity into the dataset required seven jobs:
 
 Screenpipe covered the first job and supplied much of the raw evidence needed for the rest. Its [current architecture documentation](https://docs.screenpipe.com/architecture) describes event-driven screenshots: clicks, app switches, scrolls, typing pauses, and idle periods trigger captures rather than fixed-rate video.
 
-Version 2.5.132 captured both monitors, inputs, app and window changes, web addresses, screenshot text, and the accessibility tree, which is how macOS describes on-screen controls to assistive software. But a screenshot linked to a click was not guaranteed to come from before it. In one 50-minute session, 76 of 164 click-linked screenshots were captured after the click. An extractor could search backward for an earlier frame, but deduplication could leave the latest prior frame stale.
+Version 2.5.132 captured both monitors, inputs, app and window changes, web addresses, screenshot text, and the accessibility tree, which is how macOS describes on-screen controls to assistive software. But a screenshot linked to a click was not guaranteed to come from before it. In one 50-minute session, 76 of 164 click-linked screenshots were captured after the click.
+
+For clicks, the raw event still carried its own timestamp and coordinates. An extractor could ignore the linked screenshot, match the event to the most recent frame from each monitor whose timestamp was clearly before the click, and use later frames only to propose the destination label. That could produce candidate records for me to review, not records I could trust automatically. Some records would remain ambiguous if the prior frame was stale or the exact control unnamed.
 
 The full measurements are in [my audit](https://dylanduyvu.github.io/50-sources/screenpipe-live-capture-audit-2026-07-23). Screenpipe's current documentation describes a fuller accessibility tree and more input methods than I observed, so these numbers apply only to my version and setup.
 

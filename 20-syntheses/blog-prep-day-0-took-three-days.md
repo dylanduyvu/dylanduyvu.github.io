@@ -158,19 +158,19 @@ The eventual tool should:
 
 1. run passively while Dylan works across native apps and browsers;
 2. preserve the state that was available strictly before navigation;
-3. retain correctly attributed evidence from both monitors when the move crosses displays;
+3. retain correctly attributed evidence from both monitors for every record;
 4. represent the exact destination in one normalized field, whether it is an app, window, page, document, task, input field, link, or button;
 5. propose meaningful transition boundaries rather than treating every raw input as a separate example;
-6. show enough evidence for a person to accept, correct, reject, or mark the row unresolved; and
-7. export accepted rows chronologically in a model-ready format.
+6. show enough evidence for a person to accept, correct, reject, or mark the record unresolved; and
+7. export accepted records chronologically in a format the LLM can use.
 
 The original comparison against NAPsack, OpenCUA, and Scribe was too narrow. Enterprise task-mining products already document ambient capture, task discovery, structured event data, review, and export. Celonis even documents an `all desktops` screenshot mode for multiple screens. Mimica now documents a native macOS recorder with step-level data and screenshots. But neither product was usable for Dylan's experiment. Mimica rejected his personal signup and later canceled the one-person demo because it focuses on larger enterprises. Celonis runs only on Windows.
 
 After adding those systems, the clearest residual requirements are:
 
-1. a documented guarantee that the observation attached to each row is strictly before the navigation action, including correctly attributed multi-monitor evidence when relevant;
+1. a documented guarantee that the observation attached to each record is strictly before the navigation action, with correctly attributed evidence from both monitors for every record;
 2. one normalized, machine-readable exact-destination field spanning native apps and browsers; and
-3. a row-level workflow for Dylan to accept, correct, reject, or mark that proposed destination unresolved before chronological dataset export.
+3. a record-level workflow for Dylan to accept, correct, reject, or mark that proposed destination unresolved before chronological dataset export.
 
 The complete target workflow remains:
 
@@ -406,7 +406,7 @@ State the complete seven-part conversion contract. Then explain that Screenpipe 
 
 Use Screenpipe as the concrete example. Lead with what worked: screenshots, both monitors, inputs, app and window events, URLs, OCR, and accessibility data. Then use the one local finding chosen in the checks section: 76 of 164 linked click frames were after the click. Keep zero of 40 and the remaining metrics in the linked audit unless the draft develops a specific need for them.
 
-Explain that an extractor could search backward for the latest earlier frame, but deduplication could leave that frame stale.
+Explain that for clicks, the raw event still carries its own timestamp and coordinates. An extractor could ignore the linked screenshot, match the event to the most recent frame from each monitor whose timestamp was clearly before the click, and use later evidence only to propose the destination label. Bound this as candidate generation for Dylan to review, not records he can trust automatically. Some records would remain ambiguous if the prior frame were stale or the exact control unnamed.
 
 Add one sentence pre-empting the current-version reply: name the tested version (2.5.132) and dates, note that Screenpipe's current documentation claims expanded capture (full accessibility tree with OCR fallback, keyboard input, app switches, multiple capture methods), and state that the measurements stand for the tested version and setup.
 
