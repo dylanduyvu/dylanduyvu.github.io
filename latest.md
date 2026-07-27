@@ -8,7 +8,7 @@ updated: 2026-07-27
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 12:47 PM EDT
+Generated: Jul 27, 2026, 1:22 PM EDT
 
 ## State Shift Summary
 
@@ -29,6 +29,14 @@ In the past 7 days, the public vault changed through 71 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 27, 2026, 1:22 PM EDT - article: clarify Screenpipe event-driven frame timing
+
+article: clarify Screenpipe event-driven frame timing.
+
+Changed notes:
+  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 27, 2026, 12:47 PM EDT - article: clarify dataset and navigation record structure
 
@@ -111,17 +119,11 @@ article: clarify LLM prediction test opening.
 Changed notes:
   - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-### Jul 27, 2026, 11:17 AM EDT - article: tighten capture fragility draft
-
-article: tighten capture fragility draft.
-
-Changed notes:
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
 _Showing the newest 12 of 26 updates in this window._
 
 ## Past 7 Days
 
+- Jul 27, 2026: article: clarify Screenpipe event-driven frame timing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify dataset and navigation record structure - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: remove redundant opening summary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify experiment framing and opening context - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -146,12 +148,12 @@ _Showing the newest 12 of 26 updates in this window._
 - Jul 26, 2026: research: fact-check computer-use tool gap - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 26, 2026: article: add Day 0 drafting prep - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
 - Jul 26, 2026: project: update computer-use NAP capture research - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 26, 2026: idea: capture missing computer-use dataset recorder article - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
 
 _Showing the newest 25 of 71 updates in this window._
 
 ## Past 30 Days
 
+- Jul 27, 2026: article: clarify Screenpipe event-driven frame timing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify dataset and navigation record structure - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: remove redundant opening summary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify experiment framing and opening context - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -176,6 +178,5 @@ _Showing the newest 25 of 71 updates in this window._
 - Jul 26, 2026: research: fact-check computer-use tool gap - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 26, 2026: article: add Day 0 drafting prep - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
 - Jul 26, 2026: project: update computer-use NAP capture research - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 26, 2026: idea: capture missing computer-use dataset recorder article - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
 
-_Showing the newest 25 of 195 updates in this window._
+_Showing the newest 25 of 196 updates in this window._
