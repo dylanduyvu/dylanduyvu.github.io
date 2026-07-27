@@ -8,11 +8,11 @@ updated: 2026-07-27
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 9:31 AM EDT
+Generated: Jul 27, 2026, 9:49 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 60 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 61 note commits. The most recent movement is:
 
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
@@ -30,33 +30,40 @@ In the past 7 days, the public vault changed through 60 note commits. The most r
 
 ## Past 24 Hours
 
+### Jul 27, 2026, 9:49 AM EDT - article: retitle recording and prediction draft
+
+article: retitle recording and prediction draft.
+
+Changed notes:
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+
 ### Jul 27, 2026, 9:31 AM EDT - article: add Mimica demo cancellation evidence
 
 article: add Mimica demo cancellation evidence.
 
 Changed notes:
-  - [[day-0-took-three-days|Day 0 Took Three Days]]
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 26, 2026, 8:41 PM EDT - article: compress Day 0 draft without dropping claims
 
 article: compress Day 0 draft without dropping claims.
 
 Changed notes:
-  - [[day-0-took-three-days|Day 0 Took Three Days]]
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 26, 2026, 8:27 PM EDT - article: tighten Day 0 ownership draft
 
 article: tighten Day 0 ownership draft.
 
 Changed notes:
-  - [[day-0-took-three-days|Day 0 Took Three Days]]
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 26, 2026, 8:22 PM EDT - article: add first complete Day 0 draft
 
 article: add first complete Day 0 draft.
 
 Changed notes:
-  - [[day-0-took-three-days|Day 0 Took Three Days]]
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 26, 2026, 8:07 PM EDT - research: clarify Mimica enterprise scope
 
@@ -108,10 +115,11 @@ Changed notes:
 
 ## Past 7 Days
 
-- Jul 27, 2026: article: add Mimica demo cancellation evidence - [[day-0-took-three-days|Day 0 Took Three Days]]
-- Jul 26, 2026: article: compress Day 0 draft without dropping claims - [[day-0-took-three-days|Day 0 Took Three Days]]
-- Jul 26, 2026: article: tighten Day 0 ownership draft - [[day-0-took-three-days|Day 0 Took Three Days]]
-- Jul 26, 2026: article: add first complete Day 0 draft - [[day-0-took-three-days|Day 0 Took Three Days]]
+- Jul 27, 2026: article: retitle recording and prediction draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+- Jul 27, 2026: article: add Mimica demo cancellation evidence - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+- Jul 26, 2026: article: compress Day 0 draft without dropping claims - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+- Jul 26, 2026: article: tighten Day 0 ownership draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+- Jul 26, 2026: article: add first complete Day 0 draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 26, 2026: research: clarify Mimica enterprise scope - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 26, 2026: research: fact-check computer-use tool gap - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 26, 2026: article: add Day 0 drafting prep - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
@@ -132,16 +140,16 @@ Changed notes:
 - Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: capture tab prediction entropy objection - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: expand tab autocomplete intent compression thesis - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
-- Jul 22, 2026: hunch: add personalized computer action autocomplete - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 
-_Showing the newest 25 of 60 updates in this window._
+_Showing the newest 25 of 61 updates in this window._
 
 ## Past 30 Days
 
-- Jul 27, 2026: article: add Mimica demo cancellation evidence - [[day-0-took-three-days|Day 0 Took Three Days]]
-- Jul 26, 2026: article: compress Day 0 draft without dropping claims - [[day-0-took-three-days|Day 0 Took Three Days]]
-- Jul 26, 2026: article: tighten Day 0 ownership draft - [[day-0-took-three-days|Day 0 Took Three Days]]
-- Jul 26, 2026: article: add first complete Day 0 draft - [[day-0-took-three-days|Day 0 Took Three Days]]
+- Jul 27, 2026: article: retitle recording and prediction draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+- Jul 27, 2026: article: add Mimica demo cancellation evidence - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+- Jul 26, 2026: article: compress Day 0 draft without dropping claims - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+- Jul 26, 2026: article: tighten Day 0 ownership draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+- Jul 26, 2026: article: add first complete Day 0 draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 26, 2026: research: clarify Mimica enterprise scope - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 26, 2026: research: fact-check computer-use tool gap - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 26, 2026: article: add Day 0 drafting prep - [[the-missing-computer-use-tool-turns-normal-work-into-next-action-examples|The missing computer-use tool turns normal work into next-action examples]]
@@ -162,6 +170,5 @@ _Showing the newest 25 of 60 updates in this window._
 - Jul 22, 2026: source: complete tab autocomplete slack exchange - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: capture tab prediction entropy objection - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 - Jul 22, 2026: hunch: expand tab autocomplete intent compression thesis - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
-- Jul 22, 2026: hunch: add personalized computer action autocomplete - [[tab-could-autocomplete-the-next-computer-action|Tab could autocomplete the next computer action]]
 
-_Showing the newest 25 of 179 updates in this window._
+_Showing the newest 25 of 180 updates in this window._
