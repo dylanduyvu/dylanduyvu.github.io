@@ -55,11 +55,13 @@ This is a public-documentation finding. It is not proof that Mimica, Celonis, Sk
 | A bounded Screenpipe extractor is enough to try first. | Plausible but unvalidated. | Screenpipe documents event-driven screenshots, accessibility data, OCR fallback, UI events, local APIs, and programmable pipes. Dylan's local audit shows the joins and timing still need care. |
 | A dependable version is definitely a new standalone product. | Not established. | A task-mining integration or adapter may be enough. A vendor trial is required before making a novelty claim. |
 
-## Strongest current counterexample: Mimica
+## Strongest current enterprise counterexample: Mimica
 
 [Mimica's product page](https://www.mimica.ai/product) says its recorder captures clicks and keystrokes across the desktop and all applications, automatically generates process maps, and exports PDD, BPMN, and CSV outputs. [Mimica's task-mining explanation](https://www.mimica.ai/articles/what-is-task-mining) says the desktop agent records clicks, keystrokes, and application interactions passively, then uses AI to identify recurring task patterns and produce process maps and automation artifacts.
 
 On July 22, 2026, four days before this audit, Mimica [announced native macOS recording](https://www.mimica.ai/articles/introducing-mimica-task-mining-for-macos). It says the Mac recorder provides the same process maps, step-level data, and screenshots as its Windows recorder.
+
+Mimica is built and sold as an enterprise process-intelligence system. Its [contact page](https://www.mimica.ai/contact) offers a free 14-day proof of concept, and its [official FAQ](https://www.mimica.ai/use-cases/test) says users receive an email invitation before downloading the recorder. Dylan tried the public registration page with his Gmail address on July 26, 2026 and received `This email is not enabled, please contact your admin.` This establishes that the observed evaluation path was administrator-enabled or sales-led for Dylan. It does not prove that every personal email or every organization is rejected.
 
 This directly counters these broad claims:
 
@@ -76,7 +78,7 @@ What the public material does not establish:
 - whether a reviewer can correct the exact destination at the event or row level; and
 - whether accepted rows can be exported in chronological prediction-ready form.
 
-Mimica should be tested before the article claims a net-new automatic product gap.
+Mimica should be evaluated before the article claims a net-new automatic product gap. It is evidence that enterprise conversion machinery exists, but it is not evidence that an individual has a low-friction, self-serve way to create personal next-destination examples.
 
 ## Strongest documented event-data counterexample: Celonis
 
@@ -226,7 +228,7 @@ OpenCUA retains recoverable human errors to teach reflection and correction. Tha
 1. Keep `Day 0 took three days` as the hook.
 2. Replace the missing-product thesis with a strict row-contract thesis.
 3. Introduce task mining before claiming novelty.
-4. Treat Mimica as the most important unresolved current product.
+4. Treat Mimica as the most important unresolved enterprise product, while stating that its administrator-enabled, sales-led onboarding makes it unsuitable as the immediate personal pilot.
 5. Use Celonis to show that multi-monitor screenshots, granular event tables, and task grouping already exist.
 6. State that the first experiment still does not need a vendor procurement cycle. Screenpipe plus manual verification remains the fastest test.
 7. Describe the dependable version as an unresolved build-versus-buy question.
