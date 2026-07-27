@@ -8,11 +8,11 @@ updated: 2026-07-27
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 11:50 AM EDT
+Generated: Jul 27, 2026, 11:53 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 70 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 71 note commits. The most recent movement is:
 
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
@@ -29,6 +29,13 @@ In the past 7 days, the public vault changed through 70 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 27, 2026, 11:53 AM EDT - article: structure capture fragility causes
+
+article: structure capture fragility causes.
+
+Changed notes:
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 27, 2026, 11:50 AM EDT - article: explain four-day prediction experiment
 
@@ -107,17 +114,11 @@ article: add Mimica demo cancellation evidence.
 Changed notes:
   - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-### Jul 26, 2026, 8:41 PM EDT - article: compress Day 0 draft without dropping claims
-
-article: compress Day 0 draft without dropping claims.
-
-Changed notes:
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-_Showing the newest 12 of 20 updates in this window._
+_Showing the newest 12 of 21 updates in this window._
 
 ## Past 7 Days
 
+- Jul 27, 2026: article: structure capture fragility causes - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: explain four-day prediction experiment - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: replace smoke test phrasing - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: format publication links inline - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
@@ -142,12 +143,12 @@ _Showing the newest 12 of 20 updates in this window._
 - Jul 24, 2026: experiment: record capture v2 smoke and walkthrough - [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
 - Jul 24, 2026: source: add computer-use capture tooling deep survey - [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
 - Jul 24, 2026: update NAP capture v2 notes - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
-- Jul 23, 2026: Add computer-use NAP build ledger - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 
-_Showing the newest 25 of 70 updates in this window._
+_Showing the newest 25 of 71 updates in this window._
 
 ## Past 30 Days
 
+- Jul 27, 2026: article: structure capture fragility causes - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: explain four-day prediction experiment - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: replace smoke test phrasing - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: format publication links inline - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
@@ -172,6 +173,5 @@ _Showing the newest 25 of 70 updates in this window._
 - Jul 24, 2026: experiment: record capture v2 smoke and walkthrough - [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
 - Jul 24, 2026: source: add computer-use capture tooling deep survey - [[computer-use-capture-tool-research-2026-07-24|Computer-use capture-tooling deep survey, July 24, 2026]]
 - Jul 24, 2026: update NAP capture v2 notes - [[gpu-configuration-demand-gate|GPU configuration demand gate]]
-- Jul 23, 2026: Add computer-use NAP build ledger - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 
-_Showing the newest 25 of 189 updates in this window._
+_Showing the newest 25 of 190 updates in this window._
