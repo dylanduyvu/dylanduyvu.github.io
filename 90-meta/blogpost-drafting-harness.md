@@ -249,6 +249,20 @@ Facts:
 
 As Dylan edits the draft, treat repeated critique as harness updates: identify the underlying rule, patch the draft, update the harness, save a memory pointer if the lesson should survive future sessions.
 
+### Edit-turn redundancy gate
+
+Run this gate whenever an edit adds, removes, or materially rewrites a sentence. Typo-only and punctuation-only changes are exempt.
+
+1. **Name the job.** State in a short phrase what the edited paragraph uniquely contributes to the article.
+2. **Read the section.** Read from the header before the edit through the next header. Do not inspect only the changed sentence or a search-result window.
+3. **Compare paragraph jobs.** Summarize the edited paragraph and its neighboring paragraphs in five to ten words each. Compare the edited paragraph against the opening abstract and any later section assigned the same argumentative job.
+4. **Run the removal test.** Ask what unique evidence, mechanism, concession, transition, or decision the reader would lose if the paragraph disappeared. If the answer is `nothing`, delete or merge it.
+5. **Search second.** Search the full draft for distinctive phrases and the underlying claim class. Search results supplement the paragraph-level read; they do not replace it.
+6. **Match the review scope to the edit.** A single sentence edit requires the section-level read above. A changed claim, evidence boundary, section structure, or accumulated readability checkpoint requires a full article read plus a consistency check against the active prep.
+7. **Report the scope honestly.** Say `section-level read` when only the affected section was read. Say `global pass` only after reading the complete reader-visible article. Never infer a global pass from `rg`, a diff, or selected excerpts.
+
+The gate fails when the edited paragraph has no unique job, repeats a conclusion already stated more clearly, previews an argument that a later section already owns, or restates the previous sentence without adding evidence or causality.
+
 Accumulated lessons (selected; see original file for the full forecasting-essay list):
 
 - specificity passes are full-document, not local patches
@@ -331,6 +345,7 @@ Rules:
 
 - Each commit should describe the intellectual change, not merely say `update article`.
 - Push each checkpoint immediately so the remote file history is the durable record.
+- Before publishing a material article checkpoint, run the section 15 edit-turn redundancy gate on every paragraph changed since the previous checkpoint.
 - A material pass is not complete until the checkpoint is committed and pushed. Before reporting the pass complete, a shell-capable agent must publish it automatically and must not wait for Dylan to ask.
 - New evidence or counterevidence, a changed claim or confidence level, a structural rewrite, and a completed global/full-read review are material publish triggers.
 - Do not create a commit for every typo. Batch small wording and punctuation fixes into the nearest coherent revision.
