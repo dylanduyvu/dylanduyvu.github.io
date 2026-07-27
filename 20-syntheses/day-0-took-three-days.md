@@ -27,6 +27,7 @@ Completed 2026-07-26: first ownership edit, naive-reader full read, citation-bin
 Added after the lint passes on 2026-07-26: the section 4 comparison table and its two framing paragraphs, register-checked individually at insertion. Every table cell is a claim.
 Completed 2026-07-26: compression pass reduced reader-visible article copy from 2,373 to 1,791 words without removing the table, evidence boundaries, or experiment stages.
 Updated 2026-07-27: Mimica canceled the scheduled demo before the product questions could be asked. The Mimica capability cells remain question marks, and the cancellation screenshot now supports only the enterprise-market claim.
+Completed 2026-07-27: connective-tissue pass added short causal and contrast words at abrupt seams without changing the argument or section order.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; Celonis follow-up before any stronger product claim; final link verification after later edits.
 %%
 
@@ -38,17 +39,17 @@ I needed examples of what I saw before each move and the exact place I went. Exi
 
 ## Day 0 took three days
 
-I planned a four-day experiment. Day 0 was recorder setup. Day 0 took three days.
+I planned a four-day experiment. Day 0 was supposed to be recorder setup, but it took three days.
 
-The plan was to record my normal work, replay each moment before I navigated, and ask a model for its top three guesses. If the guesses felt useful, I would build a live demo bound to the Tab key. The tab-autocomplete feature for computer navigation.
+The plan was to record my normal work, replay each moment before I navigated, and ask a model for its top three guesses. If the guesses felt useful, I would bind them to the Tab key as autocomplete for computer navigation.
 
-Prediction never started. The three days went to the data.
+Prediction never started. Instead, I spent those three days trying to assemble the examples automatically.
 
-I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records screens and inputs continuously. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups activity into captioned bursts, but had to patch its display assignment because my second monitor sits above my main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension. A 30-action diagnostic consumed most of a day and stopped at 12 accepted checkpoints. The monitors were still out of sync.
+I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records screens and inputs continuously. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups activity into captioned bursts, but had to patch its display assignment because my second monitor sits above my main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension. A 30-action diagnostic consumed most of a day and stopped at 12 accepted checkpoints. Even then, the monitors were still out of sync.
 
-All of that proved higher-fidelity recording was technically obtainable. None of it proved the place I would navigate next was predictable.
+So the work showed that higher-fidelity recording was possible. But it did not show that the place I would navigate next was predictable.
 
-Part of the delay was a real gap in the tools. Part of it was my decision to build a dependable automatic system before I had run a small test. This post separates the two.
+The delay had two causes. The tools had a real gap, but I also tried to build a dependable automatic system before running a small test. This post separates the two.
 
 ## The example I actually needed
 
@@ -63,9 +64,9 @@ A useful collection also keeps the approved examples in the order they happened.
 
 Suppose I finish an article in Arc, then go to the message box in one specific Codex task. The example must show the article before I moved, name that task and field rather than just "Codex," attach later evidence of the move, and carry my verdict that the label is right.
 
-Two requirements stay strict. The observation must come from strictly before the move, and the recorded destination must be correct. A post-click screenshot can reveal the answer. A wrong destination makes the score meaningless.
+Two requirements stay strict. The observation must come from strictly before the move, and the recorded destination must be correct. That is because a post-click screenshot can reveal the answer, while a wrong destination makes the score meaningless.
 
-Everything else can be loose at first. I do not need perfectly synchronized monitors, a tamper-proof record, or automatic identification of every on-screen control. OpenCUA's [collection method](https://arxiv.org/abs/2508.09123) pairs each action with the last visually distinct screen from before it. I collected the other relevant studies in [a separate research note](https://dylanduyvu.github.io/30-projects/computer-use-nap-fidelity-research-2026-07-26).
+But everything else can be loose at first. I do not need perfectly synchronized monitors, a tamper-proof record, or automatic identification of every on-screen control. The prior-state rule also appears in OpenCUA's [collection method](https://arxiv.org/abs/2508.09123), which pairs each action with the last visually distinct screen from before it. I collected the other relevant studies in [a separate research note](https://dylanduyvu.github.io/30-projects/computer-use-nap-fidelity-research-2026-07-26).
 
 ## The recorder is only one part of the tool
 
@@ -79,11 +80,11 @@ The tool I wanted has seven jobs:
 6. show enough evidence that a person can approve, fix, reject, or park each example; and
 7. export the approved examples in time order, in a format a model can train on.
 
-A continuous recording covers the first job and supplies raw material for the rest. It does not do the rest.
+A continuous recording covers the first job and supplies raw material for the rest. But it does not do the rest.
 
-Screenpipe is the concrete case. Version 2.5.132 captured both monitors, inputs, app and window changes, web addresses, screenshot text, and the accessibility tree, which is how macOS describes on-screen controls to assistive software.
+Screenpipe shows the difference. Version 2.5.132 captured both monitors, inputs, app and window changes, web addresses, screenshot text, and the accessibility tree, which is how macOS describes on-screen controls to assistive software.
 
-It still did not produce my examples. In one 50-minute session, 76 of the 164 screenshots linked to clicks came after the click. The linked frame was not guaranteed to show the prior state. The full measurements are in [my audit](https://dylanduyvu.github.io/50-sources/screenpipe-live-capture-audit-2026-07-23). Screenpipe's [current documentation](https://docs.screenpipe.com/architecture) describes a fuller accessibility tree and more input methods than I observed. These numbers apply only to my version and setup.
+But it still did not produce my examples. In one 50-minute session, 76 of the 164 screenshots linked to clicks came after the click. So the linked frame was not guaranteed to show the prior state. The full measurements are in [my audit](https://dylanduyvu.github.io/50-sources/screenpipe-live-capture-audit-2026-07-23). At the same time, Screenpipe's [current documentation](https://docs.screenpipe.com/architecture) describes a fuller accessibility tree and more input methods than I observed. These numbers apply only to my version and setup.
 
 ## The closest tools already form a product category
 
@@ -93,9 +94,9 @@ Then I looked at enterprise task mining, software that records work to find repe
 
 ![Mimica canceled my scheduled demo after deciding that my one-person request did not fit its focus on larger enterprise organizations.](../70-attachments/mimica-demo-canceled-enterprise-focus-2026-07-27.png)
 
-[Celonis Task Mining](https://docs.celonis.com/en/task-mining.html) documents background capture, raw and labeled event tables, and screenshots of [all attached desktops](https://docs.celonis.com/en/event-processing-rules.html), but runs only on Windows. [Skan](https://www.skan.ai/process-discovery-and-analysis) and [UiPath Task Mining](https://docs.uipath.com/task-mining/automation-cloud/latest/user-guide/introduction-as) are in the same category. UiPath's earlier [unassisted mode](https://docs.uipath.com/task-mining/automation-suite/2024.10/user-guide/unassisted-task-mining-analysis-guide) found workflows across monitors before it [was removed](https://docs.uipath.com/task-mining/automation-cloud/latest/release-notes/november-2024) from the cloud in December 2025.
+[Celonis Task Mining](https://docs.celonis.com/en/task-mining.html) is another enterprise counterexample. It documents background capture, raw and labeled event tables, and screenshots of [all attached desktops](https://docs.celonis.com/en/event-processing-rules.html), but runs only on Windows. [Skan](https://www.skan.ai/process-discovery-and-analysis) and [UiPath Task Mining](https://docs.uipath.com/task-mining/automation-cloud/latest/user-guide/introduction-as) are in the same category. UiPath's earlier [unassisted mode](https://docs.uipath.com/task-mining/automation-suite/2024.10/user-guide/unassisted-task-mining-analysis-guide) found workflows across monitors before it [was removed](https://docs.uipath.com/task-mining/automation-cloud/latest/release-notes/november-2024) from the cloud in December 2025.
 
-The category exists. Four narrower questions stayed unresolved in the public material. Is the screenshot from before the move? Does the output name the exact native-app or browser destination? Can the user fix each answer? Can approved examples be exported in time order? For enterprise systems, these may be demo questions rather than gaps.
+So the category exists. But four narrower questions stayed unresolved in the public material. Is the screenshot from before the move? Does the output name the exact native-app or browser destination? Can the user fix each answer? Can approved examples be exported in time order? For enterprise systems, these may be demo questions rather than gaps.
 
 The table maps public documentation and my tests to the seven jobs. A question mark means the material did not answer the question. Vendor rows are vendor claims. Local results apply only to my setup in July 2026.
 
@@ -111,7 +112,7 @@ The table maps public documentation and my tests to the seven jobs. A question m
 | Skan | Partial (vendor claim) | ? | ? | ? | Yes (vendor claim) | Partial | ? |
 | My custom stack | Partial (controlled runs) | Yes (measured) | Partial (measured) | Partial (measured) | No | No | No |
 
-Read the columns, not the rows. Several tools cover jobs one, five, and seven. The questions cluster around prior state, exact destination, and row review. My custom stack is the concession in one row: I built much of the capture layer, imperfectly, but not the parts that made the data usable. Corrections are welcome.
+The pattern is clearer by column. Several tools cover jobs one, five, and seven, while the questions cluster around prior state, exact destination, and row review. My custom stack is the concession in one row: I built much of the capture layer, imperfectly, but not the parts that made the data usable. Corrections are welcome.
 
 ## The strongest objection, conceded
 
@@ -119,15 +120,15 @@ The strongest objection is simple. I missed task mining, then overbuilt a benchm
 
 Most of that is right. Several tools capture ordinary work, discover workflows, and export detailed records. I treated an automatic dataset as a prerequisite for a small test. That sequencing mistake cost most of the three days.
 
-The remaining claim is narrower. The enterprise systems were not an immediate self-serve path for my experiment, and I found no public material showing one tool that preserves prior state, names the exact destination, lets me correct each answer, and exports accepted examples in order. That may be an undocumented capability or a thin layer on an existing platform rather than a new category. Mimica canceled the demo before I could ask, so its technical answers remain unknown.
+But the remaining claim is narrower. The enterprise systems were not an immediate self-serve path for my experiment, and I found no public material showing one tool that preserves prior state, names the exact destination, lets me correct each answer, and exports accepted examples in order. That may be an undocumented capability or a thin layer on an existing platform rather than a new category. Mimica canceled the demo before I could ask, so its technical answers remain unknown.
 
 ## A first version can be cobbled together
 
-The first experiment does not need that product. Screenpipe can remain the recorder. My unvalidated plan is a small offline script that finds possible navigation moments, selects the latest usable prior frame, drafts a destination from later evidence, and writes the examples to a table. I would check every row by hand.
+So the first experiment does not need that product. Screenpipe can remain the recorder, while a small offline script finds possible navigation moments, selects the latest usable prior frame, drafts a destination from later evidence, and writes the examples to a table. I have not validated this plan, and I would check every row by hand.
 
 The script skips live suggestions, a review interface, reliable automatic boundaries, perfect monitor synchronization, and stable identification of every control. Its only job is to reduce labeling work. If it becomes another tool-building project, I will label the first examples by hand.
 
-Low friction here means install, record, and review. It does not mean querying a database, aligning several clocks, or debugging monitor geometry. That is what my three days looked like.
+Here, low friction means install, record, and review. It does not mean querying a database, aligning several clocks, or debugging monitor geometry. That is what my three days looked like.
 
 ## What a dependable version still needs
 
@@ -140,14 +141,14 @@ A dependable automatic version still has to:
 5. make corrections fast; and
 6. export corrected examples consistently.
 
-Whether that requires a new product or a layer on an existing platform is unresolved. Open tools provide the pieces but require custom code. Enterprise systems may already provide enough recording, grouping, review, and export. I will not call this a new product gap until a demo or trial answers the four questions above.
+Whether that requires a new product or a layer on an existing platform is unresolved. Open tools provide the pieces but require custom code, while enterprise systems may already provide enough recording, grouping, review, and export. So I will not call this a new product gap until a demo or trial answers the four questions above.
 
 ## Why this matters and what happens next
 
 The idea came from a conversation with [Niyant](https://handsdiff.github.io/phase-1) about personal AI that learns from how you work. I proposed using Tab, or one of three hotkeys, to route me to the place I would likely want next. He first called the idea vague, then said the narrowed version aligned overall. He also warned that if I mostly use a few apps, cycling among them could look useful without understanding anything. That is why I care about the exact place, not the app, and useful predictions, not raw accuracy. The longer idea is in [my Tab note](https://dylanduyvu.github.io/00-inbox/tab-could-autocomplete-the-next-computer-action) and [experiment plan](https://dylanduyvu.github.io/20-syntheses/computer-use-nap-shadow-experiment).
 
-[A Click Ahead](https://arxiv.org/abs/2309.12170) shows that a simpler version can work under easier conditions. Its conventional recurrent neural network, not a large language model, chose the exact next action correctly 34.63 percent of the time from 442 known actions. My destinations are more specific and not confined to a fixed list, so I read the result as precedent, not a forecast.
+Still, [A Click Ahead](https://arxiv.org/abs/2309.12170) shows that a simpler version can work under easier conditions. Its conventional recurrent neural network, not a large language model, chose the exact next action correctly 34.63 percent of the time from 442 known actions. My destinations are more specific and not confined to a fixed list, so I read the result as precedent, not a forecast.
 
-The corrected sequence is short. Run the manual pilot. Decide whether the predictions are useful. Use the offline script only if it actually reduces the labeling work. Build, or buy, the dependable version only if the prediction earns it.
+So the corrected sequence is short. Run the manual pilot. Decide whether the predictions are useful. Use the offline script only if it actually reduces the labeling work. Build, or buy, the dependable version only if the prediction earns it.
 
 If you have built something that already produces these examples, or you are working on it, I want to see it. The seven jobs above are the test. dylanduyvu@gmail.com.
