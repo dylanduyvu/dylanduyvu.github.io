@@ -8,11 +8,11 @@ updated: 2026-07-27
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 5:36 PM EDT
+Generated: Jul 27, 2026, 5:38 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 67 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 68 note commits. The most recent movement is:
 
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
@@ -28,6 +28,14 @@ In the past 7 days, the public vault changed through 67 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 27, 2026, 5:38 PM EDT - article: correct automatic pipeline sequencing
+
+article: correct automatic pipeline sequencing.
+
+Changed notes:
+  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 27, 2026, 5:36 PM EDT - article: restore automatic acquisition ladder
 
@@ -121,18 +129,11 @@ Changed notes:
   - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
   - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-### Jul 27, 2026, 11:57 AM EDT - article: reconcile Mimica and Celonis setup fit
-
-article: reconcile Mimica and Celonis setup fit.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-_Showing the newest 12 of 32 updates in this window._
+_Showing the newest 12 of 33 updates in this window._
 
 ## Past 7 Days
 
+- Jul 27, 2026: article: correct automatic pipeline sequencing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: restore automatic acquisition ladder - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: compress Screenpipe reconstruction caveat - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: correct Screenpipe frame ordering evidence - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -157,12 +158,12 @@ _Showing the newest 12 of 32 updates in this window._
 - Jul 27, 2026: article: smooth Day 0 causal transitions - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: retitle recording and prediction draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: add Mimica demo cancellation evidence - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 26, 2026: article: compress Day 0 draft without dropping claims - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-_Showing the newest 25 of 67 updates in this window._
+_Showing the newest 25 of 68 updates in this window._
 
 ## Past 30 Days
 
+- Jul 27, 2026: article: correct automatic pipeline sequencing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: restore automatic acquisition ladder - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: compress Screenpipe reconstruction caveat - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: correct Screenpipe frame ordering evidence - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -187,6 +188,5 @@ _Showing the newest 25 of 67 updates in this window._
 - Jul 27, 2026: article: smooth Day 0 causal transitions - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: retitle recording and prediction draft - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: add Mimica demo cancellation evidence - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 26, 2026: article: compress Day 0 draft without dropping claims - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-_Showing the newest 25 of 202 updates in this window._
+_Showing the newest 25 of 203 updates in this window._
