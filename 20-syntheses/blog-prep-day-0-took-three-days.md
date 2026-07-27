@@ -121,7 +121,9 @@ One usable row is:
 
 Example:
 
-> Dylan reaches the end of an article in Arc → `Codex → article-editing conversation → message box`
+> Dylan reaches the end of an article in Arc → opens the article-editing Codex conversation → focuses its message box
+
+This is a two-record sequence when opening the conversation and focusing the message box require separate interactions. Record one pairs the article with the specific Codex conversation. Record two pairs the open conversation with its message box. Do not collapse separate semantic focus changes into one navigation record.
 
 The destination may be an app, window, webpage, document, Codex task, input field, link, or button.
 
@@ -388,7 +390,7 @@ Public context:
 
 ### 1. Day 0 took three days
 
-Use the five-day plan and the fact that Day 0 was still incomplete after three days as the hook. Keep the plan in a list so readers can see the accumulating-history comparison without parsing a dense paragraph. Place the `A Click Ahead` precedent and Niyant's warning after the plan, where they explain why the experiment was worth running and why exact destinations matter.
+Use the five-day plan and the fact that Day 0 was still incomplete after three days as the hook. Keep the plan in a list so readers can see the accumulating-history comparison without parsing a dense paragraph. Place the `A Click Ahead` precedent after the plan to explain why the experiment was worth running. The standalone sentence above the metadata links already preserves Niyant's role, so do not repeat his feedback in the body unless a later argument specifically requires it.
 
 Then describe the NAPsack patch, custom capture layer, browser extension, and stopped 30-action diagnostic. State why Dylan stopped at 12 without giving the full fragility account yet.
 
@@ -400,7 +402,7 @@ Define the core dataset as a chronological sequence of navigation records. Each 
 
 > what was available strictly before I navigated → the exact place I went next
 
-Give a concrete record: Dylan reaches the end of an article in Arc, then goes to `Codex → article-editing conversation → message box`. Explain that the saved input must show what he saw before moving and the answer must name the exact destination rather than merely `Codex`.
+Give a concrete two-record sequence: Dylan reaches the end of an article in Arc, opens the article-editing Codex conversation, then focuses its message box. Explain that the first record pairs the article with the specific conversation and the second pairs the open conversation with its message box. The answer must name each exact destination rather than merely `Codex`.
 
 Explain why the timing and destination label must be right for the prediction test to mean anything. A post-click screenshot can reveal the destination to the LLM, while a bad label can make it impossible to tell whether the prediction was right.
 
@@ -431,7 +433,7 @@ Then return to the larger experiment. Even a finished walkthrough would have lef
 
 Close with the sequencing lesson. Testing data quality was reasonable because bad acquisition would make the prediction result uninterpretable. The mistake was requiring the dependable automatic pipeline before a cheap qualitative prediction test.
 
-### 5. Existing products solve pieces of the problem
+### 5. Existing products solve pieces, but not the full conversion
 
 Group the tools into two scannable lists. The research and self-serve group contains NAPsack, OpenCUA, and Scribe. The enterprise task-mining group contains Mimica and Celonis. Give each product one bullet that states what it does well and the specific reason it did not complete Dylan's workflow. Mimica canceled the one-person evaluation, and Celonis is Windows-only.
 

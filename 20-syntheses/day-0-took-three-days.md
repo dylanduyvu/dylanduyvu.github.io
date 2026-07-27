@@ -48,7 +48,8 @@ Completed 2026-07-27: moved the acquisition-ladder explanation out of the datase
 Completed 2026-07-27: clarified the Codex destination example, removed the six-action smoke result from the narrative, and rewrote the walkthrough section around why it existed, why it stopped at 12 actions, and which validation gates never ran.
 Completed 2026-07-27: rebuilt the article around one six-section narrative, moved the prediction precedent into the setup, removed the body tool matrix and standalone objection, and combined the manual next step with the product-gap conclusion.
 Completed 2026-07-27: converted the product survey into two scannable groups and removed its repeated version of the conversion requirements.
-Remaining before final publication: Dylan's personal read and final link verification after later edits.
+Completed 2026-07-27: finished Dylan's top-to-bottom readability pass, clarified the custom system's purpose, defined first-use acronyms, and corrected the two-record navigation example.
+Remaining before final publication: Dylan's final approval after the published readability checkpoint.
 %%
 
 # The Missing Step Between Recording and Prediction
@@ -61,9 +62,9 @@ Remaining before final publication: Dylan's personal read and final link verific
 
 ---
 
-*I wanted to test whether an LLM could predict the exact app, page, document, task, or field I would navigate to next, so pressing the Tab key could take me there. But the prediction test never started. Instead, I spent three days failing to assemble the dataset it needed.*
+*I wanted to test whether a large language model (LLM) could predict the exact app, page, document, task, or field I would navigate to next based on what was currently on my screens and my recent work history. If it worked, pressing the Tab key could take me there. But the prediction test never started. Instead, I spent three days failing to assemble the dataset it needed.*
 
-The dataset itself was simple. Each record needed to pair what was on my screens immediately before I moved with the exact place I went next. The hard part was producing those records automatically from continuous screen activity. Existing tools captured my screens, clicks, app switches, and browser activity, but no product I could use converted that evidence into the dataset. I later realized that the first prediction test did not need an automatic system.
+The dataset itself was simple. Each record needed to pair what was on my screens immediately before I moved with the exact place I went next. The hard part was producing those records automatically from continuous screen activity. Existing tools captured my screens, clicks, app switches, and browser activity, but no product I could use converted that evidence into the dataset.
 
 ## Day 0 took three days
 
@@ -75,26 +76,24 @@ I planned one setup day followed by four experiment days.
 - **Day 3:** Repeat with zero, one, and two days of history.
 - **Day 4:** Repeat with zero, one, two, and three days of history.
 
-If history made the top-three exact-destination guesses qualitatively more useful, I would build a live public demo where pressing Tab took me to the most likely destination.
+If history made the top-three exact-destination guesses qualitatively more useful, I would build a live public demo where pressing Tab took me to the most likely destination. Essentially Cursor Tab, but for navigating my computer instead of editing code.
 
 [A Click Ahead](https://arxiv.org/abs/2309.12170) made the experiment worth running. Its conventional recurrent neural network predicted the exact next action with 34.63 percent accuracy across a fixed set of 442 recurring actions. It did not use an LLM, and its closed list was easier than naming my specific destinations, so the result was a precedent rather than an accuracy forecast.
 
-Niyant first called my version of the idea vague. After I narrowed it, he said it aligned with his personalization thesis but warned that predicting which of a few apps I would open could look useful without being useful. So I chose a stricter target: the exact destination and whether reaching it would save meaningful effort.
-
 Then Day 0 took three days, and it was still not complete.
 
-I started with [Screenpipe](https://github.com/screenpipe/screenpipe), which runs in the background and records screen and input activity. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups nearby clicks and keystrokes into short segments and describes each segment in plain language. Because my second monitor sits above my main one, I had to patch NAPsack's display assignment. Then I built a second capture system using Hammerspoon for Mac automation, Apple's ScreenCaptureKit, and an Arc browser extension.
+I started with [Screenpipe](https://github.com/screenpipe/screenpipe), which runs in the background and records screen and input activity. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups nearby clicks and keystrokes into short segments and describes each segment in plain language. Because my second monitor sits above my main one, I had to patch NAPsack's display assignment. To turn those recordings into the records I needed, I built a second capture system using Hammerspoon for Mac automation, Apple's ScreenCaptureKit, and an Arc browser extension.
 
-I tested that system with a 30-action diagnostic covering known clicks, focus changes, app switches, keyboard commands, and page navigations across Mac apps, websites, and both monitors. I stopped after 12 accepted checkpoints. Each new action required another rule for judging the capture, the remaining browser cases needed more code, and the two monitor streams were still not reliably synchronized. I stopped rather than spend another half day extending a system that had not produced data for the prediction test.
+I tested that system with a 30-action diagnostic covering known clicks, focus changes, app switches, keyboard commands, and page navigations across Mac apps, websites, and both monitors. I stopped after 12 accepted checkpoints. Each new action required another rule for judging the capture, the remaining browser cases needed more code, and the two monitor streams were still not reliably synchronized. The system was not going to scale without much more work. I chose not to spend another half day on it when I still had no dataset for the prediction test.
 
 ## What the dataset needed
 
-I needed a chronological dataset. Each navigation record had two parts:
+I needed a chronological dataset of navigation records. Each record needed two parts:
 
 1. what was on my screens immediately before I moved;
 2. the exact place I went next.
 
-Suppose I finished reading an article in Arc, then moved to the message box in the Codex conversation where I was editing it. The record needed to show the article before I moved and name that conversation and message box rather than only "Codex."
+Suppose I finished reading an article in Arc, then opened the Codex conversation where I was editing it, then clicked its message box. That sequence needed two records. The first showed the article and named the specific conversation I opened. The second showed the conversation and named its message box. Labeling either destination only "Codex" would be too broad.
 
 Both parts had to be right for the prediction test to mean anything. A screenshot taken after I moved could reveal the destination to the LLM. A wrong destination label could make a correct prediction look wrong or a wrong prediction look correct.
 
@@ -134,13 +133,13 @@ Even a completed walkthrough would have shown only that the system could reconst
 
 That validation work was reasonable. If the timing or destination labels were wrong, I would not know whether a bad result came from the LLM or the data. The sequencing mistake was making a dependable automatic pipeline a prerequisite for a cheap qualitative test.
 
-## Existing products solve pieces of the problem
+## Existing products solve pieces, but not the full conversion
 
 The closest tools fell into two groups.
 
 **Research and self-serve tools**
 
-- **[NAPsack](https://github.com/GeneralUserModels/napsack):** Groups passive activity into captioned segments and exports JSONL. Its [published prediction task](https://arxiv.org/abs/2603.05923) predicts those broader activity descriptions rather than exact destinations.
+- **[NAPsack](https://github.com/GeneralUserModels/napsack):** Groups passive activity into captioned segments and exports them as JSONL, a text format with one record per line. Its [published prediction task](https://arxiv.org/abs/2603.05923) predicts those broader activity descriptions rather than exact destinations.
 
 - **[OpenCUA](https://arxiv.org/abs/2508.09123):** Collects deliberate demonstrations, matches actions with the last distinct prior screenshot, supports review, and exports standardized trajectories. Its [Mac setup](https://agentnet-tool.xlang.ai/quickstart/mac_quick_start/) records one display.
 
