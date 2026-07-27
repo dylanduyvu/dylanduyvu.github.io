@@ -28,6 +28,7 @@ Added after the lint passes on 2026-07-26: the section 4 comparison table and it
 Completed 2026-07-26: compression pass reduced reader-visible article copy from 2,373 to 1,791 words without removing the table, evidence boundaries, or experiment stages.
 Updated 2026-07-27: Mimica canceled the scheduled demo before the product questions could be asked. The Mimica capability cells remain question marks, and the cancellation screenshot now supports only the enterprise-market claim.
 Completed 2026-07-27: connective-tissue pass added short causal and contrast words at abrupt seams without changing the argument or section order.
+Completed 2026-07-27: global epistemic pass removed wording that made the unrun prediction experiment sound like a negative result.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; Celonis follow-up before any stronger product claim; final link verification after later edits.
 %%
 
@@ -47,9 +48,9 @@ Prediction never started. Instead, I spent those three days trying to assemble t
 
 I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records screens and inputs continuously. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups activity into captioned bursts, but had to patch its display assignment because my second monitor sits above my main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension. A 30-action diagnostic consumed most of a day and stopped at 12 accepted checkpoints. Even then, the monitors were still out of sync.
 
-So the work showed that higher-fidelity recording was possible. But it did not show that the place I would navigate next was predictable.
+That work showed only that higher-fidelity recording was possible. It did not get me to a usable set of examples, so I never reached the prediction test.
 
-The delay had two causes. The tools had a real gap, but I also tried to build a dependable automatic system before running a small test. This post separates the two.
+The delay had two causes. The tools I could use did not assemble the examples, but I also tried to build a dependable automatic system before running a small test. This post separates the two.
 
 ## The example I actually needed
 
@@ -98,7 +99,7 @@ Then I looked at enterprise task mining, software that records work to find repe
 
 So the category exists. But four narrower questions stayed unresolved in the public material. Is the screenshot from before the move? Does the output name the exact native-app or browser destination? Can the user fix each answer? Can approved examples be exported in time order? For enterprise systems, these may be demo questions rather than gaps.
 
-The table maps public documentation and my tests to the seven jobs. A question mark means the material did not answer the question. Vendor rows are vendor claims. Local results apply only to my setup in July 2026.
+The table maps public documentation and my capture tests to the seven jobs. A question mark means the material did not answer the question. Vendor rows are vendor claims. Local measurements apply only to my setup in July 2026.
 
 | Tool | 1. Ambient | 2. Prior state | 3. Both monitors | 4. Exact destination | 5. Boundaries | 6. Row review | 7. Export |
 |---|---|---|---|---|---|---|---|
@@ -116,7 +117,7 @@ The pattern is clearer by column. Several tools cover jobs one, five, and seven,
 
 ## The strongest objection, conceded
 
-The strongest objection is simple. I missed task mining, then overbuilt a benchmark. Mimica and Celonis already capture and export desktop activity. Screenpipe captured enough for a manual test. Stopping at 12 of 30 checkpoints shows an over-scoped protocol, not a missing product.
+The strongest objection is simple. I missed task mining, then overbuilt a benchmark. Mimica and Celonis already capture and export desktop activity. Screenpipe captured enough raw material to attempt a manual test. Stopping at 12 of 30 checkpoints shows an over-scoped protocol, not a missing product.
 
 Most of that is right. Several tools capture ordinary work, discover workflows, and export detailed records. I treated an automatic dataset as a prerequisite for a small test. That sequencing mistake cost most of the three days.
 

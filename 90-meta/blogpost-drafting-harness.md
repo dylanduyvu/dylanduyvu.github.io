@@ -279,6 +279,10 @@ New entries from "The Track Record That Can't Travel" (2026-07-08 to 2026-07-11)
 - holder filings beat issuer summaries -> a fund's SEC portfolio filing reporting the exact rate of a loan it held is stronger evidence than the issuer's proxy summary or any press figure, and it is publicly linkable. For private-credit terms, search fund NPORT filings before settling for secondary numbers.
 - conclusions need the evidence-fit gate too -> a finding can be true, load-bearing in the vault, and still not belong in the post, because the post never raised the question it answers. Imported conclusions rebut objections the reader has not had (rule 11) and carry corpus-context the reader lacks. The author cannot detect this by rereading, because the author cannot unknow the context; the belonging lint and the naive-reader pass exist for exactly this, and the ownership pass remains the terminal gate. (2026-07-11, the continuous-surveillance paragraph.)
 
+New entry from "The Missing Step Between Recording and Prediction" (2026-07-27):
+
+- an unrun experiment has no result -> if setup or data assembly prevents the evaluation from starting, say `the test never ran` or `the claim remains untested`. Do not write `the work did not show X`, because that phrasing reads like a negative experimental finding. Then run the section 13 seam and global checks for every later sentence that describes the experiment, its evidence, or its outcome.
+
 ## 16. Voice Register Option: Simple Declarative (The American Compute Register)
 
 Extracted 2026-07-05 from American Compute's blog (Bernie Margulies / AC Research), the reference for simple, straightforward, easy-to-digest technical-finance writing. Use this register when the audience includes smart readers without domain background and the goal is that anyone can follow every section.
