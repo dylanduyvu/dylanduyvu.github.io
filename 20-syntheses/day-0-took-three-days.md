@@ -30,7 +30,7 @@ Updated 2026-07-27: Mimica canceled the scheduled demo before the product questi
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; Celonis follow-up before any stronger product claim; final link verification after later edits.
 %%
 
-# Day 0 Took Three Days
+# The Missing Step Between Recording and Prediction
 
 *I wanted to know whether a model could predict the exact place I would go next on my computer. Instead, I spent three days learning what one trustworthy example had to contain.*
 
@@ -40,7 +40,7 @@ I needed examples of what I saw before each move and the exact place I went. Exi
 
 I planned a four-day experiment. Day 0 was recorder setup. Day 0 took three days.
 
-The plan was to record my normal work, replay each moment before I navigated, and ask a model for its top three guesses. If the guesses felt useful, I would build a live demo bound to the Tab key.
+The plan was to record my normal work, replay each moment before I navigated, and ask a model for its top three guesses. If the guesses felt useful, I would build a live demo bound to the Tab key. The tab-autocomplete feature for computer navigation.
 
 Prediction never started. The three days went to the data.
 
