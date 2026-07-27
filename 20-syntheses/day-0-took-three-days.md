@@ -2,7 +2,7 @@
 type: blogpost
 status: draft
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-07-27
 people: []
 projects:
   - personal-ai-context-learning
@@ -24,9 +24,10 @@ sources:
 Draft status: first complete draft. Harness section 17 checkpoint 2 reached (first complete draft exists).
 Written from: blog-prep-day-0-took-three-days.md (all eight sections, four anchors, claim-ledger wording).
 Completed 2026-07-26: first ownership edit, naive-reader full read, citation-binding pass, colon audit, overclaim search, belonging pass, and register re-scan.
-Added after the lint passes on 2026-07-26: the section 4 comparison table and its two framing paragraphs, register-checked individually at insertion. Every table cell is a claim. The Mimica demo on July 27 may flip Mimica cells from question marks to Yes or No.
+Added after the lint passes on 2026-07-26: the section 4 comparison table and its two framing paragraphs, register-checked individually at insertion. Every table cell is a claim.
 Completed 2026-07-26: compression pass reduced reader-visible article copy from 2,373 to 1,791 words without removing the table, evidence boundaries, or experiment stages.
-Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; Mimica demo and Celonis follow-up before any stronger product claim; final link verification after later edits.
+Updated 2026-07-27: Mimica canceled the scheduled demo before the product questions could be asked. The Mimica capability cells remain question marks, and the cancellation screenshot now supports only the enterprise-market claim.
+Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; Celonis follow-up before any stronger product claim; final link verification after later edits.
 %%
 
 # Day 0 Took Three Days
@@ -88,7 +89,9 @@ It still did not produce my examples. In one 50-minute session, 76 of the 164 sc
 
 I first compared research tools and self-serve products. NAPsack groups passive activity into captioned bursts, but its [published task](https://arxiv.org/abs/2603.05923) predicts plain-language task descriptions rather than exact destinations. [OpenCUA](https://arxiv.org/abs/2508.09123) pairs actions with the last distinct prior screenshot, but collects declared demonstrations; its [macOS setup](https://agentnet-tool.xlang.ai/quickstart/mac_quick_start/) records one display. [Scribe](https://support.scribehow.com/hc/en-us/articles/30708953411229-Using-Autocapture) discovers workflows across approved business apps and lets users review, edit, publish, or discard them. Its documented exports are finished guides, including [Markdown](https://support.scribehow.com/hc/en-us/articles/9254133020189-Exporting-a-Scribe-to-Markdown), rather than raw prediction examples.
 
-Then I looked at enterprise task mining, software that records work to find repeated business processes. [Mimica](https://www.mimica.ai/product) advertises passive desktop capture, task discovery, step-level screenshots, spreadsheet export, and a [native macOS recorder](https://www.mimica.ai/articles/introducing-mimica-task-mining-for-macos) announced July 22, 2026. It sells through enterprise sales, and its public signup rejected my personal email with "This email is not enabled, please contact your admin." Its [proof of concept](https://www.mimica.ai/contact) also starts with sales.
+Then I looked at enterprise task mining, software that records work to find repeated business processes. [Mimica](https://www.mimica.ai/product) advertises passive desktop capture, task discovery, step-level screenshots, spreadsheet export, and a [native macOS recorder](https://www.mimica.ai/articles/introducing-mimica-task-mining-for-macos) announced July 22, 2026. It sells through enterprise sales, and its public signup rejected my personal email with "This email is not enabled, please contact your admin." Its [proof of concept](https://www.mimica.ai/contact) also starts with sales. On the morning of my scheduled demo, Mimica canceled it after deciding my one-person request did not fit its focus on larger enterprise organizations.
+
+![Mimica canceled my scheduled demo after deciding that my one-person request did not fit its focus on larger enterprise organizations.](../70-attachments/mimica-demo-canceled-enterprise-focus-2026-07-27.png)
 
 [Celonis Task Mining](https://docs.celonis.com/en/task-mining.html) documents background capture, raw and labeled event tables, and screenshots of [all attached desktops](https://docs.celonis.com/en/event-processing-rules.html), but runs only on Windows. [Skan](https://www.skan.ai/process-discovery-and-analysis) and [UiPath Task Mining](https://docs.uipath.com/task-mining/automation-cloud/latest/user-guide/introduction-as) are in the same category. UiPath's earlier [unassisted mode](https://docs.uipath.com/task-mining/automation-suite/2024.10/user-guide/unassisted-task-mining-analysis-guide) found workflows across monitors before it [was removed](https://docs.uipath.com/task-mining/automation-cloud/latest/release-notes/november-2024) from the cloud in December 2025.
 
@@ -116,7 +119,7 @@ The strongest objection is simple. I missed task mining, then overbuilt a benchm
 
 Most of that is right. Several tools capture ordinary work, discover workflows, and export detailed records. I treated an automatic dataset as a prerequisite for a small test. That sequencing mistake cost most of the three days.
 
-The remaining claim is narrower. The enterprise systems were not an immediate self-serve path for my experiment, and I found no public material showing one tool that preserves prior state, names the exact destination, lets me correct each answer, and exports accepted examples in order. That may be an undocumented capability or a thin layer on an existing platform rather than a new category. I have a vendor demo booked to find out.
+The remaining claim is narrower. The enterprise systems were not an immediate self-serve path for my experiment, and I found no public material showing one tool that preserves prior state, names the exact destination, lets me correct each answer, and exports accepted examples in order. That may be an undocumented capability or a thin layer on an existing platform rather than a new category. Mimica canceled the demo before I could ask, so its technical answers remain unknown.
 
 ## A first version can be cobbled together
 
