@@ -33,6 +33,7 @@ Updated 2026-07-27: added the causal account of why the controlled capture stack
 Completed 2026-07-27: second compression pass removed repeated setup, conclusions, and product requirements while preserving the causal account, evidence boundaries, counterargument, and experiment stages.
 Updated 2026-07-27: rewrote the deck to name the LLM, exact-destination scope, Tab-key interaction, unrun test, and automated dataset attempt; removed repeated opening lines.
 Completed 2026-07-27: added the public associated-research, file-specific revision-history, and disclosure links required by the publication harness.
+Updated 2026-07-27: expanded the opening into a day-by-day experiment list that defines the baseline, accumulating-history comparison, and qualitative live-demo decision.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; Celonis follow-up before any stronger product claim; final link verification after later edits.
 %%
 
@@ -50,9 +51,17 @@ I needed examples of what I saw before each move and the exact place I went. Exi
 
 ## Day 0 took three days
 
-I planned a four-day experiment. Day 0 was supposed to be recorder setup, but it took three days.
+I planned four experiment days after one setup day:
 
-For each navigation, I would replay what was visible just before it and ask the LLM for its top three guesses.
+- **Day 0:** Configure Screenpipe and define how recorded work would become examples.
+- **Day 1:** Record my normal work and create the first day of history.
+- **Day 2:** On the same navigation events, compare the LLM seeing only my current screen against the LLM seeing that screen plus Day 1 history.
+- **Day 3:** Repeat with zero, one, and two days of history.
+- **Day 4:** Repeat with zero, one, two, and three days of history.
+
+If history made the top-three exact-destination guesses qualitatively more useful, I would build a live public demo.
+
+Day 0 was supposed to be setup. It took three days.
 
 I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records screens and inputs continuously. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups activity into captioned bursts, but patched its display assignment because my second monitor sits above my main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension. A 30-action diagnostic stopped at 12 accepted checkpoints. Even then, the monitors were still out of sync.
 
