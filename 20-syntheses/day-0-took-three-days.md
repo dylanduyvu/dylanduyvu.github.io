@@ -44,6 +44,7 @@ Updated 2026-07-27: restored the broader dataset-assembly thesis after the Scree
 Corrected 2026-07-27: replaced the precision-dependent `76 of 164` Screenpipe ordering figure with the raw-timestamp split of 83 post-click and 81 pre-click frames.
 Completed 2026-07-27: compressed the untested Screenpipe reconstruction path into a caveat so it qualifies the evidence without competing with the observed result.
 Corrected 2026-07-27: separated the core dataset, acquisition-calibration machinery, and post-failure manual fallback. Human inspection in the 30-action walkthrough graded the recorder; it was not the intended ongoing labeling workflow.
+Completed 2026-07-27: moved the acquisition-ladder explanation out of the dataset-schema section and into the capture-fragility section.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; final link verification after later edits.
 %%
 
@@ -90,10 +91,6 @@ The dataset had to keep the navigation records in the order they happened. Each 
 
 For example, suppose I finished reading an article on my Arc browser, then moved to the message box in one Codex task. The record needed to show the article before I moved and name that specific task and field rather than just "Codex."
 
-The 30-action walkthrough was the first validation gate for an automatic collection system. I knew each intended action, then inspected the captured evidence to see whether the system reconstructed it correctly. I was grading the recorder, not labeling the dataset I intended to collect every day.
-
-Even passing that walkthrough would not have unlocked prediction. The next gates were a blind 30-action calibration and an audit of 50 to 100 actions from normal work. Only if the full acquisition ladder passed would later records flow directly into the prediction experiment without manual review.
-
 For the prediction test to mean anything, the timing and destination label had to be right. A screenshot taken after I moved could give the LLM the answer, while a bad label could make it impossible to tell whether its prediction was right.
 
 ## Recording alone does not produce this dataset
@@ -119,9 +116,13 @@ The full measurements are in [my audit](https://dylanduyvu.github.io/50-sources/
 
 ## Why my custom capture system stayed fragile
 
-The 30 actions were a component diagnostic, not training data, a formal calibration, or a prediction test. The initial controlled run did not establish that the stack worked across native controls, ordinary and dynamic webpages, focus and app changes, keyboard navigation, and both monitors. I needed a broader check before building the formal calibration harness.
+The 30-action walkthrough was the first validation gate for an automatic collection system. It was a component diagnostic, not training data, a formal calibration, or a prediction test. I knew each intended action, then inspected the captured evidence to see whether the system reconstructed it correctly. I was grading the recorder, not labeling the dataset I intended to collect every day.
 
-That broader check was fragile for five reasons:
+The initial controlled run had not established that the stack worked across native controls, ordinary and dynamic webpages, focus and app changes, keyboard navigation, and both monitors. I needed the broader walkthrough before building the formal calibration harness.
+
+Even passing the walkthrough would not have unlocked prediction. The next gates were a blind 30-action calibration and an audit of 50 to 100 actions from normal work. Only if the full acquisition ladder passed would later records flow directly into the prediction experiment without manual review.
+
+The walkthrough was fragile for five reasons:
 
 - **The protocol required perfect choreography.** I had to prepare the application, mark ready, freeze both displays, perform one action, mark completion, and export browser evidence when relevant. An extra click, missed marker, or delayed input could contaminate the interval.
 

@@ -404,7 +404,7 @@ Give a concrete record: Dylan reaches the end of an article in Arc, then goes to
 
 Explain why the timing and destination label must be right for the prediction test to mean anything. A post-click screenshot can give the LLM the answer, while a bad label can make it impossible to tell whether the prediction was right.
 
-Then distinguish the dataset from the acquisition ladder. The stopped walkthrough was a component diagnostic in which Dylan knew the intended actions and graded the captured evidence. It was supposed to inform a later blind 30-action calibration, followed by a 50–100-action natural-work audit. Only after the full ladder passed would subsequent automatic records enter prediction without manual review. Manual labeling became the fallback after Dylan stopped pursuing that stack.
+Keep this section on the dataset itself. Do not interrupt it with the acquisition ladder or calibration history.
 
 ### 3. Recording alone does not produce this dataset
 
@@ -415,6 +415,8 @@ Use Screenpipe as the concrete example. Lead with what worked: screenshots, both
 Treat the possible Screenpipe reconstruction path as a compact caveat directly after the ordering result, not as a second solution-level argument. State that the inconsistent linkage is load-bearing because an extractor cannot treat `frame_id` as either the input state or proof of the destination. Then say a script might instead use the click timestamp to search both monitor histories for the latest earlier image and use later evidence to propose the destination. Make clear that Dylan did not test this path and does not know how often it would produce a usable record. Keep the fuller search, freshness, and destination-recovery mechanics in this prep and the linked audit.
 
 Add one sentence pre-empting the current-version reply: name the tested version (2.5.132) and dates, note that Screenpipe's current documentation claims expanded capture (full accessibility tree with OCR fallback, keyboard input, app switches, multiple capture methods), and state that the measurements stand for the tested version and setup.
+
+Then explain why the custom capture system stayed fragile. Begin by distinguishing the component diagnostic from the later blind calibration and natural-work audit. Dylan knew the intended actions and graded the captured evidence during the walkthrough, so he was testing the recorder rather than labeling the everyday dataset. Even if the walkthrough passed, a blind 30-action calibration and a 50–100-action natural-work audit still had to pass before automatic records entered prediction without manual review.
 
 ### 4. The closest tools already form a product category
 
