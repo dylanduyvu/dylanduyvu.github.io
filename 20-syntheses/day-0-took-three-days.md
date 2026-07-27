@@ -72,8 +72,6 @@ I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records 
 
 The stack worked during an initial controlled run and produced verified checkpoints. But it could not automatically assemble enough verified navigation records to start the prediction test.
 
-The delay had two causes. The tools I could use did not assemble the dataset, but I also tried to build a dependable automatic system before running a small prediction test. This post separates the two.
-
 ## What one dataset row needed
 
 One usable row has four parts:

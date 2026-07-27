@@ -386,7 +386,7 @@ Public context:
 
 ### 1. Day 0 took three days
 
-Use the five-day plan and the fact that Day 0 was still incomplete after three days as the hook. Describe the NAPsack patch, custom capture layer, controlled check, browser extension, and stopped 30-action diagnostic. State immediately that the delay mixed a real conversion-layer gap with Dylan's decision to overbuild the first experiment.
+Use the five-day plan and the fact that Day 0 was still incomplete after three days as the hook. Describe the NAPsack patch, custom capture layer, controlled check, browser extension, and stopped 30-action diagnostic. End once the section establishes that the controlled stack did not produce enough verified navigation records to start prediction. Do not restate the dataset gap or sequencing mistake here. The opening and sections 4 and 5 already carry those points.
 
 > The controlled run showed that the evidence streams could be joined. But it could not automatically assemble enough verified navigation records to start the prediction test.
 
