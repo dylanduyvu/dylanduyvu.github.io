@@ -45,6 +45,7 @@ Corrected 2026-07-27: replaced the precision-dependent `76 of 164` Screenpipe or
 Completed 2026-07-27: compressed the untested Screenpipe reconstruction path into a caveat so it qualifies the evidence without competing with the observed result.
 Corrected 2026-07-27: separated the core dataset, acquisition-calibration machinery, and post-failure manual fallback. Human inspection in the 30-action walkthrough graded the recorder; it was not the intended ongoing labeling workflow.
 Completed 2026-07-27: moved the acquisition-ladder explanation out of the dataset-schema section and into the capture-fragility section.
+Completed 2026-07-27: clarified the Codex destination example, removed the six-action smoke result from the narrative, and rewrote the walkthrough section around why it existed, why it stopped at 12 actions, and which validation gates never ran.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; final link verification after later edits.
 %%
 
@@ -80,7 +81,7 @@ I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which runs in 
 
 Then I ran a 30-action diagnostic to see whether those pieces worked together across the kinds of navigation I make. I spent most of the day patching failures as it exposed one edge case after another, then paused with only 12 of the 30 checkpoints accepted. Even in those accepted checkpoints, the two monitor streams were not reliably in sync.
 
-The stack passed an initial six-action controlled run. But the broader walkthrough stalled before it could establish that the components produced high-fidelity records across my workflow. I never reached formal calibration, a natural-work audit, or the prediction test.
+The walkthrough stalled before it could establish that the components produced high-fidelity records across my workflow. I never reached formal calibration, a natural-work audit, or the prediction test.
 
 ## What the dataset had to contain
 
@@ -89,9 +90,9 @@ The dataset had to keep the navigation records in the order they happened. Each 
 1. what was on my screens immediately before I moved;
 2. the exact place I went next.
 
-For example, suppose I finished reading an article on my Arc browser, then moved to the message box in one Codex task. The record needed to show the article before I moved and name that specific task and field rather than just "Codex."
+For example, suppose I finished reading an article in Arc, then moved to the message box in the Codex conversation where I was editing it. The record needed to show the article before I moved and identify that conversation and its message box rather than just "Codex."
 
-For the prediction test to mean anything, the timing and destination label had to be right. A screenshot taken after I moved could give the LLM the answer, while a bad label could make it impossible to tell whether its prediction was right.
+For the prediction test to mean anything, the timing and destination label had to be right. A screenshot taken after I moved could reveal the destination to the LLM, while a bad label could make it impossible to tell whether its prediction was right.
 
 ## Recording alone does not produce this dataset
 
@@ -101,10 +102,8 @@ Turning recorded activity into the dataset automatically required six jobs:
 2. preserve what was on screen strictly before each move;
 3. keep correctly attributed evidence from both monitors for every record;
 4. name the exact destination in one consistent field, whether it is an app, window, page, document, task, input field, link, or button;
-5. propose meaningful boundaries between moves, instead of treating every keystroke as its own record;
+5. identify meaningful boundaries between moves, instead of treating every keystroke as its own record;
 6. export the records in time order, in a format I could give to the LLM.
-
-My original plan assumed the acquisition ladder would establish that these jobs worked well enough to run without checking every later record. A review and correction queue became relevant only after I stopped pursuing that automatic plan.
 
 Screenpipe covered the first job and supplied much of the raw evidence needed for the rest. In my test, version 2.5.132 captured both monitors, inputs, app and window changes, web addresses, screenshot text, and the accessibility tree, which is how macOS describes on-screen controls to assistive software. Its [current architecture documentation](https://docs.screenpipe.com/architecture) explains that events such as clicks, app switches, scrolls, typing pauses, and idle periods trigger screenshots instead of fixed-rate video.
 
@@ -116,11 +115,9 @@ The full measurements are in [my audit](https://dylanduyvu.github.io/50-sources/
 
 ## Why my custom capture system stayed fragile
 
-The 30-action walkthrough was the first validation gate for an automatic collection system. It was a component diagnostic, not training data, a formal calibration, or a prediction test. I knew each intended action, then inspected the captured evidence to see whether the system reconstructed it correctly. I was grading the recorder, not labeling the dataset I intended to collect every day.
+After building the custom capture system, I needed to know whether it was producing trustworthy records or quietly recording bad data. So I created a 30-action walkthrough of known clicks, focus changes, app switches, keyboard commands, and page navigations across Mac apps, websites, and both monitors. I performed them one at a time while Hammerspoon, ScreenCaptureKit, and the Arc extension ran together, then checked whether the system captured each one correctly.
 
-The initial controlled run had not established that the stack worked across native controls, ordinary and dynamic webpages, focus and app changes, keyboard navigation, and both monitors. I needed the broader walkthrough before building the formal calibration harness.
-
-Even passing the walkthrough would not have unlocked prediction. The next gates were a blind 30-action calibration and an audit of 50 to 100 actions from normal work. Only if the full acquisition ladder passed would later records flow directly into the prediction experiment without manual review.
+I paused after 12 actions because the walkthrough had turned into live infrastructure work. Several actions exposed new validator cases, the remaining browser steps required more code, and the two monitor streams were still not reliably synchronized. Continuing meant another round of implementation, testing, and revalidating the first 12 actions. I decided not to spend another half day on it.
 
 The walkthrough was fragile for five reasons:
 
@@ -133,6 +130,8 @@ The walkthrough was fragile for five reasons:
 - **Exact targets had no shared representation.** macOS might return the intended button, an image inside it, a generic container, an unnamed field, or nothing useful. Browser structure was more precise for webpages but could not describe native controls or browser chrome. Screenshots and coordinates filled gaps but required another inference step.
 
 - **The validator was still changing.** The diagnostic exposed cases we had not anticipated. Fixing the validator helped preserve genuine evidence, but one frozen set of rules no longer judged every checkpoint. A formal test would have required implementing the remaining cases, freezing the validator, and running it again.
+
+Finishing the walkthrough would still have left two validation steps before I could test whether the LLM could predict my exact next destination: a blind 30-action calibration and an audit of 50 to 100 actions from normal work. I reached neither one, so the prediction test never began.
 
 Testing the capture stack first was reasonable. Otherwise, a wrong prediction could reflect my behavior, the LLM, the action boundary, the destination label, or a screenshot that already showed the answer.
 

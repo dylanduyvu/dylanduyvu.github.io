@@ -106,7 +106,6 @@ Then the concrete facts:
 - Prediction had not begun.
 - Screenpipe was audited first.
 - NAPsack was added and patched for Dylan's negative-coordinate secondary monitor.
-- A custom Hammerspoon, ScreenCaptureKit, and browser stack was built and passed a six-action controlled check.
 - A supposedly simple 30-action diagnostic walkthrough consumed most of a day and stopped at 12 accepted checkpoints.
 - Five of those 12 freezes had more than one second of cross-display skew. The maximum was 3.765 seconds.
 - The walkthrough had protocol drift and was a diagnostic, not a formal calibration.
@@ -122,7 +121,7 @@ One usable row is:
 
 Example:
 
-> Dylan reaches the end of an article in Arc → `Codex → Personal AI task → composer`
+> Dylan reaches the end of an article in Arc → `Codex → article-editing conversation → message box`
 
 The destination may be an app, window, webpage, document, Codex task, input field, link, or button.
 
@@ -158,10 +157,10 @@ The original automatic acquisition system had to:
 2. preserve the state that was available strictly before navigation;
 3. retain correctly attributed evidence from both monitors for every record;
 4. represent the exact destination in one normalized field, whether it is an app, window, page, document, task, input field, link, or button;
-5. propose meaningful transition boundaries rather than treating every raw input as a separate example;
+5. identify meaningful transition boundaries rather than treating every raw input as a separate example;
 6. export the records chronologically in a format the LLM can use.
 
-The recorder handles job one and supplies raw evidence for jobs two through four. Jobs two through five still require the system to choose the safe prior state, join monitor evidence, normalize the destination, and group inputs into one move. The calibration ladder was supposed to establish that all six jobs worked accurately enough for later records to enter prediction directly.
+The recorder handles job one and supplies raw evidence for jobs two through four. Jobs two through five still require the system to choose the safe prior state, join monitor evidence, normalize the destination, and group inputs into one move. Dylan planned to build and validate all six jobs, then send the resulting records straight into the prediction test.
 
 After the automatic stack stalled, Dylan added manual labeling as the first-experiment fallback. A future dependable product should also surface uncertain records for fast correction instead of silently exporting them. Neither was part of the original core dataset.
 
@@ -222,7 +221,6 @@ Open tools provide most of the primitives but still require custom assembly. Ent
 | NAPsack required a local monitor-geometry patch on Dylan's negative-coordinate display setup. | [[computer-use-nap-build-log]] | Local implementation fact, not a claim about every setup or current release. |
 | The corrected NAPsack controlled run produced same-display pre-action screenshots 106 to 171 ms before seven secondary-display clicks. | [[computer-use-nap-build-log]] | Tiny controlled sample. Use only to show useful primitives existed. |
 | Direct Accessibility identified two of four meaningful targets. Screenshot-plus-coordinate review reconstructed the two misses. The combined AX and visual path resolved four of four, with AX resolving one visual disagreement. | [[computer-use-nap-build-log]] | Promising diagnostic, not production-level coverage. |
-| Capture Layer v2 passed a six-action real-data check and the checker caught 54 of 54 synthetic failure mutations. | [[computer-use-nap-build-log]] | Validates controlled plumbing, not natural-work segmentation or prediction. |
 | The 30-action diagnostic stopped at 12 accepted checkpoints. Five freezes exceeded one second of cross-display skew, with a 3.765-second maximum. | [[computer-use-nap-build-log]] | Progress and engineering evidence, not accuracy. |
 | The stopped walkthrough was only the first component diagnostic. The planned next gates were a blind 30-action calibration and a 50–100-action natural-work audit before any automatic records entered prediction. | [[computer-use-nap-30-action-walkthrough-2026-07-24]]; [[computer-use-nap-build-log]] | Human inspection graded the recorder during calibration. It was not the intended ongoing labeling workflow. |
 | Niyant first called the idea too vague, later said it aligned overall, and warned that Dylan's small app distribution could make suggestions trivial. | [[tab-could-autocomplete-the-next-computer-action]] | Preserve both the alignment and the unresolved low-entropy concern. |
@@ -390,9 +388,9 @@ Public context:
 
 ### 1. Day 0 took three days
 
-Use the five-day plan and the fact that Day 0 was still incomplete after three days as the hook. Describe the NAPsack patch, custom capture layer, controlled check, browser extension, and stopped 30-action diagnostic. End by stating that the six-action check passed, but the component walkthrough stalled before the project reached formal calibration, the natural-work audit, or prediction. Do not fully interpret the sequencing mistake here. Section 5 owns that conclusion.
+Use the five-day plan and the fact that Day 0 was still incomplete after three days as the hook. Describe the NAPsack patch, custom capture layer, browser extension, and stopped 30-action diagnostic. End by stating that the component walkthrough stalled before the project reached formal calibration, the natural-work audit, or prediction. Do not fully interpret the sequencing mistake here. Section 5 owns that conclusion.
 
-> The stack passed an initial six-action controlled run. But the broader walkthrough stalled before it could establish that the components produced high-fidelity records across Dylan's workflow.
+> The walkthrough stalled before it could establish that the components produced high-fidelity records across Dylan's workflow.
 
 ### 2. What the dataset had to contain
 
@@ -400,15 +398,15 @@ Define the core dataset as a chronological sequence of navigation records. Each 
 
 > what was available strictly before I navigated → the exact place I went next
 
-Give a concrete record: Dylan reaches the end of an article in Arc, then goes to `Codex → Personal AI task → composer`. Explain that the saved input must show what he saw before moving and the answer must name the exact destination rather than merely `Codex`.
+Give a concrete record: Dylan reaches the end of an article in Arc, then goes to `Codex → article-editing conversation → message box`. Explain that the saved input must show what he saw before moving and the answer must name the exact destination rather than merely `Codex`.
 
-Explain why the timing and destination label must be right for the prediction test to mean anything. A post-click screenshot can give the LLM the answer, while a bad label can make it impossible to tell whether the prediction was right.
+Explain why the timing and destination label must be right for the prediction test to mean anything. A post-click screenshot can reveal the destination to the LLM, while a bad label can make it impossible to tell whether the prediction was right.
 
 Keep this section on the dataset itself. Do not interrupt it with the acquisition ladder or calibration history.
 
 ### 3. Recording alone does not produce this dataset
 
-State the six-part automatic-assembly contract. Explain that the original plan relied on the acquisition ladder to establish that those jobs worked accurately enough for direct downstream use. Human review was calibration instrumentation, not a seventh dataset field. Then explain that Screenpipe runs continuously but takes event-driven screenshots. Neither its linked frame nor the recording alone determines meaningful boundaries, safe prior state, exact destination, or a usable record.
+State the six-part automatic-assembly contract, then move directly into Screenpipe. Explain that it runs continuously but takes event-driven screenshots. Neither its linked frame nor the recording alone determines meaningful boundaries, safe prior state, exact destination, or a usable record. Do not introduce the later manual fallback here.
 
 Use Screenpipe as the concrete example. Lead with what worked: screenshots, both monitors, inputs, app and window events, URLs, OCR, and accessibility data. Then use the one local finding chosen in the checks section: raw timestamps placed 83 of 164 linked click frames after the click and 81 before it, with some earlier frames up to 25.3 seconds old. Keep zero of 40 and the remaining metrics in the linked audit unless the draft develops a specific need for them.
 
@@ -416,7 +414,11 @@ Treat the possible Screenpipe reconstruction path as a compact caveat directly a
 
 Add one sentence pre-empting the current-version reply: name the tested version (2.5.132) and dates, note that Screenpipe's current documentation claims expanded capture (full accessibility tree with OCR fallback, keyboard input, app switches, multiple capture methods), and state that the measurements stand for the tested version and setup.
 
-Then explain why the custom capture system stayed fragile. Begin by distinguishing the component diagnostic from the later blind calibration and natural-work audit. Dylan knew the intended actions and graded the captured evidence during the walkthrough, so he was testing the recorder rather than labeling the everyday dataset. Even if the walkthrough passed, a blind 30-action calibration and a 50–100-action natural-work audit still had to pass before automatic records entered prediction without manual review.
+Then explain why the custom capture system stayed fragile. Open with Dylan's reason for creating the walkthrough: after building the system, he needed to know whether it produced trustworthy records or quietly recorded bad data. Define the walkthrough concretely as known clicks, focus changes, app switches, keyboard commands, and page navigations across Mac apps, websites, and both monitors. Dylan performed them one at a time while Hammerspoon, ScreenCaptureKit, and the Arc extension ran together, then checked whether the system captured each one correctly.
+
+State why the walkthrough stopped at 12. Several actions exposed new validator cases, the remaining browser steps required more code, and the two monitor streams were still not reliably synchronized. Continuing meant implementing and testing the remaining validators, freezing the runtime, and revalidating the first 12 actions. Dylan decided not to spend another half day on that work.
+
+After explaining the five fragility causes, return to the larger experiment. Even a finished walkthrough would have left a blind 30-action calibration and a 50–100-action natural-work audit before Dylan could test whether the LLM could predict his exact next destination. Neither happened, so the prediction test never began.
 
 ### 4. The closest tools already form a product category
 
