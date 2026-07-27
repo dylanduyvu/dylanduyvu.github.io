@@ -29,6 +29,7 @@ Completed 2026-07-26: compression pass reduced reader-visible article copy from 
 Updated 2026-07-27: Mimica canceled the scheduled demo before the product questions could be asked. The Mimica capability cells remain question marks, and the cancellation screenshot now supports only the enterprise-market claim.
 Completed 2026-07-27: connective-tissue pass added short causal and contrast words at abrupt seams without changing the argument or section order.
 Completed 2026-07-27: global epistemic pass removed wording that made the unrun prediction experiment sound like a negative result.
+Updated 2026-07-27: added the causal account of why the controlled capture stack stayed fragile and why making it dependable became product engineering.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; Celonis follow-up before any stronger product claim; final link verification after later edits.
 %%
 
@@ -48,7 +49,7 @@ Prediction never started. Instead, I spent those three days trying to assemble t
 
 I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records screens and inputs continuously. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups activity into captioned bursts, but had to patch its display assignment because my second monitor sits above my main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension. A 30-action diagnostic consumed most of a day and stopped at 12 accepted checkpoints. Even then, the monitors were still out of sync.
 
-That work showed only that higher-fidelity recording was possible. It did not get me to a usable set of examples, so I never reached the prediction test.
+The stack worked under control. It passed a smoke test and produced verified checkpoints during the diagnostic. But it did not automatically produce enough usable examples from ordinary work, so I never reached the prediction test.
 
 The delay had two causes. The tools I could use did not assemble the examples, but I also tried to build a dependable automatic system before running a small test. This post separates the two.
 
@@ -86,6 +87,24 @@ A continuous recording covers the first job and supplies raw material for the re
 Screenpipe shows the difference. Version 2.5.132 captured both monitors, inputs, app and window changes, web addresses, screenshot text, and the accessibility tree, which is how macOS describes on-screen controls to assistive software.
 
 But it still did not produce my examples. In one 50-minute session, 76 of the 164 screenshots linked to clicks came after the click. So the linked frame was not guaranteed to show the prior state. The full measurements are in [my audit](https://dylanduyvu.github.io/50-sources/screenpipe-live-capture-audit-2026-07-23). At the same time, Screenpipe's [current documentation](https://docs.screenpipe.com/architecture) describes a fuller accessibility tree and more input methods than I observed. These numbers apply only to my version and setup.
+
+## Why the capture system stayed fragile
+
+The 30 actions were a coverage check, not training data or a prediction test. A small controlled smoke test could not show that the stack worked across native controls, ordinary and dynamic webpages, focus changes, app switching, keyboard navigation, and both monitors. I needed to check those cases before trusting several days of recordings.
+
+Checking the rows first was reasonable. Otherwise, a wrong prediction could mean that my behavior was unpredictable, the model was poor, the recorder chose the wrong action boundary, the destination label was wrong, or the screenshot already showed the answer. But requiring the system to produce those rows automatically before I tried a small manually verified set was the sequencing mistake.
+
+Each controlled action also required a ceremony. I had to prepare the application, mark that I was ready, freeze both displays, perform exactly one action, mark its completion, and export browser evidence when relevant. An extra click, a missed marker, or delayed input could contaminate the interval.
+
+Then the system had to join input events, separate display streams, macOS Accessibility records, browser events, and an action ledger. These sources used different clocks and identifiers. The browser did not know the action ID assigned by the Mac automation layer, so the join depended on timestamps, coordinates, window and document identity, and a narrow action interval.
+
+The interfaces were unstable too. Webpages changed after JavaScript events. Focus sometimes arrived late. Browser tabs, split views, and temporary windows exposed different identities. A static monitor might not emit a fresh frame when the other monitor changed.
+
+Finally, exact target identity varied by interface. macOS might describe a click as the intended button, an image inside it, a generic container, an unnamed field, or nothing useful. Browser structure was more precise for webpages but could not describe native controls or browser chrome. Screenshots and coordinates filled some gaps, but using them automatically required another inference step.
+
+The validator was still changing as the diagnostic exposed cases we had not anticipated. Those repairs helped preserve genuine evidence, but they also meant that one frozen set of rules did not judge every checkpoint. Turning the diagnostic into a formal test would have required implementing the remaining cases, freezing the validator, and running it again.
+
+A person could look across imperfect records and infer what happened. The automatic system had to encode that judgment. So making it dependable meant tolerating missing or conflicting evidence, aligning several streams, normalizing native and browser targets, detecting meaningful action boundaries, and sending uncertain rows to me for correction. I was beginning to build that product while still trying to run the experiment.
 
 ## The closest tools already form a product category
 
