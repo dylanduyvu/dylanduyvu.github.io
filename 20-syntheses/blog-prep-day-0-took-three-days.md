@@ -335,7 +335,7 @@ This table maps reusable primitives, existing conversion products, and the narro
 
 | Tool | Reusable contribution | What remained outside the documented end-to-end contract | Role in a bounded prototype |
 |---|---|---|---|
-| [Screenpipe](https://github.com/screenpipe/screenpipe) | Continuous local capture, accessibility data, OCR, clicks, scrolls, app and window changes, URLs, search, local APIs, and programmable pipes | The tested version exposed raw ingredients, but its action-linked frame was not guaranteed to be prior, semantic targets were incomplete in important cases, and it did not create a correction queue of verified transitions. Current public materials are inconsistent about `all monitors` versus an event-time screenshot of the `active monitor`, so multi-monitor behavior should be scoped to Dylan's local audit. | Recording and evidence backbone |
+| [Screenpipe](https://github.com/screenpipe/screenpipe) | Always-on, event-driven screenshot capture, accessibility data, OCR, clicks, scrolls, app and window changes, URLs, search, local APIs, and programmable pipes | The tested version exposed raw ingredients, but its action-linked frame was not guaranteed to be prior, semantic targets were incomplete in important cases, and it did not create a correction queue of verified transitions. Current public materials are inconsistent about `all monitors` versus an event-time screenshot of the `active monitor`, so multi-monitor behavior should be scoped to Dylan's local audit. | Recording and evidence backbone |
 | [NAPsack](https://github.com/GeneralUserModels/napsack) | Passive natural-work recording, event-burst grouping, before-and-after evidence on the active display, generated action captions, and JSONL | Its public output does not document a correction inbox, synchronized both-monitor state, or one stable destination object spanning native and browser targets. The tested version also needed a local monitor-geometry patch. | Candidate-boundary heuristics and captioning patterns |
 | [OpenCUA / AgentNetTool](https://github.com/xlang-ai/OpenCUA) | Deliberate task demonstrations, video, inputs, accessibility trees, review, action reduction, last-distinct-prior-frame matching, and standardized trajectories | It is a curated task workflow with declared start and stop. Its macOS instructions document main-display capture. It does not publicly document ambient dual-monitor work becoming proposed exact cross-app destinations. | Safe prior-frame alignment and review patterns |
 | [Scribe AutoCapture](https://support.scribehow.com/hc/en-us/articles/30708953411229-Using-Autocapture) | Background workflow discovery across approved apps plus the ability to review, edit, publish, or discard the result | Its documented product output is a guide. It does not document strictly prior next-destination rows, synchronized dual-monitor evidence, a normalized cross-app destination object, or reusable raw dataset export. | Review-inbox interaction pattern |
@@ -390,21 +390,23 @@ Use the five-day plan and the fact that Day 0 was still incomplete after three d
 
 > The controlled run showed that the evidence streams could be joined. But it could not automatically assemble enough verified navigation records to start the prediction test.
 
-### 2. What one dataset row needed
+### 2. What the dataset had to contain
 
-Define one row in normal English:
+Define the dataset as a chronological sequence of navigation records. Each record contains:
 
 > what was available strictly before I navigated → the exact place I went next → evidence → Dylan's verified verdict
 
-Give a concrete row: Dylan reaches the end of an article in Arc, then goes to `Codex → Personal AI task → composer`. Explain that the saved input must show what he saw before moving, the answer must name the exact destination rather than merely `Codex`, later evidence confirms the move, and Dylan approves or corrects the answer.
+Give a concrete record: Dylan reaches the end of an article in Arc, then goes to `Codex → Personal AI task → composer`. Explain that the saved input must show what he saw before moving, the answer must name the exact destination rather than merely `Codex`, later evidence confirms the move, and Dylan approves or corrects the answer.
 
-State the two validity requirements as a named pair, using the data-unit section's wording: the observation must be strictly prior, and the recorded destination must be correct. This pair is the article's most quotable constraint and should appear once, here.
+Explain why the timing and destination label must be right for the prediction test to mean anything. A post-click screenshot can give the LLM the answer, while a bad label can make it impossible to tell whether the prediction was right.
 
-### 3. The recorder is only one part of the tool
+### 3. Recording alone does not produce this dataset
 
-State the complete seven-part tool contract. Then explain why a continuous recording does not determine meaningful boundaries, safe prior state, exact destination, or a verified row by itself.
+State the complete seven-part conversion contract. Then explain that Screenpipe runs continuously but takes event-driven screenshots. Neither its linked frame nor the recording alone determines meaningful boundaries, safe prior state, exact destination, or a verified record.
 
 Use Screenpipe as the concrete example. Lead with what worked: screenshots, both monitors, inputs, app and window events, URLs, OCR, and accessibility data. Then use the one local finding chosen in the checks section: 76 of 164 linked click frames were after the click. Keep zero of 40 and the remaining metrics in the linked audit unless the draft develops a specific need for them.
+
+Explain that an extractor could search backward for the latest earlier frame, but deduplication could leave that frame stale.
 
 Add one sentence pre-empting the current-version reply: name the tested version (2.5.132) and dates, note that Screenpipe's current documentation claims expanded capture (full accessibility tree with OCR fallback, keyboard input, app switches, multiple capture methods), and state that the measurements stand for the tested version and setup.
 

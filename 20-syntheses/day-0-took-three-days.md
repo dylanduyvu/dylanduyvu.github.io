@@ -38,6 +38,7 @@ Updated 2026-07-27: reorganized the capture-fragility section into five labeled 
 Updated 2026-07-27: reconciled every Mimica and Celonis reference after the canceled demo, distinguishing evidence that the enterprise category exists from products usable in Dylan's setup.
 Updated 2026-07-27: rewrote the opening thesis around the personal dataset, named the recorded inputs, and replaced the documentation-led gap claim with the stronger bounded finding that no product Dylan could use assembled the dataset.
 Updated 2026-07-27: rewrote the dataset section to establish chronological order once, then stay at the navigation-record level; removed the redundant pilot and research aside.
+Updated 2026-07-27: corrected the Screenpipe section to explain its event-driven screenshots and why a click-linked frame could show the post-click state.
 Remaining before final publication: Dylan's personal read, including a per-cell check of the comparison table; final link verification after later edits.
 %%
 
@@ -69,7 +70,7 @@ If history made the top-three exact-destination guesses qualitatively more usefu
 
 Day 0 was supposed to be setup. Three days later, it was still not complete.
 
-I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which records screens and inputs continuously. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups activity into captioned bursts, but patched its display assignment because my second monitor sits above my main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension. A 30-action diagnostic stopped at 12 accepted checkpoints. Even then, the monitors were still out of sync.
+I audited [Screenpipe](https://github.com/screenpipe/screenpipe), which runs in the background and records screen and input activity. I added [NAPsack](https://github.com/GeneralUserModels/napsack), which groups activity into captioned bursts, but patched its display assignment because my two-monitor setup places the second display above the main one. I then built a capture layer from Hammerspoon (a macOS automation tool), ScreenCaptureKit (Apple's screen recording framework), and a browser extension. A 30-action diagnostic stopped at 12 accepted checkpoints. Even then, the monitors were still out of sync.
 
 The stack worked during an initial controlled run and produced verified checkpoints. But it could not automatically assemble enough verified navigation records to start the prediction test.
 
@@ -86,9 +87,9 @@ For example, suppose I finished an article in Arc, then moved to the message box
 
 For the prediction test to mean anything, the timing and destination label had to be right. A screenshot taken after I moved could give the LLM the answer, while a bad label could make it impossible to tell whether its prediction was right.
 
-## The recorder is only one part of the tool
+## Recording alone does not produce this dataset
 
-The tool I wanted has seven jobs:
+Turning recorded activity into the dataset required seven jobs:
 
 1. run quietly while I worked across native apps and browsers;
 2. preserve what was on screen strictly before each move;
@@ -96,13 +97,13 @@ The tool I wanted has seven jobs:
 4. name the exact destination in one consistent field, whether it is an app, window, page, document, task, input field, link, or button;
 5. propose meaningful boundaries between moves, instead of treating every keystroke as its own record;
 6. show enough evidence that a person can approve, fix, reject, or park each record; and
-7. export the approved records in time order, in a format a model can train on.
+7. export the approved records in time order, in a format I could give to the LLM.
 
-A continuous recording covers the first job and supplies screen, input, app, and browser evidence for the rest. But it does not do the rest.
+Screenpipe covered the first job and supplied much of the raw evidence needed for the rest. Its [current architecture documentation](https://docs.screenpipe.com/architecture) describes event-driven screenshots: clicks, app switches, scrolls, typing pauses, and idle periods trigger captures rather than fixed-rate video.
 
-Screenpipe shows the difference. Version 2.5.132 captured both monitors, inputs, app and window changes, web addresses, screenshot text, and the accessibility tree, which is how macOS describes on-screen controls to assistive software.
+Version 2.5.132 captured both monitors, inputs, app and window changes, web addresses, screenshot text, and the accessibility tree, which is how macOS describes on-screen controls to assistive software. But a screenshot linked to a click was not guaranteed to come from before it. In one 50-minute session, 76 of 164 click-linked screenshots were captured after the click. An extractor could search backward for an earlier frame, but deduplication could leave the latest prior frame stale.
 
-But it still did not produce the dataset. In one 50-minute session, 76 of 164 click-linked screenshots came after the click, so the frame was not guaranteed to show the prior state. The full measurements are in [my audit](https://dylanduyvu.github.io/50-sources/screenpipe-live-capture-audit-2026-07-23). Screenpipe's [current documentation](https://docs.screenpipe.com/architecture) describes a fuller accessibility tree and more input methods than I observed, so these numbers apply only to my version and setup.
+The full measurements are in [my audit](https://dylanduyvu.github.io/50-sources/screenpipe-live-capture-audit-2026-07-23). Screenpipe's current documentation describes a fuller accessibility tree and more input methods than I observed, so these numbers apply only to my version and setup.
 
 ## Why the capture system stayed fragile
 
