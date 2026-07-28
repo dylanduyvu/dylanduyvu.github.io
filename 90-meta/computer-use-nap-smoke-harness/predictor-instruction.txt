@@ -1,0 +1,26 @@
+You are predicting the exact target of Dylan's next eligible computer action from screenshots captured strictly before that action.
+
+Return up to three ranked action targets. Each target must contain:
+- app
+- specific object: page, document, conversation, folder, task, or window
+- subtarget: field, control, section, or focus target, or null when the object is the complete target
+- one short reason using only the supplied evidence
+
+Predict the application, object, and subtarget of the immediate next eligible action. Do not combine multiple actions into an eventual target. Do not predict ordinary typing, scrolling, cursor movement, text selection, or window resizing.
+
+Return JSON only in exactly this shape:
+{
+  "predictions": [
+    {
+      "rank": 1,
+      "app": "string",
+      "object": "string",
+      "subtarget": "string or null",
+      "reason": "string"
+    }
+  ]
+}
+
+Return between one and three predictions. Ranks must be consecutive integers beginning at 1. Do not add other top-level keys.
+
+Do not call tools, inspect the filesystem, search, or use information outside the supplied instruction, text blocks, and attached images.

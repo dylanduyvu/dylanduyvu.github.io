@@ -224,11 +224,11 @@ Codex CLI prompt stack.
 
 The reviewed implementation plan is
 `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`.
-Its zero-call repair gate asks Dylan to approve (1) one uniform
-app/object/subtarget table and (2) the actual Codex
-base-plus-developer-plus-user prompt stack. After approval, preserve V1 as
-superseded-before-execution, mint V2, implement and preflight the harness, and
-only then make the 38 calls. No model call has run.
+Its zero-call repair gate and implementation are complete. V1 remains
+preserved as superseded-before-execution. V2 was minted, all 38 packets were
+rendered, the maximum-depth 40-image Codex input was audited, and the complete
+pre-call run lock was frozen at `2026-07-28T22:17:49.760Z`. No model call has
+run.
 
 Dylan approved both repair-gate choices at `2026-07-28T19:55:56Z`.
 At `2026-07-28T20:49:04Z`, he also approved `gpt-5.6-sol` with `max`
@@ -236,8 +236,8 @@ single-model reasoning, a 1,200-second per-attempt timeout, and an
 infrastructure circuit breaker. Each attempt is immutable. Restarting skips
 every saved attempt and continues at the first missing schedule slot. A failed
 slot is never retried; an infrastructure failure is saved and pauses the run
-before another slot is attempted. The V2 execution plan is approved but not
-started.
+before another slot is attempted. The V2 harness and no-model preflight are
+complete; execution is ready but intentionally not started.
 
 Screenpipe stored monitor 3 about every `4.0625s` and monitor 1 about every
 `5.078125s`. Five correct manual labels lack the exact intermediate
@@ -258,13 +258,10 @@ workbook at
 `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/dataset.md`.
 `BLOG-CAND-028` through `BLOG-CAND-032` remain reserve rows.
 
-1. Keep every manual action label regardless of Screenpipe support; image absence never invalidates Dylan's label.
-2. Use the approved V2 snapshot, manifest, and protocol without changing image membership or chronology.
-3. Implement and test the reviewed execution plan. Freeze the scorer and all input hashes before any prediction.
-4. Before the first call, validate the maximum-depth `BLOG-CAND-027` packet and its exact 40-image Codex debug rendering.
-5. Make one `gpt-5.6-sol`/`max` attempt per condition slot with no selective retries. Preserve tool use and invalid JSON as incorrect model results. Preserve infrastructure failures, pause immediately, and resume later from the first missing slot without retrying the failed slot.
-6. Save both condition attempt records for a target before revealing its action label. A prediction may be absent only when its attempt status records why.
-7. Inspect prediction signal and method failures, then decide whether to revise the method or scale toward roughly 200 rows. Do not commit to the 200-row push before this review.
+1. Await Dylan's explicit go-ahead before running `execute`; it is the first command that makes model calls.
+2. Make one `gpt-5.6-sol`/`max` attempt per condition slot with no selective retries. Preserve tool use and invalid JSON as incorrect model results. Preserve infrastructure failures, pause immediately, and resume later from the first missing slot without retrying the failed slot.
+3. Save both condition attempt records for a target before revealing its action label. A prediction may be absent only when its attempt status records why.
+4. Inspect prediction signal and method failures, then decide whether to revise the method or scale toward roughly 200 rows. Do not commit to the 200-row push before this review.
 
 Do not stop or mutate Screenpipe, delete recordings, resume the 30-action walkthrough, or build an extractor unless Dylan asks.
 
@@ -296,7 +293,8 @@ Read in this order:
 8. [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 9. [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
 10. [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
-11. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
+11. [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]
+12. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
 
 The initial predictor packet note is obsolete candidate evidence. Never run it. Build new packets only from the frozen row contract and smoke manifest in the manual workbook, keeping hidden actions, action targets, and optional post-action QA outside predictor-visible files.
 
@@ -355,4 +353,4 @@ Do not publish, build Quartz, or watch deployment unless Dylan asks. For a reque
 
 ## Resume prompt
 
-> Read this handoff, the manual labeling workbook, and `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`. The atomic-action workbook contains 30 manually narrated candidates. Dylan approved the V2 20-row protocol with rows `BLOG-CAND-003`, `004`, `006`, `007`, `008`, `009`, `010`, `011`, `013`, `014`, `016`, `018`, `019`, `020`, `021`, `022`, `023`, `024`, `026`, and `027`; preserve V1 but do not execute it. Preserve but exclude `005`, `012`, `015`, `017`, and `025` from the screenshot-based mini because Screenpipe skipped their exact intermediate state; this does not invalidate Dylan's manual labels. `028` through `032` remain reserve. No prediction has run. Follow the reviewed V2 plan using `gpt-5.6-sol`, `max` single-model reasoning, priority service, and a 1,200-second timeout. The experiment remains 19 paired targets and exactly 38 one-attempt condition slots, with all-prior chronological history versus current screenshots only, no selective retries, and both records saved before label reveal. Every existing attempt is immutable; restart by skipping saved attempts and continuing at the first missing slot. On infrastructure failure, save that slot and pause before the next; never retry the failed slot. Invalid model output counts false; infrastructure failure is null and removes its target from paired comparison. Dylan's labels are authoritative; Screenpipe metadata and later frames are optional QA. Do not restore earlier first-video candidates, resume labeling, use future labels, resume the custom capture stack, modify the article, mutate Screenpipe, build an extractor, or publish unless Dylan explicitly asks.
+> Read this handoff, the manual labeling workbook, and `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`. The atomic-action workbook contains 30 manually narrated candidates. Dylan approved the V2 20-row protocol with rows `BLOG-CAND-003`, `004`, `006`, `007`, `008`, `009`, `010`, `011`, `013`, `014`, `016`, `018`, `019`, `020`, `021`, `022`, `023`, `024`, `026`, and `027`; preserve V1 but do not execute it. Preserve but exclude `005`, `012`, `015`, `017`, and `025` from the screenshot-based mini because Screenpipe skipped their exact intermediate state; this does not invalidate Dylan's manual labels. `028` through `032` remain reserve. No prediction has run. The V2 harness and no-model preflight are complete: `190/190` tests passed, all 38 packets were rendered, the exact 40-image prompt audit passed, and `BLOG-SMOKE-20260728-V2/run.json` is frozen with zero attempts and 38 remaining. Await Dylan's explicit approval before running `execute`. Follow the reviewed V2 plan using `gpt-5.6-sol`, `max` single-model reasoning, priority service, and a 1,200-second timeout. The experiment remains 19 paired targets and exactly 38 one-attempt condition slots, with all-prior chronological history versus current screenshots only, no selective retries, and both records saved before label reveal. Every existing attempt is immutable; restart by skipping saved attempts and continuing at the first missing slot. On infrastructure failure, save that slot and pause before the next; never retry the failed slot. Invalid model output counts false; infrastructure failure is null and removes its target from paired comparison. Dylan's labels are authoritative; Screenpipe metadata and later frames are optional QA. Do not restore earlier first-video candidates, resume labeling, use future labels, resume the custom capture stack, modify the article, mutate Screenpipe, build an extractor, or publish unless Dylan explicitly asks.

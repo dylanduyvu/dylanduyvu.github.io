@@ -1,6 +1,6 @@
 ---
 type: project-plan
-status: approved
+status: ready-to-execute
 created: 2026-07-28
 updated: 2026-07-28
 aliases:
@@ -22,11 +22,23 @@ tags:
 
 ## Status
 
-Approved but not started. No prediction has run.
+Implemented and frozen at `2026-07-28T22:17:49.760Z`. No prediction has run.
 
 The private step-by-step implementation checklist is
 `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`.
 This note preserves the load-bearing execution contract in the vault.
+
+The no-model preflight passed `190/190` tests, rendered all 38 condition
+packets, validated all 40 distinct evidence images, and audited the actual
+maximum-depth Codex prompt input with 40 images in order. The immutable run
+lock is
+`/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment/runs/BLOG-SMOKE-20260728-V2/run.json`.
+It inventories 137 exact artifacts. Run status is `0` completed and `38`
+remaining, with no attempts, labels, unexpected artifacts, or duplicate
+attempts.
+
+The next state-changing command is `execute`. It will make model calls, so it
+remains intentionally unrun pending Dylan's explicit go-ahead.
 
 ## Experiment
 
@@ -132,3 +144,4 @@ toward roughly 200 rows.
 
 - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
+- [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]
