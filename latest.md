@@ -1,25 +1,25 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-27
+updated: 2026-07-28
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 10:02 PM EDT
+Generated: Jul 28, 2026, 11:46 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 63 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 64 note commits. The most recent movement is:
 
+- Project decision: tighten Screenpipe dataset contract.
+- Project decision: define Screenpipe dataset smoke test.
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
 - Source capture: add computer-use capture tooling deep survey.
 - Source capture: add GDM evolving norms implications.
-- Source capture: complete tab autocomplete slack exchange.
-- Insight update: publish personal AI study and USD.AI policy.
 
 ## Current Hub Signals
 
@@ -28,6 +28,28 @@ In the past 7 days, the public vault changed through 63 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 28, 2026, 11:46 AM EDT - project: tighten Screenpipe dataset contract
+
+Project decision: tighten Screenpipe dataset contract.
+
+Changed notes:
+  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
+  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
+  - [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Computer-use NAP shakedown predictor packets, July 28, 2026]]
+
+### Jul 28, 2026, 11:38 AM EDT - project: define Screenpipe dataset smoke test
+
+Project decision: define Screenpipe dataset smoke test.
+
+Changed notes:
+  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+  - [[computer-use-nap-build-log|Computer-use NAP build log]]
+  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
+  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
+  - [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Computer-use NAP shakedown predictor packets, July 28, 2026]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+  - [[screenpipe-natural-work-audit-2026-07-28|Screenpipe natural-work audit, July 28, 2026]]
 
 ### Jul 27, 2026, 10:01 PM EDT - article: add recording to dataset graphic
 
@@ -110,28 +132,12 @@ Changed notes:
   - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
   - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-### Jul 27, 2026, 5:18 PM EDT - article: correct Screenpipe frame ordering evidence
-
-article: correct Screenpipe frame ordering evidence.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
-
-### Jul 27, 2026, 3:38 PM EDT - article: restore dataset assembly thesis with Screenpipe caveat
-
-article: restore dataset assembly thesis with Screenpipe caveat.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-_Showing the newest 12 of 32 updates in this window._
+_Showing the newest 12 of 24 updates in this window._
 
 ## Past 7 Days
 
+- Jul 28, 2026: project: tighten Screenpipe dataset contract - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
+- Jul 28, 2026: project: define Screenpipe dataset smoke test - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 27, 2026: article: add recording to dataset graphic - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: correct custom capture chronology - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: publish final readability checkpoint - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -155,13 +161,13 @@ _Showing the newest 12 of 32 updates in this window._
 - Jul 27, 2026: article: structure capture fragility causes - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: explain four-day prediction experiment - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: replace smoke test phrasing - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: format publication links inline - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: add research history and disclosure links - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-_Showing the newest 25 of 63 updates in this window._
+_Showing the newest 25 of 64 updates in this window._
 
 ## Past 30 Days
 
+- Jul 28, 2026: project: tighten Screenpipe dataset contract - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
+- Jul 28, 2026: project: define Screenpipe dataset smoke test - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - Jul 27, 2026: article: add recording to dataset graphic - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: correct custom capture chronology - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: publish final readability checkpoint - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -185,7 +191,5 @@ _Showing the newest 25 of 63 updates in this window._
 - Jul 27, 2026: article: structure capture fragility causes - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: explain four-day prediction experiment - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: replace smoke test phrasing - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: format publication links inline - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: add research history and disclosure links - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-_Showing the newest 25 of 210 updates in this window._
+_Showing the newest 25 of 212 updates in this window._
