@@ -212,14 +212,14 @@ Full evidence, retained rows, exclusions, and hidden labels: [[screenpipe-natura
 
 Create and smoke-test the first five rows before committing to the full-session labeling push.
 
-1. Open the Screenpipe timeline at approximately July 27, 5:15 PM EDT.
-2. Find the first five clear, meaningful human navigation events.
+1. Open the Screenpipe timeline at July 27, 5:15 PM EDT and scan forward chronologically.
+2. Fully label candidates in order until the first five satisfy [[computer-use-nap-manual-labeling-workbook-2026-07-28#Frozen eligibility predicate|the frozen eligibility predicate]]. Do not skip an eligible earlier row for a later example.
 3. For each event, pause immediately before the first navigation input and record the exact cutoff.
 4. Retrieve the latest readable frame from both monitors strictly before that cutoff.
 5. Play forward until the destination stabilizes, write the exact destination as text, and retain a later image as verification evidence.
 6. Complete every required field in [[computer-use-nap-manual-labeling-workbook-2026-07-28#Exact ground-truth row contract|the ground-truth row contract]].
-7. Render and run one fresh state-only predictor call per row, saving predictions before revealing labels.
-8. If all five rows can be captured, rendered, predicted, and scored without changing the contract, continue the full-session labeling push toward approximately 60 rows.
+7. Freeze those five IDs as `SMOKE-20260728-V1`, then render and run one fresh state-only predictor call per row, saving the raw response and structured prediction before revealing labels.
+8. If all five rows can be captured, rendered, predicted, and scored without changing the contract, resume after the fifth row and continue chronologically toward the first 60 eligible rows or the end of the intended interval.
 
 Do not stop or mutate Screenpipe, delete recordings, resume the 30-action walkthrough, or build an extractor unless Dylan asks.
 
@@ -231,7 +231,9 @@ The durable distinction is:
 
 - Dataset storage is full fidelity: two strictly prior screenshots, a structured textual destination, later verification evidence, timestamps, route, quality, and utility fields.
 - Predictor exposure is bounded: current screenshots only for the baseline; the same screenshots plus the ten most recent eligible historical state-destination rows for the history condition.
-- History membership is derived, not manually selected or stored in the ground-truth row.
+- The logical experiment session is `BLOG-WORK-20260727`; capture segment `A`, `B`, `C`, or `D` is recorded separately.
+- Dataset eligibility follows one frozen predicate. Smoke and main manifests are chronological and versioned.
+- History membership is derived from the same frozen main manifest, not manually selected or stored in the ground-truth row.
 - The five-row smoke test validates the workflow, not accuracy or history lift.
 - In an approximately 60-row same-session run, the first ten eligible rows establish history and approximately 50 later rows supply the paired comparison.
 
@@ -250,7 +252,7 @@ Read in this order:
 9. [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
 10. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
 
-The initial predictor packet note is candidate-only. Do not run it before Dylan's manual full-session pass. Once Dylan approves the final five rows, keep their hidden routes and destinations separate from the predictor.
+The initial predictor packet note is obsolete candidate evidence. Never run it. Build new packets only from the frozen row contract and smoke manifest in the manual workbook, keeping hidden routes, destinations, and later evidence outside predictor-visible files.
 
 The custom-capture source and preserved evidence remain at:
 

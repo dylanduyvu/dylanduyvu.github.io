@@ -19,7 +19,7 @@ tags:
 # Computer-use NAP shakedown predictor packets, July 28, 2026
 
 > [!warning] Candidate examples only
-> These packets came from the initial short-session audit. Dylan clarified that he intended to manually sift the full four-to-five-hour blog-building recording and assemble the chronological dataset himself. Do not run predictions from this note until the full-session manual pass is complete and Dylan explicitly approves the evaluation rows. Current workflow: [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]].
+> These packets came from the initial short-session audit and are retained only as historical candidate evidence. Never run predictions from this note. Build new smoke and main packets only from the frozen contracts and manifests in [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]].
 
 > [!important] July 28 contract update
 > This note's compact text-history packets are superseded. The first five new rows use a state-only workflow smoke test. The later history condition uses the ten most recent eligible full-fidelity rows, each rendered as two before-state screenshots plus its known destination text and timestamp. Follow the manual workbook for the canonical row and packet contract.
