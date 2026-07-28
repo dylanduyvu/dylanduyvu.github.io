@@ -147,7 +147,7 @@ git diff --check
 
 Expected: only the article, the two graphic files, the two graphic planning notes, generated `latest/` output if refreshed by the harness, and the pre-existing `.obsidian/community-plugins.json` drift are present. The `.obsidian` file must remain unstaged.
 
-- [ ] **Step 4: Publish the coherent article checkpoint**
+- [x] **Step 4: Publish the coherent article checkpoint**
 
 Run:
 
@@ -157,7 +157,7 @@ npm run publish -- "article: add recording to dataset graphic"
 
 Expected: the relevant files are committed and pushed to `main`; `.obsidian/community-plugins.json` remains local and uncommitted.
 
-- [ ] **Step 5: Confirm remote state**
+- [x] **Step 5: Confirm remote state**
 
 Run:
 
