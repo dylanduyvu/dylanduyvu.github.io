@@ -29,18 +29,18 @@ Those documents remain the historical record of what was attempted. They are not
 
 ## Current objective
 
-Manually turn Dylan's roughly four-to-five-hour Screenpipe recording of building the blog post into a chronological dataset of pre-navigation states and exact destinations.
+Manually turn Dylan's roughly four-to-five-hour Screenpipe recording of building the blog post into a chronological dataset of pre-action states and exact immediate action targets.
 
-The initial audit found six candidate rows in a short end-of-evening session. Dylan then clarified that those were never meant to replace the full dataset-building pass. Dylan is the ground-truth labeler. Screenpipe supplies replayable evidence, and Codex should help maintain the worksheet, retrieve strictly prior frames, and enforce the no-leakage boundary.
+The initial audit found six candidate rows in a short end-of-evening session. Dylan then clarified that those were never meant to replace the full dataset-building pass. Dylan is the ground-truth labeler. His manual label from watching the recording is authoritative. Screenpipe metadata and later frames are optional QA, not an eligibility gate. Codex should help maintain the worksheet, retrieve strictly prior frames, and enforce the no-leakage boundary.
 
 The current labeling workflow and exact row contract are in [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]].
 
 The sequence Dylan approved on July 28 is:
 
-1. create the first five full-fidelity rows;
-2. use them for a state-only smoke test of labeling, packet construction, prediction, and scoring;
-3. if the workflow works, continue labeling toward approximately 60 rows from the blog-building recording;
-4. compare the same later rows under current screenshots only versus the same screenshots plus the ten most recent eligible full-fidelity rows; and
+1. collect 20 chronological atomic-action rows from the current review point;
+2. stop and run a small retrospective prediction experiment to inspect signal and method quality;
+3. use that checkpoint to decide whether the labeling, packet, prompt, or scoring methods need repair;
+4. scale toward roughly 200 rows only if the mini experiment justifies it; and
 5. consider an automatic Screenpipe extractor only after prediction produces useful signal.
 
 Do not resume the custom Hammerspoon, ScreenCaptureKit, Arc-extension, freeze-marker, or 30-action machinery for this first experiment.
@@ -70,30 +70,31 @@ The immediate product question is qualitative:
 
 ## Current data contract
 
-The core dataset is chronological. One row represents one semantic transition:
+The core dataset is chronological. One row represents one immediate eligible user action:
 
-> prior state A -> exact destination B
+> prior state A -> exact target of the next action B
 
-It is not necessarily a pair of two low-level actions. The clicks and keystrokes between A and B are the route.
+Do not collapse consecutive actions into an eventual destination. The prediction is made again after each eligible action from the new resulting state.
 
 Example:
 
-- Prior state: `Arc -> LongNAP paper -> conclusion`
-- Route: open Codex, select the NAP task, focus its composer
-- Exact destination: `Codex -> NAP task -> composer -> focus`
+- Row 1 prior state: `Arc -> Coda -> all hands 7.27 note`
+- Row 1 next action target: `Codex -> Patch NAP blog prep in vault`
+- Row 2 prior state: `Codex -> Patch NAP blog prep in vault`
+- Row 2 next action target: `Codex -> Patch NAP blog prep in vault -> response copy control`
 
-If opening the Codex task and focusing the composer are separate meaningful transitions, keep them as two rows. Do not collapse distinct semantic focus changes.
+If Dylan first clicks into Codex and then clicks its copy button, those are two rows. The second row's before-state screenshots come after Codex is focused but before the copy click. The same rule applies to focusing Codex and then focusing its composer.
 
-The ground-truth row stores both-monitor screenshots strictly before the first navigation input, the textual exact destination reached afterward, and a later image proving that destination. The later image, current destination, route, and labeler-only notes remain hidden from the predictor.
+The ground-truth row stores both-monitor screenshots strictly before the immediate action and the textual exact action target Dylan observed afterward. A later reference image and Screenpipe UI-event, OCR, Accessibility, application, and window evidence are optional QA. Record whether those sources corroborate the label, but never let them overrule Dylan's manual label or determine row eligibility. The current action target, exact input, optional QA, and labeler-only notes remain hidden from the predictor.
 
-Post-action evidence may be used by the human labeler to identify the hidden destination. That evidence never enters the prediction prompt.
+Post-action frames may be used by the human labeler to identify the hidden action target. They are not required once Dylan has confidently labeled the event, and they never enter the prediction prompt.
 
-For the state-only condition, the predictor receives only the current row's two before-state screenshots and the frozen instruction. For the history condition, it receives those same screenshots plus the ten most recent eligible rows completed before the current cutoff. Each historical row contributes its two before-state screenshots, textual destination label, and timestamp. Historical examples are chosen mechanically by recency, not perceived similarity.
+For the state-only condition, the predictor receives only the current row's two before-state screenshots and the frozen instruction. For the frozen 20-row smoke test, the history condition receives those same screenshots plus every earlier frozen row available before that cutoff, oldest to newest. Each historical row contributes its two before-state screenshots and textual action-target label. History therefore grows from one row to 19 rows across the 19 paired targets. This all-prior rule is a bounded smoke-test choice; the later scaled experiment still defaults to the ten most recent eligible rows unless Dylan changes it after reviewing this result.
 
 Two requirements do not relax:
 
-- the observation shown to the predictor must be strictly earlier than the navigation; and
-- the held-out destination label must be correct and specific.
+- the observation shown to the predictor must be strictly earlier than the immediate action; and
+- the held-out action-target label must be correct and specific.
 
 Perfect synchronization, cryptographic provenance, stable executable selectors, and automatic identity for every interface element are not required for this first qualitative pilot.
 
@@ -116,7 +117,7 @@ Manual labeling became the fallback after Dylan stopped pursuing the automatic s
 
 ## Why the automatic build stopped
 
-Screenpipe recorded useful raw evidence, including both monitors, clicks, keyboard input, scrolling, application and window changes, URLs, OCR, and Accessibility content. It did not automatically output the required chronological prior-state and exact-destination rows.
+Screenpipe recorded useful raw evidence, including both monitors, clicks, keyboard input, scrolling, application and window changes, URLs, OCR, and Accessibility content. It did not automatically output the required chronological pre-action-state and exact-action-target rows.
 
 The custom stack attempted to guarantee those rows at capture time by combining:
 
@@ -202,40 +203,84 @@ The newest qualifying natural-work session was the immediately prior capture:
 - 42 monitor 1 frames
 - 46 monitor 3 frames
 - 78 UI events across ChatGPT/Codex, Finder, and rekordbox
-- six clear semantic transitions with strictly prior two-monitor observations
+- six clear candidate interaction sequences with strictly prior two-monitor observations
 
-Three tempting transitions were excluded because the latest active-display pixels did not show the true pre-action state. This preserved the two requirements that do not relax: strictly pre-action predictor evidence and a correct exact destination label.
+Three tempting actions were excluded because the latest active-display pixels did not show the true pre-action state. This preserved the two requirements that do not relax: strictly pre-action predictor input and a correct exact action-target label.
 
 Full evidence, retained rows, exclusions, and hidden labels: [[screenpipe-natural-work-audit-2026-07-28|Screenpipe natural-work audit, July 28, 2026]].
 
 ## Exact next task
 
-Create and smoke-test the first five rows before committing to the full-session labeling push.
+The 20-row collection checkpoint has been reached and exceeded. Its visual
+preflight is complete, Dylan approved all 20 proposed image/action pairs with
+no corrections, and the pool is frozen as `BLOG-MINI-20-V1` /
+`MINI-20-20260728-V1`. The bounded protocol is frozen as
+`BLOG-EXPANDING-HISTORY-SMOKE-V1`. Stop labeling. Do not execute V1: an
+independent pre-call review found that the scoring components are not
+structured consistently across all 20 display labels, V1 exposes candidate
+IDs/times that add chronology metadata to the screenshot-only baseline, and
+its stated system-message contract does not literally match the available
+Codex CLI prompt stack.
 
-1. Open the Screenpipe timeline at July 27, 5:15 PM EDT and scan forward chronologically.
-2. Fully label candidates in order until the first five satisfy [[computer-use-nap-manual-labeling-workbook-2026-07-28#Frozen eligibility predicate|the frozen eligibility predicate]]. Do not skip an eligible earlier row for a later example.
-3. For each event, pause immediately before the first navigation input and record the exact cutoff.
-4. Retrieve the latest readable frame from both monitors strictly before that cutoff.
-5. Play forward until the destination stabilizes, write the exact destination as text, and retain a later image as verification evidence.
-6. Complete every required field in [[computer-use-nap-manual-labeling-workbook-2026-07-28#Exact ground-truth row contract|the ground-truth row contract]].
-7. Freeze those five IDs as `SMOKE-20260728-V1`, then render and run one fresh state-only predictor call per row, saving the raw response and structured prediction before revealing labels.
-8. If all five rows can be captured, rendered, predicted, and scored without changing the contract, resume after the fifth row and continue chronologically toward the first 60 eligible rows or the end of the intended interval.
+The reviewed implementation plan is
+`/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`.
+Its zero-call repair gate asks Dylan to approve (1) one uniform
+app/object/subtarget table and (2) the actual Codex
+base-plus-developer-plus-user prompt stack. After approval, preserve V1 as
+superseded-before-execution, mint V2, implement and preflight the harness, and
+only then make the 38 calls. No model call has run.
+
+Dylan approved both repair-gate choices at `2026-07-28T19:55:56Z`.
+At `2026-07-28T20:49:04Z`, he also approved `gpt-5.6-sol` with `max`
+single-model reasoning, a 1,200-second per-attempt timeout, and an
+infrastructure circuit breaker. Each attempt is immutable. Restarting skips
+every saved attempt and continues at the first missing schedule slot. A failed
+slot is never retried; an infrastructure failure is saved and pauses the run
+before another slot is attempted. The V2 execution plan is approved but not
+started.
+
+Screenpipe stored monitor 3 about every `4.0625s` and monitor 1 about every
+`5.078125s`. Five correct manual labels lack the exact intermediate
+predictor-visible state and are excluded only from the screenshot-based mini:
+`BLOG-CAND-005`, `BLOG-CAND-012`, `BLOG-CAND-015`, `BLOG-CAND-017`, and
+`BLOG-CAND-025`.
+
+The earliest 20 candidates with usable pre-action image pairs are:
+
+`BLOG-CAND-003`, `BLOG-CAND-004`, `BLOG-CAND-006`, `BLOG-CAND-007`,
+`BLOG-CAND-008`, `BLOG-CAND-009`, `BLOG-CAND-010`, `BLOG-CAND-011`,
+`BLOG-CAND-013`, `BLOG-CAND-014`, `BLOG-CAND-016`, `BLOG-CAND-018`,
+`BLOG-CAND-019`, `BLOG-CAND-020`, `BLOG-CAND-021`, `BLOG-CAND-022`,
+`BLOG-CAND-023`, `BLOG-CAND-024`, `BLOG-CAND-026`, and `BLOG-CAND-027`.
+
+Their exact image paths and hidden action labels are in the private canonical
+workbook at
+`/Users/dylanvu/screenpipe-datasets/blog-work-20260727/dataset.md`.
+`BLOG-CAND-028` through `BLOG-CAND-032` remain reserve rows.
+
+1. Keep every manual action label regardless of Screenpipe support; image absence never invalidates Dylan's label.
+2. Use the approved V2 snapshot, manifest, and protocol without changing image membership or chronology.
+3. Implement and test the reviewed execution plan. Freeze the scorer and all input hashes before any prediction.
+4. Before the first call, validate the maximum-depth `BLOG-CAND-027` packet and its exact 40-image Codex debug rendering.
+5. Make one `gpt-5.6-sol`/`max` attempt per condition slot with no selective retries. Preserve tool use and invalid JSON as incorrect model results. Preserve infrastructure failures, pause immediately, and resume later from the first missing slot without retrying the failed slot.
+6. Save both condition attempt records for a target before revealing its action label. A prediction may be absent only when its attempt status records why.
+7. Inspect prediction signal and method failures, then decide whether to revise the method or scale toward roughly 200 rows. Do not commit to the 200-row push before this review.
 
 Do not stop or mutate Screenpipe, delete recordings, resume the 30-action walkthrough, or build an extractor unless Dylan asks.
 
 ## Manual-pilot structure
 
-The exact row fields, templates, predictor views, leakage boundary, and smoke-test pass criteria live in the manual workbook and should not be duplicated loosely here.
+The exact row fields, templates, predictor views, leakage boundary, and 20-row checkpoint criteria live in the manual workbook and should not be duplicated loosely here.
 
 The durable distinction is:
 
-- Dataset storage is full fidelity: two strictly prior screenshots, a structured textual destination, later verification evidence, timestamps, route, quality, and utility fields.
-- Predictor exposure is bounded: current screenshots only for the baseline; the same screenshots plus the ten most recent eligible historical state-destination rows for the history condition.
+- Dataset storage is full fidelity for the experiment: two strictly prior screenshots, Dylan's structured immediate action target, timestamps, exact input, quality, and utility fields. Later frames and Screenpipe metadata are optional QA.
+- Predictor exposure is bounded: current screenshots only for the baseline; for this smoke test, the same screenshots plus every earlier frozen state-action row for the history condition. A later scaled experiment defaults to recent ten.
 - The logical experiment session is `BLOG-WORK-20260727`; capture segment `A`, `B`, `C`, or `D` is recorded separately.
 - Dataset eligibility follows one frozen predicate. Smoke and main manifests are chronological and versioned.
 - History membership is derived from the same frozen main manifest, not manually selected or stored in the ground-truth row.
-- The five-row smoke test validates the workflow, not accuracy or history lift.
-- In an approximately 60-row same-session run, the first ten eligible rows establish history and approximately 50 later rows supply the paired comparison.
+- The 20-row mini experiment is a method-and-signal checkpoint, not a conclusive evaluation.
+- A larger run may scale toward roughly 200 rows, but only after reviewing the mini experiment.
 
 ## Canonical vault notes
 
@@ -250,9 +295,10 @@ Read in this order:
 7. [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 8. [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 9. [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
-10. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
+10. [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
+11. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
 
-The initial predictor packet note is obsolete candidate evidence. Never run it. Build new packets only from the frozen row contract and smoke manifest in the manual workbook, keeping hidden routes, destinations, and later evidence outside predictor-visible files.
+The initial predictor packet note is obsolete candidate evidence. Never run it. Build new packets only from the frozen row contract and smoke manifest in the manual workbook, keeping hidden actions, action targets, and optional post-action QA outside predictor-visible files.
 
 The custom-capture source and preserved evidence remain at:
 
@@ -309,4 +355,4 @@ Do not publish, build Quartz, or watch deployment unless Dylan asks. For a reque
 
 ## Resume prompt
 
-> Read this handoff and the manual labeling workbook. Help Dylan create the first five full-fidelity rows from the approximately 5:15 PM to 10:20 PM Screenpipe blog-work recording, then run the state-only workflow smoke test. Each row stores two strictly prior screenshots, the textual exact destination, later verification evidence, timestamps, route, quality, and utility fields. If the smoke works, continue toward approximately 60 rows. For the later history condition, mechanically supply the ten most recent eligible historical rows, each rendered as two before-state screenshots plus its known destination text. Do not use current or future labels, select history by similarity, resume the custom capture stack, modify the article, mutate Screenpipe, or build an extractor.
+> Read this handoff, the manual labeling workbook, and `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`. The atomic-action workbook contains 30 manually narrated candidates. Dylan approved the V2 20-row protocol with rows `BLOG-CAND-003`, `004`, `006`, `007`, `008`, `009`, `010`, `011`, `013`, `014`, `016`, `018`, `019`, `020`, `021`, `022`, `023`, `024`, `026`, and `027`; preserve V1 but do not execute it. Preserve but exclude `005`, `012`, `015`, `017`, and `025` from the screenshot-based mini because Screenpipe skipped their exact intermediate state; this does not invalidate Dylan's manual labels. `028` through `032` remain reserve. No prediction has run. Follow the reviewed V2 plan using `gpt-5.6-sol`, `max` single-model reasoning, priority service, and a 1,200-second timeout. The experiment remains 19 paired targets and exactly 38 one-attempt condition slots, with all-prior chronological history versus current screenshots only, no selective retries, and both records saved before label reveal. Every existing attempt is immutable; restart by skipping saved attempts and continuing at the first missing slot. On infrastructure failure, save that slot and pause before the next; never retry the failed slot. Invalid model output counts false; infrastructure failure is null and removes its target from paired comparison. Dylan's labels are authoritative; Screenpipe metadata and later frames are optional QA. Do not restore earlier first-video candidates, resume labeling, use future labels, resume the custom capture stack, modify the article, mutate Screenpipe, build an extractor, or publish unless Dylan explicitly asks.
