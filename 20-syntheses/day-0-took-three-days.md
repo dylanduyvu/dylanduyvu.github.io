@@ -49,6 +49,7 @@ Completed 2026-07-27: clarified the Codex destination example, removed the six-a
 Completed 2026-07-27: rebuilt the article around one six-section narrative, moved the prediction precedent into the setup, removed the body tool matrix and standalone objection, and combined the manual next step with the product-gap conclusion.
 Completed 2026-07-27: converted the product survey into two scannable groups and removed its repeated version of the conversion requirements.
 Completed 2026-07-27: finished Dylan's top-to-bottom readability pass, clarified the custom system's purpose, defined first-use acronyms, and corrected the two-record navigation example.
+Completed 2026-07-27: added a recording-to-dataset graphic after the five conversion steps.
 Remaining before final publication: Dylan's final approval after the published readability checkpoint.
 %%
 
@@ -106,6 +107,8 @@ Both parts had to be right for the prediction test to mean anything. A screensho
 3. join the correct evidence from both monitors;
 4. name the destination consistently across native apps and browsers;
 5. export the records in chronological order.
+
+![Continuous screen and input evidence must pass through a conversion layer that identifies navigation moments, recovers prior screen state, joins both monitors, and names the destination before it becomes a chronological navigation record.](../70-attachments/recording-to-navigation-record.png)
 
 In my test, Screenpipe version 2.5.132 captured both monitors, clicks and keyboard input, app and window changes, web addresses, text from screenshots, and macOS descriptions of on-screen controls. Its [current architecture documentation](https://docs.screenpipe.com/architecture) explains that clicks, app switches, scrolls, typing pauses, and idle periods trigger screenshots instead of fixed-rate video.
 

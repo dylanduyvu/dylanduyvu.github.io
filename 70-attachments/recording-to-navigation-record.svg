@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" role="img" aria-labelledby="title description">
+  <title id="title">Recording is not the dataset</title>
+  <desc id="description">Continuous screen and input evidence must pass through a conversion layer that identifies navigation moments, recovers prior screen state, joins both monitors, and names the destination before it becomes a chronological navigation record.</desc>
+
+  <rect width="1600" height="800" fill="#F7F3EB"/>
+
+  <text x="72" y="94" fill="#1E1C19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="54" font-weight="700" letter-spacing="-1.4">Recording is not the dataset</text>
+  <text x="74" y="139" fill="#676158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="400">Captured activity still has to be converted into a usable navigation record.</text>
+
+  <rect x="70" y="196" width="420" height="492" rx="24" fill="#ECE7DD" stroke="#D3CCC0" stroke-width="2"/>
+  <text x="106" y="247" fill="#676158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.7">CONTINUOUS EVIDENCE</text>
+  <text x="106" y="302" fill="#1E1C19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700">What gets captured</text>
+
+  <circle cx="116" cy="360" r="5" fill="#7B756B"/>
+  <text x="138" y="369" fill="#2D2A26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="27">Screens</text>
+  <circle cx="116" cy="416" r="5" fill="#7B756B"/>
+  <text x="138" y="425" fill="#2D2A26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="27">Clicks + keys</text>
+  <circle cx="116" cy="472" r="5" fill="#7B756B"/>
+  <text x="138" y="481" fill="#2D2A26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="27">Apps + windows</text>
+  <circle cx="116" cy="528" r="5" fill="#7B756B"/>
+  <text x="138" y="537" fill="#2D2A26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="27">Browser events</text>
+
+  <rect x="106" y="594" width="190" height="50" rx="25" fill="#DDD6CA"/>
+  <circle cx="132" cy="619" r="9" fill="none" stroke="#676158" stroke-width="2"/>
+  <circle cx="151" cy="619" r="9" fill="none" stroke="#676158" stroke-width="2"/>
+  <text x="174" y="627" fill="#4D4942" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="600">Two monitors</text>
+
+  <path d="M510 442 H540" fill="none" stroke="#9B9387" stroke-width="4" stroke-linecap="round"/>
+  <path d="M530 430 L542 442 L530 454" fill="none" stroke="#9B9387" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="560" y="176" width="480" height="532" rx="24" fill="#F0DDD2" stroke="#B85F3D" stroke-width="3"/>
+  <rect x="560" y="176" width="480" height="9" rx="4.5" fill="#B85F3D"/>
+  <text x="596" y="237" fill="#8F432A" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.7">MISSING CONVERSION</text>
+  <text x="596" y="292" fill="#1E1C19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700">What has to happen</text>
+
+  <circle cx="625" cy="363" r="25" fill="#B85F3D"/>
+  <text x="625" y="372" text-anchor="middle" fill="#FFF9F4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700">1</text>
+  <text x="670" y="372" fill="#2D2A26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="27" font-weight="600">Find the move</text>
+
+  <line x1="625" y1="389" x2="625" y2="419" stroke="#D19A83" stroke-width="3"/>
+  <circle cx="625" cy="447" r="25" fill="#B85F3D"/>
+  <text x="625" y="456" text-anchor="middle" fill="#FFF9F4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700">2</text>
+  <text x="670" y="456" fill="#2D2A26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="27" font-weight="600">Recover prior state</text>
+
+  <line x1="625" y1="473" x2="625" y2="503" stroke="#D19A83" stroke-width="3"/>
+  <circle cx="625" cy="531" r="25" fill="#B85F3D"/>
+  <text x="625" y="540" text-anchor="middle" fill="#FFF9F4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700">3</text>
+  <text x="670" y="540" fill="#2D2A26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="27" font-weight="600">Join the evidence</text>
+
+  <line x1="625" y1="557" x2="625" y2="587" stroke="#D19A83" stroke-width="3"/>
+  <circle cx="625" cy="615" r="25" fill="#B85F3D"/>
+  <text x="625" y="624" text-anchor="middle" fill="#FFF9F4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700">4</text>
+  <text x="670" y="624" fill="#2D2A26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="27" font-weight="600">Name the destination</text>
+
+  <path d="M1060 442 H1090" fill="none" stroke="#9B9387" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1080 430 L1092 442 L1080 454" fill="none" stroke="#9B9387" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1110" y="196" width="420" height="492" rx="24" fill="#DDEADF" stroke="#47745D" stroke-width="3"/>
+  <text x="1146" y="247" fill="#47745D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.7">NAVIGATION RECORD</text>
+  <text x="1146" y="302" fill="#1E1C19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700">What the dataset needs</text>
+
+  <rect x="1146" y="345" width="348" height="92" rx="14" fill="#F4F8F3" stroke="#ACC5B4" stroke-width="2"/>
+  <text x="1170" y="381" fill="#676158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1">BEFORE</text>
+  <text x="1170" y="414" fill="#24221F" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="600">What was on my screens</text>
+
+  <line x1="1320" y1="450" x2="1320" y2="486" stroke="#47745D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1308 477 L1320 489 L1332 477" fill="none" stroke="#47745D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1146" y="503" width="348" height="92" rx="14" fill="#F4F8F3" stroke="#ACC5B4" stroke-width="2"/>
+  <text x="1170" y="539" fill="#47745D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1">NEXT</text>
+  <text x="1170" y="572" fill="#24221F" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="600">Exact place I went next</text>
+
+  <text x="1320" y="642" text-anchor="middle" fill="#47745D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="21" font-weight="700">KEPT IN CHRONOLOGICAL ORDER</text>
+
+  <text x="800" y="765" text-anchor="middle" fill="#777066" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="19">The recorder supplies evidence. The conversion layer produces the dataset.</text>
+</svg>
