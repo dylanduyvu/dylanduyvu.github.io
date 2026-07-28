@@ -8,11 +8,11 @@ updated: 2026-07-27
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 27, 2026, 9:41 PM EDT
+Generated: Jul 27, 2026, 10:01 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 64 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 63 note commits. The most recent movement is:
 
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
@@ -28,6 +28,13 @@ In the past 7 days, the public vault changed through 64 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 27, 2026, 10:01 PM EDT - article: add recording to dataset graphic
+
+article: add recording to dataset graphic.
+
+Changed notes:
+  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 ### Jul 27, 2026, 9:40 PM EDT - article: correct custom capture chronology
 
@@ -121,18 +128,11 @@ Changed notes:
   - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
   - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-### Jul 27, 2026, 3:28 PM EDT - article: narrow gap to Screenpipe conversion layer
-
-article: narrow gap to Screenpipe conversion layer.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-_Showing the newest 12 of 31 updates in this window._
+_Showing the newest 12 of 32 updates in this window._
 
 ## Past 7 Days
 
+- Jul 27, 2026: article: add recording to dataset graphic - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: correct custom capture chronology - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: publish final readability checkpoint - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: make product comparison scannable - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -157,12 +157,12 @@ _Showing the newest 12 of 31 updates in this window._
 - Jul 27, 2026: article: replace smoke test phrasing - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: format publication links inline - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: add research history and disclosure links - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: clarify LLM prediction test opening - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-_Showing the newest 25 of 64 updates in this window._
+_Showing the newest 25 of 63 updates in this window._
 
 ## Past 30 Days
 
+- Jul 27, 2026: article: add recording to dataset graphic - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: correct custom capture chronology - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: publish final readability checkpoint - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: make product comparison scannable - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
@@ -187,6 +187,5 @@ _Showing the newest 25 of 64 updates in this window._
 - Jul 27, 2026: article: replace smoke test phrasing - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: format publication links inline - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: add research history and disclosure links - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: clarify LLM prediction test opening - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-_Showing the newest 25 of 209 updates in this window._
+_Showing the newest 25 of 210 updates in this window._
