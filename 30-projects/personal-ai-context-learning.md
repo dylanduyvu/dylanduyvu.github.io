@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-22
-updated: 2026-07-24
+updated: 2026-07-28
 aliases:
   - Personal AI Context Learning
   - Niyant's personal-AI thesis
@@ -25,6 +25,9 @@ tags:
 
 > [!note] Source boundary
 > This project includes internal Notion and Slack context alongside the public World Models notes.
+
+> [!important] Current NAP direction, 2026-07-28
+> The first prediction pilot no longer waits for the custom capture ladder. Dylan recorded roughly four to five hours of his real blog-building workflow and will manually label full-fidelity `before screenshots -> exact destination text` rows. The immediate next step is to build and smoke-test the first five rows before labeling the rest. If that workflow works, continue toward approximately 60 rows and compare current screenshots only against the same screenshots plus the ten most recent eligible full-fidelity rows. The custom 30-action build remains historical unless prediction signal later justifies automatic acquisition work.
 
 ## Current State
 
@@ -52,6 +55,8 @@ The first NAPsack calibration found and locally fixed a display-coordinate misma
 
 That Screenpipe-plus-NAPsack branch has now been superseded for the controlled diagnostic. Capture Layer v2 uses Hammerspoon for physical input and Accessibility evidence, one ScreenCaptureKit stream per display, and mandatory Arc DOM, navigation, and rrweb evidence. Its six-action smoke passed. The fixed diagnostic walkthrough is paused at 12/30 immutable checkpoints, with step 13 next. The raw evidence is preserved, but semantic validator patches during collection created disclosed source-inventory drift, so this remains a component diagnostic rather than the later frozen calibration. See [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]].
 
+The July 26 through July 28 decision supersedes that capture ladder for the first qualitative pilot. Human review can supply event boundaries and exact hidden destinations without pretending Screenpipe already emits predictor-ready rows. An initial July 28 audit reconstructed six candidate transitions from a short end-of-evening session. Dylan then clarified that his intended source is the full several-hour blog-building recording and that he planned to sift and label it manually. The likely review window is approximately 5:15 PM through 10:20 PM EDT, containing 2,306 two-monitor frames and 1,945 UI events across several recorded segments. The short-session rows remain examples only. Dylan will first build five complete rows and smoke-test the state-only labeling, packet, prediction, and scoring workflow. If it passes, he will continue toward approximately 60 rows. The later history condition receives the ten most recent eligible historical rows, each represented by both before-state screenshots and its known destination text. See [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]] and [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]].
+
 The NAP experiment is one side of Dylan's current branch-selection LBH, not yet the chosen next project. The competing GPU branch has been sharpened from “find an offtake customer” into a demand-informed configuration gate: determine which small-server GPU configuration, if any, deserves to be purchased based on workload-specific customer evidence or defensible marketplace behavior. See [[gpu-configuration-demand-gate|GPU configuration demand gate]].
 
 A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence for feasibility. Once a personalized predictor shows suggestions, it helps cause the future behavior it learns from. Exposed-history accuracy may rise because the model understands the person better, because the person is conforming to the model's historical predictions, or both. This makes shadow mode, randomized exposure, goal-change tests, washout periods, and agency/diversity measures necessary before treating online accuracy or acceptance as evidence of deeper personalization.
@@ -67,7 +72,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - LongNAP establishes learnable personal action signal under its own phone-derived, trajectory-level setup. Its pass@1 is not next-app accuracy and it supplies no end-user routing-value result.
 - Tabracadabra establishes that the keyboard-first writer interaction is runnable. It does not establish learned personalization, exact semantic routing, or goal understanding.
 - Niyant's assignment establishes that computer-use NAP is strategically relevant to his vision. It does not validate Dylan's target, product value, or proposed implementation.
-- Screenpipe establishes that Dylan's Mac can produce a continuous raw action and screen stream. It does not yet establish exact control-level labels. Running a predictor before that distinction is resolved would confound model quality with recorder quality.
+- Screenpipe establishes that Dylan's Mac can produce a continuous raw action and screen stream. It does not establish automatic exact control-level labels. Running a predictor on unverified automatic labels would confound model quality with recorder quality; manually verified exact labels are acceptable for the first retrospective pilot.
 
 ## Key Insights
 
@@ -89,6 +94,9 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]]
+- [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
+- [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
+- [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Computer-use NAP shakedown predictor packets, July 28, 2026]]
 
 ## Hunches
 
@@ -100,6 +108,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[dylan-niyant-computer-use-nap-followup-2026-07-22|Dylan and Niyant: computer-use NAP contribution follow-up]]
 - [[omar-shaikh-computer-use-personalization-stack-2026-07-22|Omar Shaikh's computer-use personalization stack]]
 - [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
+- [[screenpipe-natural-work-audit-2026-07-28|Screenpipe natural-work audit, July 28, 2026]]
 - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
 - [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
 - [World Models public notes](https://handsdiff.github.io/)
@@ -126,15 +135,19 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
-- Batch-complete and freeze the remaining Capture Layer v2 browser validators, then resume the existing diagnostic checkpoint session at step 13 without repeating the 12 accepted rows. Use [[computer-use-nap-walkthrough-handoff-2026-07-24|the handoff]] as the continuation source of truth.
-- After the diagnostic, write the measured capture contract and formal harness. The later blind calibration must retain all 30 rows, reach at least 27 exact semantic targets, at least 9/10 native targets, at least 14/15 combined webpage targets, at least 4/5 cross-monitor targets, and zero silent misses before a one-to-two-hour natural capture.
+- Dylan builds the first five complete rows from the approximately 5:15 PM through 10:20 PM blog-work recording.
+- Each row stores two strictly prior screenshots, structured destination text, later verification evidence, timestamps, route, quality, and utility fields.
+- Run one fresh state-only predictor call per row and score only after saving the prediction. Treat five rows as workflow validation, not an accuracy or history result.
+- If replay, prompting, and scoring work, continue toward approximately 60 eligible rows.
+- Use the first ten eligible rows as initial history, then compare approximately 50 later rows under current screenshots only versus the same screenshots plus the ten most recent eligible full-fidelity rows.
+- Select historical rows mechanically by recency. Do not choose them by perceived similarity or use current or future labels.
+- If the same-session comparison is promising, add mismatched-history and cross-day controls before making a personalization claim.
+- Revisit automatic Screenpipe extraction or the preserved custom capture build only after prediction produces useful signal or Dylan explicitly resumes that work.
 - State the demo's claim and nonclaims before publishing it.
 - Compare the static implementation against simple context, retrieval, and memory baselines on held-out personal events.
 - Send Niyant the navigation-only experiment contract and confirm that its exact semantic-destination target matches what he meant by computer-use NAP.
-- Audit 50–100 meaningful natural actions only after the controlled capture stack and formal calibration pass. Report browser and native-app semantic-label coverage separately, and retain ambiguous or unresolved events in the denominator.
-- Begin model comparison only if the acquisition stack produces roughly 90% or better exact semantic labels without future leakage.
-- After acquisition passes, freeze the ontology, prompt, history window, baselines, and scoring rules before collecting chronological held-out handoffs.
-- Then compare MRU-3, source-transition, screen-only, correct-history, mismatched-history, and correct-history-plus-declared-goal conditions with top-three prediction and abstention.
+- If the two-day result is promising, freeze the ontology, prompt, history window, baselines, and scoring rules before a larger chronological test.
+- In a larger test, compare MRU-3, source-transition, screen-only, correct-history, mismatched-history, and correct-history-plus-declared-goal conditions with top-three prediction and abstention.
 - Kill or redirect the router if destinations have low entropy, trivial baselines nearly match the model, correct history adds no lift, labels are unstable, or hits mostly replace one click.
 - Treat Tabracadabra as prior art and a possible later writer baseline, not as a required experiment.
 - Keep proof of builder quality, proof of technical efficacy, and proof of market demand as separate outputs.

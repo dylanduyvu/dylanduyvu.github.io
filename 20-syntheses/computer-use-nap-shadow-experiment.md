@@ -574,3 +574,29 @@ If promising, write a public experiment post, describe the strongest proposed de
 ### What this experiment cannot establish
 
 This pilot cannot show that the model understands Dylan's goals, that fine-tuning is necessary, that the behavior generalizes to other people, that live suggestions improve outcomes, or that the automatic acquisition product is solved. It only tests whether one person's real work contains useful next-destination prediction opportunities and whether earlier personal activity appears to help an off-the-shelf model exploit them.
+
+### July 28 update: full-fidelity rows and recent-ten context
+
+Dylan clarified that the immediate raw source is his roughly five-hour Screenpipe recording of building the blog post, which he will label manually. This update supersedes the earlier instruction to finish the full dataset before a shakedown and the compact text-only history format for this same-session run.
+
+The durable ground-truth row pairs:
+
+- one strictly pre-navigation screenshot from each monitor;
+- a structured textual label for the exact semantic destination reached afterward;
+- exact cutoff and destination-stabilization timestamps;
+- the hidden human route; and
+- a later screenshot retained only to verify that the destination label is correct.
+
+The predictor never sees the current row's route, destination, later screenshot, labeler notes, or future activity.
+
+The immediate sequence is:
+
+1. Build the first five complete rows.
+2. Run a state-only smoke test to confirm those rows can be rendered, predicted, and scored without changing the contract.
+3. If the workflow passes, continue labeling toward approximately 60 eligible rows.
+4. Use the first ten eligible rows as initial history.
+5. On approximately 50 later rows, compare current screenshots only against the same screenshots plus the ten most recent eligible historical rows.
+
+For a target row, history selection is mechanical. Consider only clear, allowed, human-initiated rows whose destinations stabilized before the target cutoff; sort them chronologically; take the last ten; and present them oldest to newest. Each historical row contributes both before-state screenshots, its known textual destination, and its timestamp. Do not select examples because they appear similar to the current target.
+
+The five-row smoke test validates workflow only. The later paired same-session comparison supplies exploratory go/no-go evidence about recent task context, not statistically conclusive evidence or durable personalization. Full-fidelity storage preserves the option to rerun later tests with recent 5, recent 20, all prior, retrieved-similar, or deliberately mismatched history without relabeling the source data.

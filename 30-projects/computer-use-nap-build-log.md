@@ -23,6 +23,9 @@ tags:
 
 # Computer-use NAP build log
 
+> [!important] Current direction, 2026-07-28
+> The custom capture build and its 30-action walkthrough are historical for the first experiment. The immediate path is a manually verified retrospective pilot using Screenpipe evidence. Do not resume the capture ladder unless prediction results later justify automatic acquisition work. Current operational state: [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]].
+
 > [!summary] Current status
 > As of 2026-07-24: Capture Layer v2’s six-action smoke passed every real-data checker gate, and the checker independently caught all 54 synthetic failure mutations. The diagnostic walkthrough is now paused cleanly at **12/30 accepted checkpoints**, with Gmail `Settings` next. Steps 1–10 cover native actions; steps 11–12 prove exact Gmail DOM clicks and browser export integrity. The raw recorder stack remained stable, but the checkpoint validator was repaired during the walkthrough, so this is a diagnostic with disclosed protocol drift rather than one frozen formal calibration. Full continuation state is in [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]].
 
