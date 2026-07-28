@@ -8,18 +8,18 @@ updated: 2026-07-28
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 28, 2026, 4:51 PM EDT
+Generated: Jul 28, 2026, 6:39 PM EDT
 
 ## State Shift Summary
 
 In the past 7 days, the public vault changed through 65 note commits. The most recent movement is:
 
+- Project decision: archive NAP smoke harness and preflight.
 - Project decision: add resumable NAP smoke execution plan.
 - Project decision: tighten Screenpipe dataset contract.
 - Project decision: define Screenpipe dataset smoke test.
 - Project decision: update computer-use NAP capture research.
 - Project decision: checkpoint computer-use NAP walkthrough handoff.
-- Source capture: add computer-use capture tooling deep survey.
 
 ## Current Hub Signals
 
@@ -28,6 +28,14 @@ In the past 7 days, the public vault changed through 65 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 28, 2026, 6:39 PM EDT - project: archive NAP smoke harness and preflight
+
+Project decision: archive NAP smoke harness and preflight.
+
+Changed notes:
+  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
+  - [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
 
 ### Jul 28, 2026, 4:51 PM EDT - project: add resumable NAP smoke execution plan
 
@@ -90,53 +98,9 @@ Changed notes:
   - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
   - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-### Jul 27, 2026, 6:37 PM EDT - article: rebuild recording to prediction narrative
-
-article: rebuild recording to prediction narrative.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-### Jul 27, 2026, 6:24 PM EDT - article: clarify why the capture walkthrough stopped
-
-article: clarify why the capture walkthrough stopped.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-### Jul 27, 2026, 5:46 PM EDT - article: move calibration history into fragility section
-
-article: move calibration history into fragility section.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-### Jul 27, 2026, 5:38 PM EDT - article: correct automatic pipeline sequencing
-
-article: correct automatic pipeline sequencing.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
-### Jul 27, 2026, 5:36 PM EDT - article: restore automatic acquisition ladder
-
-article: restore automatic acquisition ladder.
-
-Changed notes:
-  - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-  - [[computer-use-nap-30-action-walkthrough-2026-07-24|Computer-use NAP: what the 30-action walkthrough is]]
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[day-0-computer-use-tool-gap-web-audit-2026-07-26|Day 0 computer-use tool-gap web audit, July 26, 2026]]
-
-_Showing the newest 12 of 14 updates in this window._
-
 ## Past 7 Days
 
+- Jul 28, 2026: project: archive NAP smoke harness and preflight - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - Jul 28, 2026: project: add resumable NAP smoke execution plan - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - Jul 28, 2026: project: tighten Screenpipe dataset contract - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - Jul 28, 2026: project: define Screenpipe dataset smoke test - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
@@ -161,12 +125,12 @@ _Showing the newest 12 of 14 updates in this window._
 - Jul 27, 2026: article: sharpen personal dataset opening - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: reconcile Mimica and Celonis setup fit - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: structure capture fragility causes - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: explain four-day prediction experiment - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
 _Showing the newest 25 of 65 updates in this window._
 
 ## Past 30 Days
 
+- Jul 28, 2026: project: archive NAP smoke harness and preflight - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - Jul 28, 2026: project: add resumable NAP smoke execution plan - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - Jul 28, 2026: project: tighten Screenpipe dataset contract - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - Jul 28, 2026: project: define Screenpipe dataset smoke test - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
@@ -191,6 +155,5 @@ _Showing the newest 25 of 65 updates in this window._
 - Jul 27, 2026: article: sharpen personal dataset opening - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: reconcile Mimica and Celonis setup fit - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: structure capture fragility causes - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: explain four-day prediction experiment - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-_Showing the newest 25 of 213 updates in this window._
+_Showing the newest 25 of 214 updates in this window._
