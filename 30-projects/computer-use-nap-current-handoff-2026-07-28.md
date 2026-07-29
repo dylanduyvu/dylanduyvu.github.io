@@ -2,7 +2,7 @@
 type: project-handoff
 status: active
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-29
 aliases:
   - Computer-use NAP current handoff
   - NAP experiment current state
@@ -33,8 +33,9 @@ The first 20-row dataset and its 19-pair retrospective smoke test are complete.
 The condition-blind V3 semantic adjudication and V4 method design are also
 complete. The isolated V4 monitor-3 method was frozen before future labels at
 `2026-07-29T01:56:17.000Z`. The current objective is to resume chronological
-monitor-3 labeling and reserve exactly 20 held-out targets before deciding
-whether to continue toward roughly 200 rows.
+monitor-3 labeling toward roughly 200 atomic rows. The first ten eligible new
+rows seed history, and the next 20 form the early V4 checkpoint holdout.
+Labeling continues past row 30 while that checkpoint runs.
 
 The source task was to manually turn Dylan's roughly four-to-five-hour Screenpipe recording of building the blog post into a chronological dataset of pre-action states and exact immediate action targets.
 
@@ -46,13 +47,34 @@ labeling workbook, July 28, 2026]]. The executable V4 artifacts live privately
 under
 `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`.
 
-The sequence Dylan approved on July 28 is:
+The current sequence Dylan approved on July 28 is:
 
-1. collect 20 chronological atomic-action rows from the current review point;
-2. stop and run a small retrospective prediction experiment to inspect signal and method quality;
-3. use that checkpoint to decide whether the labeling, packet, prompt, or scoring methods need repair;
-4. scale toward roughly 200 rows only if the mini experiment justifies it; and
-5. consider an automatic Screenpipe extractor only after prediction produces useful signal.
+1. continue collecting one chronological, atomic monitor-3 dataset toward
+   roughly 200 labeled rows;
+2. use the first ten eligible new rows as history and rows 11–30 as the early
+   V4 checkpoint holdout;
+3. run the 40-call checkpoint without pausing collection;
+4. preserve rows 31 onward as the still-untested pool and freeze each later
+   experiment split before making predictions on it; and
+5. consider an automatic Screenpipe extractor only after prediction produces
+   useful signal.
+
+On July 29, Dylan completed a manual pass over the next ten monitor-3
+recordings. The pass produced 78 narrated candidate rows: 76 action labels are
+accepted from Dylan's narration, 74 are currently well-timed pointer rows ready
+for strictly-prior-frame extraction, and four are preserved but not yet
+experiment-ready. Two recordings contained no actions. The four unresolved
+rows comprise one focus with an imprecise timestamp, one possible focus whose
+input method needs confirmation, and two accepted actions for which Screenpipe
+missed the granular prior frames. These rows stay in the raw chronology rather
+than being silently discarded.
+
+The normalized 78-row ledger is now the canonical public-vault dataset:
+[[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical
+dataset]]. Every future task working in this vault should read and update that
+file. Do not create a competing canonical ledger outside the vault. The next
+operational step is to extract and validate the strictly-prior monitor-3
+screenshots and update the canonical file in place.
 
 Do not resume the custom Hammerspoon, ScreenCaptureKit, Arc-extension, freeze-marker, or 30-action machinery for this first experiment.
 
@@ -370,11 +392,11 @@ Next:
 3. Reserve the next exactly 20 eligible monitor 3 actions as the untouched
    holdout.
 4. Freeze the completed run inputs, then make 40 calls: state-only and rolling
-   recent-10 history for each held-out target.
+   recent-10 history for each held-out target, without pausing labeling.
 5. Score exact target, action type, their conjunction, blind semantic
    same-target identity, and shortcut usefulness separately.
-6. Decide whether to continue toward roughly 200 rows from the repaired
-   holdout.
+6. Continue the same atomic dataset toward roughly 200 labeled rows and freeze
+   later development/holdout splits before evaluating them.
 
 V4 is not a numeric rerun of V3. Monitor coverage, history length, target
 grammar, response schema, and scoring all changed.
@@ -401,8 +423,9 @@ The durable distinction is:
   targets and 40 calls.
 - Exact target, action type, exact action, semantic equivalence, and shortcut
   usefulness are separate outputs.
-- A larger run may scale toward roughly 200 rows, but only after reviewing the
-  V4 holdout.
+- Collection continues toward roughly 200 rows while the early V4 checkpoint
+  runs. Later experimental splits must be frozen before predictions, rather
+  than selected from observed model outcomes.
 
 ## Canonical vault notes
 

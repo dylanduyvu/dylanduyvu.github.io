@@ -35,7 +35,8 @@ Do not use the earlier candidate packet or V3 harness. The V3 20-row checkpoint
 and 38-call experiment are complete and immutable. V4 was method-frozen before
 future labels at `2026-07-29T01:56:17.000Z`; its method-lock SHA-256 is
 `55720d02a696ccfbcfa0fdec1b17f34e9b2c69280151623d6e265b29a905a8fa`.
-Do not scale toward roughly 200 rows until the fresh V4 holdout is reviewed.
+Continue the same chronological atomic dataset toward roughly 200 labeled
+rows. The early 40-call V4 checkpoint does not pause collection.
 
 ## Completed smoke readout
 
@@ -200,6 +201,9 @@ history length, response schema, and target-granularity scoring.
 
 Canonical private V4 artifacts:
 
+- canonical dataset:
+  [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical
+  dataset]] (all future labels and evidence status updates go here)
 - schema audit:
   `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
 - method policy:
@@ -821,15 +825,15 @@ state-only 1/19 top-1 and top-3 versus history 4/19 top-1 and 5/19 top-3,
 paired 3/0/16 and 4/0/15. The old 2/5 versus 5/7 result remains only as a
 non-primary granularity-inclusive sensitivity.
 
-Freeze the V4 method before future V4 labels. Then resume chronological
-monitor 3 labeling under the superseding contract above. Use at least ten
-earlier eligible rows as a history-only pool and reserve the next exactly 20
-eligible monitor 3 actions as the untouched paired holdout. The retest predicts
-only those 20 held-out targets, twice each, for 40 calls.
+The V4 method is frozen. Resume chronological monitor 3 labeling under the
+superseding contract above and continue toward roughly 200 atomic rows. Use
+the first ten eligible new rows as history and reserve the next exactly 20
+eligible monitor 3 actions as the early paired holdout. Predict those 20
+targets twice each, for 40 calls, while labeling continues past row 30.
 
-Decide whether to continue toward roughly 200 rows after separately reviewing
-exact target, action type, exact action, blind semantic same-target identity,
-and shortcut usefulness. Six V3 granularity ranks and usefulness remain
+Rows after that checkpoint remain available for later development and holdout
+splits. Freeze each split before making predictions on it; do not choose it
+from observed model outcomes. Six V3 granularity ranks and usefulness remain
 unresolved human judgments, but they do not change the V4 primary rules.
 
 Because every row is stored at full fidelity, later experiments can choose
