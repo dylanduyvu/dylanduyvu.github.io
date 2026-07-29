@@ -145,6 +145,20 @@ insight: mark novation demand claim weakened
 publish: update public notes harness
 ```
 
+## Screenpipe Dataset Canonical Location
+
+The complete Screenpipe project tree is consolidated inside this vault at
+`/Users/dylanvu/notes/screenpipe-datasets/`. Treat that in-vault tree as the
+canonical working location. Do not use or update the deprecated external
+`/Users/dylanvu/screenpipe-datasets/` tree, and do not create another competing
+dataset location.
+
+The public canonical V4 human-label ledger is
+`30-projects/computer-use-nap-v4-canonical-dataset.md`. The raw
+`screenpipe-datasets/` mirror is Git-ignored because it contains roughly 200 MB
+of screenshots and model-debug packets; its exclusion from public Git does not
+make the external tree canonical again.
+
 ## Privacy
 
 The current GitHub repo is public. Anything committed and pushed is public on GitHub, even if Quartz does not render it on the site. Before committing sensitive personal/professional material, either ask Dylan, keep it out of this public repo, or create a separate private workflow. Still do not store raw credentials, private keys, access tokens, passwords, or seed phrases unless Dylan explicitly designs a secrets workflow.

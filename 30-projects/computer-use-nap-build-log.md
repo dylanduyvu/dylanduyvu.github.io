@@ -33,7 +33,7 @@ tags:
 > Without rerunning any model call, a condition-blind lexical-only rescore produced the conservative primary result: screen-only 1/19 top-1 and top-3, and history 4/19 top-1 and 5/19 top-3. Paired results are 3 history wins, 0 losses, and 16 ties at top-1, and 4 wins, 0 losses, and 15 ties at top-3. A separate granularity-inclusive sensitivity retains the old 2/19 and 5/19 versus 5/19 and 7/19 figures, paired 4/1/14 and 3/1/15, but it is not primary. Six child-control ranks remain queued for Dylan's granularity decision. Shortcut usefulness remains unresolved. Full matrix: [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
 
 > [!important] V4 monitor-3 repair, 2026-07-28
-> V4 is isolated from immutable V3 and was method-frozen before future labels at `2026-07-29T01:56:17.000Z` (`method-lock.json` SHA-256 `55720d02a696ccfbcfa0fdec1b17f34e9b2c69280151623d6e265b29a905a8fa`). Routine labeling uses monitor 3 only. Monitor 1 actions are explicit audit-only coverage exclusions, and any monitor 1 companion image is optional provenance that never enters a model prompt. Eligible actions are classified as `focus` or `activate`; a click is only the input method, and a Submit-button click is `activate`. The first ten or more chronological eligible monitor 3 rows are history-only. After that pool closes, the next exactly 20 eligible monitor 3 actions form the holdout. Each gets one state-only and one rolling-recent-10 call, for 40 calls. Earlier held-out labels may enter later history only after their action occurred. Scoring separately reports strict-granularity exact target, action type, their exact conjunction, blind semantic same-target identity, and shortcut usefulness. Do not compare V4 accuracy numerically with V3 because monitor coverage, history length, response schema, and scoring changed. Private method and harness: `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`.
+> V4 is isolated from immutable V3 and was method-frozen before future labels at `2026-07-29T01:56:17.000Z` (`method-lock.json` SHA-256 `55720d02a696ccfbcfa0fdec1b17f34e9b2c69280151623d6e265b29a905a8fa`). Routine labeling uses monitor 3 only. Monitor 1 actions are explicit audit-only coverage exclusions, and any monitor 1 companion image is optional provenance that never enters a model prompt. Eligible actions are classified as `focus` or `activate`; a click is only the input method, and a Submit-button click is `activate`. The first ten or more chronological eligible monitor 3 rows are history-only. After that pool closes, the next exactly 20 eligible monitor 3 actions form the holdout. Each gets one state-only and one rolling-recent-10 call, for 40 calls. Earlier held-out labels may enter later history only after their action occurred. Scoring separately reports strict-granularity exact target, action type, their exact conjunction, blind semantic same-target identity, and shortcut usefulness. Do not compare V4 accuracy numerically with V3 because monitor coverage, history length, response schema, and scoring changed. Private method and harness: `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/`.
 
 > [!note] Continuous 200-row collection plan, 2026-07-28
 > The 40-call V4 checkpoint no longer pauses manual collection. Build one chronological atomic monitor-3 dataset toward roughly 200 labeled rows. The first ten eligible new rows seed history; rows 11–30 are the early checkpoint holdout; rows 31 onward remain available for later experiments. Freeze every later development/holdout split before making predictions on it rather than selecting from observed model outcomes.
@@ -576,17 +576,17 @@ override the July 28 manual V4 direction at the top of this note.
 ## Local artifacts
 
 - V4 isolated harness:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/`
 - V4 method policy:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/method-policy.json`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/method-policy.json`
 - V4 labeling guide:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/LABELING-GUIDE.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/LABELING-GUIDE.md`
 - V4 schema audit:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
 - V3 semantic adjudication:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
 - V3 row-by-row adjudication:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
 - NAPsack run A: `/Users/dylanvu/napsack-runs/secondary-smoke-2026-07-23-a`
 - Corrected run B: `/Users/dylanvu/napsack-runs/secondary-smoke-2026-07-23-b`
 - Monitor regression test: `/Users/dylanvu/napsack-runs/tests/test_secondary_monitor_mapping.py`

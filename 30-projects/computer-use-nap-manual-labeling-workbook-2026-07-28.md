@@ -88,12 +88,12 @@ and the immutable as-recorded result is preserved separately.
 
 Full private readout:
 
-- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/REPORT.md`
-- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/summary.json`
-- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/INTERPRETATION.md`
-- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/HITS-FOR-REVIEW.md`
-- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
-- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
+- `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/REPORT.md`
+- `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/summary.json`
+- `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/INTERPRETATION.md`
+- `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/HITS-FOR-REVIEW.md`
+- `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
+- `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
 
 ## V4 superseding labeling and experiment contract
 
@@ -205,15 +205,15 @@ Canonical private V4 artifacts:
   [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical
   dataset]] (all future labels and evidence status updates go here)
 - schema audit:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
 - method policy:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/method-policy.json`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/method-policy.json`
 - labeling guide:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/LABELING-GUIDE.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/LABELING-GUIDE.md`
 - adjudication rubric:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/ADJUDICATION-RUBRIC.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/ADJUDICATION-RUBRIC.md`
 - isolated harness:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/`
 
 ## Historical V3 experiment contract
 
@@ -388,7 +388,7 @@ live in the private canonical workbook.
 
 > Historical pre-execution review update, 2026-07-28: V1 must
 > not be executed. The reviewed plan at
-> `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`
+> `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`
 > first requires Dylan to approve a uniform structured target table and the
 > actual Codex base-plus-developer-plus-user prompt stack. That approval mints
 > a superseding V2 while preserving V1. The dataset membership, chronological

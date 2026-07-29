@@ -270,17 +270,17 @@ length, the prediction schema, and strict target-granularity scoring.
 ## Private adjudication and V4 artifacts
 
 - adjudication report:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
 - row-by-row machine-readable adjudication:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
 - V4 schema audit:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
 - V4 method policy:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/method-policy.json`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/method-policy.json`
 - V4 labeling guide:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/LABELING-GUIDE.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/LABELING-GUIDE.md`
 - isolated V4 harness:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/`
 
 ## Links
 

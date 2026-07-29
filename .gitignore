@@ -12,3 +12,7 @@ tsconfig.tsbuildinfo
 .quartz/
 .quartz-cache/
 quartz/cli/tui/dist/
+
+# Complete local Screenpipe project mirror. Keep it inside the vault for stable
+# agent access, but do not sweep raw screenshots/debug packets into public Git.
+screenpipe-datasets/

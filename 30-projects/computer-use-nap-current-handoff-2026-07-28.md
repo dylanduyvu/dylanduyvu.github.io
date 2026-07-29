@@ -45,7 +45,7 @@ The current labeling workflow and exact row contract are in
 [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual
 labeling workbook, July 28, 2026]]. The executable V4 artifacts live privately
 under
-`/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`.
+`/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/`.
 
 The current sequence Dylan approved on July 28 is:
 
@@ -75,6 +75,14 @@ dataset]]. Every future task working in this vault should read and update that
 file. Do not create a competing canonical ledger outside the vault. The next
 operational step is to extract and validate the strictly-prior monitor-3
 screenshots and update the canonical file in place.
+
+On July 29, the complete 483-file, 200 MB
+`/Users/dylanvu/screenpipe-datasets/` project tree was copied and checksum
+verified at `/Users/dylanvu/notes/screenpipe-datasets/`. The in-vault tree is
+now the canonical working location; the old external tree is preserved only as
+a deprecated source copy. Active vault references have been repointed to the
+in-vault mirror. Raw screenshots and debug packets remain Git-ignored so they
+cannot be swept into the public repository by a routine publish.
 
 Do not resume the custom Hammerspoon, ScreenCaptureKit, Arc-extension, freeze-marker, or 30-action machinery for this first experiment.
 
@@ -364,25 +372,25 @@ revealed. The original attempts remain immutable.
 The private canonical artifacts are:
 
 - workbook:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/dataset.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/dataset.md`
 - full report:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/REPORT.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/REPORT.md`
 - machine-readable summary:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/summary.json`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/summary.json`
 - interpretation:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/INTERPRETATION.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/INTERPRETATION.md`
 - six history hits for Dylan's usefulness review:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/HITS-FOR-REVIEW.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/HITS-FOR-REVIEW.md`
 - completed semantic adjudication:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
 - row-by-row adjudication:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
 - V4 schema audit:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
 - V4 method policy and harness:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/`
 - frozen V4 method lock:
-  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/method-lock.json`
+  `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/experiment-v4/method-lock.json`
 
 Next:
 

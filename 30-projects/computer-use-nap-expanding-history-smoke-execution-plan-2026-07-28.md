@@ -25,7 +25,7 @@ tags:
 Completed on July 28, 2026.
 
 The private step-by-step implementation checklist is
-`/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`.
+`/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`.
 This note preserves the load-bearing execution contract in the vault.
 
 V2 passed its no-model preflight but stopped before its first model call because
@@ -45,9 +45,9 @@ attempts were saved before each label reveal. The post-run audit found:
 
 The deterministic private readout is:
 
-- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/REPORT.md`
-- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/summary.json`
-- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/INTERPRETATION.md`
+- `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/REPORT.md`
+- `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/summary.json`
+- `/Users/dylanvu/notes/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/INTERPRETATION.md`
 
 ## Outcome
 
