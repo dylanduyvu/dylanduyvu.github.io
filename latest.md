@@ -8,18 +8,18 @@ updated: 2026-07-28
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 28, 2026, 8:49 PM EDT
+Generated: Jul 28, 2026, 10:00 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 67 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 68 note commits. The most recent movement is:
 
+- Project decision: freeze monitor-3 NAP V4 method.
 - Project decision: archive NAP smoke harness and preflight.
 - Project decision: add resumable NAP smoke execution plan.
 - Project decision: tighten Screenpipe dataset contract.
 - Project decision: define Screenpipe dataset smoke test.
 - Project decision: update computer-use NAP capture research.
-- Project decision: checkpoint computer-use NAP walkthrough handoff.
 
 ## Current Hub Signals
 
@@ -28,6 +28,16 @@ In the past 7 days, the public vault changed through 67 note commits. The most r
 - [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 28, 2026, 10:00 PM EDT - project: freeze monitor-3 NAP V4 method
+
+Project decision: freeze monitor-3 NAP V4 method.
+
+Changed notes:
+  - [[computer-use-nap-build-log|Computer-use NAP build log]]
+  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
+  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
+  - [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
 
 ### Jul 28, 2026, 8:49 PM EDT - experiment: publish NAP semantic rescore and retest plan
 
@@ -100,15 +110,9 @@ article: add recording to dataset graphic.
 Changed notes:
   - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 
-### Jul 27, 2026, 9:40 PM EDT - article: correct custom capture chronology
-
-article: correct custom capture chronology.
-
-Changed notes:
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
 ## Past 7 Days
 
+- Jul 28, 2026: project: freeze monitor-3 NAP V4 method - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 28, 2026: experiment: publish NAP semantic rescore and retest plan - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
 - Jul 28, 2026: experiment: publish first NAP smoke result - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
 - Jul 28, 2026: project: archive NAP smoke harness and preflight - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
@@ -133,12 +137,12 @@ Changed notes:
 - Jul 27, 2026: article: clarify dataset and navigation record structure - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: remove redundant opening summary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify experiment framing and opening context - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: sharpen personal dataset opening - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 
-_Showing the newest 25 of 67 updates in this window._
+_Showing the newest 25 of 68 updates in this window._
 
 ## Past 30 Days
 
+- Jul 28, 2026: project: freeze monitor-3 NAP V4 method - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 28, 2026: experiment: publish NAP semantic rescore and retest plan - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
 - Jul 28, 2026: experiment: publish first NAP smoke result - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
 - Jul 28, 2026: project: archive NAP smoke harness and preflight - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
@@ -163,6 +167,5 @@ _Showing the newest 25 of 67 updates in this window._
 - Jul 27, 2026: article: clarify dataset and navigation record structure - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: remove redundant opening summary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify experiment framing and opening context - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: sharpen personal dataset opening - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 
-_Showing the newest 25 of 216 updates in this window._
+_Showing the newest 25 of 217 updates in this window._
