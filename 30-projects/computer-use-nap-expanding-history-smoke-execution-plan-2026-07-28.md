@@ -78,6 +78,24 @@ that apparently referred to the same destination could therefore fail because
 they added words such as `conversation`, `task`, or `prompt`. The observed gap
 mixes behavioral prediction with vocabulary imitation.
 
+A narrow post-hoc semantic sensitivity pass made no new model calls and
+changed only obvious naming equivalents:
+
+| Condition | Semantic top-1 | Semantic top-3 |
+|---|---:|---:|
+| Current screenshots only | 2/19 | 5/19 |
+| Current screenshots plus all earlier rows | 5/19 | 7/19 |
+
+Paired semantic results were 4 history wins, 1 loss, and 14 ties at top-1, and
+3 wins, 1 loss, and 15 ties at top-3. This is development evidence because the
+equivalence rule was selected after viewing outputs. The immutable exact score
+remains the frozen result.
+
+History grew from one through 19 prior rows, but accuracy was not monotonic.
+Semantic history top-3 was 3/5 at depths 1–5, 1/5 at 6–10, and 3/9 at 11–19.
+The design changes target difficulty and workflow phase along with depth, so it
+cannot isolate the causal effect of more context.
+
 Fourteen expanding-history calls also fell back from WebSockets to HTTPS. They
 returned clean schema-valid predictions, but the frozen event classifier
 mistook the fallback error item for tool use. This was detected before labels
@@ -85,10 +103,13 @@ were revealed. The original attempts remain immutable, and the report preserves
 the as-recorded, conservative-infrastructure, and preregistered
 transport-recovered views separately.
 
-The next experiment should freeze stable destination identities or a blinded
-semantic-adjudication rule, fix transport-event classification, bound history
-to a recent window, and use a fresh 20-to-30-target holdout. Only then decide
-whether to scale toward roughly 200 rows.
+The next sequence is to finish condition-blind adjudication, freeze stable
+destination identities and scoring, fix transport-event classification, then
+resume chronological labeling on July 29. The larger labeled pool supplies
+history; reserve its final 20–30 targets for a paired bounded-history retest
+that night. Only those held-out targets need model calls. Full provisional
+matrix:
+[[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
 
 ## Experiment
 
@@ -193,6 +214,7 @@ toward roughly 200 rows.
 ## Links
 
 - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
+- [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
 - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
 - [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]

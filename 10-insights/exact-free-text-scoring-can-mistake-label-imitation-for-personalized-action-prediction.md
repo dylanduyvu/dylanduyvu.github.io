@@ -62,6 +62,17 @@ the labeled destination with extra interface nouns. For example:
 The exact scorer rejected the second object's added `conversation` token even
 though the apparent task and field were the same.
 
+A narrow post-hoc semantic sensitivity pass counted only obvious naming
+equivalents and left wrong apps, tasks, pages, and controls wrong. It moved
+screen-only from 0/19 to 2/19 at top-1 and 5/19 at top-3. History moved from
+5/19 to 5/19 at top-1 and from 6/19 to 7/19 at top-3. The paired comparison
+became 4 wins, 1 loss, and 14 ties at top-1, and 3 wins, 1 loss, and 15 ties at
+top-3.
+
+This post-hoc view is development evidence, not a replacement confirmatory
+score. Its full target matrix and history-depth breakdown are in
+[[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
+
 ## Implications
 
 - Use stable destination IDs separate from display prose.
@@ -88,9 +99,12 @@ how much came from behavioral signal versus vocabulary alignment.
 ## Links
 
 - [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
+- [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
 - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 
 ## Updates
 
 - 2026-07-28: Created from the first 19-pair retrospective smoke readout.
+- 2026-07-28: Added the provisional post-hoc semantic sensitivity result and
+  linked the complete target matrix.

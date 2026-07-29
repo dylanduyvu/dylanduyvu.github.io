@@ -30,9 +30,10 @@ Those documents remain the historical record of what was attempted. They are not
 ## Current objective
 
 The first 20-row dataset and its 19-pair retrospective smoke test are complete.
-The current objective is to repair destination identity and scoring, review the
-six history top-3 hits for shortcut usefulness, and run a fresh small holdout
-before deciding whether to label roughly 200 rows.
+The current objective is to finish semantic adjudication, repair destination
+identity and scoring, resume chronological labeling under the patched schema,
+and reserve a fresh 20–30-target holdout before deciding whether to continue
+toward roughly 200 rows.
 
 The source task was to manually turn Dylan's roughly four-to-five-hour Screenpipe recording of building the blog post into a chronological dataset of pre-action states and exact immediate action targets.
 
@@ -244,6 +245,25 @@ workflow prediction with vocabulary imitation. Apparently identical
 destinations could score differently because one prediction added
 `conversation`, `task`, or `prompt`.
 
+A narrow post-hoc semantic sensitivity pass, with no new model calls, counted
+only obvious naming equivalents:
+
+| Condition | Semantic top-1 | Semantic top-3 |
+|---|---:|---:|
+| Current screenshots only | 2/19 | 5/19 |
+| Current screenshots plus all earlier rows | 5/19 | 7/19 |
+
+The paired result became 4 history wins, 1 loss, and 14 ties at top-1, and 3
+wins, 1 loss, and 15 ties at top-3. This is still provisional because the
+equivalence rule was designed after seeing the outputs. Full matrix:
+[[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
+
+The walk-up supplied successively increasing history from one through 19 prior
+rows. Correctness did not increase monotonically: semantic history top-3 was
+3/5 at depths 1–5, 1/5 at 6–10, and 3/9 at 11–19. The current design cannot
+isolate context quantity because the target and workflow phase also changed at
+every depth.
+
 Fourteen expanding-history calls also recovered from WebSocket disconnects by
 falling back to HTTPS. They returned valid predictions, but the frozen
 classifier mislabeled the fallback error item as tool use. This was detected
@@ -265,15 +285,17 @@ The private canonical artifacts are:
 
 Next:
 
-1. Dylan reviews the six history top-3 hits and rates whether each would have
-   been a useful shortcut.
-2. Freeze stable destination identities or a condition-blind semantic
-   adjudication rule that separates target identity from phrasing.
-3. Fix recovered transport-event classification.
-4. Keep history bounded to a recent window instead of attaching all prior
-   screenshots.
-5. Run a fresh 20-to-30-target holdout with the repaired method. Decide whether
-   to scale toward roughly 200 rows only after that readout.
+1. Finish condition-blind row-by-row adjudication, recording `same immediate
+   action target` separately from `useful semantic shortcut`.
+2. Freeze stable destination identities, aliases, and granularity rules; fix
+   recovered transport-event classification.
+3. On July 29, resume chronological manual labeling under the patched schema.
+   Use the earlier new rows as history and reserve the final 20–30 new targets
+   as an untouched retest set.
+4. On July 29 night, rerun only those targets under paired state-only and
+   bounded-history conditions. Do not make predictions for every history row.
+5. Decide whether to continue toward roughly 200 rows from the repaired
+   holdout and Dylan's shortcut-usefulness ratings.
 
 Do not stop or mutate Screenpipe, delete recordings, resume the 30-action walkthrough, or build an extractor unless Dylan asks.
 
@@ -306,8 +328,9 @@ Read in this order:
 9. [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
 10. [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
 11. [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
-12. [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]
-13. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
+12. [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
+13. [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]
+14. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
 
 The initial predictor packet note is obsolete candidate evidence. Never run it. Build new packets only from the frozen row contract and smoke manifest in the manual workbook, keeping hidden actions, action targets, and optional post-action QA outside predictor-visible files.
 
@@ -366,4 +389,4 @@ Do not publish, build Quartz, or watch deployment unless Dylan asks. For a reque
 
 ## Resume prompt
 
-> Read this handoff, the manual labeling workbook, the smoke execution-plan note, and the private V3 `INTERPRETATION.md`. `BLOG-SMOKE-20260728-V3` is complete: 38 immutable `gpt-5.6-sol` / `max` calls, 19 paired labels, no predictor leakage, and a deterministic three-view report. In the preregistered transport-recovered view, current screenshots scored 0/19 at top-1 and top-3; screenshots plus all earlier rows scored 5/19 top-1 and 6/19 top-3. In ordinary accuracy terms, history was wrong on 14 top-1 targets and 13 top-3 targets. The paired top-1 result is 5 wins, 0 losses, and 14 ties because both conditions missed those 14 ties; top-3 is 6 wins, 0 losses, and 13 ties. Treat this as a provisional signal pass and a scoring-method repair, not permission to label 200 rows. Fourteen history calls recovered from WebSockets to HTTPS and were incorrectly tagged as tool use by the frozen classifier; the pre-label recovery policy and original attempts remain preserved. The bigger method issue is exact free-text target matching with empty alias lists: history saw canonical vocabulary and state-only did not, so the gap mixes behavioral prediction with label imitation. The next work is to review the six history hits for shortcut usefulness, freeze stable target identities or condition-blind semantic adjudication, fix transport-event classification, use a bounded recent-history window, and run a fresh 20-to-30-target holdout. Do not resume labeling, restore excluded candidates, mutate Screenpipe, resume the custom capture stack, modify the article, build an extractor, or publish unless Dylan asks.
+> Read this handoff, the post-hoc semantic-rescore note, the manual labeling workbook, the smoke execution-plan note, and the private V3 `INTERPRETATION.md`. `BLOG-SMOKE-20260728-V3` is complete: 38 immutable `gpt-5.6-sol` / `max` calls over 19 paired targets. The history condition walked from one through 19 prior rows. Frozen transport-recovered exact scoring was state-only 0/19 top-1 and top-3 versus history 5/19 top-1 and 6/19 top-3. A narrow post-hoc naming-equivalence pass, with no new calls, provisionally moved state-only to 2/19 top-1 and 5/19 top-3, and history to 5/19 top-1 and 7/19 top-3. Paired semantic results are 4/1/14 top-1 and 3/1/15 top-3. Accuracy did not increase monotonically with context depth. Treat the current 19 targets as a development set. Next, finish condition-blind adjudication, separately record exact immediate-target identity and shortcut usefulness, freeze stable target identity/aliases/granularity, and fix recovered-transport classification. On July 29, resume chronological labeling under the patched schema, reserve the final 20–30 new targets as an untouched test set, and that night predict only those targets with state-only versus bounded prior history. Do not restore excluded candidates, mutate Screenpipe, resume the custom capture stack, modify the article, build an extractor, or publish unless Dylan asks.

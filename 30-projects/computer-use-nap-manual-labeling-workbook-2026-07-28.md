@@ -55,6 +55,12 @@ names. The exact free-text scorer could reject apparently identical
 destinations because one prediction added `conversation`, `task`, or `prompt`.
 Do not use this development-set gap alone to justify a larger labeling push.
 
+A narrow post-hoc semantic sensitivity pass made no new model calls. It moved
+state-only to 2/19 top-1 and 5/19 top-3, and history to 5/19 top-1 and 7/19
+top-3. Paired results became 4/1/14 at top-1 and 3/1/15 at top-3. The complete
+provisional matrix and history-depth breakdown are in
+[[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
+
 Fourteen history calls recovered from WebSocket disconnects by falling back to
 HTTPS. The frozen event classifier mislabeled the fallback error item as tool
 use. A condition-blind recovery policy was checksum-frozen before label reveal,
@@ -662,14 +668,16 @@ It is exploratory and is not intended to establish statistical significance or d
 
 ## Decision after the mini experiment
 
-The checkpoint selected the first path: repair evaluation and repeat a bounded
-checkpoint.
+The checkpoint selected a fast repair-and-retest path. Finish condition-blind
+adjudication of the existing outputs, separately record `same immediate action
+target` and `useful semantic shortcut`, then freeze stable destination
+identity, aliases, granularity, and recovered-transport classification.
 
-Before adding more rows, freeze stable destination identities or a
-condition-blind semantic-adjudication rule, fix recovered transport-event
-classification, and bound history to a recent window. Then run a fresh
-20-to-30-target holdout. Decide whether to continue toward roughly 200 rows
-only after that readout.
+On July 29, resume chronological labeling under the patched schema. Use earlier
+new rows as the history pool and reserve the final 20–30 new targets as an
+untouched paired test set. The retest needs predictions only for those held-out
+targets, not every row in the larger pool. Decide whether to continue toward
+roughly 200 rows after that readout.
 
 Because every row is stored at full fidelity, later experiments can choose
 different history windows or ask for immediate versus model-defined semantic

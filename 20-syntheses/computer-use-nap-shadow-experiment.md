@@ -63,17 +63,26 @@ destinations could fail because one prediction added `conversation`, `task`,
 or `prompt`. The comparison therefore mixes behavioral signal with vocabulary
 imitation.
 
+A narrow post-hoc semantic sensitivity pass moved screen-only to 2/19 top-1
+and 5/19 top-3, and history to 5/19 top-1 and 7/19 top-3. The paired result
+became 4 history wins, 1 loss, and 14 ties at top-1, and 3 wins, 1 loss, and 15
+ties at top-3. History still led, but less dramatically. The complete
+provisional matrix is
+[[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
+
 Fourteen history calls also recovered from WebSocket disconnects by falling
 back to HTTPS. The frozen event classifier mistook the fallback error item for
 tool use. This was detected before labels were revealed, and a condition-blind
 recovery policy was checksum-frozen. Original attempts and labels remain
 immutable.
 
-The current decision is to freeze stable destination identities or blinded
-semantic adjudication, fix transport-event classification, use a bounded recent
-history window, and run a fresh 20-to-30-target holdout. Do not begin the
-roughly 200-row labeling push yet. See
+The current decision is to finish condition-blind adjudication, freeze stable
+destination identities and scoring, fix transport-event classification, then
+resume chronological labeling on July 29. The larger pool supplies history;
+reserve its final 20–30 new targets for a paired bounded-history retest that
+night. Do not predict every row in the larger history pool. See
 [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]],
+[[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]],
 [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
 and [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]].
 
