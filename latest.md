@@ -8,24 +8,31 @@ updated: 2026-07-29
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 29, 2026, 1:07 PM EDT
+Generated: Jul 29, 2026, 1:09 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 64 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 65 note commits. The most recent movement is:
 
+- Project decision: add next ten NAP labeling videos.
 - Project decision: publish canonical computer-use NAP V4 dataset.
 - Project decision: freeze monitor-3 NAP V4 method.
 - Project decision: archive NAP smoke harness and preflight.
 - Project decision: add resumable NAP smoke execution plan.
 - Project decision: tighten Screenpipe dataset contract.
-- Project decision: define Screenpipe dataset smoke test.
 
 ## Current Hub Signals
 
 - [[personal-ai-context-learning|Personal AI Context Learning]]: The public World Models notes describe a three-phase research program: reconstruct a faithful personal event stream and predict the next action; learn bounded local comparisons from post-suggestion behavior; then test sandboxed multi-step assistance. The formal phases are specifications, not completed experiments.
 
 ## Past 24 Hours
+
+### Jul 29, 2026, 1:09 PM EDT - project: add next ten NAP labeling videos
+
+Project decision: add next ten NAP labeling videos.
+
+Changed notes:
+  - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
 
 ### Jul 29, 2026, 1:07 PM EDT - project: publish canonical computer-use NAP V4 dataset
 
@@ -91,6 +98,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 29, 2026: project: add next ten NAP labeling videos - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
 - Jul 29, 2026: project: publish canonical computer-use NAP V4 dataset - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 28, 2026: project: freeze monitor-3 NAP V4 method - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 28, 2026: experiment: publish NAP semantic rescore and retest plan - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
@@ -115,12 +123,12 @@ Changed notes:
 - Jul 27, 2026: article: clarify Screenpipe manual reconstruction boundary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify Screenpipe event-driven frame timing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify dataset and navigation record structure - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: remove redundant opening summary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 
-_Showing the newest 25 of 64 updates in this window._
+_Showing the newest 25 of 65 updates in this window._
 
 ## Past 30 Days
 
+- Jul 29, 2026: project: add next ten NAP labeling videos - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
 - Jul 29, 2026: project: publish canonical computer-use NAP V4 dataset - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 28, 2026: project: freeze monitor-3 NAP V4 method - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 28, 2026: experiment: publish NAP semantic rescore and retest plan - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
@@ -145,6 +153,5 @@ _Showing the newest 25 of 64 updates in this window._
 - Jul 27, 2026: article: clarify Screenpipe manual reconstruction boundary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify Screenpipe event-driven frame timing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify dataset and navigation record structure - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: remove redundant opening summary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 
-_Showing the newest 25 of 218 updates in this window._
+_Showing the newest 25 of 219 updates in this window._
