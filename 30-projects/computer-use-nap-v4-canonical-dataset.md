@@ -26,6 +26,25 @@ project: computer-use-nap
 - All predictor screenshots remain pending. A label can be accepted while still being ineligible for the screenshot-based experiment.
 - Experimental roles below are provisional until prior screenshots and event timing are validated. On the current accepted set, the first 10 rows are history-only, and the next 20 eligible rows are the early checkpoint holdout.
 
+## Current labeling queue
+
+These are the next ten chronological monitor-3 recordings after the completed
+`compact_monitor_3_1785167445853.mp4` batch. Routine V4 labeling does not
+require opening the monitor-1 companions.
+
+| # | Start ET | Monitor-3 recording |
+|---:|---|---|
+| 1 | 11:55:50 AM | [compact_monitor_3_1785167750663.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785167750663.mp4) |
+| 2 | 12:00:55 PM | [compact_monitor_3_1785168055694.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785168055694.mp4) |
+| 3 | 12:06:01 PM | [compact_monitor_3_1785168361574.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785168361574.mp4) |
+| 4 | 12:11:07 PM | [compact_monitor_3_1785168667070.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785168667070.mp4) |
+| 5 | 12:16:12 PM | [compact_monitor_3_1785168972693.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785168972693.mp4) |
+| 6 | 12:21:17 PM | [compact_monitor_3_1785169277197.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785169277197.mp4) |
+| 7 | 12:26:20 PM | [compact_monitor_3_1785169580168.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785169580168.mp4) |
+| 8 | 12:31:23 PM | [compact_monitor_3_1785169883592.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785169883592.mp4) |
+| 9 | 12:36:28 PM | [compact_monitor_3_1785170188681.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785170188681.mp4) |
+| 10 | 12:41:34 PM | [compact_monitor_3_1785170494239.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785170494239.mp4) |
+
 ## Status meanings
 
 - `accepted`: Dylan clearly narrated an atomic pointer action and its destination.
