@@ -41,6 +41,9 @@ tags:
 > [!important] Continuous collection supersedes checkpoint work, 2026-07-29
 > Dylan deferred the V4 checkpoint, screenshot extraction, split assignment, and model calls. The current objective is the highest-fidelity continuous monitor-3 corpus toward roughly 200 rows. One row is one physical invocation; automatic focus is not a row; non-text commands such as Enter submission remain history events; Enter submissions are not demo targets and have no shortcut utility. The merged canonical ledger contains 149 retained candidates through `compact_monitor_3_1785170494239.mp4`. Continue labeling the next ten videos without stopping for an experiment.
 
+> [!note] Third labeling batch in progress, 2026-07-29
+> The first three recordings in the current ten-video batch added 38 normalized invocations: 14 Codex Enter submissions retained as history-only events and 24 navigation or focus events. The canonical ledger now contains 187 retained candidates, including 166 accepted, through `compact_monitor_3_1785171409335.mp4`. Typing, paste, and response-text highlighting remain context. Finish the remaining seven recordings, then freeze and run the expanded-history experiment before further labeling.
+
 > [!summary] Current status
 > As of 2026-07-24: Capture Layer v2’s six-action smoke passed every real-data checker gate, and the checker independently caught all 54 synthetic failure mutations. The diagnostic walkthrough is now paused cleanly at **12/30 accepted checkpoints**, with Gmail `Settings` next. Steps 1–10 cover native actions; steps 11–12 prove exact Gmail DOM clicks and browser export integrity. The raw recorder stack remained stable, but the checkpoint validator was repaired during the walkthrough, so this is a diagnostic with disclosed protocol drift rather than one frozen formal calibration. Full continuation state is in [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]].
 

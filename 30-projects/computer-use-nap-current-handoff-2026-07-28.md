@@ -60,9 +60,9 @@ The current sequence Dylan approved on July 29 is:
 5. consider an automatic Screenpipe extractor only after the manual corpus is
    sufficiently large and stable.
 
-By July 29, Dylan had completed manual passes over 20 chronological monitor-3
-recordings. The merged cleanup retained 149 physical-event candidates through
-`compact_monitor_3_1785170494239.mp4`: 128 accepted, 20 requiring a specific
+By July 29, Dylan had completed manual passes over 23 chronological monitor-3
+recordings. The merged cleanup retained 187 physical-event candidates through
+`compact_monitor_3_1785171409335.mp4`: 166 accepted, 20 requiring a specific
 timing, invocation, target, or prior-frame resolution, and one unresolved
 destination. Fourteen batch-1 composer-focus candidates were retired because
 they described Codex automatic focus rather than a user invocation. Enter
@@ -72,8 +72,10 @@ The merged continuous ledger is the canonical public-vault dataset:
 [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical
 dataset]]. Every future task working in this vault should read and update that
 file. Do not create a competing canonical ledger outside the vault. The next
-operational step is to label the next ten monitor-3 recordings listed in that
-file and merge them under the same event contract.
+operational step is to label the remaining seven recordings in the current
+ten-video monitor-3 batch and merge them under the same event contract. After
+that batch is complete, prepare the expanded-history prediction experiment
+before further labeling.
 
 On July 29, the complete 483-file, 200 MB
 `/Users/dylanvu/screenpipe-datasets/` project tree was copied and checksum
@@ -408,13 +410,14 @@ The private canonical artifacts are:
 
 Next:
 
-1. Continue chronological labeling from the next ten monitor-3 videos listed
-   in the canonical dataset.
+1. Continue chronological labeling from the remaining seven monitor-3 videos
+   listed in the canonical dataset.
 2. Merge each batch into the same ledger and clean physical invocations,
    automatic focus, input method, command events, and demo utility consistently.
-3. Continue toward roughly 200 high-fidelity rows.
-4. Do not extract experiment screenshots, select targets, freeze splits, or
-   make model calls until Dylan explicitly returns to experiment design.
+3. Finish this ten-video batch, which should bring the corpus close to 200
+   retained rows.
+4. After the batch merge, freeze the expanded-history experiment inputs before
+   extracting screenshots or making model calls.
 
 V4 is not a numeric rerun of V3. Monitor coverage, history length, target
 grammar, response schema, and scoring all changed.
