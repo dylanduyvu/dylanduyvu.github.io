@@ -36,7 +36,25 @@ and 38-call experiment are complete and immutable. V4 was method-frozen before
 future labels at `2026-07-29T01:56:17.000Z`; its method-lock SHA-256 is
 `55720d02a696ccfbcfa0fdec1b17f34e9b2c69280151623d6e265b29a905a8fa`.
 Continue the same chronological atomic dataset toward roughly 200 labeled
-rows. The early 40-call V4 checkpoint does not pause collection.
+rows. Dylan deferred the early V4 checkpoint, screenshot preparation, split
+selection, and model calls on July 29. The current task is continuous
+highest-fidelity labeling only.
+
+### July 29 superseding collection clarification
+
+- One row is one physical user invocation, not every focus effect it causes.
+- A click directly into an editor or composer is one row at that deepest
+  target even when it also focuses the application.
+- Codex automatic composer focus after a task switch, Enter submission, or
+  window return is state, not another action row.
+- Non-text command keystrokes are events. Codex submissions use
+  `keyboard_enter`, `activate`, and target `prompt submission command`.
+- Enter submissions remain chronological history but have
+  `demo_target_eligible: false` and `shortcut_opportunity: no`.
+- Ordinary typing and paste remain context.
+- Do not assign history, development, checkpoint, or holdout roles during
+  collection. Any future experiment will split the completed corpus later
+  under a newly frozen plan.
 
 ## Completed smoke readout
 
@@ -161,10 +179,11 @@ target ID. A different granularity gets a different target ID. Opaque target
 IDs remain evaluator-only and never enter prompts, response schemas, image
 paths, or clean model-call directories.
 
-### V4 chronology and holdout
+### Deferred V4 chronology and holdout
 
-The method is frozen. Start future V4 labels only after its
-`2026-07-29T01:56:17.000Z` cutoff.
+The method below was frozen before the July 29 continuous-collection decision.
+It is preserved for audit but is not the current collection plan. Do not use it
+to assign roles or start a model run.
 
 1. The first ten or more chronological eligible monitor 3 actions labeled
    under the frozen method form the history-only pool. Their source-video
@@ -303,6 +322,8 @@ Include:
 - focusing a meaningful input field;
 - activating a link or button that materially changes the working context; and
 - one immediate click, keystroke, or focus action targeting one exact application, object, field, link, button, or control.
+- a non-text command keystroke such as Enter submission, Command-W, Command-C,
+  or browser navigation Enter;
 
 Do not combine consecutive actions. For example:
 
@@ -310,6 +331,10 @@ Do not combine consecutive actions. For example:
 2. `Codex focused -> click the response copy button`
 
 These are two rows. The second row is predicted from screenshots captured after Codex is focused and before the copy click.
+
+Do not split a single invocation into multiple rows. A direct click into a VS
+Code editor or Codex composer is one subtarget row, not an application-focus
+row plus a subtarget-focus row. Do not create rows for automatic focus.
 
 Exclude:
 
@@ -825,16 +850,15 @@ state-only 1/19 top-1 and top-3 versus history 4/19 top-1 and 5/19 top-3,
 paired 3/0/16 and 4/0/15. The old 2/5 versus 5/7 result remains only as a
 non-primary granularity-inclusive sensitivity.
 
-The V4 method is frozen. Resume chronological monitor 3 labeling under the
-superseding contract above and continue toward roughly 200 atomic rows. Use
-the first ten eligible new rows as history and reserve the next exactly 20
-eligible monitor 3 actions as the early paired holdout. Predict those 20
-targets twice each, for 40 calls, while labeling continues past row 30.
+Resume chronological monitor 3 labeling under the superseding contract above
+and continue toward roughly 200 high-fidelity rows. Do not select targets,
+extract experiment screenshots, assign history or holdout roles, or make model
+calls during the current collection phase. The frozen V4 design remains an
+auditable historical option rather than the active next step.
 
-Rows after that checkpoint remain available for later development and holdout
-splits. Freeze each split before making predictions on it; do not choose it
-from observed model outcomes. Six V3 granularity ranks and usefulness remain
-unresolved human judgments, but they do not change the V4 primary rules.
+If Dylan later resumes experiment design, define and freeze the new split and
+decide how `history_context_eligible`, `demo_target_eligible`, and
+`shortcut_opportunity` affect target selection before any predictions.
 
 Because every row is stored at full fidelity, later experiments can choose
 different history windows or ask for immediate versus model-defined semantic

@@ -9,390 +9,269 @@ project: computer-use-nap
 
 # Computer-use NAP V4 canonical dataset
 
-> Canonical public-vault dataset. Dylan's narration is authoritative for the
-> action label. All future labels, evidence status updates, and experimental
-> row assignments belong in this file rather than a competing external ledger.
+> This is the sole canonical merged event ledger. It is a continuous,
+> highest-fidelity corpus; it is not currently partitioned into history,
+> development, checkpoint, or holdout sets.
 
-## Batch summary
+## Current state
 
-- Source: Dylan's manual pass over the 10 monitor-3 recordings listed in `NEXT-10-VIDEOS.md`.
-- Recording coverage: 10 recordings.
-- No-action recordings: 2.
-- Human action labels accepted from Dylan's narration: 76.
-- Currently well-timed pointer rows ready for prior-frame extraction: 74.
-- Preserved but not yet experiment-ready rows: 4. Two have accepted action labels but missing prior-frame granularity; one needs tighter timing; one needs its input method confirmed.
-- Total narrated candidate rows: 78.
-- Typing, pasted text, text highlighting/selection, keyboard-only closing, and waiting are retained as context where useful but are not rows.
-- All predictor screenshots remain pending. A label can be accepted while still being ineligible for the screenshot-based experiment.
-- Experimental roles below are provisional until prior screenshots and event timing are validated. On the current accepted set, the first 10 rows are history-only, and the next 20 eligible rows are the early checkpoint holdout.
+- Twenty chronological monitor-3 recordings have been manually reviewed.
+- Coverage runs through `compact_monitor_3_1785170494239.mp4`.
+- Two recordings contained no narrated user invocations.
+- The merged ledger retains 149 physical-event candidates.
+- Fourteen batch-1 input-focus candidates were retired because Codex
+  automatically focused its composer; batch-2 auto-focus descriptions were
+  never promoted to event IDs.
+- No screenshot extraction, target split, checkpoint, or model run is currently
+  planned. Continue labeling forward.
+
+Raw narration is preserved separately:
+
+- [[computer-use-nap-labeling-batch-1-2026-07-29|Batch 1 raw narration and
+  pre-cleanup ledger]]
+- [[computer-use-nap-labeling-batch-2-2026-07-29|Batch 2 raw narration]]
+
+## Event contract
+
+One row represents one actual user invocation, not every UI effect caused by
+that invocation.
+
+- A single click that focuses an application and lands in its editor or
+  composer is one row at the deepest intended target.
+- Automatic focus is resulting state, not an event.
+- Switching a Codex task is one event; its automatic composer focus is not a
+  second event.
+- Ordinary typing, paste, scrolling, cursor motion, resizing, and text
+  selection remain context rather than events.
+- Non-text command keystrokes are events. Pressing Enter to submit a Codex
+  prompt is `activate` with `input_method: keyboard_enter`.
+- Enter submissions remain useful workflow history but are not demo targets
+  and have `shortcut_opportunity: no`.
+- Existing IDs are stable audit identifiers. Removed or merged candidates are
+  preserved in the cleanup log rather than renumbering later rows.
+
+Fields:
+
+- `Status`: `accepted`, `needs_invocation`, `needs_timing`,
+  `needs_prior_frame`, `needs_target`, or `unresolved`.
+- `History`: whether the event belongs in the full chronological context
+  stream.
+- `Demo`: whether the event is currently eligible as a useful-demo prediction
+  target. `pending` means it has not been rated, not that the event is invalid.
+- `Shortcut`: Dylan's utility judgment. Only obvious zero-value Enter
+  submissions and Command-W are prefilled as `no`; everything else remains
+  `unrated`.
+- `Evidence`: status of a readable strictly-prior monitor-3 frame. Evidence
+  does not overrule Dylan's manual label.
+
+## Merged clean event ledger
+
+| ID | Recording @ time | Status | Input | Type | Destination | History | Demo | Shortcut | Evidence | Context / cleanup |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `BLOG-V4-001` | `1785164707150` @ 0:00 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` → composer | yes | pending | unrated | pending | Explicit click into the input. |
+| `BLOG-V4-002` | `1785164707150` @ 0:31 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Corrected from a supposed Submit-button click. |
+| `BLOG-V4-003` | `1785164707150` @ 1:01 | accepted | pointer | focus | Arc → Coda → `all hands 7.27` note | yes | pending | unrated | pending | Focused Arc with the note open. |
+| `BLOG-V4-004` | `1785165613408` @ 0:17 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` → composer | yes | pending | unrated | pending | Explicit click before typing. |
+| `BLOG-V4-005` | `1785165613408` @ 1:03 | needs_invocation | pointer | focus | Arc → Coda → `all hands 7.27` note | yes | pending | unrated | pending | Same-time pair with `006`; confirm one click versus two. |
+| `BLOG-V4-006` | `1785165613408` @ 1:03 | needs_invocation | pointer | focus | Arc → Coda → `all hands 7.27` → editor/body | yes | pending | unrated | pending | Same-time pair with `005`; deepest target if one click. |
+| `BLOG-V4-007` | `1785165613408` @ 3:03 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Response text had previously been selected, so app and composer may require separate clicks. |
+| `BLOG-V4-008` | `1785165613408` @ 3:03 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` → composer | yes | pending | unrated | pending | Explicit second click into composer. |
+| `BLOG-V4-009` | `1785165613408` @ 3:10 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-010` | `1785165613408` @ 3:17 | accepted | pointer | focus | Arc | yes | pending | unrated | pending | Focused Arc. |
+| `BLOG-V4-011` | `1785165613408` @ 3:17 | accepted | pointer | activate | Arc → URL/address command control | yes | pending | unrated | pending | Invoked the URL control. |
+| `BLOG-V4-011A` | `1785165613408` @ after 3:17 | needs_timing | keyboard_enter | activate | Arc → `precursorlabs.org` | yes | pending | unrated | needs_timing | Recovered non-text navigation command; typed URL itself remains context. |
+| `BLOG-V4-012` | `1785165613408` @ 3:50 | accepted | pointer | activate | Arc → Coda → `all hands 7.27` note | yes | pending | unrated | pending | Clicked the Arc shortcut labeled `Notion`. |
+| `BLOG-V4-013` | `1785165613408` @ 4:18 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Later text selection/copy remains context. |
+| `BLOG-V4-014` | `1785165613408` @ 4:34 | needs_invocation | pointer | focus | Arc → Coda → `all hands 7.27` note | yes | pending | unrated | pending | Same-time pair with `015`; confirm one click versus two. |
+| `BLOG-V4-015` | `1785165613408` @ 4:34 | needs_invocation | pointer | focus | Arc → Coda → `all hands 7.27` → editor/body | yes | pending | unrated | pending | Same-time pair with `014`; deepest target if one click. |
+| `BLOG-V4-016` | `1785165921392` @ 1:20 | accepted | pointer | activate | Codex → `Automate rekordbox workflow` task | yes | pending | unrated | pending | Task switch; composer auto-focus is not another event. |
+| `BLOG-V4-018` | `1785165921392` @ 1:27 | accepted | keyboard_enter | activate | Codex → `Automate rekordbox workflow` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-019` | `1785165921392` @ 1:27–1:47 | needs_timing | unknown | focus | Arc | yes | pending | unrated | needs_timing | Focus occurred, exact action time unknown. |
+| `BLOG-V4-020` | `1785165921392` @ 1:47 | accepted | pointer | focus | Codex | yes | pending | unrated | pending | Focused Codex from Arc. |
+| `BLOG-V4-021` | `1785165921392` @ 1:47 | accepted | pointer | activate | Codex → `Patch NAP blog prep in vault` task | yes | pending | unrated | pending | Task switch. |
+| `BLOG-V4-022` | `1785165921392` @ 2:12 | accepted | pointer | focus | Arc → Coda → `all hands 7.27` note | yes | pending | unrated | pending | Focused Arc/Coda. |
+| `BLOG-V4-023` | `1785165921392` @ 2:34 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Focused Codex. |
+| `BLOG-V4-024` | `1785165921392` @ 2:37 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` → composer | yes | pending | unrated | pending | Explicit later click into composer. |
+| `BLOG-V4-025` | `1785165921392` @ 2:47 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-027` | `1785165921392` @ 2:56 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Composer remained auto-focused after `025`. |
+| `BLOG-V4-029` | `1785165921392` @ 3:06 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Composer remained auto-focused after `027`. |
+| `BLOG-V4-030` | `1785165921392` @ 3:50 | needs_invocation | unknown | focus | Codex → `Patch NAP blog prep in vault` → composer | pending | pending | unrated | pending | Composer may already have been auto-focused; confirm an actual click. |
+| `BLOG-V4-031` | `1785165921392` @ 3:52 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-032` | `1785165921392` @ 3:55 | accepted | pointer | activate | Codex → `Automate rekordbox workflow` task | yes | pending | unrated | pending | Task switch. |
+| `BLOG-V4-034` | `1785165921392` @ 4:02 | accepted | keyboard_enter | activate | Codex → `Automate rekordbox workflow` → prompt submission command | yes | no | no | pending | Task switch auto-focused composer; Enter submitted. |
+| `BLOG-V4-035` | `1785166229371` @ 0:06 | needs_invocation | unknown | focus | iPhone Settings window | pending | pending | unrated | pending | Confirm how the window was focused. |
+| `BLOG-V4-035A` | `1785166229371` @ ~0:06 | accepted | keyboard_command_w | activate | iPhone Settings window → close command | yes | no | no | pending | Recovered command invocation previously discarded as keyboard-only. |
+| `BLOG-V4-036` | `1785166229371` @ 1:07 | accepted | pointer | activate | Codex → `Patch NAP blog prep in vault` task | yes | pending | unrated | pending | Task switch. |
+| `BLOG-V4-038` | `1785166229371` @ ~1:15 | needs_prior_frame | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | needs_prior_frame | Screenpipe missed the granular prior state. |
+| `BLOG-V4-040` | `1785166229371` @ 5:00 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code with file open. |
+| `BLOG-V4-041` | `1785166534526` @ 1:40 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Composer remained focused; only window focus retained. |
+| `BLOG-V4-043` | `1785166534526` @ 1:57 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-044` | `1785166534526` @ 2:26 | accepted | pointer | focus | Arc → Coda → `all hands 7.27` note | yes | pending | unrated | pending | Focused Arc/Coda. |
+| `BLOG-V4-045` | `1785166534526` @ 2:38 | accepted | pointer | activate | Arc → Precursor Labs website tab | yes | pending | unrated | pending | Arc sidebar tab switch. |
+| `BLOG-V4-046` | `1785166534526` @ 2:55 | accepted | pointer | activate | Arc → Coda → `all hands 7.27` tab | yes | pending | unrated | pending | Arc sidebar tab switch. |
+| `BLOG-V4-047` | `1785166534526` @ 3:12 | accepted | pointer | focus | VS Code | yes | pending | unrated | pending | Exact visible object remains unspecified. |
+| `BLOG-V4-048` | `1785166534526` @ 3:30 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Focused Codex. |
+| `BLOG-V4-049` | `1785166534526` @ 4:10 | needs_invocation | unknown | focus | Codex → `Patch NAP blog prep in vault` → composer | pending | pending | unrated | pending | Confirm an actual click rather than retained auto-focus. |
+| `BLOG-V4-050` | `1785166838487` @ 0:01 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-052` | `1785166838487` @ 1:20 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission; intervening composer auto-focus retired. |
+| `BLOG-V4-053` | `1785166838487` @ 2:06 | accepted | pointer | focus | Arc → Coda → `all hands 7.27` note | yes | pending | unrated | pending | Focused Arc/Coda. |
+| `BLOG-V4-054` | `1785166838487` @ 2:24 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-055` | `1785166838487` @ 3:01 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Separate later click into editor. |
+| `BLOG-V4-056` | `1785166838487` @ 3:21 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Composer remained auto-focused; only window focus retained. |
+| `BLOG-V4-058` | `1785166838487` @ 3:50 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-060` | `1785167142102` @ 0:01 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission; composer auto-focus retired. |
+| `BLOG-V4-061` | `1785167142102` @ 0:51 | accepted | pointer | activate | Codex → `GPU financing Obsidian` task | yes | pending | unrated | pending | Task switch; automatic composer focus retired. |
+| `BLOG-V4-063` | `1785167142102` @ 1:22 | accepted | keyboard_enter | activate | Codex → `GPU financing Obsidian` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-064` | `1785167142102` @ 1:31 | accepted | pointer | activate | Codex → `Patch NAP blog prep in vault` task | yes | pending | unrated | pending | Task switch. |
+| `BLOG-V4-065` | `1785167142102` @ 2:21 | accepted | pointer | focus | Arc → Coda → `all hands 7.27` note | yes | pending | unrated | pending | Focused Arc/Coda. |
+| `BLOG-V4-066` | `1785167142102` @ 3:09 | accepted | pointer | focus | Codex | yes | pending | unrated | pending | Focused Codex. |
+| `BLOG-V4-067` | `1785167142102` @ 3:10 | accepted | pointer | activate | Codex → `GPU financing Obsidian` task | yes | pending | unrated | pending | Task switch. |
+| `BLOG-V4-068` | `1785167142102` @ 3:21 | accepted | pointer | activate | Codex → `Patch NAP blog prep in vault` task | yes | pending | unrated | pending | Task switch; composer auto-focus retired. |
+| `BLOG-V4-070` | `1785167445853` @ 1:24 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-071` | `1785167445853` @ 2:32 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-072` | `1785167445853` @ 2:36 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Separate editor click; selection/copy remains context. |
+| `BLOG-V4-073` | `1785167445853` @ 2:48 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Composer retained auto-focus; second focus row retired. |
+| `BLOG-V4-075` | `1785167445853` @ 3:27 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-077` | `1785167445853` @ 4:20 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission; intervening auto-focus retired. |
+| `BLOG-V4-078` | `1785167445853` @ 4:42 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-079` | `1785167750663` @ 0:01 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Focused Codex. |
+| `BLOG-V4-080` | `1785167750663` @ 0:15 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` → composer | yes | pending | unrated | pending | Separate later click into composer. |
+| `BLOG-V4-081` | `1785167750663` @ 0:38 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-082` | `1785167750663` @ 1:16 | accepted | pointer | focus | Arc → Coda | yes | pending | unrated | pending | Focused Arc with Coda open. |
+| `BLOG-V4-083` | `1785167750663` @ 1:30 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-084` | `1785167750663` @ 1:31 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Separate later editor click. |
+| `BLOG-V4-085` | `1785167750663` @ 2:22 | accepted | pointer | focus | Arc | yes | pending | unrated | pending | Focused Arc. |
+| `BLOG-V4-086` | `1785167750663` @ 2:54 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-087` | `1785167750663` @ 3:07 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Separate later editor click. |
+| `BLOG-V4-088` | `1785167750663` @ 3:20 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Composer retained focus from prior submission; same-time composer effect not split. |
+| `BLOG-V4-089` | `1785167750663` @ 3:50 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-090` | `1785167750663` @ 4:13 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-091` | `1785167750663` @ 4:24 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Separate later editor click. |
+| `BLOG-V4-092` | `1785167750663` @ 4:42 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Composer remained focused; same-time composer effect not split. |
+| `BLOG-V4-093` | `1785168055694` @ 0:27 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-094` | `1785168055694` @ 0:39 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Separate later editor click. |
+| `BLOG-V4-095` | `1785168055694` @ 0:48 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Same-time composer effect not split. |
+| `BLOG-V4-096` | `1785168055694` @ 1:13 | accepted | pointer | focus | Arc → Coda | yes | pending | unrated | pending | Focused Arc/Coda. |
+| `BLOG-V4-097` | `1785168055694` @ 1:27 | accepted | pointer | activate | Arc → Coda → `all hands 7.23` note | yes | pending | unrated | pending | Opened the past meeting note. |
+| `BLOG-V4-098` | `1785168055694` @ 1:34 | accepted | pointer | focus | Arc → Coda → `all hands 7.23` → editor/body | yes | pending | unrated | pending | Click into note retained; selection/copy itself is context. |
+| `BLOG-V4-099` | `1785168055694` @ 1:47 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Composer remained focused; same-time effect not split. |
+| `BLOG-V4-100` | `1785168055694` @ 2:00 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-101` | `1785168055694` @ 2:13 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-102` | `1785168055694` @ 2:33 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Same-time composer effect not split. |
+| `BLOG-V4-103` | `1785168055694` @ 3:06 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-104` | `1785168055694` @ 3:06 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code immediately after submission. |
+| `BLOG-V4-105` | `1785168055694` @ 3:41 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Same-time composer effect not split. |
+| `BLOG-V4-106` | `1785168055694` @ 4:13 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-107` | `1785168055694` @ 4:33 | accepted | pointer | focus | Arc | yes | pending | unrated | pending | Focused Arc. |
+| `BLOG-V4-108` | `1785168361574` @ 0:35 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-109` | `1785168361574` @ 1:04 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Separate later editor click. |
+| `BLOG-V4-110` | `1785168361574` @ 1:17 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Same-time composer effect not split. |
+| `BLOG-V4-111` | `1785168361574` @ 1:33 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-112` | `1785168361574` @ 1:42 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-113` | `1785168361574` @ 1:55 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Separate later editor click. |
+| `BLOG-V4-114` | `1785168361574` @ 2:06 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Same-time composer effect not split. |
+| `BLOG-V4-115` | `1785168361574` @ 2:17 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-116` | `1785168361574` @ 4:14 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Intervening composer auto-focus was not an event. |
+| `BLOG-V4-117` | `1785168667070` @ 0:00 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | One click both focused VS Code and entered the editor. |
+| `BLOG-V4-118` | `1785168667070` @ 3:20 | accepted | pointer | focus | Arc → Coda | yes | pending | unrated | pending | Focused Arc/Coda. |
+| `BLOG-V4-119` | `1785168667070` @ 3:40 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-120` | `1785168972693` @ 0:11 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Clicked into editor. |
+| `BLOG-V4-121` | `1785168972693` @ 0:23 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Same-time composer effect not split. |
+| `BLOG-V4-122` | `1785168972693` @ 3:09 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-123` | `1785168972693` @ 3:43 | accepted | pointer | focus | Arc → Notion page | yes | pending | unrated | pending | Narration calls the already-open page Notion. |
+| `BLOG-V4-124` | `1785168972693` @ 4:49 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Same-time composer effect not split. |
+| `BLOG-V4-125` | `1785168972693` @ 5:01 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-126` | `1785169277197` @ 2:41 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Prior composer auto-focus was not an event. |
+| `BLOG-V4-127` | `1785169277197` @ 3:30 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Prior composer auto-focus was not an event. |
+| `BLOG-V4-128` | `1785169580168` @ 0:50 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Prior composer auto-focus was not an event. |
+| `BLOG-V4-129` | `1785169580168` @ 3:10 | accepted | pointer | focus | Arc | yes | pending | unrated | pending | Focused Arc. |
+| `BLOG-V4-130` | `1785169883592` @ 0:22 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-131` | `1785169883592` @ 0:52 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Separate later editor click. |
+| `BLOG-V4-132` | `1785169883592` @ 1:12 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Same-time composer effect not split. |
+| `BLOG-V4-133` | `1785169883592` @ 1:52 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-134` | `1785169883592` @ ~2:30 | needs_prior_frame | unknown | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | needs_prior_frame | Screenpipe missed several actions. |
+| `BLOG-V4-135` | `1785169883592` @ ~2:30 | needs_invocation | unknown | focus | Codex → `Patch NAP blog prep in vault` → composer | pending | pending | unrated | needs_prior_frame | Composer may have remained auto-focused; retain pending. |
+| `BLOG-V4-136` | `1785169883592` @ ~2:30 | needs_prior_frame | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | needs_prior_frame | Enter submission observed but granular frames missing. |
+| `BLOG-V4-137` | `1785169883592` @ 2:53 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | One click focused window and editor. |
+| `BLOG-V4-138` | `1785169883592` @ 3:11 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Same-time composer effect not split. |
+| `BLOG-V4-139` | `1785169883592` @ 4:01 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-140` | `1785170188681` @ 0:37 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Prior composer auto-focus was not an event. |
+| `BLOG-V4-141` | `1785170188681` @ 1:51 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Prior composer auto-focus was not an event. |
+| `BLOG-V4-142` | `1785170188681` @ 2:00 | accepted | pointer | focus | Arc | yes | pending | unrated | pending | Focused Arc. |
+| `BLOG-V4-143` | `1785170188681` @ ~2:23 | needs_prior_frame | unknown | focus | Arc → URL/address editor | yes | pending | unrated | needs_prior_frame | Screenpipe missed exact invocation. |
+| `BLOG-V4-144` | `1785170188681` @ ~2:23 | needs_prior_frame | keyboard_enter | activate | Arc → Substack | yes | pending | unrated | needs_prior_frame | Typed query is context; Enter navigation is the event. |
+| `BLOG-V4-145` | `1785170188681` @ ~2:33 | needs_prior_frame | unknown | focus | Arc → URL/address editor | yes | pending | unrated | needs_prior_frame | Screenpipe missed exact invocation. |
+| `BLOG-V4-146` | `1785170188681` @ ~2:33 | needs_prior_frame | keyboard_enter | activate | Arc → Precursor Labs Substack profile | yes | pending | unrated | needs_prior_frame | Typed query is context; Enter navigation is the event. |
+| `BLOG-V4-147` | `1785170188681` @ ~2:41 | unresolved | unknown | activate | Arc → Handsdiff Substack profile | pending | pending | unrated | needs_prior_frame | Cannot tell whether link click or direct URL navigation. |
+| `BLOG-V4-148` | `1785170188681` @ 2:45 | accepted | pointer | activate | Arc → Handsdiff profile → `@handsdiff` handle copy control | yes | pending | unrated | pending | Click copied profile URL. |
+| `BLOG-V4-149` | `1785170188681` @ 2:53 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` → composer | yes | pending | unrated | pending | One click treated as deepest target; paste is context. |
+| `BLOG-V4-150` | `1785170188681` @ 3:17 | accepted | pointer | focus | Arc → Handsdiff Substack profile | yes | pending | unrated | pending | Focused Arc. |
+| `BLOG-V4-151` | `1785170188681` @ 3:20 | accepted | pointer | activate | Arc → Handsdiff Substack profile → Subscribe control | yes | pending | unrated | pending | Clicked Subscribe. |
+| `BLOG-V4-152` | `1785170188681` @ 3:29 | needs_target | pointer | activate | Arc → subscription options → `None` selection control | pending | pending | unrated | pending | Dylan said “I believe”; retain pending. |
+| `BLOG-V4-153` | `1785170188681` @ 3:34 | needs_target | pointer | activate | Arc → Substack sidebar → profile icon | pending | pending | unrated | pending | Dylan said “I believe”; retain pending. |
+| `BLOG-V4-154` | `1785170188681` @ 3:43 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | One click treated as deepest target; selection/copy is context. |
+| `BLOG-V4-155` | `1785170188681` @ 3:45 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` → composer | yes | pending | unrated | pending | One click treated as deepest target; paste is context. |
+| `BLOG-V4-156` | `1785170494239` @ 0:00 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-157` | `1785170494239` @ 0:51 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Typing at 0:45 is context. |
+| `BLOG-V4-158` | `1785170494239` @ ~1:10 | needs_prior_frame | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | needs_prior_frame | Screenpipe dropped frames. |
+| `BLOG-V4-159` | `1785170494239` @ 1:51 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | One click treated as deepest target. |
+| `BLOG-V4-160` | `1785170494239` @ 2:32 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Paste is context; composer retained focus. |
+| `BLOG-V4-161` | `1785170494239` @ 4:01 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Typing at 4:28 is context for a later event. |
+
+## Retired batch-1 candidates
+
+These IDs remain in the batch-1 source ledger but are not independent events:
+
+| Retired ID | Disposition |
+|---|---|
+| `BLOG-V4-017` | Composer auto-focused after switching to `Automate rekordbox workflow`. |
+| `BLOG-V4-026` | Composer remained auto-focused after `BLOG-V4-025`. |
+| `BLOG-V4-028` | Composer remained auto-focused after `BLOG-V4-027`. |
+| `BLOG-V4-033` | Composer auto-focused after switching tasks. |
+| `BLOG-V4-037` | Composer auto-focused after switching tasks; the later Enter submission survives as `038`. |
+| `BLOG-V4-039` | Response completion left the composer focused; no user invocation established. |
+| `BLOG-V4-042` | Returning to Codex did not require a second composer click. |
+| `BLOG-V4-051` | Composer remained auto-focused after submission. |
+| `BLOG-V4-057` | Returning to Codex did not require a second composer click. |
+| `BLOG-V4-059` | Composer remained auto-focused after submission. |
+| `BLOG-V4-062` | Composer auto-focused after switching tasks. |
+| `BLOG-V4-069` | Composer auto-focused after switching tasks. |
+| `BLOG-V4-074` | Returning to Codex did not require a second composer click. |
+| `BLOG-V4-076` | Composer remained auto-focused after submission. |
 
 ## Current labeling queue
 
-These are the next ten chronological monitor-3 recordings after the completed
-`compact_monitor_3_1785167445853.mp4` batch. Routine V4 labeling does not
-require opening the monitor-1 companions.
+Continue with these ten chronological monitor-3 recordings:
 
-| # | Start ET | Monitor-3 recording |
+| # | Start ET | Recording |
 |---:|---|---|
-| 1 | 11:55:50 AM | [compact_monitor_3_1785167750663.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785167750663.mp4) |
-| 2 | 12:00:55 PM | [compact_monitor_3_1785168055694.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785168055694.mp4) |
-| 3 | 12:06:01 PM | [compact_monitor_3_1785168361574.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785168361574.mp4) |
-| 4 | 12:11:07 PM | [compact_monitor_3_1785168667070.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785168667070.mp4) |
-| 5 | 12:16:12 PM | [compact_monitor_3_1785168972693.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785168972693.mp4) |
-| 6 | 12:21:17 PM | [compact_monitor_3_1785169277197.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785169277197.mp4) |
-| 7 | 12:26:20 PM | [compact_monitor_3_1785169580168.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785169580168.mp4) |
-| 8 | 12:31:23 PM | [compact_monitor_3_1785169883592.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785169883592.mp4) |
-| 9 | 12:36:28 PM | [compact_monitor_3_1785170188681.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785170188681.mp4) |
-| 10 | 12:41:34 PM | [compact_monitor_3_1785170494239.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785170494239.mp4) |
-
-## Status meanings
-
-- `accepted`: Dylan clearly narrated an atomic pointer action and its destination.
-- `needs_timing`: the action is accepted as having happened, but its exact timestamp is too uncertain to recover a trustworthy strictly-prior screenshot.
-- `needs_input_method`: it is not yet clear that the narrated state change was caused by a pointer action.
-- `needs_prior_frame`: the action label is accepted, but Screenpipe reportedly missed the granular frames needed for predictor input.
-- `pending_prior_frame`: the label is accepted; the strictly-prior monitor-3 screenshot has not yet been extracted and checked.
-
-## Normalized rows
-
-| Row ID | Recording | Action time | Label status | Prior-frame status | Provisional role | Action type | Canonical destination | Notes |
-|---|---|---:|---|---|---|---|---|---|
-| BLOG-V4-001 | `compact_monitor_3_1785164707150.mp4` | 0:00 | accepted | pending_prior_frame | history_only | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-002 | `compact_monitor_3_1785164707150.mp4` | 0:31 | accepted | pending_prior_frame | history_only | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the typed prompt. |
-| BLOG-V4-003 | `compact_monitor_3_1785164707150.mp4` | 1:01 | accepted | pending_prior_frame | history_only | focus | Arc → Coda → `all hands 7.27` meeting note | Focused Arc with the meeting note open. |
-| BLOG-V4-004 | `compact_monitor_3_1785165613408.mp4` | 0:17 | accepted | pending_prior_frame | history_only | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Began typing; later text highlighting is context only. |
-| BLOG-V4-005 | `compact_monitor_3_1785165613408.mp4` | 1:03 | accepted | pending_prior_frame | history_only | focus | Arc → Coda → `all hands 7.27` meeting note | Focused Arc/Coda. |
-| BLOG-V4-006 | `compact_monitor_3_1785165613408.mp4` | 1:03 | accepted | pending_prior_frame | history_only | focus | Arc → Coda → `all hands 7.27` → meeting-note editor/body | Clicked into the note to edit. |
-| BLOG-V4-007 | `compact_monitor_3_1785165613408.mp4` | 3:03 | accepted | pending_prior_frame | history_only | focus | Codex → `Patch NAP blog prep in vault` | Focused Codex. |
-| BLOG-V4-008 | `compact_monitor_3_1785165613408.mp4` | 3:03 | accepted | pending_prior_frame | history_only | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-009 | `compact_monitor_3_1785165613408.mp4` | 3:10 | accepted | pending_prior_frame | history_only | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the typed prompt. |
-| BLOG-V4-010 | `compact_monitor_3_1785165613408.mp4` | 3:17 | accepted | pending_prior_frame | history_only | focus | Arc | Focused Arc before invoking the URL control. |
-| BLOG-V4-011 | `compact_monitor_3_1785165613408.mp4` | 3:17 | accepted | pending_prior_frame | heldout_target | activate | Arc → URL/address command control | Clicked the URL control; subsequent typing/navigation is context only. |
-| BLOG-V4-012 | `compact_monitor_3_1785165613408.mp4` | 3:50 | accepted | pending_prior_frame | heldout_target | activate | Arc → Coda → `all hands 7.27` meeting note | Clicked the Arc sidebar shortcut labeled `Notion`, returning to the meeting note. |
-| BLOG-V4-013 | `compact_monitor_3_1785165613408.mp4` | 4:18 | accepted | pending_prior_frame | heldout_target | focus | Codex → `Patch NAP blog prep in vault` | Subsequent response highlighting/copying is context only. |
-| BLOG-V4-014 | `compact_monitor_3_1785165613408.mp4` | 4:34 | accepted | pending_prior_frame | heldout_target | focus | Arc → Coda → `all hands 7.27` meeting note | Focused Arc/Coda. |
-| BLOG-V4-015 | `compact_monitor_3_1785165613408.mp4` | 4:34 | accepted | pending_prior_frame | heldout_target | focus | Arc → Coda → `all hands 7.27` → meeting-note editor/body | Clicked into the note to edit. |
-| BLOG-V4-016 | `compact_monitor_3_1785165921392.mp4` | 1:20 | accepted | pending_prior_frame | heldout_target | activate | Codex → `Automate rekordbox workflow` task | Clicked the task in the sidebar. |
-| BLOG-V4-017 | `compact_monitor_3_1785165921392.mp4` | 1:20 | accepted | pending_prior_frame | heldout_target | focus | Codex → `Automate rekordbox workflow` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-018 | `compact_monitor_3_1785165921392.mp4` | 1:27 | accepted | pending_prior_frame | heldout_target | activate | Codex → `Automate rekordbox workflow` → prompt Submit control | Submitted the typed prompt. |
-| BLOG-V4-019 | `compact_monitor_3_1785165921392.mp4` | 1:27–1:47 | needs_timing | needs_timing | unresolved | focus | Arc | The focus happened in this interval, but the exact action time is unknown. Preserve chronologically; exclude from a screenshot-based run unless timing is recovered. |
-| BLOG-V4-020 | `compact_monitor_3_1785165921392.mp4` | 1:47 | accepted | pending_prior_frame | heldout_target | focus | Codex | Focused Codex from Arc. |
-| BLOG-V4-021 | `compact_monitor_3_1785165921392.mp4` | 1:47 | accepted | pending_prior_frame | heldout_target | activate | Codex → `Patch NAP blog prep in vault` task | Clicked the task in the sidebar. |
-| BLOG-V4-022 | `compact_monitor_3_1785165921392.mp4` | 2:12 | accepted | pending_prior_frame | heldout_target | focus | Arc → Coda → `all hands 7.27` meeting note | Focused Arc/Coda. |
-| BLOG-V4-023 | `compact_monitor_3_1785165921392.mp4` | 2:34 | accepted | pending_prior_frame | heldout_target | focus | Codex → `Patch NAP blog prep in vault` | Focused Codex. |
-| BLOG-V4-024 | `compact_monitor_3_1785165921392.mp4` | 2:37 | accepted | pending_prior_frame | heldout_target | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-025 | `compact_monitor_3_1785165921392.mp4` | 2:47 | accepted | pending_prior_frame | heldout_target | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-026 | `compact_monitor_3_1785165921392.mp4` | 2:49 | accepted | pending_prior_frame | heldout_target | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-027 | `compact_monitor_3_1785165921392.mp4` | 2:56 | accepted | pending_prior_frame | heldout_target | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-028 | `compact_monitor_3_1785165921392.mp4` | 3:00 | accepted | pending_prior_frame | heldout_target | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-029 | `compact_monitor_3_1785165921392.mp4` | 3:06 | accepted | pending_prior_frame | heldout_target | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-030 | `compact_monitor_3_1785165921392.mp4` | 3:50 | accepted | pending_prior_frame | heldout_target | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-031 | `compact_monitor_3_1785165921392.mp4` | 3:52 | accepted | pending_prior_frame | heldout_target | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-032 | `compact_monitor_3_1785165921392.mp4` | 3:55 | accepted | pending_prior_frame | future_pool | activate | Codex → `Automate rekordbox workflow` task | Clicked the task in the sidebar. |
-| BLOG-V4-033 | `compact_monitor_3_1785165921392.mp4` | 4:00 | accepted | pending_prior_frame | future_pool | focus | Codex → `Automate rekordbox workflow` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-034 | `compact_monitor_3_1785165921392.mp4` | 4:02 | accepted | pending_prior_frame | future_pool | activate | Codex → `Automate rekordbox workflow` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-035 | `compact_monitor_3_1785166229371.mp4` | 0:06 | needs_input_method | needs_input_method | unresolved | focus | iPhone Settings window | Narration says the window was focused, then closed with Command-W. The keyboard close is excluded; confirm that the focus itself came from a pointer click. |
-| BLOG-V4-036 | `compact_monitor_3_1785166229371.mp4` | 1:07 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` task | Clicked the task in the sidebar. |
-| BLOG-V4-037 | `compact_monitor_3_1785166229371.mp4` | ~1:15 | accepted | needs_prior_frame | unresolved | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Dylan observed the focus, but Screenpipe missed the granular frames. Keep the ground-truth label; exclude from screenshot-based evaluation unless a valid prior frame is recovered. |
-| BLOG-V4-038 | `compact_monitor_3_1785166229371.mp4` | ~1:15 | accepted | needs_prior_frame | unresolved | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Dylan observed the submit, but Screenpipe missed the granular frames. Keep the ground-truth label; exclude from screenshot-based evaluation unless a valid prior frame is recovered. |
-| BLOG-V4-039 | `compact_monitor_3_1785166229371.mp4` | 4:19 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Focused the input after the response completed. |
-| BLOG-V4-040 | `compact_monitor_3_1785166229371.mp4` | 5:00 | accepted | pending_prior_frame | future_pool | focus | VS Code → `day-0-took-three-days.md` | Focused VS Code with the file already open. |
-| BLOG-V4-041 | `compact_monitor_3_1785166534526.mp4` | 1:40 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` | Focused Codex. |
-| BLOG-V4-042 | `compact_monitor_3_1785166534526.mp4` | 1:40 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-043 | `compact_monitor_3_1785166534526.mp4` | 1:57 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-044 | `compact_monitor_3_1785166534526.mp4` | 2:26 | accepted | pending_prior_frame | future_pool | focus | Arc → Coda → `all hands 7.27` meeting note | Focused Arc/Coda. |
-| BLOG-V4-045 | `compact_monitor_3_1785166534526.mp4` | 2:38 | accepted | pending_prior_frame | future_pool | activate | Arc → Precursor Labs website tab | Switched tabs through the Arc sidebar. |
-| BLOG-V4-046 | `compact_monitor_3_1785166534526.mp4` | 2:55 | accepted | pending_prior_frame | future_pool | activate | Arc → Coda → `all hands 7.27` meeting-note tab | Switched back through the Arc sidebar. |
-| BLOG-V4-047 | `compact_monitor_3_1785166534526.mp4` | 3:12 | accepted | pending_prior_frame | future_pool | focus | VS Code | Focused VS Code; exact visible object remains to be confirmed from the prior frame. |
-| BLOG-V4-048 | `compact_monitor_3_1785166534526.mp4` | 3:30 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` | Focused Codex. |
-| BLOG-V4-049 | `compact_monitor_3_1785166534526.mp4` | 4:10 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-050 | `compact_monitor_3_1785166838487.mp4` | 0:01 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt carried over from the prior recording. |
-| BLOG-V4-051 | `compact_monitor_3_1785166838487.mp4` | 0:42 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-052 | `compact_monitor_3_1785166838487.mp4` | 1:20 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-053 | `compact_monitor_3_1785166838487.mp4` | 2:06 | accepted | pending_prior_frame | future_pool | focus | Arc → Coda → `all hands 7.27` meeting note | Focused Arc/Coda. |
-| BLOG-V4-054 | `compact_monitor_3_1785166838487.mp4` | 2:24 | accepted | pending_prior_frame | future_pool | focus | VS Code → `day-0-took-three-days.md` | Focused VS Code with the file open. |
-| BLOG-V4-055 | `compact_monitor_3_1785166838487.mp4` | 3:01 | accepted | pending_prior_frame | future_pool | focus | VS Code → `day-0-took-three-days.md` → editor | Clicked into the text editor to edit. |
-| BLOG-V4-056 | `compact_monitor_3_1785166838487.mp4` | 3:21 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` | Focused Codex. |
-| BLOG-V4-057 | `compact_monitor_3_1785166838487.mp4` | 3:21 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-058 | `compact_monitor_3_1785166838487.mp4` | 3:50 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-059 | `compact_monitor_3_1785166838487.mp4` | 3:51 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked back into the prompt input. |
-| BLOG-V4-060 | `compact_monitor_3_1785167142102.mp4` | 0:01 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt carried over from the prior recording. |
-| BLOG-V4-061 | `compact_monitor_3_1785167142102.mp4` | 0:51 | accepted | pending_prior_frame | future_pool | activate | Codex → `GPU financing Obsidian` task | Clicked the task in the sidebar. |
-| BLOG-V4-062 | `compact_monitor_3_1785167142102.mp4` | 0:51 | accepted | pending_prior_frame | future_pool | focus | Codex → `GPU financing Obsidian` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-063 | `compact_monitor_3_1785167142102.mp4` | 1:22 | accepted | pending_prior_frame | future_pool | activate | Codex → `GPU financing Obsidian` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-064 | `compact_monitor_3_1785167142102.mp4` | 1:31 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` task | Clicked the task in the sidebar. |
-| BLOG-V4-065 | `compact_monitor_3_1785167142102.mp4` | 2:21 | accepted | pending_prior_frame | future_pool | focus | Arc → Coda → `all hands 7.27` meeting note | Focused Arc/Coda. |
-| BLOG-V4-066 | `compact_monitor_3_1785167142102.mp4` | 3:09 | accepted | pending_prior_frame | future_pool | focus | Codex | Focused Codex. |
-| BLOG-V4-067 | `compact_monitor_3_1785167142102.mp4` | 3:10 | accepted | pending_prior_frame | future_pool | activate | Codex → `GPU financing Obsidian` task | Clicked the task in the sidebar. |
-| BLOG-V4-068 | `compact_monitor_3_1785167142102.mp4` | 3:21 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` task | Clicked the task in the sidebar. |
-| BLOG-V4-069 | `compact_monitor_3_1785167142102.mp4` | 3:21 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-070 | `compact_monitor_3_1785167445853.mp4` | 1:24 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt carried over from the prior recording. |
-| BLOG-V4-071 | `compact_monitor_3_1785167445853.mp4` | 2:32 | accepted | pending_prior_frame | future_pool | focus | VS Code → `day-0-took-three-days.md` | Focused VS Code. |
-| BLOG-V4-072 | `compact_monitor_3_1785167445853.mp4` | 2:36 | accepted | pending_prior_frame | future_pool | focus | VS Code → `day-0-took-three-days.md` → editor | Clicked into the editor; text selection/copying is context only. |
-| BLOG-V4-073 | `compact_monitor_3_1785167445853.mp4` | 2:48 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` | Focused Codex. |
-| BLOG-V4-074 | `compact_monitor_3_1785167445853.mp4` | 2:48 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-075 | `compact_monitor_3_1785167445853.mp4` | 3:27 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-076 | `compact_monitor_3_1785167445853.mp4` | 3:41 | accepted | pending_prior_frame | future_pool | focus | Codex → `Patch NAP blog prep in vault` → `Do anything` composer | Clicked into the prompt input. |
-| BLOG-V4-077 | `compact_monitor_3_1785167445853.mp4` | 4:20 | accepted | pending_prior_frame | future_pool | activate | Codex → `Patch NAP blog prep in vault` → prompt Submit control | Submitted the prompt. |
-| BLOG-V4-078 | `compact_monitor_3_1785167445853.mp4` | 4:42 | accepted | pending_prior_frame | future_pool | focus | VS Code → `day-0-took-three-days.md` | Focused VS Code. |
-
-## No-action recordings
-
-- `compact_monitor_3_1785165009266.mp4`
-- `compact_monitor_3_1785165310520.mp4`
-
-## Narrated context intentionally not promoted to rows
-
-- `compact_monitor_3_1785165613408.mp4` 0:49: highlighted Codex response text.
-- `compact_monitor_3_1785165613408.mp4` after 3:17: typed/navigated to `precursorlabs.org` without a pointer action.
-- `compact_monitor_3_1785165613408.mp4` after 4:18: highlighted/copied response text.
-- `compact_monitor_3_1785166229371.mp4` 0:06: Command-W close after the possible focus action.
-- `compact_monitor_3_1785167445853.mp4` 2:36: text selection/copying after the editor-focus click.
-
-## Before an early checkpoint can be frozen
-
-1. Recover and validate one readable, strictly-prior monitor-3 screenshot for each proposed history and target row.
-2. Decide whether `BLOG-V4-019` has recoverable timing. If it does, it belongs chronologically inside the early holdout and shifts later target membership. If it does not, retain it in the raw chronology but exclude it from the screenshot-based experiment.
-3. Keep `BLOG-V4-037` and `BLOG-V4-038` as accepted human labels even if their prior frames are unrecoverable; they need not be prediction targets.
-4. Confirm whether `BLOG-V4-035` began with a pointer click. Otherwise it is not an eligible action row under the frozen V4 method.
-
-## Original Dylan narration
-
-The original submitted narration follows. Whitespace has been normalized, but
-the wording and timestamps are preserved so the normalized rows can always be
-audited without depending on a temporary Codex attachment.
-
-### `compact_monitor_3_1785164707150`
-
-At 0:00 we clicked to focus on the codex prompt input field this is in the
-patch NAP blog prep in vault chat
-
-At 0:31 we hit the submit button to submit the prompt that was being typed in
-
-At 1:01 we focused on the Arc browser on the currently opened page, which is
-Coda, for the all-hands 7.27 meeting notes
-
-### `compact_monitor_3_1785165009266`
-
-Nothing happened
-
-### `compact_monitor_3_1785165310520`
-
-Nothing happened
-
-### `compact_monitor_3_1785165613408`
-
-The pre-state of this video is the generated response from the prompt that was
-submitted in compact_monitor_3_1785164707150 completed
-
-At 0:17 I click into the Codex input field to focus on it ahead of typing out
-another prompt this is still in the patch NAP blog prep in Vault chat
-
-At 0:49 I highlighted some of the text in the generated response from the
-previous prompt submission, the one I referred to right before I did not end
-up submitting the prompt that was typed in after focusing on the input chat at
-00:17. Not sure if this counts as a navigation (probably not) but this is just
-narrative context.
-
-At 1:03 I focus back onto the Arc browser on the currently open page, which is
-Coda, for the all-hands 7.27 meeting notes
-
-At 1:03 I click into the meeting notes so I focus on the meeting notes to be
-able to edit the notes.
-
-At 3:03 I focus back onto the Codex app in the same chat
-
-At 3:03 I focus on the input field so that I can type out another prompt
-
-At 3:10 I hit the submit button on the prompt I typed out
-
-At 3:17 I focus back onto Arc
-
-At 3:17 I click on the URL button that allows me to then type in a URL to
-navigate to. The URL button is in the Arc side tab
-
-I ended up navigating to precursorlabs.org but that did not require any button
-clicks
-
-At 3:50 I click on the Notion shortcut button on the Arc sidebar and that
-brings me back to the Notion page with the all-hands meeting notes for 7.27.
-
-At 4:18 I focus back onto the Codex app
-
-I then highlight some of the text of the response from the previously
-submitted prompt but I don't think this counts as navigation I'll then copy
-the prompt or the selected part of the prompt that I had selected
-
-At 4:34 I focus back onto the Arc browser
-
-At 4:34 I click and focus into the all-hands 7.27 meeting notes in Coda, in the
-body section, to allow me to edit
-
-### `compact_monitor_3_1785165921392`
-
-I guess the previous state of the video is where we left off in the last video
-
-At 1:20 I click on the "Automate recordbox workflow" button on the left sidebar
-of the Codex app
-
-At 1:20 I click on the input fields of the Codex app to type out a prompt in
-that chat
-
-At 1:27 I hit the submit button to submit the prompt
-
-Screenpipe is really, really shitty but
-
-I think sometime between 1:27 and 1:47 I focus on the Arc browser
-
-At 1:47 I focus back onto the Codex app
-
-At 1:47 I click on the Patchnap chat button on the left sidebar of Codex
-
-At 2:12 I focus back onto the Arc browser the Arc browser still opened onto the
-Coda web page with the all-hands 7/27 meeting notes
-
-At 2:34 I focus back onto the Codex app opened on the patched Nap chat from
-before
-
-At 2:37 I focus into the input field so that I could start typing out a prompt
-
-At 2:47 I hit the submit button to submit the prompt
-
-At 2:49 I focus into the input field to type out another prompt on Codex ofc
-
-At 2:56 I hit the submit button to submit the prompt
-
-At 3 minutes I focus into the input field to start typing out another prompt
-
-At 3:06 I hit the submit button
-
-At 3:50 I focus into the input field again
-
-At 3:52 I submit the prompts by hitting the button
-
-At 3:55 I click on the record box button to navigate to the record box
-automation chat that I had going on for Codex
-
-At 4 minutes I focus on the input field to type out a prompt to this chat
-
-At 4:02 I submit the prompt
-
-### `compact_monitor_3_1785166229371`
-
-At 6 seconds I focused on this settings thing that shows my iPhone settings
-window. I close it using the Command-W shortcut.
-
-At 1:07 I click on the Patchnap chat button on the left sidebar of Codex
-
-Looks like around 1:15 I focused on the input field, typed out a prompt, and
-submitted it but the fucking shitty screen pipe did not get granular
-screenshot or video recording data
-
-at 4:19 the prompt response completes and i focus on the “Do anything” input
-field on codex in the same chat
-
-at 5:00 i focus on the vs code app opened to day-0-took-three-days.md, which
-was already opened on the app
-
-### `compact_monitor_3_1785166534526`
-
-starting from where the last video left off
-
-1:40 i focus on the codex app with the patch nap blog prep in vault chat open
-
-1:40 i focus on the text input field that says “Do anything” to begin typing
-out a prompt
-
-1:57 i hit the submit button to submit the prompt
-
-2:26 i focus on the arc browser with the coda tab open (already opened i think)
-
-2:38 i switch tot he precursor labs tab that was opened perviously on arc
-
-2:55 i switch back to the coda tab on arc (all this navigation is happening via
-the arc sidebar)
-
-3:12 i focus onto vs code window
-
-3:30 i focus onto the codex window
-
-4:10 i focus onto input field to type out a prompt
-
-### `compact_monitor_3_1785166838487`
-
-starting from where the last video left off
-
-0:01 the submit button was pressed to submit the prompt
-
-0:42 i focus on the codex prompt input field again to type out another prompt
-
-1:20 the submit button was pressed to submit the prompt
-
-2:06 i focus on the arc browser with coda open (already opened there)
-
-2:24 i focus back onto the vs code window
-
-3:01 i focus into text in the day-0-took-three-days.md file so that i can edit
-it
-
-3:21 i focus onto the codex window
-
-3:21 i focus onto the prompt input field yk where it says “Do anything” to type
-out another prompt
-
-3:50 the submit button was pressed to submit the prompt
-
-3:51 i focus onto the prompt input field yk where it says “Do anything” to type
-out another prompt
-
-### `compact_monitor_3_1785167142102`
-
-starting from where the last video left off
-
-00:01 i submit the prompt that was typed out via the submit button on codex
-
-00:51 i click onto the gpu financing obsidian chat in the sidebar of the codex
-app
-
-00:51 i focus onto the prompt input field yk where it says “Do anything” to
-type out a prompt
-
-1:22 the submit button was pressed to submit the prompt
-
-1:31 i click the patch nap blog prep in vault chat button in the codex sidebar
-to switch back to that chat’s view
-
-2:21 i focus back onto the arc window with coda opened already
-
-3:09 i focus back onto the codex window
-
-3:10 i click onto the gpu financing obsidian chat in the sidebar of the codex
-app
-
-3:21 i click the patch nap blog prep in vault chat button in the codex sidebar
-to switch back to that chat’s view
-
-3:21 i focus into the prompt input field to type out anothe rprompt
-
-### `compact_monitor_3_1785167445853`
-
-starting off where we left off…
-
-1:24 i click the submit button to submit the prompt that was typed in
-
-2:32 i focus onto the vs code window
-
-2:36 i focused/clicked into the editor to select some text to copy in the
-opened .md (same .md from before)
-
-2:48 i focus onto the codex app
-
-2:48 i focus onto the input field to type out another prompt
-
-3:27 i click the submit button to submit the prompt i typed out
-
-3:41 i focus onto the input field to type out another prompt
-
-4:20 clicked the submit button to submit the prompt i typed out
-
-4:42 i focus on the vs code window
+| 1 | 12:46:38 PM | [compact_monitor_3_1785170798390.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785170798390.mp4) |
+| 2 | 12:51:43 PM | [compact_monitor_3_1785171103377.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785171103377.mp4) |
+| 3 | 12:56:49 PM | [compact_monitor_3_1785171409335.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785171409335.mp4) |
+| 4 | 1:01:54 PM | [compact_monitor_3_1785171714551.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785171714551.mp4) |
+| 5 | 1:06:57 PM | [compact_monitor_3_1785172017894.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172017894.mp4) |
+| 6 | 1:12:00 PM | [compact_monitor_3_1785172320699.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172320699.mp4) |
+| 7 | 1:17:03 PM | [compact_monitor_3_1785172623051.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172623051.mp4) |
+| 8 | 1:22:05 PM | [compact_monitor_3_1785172925051.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172925051.mp4) |
+| 9 | 1:27:07 PM | [compact_monitor_3_1785173227162.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785173227162.mp4) |
+| 10 | 1:32:09 PM | [compact_monitor_3_1785173529401.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785173529401.mp4) |
+
+## Labeling format going forward
+
+Name the physical invocation, not only the resulting state:
+
+```text
+video: compact_monitor_3_...
+
+00:38 pressed Enter
+-> submitted the current Codex prompt
+
+01:30 clicked directly inside the VS Code editor
+-> VS Code → day-0-took-three-days.md → editor
+
+context only: Codex automatically focused its composer; no user action
+```
+
+Include non-text command keystrokes such as Enter, Command-W, Command-C, or a
+browser navigation command. Continue excluding ordinary typing, paste,
+scrolling, cursor movement, text selection, and resizing.
