@@ -24,11 +24,18 @@ Manually turn Dylan's several-hour Screenpipe record of building the blog post i
 
 > state immediately before an eligible action -> exact immediate action target
 
-Dylan is the ground-truth labeler. His manual label from watching the recording is authoritative. Screenpipe metadata and later frames are optional QA, not an eligibility gate. Codex can maintain the worksheet, find strictly prior frames, record whether Screenpipe corroborates the label, and prepare predictor packets after Dylan has chosen the actions.
+Dylan is the ground-truth labeler. His manual label from watching the recording
+is authoritative. For V4, watch only the monitor 3 video during routine
+labeling. Screenpipe metadata, monitor 1 companion evidence, and later frames
+are optional QA, not an eligibility gate. Codex can maintain the worksheet,
+find the strictly prior monitor 3 frame, and prepare predictor packets after
+Dylan has labeled the actions.
 
-Do not use the earlier candidate packet. The 20-row checkpoint and mini
-prediction experiment are complete. Keep collection paused while destination
-identity and scoring are repaired. Do not scale toward roughly 200 rows yet.
+Do not use the earlier candidate packet or V3 harness. The V3 20-row checkpoint
+and 38-call experiment are complete and immutable. V4 was method-frozen before
+future labels at `2026-07-29T01:56:17.000Z`; its method-lock SHA-256 is
+`55720d02a696ccfbcfa0fdec1b17f34e9b2c69280151623d6e265b29a905a8fa`.
+Do not scale toward roughly 200 rows until the fresh V4 holdout is reviewed.
 
 ## Completed smoke readout
 
@@ -55,10 +62,22 @@ names. The exact free-text scorer could reject apparently identical
 destinations because one prediction added `conversation`, `task`, or `prompt`.
 Do not use this development-set gap alone to justify a larger labeling push.
 
-A narrow post-hoc semantic sensitivity pass made no new model calls. It moved
-state-only to 2/19 top-1 and 5/19 top-3, and history to 5/19 top-1 and 7/19
-top-3. Paired results became 4/1/14 at top-1 and 3/1/15 at top-3. The complete
-provisional matrix and history-depth breakdown are in
+A completed condition-blind lexical-only rescore made no new model calls. Its
+conservative primary result preserves target granularity:
+
+| Condition | Semantic top-1 | Semantic top-3 |
+|---|---:|---:|
+| Current screenshots only | 1/19 | 1/19 |
+| Current screenshots plus all earlier rows | 4/19 | 5/19 |
+
+Paired results are 3 history wins, 0 losses, and 16 ties at top-1, and 4 wins,
+0 losses, and 15 ties at top-3.
+
+A separate granularity-inclusive sensitivity retains the earlier state-only
+2/19 top-1 and 5/19 top-3 versus history 5/19 and 7/19, with paired 4/1/14 and
+3/1/15. It is not primary. Six ambiguous child-control ranks are queued for
+Dylan's granularity decision, and shortcut usefulness remains unresolved. The
+complete matrix and history-depth breakdown are in
 [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
 
 Fourteen history calls recovered from WebSocket disconnects by falling back to
@@ -72,8 +91,127 @@ Full private readout:
 - `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/summary.json`
 - `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/INTERPRETATION.md`
 - `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/HITS-FOR-REVIEW.md`
+- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
+- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
 
-## Locked experiment contract
+## V4 superseding labeling and experiment contract
+
+This section supersedes the V3 dual-monitor and expanding-history instructions
+later in this note. Those later sections remain only as the historical record
+of what V3 ran.
+
+### What Dylan does
+
+Watch the monitor 3 video only. For each candidate, provide:
+
+```text
+video: compact_monitor_3_...
+
+00:12 [what was visible immediately before]
+-> 00:15 [what you focused or activated]
+```
+
+Use the exact video filename and player times. Include natural detours and
+off-task clicks when they occur on monitor 3. Do not synchronize monitor 1.
+
+If an action leaves monitor 3 for monitor 1, record that fact as an explicit
+coverage exclusion. It is not a prediction miss. The companion monitor 1
+recording filename or image is optional audit provenance, and no monitor 1
+image is ever model-visible.
+
+### Eligible action taxonomy
+
+One row remains one immediate action. The V4 semantic action type is:
+
+- `focus`: only makes an already-present application, object, or field active;
+- `activate`: selects, navigates, opens, invokes, submits, dismisses, toggles,
+  copies, or otherwise activates the target.
+
+A click is the input method, not the semantic action type. A Submit-button
+click is `activate`.
+
+Continue to exclude ordinary typing, paste, scrolling, cursor movement, text
+selection, and window resizing. Also exclude actions with an unknown monitor
+or ambiguous action type.
+
+### V4 row and target identity
+
+Every eligible `history_only` or `heldout_target` row has:
+
+- stable event identity and chronology;
+- the exact source recording filename and player times;
+- `action_monitor: 3`;
+- one readable strictly prior monitor 3 screenshot;
+- `action_type: focus | activate`;
+- `input_method`, normally `pointer_click` for this pass;
+- an evaluator-only opaque target reference; and
+- optional monitor 1 companion provenance marked `predictor_visible: false`.
+
+Target granularity is structural and strict:
+
+| Granularity | `app` | `object` | `subtarget` |
+|---|---|---|---|
+| application | string | `null` | `null` |
+| object | string | string | `null` |
+| subtarget | string | string | string |
+
+The same user-recognized destination at the same granularity reuses its opaque
+target ID. A different granularity gets a different target ID. Opaque target
+IDs remain evaluator-only and never enter prompts, response schemas, image
+paths, or clean model-call directories.
+
+### V4 chronology and holdout
+
+The method is frozen. Start future V4 labels only after its
+`2026-07-29T01:56:17.000Z` cutoff.
+
+1. The first ten or more chronological eligible monitor 3 actions labeled
+   under the frozen method form the history-only pool. Their source-video
+   action times may predate the freeze; their manual label timestamps may not.
+2. Close that pool once. Do not choose a stopping point from outcomes.
+3. The next exactly 20 chronological eligible monitor 3 actions are the
+   untouched held-out targets.
+4. For each held-out target, call `state_only` once and
+   `state_plus_recent_10` once, for exactly 40 calls.
+5. The recent-10 condition uses the ten most recent earlier eligible monitor 3
+   rows, oldest to newest.
+6. Once an earlier held-out action has occurred, its frozen label may enter
+   later rolling history. Predictions, scores, adjudications, and usefulness
+   ratings never enter history.
+
+### V4 predictor and scoring boundary
+
+`state_only` sees one current monitor 3 before-state screenshot.
+`state_plus_recent_10` sees ten earlier monitor 3 state/action examples and the
+same current screenshot. The current target, current action type, opaque target
+IDs, monitor 1 evidence, later evidence, labels, and QA notes stay hidden.
+
+Report these separately:
+
+- normalized exact target top-1 and top-3, with Unicode NFKC, lowercase,
+  trimming, collapsed whitespace, no aliases, and strict granularity;
+- action-type accuracy;
+- exact action, requiring both exact target and action type;
+- condition- and rank-blind semantic same-target adjudication; and
+- Dylan's shortcut-usefulness judgment.
+
+V4 is not numerically comparable with V3 because it changes monitor coverage,
+history length, response schema, and target-granularity scoring.
+
+Canonical private V4 artifacts:
+
+- schema audit:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
+- method policy:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/method-policy.json`
+- labeling guide:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/LABELING-GUIDE.md`
+- adjudication rubric:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/ADJUDICATION-RUBRIC.md`
+- isolated harness:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`
+
+## Historical V3 experiment contract
 
 Dylan clarified the data and context design on July 28:
 
@@ -149,6 +287,10 @@ These raw counts are not dataset rows. Most clicks, typing, and scrolling should
 
 ## What Dylan labels
 
+For V4, apply the list below only to actions performed on monitor 3. Preserve
+monitor 1 or unknown-monitor actions as explicit coverage exclusions. Do not
+open or synchronize the monitor 1 video for routine labeling.
+
 Include:
 
 - switching to another application or window;
@@ -177,7 +319,7 @@ Exclude:
 - computer-use automation actions that Screenpipe did not record as Dylan's physical action; and
 - any row whose true source state or immediate action target Dylan cannot label confidently.
 
-## Manual review workflow
+## Historical V3 manual review workflow
 
 ### Stage 1: reach the 20-row checkpoint
 
@@ -263,7 +405,12 @@ Add one line per possible eligible action during the fast pass.
 |---|---|---|---|---|---|---|
 | `BLOG-001` |  |  |  |  |  |  |
 
-## Exact ground-truth row contract
+## Historical V3 ground-truth row contract
+
+> [!warning] V3 only
+> The dual-monitor, alias-bearing row contract below records the completed V3
+> experiment. Do not use it for new V4 labels. Use `V4 superseding labeling
+> and experiment contract` above and the private V4 labeling guide.
 
 One row is one immediate eligible human action from its pre-action state to its exact target. Consecutive actions are separate rows, even when they occur within the same player second.
 
@@ -386,7 +533,7 @@ ordered_event_refs:
 
 Assign a separate snapshot and manifest ID only if Dylan chooses a later scaled experiment after reviewing the 20-row checkpoint.
 
-## Predictor views
+## Historical V3 predictor views
 
 The same ground-truth row produces different predictor packets.
 
@@ -521,7 +668,7 @@ Do not apply this expanding-history exception automatically to a later scaled
 experiment. The later main experiment still defaults to the fixed recent-ten
 rule unless Dylan changes it after reviewing the smoke test.
 
-## Prediction-run record
+## Historical V3 prediction-run record
 
 Predictions belong in a separate results table. One model call produces one result row:
 
@@ -610,7 +757,7 @@ not reveal its hidden label until both condition records have nonempty
 copied into both result rows. Set `ranked_predictions: []` for every non-valid
 attempt.
 
-## Scoring contract
+## Historical V3 scoring contract
 
 Before prediction, freeze the action-target components and any accepted component aliases. Normalize model outputs and frozen labels only by lowercasing, trimming leading and trailing whitespace, and collapsing repeated internal whitespace.
 
@@ -643,7 +790,7 @@ The scorer records `label_revealed_at_utc`, `scored_at_utc`, and `scorer`.
 Label reveal must occur after both paired `attempt_saved_at_utc` values and,
 for a `valid_prediction`, after its `prediction_saved_at_utc`.
 
-## Twenty-row mini prediction checkpoint
+## Historical V3 twenty-row mini prediction checkpoint
 
 Collection has stopped with 30 chronological atomic-action candidates.
 Preflight selected the earliest 20 candidates with usable pre-action image
@@ -668,16 +815,22 @@ It is exploratory and is not intended to establish statistical significance or d
 
 ## Decision after the mini experiment
 
-The checkpoint selected a fast repair-and-retest path. Finish condition-blind
-adjudication of the existing outputs, separately record `same immediate action
-target` and `useful semantic shortcut`, then freeze stable destination
-identity, aliases, granularity, and recovered-transport classification.
+The checkpoint selected an isolated monitor-3 repair-and-retest path.
+Condition-blind V3 adjudication is complete. The conservative primary is
+state-only 1/19 top-1 and top-3 versus history 4/19 top-1 and 5/19 top-3,
+paired 3/0/16 and 4/0/15. The old 2/5 versus 5/7 result remains only as a
+non-primary granularity-inclusive sensitivity.
 
-On July 29, resume chronological labeling under the patched schema. Use earlier
-new rows as the history pool and reserve the final 20–30 new targets as an
-untouched paired test set. The retest needs predictions only for those held-out
-targets, not every row in the larger pool. Decide whether to continue toward
-roughly 200 rows after that readout.
+Freeze the V4 method before future V4 labels. Then resume chronological
+monitor 3 labeling under the superseding contract above. Use at least ten
+earlier eligible rows as a history-only pool and reserve the next exactly 20
+eligible monitor 3 actions as the untouched paired holdout. The retest predicts
+only those 20 held-out targets, twice each, for 40 calls.
+
+Decide whether to continue toward roughly 200 rows after separately reviewing
+exact target, action type, exact action, blind semantic same-target identity,
+and shortcut usefulness. Six V3 granularity ranks and usefulness remain
+unresolved human judgments, but they do not change the V4 primary rules.
 
 Because every row is stored at full fidelity, later experiments can choose
 different history windows or ask for immediate versus model-defined semantic
@@ -695,22 +848,31 @@ For the current target row, the predictor never sees:
 - any row that had not completed before the current prediction cutoff; or
 - any future history entry.
 
+For V4 it also never sees monitor 1 evidence, opaque target IDs, target-catalog
+data, excluded rows, predictions, scores, adjudications, or usefulness
+ratings.
+
 ## Experimental role of the dataset
 
 The manually labeled before-and-after rows are the data.
 
-The experimental variable is not the after state. It is whether the model receives earlier personal activity:
+For V4, the experimental variable is whether the model receives earlier
+personal activity:
 
-1. the current row's two pre-action screenshots only; or
-2. for `BLOG-EXPANDING-HISTORY-SMOKE-V2`, the same screenshots plus every
-   earlier frozen full-fidelity state-action row available before that target.
+1. the current row's monitor 3 pre-action screenshot only; or
+2. that same screenshot plus the rolling ten prior eligible monitor 3
+   state-action rows.
 
-The later scaled experiment defaults to the ten most recent eligible rows; the
-all-prior rule is specific to this 20-row smoke test.
+Earlier held-out rows enter later rolling history only after their actions
+occur. The first ten or more eligible rows are history-only; the next exactly
+20 are held-out targets.
 
 The immediate action target remains hidden ground truth for scoring.
 
 Because this recording follows one blog project, a same-session result mainly tests whether recent task context helps. It does not establish durable personalization across days or unrelated work. That stronger question still requires the later two-day experiment.
+
+V3 used dual-monitor current states and all-prior history. It remains a
+development run and is not a numeric baseline for V4.
 
 ## Links
 

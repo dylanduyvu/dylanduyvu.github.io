@@ -24,13 +24,16 @@ tags:
 # Computer-use NAP build log
 
 > [!important] Current direction, 2026-07-28
-> The custom capture build and its 30-action walkthrough are historical for the first experiment. The immediate path is a manually verified retrospective pilot using Screenpipe evidence. Do not resume the capture ladder unless prediction results later justify automatic acquisition work. Current operational state: [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]].
+> The custom capture build and its 30-action walkthrough are historical for the first experiment. The immediate path is the isolated V4 monitor-3-only retrospective pilot using Dylan's manual labels and Screenpipe evidence. Do not resume the capture ladder unless prediction results later justify automatic acquisition work. Current operational state: [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]].
 
 > [!success] First retrospective smoke result, 2026-07-28
-> `BLOG-SMOKE-20260728-V3` completed 38 calls over 19 paired targets with no predictor leakage. In the preregistered transport-recovered view, screenshots alone scored 0/19 at top-1 and top-3; screenshots plus all earlier rows scored 5/19 top-1 and 6/19 top-3. In ordinary terms, history was therefore wrong on 14 top-1 targets and 13 top-3 targets. The paired result is 5 wins, 0 losses, and 14 ties at top-1 because both conditions missed those 14 ties; top-3 is 6 wins, 0 losses, and 13 ties. This is a provisional signal pass and a scoring-method repair, not a scale-to-200 pass. Exact free-text matching with empty alias lists asymmetrically exposed canonical vocabulary to history. Freeze destination identity or condition-blind semantic adjudication, then run a fresh 20-to-30-target holdout. Full contract and readout: [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]].
+> `BLOG-SMOKE-20260728-V3` completed 38 calls over 19 paired targets with no predictor leakage. In the preregistered transport-recovered view, screenshots alone scored 0/19 at top-1 and top-3; screenshots plus all earlier rows scored 5/19 top-1 and 6/19 top-3. In ordinary terms, history was therefore wrong on 14 top-1 targets and 13 top-3 targets. The paired result is 5 wins, 0 losses, and 14 ties at top-1 because both conditions missed those 14 ties; top-3 is 6 wins, 0 losses, and 13 ties. This is a provisional signal pass and a scoring-method repair, not a scale-to-200 pass. Exact free-text matching with empty alias lists asymmetrically exposed canonical vocabulary to history. The repaired V4 follow-up uses the next exactly 20 eligible monitor 3 targets after its method freeze. Full V3 contract and readout: [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]].
 
-> [!note] Post-hoc semantic sensitivity, 2026-07-28
-> Without rerunning any model call, a narrow naming-equivalence pass moved screen-only to 2/19 top-1 and 5/19 top-3, and history to 5/19 top-1 and 7/19 top-3. Paired results became 4/1/14 at top-1 and 3/1/15 at top-3. The history advantage remains but is smaller. Accuracy did not rise monotonically with context depth: history top-3 was 3/5 with 1–5 prior rows, 1/5 with 6–10, and 3/9 with 11–19. Full provisional row matrix and July 29 sequence: [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
+> [!note] Completed V3 semantic adjudication, 2026-07-28
+> Without rerunning any model call, a condition-blind lexical-only rescore produced the conservative primary result: screen-only 1/19 top-1 and top-3, and history 4/19 top-1 and 5/19 top-3. Paired results are 3 history wins, 0 losses, and 16 ties at top-1, and 4 wins, 0 losses, and 15 ties at top-3. A separate granularity-inclusive sensitivity retains the old 2/19 and 5/19 versus 5/19 and 7/19 figures, paired 4/1/14 and 3/1/15, but it is not primary. Six child-control ranks remain queued for Dylan's granularity decision. Shortcut usefulness remains unresolved. Full matrix: [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
+
+> [!important] V4 monitor-3 repair, 2026-07-28
+> V4 is isolated from immutable V3 and was method-frozen before future labels at `2026-07-29T01:56:17.000Z` (`method-lock.json` SHA-256 `55720d02a696ccfbcfa0fdec1b17f34e9b2c69280151623d6e265b29a905a8fa`). Routine labeling uses monitor 3 only. Monitor 1 actions are explicit audit-only coverage exclusions, and any monitor 1 companion image is optional provenance that never enters a model prompt. Eligible actions are classified as `focus` or `activate`; a click is only the input method, and a Submit-button click is `activate`. The first ten or more chronological eligible monitor 3 rows are history-only. After that pool closes, the next exactly 20 eligible monitor 3 actions form the holdout. Each gets one state-only and one rolling-recent-10 call, for 40 calls. Earlier held-out labels may enter later history only after their action occurred. Scoring separately reports strict-granularity exact target, action type, their exact conjunction, blind semantic same-target identity, and shortcut usefulness. Do not compare V4 accuracy numerically with V3 because monitor coverage, history length, response schema, and scoring changed. Private method and harness: `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`.
 
 > [!summary] Current status
 > As of 2026-07-24: Capture Layer v2’s six-action smoke passed every real-data checker gate, and the checker independently caught all 54 synthetic failure mutations. The diagnostic walkthrough is now paused cleanly at **12/30 accepted checkpoints**, with Gmail `Settings` next. Steps 1–10 cover native actions; steps 11–12 prove exact Gmail DOM clicks and browser export integrity. The raw recorder stack remained stable, but the checkpoint validator was repaired during the walkthrough, so this is a diagnostic with disclosed protocol drift rather than one frozen formal calibration. Full continuation state is in [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]].
@@ -39,7 +42,10 @@ tags:
 
 Scoping decision verified by a cross-paper deep-research pass: the complete synchronized dataset (dual-monitor sync, joint AX+DOM identity, cryptographic provenance, zero-loss guarantees) is load-bearing for the eventual always-on router, not for the first retrospective prediction experiment. Published precedent (AITW, AgentNet/OpenCUA, AndroidControl in-domain scaling, next-app prediction literature) supports a simple first dataset: active-monitor pre-action frame, active app/window/URL, input events, approximate target identity, manually verified next-action labels. Two properties do not relax even in the minimal experiment: strict pre-action frame ordering (no future-information leakage) and verified next-action labels; approximate element identity and single-monitor capture are compensable. In-domain fine-tuning saturates at hundreds-to-low-thousands of examples — the regime a personal system occupies by construction. Full synthesis with numbers, the modality-vs-performance table, and the staged fidelity-escalation plan: [[computer-use-nap-fidelity-research-2026-07-26|NAP dataset fidelity research, July 26, 2026]].
 
-This does not change the gate ladder: the diagnostic walkthrough and capture-contract findings remain prerequisites, because even the simple dataset depends on the label pipeline they validate.
+At the time, this did not change the automatic-acquisition gate ladder. The
+July 28 manual-labeling decision later superseded that requirement for the
+retrospective pilot; the ladder remains relevant only if Dylan resumes the
+automatic capture stack.
 
 ## Walkthrough checkpoint, 2026-07-24
 
@@ -546,7 +552,10 @@ The proposed system has four parts:
 
 The recommended first implementation is therefore a deterministic local bundler, blind Codex visual labeling, and automatic scoring. The code should preserve the NAPsack patch, guard against version drift, and include mocked monitor tests.
 
-## Decisions that should not drift
+## Historical automatic-capture decisions that should not drift
+
+The bullets below describe the paused custom capture ladder. They do not
+override the July 28 manual V4 direction at the top of this note.
 
 - The first product question is next destination prediction, not semantic context or goal inference.
 - The first prediction evaluation is retrospective, not live.
@@ -563,6 +572,18 @@ The recommended first implementation is therefore a deterministic local bundler,
 
 ## Local artifacts
 
+- V4 isolated harness:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`
+- V4 method policy:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/method-policy.json`
+- V4 labeling guide:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/LABELING-GUIDE.md`
+- V4 schema audit:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
+- V3 semantic adjudication:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
+- V3 row-by-row adjudication:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
 - NAPsack run A: `/Users/dylanvu/napsack-runs/secondary-smoke-2026-07-23-a`
 - Corrected run B: `/Users/dylanvu/napsack-runs/secondary-smoke-2026-07-23-b`
 - Monitor regression test: `/Users/dylanvu/napsack-runs/tests/test_secondary_monitor_mapping.py`

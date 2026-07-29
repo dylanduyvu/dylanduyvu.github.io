@@ -26,9 +26,14 @@ This is a post-hoc development-set sensitivity analysis. It does not replace
 the frozen exact-text result, and no model was rerun. The 38 original
 predictions remain immutable.
 
-The narrow rescore counts only obvious naming equivalents while preserving
-wrong applications, tasks, pages, and controls as wrong. It is provisional
-until every prediction is formally adjudicated under one frozen rule.
+Condition-blind row-by-row adjudication is complete. The conservative primary
+view counts only obvious lexical naming variants while preserving wrong
+applications, tasks, pages, controls, and target granularity as wrong.
+
+Six child-control predictions against coarser labels remain queued for Dylan's
+granularity decision. They appear only in a separate non-primary sensitivity
+view. Shortcut usefulness also remains unresolved and was not inferred from
+correctness.
 
 ## What the experiment actually ran
 
@@ -98,34 +103,51 @@ The narrow rescore treats the following as naming equivalents:
 It does not forgive a wrong app, wrong task or page, or wrong immediate
 control.
 
-## Provisional semantic result
+## Primary result: lexical repair with strict granularity
+
+| Condition | Semantic top-1 | Semantic top-3 |
+|---|---:|---:|
+| Current screenshots only | 1/19 | 1/19 |
+| Current screenshots plus all earlier rows | 4/19 | 5/19 |
+
+Ordinary counts:
+
+- state-only top-1: 1 correct and 18 incorrect;
+- history top-1: 4 correct and 15 incorrect;
+- state-only top-3: 1 correct and 18 incorrect;
+- history top-3: 5 correct and 14 incorrect.
+
+Paired counts:
+
+- top-1: 3 history wins, 0 history losses, and 16 ties;
+- top-3: 4 history wins, 0 history losses, and 15 ties.
+
+The only primary state-only hit was `BLOG-CAND-027` at rank 1. Primary history
+hits were `BLOG-CAND-007` at rank 1, `BLOG-CAND-011` at rank 3,
+`BLOG-CAND-023` at rank 1, `BLOG-CAND-024` at rank 1, and `BLOG-CAND-027` at
+rank 1.
+
+## Granularity-inclusive sensitivity, not primary
+
+If the six unresolved child-control predictions are counted as matches for
+their coarser app-and-object labels, the result returns to the earlier
+provisional figures:
 
 | Condition | Semantic top-1 | Semantic top-3 |
 |---|---:|---:|
 | Current screenshots only | 2/19 | 5/19 |
 | Current screenshots plus all earlier rows | 5/19 | 7/19 |
 
-Ordinary counts:
+The paired sensitivity is 4 history wins, 1 loss, and 14 ties at top-1, and 3
+wins, 1 loss, and 15 ties at top-3. This is not the primary result because it
+relaxes target granularity after seeing the V3 outputs.
 
-- state-only top-1: 2 correct and 17 incorrect;
-- history top-1: 5 correct and 14 incorrect;
-- state-only top-3: 5 correct and 14 incorrect;
-- history top-3: 7 correct and 12 incorrect.
-
-Paired counts:
-
-- top-1: 4 history wins, 1 history loss, and 14 ties;
-- top-3: 3 history wins, 1 history loss, and 15 ties.
-
-The vocabulary repair shrinks the apparent history advantage but does not
-eliminate it.
-
-## Complete target matrix
+## Granularity-inclusive target matrix
 
 `R1`, `R2`, and `R3` mean the correct semantic destination appeared at that
 rank. `Miss` means none of the three predictions matched. `†` means the
 prediction failed the original exact-text scorer but passed the narrow
-semantic-equivalence view.
+granularity-inclusive sensitivity view.
 
 | Prior rows | Event | Actual next target | State only | History |
 |---:|---|---|---:|---:|
@@ -149,7 +171,7 @@ semantic-equivalence view.
 | 18 | `BLOG-CAND-026` | Codex → Patch NAP task | R1† | Miss |
 | 19 | `BLOG-CAND-027` | Codex → Patch NAP composer | R1† | R1 |
 
-At semantic top-3:
+In this non-primary sensitivity at top-3:
 
 - both conditions were correct on `BLOG-CAND-004`, `BLOG-CAND-007`,
   `BLOG-CAND-011`, and `BLOG-CAND-027`;
@@ -166,7 +188,15 @@ At semantic top-3:
 The experiment did use successively increasing history, but its results do not
 show a monotonic relationship between context depth and accuracy.
 
-Under the provisional semantic rescore:
+Under the conservative primary lexical-only rescore:
+
+| Prior-history depth | State top-1 | History top-1 | State top-3 | History top-3 |
+|---|---:|---:|---:|---:|
+| 1–5 | 0/5 | 1/5 | 0/5 | 1/5 |
+| 6–10 | 0/5 | 0/5 | 0/5 | 1/5 |
+| 11–19 | 1/9 | 3/9 | 1/9 | 3/9 |
+
+The granularity-inclusive sensitivity was:
 
 | Prior-history depth | State top-1 | History top-1 | State top-3 | History top-3 |
 |---|---:|---:|---:|---:|
@@ -189,32 +219,68 @@ history depth, time, workflow phase, and target difficulty all change together.
 A history-depth ablation would predict the same held-out targets with windows
 such as last 1, 3, 5, 10, and all prior rows.
 
-## Decision and next sequence
+## Unresolved human judgments
+
+The six prediction ranks awaiting Dylan's granularity decision are:
+
+- `BLOG-CAND-004`, state-only rank 2;
+- `BLOG-CAND-004`, history rank 3;
+- `BLOG-CAND-006`, history rank 1;
+- `BLOG-CAND-007`, state-only rank 2;
+- `BLOG-CAND-011`, state-only rank 3; and
+- `BLOG-CAND-026`, state-only rank 1.
+
+These predicted a child control or section when the frozen label named only
+the coarser task or page. Until Dylan decides whether those are the same
+immediate action, exclude them from the primary numerator.
+
+Usefulness remains unresolved. Correct target prediction and a shortcut Dylan
+would actually invoke are separate judgments.
+
+## Decision and V4 sequence
 
 For this smoke test, retroactive rescoring is sufficient. The 38 model calls do
 not need to be rerun.
 
 The next sequence is:
 
-1. Finish condition-blind row-by-row adjudication of the current predictions.
-   Record `same immediate action target` separately from `useful semantic
-   shortcut`.
-2. Use the current 19 targets as a development set to patch and freeze stable
-   target identity, aliases, granularity rules, and recovered-transport event
-   classification.
-3. On July 29, resume chronological manual labeling under the patched schema.
-   The larger labeled pool supplies personal workflow history.
-4. Reserve the final 20–30 newly labeled targets as an untouched retest set.
-5. On July 29 night, rerun only those held-out targets under the paired
-   state-only and bounded-history conditions. Do not make predictions for
-   every row in the larger history pool.
-6. If the repaired holdout preserves useful history-only wins, continue toward
-   roughly 200 rows. If it collapses, repair the method before paying the full
-   labeling cost.
+1. Treat the V3 rows and predictions only as a development set.
+2. Use the isolated V4 method frozen before future labels at
+   `2026-07-29T01:56:17.000Z`.
+3. Label monitor 3 only. Monitor 1 actions are explicit coverage exclusions,
+   and any monitor 1 companion evidence is optional audit provenance that the
+   predictor never sees.
+4. Close a history-only pool after at least ten eligible monitor 3 actions.
+5. Use the next exactly 20 chronological eligible monitor 3 actions as the
+   untouched holdout.
+6. Predict each holdout once with its current monitor 3 screenshot and once
+   with the rolling ten prior eligible monitor 3 rows, for 40 calls total.
+7. Score exact target identity, action type, their conjunction, blind semantic
+   equivalence, and shortcut usefulness separately.
+8. Decide whether to continue toward roughly 200 rows from that repaired
+   holdout.
 
 The current smoke supports continuing the investigation. It does not yet show
 that more history is always better, durable personalization, or a statistically
 stable effect.
+
+V4 is not numerically comparable with V3. It changes monitor coverage, history
+length, the prediction schema, and strict target-granularity scoring.
+
+## Private adjudication and V4 artifacts
+
+- adjudication report:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
+- row-by-row machine-readable adjudication:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
+- V4 schema audit:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
+- V4 method policy:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/method-policy.json`
+- V4 labeling guide:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/LABELING-GUIDE.md`
+- isolated V4 harness:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`
 
 ## Links
 

@@ -30,16 +30,21 @@ Those documents remain the historical record of what was attempted. They are not
 ## Current objective
 
 The first 20-row dataset and its 19-pair retrospective smoke test are complete.
-The current objective is to finish semantic adjudication, repair destination
-identity and scoring, resume chronological labeling under the patched schema,
-and reserve a fresh 20–30-target holdout before deciding whether to continue
-toward roughly 200 rows.
+The condition-blind V3 semantic adjudication and V4 method design are also
+complete. The isolated V4 monitor-3 method was frozen before future labels at
+`2026-07-29T01:56:17.000Z`. The current objective is to resume chronological
+monitor-3 labeling and reserve exactly 20 held-out targets before deciding
+whether to continue toward roughly 200 rows.
 
 The source task was to manually turn Dylan's roughly four-to-five-hour Screenpipe recording of building the blog post into a chronological dataset of pre-action states and exact immediate action targets.
 
 The initial audit found six candidate rows in a short end-of-evening session. Dylan then clarified that those were never meant to replace the full dataset-building pass. Dylan is the ground-truth labeler. His manual label from watching the recording is authoritative. Screenpipe metadata and later frames are optional QA, not an eligibility gate. Codex should help maintain the worksheet, retrieve strictly prior frames, and enforce the no-leakage boundary.
 
-The current labeling workflow and exact row contract are in [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]].
+The current labeling workflow and exact row contract are in
+[[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual
+labeling workbook, July 28, 2026]]. The executable V4 artifacts live privately
+under
+`/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`.
 
 The sequence Dylan approved on July 28 is:
 
@@ -76,7 +81,8 @@ The immediate product question is qualitative:
 
 ## Current data contract
 
-The core dataset is chronological. One row represents one immediate eligible user action:
+The V4 dataset is chronological and monitor-3-only. One eligible row
+represents one immediate user action performed on monitor 3:
 
 > prior state A -> exact target of the next action B
 
@@ -91,18 +97,75 @@ Example:
 
 If Dylan first clicks into Codex and then clicks its copy button, those are two rows. The second row's before-state screenshots come after Codex is focused but before the copy click. The same rule applies to focusing Codex and then focusing its composer.
 
-The ground-truth row stores both-monitor screenshots strictly before the immediate action and the textual exact action target Dylan observed afterward. A later reference image and Screenpipe UI-event, OCR, Accessibility, application, and window evidence are optional QA. Record whether those sources corroborate the label, but never let them overrule Dylan's manual label or determine row eligibility. The current action target, exact input, optional QA, and labeler-only notes remain hidden from the predictor.
+For each eligible V4 row, store one readable monitor 3 screenshot strictly
+before the immediate action, Dylan's textual exact target, and the action type.
+The two action types are:
 
-Post-action frames may be used by the human labeler to identify the hidden action target. They are not required once Dylan has confidently labeled the event, and they never enter the prediction prompt.
+- `focus`: only makes an already-present application, object, or field active;
+- `activate`: selects, navigates, opens, invokes, submits, dismisses, toggles,
+  copies, or otherwise activates the target.
 
-For the state-only condition, the predictor receives only the current row's two before-state screenshots and the frozen instruction. For the frozen 20-row smoke test, the history condition receives those same screenshots plus every earlier frozen row available before that cutoff, oldest to newest. Each historical row contributes its two before-state screenshots and textual action-target label. History therefore grows from one row to 19 rows across the 19 paired targets. This all-prior rule is a bounded smoke-test choice; the later scaled experiment still defaults to the ten most recent eligible rows unless Dylan changes it after reviewing this result.
+A click is an input method, not an action type. A Submit-button click is
+`activate`.
+
+Actions performed on monitor 1 or actions whose monitor is unknown are
+preserved as explicit coverage exclusions. They are not prediction misses and
+never enter the rolling history. A monitor 1 companion recording or image is
+optional audit provenance only and is never predictor-visible. Dylan does not
+need to synchronize the monitor 1 video during routine labeling.
+
+Post-action frames and Screenpipe UI-event, OCR, Accessibility, application,
+and window evidence are optional QA. They may help the human labeler identify
+the hidden target, but they never overrule Dylan's manual label, determine
+eligibility, or enter a prediction prompt.
+
+The target grammar has strict structural granularity:
+
+- application target: `app`, with `object: null` and `subtarget: null`;
+- object target: `app -> object`, with `subtarget: null`;
+- subtarget target: `app -> object -> subtarget`.
+
+An otherwise correct child control does not exactly match a coarser object
+label, or vice versa.
+
+For the V4 state-only condition, the predictor receives the current row's one
+monitor 3 before-state screenshot and the frozen instruction. For the V4
+history condition, it receives that same screenshot plus the rolling ten most
+recent earlier eligible monitor 3 state-action rows, oldest to newest. Once an
+earlier held-out action has occurred, its frozen label may enter the rolling
+history for later held-out targets. Predictions, scores, adjudications, and
+usefulness ratings never enter history.
+
+The history-only pool contains at least the first ten chronological eligible
+monitor 3 actions labeled under the frozen method. The source actions may
+predate the method freeze because this is retrospective video review; the
+manual label timestamp must postdate it. After that pool closes, the next
+exactly 20 eligible monitor 3 actions are the held-out targets. Each held-out
+target gets two calls, one per condition, for 40 calls total. There is no
+adaptive stopping based on outcomes.
+
+The V4 primary outputs are reported separately:
+
+- normalized exact target identity at top 1 and top 3;
+- action-type accuracy;
+- exact action, meaning exact target and action type together;
+- condition- and rank-blind semantic same-target adjudication; and
+- Dylan's separate shortcut-usefulness judgment.
 
 Two requirements do not relax:
 
 - the observation shown to the predictor must be strictly earlier than the immediate action; and
 - the held-out action-target label must be correct and specific.
 
-Perfect synchronization, cryptographic provenance, stable executable selectors, and automatic identity for every interface element are not required for this first qualitative pilot.
+The V4 method was frozen before future V4 labels at
+`2026-07-29T01:56:17.000Z`. Its method-lock SHA-256 is
+`55720d02a696ccfbcfa0fdec1b17f34e9b2c69280151623d6e265b29a905a8fa`.
+The later run lock freezes the completed manifest, evaluator-only target
+catalog, evidence, packets, and schedule before inference.
+
+V4 must not be compared numerically with V3. V3 used both monitors, expanding
+all-prior history, a different response schema, and permissive granularity
+behavior.
 
 ## Historical correction that must not drift
 
@@ -217,7 +280,8 @@ Full evidence, retained rows, exclusions, and hidden labels: [[screenpipe-natura
 
 ## Exact next task
 
-The 20-row expanding-history smoke test is complete. Do not resume labeling yet.
+The 20-row expanding-history V3 smoke test and its condition-blind semantic
+adjudication are complete. Do not rerun or mutate V3.
 
 `BLOG-SMOKE-20260728-V3` ran all 38 `gpt-5.6-sol` / `max` condition slots and
 scored all 19 paired targets. The pre-score audit found no label, packet,
@@ -245,24 +309,29 @@ workflow prediction with vocabulary imitation. Apparently identical
 destinations could score differently because one prediction added
 `conversation`, `task`, or `prompt`.
 
-A narrow post-hoc semantic sensitivity pass, with no new model calls, counted
-only obvious naming equivalents:
+The completed conservative lexical-only rescore, with no new model calls,
+preserves strict target granularity:
 
 | Condition | Semantic top-1 | Semantic top-3 |
 |---|---:|---:|
-| Current screenshots only | 2/19 | 5/19 |
-| Current screenshots plus all earlier rows | 5/19 | 7/19 |
+| Current screenshots only | 1/19 | 1/19 |
+| Current screenshots plus all earlier rows | 4/19 | 5/19 |
 
-The paired result became 4 history wins, 1 loss, and 14 ties at top-1, and 3
-wins, 1 loss, and 15 ties at top-3. This is still provisional because the
-equivalence rule was designed after seeing the outputs. Full matrix:
-[[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
+The primary paired result is 3 history wins, 0 losses, and 16 ties at top-1,
+and 4 wins, 0 losses, and 15 ties at top-3.
+
+A separate granularity-inclusive sensitivity retains the earlier figures:
+state-only 2/19 top-1 and 5/19 top-3, history 5/19 top-1 and 7/19 top-3,
+paired 4/1/14 and 3/1/15. It is not primary. Six child-control predictions
+against coarser labels remain queued for Dylan's granularity decision, and
+shortcut usefulness remains unresolved. Full matrix and queue:
+[[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc
+semantic rescore, July 28, 2026]].
 
 The walk-up supplied successively increasing history from one through 19 prior
-rows. Correctness did not increase monotonically: semantic history top-3 was
-3/5 at depths 1–5, 1/5 at 6–10, and 3/9 at 11–19. The current design cannot
-isolate context quantity because the target and workflow phase also changed at
-every depth.
+rows. Correctness did not increase monotonically. The design cannot isolate
+context quantity because the target and workflow phase also changed at every
+depth.
 
 Fourteen expanding-history calls also recovered from WebSocket disconnects by
 falling back to HTTPS. They returned valid predictions, but the frozen
@@ -282,20 +351,33 @@ The private canonical artifacts are:
   `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/INTERPRETATION.md`
 - six history hits for Dylan's usefulness review:
   `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/HITS-FOR-REVIEW.md`
+- completed semantic adjudication:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/SEMANTIC-ADJUDICATION.md`
+- row-by-row adjudication:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/semantic-adjudication.json`
+- V4 schema audit:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/postrun-analysis/v4-repair/V4-SCHEMA-AUDIT.md`
+- V4 method policy and harness:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/`
+- frozen V4 method lock:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/experiment-v4/method-lock.json`
 
 Next:
 
-1. Finish condition-blind row-by-row adjudication, recording `same immediate
-   action target` separately from `useful semantic shortcut`.
-2. Freeze stable destination identities, aliases, and granularity rules; fix
-   recovered transport-event classification.
-3. On July 29, resume chronological manual labeling under the patched schema.
-   Use the earlier new rows as history and reserve the final 20–30 new targets
-   as an untouched retest set.
-4. On July 29 night, rerun only those targets under paired state-only and
-   bounded-history conditions. Do not make predictions for every history row.
-5. Decide whether to continue toward roughly 200 rows from the repaired
-   holdout and Dylan's shortcut-usefulness ratings.
+1. Resume chronological labeling from the monitor 3 videos only. Preserve
+   monitor 1 actions as explicit exclusions without synchronizing its video.
+2. Close the history-only pool after at least ten eligible monitor 3 actions.
+3. Reserve the next exactly 20 eligible monitor 3 actions as the untouched
+   holdout.
+4. Freeze the completed run inputs, then make 40 calls: state-only and rolling
+   recent-10 history for each held-out target.
+5. Score exact target, action type, their conjunction, blind semantic
+   same-target identity, and shortcut usefulness separately.
+6. Decide whether to continue toward roughly 200 rows from the repaired
+   holdout.
+
+V4 is not a numeric rerun of V3. Monitor coverage, history length, target
+grammar, response schema, and scoring all changed.
 
 Do not stop or mutate Screenpipe, delete recordings, resume the 30-action walkthrough, or build an extractor unless Dylan asks.
 
@@ -305,13 +387,22 @@ The exact row fields, templates, predictor views, leakage boundary, and 20-row c
 
 The durable distinction is:
 
-- Dataset storage is full fidelity for the experiment: two strictly prior screenshots, Dylan's structured immediate action target, timestamps, exact input, quality, and utility fields. Later frames and Screenpipe metadata are optional QA.
-- Predictor exposure is bounded: current screenshots only for the baseline; for this smoke test, the same screenshots plus every earlier frozen state-action row for the history condition. A later scaled experiment defaults to recent ten.
+- V4 dataset storage requires one strictly prior monitor 3 screenshot, Dylan's
+  structured immediate target, `focus` or `activate`, timestamps, exact input,
+  quality, and utility fields. Monitor 1 provenance and later evidence are
+  optional audit-only fields.
+- V4 predictor exposure is bounded to the current monitor 3 screenshot alone
+  or that screenshot plus the rolling ten prior eligible monitor 3
+  state-action rows.
 - The logical experiment session is `BLOG-WORK-20260727`; capture segment `A`, `B`, `C`, or `D` is recorded separately.
 - Dataset eligibility follows one frozen predicate. Smoke and main manifests are chronological and versioned.
 - History membership is derived from the same frozen main manifest, not manually selected or stored in the ground-truth row.
-- The 20-row mini experiment is a method-and-signal checkpoint, not a conclusive evaluation.
-- A larger run may scale toward roughly 200 rows, but only after reviewing the mini experiment.
+- V4 uses at least ten history-only rows followed by exactly 20 held-out
+  targets and 40 calls.
+- Exact target, action type, exact action, semantic equivalence, and shortcut
+  usefulness are separate outputs.
+- A larger run may scale toward roughly 200 rows, but only after reviewing the
+  V4 holdout.
 
 ## Canonical vault notes
 
@@ -332,7 +423,10 @@ Read in this order:
 13. [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]
 14. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
 
-The initial predictor packet note is obsolete candidate evidence. Never run it. Build new packets only from the frozen row contract and smoke manifest in the manual workbook, keeping hidden actions, action targets, and optional post-action QA outside predictor-visible files.
+The initial predictor packet note and V3 smoke harness are historical. Never
+run them for V4. Build V4 packets only with the isolated private harness,
+keeping opaque target IDs, current labels, monitor 1 audit evidence, and
+optional post-action QA outside predictor-visible files.
 
 The custom-capture source and preserved evidence remain at:
 
@@ -389,4 +483,23 @@ Do not publish, build Quartz, or watch deployment unless Dylan asks. For a reque
 
 ## Resume prompt
 
-> Read this handoff, the post-hoc semantic-rescore note, the manual labeling workbook, the smoke execution-plan note, and the private V3 `INTERPRETATION.md`. `BLOG-SMOKE-20260728-V3` is complete: 38 immutable `gpt-5.6-sol` / `max` calls over 19 paired targets. The history condition walked from one through 19 prior rows. Frozen transport-recovered exact scoring was state-only 0/19 top-1 and top-3 versus history 5/19 top-1 and 6/19 top-3. A narrow post-hoc naming-equivalence pass, with no new calls, provisionally moved state-only to 2/19 top-1 and 5/19 top-3, and history to 5/19 top-1 and 7/19 top-3. Paired semantic results are 4/1/14 top-1 and 3/1/15 top-3. Accuracy did not increase monotonically with context depth. Treat the current 19 targets as a development set. Next, finish condition-blind adjudication, separately record exact immediate-target identity and shortcut usefulness, freeze stable target identity/aliases/granularity, and fix recovered-transport classification. On July 29, resume chronological labeling under the patched schema, reserve the final 20–30 new targets as an untouched test set, and that night predict only those targets with state-only versus bounded prior history. Do not restore excluded candidates, mutate Screenpipe, resume the custom capture stack, modify the article, build an extractor, or publish unless Dylan asks.
+> Read this handoff, the post-hoc semantic-rescore note, the manual labeling
+> workbook, the private V3 `INTERPRETATION.md`, and the private V4
+> `README.md`, `method-policy.json`, and `LABELING-GUIDE.md`.
+> `BLOG-SMOKE-20260728-V3` is an immutable 38-call development run. Its
+> conservative lexical-only rescore is state-only 1/19 top-1 and top-3 versus
+> history 4/19 top-1 and 5/19 top-3, paired 3/0/16 top-1 and 4/0/15 top-3.
+> The old 2/5 versus 5/7 figures are a non-primary granularity-inclusive
+> sensitivity. Six ambiguous child-control ranks and shortcut usefulness still
+> require Dylan's judgment. V4 is an isolated monitor-3-only experiment. Freeze
+> the method before future V4 labels. Monitor 1 actions are explicit coverage
+> exclusions; monitor 1 companion evidence is optional audit-only provenance
+> and never model-visible. Use `focus` versus `activate`, strict application,
+> object, or subtarget granularity, a rolling ten prior eligible monitor 3
+> rows including earlier holdouts after they occur, and the next exactly 20
+> eligible monitor 3 actions as the holdout. The 20 targets receive two calls
+> each, for 40 total. Report exact target, action type, exact action, blind
+> semantic equivalence, and usefulness separately. Do not compare V4 accuracy
+> numerically with V3. Do not restore excluded candidates, mutate Screenpipe,
+> resume the custom capture stack, modify the article, build an extractor, or
+> publish unless Dylan asks.
