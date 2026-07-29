@@ -1,33 +1,41 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-28
+updated: 2026-07-29
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 28, 2026, 10:00 PM EDT
+Generated: Jul 29, 2026, 1:07 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 68 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 64 note commits. The most recent movement is:
 
+- Project decision: publish canonical computer-use NAP V4 dataset.
 - Project decision: freeze monitor-3 NAP V4 method.
 - Project decision: archive NAP smoke harness and preflight.
 - Project decision: add resumable NAP smoke execution plan.
 - Project decision: tighten Screenpipe dataset contract.
 - Project decision: define Screenpipe dataset smoke test.
-- Project decision: update computer-use NAP capture research.
 
 ## Current Hub Signals
 
-- [[gpu-residual-value-pricing|GPU Residual Value Pricing]]: The broader residual-value pricing track remains active, but the pure GPU KBB / naked residual-data wedge is shelved pending buyer-side evidence. The demotion happened in stages: Bernie showed that appraisal-style naked data can become free gut-check behavior and that lenders mostly focus on offtake; Barkr showed that even a quality-adjusted GPU valuation index sells more...
 - [[personal-ai-context-learning|Personal AI Context Learning]]: The public World Models notes describe a three-phase research program: reconstruct a faithful personal event stream and predict the next action; learn bounded local comparisons from post-suggestion behavior; then test sandboxed multi-step assistance. The formal phases are specifications, not completed experiments.
-- [[gpu-finance|GPU Finance]]: GPU finance is anchored around recoverable hardware collateral, with offtake contracts and customer credit supporting debt service. In the current USD.AI/Nebius view, supply scarcity dominates: customers with long-term commitments generally want the capacity and are not trying to offload it.
 
 ## Past 24 Hours
+
+### Jul 29, 2026, 1:07 PM EDT - project: publish canonical computer-use NAP V4 dataset
+
+Project decision: publish canonical computer-use NAP V4 dataset.
+
+Changed notes:
+  - [[computer-use-nap-build-log|Computer-use NAP build log]]
+  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
+  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
+  - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
 
 ### Jul 28, 2026, 10:00 PM EDT - project: freeze monitor-3 NAP V4 method
 
@@ -81,37 +89,9 @@ Changed notes:
   - [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
   - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
 
-### Jul 28, 2026, 11:46 AM EDT - project: tighten Screenpipe dataset contract
-
-Project decision: tighten Screenpipe dataset contract.
-
-Changed notes:
-  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
-  - [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Computer-use NAP shakedown predictor packets, July 28, 2026]]
-
-### Jul 28, 2026, 11:38 AM EDT - project: define Screenpipe dataset smoke test
-
-Project decision: define Screenpipe dataset smoke test.
-
-Changed notes:
-  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
-  - [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Computer-use NAP shakedown predictor packets, July 28, 2026]]
-  - [[personal-ai-context-learning|Personal AI Context Learning]]
-  - [[screenpipe-natural-work-audit-2026-07-28|Screenpipe natural-work audit, July 28, 2026]]
-
-### Jul 27, 2026, 10:01 PM EDT - article: add recording to dataset graphic
-
-article: add recording to dataset graphic.
-
-Changed notes:
-  - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-
 ## Past 7 Days
 
+- Jul 29, 2026: project: publish canonical computer-use NAP V4 dataset - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 28, 2026: project: freeze monitor-3 NAP V4 method - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 28, 2026: experiment: publish NAP semantic rescore and retest plan - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
 - Jul 28, 2026: experiment: publish first NAP smoke result - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
@@ -136,12 +116,12 @@ Changed notes:
 - Jul 27, 2026: article: clarify Screenpipe event-driven frame timing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify dataset and navigation record structure - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: remove redundant opening summary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: clarify experiment framing and opening context - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 
-_Showing the newest 25 of 68 updates in this window._
+_Showing the newest 25 of 64 updates in this window._
 
 ## Past 30 Days
 
+- Jul 29, 2026: project: publish canonical computer-use NAP V4 dataset - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 28, 2026: project: freeze monitor-3 NAP V4 method - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 28, 2026: experiment: publish NAP semantic rescore and retest plan - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
 - Jul 28, 2026: experiment: publish first NAP smoke result - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
@@ -166,6 +146,5 @@ _Showing the newest 25 of 68 updates in this window._
 - Jul 27, 2026: article: clarify Screenpipe event-driven frame timing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: clarify dataset and navigation record structure - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 - Jul 27, 2026: article: remove redundant opening summary - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: clarify experiment framing and opening context - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 
-_Showing the newest 25 of 217 updates in this window._
+_Showing the newest 25 of 218 updates in this window._
