@@ -2,7 +2,7 @@
 type: synthesis
 status: active
 created: 2026-07-22
-updated: 2026-07-26
+updated: 2026-07-28
 projects:
   - personal-ai-context-learning
 domains:
@@ -30,7 +30,56 @@ tags:
 
 # Computer-use NAP shadow experiment
 
+## July 28 smoke result and current decision
+
+The first retrospective model comparison is complete. This supersedes the
+acquisition-first and five-row-next decisions below while preserving them as
+history.
+
+`BLOG-SMOKE-20260728-V3` ran 19 paired targets from one manually labeled
+Screenpipe sequence. The same `gpt-5.6-sol` / `max` predictor received either
+the current two-monitor state alone or that state plus every earlier frozen
+state-action row.
+
+In the preregistered transport-recovered view:
+
+| Condition | Exact top-1 | Exact top-3 |
+|---|---:|---:|
+| Current screenshots only | 0/19 | 0/19 |
+| Current screenshots plus all earlier rows | 5/19 | 6/19 |
+
+In ordinary accuracy terms, history was correct on 5 targets and incorrect on
+14 at top-1; it was correct on 6 and incorrect on 13 at top-3. In paired
+win/loss/tie terms, that is 5 wins, 0 losses, and 14 ties at top-1, and 6 wins,
+0 losses, and 13 ties at top-3. A tie here usually means both conditions were
+wrong, not that both were right. The positive examples include cross-app
+routing to a Coda note, repeated returns to the Patch NAP Codex task, its
+composer, and Twitter profile controls.
+
+This is a provisional signal pass, not a scale-to-200 pass. The free-text exact
+scorer had no accepted aliases. History saw earlier canonical labels while the
+screen-only condition had to invent target wording. Apparently identical
+destinations could fail because one prediction added `conversation`, `task`,
+or `prompt`. The comparison therefore mixes behavioral signal with vocabulary
+imitation.
+
+Fourteen history calls also recovered from WebSocket disconnects by falling
+back to HTTPS. The frozen event classifier mistook the fallback error item for
+tool use. This was detected before labels were revealed, and a condition-blind
+recovery policy was checksum-frozen. Original attempts and labels remain
+immutable.
+
+The current decision is to freeze stable destination identities or blinded
+semantic adjudication, fix transport-event classification, use a bounded recent
+history window, and run a fresh 20-to-30-target holdout. Do not begin the
+roughly 200-row labeling push yet. See
+[[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]],
+[[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
+and [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]].
+
 ## Decision
+
+Historical status: superseded by the July 28 manual-pilot result above.
 
 Do not begin the model-comparison phase yet. First determine whether the available recorder can produce high-fidelity, exact semantic action labels across browser and native desktop use.
 
@@ -600,3 +649,7 @@ The immediate sequence is:
 For a target row, history selection is mechanical. Consider only clear, allowed, human-initiated rows whose destinations stabilized before the target cutoff; sort them chronologically; take the last ten; and present them oldest to newest. Each historical row contributes both before-state screenshots, its known textual destination, and its timestamp. Do not select examples because they appear similar to the current target.
 
 The five-row smoke test validates workflow only. The later paired same-session comparison supplies exploratory go/no-go evidence about recent task context, not statistically conclusive evidence or durable personalization. Full-fidelity storage preserves the option to rerun later tests with recent 5, recent 20, all prior, retrieved-similar, or deliberately mismatched history without relabeling the source data.
+
+This proposed five-row-then-60 sequence was superseded later on July 28. Dylan
+approved a 20-row all-prior smoke checkpoint instead. That V3 experiment is now
+complete; its result and current decision are recorded at the top of this note.

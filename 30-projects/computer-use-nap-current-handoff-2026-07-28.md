@@ -29,7 +29,12 @@ Those documents remain the historical record of what was attempted. They are not
 
 ## Current objective
 
-Manually turn Dylan's roughly four-to-five-hour Screenpipe recording of building the blog post into a chronological dataset of pre-action states and exact immediate action targets.
+The first 20-row dataset and its 19-pair retrospective smoke test are complete.
+The current objective is to repair destination identity and scoring, review the
+six history top-3 hits for shortcut usefulness, and run a fresh small holdout
+before deciding whether to label roughly 200 rows.
+
+The source task was to manually turn Dylan's roughly four-to-five-hour Screenpipe recording of building the blog post into a chronological dataset of pre-action states and exact immediate action targets.
 
 The initial audit found six candidate rows in a short end-of-evening session. Dylan then clarified that those were never meant to replace the full dataset-building pass. Dylan is the ground-truth labeler. His manual label from watching the recording is authoritative. Screenpipe metadata and later frames are optional QA, not an eligibility gate. Codex should help maintain the worksheet, retrieve strictly prior frames, and enforce the no-leakage boundary.
 
@@ -211,57 +216,64 @@ Full evidence, retained rows, exclusions, and hidden labels: [[screenpipe-natura
 
 ## Exact next task
 
-The 20-row collection checkpoint has been reached and exceeded. Its visual
-preflight is complete, Dylan approved all 20 proposed image/action pairs with
-no corrections, and the pool is frozen as `BLOG-MINI-20-V1` /
-`MINI-20-20260728-V1`. The bounded protocol is frozen as
-`BLOG-EXPANDING-HISTORY-SMOKE-V1`. Stop labeling. Do not execute V1: an
-independent pre-call review found that the scoring components are not
-structured consistently across all 20 display labels, V1 exposes candidate
-IDs/times that add chronology metadata to the screenshot-only baseline, and
-its stated system-message contract does not literally match the available
-Codex CLI prompt stack.
+The 20-row expanding-history smoke test is complete. Do not resume labeling yet.
 
-The reviewed implementation plan is
-`/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`.
-Its zero-call repair gate and implementation are complete. V1 remains
-preserved as superseded-before-execution. V2 was minted, all 38 packets were
-rendered, the maximum-depth 40-image Codex input was audited, and the complete
-pre-call run lock was frozen at `2026-07-28T22:17:49.760Z`. No model call has
-run.
+`BLOG-SMOKE-20260728-V3` ran all 38 `gpt-5.6-sol` / `max` condition slots and
+scored all 19 paired targets. The pre-score audit found no label, packet,
+working-directory, or future-state leakage; no actual tool event; and no
+unexpected artifact or duplicate attempt.
 
-Dylan approved both repair-gate choices at `2026-07-28T19:55:56Z`.
-At `2026-07-28T20:49:04Z`, he also approved `gpt-5.6-sol` with `max`
-single-model reasoning, a 1,200-second per-attempt timeout, and an
-infrastructure circuit breaker. Each attempt is immutable. Restarting skips
-every saved attempt and continues at the first missing schedule slot. A failed
-slot is never retried; an infrastructure failure is saved and pauses the run
-before another slot is attempted. The V2 harness and no-model preflight are
-complete; execution is ready but intentionally not started.
+The preregistered transport-recovered result is:
 
-Screenpipe stored monitor 3 about every `4.0625s` and monitor 1 about every
-`5.078125s`. Five correct manual labels lack the exact intermediate
-predictor-visible state and are excluded only from the screenshot-based mini:
-`BLOG-CAND-005`, `BLOG-CAND-012`, `BLOG-CAND-015`, `BLOG-CAND-017`, and
-`BLOG-CAND-025`.
+| Condition | Exact top-1 | Exact top-3 |
+|---|---:|---:|
+| Current screenshots only | 0/19 | 0/19 |
+| Current screenshots plus all earlier rows | 5/19 | 6/19 |
 
-The earliest 20 candidates with usable pre-action image pairs are:
+In ordinary accuracy terms, history was correct on 5 targets and incorrect on
+14 at top-1; it was correct on 6 and incorrect on 13 at top-3. In paired
+win/loss/tie terms, top-1 was 5 wins, 0 losses, and 14 ties because both
+conditions were wrong on those 14 targets. Top-3 was 6 wins, 0 losses, and 13
+ties. The hits include routing to the Patch NAP Codex task, its composer, the
+Coda all-hands note, and two Twitter profile controls.
 
-`BLOG-CAND-003`, `BLOG-CAND-004`, `BLOG-CAND-006`, `BLOG-CAND-007`,
-`BLOG-CAND-008`, `BLOG-CAND-009`, `BLOG-CAND-010`, `BLOG-CAND-011`,
-`BLOG-CAND-013`, `BLOG-CAND-014`, `BLOG-CAND-016`, `BLOG-CAND-018`,
-`BLOG-CAND-019`, `BLOG-CAND-020`, `BLOG-CAND-021`, `BLOG-CAND-022`,
-`BLOG-CAND-023`, `BLOG-CAND-024`, `BLOG-CAND-026`, and `BLOG-CAND-027`.
+This is a provisional signal pass, not a scale-to-200 pass. The exact
+free-text scorer had no accepted aliases. History saw earlier canonical target
+wording while state-only had to invent names, so the measured difference mixes
+workflow prediction with vocabulary imitation. Apparently identical
+destinations could score differently because one prediction added
+`conversation`, `task`, or `prompt`.
 
-Their exact image paths and hidden action labels are in the private canonical
-workbook at
-`/Users/dylanvu/screenpipe-datasets/blog-work-20260727/dataset.md`.
-`BLOG-CAND-028` through `BLOG-CAND-032` remain reserve rows.
+Fourteen expanding-history calls also recovered from WebSocket disconnects by
+falling back to HTTPS. They returned valid predictions, but the frozen
+classifier mislabeled the fallback error item as tool use. This was detected
+and the transport-recovery rule was checksum-frozen before labels were
+revealed. The original attempts remain immutable.
 
-1. Await Dylan's explicit go-ahead before running `execute`; it is the first command that makes model calls.
-2. Make one `gpt-5.6-sol`/`max` attempt per condition slot with no selective retries. Preserve tool use and invalid JSON as incorrect model results. Preserve infrastructure failures, pause immediately, and resume later from the first missing slot without retrying the failed slot.
-3. Save both condition attempt records for a target before revealing its action label. A prediction may be absent only when its attempt status records why.
-4. Inspect prediction signal and method failures, then decide whether to revise the method or scale toward roughly 200 rows. Do not commit to the 200-row push before this review.
+The private canonical artifacts are:
+
+- workbook:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/dataset.md`
+- full report:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/REPORT.md`
+- machine-readable summary:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/summary.json`
+- interpretation:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/INTERPRETATION.md`
+- six history hits for Dylan's usefulness review:
+  `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/HITS-FOR-REVIEW.md`
+
+Next:
+
+1. Dylan reviews the six history top-3 hits and rates whether each would have
+   been a useful shortcut.
+2. Freeze stable destination identities or a condition-blind semantic
+   adjudication rule that separates target identity from phrasing.
+3. Fix recovered transport-event classification.
+4. Keep history bounded to a recent window instead of attaching all prior
+   screenshots.
+5. Run a fresh 20-to-30-target holdout with the repaired method. Decide whether
+   to scale toward roughly 200 rows only after that readout.
 
 Do not stop or mutate Screenpipe, delete recordings, resume the 30-action walkthrough, or build an extractor unless Dylan asks.
 
@@ -293,8 +305,9 @@ Read in this order:
 8. [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
 9. [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
 10. [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
-11. [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]
-12. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
+11. [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
+12. [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]
+13. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
 
 The initial predictor packet note is obsolete candidate evidence. Never run it. Build new packets only from the frozen row contract and smoke manifest in the manual workbook, keeping hidden actions, action targets, and optional post-action QA outside predictor-visible files.
 
@@ -353,4 +366,4 @@ Do not publish, build Quartz, or watch deployment unless Dylan asks. For a reque
 
 ## Resume prompt
 
-> Read this handoff, the manual labeling workbook, and `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`. The atomic-action workbook contains 30 manually narrated candidates. Dylan approved the V2 20-row protocol with rows `BLOG-CAND-003`, `004`, `006`, `007`, `008`, `009`, `010`, `011`, `013`, `014`, `016`, `018`, `019`, `020`, `021`, `022`, `023`, `024`, `026`, and `027`; preserve V1 but do not execute it. Preserve but exclude `005`, `012`, `015`, `017`, and `025` from the screenshot-based mini because Screenpipe skipped their exact intermediate state; this does not invalidate Dylan's manual labels. `028` through `032` remain reserve. No prediction has run. The V2 harness and no-model preflight are complete: `190/190` tests passed, all 38 packets were rendered, the exact 40-image prompt audit passed, and `BLOG-SMOKE-20260728-V2/run.json` is frozen with zero attempts and 38 remaining. Await Dylan's explicit approval before running `execute`. Follow the reviewed V2 plan using `gpt-5.6-sol`, `max` single-model reasoning, priority service, and a 1,200-second timeout. The experiment remains 19 paired targets and exactly 38 one-attempt condition slots, with all-prior chronological history versus current screenshots only, no selective retries, and both records saved before label reveal. Every existing attempt is immutable; restart by skipping saved attempts and continuing at the first missing slot. On infrastructure failure, save that slot and pause before the next; never retry the failed slot. Invalid model output counts false; infrastructure failure is null and removes its target from paired comparison. Dylan's labels are authoritative; Screenpipe metadata and later frames are optional QA. Do not restore earlier first-video candidates, resume labeling, use future labels, resume the custom capture stack, modify the article, mutate Screenpipe, build an extractor, or publish unless Dylan explicitly asks.
+> Read this handoff, the manual labeling workbook, the smoke execution-plan note, and the private V3 `INTERPRETATION.md`. `BLOG-SMOKE-20260728-V3` is complete: 38 immutable `gpt-5.6-sol` / `max` calls, 19 paired labels, no predictor leakage, and a deterministic three-view report. In the preregistered transport-recovered view, current screenshots scored 0/19 at top-1 and top-3; screenshots plus all earlier rows scored 5/19 top-1 and 6/19 top-3. In ordinary accuracy terms, history was wrong on 14 top-1 targets and 13 top-3 targets. The paired top-1 result is 5 wins, 0 losses, and 14 ties because both conditions missed those 14 ties; top-3 is 6 wins, 0 losses, and 13 ties. Treat this as a provisional signal pass and a scoring-method repair, not permission to label 200 rows. Fourteen history calls recovered from WebSockets to HTTPS and were incorrectly tagged as tool use by the frozen classifier; the pre-label recovery policy and original attempts remain preserved. The bigger method issue is exact free-text target matching with empty alias lists: history saw canonical vocabulary and state-only did not, so the gap mixes behavioral prediction with label imitation. The next work is to review the six history hits for shortcut usefulness, freeze stable target identities or condition-blind semantic adjudication, fix transport-event classification, use a bounded recent-history window, and run a fresh 20-to-30-target holdout. Do not resume labeling, restore excluded candidates, mutate Screenpipe, resume the custom capture stack, modify the article, build an extractor, or publish unless Dylan asks.

@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-23
-updated: 2026-07-27
+updated: 2026-07-28
 aliases:
   - Computer-use NAP build log
   - Desktop next-action prediction build log
@@ -25,6 +25,9 @@ tags:
 
 > [!important] Current direction, 2026-07-28
 > The custom capture build and its 30-action walkthrough are historical for the first experiment. The immediate path is a manually verified retrospective pilot using Screenpipe evidence. Do not resume the capture ladder unless prediction results later justify automatic acquisition work. Current operational state: [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]].
+
+> [!success] First retrospective smoke result, 2026-07-28
+> `BLOG-SMOKE-20260728-V3` completed 38 calls over 19 paired targets with no predictor leakage. In the preregistered transport-recovered view, screenshots alone scored 0/19 at top-1 and top-3; screenshots plus all earlier rows scored 5/19 top-1 and 6/19 top-3. In ordinary terms, history was therefore wrong on 14 top-1 targets and 13 top-3 targets. The paired result is 5 wins, 0 losses, and 14 ties at top-1 because both conditions missed those 14 ties; top-3 is 6 wins, 0 losses, and 13 ties. This is a provisional signal pass and a scoring-method repair, not a scale-to-200 pass. Exact free-text matching with empty alias lists asymmetrically exposed canonical vocabulary to history. Freeze destination identity or condition-blind semantic adjudication, then run a fresh 20-to-30-target holdout. Full contract and readout: [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]].
 
 > [!summary] Current status
 > As of 2026-07-24: Capture Layer v2’s six-action smoke passed every real-data checker gate, and the checker independently caught all 54 synthetic failure mutations. The diagnostic walkthrough is now paused cleanly at **12/30 accepted checkpoints**, with Gmail `Settings` next. Steps 1–10 cover native actions; steps 11–12 prove exact Gmail DOM clicks and browser export integrity. The raw recorder stack remained stable, but the checkpoint validator was repaired during the walkthrough, so this is a diagnostic with disclosed protocol drift rather than one frozen formal calibration. Full continuation state is in [[computer-use-nap-walkthrough-handoff-2026-07-24|Computer-use NAP walkthrough handoff]].

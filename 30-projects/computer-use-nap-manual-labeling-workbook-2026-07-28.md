@@ -26,7 +26,46 @@ Manually turn Dylan's several-hour Screenpipe record of building the blog post i
 
 Dylan is the ground-truth labeler. His manual label from watching the recording is authoritative. Screenpipe metadata and later frames are optional QA, not an eligibility gate. Codex can maintain the worksheet, find strictly prior frames, record whether Screenpipe corroborates the label, and prepare predictor packets after Dylan has chosen the actions.
 
-Do not use the earlier candidate packet. The 20-row checkpoint has been reached with 30 chronological atomic-action candidates. Stop collection and prepare the mini prediction experiment. Use that checkpoint to decide whether the method needs repair or is worth scaling toward roughly 200 rows.
+Do not use the earlier candidate packet. The 20-row checkpoint and mini
+prediction experiment are complete. Keep collection paused while destination
+identity and scoring are repaired. Do not scale toward roughly 200 rows yet.
+
+## Completed smoke readout
+
+`BLOG-SMOKE-20260728-V3` completed 38 model calls and scored 19 paired targets.
+The predictor saw the current two-monitor state alone or the same state plus
+every earlier frozen row.
+
+In the preregistered transport-recovered view:
+
+| Condition | Exact top-1 | Exact top-3 |
+|---|---:|---:|
+| Current screenshots only | 0/19 | 0/19 |
+| Current screenshots plus all earlier rows | 5/19 | 6/19 |
+
+In ordinary accuracy terms, history was correct on 5 targets and incorrect on
+14 at top-1; it was correct on 6 and incorrect on 13 at top-3. In paired
+win/loss/tie terms, top-1 was 5 wins, 0 losses, and 14 ties because both
+conditions were wrong on those 14 targets. Top-3 was 6 wins, 0 losses, and 13
+ties. This is a provisional signal pass.
+
+It is also a method-repair result. All frozen accepted-alias lists were empty.
+History saw earlier canonical target wording, while state-only had to invent
+names. The exact free-text scorer could reject apparently identical
+destinations because one prediction added `conversation`, `task`, or `prompt`.
+Do not use this development-set gap alone to justify a larger labeling push.
+
+Fourteen history calls recovered from WebSocket disconnects by falling back to
+HTTPS. The frozen event classifier mislabeled the fallback error item as tool
+use. A condition-blind recovery policy was checksum-frozen before label reveal,
+and the immutable as-recorded result is preserved separately.
+
+Full private readout:
+
+- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/REPORT.md`
+- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/summary.json`
+- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/INTERPRETATION.md`
+- `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/results/BLOG-SMOKE-20260728-V3/HITS-FOR-REVIEW.md`
 
 ## Locked experiment contract
 
@@ -195,7 +234,7 @@ Use one `gpt-5.6-sol`/`max` single-model call per condition with no repeated
 trials, automatic delegation, or model comparison. Full execution details
 live in the private canonical workbook.
 
-> Pre-execution review update, 2026-07-28: no prediction has run and V1 must
+> Historical pre-execution review update, 2026-07-28: V1 must
 > not be executed. The reviewed plan at
 > `/Users/dylanvu/screenpipe-datasets/blog-work-20260727/EXECUTION-PLAN.md`
 > first requires Dylan to approve a uniform structured target table and the
@@ -207,7 +246,8 @@ live in the private canonical workbook.
 > timeout, and a circuit breaker that saves an infrastructure-failed slot and
 > pauses before the next slot. Restarting skips all saved attempts and
 > continues from the first missing slot; failed slots are never retried.
-> Execution remains not started.
+> V2 later stopped before its first model call on an isolated-runtime-home
+> preflight defect. The test-driven repair was minted and completed as V3.
 
 ## Candidate index
 
@@ -607,10 +647,11 @@ pairs, ending at `BLOG-CAND-027`. It preserved but visually excluded
 skipped the exact intermediate state. `BLOG-CAND-028` through
 `BLOG-CAND-032` remain reserve rows.
 
-The image/action review is complete. Before the first model call:
+The image/action review is complete. The completed V3 run:
 
-1. use frozen protocol `BLOG-EXPANDING-HISTORY-SMOKE-V2`; and
-2. keep every tested action target hidden until both paired predictions have been saved.
+1. used frozen protocol `BLOG-EXPANDING-HISTORY-SMOKE-V2`; and
+2. kept every tested action target hidden until both paired predictions had
+   been saved.
 
 The checkpoint asks two practical questions:
 
@@ -621,12 +662,18 @@ It is exploratory and is not intended to establish statistical significance or d
 
 ## Decision after the mini experiment
 
-After reviewing the 20-row checkpoint, choose one of two paths:
+The checkpoint selected the first path: repair evaluation and repeat a bounded
+checkpoint.
 
-1. repair the collection or evaluation method and repeat a bounded checkpoint; or
-2. continue the chronological atomic-action dataset toward roughly 200 rows.
+Before adding more rows, freeze stable destination identities or a
+condition-blind semantic-adjudication rule, fix recovered transport-event
+classification, and bound history to a recent window. Then run a fresh
+20-to-30-target holdout. Decide whether to continue toward roughly 200 rows
+only after that readout.
 
-Do not commit to the 200-row labeling push in advance. Because every row is stored at full fidelity, later experiments can choose different history windows or ask for immediate versus model-defined semantic continuations without relabeling the atomic base.
+Because every row is stored at full fidelity, later experiments can choose
+different history windows or ask for immediate versus model-defined semantic
+continuations without relabeling the atomic base.
 
 ## Leakage boundary
 
