@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 29, 2026, 10:33 PM EDT
+Generated: Jul 30, 2026, 10:56 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 65 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 66 note commits. The most recent movement is:
 
 - Project decision: freeze V5 expanded-history experiment design.
 - Project decision: merge and clean twenty-video NAP dataset.
@@ -23,9 +23,24 @@ In the past 7 days, the public vault changed through 65 note commits. The most r
 
 ## Current Hub Signals
 
-- [[personal-ai-context-learning|Personal AI Context Learning]]: The public World Models notes describe a three-phase research program: reconstruct a faithful personal event stream and predict the next action; learn bounded local comparisons from post-suggestion behavior; then test sandboxed multi-step assistance. The formal phases are specifications, not completed experiments.
+- [[personal-ai-context-learning|Personal AI Context Learning]]: The first expanded-history NAP comparison is complete. Its official exact
 
 ## Past 24 Hours
+
+### Jul 30, 2026, 10:56 AM EDT - experiment: publish V5 post-results synthesis
+
+experiment: publish V5 post-results synthesis.
+
+Changed notes:
+  - [[a-first-computer-navigation-autocomplete-should-rank-candidates-and-abstain|A first computer navigation autocomplete should rank candidates and abstain]]
+  - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
+  - [[workflow-history-can-recover-recurring-destinations-without-general-next-action-competence|Workflow history can recover recurring destinations without general next-action competence]]
+  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
+  - [[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what a first navigation autocomplete still needs]]
+  - [[computer-use-nap-build-log|Computer-use NAP build log]]
+  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
+  - [[computer-use-nap-v5-expanded-history-experiment-design-2026-07-29|Computer-use NAP V5 expanded-history experiment design, July 29, 2026]]
+  - and 2 more
 
 ### Jul 29, 2026, 10:33 PM EDT - project: freeze V5 expanded-history experiment design
 
@@ -99,6 +114,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Jul 30, 2026: experiment: publish V5 post-results synthesis - [[a-first-computer-navigation-autocomplete-should-rank-candidates-and-abstain|A first computer navigation autocomplete should rank candidates and abstain]]
 - Jul 29, 2026: project: freeze V5 expanded-history experiment design - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 29, 2026: dataset: complete third NAP labeling batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 29, 2026: dataset: merge first three videos of third NAP batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
@@ -123,12 +139,12 @@ Changed notes:
 - Jul 27, 2026: article: correct automatic pipeline sequencing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: restore automatic acquisition ladder - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: compress Screenpipe reconstruction caveat - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: correct Screenpipe frame ordering evidence - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 
-_Showing the newest 25 of 65 updates in this window._
+_Showing the newest 25 of 66 updates in this window._
 
 ## Past 30 Days
 
+- Jul 30, 2026: experiment: publish V5 post-results synthesis - [[a-first-computer-navigation-autocomplete-should-rank-candidates-and-abstain|A first computer navigation autocomplete should rank candidates and abstain]]
 - Jul 29, 2026: project: freeze V5 expanded-history experiment design - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 29, 2026: dataset: complete third NAP labeling batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 29, 2026: dataset: merge first three videos of third NAP batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
@@ -153,6 +169,5 @@ _Showing the newest 25 of 65 updates in this window._
 - Jul 27, 2026: article: correct automatic pipeline sequencing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: restore automatic acquisition ladder - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: compress Screenpipe reconstruction caveat - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: correct Screenpipe frame ordering evidence - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 
-_Showing the newest 25 of 186 updates in this window._
+_Showing the newest 25 of 187 updates in this window._
