@@ -35,10 +35,10 @@ Do not use the earlier candidate packet or V3 harness. The V3 20-row checkpoint
 and 38-call experiment are complete and immutable. V4 was method-frozen before
 future labels at `2026-07-29T01:56:17.000Z`; its method-lock SHA-256 is
 `55720d02a696ccfbcfa0fdec1b17f34e9b2c69280151623d6e265b29a905a8fa`.
-Continue the same chronological atomic dataset toward roughly 200 labeled
-rows. Dylan deferred the early V4 checkpoint, screenshot preparation, split
-selection, and model calls on July 29. The current task is continuous
-highest-fidelity labeling only.
+The same chronological atomic dataset has now reached 220 retained candidates,
+including 196 accepted rows, across 30 monitor-3 recordings. Dylan has ended
+the current labeling push. The next task is to freeze and run the
+expanded-history experiment before labeling more videos.
 
 ### July 29 superseding collection clarification
 
@@ -52,9 +52,13 @@ highest-fidelity labeling only.
 - Enter submissions remain chronological history but have
   `demo_target_eligible: false` and `shortcut_opportunity: no`.
 - Ordinary typing and paste remain context.
+- A Mission Control or App Exposé trackpad sequence that focuses VS Code is a
+  valid shortcut opportunity but targets the VS Code window/file rather than
+  an unfocused editor. A later editor click is a separate event. Do not infer
+  gesture use unless the narration names it.
 - Do not assign history, development, checkpoint, or holdout roles during
-  collection. Any future experiment will split the completed corpus later
-  under a newly frozen plan.
+  collection. The completed corpus must now be split under a newly frozen plan
+  before inference.
 
 ## Completed smoke readout
 
@@ -850,15 +854,12 @@ state-only 1/19 top-1 and top-3 versus history 4/19 top-1 and 5/19 top-3,
 paired 3/0/16 and 4/0/15. The old 2/5 versus 5/7 result remains only as a
 non-primary granularity-inclusive sensitivity.
 
-Resume chronological monitor 3 labeling under the superseding contract above
-and continue toward roughly 200 high-fidelity rows. Do not select targets,
-extract experiment screenshots, assign history or holdout roles, or make model
-calls during the current collection phase. The frozen V4 design remains an
-auditable historical option rather than the active next step.
-
-If Dylan later resumes experiment design, define and freeze the new split and
-decide how `history_context_eligible`, `demo_target_eligible`, and
-`shortcut_opportunity` affect target selection before any predictions.
+The roughly 200-row collection push is complete at 220 retained candidates.
+Stop labeling. Define and freeze the new split and expanded-history policy,
+then decide how `history_context_eligible`, `demo_target_eligible`, and
+`shortcut_opportunity` affect target selection before any prediction. The
+frozen rolling-recent-10 V4 design remains an auditable historical option
+rather than the active next step.
 
 Because every row is stored at full fidelity, later experiments can choose
 different history windows or ask for immediate versus model-defined semantic

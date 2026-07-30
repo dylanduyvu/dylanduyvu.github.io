@@ -32,10 +32,10 @@ Those documents remain the historical record of what was attempted. They are not
 The first 20-row dataset and its 19-pair retrospective smoke test are complete.
 The condition-blind V3 semantic adjudication and V4 method design are also
 complete. The isolated V4 monitor-3 method was frozen before future labels at
-`2026-07-29T01:56:17.000Z`, but Dylan has deferred any V4 checkpoint or model
-run. The current objective is to build the highest-fidelity continuous
-monitor-3 event dataset toward roughly 200 rows. Keep labeling forward; do not
-assign history, development, checkpoint, or holdout roles yet.
+`2026-07-29T01:56:17.000Z`. Dylan has now completed the roughly 200-row
+collection push. The current objective is to freeze and run the
+expanded-history prediction experiment over the accepted corpus before
+labeling any more videos.
 
 The source task was to manually turn Dylan's roughly four-to-five-hour Screenpipe recording of building the blog post into a chronological dataset of pre-action states and exact immediate action targets.
 
@@ -49,33 +49,29 @@ under
 
 The current sequence Dylan approved on July 29 is:
 
-1. continue collecting one chronological, atomic monitor-3 dataset toward
-   roughly 200 labeled rows;
-2. merge every ten-video batch into the one canonical ledger and apply the same
-   physical-invocation cleanup rules retroactively;
+1. stop labeling after the completed third ten-video batch;
+2. use the one canonical continuous ledger as the source corpus;
 3. retain non-text commands such as Enter submissions as chronological history
-   while separately marking whether each event would be a useful demo target;
-4. defer screenshot extraction, target splits, checkpoints, and model calls
-   until Dylan explicitly returns to experiment design; and
-5. consider an automatic Screenpipe extractor only after the manual corpus is
-   sufficiently large and stable.
+   while excluding zero-value prompt submissions from demo targets;
+4. freeze target eligibility, the expanded-history condition, strictly-prior
+   screenshots, paired call schedule, and scoring before inference; and
+5. reuse the repaired resumable harness rather than rebuilding experiment
+   infrastructure.
 
-By July 29, Dylan had completed manual passes over 23 chronological monitor-3
-recordings. The merged cleanup retained 187 physical-event candidates through
-`compact_monitor_3_1785171409335.mp4`: 166 accepted, 20 requiring a specific
-timing, invocation, target, or prior-frame resolution, and one unresolved
-destination. Fourteen batch-1 composer-focus candidates were retired because
+By July 29, Dylan had completed manual passes over 30 chronological monitor-3
+recordings. The merged cleanup retained 220 physical-event candidates through
+`compact_monitor_3_1785173529401.mp4`: 196 accepted, 22 requiring a specific
+timing, invocation, target, or prior-frame resolution, and two unresolved
+destinations. Fourteen batch-1 composer-focus candidates were retired because
 they described Codex automatic focus rather than a user invocation. Enter
 submissions remain chronological events but are marked as non-demo targets.
 
 The merged continuous ledger is the canonical public-vault dataset:
 [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical
 dataset]]. Every future task working in this vault should read and update that
-file. Do not create a competing canonical ledger outside the vault. The next
-operational step is to label the remaining seven recordings in the current
-ten-video monitor-3 batch and merge them under the same event contract. After
-that batch is complete, prepare the expanded-history prediction experiment
-before further labeling.
+file. Do not create a competing canonical ledger outside the vault. The third
+ten-video labeling batch is complete. The next operational step is to freeze
+and run the expanded-history prediction experiment before further labeling.
 
 On July 29, the complete 483-file, 200 MB
 `/Users/dylanvu/screenpipe-datasets/` project tree was copied and checksum
@@ -122,6 +118,10 @@ do not split one invocation into multiple rows merely because it caused
 multiple focus effects. One click directly into an editor is one editor-target
 row even when it also focuses the application. Automatic composer focus after
 a Codex task switch or Enter submission is resulting state, not another row.
+A Mission Control or App Exposé trackpad sequence that focuses VS Code is a
+valid shortcut opportunity but targets the VS Code window/file, not an
+unfocused editor. If Dylan then clicks into the editor, that click is a second
+event. Do not assume gesture use unless the narration names it.
 
 Example:
 
@@ -410,14 +410,13 @@ The private canonical artifacts are:
 
 Next:
 
-1. Continue chronological labeling from the remaining seven monitor-3 videos
-   listed in the canonical dataset.
-2. Merge each batch into the same ledger and clean physical invocations,
-   automatic focus, input method, command events, and demo utility consistently.
-3. Finish this ten-video batch, which should bring the corpus close to 200
-   retained rows.
-4. After the batch merge, freeze the expanded-history experiment inputs before
-   extracting screenshots or making model calls.
+1. Do not label another video batch yet.
+2. Resolve or exclude pending rows; rate demo-target and shortcut eligibility
+   without using model outcomes.
+3. Freeze the accepted corpus, evaluation targets, expanded-history policy,
+   strictly-prior screenshots, response schema, paired schedule, and scorer.
+4. Reuse the resumable V4 harness to run state-only versus expanded-history
+   predictions and preserve every attempt immutably.
 
 V4 is not a numeric rerun of V3. Monitor coverage, history length, target
 grammar, response schema, and scoring all changed.
@@ -435,9 +434,10 @@ The durable distinction is:
   `focus` or `activate`, timestamps, exact input, physical-invocation status,
   history eligibility, demo eligibility, quality, and utility fields.
   Strictly-prior screenshots are deferred.
-- V4 predictor exposure is bounded to the current monitor 3 screenshot alone
-  or that screenshot plus the rolling ten prior eligible monitor 3
-  state-action rows.
+- The historical frozen V4 design bounded predictor exposure to the current
+  monitor 3 screenshot alone or that screenshot plus the rolling ten prior
+  eligible monitor 3 state-action rows. The new expanded-history policy has
+  not yet been frozen.
 - The logical experiment session is `BLOG-WORK-20260727`; capture segment `A`, `B`, `C`, or `D` is recorded separately.
 - Dataset eligibility follows one frozen predicate. Smoke and main manifests are chronological and versioned.
 - History membership is derived from the same frozen main manifest, not manually selected or stored in the ground-truth row.
@@ -445,8 +445,9 @@ The durable distinction is:
   20 held-out targets and 40 calls; no such roles are currently assigned.
 - Exact target, action type, exact action, semantic equivalence, and shortcut
   usefulness are separate outputs.
-- Collection continues toward roughly 200 rows without a checkpoint. Any later
-  experimental split must be designed and frozen before predictions.
+- Collection stopped after 220 retained candidates. The next experimental
+  split and expanded-history construction must be designed and frozen before
+  predictions.
 
 ## Canonical vault notes
 

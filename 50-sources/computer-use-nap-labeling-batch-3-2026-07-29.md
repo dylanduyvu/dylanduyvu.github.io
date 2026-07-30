@@ -8,10 +8,8 @@ project: computer-use-nap
 
 # Computer-use NAP labeling batch 3 raw narration
 
-This is Dylan's original narration for the current ten-video monitor-3 batch.
-The first three recordings have been submitted and merged. This note should be
-extended with the remaining seven recordings rather than replaced. The cleaned
-interpretation belongs in
+This is Dylan's original narration for the completed ten-video monitor-3
+batch. The cleaned interpretation belongs in
 [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical
 dataset]].
 
@@ -107,6 +105,92 @@ dataset]].
 
 4:14 focused onto vs code
 
+- I'm noticing another caveat that we probably should mention when I do the three-finger swipe up on the touchpad for a Mac in order to see all the windows and then three-finger swipe down on one of the windows to focus in on it (for VS Code specifically), I'd mention that. When dual-monitoring, if I click into VS Code and into the editor, it will automatically click into the file and I'm able to edit with the next keystroke. However if I use the focusing that I just mentioned with the three-finger swipe up and down, then I have to do an additional click in order to go into the editor. I think that counts as a valid shortcut for this experiment
+
+[compact_monitor_3_1785171714551.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785171714551.mp4)
+
+prev state was focused on vs code
+
+0:20 focus on codex
+
+1:32 focus on arc browser with coda opened up already
+
+1:50 focused on VS Code
+
+2:31 this required two clicks: one to focus on Codex and the second the toggle side panel button on the top right of Codex. Screen Pipe only had one screenshot for this though.
+
+2:42 clicked the toggle side panel button on the top right to collapse the panel
+
+2:51: Clicked on the input field to begin typing a prompt
+
+[compact_monitor_3_1785172017894.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172017894.mp4)
+
+0:00 submitted prompt
+
+0:20 focused on vs code
+
+1:06 focused on codex and began typing out a prompt in the input field - already focused i think given history
+
+1:32 submitted prompt
+
+1:49 typed in another prompt into the input field
+
+2:13 submitted prompt
+
+2:36 focused on codex in the file so i can select some text to copy
+
+2:54 focused on codex and pasted in the copied text into input field. i’m guessing the input field was already focused upon clicking on codex
+
+3:36 type in another prompt
+
+3:44 submitted prompt
+
+[compact_monitor_3_1785172320699.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172320699.mp4)
+
+0:34 focused on the VS Code window
+
+2:12 focused on the Arc browser window
+
+2:32 clicked on the dylanduyvu@gmail.com shortcut button on the left sidebar of the Arc browser to navigate to Gmail
+
+[compact_monitor_3_1785172623051.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172623051.mp4)
+
+The starting point for this recording is a bit weird. It feels like there's a bunch of steps that got skipped. Using context from before, it seems like I switched from dylanduyvu@gmail.com to dylan@slate.ceo. Then I clicked the search and typed in Ornn and then clicked on the first message that popped up. Actually I'm not sure if it's the first message but the message that you see in the screenshot for the first still of this video.
+
+0:41 focused on VS Code
+
+1:34 clicked into VS Code to be able to edit what's in the file
+
+[compact_monitor_3_1785172925051.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172925051.mp4)
+
+Nothing happened
+
+[compact_monitor_3_1785173227162.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785173227162.mp4)
+
+1:22 focused on Codex
+
+[compact_monitor_3_1785173529401.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785173529401.mp4)
+
+0:21: Clicked to focus on VS Code and selected some text to copy
+
+0:41: Focused on Codex, pasted the text in the input field, and typed out more of a prompt
+
+1:12 submitted prompt
+
+1:34 started typing in a new prompt
+
+1:54 focused on the ARC browser with that ornn email still open
+
+2:12 clicked on the Linear shortcut button on the Arc sidebar navigation tab
+
+2:22 clicked on the dylanduyvu@gmail.com shortcut button on the left sidebar of the ARC browser
+
+2:41 clicked on the Notion shortcut button on the left side sidebar of the arc browser
+
+3:01: Focused on the Codex window to type in another prompt in the input field
+
+3:21 submitted the prompt
+
 ## Normalization note
 
 - Ordinary typing, paste, and response-text highlighting were retained above
@@ -117,3 +201,17 @@ dataset]].
   its already-focused composer, only the Codex window/task focus was retained.
 - The active VS Code object remains `day-0-took-three-days.md` based on the
   continuous preceding labels.
+- The 2:31 description in `1785171714551` was split into the explicitly stated
+  Codex-focus click and Toggle-side-panel click even though Screenpipe retained
+  only one screenshot.
+- The 2:36 `focused on codex in the file` description in `1785172017894` was
+  normalized to VS Code because the stated purpose was selecting file text to
+  copy and the next action returned to Codex to paste it.
+- The three inferred Gmail actions before the first retained frame of
+  `1785172623051` remain non-accepted candidates. The account switch and search
+  focus need prior-frame evidence; the exact Ornn message target remains
+  unresolved.
+- Mission Control or App Exposé gesture-mediated window focus is a valid
+  shortcut opportunity. It targets the VS Code window/file, not the editor; an
+  additional click into the editor is a separate event. Generic VS Code-focus
+  labels are not retroactively assumed to use this gesture.

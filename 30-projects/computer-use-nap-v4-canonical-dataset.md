@@ -15,25 +15,23 @@ project: computer-use-nap
 
 ## Current state
 
-- Twenty-three chronological monitor-3 recordings have been manually reviewed.
-- Coverage runs through `compact_monitor_3_1785171409335.mp4`.
-- Two recordings contained no narrated user invocations.
-- The merged ledger retains 187 physical-event candidates, of which 166 are
+- Thirty chronological monitor-3 recordings have been manually reviewed.
+- Coverage runs through `compact_monitor_3_1785173529401.mp4`.
+- Three recordings contained no narrated user invocations.
+- The merged ledger retains 220 physical-event candidates, of which 196 are
   accepted.
 - Fourteen batch-1 input-focus candidates were retired because Codex
   automatically focused its composer; batch-2 auto-focus descriptions were
   never promoted to event IDs.
-- Finish the remaining seven recordings in the current ten-video batch before
-  preparing the expanded-history prediction experiment. No experiment
-  screenshots or model calls should be made before that merge.
+- The roughly 200-row collection target is met. The next task is to freeze and
+  run the expanded-history prediction experiment before labeling more videos.
 
 Raw narration is preserved separately:
 
 - [[computer-use-nap-labeling-batch-1-2026-07-29|Batch 1 raw narration and
   pre-cleanup ledger]]
 - [[computer-use-nap-labeling-batch-2-2026-07-29|Batch 2 raw narration]]
-- [[computer-use-nap-labeling-batch-3-2026-07-29|Batch 3 raw narration,
-  currently three of ten recordings]]
+- [[computer-use-nap-labeling-batch-3-2026-07-29|Batch 3 raw narration]]
 
 ## Event contract
 
@@ -49,6 +47,10 @@ that invocation.
   selection remain context rather than events.
 - Non-text command keystrokes are events. Pressing Enter to submit a Codex
   prompt is `activate` with `input_method: keyboard_enter`.
+- A Mission Control or App Exposé trackpad sequence that focuses a window is a
+  valid `focus` event and shortcut opportunity. It targets the selected window
+  or visible file, not an editor that remains unfocused. A later editor click
+  is a separate row. Do not infer gesture use from a generic focus label.
 - Enter submissions remain useful workflow history but are not demo targets
   and have `shortcut_opportunity: no`.
 - Existing IDs are stable audit identifiers. Removed or merged candidates are
@@ -259,6 +261,39 @@ Fields:
 | `BLOG-V4-197` | `1785171409335` @ 3:35 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Typing at 3:24 is context. |
 | `BLOG-V4-198` | `1785171409335` @ 4:03 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Paste and typing at 4:00 are context. |
 | `BLOG-V4-199` | `1785171409335` @ 4:14 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-200` | `1785171714551` @ 0:20 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Focused the active Codex task. |
+| `BLOG-V4-201` | `1785171714551` @ 1:32 | accepted | pointer | focus | Arc → Coda | yes | pending | unrated | pending | Focused Arc with Coda already open. |
+| `BLOG-V4-202` | `1785171714551` @ 1:50 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Generic focus label; trackpad gesture use was not asserted for this row. |
+| `BLOG-V4-203` | `1785171714551` @ 2:31a | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | First of two explicit clicks. |
+| `BLOG-V4-204` | `1785171714551` @ 2:31b | accepted | pointer | activate | Codex → `Patch NAP blog prep in vault` → Toggle side panel control | yes | pending | unrated | needs_prior_frame | Second explicit click; Screenpipe retained only one screenshot for the pair. |
+| `BLOG-V4-205` | `1785171714551` @ 2:42 | accepted | pointer | activate | Codex → `Patch NAP blog prep in vault` → Toggle side panel control | yes | pending | unrated | pending | Click collapsed the side panel. |
+| `BLOG-V4-206` | `1785171714551` @ 2:51 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` → composer | yes | pending | unrated | pending | Explicit click into the input field. |
+| `BLOG-V4-207` | `1785172017894` @ 0:00 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-208` | `1785172017894` @ 0:20 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-209` | `1785172017894` @ 1:06 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Composer was already focused; typing is context. |
+| `BLOG-V4-210` | `1785172017894` @ 1:32 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-211` | `1785172017894` @ 2:13 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Typing at 1:49 is context. |
+| `BLOG-V4-212` | `1785172017894` @ 2:36 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | “Codex in the file” normalized to VS Code from the stated copy-then-paste sequence; selection/copy is context. |
+| `BLOG-V4-213` | `1785172017894` @ 2:54 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Composer retained focus; paste is context. |
+| `BLOG-V4-214` | `1785172017894` @ 3:44 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Typing at 3:36 is context. |
+| `BLOG-V4-215` | `1785172320699` @ 0:34 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-216` | `1785172320699` @ 2:12 | accepted | pointer | focus | Arc | yes | pending | unrated | pending | Focused Arc. |
+| `BLOG-V4-217` | `1785172320699` @ 2:32 | accepted | pointer | activate | Arc → Gmail → `dylanduyvu@gmail.com` inbox | yes | pending | unrated | pending | Clicked the named Arc sidebar shortcut. |
+| `BLOG-V4-218` | `1785172623051` @ before 0:00 | needs_prior_frame | unknown | activate | Arc → Gmail → `dylan@slate.ceo` inbox | pending | pending | unrated | needs_prior_frame | Inferred account switch in a Screenpipe gap; not eligible until resolved. |
+| `BLOG-V4-219` | `1785172623051` @ before 0:00 | needs_prior_frame | unknown | focus | Arc → Gmail → search field | pending | pending | unrated | needs_prior_frame | Inferred search-field focus in the same gap; typing “Ornn” is context. |
+| `BLOG-V4-220` | `1785172623051` @ before 0:00 | unresolved | unknown | activate | Arc → Gmail → Ornn search result → message | pending | pending | unrated | needs_prior_frame | Exact message and result position are unknown; only the post-action first still survives. |
+| `BLOG-V4-221` | `1785172623051` @ 0:41 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` | yes | pending | unrated | pending | Focused VS Code. |
+| `BLOG-V4-222` | `1785172623051` @ 1:34 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | Separate click into the editor. |
+| `BLOG-V4-223` | `1785173227162` @ 1:22 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Only narrated invocation in this recording. |
+| `BLOG-V4-224` | `1785173529401` @ 0:21 | accepted | pointer | focus | VS Code → `day-0-took-three-days.md` → editor | yes | pending | unrated | pending | One click treated as deepest target; selection/copy is context. |
+| `BLOG-V4-225` | `1785173529401` @ 0:41 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Composer retained focus; paste and typing are context. |
+| `BLOG-V4-226` | `1785173529401` @ 1:12 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
+| `BLOG-V4-227` | `1785173529401` @ 1:54 | accepted | pointer | focus | Arc → Gmail → Ornn message | yes | pending | unrated | pending | Focused Arc with the message already open. |
+| `BLOG-V4-228` | `1785173529401` @ 2:12 | accepted | pointer | activate | Arc → Linear | yes | pending | unrated | pending | Clicked the named Arc sidebar shortcut. |
+| `BLOG-V4-229` | `1785173529401` @ 2:22 | accepted | pointer | activate | Arc → Gmail → `dylanduyvu@gmail.com` inbox | yes | pending | unrated | pending | Clicked the named Arc sidebar shortcut. |
+| `BLOG-V4-230` | `1785173529401` @ 2:41 | accepted | pointer | activate | Arc → Notion | yes | pending | unrated | pending | Clicked the Arc sidebar shortcut narrated as Notion; exact page was not specified. |
+| `BLOG-V4-231` | `1785173529401` @ 3:01 | accepted | pointer | focus | Codex → `Patch NAP blog prep in vault` | yes | pending | unrated | pending | Composer retained focus; typing is context. |
+| `BLOG-V4-232` | `1785173529401` @ 3:21 | accepted | keyboard_enter | activate | Codex → `Patch NAP blog prep in vault` → prompt submission command | yes | no | no | pending | Enter submission. |
 
 ## Retired batch-1 candidates
 
@@ -281,20 +316,12 @@ These IDs remain in the batch-1 source ledger but are not independent events:
 | `BLOG-V4-074` | Returning to Codex did not require a second composer click. |
 | `BLOG-V4-076` | Composer remained auto-focused after submission. |
 
-## Current labeling queue
+## Completed labeling batch and next task
 
-The first three recordings in this batch are merged through `BLOG-V4-199`.
-Continue with the remaining seven chronological monitor-3 recordings:
-
-| Batch # | Start ET | Recording |
-|---:|---|---|
-| 4 | 1:01:54 PM | [compact_monitor_3_1785171714551.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785171714551.mp4) |
-| 5 | 1:06:57 PM | [compact_monitor_3_1785172017894.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172017894.mp4) |
-| 6 | 1:12:00 PM | [compact_monitor_3_1785172320699.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172320699.mp4) |
-| 7 | 1:17:03 PM | [compact_monitor_3_1785172623051.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172623051.mp4) |
-| 8 | 1:22:05 PM | [compact_monitor_3_1785172925051.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785172925051.mp4) |
-| 9 | 1:27:07 PM | [compact_monitor_3_1785173227162.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785173227162.mp4) |
-| 10 | 1:32:09 PM | [compact_monitor_3_1785173529401.mp4](/Users/dylanvu/.screenpipe/data/data/2026-07-27/compact_monitor_3_1785173529401.mp4) |
+The third ten-video batch is merged through `BLOG-V4-232`. Do not queue more
+recordings yet. Freeze the accepted corpus, target-eligibility rules,
+expanded-history construction, strictly-prior screenshots, paired call
+schedule, and scoring policy before making the next model call.
 
 ## Labeling format going forward
 
