@@ -72,6 +72,11 @@ dataset]]. Every future task working in this vault should read and update that
 file. Do not create a competing canonical ledger outside the vault. The third
 ten-video labeling batch is complete. The next operational step is to freeze
 and run the expanded-history prediction experiment before further labeling.
+The approved official design is
+[[computer-use-nap-v5-expanded-history-experiment-design-2026-07-29|Computer-use
+NAP V5 expanded-history experiment design, July 29, 2026]]. Do not implement a
+different target split, history packet, model configuration, scorer, or retry
+policy without revising that design before inference.
 
 On July 29, the complete 483-file, 200 MB
 `/Users/dylanvu/screenpipe-datasets/` project tree was copied and checksum
@@ -411,10 +416,12 @@ The private canonical artifacts are:
 Next:
 
 1. Do not label another video batch yet.
-2. Resolve or exclude pending rows; rate demo-target and shortcut eligibility
-   without using model outcomes.
-3. Freeze the accepted corpus, evaluation targets, expanded-history policy,
-   strictly-prior screenshots, response schema, paired schedule, and scorer.
+2. Apply the V5 eligibility predicate before target selection. `Demo=pending`
+   and `Shortcut=unrated` remain eligible unless explicitly `no`; do not
+   silently relabel the full pool or use model outcomes to filter it.
+3. Freeze the accepted corpus, evidence dispositions, evaluation targets,
+   expanded-history policy, strictly-prior screenshots, response schema,
+   paired schedule, and scorer.
 4. Reuse the resumable V4 harness to run state-only versus expanded-history
    predictions and preserve every attempt immutably.
 
@@ -455,16 +462,17 @@ Read in this order:
 
 1. [[computer-use-nap-shadow-experiment#July 26 decision: manual retrospective prediction pilot|Manual retrospective prediction pilot]]
 2. [[computer-use-nap-build-log|Computer-use NAP build log]]
-3. [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
-4. [[computer-use-nap-fidelity-research-2026-07-26|Computer-use NAP dataset-fidelity research]]
-5. [[computer-use-nap-30-action-walkthrough-2026-07-24|What the 30-action walkthrough was]]
-6. [[computer-use-nap-walkthrough-handoff-2026-07-24|Historical custom-capture handoff]]
-7. [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-8. [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-9. [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
-10. [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
-11. [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
-12. [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
+3. [[computer-use-nap-v5-expanded-history-experiment-design-2026-07-29|Computer-use NAP V5 expanded-history experiment design, July 29, 2026]]
+4. [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
+5. [[computer-use-nap-fidelity-research-2026-07-26|Computer-use NAP dataset-fidelity research]]
+6. [[computer-use-nap-30-action-walkthrough-2026-07-24|What the 30-action walkthrough was]]
+7. [[computer-use-nap-walkthrough-handoff-2026-07-24|Historical custom-capture handoff]]
+8. [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
+9. [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+10. [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
+11. [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
+12. [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
+13. [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
 13. [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]
 14. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
 
