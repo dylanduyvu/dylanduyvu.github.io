@@ -2,7 +2,7 @@
 type: project-handoff
 status: active
 created: 2026-07-28
-updated: 2026-07-29
+updated: 2026-07-30
 aliases:
   - Computer-use NAP current handoff
   - NAP experiment current state
@@ -29,13 +29,33 @@ Those documents remain the historical record of what was attempted. They are not
 
 ## Current objective
 
-The first 20-row dataset and its 19-pair retrospective smoke test are complete.
-The condition-blind V3 semantic adjudication and V4 method design are also
-complete. The isolated V4 monitor-3 method was frozen before future labels at
-`2026-07-29T01:56:17.000Z`. Dylan has now completed the roughly 200-row
-collection push. The current objective is to freeze and run the
-expanded-history prediction experiment over the accepted corpus before
-labeling any more videos.
+The roughly 200-row collection push and V5 expanded-history experiment are
+complete. V5 produced ten scorable paired targets: history achieved exact
+top-three matches on 5/10 versus 0/10 for state-only, with five history wins,
+zero state-only wins, and five ties. Every exact history hit was a recurring
+Codex destination; all five scorable Arc targets were missed. The result is a
+promising narrow personalization signal, not yet a general-router result.
+The target-level product read is four clean exact-and-semantic history wins,
+one naming-sensitive exact win, three clear shared failures, and two
+granularity-sensitive Arc misses.
+Verified readout:
+[[computer-use-nap-v5-expanded-history-results-2026-07-30|Workflow history
+produced five exact top-three wins and no losses in NAP V5]].
+
+Do not rerun V5. The current product hypothesis is a rough, confidence-gated
+navigation autocomplete, not a claim of mature general computer prediction.
+Its first scope should be app, window, task, document, and tab routing.
+Enumerate executable candidates, represent them hierarchically, retrieve
+comparable personal history, rank the shared candidate list, and abstain when
+confidence is low. Fine-tuning is not the next required step.
+
+One good week of diverse personal activity could be enough to test that rough
+V1, but another Codex-heavy week would mostly strengthen the already observed
+return-to-Codex prior. The next collection must deliberately include several
+workflows, non-Codex destinations, departures from recurring patterns, and
+browser/control cases. Full post-result synthesis:
+[[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what a
+first navigation autocomplete still needs]].
 
 The source task was to manually turn Dylan's roughly four-to-five-hour Screenpipe recording of building the blog post into a chronological dataset of pre-action states and exact immediate action targets.
 
@@ -66,17 +86,19 @@ destinations. Fourteen batch-1 composer-focus candidates were retired because
 they described Codex automatic focus rather than a user invocation. Enter
 submissions remain chronological events but are marked as non-demo targets.
 
-The merged continuous ledger is the canonical public-vault dataset:
+The merged continuous ledger remains the canonical public-vault dataset:
 [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical
 dataset]]. Every future task working in this vault should read and update that
 file. Do not create a competing canonical ledger outside the vault. The third
-ten-video labeling batch is complete. The next operational step is to freeze
-and run the expanded-history prediction experiment before further labeling.
+ten-video labeling batch and expanded-history prediction experiment are
+complete.
 The approved official design is
 [[computer-use-nap-v5-expanded-history-experiment-design-2026-07-29|Computer-use
-NAP V5 expanded-history experiment design, July 29, 2026]]. Do not implement a
-different target split, history packet, model configuration, scorer, or retry
-policy without revising that design before inference.
+NAP V5 expanded-history experiment design, July 29, 2026]]. Its completed
+result is
+[[computer-use-nap-v5-expanded-history-results-2026-07-30|Workflow history
+produced five exact top-three wins and no losses in NAP V5]]. Do not alter or
+rerun the frozen V5 runtime.
 
 On July 29, the complete 483-file, 200 MB
 `/Users/dylanvu/screenpipe-datasets/` project tree was copied and checksum
@@ -101,6 +123,11 @@ Possible destinations include:
 - a link or button that meaningfully changes the working context.
 
 The first test is retrospective. It does not build a live interface, fine-tune a personal model, or train a new model.
+
+V5 completed that first test. Its positive result is limited to recurring-task
+recall. A rough live V1 can still be justified if it surfaces only
+high-confidence recurring routes and remains silent elsewhere. It does not
+need to predict every action or control.
 
 The intended model comparison is:
 
@@ -331,6 +358,44 @@ Full evidence, retained rows, exclusions, and hidden labels: [[screenpipe-natura
 
 ## Exact next task
 
+V5 is complete and immutable. Do not rerun it.
+
+The next product-oriented task is to design the first candidate-ranked,
+confidence-gated navigation-autocomplete test:
+
+1. define a stable hierarchical candidate ontology for application,
+   window/task, document/page, and control;
+2. enumerate the same executable candidates for state-only and history
+   conditions from strictly prior state;
+3. use structured current state, a screenshot, recent actions, and retrieved
+   analogous history rather than undifferentiated full-history dumping;
+4. collect a diverse week or equivalent work block across several workflows,
+   deliberately including non-Codex destinations and departures from recurring
+   patterns;
+5. reserve 50–100 later chronological targets across app, object, and control
+   depth;
+6. compare frequency, most-recent, source-transition, state-only, and
+   state-plus-history baselines;
+7. measure top-one, top-three, hierarchical correctness, confidence coverage,
+   abstention quality, and Dylan-authoritative usefulness; and
+8. test an app/window/task shadow-mode V1 before arbitrary-control prediction
+   or fine-tuning.
+
+The product hypothesis is intentionally rough: like an early autocomplete
+feature, the first version may surface only occasional high-confidence
+completions. It does not need to predict every action. One good week of diverse
+data could be enough to test that V1, while another Codex-heavy week would
+mostly strengthen the already observed recurring-task prior.
+
+Full reasoning and ten-target read:
+[[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what a
+first navigation autocomplete still needs]].
+
+### Superseded V3/V4 snapshot
+
+Everything below in this subsection is historical. It preserves the decisions
+that led to V5 but is not the current next task.
+
 The 20-row expanding-history V3 smoke test and its condition-blind semantic
 adjudication are complete. Do not rerun or mutate V3.
 
@@ -430,7 +495,7 @@ grammar, response schema, and scoring all changed.
 
 Do not stop or mutate Screenpipe, delete recordings, resume the 30-action walkthrough, or build an extractor unless Dylan asks.
 
-## Deferred manual-pilot structure
+## Historical manual-pilot structure
 
 The exact historical predictor views and leakage boundary live in the manual
 workbook. The current collection phase does not use a checkpoint.
@@ -460,21 +525,25 @@ The durable distinction is:
 
 Read in this order:
 
-1. [[computer-use-nap-shadow-experiment#July 26 decision: manual retrospective prediction pilot|Manual retrospective prediction pilot]]
-2. [[computer-use-nap-build-log|Computer-use NAP build log]]
-3. [[computer-use-nap-v5-expanded-history-experiment-design-2026-07-29|Computer-use NAP V5 expanded-history experiment design, July 29, 2026]]
-4. [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
-5. [[computer-use-nap-fidelity-research-2026-07-26|Computer-use NAP dataset-fidelity research]]
-6. [[computer-use-nap-30-action-walkthrough-2026-07-24|What the 30-action walkthrough was]]
-7. [[computer-use-nap-walkthrough-handoff-2026-07-24|Historical custom-capture handoff]]
-8. [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-9. [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-10. [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
-11. [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
-12. [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
-13. [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
-13. [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]
-14. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
+1. [[computer-use-nap-v5-expanded-history-results-2026-07-30|Workflow history produced five exact top-three wins and no losses in NAP V5]]
+2. [[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what a first navigation autocomplete still needs]]
+3. [[computer-use-nap-build-log|Computer-use NAP build log]]
+4. [[computer-use-nap-v5-expanded-history-experiment-design-2026-07-29|Computer-use NAP V5 expanded-history experiment design, July 29, 2026]]
+5. [[workflow-history-can-recover-recurring-destinations-without-general-next-action-competence|Workflow history can recover recurring destinations without general next-action competence]]
+6. [[a-first-computer-navigation-autocomplete-should-rank-candidates-and-abstain|A first computer navigation autocomplete should rank candidates and abstain]]
+7. [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
+8. [[computer-use-nap-shadow-experiment#July 26 decision: manual retrospective prediction pilot|Manual retrospective prediction pilot]]
+9. [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
+10. [[computer-use-nap-fidelity-research-2026-07-26|Computer-use NAP dataset-fidelity research]]
+11. [[computer-use-nap-30-action-walkthrough-2026-07-24|What the 30-action walkthrough was]]
+12. [[computer-use-nap-walkthrough-handoff-2026-07-24|Historical custom-capture handoff]]
+13. [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
+14. [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
+15. [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
+16. [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
+17. [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
+18. [[90-meta/computer-use-nap-smoke-harness/README|Computer-use NAP smoke harness V2]]
+19. [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Candidate shakedown predictor packets, July 28, 2026]]
 
 The initial predictor packet note and V3 smoke harness are historical. Never
 run them for V4. Build V4 packets only with the isolated private harness,
@@ -536,23 +605,16 @@ Do not publish, build Quartz, or watch deployment unless Dylan asks. For a reque
 
 ## Resume prompt
 
-> Read this handoff, the post-hoc semantic-rescore note, the manual labeling
-> workbook, the private V3 `INTERPRETATION.md`, and the private V4
-> `README.md`, `method-policy.json`, and `LABELING-GUIDE.md`.
-> `BLOG-SMOKE-20260728-V3` is an immutable 38-call development run. Its
-> conservative lexical-only rescore is state-only 1/19 top-1 and top-3 versus
-> history 4/19 top-1 and 5/19 top-3, paired 3/0/16 top-1 and 4/0/15 top-3.
-> The old 2/5 versus 5/7 figures are a non-primary granularity-inclusive
-> sensitivity. Six ambiguous child-control ranks and shortcut usefulness still
-> require Dylan's judgment. V4 is an isolated monitor-3-only experiment. Freeze
-> the method before future V4 labels. Monitor 1 actions are explicit coverage
-> exclusions; monitor 1 companion evidence is optional audit-only provenance
-> and never model-visible. Use `focus` versus `activate`, strict application,
-> object, or subtarget granularity, a rolling ten prior eligible monitor 3
-> rows including earlier holdouts after they occur, and the next exactly 20
-> eligible monitor 3 actions as the holdout. The 20 targets receive two calls
-> each, for 40 total. Report exact target, action type, exact action, blind
-> semantic equivalence, and usefulness separately. Do not compare V4 accuracy
-> numerically with V3. Do not restore excluded candidates, mutate Screenpipe,
-> resume the custom capture stack, modify the article, build an extractor, or
-> publish unless Dylan asks.
+> Read this handoff, the V5 result, and the V5 post-results synthesis. V5 is a
+> completed immutable 22-call experiment with ten scorable pairs. Its official
+> structured exact top-three result is state-only 0/10 versus history 5/10,
+> paired five history wins, zero state wins, and five ties. All five exact hits
+> were returns to the same recurring Codex task family; four were clean
+> exact-and-semantic wins and one was a canonical task-name win where
+> state-only already identified the same practical composer. No Arc target was
+> an exact hit. Do not rerun V5. The next test should rank a shared hierarchical
+> list of executable candidates, retrieve comparable personal history, and
+> abstain when confidence is low. Collect diverse non-Codex transitions before
+> that test. Do not fine-tune yet, restore excluded candidates, mutate
+> Screenpipe, resume the custom capture stack, modify the article, or build an
+> extractor unless Dylan asks.

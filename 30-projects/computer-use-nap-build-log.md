@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-23
-updated: 2026-07-28
+updated: 2026-07-30
 aliases:
   - Computer-use NAP build log
   - Desktop next-action prediction build log
@@ -22,6 +22,31 @@ tags:
 ---
 
 # Computer-use NAP build log
+
+> [!success] V5 expanded-history result, 2026-07-30
+> Ten paired targets were model-scorable. State-only scored 0/10 structured
+> exact at top one and top three. Hybrid personal history scored 3/10 at top
+> one and 5/10 at top three, producing five top-three history wins, zero
+> state-only wins, and five ties. All five exact history hits were recurring
+> Codex destinations; all five Arc targets were missed. Blind Codex-proxy
+> semantic top-three was 1/10 versus 5/10, while proxy usefulness was high in
+> both conditions. The result is promising evidence for recurring personal
+> routing, not a general-router or demo-worthiness verdict. Full matrix:
+> [[computer-use-nap-v5-expanded-history-results-2026-07-30|Workflow history
+> produced five exact top-three wins and no losses in NAP V5]].
+
+> [!important] Post-result product read, 2026-07-30
+> History's exact wins were five returns to the same recurring Codex task
+> family: four from VS Code and one from Arc. Four were clean
+> exact-and-semantic history wins; the fifth was an exact task-name win where
+> state-only had already identified the same practical composer generically.
+> History hit no Arc target. The result supports recurring-task recall, not a
+> general router. A rough Cursor-Tab-like V1 remains plausible without
+> fine-tuning if it ranks a shared hierarchy of executable app/window/task/
+> document candidates and abstains outside high-confidence patterns. Full
+> target-level and product synthesis:
+> [[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what
+> a first navigation autocomplete still needs]].
 
 > [!important] Current direction, 2026-07-28
 > The custom capture build and its 30-action walkthrough are historical for the first experiment. The immediate path is the isolated V4 monitor-3-only retrospective pilot using Dylan's manual labels and Screenpipe evidence. Do not resume the capture ladder unless prediction results later justify automatic acquisition work. Current operational state: [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]].

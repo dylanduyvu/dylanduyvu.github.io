@@ -1,17 +1,25 @@
 ---
 type: project-spec
-status: review-ready
+status: completed
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-30
 project: computer-use-nap
 independent_review: approved
 ---
 
 # Computer-use NAP V5 expanded-history experiment design, July 29, 2026
 
+> [!success] Completed July 30, 2026
+> The frozen run completed with 20 valid outputs across ten scorable pairs.
+> History produced structured-exact top-three matches on 5/10 targets versus
+> 0/10 for state-only: five paired history wins, zero state-only wins, and five
+> ties. Full verified readout:
+> [[computer-use-nap-v5-expanded-history-results-2026-07-30|Workflow history
+> produced five exact top-three wins and no losses in NAP V5]].
+
 ## Decision
 
-Run a 15-target, 30-call paired retrospective experiment comparing the same
+Run an 11-target, 22-call paired retrospective experiment comparing the same
 frontier predictor with and without Dylan's earlier personal workflow history.
 The history condition uses compact long-term chronology plus a high-fidelity
 recent working set:
@@ -23,6 +31,16 @@ recent working set:
 
 This is the official successor to the frozen recent-10 V4 design. V4 remains
 immutable and receives no model calls.
+
+## Pre-inference protocol amendment, July 30
+
+The evidence freeze produced 33 usable, non-leaking before-state screenshots,
+of which exactly 11 satisfied every predeclared target rule. The original
+15-target selection therefore stopped before target selection and before any
+model call. Dylan approved using all 11 clean eligible targets. The method is
+amended to 11 targets and 22 paired condition slots; target eligibility,
+expanding-history construction, model, prompt, scoring, and adjudication remain
+unchanged. This amendment occurred before any prediction or outcome was seen.
 
 ## Product question
 
@@ -67,7 +85,7 @@ independent prediction calls:
 1. `state_only`; and
 2. `state_plus_hybrid_history`.
 
-There are exactly 15 targets and 30 scheduled slots. A slot may have more than
+There are exactly 11 targets and 22 scheduled slots. A slot may have more than
 one transport attempt under the frozen infrastructure-retry policy. Every
 schema-valid prediction contains exactly three ranked predictions. Rank 1
 supplies top-1 scoring; ranks 1 through 3 supply top-3 scoring. There is no
@@ -117,11 +135,22 @@ anchor is one full second before the labeled second:
 anchor_time = recording_start + player_time - 1.000 seconds
 ```
 
+For this frozen corpus, the evidence chain is every sorted regular file named
+`compact_monitor_3_<epoch-ms>.mp4` from `1785164400568` through
+`1785173529401`, inclusive. It contains 31 files totaling 103,005,033 bytes;
+the first is the immediate predecessor of the earliest ledger recording.
+Preflight freezes every absolute source path, byte length, SHA-256, and explicit
+predecessor pointer. Continuity is this locked chronological Screenpipe chain,
+not a comparison between MP4 stream duration and the next filename timestamp.
+
 Select the latest decoded monitor-3 frame at or before the anchor, searching
 the current recording and then the immediately preceding continuous recording.
 The frame must be no more than five seconds older than the anchor. When frames
 share the same global timestamp, choose the lower decode index; if still tied,
 choose the lexicographically smaller absolute source path.
+
+Frame time uses each stream's exact rational presentation timestamp plus the
+filename epoch. Do not derive time from average frame rate or decode index.
 
 Every sequential event sharing the same recording and labeled player second
 requires its own distinct state interval, whether or not the ledger uses
@@ -130,6 +159,12 @@ rule. Each later row is target-eligible only if a retained frame is strictly
 after the immediately preceding action in that same second and strictly before
 the current action. Otherwise that later row may remain text history but cannot
 be a target or visual-history example.
+
+This corpus has no independently frozen subsecond action boundaries. Therefore
+every later row in a same-second group is conservatively
+`same_time_interval_unrecoverable`; visual appearance alone cannot prove that a
+frame is both post-previous-action and pre-current-action. Those rows remain
+eligible for structured text history.
 
 Every candidate frame is re-encoded as metadata-free PNG and must pass all
 automated checks:
@@ -140,7 +175,10 @@ automated checks:
 - width and height equal the source monitor-3 video dimensions; and
 - SHA-256 matches the evidence inventory.
 
-A pre-selection human evidence pass assigns exactly one disposition:
+A pre-selection manual visual evidence pass assigns exactly one disposition.
+Dylan has delegated this evidence-quality pass to Codex for autonomous
+execution; the decision ledger must record the actual reviewer identity and
+must not describe Codex review as human review:
 
 - `usable`;
 - `missing`;
@@ -201,6 +239,19 @@ Each structured history record contains only:
 - object or `null`; and
 - subtarget or `null`.
 
+Canonical destinations are mapped to the three target components by one frozen,
+syntax-only rule after removing Markdown quoting:
+
+- one arrow-separated segment: `app=segment 1`, `object=null`,
+  `subtarget=null`;
+- two segments: `app=segment 1`, `object=segment 2`, `subtarget=null`; and
+- three or more segments: `app=segment 1`, `subtarget=final segment`, and
+  `object=all intervening segments`, joined by the literal separator " → ".
+
+This preserves the complete named hierarchy without semantic inference. For
+example, `Arc → Coda → all hands 7.23 → editor/body` becomes
+`app=Arc`, `object=Coda → all hands 7.23`, and `subtarget=editor/body`.
+
 Every accepted `History=yes` row must serialize deterministically into this
 grammar. A missing or ambiguous action type, input method, granularity,
 application, object, or subtarget that the canonical row requires is a fatal
@@ -241,10 +292,26 @@ Every slot uses the same configuration:
 - service tier: `priority`;
 - standard single-agent execution;
 - no pro or Ultra orchestration;
-- no tools;
+- no user tools, MCP servers, plugins, rules, hooks, or tool execution;
 - no persisted reasoning or conversation state between calls;
 - a fresh isolated runtime/session for every slot; and
 - exactly three schema-constrained ranked predictions.
+
+The pinned per-attempt wall timeout is 1,200,000 milliseconds. On timeout the
+adapter sends `SIGTERM`, waits exactly 5,000 milliseconds, then sends `SIGKILL`
+only if the child remains alive. Both values are method-locked and identical
+across conditions and retries.
+
+The available Codex CLI does not expose a universal hard `tools=[]` switch.
+Preflight therefore disables every supported tool feature, loads no user
+configuration, and uses an otherwise-empty read-only working directory
+containing only the frozen neutral packet bytes for that slot. Writable
+attempt output lives outside the model-visible directory. Any structural tool
+request or invocation is a terminal invalid result even if a later final
+exists. The run lock records the pinned CLI capability audit and the residual
+possibility that an irreducible built-in tool definition remains exposed. This
+limitation is identical across both paired conditions and must be disclosed in
+the report; it must not be described as proof that no tool schema was offered.
 
 `gpt-5.6-sol` is the frontier GPT-5.6 model, and `max` is the highest
 quality-first single-model reasoning effort documented for the API. Ultra is
@@ -325,7 +392,7 @@ target:
 - odd target ordinals: state-only, then history;
 - even target ordinals: history, then state-only.
 
-This gives an 8/7 first-condition balance. The complete 30-slot schedule is
+This gives a 6/5 first-condition balance. The complete 22-slot schedule is
 generated deterministically and frozen in the run lock before inference.
 
 Slots run sequentially. If a slot receives an infrastructure retry, finish all
@@ -382,13 +449,13 @@ conversation identifier, no `previous_response_id`, no persisted reasoning,
 no shared writable model directory, and only the neutralized packet files
 staged into the model-visible working directory.
 
-The 30-slot schedule remains the intent-to-test denominator. Per-condition
-accuracy reports both `correct / 15 scheduled` and
+The 22-slot schedule remains the intent-to-test denominator. Per-condition
+accuracy reports both `correct / 11 scheduled` and
 `correct / model-scorable slots`. Terminal invalid model outputs are scorable
 incorrect results. Infrastructure-failed slots are not model-scorable and are
 reported separately. A paired win/loss/tie excludes a target when either
 condition has a terminal infrastructure failure and reports it as
-`unscorable_pair`. If fewer than 12 of 15 pairs are scorable, the experiment
+`unscorable_pair`. If fewer than 9 of 11 pairs are scorable, the experiment
 may produce an operational report but no negative/mixed/promising/demo-worthy
 product conclusion.
 
@@ -398,10 +465,10 @@ No model call occurs until these stages pass:
 
 1. validate the canonical dataset snapshot;
 2. recover and hash strictly-prior screenshots;
-3. construct the final target pool and select the 15 quantile targets;
+3. construct the final target pool and select all 11 eligible targets;
 4. create the manifest and evaluator-only target catalog;
 5. pre-freeze conservative aliases;
-6. render and leakage-check all 30 packets;
+6. render and leakage-check all 22 packets;
 7. generate the deterministic schedule;
 8. run the complete no-model test suite and preflight;
 9. create the method lock and run lock; and
@@ -462,8 +529,10 @@ scored separately. Dylan assigns:
 
 `uncertain` counts as different in the primary result and as same only in a
 clearly labeled sensitivity analysis. Exact matches are automatically
-`same_destination`; every non-exact item receives a human decision, so semantic
-false cases are explicit rather than inferred by selective triage.
+`same_destination`; every non-exact item receives either Dylan's authoritative
+blind decision or, when the autonomous contingency is used, a separately
+labeled blinded Codex proxy decision. Semantic false cases are therefore
+explicit rather than inferred by selective triage.
 
 Shortcut-usefulness uses a separate blind worksheet containing only the
 current before-state screenshot and predicted structured action. It hides the
@@ -494,9 +563,21 @@ Dylan is the authoritative semantic and shortcut-usefulness adjudicator.
 Predicted shortcuts may be useful even when they do not match the observed
 ground-truth action; usefulness therefore remains separate from correctness.
 
+If Dylan is unavailable after all slots terminate and has expressly delegated
+autonomous completion, two independent blinded Codex reviewers may complete
+separate semantic and usefulness proxy worksheets generated from the same
+opaque candidate sets before reveal. `freeze-adjudication` may then create a
+proxy adjudication lock with `adjudicator=codex_proxy` and `proxy_only=true`.
+That verified lock authorizes reveal, but its decisions,
+semantic/usefulness rates, and interpretation are sensitivity analysis only;
+they never become Dylan-authoritative primary results. Structured exact,
+action-type, exact-action, operational, token, and latency metrics remain
+objective official outputs. The report must say plainly when the
+human-adjudicated primary result is unavailable.
+
 ## Interpretation rubric
 
-There is no statistical-significance or hard numerical gate at 15 targets.
+There is no statistical-significance or hard numerical gate at 11 targets.
 Interpret the complete frozen readout using these predeclared bands:
 
 - **Negative:** history does no better than state-only or causes more paired
@@ -518,9 +599,11 @@ The final run produces:
 - immutable raw attempts and model responses;
 - frozen method and run locks;
 - target and packet inventories with hashes;
-- complete top-1/top-3 exact and semantic matrices;
+- complete top-1/top-3 exact matrices and either Dylan-authoritative semantic
+  matrices or explicitly proxy-only semantic sensitivity matrices;
 - paired win/loss/tie tables;
-- shortcut-usefulness worksheet and readout;
+- shortcut-usefulness worksheet and either Dylan-authoritative readout or
+  explicitly proxy-only sensitivity readout;
 - history-depth breakdown;
 - invalid-call, retry, token, latency, and completion accounting; and
 - a plain-language product conclusion using the frozen interpretation rubric.
@@ -614,12 +697,19 @@ ordered stages:
    automatic exact semantic matches, but it exposes only the two blind
    worksheets and their required screenshots—never responses, reasons,
    condition/rank mappings, exact scores, or reports.
-2. Dylan completes both worksheets. `freeze-adjudication` validates that every
-   required opaque candidate ID has exactly one allowed decision, hashes the
-   completed worksheets, and writes an immutable adjudication lock.
+2. Dylan normally completes both worksheets. Under the expressly delegated
+   autonomous contingency, two independent blinded Codex reviewers instead
+   complete separate proxy copies of the semantic and usefulness worksheets.
+   `freeze-adjudication` validates that every required opaque candidate ID has
+   exactly one allowed decision, hashes the completed decision sets, records
+   `adjudicator=dylan, proxy_only=false` or
+   `adjudicator=codex_proxy, proxy_only=true`, and writes one immutable
+   adjudication lock.
 3. Only `reveal-results`, after verifying the adjudication lock, may
    materialize model responses, reasons, condition/rank joins, exact scores,
-   matrices, and reports.
+   matrices, and reports. A proxy lock authorizes this reveal only with
+   Dylan-authoritative semantic/usefulness results and official qualitative
+   product interpretation marked unavailable.
 
 Before the run, generate one random 256-bit adjudication key and store it only
 in the evaluator-sealed join area covered by the run lock. Candidate IDs are
@@ -637,9 +727,10 @@ condition, rank, slot, or chronological grouping. The worksheet contains no
 join key or hidden mapping. The sealed join map remains inaccessible to the
 worksheet generator's rendered output and is not revealed until stage 3.
 
-Dylan does not inspect the sealed attempt or join files during the run or blind
-adjudication. This keeps target selection frozen and prevents earlier condition
-outcomes from contaminating later judgments.
+The active blind adjudicator—Dylan or either proxy reviewer—does not inspect
+sealed attempts, the join map, the other worksheet, or any condition/rank
+mapping during adjudication. This keeps target selection frozen and prevents
+earlier condition outcomes from contaminating later judgments.
 
 ## Non-goals
 
@@ -654,7 +745,8 @@ This experiment does not:
 - run V4;
 - use monitor 1; or
 - inspect model responses, mappings, or outcomes before all 30 scheduled slots
-  finish and Dylan's blinded adjudications are frozen.
+  finish and either Dylan's authoritative adjudications or the explicitly
+  delegated proxy adjudications are frozen.
 
 ## Links
 

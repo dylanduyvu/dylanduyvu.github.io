@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-22
-updated: 2026-07-28
+updated: 2026-07-30
 aliases:
   - Personal AI Context Learning
   - Niyant's personal-AI thesis
@@ -26,10 +26,34 @@ tags:
 > [!note] Source boundary
 > This project includes internal Notion and Slack context alongside the public World Models notes.
 
-> [!important] Current NAP direction, 2026-07-28
-> The first prediction pilot no longer waits for the custom capture ladder. Dylan recorded roughly four to five hours of his real blog-building workflow and will manually label full-fidelity `before screenshots -> exact destination text` rows. The immediate next step is to build and smoke-test the first five rows before labeling the rest. If that workflow works, continue toward approximately 60 rows and compare current screenshots only against the same screenshots plus the ten most recent eligible full-fidelity rows. The custom 30-action build remains historical unless prediction signal later justifies automatic acquisition work.
+> [!important] Current NAP direction, 2026-07-30
+> The roughly 200-row manual corpus and V5 expanded-history experiment are
+> complete. On ten scorable pairs, state-only scored 0/10 structured exact
+> top-three and history scored 5/10. All five history hits were returns to the
+> same recurring Codex task family; all five Arc targets were missed. The
+> result supports recurring-task recall, not a general router. The next
+> product-oriented test should rank a shared hierarchy of executable app,
+> window, task, document, tab, and control candidates and abstain when
+> confidence is low. Fine-tuning is not yet required. See
+> [[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what
+> a first navigation autocomplete still needs]].
 
 ## Current State
+
+The first expanded-history NAP comparison is complete. Its official exact
+top-three result is 0/10 for state-only and 5/10 for state plus history.
+Target-level review decomposes the five history wins into four clean
+exact-and-semantic wins and one canonical task-name win where state-only had
+already identified the same practical composer generically. History did not
+exactly predict any non-Codex destination.
+
+The rough V1 opportunity is therefore narrower than general computer-use
+prediction but closer than a comparison with a mature autocomplete product
+would imply. A first version can occasionally offer a high-confidence return
+to an app, window, document, browser tab, or recurring task. It does not need
+to predict every action. The main missing architecture is structured candidate
+enumeration, retrieval of comparable history, hierarchical ranking, and
+confidence-gated abstention—not immediate personal-model fine-tuning.
 
 The public World Models notes describe a three-phase research program: reconstruct a faithful personal event stream and predict the next action; learn bounded local comparisons from post-suggestion behavior; then test sandboxed multi-step assistance. The formal phases are specifications, not completed experiments.
 
@@ -82,6 +106,9 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[personal-agents-need-continuous-local-tracking-not-a-finished-world-model|Personal agents need continuous local tracking, not a finished world model]]
 - [[a-personal-predictor-can-improve-by-making-its-user-more-predictable|A personal predictor can improve by making its user more predictable]]
 - [[tabracadabra-is-a-retrieval-augmented-writer-not-a-computer-use-nap|Tabracadabra is a retrieval-augmented writer, not a computer-use NAP]]
+- [[workflow-history-can-recover-recurring-destinations-without-general-next-action-competence|Workflow history can recover recurring destinations without general next-action competence]]
+- [[a-first-computer-navigation-autocomplete-should-rank-candidates-and-abstain|A first computer navigation autocomplete should rank candidates and abstain]]
+- [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
 
 ## Syntheses
 
@@ -97,6 +124,8 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
 - [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Computer-use NAP shakedown predictor packets, July 28, 2026]]
+- [[computer-use-nap-v5-expanded-history-results-2026-07-30|Workflow history produced five exact top-three wins and no losses in NAP V5]]
+- [[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what a first navigation autocomplete still needs]]
 
 ## Hunches
 
@@ -135,14 +164,24 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
-- Dylan builds the first five complete rows from the approximately 5:15 PM through 10:20 PM blog-work recording.
-- Each row stores two strictly prior screenshots, structured destination text, later verification evidence, timestamps, route, quality, and utility fields.
-- Run one fresh state-only predictor call per row and score only after saving the prediction. Treat five rows as workflow validation, not an accuracy or history result.
-- If replay, prompting, and scoring work, continue toward approximately 60 eligible rows.
-- Use the first ten eligible rows as initial history, then compare approximately 50 later rows under current screenshots only versus the same screenshots plus the ten most recent eligible full-fidelity rows.
-- Select historical rows mechanically by recency. Do not choose them by perceived similarity or use current or future labels.
-- If the same-session comparison is promising, add mismatched-history and cross-day controls before making a personalization claim.
-- Revisit automatic Screenpipe extraction or the preserved custom capture build only after prediction produces useful signal or Dylan explicitly resumes that work.
+- Preserve V5 and its immutable runtime; do not rerun it.
+- Define a stable hierarchical ontology for application, window/task,
+  document/page, and control candidates.
+- Enumerate the same executable candidates for both model conditions rather
+  than asking each model to invent destination labels.
+- Collect a diverse week or equivalent work block across several workflows,
+  deliberately including non-Codex targets and departures from recurring
+  loops.
+- Reserve 50–100 later chronological targets, stratified by transition family
+  and destination depth.
+- Compare frequency, most-recent, source-transition, state-only, and
+  state-plus-retrieved-history baselines.
+- Report hierarchical accuracy, top-one, top-three, confidence coverage,
+  abstention quality, and Dylan-authoritative shortcut usefulness.
+- Test an app/window/task shadow-mode V1 before investing in arbitrary-control
+  prediction or fine-tuning.
+- Revisit automatic capture only when live shadow mode requires it or Dylan
+  explicitly resumes that work.
 - State the demo's claim and nonclaims before publishing it.
 - Compare the static implementation against simple context, retrieval, and memory baselines on held-out personal events.
 - Send Niyant the navigation-only experiment contract and confirm that its exact semantic-destination target matches what he meant by computer-use NAP.

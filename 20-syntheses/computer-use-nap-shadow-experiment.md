@@ -2,7 +2,7 @@
 type: synthesis
 status: active
 created: 2026-07-22
-updated: 2026-07-28
+updated: 2026-07-30
 projects:
   - personal-ai-context-learning
 domains:
@@ -29,6 +29,34 @@ tags:
 ---
 
 # Computer-use NAP shadow experiment
+
+## July 30 V5 result and current interpretation
+
+The roughly 200-row manual collection and V5 expanded-history comparison are
+complete. This supersedes the V3/V4 continuation directions below while
+preserving them as experimental history.
+
+On ten scorable paired targets, state-only scored 0/10 structured exact
+top-three and state plus history scored 5/10. All five exact history hits were
+returns to the same recurring `Patch NAP blog prep in vault` Codex task family;
+all five Arc targets were missed.
+
+Target-level review separates the result into four clean
+exact-and-primary-semantic history wins, one canonical task-identity win where
+state-only had already named the same practical composer generically, three
+clear shared failures, and two granularity-sensitive Arc misses.
+
+The result supports recurring-task recall, not general next-action competence.
+The next product test should not rerun V5 or immediately fine-tune a personal
+model. It should rank a shared hierarchical list of executable app, window,
+task, document, page, and control candidates, retrieve comparable earlier
+states, and abstain outside high-confidence patterns.
+
+See
+[[computer-use-nap-v5-expanded-history-results-2026-07-30|Workflow history
+produced five exact top-three wins and no losses in NAP V5]] and
+[[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what a
+first navigation autocomplete still needs]].
 
 ## July 28 smoke result and current decision
 

@@ -1,0 +1,8 @@
+Predict Dylan's immediate next eligible monitor-3 navigation action from only
+the supplied before-state and, when present, earlier personal workflow
+history. Return exactly three distinct ranked predictions. Each prediction is
+one action: focus an already-present destination, or activate a control that
+navigates/selects/invokes a destination. Do not predict typing, paste,
+scrolling, cursor movement, text selection, resizing, a multi-action
+sequence, or an eventual goal. Use only visible/provided evidence. Do not use
+tools. Keep each reason under 240 Unicode code points.

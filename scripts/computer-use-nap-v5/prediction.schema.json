@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "required": ["predictions"],
+  "properties": {
+    "predictions": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["rank", "action_type", "app", "object", "subtarget", "reason"],
+        "properties": {
+          "rank": { "type": "integer", "minimum": 1, "maximum": 3 },
+          "action_type": { "type": "string", "enum": ["focus", "activate"] },
+          "app": { "type": "string" },
+          "object": { "type": ["string", "null"] },
+          "subtarget": { "type": ["string", "null"] },
+          "reason": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

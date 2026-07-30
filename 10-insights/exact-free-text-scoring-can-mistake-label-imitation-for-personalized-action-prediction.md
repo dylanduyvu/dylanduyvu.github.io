@@ -2,7 +2,7 @@
 type: insight
 status: supported
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-30
 projects:
   - personal-ai-context-learning
 domains:
@@ -73,6 +73,33 @@ This post-hoc view is development evidence, not a replacement confirmatory
 score. Its full target matrix and history-depth breakdown are in
 [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]].
 
+### V5 target-level confirmation
+
+The completed V5 experiment repaired the original smoke's scoring workflow and
+added blind semantic sensitivity review. It still exposed one clear
+identity-versus-wording case.
+
+For `NAP-V5-TARGET-10-R1`, the accepted target was:
+
+`Codex -> Patch NAP blog prep in vault -> composer`
+
+State-only predicted:
+
+`Codex -> message composer -> Do anything`
+
+History predicted the accepted structured target exactly. The official
+structured scorer therefore recorded a history win, while the blind semantic
+proxy judged both rank-one predictions as the same destination. The official
+five exact history wins are valid under the frozen contract, but the practical
+read is four clean exact-and-semantic wins plus one canonical-identity win.
+
+V5 also revealed the reverse granularity problem. For
+`NAP-V5-TARGET-07-R1`, the accepted target stopped at `Arc`, while both
+conditions named the visible Meetings window more specifically. Both were
+official exact misses and proxy-uncertain. Stable hierarchical IDs would
+preserve application-level correctness without pretending the object-level
+prediction was fully verified.
+
 ## Implications
 
 - Use stable destination IDs separate from display prose.
@@ -80,6 +107,9 @@ score. Its full target matrix and history-depth breakdown are in
   adjudication that judges target identity rather than stylistic wording.
 - Give both conditions the same target ontology if the experiment is intended
   to isolate behavioral context.
+- Report hierarchical app, object, and control accuracy separately.
+- Prefer ranking a shared list of executable candidates over open-ended label
+  generation for the next product test.
 - Treat the current 20-row smoke as a development set and run a fresh holdout
   after repairing scoring.
 - Do not start the roughly 200-row labeling push from the strict exact-score
@@ -100,6 +130,8 @@ how much came from behavioral signal versus vocabulary alignment.
 
 - [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
 - [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
+- [[computer-use-nap-v5-expanded-history-results-2026-07-30|Workflow history produced five exact top-three wins and no losses in NAP V5]]
+- [[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what a first navigation autocomplete still needs]]
 - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
 - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
 
@@ -108,3 +140,6 @@ how much came from behavioral signal versus vocabulary alignment.
 - 2026-07-28: Created from the first 19-pair retrospective smoke readout.
 - 2026-07-28: Added the provisional post-hoc semantic sensitivity result and
   linked the complete target matrix.
+- 2026-07-30: Added the V5 composer-label and coarse-Arc cases. V5's exact
+  headline remains official, while the product interpretation separates four
+  clean semantic wins from one canonical-identity win.
