@@ -8,24 +8,33 @@ updated: 2026-07-29
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 29, 2026, 10:00 PM EDT
+Generated: Jul 29, 2026, 10:33 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 64 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 65 note commits. The most recent movement is:
 
+- Project decision: freeze V5 expanded-history experiment design.
 - Project decision: merge and clean twenty-video NAP dataset.
 - Project decision: consolidate Screenpipe datasets into vault.
 - Project decision: add next ten NAP labeling videos.
 - Project decision: publish canonical computer-use NAP V4 dataset.
 - Project decision: freeze monitor-3 NAP V4 method.
-- Project decision: archive NAP smoke harness and preflight.
 
 ## Current Hub Signals
 
 - [[personal-ai-context-learning|Personal AI Context Learning]]: The public World Models notes describe a three-phase research program: reconstruct a faithful personal event stream and predict the next action; learn bounded local comparisons from post-suggestion behavior; then test sandboxed multi-step assistance. The formal phases are specifications, not completed experiments.
 
 ## Past 24 Hours
+
+### Jul 29, 2026, 10:33 PM EDT - project: freeze V5 expanded-history experiment design
+
+Project decision: freeze V5 expanded-history experiment design.
+
+Changed notes:
+  - [[computer-use-nap-build-log|Computer-use NAP build log]]
+  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
+  - [[computer-use-nap-v5-expanded-history-experiment-design-2026-07-29|Computer-use NAP V5 expanded-history experiment design, July 29, 2026]]
 
 ### Jul 29, 2026, 9:58 PM EDT - dataset: complete third NAP labeling batch
 
@@ -88,18 +97,9 @@ Changed notes:
   - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
   - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
 
-### Jul 28, 2026, 10:00 PM EDT - project: freeze monitor-3 NAP V4 method
-
-Project decision: freeze monitor-3 NAP V4 method.
-
-Changed notes:
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
-  - [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
-
 ## Past 7 Days
 
+- Jul 29, 2026: project: freeze V5 expanded-history experiment design - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 29, 2026: dataset: complete third NAP labeling batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 29, 2026: dataset: merge first three videos of third NAP batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 29, 2026: project: merge and clean twenty-video NAP dataset - [[computer-use-nap-build-log|Computer-use NAP build log]]
@@ -124,12 +124,12 @@ Changed notes:
 - Jul 27, 2026: article: restore automatic acquisition ladder - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: compress Screenpipe reconstruction caveat - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: correct Screenpipe frame ordering evidence - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: restore dataset assembly thesis with Screenpipe caveat - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 
-_Showing the newest 25 of 64 updates in this window._
+_Showing the newest 25 of 65 updates in this window._
 
 ## Past 30 Days
 
+- Jul 29, 2026: project: freeze V5 expanded-history experiment design - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 29, 2026: dataset: complete third NAP labeling batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 29, 2026: dataset: merge first three videos of third NAP batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
 - Jul 29, 2026: project: merge and clean twenty-video NAP dataset - [[computer-use-nap-build-log|Computer-use NAP build log]]
@@ -154,6 +154,5 @@ _Showing the newest 25 of 64 updates in this window._
 - Jul 27, 2026: article: restore automatic acquisition ladder - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: compress Screenpipe reconstruction caveat - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 - Jul 27, 2026: article: correct Screenpipe frame ordering evidence - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: restore dataset assembly thesis with Screenpipe caveat - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
 
-_Showing the newest 25 of 185 updates in this window._
+_Showing the newest 25 of 186 updates in this window._
