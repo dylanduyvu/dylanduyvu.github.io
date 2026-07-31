@@ -55,6 +55,42 @@ to predict every action. The main missing architecture is structured candidate
 enumeration, retrieval of comparable history, hierarchical ranking, and
 confidence-gated abstention—not immediate personal-model fine-tuning.
 
+A July 30 model and competitor audit found no released system that combines
+goal-free personal intent inference, usefulness-ranked semantic completion,
+native Mac execution, truthful one-Tab scope, abstention, and fresh
+confirmation at consequential commits. The recommended boundary is to build
+the personal candidate, ranking, utility, and authority layers while
+repackaging existing computer-use models for route execution. The strongest
+MVP executor candidates are Gemini Computer Use, OpenAI Computer use, and
+UI-TARS 1.5-7B; LongNAP, PIRA-Bench, FDM-1, and Photon-1 are research
+references rather than shippable dependencies. See
+[[computer-use-autocomplete-model-and-competitor-landscape-2026-07-30|The
+computer-use autocomplete wedge is intent ranking, not another computer-use
+agent]].
+
+A July 30 runtime decision audit supersedes any provider-first reading of that
+landscape. On Dylan's Mac, the installed Codex actuator could focus and verify
+exact Arc and VS Code objects but hard-blocked Codex itself; a structured Codex
+task adapter bridged that route, while Claude Computer Use and the three public
+APIs lacked the local approval, configuration, credentials, or client actuator
+needed for an honest common bakeoff. The fastest credible prototype is
+therefore a product-owned local hybrid: deterministic app adapters and
+authority/telemetry first, with the proposal model replaceable. Gemini is no
+longer the selected first backend. See
+[[computer-use-autocomplete-runtime-decision-audit-2026-07-30|Computer-use
+autocomplete runtime decision audit]].
+
+A narrower July 30 context-stack audit found that the live MVP does not need
+the exact-label capture machinery built for retrospective datasets. The fastest
+credible go-forward stack is a reduced Hammerspoon observer, the existing Arc
+tab/navigation adapter, one-shot transition screenshots, and a product-owned
+SQLite ledger for every prediction opportunity and model action. Screenpipe
+can remain an optional search/debugging sidecar, while continuous video,
+rrweb, full Accessibility trees, historical reconstruction, and long-term
+semantic memory remain deferred. See
+[[computer-use-autocomplete-mvp-context-stack-2026-07-30|The fastest credible
+MVP context stack is a thin Mac observer plus a product-owned ledger]].
+
 The public World Models notes describe a three-phase research program: reconstruct a faithful personal event stream and predict the next action; learn bounded local comparisons from post-suggestion behavior; then test sandboxed multi-step assistance. The formal phases are specifications, not completed experiments.
 
 Niyant's near-term execution is narrower than that program. In the July 21 Slack exchange, he said he plans a static implementation with basic data and does not expect to implement roughly 80% of formal Phase 1 now. He will start with Obsidian notes and then browser use because those are the personal data sources available to him.
@@ -126,6 +162,9 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[computer-use-nap-shakedown-predictor-packets-2026-07-28|Computer-use NAP shakedown predictor packets, July 28, 2026]]
 - [[computer-use-nap-v5-expanded-history-results-2026-07-30|Workflow history produced five exact top-three wins and no losses in NAP V5]]
 - [[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what a first navigation autocomplete still needs]]
+- [[computer-use-autocomplete-model-and-competitor-landscape-2026-07-30|The computer-use autocomplete wedge is intent ranking, not another computer-use agent]]
+- [[computer-use-autocomplete-mvp-context-stack-2026-07-30|The fastest credible MVP context stack is a thin Mac observer plus a product-owned ledger]]
+- [[computer-use-autocomplete-runtime-decision-audit-2026-07-30|Computer-use autocomplete runtime decision audit]]
 
 ## Hunches
 
@@ -139,6 +178,9 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[screenpipe-live-capture-audit-2026-07-23|Screenpipe live capture audit, July 23, 2026]]
 - [[screenpipe-natural-work-audit-2026-07-28|Screenpipe natural-work audit, July 28, 2026]]
 - [[computer-use-capture-tool-research-2026-07-23|Computer-use capture-tool research, July 23, 2026]]
+- [[pira-bench-proactive-intent-recommendation-agents-2026-03-09|PIRA-Bench tests proactive intent recommendation from continuous GUI screenshots]]
+- [[induction-labs-scaling-video-pretraining-with-imagination-models-2026-07-23|Induction Labs: Scaling Video Pretraining with Imagination Models]]
+- [[standard-intelligence-fdm-1-fully-general-computer-action-model-2026-02-23|Standard Intelligence: FDM-1, a fully general computer action model]]
 - [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
 - [World Models public notes](https://handsdiff.github.io/)
 - [Pinned public notes snapshot](https://github.com/handsdiff/notes/tree/3151afa93fd81719a6e9dc7862c269ea1f1a70e6)
@@ -180,6 +222,10 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
   abstention quality, and Dylan-authoritative shortcut usefulness.
 - Test an app/window/task shadow-mode V1 before investing in arbitrary-control
   prediction or fine-tuning.
+- Before selecting a proposal provider, run the same credentialed five-trial
+  route and context packet through each genuinely viable candidate over the
+  same product-owned actuator; compare proposal and completion p50/p95,
+  endpoint success, privacy, and cost.
 - Revisit automatic capture only when live shadow mode requires it or Dylan
   explicitly resumes that work.
 - State the demo's claim and nonclaims before publishing it.
