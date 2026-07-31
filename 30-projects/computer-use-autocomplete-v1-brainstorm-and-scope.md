@@ -28,6 +28,13 @@ tags:
 Living brainstorming document. This is not an approved product specification
 or implementation plan.
 
+The V0 design is now approved in
+[[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0
+design]], and its reviewed execution sequence lives in
+[[2026-07-31-computer-use-autocomplete-v0|Computer-use autocomplete V0
+implementation plan]]. Those two documents supersede this brainstorm wherever
+they conflict.
+
 The purpose is to determine whether existing computer-use models can be
 repackaged into a personalized next-destination autocomplete rather than
 building computer-navigation intelligence from scratch.

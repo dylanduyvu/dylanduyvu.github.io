@@ -1,6 +1,6 @@
 ---
 type: project
-status: ready-for-user-review
+status: approved
 created: 2026-07-31
 updated: 2026-07-31
 aliases:
@@ -941,9 +941,9 @@ earns implementation next.
 Five independent adversarial review passes were completed against the full
 spec. The final pass identified four remaining contract gaps—fixed suggestion
 expiry, pending override attribution, background-window privacy, and bridge
-resync terminal behavior—which are incorporated above. The fixed review-loop
-cap is now exhausted, so Dylan's review is the next gate. This document does
-not yet authorize implementation.
+resync terminal behavior—which are incorporated above. Dylan approved this
+design on July 31, 2026. Implementation is authorized only through the reviewed
+task plan linked below; the stop conditions remain binding.
 
 ## Design acceptance checklist
 
@@ -961,6 +961,8 @@ not yet authorize implementation.
 
 ## Links
 
+- [[2026-07-31-computer-use-autocomplete-v0|Computer-use autocomplete V0
+  implementation plan]]
 - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use
   autocomplete V1 brainstorm and scope]]
 - [[computer-use-autocomplete-runtime-decision-audit-2026-07-30|Computer-use
