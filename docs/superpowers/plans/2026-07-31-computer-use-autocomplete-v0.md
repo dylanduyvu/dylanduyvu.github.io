@@ -77,6 +77,21 @@ Probes A-C under the existing discipline; then execute slimmed Chunks 2-3. One
 systemic live failure gets one per-predicate diagnostic, one focused fix, and one
 rerun. A second, different systemic failure triggers an architecture review.
 
+**2026-07-31 execution checkpoint:** Task 3 is blocked at its ten-shot capture
+calibration, and the agreed diagnostic/fix/rerun budget is exhausted. Capture
+attempts `000005` and `000006` both failed 10/10 before screenshot creation on
+the same first predicate: macOS returned no usable `AXFocusedUIElement` for the
+local Hammerspoon probe window (`focused_element_query_ok = false`,
+`privacy_unknown`). The focused repair at implementation commit `b5fcb29`
+explicitly focused the probe's static `AXButton` on DOM load and window focus;
+attempt `000006` remained identical. Its fresh eight-case privacy prerequisite
+passed with zero artifacts and zero canary matches. Attempt `000006` produced
+zero screenshots, cleaned up all probe windows, standard-verified at manifest
+hash `0ba575673328f83545c5e0547e4b62ce1610065b7f72d7df327b45dd2fd47ee7`,
+and restored the original Hammerspoon state. Do not rerun or weaken the
+fail-closed predicates. Tasks 4 onward remain blocked pending an explicit
+decision about this calibration surface.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify

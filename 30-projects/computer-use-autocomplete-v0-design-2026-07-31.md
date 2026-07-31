@@ -32,6 +32,17 @@ tags:
 > execution primitive while retaining read-only Arc URL access for privacy.
 > This amendment supersedes conflicting later sections of this design.
 
+> [!warning] 2026-07-31 implementation blocker
+> Phase-zero capture calibration is stopped after the preregistered one
+> diagnostic, one focused fix, and one rerun. Both immutable ten-shot attempts
+> failed before capture because the local Hammerspoon probe window exposed no
+> usable macOS focused accessibility element. The repair explicitly focused its
+> static button but did not change the result. The fresh privacy suite passed,
+> no screenshots or canaries were written, cleanup/restoration passed, and all
+> later work remains blocked. This is one persistent failure, not evidence of a
+> second independent architecture failure; do not retry or broaden the harness
+> without a new decision.
+
 ## Decision summary
 
 V0 is a Dylan-only Mac prototype for testing one product claim:
