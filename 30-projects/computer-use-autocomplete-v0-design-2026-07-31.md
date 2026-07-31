@@ -21,6 +21,17 @@ tags:
 
 # Computer-use autocomplete V0 design
 
+> [!important] 2026-07-31 prototype scope correction
+> The V0 threat model is a Dylan-only personal prototype, not untrusted
+> multi-party science. Preserve privacy/canary gates, reversible installation,
+> physical Tab safety, full episode logging, and predictions-frozen-before-labels.
+> Replace Chunk 2 sanity manifests, trial-unlock/release inventories,
+> disabled-half-day proof choreography, and the public renderer with tests,
+> guided trials, concise notes, and Git tags. Probe Claude headless first; probe
+> Codex app-server only if Claude fails. Defer `open_url` as a candidate and
+> execution primitive while retaining read-only Arc URL access for privacy.
+> This amendment supersedes conflicting later sections of this design.
+
 ## Decision summary
 
 V0 is a Dylan-only Mac prototype for testing one product claim:

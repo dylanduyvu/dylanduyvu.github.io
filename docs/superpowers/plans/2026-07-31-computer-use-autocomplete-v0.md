@@ -31,6 +31,52 @@ PNG, Markdown.
 
 ## Plan-wide decisions and preregistrations
 
+### 2026-07-31 scope correction: prototype threat model
+
+This amendment is authoritative wherever later task text conflicts. The
+remaining V0 is an n=1 personal-product test, not an untrusted multi-party
+scientific release. Its primary threat is spending a week before Dylan can feel
+the product. Keep evidence and physical gates only where they prevent an
+irrecoverable safety failure or protect the actual product signal.
+
+**Keep under the existing phase-zero discipline:** capture/privacy fail-closed
+behavior and canaries; the reversible Hammerspoon loader; provider Probes A-C;
+exact Codex task identity; the physical Tab keydown matrix; full episode
+logging; and replay predictions frozen before labels. These defend against a
+screenshot leak, a stolen keystroke, damage to a daily-driver Mac, lost signal,
+or self-deception.
+
+**Cut from the remaining implementation:**
+
+1. Chunk 2's nested sanity component/final manifest system, `active.json`
+   choreography, and sanity-specific abort/evidence machinery. Replace it with
+   green focused/full tests, the guided executor trials themselves, one concise
+   Markdown result note, and a Git tag.
+2. The generated trial-unlock artifact and nine-field release-inventory
+   verifier. Natural work remains locked behind one explicit runtime check that
+   the approved release tag is checked out and the tree is clean.
+3. Disabled-half-day snapshot/proof choreography. Stop the runtime, verify it is
+   off, work normally, and write Dylan's end-of-period note.
+4. The public-summary renderer. Build a public artifact only if the results earn
+   a blog post.
+5. Codex app-server authority discovery as the first provider path. Probe Claude
+   Code headless first under documented tool exclusion. Run the Codex discovery
+   and argv-isolation work only if Claude fails the latency/capability gate.
+6. `open_url` as a V0 candidate/execution/reporting primitive. Keep read-only Arc
+   URL access solely for privacy gating. The already-frozen wire enum may remain
+   dormant for backward compatibility, but providers, runtime eligibility,
+   executors, endpoint verification, and reports must not surface it.
+
+**Replacement release discipline:** `npm test`, the load-bearing guided physical
+trials, a concise Markdown decision note, a clean tree, and a Git tag. Do not
+recreate deleted evidence systems under new names. If a later failure makes one
+of them necessary, add back only that item.
+
+**Execution order from here:** finish Task 3's focused capture repair; complete
+Probes A-C under the existing discipline; then execute slimmed Chunks 2-3. One
+systemic live failure gets one per-predicate diagnostic, one focused fix, and one
+rerun. A second, different systemic failure triggers an architecture review.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify
@@ -51,11 +97,8 @@ PNG, Markdown.
   `docs/phase-zero-decision.md`, commits it as
   `test: record autocomplete V0 phase-zero blocker`, and never commits private
   evidence.
-- `open_url` is preregistered as **expected sparse coverage**, not a core habit
-  carrier. URLs with credentials, queries, or fragments are suppressed and
-  non-executable, so Gmail and many real revisit targets will never yield this
-  primitive. Report URL opportunity, candidate, display, and acceptance counts
-  separately so near-zero use is not labeled model failure.
+- `open_url` is deferred from V0. Keep read-only Arc URL access for privacy
+  gating, but do not admit, execute, verify, or report URL completions.
 - `Control-Option-Space` in editable or sensitive focus emits a metadata-only
   `manual_trigger_suppressed` event with reason `editable_focus` or
   `sensitive_focus`; it creates no packet, provider call, or pill. V0 never
@@ -703,6 +746,10 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
 ### Task 4: Compare proposal providers under one enforced tool-free contract
 
+> **Scope correction:** Run Claude Code headless first. Implement/run the Codex
+> app-server discovery and authority path only if Claude fails the latency or
+> capability gate. `open_url` is not an admitted V0 candidate.
+
 **Files:**
 
 - Create: `src/providers/validate.mjs`
@@ -753,7 +800,7 @@ hash; the aggregate verifier rejects different packet sets across providers.
   packet-set contract above. Chunk 2's runtime builder must later reproduce
   these schema/hash tests rather than silently change the probe input.
 
-- [ ] **Step 4: Implement Codex app-server discovery and authority checks without a model call**
+- [ ] **Step 4 (conditional): Implement Codex app-server discovery only if Claude fails**
 
   Run exact discovery before a model call:
 
@@ -1510,7 +1557,11 @@ continuing.
   git commit -m "feat: coordinate proactive navigation proposals"
   ```
 
-### Task 12: Add the four deterministic executors and exact endpoint verification
+### Task 12: Add three deterministic executors and exact endpoint verification
+
+> **Scope correction:** V0 executes only `activate_app`, `focus_window`, and
+> `focus_codex_task`. Keep Arc URL reads for privacy; do not build `open_url`
+> dispatch, validation, endpoint verification, or reporting.
 
 **Files:**
 
@@ -1546,15 +1597,13 @@ continuing.
 
   Expected: module-not-found failures.
 
-- [ ] **Step 4: Implement app/window/URL dispatch in the new Lua executor**
+- [ ] **Step 4: Implement app/window dispatch in the new Lua executor**
 
   The stable `init.lua` registry loads the new module without modification.
-  Hammerspoon emits `action_dispatched` before native app/window/URL dispatch,
+  Hammerspoon emits `action_dispatched` before native app/window dispatch,
   including action ID, expected endpoint, and source-sequence floor; marks that
   action in flight; and tags matching observed transitions until
-  verification/deadline. URL execution accepts only an exact previously
-  observed query/fragment-free HTTPS URL and verifies through the frozen
-  read-only Arc adapter.
+  verification/deadline. Arc remains read-only and privacy-only in V0.
 
 - [ ] **Step 5: Implement Codex routing and one central dispatcher**
 
@@ -1581,6 +1630,12 @@ continuing.
   ```
 
 ### Task 13: Wire start/stop/status and complete the controlled sanity run
+
+> **Scope correction:** Keep runtime lifecycle tests and the guided executor
+> trials. Delete the nested component/final sanity manifests, `active.json`,
+> sanity evidence/abort modules, and immutable final-run choreography. Record
+> focused/full test results and guided-trial outcomes in
+> `docs/controlled-sanity.md`, then tag the clean commit.
 
 **Files:**
 
@@ -1611,10 +1666,9 @@ continuing.
   accepted-success, and accepted-failure episodes. Assert each ends with one
   internally valid five-axis row and complete stage timing.
 
-  Freeze the operator contract: ordinary `run` first requires a valid checked-in
-  trial-unlock artifact that Task 16 does not create until evaluation is ready.
-  Before that it exits `trial_locked`; only `sanity run` may start the same
-  runtime in a private controlled session bound to an active sanity attempt.
+  Freeze the operator contract: ordinary natural-work `run` requires the
+  approved release tag and a clean tree. Before that it exits `trial_locked`;
+  guided sanity may run explicitly against the clean candidate.
   After unlock, `run --background --wait-ready-ms 5000` returns one JSON object
   containing `ready`, PID, bridge session, source commit, and policy hash, or
   exits nonzero after cleanup. `status
@@ -2043,19 +2097,20 @@ runtime artifacts but must never copy them into Git.
 
 ### Task 16: Freeze the diagnostic report and habit-trial protocol
 
+> **Scope correction:** Keep the private diagnostic report and human protocol.
+> Delete `trial-unlock.mjs`, `config/trial-unlock.json`, release-inventory
+> verification, disabled-period proof machinery, and the public-summary
+> renderer. Unlock natural work with one check for the approved Git tag plus a
+> clean tree. Build a public renderer only after results justify publication.
+
 **Files:**
 
 - Create: `src/evaluation/report.mjs`
 - Create: `src/commands/report.mjs`
-- Create: `src/commands/trial-unlock.mjs`
-- Create: `src/commands/trial-disable.mjs`
-- Create (generated after source commit): `config/trial-unlock.json`
 - Create: `docs/habit-trial-protocol.md`
 - Create: `docs/evaluation-schema.md`
 - Test: `test/evaluation/report.test.mjs`
 - Test: `test/commands/report.test.mjs`
-- Test: `test/commands/trial-unlock.test.mjs`
-- Test: `test/commands/trial-disable.test.mjs`
 
 - [ ] **Step 1: Write failing denominator and metric tests**
 
@@ -2219,6 +2274,12 @@ runtime artifacts but must never copy them into Git.
 
 ### Task 17: Enable natural use, then close the five-day read
 
+> **Scope correction:** Replace sanity/release-inventory verification with
+> `npm test`, the approved Git tag, and a clean tree. For the disabled half-day,
+> stop the runtime, confirm it is off, work normally, and write the explicit
+> habit note; do not build begin/end snapshot proofs. Produce only the private
+> report unless a later publication decision authorizes a public artifact.
+
 **Files:**
 
 - Modify: `README.md`
@@ -2237,16 +2298,15 @@ runtime artifacts but must never copy them into Git.
   ```
 
   ```bash
-  node src/cli.mjs sanity verify --read-only \
-    --release-inventory config/trial-unlock.json
+  git describe --tags --exact-match HEAD
   ```
 
   ```bash
   git status --porcelain
   ```
 
-  Expected: tests pass, `PHASE_ZERO=PASS`, `SANITY=PASS` with an exact unchanged
-  action-runtime subset plus exact complete release inventory, and clean status.
+  Expected: tests pass, the approved release tag identifies `HEAD`, and status
+  is clean.
   Tag the exact commit locally as `v0-habit-trial-rc1`; any source/config change
   during the trial ends that cohort and requires a new verified release tag.
 
@@ -2277,35 +2337,21 @@ runtime artifacts but must never copy them into Git.
   policy/provider hashes, wall/monotonic bounds, ledger snapshot/hash, episode
   IDs, and integrity result. Do not edit or relabel the live database.
 
-- [ ] **Step 4: Run the disabled half-day and record only the explicit habit note**
+- [ ] **Step 4: Turn the runtime off, work a disabled half-day, and write the habit note**
 
   ```bash
-  node src/cli.mjs trial-disable begin
+  node src/cli.mjs stop --wait-ms 5000
   ```
 
-  Only then run:
-
-  ```bash
-  node src/cli.mjs trial-disable verify --quiet-ms 2000
-  ```
-
-  Require no Node/process lock/heartbeat, inactive+unarmed Spoon, and unchanged
-  observer/bridge/JSONL state. Dylan then uses the Mac normally for at least four
-  continuous hours
+  Confirm `status` reports stopped. Dylan then uses the Mac normally for at
+  least four continuous hours
   and records whether he noticed the absence or reflexively reached for Tab,
   plus brief context. Store the raw note only in private cohort evidence; the
   public renderer may use only the two fixed structured fields. No background
   input logging runs during this period.
 
-  At the end, verify against the original snapshot—not a new baseline:
-
-  ```bash
-  node src/cli.mjs trial-disable verify --snapshot <begin-snapshot-id> \
-    --min-elapsed-hours 4
-  ```
-
-  Require the same stopped/inactive state and unchanged files for the entire
-  bound interval before accepting the disabled-period habit fields.
+  At the end, write the explicit habit note. No hidden observer or snapshot
+  proof runs during the disabled period.
 
 - [ ] **Step 5: Run resumable blind replay and attach labels**
 
