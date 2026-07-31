@@ -2,7 +2,7 @@
 type: project
 status: complete
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 aliases:
   - Computer-use autocomplete runtime decision audit
 projects:
@@ -33,6 +33,16 @@ for this audit.
 
 This is an evidence-gathering and architecture-decision memo. It does not
 authorize or implement an MVP.
+
+> [!important] Subsequent V0 product decision, July 31, 2026
+> The audit's product-owned local architecture remains the durable direction,
+> but the approved V0 is narrower than the runtime recommendation below. It
+> uses only deterministic app activation, window focus, structured Codex-task
+> focus, and URL opening; it includes no computer-use execution model or opaque
+> surface fallback. Codex app-server and Claude Code headless are first tested
+> only as tool-free proposal providers under the same packet and schema. This
+> preserves the audit's evidence while removing unneeded execution risk from
+> the first habit-forming build.
 
 ## Product contract held fixed
 

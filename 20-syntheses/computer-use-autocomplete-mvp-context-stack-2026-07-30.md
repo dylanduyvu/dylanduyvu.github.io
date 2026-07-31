@@ -2,7 +2,7 @@
 type: synthesis
 status: proposed
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 projects:
   - computer-use-autocomplete
   - personal-ai-context-learning
@@ -23,6 +23,18 @@ tags:
 # The fastest credible MVP context stack is a thin Mac observer plus a product-owned ledger
 
 Research current through July 30, 2026.
+
+> [!important] V0 narrowing, July 31, 2026
+> This synthesis preserves the fuller context-stack design space. The approved
+> V0 keeps its complete product-owned episode ledger, packet persistence,
+> idle-boundary events, and secret fail-closed test, but defers the Arc
+> extension and any computer-use executor. V0 executes only app activation,
+> window focus, structured Codex-task focus, and URL opening. Its immediate
+> gates are proposal latency, exact Codex-task identity in the packet, and zero
+> Tab interception during typing or unsafe focus. The approved contract in
+> [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete
+> V1 brainstorm and scope]] is authoritative where this broader synthesis
+> differs.
 
 ## Executive recommendation
 

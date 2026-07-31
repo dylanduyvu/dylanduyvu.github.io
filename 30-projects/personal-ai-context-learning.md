@@ -26,15 +26,21 @@ tags:
 > [!note] Source boundary
 > This project includes internal Notion and Slack context alongside the public World Models notes.
 
-> [!important] Current NAP direction, 2026-07-30
+> [!important] Current NAP direction, 2026-07-31
 > The roughly 200-row manual corpus and V5 expanded-history experiment are
 > complete. On ten scorable pairs, state-only scored 0/10 structured exact
 > top-three and history scored 5/10. All five history hits were returns to the
 > same recurring Codex task family; all five Arc targets were missed. The
-> result supports recurring-task recall, not a general router. The next
-> product-oriented test should rank a shared hierarchy of executable app,
-> window, task, document, tab, and control candidates and abstain when
-> confidence is low. Fine-tuning is not yet required. See
+> result supports recurring-task recall, not a general router. The approved V0
+> therefore logs the full prediction-opportunity episode and context packet but
+> executes only app activation, window focus, named Codex-task focus, and URL
+> opening. It adds stable-idle as a proposal trigger, never arms Tab during
+> typing or unsafe focus, and uses no computer-use execution model. Before the
+> product shell, it probes proposal latency, exact Codex-task identity in the
+> packet, and Tab safety. Fine-tuning, candidate enumeration, the Arc extension,
+> and visual computer-use fallback remain deferred. See
+> [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete
+> V1 brainstorm and scope]] and
 > [[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what
 > a first navigation autocomplete still needs]].
 
@@ -50,10 +56,11 @@ exactly predict any non-Codex destination.
 The rough V1 opportunity is therefore narrower than general computer-use
 prediction but closer than a comparison with a mature autocomplete product
 would imply. A first version can occasionally offer a high-confidence return
-to an app, window, document, browser tab, or recurring task. It does not need
-to predict every action. The main missing architecture is structured candidate
-enumeration, retrieval of comparable history, hierarchical ranking, and
-confidence-gated abstention—not immediate personal-model fine-tuning.
+to an app, window, URL, or recurring Codex task. It does not need to predict
+every action. Candidate enumeration, richer retrieval, hierarchical ranking,
+and confidence calibration may later improve coverage, but the immediate V0
+tests whether a tool-free proposal model plus a four-primitive deterministic
+executor produces a habit-forming interaction.
 
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,
@@ -81,13 +88,13 @@ longer the selected first backend. See
 autocomplete runtime decision audit]].
 
 A narrower July 30 context-stack audit found that the live MVP does not need
-the exact-label capture machinery built for retrospective datasets. The fastest
-credible go-forward stack is a reduced Hammerspoon observer, the existing Arc
-tab/navigation adapter, one-shot transition screenshots, and a product-owned
-SQLite ledger for every prediction opportunity and model action. Screenpipe
-can remain an optional search/debugging sidecar, while continuous video,
-rrweb, full Accessibility trees, historical reconstruction, and long-term
-semantic memory remain deferred. See
+the exact-label capture machinery built for retrospective datasets. The
+approved July 31 V0 keeps a reduced Hammerspoon observer, one-shot transition
+screenshots, and a product-owned SQLite ledger for every prediction
+opportunity, while deferring the audit's proposed Arc adapter and computer-use
+fallback. Screenpipe can remain an optional search/debugging sidecar, while
+continuous video, rrweb, full Accessibility trees, historical reconstruction,
+and long-term semantic memory remain deferred. See
 [[computer-use-autocomplete-mvp-context-stack-2026-07-30|The fastest credible
 MVP context stack is a thin Mac observer plus a product-owned ledger]].
 

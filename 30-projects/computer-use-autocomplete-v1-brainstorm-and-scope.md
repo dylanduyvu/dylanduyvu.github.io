@@ -813,47 +813,84 @@ pre-action-state -> exact-next-action examples. A larger experiment needs
 either a much faster review workflow or a collection layer that proposes rows
 for correction.
 
-## Approved V0 complexity reset
+## Approved V0 contract
 
-Working decision, July 30, 2026: stop adding product-policy machinery before
-Dylan can feel a working build. The complete provider-independent V0 is:
+Working decision, revised July 31, 2026: **log everything, run almost
+nothing.** V0 should preserve the evidence needed to diagnose usefulness and
+history lift while executing only the smallest deterministic navigation
+surface that covers the V5 wins.
 
-1. Observe the active screenshot, app/window identity, and a short recent-event
-   buffer.
-2. Trigger after a basic app/window change plus a brief pause, with a manual
-   hotkey fallback.
-3. Ask the predictor for three ranked completions but display only the best
-   one.
-4. Show the suggestion in a compact active-window pill.
-5. Let Tab accept it; let Escape dismiss or stop it.
-6. Execute reversible navigation, but stop before sending, submitting,
-   publishing, editing authored content, or taking another consequential
-   action.
-7. Log only the prediction, accept/dismiss outcome, route success/failure, and
-   latency needed to understand whether the interaction works.
-8. Judge the prototype primarily by whether Dylan naturally starts reaching
+The complete V0 is:
+
+1. Observe the active screenshot, app/window identity, exact Codex task
+   identity when available, and a short chronological event buffer. The buffer
+   records interaction shape such as typing, scrolling, focus, and idle
+   boundaries without storing literal keystrokes or clipboard contents.
+2. Trigger proposal calls after a meaningful app/window transition, an
+   observable LLM-response completion, or the end of a typing, scrolling, or
+   interaction burst followed by stable idle. Retain a manual hotkey fallback.
+   Cancel or discard a proposal as soon as activity makes its context stale.
+3. Ask the proposal provider for three ranked structured completions but
+   display only the best fresh, executable completion in a compact
+   active-window pill.
+4. Let Tab accept the visible completion and Escape dismiss or stop it. Tab is
+   armed only while a fresh suggestion is visible, no typing burst is active,
+   the context epoch is unchanged, and the focused control is neither editable
+   nor sensitive. Otherwise the physical Tab passes through untouched.
+5. Restrict execution to four deterministic primitives: activate an
+   application, focus a window, focus a named Codex task through the structured
+   adapter, and open a URL. Unsupported predictions may be logged but are not
+   displayed or executed.
+6. Use no computer-use execution model in V0. Codex app-server and Claude Code
+   headless are proposal-provider candidates behind the same tool-free
+   contract. Visual computer use remains later evidence-driven expansion.
+7. Persist the complete immutable episode row and exact input-packet
+   references for every prediction opportunity: trigger; context epoch and
+   packet; silent top three; displayed candidate; returned, failed, cancelled,
+   or stale state; accept, explicit dismissal, ignore, expiry, or override;
+   first later human event when observable; allowlisted route and dispatched
+   primitives; endpoint verification and failure reason; and proposal,
+   acceptance, first-action, and completion timestamps.
+8. Measure state-only performance offline by replaying stored packets with
+   history removed through a frozen model, prompt, and schema. Do not double
+   live inference cost merely to preserve the comparison. Treat replay as a
+   product diagnostic rather than a perfectly contemporaneous randomized
+   experiment.
+9. Judge the prototype primarily by whether Dylan naturally starts reaching
    for Tab and notices when the tool is unavailable.
 
-Explicitly deferred from V0: sophisticated confidence calibration, forced
-suggestion quotas, elaborate recovery machinery, candidate enumeration,
-long-term semantic memory, automatic personalization or fine-tuning, formal
-shadow experiments, and production-grade security or multi-user architecture.
+Before building the rest of the product shell, run three tightly timeboxed
+feasibility probes:
 
-The five-day and roughly 50-suggestion framework above is a rough usage lens,
-not a quota or calibration system. V0 should not lower a threshold to hit a
-count, implement daily threshold tuning, or block ordinary use on statistical
-sufficiency. Likewise, the product intent of allowing at most one bounded
-recovery attempt does not require a custom recovery subsystem in V0: use the
-selected executor's basic safe handling when it is trivial, otherwise stop and
-report failure.
+1. **Proposal latency:** send the same representative real packets through
+   Codex app-server and Claude Code headless under the same tool-free structured
+   output contract. Collect at least five valid calls per provider, record cold
+   and warm validity and latency, and use roughly 2.5 seconds p50 as the initial
+   stale-by-default kill screen rather than a permanent product standard.
+2. **Codex task identity:** verify that the observer can recover and retain the
+   exact active Codex task ID and readable title across task changes and place
+   that identity in the chronological packet. This is load-bearing because the
+   named recurring task supplied the V5 history lift.
+3. **Tab safety:** verify across controlled typing and navigation trials that
+   active typing, editable focus, sensitive focus, stale context, or no visible
+   suggestion always causes Tab to pass through. One stolen keystroke blocks
+   the active habit trial.
 
-No additional product-scoping questions are required before implementation.
-The completed runtime audit selects a product-owned local hybrid: deterministic
-Mac/app adapters execute the common reversible routes, Codex app-server is the
-first replaceable proposal-only spike, and computer-use control remains an
-optional fallback for opaque surfaces rather than the primary actuator. Write
-one concise integrated design around that architecture, then move to the
-implementation plan for this vertical slice.
+Keep the synthetic secret fail-closed test before any real packet is sent to a
+cloud model. Explicitly defer the Arc extension, computer-use fallback,
+semantic granularity policy, sophisticated confidence calibration, forced
+suggestion quotas, elaborate recovery, candidate enumeration, long-term
+semantic memory, automatic personalization or fine-tuning, formal shadow
+experiments, and production-grade multi-user architecture.
+
+The five-day and roughly 50-suggestion framework above remains a rough usage
+lens, not a quota or calibration system. V0 should not lower a threshold to hit
+a count, implement daily threshold tuning, or block ordinary use on
+statistical sufficiency.
+
+No additional product-scoping questions are required before the design step.
+Write one concise integrated design around this contract, then move to the
+implementation plan only after review.
 
 ## Questions for computer-use model research
 
