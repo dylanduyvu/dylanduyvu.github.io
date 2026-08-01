@@ -73,4 +73,3 @@ actuators; it blocks the specific load-bearing Codex-task primitive.
 - [[computer-use-autocomplete-provider-bakeoff-2026-08-01|Computer-use autocomplete provider bakeoff]]
 - [[2026-07-31-computer-use-autocomplete-v0|Computer-use autocomplete V0 implementation plan]]
 - [[personal-ai-context-learning|Personal AI context learning]]
-
