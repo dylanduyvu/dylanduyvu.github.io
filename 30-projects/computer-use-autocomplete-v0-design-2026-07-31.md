@@ -162,6 +162,13 @@ tags:
 > five packets once. The result is diagnostic and cannot unlock Task 5 by
 > itself.
 
+> [!note] 2026-08-01 attempts 000005–000006
+> Attempt `000005` again reached `3/5` validity with `1,871.94 ms` p50 and all
+> non-validity gates passing, but both diagnostic predicates became
+> `unspecified` because the generic sanitizer lacked the new closed values.
+> Attempt `000006` changes only that allowlist and reruns the same schedule once.
+> It cannot unlock Task 5 or authorize normalization by itself.
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,

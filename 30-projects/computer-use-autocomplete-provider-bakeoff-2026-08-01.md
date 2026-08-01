@@ -284,6 +284,22 @@ checks, and `5/5` selection gate remain exactly as in `000004`. Run the frozen
 schedule once. This diagnostic result cannot unlock Task 5 or justify
 normalization by itself.
 
+## Attempt 000005 result and 000006 preregistration
+
+Attempt `000005` froze and verified under manifest
+`3b95de8624faa3a3c22efd545258376f0b3b1c51de8cca3be8842f6286518611`,
+bound to source commit `68bd99f15b84af8b2e90ab0d5ed1f3e3e4c3666a`.
+It again produced `3/5` valid warm calls, a passing `1,871.94 ms` p50, `0/5`
+tool calls, and passing lifecycle checks. Both local failures were recorded as
+`unspecified`: the generic bakeoff sanitizer had not admitted the new closed
+predicates. The result therefore diagnoses the evidence path, not model output.
+
+Attempt `000006` changes only that sanitizer allowlist to admit
+`abstention_text_bound` and `candidate_cardinality`, with end-to-end tests.
+Packets, prompt, generation schema, local validator, model, timing, lifecycle,
+and selection gate remain unchanged. Run the same schedule once, then stop
+before normalization or Task 5.
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]

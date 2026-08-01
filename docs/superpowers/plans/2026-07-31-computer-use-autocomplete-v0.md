@@ -232,6 +232,15 @@ sanitized post-validation failure predicate to
 same immutable schedule once. This attempt diagnoses response reliability; it
 does not unlock Task 5 or authorize normalization by itself.
 
+#### Attempt 000005 outcome and 000006 correction
+
+Attempt `000005` froze and verified but its two new predicates were reduced to
+`unspecified` by the generic bakeoff sanitizer. Other results were `3/5` valid,
+`1,871.94 ms` p50, `0/5` tool calls, and passing lifecycle checks. Attempt
+`000006` changes only the sanitizer allowlist to preserve
+`abstention_text_bound` and `candidate_cardinality` end to end, then reruns the
+same schedule once. No prediction input or gate changes.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify
