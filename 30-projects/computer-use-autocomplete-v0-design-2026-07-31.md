@@ -209,7 +209,21 @@ tags:
 > verification as `observed_partial`. Product-owned dispatch IDs and qualifying
 > observable task events supply exact identity; otherwise Codex context and
 > labels remain app-level. Exact-task and app-only outcomes are separate
-> strata, and generic Codex activation remains forbidden. Task 6 may proceed.
+> strata, and generic Codex activation remains forbidden. Task 6 remains
+> blocked until the frozen desktop event-visibility probe passes 3/3.
+
+> [!warning] 2026-08-01 preregistered Codex event-visibility gate
+> Before Task 6, attach an app-server listener exactly as V0 will attach it,
+> without starting a session or turn. Across three existing tasks, Dylan must
+> manually focus the task in Codex Desktop, type a short composer message, and
+> send it. Pass only if 3/3 desktop-originated trials produce an app-server
+> event carrying the correct thread ID within the 30-second label horizon.
+> Freeze event kind, thread-ID match, latency, and whether unplanned listener
+> configuration was required; expect zero provider calls and zero cache hits.
+> A 0/3 or partial result is an architecture stop before Task 6, with no title
+> join or generic-activation fallback. Exact-task labels are expected to be
+> sparse and composer-concentrated; read-only visits remain app-only. Sparse
+> exact-stratum counts are the design working, not model failure.
 
 Metadata-only packets retain the focused app/window identity, an exact Codex task
 only when the short activity-derived buffer currently knows one,
