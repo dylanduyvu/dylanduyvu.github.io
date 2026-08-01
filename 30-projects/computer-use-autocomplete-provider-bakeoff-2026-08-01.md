@@ -230,7 +230,8 @@ preflight defects. It does not reinterpret or overwrite `000001`-`000003`.
   remain frozen evidence.
 - The first corrected-adapter preflight remained non-counted and exposed one
   additional documented generation constraint: Anthropic rejects
-  `minItems: 3`. The generation projection therefore omits `minItems`; the
+  `minItems: 3`, then rejects `maxItems`. The generation projection therefore
+  omits both array-size constraints; the
   unchanged local validator still requires exactly three candidates.
 - Attempt `000004` reuses the exact five `000001` packets, pinned Haiku 4.5
   model, one-user-turn/no-tools request body, one cold call, five counted warm
