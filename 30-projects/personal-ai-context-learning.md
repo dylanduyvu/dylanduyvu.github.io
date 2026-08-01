@@ -62,6 +62,14 @@ and confidence calibration may later improve coverage, but the immediate V0
 tests whether a tool-free proposal model plus a four-primitive deterministic
 executor produces a habit-forming interaction.
 
+As of July 31, the metadata-only observer and packet foundation is ready, but
+the V0 is stopped before the habit shell at the proposal-provider authority
+gate. Claude's isolated mode requires an API key not present on the Mac, while
+Codex CLI `0.144.6` cannot suppress its built-in `update_plan` tool. No model
+calls were made and no provider was selected. The next decision is deliberately
+narrow: add Claude API-key auth, or allow a provider that advertises only a
+non-external-effect utility while invalidating any response that calls it.
+
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,
 native Mac execution, truthful one-Tab scope, abstention, and fresh

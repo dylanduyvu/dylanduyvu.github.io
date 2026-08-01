@@ -53,6 +53,19 @@ tags:
 > Hammerspoon-webview artifact from a general capture limitation, but neither
 > result may delay the JSON-only provider bakeoff.
 
+> [!warning] 2026-07-31 provider stop
+> The metadata-only packet and validator path is implemented, but the strict
+> zero-tool provider gate currently has no eligible provider. Claude Code
+> `2.1.119` requires `--bare` for isolation, and that mode requires an
+> `ANTHROPIC_API_KEY`; Dylan's installed OAuth session cannot enter it. Codex
+> CLI `0.144.6` rejects `tools.update_plan.enabled=false`, so its unconditional
+> `update_plan` tool cannot be removed. The reviewed preflight made zero model
+> calls and froze `authority_qualified: false`, `live_qualified: false`, and no
+> selected provider. The product plan stops before Task 5 until Dylan either
+> supplies a Claude API key or explicitly narrows the rule from “zero tools
+> advertised” to “no external-effect tools, and any tool call invalidates the
+> response.” Implementation checkpoint: `5bfbac7` in the private V0 repository.
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,

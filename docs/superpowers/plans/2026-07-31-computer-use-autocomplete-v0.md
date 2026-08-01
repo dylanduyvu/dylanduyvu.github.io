@@ -802,6 +802,16 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
 ### Task 4: Compare proposal providers under one enforced tool-free contract
 
+> **Stopped at the provider gate on 2026-07-31.** The reviewed metadata-only
+> packet/provider foundation is green at 313 tests, but neither installed
+> provider can satisfy the exact zero-tool authority contract. Claude's
+> isolated `--bare` mode needs an `ANTHROPIC_API_KEY`, which is absent; Codex
+> CLI `0.144.6` rejects the override needed to remove its unconditional
+> `update_plan` tool. The frozen conditional preflight made zero model calls,
+> selected no provider, and left both authority and live qualification false.
+> Per Step 11, do not begin Task 5 without a new decision: provide a Claude API
+> key or amend the zero-tool contract narrowly.
+
 > **Scope correction:** Run Claude Code headless first. Implement/run the Codex
 > app-server discovery and authority path only if Claude fails the latency or
 > capability gate. `open_url` is not an admitted V0 candidate. Under the
