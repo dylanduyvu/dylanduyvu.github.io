@@ -56,6 +56,16 @@ tags:
 > [[computer-use-autocomplete-task-5-codex-identity-probe-2026-08-01|the Task 5
 > probe result]].
 
+> [!success] V0 activity-derived Codex amendment, 2026-08-01
+> A public-AX follow-up found the selected title and proved exact deep-link
+> routing, but two immutable attempts still could not make the title-to-ID join
+> reliable enough for exact verification. The build no longer stops there: it
+> keeps exact IDs for product-owned routes, records frontmost Codex as
+> `observed_partial`, uses qualifying observable task activity for exact
+> corroboration, and reports exact-task versus app-only outcomes separately.
+> Generic Codex activation is still forbidden. Task 6 may proceed under this
+> narrower contract.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -74,13 +84,12 @@ and confidence calibration may later improve coverage, but the immediate V0
 tests whether a tool-free proposal model plus a four-primitive deterministic
 executor produces a habit-forming interaction.
 
-As of July 31, the metadata-only observer and packet foundation is ready, but
-the V0 is stopped before the habit shell at the proposal-provider authority
-gate. Claude's isolated mode requires an API key not present on the Mac, while
-Codex CLI `0.144.6` cannot suppress its built-in `update_plan` tool. No model
-calls were made and no provider was selected. The next decision is deliberately
-narrow: add Claude API-key auth, or allow a provider that advertises only a
-non-external-effect utility while invalidating any response that calls it.
+As of August 1, the metadata-only observer and packet foundation is ready and
+direct Anthropic Haiku has passed the provider gate. Exact current Codex-task
+reading remains unreliable, but the activity-derived amendment preserves exact
+routing without blocking the habit shell. The next implementation step is the
+physical Tab gate and suggestion pill, preceded by one narrow check of which
+normal desktop task events are actually observable for exact corroboration.
 
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,

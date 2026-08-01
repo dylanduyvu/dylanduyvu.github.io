@@ -286,6 +286,46 @@ selection. Exact focus-and-reread was therefore not attempted. Stop before
 Task 6. Do not substitute generic Codex activation or add Electron/private-state,
 arbitrary-UI, or coordinate infrastructure under this plan.
 
+### 2026-08-01 Task 5 activity-derived identity amendment
+
+This amendment supersedes only the requirement that Task 5 independently
+reread the exact selected desktop thread before Task 6. Exact dispatch remains
+mandatory.
+
+A bounded public-AX spike found the selected task title under the focused
+Codex window's `AXWebArea` and confirmed that an exact
+`codex://threads/<id>` dispatch changes that title. Formal attempts `000002`
+and `000003` nevertheless froze `thread_match_unavailable` at discovery under
+manifests
+`762099fb864e76357afa3ffec37a755e3e866a1dab0ca2aa57d0a29bf5823b14`
+and
+`9b883e1a5297b175c1b1bb483bb85c0912e82eda939567ae4e255eb58e85f9e3`.
+The second attempt included the preregistered single fresh-directory retry. No
+further retry, fuzzy title match, Electron/private-state read, or coordinate
+fallback is permitted.
+
+V0 proceeds with activity-derived identity:
+
+1. A product-owned `focus_codex_task` dispatch always retains the exact
+   app-server thread ID and uses only the exact registered deep link.
+2. Immediate successful observation is `observed_partial` only when Codex is
+   frontmost, with `frontmost_bundle` evidence. It is never called
+   `verified_exact` merely because dispatch succeeded.
+3. A matching qualifying app-server task event within the bounded verification
+   or labeling horizon may corroborate the exact thread. A mismatching event is
+   failure. If no event arrives, the result remains partial/app-level.
+4. Product-owned dispatches and qualifying exact task events seed the short
+   rolling task buffer. Manual/read-only task visits with no exact signal omit
+   `current_state.codex_task` rather than guessing from title or recency.
+5. Evaluation reports exact-task and app-only labels as separate strata.
+6. Generic Codex activation is still forbidden as a substitute for an exact
+   route.
+
+Task 6 is unlocked under this narrower verification contract. Before the habit
+week, one focused event-visibility check must establish which app-server task
+events from normal desktop work are actually observable; do not claim that
+typing alone emits a turn event without that evidence.
+
 - The isolated implementation repository now exists at
   `/Users/dylanvu/Projects/computer-use-autocomplete` on `codex/v0`. Preserve
   its immutable provider and Codex-probe commits; do not reuse or modify
@@ -297,7 +337,7 @@ arbitrary-UI, or coordinate infrastructure under this plan.
 - Environmental preflight and capture-calibration failures may be repaired and
   rerun, but no later probe may start until they pass. One provider may fail if
   another passes. A completed blocking-probe failure—no passing provider,
-  unavailable exact Codex identity/focus, any stolen unsafe Tab, or any canary
+  unavailable exact Codex dispatch or frontmost partial observation, any stolen unsafe Tab, or any canary
   leak—is terminal for this plan. Run one atomic `probe abort` operation, which
   records and commits the public-safe blocker, then in a guaranteed cleanup
   uninstalls the Hammerspoon loader and verifies restoration before exiting
@@ -1188,6 +1228,13 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
 ### Task 5: Prove exact Codex task identity and structured focus
 
+> **Amended after attempts 000002–000003:** Keep the exact-route construction
+> and controlled routing evidence below, but replace independent exact reread
+> with the activity-derived contract in the plan-wide amendment above. The
+> executor records `observed_partial` on frontmost Codex unless a matching
+> qualifying task event corroborates the thread. Task 6 no longer depends on a
+> universally readable current desktop thread.
+
 **Files:**
 
 - Create: `src/adapters/codex.mjs`
@@ -1283,6 +1330,12 @@ hash; the aggregate verifier rejects different packet sets across providers.
   missing current-task identity is a failure. Only on that failure, run
   `node src/cli.mjs probe abort --probe codex --from-latest` and stop after its
   verified cleanup; do not downgrade to generic Codex activation.
+
+  **Superseded result:** The stop condition fired twice for the AX-title to
+  app-server-ID join. Per the preregistered fallback, stop repairing exact
+  reread and proceed only under activity-derived identity. The remaining hard
+  stop is failure to dispatch the exact route or establish frontmost Codex as
+  partial endpoint evidence.
 
 ### Task 6: Prove the local Tab gate and secret fail-closed behavior
 

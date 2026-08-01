@@ -200,7 +200,19 @@ tags:
 > [[computer-use-autocomplete-task-5-codex-identity-probe-2026-08-01|the Task 5
 > probe result]].
 
-Metadata-only packets retain the focused app/window identity, exact Codex task,
+> [!success] 2026-08-01 Task 5 activity-derived identity amendment
+> A bounded AX spike found the selected Codex task title in the public
+> `AXWebArea` and confirmed exact deep-link routing, but immutable attempts
+> `000002` and `000003` still could not make the title-to-app-server-ID join
+> reliable enough for exact authority. V0 therefore keeps exact
+> `codex://threads/<id>` dispatch while recording immediate frontmost-Codex
+> verification as `observed_partial`. Product-owned dispatch IDs and qualifying
+> observable task events supply exact identity; otherwise Codex context and
+> labels remain app-level. Exact-task and app-only outcomes are separate
+> strata, and generic Codex activation remains forbidden. Task 6 may proceed.
+
+Metadata-only packets retain the focused app/window identity, an exact Codex task
+only when the short activity-derived buffer currently knows one,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,
 not chronological history. Focused-state privacy remains fail-closed for raw
@@ -383,7 +395,8 @@ flowchart LR
 
 The model can propose but cannot dispatch. Hammerspoon owns the physical Tab
 decision and dispatches `activate_app`, `focus_window`, and `open_url`. The
-Node-owned structured Codex adapter dispatches `focus_codex_task`. The Node
+Node-owned structured Codex adapter dispatches `focus_codex_task` through an
+exact registered thread route. The Node
 coordinator owns episode causality and validates that an accepted action still
 belongs to the current context epoch. Every actuator reports through the same
 Node ledger ingress and verification contract.
@@ -730,7 +743,7 @@ before dispatch. It permits one primitive per accepted suggestion:
 | --- | --- | --- |
 | `activate_app` | Raise an already-running bundle ID | Frontmost bundle ID matches |
 | `focus_window` | Focus a live Hammerspoon window ID | Frontmost bundle and focused window ID match |
-| `focus_codex_task` | Node calls the structured Codex task adapter | Adapter reports and re-reads the requested thread ID |
+| `focus_codex_task` | Node opens only the exact registered thread route | Frontmost Codex yields `observed_partial`; a matching qualifying task event within the bounded horizon may yield `verified_exact` |
 | `open_url` | Hammerspoon opens a sanitized HTTPS URL through Arc/system browser | Read-only Arc AppleScript URL adapter returns the exact normalized URL |
 
 There is no multi-primitive route in V0. A semantic completion that would

@@ -911,6 +911,17 @@ activation. See
 desktop app does not expose exact active-task identity through the approved
 public surfaces]].
 
+That stop decision is now superseded for V0 by an activity-derived identity
+amendment. A public-AX spike can read the selected title and exact deep links
+route correctly, but two immutable attempts could not make the title-to-ID join
+reliable enough for authority. V0 will therefore retain exact app-server thread
+IDs for product-owned dispatches, verify immediate arrival as
+`observed_partial` when Codex is frontmost, and promote identity only when a
+qualifying observable task event corroborates it. Manual/read-only visits stay
+app-level, exact-task and app-only labels are separate strata, and generic
+Codex activation remains forbidden. This is enough to proceed to the Tab gate
+without pretending the exact-read problem was solved.
+
 ## Questions for computer-use model research
 
 - Which existing products and models—including the Induction Labs lead Dylan
