@@ -802,6 +802,19 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
 ### Task 4: Compare proposal providers under one enforced tool-free contract
 
+> **Two-sided run completed and blocked on 2026-08-01.** Dylan narrowed the
+> contract only for Codex's non-machine-authority `update_plan` advertisement;
+> any invocation remained invalid and the manifest reported a counted warm
+> tool-invocation rate. Claude used API-key-backed `--bare` with structural tool
+> exclusion. After spec and code-quality review, both arms ran on the same five
+> canonical metadata fixtures. Claude returned `0/5` valid warm calls and
+> `4,080.54 ms` p50 with `0/5` tool invocations. Codex's fresh authority proof
+> produced no exact generated model request and failed before a live call.
+> Frozen manifest:
+> `412eed079f3ec4c4762590cafcea5680f1ccb170097544a214c362d30c2b0540`.
+> No provider was selected; do not begin Task 5. See
+> [[computer-use-autocomplete-provider-bakeoff-2026-08-01|the result note]].
+
 > **Stopped at the provider gate on 2026-07-31.** The reviewed metadata-only
 > packet/provider foundation is green at 313 tests, but neither installed
 > provider can satisfy the exact zero-tool authority contract. Claude's

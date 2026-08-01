@@ -180,6 +180,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[computer-use-autocomplete-model-and-competitor-landscape-2026-07-30|The computer-use autocomplete wedge is intent ranking, not another computer-use agent]]
 - [[computer-use-autocomplete-mvp-context-stack-2026-07-30|The fastest credible MVP context stack is a thin Mac observer plus a product-owned ledger]]
 - [[computer-use-autocomplete-runtime-decision-audit-2026-07-30|Computer-use autocomplete runtime decision audit]]
+- [[computer-use-autocomplete-provider-bakeoff-2026-08-01|Neither provider passed the first two-sided autocomplete bakeoff]]
 
 ## Hunches
 
@@ -241,6 +242,11 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
   route and context packet through each genuinely viable candidate over the
   same product-owned actuator; compare proposal and completion p50/p95,
   endpoint success, privacy, and cost.
+- Before rerunning the provider gate, add sanitized predicate-level Claude
+  stream failure reasons, diagnose Codex's missing generated authority request,
+  freeze five representative real metadata packets, and use a new dedicated
+  spend-capped Anthropic key. Do not begin the overlay while no provider has
+  `5/5` valid warm calls and p50 at or below `2.5 seconds`.
 - Revisit automatic capture only when live shadow mode requires it or Dylan
   explicitly resumes that work.
 - State the demo's claim and nonclaims before publishing it.

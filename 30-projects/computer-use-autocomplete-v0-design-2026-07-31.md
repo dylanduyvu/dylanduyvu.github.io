@@ -2,7 +2,7 @@
 type: project
 status: approved
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-01
 aliases:
   - Computer-use autocomplete V0 design
 projects:
@@ -65,6 +65,21 @@ tags:
 > supplies a Claude API key or explicitly narrows the rule from “zero tools
 > advertised” to “no external-effect tools, and any tool call invalidates the
 > response.” Implementation checkpoint: `5bfbac7` in the private V0 repository.
+
+> [!failure] 2026-08-01 two-sided provider result
+> Dylan approved the narrow Codex amendment: only `update_plan` may be
+> advertised, any invocation invalidates that call, and warm invocation
+> frequency is reported as `n/5`. Claude remained structurally tool-free and
+> received a private API key for the run. The reviewed implementation at
+> `5afab1b` ran both arms and froze manifest
+> `412eed079f3ec4c4762590cafcea5680f1ccb170097544a214c362d30c2b0540`.
+> Neither passed. Claude returned `0/5` valid warm calls, no tool invocations,
+> and `4,080.54 ms` warm p50; Codex failed its fresh local authority proof
+> before a model call because it produced no exact generated request from
+> which to verify the one-tool advertisement. No provider was selected. Task 5
+> remains blocked. See
+> [[computer-use-autocomplete-provider-bakeoff-2026-08-01|the provider bakeoff
+> result]].
 
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
