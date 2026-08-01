@@ -133,6 +133,31 @@ of screenshots for the habitual navigation class is therefore unproven.
    contract remains tool-free, cancellable, schema-validated, privately logged,
    and measured against the existing five-warm-call/p50 <= 2.5-second gate.
 
+### 2026-08-01 provider attempt 000002 amendment
+
+This preregistration is authoritative for the next provider attempt. Preserve
+immutable attempt `000001`; do not reinterpret it as a direct-API result.
+
+1. Attempt `000001` froze no Claude stdout/stderr stream artifact, so its exact
+   failed response predicate is not recoverable without a new call. Record only
+   the supported sanitized result. Schema drift is a hypothesis.
+2. Add a third adapter using the direct Anthropic Messages API over fixed HTTPS
+   behind the existing proposal/cancellation contract. Load the key only from
+   private `provider.env`. Pin `claude-haiku-4-5-20251001`, API version
+   `2023-06-01`, one user turn, `max_tokens: 1024`, no `tools` field, and the
+   existing five-second deadline.
+3. Use `output_config.format` structured output. Keep the existing canonical
+   prompt and validator unchanged. Send an API-compatible generation schema
+   that preserves the exact candidate-versus-abstention `oneOf` and strips only
+   unsupported scalar constraints; enforce those constraints locally and store
+   both schema hashes.
+4. Attempt `000002` runs only the direct arm on the exact five packet artifacts
+   from `000001`: one cold call, then five counted warm calls. Select it only at
+   `5/5` valid, warm p50 <= `2,500 ms`, acknowledged cancellation, and passing
+   deadline enforcement. Otherwise select no provider.
+5. Commit this amendment before any live call. Deprioritize Codex authority
+   repair, keep every stop condition, and do not begin Task 5 or the overlay.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify

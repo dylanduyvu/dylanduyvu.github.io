@@ -81,6 +81,22 @@ tags:
 > [[computer-use-autocomplete-provider-bakeoff-2026-08-01|the provider bakeoff
 > result]].
 
+> [!note] 2026-08-01 attempt 000002 preregistration
+> Attempt `000002` adds a direct Anthropic Messages API adapter and does not
+> rewrite or silently replace `000001`. The CLI and Codex arms are not rerun.
+> The direct arm uses the exact five frozen `000001` packets, unchanged
+> predictor instruction, unchanged local response validator, five-second
+> deadline, one separate cold call, and five counted warm calls. It is pinned
+> to `claude-haiku-4-5-20251001`, one user turn, `max_tokens: 1024`, and
+> `output_config.format` structured output. The request body contains no
+> `tools` field; authority is asserted from the exact request body rather than
+> a CLI startup stream. Anthropic-unsupported scalar schema constraints are
+> omitted only from the API generation grammar and remain enforced by the
+> unchanged local validator; both hashes are recorded. The bar remains `5/5`
+> valid warm calls, p50 at or below `2,500 ms`, acknowledged cancellation, and
+> deadline enforcement. Codex repair and the overlay stay blocked unless this
+> arm passes.
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,
@@ -464,7 +480,8 @@ invalidates the epoch and disarms the pill.
 
 ### 5. Proposal-provider interface
 
-Codex app-server and Claude Code headless implement the same contract:
+Codex app-server, Claude Code headless, and the direct Anthropic Messages API
+adapter implement the same contract:
 
 ```text
 propose(packet) -> ranked candidates | ABSTAIN

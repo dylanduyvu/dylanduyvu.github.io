@@ -125,6 +125,31 @@ metadata packets. A provider still needs `5/5` valid warm calls and p50 at or
 below `2.5 seconds`; if both pass, choose the faster one, with an exact timing
 tie going to Claude's structural tool exclusion.
 
+## Attempt 000002 preregistration
+
+This section supersedes the prior next-move sequence for attempt `000002`, but
+does not alter attempt `000001`.
+
+- The immutable `000001` inventory contains no Claude raw stdout or stderr.
+  Therefore the exact response predicate cannot be recovered without a new
+  call. All five warm calls returned before deadline, attempted no tools, and
+  collapsed to `authority_failed`; schema drift is plausible but unproven.
+- Add `anthropic-messages-api` as a third adapter. It calls the fixed Anthropic
+  Messages endpoint directly, pins `claude-haiku-4-5-20251001`, reads its key
+  only from private `provider.env`, and uses no tool field.
+- Authority is verified from the exact request body: one user turn, bounded
+  `max_tokens: 1024`, structured output, fixed model/API version, and no tools.
+- Reuse the exact five `000001` packets, prompt, canonical validator, and
+  five-second deadline. The API generation schema preserves the same exact
+  candidate-or-abstention structure; unsupported scalar constraints remain in
+  the local validator, and both schema hashes are recorded.
+- Record one cold call separately and count five warm calls. The unchanged gate
+  is `5/5` valid, warm p50 <= `2,500 ms`, acknowledged cancellation, and passing
+  deadline enforcement.
+- Run only the direct arm in `000002`. Codex repair is deferred. If the direct
+  arm fails, selection remains null. No overlay work starts either way without
+  a passing provider.
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
