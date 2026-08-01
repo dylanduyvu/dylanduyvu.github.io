@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-22
-updated: 2026-07-30
+updated: 2026-08-01
 aliases:
   - Personal AI Context Learning
   - Niyant's personal-AI thesis
@@ -43,6 +43,18 @@ tags:
 > V1 brainstorm and scope]] and
 > [[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what
 > a first navigation autocomplete still needs]].
+
+> [!failure] V0 exact Codex-task blocker, 2026-08-01
+> The selected Haiku proposal provider passed, but the next load-bearing probe
+> did not. Codex desktop exposes public thread list/read, completion events, and
+> a registered deep link, yet no approved public surface identifies the exact
+> task currently selected in the desktop UI. Manifest
+> `3405bf06476d2132fee2d62e15877412a7cb3cc50068c131e882c7f3811bfe5f`
+> freezes `active_task_unavailable`. The build stops before the Tab/pill rather
+> than silently downgrading the V5-proven named-task behavior to generic app
+> activation. See
+> [[computer-use-autocomplete-task-5-codex-identity-probe-2026-08-01|the Task 5
+> probe result]].
 
 ## Current State
 

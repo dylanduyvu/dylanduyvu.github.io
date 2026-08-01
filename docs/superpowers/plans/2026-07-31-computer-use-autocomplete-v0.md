@@ -260,9 +260,35 @@ Direct Anthropic Haiku is selected: cold valid, warm validity `5/5`, warm p50
 failures. Task 5 is unlocked. Two individual warm calls exceeded 2.5 seconds,
 so retain tail latency as a habit-week risk despite the passing p50 gate.
 
-- The implementation repository does not yet exist. Its fresh directory is the
-  isolated workspace; initialize `main`, make one bootstrap commit, then do all
-  feature work on `codex/v0`. Do not reuse or modify
+### 2026-08-01 prompt-caching transport amendment
+
+After provider selection, implementation commit `79384fa` adds top-level
+automatic Anthropic caching with the default five-minute ephemeral policy.
+This changes only request transport configuration; it does not change or reopen
+the selected provider, model, prompt, output schema, local validator, tool
+boundary, or immutable attempt `000007`. Haiku 4.5 requires at least 4,096
+cacheable input tokens. The qualification packets were below that threshold,
+so cache creation/read may remain zero until live history packets grow. Claim
+no latency benefit without nonzero API cache-usage fields.
+
+### 2026-08-01 Task 5 outcome
+
+Task 5 froze and independently verified as FAIL under private attempt
+`codex/attempts/000001`, manifest
+`3405bf06476d2132fee2d62e15877412a7cb3cc50068c131e882c7f3811bfe5f`,
+bound to implementation commit `4a1a211dfac36eaa402049b09cc5deb021a77aea`.
+The registered `codex://` handler, app-server thread list/read protocol, and
+`turn/completed` event all exist. Exact active desktop-task identity does not:
+even after opening the exact current thread route and making Codex frontmost,
+AppleScript reports zero scriptable windows; the generic macOS window has no
+document URL; and app-server thread enumeration does not reveal the desktop
+selection. Exact focus-and-reread was therefore not attempted. Stop before
+Task 6. Do not substitute generic Codex activation or add Electron/private-state,
+arbitrary-UI, or coordinate infrastructure under this plan.
+
+- The isolated implementation repository now exists at
+  `/Users/dylanvu/Projects/computer-use-autocomplete` on `codex/v0`. Preserve
+  its immutable provider and Codex-probe commits; do not reuse or modify
   `/Users/dylanvu/Projects/computer-use-nap`.
 - Runtime data is private and unversioned under
   `/Users/dylanvu/Library/Application Support/ComputerUseAutocompleteV0/`.

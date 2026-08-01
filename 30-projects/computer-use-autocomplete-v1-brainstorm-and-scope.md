@@ -899,6 +899,18 @@ No additional product-scoping questions are required before the design step.
 Write one concise integrated design around this contract, then move to the
 implementation plan only after review.
 
+### August 1 implementation finding
+
+The exact Codex-task feasibility probe failed. The app exposes thread
+list/read, completion events, and an exact registered deep link, but no approved
+public surface exposes which thread is active in the desktop UI, so the route
+cannot be reread and verified after focus. The V0 plan stops before the Tab
+gate/pill rather than replacing `focus_codex_task` with generic Codex
+activation. See
+[[computer-use-autocomplete-task-5-codex-identity-probe-2026-08-01|The Codex
+desktop app does not expose exact active-task identity through the approved
+public surfaces]].
+
 ## Questions for computer-use model research
 
 - Which existing products and models—including the Induction Labs lead Dylan

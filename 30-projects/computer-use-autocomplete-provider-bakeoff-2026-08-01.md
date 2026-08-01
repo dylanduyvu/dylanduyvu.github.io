@@ -336,9 +336,25 @@ The provider gate is now passed and Task 5 is unlocked. Two individual calls
 exceeded 2.5 seconds, so tail latency remains a product risk to observe during
 the habit week even though the preregistered p50 gate passed.
 
+## Post-selection prompt-caching amendment
+
+Implementation commit `79384fa` adds top-level automatic Anthropic prompt
+caching with the default five-minute ephemeral policy. This is a transport-only
+change: provider, model, prompt, output schema, local validator, tool boundary,
+and frozen `000007` selection remain unchanged, so the bakeoff was not rerun or
+reinterpreted.
+
+Anthropic currently requires at least 4,096 cacheable input tokens for Haiku
+4.5. The five qualification packets were smaller, so zero cache creation/read
+on those packets would be expected. Live packets approaching the 100-event
+history cap may become eligible; cache usage fields must confirm an actual hit
+before any latency or cost benefit is claimed. See [Anthropic prompt-caching
+documentation](https://platform.claude.com/docs/en/build-with-claude/prompt-caching).
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 - [[2026-07-31-computer-use-autocomplete-v0|Computer-use autocomplete V0 implementation plan]]
 - [[computer-use-autocomplete-runtime-decision-audit-2026-07-30|Computer-use autocomplete runtime decision audit]]
 - [[personal-ai-context-learning|Personal AI context learning]]
+- [[computer-use-autocomplete-task-5-codex-identity-probe-2026-08-01|Task 5 Codex identity probe]]

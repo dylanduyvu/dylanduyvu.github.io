@@ -185,6 +185,21 @@ tags:
 > Task 5 is unlocked. Two warm calls exceeded 2.5 seconds individually, so tail
 > latency remains a habit-week risk even though the frozen p50 gate passed.
 
+> [!failure] 2026-08-01 Task 5 exact Codex identity result
+> Task 5 froze and verified as FAIL under manifest
+> `3405bf06476d2132fee2d62e15877412a7cb3cc50068c131e882c7f3811bfe5f`.
+> The installed app registers `codex://`; its public app-server exposes thread
+> list/read and `turn/completed`; and its AppleScript dictionary declares active
+> tab URL/title. But a visible, frontmost task window still exposes zero
+> scriptable windows, and the generic macOS window has no document URL. The
+> app-server cannot identify which thread the desktop UI selected. Exact active
+> task identity is therefore unavailable, exact focus-and-reread was not
+> attempted, and the plan stops before the Tab gate/pill. No generic activation,
+> Electron/private-state access, arbitrary UI traversal, or coordinate fallback
+> is permitted. See
+> [[computer-use-autocomplete-task-5-codex-identity-probe-2026-08-01|the Task 5
+> probe result]].
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,
