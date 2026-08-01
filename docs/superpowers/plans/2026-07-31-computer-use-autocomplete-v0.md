@@ -223,6 +223,15 @@ checks passed. Task 5 remains blocked. Before rerunning, add a metadata-safe
 closed local-validation subpredicate rather than normalizing around an inferred
 cause.
 
+#### Attempt 000005 diagnostic amendment
+
+Keep every provider input and gate from `000004` unchanged. Refine only the
+sanitized post-validation failure predicate to
+`abstention_text_bound`, `candidate_cardinality`, or fallback
+`candidate_schema`, with no response text or payload values retained. Run the
+same immutable schedule once. This attempt diagnoses response reliability; it
+does not unlock Task 5 or authorize normalization by itself.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify

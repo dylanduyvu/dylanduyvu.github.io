@@ -268,6 +268,22 @@ credential binding, authority, or speed. Task 5 and the overlay remain locked.
 Before any rerun, add a metadata-safe closed local-validation subpredicate so a
 future failure names its actual cause; do not normalize around an inference.
 
+## Attempt 000005 preregistration
+
+Attempt `000005` changes only sanitized failure classification after the
+unchanged local validator rejects a response:
+
+- `abstention_text_bound`: zero candidates and an abstention reason beyond the
+  existing 256-character bound;
+- `candidate_cardinality`: candidate count is neither zero nor three; or
+- `candidate_schema`: every other local contract failure.
+
+No response text, identifier, length, or payload value is retained. Packets,
+prompt, generation schema, local validator, Haiku model, timing, lifecycle
+checks, and `5/5` selection gate remain exactly as in `000004`. Run the frozen
+schedule once. This diagnostic result cannot unlock Task 5 or justify
+normalization by itself.
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]

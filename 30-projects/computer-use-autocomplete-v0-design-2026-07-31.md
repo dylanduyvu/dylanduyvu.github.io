@@ -155,6 +155,13 @@ tags:
 > a metadata-safe validation subpredicate identifies the cause and a new frozen
 > attempt passes.
 
+> [!note] 2026-08-01 attempt 000005 diagnostic amendment
+> Keep the predictor and gate unchanged. Refine only metadata-safe local failure
+> evidence into `abstention_text_bound`, `candidate_cardinality`, or fallback
+> `candidate_schema`; retain no response text or payload values. Rerun the same
+> five packets once. The result is diagnostic and cannot unlock Task 5 by
+> itself.
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,
