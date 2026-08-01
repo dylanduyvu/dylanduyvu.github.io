@@ -211,6 +211,18 @@ with the same model, prompt, one cold/five warm schedule, no-tools body,
 five-second deadline, lifecycle checks, and `5/5` plus p50 gate. Task 5 remains
 blocked unless the immutable attempt passes.
 
+#### Attempt 000004 outcome
+
+The attempt froze and verified under manifest
+`1766f22c47093c421f1f8682d04275a0e88f8cfcb4627f8462a69da05155d698`.
+The direct arm failed selection at `3/5` valid warm calls. Warm indices `0` and
+`1` failed with sanitized predicate `candidate_schema`; no counted raw response
+was frozen, so the exact local subpredicate is unknown. Warm p50 passed at
+`1,910.02 ms`, tool invocation was `0/5`, and cancellation plus forced-deadline
+checks passed. Task 5 remains blocked. Before rerunning, add a metadata-safe
+closed local-validation subpredicate rather than normalizing around an inferred
+cause.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify

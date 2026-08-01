@@ -145,6 +145,16 @@ tags:
 > checks, and `5/5` plus `2,500 ms` gate. No overlay work begins unless it
 > passes.
 
+> [!failure] 2026-08-01 attempt 000004 result
+> The corrected direct Anthropic arm froze and verified but did not qualify:
+> `3/5` warm calls were locally valid, versus the required `5/5`. Warm p50
+> passed at `1,910.02 ms`; tool use was `0/5`; cancellation and forced-deadline
+> checks passed. Two calls failed only as `candidate_schema`, and counted raw
+> responses were not frozen, so the exact subpredicate is unknown. The blocker
+> is response-format reliability at usable latency. Task 5 remains locked until
+> a metadata-safe validation subpredicate identifies the cause and a new frozen
+> attempt passes.
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,

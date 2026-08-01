@@ -247,6 +247,27 @@ preflight defects. It does not reinterpret or overwrite `000001`-`000003`.
   acknowledged lifecycle checks, and warm p50 at or below `2,500 ms`.
 - No Task 5 or overlay work begins unless the frozen attempt passes.
 
+## Attempt 000004 result
+
+Attempt `000004` is frozen and verified under manifest
+`1766f22c47093c421f1f8682d04275a0e88f8cfcb4627f8462a69da05155d698`,
+bound to source commit `f416902d40b69c1a2581b9a34b75d8bc25fe99ac`.
+
+- Result: no provider selected; the strict `5/5` validity gate failed at `3/5`.
+- Warm calls `0` and `1` failed with sanitized predicate `candidate_schema`.
+  Their exact subpredicate is not recoverable because counted raw responses
+  were not frozen. A non-counted preflight showed overlong abstention text can
+  cause the same predicate, but that does not prove the counted failure cause.
+- Latency passed: cold was valid at `1,936.49 ms`; warm p50 was `1,910.02 ms`
+  across `2,132.64`, `2,122.35`, `1,910.02`, `1,545.39`, and `1,739.82 ms`.
+- Authority and lifecycle passed: `0/5` tool calls, cancellation acknowledged,
+  and forced-deadline enforcement acknowledged.
+
+The blocker is now response-format reliability at usable latency—not billing,
+credential binding, authority, or speed. Task 5 and the overlay remain locked.
+Before any rerun, add a metadata-safe closed local-validation subpredicate so a
+future failure names its actual cause; do not normalize around an inference.
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
