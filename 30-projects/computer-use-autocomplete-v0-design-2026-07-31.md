@@ -112,6 +112,16 @@ tags:
 > [[computer-use-autocomplete-provider-bakeoff-2026-08-01|the provider bakeoff
 > result]].
 
+> [!bug] 2026-08-01 credential-selection correction
+> The `000002`/`000003` run did not use either key Dylan supplied. A temporary
+> loader silently selected an unrelated key from `~/.codex/history.jsonl`.
+> Console inspection showed the intended workspace, credits, spend limit, and
+> rate limits were healthy, and the exact plain Messages request returned HTTP
+> `200` with the intended new key. Preserve the frozen failure, but do not use
+> it as evidence about Anthropic billing, Haiku latency, or direct-provider
+> validity. A new attempt must bind the exact credential through private
+> `provider.env`; Task 5 and the overlay remain blocked until it passes.
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,

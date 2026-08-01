@@ -192,6 +192,27 @@ spend-capped key because the pasted key is compromised, and teach the adapter
 to retain a sanitized API error category so billing failures do not require a
 second request. Run the same frozen five-packet protocol as a new attempt.
 
+### 2026-08-01 credential-selection correction
+
+The billing interpretation above is superseded. A read-only Console audit
+showed that the intended keys, active API credits, workspace, spend limit, and
+rate limits were all aligned. The exact plain Messages request then succeeded
+with HTTP `200` when the intended newly created key was selected explicitly.
+
+The failed qualification had not used either key Dylan supplied. Its temporary
+credential loader searched `~/.codex/history.jsonl` and silently selected an
+unrelated pre-existing local key. Therefore attempt `000003` accurately
+preserves the observed HTTP `400` responses, but it is not evidence about
+Dylan's Anthropic account, the intended key, Haiku latency, or direct-provider
+validity. The conservative null selection remains correct; the claimed billing
+root cause does not.
+
+The next attempt must bind the exact intended credential through private
+`provider.env` and verify the selected credential identity locally without
+printing, hashing, or storing its bytes. Then rerun the unchanged five-packet
+qualification as a new immutable attempt. No overlay work starts before that
+run passes.
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]

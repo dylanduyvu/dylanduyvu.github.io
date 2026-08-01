@@ -177,6 +177,17 @@ bound to implementation commit `b93e419cc40cbce2be0bacfcbaa1d7672c38e453`.
 The stop condition remains active: no Task 5 or overlay work until a fresh
 credited-key attempt passes the unchanged gate.
 
+#### Credential-selection correction
+
+The failed run did not use either key Dylan supplied. Its temporary loader
+selected an unrelated pre-existing key from `~/.codex/history.jsonl`. A
+read-only Console audit showed the intended account/workspace and limits were
+healthy, and the exact plain Messages request succeeded with HTTP `200` when
+the intended new key was selected explicitly. Preserve `000002`/`000003`, but
+do not treat them as evidence about Anthropic billing, Haiku latency, or the
+direct adapter. The next immutable attempt must use exact private
+`provider.env` credential binding and the unchanged five-packet qualification.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify
