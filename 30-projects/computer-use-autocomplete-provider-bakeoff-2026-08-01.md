@@ -319,6 +319,23 @@ the decision to abstain remain untouched. Packets, prompt, schemas, model,
 timing, lifecycle checks, and strict `5/5` gate remain unchanged. Only a full
 pass may unlock Task 5.
 
+## Attempt 000007 result
+
+Attempt `000007` froze and verified PASS under manifest
+`0180952b88c5d83959bbf196eb873214df08a98c900e82e00139841c49038b2f`,
+bound to source commit `b228ed3ca4bf0eaf2c46682a0bcea34137becdd6`.
+
+- Selected provider: `anthropic-messages-api` on pinned Haiku 4.5.
+- Validity: cold valid and `5/5` warm calls valid; no failures.
+- Latency: cold `1,521.35 ms`; warm calls `3,555.16`, `1,988.45`, `1,915.48`,
+  `2,045.63`, and `2,721.66 ms`; passing p50 `2,045.63 ms`.
+- Authority: `0/5` tool calls.
+- Lifecycle: cancellation and forced-deadline enforcement both acknowledged.
+
+The provider gate is now passed and Task 5 is unlocked. Two individual calls
+exceeded 2.5 seconds, so tail latency remains a product risk to observe during
+the habit week even though the preregistered p50 gate passed.
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]

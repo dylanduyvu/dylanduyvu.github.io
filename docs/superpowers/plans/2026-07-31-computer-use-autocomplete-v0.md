@@ -251,6 +251,15 @@ explanation to the existing 256-character bound before unchanged local
 validation. It does not change the abstention decision or any candidate field.
 The same strict gate remains.
 
+#### Attempt 000007 outcome
+
+Attempt `000007` froze and verified PASS under manifest
+`0180952b88c5d83959bbf196eb873214df08a98c900e82e00139841c49038b2f`.
+Direct Anthropic Haiku is selected: cold valid, warm validity `5/5`, warm p50
+`2,045.63 ms`, tool invocation `0/5`, both lifecycle checks passing, and no
+failures. Task 5 is unlocked. Two individual warm calls exceeded 2.5 seconds,
+so retain tail latency as a habit-week risk despite the passing p50 gate.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify

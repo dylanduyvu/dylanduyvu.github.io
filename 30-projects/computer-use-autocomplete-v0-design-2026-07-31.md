@@ -177,6 +177,14 @@ tags:
 > 256-character interface bound. The abstention decision and all candidate
 > fields remain untouched; Task 5 still requires a strict `5/5` pass.
 
+> [!success] 2026-08-01 attempt 000007 passed
+> Direct Anthropic Haiku is selected. Cold was valid; all `5/5` warm calls were
+> valid; warm p50 was `2,045.63 ms`; tool use was `0/5`; both lifecycle checks
+> passed; and there were no failures. Frozen manifest:
+> `0180952b88c5d83959bbf196eb873214df08a98c900e82e00139841c49038b2f`.
+> Task 5 is unlocked. Two warm calls exceeded 2.5 seconds individually, so tail
+> latency remains a habit-week risk even though the frozen p50 gate passed.
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,
