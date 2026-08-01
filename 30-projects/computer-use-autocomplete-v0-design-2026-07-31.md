@@ -231,6 +231,17 @@ tags:
 > Pre-trial reservation `000001` was aborted before any send after its
 > arm-before-send wording was rejected. It has no manifest and is not evidence.
 
+> [!failure] 2026-08-01 Codex event-visibility gate failed 0/3
+> Attempt `codex-activity/000002` attached the planned sessionless standalone
+> app-server listener. Dylan manually sent a short message in three distinct
+> existing Codex tasks; probe code remained passive. No trial produced an
+> observable task event. Every trial froze `event_not_observed`, null event kind
+> and latency, false thread-ID match, and zero provider/cache calls. Manifest:
+> `3cf152c8aa6e68dbae7417106bbbfc38433230e62b8eaf8ffa9eb55846085461`.
+> Task 6 remains blocked pending an architecture decision. Do not add a title
+> join or generic Codex activation fallback. See
+> [[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|the event-visibility finding]].
+
 Metadata-only packets retain the focused app/window identity, an exact Codex task
 only when the short activity-derived buffer currently knows one,
 focused accessibility role, and up to five privacy-allowed currently open

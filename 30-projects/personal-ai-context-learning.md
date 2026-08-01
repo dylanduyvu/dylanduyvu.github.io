@@ -56,15 +56,15 @@ tags:
 > [[computer-use-autocomplete-task-5-codex-identity-probe-2026-08-01|the Task 5
 > probe result]].
 
-> [!success] V0 activity-derived Codex amendment, 2026-08-01
+> [!failure] V0 activity-derived Codex event bridge failed, 2026-08-01
 > A public-AX follow-up found the selected title and proved exact deep-link
 > routing, but two immutable attempts still could not make the title-to-ID join
-> reliable enough for exact verification. The build no longer stops there: it
-> keeps exact IDs for product-owned routes, records frontmost Codex as
-> `observed_partial`, uses qualifying observable task activity for exact
-> corroboration, and reports exact-task versus app-only outcomes separately.
-> Generic Codex activation is still forbidden. Task 6 may proceed under this
-> narrower contract.
+> reliable enough for exact verification. The activity-derived fallback then
+> failed its blocking test: a sessionless standalone app-server listener saw
+> none of three desktop-originated sends. Manifest
+> `3cf152c8aa6e68dbae7417106bbbfc38433230e62b8eaf8ffa9eb55846085461`
+> freezes `event_not_observed` in 3/3 trials. Generic Codex activation and title
+> joins remain forbidden, so Task 6 is blocked pending an architecture choice.
 
 ## Current State
 
@@ -86,10 +86,11 @@ executor produces a habit-forming interaction.
 
 As of August 1, the metadata-only observer and packet foundation is ready and
 direct Anthropic Haiku has passed the provider gate. Exact current Codex-task
-reading remains unreliable, but the activity-derived amendment preserves exact
-routing without blocking the habit shell. The next implementation step is the
-physical Tab gate and suggestion pill, preceded by one narrow check of which
-normal desktop task events are actually observable for exact corroboration.
+reading remains unreliable, and the planned activity-derived bridge failed:
+the standalone listener observed `0/3` desktop-originated sends. The physical
+Tab gate and suggestion pill are not the next implementation step. The project
+now needs an explicit identity/telemetry architecture decision. See
+[[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|the frozen event-visibility finding]].
 
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,

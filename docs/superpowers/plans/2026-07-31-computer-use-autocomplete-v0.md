@@ -1366,7 +1366,7 @@ hash; the aggregate verifier rejects different packet sets across providers.
   stop is failure to dispatch the exact route or establish frontmost Codex as
   partial endpoint evidence.
 
-- [ ] **Step 8: Run the frozen desktop event-visibility probe**
+- [x] **Step 8: Run the frozen desktop event-visibility probe**
 
   ```bash
   node src/cli.mjs probe codex-activity --trials 3
@@ -1380,13 +1380,23 @@ hash; the aggregate verifier rejects different packet sets across providers.
   frozen manifest. Only 3/3 correct thread-ID events whose receive latency from
   app-server `turn.startedAt` is within 30 seconds pass.
 
-- [ ] **Step 9: Apply the event-visibility stop condition**
+- [x] **Step 9: Apply the event-visibility stop condition**
 
   On 3/3 PASS, proceed directly to Task 6. On 0/3 or any partial result, freeze
   FAIL and stop before Task 6 for an architecture decision. Do not repair with
   title joins, generic Codex activation, or another informal retry.
 
+  **Frozen result:** FAIL, `0/3`. The sessionless standalone listener attached,
+  but all three distinct desktop-originated sends froze `event_not_observed`.
+  Manifest:
+  `3cf152c8aa6e68dbae7417106bbbfc38433230e62b8eaf8ffa9eb55846085461`,
+  source commit `561ab6d1a914a7ede2cb42a7e6c6887fa6b3d4cb`. Standard verification passed.
+  Stop here for an architecture decision.
+
 ### Task 6: Prove the local Tab gate and secret fail-closed behavior
+
+> **BLOCKED:** Do not begin this task. The frozen Codex event-visibility gate
+> failed `0/3`; no title-join or generic-activation fallback is authorized.
 
 **Files:**
 

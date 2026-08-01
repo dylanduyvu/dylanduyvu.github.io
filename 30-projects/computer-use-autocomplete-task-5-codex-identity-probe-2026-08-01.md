@@ -1,6 +1,6 @@
 ---
 type: project
-status: superseded
+status: blocked
 created: 2026-08-01
 updated: 2026-08-01
 projects:
@@ -18,7 +18,16 @@ tags:
 
 # The Codex desktop app does not expose exact active-task identity through the approved public surfaces
 
-> [!success] Activity-derived V0 amendment, 2026-08-01
+> [!failure] Activity-derived event bridge failed, 2026-08-01
+> The frozen desktop event-visibility probe attached the planned sessionless
+> standalone app-server listener, then Dylan manually sent messages in three
+> distinct existing tasks. The listener observed no task event in 3/3 trials.
+> Attempt `codex-activity/000002` froze `event_not_observed` under manifest
+> `3cf152c8aa6e68dbae7417106bbbfc38433230e62b8eaf8ffa9eb55846085461`
+> and independently verified. Task 6 is blocked. No title join or generic
+> activation fallback is authorized.
+
+> [!warning] Historical activity-derived V0 amendment, superseded
 > The original exact-read blocker remains valid, but its decision to stop the
 > whole V0 is superseded. A bounded AX spike proved that Codex exposes the
 > selected task title through its public macOS Accessibility tree and that an
@@ -32,7 +41,29 @@ tags:
 > dispatch targets and qualifying app-server task activity; immediate endpoint
 > verification is `observed_partial` when Codex is frontmost; exact-task and
 > app-only labels are reported separately. Generic Codex activation remains
-> forbidden. Task 6 may proceed under this amended contract.
+> forbidden. The subsequent blocking event probe failed, so this amendment did
+> not unlock Task 6.
+
+## Desktop event-visibility result
+
+The activity-derived fallback froze and independently verified as **FAIL**.
+
+- Private attempt: `codex-activity/attempts/000002`
+- Manifest SHA-256: `3cf152c8aa6e68dbae7417106bbbfc38433230e62b8eaf8ffa9eb55846085461`
+- Bound implementation commit: `561ab6d1a914a7ede2cb42a7e6c6887fa6b3d4cb`
+- Result: `0/3` visible desktop-originated task events
+- Closed reason in every trial: `event_not_observed`
+
+The listener attached successfully and started no session or turn. Dylan—not
+probe code—manually focused three distinct existing tasks, typed a short
+composer message in each, and sent it. Every trial recorded null event kind and
+latency, false thread-ID match, and zero provider/cache calls. The probe never
+focused, typed, clicked, submitted, or otherwise drove the UI.
+
+This failure is narrower than “Codex has no events.” It establishes that the
+planned separately spawned, sessionless listener did not receive events from
+the desktop app's sessions. It does not rule out a future supported shared
+desktop event surface.
 
 ## Result
 
@@ -121,9 +152,14 @@ flaky title join is exact verification. Read-only task visits are the degraded
 case; task returns followed by observable activity retain exact identity when
 the event surface supplies it.
 
+The frozen event-visibility result shows that the planned listener does not
+supply that activity. The implementation therefore stops before Task 6 pending
+an explicit architecture decision.
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 - [[computer-use-autocomplete-provider-bakeoff-2026-08-01|Computer-use autocomplete provider bakeoff]]
 - [[2026-07-31-computer-use-autocomplete-v0|Computer-use autocomplete V0 implementation plan]]
 - [[personal-ai-context-learning|Personal AI context learning]]
+- [[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|A standalone Codex app-server listener cannot observe desktop-originated task events]]

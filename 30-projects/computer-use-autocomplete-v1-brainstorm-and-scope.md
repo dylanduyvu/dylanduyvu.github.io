@@ -919,8 +919,11 @@ IDs for product-owned dispatches, verify immediate arrival as
 `observed_partial` when Codex is frontmost, and promote identity only when a
 qualifying observable task event corroborates it. Manual/read-only visits stay
 app-level, exact-task and app-only labels are separate strata, and generic
-Codex activation remains forbidden. This is enough to proceed to the Tab gate
-without pretending the exact-read problem was solved.
+Codex activation remains forbidden. The subsequent frozen event-visibility
+probe showed that the planned standalone listener observed none of three
+desktop-originated sends. Task 6 therefore remains blocked; the activity-derived
+amendment did not restore an exact-task signal. See
+[[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|the event-visibility finding]].
 
 ## Questions for computer-use model research
 
