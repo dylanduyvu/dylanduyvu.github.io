@@ -228,6 +228,10 @@ preflight defects. It does not reinterpret or overwrite `000001`-`000003`.
   scalar constraints. The canonical prompt, candidate-versus-abstention schema,
   and local validator remain unchanged and authoritative. Both schema hashes
   remain frozen evidence.
+- The first corrected-adapter preflight remained non-counted and exposed one
+  additional documented generation constraint: Anthropic rejects
+  `minItems: 3`. The generation projection therefore omits `minItems`; the
+  unchanged local validator still requires exactly three candidates.
 - Attempt `000004` reuses the exact five `000001` packets, pinned Haiku 4.5
   model, one-user-turn/no-tools request body, one cold call, five counted warm
   calls, five-second deadline, cancellation probe, and forced-deadline probe.

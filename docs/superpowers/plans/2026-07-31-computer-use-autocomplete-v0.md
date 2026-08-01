@@ -196,7 +196,10 @@ Messages request succeeded with HTTP `200`. A non-counted production-adapter
 preflight then isolated the remaining failure to Anthropic's rejection of JSON
 Schema keyword `oneOf`. Project the API generation schema recursively from
 `oneOf` to supported `anyOf`; keep the canonical local schema and validator
-unchanged and freeze both hashes. Run attempt `000004` on the same five packets
+unchanged and freeze both hashes. The first corrected-adapter preflight then
+exposed Anthropic's `minItems: 3` restriction; omit `minItems` only from the
+generation projection and retain exact cardinality in local validation. Run
+attempt `000004` on the same five packets
 with the same model, prompt, one cold/five warm schedule, no-tools body,
 five-second deadline, lifecycle checks, and `5/5` plus p50 gate. Task 5 remains
 blocked unless the immutable attempt passes.
