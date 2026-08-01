@@ -97,6 +97,21 @@ tags:
 > deadline enforcement. Codex repair and the overlay stay blocked unless this
 > arm passes.
 
+> [!failure] 2026-08-01 attempt 000002 result
+> The direct Anthropic arm returned `0/5` valid warm calls and selected no
+> provider. All six counted/diagnostic bakeoff calls failed immediately with
+> `http_400`; a separate non-counted diagnostic request identified the exact
+> cause as insufficient Anthropic API credit. Warm p50 was `174.58 ms`, but it
+> measures rejection latency rather than model inference. The live result was
+> written under attempt `000002`; an overly strict manifest trial schema then
+> rejected the runner's `authority_failed` status. No model call was repeated.
+> The exact result and failure provenance were frozen and verified in salvage
+> attempt `000003`, manifest
+> `ee475d552cb98838ac67987428e055a7ee83a9f6c66fc675fe4e45f84b3271e9`.
+> Task 5 and the overlay remain blocked. See
+> [[computer-use-autocomplete-provider-bakeoff-2026-08-01|the provider bakeoff
+> result]].
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,

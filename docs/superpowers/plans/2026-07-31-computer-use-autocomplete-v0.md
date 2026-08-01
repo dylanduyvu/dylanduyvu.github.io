@@ -158,6 +158,25 @@ immutable attempt `000001`; do not reinterpret it as a direct-API result.
 5. Commit this amendment before any live call. Deprioritize Codex authority
    repair, keep every stop condition, and do not begin Task 5 or the overlay.
 
+### 2026-08-01 provider attempt 000002 outcome
+
+The direct arm ran on the exact five frozen packets and selected no provider.
+Cold plus all five warm requests returned `http_400`; one separate non-counted
+diagnostic request established that Anthropic rejected the account for
+insufficient API credit. Counted warm validity was `0/5`; the `174.58 ms` warm
+p50 is rejection latency and is not a model-latency result. Tool invocation
+rate was `0/5`, and both lifecycle checks passed.
+
+The live qualification artifact was written under attempt `000002`, but its
+manifest freeze failed because the orchestration trial schema expected `fail`
+instead of the generic runner's closed `authority_failed` status. The calls
+were not repeated. The exact artifact and failure provenance were frozen and
+verified as salvage attempt `000003`, manifest
+`ee475d552cb98838ac67987428e055a7ee83a9f6c66fc675fe4e45f84b3271e9`,
+bound to implementation commit `b93e419cc40cbce2be0bacfcbaa1d7672c38e453`.
+The stop condition remains active: no Task 5 or overlay work until a fresh
+credited-key attempt passes the unchanged gate.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify

@@ -150,6 +150,48 @@ does not alter attempt `000001`.
   arm fails, selection remains null. No overlay work starts either way without
   a passing provider.
 
+## Attempt 000002 direct-API result
+
+The direct arm did not qualify. This was an account-billing failure, not a
+model-quality, schema, authority, or latency result.
+
+- Provider: `anthropic-messages-api`
+- Model: `claude-haiku-4-5-20251001`
+- Selected provider: none
+- Counted warm validity: `0/5`
+- Cold latency: `231.83 ms`
+- Warm latencies: `143.74`, `174.58`, `124.57`, `211.45`, and `188.88 ms`
+- Warm p50: `174.58 ms`
+- Tool invocation rate: `0/5`
+- Cancellation acknowledgement: pass
+- Forced-deadline acknowledgement: pass
+- Every cold and warm request failed with sanitized predicate `http_400`.
+- One separate, non-counted diagnostic request returned Anthropic
+  `invalid_request_error`: the API credit balance was too low.
+
+The sub-250 ms timings measure fast rejection, not Haiku inference. They cannot
+be used as provider-latency evidence.
+
+The live calls wrote their canonical qualification artifact in private attempt
+`000002`, but the manifest freeze then rejected an overly strict orchestration
+schema: it expected the measurement status string `fail`, while the generic
+runner correctly emitted the more specific closed status `authority_failed`.
+No model call was repeated. The exact result artifact was copied with its hash
+and failure provenance into private salvage attempt `000003`, then frozen and
+independently verified.
+
+- Frozen salvage attempt: `providers/attempts/000003`
+- Manifest SHA-256: `ee475d552cb98838ac67987428e055a7ee83a9f6c66fc675fe4e45f84b3271e9`
+- Bound implementation commit: `b93e419cc40cbce2be0bacfcbaa1d7672c38e453`
+- Live attempt `000002` remains preserved as an incomplete attempt directory;
+  it was not deleted, rewritten, or presented as a valid frozen manifest.
+
+The stop condition remains in force: do not build Task 5 or the overlay. Before
+a new qualification attempt, add Anthropic API credit, create a new dedicated
+spend-capped key because the pasted key is compromised, and teach the adapter
+to retain a sanitized API error category so billing failures do not require a
+second request. Run the same frozen five-packet protocol as a new attempt.
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
