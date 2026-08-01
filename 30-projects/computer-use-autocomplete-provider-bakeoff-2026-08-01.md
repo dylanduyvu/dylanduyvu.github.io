@@ -233,6 +233,9 @@ preflight defects. It does not reinterpret or overwrite `000001`-`000003`.
   `minItems: 3`, then rejects `maxItems`. The generation projection therefore
   omits both array-size constraints; the
   unchanged local validator still requires exactly three candidates.
+- The next non-counted response rejected tuple-form `prefixItems`; generation
+  now projects the three ranked candidate shapes to supported `items.anyOf`,
+  while the canonical local validator retains exact rank order and cardinality.
 - Attempt `000004` reuses the exact five `000001` packets, pinned Haiku 4.5
   model, one-user-turn/no-tools request body, one cold call, five counted warm
   calls, five-second deadline, cancellation probe, and forced-deadline probe.

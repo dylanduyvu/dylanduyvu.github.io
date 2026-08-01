@@ -200,7 +200,9 @@ unchanged and freeze both hashes. The first corrected-adapter preflight then
 exposed Anthropic's `minItems: 3` restriction; omit `minItems` only from the
 generation projection. The next non-counted response rejected `maxItems` too;
 omit both array-size constraints only from generation and retain exact
-cardinality in local validation. Run
+cardinality in local validation. The next non-counted response rejected
+tuple-form `prefixItems`; project the three ranked shapes to `items.anyOf` only
+for generation and retain exact rank order and count locally. Run
 attempt `000004` on the same five packets
 with the same model, prompt, one cold/five warm schedule, no-tools body,
 five-second deadline, lifecycle checks, and `5/5` plus p50 gate. Task 5 remains

@@ -134,7 +134,10 @@ tags:
 > omitted only from the generation projection. The next non-counted response
 > rejected `maxItems` as well, so both array-size constraints are omitted only
 > from generation while local validation retains
-> exact three-candidate cardinality. Attempt `000004` reuses
+> exact three-candidate cardinality. The next non-counted response rejected
+> tuple-form `prefixItems`, so generation projects the three ranked shapes to
+> supported `items.anyOf` while local validation retains rank order and count.
+> Attempt `000004` reuses
 > the same five packets, prompt, model, no-tools body, deadline, lifecycle
 > checks, and `5/5` plus `2,500 ms` gate. No overlay work begins unless it
 > passes.
