@@ -169,6 +169,14 @@ tags:
 > Attempt `000006` changes only that allowlist and reruns the same schedule once.
 > It cannot unlock Task 5 or authorize normalization by itself.
 
+> [!note] 2026-08-01 attempts 000006–000007
+> Attempt `000006` named the blocker: cold plus three warm failures were all
+> `abstention_text_bound`; no action-bearing field failed. Warm p50 passed at
+> `1,766.93 ms`, tool use was `0/5`, and lifecycle passed. Attempt `000007`
+> normalizes only an otherwise exact abstention explanation to the existing
+> 256-character interface bound. The abstention decision and all candidate
+> fields remain untouched; Task 5 still requires a strict `5/5` pass.
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,

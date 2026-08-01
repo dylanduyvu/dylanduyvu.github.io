@@ -300,6 +300,25 @@ Packets, prompt, generation schema, local validator, model, timing, lifecycle,
 and selection gate remain unchanged. Run the same schedule once, then stop
 before normalization or Task 5.
 
+## Attempt 000006 result and 000007 preregistration
+
+Attempt `000006` froze and verified under manifest
+`30f0ab101948eb140c4394626f7fa59885db2a0c64a16d27ca399c8b1858d2aa`,
+bound to source commit `5d0c554478b673351b518017bfac0ceb9d0f85af`.
+
+- Validity was `2/5`; warm p50 passed at `1,766.93 ms`.
+- Tool invocation was `0/5`; cancellation and forced-deadline checks passed.
+- Cold plus warm calls `0`, `1`, and `3` failed exactly as
+  `abstention_text_bound`.
+- No candidate, destination, rank, confidence, or action failed.
+
+Attempt `000007` may normalize only that non-decision explanation: for an
+otherwise exact abstention, keep the first 256 characters and trim trailing
+whitespace before unchanged local validation. Candidate-bearing responses and
+the decision to abstain remain untouched. Packets, prompt, schemas, model,
+timing, lifecycle checks, and strict `5/5` gate remain unchanged. Only a full
+pass may unlock Task 5.
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]

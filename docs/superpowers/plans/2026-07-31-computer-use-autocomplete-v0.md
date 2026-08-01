@@ -241,6 +241,16 @@ Attempt `000005` froze and verified but its two new predicates were reduced to
 `abstention_text_bound` and `candidate_cardinality` end to end, then reruns the
 same schedule once. No prediction input or gate changes.
 
+#### Attempt 000006 outcome and 000007 normalization
+
+Attempt `000006` proved every observed failure was
+`abstention_text_bound`: cold plus warm indices `0`, `1`, and `3`. Warm p50 was
+`1,766.93 ms`, tool use `0/5`, and lifecycle passed; no action-bearing field
+failed. Attempt `000007` truncates only an otherwise exact abstention
+explanation to the existing 256-character bound before unchanged local
+validation. It does not change the abstention decision or any candidate field.
+The same strict gate remains.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify
