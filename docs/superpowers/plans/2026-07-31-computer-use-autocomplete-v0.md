@@ -188,6 +188,19 @@ do not treat them as evidence about Anthropic billing, Haiku latency, or the
 direct adapter. The next immutable attempt must use exact private
 `provider.env` credential binding and the unchanged five-packet qualification.
 
+#### Attempt 000004 preregistration
+
+Qualification may now read the intended credential only from private
+`provider.env`; no transcript/history search is permitted. A non-counted exact
+Messages request succeeded with HTTP `200`. A non-counted production-adapter
+preflight then isolated the remaining failure to Anthropic's rejection of JSON
+Schema keyword `oneOf`. Project the API generation schema recursively from
+`oneOf` to supported `anyOf`; keep the canonical local schema and validator
+unchanged and freeze both hashes. Run attempt `000004` on the same five packets
+with the same model, prompt, one cold/five warm schedule, no-tools body,
+five-second deadline, lifecycle checks, and `5/5` plus p50 gate. Task 5 remains
+blocked unless the immutable attempt passes.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify

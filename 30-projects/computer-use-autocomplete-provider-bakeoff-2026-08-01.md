@@ -213,6 +213,28 @@ printing, hashing, or storing its bytes. Then rerun the unchanged five-packet
 qualification as a new immutable attempt. No overlay work starts before that
 run passes.
 
+## Attempt 000004 preregistration
+
+Attempt `000004` is the first eligible direct-API rerun after correcting both
+preflight defects. It does not reinterpret or overwrite `000001`-`000003`.
+
+- Production reads the intended credential only from private `provider.env`;
+  transcript/history search is forbidden during qualification.
+- A non-counted exact Sonnet request using that credential returned HTTP `200`.
+- A non-counted Haiku adapter preflight exposed the remaining incompatibility:
+  Anthropic rejects JSON Schema keyword `oneOf` in structured outputs.
+- The API generation-schema projection now recursively maps canonical `oneOf`
+  unions to Anthropic-supported `anyOf` and continues to omit only unsupported
+  scalar constraints. The canonical prompt, candidate-versus-abstention schema,
+  and local validator remain unchanged and authoritative. Both schema hashes
+  remain frozen evidence.
+- Attempt `000004` reuses the exact five `000001` packets, pinned Haiku 4.5
+  model, one-user-turn/no-tools request body, one cold call, five counted warm
+  calls, five-second deadline, cancellation probe, and forced-deadline probe.
+- Selection still requires `5/5` valid warm calls, zero tool invocations,
+  acknowledged lifecycle checks, and warm p50 at or below `2,500 ms`.
+- No Task 5 or overlay work begins unless the frozen attempt passes.
+
 ## Links
 
 - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]

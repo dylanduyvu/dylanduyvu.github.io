@@ -122,6 +122,18 @@ tags:
 > validity. A new attempt must bind the exact credential through private
 > `provider.env`; Task 5 and the overlay remain blocked until it passes.
 
+> [!note] 2026-08-01 attempt 000004 preregistration
+> The intended credential is now bound only through private `provider.env`; no
+> transcript/history search is permitted during qualification. An exact plain
+> Messages request returned HTTP `200`. The remaining adapter preflight failed
+> because Anthropic structured outputs reject `oneOf`. The API generation
+> projection therefore recursively maps canonical `oneOf` unions to supported
+> `anyOf`, while the unchanged canonical schema and local validator continue to
+> enforce the exact candidate-versus-abstention union. Attempt `000004` reuses
+> the same five packets, prompt, model, no-tools body, deadline, lifecycle
+> checks, and `5/5` plus `2,500 ms` gate. No overlay work begins unless it
+> passes.
+
 Metadata-only packets retain the focused app/window identity, exact Codex task,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,
