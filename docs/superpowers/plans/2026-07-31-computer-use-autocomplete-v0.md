@@ -332,7 +332,10 @@ stratum.
    Desktop, types a short composer message, and sends it.
 3. Pass only if 3/3 trials produce an app-server event with the correct thread
    ID within the 30-second label horizon. Record event kind, ID match, and
-   send-to-event latency.
+   send-to-event latency. For an observed event, use app-server
+   `turn.startedAt` as the send timestamp. Begin passive event buffering before
+   Dylan acts; after he confirms the send, keep observing a missing event long
+   enough to cover at least the full 30-second horizon.
 4. Freeze 0/3 or any partial result as FAIL, stop before Task 6, and surface it
    as an architecture decision. Do not fall back to title joins or generic
    activation.
@@ -345,6 +348,11 @@ present when Dylan interacts with a task, absent for read-only visits. Sparse
 exact-stratum counts in the habit trial are the design working, not model
 failure. The app-only stratum carries the rest. A 3/3 probe pass unlocks Task 6;
 all existing stop conditions remain unchanged.
+
+Probe code never drives the desktop UI. Dylan alone focuses, types, clicks, and
+sends. Pre-trial reservation `000001` was aborted before any send because its
+arm-before-send wording violated this contract; it has no manifest and is not
+evidence.
 
 - The isolated implementation repository now exists at
   `/Users/dylanvu/Projects/computer-use-autocomplete` on `codex/v0`. Preserve
@@ -1366,9 +1374,11 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
   The probe attaches the same sessionless standalone app-server listener V0
   plans to use. Select three existing tasks from the private Terminal prompt.
-  For each, arm the 30-second window, manually focus that task in Codex Desktop,
-  type a short composer message, and send it. Titles and IDs stay out of the
-  frozen manifest. Only 3/3 correct thread-ID events inside the horizon pass.
+  For each, begin passive buffering, then Dylan manually focuses that task in
+  Codex Desktop, types a short composer message, sends it, and confirms the send
+  out of band. Probe code performs no UI action. Titles and IDs stay out of the
+  frozen manifest. Only 3/3 correct thread-ID events whose receive latency from
+  app-server `turn.startedAt` is within 30 seconds pass.
 
 - [ ] **Step 9: Apply the event-visibility stop condition**
 

@@ -218,12 +218,18 @@ tags:
 > manually focus the task in Codex Desktop, type a short composer message, and
 > send it. Pass only if 3/3 desktop-originated trials produce an app-server
 > event carrying the correct thread ID within the 30-second label horizon.
+> The app-server event's `turn.startedAt` supplies the observed send timestamp;
+> the listener buffers before Dylan acts and, after Dylan confirms a send,
+> waits long enough to cover at least the full horizon when no event appears.
+> Probe code never focuses, types, clicks, submits, or otherwise drives the UI.
 > Freeze event kind, thread-ID match, latency, and whether unplanned listener
 > configuration was required; expect zero provider calls and zero cache hits.
 > A 0/3 or partial result is an architecture stop before Task 6, with no title
 > join or generic-activation fallback. Exact-task labels are expected to be
 > sparse and composer-concentrated; read-only visits remain app-only. Sparse
 > exact-stratum counts are the design working, not model failure.
+> Pre-trial reservation `000001` was aborted before any send after its
+> arm-before-send wording was rejected. It has no manifest and is not evidence.
 
 Metadata-only packets retain the focused app/window identity, an exact Codex task
 only when the short activity-derived buffer currently knows one,
