@@ -202,7 +202,10 @@ generation projection. The next non-counted response rejected `maxItems` too;
 omit both array-size constraints only from generation and retain exact
 cardinality in local validation. The next non-counted response rejected
 tuple-form `prefixItems`; project the three ranked shapes to `items.anyOf` only
-for generation and retain exact rank order and count locally. Run
+for generation and retain exact rank order and count locally. The first
+schema-accepted warm preflight returned a legitimate abstention with a
+`358`-character reason beyond the unchanged local `256`-character bound; add a
+generation-only concise-text description. Run
 attempt `000004` on the same five packets
 with the same model, prompt, one cold/five warm schedule, no-tools body,
 five-second deadline, lifecycle checks, and `5/5` plus p50 gate. Task 5 remains

@@ -236,6 +236,10 @@ preflight defects. It does not reinterpret or overwrite `000001`-`000003`.
 - The next non-counted response rejected tuple-form `prefixItems`; generation
   now projects the three ranked candidate shapes to supported `items.anyOf`,
   while the canonical local validator retains exact rank order and cardinality.
+- The first schema-accepted warm preflight returned a legitimate abstention but
+  used a `358`-character reason, beyond the unchanged local `256`-character
+  bound. The generation schema now asks for concise text within that bound;
+  prompt and local validation remain unchanged.
 - Attempt `000004` reuses the exact five `000001` packets, pinned Haiku 4.5
   model, one-user-turn/no-tools request body, one cold call, five counted warm
   calls, five-second deadline, cancellation probe, and forced-deadline probe.

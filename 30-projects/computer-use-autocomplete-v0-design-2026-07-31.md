@@ -137,6 +137,9 @@ tags:
 > exact three-candidate cardinality. The next non-counted response rejected
 > tuple-form `prefixItems`, so generation projects the three ranked shapes to
 > supported `items.anyOf` while local validation retains rank order and count.
+> The first schema-accepted warm preflight produced a legitimate abstention but
+> a `358`-character reason beyond the unchanged local `256`-character bound;
+> generation now describes those text fields as concise and within the bound.
 > Attempt `000004` reuses
 > the same five packets, prompt, model, no-tools body, deadline, lifecycle
 > checks, and `5/5` plus `2,500 ms` gate. No overlay work begins unless it
