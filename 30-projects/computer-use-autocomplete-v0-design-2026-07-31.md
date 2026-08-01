@@ -43,6 +43,27 @@ tags:
 > second independent architecture failure; do not retry or broaden the harness
 > without a new decision.
 
+> [!success] 2026-07-31 metadata-only V0 decision
+> V0 now proceeds without screenshots. V5's history wins came from task identity
+> in history, while pixels did not rescue the fine-control targets. Removing
+> screenshots deletes the largest cloud-privacy exposure, reduces proposal
+> payload and latency, and removes Claude image-transport eligibility as a
+> dependency. Capture is an optional V0.1 capability, not a phase-zero gate.
+> One non-blocking TextEdit readiness falsifier may distinguish a synthetic
+> Hammerspoon-webview artifact from a general capture limitation, but neither
+> result may delay the JSON-only provider bakeoff.
+
+Metadata-only packets retain the focused app/window identity, exact Codex task,
+focused accessibility role, and up to five privacy-allowed currently open
+window titles observed at packet freeze. The titles describe the current scene,
+not chronological history. Focused-state privacy remains fail-closed for raw
+Arc URL risk, Secure Input, editable/sensitive roles, manual pause, unknown
+queries, and denylisted focused metadata. Background-window/display
+intersection no longer suppresses metadata because no background pixels or
+implicit background content leave the Mac. Required focused-state query failure
+suppresses the packet; an optional background-title query failure simply omits
+that title from the bounded catalog.
+
 ## Decision summary
 
 V0 is a Dylan-only Mac prototype for testing one product claim:

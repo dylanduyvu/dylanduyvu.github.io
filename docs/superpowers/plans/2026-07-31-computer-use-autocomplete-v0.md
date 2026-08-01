@@ -92,6 +92,47 @@ and restored the original Hammerspoon state. Do not rerun or weaken the
 fail-closed predicates. Tasks 4 onward remain blocked pending an explicit
 decision about this calibration surface.
 
+### 2026-07-31 metadata-only V0 decision
+
+This decision is authoritative over the capture blocker and every later packet,
+provider, release, replay, and reporting step. Screenshot capture is deferred to
+V0.1 and is not a phase-zero prerequisite for V0. V5 is the basis: every
+observed history win was carried by destination/task identity in history, while
+pixel-bearing prompts still missed the fine-control targets. The marginal value
+of screenshots for the habitual navigation class is therefore unproven.
+
+1. Add an explicit `metadata_only` capability mode. The aggregate phase-zero
+   gate requires a passing capture calibration only when screenshot capability
+   is enabled. In metadata-only V0, packet schemas must omit image paths,
+   hashes, MIME types, and image payloads entirely rather than populate them
+   with nulls. Immutable historical capture attempts remain unchanged.
+2. Metadata privacy keeps raw Arc URL-risk checks, Secure Input, focused
+   role/editability checks, focused app/window/title denylists, manual pause,
+   and unknown-query fail-closed behavior. It no longer suppresses a packet
+   merely because a background visible window intersects the active display;
+   that rule protected pixel capture. Background windows are neither captured
+   nor transmitted implicitly.
+3. `current_state` contains the focused app/window identity, exact current Codex
+   task when available, focused AX role, and at most five allowed currently open
+   window titles sampled at packet freeze. Titles are ordered deterministically
+   with the focused window first, length-bounded, excluded on denylist or query
+   uncertainty, and contain no raw Arc query/fragment/userinfo. This is a
+   current-scene catalog, not chronological action history, so state-only replay
+   remains distinct from state-plus-history replay. A failed required focused
+   title/role query suppresses the packet; an optional background-title query
+   failure omits only that catalog entry because no unknown metadata is sent.
+4. Run one bounded, non-blocking falsifier against a throwaway TextEdit window:
+   evaluate the same readiness predicates without saving or transmitting any
+   pixels and without allocating or replacing a canonical capture attempt. If
+   it passes, record that attempts `000005`/`000006` convicted the synthetic
+   Hammerspoon webview rather than capture generally; if it fails, record that
+   real-app AX readiness also failed. Either result leaves metadata-only V0
+   unblocked. Do not build a native calibration surface.
+5. Task 4 starts Claude Code headless with JSON-only packets. Capture evidence
+   is not a packet-set prerequisite in metadata-only mode. The identical packet
+   contract remains tool-free, cancellable, schema-validated, privately logged,
+   and measured against the existing five-warm-call/p50 <= 2.5-second gate.
+
 - The implementation repository does not yet exist. Its fresh directory is the
   isolated workspace; initialize `main`, make one bootstrap commit, then do all
   feature work on `codex/v0`. Do not reuse or modify
@@ -763,7 +804,9 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
 > **Scope correction:** Run Claude Code headless first. Implement/run the Codex
 > app-server discovery and authority path only if Claude fails the latency or
-> capability gate. `open_url` is not an admitted V0 candidate.
+> capability gate. `open_url` is not an admitted V0 candidate. Under the
+> metadata-only decision, packets are JSON-only, contain no screenshot fields,
+> and do not require a passing capture manifest.
 
 **Files:**
 
