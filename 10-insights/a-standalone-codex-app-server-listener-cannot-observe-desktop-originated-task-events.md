@@ -1,8 +1,8 @@
 ---
 type: insight
-status: active
+status: superseded
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-08-02
 projects:
   - personal-ai-context-learning
 domains:
@@ -16,6 +16,15 @@ tags:
 ---
 
 # A standalone Codex app-server listener cannot observe desktop-originated task events
+
+> [!success] Superseding V0 decision, 2026-08-02
+> The `0/3` push-event result remains valid, but it no longer blocks V0. A
+> preregistered pull variant passed `3/3`: the expected thread ID's
+> `recencyAt` advanced and raw ordering moved by the first scheduled read after
+> each desktop-originated send. V0 now uses read-derived identity for
+> composer-concentrated exact labels and the Codex candidate catalog. See
+> [[codex-thread-list-recency-reveals-desktop-originated-task-activity|Codex
+> thread-list recency reveals desktop-originated task activity]].
 
 ## Claim
 
@@ -77,3 +86,5 @@ architecture and probe rather than an informal retry.
 
 - 2026-08-01: Frozen after three passive desktop-originated trials produced no
   observable app-server task event.
+- 2026-08-02: Marked superseded as a V0 blocker after the separate read-path
+  attempt passed 3/3. The push-path finding itself remains intact.

@@ -2,7 +2,7 @@
 type: project
 status: approved
 created: 2026-07-31
-updated: 2026-08-01
+updated: 2026-08-02
 aliases:
   - Computer-use autocomplete V0 design
 projects:
@@ -242,8 +242,24 @@ tags:
 > join or generic Codex activation fallback. See
 > [[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|the event-visibility finding]].
 
+> [!success] 2026-08-02 Codex read-derived identity passed 3/3
+> The `0/3` push-event result ruled out only a standalone listener. Frozen
+> read-path attempt `codex-activity/000003` captured a full thread-list baseline
+> and scheduled 2-, 10-, and 30-second reads around Dylan-only sends in three
+> distinct tasks. All reads succeeded, all expected IDs matched, and all three
+> tasks showed `recencyAt` advancement plus raw-order movement by the first
+> scheduled read. Manifest:
+> `057ce508a067030a09d834dc94f1355c08a9c38f3aa67751c2d5528f8e219de5`.
+> V0 now resolves exact next-human Codex labels offline from list diffs inside
+> the label horizon and supplies that list as the exact-ID/title candidate
+> catalog. Read-only visits remain app-level; product-owned dispatches retain
+> exact identity. Task 6 is unblocked. See
+> [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the
+> read-path finding]].
+
 Metadata-only packets retain the focused app/window identity, an exact Codex task
-only when the short activity-derived buffer currently knows one,
+only when a product-owned dispatch or bounded read-derived activity record
+currently supplies one,
 focused accessibility role, and up to five privacy-allowed currently open
 window titles observed at packet freeze. The titles describe the current scene,
 not chronological history. Focused-state privacy remains fail-closed for raw

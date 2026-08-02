@@ -66,6 +66,17 @@ tags:
 > freezes `event_not_observed` in 3/3 trials. Generic Codex activation and title
 > joins remain forbidden, so Task 6 is blocked pending an architecture choice.
 
+> [!success] V0 Codex read-derived identity passed, 2026-08-02
+> The push result ruled out only a standalone listener. In frozen read-path
+> attempt `000003`, Dylan manually sent in three distinct tasks while the probe
+> privately diffed full thread lists at baseline and approximately 2, 10, and
+> 30 seconds. All `3/3` expected IDs showed `recencyAt` advancement and raw
+> ordering movement by the first scheduled read. Manifest
+> `057ce508a067030a09d834dc94f1355c08a9c38f3aa67751c2d5528f8e219de5`
+> independently verified. V0 now uses read-derived identity for exact
+> composer-concentrated labels and the Codex candidate catalog. Task 6 is the
+> only next implementation task.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -84,13 +95,15 @@ and confidence calibration may later improve coverage, but the immediate V0
 tests whether a tool-free proposal model plus a four-primitive deterministic
 executor produces a habit-forming interaction.
 
-As of August 1, the metadata-only observer and packet foundation is ready and
-direct Anthropic Haiku has passed the provider gate. Exact current Codex-task
-reading remains unreliable, and the planned activity-derived bridge failed:
-the standalone listener observed `0/3` desktop-originated sends. The physical
-Tab gate and suggestion pill are not the next implementation step. The project
-now needs an explicit identity/telemetry architecture decision. See
-[[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|the frozen event-visibility finding]].
+As of August 2, the metadata-only observer and packet foundation is ready,
+direct Anthropic Haiku has passed the provider gate, and the Codex pull path
+has passed `3/3`. Exact arbitrary active-task reading remains unreliable, but
+composer activity changes the expected thread's readable `recencyAt` and raw
+ordering within the label horizon. V0 therefore has enough exact identity for
+its sparse composer-concentrated stratum. The physical Tab gate and suggestion
+pill are now the only next implementation task. See
+[[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
+read-path finding]].
 
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,

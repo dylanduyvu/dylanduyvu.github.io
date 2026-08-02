@@ -1,8 +1,8 @@
 ---
 type: project
-status: blocked
+status: complete
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-08-02
 projects:
   - personal-ai-context-learning
 domains:
@@ -17,6 +17,17 @@ tags:
 ---
 
 # The Codex desktop app does not expose exact active-task identity through the approved public surfaces
+
+> [!success] Read-derived identity passed, 2026-08-02
+> The push listener's `0/3` result was not the final architecture result. A
+> preregistered pull variant read the full thread list before each of three
+> desktop-originated sends and again at approximately 2, 10, and 30 seconds.
+> All `3/3` trials passed: the expected thread ID remained exact, `recencyAt`
+> advanced by the first scheduled read, and raw ordering moved. Attempt
+> `codex-activity/000003` froze under manifest
+> `057ce508a067030a09d834dc94f1355c08a9c38f3aa67751c2d5528f8e219de5`
+> and independently verified. V0 selects read-derived identity, and Task 6 is
+> unblocked.
 
 > [!failure] Activity-derived event bridge failed, 2026-08-01
 > The frozen desktop event-visibility probe attached the planned sessionless
@@ -65,7 +76,37 @@ planned separately spawned, sessionless listener did not receive events from
 the desktop app's sessions. It does not rule out a future supported shared
 desktop event surface.
 
-## Result
+## Thread-list read-path result
+
+The preregistered read-path variant froze and independently verified as
+**PASS**.
+
+- Private attempt: `codex-activity/attempts/000003`
+- Manifest SHA-256: `057ce508a067030a09d834dc94f1355c08a9c38f3aa67751c2d5528f8e219de5`
+- Bound implementation commit: `40933c66292fd6aca9dbab43eaaa581f5172f5b1`
+- Result: `3/3` exact thread-state mutations
+- Earliest qualifying read in every trial: scheduled `2,000 ms`
+- Qualifying field in every trial: `recencyAt`
+- Raw list ordering also moved in every trial
+- Scheduled read success: `9/9`; provider and cache calls: `0`
+
+Each trial privately preserved a full baseline and the 2-, 10-, and 30-second
+thread-list reads. Exact IDs, titles, ordering, and metadata values remain in
+twelve private 0600 artifacts. The manifest exposes only field names, exact-ID
+match predicates, change classes, and timing. Probe code never drove the UI.
+
+This selects the preregistered **read-derived identity** branch:
+
+1. exact next-human Codex labels may be resolved offline from thread-state
+   diffs inside the label horizon;
+2. the thread list supplies the predictor's exact-ID/title Codex candidate
+   catalog;
+3. exact labels remain sparse and composer-concentrated, while read-only visits
+   remain app-level unless a product-owned dispatch already supplies identity;
+4. generic Codex activation and title joins remain forbidden; and
+5. Task 6's physical Tab matrix and pill are the only next implementation task.
+
+## Historical exact-read result
 
 Task 5 froze and independently verified as **FAIL**.
 
@@ -102,7 +143,7 @@ threads, but it did not identify which thread the desktop UI had selected.
 No `app.asar`, Electron internals, private state database, arbitrary UI
 traversal, coordinate click, or generic-activation fallback was used.
 
-## Decision
+## Historical exact-read decision
 
 Stop before the Tab gate and pill. A generic Codex activation would remove the
 exact recurring-task behavior that produced all of V5's history wins, so it is
@@ -114,7 +155,7 @@ API/AppleScript route or a product-owned Codex task surface. This failure does
 not invalidate the prediction provider, metadata observer, or app/window
 actuators; it blocks the specific load-bearing Codex-task primitive.
 
-## AX follow-up and superseding decision
+## Historical AX follow-up and activity-derived decision
 
 The one-hour-capped public-AX follow-up produced three immutable records:
 
@@ -153,8 +194,19 @@ case; task returns followed by observable activity retain exact identity when
 the event surface supplies it.
 
 The frozen event-visibility result shows that the planned listener does not
-supply that activity. The implementation therefore stops before Task 6 pending
-an explicit architecture decision.
+supply that activity. At that checkpoint, the implementation stopped before
+Task 6 pending an explicit architecture decision. The later read-path result
+above supersedes that stop without changing the push-path finding.
+
+## Final V0 decision
+
+Task 5 is complete under read-derived identity. Exact execution still uses only
+registered `codex://threads/<id>` routes. Exact next-human labels may be
+recovered from bounded thread-list diffs after composer activity, and the same
+list supplies the predictor's Codex candidate catalog. Read-only visits remain
+app-level unless product-owned dispatch already supplies identity. Task 6 is
+unblocked; no title join, generic activation, or further V0 identity probe is
+authorized.
 
 ## Links
 
@@ -163,3 +215,4 @@ an explicit architecture decision.
 - [[2026-07-31-computer-use-autocomplete-v0|Computer-use autocomplete V0 implementation plan]]
 - [[personal-ai-context-learning|Personal AI context learning]]
 - [[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|A standalone Codex app-server listener cannot observe desktop-originated task events]]
+- [[codex-thread-list-recency-reveals-desktop-originated-task-activity|Codex thread-list recency reveals desktop-originated task activity]]

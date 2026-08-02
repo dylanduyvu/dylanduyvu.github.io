@@ -354,6 +354,34 @@ sends. Pre-trial reservation `000001` was aborted before any send because its
 arm-before-send wording violated this contract; it has no manifest and is not
 evidence.
 
+### 2026-08-02 Task 5 read-derived identity amendment
+
+The `0/3` event result ruled out push-based observation only. Attempt `000003`
+tested the already-proven pull surface without overwriting the historical
+attempt: a full paginated `thread/list` baseline before each Dylan-only send,
+then fresh reads at approximately 2, 10, and 30 seconds after confirmation.
+
+The frozen result passed `3/3` under manifest
+`057ce508a067030a09d834dc94f1355c08a9c38f3aa67751c2d5528f8e219de5`,
+bound to implementation commit
+`40933c66292fd6aca9dbab43eaaa581f5172f5b1`. All nine scheduled reads
+succeeded. In every trial the expected thread ID remained exact, `recencyAt`
+advanced by the first scheduled read, and raw list ordering moved. Exact IDs,
+titles, ordering, and metadata values remain in twelve private 0600 artifacts;
+the manifest contains only field names, predicates, change classes, and timing.
+
+The authoritative V0 branch is now **read-derived identity**:
+
+1. Resolve exact next-human Codex labels offline from thread-state diffs inside
+   the label horizon.
+2. Inject `thread/list` as the exact-ID/title Codex candidate catalog.
+3. Keep exact labels sparse and composer-concentrated. Manual read-only visits
+   remain app-level unless a product-owned dispatch already supplies an ID.
+4. Retain exact deep-link execution, `observed_partial` frontmost verification,
+   separate exact-task/app-only strata, and the bans on title joins and generic
+   activation.
+5. Task 6 is unblocked. No further Codex identity probe is authorized for V0.
+
 - The isolated implementation repository now exists at
   `/Users/dylanvu/Projects/computer-use-autocomplete` on `codex/v0`. Preserve
   its immutable provider and Codex-probe commits; do not reuse or modify
@@ -1258,11 +1286,12 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
 > **Amended after attempts 000002–000003:** Keep the exact-route construction
 > and controlled routing evidence below, but replace independent exact reread
-> with the activity-derived contract in the plan-wide amendment above. The
+> with the read-derived contract in the plan-wide amendment above. The
 > executor records `observed_partial` on frontmost Codex unless a matching
-> qualifying task event corroborates the thread. Task 6 no longer depends on a
-> universally readable current desktop thread, but it remains blocked on the
-> frozen 3/3 desktop event-visibility probe above.
+> product-owned dispatch already supplies the thread. Next-human task labels
+> may be resolved from bounded thread-list diffs after composer activity. Task 6
+> no longer depends on a universally readable current desktop thread and is
+> unblocked by frozen read-path attempt `000003`.
 
 **Files:**
 
@@ -1393,10 +1422,36 @@ hash; the aggregate verifier rejects different packet sets across providers.
   source commit `561ab6d1a914a7ede2cb42a7e6c6887fa6b3d4cb`. Standard verification passed.
   Stop here for an architecture decision.
 
+- [x] **Step 10: Run the frozen thread-list read-path variant**
+
+  ```bash
+  node src/cli.mjs probe codex-activity-read --trials 3
+  ```
+
+  For each of three distinct tasks, privately preserve a full baseline and
+  fresh 2-, 10-, and 30-second reads. Dylan performs every UI action. Pass only
+  if the expected exact thread ID shows a timestamp/count or raw-order mutation
+  within the schedule. Perform every scheduled read even after an early change.
+
+  **Frozen result:** PASS, `3/3`. Every expected ID showed `recencyAt`
+  advancement and raw-order movement by the first scheduled read; all `9/9`
+  scheduled reads succeeded. Manifest:
+  `057ce508a067030a09d834dc94f1355c08a9c38f3aa67751c2d5528f8e219de5`,
+  source commit `40933c66292fd6aca9dbab43eaaa581f5172f5b1`. Standard verification passed.
+
+- [x] **Step 11: Apply the read-path branch**
+
+  Select read-derived identity. Exact next-human labels come from bounded
+  thread-state diffs; the thread list supplies the exact-ID/title candidate
+  catalog; read-only visits remain app-level; accepted product-owned routes
+  retain exact identity. Proceed directly to Task 6. Do not add a title join,
+  generic Codex activation, or another identity probe.
+
 ### Task 6: Prove the local Tab gate and secret fail-closed behavior
 
-> **BLOCKED:** Do not begin this task. The frozen Codex event-visibility gate
-> failed `0/3`; no title-join or generic-activation fallback is authorized.
+> **UNBLOCKED:** Frozen read-path attempt `000003` passed `3/3`. Begin this task
+> under the read-derived identity branch. No title-join or generic-activation
+> fallback is authorized.
 
 **Files:**
 

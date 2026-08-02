@@ -925,6 +925,17 @@ desktop-originated sends. Task 6 therefore remains blocked; the activity-derived
 amendment did not restore an exact-task signal. See
 [[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|the event-visibility finding]].
 
+The push failure was subsequently narrowed rather than repaired. A
+preregistered pull variant passed `3/3`: after a desktop-originated send, the
+expected app-server thread ID's `recencyAt` and raw list position changed by the
+first scheduled read in all three distinct tasks. V0 therefore uses
+read-derived identity for composer-concentrated next-human labels, injects the
+thread list as its exact-ID/title Codex candidate catalog, and leaves read-only
+visits app-level. Task 6 is unblocked; title joins and generic Codex activation
+remain forbidden. See
+[[codex-thread-list-recency-reveals-desktop-originated-task-activity|Codex
+thread-list recency reveals desktop-originated task activity]].
+
 ## Questions for computer-use model research
 
 - Which existing products and models—including the Induction Labs lead Dylan
