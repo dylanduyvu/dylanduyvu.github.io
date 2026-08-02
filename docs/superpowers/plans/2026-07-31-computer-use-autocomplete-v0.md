@@ -1453,6 +1453,25 @@ hash; the aggregate verifier rejects different packet sets across providers.
 > under the read-derived identity branch. No title-join or generic-activation
 > fallback is authorized.
 
+> **2026-08-02 PHYSICAL-EVIDENCE AMENDMENT:** Retire Step 8's twenty-case
+> physical script. Unfinalized attempts `000001`–`000005` are not evidence. Run
+> the full authority predicate grid synthetically, then one fully instrumented
+> consume-only physical pass, then a frozen seven-cell physical matrix with
+> consume first. The Lua authority must attach armed state, pill-visible state,
+> TTL remaining, generation validity, and exact predicate at keydown to every
+> physical record. Human yes/no answers are corroboration only. Arm after fresh
+> case-specific focus verification, cue immediately, and auto-invalidate/re-cue
+> TTL-expired presses. Freeze the exact seven cells before the full physical
+> matrix. This amendment supersedes conflicting twenty-case instructions below.
+
+> **Exact frozen seven cells:** `valid_consume`, `hidden_pill`,
+> `typing_activity`, `generation_changed`, `context_changed`,
+> `heartbeat_expired`, `adapter_changed`. The separate armed-privacy probe owns
+> editable/sensitive/Secure Input/pause/authentication transitions. TTL expiry
+> is re-cued and never scored. The consume-only prerequisite passed on source
+> commit `1905d28` with manifest
+> `e799066d99b314b7ac2a530f3ab8f6dc9544fdd589dc78ac6a99439acd2c6cad`.
+
 **Files:**
 
 - Create: `hammerspoon/ComputerUseAutocomplete.spoon/bridge.lua`
@@ -1526,7 +1545,7 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
   Expected: clean status. Tab and armed-privacy manifests bind to this commit.
 
-- [ ] **Step 7: Reload and prove the installed Spoon version before physical trials**
+- [x] **Step 7: Reload and prove the installed Spoon version before physical trials**
 
   ```bash
   open 'hammerspoon://computer-use-autocomplete-reload'
@@ -1537,24 +1556,39 @@ hash; the aggregate verifier rejects different packet sets across providers.
   the checked-out `codex/v0` files. Do not run the matrix against older loaded
   Lua. If reload fails, repair only the loader/reload path and rerun.
 
-- [ ] **Step 8: Run the guided twenty-case physical Tab matrix**
+  **Result:** PASS. The stage-six Spoon was reinstalled and restarted from the
+  committed source before physical evidence; `MAC_PREFLIGHT=PASS`.
+
+- [x] **Step 8: Run synthetic grid, consume-only smoke, and seven-cell physical matrix**
 
   ```bash
-  node src/cli.mjs probe tab-safety --guided
+  node --test test/bridge/authority-fixtures.test.mjs
+  node src/cli.mjs probe tab-safety --consume-only
+  node src/cli.mjs probe tab-safety --physical-seven
   ```
 
-  Exercise the exact spec matrix across Codex, Arc, VS Code, and one native app,
-  including coordinator crash/restart, heartbeat loss, stale file, new session,
-  command gap, Arc URL changes, 749/751 ms typing quiet, and one valid acceptance.
-  Expected: every unsafe Tab reaches the foreground app; the one valid armed Tab
-  is consumed; the pill never activates or takes focus. Freeze all twenty cases
-  and loaded hashes, then advance `probes/tab-safety/latest.json`. Any stolen
-  unsafe Tab, focus-stealing pill, or armed state surviving bridge/coordinator
-  loss is terminal: freeze the partial failed attempt immediately, run
+  The complete predicate grid runs synthetically. The first physical run is one
+  valid consume with keydown-owned telemetry and Dylan's corroborating answers.
+  Only after that passes, freeze the exact seven representative cells and run
+  them consume-first. A TTL-expired press is invalidated and re-cued rather than
+  scored. Expected: the valid cell is consumed; every unsafe physical cell
+  reaches the foreground app; the pill never activates or takes focus; and each
+  authority record names the expected predicate. Advance
+  `probes/tab-safety/latest.json` only for the completed amended matrix. Any
+  stolen unsafe Tab, focus-stealing pill, or armed state surviving
+  bridge/coordinator loss is terminal: freeze the partial failed attempt, run
   `node src/cli.mjs probe abort --probe tab-safety --from-latest` and stop after
   its verified cleanup.
 
-- [ ] **Step 9: Repeat the armed-transition canaries against the loaded gate**
+  **Result:** PASS. The repaired consume-only prerequisite froze manifest
+  `e799066d99b314b7ac2a530f3ab8f6dc9544fdd589dc78ac6a99439acd2c6cad`.
+  The complete exact seven-cell matrix then passed at source `0d2bcb1` and
+  froze verified manifest
+  `ec67bedf5d9a8e2078e0a943d75f26bd5300e4a2860e4505e37ffbc4a295f924`.
+  All seven final keydowns matched their expected predicate; the one early TTL
+  expiry passed through and was re-cued rather than scored.
+
+- [x] **Step 9: Repeat the armed-transition canaries against the loaded gate**
 
   ```bash
   node src/cli.mjs probe privacy --armed-transitions
@@ -1568,6 +1602,15 @@ hash; the aggregate verifier rejects different packet sets across providers.
   canary. Freeze this as the distinct probe identity selected by
   `probes/privacy-armed/latest.json`. Any leak is terminal: run
   `node src/cli.mjs probe abort --probe privacy-armed --from-latest` and stop.
+
+  **Result:** PASS. All four transitions disarmed before Tab, every unsafe Tab
+  reached the foreground, and the full private-root scan found zero canary
+  bytes. Verified manifest:
+  `9603d81eec93a97f255e749ac09047060ed87bcfcb37f0ea5ed6870f09ab81e2`.
+  Dylan separately found the paused indicator was not persistent. Post-probe
+  commit `c0c0b0e` fixes only paused-state rendering; `427/427` tests,
+  install/restart, preflight, and a manual persistence check passed. The frozen
+  matrix remains explicitly bound to its exact pre-fix source `0d2bcb1`.
 
 ### Task 7: Freeze the phase-zero decision before runtime expansion
 

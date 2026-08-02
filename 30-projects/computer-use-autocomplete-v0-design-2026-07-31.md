@@ -257,6 +257,65 @@ tags:
 > [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the
 > read-path finding]].
 
+> [!warning] 2026-08-02 Task 6 physical-evidence amendment
+> The twenty-case guided physical Tab matrix is retired. Attempts `000001`
+> through `000005` never froze manifests and are not evidence. In the last
+> case-4 run, `suggestion_shown` and matching arm generation were observed, but
+> rejected keydowns carried no timestamp or gate predicate; the old three-second
+> cue delay made five-second TTL expiry plausible. Do not classify that
+> passthrough as a gate failure. Run the complete predicate grid synthetically
+> first, then a seven-cell physical matrix with the valid consume cell first.
+> Before that matrix, require one fully instrumented consume-only pass. Every
+> physical keydown record must come from the Lua authority at keydown and include
+> armed state, pill-visible state, TTL remaining, generation validity, and the
+> exact predicate. Dylan's foreground and pill-visibility answers corroborate
+> rather than define the outcome. Arm only after fresh case-specific focus
+> verification, cue immediately after arm, and automatically invalidate and
+> re-cue TTL-expired presses. Freeze the exact seven physical cells before the
+> full matrix; do not revive the twenty-case script.
+
+> [!success] 2026-08-02 instrumented consume and exact seven-cell freeze
+> The first instrumented consume failed safely because rendering the
+> product-owned pill changed the privacy `visible_windows` fingerprint and
+> invalidated its own arm. Component-level diagnostics isolated that single
+> field. Generation tracking now relies on the window observer for real window
+> changes while the synchronous Tab gate still rescans every visible window for
+> sensitive or denylisted state. The repaired consume passed: the pill rendered,
+> the authority consumed Tab with `accepted`, generation stayed unchanged, and
+> the foreground did not receive the key. Manifest:
+> `e799066d99b314b7ac2a530f3ab8f6dc9544fdd589dc78ac6a99439acd2c6cad`.
+> The full physical matrix is frozen in this exact order: `valid_consume`,
+> `hidden_pill`, `typing_activity`, `generation_changed`, `context_changed`,
+> `heartbeat_expired`, and `adapter_changed`. These cover one accepted path and
+> six distinct unsafe keydown predicates. Editable, sensitive, Secure Input,
+> pause, and authentication-window transitions remain in the separate armed
+> privacy probe. TTL expiry remains an automatic re-cue rather than a scored
+> cell.
+
+> [!success] 2026-08-02 Task 6 passed
+> The exact seven-cell physical matrix passed at source commit `0d2bcb1`.
+> `valid_consume` was accepted and consumed; `hidden_pill`, `typing_activity`,
+> `generation_changed`, `context_changed`, `heartbeat_expired`, and
+> `adapter_changed` all reached the foreground with their exact expected
+> keydown predicates. One expired consume cue passed through and was preserved
+> as an unscored automatic re-cue. The pill never stole window focus. Verified
+> manifest:
+> `ec67bedf5d9a8e2078e0a943d75f26bd5300e4a2860e4505e37ffbc4a295f924`.
+> The armed privacy matrix then passed `4/4` for Secure Input, sensitive role,
+> manual pause, and background authentication transitions; every arm disarmed
+> before Tab, every unsafe Tab reached the foreground, and the full private-root
+> scan found zero canary bytes. Verified manifest:
+> `9603d81eec93a97f255e749ac09047060ed87bcfcb37f0ea5ed6870f09ab81e2`.
+> During the manual-pause trial Dylan found that the yellow paused indicator
+> flashed instead of persisting. Commit `c0c0b0e` changes only the paused branch
+> of local disarm rendering so the indicator is re-rendered while paused;
+> `427/427` tests passed, install/restart and preflight passed, and Dylan manually
+> verified the indicator remains visible after releasing the hotkey. The two
+> immutable manifests remain bound to their exact `0d2bcb1` source; the
+> post-probe paused-renderer fix is separately recorded rather than silently
+> treated as part of those trials. Privacy was resumed and the stabilization
+> handshake completed after verification.
+
 Metadata-only packets retain the focused app/window identity, an exact Codex task
 only when a product-owned dispatch or bounded read-derived activity record
 currently supplies one,
@@ -996,23 +1055,16 @@ task. A generic Codex window title is not a pass.
 
 ### Probe C — Tab safety
 
-Exercise at least 20 controlled Tab trials across Codex, Arc, VS Code, and a
-normal native app. Include active typing, recent typing quiet shorter and
-longer than 750 milliseconds, Return/arrows/shortcuts, editable and
-non-editable focus, Secure Input or a synthetic sensitive field, window-title
-change, stale epoch, expired suggestion, no suggestion, and one valid
-acceptance.
-
-Include coordinator crash, heartbeat loss, stale suggestion file, bridge
-session change, command-sequence gap, and coordinator restart. Verify that the
-pill never activates or takes focus. Change the active Arc URL once during an
-outstanding proposal and once while a pill is displayed; each must invalidate
-the Node epoch and local adapter lease before Tab can be consumed.
-
-The probe passes only when every unsafe Tab reaches the foreground app and the
-single valid armed Tab is consumed by the product. Any stolen unsafe Tab,
-focus-stealing pill, or armed state surviving bridge loss blocks the habit
-trial.
+Run the complete authority predicate grid synthetically. Only after it passes,
+run one fully instrumented consume-only physical smoke, then the frozen
+seven-cell physical matrix with valid consume first. Every physical case stores
+the authority's keydown-owned gate record plus Dylan's corroborating foreground
+and visible-pill answers. A keydown after TTL expiry is automatically
+invalidated and re-cued rather than scored as a failed consume. The probe passes
+only when the valid consume is accepted, every unsafe representative reaches
+the foreground app, the pill never activates or takes focus, and every gate
+record matches the intended predicate. Any stolen unsafe Tab, focus-stealing
+pill, or armed state surviving bridge loss blocks the habit trial.
 
 ### Secret fail-closed test
 
