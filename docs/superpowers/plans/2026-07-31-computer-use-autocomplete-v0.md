@@ -1614,28 +1614,55 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
 ### Task 7: Freeze the phase-zero decision before runtime expansion
 
+> [!note] 2026-08-02 authoritative aggregate-gate amendment
+> The original pass matrix below predated three approved decisions and is
+> superseded here: V0 is `metadata_only`, exact Codex identity is read-derived,
+> and the retired twenty-case Tab script is replaced by the frozen seven-cell
+> physical matrix. Component evidence remains immutable at its exact source
+> commit, and every component source commit must remain an ancestor of final
+> `HEAD`. Later authorized probe work necessarily changed shared CLI/evidence
+> scaffolding, so byte identity of every historical inventory path at final
+> `HEAD` is not itself a pass condition. Instead, the aggregate manifest binds
+> the complete current execution-critical closure. Any execution-critical
+> change since a component trial requires either a specifically recorded,
+> bounded post-probe verification amendment or a rerun of that component.
+> Shared probe/reporting-only drift may be recorded without repeating model
+> calls or physical trials.
+
 **Files:**
 
 - Create: `src/probes/verify.mjs`
 - Modify: `docs/phase-zero-decision.md`
 - Test: `test/probes/verify.test.mjs`
 
-- [ ] **Step 1: Write failing aggregate-gate tests**
+- [x] **Step 1: Write failing aggregate-gate tests**
 
   Reject missing/drifted probe manifests, fewer than required trials, wrong
-  packet hashes, invalid provider authority, provider p50 above 2500 ms, capture
-  p95 at/above 500 ms, any Codex identity/focus miss, any stolen Tab, any canary
-  leak, or runtime-policy/version mismatch. The exact pass matrix is: capture
-  10/10 plus p95 below 500 ms; at least one provider with authority/payload
-  parity, 5/5 valid warm calls, and p50 at/below 2500 ms; all three Codex tasks
-  read/focused/verified by ID; 20/20 Tab cases with exactly one intended consume;
-  zero focus-stealing pill events; no armed state surviving bridge/coordinator
-  loss;
-  all three privacy probes leak-free; all artifact modes/hashes valid; and every
-  probe's `source_commit` is an ancestor of final `HEAD` whose listed source
-  files still match `source_inventory_sha256`.
+  packet hashes, invalid provider authority, provider p50 above 2500 ms, any
+  read-derived Codex identity miss, any stolen Tab, any canary leak, or
+  runtime-policy/version mismatch. The exact pass matrix is:
 
-- [ ] **Step 2: Implement and test the aggregate verifier**
+  - `metadata_only` capability: capture is neither supplied nor required;
+    `screenshot_enabled` conditionally requires capture 10/10 with p95 below
+    500 ms;
+  - selected direct Anthropic provider: immutable five-packet parity, cold
+    valid, 5/5 valid warm calls, zero tool invocations, passing cancel/deadline
+    checks, and warm p50 at/below 2500 ms;
+  - read-derived Codex identity: attempt `000003`, 3/3 exact thread-ID matches,
+    successful 2/10/30-second reads, and a qualifying timestamp/count/ordering
+    change within the 30-second horizon; exact deep-link dispatch remains the
+    only task execution route and generic activation/title joins remain banned;
+  - the exact seven physical Tab cells pass with exactly one intended consume,
+    all non-consume cells reaching the registered predicate, no post-keydown arm,
+    and zero focus-stealing pill events;
+  - privacy-base, privacy-provider transport, and four-cell armed privacy all
+    pass with zero canary bytes and zero unsafe Tab consumes;
+  - all private artifact modes/hashes and authoritative manifest pointers are
+    valid; every component source commit is an ancestor of final `HEAD`; and
+    the aggregate attempt binds the current execution-critical source closure
+    plus the explicit prompt-caching and persistent-pause post-probe amendments.
+
+- [x] **Step 2: Implement and test the aggregate verifier**
 
   ```bash
   node --test test/probes/verify.test.mjs
@@ -1643,7 +1670,7 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
   Expected: exit `0` with synthetic pass/fail fixtures.
 
-- [ ] **Step 3: Commit the clean verifier before it creates aggregate evidence**
+- [x] **Step 3: Commit the clean verifier before it creates aggregate evidence**
 
   ```bash
   git add src/probes/verify.mjs test/probes/verify.test.mjs
@@ -1652,7 +1679,7 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
   Expected: clean status.
 
-- [ ] **Step 4: Run the aggregate gate**
+- [x] **Step 4: Run the aggregate gate**
 
   ```bash
   node src/cli.mjs probe verify
@@ -1671,14 +1698,14 @@ hash; the aggregate verifier rejects different packet sets across providers.
 
   Only PASS permits Chunk 2.
 
-- [ ] **Step 5: Write the public-safe decision note**
+- [x] **Step 5: Write the public-safe decision note**
 
   Record pass/fail, provider/model/version, aggregate timing, exact blocker if
   any, Codex adapter result, Tab/privacy result, and the preregistered expectation
-  that `open_url` coverage will be sparse. Include no task/window titles,
+  that `open_url` is deferred/dormant in V0. Include no task/window titles,
   screenshots, prompts containing work context, or raw transcripts.
 
-- [ ] **Step 6: Run the full phase-zero suite**
+- [x] **Step 6: Run the full phase-zero suite**
 
   ```bash
   npm test
@@ -1687,7 +1714,7 @@ hash; the aggregate verifier rejects different packet sets across providers.
   Expected: exit `0`, all tests pass, and the decision note agrees with the
   immutable private manifest.
 
-- [ ] **Step 7: Commit the passing decision note**
+- [x] **Step 7: Commit the passing decision note**
 
   ```bash
   git add docs/phase-zero-decision.md
@@ -1699,6 +1726,22 @@ hash; the aggregate verifier rejects different packet sets across providers.
   of final `HEAD`, with every listed source inventory unchanged. Do not rerun
   model calls or controlled trials merely because this decision-note commit
   advanced `HEAD`.
+
+> [!success] 2026-08-02 Task 7 passed
+> The missing network-disabled provider-transport privacy proof was added and
+> froze PASS with zero network launches and zero private-root canary bytes under
+> manifest
+> `ab461346ea70af94e89fd92d3e8a2528a313be1f81592899e874a4ded7fc5551`.
+> Privacy-base was rerun on the final verifier source and passed under manifest
+> `ca321ed3ccf2b839e4aec29a57b0e798fd566b4dfceaf328b75eb819a8ca327e`.
+> The aggregate gate then passed and froze manifest
+> `f4455bc12722af009a6acbc4c489c57b37cf499785991a27edaf1f14b7daedc3`:
+> metadata-only capability, direct Anthropic Haiku with `5/5` valid warm calls
+> at `2,045.63 ms` p50 and zero tool calls, read-derived Codex identity `3/3`,
+> physical Tab `7/7` with exactly one consume and no focus theft, and all three
+> privacy boundaries leak-free. The public-safe decision note is committed at
+> `f60ab8e`; `445/445` tests pass; final read-only verification returns the same
+> aggregate PASS. Chunk 2 is unlocked. The next task is Task 8.
 
 ## Chunk 2: Conditional product runtime and controlled sanity run
 

@@ -936,6 +936,14 @@ remain forbidden. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|Codex
 thread-list recency reveals desktop-originated task activity]].
 
+Phase zero then completed on August 2. The physical seven-cell Tab matrix and
+four-cell armed-privacy matrix passed, the missing network-disabled provider
+transport proof found zero canary bytes, and the aggregate verifier froze PASS
+under manifest
+`f4455bc12722af009a6acbc4c489c57b37cf499785991a27edaf1f14b7daedc3`.
+The V0 now moves to its runtime ledger and five-axis state machine rather than
+another feasibility probe.
+
 ## Questions for computer-use model research
 
 - Which existing products and models—including the Induction Labs lead Dylan

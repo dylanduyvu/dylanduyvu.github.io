@@ -316,6 +316,19 @@ tags:
 > treated as part of those trials. Privacy was resumed and the stabilization
 > handshake completed after verification.
 
+> [!success] 2026-08-02 phase zero passed
+> The final aggregate gate passed under immutable manifest
+> `f4455bc12722af009a6acbc4c489c57b37cf499785991a27edaf1f14b7daedc3`.
+> It binds metadata-only capability, the selected direct Anthropic Haiku
+> provider (`5/5` warm validity, `2,045.63 ms` p50, zero tool calls), the `3/3`
+> read-derived Codex identity result, the `7/7` physical Tab matrix, and all
+> three leak-free privacy boundaries. The missing provider-transport privacy
+> proof was frozen separately with zero network launches and zero canary bytes;
+> privacy-base was rerun on the final verifier source. The prompt-caching and
+> persistent-pause amendments are explicitly bound into the aggregate current
+> execution-source closure. `445/445` tests and final read-only verification
+> pass. Phase zero is closed and Chunk 2 / Task 8 is now authorized.
+
 Metadata-only packets retain the focused app/window identity, an exact Codex task
 only when a product-owned dispatch or bounded read-derived activity record
 currently supplies one,

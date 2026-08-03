@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-22
-updated: 2026-08-01
+updated: 2026-08-02
 aliases:
   - Personal AI Context Learning
   - Niyant's personal-AI thesis
@@ -77,6 +77,16 @@ tags:
 > composer-concentrated labels and the Codex candidate catalog. Task 6 is the
 > only next implementation task.
 
+> [!success] V0 phase zero passed, 2026-08-02
+> The local Tab/pill and armed-privacy probes passed, then the aggregate gate
+> froze PASS under manifest
+> `f4455bc12722af009a6acbc4c489c57b37cf499785991a27edaf1f14b7daedc3`.
+> Direct Anthropic Haiku passed `5/5` warm calls at `2,045.63 ms` p50 with zero
+> tools; Codex read-derived identity passed `3/3`; all seven physical Tab cells
+> passed with exactly one consume and no focus theft; and all three privacy
+> boundaries found zero canary bytes. Phase zero is closed. Task 8—the runtime
+> ledger and five-axis state machine—is now the only next implementation task.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -95,13 +105,14 @@ and confidence calibration may later improve coverage, but the immediate V0
 tests whether a tool-free proposal model plus a four-primitive deterministic
 executor produces a habit-forming interaction.
 
-As of August 2, the metadata-only observer and packet foundation is ready,
-direct Anthropic Haiku has passed the provider gate, and the Codex pull path
-has passed `3/3`. Exact arbitrary active-task reading remains unreliable, but
-composer activity changes the expected thread's readable `recencyAt` and raw
-ordering within the label horizon. V0 therefore has enough exact identity for
-its sparse composer-concentrated stratum. The physical Tab gate and suggestion
-pill are now the only next implementation task. See
+As of August 2, phase zero is complete. The metadata-only observer and packet
+foundation, direct Anthropic provider, read-derived Codex identity, physical
+Tab boundary, non-activating pill, and three privacy boundaries all passed the
+frozen aggregate gate. Exact arbitrary active-task reading remains unreliable,
+but composer activity changes the expected thread's readable `recencyAt` and
+raw ordering within the label horizon, which is enough for the sparse exact
+stratum. The next work is Task 8: the runtime ledger and five-axis state
+machine. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
 read-path finding]].
 
@@ -132,10 +143,11 @@ autocomplete runtime decision audit]].
 
 A narrower July 30 context-stack audit found that the live MVP does not need
 the exact-label capture machinery built for retrospective datasets. The
-approved July 31 V0 keeps a reduced Hammerspoon observer, one-shot transition
-screenshots, and a product-owned SQLite ledger for every prediction
-opportunity, while deferring the audit's proposed Arc adapter and computer-use
-fallback. Screenpipe can remain an optional search/debugging sidecar, while
+approved July 31 V0 keeps a reduced Hammerspoon observer and a product-owned
+SQLite ledger for every prediction opportunity; screenshots were subsequently
+deferred to V0.1 after their marginal value for the habitual class remained
+unproven. The audit's proposed Arc adapter and computer-use fallback remain
+deferred. Screenpipe can remain an optional search/debugging sidecar, while
 continuous video, rrweb, full Accessibility trees, historical reconstruction,
 and long-term semantic memory remain deferred. See
 [[computer-use-autocomplete-mvp-context-stack-2026-07-30|The fastest credible
