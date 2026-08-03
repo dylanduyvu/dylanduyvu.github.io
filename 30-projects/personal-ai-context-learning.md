@@ -116,6 +116,19 @@ tags:
 > phase-zero verifier pass. Task 11—live proposal coordination, validation, and
 > local promise rendering—is next.
 
+> [!success] V0 live proposal coordination landed, 2026-08-02
+> Task 11 is committed at `dca267a`. The frozen direct Anthropic/Haiku provider
+> now runs at most once per context epoch behind a five-second deadline and an
+> explicit cancellation boundary. The coordinator persists before launch,
+> validates exact-three or abstention output, stores every rank, selects the
+> highest executable target, and arms one exact epoch/generation/lease-bound
+> suggestion. Visible promises use only local canonical app, window, and Codex
+> task names; model labels, malformed output, stale packets, and dormant
+> `open_url` remain silent. Cancellation races and late responses are
+> evidence-only. `525/525` repository tests and the frozen phase-zero verifier
+> pass. Task 12—three deterministic executors and exact endpoint verification—is
+> next.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -128,14 +141,15 @@ exactly predict any non-Codex destination.
 The rough V1 opportunity is therefore narrower than general computer-use
 prediction but closer than a comparison with a mature autocomplete product
 would imply. A first version can occasionally offer a high-confidence return
-to an app, window, URL, or recurring Codex task. It does not need to predict
+to an app, window, or recurring Codex task. It does not need to predict
 every action. Candidate enumeration, richer retrieval, hierarchical ranking,
 and confidence calibration may later improve coverage, but the immediate V0
-tests whether a tool-free proposal model plus a four-primitive deterministic
+tests whether a tool-free proposal model plus a three-primitive deterministic
 executor produces a habit-forming interaction.
 
-As of August 2, phase zero and Tasks 8–10 are complete. The metadata-only observer and packet
-foundation, direct Anthropic provider, read-derived Codex identity, physical
+As of August 2, phase zero and Tasks 8–11 are complete. The metadata-only
+observer and packet foundation, direct Anthropic provider, read-derived Codex
+identity, physical
 Tab boundary, non-activating pill, and three privacy boundaries all passed the
 frozen aggregate gate. Exact arbitrary active-task reading remains unreliable,
 but composer activity changes the expected thread's readable `recencyAt` and
@@ -144,8 +158,12 @@ stratum. The ledger now durably separates prediction, validity, presentation,
 feedback, and execution while preserving exact provenance. Node now owns the
 epoch, trigger, causality, feedback-pending, and adapter-lease boundaries. The
 runtime now also freezes canonical full-history and state-only packets, hashes,
-and exact resolver catalogs behind a two-read stale-context guard. The next work
-is Task 11: live proposal coordination, validation, and local promise rendering. See
+and exact resolver catalogs behind a two-read stale-context guard. Live proposal
+coordination pins the selected provider, persists before launch, validates all
+three ranks or abstention, generates promises only from local canonical names,
+and arms one fixed-TTL suggestion with exact epoch, generation, and lease
+authority. The next work is Task 12: three deterministic executors and exact
+endpoint verification. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
 read-path finding]].
 

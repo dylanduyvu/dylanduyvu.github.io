@@ -2042,14 +2042,14 @@ continuing.
 - Test: `test/providers/promise-renderer.test.mjs`
 - Test: `test/coordinator.test.mjs`
 
-- [ ] **Step 1: Write failing selected-provider and cancellation tests**
+- [x] **Step 1: Write failing selected-provider and cancellation tests**
 
   The runner must load only the phase-zero-selected provider/config/hash, reject
   drift, allow one live request per epoch, cancel on any invalidation, enforce
   the five-second monotonic deadline, terminate an uncooperative process, and
   store late output without reopening terminal state.
 
-- [ ] **Step 2: Write failing candidate/promise tests**
+- [x] **Step 2: Write failing candidate/promise tests**
 
   Cover exact-three/abstain, frozen-catalog resolution, state-dependent
   executability, unsafe URL rejection, one/two-candidate invalidity, highest
@@ -2057,7 +2057,7 @@ continuing.
   bidi/control stripping, whitespace collapse, 120-character cap, and proof
   that `model_target_label` never enters command/display state.
 
-- [ ] **Step 3: Run tests and verify RED**
+- [x] **Step 3: Run tests and verify RED**
 
   ```bash
   node --test test/providers/runner.test.mjs \
@@ -2066,7 +2066,7 @@ continuing.
 
   Expected: module-not-found failures.
 
-- [ ] **Step 4: Implement live orchestration through atomic commands**
+- [x] **Step 4: Implement live orchestration through atomic commands**
 
   On an opportunity, persist episode/packet/request before launch. Normalize and
   validate all returned candidates, persist all ranks, choose one eligible
@@ -2074,14 +2074,14 @@ continuing.
   generation, and adapter leases. Provider abstain/invalid/failure/stale logs a
   complete episode and displays nothing.
 
-- [ ] **Step 5: Implement race and bridge failure handling**
+- [x] **Step 5: Implement race and bridge failure handling**
 
   Lower authoritative `ingest_seq` wins. Acceptance/dismissal precede same-event
   invalidation; pending override token precedes TTL; bridge gap/resync closes the
   episode exactly as the reducer specifies. Heartbeat/lease updates never extend
   the fixed local TTL.
 
-- [ ] **Step 6: Run tests and commit**
+- [x] **Step 6: Run tests and commit**
 
   ```bash
   node --test test/providers/runner.test.mjs \
@@ -2095,6 +2095,24 @@ continuing.
     src/coordinator.mjs test/providers test/coordinator.test.mjs
   git commit -m "feat: coordinate proactive navigation proposals"
   ```
+
+> [!success] 2026-08-02 live proposal coordination landed
+> Task 11 is committed at `dca267a`. The selected-provider runner is pinned to
+> the frozen phase-zero Anthropic/Haiku contract, permits one request per epoch,
+> enforces the five-second deadline, and makes cancellation explicit before its
+> terminal state. Abort-aware provider races and late output cannot reopen a
+> cancelled or timed-out request. The coordinator persists the episode, request,
+> and immutable packet before launch; validates exact-three or abstention output;
+> stores all three canonical targets; selects the highest executable rank; and
+> emits one arm intent carrying the exact epoch, generation, fixed TTL, and
+> adapter leases. Visible promises are generated only from local catalog names;
+> model wording, bidi/control characters, dormant `open_url`, malformed output,
+> and stale packets never reach Tab authority. Lifecycle invalidations carry the
+> exact epoch/generation, bridge resync remains terminal, and heartbeat or lease
+> refresh cannot extend suggestion TTL. The focused suite passes `15/15`, the
+> full repository passes `525/525`, and the original phase-zero aggregate remains
+> unchanged and passing. Task 12—three deterministic executors and exact endpoint
+> verification—is next.
 
 ### Task 12: Add three deterministic executors and exact endpoint verification
 

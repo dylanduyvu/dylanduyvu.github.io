@@ -368,6 +368,22 @@ tags:
 > original phase-zero aggregate pass. Task 11—live proposal coordination,
 > validation, and local promise rendering—is next.
 
+> [!success] 2026-08-02 live proposal coordination landed
+> Task 11 is committed at `dca267a`. The runtime now pins the selected direct
+> Anthropic/Haiku proposal contract to the frozen aggregate, launches at most one
+> request per epoch, enforces the five-second deadline, and records cancellation
+> intent before the terminal cancelled state. Abort races and late output are
+> evidence-only. The coordinator persists the episode, request, and immutable
+> packet before launch; validates exact-three or abstention output; stores every
+> rank; chooses the highest executable target; and emits one arm intent with the
+> exact epoch, local generation, fixed TTL, and required adapter leases. Promise
+> text comes only from the frozen local catalog, never `model_target_label`.
+> Malformed abstentions, partial lists, unresolved targets, stale packets, and
+> dormant `open_url` display nothing. The focused suite passes `15/15`, the full
+> repository passes `525/525`, and the original phase-zero aggregate remains
+> unchanged and passing. Task 12—three deterministic executors and exact endpoint
+> verification—is next.
+
 Metadata-only packets retain the focused app/window identity, an exact Codex task
 only when a product-owned dispatch or bounded read-derived activity record
 currently supplies one,
