@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-08-02
 aliases:
   - Computer-use autocomplete V1 brainstorm
   - Next-destination Tab V1 scope
@@ -716,9 +716,8 @@ The MVP context system can be only four small conceptual pieces:
 1. **Event observer:** notices meaningful events already needed by the product,
    such as app/window changes, clicks, key commands, navigation, idle periods,
    completed model responses, and Tab feedback.
-2. **Rolling buffer:** keeps the most recent meaningful events and a small
-   number of screenshots captured at state transitions. It is a timeline, not
-   continuous video.
+2. **Rolling buffer:** keeps the most recent meaningful metadata events. It is
+   a bounded timeline, not continuous video or screenshot capture.
 3. **Prospective episode ledger:** persists prediction opportunities,
    candidates, feedback, executed routes, human follow-up actions, and
    resulting states so the usable history grows after installation.
@@ -728,10 +727,9 @@ The MVP context system can be only four small conceptual pieces:
 
 A first prediction packet could contain:
 
-- the current active screenshot;
 - active app, window, page, tab, or document identity when cheaply available;
+- focused role and a bounded set of allowed open-window titles;
 - a chronological text representation of the last several meaningful events;
-- a few transition screenshots from that recent sequence; and
 - recent accepted, ignored, or overridden completions when relevant.
 
 Exact event counts and time windows should be tuned empirically. The first
@@ -829,8 +827,9 @@ surface that covers the V5 wins.
 
 The complete V0 is:
 
-1. Observe the active screenshot, app/window identity, exact Codex task
-   identity when available, and a short chronological event buffer. The buffer
+1. Observe metadata-only active app/window identity, exact Codex task identity
+   when available, focused role, bounded open-window titles, and a short
+   chronological event buffer. The buffer
    records interaction shape such as typing, scrolling, focus, and idle
    boundaries without storing literal keystrokes or clipboard contents.
 2. Trigger proposal calls after a meaningful app/window transition, an
@@ -844,10 +843,10 @@ The complete V0 is:
    armed only while a fresh suggestion is visible, no typing burst is active,
    the context epoch is unchanged, and the focused control is neither editable
    nor sensitive. Otherwise the physical Tab passes through untouched.
-5. Restrict execution to four deterministic primitives: activate an
-   application, focus a window, focus a named Codex task through the structured
-   adapter, and open a URL. Unsupported predictions may be logged but are not
-   displayed or executed.
+5. Restrict execution to three deterministic primitives: activate an
+   application, focus a window, and focus a named Codex task through the
+   structured adapter. Unsupported predictions—including dormant URL
+   completions—may be logged but are not displayed or executed.
 6. Use no computer-use execution model in V0. Codex app-server and Claude Code
    headless are proposal-provider candidates behind the same tool-free
    contract. Visual computer use remains later evidence-driven expansion.

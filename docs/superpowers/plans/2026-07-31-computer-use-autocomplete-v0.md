@@ -7,13 +7,14 @@
 
 **Goal:** Build a Dylan-only Mac prototype that logs every eligible prediction
 opportunity, proactively offers one exact navigation completion, and executes
-only one of four deterministic primitives after a locally authorized Tab.
+only one of three deterministic primitives after a locally authorized Tab.
 
 **Architecture:** A Hammerspoon Spoon owns observation, privacy-sensitive local
-invalidation, the non-activating pill, physical Tab authority, screenshots, and
-three native actuators. A Node 24 ESM process owns ordered ledger ingress,
+invalidation, the non-activating pill, physical Tab authority, and two native
+actuators. A Node 24 ESM process owns ordered ledger ingress,
 immutable packets, tool-free provider calls, the Codex task adapter, lifecycle
-state, SQLite persistence, replay, and reporting. They communicate through a
+state, exact Codex-task actuation, SQLite persistence, replay, and reporting.
+They communicate through a
 private append-only JSONL and atomic-command bridge under Application Support;
 no model can dispatch an action.
 
@@ -491,8 +492,8 @@ shown.
   keydown decision; the only code allowed to consume Tab.
 - `hammerspoon/ComputerUseAutocomplete.spoon/pill.lua` — non-activating canvas
   and paused/progress/failure states.
-- `hammerspoon/ComputerUseAutocomplete.spoon/executor.lua` — app, window, and
-  URL dispatch plus endpoint observations.
+- `hammerspoon/ComputerUseAutocomplete.spoon/executor.lua` — native app/window
+  dispatch plus exact endpoint observations; Codex task dispatch stays in Node.
 
 ### Probes, installation, and tests
 
@@ -2123,14 +2124,16 @@ continuing.
 **Files:**
 
 - Create: `hammerspoon/ComputerUseAutocomplete.spoon/executor.lua`
-- Create: `src/execution/arc-url.mjs`
 - Create: `src/execution/dispatcher.mjs`
 - Create: `src/execution/verify.mjs`
-- Test: `test/execution/arc-url.test.mjs`
 - Test: `test/execution/dispatcher.test.mjs`
+- Test: `test/execution/executor-source.test.mjs`
 - Test: `test/execution/verify.test.mjs`
+- Modify: `hammerspoon/ComputerUseAutocomplete.spoon/{init,authority,observer}.lua`
+- Modify: `src/bridge/command-writer.mjs`
+- Modify: `src/install/hammerspoon-loader.mjs`
 
-- [ ] **Step 1: Write failing allowlist, precondition, and dispatch tests**
+- [x] **Step 1: Write failing allowlist, precondition, and dispatch tests**
 
   Reject a fifth primitive, multi-step arrays, disappeared targets, stale
   epoch/generation, expired leases, dispatch before accepted feedback, duplicate
@@ -2139,14 +2142,14 @@ continuing.
   canonical expected endpoint identity set and the Hammerspoon source-sequence
   floor captured immediately before dispatch.
 
-- [ ] **Step 2: Write failing exact endpoint tests**
+- [x] **Step 2: Write failing exact endpoint tests**
 
-  Require frontmost bundle for app, bundle+window ID for window, re-read thread
-  ID for Codex, and exact normalized allowed URL for Arc. Distinguish
+  Require frontmost bundle for app, bundle+window ID for window, and re-read
+  thread ID for Codex. Distinguish
   `precondition_failed`, `dispatched`, `verified_exact`, `observed_partial`, and
   `failed`. Escape can cancel only before dispatch; no retry/recovery runs.
 
-- [ ] **Step 3: Run the focused tests and verify RED**
+- [x] **Step 3: Run the focused tests and verify RED**
 
   ```bash
   node --test test/execution/*.test.mjs
@@ -2154,15 +2157,17 @@ continuing.
 
   Expected: module-not-found failures.
 
-- [ ] **Step 4: Implement app/window dispatch in the new Lua executor**
+- [x] **Step 4: Implement app/window dispatch in the new Lua executor**
 
-  The stable `init.lua` registry loads the new module without modification.
+  Preserve closed historical stage-3 and stage-6 installs. Add execution as a
+  closed stage-8 install so upgrading the already-installed stage-6 Spoon adds
+  only the new executor module.
   Hammerspoon emits `action_dispatched` before native app/window dispatch,
   including action ID, expected endpoint, and source-sequence floor; marks that
   action in flight; and tags matching observed transitions until
   verification/deadline. Arc remains read-only and privacy-only in V0.
 
-- [ ] **Step 5: Implement Codex routing and one central dispatcher**
+- [x] **Step 5: Implement Codex routing and one central dispatcher**
 
   Node routes `focus_codex_task` through the frozen proven adapter; all other
   primitives go through one Hammerspoon command. Revalidate epoch, generation,
@@ -2172,7 +2177,7 @@ continuing.
   events emitted during focus carry product origin directly; events outside
   that in-flight call cannot inherit its action ID.
 
-- [ ] **Step 6: Run tests and commit**
+- [x] **Step 6: Run tests and commit**
 
   ```bash
   node --test test/execution/*.test.mjs
@@ -2183,8 +2188,24 @@ continuing.
   ```bash
   git add hammerspoon/ComputerUseAutocomplete.spoon/executor.lua \
     src/execution test/execution
-  git commit -m "feat: execute four reversible navigation primitives"
+  git commit -m "feat: execute three reversible navigation primitives"
   ```
+
+> [!success] 2026-08-02 deterministic V0 execution landed
+> Task 12 is committed at `2f3e436`. Stage 8 adds only the native executor while
+> preserving the valid historical stage-3/stage-6 install sets. Hammerspoon can
+> activate an already-running app or focus an already-existing exact window;
+> exact Codex-task routing stays in the structured adapter. The central
+> dispatcher persists before dispatch and rechecks accepted feedback, epoch,
+> local generation, target presence, and adapter leases. A post-Tab pointer or
+> key event invalidates execution authority. Every action carries one canonical
+> expected identity set, the source frontier captured after persistence, and
+> the actual Tab-accept timestamp. Exact app/window/task verification is
+> separated from Codex app-only `observed_partial`; no retry, generic Codex
+> fallback, multi-step route, authored action, or `open_url` exists. The focused
+> suite passes `75/75`, the full repository passes `540/540`, and the frozen
+> phase-zero aggregate remains unchanged and passing. Task 13—runtime lifecycle
+> wiring and the slim controlled sanity run—is next.
 
 ### Task 13: Wire start/stop/status and complete the controlled sanity run
 
@@ -2245,7 +2266,7 @@ continuing.
   `ignored`, `override`, `accepted-success`, `accepted-failure`, and
   privacy-suppressed. The ordinary runtime must reject its provider ID.
 
-  Test an exact executor-trial matrix for all four primitives and these races:
+  Test an exact executor-trial matrix for all three primitives and these races:
   exact dispatch/verification; a physical human event interleaved before
   acceptance; a context change after acceptance but before dispatch (zero
   actions); and a context change after dispatch (no retry or recovery, only the
@@ -2395,10 +2416,9 @@ continuing.
   ```
 
   Exercise every primitive against harmless prepared endpoints, including the
-  physical interleavings and context races from Step 2. `open_url` gets one
-  safe query/fragment-free test URL; sparse natural coverage remains expected.
-  Expected: one frozen passing executor result with exact verification for all
-  four primitives and no second dispatch.
+  physical interleavings and context races from Step 2. Expected: one passing
+  executor result with exact verification for all three primitives and no
+  second dispatch.
 
 - [ ] **Step 10: Run five to ten real-provider controlled opportunities**
 
@@ -2706,20 +2726,16 @@ runtime artifacts but must never copy them into Git.
   `descriptive_selection_biased=true`; it cannot enter next-human accuracy or a
   causal history-lift estimate.
 
-- [ ] **Step 2: Write failing product, latency, and sparse-URL tests**
+- [ ] **Step 2: Write failing product, latency, and primitive-coverage tests**
 
   Report trigger/opportunity/suppression/packet/call/display counts; proposal
   validity and p50/p95; displayed feedback outcomes; verified execution rate;
   stale/cancel/failure reasons; primitive distribution; and daily exposure.
-  `open_url` gets a preregistered standalone funnel from opportunity through
-  acceptance, with the note that query/fragment privacy rules exclude Gmail
-  and many revisit targets. Near-zero URL use must not decrement general model
-  validity or be narrated as predictor failure.
-
-  Define a URL opportunity only when the frozen packet catalog contains at
-  least one policy-valid, exact, currently executable safe URL. Editable- or
-  sensitive-focus manual-trigger suppressions belong only in suppression counts,
-  never any primitive opportunity or accuracy denominator.
+  The primitive distribution is closed to app activation, exact existing-window
+  focus, and exact Codex-task focus. Dormant `open_url` wire values are excluded
+  from opportunity, display, execution, and report denominators. Editable- or
+  sensitive-focus manual-trigger suppressions belong only in suppression
+  counts, never any primitive opportunity or accuracy denominator.
 
   Report exploratory accuracy by chronological-history amount only when each
   bin has a disclosed denominator. It is descriptive; no monotonic or causal

@@ -129,6 +129,18 @@ tags:
 > pass. Task 12—three deterministic executors and exact endpoint verification—is
 > next.
 
+> [!success] V0 deterministic execution landed, 2026-08-02
+> Task 12 is committed at `2f3e436`. A closed stage-8 Spoon adds only native
+> app/window execution; exact Codex-task routing stays in the structured
+> adapter. Dispatch is one-primitive, persist-first, accepted-only, and guarded
+> again by exact epoch, generation, target, and lease checks. Pointer or key
+> activity after Tab invalidates the action. Endpoint outcomes distinguish
+> exact verification from Codex app-only partial observation, with no retry,
+> generic activation fallback, multi-step route, or URL execution. `75/75`
+> focused tests, `540/540` repository tests, and the unchanged frozen phase-zero
+> verifier pass. Task 13—runtime lifecycle wiring and the slim controlled sanity
+> run—is next.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -147,7 +159,7 @@ and confidence calibration may later improve coverage, but the immediate V0
 tests whether a tool-free proposal model plus a three-primitive deterministic
 executor produces a habit-forming interaction.
 
-As of August 2, phase zero and Tasks 8–11 are complete. The metadata-only
+As of August 2, phase zero and Tasks 8–12 are complete. The metadata-only
 observer and packet foundation, direct Anthropic provider, read-derived Codex
 identity, physical
 Tab boundary, non-activating pill, and three privacy boundaries all passed the
@@ -162,8 +174,11 @@ and exact resolver catalogs behind a two-read stale-context guard. Live proposal
 coordination pins the selected provider, persists before launch, validates all
 three ranks or abstention, generates promises only from local canonical names,
 and arms one fixed-TTL suggestion with exact epoch, generation, and lease
-authority. The next work is Task 12: three deterministic executors and exact
-endpoint verification. See
+authority. Stage 8 now adds the three-primitive deterministic executor without
+invalidating the installed stage-6 boundary: native app/window actions stay in
+Hammerspoon, while exact Codex-task routing stays in the structured adapter.
+The next work is Task 13: runtime lifecycle wiring and the slim controlled
+sanity run. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
 read-path finding]].
 
