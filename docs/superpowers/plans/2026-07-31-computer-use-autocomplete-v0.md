@@ -2215,20 +2215,21 @@ continuing.
 > focused/full test results and guided-trial outcomes in
 > `docs/controlled-sanity.md`, then tag the clean commit.
 
-> [!failure] 2026-08-03 controlled sanity stopped at the live bridge boundary
-> The automated runtime candidate and four focused live-integration fixes are
-> committed through `8e67f27`; the full suite passes `586/586`, installed-Spoon
+> [!failure] 2026-08-03 controlled sanity stopped on a duplicate stale transition
+> The former Lua/Node empty-payload mismatch is fixed at `96e2fa6`: zero-field
+> authority events now carry explicit JSON objects while genuine empty arrays
+> retain their encoding. The full suite passes `587/587`, installed-Spoon
 > preflight passes, deterministic sanity passes `10/10`, and SQLite integrity
-> passes. Five bounded real-provider attempts retained six cancelled/stale
-> episodes, zero candidates, and zero actions. The remaining blocker is an
-> exact bridge-contract mismatch: Hammerspoon serialized the empty
-> `manual_triggered.payload` table as JSON `[]`, while Node ingress requires an
-> object. Ingress failed closed before any model result or execution. The run
-> stopped rather than beginning another repair loop. The six-cell physical
-> executor matrix remains pending, no sanity tag exists, natural work remains
-> locked, and the phase-zero aggregate must not be refreshed until this bridge
-> boundary is fixed and the controlled run passes. Public decision commit:
-> `3fc7323`.
+> passes. One real-provider opportunity completed with a valid abstention. A
+> second became stale, then a context-change race attempted to apply
+> `context_stale` again; the five-axis reducer rejected the duplicate validity
+> transition and the runtime failed closed. The retained ledger contains eight
+> episodes (six cancelled/stale, one current abstention, one pending/stale),
+> zero candidates, and zero actions. The run stopped rather than beginning
+> another patch loop. The six-cell physical executor matrix remains pending, no
+> sanity tag exists, natural work remains locked, and the phase-zero aggregate
+> must not be refreshed until stale invalidation has one safe owner or explicit
+> idempotence and the controlled run passes. Public decision commit: `8ad818c`.
 >
 > The operator choreography also had an impossible instruction: remain still,
 > then reply in the same app. Replying itself changes focus and context. Future
