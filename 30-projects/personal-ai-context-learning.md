@@ -96,6 +96,15 @@ tags:
 > and phase zero remains frozen PASS. Task 9—context epochs, triggers, and
 > causal destination transitions—is now next.
 
+> [!success] V0 causal opportunity state landed, 2026-08-02
+> Task 9 is committed at `6d0c7ee` after ledger index correction `eb75ac0`.
+> Node now owns context epochs, stable-idle/manual trigger arbitration, human
+> versus product origin, destination-transition coalescing, pending
+> override/ignore feedback, and the bounded Codex/Arc lease loop. Tab acceptance
+> no longer invalidates its own accepted work; only verified navigation advances
+> the next epoch. `496/496` repository tests and the frozen phase-zero verifier
+> pass. Task 10—immutable live packets and frozen resolution catalogs—is next.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -114,15 +123,17 @@ and confidence calibration may later improve coverage, but the immediate V0
 tests whether a tool-free proposal model plus a four-primitive deterministic
 executor produces a habit-forming interaction.
 
-As of August 2, phase zero and the Task 8 runtime ledger are complete. The metadata-only observer and packet
+As of August 2, phase zero, the Task 8 runtime ledger, and Task 9 causal
+opportunity state are complete. The metadata-only observer and packet
 foundation, direct Anthropic provider, read-derived Codex identity, physical
 Tab boundary, non-activating pill, and three privacy boundaries all passed the
 frozen aggregate gate. Exact arbitrary active-task reading remains unreliable,
 but composer activity changes the expected thread's readable `recencyAt` and
 raw ordering within the label horizon, which is enough for the sparse exact
 stratum. The ledger now durably separates prediction, validity, presentation,
-feedback, and execution while preserving exact provenance. The next work is
-Task 9: context epochs, proposal triggers, and causal destination transitions. See
+feedback, and execution while preserving exact provenance. Node now owns the
+epoch, trigger, causality, feedback-pending, and adapter-lease boundaries. The
+next work is Task 10: immutable live packets and frozen resolution catalogs. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
 read-path finding]].
 

@@ -340,6 +340,19 @@ tags:
 > passing. Task 9—context epochs, triggers, and causal destination
 > transitions—is next.
 
+> [!success] 2026-08-02 causal opportunity state landed
+> Task 9 is committed at `6d0c7ee` after the explicit ledger-policy-hash index
+> correction at `eb75ac0`. Node now solely owns context epochs, exact
+> stabilization, automatic/manual opportunity arbitration, and causal
+> destination transitions. Physical human tokens and product action IDs remain
+> distinct; ambiguous races stay unknown; related watcher events coalesce into
+> one full identity set; pending feedback becomes override only for a different
+> supported human destination. The bounded adapter loop owns 200 ms polling and
+> 350 ms leases and invalidates before publishing any changed value. The full
+> repository passes `496/496`, and the original phase-zero aggregate remains
+> unchanged and passing. Task 10—immutable live packets and frozen resolution
+> catalogs—is next.
+
 Metadata-only packets retain the focused app/window identity, an exact Codex task
 only when a product-owned dispatch or bounded read-derived activity record
 currently supplies one,

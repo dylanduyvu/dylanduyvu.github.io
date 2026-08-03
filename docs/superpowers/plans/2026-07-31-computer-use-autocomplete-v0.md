@@ -1842,6 +1842,10 @@ continuing.
 > focused suite passes `22/22`; the complete repository passes `467/467`; and
 > the frozen phase-zero verifier still returns the same PASS manifest. The next
 > implementation task is Task 9.
+>
+> Follow-up commit `eb75ac0` adds the explicit runtime-policy-hash index that
+> Step 4 required and a schema assertion for it; the six-table boundary remains
+> unchanged.
 
 ### Task 9: Add context epochs, triggers, and causal destination transitions
 
@@ -1856,7 +1860,7 @@ continuing.
 - Test: `test/state/opportunity-manager.test.mjs`
 - Test: `test/runtime/adapter-refresh.test.mjs`
 
-- [ ] **Step 1: Write failing epoch and one-opportunity-per-state tests**
+- [x] **Step 1: Write failing epoch and one-opportunity-per-state tests**
 
   Cover every meaningful state change, 750/400/800 ms timers, automatic
   non-editable requirement, manual trigger, editable manual suppression event,
@@ -1864,7 +1868,7 @@ continuing.
   privacy resume pending, adapter disconnect/lease expiry, and no retrigger after
   dismiss/ignore/expiry/provider failure without new state.
 
-- [ ] **Step 2: Write failing causal-origin and coalescing tests**
+- [x] **Step 2: Write failing causal-origin and coalescing tests**
 
   Cover one-second human cause tokens, product action IDs, human/product races,
   unknown origin, 300 ms semantic quiet, one-second hard close, watcher-order
@@ -1878,7 +1882,7 @@ continuing.
   locally; and `lease_refresh` can never change local generation or suggestion
   TTL. Leaving predicting/displayed state stops polling immediately.
 
-- [ ] **Step 3: Run the tests and verify RED**
+- [x] **Step 3: Run the tests and verify RED**
 
   ```bash
   node --test test/state/context-epoch.test.mjs \
@@ -1888,7 +1892,7 @@ continuing.
 
   Expected: module-not-found failures.
 
-- [ ] **Step 4: Implement Node-owned epochs and opportunities**
+- [x] **Step 4: Implement Node-owned epochs and opportunities**
 
   Consume the frozen phase-zero event ingress without modifying it. Node alone
   advances `context_epoch`; Hammerspoon `local_generation` remains a local
@@ -1896,7 +1900,7 @@ continuing.
   exact app/window/title/task/URL/role/privacy/display re-read. Optional missing
   Codex completion disables only that trigger.
 
-- [ ] **Step 5: Implement pending feedback and destination coalescing**
+- [x] **Step 5: Implement pending feedback and destination coalescing**
 
   Non-Tab/Escape input while shown hides/stales immediately but leaves feedback
   pending on the cause token. Token close sets `override` only when its
@@ -1911,7 +1915,7 @@ continuing.
   refreshes a lease. The coordinator may arm or keep a pill only while every
   packet-recorded adapter dependency has a fresh 350 ms lease.
 
-- [ ] **Step 6: Run tests and commit**
+- [x] **Step 6: Run tests and commit**
 
   ```bash
   node --test test/state/context-epoch.test.mjs \
@@ -1926,6 +1930,20 @@ continuing.
     test/runtime/adapter-refresh.test.mjs
   git commit -m "feat: add causal opportunity state"
   ```
+
+> [!success] 2026-08-02 Task 9 passed
+> Commit `6d0c7ee` adds the Node-owned context epoch, exact 750/400/800 ms
+> opportunity timing, same-state stabilization gate, safe manual fallback,
+> one automatic opportunity per epoch, privacy-resume hold, human/product/
+> unknown causal origin, 300 ms quiet and one-second hard destination
+> coalescing, independent human-event anchors, and pending override/ignore
+> feedback. The single adapter-refresh owner polls only live Codex/Arc
+> dependencies at 200 ms, grants 350 ms leases, invalidates before replacement,
+> preserves a lease across predicting-to-displayed for the same suggestion, and
+> never changes generation or TTL. Tab acceptance itself does not invalidate
+> accepted work; only verified product navigation advances the next epoch. The
+> focused Task 9 suite passes `29/29`, the complete repository passes `496/496`,
+> and the frozen phase-zero verifier remains PASS. Task 10 is next.
 
 ### Task 10: Build immutable live packets and frozen resolution catalogs
 
