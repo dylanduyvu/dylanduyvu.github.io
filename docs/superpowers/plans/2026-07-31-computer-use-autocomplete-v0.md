@@ -2215,6 +2215,26 @@ continuing.
 > focused/full test results and guided-trial outcomes in
 > `docs/controlled-sanity.md`, then tag the clean commit.
 
+> [!failure] 2026-08-03 controlled sanity stopped at the live bridge boundary
+> The automated runtime candidate and four focused live-integration fixes are
+> committed through `8e67f27`; the full suite passes `586/586`, installed-Spoon
+> preflight passes, deterministic sanity passes `10/10`, and SQLite integrity
+> passes. Five bounded real-provider attempts retained six cancelled/stale
+> episodes, zero candidates, and zero actions. The remaining blocker is an
+> exact bridge-contract mismatch: Hammerspoon serialized the empty
+> `manual_triggered.payload` table as JSON `[]`, while Node ingress requires an
+> object. Ingress failed closed before any model result or execution. The run
+> stopped rather than beginning another repair loop. The six-cell physical
+> executor matrix remains pending, no sanity tag exists, natural work remains
+> locked, and the phase-zero aggregate must not be refreshed until this bridge
+> boundary is fixed and the controlled run passes. Public decision commit:
+> `3fc7323`.
+>
+> The operator choreography also had an impossible instruction: remain still,
+> then reply in the same app. Replying itself changes focus and context. Future
+> physical trials must use local timed observation or event evidence and must
+> not require an in-app acknowledgement during the stillness window.
+
 **Files:**
 
 - Create: `src/commands/run.mjs`
@@ -2223,8 +2243,6 @@ continuing.
 - Create: `src/runtime/health.mjs`
 - Create: `src/sanity/scenario-provider.mjs`
 - Create: `src/sanity/executor-trials.mjs`
-- Create: `src/sanity/evidence.mjs`
-- Create: `src/sanity/abort.mjs`
 - Create: `docs/controlled-sanity.md`
 - Test: `test/commands/run.test.mjs`
 - Test: `test/commands/status.test.mjs`
@@ -2232,8 +2250,6 @@ continuing.
 - Test: `test/runtime/health.test.mjs`
 - Test: `test/sanity/scenario-provider.test.mjs`
 - Test: `test/sanity/executor-trials.test.mjs`
-- Test: `test/sanity/evidence.test.mjs`
-- Test: `test/sanity/abort.test.mjs`
 - Test: `test/integration/opportunity-flow.test.mjs`
 
 - [ ] **Step 1: Write failing process/health/end-to-end tests**
@@ -2256,7 +2272,7 @@ continuing.
   gone. Tests prohibit a second runtime and reject the sanity-only provider in
   ordinary `run` mode.
 
-- [ ] **Step 2: Write failing deterministic-sanity and evidence tests**
+- [ ] **Step 2: Write failing deterministic-sanity and guided-trial tests**
 
   The scenario provider is callable only by `sanity run`; it must enter through
   the production packet schema, provider-result validator, coordinator,
@@ -2273,43 +2289,9 @@ continuing.
   first action's terminal verification). Assert exact episode/action IDs,
   origins, expected identity sets, and source-sequence floors throughout.
 
-  Component and final sanity evidence are private and immutable:
-
-  ```text
-  sanity/components/<suite>/attempts/<six-digit-ordinal>/manifest.json
-  sanity/components/<suite>/attempts/<six-digit-ordinal>/manifest.sha256
-  sanity/components/<suite>/latest.json
-  sanity/attempts/<six-digit-ordinal>/manifest.json
-  sanity/attempts/<six-digit-ordinal>/manifest.sha256
-  sanity/attempts/<six-digit-ordinal>/artifacts/...
-  sanity/active.json
-  sanity/latest.json
-  ```
-
-  Each suite freezes a component manifest. A distinct final attempt starts
-  before the real-provider run, binds those component hashes, remains at
-  `active.json`, and freezes only after stop plus SQLite integrity. Its manifest
-  uses the phase-zero inventory rules and additionally binds runtime source
-  commit, aggregate phase-zero manifest hash, runtime-policy hash, source
-  inventory/hash, an exact `action_runtime_inventory`/hash covering every
-  behavior-bearing file through Task 13, component manifests,
-  controlled-opportunity episode IDs, and final SQLite integrity. Later
-  evaluation/report command files may be added outside that closed inventory;
-  read-only verification requires every inventoried action-runtime file to
-  remain byte-identical and rejects its modification/deletion, while permitting
-  additive files whose complete inventory is separately bound by Task 16.
-  Aborted final attempts remain immutable and advance
-  `latest.json`; no rerun may overwrite them.
-
-  Before any component or final manifest freezes, the runtime must unarm, stop,
-  close SQLite, and inventory only quiescent artifacts. A passing component
-  freezes and clears its active pointer. A fatal component result freezes and
-  returns its exact attempt ID/hash plus `requires_abort=true`; tests prove the
-  later abort names that ID directly rather than consulting `latest.json`.
-  Compatibility tests add an evaluation-only file and require the frozen
-  action-runtime subset to remain valid, then modify/delete a frozen runtime
-  file and require failure. Release-mode verification additionally requires
-  Task 16's complete-inventory unlock hash.
+  Do not create component/final manifests or a second evidence system. Tests,
+  exact private ledger rows, the concise controlled-sanity note, and the final
+  clean Git tag are the evidence boundary for this personal prototype.
 
 - [ ] **Step 3: Run the focused tests and verify RED**
 
@@ -2320,7 +2302,7 @@ continuing.
 
   Expected: module-not-found failures.
 
-- [ ] **Step 4: Implement convention-based CLI commands without changing `src/cli.mjs`**
+- [ ] **Step 4: Implement the minimal CLI/runtime lifecycle**
 
   `cli.mjs` discovers exact command modules by filename. `run` takes the
   exclusive process lock, verifies phase zero and loaded Spoon hashes, opens the
@@ -2328,37 +2310,21 @@ continuing.
   `stop` cancels undispatched work, writes unarmed state, closes ledger, and
   leaves Hammerspoon loaded but inactive.
 
-  Ordinary `run` also verifies `config/trial-unlock.json` with exact fields
-  `{schema_version,enabled,runtime_source_commit,runtime_inventory_sha256,
-  evaluation_inventory_sha256,policy_sha256,protocol_sha256,
-  phase_zero_manifest_sha256,sanity_manifest_sha256}` and rejects absence,
-  unknown fields, false, dirty/drifted inventoried files, mismatched prerequisite
-  manifests, or non-ancestor commits. The runtime inventory covers every tracked
-  `src/`, `hammerspoon/`, runtime `config/`, package manifest/lockfile, and
-  evaluation protocol file except the self-referential unlock artifact itself.
-  `sanity run` bypasses only this
-  artifact check and only when bound to the exact active component/final sanity
-  attempt; it cannot write a natural-work cohort.
+  Ordinary `run` requires the approved release tag to point at `HEAD` and a
+  clean tracked tree. Before the tag exists, only explicit `sanity run` may
+  start the clean candidate. This single check replaces `trial-unlock.json` and
+  release-inventory choreography.
 
-- [ ] **Step 5: Implement deterministic sanity mode and immutable evidence**
+- [ ] **Step 5: Implement deterministic sanity mode and guided trials**
 
   Give `sanity run` its own private runtime session/root and an explicit
   scenario-provider capability unavailable to normal `run`. Scenario fixtures
   select responses and operator instructions only; their packets, outputs,
   UI events, feedback, actions, and verification still travel through the
-  production paths. Quiesce and freeze each attempt before producing a decision.
-
-  Implement `sanity abort --active` for an in-progress final attempt and
-  `sanity abort --attempt <exact-id>` for the just-frozen fatal component
-  returned by `sanity run`. Either form is one atomic operator action: it
-  freezes the partial failed attempt, writes unarmed state, stops Node, closes
-  SQLite, writes only public-safe blocker facts to
-  `docs/controlled-sanity.md`, stages and commits only that document as
-  `test: record autocomplete V0 sanity blocker`, restores/uninstalls the
-  Hammerspoon loader, verifies restoration, and exits `2`. It never resolves a
-  target through a previous passing `latest.json`; an active partial is frozen
-  during abort, while an exact frozen component ID is hash-verified. Cleanup is
-  in a guaranteed finalizer; private evidence is never staged.
+  production paths. Stop and close the private ledger before recording the
+  public-safe outcome in `docs/controlled-sanity.md`. Failed rows remain private;
+  no abort subcommand, active pointer, or immutable sanity-manifest hierarchy is
+  built.
 
 - [ ] **Step 6: Implement health output and private diagnostics**
 
@@ -2382,7 +2348,7 @@ continuing.
   Expected: exit `0`. Then:
 
   ```bash
-  git add src/commands src/runtime/health.mjs src/sanity \
+  git add AGENTS.md src/cli.mjs src/commands src/runtime/health.mjs src/sanity \
     docs/controlled-sanity.md test
   git commit -m "feat: complete autocomplete V0 runtime"
   ```
@@ -2408,7 +2374,7 @@ continuing.
   node src/cli.mjs sanity run --suite deterministic --wait-ready-ms 5000
   ```
 
-  Expected: one frozen passing scenario result. Only then run:
+  Expected: one passing scenario result in the private ledger. Only then run:
 
   ```bash
   node src/cli.mjs sanity run --suite executor-trials --guided \
@@ -2423,15 +2389,8 @@ continuing.
 - [ ] **Step 10: Run five to ten real-provider controlled opportunities**
 
   ```bash
-  node src/cli.mjs sanity begin-final --require-components latest
-  ```
-
-  Expected: one active final-attempt ID bound to both passing component
-  manifests. Only then:
-
-  ```bash
   node src/cli.mjs sanity run --suite real-provider --background \
-    --attempt active --wait-ready-ms 5000
+    --wait-ready-ms 5000
   ```
 
   Expected: `ready:true` with PID/session/source commit/policy hash. Only then:
@@ -2466,32 +2425,17 @@ continuing.
   node src/cli.mjs probe verify --read-only
   ```
 
-  Expected: `PHASE_ZERO=PASS`. Only then freeze the still-active final attempt;
-  finalization reruns SQLite integrity and binds its result:
-
-  ```bash
-  node src/cli.mjs sanity finalize --attempt active
-  ```
-
-  Expected: one immutable final manifest and no `active.json`. Only then run the
-  read-only sanity verifier and require all source inventories,
-  scenario/executor component evidence, controlled episode IDs, artifact
-  modes/hashes, and SQLite integrity to pass:
-
-  ```bash
-  node src/cli.mjs sanity verify --read-only
-  ```
-
-  Expected: `SANITY=PASS`.
+  Expected: `PHASE_ZERO=PASS`. Then verify SQLite integrity and record the focused/full test counts plus guided
+  and real-provider outcomes in `docs/controlled-sanity.md`. No generated
+  sanity manifest or active pointer exists.
 
 - [ ] **Step 12: Apply the falsifier policy and commit the sanity decision**
 
   A stolen Tab, focus-stealing pill, armed state surviving bridge loss, secret
   leak, or provider-authority violation is a terminal phase-zero regression:
-  for an in-progress final run, immediately run `node src/cli.mjs sanity abort
-  --active`; for a completed component, use `node src/cli.mjs sanity abort
-  --attempt <returned-attempt-id>`. Stop this plan. A non-safety functional
-  failure preserves its failed private episode;
+  stop the runtime, record the public-safe blocker in the controlled-sanity
+  note, and stop this plan. A non-safety functional failure preserves its
+  failed private episode;
   fix only the named V0 module, rerun affected automated and controlled cases,
   and never delete the failed attempt.
 
@@ -2500,6 +2444,7 @@ continuing.
   ```bash
   git add docs/controlled-sanity.md
   git commit -m "test: verify autocomplete V0 controlled sanity"
+  git tag computer-use-autocomplete-v0-sanity
   ```
 
   Chunk 2 deliberately stops before the habit trial. Chunk 3 must add label
@@ -2508,8 +2453,9 @@ continuing.
 
 ## Chunk 3: Frozen evaluation and the personal habit trial
 
-Do not begin this chunk unless both `PHASE_ZERO=PASS` and `SANITY=PASS` verify
-read-only against the exact runtime source commit. Do not begin natural-work
+Do not begin this chunk unless `PHASE_ZERO=PASS`, the committed controlled-sanity
+note passes review, and `computer-use-autocomplete-v0-sanity` points at the
+approved clean runtime commit. Do not begin natural-work
 collection until Tasks 14–16 are committed. Evaluation code may read private
 runtime artifacts but must never copy them into Git.
 

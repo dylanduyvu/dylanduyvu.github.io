@@ -943,6 +943,18 @@ under manifest
 The V0 now moves to its runtime ledger and five-axis state machine rather than
 another feasibility probe.
 
+Task 13's August 3 controlled sanity did not reach a model result. The runtime
+candidate passed `586/586` automated tests, installed-Spoon preflight,
+deterministic sanity `10/10`, and SQLite integrity, but five bounded live starts
+found a sequence of integration-contract failures. Four received narrow tested
+fixes; the final attempt stopped on an exact Hammerspoon/Node payload mismatch:
+the empty manual-trigger payload arrived as an array while ingress requires an
+object. The retained ledger has six cancelled/stale episodes, zero candidates,
+and zero actions. No sanity tag exists and natural work remains locked. The
+next decision is one bounded bridge-contract repair and controlled rerun versus
+revisiting the runtime integration boundary; it is not authorization to expand
+the product surface.
+
 ## Questions for computer-use model research
 
 - Which existing products and models—including the Induction Labs lead Dylan
