@@ -2236,6 +2236,26 @@ continuing.
 > physical trials must use local timed observation or event evidence and must
 > not require an in-app acknowledgement during the stillness window.
 
+> [!failure] 2026-08-03 bounded stale-ownership retry stopped on stabilization
+> The stale-ownership audit traced the crash to two legitimate notices for one
+> pending episode: event-router invalidation persisted `context_stale`, then the
+> overtaken packet build returned `context_epoch_changed` and attempted the same
+> immutable transition. Commit `9da4ba4` makes only the product persistence
+> boundary first-stale-wins; a later notice returns `already_stale`, while the
+> five-axis reducer remains strict. The regression was observed failing before
+> the change, the focused tests passed, the full suite passed `588/588`, the
+> exact-Spoon preflight passed, and the controlled runtime became ready at that
+> commit. The single allowed live retry then stopped on a different failure
+> before creating a new episode: `OpportunityManager.confirmStabilized` compared
+> a fresh observed state with a superseded scheduled state and threw `observed
+> state does not match the scheduled state`. No second repair was attempted.
+> Restart recovery left eight private episodes (seven cancelled/stale and one
+> abstained/stale), zero candidates, zero actions, and an integrity-clean SQLite
+> ledger. The stale fix is automated-test verified but not yet live-race
+> verified. The six-cell executor matrix remains pending, no sanity tag exists,
+> natural work remains locked, and the next bounded decision is stabilization
+> mismatch semantics—not another patch loop.
+
 **Files:**
 
 - Create: `src/commands/run.mjs`

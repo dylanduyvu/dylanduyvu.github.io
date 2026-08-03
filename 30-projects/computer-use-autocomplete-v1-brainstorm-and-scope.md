@@ -944,18 +944,25 @@ The V0 now moves to its runtime ledger and five-axis state machine rather than
 another feasibility probe.
 
 Task 13's August 3 controlled sanity reached one real provider result but did
-not reach a displayed candidate or action. The runtime candidate passed
-`587/587` automated tests, installed-Spoon preflight, deterministic sanity
-`10/10`, and SQLite integrity. The exact empty-payload bridge mismatch was fixed
-and verified live; one opportunity then completed with a valid abstention. A
-second opportunity exposed a new state-ownership race: two paths attempted to
-apply `context_stale`, and the reducer correctly rejected the duplicate
-validity transition. The retained ledger has eight episodes—six
-cancelled/stale, one current abstention, and one pending/stale—with zero
-candidates and zero actions. No sanity tag exists and natural work remains
-locked. The next decision is whether stale invalidation becomes explicitly
-idempotent or gets one owner; it is not authorization for another unbounded
-patch loop or a wider product surface.
+not reach a displayed candidate or action. The stale-ownership audit then
+confirmed that two legitimate paths could notify one pending episode: the
+event router persisted `context_stale`, then an overtaken packet build returned
+`context_epoch_changed`. Commit `9da4ba4` makes the product persistence boundary
+first-stale-wins while leaving the five-axis reducer strict. Its regression was
+observed failing before the change, the full suite passed `588/588`, exact-Spoon
+preflight passed, and the controlled runtime became ready at that commit.
+
+The single allowed live retry did not reach the target stale interleaving. It
+failed before creating a new episode when
+`OpportunityManager.confirmStabilized` compared a fresh observed state with a
+superseded scheduled state and threw. Restart recovery left eight private
+episodes—seven cancelled/stale and one abstained/stale—with zero candidates and
+zero actions; SQLite integrity still passes. No second repair was attempted.
+No sanity tag exists and natural work remains locked. The next bounded decision
+is what stabilization should do when state changes between the scheduled quiet
+check and its fresh read: reschedule, suppress, or treat the old check as
+overtaken. It is not authorization for another patch loop or wider product
+surface.
 
 ## Questions for computer-use model research
 
