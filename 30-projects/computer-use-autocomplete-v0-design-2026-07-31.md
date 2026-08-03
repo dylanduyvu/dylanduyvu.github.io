@@ -353,6 +353,21 @@ tags:
 > unchanged and passing. Task 10—immutable live packets and frozen resolution
 > catalogs—is next.
 
+> [!success] 2026-08-02 immutable packet runtime landed
+> Task 10 is committed at `35637e8`. Live V0 packets now preserve the closed
+> phase-zero metadata schema, omit every screenshot field and capture call,
+> bound history to 15 minutes and 100 events, and include exact Codex task
+> identity only while Codex is focused. The frozen catalog deduplicates exact
+> app/window/task identities with explicit `current_state|history_context`
+> provenance; state-only replay derives its resolver solely from the current
+> subset. Packet construction rechecks epoch, local generation, adapter value,
+> and fixed lease before persistence. One private immutable envelope contains
+> the full packet, state-only derivative, catalog snapshot, and all hashes; a
+> retry verifies the existing envelope before completing the SQLite packet-row
+> handoff. Metadata-only V0 writes no snapshot row. `510/510` tests and the
+> original phase-zero aggregate pass. Task 11—live proposal coordination,
+> validation, and local promise rendering—is next.
+
 Metadata-only packets retain the focused app/window identity, an exact Codex task
 only when a product-owned dispatch or bounded read-derived activity record
 currently supplies one,

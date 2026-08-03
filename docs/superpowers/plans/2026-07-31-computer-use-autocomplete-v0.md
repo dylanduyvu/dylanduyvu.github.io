@@ -1947,6 +1947,16 @@ continuing.
 
 ### Task 10: Build immutable live packets and frozen resolution catalogs
 
+> **Authoritative scope correction:** the July 31 metadata-only decision and
+> the V0 `open_url` deferral supersede the screenshot and URL language that
+> originally appeared in this task. Runtime packets must omit all screenshot
+> fields and calls. `screenshot-client.mjs` is a fail-closed capability boundary
+> only. The six-table ledger has no catalog table; the frozen catalog,
+> state-only derivative, and their hashes live together in one immutable private
+> envelope referenced by the packet row. Metadata-only V0 creates no snapshot
+> row. `current_scene` remains in the state-only derivative because it is part
+> of the frozen phase-zero current-state schema, not chronological history.
+
 **Files:**
 
 - Create: `src/context/catalog.mjs`
@@ -1956,23 +1966,23 @@ continuing.
 - Test: `test/context/packet-builder.test.mjs`
 - Test: `test/context/screenshot-client.test.mjs`
 
-- [ ] **Step 1: Write failing packet-equivalence and privacy tests**
+- [x] **Step 1: Write failing packet-equivalence and privacy tests**
 
   Require the runtime packet to reproduce the phase-zero packet schema/hash
-  contract; one allowed active-display PNG; current task/URL only when active;
-  chronological 15-minute/100-event cap; exact adapter dependencies; and zero
-  future labels. Privacy suppression creates only the coarse metadata episode
-  and never asks Hammerspoon to capture.
+  contract; no image fields or capture calls; current Codex task only when
+  Codex is active; chronological 15-minute/100-event cap; exact adapter
+  dependencies; and zero future labels. Privacy suppression creates only the
+  coarse metadata episode and never asks Hammerspoon to capture.
 
-- [ ] **Step 2: Write failing catalog and ablation tests**
+- [x] **Step 2: Write failing catalog and ablation tests**
 
-  Canonically persist/hash app, window, Codex task, and allowed URL identities
-  with `current_state|history_context` provenance. Full history validation uses
-  the full frozen catalog; state-only derives only the current subset from that
-  exact snapshot. Historical identities must never leak into the state-only
-  packet or resolver.
+  Canonically persist/hash the three admitted V0 identities—app, window, and
+  Codex task—with `current_state|history_context` provenance. Full-history
+  validation uses the full frozen catalog; state-only derives only the current
+  subset from that exact snapshot. Historical identities must never leak into
+  the state-only packet or resolver.
 
-- [ ] **Step 3: Run the focused tests and verify RED**
+- [x] **Step 3: Run the focused tests and verify RED**
 
   ```bash
   node --test test/context/*.test.mjs
@@ -1980,23 +1990,24 @@ continuing.
 
   Expected: module-not-found failures.
 
-- [ ] **Step 4: Implement the packet transaction**
+- [x] **Step 4: Implement the packet transaction**
 
-  Freeze epoch and adapter reads, run privacy/visible-window/raw-URL preflight,
-  request one screenshot over the proven bridge, verify PNG/mode/hash, build
-  current/history/feedback/request fields, freeze the local catalog, then commit
-  packet/snapshot/catalog rows and immutable artifacts in one recoverable
-  transaction. A changed epoch or expired lease at any point records stale and
-  sends no provider request.
+  Freeze epoch, generation, and adapter reads; run the metadata privacy and raw
+  Arc risk preflight; build the closed current/history/request packet; and
+  freeze the local catalog plus ablation derivative into one immutable private
+  envelope. Write the envelope before the SQLite packet row so an interrupted
+  handoff retries by verifying the exact existing artifact. A changed epoch,
+  generation, adapter value, or expired lease before persistence records stale
+  and sends no provider request. Suppression writes neither envelope nor packet.
 
-- [ ] **Step 5: Implement the deterministic state-only derivative**
+- [x] **Step 5: Implement the deterministic state-only derivative**
 
-  Retain only `current_state` and `request_meta`; remove history, feedback,
-  historical target refs, and summaries. Store original/derivative body hashes
-  plus the same screenshot hash. Evaluator-only identity data remains outside
-  both provider-visible bodies.
+  Retain the exact frozen `current_state`, `current_scene`, and `request_meta`;
+  set history to empty; and derive the resolver only from catalog entries marked
+  `current_state`. Store original/derivative body and packet hashes. No
+  screenshot hash or placeholder exists in metadata-only mode.
 
-- [ ] **Step 6: Run tests and commit**
+- [x] **Step 6: Run tests and commit**
 
   ```bash
   node --test test/context/*.test.mjs
@@ -2008,6 +2019,17 @@ continuing.
   git add src/context test/context
   git commit -m "feat: build immutable autocomplete packets"
   ```
+
+> [!success] 2026-08-02 Task 10 passed
+> Commit `35637e8` adds the canonical app/window/Codex-task catalog, exact
+> `current_state|history_context` provenance, deterministic state-only
+> derivation, active-only exact Codex identity, 15-minute/100-event history
+> bounds, two-read epoch/generation/adapter guards, coarse privacy suppression,
+> and a recoverable immutable-envelope-to-ledger handoff. Screenshot capability
+> remains fail-closed and is never invoked. The focused context suite passes
+> `20/20`, the complete repository passes `510/510`, and the frozen phase-zero
+> manifest remains unchanged and passing. Task 11—live proposal coordination,
+> validation, and local promise rendering—is next.
 
 ### Task 11: Add live proposal coordination, validation, and local promise rendering
 
