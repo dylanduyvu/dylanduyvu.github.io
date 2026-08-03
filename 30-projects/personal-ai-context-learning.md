@@ -141,6 +141,22 @@ tags:
 > verifier pass. Task 13—runtime lifecycle wiring and the slim controlled sanity
 > run—is next.
 
+> [!success] V0 controlled sanity passed and natural work is unlocked, 2026-08-03
+> The ordinary metadata-only product path is now running under the production
+> Anthropic provider. One certification-only physical case showed the real pill,
+> consumed Dylan's physical Tab, dispatched exactly one Finder activation, and
+> verified Finder exactly. The ledger ended accepted/verified-exact and SQLite
+> integrity passed. A harness ordering race initially misreported the run by
+> checking a later unrelated stabilization abstention before the already
+> completed episode; regression commit `9b7bdf3` fixes that readout without
+> weakening genuine pre-episode fail-closed behavior. The final 763/763 suite,
+> current-Spoon preflight, 8/8 leak-free AX coverage sweep, and clean authority
+> state passed. Final commit `90f1536` is tagged
+> `computer-use-autocomplete-v0-sanity`, and the ordinary natural-work runtime
+> reached `ready=true` with no blocker codes. The deterministic case certifies
+> machinery only; the earlier Haiku abstention remains separate prediction-
+> behavior evidence.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -159,26 +175,21 @@ and confidence calibration may later improve coverage, but the immediate V0
 tests whether a tool-free proposal model plus a three-primitive deterministic
 executor produces a habit-forming interaction.
 
-As of August 2, phase zero and Tasks 8–12 are complete. The metadata-only
-observer and packet foundation, direct Anthropic provider, read-derived Codex
-identity, physical
-Tab boundary, non-activating pill, and three privacy boundaries all passed the
-frozen aggregate gate. Exact arbitrary active-task reading remains unreliable,
-but composer activity changes the expected thread's readable `recencyAt` and
-raw ordering within the label horizon, which is enough for the sparse exact
-stratum. The ledger now durably separates prediction, validity, presentation,
-feedback, and execution while preserving exact provenance. Node now owns the
-epoch, trigger, causality, feedback-pending, and adapter-lease boundaries. The
-runtime now also freezes canonical full-history and state-only packets, hashes,
-and exact resolver catalogs behind a two-read stale-context guard. Live proposal
-coordination pins the selected provider, persists before launch, validates all
-three ranks or abstention, generates promises only from local canonical names,
-and arms one fixed-TTL suggestion with exact epoch, generation, and lease
-authority. Stage 8 now adds the three-primitive deterministic executor without
-invalidating the installed stage-6 boundary: native app/window actions stay in
-Hammerspoon, while exact Codex-task routing stays in the structured adapter.
-The next work is Task 13: runtime lifecycle wiring and the slim controlled
-sanity run. See
+As of August 3, V0 implementation and controlled machinery certification are
+complete, the sanity tag exists, and ordinary natural work is unlocked. The
+metadata-only observer, packet foundation, direct Anthropic provider,
+read-derived Codex identity, physical Tab boundary, non-activating pill,
+privacy boundary, five-axis ledger, context epochs, three-primitive executor,
+and exact endpoint verification now run as one product path. The one physical
+certification case used a deterministic guided-only provider to isolate
+machinery from prediction quality; the natural runtime hard-rejects that
+provider and is currently running the frozen production provider. Exact
+arbitrary active-task reading remains unreliable, and the AX coverage sweep
+found only two of four intended noneditable surfaces eligible, but all eight
+rows closed without content leakage and unknown surfaces fail closed. The next
+work is the natural-use habit week: observe whether proactive pills appear at
+useful moments, whether Dylan reaches for Tab, and what the ledger says about
+accepts, ignores, overrides, latency, abstentions, and context-history lift. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
 read-path finding]].
 

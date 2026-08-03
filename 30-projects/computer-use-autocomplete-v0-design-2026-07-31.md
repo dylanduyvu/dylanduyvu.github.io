@@ -1307,6 +1307,39 @@ an extended shadow experiment.
 Observed failures during the habit week decide which deferred layer, if any,
 earns implementation next.
 
+## Implementation status — 2026-08-03
+
+V0 controlled machinery certification passed and the ordinary natural-work
+runtime is unlocked. The physical certification case used a guided-only
+deterministic provider so prediction confidence could not block proof of the
+actual product machinery. It produced one visible Finder pill, consumed one
+physical Tab, dispatched one Finder activation, and verified Finder exactly.
+The runtime episode ended accepted/verified-exact and SQLite integrity passed.
+
+The first harness result incorrectly froze `state_read_abstained` even though
+the successful lifecycle was already in the ledger. Dylan's visible report was
+correct: the harness had polled after the fast interaction and prioritized a
+later unrelated stabilization read over the terminal episode. Commit `9b7bdf3`
+adds a failing-first regression and reverses that ordering while preserving
+fail-closed behavior when no completed episode exists. The original private
+artifact remains immutable and is superseded by a separate reconciliation
+artifact; no physical case was repeated.
+
+Final evidence: 763/763 tests, current-Spoon preflight PASS, SQLite `ok`, clean
+unarmed authority after the case, and an 8/8 metadata-only AX sweep with zero
+content leakage. Two of four intended noneditable surfaces were eligible; the
+six other rows failed closed on unavailable editability metadata. Final commit
+`90f1536` is tagged `computer-use-autocomplete-v0-sanity`. The ordinary
+production-provider runtime reached ready with no blocker codes. The immutable
+August 2 phase-zero aggregate remains a historical attestation and deliberately
+rejects the later source inventory; it was not silently refreshed.
+
+This certifies mechanics, not model quality. The earlier real-provider
+abstention remains valid evidence about prediction behavior. The next test is
+natural use: whether proactive suggestions appear at useful moments and become
+habit-forming, with the full local ledger supporting later state-only versus
+history replay.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full
