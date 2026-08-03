@@ -1763,7 +1763,7 @@ continuing.
 - Test: `test/state/episode-machine.test.mjs`
 - Create: `test/fixtures/ledger-events.jsonl`
 
-- [ ] **Step 1: Reverify phase zero and write failing ledger/state tests**
+- [x] **Step 1: Reverify phase zero and write failing ledger/state tests**
 
   ```bash
   node src/cli.mjs probe verify --read-only
@@ -1784,13 +1784,13 @@ continuing.
   nullable `destination_transition_id`/destination identity-set fields. Tests
   reject inserts that omit or mutate any applicable provenance field.
 
-- [ ] **Step 2: Add permission tests for the database and both sidecars**
+- [x] **Step 2: Add permission tests for the database and both sidecars**
 
   Force WAL activity and assert the SQLite leaf plus `-wal` and `-shm` are
   regular non-symlink files at `0600` inside a `0700` directory. Reopening must
   revalidate and rechmod all present leaves before sensitive writes.
 
-- [ ] **Step 3: Run the focused tests and verify RED**
+- [x] **Step 3: Run the focused tests and verify RED**
 
   ```bash
   node --test test/ledger/store.test.mjs test/state/episode-machine.test.mjs
@@ -1798,7 +1798,7 @@ continuing.
 
   Expected: module-not-found failures.
 
-- [ ] **Step 4: Implement the schema and pure transition reducer**
+- [x] **Step 4: Implement the schema and pure transition reducer**
 
   `schema.sql` contains only the six spec tables and required uniqueness/index
   constraints. `episode-machine.mjs` is a pure reducer whose inputs are current
@@ -1808,7 +1808,7 @@ continuing.
   and destination label nullable and independent. Raw transcripts are never
   authoritative.
 
-- [ ] **Step 5: Implement deterministic restart and resync closure**
+- [x] **Step 5: Implement deterministic restart and resync closure**
 
   On open, pending predictions become `cancel_requested` then `cancelled` or
   `timed_out`; accepted-but-undispatched work becomes
@@ -1817,7 +1817,7 @@ continuing.
   terminal result. Bridge resync uses the same reducer and cannot redisplay an
   old episode.
 
-- [ ] **Step 6: Run tests and commit**
+- [x] **Step 6: Run tests and commit**
 
   ```bash
   node --test test/ledger/store.test.mjs test/state/episode-machine.test.mjs
@@ -1830,6 +1830,18 @@ continuing.
     test/state/episode-machine.test.mjs test/fixtures/ledger-events.jsonl
   git commit -m "feat: add autocomplete episode ledger"
   ```
+
+> [!success] 2026-08-02 Task 8 passed
+> Commit `29c8b03` adds the exact six-table SQLite ledger, WAL and foreign-key
+> enforcement, `0600` database/WAL/SHM revalidation inside the private `0700`
+> runtime, immutable canonical provenance, monotonic idempotent event ingest,
+> transactional event-plus-state updates, and the pure five-axis episode
+> reducer. Restart and bridge resync close pending or displayed work through
+> the same reducer, preserve accepted feedback across execution failure, finish
+> interrupted cancellation recovery, and never redisplay an old episode. The
+> focused suite passes `22/22`; the complete repository passes `467/467`; and
+> the frozen phase-zero verifier still returns the same PASS manifest. The next
+> implementation task is Task 9.
 
 ### Task 9: Add context epochs, triggers, and causal destination transitions
 

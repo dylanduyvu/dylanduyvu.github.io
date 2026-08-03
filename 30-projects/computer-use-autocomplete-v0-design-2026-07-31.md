@@ -329,6 +329,17 @@ tags:
 > execution-source closure. `445/445` tests and final read-only verification
 > pass. Phase zero is closed and Chunk 2 / Task 8 is now authorized.
 
+> [!success] 2026-08-02 runtime ledger and episode state machine landed
+> Task 8 is committed at `29c8b03`. V0 now has the exact six-table local SQLite
+> ledger plus a pure reducer for prediction, validity, presentation, feedback,
+> and execution. Event ingest is ordered, idempotent, and transactional with
+> state changes; database/WAL/SHM leaves are revalidated at `0600`; restart and
+> bridge resync close incomplete work without overwriting feedback or reviving
+> stale suggestions. The focused suite passes `22/22`, the full repository
+> passes `467/467`, and the frozen phase-zero aggregate remains unchanged and
+> passing. Task 9—context epochs, triggers, and causal destination
+> transitions—is next.
+
 Metadata-only packets retain the focused app/window identity, an exact Codex task
 only when a product-owned dispatch or bounded read-derived activity record
 currently supplies one,

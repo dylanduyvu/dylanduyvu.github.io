@@ -87,6 +87,15 @@ tags:
 > boundaries found zero canary bytes. Phase zero is closed. Task 8—the runtime
 > ledger and five-axis state machine—is now the only next implementation task.
 
+> [!success] V0 runtime ledger landed, 2026-08-02
+> Task 8 is committed at `29c8b03`: six exact SQLite tables, private WAL
+> sidecars, immutable provenance, ordered idempotent event ingest, and a pure
+> five-axis episode reducer with deterministic restart/resync closure. Accepted
+> feedback survives prediction or execution failure, and stale episodes cannot
+> redisplay. The focused suite passes `22/22`, the repository passes `467/467`,
+> and phase zero remains frozen PASS. Task 9—context epochs, triggers, and
+> causal destination transitions—is now next.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -105,14 +114,15 @@ and confidence calibration may later improve coverage, but the immediate V0
 tests whether a tool-free proposal model plus a four-primitive deterministic
 executor produces a habit-forming interaction.
 
-As of August 2, phase zero is complete. The metadata-only observer and packet
+As of August 2, phase zero and the Task 8 runtime ledger are complete. The metadata-only observer and packet
 foundation, direct Anthropic provider, read-derived Codex identity, physical
 Tab boundary, non-activating pill, and three privacy boundaries all passed the
 frozen aggregate gate. Exact arbitrary active-task reading remains unreliable,
 but composer activity changes the expected thread's readable `recencyAt` and
 raw ordering within the label horizon, which is enough for the sparse exact
-stratum. The next work is Task 8: the runtime ledger and five-axis state
-machine. See
+stratum. The ledger now durably separates prediction, validity, presentation,
+feedback, and execution while preserving exact provenance. The next work is
+Task 9: context epochs, proposal triggers, and causal destination transitions. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
 read-path finding]].
 
