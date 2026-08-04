@@ -205,6 +205,24 @@ tags:
 > passes 902/902. No V2 model call, install, tag move, or runtime launch has
 > occurred.
 
+> [!warning] Morning AX sweep passed; Qualification V2 failed closed, 2026-08-04
+> Dylan completed the ten-surface metadata-only AX sweep in one sitting. All
+> ten rows froze under manifest
+> `5741c11204e57b204d3061fc127cce5512c25f7119b1e3c9e25d3d44b9d111de`.
+> The exact known-safe pairs are Finder `AXApplication`, Codex `AXGroup`, Arc
+> `AXWindow`, VS Code `AXWebArea`, and Slack `AXGroup`; composer, editor, and
+> terminal-like surfaces remained suppressed. A second manifest,
+> `51cc29d94f61c6142bd013a8868029942b5c1947b771818c3e3b9796d61328e7`,
+> binds those pairs to the unchanged privacy and synchronous Tab-predicate
+> hashes. Qualification V2 then made exactly five no-retry Haiku calls on the
+> richest schema-current real packets. Four were valid—three returned ranked
+> candidates and one abstained—and one completed in 2.683 seconds with an
+> invalid response. The valid calls took 1.918, 1.944, 2.746, and 3.470
+> seconds. Terminal manifest
+> `c4fcd7aaf188be38c76a4930b0e7df1ada8be9e68b437b11b4ccdd12a9950d39`
+> therefore failed the unchanged 5/5 gate. No retry, deadline change, install,
+> tag move, or natural-runtime launch occurred.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -226,25 +244,26 @@ executor produces a habit-forming interaction.
 As of August 4, V0 implementation and controlled machinery certification are
 complete, but the proposed week-one exploration policy is blocked before
 natural use. The metadata-only observer, packet foundation, direct Anthropic
-provider,
-read-derived Codex identity, physical Tab boundary, non-activating pill,
-privacy boundary, five-axis ledger, context epochs, three-primitive executor,
-and exact endpoint verification now run as one product path. The one physical
-certification case used a deterministic guided-only provider to isolate
-machinery from prediction quality; the natural runtime hard-rejects that
-provider. The brighter, higher-coverage exploration build exists at `06bc781`
-and passed 865/865 tests, but its live qualification returned three abstentions,
-two deadline failures, and zero ranked candidates across five calls. The gate
-correctly left the prior sanity tag at `f6b237e`, did not install the new Spoon,
-and left the runtime stopped.
+provider, read-derived Codex identity, physical Tab boundary, non-activating
+pill, privacy boundary, five-axis ledger, context epochs, three-primitive
+executor, and exact endpoint verification now run as one product path. The one
+physical certification case used a deterministic guided-only provider to
+isolate machinery from prediction quality; the natural runtime hard-rejects
+that provider. The manual AX sweep now supports a narrow five-pair safe
+allowlist while keeping composer, editor, and terminal-like surfaces
+suppressed. Qualification V2 replaced the old probe packets with five rich
+schema-current real packets and warm-start history, but still failed the fixed
+5/5 gate: 4/5 valid, with three returned candidates, one abstention, and one
+invalid response. The gate correctly left the prior sanity tag and installed
+runtime untouched and left the runtime stopped.
 The initial ordinary run exposed and now has regression coverage for an async
 invalidation race without repeating the physical certification. Exact
-arbitrary active-task reading remains unreliable, and the AX coverage sweep
-found only two of four intended noneditable surfaces eligible, but all eight
-rows closed without content leakage and unknown surfaces fail closed. The fresh
-schema-consistent qualification is now preregistered and implemented; the
-remaining order is manual AX sweep, exact safe-pair amendment, five-call
-Qualification V2, then deployment only on the joint pass. See
+arbitrary active-task reading remains unreliable. The manual AX sweep closed
+all ten requested surfaces without content capture; only five exact pairs are
+allowlisted, while unknown or editable composer/editor/terminal-like surfaces
+continue to fail closed. The fresh schema-consistent qualification is now
+complete and failed closed; deployment remains blocked until a new, explicitly
+preregistered response-validity decision rather than an automatic retry. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
 read-path finding]].
 
@@ -254,12 +273,12 @@ allowlist and a four-entry recurring-destination weak prior. The automated AX
 sweep was too sparse to expand the allowlist beyond Finder without Dylan
 focusing ten surfaces manually. A planned cross-model wager also produced no
 accuracy or latency result because the V5 and live packets do not share the
-new provider schema. The correct next step is to finish the bounded manual AX
-sweep and run the already-prepared schema-current Qualification V2; it is not
-to reinterpret Haiku retention as a wager win. V5 is permanently off-policy
-for provider comparison. The Haiku/Sonnet wager is rescheduled to midweek using
-accumulated real schema-current opportunities and labels derived only from
-their subsequent event streams.
+new provider schema. The bounded manual AX sweep and schema-current
+Qualification V2 are now complete. Their result is not a provider wager win:
+the coverage gate passed, but the response-validity gate failed 4/5. V5 is
+permanently off-policy for provider comparison. The Haiku/Sonnet wager is
+rescheduled to midweek using accumulated real schema-current opportunities and
+labels derived only from their subsequent event streams.
 
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,
