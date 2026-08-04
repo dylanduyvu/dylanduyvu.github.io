@@ -161,6 +161,15 @@ tags:
 > only; the earlier Haiku abstention remains separate prediction-behavior
 > evidence.
 
+> [!warning] Week-one exploration policy blocked at qualification, 2026-08-04
+> The brighter pill and higher-coverage display policy are implemented and the
+> complete source suite passed 865/865, but the one authorized five-call live
+> gate failed: three valid responses all abstained, two calls hit the exact
+> five-second deadline, and zero returned ranked candidates. The preregistered
+> bar was 5/5 valid, so the new policy was not installed, the sanity tag was not
+> advanced, and the natural runtime remains stopped. Any fresh attempt requires
+> an explicit preregistered amendment rather than a retry of the frozen result.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -179,23 +188,27 @@ and confidence calibration may later improve coverage, but the immediate V0
 tests whether a tool-free proposal model plus a three-primitive deterministic
 executor produces a habit-forming interaction.
 
-As of August 3, V0 implementation and controlled machinery certification are
-complete, the sanity tag exists, and ordinary natural work is unlocked. The
-metadata-only observer, packet foundation, direct Anthropic provider,
+As of August 4, V0 implementation and controlled machinery certification are
+complete, but the proposed week-one exploration policy is blocked before
+natural use. The metadata-only observer, packet foundation, direct Anthropic
+provider,
 read-derived Codex identity, physical Tab boundary, non-activating pill,
 privacy boundary, five-axis ledger, context epochs, three-primitive executor,
 and exact endpoint verification now run as one product path. The one physical
 certification case used a deterministic guided-only provider to isolate
 machinery from prediction quality; the natural runtime hard-rejects that
-provider and is currently running the frozen production provider at `f6b237e`.
+provider. The brighter, higher-coverage exploration build exists at `06bc781`
+and passed 865/865 tests, but its live qualification returned three abstentions,
+two deadline failures, and zero ranked candidates across five calls. The gate
+correctly left the prior sanity tag at `f6b237e`, did not install the new Spoon,
+and left the runtime stopped.
 The initial ordinary run exposed and now has regression coverage for an async
 invalidation race without repeating the physical certification. Exact
 arbitrary active-task reading remains unreliable, and the AX coverage sweep
 found only two of four intended noneditable surfaces eligible, but all eight
 rows closed without content leakage and unknown surfaces fail closed. The next
-work is the natural-use habit week: observe whether proactive pills appear at
-useful moments, whether Dylan reaches for Tab, and what the ledger says about
-accepts, ignores, overrides, latency, abstentions, and context-history lift. See
+decision is whether to preregister a fresh provider/prompt/deadline amendment;
+only a passing new qualification can begin the natural-use habit week. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
 read-path finding]].
 
@@ -352,6 +365,11 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
+- Decide whether the failed week-one gate warrants a fresh preregistered
+  amendment to the provider, prompt, or five-second deadline. Preserve the
+  frozen 3/5-valid result and do not retry it in place.
+- Require a fresh 5/5-valid qualification before advancing the sanity tag,
+  installing the exploration Spoon, or starting the habit week.
 - Preserve V5 and its immutable runtime; do not rerun it.
 - Define a stable hierarchical ontology for application, window/task,
   document/page, and control candidates.

@@ -1346,6 +1346,30 @@ natural use: whether proactive suggestions appear at useful moments and become
 habit-forming, with the full local ledger supporting later state-only versus
 history replay.
 
+## Week-one exploration qualification — 2026-08-04
+
+The week-one exploration policy is implemented at source commit `06bc781` but
+is not installed or enabled. The change brightens the pill, asks the provider
+to abstain only when it has genuinely no basis, preserves ranked top-three
+provider output in the ledger, and displays the highest-ranked locally
+executable candidate. The closed `conservative` / `explore_week_one` selector
+keeps the prior behavior recoverable.
+
+The full source suite passed 865/865 before the one authorized live
+qualification. That five-call gate then failed its preregistered 5/5-valid bar:
+
+- three calls returned valid abstentions in 1.90, 2.21, and 2.95 seconds;
+- two calls exceeded the exact 5-second deadline;
+- zero calls returned ranked candidates; and
+- the frozen result is 3/5 valid, 0 returned, 3 abstained, 2 timed out.
+
+The gate therefore stopped before tag advancement, Spoon installation, or
+natural-runtime launch. The prior sanity tag remains at `f6b237e`, and the
+runtime remains stopped. This is a provider-policy/latency qualification
+failure, not a machinery-certification failure. Do not retry the immutable
+attempt or silently change the prompt, provider, or deadline. A new attempt
+requires an explicit preregistered amendment and a fresh source commit.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full
