@@ -151,11 +151,15 @@ tags:
 > completed episode; regression commit `9b7bdf3` fixes that readout without
 > weakening genuine pre-episode fail-closed behavior. The final 763/763 suite,
 > current-Spoon preflight, 8/8 leak-free AX coverage sweep, and clean authority
-> state passed. Final commit `90f1536` is tagged
-> `computer-use-autocomplete-v0-sanity`, and the ordinary natural-work runtime
-> reached `ready=true` with no blocker codes. The deterministic case certifies
-> machinery only; the earlier Haiku abstention remains separate prediction-
-> behavior evidence.
+> state passed. The first ordinary runtime then exposed one production-only
+> invalidation race: an active episode could clear during an awaited state read
+> before the callback dereferenced it. Commit `f6b237e` adds a failing-first
+> concurrent regression and revalidates the same episode after the await. The
+> full suite now passes 764/764; the local sanity tag points to that commit, and
+> the restarted ordinary runtime is `ready=true` with no blocker codes after a
+> bounded live context-change check. The deterministic case certifies machinery
+> only; the earlier Haiku abstention remains separate prediction-behavior
+> evidence.
 
 ## Current State
 
@@ -183,7 +187,9 @@ privacy boundary, five-axis ledger, context epochs, three-primitive executor,
 and exact endpoint verification now run as one product path. The one physical
 certification case used a deterministic guided-only provider to isolate
 machinery from prediction quality; the natural runtime hard-rejects that
-provider and is currently running the frozen production provider. Exact
+provider and is currently running the frozen production provider at `f6b237e`.
+The initial ordinary run exposed and now has regression coverage for an async
+invalidation race without repeating the physical certification. Exact
 arbitrary active-task reading remains unreliable, and the AX coverage sweep
 found only two of four intended noneditable surfaces eligible, but all eight
 rows closed without content leakage and unknown surfaces fail closed. The next

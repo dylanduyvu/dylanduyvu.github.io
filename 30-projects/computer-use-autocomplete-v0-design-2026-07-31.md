@@ -1325,12 +1325,18 @@ fail-closed behavior when no completed episode exists. The original private
 artifact remains immutable and is superseded by a separate reconciliation
 artifact; no physical case was repeated.
 
-Final evidence: 763/763 tests, current-Spoon preflight PASS, SQLite `ok`, clean
+Certification evidence: 763/763 tests, current-Spoon preflight PASS, SQLite `ok`, clean
 unarmed authority after the case, and an 8/8 metadata-only AX sweep with zero
 content leakage. Two of four intended noneditable surfaces were eligible; the
 six other rows failed closed on unavailable editability metadata. Final commit
-`90f1536` is tagged `computer-use-autocomplete-v0-sanity`. The ordinary
-production-provider runtime reached ready with no blocker codes. The immutable
+`90f1536` was initially tagged `computer-use-autocomplete-v0-sanity`. The first
+ordinary production-provider runtime subsequently exposed a narrow async race:
+`onInvalidate` checked the active episode, awaited an invalidation state read,
+then dereferenced shared state after another path had cleared it. Commit
+`f6b237e` adds a failing-first regression and revalidates episode identity after
+the await; 764/764 tests pass. The local sanity tag now points to `f6b237e`, and
+the restarted production runtime is ready with no blocker codes after ingesting
+a bounded set of live context changes. The immutable
 August 2 phase-zero aggregate remains a historical attestation and deliberately
 rejects the later source inventory; it was not silently refreshed.
 
