@@ -1419,6 +1419,32 @@ choice. No deployment, tag move, warm-start regeneration, or runtime start
 occurred. The next provider-contract amendment must prevent out-of-catalog
 choice at generation time rather than silently salvage it afterward.
 
+### Structural catalog ranking boundary — 2026-08-04
+
+Candidate `14f4818` implements that repair without remapping model choices. Each
+request now exposes at most 24 actual executable catalog entries under opaque
+IDs. Anthropic structured output must either score every exposed ID or return
+the structural abstention variant; local code alone resolves the top three,
+canonical labels, confidence, and executor actions. A score-map tie remains
+recorded as a rank response that locally abstained, rather than being confused
+with provider abstention. The qualification evidence also refuses a second
+counted attempt for the same source commit.
+
+The full suite passed 931/931 and an independent review approved the final
+source with no blockers. Before any counted qualification call, the required
+non-counted maximum-size compiler check sent the exact 24-entry dynamic schema.
+It hit the unchanged 5-second provider deadline at 5007.122 ms and froze
+`failure_predicate=deadline` under manifest
+`c284a6d943e7998e70d5a2909f4c309f7b2a61a86310eab4a646ed72bc1f482f`.
+
+The stop rule therefore fired before the fresh five-call gate: zero counted
+qualification calls were made. No tag move, Spoon installation, warm-start
+regeneration, or natural-runtime start occurred. The runtime was already
+stopped (`lock_missing`). This is now a maximum-cardinality structured-output
+latency/compiler blocker, not another invalid-target or cardinality bug. Do not
+retry the frozen boundary or alter its deadline without a new explicit
+amendment.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full

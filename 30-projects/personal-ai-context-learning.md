@@ -246,6 +246,19 @@ tags:
 > regeneration, or natural-runtime launch occurred. The runtime remains
 > stopped.
 
+> [!warning] Structural target repair passed locally; maximum-size provider boundary timed out, 2026-08-04
+> Candidate `14f4818` makes off-catalog targets structurally unrepresentable:
+> each request exposes at most 24 executable entries as opaque IDs, the model
+> scores those IDs or structurally abstains, and local code alone resolves the
+> top three and executor actions. The final suite passed 931/931 and independent
+> review found no blocker. The required non-counted 24-entry schema check then
+> hit the unchanged five-second deadline at 5007.122 ms and froze
+> `failure_predicate=deadline` under manifest
+> `c284a6d943e7998e70d5a2909f4c309f7b2a61a86310eab4a646ed72bc1f482f`.
+> The stop rule prevented all five counted calls. No retry, tag move, install,
+> warm-start regeneration, or runtime launch occurred; the runtime was already
+> stopped with `lock_missing`.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -302,6 +315,13 @@ the coverage gate passed, but the response-validity gate failed 4/5. V5 is
 permanently off-policy for provider comparison. The Haiku/Sonnet wager is
 rescheduled to midweek using accumulated real schema-current opportunities and
 labels derived only from their subsequent event streams.
+
+The subsequent structural-output repair closes the invalid-target and
+candidate-cardinality representation defects, but it has not yet qualified for
+week-one use. Its maximum-size 24-entry schema check timed out before any
+counted call, so there is still no new five-packet behavior result and no live
+exploration runtime. The next decision is explicitly about the provider
+compiler/latency boundary—not salvage-remapping model choices.
 
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,
