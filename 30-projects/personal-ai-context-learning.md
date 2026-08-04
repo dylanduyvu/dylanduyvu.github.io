@@ -369,6 +369,18 @@ before `arming_policy.lua` existed. The prior sanity tag was restored to
 nine-file state, and the runtime remains stopped. The current blocker is an
 installer migration contract, not provider validity or prediction latency.
 
+That blocker is now resolved at `df3f87a`. The installer verifies and migrates
+only the exact historical nine-file Stage-8 shape, while all new writes remain
+the current ten-file shape. The full suite passed 988/988. A frozen 32-file
+provider-source inventory proved that every decision-bearing packet, schema,
+prompt, and transport blob remained byte-identical to qualified commit
+`9a5c094`, so the V4 result was inherited without another model call under
+manifest `9a843fe3caf04043b8d7f75491fb7413c4affb8424252fe8bf83dbeaad4f8973`.
+The current Spoon installed and reloaded, preflight passed, the privacy-safe
+four-entry warm-start block regenerated, and natural mode is now `ready=true`
+with runtime ID `46bcd646-df69-4f09-b347-b436f46e4ff2`, no blocker codes, and
+source commit `df3f87a`. The qualifying week began on August 4, 2026.
+
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,
 native Mac execution, truthful one-Tab scope, abstention, and fresh
@@ -522,15 +534,11 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
-- Repair the Hammerspoon loader's historical Stage-8 migration contract before
-  another deployment attempt. The August 4 V4 provider gate passed 4 ranked +
-  1 graceful timeout with zero invalid/other failures, but install stopped
-  before mutation because the recorded pre-`arming_policy.lua` nine-file set
-  is no longer admitted by the current validator. Preserve manifest
-  `bbe4766d135ce5688d13fd085bf14cd7589777cf35164c88fe03c0216b11275e`,
-  the restored `f6b237e` sanity tag, and the stopped runtime. Any installer fix
-  needs a fresh source commit and an explicit evidence-lineage decision because
-  the measured-risk crossing was consumed once for `9a5c094`.
+- Run the qualifying week from the `df3f87a` ready state without changing the
+  frozen week-one display policy. Treat ignored pills as ambiguous, preserve
+  accepts/dismissals/overrides and timeouts separately, and use the pre-named
+  hedged-request amendment only if live timeout rate exceeds 10% after three
+  completed workdays.
 - Midweek, compare Haiku and Sonnet only on accumulated real schema-current
   opportunities. Freeze predictions before deriving targets from subsequent
   events; Sonnet requires at least two additional exact top-three hits and p50

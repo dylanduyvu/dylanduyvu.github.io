@@ -1559,6 +1559,35 @@ exactly to its prior object, peeling to `f6b237e`; runtime remains stopped with
 Fixing the migration requires a fresh source commit and cannot inherit the
 already-consumed one-commit qualification without another explicit amendment.
 
+### Historical migration resolved and qualifying week started — 2026-08-04
+
+The authorized repair landed at source commit `df3f87a`. Installer read
+compatibility now admits only the exact closed pre-`arming_policy.lua`
+nine-file Stage-8 shape, verifies its recorded loader, manifest, module names,
+modes, and hashes before mutation, and then reuses the existing durable
+transaction to write the current ten-file Stage-8 shape. New manifests still
+cannot emit the historical shape. Focused migration and drift regressions
+passed, followed by the complete 988/988 suite.
+
+The same authorization permitted `9a5c094`'s provider qualification to carry
+forward only if the decision-bearing provider source inventory was
+byte-identical. The 32-file baseline and successor inventories matched exactly
+at SHA-256 `d6f9eb24fca9abe57c361e99fb95cce056bb580127e9ef018577151b0b4eddf3`,
+with zero changed inventoried paths. No new provider calls were made. The
+private inheritance manifest binds `df3f87a` to the original V4 manifest and
+has SHA-256 `9a843fe3caf04043b8d7f75491fb7413c4affb8424252fe8bf83dbeaad4f8973`.
+The original August 4–11 trial window remains authoritative.
+
+Deployment then completed end to end: the sanity tag moved to `df3f87a`, the
+current ten-file Spoon installed and reloaded, exact-current-Spoon preflight
+passed, and the privacy-filtered warm-start block regenerated with four entries
+under SHA-256 `5f8e9dd33eb4905031ebb7010ed3358bfd0d4a60b2ca5e095f3d65d646e4760c`.
+By `2026-08-04T19:46:10Z`, natural mode reported `ready=true` with runtime ID
+`46bcd646-df69-4f09-b347-b436f46e4ff2`, source commit `df3f87a`, no blocker
+codes, and policy SHA-256
+`a3e5cc85f2a9f2b541aa604ff6052e700100b8543f108714e60d52605a04590d`.
+The qualifying week begins from this ready state.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full
