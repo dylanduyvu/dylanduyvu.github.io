@@ -189,6 +189,22 @@ tags:
 > overnight changes is installed, the sanity tag remains at `f6b237e`, and the
 > runtime remains stopped.
 
+> [!info] Morning qualification setup, 2026-08-04
+> The ten-surface manual AX harness is implemented and regression-tested, but
+> Dylan paused the physical sweep before any final row manifest was frozen. No
+> harness process or cue overlay remains, and the tracked allowlist still
+> contains only Finder. The failed qualification postmortem is now immutable:
+> it used five old phase-zero probe packets with one history row and no
+> recurring entries; the three valid calls took 1.905, 2.215, and 2.952
+> seconds. V1 did not persist response text, so its verbatim abstain reasons are
+> unrecoverable rather than inferred. A new Qualification V2 is prepared on a
+> clean source-only branch. It deterministically selects the five richest of 24
+> real metadata packets, inserts only the frozen warm-start block, freezes the
+> source before calls, stores abstain reasons, makes one no-retry call per
+> packet, and requires 5/5 validity at the exact runtime commit. The suite
+> passes 902/902. No V2 model call, install, tag move, or runtime launch has
+> occurred.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -225,9 +241,10 @@ The initial ordinary run exposed and now has regression coverage for an async
 invalidation race without repeating the physical certification. Exact
 arbitrary active-task reading remains unreliable, and the AX coverage sweep
 found only two of four intended noneditable surfaces eligible, but all eight
-rows closed without content leakage and unknown surfaces fail closed. The next
-decision is whether to preregister a fresh provider/prompt/deadline amendment;
-only a passing new qualification can begin the natural-use habit week. See
+rows closed without content leakage and unknown surfaces fail closed. The fresh
+schema-consistent qualification is now preregistered and implemented; the
+remaining order is manual AX sweep, exact safe-pair amendment, five-call
+Qualification V2, then deployment only on the joint pass. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
 read-path finding]].
 
@@ -238,8 +255,11 @@ sweep was too sparse to expand the allowlist beyond Finder without Dylan
 focusing ten surfaces manually. A planned cross-model wager also produced no
 accuracy or latency result because the V5 and live packets do not share the
 new provider schema. The correct next step is to finish the bounded manual AX
-sweep and decide whether a new, schema-consistent provider qualification is
-worth preregistering; it is not to reinterpret Haiku retention as a wager win.
+sweep and run the already-prepared schema-current Qualification V2; it is not
+to reinterpret Haiku retention as a wager win. V5 is permanently off-policy
+for provider comparison. The Haiku/Sonnet wager is rescheduled to midweek using
+accumulated real schema-current opportunities and labels derived only from
+their subsequent event streams.
 
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,
@@ -394,15 +414,15 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
-- Decide whether the failed week-one gate warrants a fresh preregistered
-  amendment to the provider, prompt, or five-second deadline. Preserve the
-  frozen 3/5-valid result and do not retry it in place.
 - Complete the manual-focus AX rows for Codex chat/composer, Arc body/sidebar,
   VS Code editor/sidebar/terminal, Slack, Terminal, and Obsidian before adding
   any further `(bundle_id, AX role)` overrides.
-- If rerunning a Haiku/Sonnet wager, first freeze one common packet schema and
-  deterministically re-render both V5 and live opportunities without exposing
-  their labels; the frozen 0/46-compatible attempt made no provider calls.
+- Run Qualification V2 once on its five frozen rich real packets after the AX
+  policy commit. Preserve the original 3/5-valid attempt and do not retry it.
+- Midweek, compare Haiku and Sonnet only on accumulated real schema-current
+  opportunities. Freeze predictions before deriving targets from subsequent
+  events; Sonnet requires at least two additional exact top-three hits and p50
+  at or below 3.5 seconds. V5 remains out of scope.
 - Require a fresh 5/5-valid qualification before advancing the sanity tag,
   installing the exploration Spoon, or starting the habit week.
 - Preserve V5 and its immutable runtime; do not rerun it.
