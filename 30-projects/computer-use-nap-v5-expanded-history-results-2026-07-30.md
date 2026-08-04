@@ -49,7 +49,7 @@ granularity-sensitive. Full synthesis:
 a first navigation autocomplete still needs]].
 
 ## Frozen setup
-
+but 
 The preregistered evidence pass found only 11 targets that satisfied every
 strictly-prior screenshot and target-quality rule. Dylan approved using all
 11 before inference. Each target received:
