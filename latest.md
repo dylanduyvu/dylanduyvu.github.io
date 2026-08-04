@@ -1,25 +1,25 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-07-30
+updated: 2026-08-04
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Jul 30, 2026, 10:56 AM EDT
+Generated: Aug 4, 2026, 4:45 PM EDT
 
 ## State Shift Summary
 
 In the past 7 days, the public vault changed through 66 note commits. The most recent movement is:
 
-- Project decision: freeze V5 expanded-history experiment design.
-- Project decision: merge and clean twenty-video NAP dataset.
-- Project decision: consolidate Screenpipe datasets into vault.
-- Project decision: add next ten NAP labeling videos.
-- Project decision: publish canonical computer-use NAP V4 dataset.
-- Project decision: freeze monitor-3 NAP V4 method.
+- Project decision: update computer-use NAP design.
+- Project decision: start computer-use autocomplete qualifying week.
+- Project decision: record V0 gate pass and deployment blocker.
+- Project decision: record five-sample provider boundary.
+- Project decision: record twelve-choice boundary result.
+- Project decision: record structural ranking boundary timeout.
 
 ## Current Hub Signals
 
@@ -27,147 +27,157 @@ In the past 7 days, the public vault changed through 66 note commits. The most r
 
 ## Past 24 Hours
 
-### Jul 30, 2026, 10:56 AM EDT - experiment: publish V5 post-results synthesis
+### Aug 4, 2026, 4:45 PM EDT - project: update computer-use NAP design
 
-experiment: publish V5 post-results synthesis.
-
-Changed notes:
-  - [[a-first-computer-navigation-autocomplete-should-rank-candidates-and-abstain|A first computer navigation autocomplete should rank candidates and abstain]]
-  - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
-  - [[workflow-history-can-recover-recurring-destinations-without-general-next-action-competence|Workflow history can recover recurring destinations without general next-action competence]]
-  - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-  - [[computer-use-nap-v5-post-results-synthesis|What NAP V5 established and what a first navigation autocomplete still needs]]
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-  - [[computer-use-nap-v5-expanded-history-experiment-design-2026-07-29|Computer-use NAP V5 expanded-history experiment design, July 29, 2026]]
-  - and 2 more
-
-### Jul 29, 2026, 10:33 PM EDT - project: freeze V5 expanded-history experiment design
-
-Project decision: freeze V5 expanded-history experiment design.
+Project decision: update computer-use NAP design.
 
 Changed notes:
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-  - [[computer-use-nap-v5-expanded-history-experiment-design-2026-07-29|Computer-use NAP V5 expanded-history experiment design, July 29, 2026]]
+  - [[computer-use-autocomplete-expressive-tier-design-2026-08-04|Expressive tier: piggyback computer-use design]]
+  - [[computer-use-nap-v5-expanded-history-results-2026-07-30|Workflow history produced five exact top-three wins and no losses in NAP V5]]
 
-### Jul 29, 2026, 9:58 PM EDT - dataset: complete third NAP labeling batch
+### Aug 4, 2026, 3:47 PM EDT - project: start computer-use autocomplete qualifying week
 
-dataset: complete third NAP labeling batch.
-
-Changed notes:
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
-  - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
-  - [[computer-use-nap-labeling-batch-3-2026-07-29|Computer-use NAP labeling batch 3 raw narration]]
-
-### Jul 29, 2026, 6:47 PM EDT - dataset: merge first three videos of third NAP batch
-
-dataset: merge first three videos of third NAP batch.
+Project decision: start computer-use autocomplete qualifying week.
 
 Changed notes:
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-  - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
-  - [[computer-use-nap-labeling-batch-3-2026-07-29|Computer-use NAP labeling batch 3 raw narration]]
+  - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
 
-### Jul 29, 2026, 5:13 PM EDT - project: merge and clean twenty-video NAP dataset
+### Aug 4, 2026, 3:29 PM EDT - project: record V0 gate pass and deployment blocker
 
-Project decision: merge and clean twenty-video NAP dataset.
+Project decision: record V0 gate pass and deployment blocker.
 
 Changed notes:
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
-  - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
-  - [[computer-use-nap-labeling-batch-1-2026-07-29|Computer-use NAP labeling batch 1 source and pre-cleanup ledger]]
-  - [[computer-use-nap-labeling-batch-2-2026-07-29|Computer-use NAP labeling batch 2 raw narration]]
+  - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
 
-### Jul 29, 2026, 1:25 PM EDT - project: consolidate Screenpipe datasets into vault
+### Aug 4, 2026, 2:45 PM EDT - project: record five-sample provider boundary
 
-Project decision: consolidate Screenpipe datasets into vault.
+Project decision: record five-sample provider boundary.
 
 Changed notes:
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-  - [[computer-use-nap-expanding-history-smoke-execution-plan-2026-07-28|NAP expanding-history smoke execution plan, July 28, 2026]]
-  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
-  - [[computer-use-nap-v3-posthoc-semantic-rescore-2026-07-28|NAP V3 post-hoc semantic rescore, July 28, 2026]]
+  - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
 
-### Jul 29, 2026, 1:09 PM EDT - project: add next ten NAP labeling videos
+### Aug 4, 2026, 1:50 PM EDT - project: record twelve-choice boundary result
 
-Project decision: add next ten NAP labeling videos.
+Project decision: record twelve-choice boundary result.
 
 Changed notes:
-  - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
+  - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
 
-### Jul 29, 2026, 1:07 PM EDT - project: publish canonical computer-use NAP V4 dataset
+### Aug 4, 2026, 12:17 PM EDT - project: record structural ranking boundary timeout
 
-Project decision: publish canonical computer-use NAP V4 dataset.
+Project decision: record structural ranking boundary timeout.
 
 Changed notes:
-  - [[computer-use-nap-build-log|Computer-use NAP build log]]
-  - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-  - [[computer-use-nap-manual-labeling-workbook-2026-07-28|Computer-use NAP manual labeling workbook, July 28, 2026]]
-  - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
+  - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+
+### Aug 4, 2026, 11:27 AM EDT - project: record six-pair qualification failure
+
+Project decision: record six-pair qualification failure.
+
+Changed notes:
+  - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+
+### Aug 4, 2026, 11:07 AM EDT - project: record morning autocomplete qualification
+
+Project decision: record morning autocomplete qualification.
+
+Changed notes:
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+
+### Aug 4, 2026, 9:22 AM EDT - project: prepare week-one real-packet qualification
+
+Project decision: prepare week-one real-packet qualification.
+
+Changed notes:
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+
+### Aug 4, 2026, 2:12 AM EDT - project: record autocomplete overnight hardening
+
+Project decision: record autocomplete overnight hardening.
+
+Changed notes:
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+
+### Aug 4, 2026, 1:39 AM EDT - project: record exploration qualification failure
+
+Project decision: record exploration qualification failure.
+
+Changed notes:
+  - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+
+### Aug 3, 2026, 8:40 PM EDT - project: record autocomplete runtime race fix
+
+Project decision: record autocomplete runtime race fix.
+
+Changed notes:
+  - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+  - [[personal-ai-context-learning|Personal AI Context Learning]]
+
+_Showing the newest 12 of 13 updates in this window._
 
 ## Past 7 Days
 
-- Jul 30, 2026: experiment: publish V5 post-results synthesis - [[a-first-computer-navigation-autocomplete-should-rank-candidates-and-abstain|A first computer navigation autocomplete should rank candidates and abstain]]
-- Jul 29, 2026: project: freeze V5 expanded-history experiment design - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 29, 2026: dataset: complete third NAP labeling batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 29, 2026: dataset: merge first three videos of third NAP batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 29, 2026: project: merge and clean twenty-video NAP dataset - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 29, 2026: project: consolidate Screenpipe datasets into vault - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 29, 2026: project: add next ten NAP labeling videos - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
-- Jul 29, 2026: project: publish canonical computer-use NAP V4 dataset - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 28, 2026: project: freeze monitor-3 NAP V4 method - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 28, 2026: experiment: publish NAP semantic rescore and retest plan - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
-- Jul 28, 2026: experiment: publish first NAP smoke result - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
-- Jul 28, 2026: project: archive NAP smoke harness and preflight - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-- Jul 28, 2026: project: add resumable NAP smoke execution plan - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-- Jul 28, 2026: project: tighten Screenpipe dataset contract - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-- Jul 28, 2026: project: define Screenpipe dataset smoke test - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-- Jul 27, 2026: article: add recording to dataset graphic - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: correct custom capture chronology - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: publish final readability checkpoint - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: make product comparison scannable - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: rebuild recording to prediction narrative - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: clarify why the capture walkthrough stopped - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: move calibration history into fragility section - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: correct automatic pipeline sequencing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: restore automatic acquisition ladder - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: compress Screenpipe reconstruction caveat - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
+- Aug 4, 2026: project: update computer-use NAP design - [[computer-use-autocomplete-expressive-tier-design-2026-08-04|Expressive tier: piggyback computer-use design]]
+- Aug 4, 2026: project: start computer-use autocomplete qualifying week - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record V0 gate pass and deployment blocker - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record five-sample provider boundary - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record twelve-choice boundary result - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record structural ranking boundary timeout - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record six-pair qualification failure - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record morning autocomplete qualification - [[personal-ai-context-learning|Personal AI Context Learning]]
+- Aug 4, 2026: project: prepare week-one real-packet qualification - [[personal-ai-context-learning|Personal AI Context Learning]]
+- Aug 4, 2026: project: record autocomplete overnight hardening - [[personal-ai-context-learning|Personal AI Context Learning]]
+- Aug 4, 2026: project: record exploration qualification failure - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 3, 2026: project: record autocomplete runtime race fix - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 3, 2026: project: record autocomplete V0 sanity pass - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 3, 2026: project: record autocomplete stabilization blocker - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete V1 brainstorm and scope]]
+- Aug 3, 2026: project: record autocomplete stale-race blocker - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete V1 brainstorm and scope]]
+- Aug 3, 2026: project: record blocked autocomplete V0 sanity - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete V1 brainstorm and scope]]
+- Aug 2, 2026: project: land autocomplete deterministic execution - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete V1 brainstorm and scope]]
+- Aug 2, 2026: project: land autocomplete proposal coordination - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: add immutable autocomplete packets - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: add causal autocomplete runtime - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: add autocomplete V0 runtime ledger - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: close autocomplete V0 phase zero - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: record autocomplete Task 6 evidence - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: adopt read-derived Codex task identity - [[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|A standalone Codex app-server listener cannot observe desktop-originated task events]]
+- Aug 1, 2026: project: record Codex desktop event visibility failure - [[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|A standalone Codex app-server listener cannot observe desktop-originated task events]]
 
 _Showing the newest 25 of 66 updates in this window._
 
 ## Past 30 Days
 
-- Jul 30, 2026: experiment: publish V5 post-results synthesis - [[a-first-computer-navigation-autocomplete-should-rank-candidates-and-abstain|A first computer navigation autocomplete should rank candidates and abstain]]
-- Jul 29, 2026: project: freeze V5 expanded-history experiment design - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 29, 2026: dataset: complete third NAP labeling batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 29, 2026: dataset: merge first three videos of third NAP batch - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 29, 2026: project: merge and clean twenty-video NAP dataset - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 29, 2026: project: consolidate Screenpipe datasets into vault - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 29, 2026: project: add next ten NAP labeling videos - [[computer-use-nap-v4-canonical-dataset|Computer-use NAP V4 canonical dataset]]
-- Jul 29, 2026: project: publish canonical computer-use NAP V4 dataset - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 28, 2026: project: freeze monitor-3 NAP V4 method - [[computer-use-nap-build-log|Computer-use NAP build log]]
-- Jul 28, 2026: experiment: publish NAP semantic rescore and retest plan - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
-- Jul 28, 2026: experiment: publish first NAP smoke result - [[exact-free-text-scoring-can-mistake-label-imitation-for-personalized-action-prediction|Exact free-text scoring can mistake label imitation for personalized action prediction]]
-- Jul 28, 2026: project: archive NAP smoke harness and preflight - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-- Jul 28, 2026: project: add resumable NAP smoke execution plan - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-- Jul 28, 2026: project: tighten Screenpipe dataset contract - [[computer-use-nap-current-handoff-2026-07-28|Computer-use NAP current handoff, July 28, 2026]]
-- Jul 28, 2026: project: define Screenpipe dataset smoke test - [[computer-use-nap-shadow-experiment|Computer-use NAP shadow experiment]]
-- Jul 27, 2026: article: add recording to dataset graphic - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: correct custom capture chronology - [[day-0-took-three-days|The Missing Step Between Recording and Prediction]]
-- Jul 27, 2026: article: publish final readability checkpoint - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: make product comparison scannable - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: rebuild recording to prediction narrative - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: clarify why the capture walkthrough stopped - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: move calibration history into fragility section - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: correct automatic pipeline sequencing - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: restore automatic acquisition ladder - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
-- Jul 27, 2026: article: compress Screenpipe reconstruction caveat - [[blog-prep-day-0-took-three-days|Blog prep: Day 0 Took Three Days]]
+- Aug 4, 2026: project: update computer-use NAP design - [[computer-use-autocomplete-expressive-tier-design-2026-08-04|Expressive tier: piggyback computer-use design]]
+- Aug 4, 2026: project: start computer-use autocomplete qualifying week - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record V0 gate pass and deployment blocker - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record five-sample provider boundary - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record twelve-choice boundary result - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record structural ranking boundary timeout - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record six-pair qualification failure - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 4, 2026: project: record morning autocomplete qualification - [[personal-ai-context-learning|Personal AI Context Learning]]
+- Aug 4, 2026: project: prepare week-one real-packet qualification - [[personal-ai-context-learning|Personal AI Context Learning]]
+- Aug 4, 2026: project: record autocomplete overnight hardening - [[personal-ai-context-learning|Personal AI Context Learning]]
+- Aug 4, 2026: project: record exploration qualification failure - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 3, 2026: project: record autocomplete runtime race fix - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 3, 2026: project: record autocomplete V0 sanity pass - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 3, 2026: project: record autocomplete stabilization blocker - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete V1 brainstorm and scope]]
+- Aug 3, 2026: project: record autocomplete stale-race blocker - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete V1 brainstorm and scope]]
+- Aug 3, 2026: project: record blocked autocomplete V0 sanity - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete V1 brainstorm and scope]]
+- Aug 2, 2026: project: land autocomplete deterministic execution - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete V1 brainstorm and scope]]
+- Aug 2, 2026: project: land autocomplete proposal coordination - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: add immutable autocomplete packets - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: add causal autocomplete runtime - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: add autocomplete V0 runtime ledger - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: close autocomplete V0 phase zero - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: record autocomplete Task 6 evidence - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
+- Aug 2, 2026: project: adopt read-derived Codex task identity - [[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|A standalone Codex app-server listener cannot observe desktop-originated task events]]
+- Aug 1, 2026: project: record Codex desktop event visibility failure - [[a-standalone-codex-app-server-listener-cannot-observe-desktop-originated-task-events|A standalone Codex app-server listener cannot observe desktop-originated task events]]
 
-_Showing the newest 25 of 187 updates in this window._
+_Showing the newest 25 of 219 updates in this window._
