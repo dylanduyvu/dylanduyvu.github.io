@@ -356,6 +356,19 @@ before counted call 1, so there is still no new five-packet behavior result and
 no live exploration runtime. The frozen result does not authorize a retry or
 deadline change.
 
+A final explicit measured-risk amendment now supersedes only that last
+all-calls latency decision. The single V4 counted gate at `9a5c094` passed with
+four ranked predictions, one graceful timeout, zero abstentions, zero invalid
+responses, and zero other failures; p50 was 2259.857 ms. The one-use evidence
+lineage is frozen under manifest
+`bbe4766d135ce5688d13fd085bf14cd7589777cf35164c88fe03c0216b11275e`.
+Natural use still did not begin: deployment stopped before mutation because
+the installer cannot validate the live historical Stage-8 module set created
+before `arming_policy.lua` existed. The prior sanity tag was restored to
+`f6b237e`, the live Spoon remains byte-for-byte aligned with its recorded
+nine-file state, and the runtime remains stopped. The current blocker is an
+installer migration contract, not provider validity or prediction latency.
+
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,
 native Mac execution, truthful one-Tab scope, abstention, and fresh
@@ -509,19 +522,19 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
-- Complete the manual-focus AX rows for Codex chat/composer, Arc body/sidebar,
-  VS Code editor/sidebar/terminal, Slack, Terminal, and Obsidian before adding
-  any further `(bundle_id, AX role)` overrides.
-- Do not run counted Qualification V2 for candidate `31c05a8`: its frozen
-  five-sample boundary failed the all-calls-within-deadline rule. Any new
-  attempt requires another explicit preregistered amendment and source commit;
-  preserve every prior boundary and qualification artifact.
+- Repair the Hammerspoon loader's historical Stage-8 migration contract before
+  another deployment attempt. The August 4 V4 provider gate passed 4 ranked +
+  1 graceful timeout with zero invalid/other failures, but install stopped
+  before mutation because the recorded pre-`arming_policy.lua` nine-file set
+  is no longer admitted by the current validator. Preserve manifest
+  `bbe4766d135ce5688d13fd085bf14cd7589777cf35164c88fe03c0216b11275e`,
+  the restored `f6b237e` sanity tag, and the stopped runtime. Any installer fix
+  needs a fresh source commit and an explicit evidence-lineage decision because
+  the measured-risk crossing was consumed once for `9a5c094`.
 - Midweek, compare Haiku and Sonnet only on accumulated real schema-current
   opportunities. Freeze predictions before deriving targets from subsequent
   events; Sonnet requires at least two additional exact top-three hits and p50
   at or below 3.5 seconds. V5 remains out of scope.
-- Require a fresh 5/5-valid qualification before advancing the sanity tag,
-  installing the exploration Spoon, or starting the habit week.
 - Preserve V5 and its immutable runtime; do not rerun it.
 - Define a stable hierarchical ontology for application, window/task,
   document/page, and control candidates.

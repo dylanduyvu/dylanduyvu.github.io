@@ -1519,6 +1519,46 @@ regeneration, or runtime start. The sanity tag still resolves to `f6b237e`, and
 the runtime remains stopped with `lock_missing`. The deadline remains 5000 ms;
 this result does not authorize another attempt.
 
+### Final measured-risk qualification and deployment stop — 2026-08-04
+
+Dylan explicitly accepted the observed provider-side latency tail as a measured
+week-one risk because `prediction_timed_out` is already a graceful terminal
+state: it logs the timeout, shows no pill, and takes no action. Source commit
+`9a5c094` preregistered and implemented one immutable V4 qualification lineage,
+kept the 5000 ms deadline, and amended the counted bar to zero invalid or other
+failures plus at least four ranked predictions from five mixed no-retry calls.
+The failed boundary exception was consumed once and bound to the exact source
+commit and V4 reservation; later commits cannot reuse it.
+
+The single counted gate passed:
+
+| Call | Outcome | Latency | Visible choices |
+| --- | --- | ---: | ---: |
+| 1 | valid rank | 2259.857 ms | 12 |
+| 2 | valid rank | 1270.067 ms | 12 |
+| 3 | valid rank | 1165.350 ms | 12 |
+| 4 | valid rank | 2967.925 ms | 11 |
+| 5 | deadline | 5007.122 ms | 11 |
+
+The V4 result was therefore 4 ranked, 1 timed out, 0 abstained, 0 invalid, and
+0 other failures, with p50 2259.857 ms. Terminal manifest SHA-256:
+`bbe4766d135ce5688d13fd085bf14cd7589777cf35164c88fe03c0216b11275e`.
+The trial window in that evidence is August 4–11, 2026. If more than 10% of
+natural-mode provider requests time out after three completed workdays, the
+pre-named next amendment is hedged duplicate requests; it is not implemented.
+
+Deployment then stopped before changing the live Spoon. The existing managed
+install is a valid historical nine-file Stage-8 set created before
+`arming_policy.lua` was added. The current loader derives accepted historical
+state from today's module list, so it rejected that old state as
+`installed Hammerspoon Spoon state is invalid` before it could migrate it.
+Read-only verification showed the live nine files still exactly match the
+recorded hashes and no transaction journal exists. The sanity tag was restored
+exactly to its prior object, peeling to `f6b237e`; runtime remains stopped with
+`lock_missing`. No warm-start regeneration or natural-runtime launch occurred.
+Fixing the migration requires a fresh source commit and cannot inherit the
+already-consumed one-commit qualification without another explicit amendment.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full
