@@ -1642,8 +1642,12 @@ The sanity tag now points to `ad18c9a`; natural mode is ready under runtime ID
 `019fcea7-e194-7462-b7a2-03c2c089868d`, the unchanged policy SHA-256, and no
 blocker codes. Its initial health epoch is legitimately `0` because the new
 bridge session had not yet ingested a physical context event at verification
-time; the dynamic-advance invariant remains covered by the production-path
-tests and will be observable on the first natural input.
+time. Within the next natural interaction it advanced to `2`. The two new
+Hammerspoon source rows were normalized to epochs `1` and `2`, with zero epoch-
+`0` rows in the new session, and `health.json` reported the same live frontier.
+Two natural `unknown_focus` automatic suppressions were also persisted under
+the new closed telemetry event. SQLite integrity remained `ok` with no foreign-
+key violations.
 
 ## Review status
 
