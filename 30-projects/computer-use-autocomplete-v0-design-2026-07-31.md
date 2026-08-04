@@ -1445,6 +1445,37 @@ latency/compiler blocker, not another invalid-target or cardinality bug. Do not
 retry the frozen boundary or alter its deadline without a new explicit
 amendment.
 
+### Twelve-choice packet-economics boundary — 2026-08-04
+
+The preregistered follow-up repaired request economics without changing the
+provider deadline. Candidate `9ca875a` ranks executable destinations before
+schema construction, exposes at most 12 choices, prioritizes matched recurring
+destinations before current-state and MRU rows, and uses single-character IDs
+`0` through `b`. The provider sees the selected catalog rows once plus a compact
+ID-to-position index; the private executor mapping remains local. Qualification
+source selection now requires at least one derived 12-choice packet before any
+boundary verification, reservation, provider construction, or counted call.
+
+The final source suite passed 954/954, and independent spec and code-quality
+reviews approved the ranking, bounded evidence, historical-version dispatch,
+at-cap source binding, and launch-time rederivation. The one authorized
+non-counted 12-choice boundary call then returned a structurally valid rank in
+4118.091 ms. That was 118.091 ms above the preregistered 4000 ms pass bar but
+below the unchanged 5000 ms transport deadline, so the immutable V2 manifest
+froze `failure_predicate=latency_threshold` under hash
+`5296dc4418e979e376dd09583c256a9dbcf418de00e8a17418dfb48cb6ca15ad`.
+The request contained 5989 bytes and a 619-byte dynamic schema; Anthropic
+reported 1936 input tokens, 55 output tokens, and zero cache-read or
+cache-creation tokens.
+
+The stop rule fired before counted call 1. There is therefore no new five-call
+behavior result: zero qualification calls were made, no launch ticket was
+minted, and no install, tag move, warm-start regeneration, or runtime start
+occurred. The sanity tag still resolves to `f6b237e`, and the runtime remains
+stopped with `lock_missing`. The 12-choice repair removed the five-second
+transport timeout but did not clear the stricter four-second qualification
+boundary; this frozen result does not authorize a retry or deadline change.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full

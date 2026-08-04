@@ -259,6 +259,21 @@ tags:
 > warm-start regeneration, or runtime launch occurred; the runtime was already
 > stopped with `lock_missing`.
 
+> [!warning] Twelve-choice packet economics missed the four-second boundary, 2026-08-04
+> Candidate `9ca875a` caps each provider-visible choice set at 12, prioritizes
+> recurring/current/MRU destinations before schema construction, uses compact
+> one-character IDs, and sends selected catalog rows only once. The final suite
+> passed 954/954 and independent review approved the request, evidence, and
+> at-cap qualification contracts. The single authorized non-counted boundary
+> call returned a valid rank in 4118.091 ms: 118.091 ms above the preregistered
+> 4000 ms bar but below the unchanged 5000 ms deadline. Manifest
+> `5296dc4418e979e376dd09583c256a9dbcf418de00e8a17418dfb48cb6ca15ad`
+> records `latency_threshold`, 5989 request bytes, 619 schema bytes, 1936 input
+> tokens, 55 output tokens, and zero cache tokens. The stop rule prevented all
+> five counted calls. No retry, deadline change, tag move, install, warm-start
+> regeneration, or runtime launch occurred; the runtime remains stopped with
+> `lock_missing` and the sanity tag still resolves to `f6b237e`.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -318,10 +333,13 @@ labels derived only from their subsequent event streams.
 
 The subsequent structural-output repair closes the invalid-target and
 candidate-cardinality representation defects, but it has not yet qualified for
-week-one use. Its maximum-size 24-entry schema check timed out before any
-counted call, so there is still no new five-packet behavior result and no live
-exploration runtime. The next decision is explicitly about the provider
-compiler/latency boundary—not salvage-remapping model choices.
+week-one use. The first 24-entry boundary hit the five-second transport
+deadline. A preregistered packet-economics amendment then reduced the maximum
+choice set to 12 without changing that deadline, but its valid response arrived
+in 4118.091 ms and missed the stricter four-second boundary by 118.091 ms. Both
+stops occurred before counted call 1, so there is still no new five-packet
+behavior result and no live exploration runtime. The frozen result does not
+authorize a retry or deadline change.
 
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,
