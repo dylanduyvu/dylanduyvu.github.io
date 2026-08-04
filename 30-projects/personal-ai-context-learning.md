@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-22
-updated: 2026-08-02
+updated: 2026-08-04
 aliases:
   - Personal AI Context Learning
   - Niyant's personal-AI thesis
@@ -170,6 +170,25 @@ tags:
 > advanced, and the natural runtime remains stopped. Any fresh attempt requires
 > an explicit preregistered amendment rather than a retry of the frozen result.
 
+> [!info] Overnight week-one hardening, 2026-08-04
+> The no-hands follow-up completed without changing the live runtime. Automated
+> AX coverage produced closed metadata-only rows for all 11 requested surfaces,
+> but only Finder was programmatically focusable/readable; Codex chat and
+> composer, Arc body and sidebar, VS Code editor/sidebar/terminal, Slack,
+> Terminal, and Obsidian require a short manual-focus sweep. A source-only
+> week-one allowlist now permits the exact observed Finder `AXApplication` pair
+> to override only `unknown` editability; editable, sensitive, denylisted, and
+> Secure Input states remain suppressed, and the Tab and privacy gate hashes did
+> not change. The nightly warm-start reducer generated four privacy-safe
+> recurring window priors from the existing ledger and added the same capped
+> block to both packet arms. The planned Haiku/Sonnet wager stopped before any
+> model call: all 22 V5 packets use the old multimodal schema and all 24 live
+> packets predate the new recurring-destination field, leaving 0/46 common
+> compatible inputs. Haiku therefore remains unchanged rather than winning a
+> comparison that never ran. The branch suite passes 884/884; none of these
+> overnight changes is installed, the sanity tag remains at `f6b237e`, and the
+> runtime remains stopped.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -211,6 +230,16 @@ decision is whether to preregister a fresh provider/prompt/deadline amendment;
 only a passing new qualification can begin the natural-use habit week. See
 [[codex-thread-list-recency-reveals-desktop-originated-task-activity|the frozen
 read-path finding]].
+
+The August 4 overnight hardening branch adds two useful V0.1 inputs without
+claiming a live-policy success: a narrowly reviewable unknown-editability
+allowlist and a four-entry recurring-destination weak prior. The automated AX
+sweep was too sparse to expand the allowlist beyond Finder without Dylan
+focusing ten surfaces manually. A planned cross-model wager also produced no
+accuracy or latency result because the V5 and live packets do not share the
+new provider schema. The correct next step is to finish the bounded manual AX
+sweep and decide whether a new, schema-consistent provider qualification is
+worth preregistering; it is not to reinterpret Haiku retention as a wager win.
 
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,
@@ -368,6 +397,12 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - Decide whether the failed week-one gate warrants a fresh preregistered
   amendment to the provider, prompt, or five-second deadline. Preserve the
   frozen 3/5-valid result and do not retry it in place.
+- Complete the manual-focus AX rows for Codex chat/composer, Arc body/sidebar,
+  VS Code editor/sidebar/terminal, Slack, Terminal, and Obsidian before adding
+  any further `(bundle_id, AX role)` overrides.
+- If rerunning a Haiku/Sonnet wager, first freeze one common packet schema and
+  deterministically re-render both V5 and live opportunities without exposing
+  their labels; the frozen 0/46-compatible attempt made no provider calls.
 - Require a fresh 5/5-valid qualification before advancing the sanity tag,
   installing the exploration Spoon, or starting the habit week.
 - Preserve V5 and its immutable runtime; do not rerun it.
