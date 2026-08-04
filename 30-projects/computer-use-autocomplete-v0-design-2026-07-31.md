@@ -1370,6 +1370,55 @@ failure, not a machinery-certification failure. Do not retry the immutable
 attempt or silently change the prompt, provider, or deadline. A new attempt
 requires an explicit preregistered amendment and a fresh source commit.
 
+### Six-pair allowlist and instrumented Qualification V2 — 2026-08-04
+
+The final week-one allowlist now derives from both frozen AX evidence sources,
+not only the ten-row terminal manual sweep. The supplemental Arc page sample
+was privacy-allowed and non-editable at
+`(company.thebrowser.Browser, AXGroup)`. The six exact safe pairs are:
+
+- Finder `AXApplication`;
+- Codex `AXGroup`;
+- Arc `AXWindow`;
+- Arc `AXGroup`;
+- VS Code `AXWebArea`; and
+- Slack `AXGroup`.
+
+This is still only an override for `unknown_focus`. It cannot override explicit
+editable state, sensitive or denylisted state, Secure Input, or secure-text
+roles. Private policy evidence
+`637392328d38e31c72f020e853dfb0295a3a156d5e04449786ec16b3b5070b60`
+binds both AX source hashes, the six-pair allowlist, and unchanged privacy and
+synchronous Tab-predicate hashes.
+
+Qualification V2 attempt `000001` retained only `invalid_response` for call 1;
+it did not retain the local validation subpredicate or raw response. That exact
+historical subpredicate is unrecoverable and was not guessed. Candidate
+`23bbb96` adds a closed metadata-only validation taxonomy to all future
+qualification evidence. A non-counted replay of the exact packet-1 bytes was
+valid in 2470.746 ms, so no speculative normalization was added. The complete
+source suite passed 911/911.
+
+The fresh, no-retry five-call attempt `000002` then produced:
+
+| Call | Outcome | Latency | Closed failure predicate |
+| --- | --- | ---: | --- |
+| 1 | returned | 3437.632 ms | — |
+| 2 | invalid response | 3345.431 ms | `candidate_target_unavailable` |
+| 3 | returned | 2812.917 ms | — |
+| 4 | returned | 2302.052 ms | — |
+| 5 | invalid response | 2048.646 ms | `candidate_cardinality` |
+
+The terminal manifest is
+`edb6469407e45df180cd463e604cf54e4e20dfdf307b9ce4b6eed825bf22c859`:
+3/5 valid, 3 returned, 0 abstained. The fixed gate therefore failed again.
+Structured output was already enabled; local validation correctly caught both
+violations. Cardinality is a representation defect, but an unavailable target
+is decision-bearing, so remapping it after generation would fabricate a model
+choice. No deployment, tag move, warm-start regeneration, or runtime start
+occurred. The next provider-contract amendment must prevent out-of-catalog
+choice at generation time rather than silently salvage it afterward.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full

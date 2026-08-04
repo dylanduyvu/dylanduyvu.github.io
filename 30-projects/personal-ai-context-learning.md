@@ -223,6 +223,29 @@ tags:
 > therefore failed the unchanged 5/5 gate. No retry, deadline change, install,
 > tag move, or natural-runtime launch occurred.
 
+> [!warning] Six-pair policy passed; instrumented Qualification V2 still failed, 2026-08-04
+> The policy derivation now binds both frozen AX sources, including the earlier
+> privacy-allowed, non-editable Arc page sample at `AXGroup`. The final six
+> known-safe pairs are Finder `AXApplication`, Codex `AXGroup`, Arc `AXWindow`,
+> Arc `AXGroup`, VS Code `AXWebArea`, and Slack `AXGroup`. Private policy
+> manifest `637392328d38e31c72f020e853dfb0295a3a156d5e04449786ec16b3b5070b60`
+> binds both evidence hashes to unchanged privacy and synchronous Tab-predicate
+> hashes. The full source suite passed 911/911 at candidate `23bbb96`.
+>
+> Attempt `000001` had discarded call 1's validation subpredicate, so its exact
+> historical invalidity cannot be recovered honestly. A non-counted replay of
+> the exact packet was valid in 2.471 seconds; it did not justify a speculative
+> salvage. The repaired evidence path now retains closed predicates. Fresh
+> counted attempt `000002` then failed 3/5: calls 1, 3, and 4 returned valid
+> ranked candidates in 3.438, 2.813, and 2.302 seconds; call 2 failed
+> `candidate_target_unavailable` in 3.345 seconds; call 5 failed
+> `candidate_cardinality` in 2.049 seconds. Terminal manifest
+> `edb6469407e45df180cd463e604cf54e4e20dfdf307b9ce4b6eed825bf22c859`
+> failed the unchanged 5/5 gate. Because unavailable-target repair would alter
+> a decision rather than formatting, no salvage, install, tag move, warm-start
+> regeneration, or natural-runtime launch occurred. The runtime remains
+> stopped.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
