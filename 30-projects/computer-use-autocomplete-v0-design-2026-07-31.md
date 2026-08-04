@@ -2,7 +2,7 @@
 type: project
 status: approved
 created: 2026-07-31
-updated: 2026-08-02
+updated: 2026-08-04
 aliases:
   - Computer-use autocomplete V0 design
 projects:
@@ -1587,6 +1587,63 @@ By `2026-08-04T19:46:10Z`, natural mode reported `ready=true` with runtime ID
 codes, and policy SHA-256
 `a3e5cc85f2a9f2b541aa604ff6052e700100b8543f108714e60d52605a04590d`.
 The qualifying week begins from this ready state.
+
+### Day-one telemetry integrity repair and runtime cutover — 2026-08-04
+
+The first read-only health audit found that prediction, safety, and persistence
+machinery were healthy, but three observability defects made the week-one data
+harder to interpret: normalized Hammerspoon rows retained the bridge's stale
+or zero epoch instead of Node's authoritative epoch, `health.json` always
+reported epoch `0`, and automatic focus suppressions were not persisted. The
+repair was preregistered as telemetry-only. It changes no opportunity decision,
+display policy, provider request, executor, privacy rule, Secure Input rule, or
+synchronous Tab gate.
+
+Source commit `ad18c9a` now:
+
+- projects normalized source-row epochs from the same source-event classifier
+  used by the runtime router, including raw bridge epoch `0`, while preserving
+  source ordering and the existing fatal-path semantics;
+- reads the live `OpportunityManager` epoch for ready, periodic, and stopping
+  health snapshots, with supervised cleanup if a later health snapshot fails;
+  and
+- persists `automatic_opportunity_suppressed` as a metadata-only system event
+  with one of the existing closed reasons: `editable_focus`, `unknown_focus`,
+  or `sensitive_focus`.
+
+Test-first development and independent reviews found and fixed three additional
+integrity edges before deployment: an unsorted-batch projection mismatch, an
+accessor/TOCTOU bypass in suppression evidence, and an unsupervised periodic
+health failure. The final focused telemetry set passed 71/71 and the full suite
+passed 1,018/1,018. The provider qualification inventory remained byte-identical
+at SHA-256
+`d6f9eb24fca9abe57c361e99fb95cce056bb580127e9ef018577151b0b4eddf3`;
+zero provider calls were made. The inherited private manifest for `ad18c9a` has
+SHA-256 `85c685891628d776402ff80bf9c78af9495419f96dc17b42b9532152b0398724`.
+
+The day-one returned-but-not-shown episode
+`019fce5f-5f37-720a-9c57-5e0461e4e6e2` returned three valid candidates, then a
+pointer event produced `context_stale` with exact reason `context_changed`;
+`presentation_state: not_shown` was therefore correct. The 1,286
+`stabilization / ax_metadata / invalid_schema` rows measured through ledger
+frontier `15004` cannot be clustered by `(bundle, role)`: their deliberate
+metadata-only evidence contains only purpose, status, stage, and reason. This
+is **not measurable from retained telemetry**, not evidence that no surface
+cluster exists.
+
+Before cutover, the prior `df3f87a` runtime was found to have stopped updating
+health and released its lock at approximately 16:29 ET while its launcher PID
+remained orphaned with `natural_launch_failed` in its log. The exact stale PID
+was terminated before launch. The privacy-filtered recurring block regenerated
+with four entries under SHA-256
+`f3f04f1a757f592243039f0d0225d9515c0ffdfb894cb8b0eecc6216a4e77ba6`.
+The sanity tag now points to `ad18c9a`; natural mode is ready under runtime ID
+`bfd3dda6-32d6-4fd1-a5ef-a525468467ca`, PID `6566`, bridge session
+`019fcea7-e194-7462-b7a2-03c2c089868d`, the unchanged policy SHA-256, and no
+blocker codes. Its initial health epoch is legitimately `0` because the new
+bridge session had not yet ingested a physical context event at verification
+time; the dynamic-advance invariant remains covered by the production-path
+tests and will be observable on the first natural input.
 
 ## Review status
 
