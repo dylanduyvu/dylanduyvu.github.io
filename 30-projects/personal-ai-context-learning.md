@@ -274,6 +274,19 @@ tags:
 > regeneration, or runtime launch occurred; the runtime remains stopped with
 > `lock_missing` and the sanity tag still resolves to `f6b237e`.
 
+> [!warning] Five-sample boundary passed its median but missed the all-call deadline bar, 2026-08-04
+> The one-shot result was superseded through a preregistered estimator change,
+> not retried under the old rule. Candidate `31c05a8` made exactly five
+> sequential, identical 12-choice boundary calls with no retry or early stop.
+> Latencies were 1791.977, 2581.453, 2312.019, 5006.670, and 1256.988 ms.
+> Median latency passed at 2312.019 ms, but one call hit the unchanged 5000 ms
+> production deadline, so only 4/5 were within deadline and manifest
+> `bb6db3e193eb50dfcc24a981bdfd2707943a4b7823211b404302a26aff02178f`
+> froze `production_deadline`. All five outcomes remain immutable. The stop rule
+> prevented counted qualification, deployment, warm-start regeneration, and
+> runtime launch; the runtime remains stopped and the sanity tag remains at
+> `f6b237e`.
+
 ## Current State
 
 The first expanded-history NAP comparison is complete. Its official exact
@@ -334,12 +347,14 @@ labels derived only from their subsequent event streams.
 The subsequent structural-output repair closes the invalid-target and
 candidate-cardinality representation defects, but it has not yet qualified for
 week-one use. The first 24-entry boundary hit the five-second transport
-deadline. A preregistered packet-economics amendment then reduced the maximum
-choice set to 12 without changing that deadline, but its valid response arrived
-in 4118.091 ms and missed the stricter four-second boundary by 118.091 ms. Both
-stops occurred before counted call 1, so there is still no new five-packet
-behavior result and no live exploration runtime. The frozen result does not
-authorize a retry or deadline change.
+deadline. A preregistered packet-economics amendment reduced the maximum choice
+set to 12, and an explicit follow-up replaced the noisy one-shot estimator with
+five fixed samples. The five-sample median passed at 2312.019 ms, but one call
+timed out at 5006.670 ms, so the aggregate failed its requirement that all five
+calls remain inside the unchanged production deadline. Every stop occurred
+before counted call 1, so there is still no new five-packet behavior result and
+no live exploration runtime. The frozen result does not authorize a retry or
+deadline change.
 
 A July 30 model and competitor audit found no released system that combines
 goal-free personal intent inference, usefulness-ranked semantic completion,
@@ -497,8 +512,10 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - Complete the manual-focus AX rows for Codex chat/composer, Arc body/sidebar,
   VS Code editor/sidebar/terminal, Slack, Terminal, and Obsidian before adding
   any further `(bundle_id, AX role)` overrides.
-- Run Qualification V2 once on its five frozen rich real packets after the AX
-  policy commit. Preserve the original 3/5-valid attempt and do not retry it.
+- Do not run counted Qualification V2 for candidate `31c05a8`: its frozen
+  five-sample boundary failed the all-calls-within-deadline rule. Any new
+  attempt requires another explicit preregistered amendment and source commit;
+  preserve every prior boundary and qualification artifact.
 - Midweek, compare Haiku and Sonnet only on accumulated real schema-current
   opportunities. Freeze predictions before deriving targets from subsequent
   events; Sonnet requires at least two additional exact top-three hits and p50

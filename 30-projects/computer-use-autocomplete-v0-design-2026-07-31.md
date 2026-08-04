@@ -1476,6 +1476,49 @@ stopped with `lock_missing`. The 12-choice repair removed the five-second
 transport timeout but did not clear the stricter four-second qualification
 boundary; this frozen result does not authorize a retry or deadline change.
 
+### Five-sample latency-distribution boundary — 2026-08-04
+
+The one-shot boundary was superseded by an explicit preregistered amendment,
+not silently retried. Commit `7405c1f` fixed the estimator before any new
+provider call: exactly five sequential uncounted requests using the identical
+12-choice worst-case packet, no retries or early stopping, median latency at or
+below 4000 ms, and all five calls strictly inside the unchanged 5000 ms
+production deadline. Every sample had to freeze before the next call, and a
+passing aggregate—not any single fast call—was required to authorize counted
+qualification.
+
+Candidate `31c05a8` implements version-3 evidence with one reservation, five
+private sample artifacts, and a terminal manifest binding their ordered hashes.
+It also preserves the prior version-1 and version-2 evidence under pinned
+historical contracts. The full suite passed 955/955. Independent spec and
+code-quality reviews found and closed a timer-edge bug, fully pinned the old
+version-2 response-size contract, and restored bounded-stream cancellation and
+prefix-preservation coverage before the live run.
+
+The one authorized five-sample boundary produced:
+
+| Sample | Outcome | Latency |
+| --- | --- | ---: |
+| 1 | valid rank | 1791.977 ms |
+| 2 | valid rank | 2581.453 ms |
+| 3 | valid rank | 2312.019 ms |
+| 4 | deadline | 5006.670 ms |
+| 5 | valid rank | 1256.988 ms |
+
+Median latency was 2312.019 ms, comfortably inside the 4000 ms median bar, but
+only 4/5 calls were inside the production deadline. The terminal aggregate
+therefore correctly froze `production_deadline` under manifest
+`bb6db3e193eb50dfcc24a981bdfd2707943a4b7823211b404302a26aff02178f`.
+All five calls used the identical 5989-byte request, 619-byte schema, and
+request hash
+`ed8e4bb2e3da2f381f67fe6228bd5f67786bfff6a9439398c4d6586fcae24bf4`.
+
+The stop rule fired before counted qualification. There was no sixth boundary
+call, retry, counted model call, launch ticket, install, tag move, warm-start
+regeneration, or runtime start. The sanity tag still resolves to `f6b237e`, and
+the runtime remains stopped with `lock_missing`. The deadline remains 5000 ms;
+this result does not authorize another attempt.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full
