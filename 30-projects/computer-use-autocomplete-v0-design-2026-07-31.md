@@ -1690,6 +1690,21 @@ ready to witness until the Hammerspoon startup-witness blocker is resolved and
 the candidate first reaches supervised `ready=true`. No successor qualifying
 time accrued overnight, and overnight hours do not count toward the trial.
 
+The next-morning read-only diagnostic classified the blocker as
+`observer_started_never_emitted`, not a slow cold launch or a witness-path
+mismatch. The failed nonce appears zero times in the complete event log, while
+a candidate bridge record reached the exact watched file. The identical Spoon
+bytes had previously emitted the marker, and the same launch context passed the
+Accessibility/eventtap probe. The remaining boundary between bridge startup
+and the final marker is not observable from the frozen evidence, so it was not
+narrow enough to patch without guessing. The diagnostic is frozen privately
+under SHA-256
+`ac1b2ece653b64a7a8c7d968e0cf95672e05c07eaffd11d6f2b34d4302ae9b95`.
+Travel operation now follows
+[[computer-use-autocomplete-travel-day-operations-2026-08-04|Computer-use
+autocomplete travel-day operations]]; `cc40729` is the first post-vacation
+cutover.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full
