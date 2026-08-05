@@ -1649,6 +1649,47 @@ Two natural `unknown_focus` automatic suppressions were also persisted under
 the new closed telemetry event. SQLite integrity remained `ok` with no foreign-
 key violations.
 
+### Overnight resilience candidate qualified; cutover stopped at Hammerspoon witness — 2026-08-04
+
+The five-item week-one hardening candidate is complete at source commit
+`cc40729`. It adds runtime-death visibility and launchd supervision, visible-pill
+coherence, single-display support, privacy-filtered AX surface telemetry, and
+exact current-focus exclusion. The candidate is committed and clean. Its full
+suite passed 1,113/1,113, including the first-supervised-startup recovery that
+was required after the initial provisional cutover failed.
+
+Because current-focus exclusion changes the provider packet and prompt
+inventory, the successor required a fresh five-call qualification. All five
+calls returned valid ranked predictions in 1932.625, 1290.856, 1123.588,
+1747.410, and 1934.560 ms: 5 ranked, 0 abstained, 0 timed out, 0 invalid, and 0
+other failures. The private terminal manifest SHA-256 is
+`eb56dabfdebe05aa54385d0c101f2bc4ae49b5d86a6a8e61416c82401f927db9`;
+its launch ticket is valid for August 5–12, 2026.
+
+The overnight cutover stopped before installing either LaunchAgent or enabling
+supervision. The candidate Spoon installed and Hammerspoon relaunched, but the
+installer did not observe the required exact fresh `observer_started` witness
+within its fixed 15-second window. Per the overnight stop rule, no exploratory
+debugging, cutover retry, or forced-kill demonstration followed. The failure is
+frozen privately as `observer_started_timeout` under SHA-256
+`86ed58f8b39c409b49c89c0773ec88dc595a66b84f0051277fd0d447ddfafc9c`.
+
+Rollback used the previously proven path: restore the sanity tag to `ad18c9a`,
+uninstall the 11-module candidate while preserving its audit outside the old
+validator, reinstall and reload the exact old 10-file Spoon, and launch the old
+runtime from its clean detached recovery worktree. The last-known-good system is
+now `ready=true` at source `ad18c9a`, runtime ID
+`44e0a639-555d-4e5d-be43-1d88fded4d48`, PID `13281`, with no blocker codes.
+Both candidate LaunchAgents remain absent, the ledger integrity check is `ok`
+with no foreign-key violations, and the installed Spoon hashes match the
+recorded old generation exactly.
+
+The resilience candidate is therefore **qualified but not installed**. The
+forced-kill demonstration is implemented but deliberately unrun; it is not
+ready to witness until the Hammerspoon startup-witness blocker is resolved and
+the candidate first reaches supervised `ready=true`. No successor qualifying
+time accrued overnight, and overnight hours do not count toward the trial.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full
