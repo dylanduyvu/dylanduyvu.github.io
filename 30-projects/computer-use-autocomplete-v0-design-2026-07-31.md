@@ -1705,6 +1705,54 @@ Travel operation now follows
 autocomplete travel-day operations]]; `cc40729` is the first post-vacation
 cutover.
 
+### Startup repaired; forced-kill recovery failed — 2026-08-06
+
+The post-vacation startup diagnostic found a deterministic Lua crash rather
+than observer or IPC flakiness. With supervision disabled, its persisted JSON
+contains null supervisor fields. `supervisor_status.lua` used
+`supervisor == nil and nil or supervisor.state` as a nullable ternary, but in
+Lua the nil middle value forces evaluation of the `or` branch; indexing
+`supervisor.state` then crashed initialization before the observer marker.
+Commit `6c88151` replaced that expression with an explicit nil guard and added
+the exact disabled/null regression. The complete suite passed 1,121/1,121.
+
+Commit `3c8619d` then added a private, authenticated no-call inheritance chain
+from qualified successor `cc40729`. It verifies a fixed qualified parent ticket,
+byte-identical provider-inventory blobs, the exact parent-to-child Git diff, a
+canonical private manifest/sidecar, and a branded launch ticket. The inheritance
+manifest SHA-256 is
+`d6f90fcea414ba1603826655c1d4c9e4620e9111572ee0cb39d199ec33aeffde`;
+no provider calls were made.
+
+The repaired cutover passed its exact fresh Hammerspoon startup witness on the
+first attempt. All 11 Spoon files matched Git, the marker was persisted with no
+emitter poison, and the supervised runtime reached `ready=true` at runtime ID
+`29e92d88-4102-4253-af9f-fd83ac185ef8`, PID `26823`, with no blocker codes and
+SQLite integrity `ok`.
+
+The operator-witnessed forced-kill demonstration then failed at recovery. Both
+machine telemetry and Dylan observed the persistent `CUA OFFLINE` indicator.
+The watchdog created the intended `forced_kill_demo` replacement attempt
+`ca766a21-2f1a-4c11-9399-fb11873f099d`, but no replacement runtime acknowledged
+ready. It subsequently cycled through crash/wake recovery attempts while the
+authoritative status continued to reference the dead runtime. The lid-close
+test was therefore not run.
+
+The failed supervisor was disabled and both exact LaunchAgents and plist files
+were removed. The older `ad18c9a` installer could not be restored without
+discarding the newer 11-file uninstall audit because its historical validator
+does not recognize that future audit shape. Rather than delete evidence or
+weaken the validator, the already-qualified repaired build was restored in
+unsupervised mode. Current runtime `b4163a1b-5852-4be9-9153-f41fd2861c51`, PID
+`54520`, source/tag `3c8619d`, is `ready=true` with no blockers; the indicator
+is hidden and ledger integrity is `ok`.
+
+The current product is usable but **not resilient to process death, sleep/wake,
+or reboot**. The next bounded task is to diagnose why launchd replacement
+processes never reached the runtime lock/ack boundary. Do not rerun the physical
+forced-kill or lid-close tests until that software path is repaired and proven
+synthetically.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full
