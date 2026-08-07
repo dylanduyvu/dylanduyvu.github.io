@@ -1753,6 +1753,32 @@ processes never reached the runtime lock/ack boundary. Do not rerun the physical
 forced-kill or lid-close tests until that software path is repaired and proven
 synthetically.
 
+### Supervisor migration parked at the platform boundary — 2026-08-07
+
+The legacy-journal migration workstream is parked at clean candidate commit
+`9565ffb999b160245e6467fdde2b7579fcdc1492`. Its last green boundary passes all
+47 focused command/LaunchAgent tests and all 1,390 repository tests. The
+evidence-preserving migration transaction and explicit command remain committed,
+but the next reviewed hardening step is infeasible as specified: on this Mac,
+`/usr/bin/lockf` can acquire an inherited `/dev/fd/3` lease while replacing fd 3
+in the executed worker. A real probe found the pinned lock at device/inode
+`16777231/256398840`, while the worker's fd 3 was a FIFO at `0/0`; the pinned
+identity was absent from worker fds 0–11. Per the standing boundary, no alternate
+locking design or native helper was attempted. The exact resume point is a new
+reviewed architecture decision for how a Node-only worker proves it is executing
+under the held migration lease; a custom native helper remains prohibited
+without new authorization.
+
+The previously documented unsupervised recovery command from detached source
+`3c8619d` was attempted once and returned `natural_launch_failed`. It was not
+debugged or retried. The current runtime status is `ready:false` with
+`lock_missing`. Hammerspoon's supervisor indicator module is loaded and readable,
+but its current authority is `desired_disabled`, so `CUA OFFLINE` is not visible;
+this does **not** satisfy an armed-offline confirmation. The preserved trial
+clock contains about 2.50 minutes of live time, so the qualifying-day count is
+still zero. The supervisor allocation is terminally parked; the next work item
+is the preregistered read-only packet-fidelity audit before any provider wager.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full
