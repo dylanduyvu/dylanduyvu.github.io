@@ -83,3 +83,10 @@ coverage, latency, and false joins before broadening the claim.
 
 - 2026-08-02: Frozen after three passive desktop-originated trials passed the
   full baseline plus 2-/10-/30-second read schedule.
+- 2026-08-07: The read-path claim remains supported, but a read-only audit found
+  that the promised candidate-catalog implication did not land in the runtime.
+  The implementation performs one startup list read, inserts only threads
+  already inside the 15-minute history horizon as `history_context`, and lets
+  them age out. The current 63-packet corpus has zero exact active-task states
+  and only seven packets with any Codex task candidate. See
+  [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the packet-fidelity audit]].

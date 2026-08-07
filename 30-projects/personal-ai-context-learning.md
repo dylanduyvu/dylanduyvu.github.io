@@ -289,6 +289,18 @@ tags:
 
 ## Current State
 
+> [!warning] 2026-08-07 packet-fidelity audit
+> The current corpus has grown from the requested 60 packets to 63. Exact active
+> Codex task identity is absent in all 63. Seven packets contain one historical
+> task from the startup directory read; the rest have no Codex task candidate.
+> The planned full thread-list candidate catalog was not implemented: the
+> runtime performs one startup read, admits only already-recent threads into the
+> 15-minute history buffer, and lets them age out. The state-only twin also
+> retains recurring memory, so it is a rolling-recent-history ablation rather
+> than a strict screen-only baseline. See
+> [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the complete
+> audit and restoration-cost estimate]].
+
 The first expanded-history NAP comparison is complete. Its official exact
 top-three result is 0/10 for state-only and 5/10 for state plus history.
 Target-level review decomposes the five history wins into four clean

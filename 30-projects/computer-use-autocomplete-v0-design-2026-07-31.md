@@ -1779,6 +1779,14 @@ clock contains about 2.50 minutes of live time, so the qualifying-day count is
 still zero. The supervisor allocation is terminally parked; the next work item
 is the preregistered read-only packet-fidelity audit before any provider wager.
 
+The audit is now complete at
+[[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use
+autocomplete packet-fidelity audit]]. It found that exact active Codex task
+identity is absent across the corpus and the planned full thread-list candidate
+catalog was only partially wired as expiring recent history. It also found that
+the nominal state-only twin retains recurring memory, so it measures rolling
+recent-history lift rather than a strict screen-only baseline.
+
 ## Review status
 
 Five independent adversarial review passes were completed against the full
