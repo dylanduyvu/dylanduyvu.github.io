@@ -1770,14 +1770,18 @@ under the held migration lease; a custom native helper remains prohibited
 without new authorization.
 
 The previously documented unsupervised recovery command from detached source
-`3c8619d` was attempted once and returned `natural_launch_failed`. It was not
-debugged or retried. The current runtime status is `ready:false` with
-`lock_missing`. Hammerspoon's supervisor indicator module is loaded and readable,
-but its current authority is `desired_disabled`, so `CUA OFFLINE` is not visible;
-this does **not** satisfy an armed-offline confirmation. The preserved trial
-clock contains about 2.50 minutes of live time, so the qualifying-day count is
-still zero. The supervisor allocation is terminally parked; the next work item
-is the preregistered read-only packet-fidelity audit before any provider wager.
+`3c8619d` was attempted once and initially returned `natural_launch_failed`. It
+was not debugged or retried. A later authoritative status read found that its
+background runtime had reached `ready:true`: runtime
+`11734579-f77d-4bee-a043-e7c3f8fdcaa4`, PID `32475`, exact source `3c8619d`,
+with no blocker codes. Hammerspoon's supervisor indicator module is loaded and
+readable, and the direct heartbeat is present. Its supervisor authority remains
+intentionally `desired_disabled`, so `CUA OFFLINE` is hidden; this is an honest
+disabled-supervisor state, not proof of supervised recovery. The preserved
+trial clock contains about 2.50 minutes of live time, so the qualifying-day
+count is still zero. The supervisor allocation is terminally parked; the next
+work item is the preregistered read-only packet-fidelity audit before any
+provider wager.
 
 The audit is now complete at
 [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use
