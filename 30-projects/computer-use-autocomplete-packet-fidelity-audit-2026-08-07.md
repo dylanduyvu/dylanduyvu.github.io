@@ -103,7 +103,32 @@ schema-v2 trial marker started day one at `2026-08-08T16:27:40.931Z`
 The trial runtime is now frozen. Weekend days qualify at four or more hours of
 live heartbeat. The separately authorized three-arm replay tooling runs only
 against frozen offline artifacts and has zero contact with the live runtime;
-its accuracy table is still pending.
+its completed result is below.
+
+## Offline three-arm replay — August 8
+
+The durable offline pipeline is complete at tooling commit `c09ce6f`. It pinned
+Haiku `claude-haiku-4-5-20251001`, verified all 63 frozen sources, derived labels
+only from clean subsequent-event evidence, made exactly one call for each of
+the `63 × 3 = 189` arm slots, and used the same seven-label denominator for all
+arms. There were no retries or replacements, two screen-only timeouts, and no
+other failures.
+
+| Arm | Exact top-three | Accuracy | Lift vs screen | Latency p50 | Latency p95 |
+|---|---:|---:|---:|---:|---:|
+| Screen only | 0/7 | 0.00% | — | 1,262.02 ms | 3,379.45 ms |
+| Plus recurring memory | 1/7 | 14.29% | +14.29 pp | 1,361.81 ms | 2,351.07 ms |
+| Plus rolling history | 2/7 | 28.57% | +28.57 pp | 1,399.68 ms | 3,025.90 ms |
+
+Only `7/63` sources (11.11%) could be labeled without guessing, so this is
+directional rather than conclusive. Within that small common denominator,
+accuracy increased monotonically with richer personal history, consistent with
+the earlier V5 direction. Result artifact SHA-256:
+`7937a079ba412c2b3362ae2135f03e83afd0add7acb268c4e6bd69435289c923`.
+Run artifact SHA-256:
+`cb8a38eb2f88d23937a3a8cdbb2de4bcfa46a3ddd32804bcfe8587ab5bde5af8`.
+Independent artifact review reproduced the exact table and found no runtime,
+prompt, provider, Hammerspoon, or Track 1 modification.
 
 ## Corpus verification
 

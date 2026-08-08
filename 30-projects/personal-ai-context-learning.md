@@ -323,6 +323,16 @@ tags:
 > [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the full repair,
 > qualification, and trial-start record]].
 
+> [!success] 2026-08-08 strict three-arm replay shows directional history lift
+> Only 7/63 frozen packets had a clean subsequent-event label, so the result is
+> small-n: screen-only scored 0/7 exact top-three, recurring memory scored 1/7,
+> and rolling history scored 2/7. All arms used the same denominator; 189/189
+> calls reached terminal evidence with two timeouts and no other failures. The
+> monotonic ordering supports the history-lift hypothesis but does not establish
+> its magnitude. See
+> [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the complete
+> replay table and provenance]].
+
 The first expanded-history NAP comparison is complete. Its official exact
 top-three result is 0/10 for state-only and 5/10 for state plus history.
 Target-level review decomposes the five history wins into four clean
@@ -573,10 +583,10 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
   staying up, rendering pills, or preserving ledger integrity. Report one
   telemetry readout each evening; treat imperfect predictions and ignored
   suggestions as trial data.
-- Complete the offline three-arm replay over the frozen 63-packet corpus:
-  strict screen-only, plus recurring memory, and plus rolling history. Freeze
-  labels independently from later event evidence, never force ambiguous
-  labels, and compare all arms on one common scorable denominator.
+- Treat the completed three-arm replay as directional evidence only: exact
+  top-three rose from 0/7 screen-only to 1/7 with recurring memory and 2/7 with
+  rolling history, but strict label coverage was only 7/63. Use the frozen
+  offline tooling again at the trial verdict once more clean labels exist.
 - Keep the Haiku/Sonnet wager parked until the trial verdict. If it resumes,
   use only accumulated post-repair schema-current opportunities and require
   Sonnet to add at least two exact top-three hits with p50 at or below 3.5
