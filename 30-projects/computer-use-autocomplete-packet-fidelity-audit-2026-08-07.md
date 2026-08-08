@@ -70,6 +70,41 @@ stopped with `lock_missing`; trial day one did not start. The exact next
 decision is how ranking ties should resolve. It is not another packet-capture,
 transport, or schema-validity repair.
 
+## Weekend ranking-tie resolution — August 8
+
+Commit `b58f38e` supersedes the failed-gate state above. Plausible ties now rank
+by rolling-history evidence first and catalog order second; `ranking_tie` is no
+longer an abstention reason. Any local tie break is preserved as
+`tie_broken_by_recency` telemetry. The full suite passed `1,182/1,182`, and
+independent spec and code-quality reviews approved the implementation.
+
+The exact same five qualification packets were rebound to the new source with
+zero model calls (rebind manifest
+`4ddf6f8eb7478f22a9abf2b34822f26428a63b93b23cfa761599d7d5e216f4c2`).
+The fresh Haiku gate then passed `5/5` ranked predictions with zero timeout,
+abstention, invalid response, or other failure:
+
+| Call | Outcome | Latency |
+|---:|---|---:|
+| 1 | Returned three | 1,599.130 ms |
+| 2 | Returned three | 1,950.808 ms |
+| 3 | Returned three | 1,260.060 ms |
+| 4 | Returned three | 1,164.354 ms |
+| 5 | Returned three | 1,433.291 ms |
+
+Qualification manifest:
+`d64d05975d8ee232c744f87f22e83568b4bd63fc5689665b4514232c8ca7166c`.
+The sanity tag now resolves to the exact qualified source. Runtime
+`7813ae1f-412b-4a98-9886-8f647ed403d3` reached `ready:true`, and the immutable
+schema-v2 trial marker started day one at `2026-08-08T16:27:40.931Z`
+(`10:27:40.931 AM` Costa Rica time), marker
+`f3b60b82097055ad0ae9e266657df42756d65d6fb1de56eea3e79438ff1177b3`.
+
+The trial runtime is now frozen. Weekend days qualify at four or more hours of
+live heartbeat. The separately authorized three-arm replay tooling runs only
+against frozen offline artifacts and has zero contact with the live runtime;
+its accuracy table is still pending.
+
 ## Corpus verification
 
 The requested snapshot contained 60 packets. Three more immutable packets were

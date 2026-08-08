@@ -313,6 +313,16 @@ tags:
 > [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the repair and
 > qualification record]].
 
+> [!success] 2026-08-08 ranking ties repaired and trial day one started
+> Commit `b58f38e` retired `ranking_tie` abstention, passed `1,182/1,182` tests
+> and independent review, then returned ranked top-threes on all 5/5 fresh
+> Haiku qualification calls. Runtime
+> `7813ae1f-412b-4a98-9886-8f647ed403d3` reached `ready:true`; the immutable
+> marker starts day one at `2026-08-08T16:27:40.931Z`. The runtime is frozen for
+> the trial, and weekend days qualify at four or more live-heartbeat hours. See
+> [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the full repair,
+> qualification, and trial-start record]].
+
 The first expanded-history NAP comparison is complete. Its official exact
 top-three result is 0/10 for state-only and 5/10 for state plus history.
 Target-level review decomposes the five history wins into four clean
@@ -558,15 +568,19 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
-- Run the qualifying week from the `df3f87a` ready state without changing the
-  frozen week-one display policy. Treat ignored pills as ambiguous, preserve
-  accepts/dismissals/overrides and timeouts separately, and use the pre-named
-  hedged-request amendment only if live timeout rate exceeds 10% after three
-  completed workdays.
-- Midweek, compare Haiku and Sonnet only on accumulated real schema-current
-  opportunities. Freeze predictions before deriving targets from subsequent
-  events; Sonnet requires at least two additional exact top-three hits and p50
-  at or below 3.5 seconds. V5 remains out of scope.
+- Observe the frozen `b58f38e` qualifying runtime through the trial. Make no
+  cutovers or fixes unless a signal-killing fault prevents the runtime from
+  staying up, rendering pills, or preserving ledger integrity. Report one
+  telemetry readout each evening; treat imperfect predictions and ignored
+  suggestions as trial data.
+- Complete the offline three-arm replay over the frozen 63-packet corpus:
+  strict screen-only, plus recurring memory, and plus rolling history. Freeze
+  labels independently from later event evidence, never force ambiguous
+  labels, and compare all arms on one common scorable denominator.
+- Keep the Haiku/Sonnet wager parked until the trial verdict. If it resumes,
+  use only accumulated post-repair schema-current opportunities and require
+  Sonnet to add at least two exact top-three hits with p50 at or below 3.5
+  seconds. V5 remains out of scope.
 - Preserve V5 and its immutable runtime; do not rerun it.
 - Define a stable hierarchical ontology for application, window/task,
   document/page, and control candidates.
