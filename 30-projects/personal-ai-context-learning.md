@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-22
-updated: 2026-08-04
+updated: 2026-08-08
 aliases:
   - Personal AI Context Learning
   - Niyant's personal-AI thesis
@@ -300,6 +300,18 @@ tags:
 > than a strict screen-only baseline. See
 > [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the complete
 > audit and restoration-cost estimate]].
+
+> [!warning] 2026-08-08 full-fidelity repair qualified packets but missed the gate
+> Candidate `07a9cf3` repairs live Codex-directory injection and the honest
+> screen-only/recurring/rolling-history replay arms; `1,166/1,166` tests pass.
+> Five isolated packets all carried directory candidates and hit the 12-choice
+> cap. The exact five-call Haiku gate returned ranked threes on 3/5 and
+> abstained twice on `ranking_tie`; it had zero timeout, invalid, off-catalog,
+> or fabricated outcomes. The fixed bar required at least 4/5 ranked returns,
+> so no cutover or trial start occurred. Tag `3c8619d` is unchanged and the
+> runtime remains stopped. See
+> [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the repair and
+> qualification record]].
 
 The first expanded-history NAP comparison is complete. Its official exact
 top-three result is 0/10 for state-only and 5/10 for state plus history.

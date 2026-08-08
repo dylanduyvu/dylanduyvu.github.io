@@ -2,7 +2,7 @@
 type: project
 status: complete
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-08-08
 projects:
   - personal-ai-context-learning
 domains:
@@ -34,6 +34,41 @@ the recent 15-minute/100-event sequence **on top of** long-horizon recurring
 memory.
 
 No packet, runtime, prompt, schema, or provider code was changed in this audit.
+
+## Repair outcome — August 8
+
+The full-fidelity packet repair is implemented at candidate commit `07a9cf3`.
+The live Codex directory now omits schema-valid untitled threads instead of
+rejecting the whole page; the measured August 8 response contained 64 rows, of
+which 42 were untitled and 22 were usable exact-ID/title candidates. The strict
+screen-only twin and three-arm offline replay taxonomy are also implemented.
+The complete suite passes `1,166/1,166`.
+
+The isolated qualification source capture passed with five distinct repaired
+packets. All five contained live Codex directory candidates and reached the
+12-choice provider cap, with zero model calls during capture. Source manifest:
+`3e613bc24570f88fae376e05d1270c69da8ff40857b5484e39ee4c3cf9b09298`.
+
+The one authorized five-call Haiku gate then failed the deployment bar:
+
+| Call | Outcome | Exact reason | Latency |
+|---:|---|---|---:|
+| 1 | Abstained | `ranking_tie` | 1,731.217 ms |
+| 2 | Returned three | — | 2,536.552 ms |
+| 3 | Abstained | `ranking_tie` | 1,151.724 ms |
+| 4 | Returned three | — | 1,930.751 ms |
+| 5 | Returned three | — | 1,442.751 ms |
+
+There were zero timeouts, invalid/off-catalog responses, or fabricated
+candidates. The anti-fabrication and latency boundaries therefore passed, but
+the preregistered gate required at least four ranked returns and allowed no
+other terminal failures. Qualification manifest:
+`f8a7eef48199644643aa241dcafc25e1ac9b08677e5d532ec0862286ce0d631d`.
+
+No cutover occurred. The approved tag remains at `3c8619d`; the runtime remains
+stopped with `lock_missing`; trial day one did not start. The exact next
+decision is how ranking ties should resolve. It is not another packet-capture,
+transport, or schema-validity repair.
 
 ## Corpus verification
 
