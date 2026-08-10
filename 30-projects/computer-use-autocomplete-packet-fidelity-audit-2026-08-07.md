@@ -237,6 +237,52 @@ installed arming policy contains `com.anthropic.claudefordesktop`, so the
 existing six-pair policy remains unchanged. No runtime behavior was patched in
 this recovery; the crash remains verdict-week fault evidence.
 
+### Repeated expiry/rearm crash and final freeze exception — August 10
+
+The restarted `019fecb9` bridge later died under the same ordinary-use
+sequence. Episode `019feccc-3e35-770a-8dce-38e2657d017a` expired at
+`2026-08-10T17:50:49Z`; the next opportunity returned three candidates as
+episode `019feccc-e566-7227-a1aa-6366a715db32` at `17:51:23Z`, but no new
+`suggestion_shown` followed. The old suggestion's last acknowledged command
+was sequence 2, while the later bridge-resync evidence observed an unapplied
+command sequence 3. SQLite stopped at Hammerspoon source sequence 130 while
+the raw observer retained through 267, preserving 137 later rows; integrity
+remained `ok`.
+
+The second private fault record is
+`history/verdict-week-faults/2026-08-10-019fecb9-expiry-rearm-crash.json`,
+SHA-256
+`c48200cc4657c529faea08c782154ef59a31abf375b87a6d32bfef478bcd3b68`.
+One clean expiry-to-next-returned-prediction cycle existed before the first
+crash, but the same failure recurring in a second runtime during one evening
+made it a signal-killing rate problem rather than an isolated race.
+
+The final authorized freeze exception landed at
+`913385542e9f0cafad51e6ebfb912fbd6636c598`. Coordinator-owned expiry now
+persists `suggestion_expired`, publishes one exact identity-bound `invalidate`
+with reason `ttl_expired`, and only then releases the opportunity. A stale
+expiry that races a replacement cannot invalidate the replacement. The exact
+reconstructed regression—arm A, expire A, invalidate A, arm B—and the
+replacement-race chaos case pass. No protocol, Tab, privacy, display, prompt,
+packet, provider, or other invalidation behavior changed.
+
+The same cutover includes the exact
+`com.anthropic.claudefordesktop + AXGroup` known-safe pair. It applies only
+when editability is unknown and cannot override editable, noneditable,
+sensitive, denylisted, Secure Input, secure-role, or wrong-role suppression.
+The full suite passed, and exact-commit qualification returned 5/5 ranked
+predictions with zero timeouts, invalid responses, or other failures.
+
+The final runtime is `7a9c3694-fdcc-454f-9298-4ab045e08bfa`, PID `69368`,
+bridge `019fecd6-e3b8-7e36-8546-b38dd53347eb`, `ready:true`. Its first
+authoritative post-start epoch was 1; verification reached epoch 4, installed
+policy bytes matched source exactly, and ledger integrity was `ok`. The final
+private cutover record is
+`history/verdict-week-faults/2026-08-10-final-expiry-disarm-cutover.json`,
+SHA-256
+`34d420c20b7589aedd1ab5f6f82ce5513ea8eacc63a059b0fd443ca787143b72`.
+The trial freeze resumes here.
+
 ## Corpus verification
 
 The requested snapshot contained 60 packets. Three more immutable packets were

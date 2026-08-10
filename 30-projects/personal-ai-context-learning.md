@@ -374,6 +374,22 @@ tags:
 > [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the frozen
 > crash chain and recovery record]].
 
+> [!success] 2026-08-10 final expiry-disarm cutover
+> The expiry/rearm fault repeated in the restarted `019fecb9` session, so its
+> rate overrode the earlier rare-race branch. Commit `9133855` makes expiry a
+> first-class identity-bound command-writer disarm: arm A → expire A →
+> invalidate A → arm B now passes, while a stale expiry racing replacement B
+> cannot invalidate B. The same cutover adds only the exact Claude Desktop
+> `AXGroup` safe pair without weakening editable, privacy, Secure Input,
+> denylist, sensitive-role, or wrong-role suppression. Exact-commit
+> qualification passed 5/5. Runtime
+> `7a9c3694-fdcc-454f-9298-4ab045e08bfa`, bridge
+> `019fecd6-e3b8-7e36-8546-b38dd53347eb`, is `ready:true`; first epoch was 1,
+> verification reached epoch 4, and integrity is `ok`. The trial freeze resumes
+> at `9133855`. See
+> [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the two frozen
+> crash chains, regression boundary, and final cutover evidence]].
+
 The first expanded-history NAP comparison is complete. Its official exact
 top-three result is 0/10 for state-only and 5/10 for state plus history.
 Target-level review decomposes the five history wins into four clean
@@ -619,7 +635,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
-- Observe the frozen `644a3ec` qualifying runtime through the trial. Make no
+- Observe the frozen `9133855` qualifying runtime through the trial. Make no
   cutovers or fixes unless a signal-killing fault prevents the runtime from
   staying up, rendering pills, or preserving ledger integrity. Report one
   telemetry readout each evening; treat imperfect predictions and ignored
