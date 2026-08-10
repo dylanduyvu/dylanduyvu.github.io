@@ -203,6 +203,40 @@ hidden under `direct_runtime_ready`. The trial freeze resumes at this source;
 the original lifecycle and hidden-indicator failures remain verdict-week
 evidence rather than being erased.
 
+### Independent post-repair crash — August 10
+
+The whole `644a3ec` runtime later stopped independently at
+`2026-08-10T17:19:16Z`. This was not a cutover: the tracked source was clean,
+the installed Spoon matched source byte-for-byte, and no allowlist amendment or
+partial install existed. The managed runtime removed its lock and closed the
+ledger while PID `15534` remained orphaned; `CUA OFFLINE` correctly appeared as
+`direct_runtime_stale`, and the raw observer preserved source sequences
+`421–614` after SQLite stopped at sequence `420`. Ledger integrity remained
+`ok`.
+
+The public runtime log retained only `natural_launch_failed: runtime launch
+failed`, but the terminal chain reconstructs the internal fault
+deterministically. A suggestion expired and was withdrawn at TTL without
+clearing the command writer's armed identity. The next valid prediction
+returned and persisted three candidates, then the writer attempted another
+`arm_suggestion`; that closed state raises `suggestion is already armed;
+invalidate before rearming`. Shutdown command 8 followed immediately, before a
+new arm or `suggestion_shown` event could be written. The immutable private
+fault record is
+`history/verdict-week-faults/2026-08-10-019fec9a-independent-runtime-crash.json`
+under the runtime root, SHA-256
+`3eb7c7e05432f25d8ed1f2d526f45e147e2938bd3a1c720340a349a1c4916c63`.
+
+PID `15534` was identity-checked and terminated. The same qualified source
+restarted as runtime `421db60b-1a46-44ca-b64e-cfbb9b374c68`, PID `33037`,
+bridge `019fecb9-945d-7089-9f52-6bc91dc0d195`, with `ready:true`. Its first
+authoritative post-start epoch was 1; verification reached epoch 11, the OFFLINE
+indicator cleared under `direct_runtime_ready`, and ledger integrity stayed
+`ok`. The proposed Claude safe pair did **not** land: neither source nor the
+installed arming policy contains `com.anthropic.claudefordesktop`, so the
+existing six-pair policy remains unchanged. No runtime behavior was patched in
+this recovery; the crash remains verdict-week fault evidence.
+
 ## Corpus verification
 
 The requested snapshot contained 60 packets. Three more immutable packets were

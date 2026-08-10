@@ -361,6 +361,19 @@ tags:
 > [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the exact root
 > cause, TDD repair, qualification, and cutover evidence]].
 
+> [!warning] 2026-08-10 independent post-repair runtime crash
+> The whole `644a3ec` runtime later died after an expired pill left the command
+> writer armed and the next valid prediction attempted to arm again. The
+> private fault record freezes the masked exit boundary and the 194 raw rows
+> retained after SQLite stopped. `CUA OFFLINE` behaved correctly this time.
+> The exact same build restarted `ready:true` as runtime
+> `421db60b-1a46-44ca-b64e-cfbb9b374c68`, bridge
+> `019fecb9-945d-7089-9f52-6bc91dc0d195`; first epoch was 1 and verification
+> reached epoch 11. The Claude safe-pair amendment was absent and did not land.
+> No runtime behavior changed. See
+> [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the frozen
+> crash chain and recovery record]].
+
 The first expanded-history NAP comparison is complete. Its official exact
 top-three result is 0/10 for state-only and 5/10 for state plus history.
 Target-level review decomposes the five history wins into four clean
