@@ -348,6 +348,19 @@ tags:
 > [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the exact outage,
 > recovery, reconciliation-gap, and accounting record]].
 
+> [!success] 2026-08-10 freeze-exception ingress and indicator repair
+> The apparent second silent failure was deterministic: the ingress reader
+> treated its 4,096 retained duplicate digests as a lifetime event limit, so
+> source sequence 4,097 killed the managed runtime while its detached Node shell
+> and raw observer remained alive. Commit `644a3ec` converts that into a bounded
+> rolling duplicate window and adds honest `direct_runtime_stale` and
+> `runtime_ingress_stalled` indicator states. The final runtime is
+> `ready:true`; its first post-fix epoch was 1, verification reached epoch 4,
+> raw and ledger frontiers matched, and integrity was `ok`. The trial freeze now
+> resumes at `644a3ec`; the prior outage remains verdict-week evidence. See
+> [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the exact root
+> cause, TDD repair, qualification, and cutover evidence]].
+
 The first expanded-history NAP comparison is complete. Its official exact
 top-three result is 0/10 for state-only and 5/10 for state plus history.
 Target-level review decomposes the five history wins into four clean
@@ -593,7 +606,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
-- Observe the frozen `b58f38e` qualifying runtime through the trial. Make no
+- Observe the frozen `644a3ec` qualifying runtime through the trial. Make no
   cutovers or fixes unless a signal-killing fault prevents the runtime from
   staying up, rendering pills, or preserving ledger integrity. Report one
   telemetry readout each evening; treat imperfect predictions and ignored

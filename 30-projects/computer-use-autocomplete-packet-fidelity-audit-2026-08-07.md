@@ -169,6 +169,40 @@ Current qualifying-day total: **1**. The lifecycle and hidden-indicator faults
 remain frozen as supervisor-decision evidence; the runtime, provider, prompt,
 display, and safety policies were not changed.
 
+### Authorized freeze-exception repair — August 10
+
+Later same-day evidence superseded the initial recovery conclusion that the new
+session was durably ingesting. That claim had rested on a short observation:
+`ready:true`, epoch growth through 3,975, ledger source-sequence growth, and a
+shrinking raw-to-ledger lag. It proved initial ingestion only. The runtime then
+failed deterministically when the bridge session crossed its 4,096-record
+`seen` limit. Source sequence 4,097 triggered a fatal ingress corruption; the
+118-row poll batch containing sequences 3,980–4,097 committed nothing, the
+managed runtime cleaned up its lock, health, heartbeat, and ledger, and its
+detached Node shell remained alive while Hammerspoon raw capture continued.
+The reader offset and session filter were not at fault.
+
+The authorized freeze exception landed at source
+`644a3ec324fcad6468d68055806a61984eba7b4c`. Ingress now retains a bounded
+rolling window of 4,096 recent duplicate digests while allowing forward source
+sequences to continue indefinitely; recent exact duplicates remain idempotent,
+conflicts remain fatal, and unverifiable aged-out regressions still fail
+closed. The indicator now recognizes the closed unsupervised health shape,
+shows `direct_runtime_stale` for a dead direct runtime, and shows
+`runtime_ingress_stalled` when fresh health coexists with observed input but no
+epoch advance for two minutes. No provider, prompt, packet, schema, display, or
+safety policy changed.
+
+The full suite passed 1,182/1,182. The final exact-commit qualification passed
+5/5 ranked calls with zero timeouts or invalid responses. The installed runtime
+is `b7cf0ea2-fd83-45c5-b6cb-c1ae3ada0929`, PID `15534`, bridge
+`019fec9a-9170-7ae2-aa90-b0bcbf343539`, `ready:true`. Its first authoritative
+post-fix epoch was 1; verification reached epoch 4 with raw and ledger frontiers
+both at source sequence 5, SQLite integrity `ok`, and the healthy indicator
+hidden under `direct_runtime_ready`. The trial freeze resumes at this source;
+the original lifecycle and hidden-indicator failures remain verdict-week
+evidence rather than being erased.
+
 ## Corpus verification
 
 The requested snapshot contained 60 packets. Three more immutable packets were
