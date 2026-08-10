@@ -626,6 +626,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[pira-bench-proactive-intent-recommendation-agents-2026-03-09|PIRA-Bench tests proactive intent recommendation from continuous GUI screenshots]]
 - [[induction-labs-scaling-video-pretraining-with-imagination-models-2026-07-23|Induction Labs: Scaling Video Pretraining with Imagination Models]]
 - [[standard-intelligence-fdm-1-fully-general-computer-action-model-2026-02-23|Standard Intelligence: FDM-1, a fully general computer action model]]
+- [[compass-cotypist-for-computer-use-stack-and-weekend-plan-2026-08-10|Compass: Cotypist-for-computer-use stack and weekend build plan]]
 - [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
 - [World Models public notes](https://handsdiff.github.io/)
 - [Pinned public notes snapshot](https://github.com/handsdiff/notes/tree/3151afa93fd81719a6e9dc7862c269ea1f1a70e6)

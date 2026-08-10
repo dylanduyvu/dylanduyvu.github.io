@@ -1016,6 +1016,12 @@ computer-use autocomplete model and competitor landscape]].
 - [[standard-intelligence-fdm-1-fully-general-computer-action-model-2026-02-23|Standard Intelligence: FDM-1, a fully general computer action model]] —
   a video-native next-action model trained on inverse-dynamics labels over a
   large screen-recording corpus, with long behavioral context.
+- [[compass-cotypist-for-computer-use-stack-and-weekend-plan-2026-08-10|Compass: Cotypist-for-computer-use stack and weekend build plan]] —
+  raw architecture research covering the Codex Computer Use bridge, alternative
+  executors, trigger-time context, predictor latency, and a proposed greenfield
+  build. Preserve as a research lead rather than the approved implementation:
+  the bridge exposes low-level tools but supplies no computer-use planner, and
+  the proposed Swift/Python rewrite would discard the existing V0 shell.
 
 ## Working path from experiment to rough V1
 
