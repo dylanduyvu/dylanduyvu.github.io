@@ -390,6 +390,22 @@ tags:
 > [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the two frozen
 > crash chains, regression boundary, and final cutover evidence]].
 
+> [!success] 2026-08-10 unified armed-exit lifecycle cutover
+> Crash 3 followed the first Escape dismissal: the pill disarmed visually, but
+> the Node command writer retained the old exact identity and rejected the next
+> valid prediction's arm. Commit `1d189e4` replaces the expiry-only repair with
+> one serialized exact disarm boundary shared by accept, Escape, expiry,
+> withdrawal, input invalidation, and context staleness. All six exits and both
+> requested races now prove one cleanup and a clean next opportunity through
+> the production path. The full suite passed 1,202/1,202; exact-commit
+> qualification passed 5/5; independent review found no issue. Runtime
+> `aadd4395-e1dd-4273-a606-4e749b9e0a1c`, bridge
+> `019fed46-38c4-715e-b32f-57d40c9c5673`, is `ready:true`; first epoch was 1,
+> raw and ledger frontiers converged, the OFFLINE badge cleared, and integrity
+> is `ok`. The trial freeze resumes at `1d189e4`. See
+> [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the exact Crash
+> 3 chain, exit-path matrix, qualification, and cutover evidence]].
+
 The first expanded-history NAP comparison is complete. Its official exact
 top-three result is 0/10 for state-only and 5/10 for state plus history.
 Target-level review decomposes the five history wins into four clean
@@ -635,7 +651,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Next Tests
 
-- Observe the frozen `9133855` qualifying runtime through the trial. Make no
+- Observe the frozen `1d189e4` qualifying runtime through the trial. Make no
   cutovers or fixes unless a signal-killing fault prevents the runtime from
   staying up, rendering pills, or preserving ledger integrity. Report one
   telemetry readout each evening; treat imperfect predictions and ignored

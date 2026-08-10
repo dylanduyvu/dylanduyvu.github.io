@@ -283,6 +283,54 @@ SHA-256
 `34d420c20b7589aedd1ab5f6f82ce5513ea8eacc63a059b0fd443ca787143b72`.
 The trial freeze resumes here.
 
+### Crash 3 and unified armed-exit lifecycle — August 10
+
+The first Escape dismissal in bridge
+`019fecd6-e3b8-7e36-8546-b38dd53347eb` exposed the same room-level fault
+through a different door. Hammerspoon emitted `escape_dismissed` for episode
+`019fed1e-2f6b-7d6b-add5-abe9db2ad216` and visibly disarmed the pill, but the
+Node command writer retained that exact suggestion identity. The following
+episode returned a valid ranked prediction and then died before
+`suggestion_shown` when strict re-arm rejected the still-armed writer. The raw
+observer retained 136 rows beyond the ledger frontier, the OFFLINE badge
+appeared correctly, and SQLite integrity remained `ok`. The immutable private
+crash artifact is
+`history/verdict-week-faults/2026-08-10-019fecd6-escape-rearm-crash.json`,
+SHA-256
+`42ff43b317261bde1e3446c1c18027722ed2ceaee4d0109e1f7b2e0a43e02e11`.
+
+Commit `1d189e41ea5203cb0ed96586331fd4dc5a721bd8` closes the armed-state room
+rather than patching Escape alone. Accept, Escape dismissal, expiry,
+presentation withdrawal, input invalidation, and context staleness now claim
+the same serialized exact `(episode_id, suggestion_instance_id)` disarm before
+cleanup. A race loser cannot finish an opportunity, clear active state, cancel
+the winner's timer, or dispatch. Pre-arm context invalidation remains unchanged.
+
+| Armed-state exit | Exact disarm | One cleanup | Next opportunity arms |
+|---|---:|---:|---:|
+| Tab accept, then verified execution | pass | pass | pass |
+| Escape dismissal | pass | pass | pass |
+| TTL expiry | pass | pass | pass |
+| Presentation withdrawal | pass | pass | pass |
+| Input invalidation | pass | pass | pass |
+| Context staleness | pass | pass | pass |
+| Escape racing expiry | one winner | one winner | pass |
+| Input racing Escape | one winner | one winner | pass |
+
+The complete suite passed 1,202/1,202 and independent review found no remaining
+issue. Exact-commit qualification returned 5/5 ranked predictions with zero
+timeouts, invalid responses, or other failures. The cutover is runtime
+`aadd4395-e1dd-4273-a606-4e749b9e0a1c`, PID `93880`, bridge
+`019fed46-38c4-715e-b32f-57d40c9c5673`, `ready:true`. The first authoritative
+post-start epoch was 1; verification reached health epoch 94, raw and ledger
+frontiers converged at source sequence 161, installed policy retains the Claude
+Desktop `AXGroup` pair, the OFFLINE badge cleared as `direct_runtime_ready`, and
+ledger integrity is `ok`. The final private cutover record is
+`history/verdict-week-faults/2026-08-10-final-armed-exit-lifecycle-cutover.json`,
+SHA-256
+`062f13c6bc8c0745bbc05b1c143ae919d2c22a1bdcd3d5105b458792e06a2eb7`.
+The trial freeze resumes at this commit.
+
 ## Corpus verification
 
 The requested snapshot contained 60 packets. Three more immutable packets were
