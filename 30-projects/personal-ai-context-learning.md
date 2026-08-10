@@ -333,6 +333,21 @@ tags:
 > [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the complete
 > replay table and provenance]].
 
+> [!warning] 2026-08-10 verdict-week lifecycle and indicator faults
+> The frozen runtime lost its lock and stopped ingesting while its Node PID
+> remained alive and raw Hammerspoon ingress continued. The documented direct
+> recovery path restarted the exact same `b58f38e` source successfully as
+> runtime `7c5d7714-7b19-4eab-a28d-553b377a459b`. The old raw session retained
+> 1,157 rows that did not backfill into SQLite. `CUA OFFLINE` was also hidden:
+> parked supervision leaves `desired_running:false`, which makes the indicator
+> return `desired_disabled` before checking stale health or the missing lock.
+> Both are frozen supervisor-verdict evidence, not fix tickets. Under the new
+> day rule—≥4 live hours, ≥5 opportunities, and a direct-user-input hour—only
+> Saturday qualifies; Sunday had six opportunities but only window events.
+> Current qualifying-day total: **1**. See
+> [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the exact outage,
+> recovery, reconciliation-gap, and accounting record]].
+
 The first expanded-history NAP comparison is complete. Its official exact
 top-three result is 0/10 for state-only and 5/10 for state plus history.
 Target-level review decomposes the five history wins into four clean

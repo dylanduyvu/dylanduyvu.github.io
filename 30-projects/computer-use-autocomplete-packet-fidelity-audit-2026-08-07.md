@@ -130,6 +130,45 @@ Run artifact SHA-256:
 Independent artifact review reproduced the exact table and found no runtime,
 prompt, provider, Hammerspoon, or Track 1 modification.
 
+## Verdict-week lifecycle evidence — August 10
+
+The frozen `b58f38e` runtime stopped ingesting at
+`2026-08-10T10:46:06.161Z`. Its health stopped one second later and the runtime
+lock disappeared, while PID `56024` remained alive and the Hammerspoon raw
+observer continued writing. The documented direct-runtime recovery path first
+reported `already_stopped`; the exact orphaned PID was then identity-checked
+and terminated. The same frozen source restarted successfully as runtime
+`7c5d7714-7b19-4eab-a28d-553b377a459b`, PID `70957`, bridge session
+`019fec54-a9c2-7438-ad12-a2c935d52801`, with `ready:true`, fresh components,
+no blockers, and ledger integrity `ok`.
+
+The old raw bridge stream did not backfill into SQLite. Old-session source
+sequences `301–1457`—1,157 rows—remain preserved in
+`hammerspoon-events.jsonl` but absent from the ledger. The gap is therefore
+bounded and retained rather than silently lost, but it is not reconciled. The
+new bridge session began at source sequence 1 and is actively ingesting. Six
+interrupted episodes were separately recorded as `restart_stale`.
+
+`CUA OFFLINE` was not visible during the outage. The frozen Hammerspoon status
+snapshot reported `visible:false`, reason `desired_disabled`: because the
+supervisor is intentionally parked, the indicator classifier hides itself
+before evaluating stale health or a missing runtime lock. This is a second
+verdict-week fault, not an authorized patch.
+
+Trial-day accounting is now stricter. A day qualifies only when it has at least
+four live-heartbeat hours, at least five opportunities, and at least one hourly
+bucket containing direct user-input events. Window events alone do not satisfy
+the input condition. Recounted under that rule:
+
+| Day | Live heartbeat | Opportunities | Direct-input hour | Qualifies |
+|---|---:|---:|---:|---:|
+| Saturday, August 8 | 8h 35m | 8 | Yes | Yes |
+| Sunday, August 9 | ≥4h | 6 | No | No |
+
+Current qualifying-day total: **1**. The lifecycle and hidden-indicator faults
+remain frozen as supervisor-decision evidence; the runtime, provider, prompt,
+display, and safety policies were not changed.
+
 ## Corpus verification
 
 The requested snapshot contained 60 packets. Three more immutable packets were
