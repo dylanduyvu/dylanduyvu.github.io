@@ -5,7 +5,7 @@ status: pre-draft (skeleton at computer-use-autocomplete-blog-post-skeleton.md; 
 created: 2026-08-13
 updated: 2026-08-14
 privacy: vault (moved 2026-08-14 per Dylan; the private-repo-only rule is superseded, see the move note below)
-companion: the master record stays in the spike repo at docs/postmortem/2026-08-13-master-record.md; pre-draft skeleton: computer-use-autocomplete-blog-post-skeleton.md
+companion: "the master record stays in the spike repo at docs/postmortem/2026-08-13-master-record.md; pre-draft skeleton: computer-use-autocomplete-blog-post-skeleton.md"
 ---
 
 # Blog post structure
