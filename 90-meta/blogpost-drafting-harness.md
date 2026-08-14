@@ -298,6 +298,10 @@ New entry from "The Missing Step Between Recording and Prediction" (2026-07-27):
 - an unrun experiment has no result -> if setup or data assembly prevents the evaluation from starting, say `the test never ran` or `the claim remains untested`. Do not write `the work did not show X`, because that phrasing reads like a negative experimental finding. Then run the section 13 seam and global checks for every later sentence that describes the experiment, its evidence, or its outcome.
 - human verification is not manual assembly -> if the target workflow already includes a person approving, correcting, or rejecting proposed labels, do not criticize the system because those proposals are not automatically trustworthy. Separate raw capture, automated assembly, and human verification. A recorder has not completed the workflow merely because its database contains enough evidence, but an assembler that turns that evidence into proposed records may satisfy the automation requirement even when every label is reviewed. Only missing evidence or unperformed assembly remains a gap.
 
+New entry from "How Computer Use Crosses the Chasm" (2026-08-14):
+
+- the simple-declarative register drifts asyndetic -> one idea per sentence plus short sentences produces strings of declaratives with no stated relationship, and the draft reads terse (Dylan: "we need connector words throughout"). Section 13's connective-tissue rule applies at the sentence level, not only at section seams: every adjacent sentence pair either has an obvious relationship or carries the shortest connector that names it (but, so, still, and, also, instead, because, for example). Run this as its own pass after the register pass, because the register pass creates the problem.
+
 ## 16. Voice Register Option: Simple Declarative (The American Compute Register)
 
 Extracted 2026-07-05 from American Compute's blog (Bernie Margulies / AC Research), the reference for simple, straightforward, easy-to-digest technical-finance writing. Use this register when the audience includes smart readers without domain background and the goal is that anyone can follow every section.
