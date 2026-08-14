@@ -1,0 +1,207 @@
+---
+title: Computer-use autocomplete, blog post skeleton (pre-draft)
+type: blog-pre-draft
+status: skeleton
+created: 2026-08-13
+source: computer-use-autocomplete-blog-post-structure.md (the decision record; changes flow from there to here) [moved to the vault with the whole blog set 2026-08-14; was docs/postmortem/blog-post-structure.md]
+rules: no em dashes; plain words; conclusion first per section; full-run numbers, slices labeled; never say "five days"; ending is a hypothesis, not a finding; every revision gets a dated change-log entry
+---
+
+# How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action
+
+[TITLE DECIDED 2026-08-14 per Dylan; candidates and the oversell flag preserved in the structure file.]
+
+Target length: roughly 3,070 words plus 6 diagrams. (Header updated 2026-08-14: section targets sum to 2,850 after the sec 10 split; the old 2,700 was stale. Updated again 2026-08-14: sec 7 retargeted to ~450 after its trim; sum ~2,970. Updated again 2026-08-14: belief-history in at sec 8, ~550; sum ~3,070; diagram set expanded to six per the more-graphics ruling.)
+
+---
+
+## Opening credits (~40 words)
+
+[DRAFT: one or two warm sentences.] Credit Niyant (handsdiff), primarily for his personalization work. His day-one habit-versus-novel objection is a secondary mention. Links: substack.com/@handsdiff and dylanduyvu.github.io/20-syntheses/niyant-personal-ai-thesis-study-guide. Credit Cursor (proved Tab autocomplete as a product shape) and Cotypist (took it beyond code; we copied its interaction grammar). [RESOLVED 2026-08-14: Cotypist is by Daniel Alm, Accelerated Thought GmbH, maker of Timing; link cotypist.app.]
+
+## 1. The promise (~120 words)
+
+Computer use removes the interface tax between what you want and what the machine does. One paragraph of vision, no hype, then move. There is a valuable product to be built here. Work needs to be done to make it 10x. But its value proposition is sound: fewer clicks, less friction. Nobody ever wants more clicks to do what they want on their computer. Reference Bezos: build on what won't change; nobody will ever want higher prices or slower delivery. [RESOLVED 2026-08-14: earliest print HBR October 2007; full retail wording is the 2012 re:Invent talk; provenance at quoteinvestigator.com/2021/03/03/not-change. Paraphrase or quote short at draft.]
+
+## 2. The trust wall (~300 words)
+
+Claim first: capability is arriving faster than trust. Then the exhibits, real and cited, at most one short quote per incident:
+
+- Replit's agent wipes a production database during an explicit code freeze. The CEO calls it unacceptable and ships dev/prod separation (July 2025, Lemkin).
+- Gemini CLI destroys files on a simple move; "I have failed you completely and catastrophically" (July 2025, Gupta).
+- Capstone, vendor-confirmed: GPT-5.6 Codex sessions delete home directories. OpenAI adds an explicit rm -rf $HOME safeguard and promises a postmortem (July 2026).
+- Texture: the Vox tweet. No dramatic command here. A parent Dropbox folder renamed mid-task took everything offline for hours (July 16, 2026).
+- Optional spare: Aug 12, 2026 Windows recursive-deletion report.
+
+[LINK CHECK complete 2026-08-14, two passes: all five incidents live and matching. Incident 4 posted July 16, 2026; incident 5's full canonical URL recovered (stored in the structure file). Residual at draft: swap or caveat github issue 6801 (a November 2025 gpt-5.1 incident, pattern support only), check 5594, re-verify secondary links.]
+
+## 3. Patch versus design (~100 words)
+
+The industry patches trust on: approval dialogs, allowlists, sandboxes. Bolt-ons. The alternative (more schlep) is trust designed into the interaction itself, with the human in the loop at the tightest grain. That sets up the tightest loop. This is the wedge. As trust builds, you naturally let the agent do more and more for further friction reduction.
+
+## 4. The tightest loop (~180 words)
+
+Propose the shape: a prediction engine constantly watches your current system state and your history, and predicts what you are trying to do next. A pill appears at a pause: Tab accepts one step, Escape aborts, ignoring costs nothing. The system never executes anything send-, submit-, or delete-shaped on the first accept. It walks up to the action, holds, and requires a deliberate second key.
+
+Then one close in findings voice, one or two clauses: building this ran the scope downward into the stack (sec 8 holds the findings). We never validated the design in ordinary use.
+
+## 5. The system this needs (~300 words + the strongest diagram)
+
+Conclusion first: the design needs four parts. For each, the strongest version we know of, then the light tradeoff today.
+
+[DIAGRAM: four boxes, each labeled with the part, its ideal instantiation, and an availability stamp: recorder partial, predictor private, interaction baseline built, executor sealed. Inside the predictor box, a dotted optional split: ambient summarizer feeding a lighter predictor. Inside the interaction box, a dotted preview layer: ghosted next action. Flagged in the structure file as likely the strongest visual in the post.]
+
+- Recorder. Ideal: record everything: screen video plus keylog, clicks, and accessibility data, structured into before-state to next-action history. Today: capture is cheap and shipping. The remaining work is turning the log into training-grade rows: the target named right, real boundaries between actions, no holes in the sequence, and a confirmed effect. Training-grade is deliberate: if accuracy ends up requiring a personal action model, finetuned or continuously finetuned, possibly on top of a computer-use video model, these rows are its training set and its ongoing feed. Until then they are the context and the eval labels. Record everything is the signal-maximal ideal. A builder today would start from the thinner event stream and add video only where events fail.
+- Predictor. Ideal: one model pretrained on computer-use video and actions. It reads the raw recording, understands the goals in play, predicts the next semantic action, and knows you (next section). Today: the new labs training these have not shipped them. General LLMs stand in, and our best stand-in capped at habit. Concede the split: there is room to separate this into an ambient summarizer feeding a lighter predictor, potentially for efficiency gains. The summarizer continuously turns the recording into "what has happened, what the goals seemingly are" text. The text seam is also inspectable, and it is a natural place to inject your history.
+- Interaction. Ideal: the pill plus a preview of what pressing Tab will do: the plan spelled out, the coming action ghosted on screen (ghost cursor, highlighted target, gesture hint). It is the visual analog of ghost text. The consequence gate stays. Today: pill, keys, and gate are built and proven. The preview layer is unbuilt but buildable: the only gap that is just work rather than access.
+- Executor. Ideal: hand the accepted step to an already-built, low latency, computer-use app, proven hands. Today: the apps are sealed to their makers' front ends. The callable one is documented too slow. So you fall back to raw primitives.
+
+[NOTE 2026-08-14: alternatives-and-tradeoffs direction per Dylan, all four parts, DECIDED option c: one alternatives clause per part here at draft, plus first-mention introductions in sec 8. The tradeoffs we actually made are captured in the structure file: recorder, focus trail versus screenshots, plus collect-rich-send-thin; predictor, small fast model versus frontier plus vision; interaction, gate friction and free dismissal; executor, the actuator decision tree (image transcribed); contract layer, enumerated bounds versus generality. The recorder tree (screen video plus vision, versus interaction events plus accessibility) is now DIAGRAM 2, placed here, with the go-forward fork decision: the next experiment runs on events via OpenAI's Computer History stream, with vision added only if events fail.]
+
+Latency is key at every part of the stack for productizing this; it is not the immediate bottleneck to accurate prediction (sec 9). Each part becomes a question: does a usable version already exist to adopt? Can this be packaged? If not, what needs to be built?
+
+## 6. Why the predictor has to know you (~500 words)
+
+The four decided elements, in order:
+
+**a. The argument, five lines as prose:**
+
+1. To predict a next step, something has to carry the goal. Usually the goal itself; sometimes a proxy that embodies it, like habit.
+2. The goal gets onto the record three ways: you act it out (weak signal per step), you write it down (strong signal), or the world hands it to you (an event). Some of it never arrives.
+3. The behavioral record comes down to two numbers: goal per step, and steps per goal. Words carry a lot and come in hundreds. Navigation actions carry little and come in a handful.
+4. Text autocomplete lives downstream of disclosure: by the time it fires, the goal is on the page. Navigation autocomplete lives upstream: it fires at the boundary, before the acting has said anything.
+5. So the gap closes from elsewhere: repetition, declarations, events, or asking. A stronger model shrinks how much goal you need. What never reaches any record and won't be told stays unpredictable for any system. That is the hard limit.
+
+**b. The paired example:** declining Thursday's meeting. Text version: you type "Hi Maya, unfortunately I can't make..." and autocomplete predicts word 20 of a goal that words 1 through 19 already announced. Navigation version: you finish an article and pause; the pill must fire before any click, and the first click is exactly the thing that would have revealed the goal. One line: text predicts step N of a goal from steps 1 through N-1 of the same goal; navigation predicts step 1 of a new goal from the leftovers of the previous one. [RESOLVED 2026-08-14: recipient renamed Maya; Covalent's hero demo uses Sarah and our market paragraph links their page.]
+
+[DIAGRAM 3, added 2026-08-14 per the more-graphics ruling: the disclosure timeline. Two lanes; text predicts step N after the goal is on the page, navigation predicts step 1 before any click; annotate with the Maya pair.]
+
+**c. The framework comparison, compact form (~120 words):** [FORMAT DECIDED 2026-08-14: small table at draft; rows Cursor, Cotypist, Computer use; columns for the signal needed, whether the work captured it, and the residual. The intro sentence stays prose above the table.]
+
+> Every autocomplete is two ingredients: a shared model (pretraining plus whatever context is sitting there) and personal signal (the part only your data can supply). The products differ in whether the work already captured that signal.
+> **Cursor** needs your repo and edits. The work already wrote them down, in exactly the form a model reads. Personalization comes free.
+> **Cotypist** needs your voice: phrases, tone, recipients. It exists on your machine, scattered. Small debt, now optionally collected: Cotypist ships an opt-in collector, off by default.
+> **Computer use** needs your goals. Mostly never recorded, except the declared slice (task titles, calendar), which is exactly where our only wins came from.
+
+**d. The habit cap:** the only lever we ever tested was adding my own history to the model's input. It moved the score every time we tried it: best case, 0 out of 10 to 5 out of 10. But every hit was a habit: the recurring Codex task or its composer. Fresh targets: zero. And it missed a visible Subscribe button to propose a return to the routine. History taught the model my habits, not my intentions. That ceiling is the habit cap.
+
+[VERIFICATION 2026-08-14: Cursor Tab resolved: an edit-trained custom model improved with online RL on live accepts; Cursor's own label is next-action prediction; safe to lean on, and it is the Gap 2 bonus line. Cotypist resolved: personalizes locally, opt-in and off by default; the contrast becomes "personalization optional, default unpersonalized." FDM-1 figure already resolved, company-reported.]
+
+## 7. What exists per part (~450 words)
+
+Conclusion first: the pill was the only part with a proven design to copy. Cotypist had already shown the exact interaction on text. Everything else has providers now, and each one misses the specific thing this design needs.
+
+- Recorders exist and are getting closer. Screenpipe, NAPsack, OpenCUA's capture tool, and Scribe each cover a piece. OpenAdapt records continuously with scrubbing. Coast ships always-on local screen recording as a commercial memory product; Pieces ships background local memory. As of this week the OS-vendor tier exists too: OpenAI's Computer History (launched August 13, 2026) records clicks, typing, and app switches from approved apps into local memories: opt-in, macOS only, no screenshots, raw events gone after 48 hours. It suggests skills and automations from repeated work, so it reaches habit grain without next-action prediction. Our full-day audit of its stream is in sec 9; the headline: rich per-event context, exact typed text, roughly half of clicks with a usable label. activity-frames compiles passive capture into replayable routines for detected recurring work (marketing-sourced). Training-grade rows for the general stream remain the open question. Link my earlier post on the missing recording layer here for context (dylanvu.substack.com/p/the-missing-step-between-recording); sec 9 cites it again with the five conversion steps. [RESOLVED 2026-08-14: the pasted URL is the same post; use the canonical slug.]
+- The video-scale predictor models are private. These pretrain on years of raw screen video and learn what a person does next by watching. FDM-1 (11M hours of screen video) and Photon-1 (~18 years), both announced 2026, neither with weights or an API. Below that scale, action-trained models are open and callable: these start from a general vision-language model and finetune on instructed task demonstrations. UI-TARS, OpenCUA, TongUI (mined from tutorial videos, vLLM-servable), Northstar (4B, open weights plus a hosted API), plus hosted computer-use endpoints from Google, OpenAI, and Anthropic (general models carrying a computer-use tool; your harness does the clicking). None is trained to predict your next action from passive personal history; they execute instructed tasks. The missing model is still missing; the stand-ins got better.
+- Executors are sealed or disqualified. The Codex signed helper kills non-Codex parents; headless auto-cancels; no allow mode (issues 21200, 24135, 19554, 20851). Coasty is hosted-only with a not-implemented endpoint. macos-use: toolchain and license. The one exception: Anthropic's tool is callable and accepts custom tools, so per our research it technically should be integrable. Their own docs warn it may be too slow for interactive use. It fails on latency, not access. As of today an open driver layer also exists (Cua Driver: cross-platform, MIT, background window-targeted input). A builder starting now would start there rather than at raw primitives.
+- The market is waking up, and the space is still wide open. Coast ("cursor for everything," funded) shipped an always-on recorder as a memory product first: the data store before the assistant that acts. OpenAI joined the memory-first move on the day this project was killed; Computer History ships the data store with no prediction and no hands. Adsideo: ambient suggestions you approve or ignore. AutoComputer: predicted action sequences accepted one keystroke at a time. Covalent (private beta) goes furthest: OS-wide text Tab plus one-click task suggestions from calls and tickets. It is genuinely cool that people are taking a stab at this already. And look where every entrant lands: text after the goal is disclosed, declared work, recurring patterns, exactly the channels this argument says are tractable today. The deep layer, click-grain ambient prediction from passive history, remains untouched, because the two bottlenecks block it for everyone. That is the open field. [VERIFY: Covalent's shipped behavior; marketing sources only, no independent hands-on exists anywhere yet. If none lands by draft, attribute inline, per their site, or trim the goes-furthest clause.]
+
+## 8. Can you easily build this by packaging what exists and filling in the gaps? (~550 words + 3 diagrams)
+
+The three fragility rings:
+
+1. Sealed executors force you down a layer to raw primitives. We fell back to axcli, a small accessibility-layer clicker: clicks in 200 to 430 ms with exact element identity.
+2. The callable substrate lies at its seams. A bridge returned success while Slack didn't change. Background trees and clicks fail. Scroll dispatched twice and the page never moved. The broker was dead for 6,718 cycles while health read ready. A depth cap of 20 hid Slack's Send button.
+3. Owning the contract layer is where generality dies. At least 16 hand-written capability bounds across 8 enforcement surfaces. One null-versus-absent field deleted every cross-app proposal: 53 proposed, 0 displayed. 413 of 882 "model abstentions" were our own contract discarding real proposals.
+
+Two takeaways, stated precisely. First: fragility spent the runway, so we never cleanly tested the product idea. Say "we never got to find out." Second: the one clean offline result caps expectations anyway. V5 (frontier model, max reasoning, screenshots, full history) went 0/10 to 5/10 exact top-3. Every hit was the recurring Codex task or its composer. Arc targets: 0/5. It missed a visible Subscribe button while proposing returns to the loop. History is a habit prior, not an intent signal.
+
+[DIAGRAMS 4, 5, and 6: full-run funnel (8,488 cycles down to 5 accepts, drop-offs labeled); actuator decision tree; the loop with real latencies (packet 817 ms, provider 3,752 ms, total 4,698 ms medians), no longer optional per the more-graphics ruling.]
+
+[DECIDED 2026-08-14: belief-history block IN, here (~100 words): your all-hands ranking (context, model, contract layer, self-labeled "just vibes and intuition based") versus the inversion the evidence delivered, and that cause 4 wasn't on the list. Canonical detail in the structure file's sec 8 block.]
+
+Rule while drafting: never upgrade the 53 deleted proposals into "correct predictions."
+
+[VOICE 2026-08-14, per Dylan's option b: findings voice throughout secs 4 and 8. The rings and takeaways report the field, not a confession. Dev-lane stat trim stays optional.]
+
+## 9. The two immediate bottlenecks (~380 words)
+
+Frame: these are the two immediate bottlenecks to this product existing, and they are the two things next-word prediction got for free. Bottleneck 1 is the prefix. Bottleneck 2 is the prior.
+
+**Bottleneck 1, the personal recorder.** Recorders exist, and each covers a piece. None produces training-grade history: rows whose targets you can trust. Insufficient, not absent. (One routine-scoped partial exception, marketing-sourced, noted in the structure file.) Evidence: Day 0 took three days. The only lift ever measured ran on ~196 hand-labeled rows. The live product collected rich signal and dropped it at projection. Even the postmortem dataset needs a new temporal join (human-event pointers null on all 1,423 packets). Cite the Day 0 post, "The Missing Step Between Recording and Prediction" (dylanvu.substack.com/p/the-missing-step-between-recording). Consider reusing its five conversion steps as the Bottleneck 1 enumeration. Proven so far: history recovers the habit signal, cheaply. Open, don't promise: whether richer history unlocks novel actions. New since the kill: raw capture is commoditizing. OpenAI's Computer History shipped continuous event capture the day this project ended; detail it here as the live example (facts in the structure file's sec 9). So Bottleneck 1 splits: capture, now shipped by an OS vendor; training-grade rows, still nobody's product, and now a normalization problem on top of shipped capture rather than a recorder build. Our audit judged the stream sufficient for the coarse grains of the fair test in sec 10, next app and semantic action, with exact-destination scoring only on the grounded half of clicks [data-sufficiency only, prediction lift untested; full figures in the structure file].
+
+**Bottleneck 2, the pretrained action model.** Private only: FDM-1, Photon-1, as of July 30.
+
+**Complementary, not independent:** a long-context pretrained action model (Bottleneck 2) could consume the raw personal stream and personalize in-context. That shrinks Bottleneck 1 from hand-labeled history to reliable raw capture. The personal channel survives; the curation may not.
+
+**Shared missing primitive:** automatic action labeling from raw recordings (inverse dynamics). Labs built it to pseudo-label pretraining corpora. The same capability would make the personal recorder automatic. Today it ships as open research code, not as a product.
+
+**The third, after these two: latency.** Latency is key at every part of the stack for productizing this; it is not the immediate bottleneck for getting the full stack to predict accurately. Once the two bottlenecks fall, it becomes the biggest issue. Interaction models are the candidate class to solve it [VERIFIED 2026-08-14: Thinking Machines interaction models, research preview 2026-05-11, 0.40 s turn-taking self-reported, partner-only access]. FDM-1's design is built for speed (video-native, no chain-of-thought): a hint the fight is winnable. The ordering is our judgment rather than a measurement: today an absent pill is invisible, so speed cannot save a prediction that does not exist.
+
+**The legibility residual:** the open question is what fraction of prediction moments sit upstream of disclosure. If it's large, the durable product is habit routing plus world-disclosed moments, not continuous prediction. Unmeasured either way.
+
+## 10. The close (~150 words) [TITLE kept per the 2026-08-14 batch]
+
+**Close honest:** this is the best-supported hypothesis, not a finding. The fair test never ran. The test that would separate context, model, and signal: offline replay of the 1,423 packet-backed moments, labels via a new temporal join, with baseline arms included this time (frequency, recency, source-transition, mismatched history). A cheaper data source for the same test now exists: the Computer History stream, after two to four weeks of collection.
+
+[CLOSER DECIDED 2026-08-14: in, here, just before the call to action. Wording: "Midway through, I wrote that I would walk away once I could prove the real bottleneck was one of three things: no model finetuned on my actions, no computer-use foundation model, or latency. This conclusion is that same list, in order."]
+
+**Call to action, the post's final lines:** if you are working on this, or on any part of this stack, the recorder, the predictor, the interaction, or the executor, please reach out through DM. I would love to chat and collaborate.
+
+---
+
+## End matter
+
+- [RESOLVED 2026-08-14: no appendix in v1 (13-path inventory stays in the master record); V5 detail runs inline in sec 8.]
+
+## Blocking items before a full draft
+
+1. Title. DONE 2026-08-14: "How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action."
+2. Belief-history placement (sec 8, 9, or 10) and whether it's in at all. DONE 2026-08-14: in, sec 8.
+3. Link re-verification (sec 2 incidents, Day 0, Thinking Machines). DONE 2026-08-14; draft residuals: swap or caveat issue 6801, check 5594, re-verify secondary links.
+4. Cursor Tab training check; Cotypist local-personalization check; FDM-1 figure check. DONE 2026-08-14; results in the sec 6 marker.
+5. Credits lines written (Niyant specifics remain; Cotypist maker resolved).
+6. Diagrams built, six per the more-graphics ruling: four-part availability boxes (sec 5), recorder decision tree (sec 5), disclosure timeline (sec 6), full-run funnel (sec 8), actuator tree (sec 8), latency loop (sec 8).
+7. Framework-comparison format call (paragraphs versus table). DONE 2026-08-14: small table.
+
+## Change log
+
+- 2026-08-13: Skeleton created from blog-post-structure.md: reader-order sections, length targets, draft-ready pieces pasted in, verify/diagram/call markers. Every revision from here gets a dated entry, so the drafting history lives in this log plus the structure file's log.
+- 2026-08-13: Dylan's inline notes applied. Sec 4 retitled "The tightest loop" (was "The bet"); sec 3 hand-off and sec 5 opener updated to match. Sec 9 reframed as "The two immediate bottlenecks" with Bottleneck 1 and 2 replacing Gap 1 and 2 in reader-facing text, and latency upgraded to an explicit third mention: once the two bottlenecks fall, latency becomes the biggest issue, with interaction models (Thinking Machines, verify) as candidates. Blocking list renumbered. Decisions recorded in the structure file first per the flow rule.
+- 2026-08-13: Continuity closer drafted as candidate wording in the sec 9 close marker (mirrors the structure file). In or out is Dylan's call.
+- 2026-08-13: "Grammar copied from Cotypist" cut from sec 4 (credit stays in the opening credits); the borrowed-template point moved into sec 7's opener, where it explains why the pill was the solved part.
+- 2026-08-13: Dylan's direct edits kept and synced to the structure file: title suggestion promoted to leading candidate 4 with one oversell flag; sec 1 value-prop paragraph with the Bezos analogy kept, verify marker added, target moved to ~120 words; sec 3 wedge and trust-progression lines kept as written.
+- 2026-08-13: Candid aside cut from sec 4 per Dylan (redundant with the section's "never validated in ordinary use" line, which stays); target ~200 words. Aside preserved as superseded in the structure file.
+- 2026-08-13: Sec 5 rewritten per Dylan: each part now carries its ideal-for-accuracy instantiation (his all-hands reference arrangement) plus a one-clause current-state tradeoff; diagram spec updated to show part, ideal, and availability per box; target ~350 words.
+- 2026-08-13: Dylan's summarizer sharpening kept (computer-use-video-pretrained; neolabs tradeoff, wording to plain-English at draft). Seam resolution added to the sec 5 close: in the ideal the two middle boxes are one model; composing keeps the seam because the summary is inspectable and is the insertion point for your history.
+- 2026-08-13: Fused-first per Dylan: sec 5 now four parts with one predictor (ideal: one model pretrained on computer-use video and actions); the ambient-summarizer split conceded inside the predictor bullet, for efficiency, seam benefits noted. Configurations line simplified (rig = four parts minus the pill); diagram spec updated; neolabs clause in plain words. Dylan's mid-edit executor addition ("low latency") kept. Target ~300 words. Structure file updated first.
+- 2026-08-13: Latency line per Dylan: key at every part for productizing, not the immediate bottleneck to accurate prediction. One sentence in the sec 5 close pointing to sec 9; sec 9's third mention leads with it, absent-pill judgment rephrased (speed cannot save a prediction that does not exist).
+- 2026-08-13: Interaction ideal per Dylan: preview of what pressing Tab will do (action plan spelled out, ghosted action, ghost cursor, highlighted target, gesture hint). "No stronger version to wish for" superseded; interaction's gap is work, not access. Diagram gains a dotted preview layer inside the interaction box; sec 5 opener generalized (trust-ideal, not accuracy-ideal, for this part). Structure file updated first.
+- 2026-08-13: "Test rig" sentence cut from sec 5 per Dylan: the term appeared once and nothing later used it; sec 9's replay test stands on its own description. The product-versus-rig distinction stays in the structure file as armor.
+- 2026-08-13: Five-lines line 3: "clicks" widened to "navigation actions" per Dylan's flag, scoped to navigation rather than all computer actions to keep the typing counterexample out of reach.
+- 2026-08-13: "Wall" disambiguated per Dylan: reserved for the sec 2 title. Line 5 now ends "stays unpredictable for any system. That is the hard limit."; sec 7's market bullet says "corroborates the pattern."
+- 2026-08-13: Habit-cap element (d) unpacked per Dylan: internal shorthand replaced with the draft-ready plain version (only lever tested; 0/10 to 5/10 best case; every hit recurring, zero fresh, Subscribe miss; habits not intentions; Niyant's day-one call). Canonical wording in the structure file.
+- 2026-08-13: Executor bullet split per Dylan: Anthropic's tool named as the exception, technically integrable per our research, untested, disqualified on latency not access; "sealed" scoped to Codex, Coasty, macos-use.
+- 2026-08-13: Dylan's sec 7 link bullet folded into the recorder bullet: Day 0 post linked inline at first mention (canonical slug URL), conclusion keeps the full citation. Partial supersession of the sec-9-only link placement. Verify his pasted p-208774865 URL is the same post at link check.
+- 2026-08-13: "We never tested it" clause dropped from the executor exception per Dylan: "should be integrable" and "may be" carry the hedge; the untested fact remains in the structure file as armor. (Restored 2026-08-14: the research-pass entry below briefly overwrote this line by edit error.)
+- 2026-08-14: Sec 7 updated from the provider research pass (sources in 2026-08-14-provider-map.md): predictor bullet re-scoped (frontier private; open callable action models named; ambient-from-passive-history is the precise missing thing), recorder bullet moved to open-question wording with a check item, executor bullet gains the Cua Driver as-of-today clause, market bullet gains the Ace exception and "nobody ships ambient next-action prediction." Sec 9: Thinking Machines marker resolved to verified-with-status; 11 ms flagged unverified with a default replacement. Target ~300 words.
+- 2026-08-14: Dylan retitled sec 8 in place: "Can you easily build this by packaging what exists and filling in the gaps?" (was "What we built and what it taught us"). Kept; it makes sec 8 the direct answer to sec 5's adopt/package/build ladder. Synced to the structure file.
+- 2026-08-14: Per Dylan: 11 ms figure removed (no source); replaced with the qualitative speed claim. Shared-primitive line reworded: ships as open research code, not as a product.
+- 2026-08-14: One defining clause added to each predictor class in sec 7 after Dylan's question showed the terms were unclear: video-scale = pretrains on years of raw screen video, learns by watching; action-trained = general VLM finetuned on instructed task demonstrations.
+- 2026-08-14: Coast recategorized per Dylan: also a recorder (always-on local screen recording, preview 2026-07-28), added to the recorder bullet with Pieces; market bullet sharpened (Coast shipped the data store before the assistant that acts). Structure file and provider map updated first.
+- 2026-08-14: Second research pass per Dylan, all stack parts; full findings in the provider map's second-pass section. Market bullet revised: a first wave now tries the ambient loop (Adsideo suggests without executing; AutoComputer runs the accept-loop for instructed tasks; Covalent, private beta, ships OS-wide text Tab plus one-click task suggestions and supersedes Ace as closest living relative). The claim is now attributed and scoped to click grain and passive history, with a Covalent verify marker. Structure file updated first.
+- 2026-08-14: Covalent's full landing page fetched. Name-collision note added to the sec 6 example pair (their hero demo also replies to a Sarah about a meeting); rename the recipient at draft.
+- 2026-08-14: Market bullet revision four per Dylan's framing call: warm line in his voice, ripeness argued structurally (entrants land on the tractable channels; the click-grain ambient core stays blocked by the two bottlenecks), closer "That is the open field." Ace dropped from the paragraph; the map keeps it. Sec 7 target ~330.
+- 2026-08-14: STE-rules clarity pass per Dylan (option B): sentence length, active voice, one idea per sentence, across secs 0, 2, 4, 5, 6d, 7, 8, and 9. Seventeen edits. Exempt and untouched: Dylan's voice lines (sec 1, sec 3, market warm line and closer, latency framing, question ladder, continuity closer), quoted material, the five lines, elements b and c, all markers, evidence figures, end matter, this log. One flagged conversion: sec 4's must-stay claim now reads "We never validated the design in ordinary use" (active voice, same claim).
+- 2026-08-14: Hosted-endpoint clause added to the sec 7 predictor bullet after Dylan's A/B question ("general models carrying a computer-use tool; your harness does the clicking"), matching the verified Gemini lineage. Sec 8 learnings kept after his embarrassment worry: the rings report the field, not our skill; tone lever and optional dev-lane trim noted for draft.
+- 2026-08-14: Per Dylan's alternatives direction (his actuator tree, transcribed in the structure file): sec 8 ring 1 now introduces axcli at first mention ("a small accessibility-layer clicker"); sec 5 executor bullet carries the direction note. Per-part alternatives structuring stays open.
+- 2026-08-14: Sec 5 note widened to all four parts per Dylan: the tradeoffs-we-actually-made block (recorder, predictor, interaction, executor, contract layer) is captured in the structure file; presentation open.
+- 2026-08-14: OS-vendor recorder added to sec 7 per Dylan's find, verified first (official docs and launch coverage; details and sources in the provider map's third pass): OpenAI Computer History, launched 2026-08-13, opt-in macOS activity memory, events not screenshots, 48-hour raw retention. Three sentences in the recorder bullet; sec 7 runs a little over its word target now, trim at draft. The market-paragraph clause and the kill-day timing line are candidates in the structure file, Dylan's call. Structure file updated first.
+- 2026-08-14: Computer History deep-pass sync (structure file updated first; full findings in the provider map fourth pass). Sec 5 note gains the recorder tree and the events-first fork decision. Sec 7 recorder bullet gains the habit-grain-suggestions nuance and the audited-stream line with a verify marker; Chronicle removed from the market paragraph (it was OpenAI's retired research preview, not a market entrant; supersession recorded in the structure file). Sec 9 Bottleneck 1 gains the capture-commoditizing split, the Computer History detail decision, and the gated sufficiency line; the close notes the cheaper data source for the same fair test.
+- 2026-08-14: Sec 4 attempt report compressed per Dylan (option b; structure file records the decision and the rejected proposal-only option). New wording: one findings-voice close ending on the must-stay line. Target ~180. Sec 8 gains the standing findings-voice note.
+- 2026-08-14: Sec 4 opening mechanism line added per Dylan: the prediction engine watches state and history and predicts what you are trying to do next, before the pill appears. Structure file updated first; reference rule checked (one line, no part breakdown).
+- 2026-08-14: Term sweep per Dylan: "training-grade rows" replaces "verified rows" (canonical four-property definition now in the sec 5 recorder bullet, with the one-clause finetuning concession). Swept here: sec 5 definition, sec 7 closer, sec 9 opener and split. Structure file updated first; decision and rationale recorded there.
+- 2026-08-14: Concession widened per Dylan: finetuned or continuously finetuned personal models; the rows are the training set and its ongoing feed. Sec 5 definition updated; structure file first.
+- 2026-08-14: Payment metaphor removed from the sec 5 definition per Dylan ("unpaid half" replaced with "the remaining work"). New style rule in the structure file: no payment metaphors in reader-facing text outside sec 6's defined capture-debt framework. Two residual instances flagged there for Dylan's call.
+- 2026-08-14: Verification pass synced from the structure file. Resolved markers: sec 0 Cotypist maker (Daniel Alm, Accelerated Thought GmbH), sec 1 Bezos sourcing, sec 6 Cursor Tab and Cotypist checks, sec 7 activity-frames check (routine-scoped carve-out, also applied to sec 9's absolute), Day 0 URL identity. Sec 2 marker replaced with the link-check status (one citation mismatch flagged; two links need a manual browser check). Covalent verify marker stays: no independent hands-on exists yet. The click-grounding stats verify stays: copy bridge still down, local script owed.
+- 2026-08-14: Term-concession wording corrected per Dylan: "computer-use video model" (the record's Bottleneck 2 term), with the finetune-on-top relationship explicit. Structure file first.
+- 2026-08-14: Sec 2 link-check marker closed after the delegated browser pass: all five incidents verified live; details and the recovered full URL in the structure file.
+- 2026-08-14: Sufficiency gate closed with a correction, synced from the structure file and the provider map fifth pass: the 71 percent click-grounding figure did not reproduce (52 percent full-day, splitting hard by app), so sec 7's line now says roughly half and sec 9's sufficiency stands re-scoped (next-app and semantic-action grains across the board; exact destination only on the grounded half with the bias caveat).
+- 2026-08-14: Sec 7 bullets reordered per Dylan to mirror sec 5's part order: recorder, predictor, executor, with the market paragraph closing. Interaction stays in the section opener (the template claim). Bullet texts unchanged.
+- 2026-08-14: Sec 10 created per Dylan: the honest close moves out of sec 9 (target drops to ~380) into its own final section (~150) and gains the call to action as the post's final lines (working on this or any part of the stack, reach out through DM, chat and collaborate). The optional continuity closer, if in, now sits just before the CTA; its earlier final-lines placement is superseded. Structure file updated first.
+- 2026-08-14: Sec 9 validity audit per Dylan's question; two fixes applied from already-made decisions: the sufficiency line synced to the gate result (coarse grains plus grounded-half exact scoring) with its pointer repaired to sec 10, and "always-on" corrected to "continuous" for Computer History (opt-in, allowlisted apps). "Proven to buy" residual still waits on the payment-metaphor ruling; two draft flags noted in the structure file (gloss "the prior"; attribute FDM-1's no-chain-of-thought claim).
+- 2026-08-14: Full-read flag pass per Dylan. Four mechanical fixes applied here: header word target corrected to 2,850 (sections sum; stale 2,700), Vox tweet date synced to July 16, 2026 in the sec 2 bullet, belief-history marker now names sec 8, 9, or 10, and blocking items 3 to 5 marked done or half-done with their residuals. One red and five yellow flags need Dylan; recorded in the structure file's open items.
+- 2026-08-14: Full-read patch sweep per Dylan ("patch everything"; provenance waived). R1: episodes to moments (sec 10). Y1: bridging clause in the sec 5 recorder bullet. Y2: element c Cotypist collector clause, metaphor kept. Y3: Coast versus Pieces stated per what we verified. Y4: Covalent marker carries the no-hands-on severity and a draft fallback. Y5: sec 1 voice paragraph fixed on the verified frame. Y6 option b: sec 7 trimmed (Computer History to three sentences plus a sec 9 pointer with the roughly-half headline; activity-frames to one clause), retarget ~450; header total ~2,970. Y7: sec 9 pointer replaces "the conclusion." Y8: schlep. Structure file updated first with supersession notes at each canonical site.
+- 2026-08-14: Sec 9 metaphor residual closed per Dylan: "Proven so far: history recovers the habit signal, cheaply" replaces "Proven to buy." No payment metaphors remain outside sec 6's defined framework. Structure file updated first.
+- 2026-08-14: Pre-draft decision batch applied per Dylan ("accept title; more graphics the better; more variety in structure; otherwise make the best decisions"). Title set in the header. Belief-history in at sec 8, ~100 words, sec 8 target ~550, post total ~3,070. Continuity closer in, sec 10. Comparison decided as a small table. Alternatives option c noted in the sec 5 marker. Market Computer History clause inserted after the Coast sentence, carrying the kill-day timing. Recipient renamed Maya in element b. Diagram set expanded to six with placements marked (availability boxes and recorder tree in sec 5, disclosure timeline in sec 6, funnel, actuator tree, and latency loop in sec 8). Blocking items 1, 2, and 7 marked done; item 6 updated. Structure file updated first; the variety style rule lives there.
+- 2026-08-14: Blog set moved to the vault (30-projects) per Dylan; this file renamed computer-use-autocomplete-blog-post-skeleton.md. Details and the path key in the structure file's move note.

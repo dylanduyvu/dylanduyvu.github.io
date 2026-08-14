@@ -87,6 +87,35 @@ Wider sweep across hosts, competitors, and integration ecosystems. Six deltas.
 5. **Claude computer use is now a real research preview (March 2026, API beta) but takes over the display or needs a virtual display.** That confirms the demotion: wrong shape for acting on the screen Dylan is looking at.
 6. **The glue is mostly on the shelf.** A small ecosystem of app server SDKs already exists (Python, TypeScript, Node) with typed interrupt, steer, cancellation with event drain, inactivity continuation, and approval hooks. Adopt one instead of hand rolling JSON-RPC. Competitor scan found proactive desktop assistants (Ovo, Coworker, Castor, Clippy) but none doing destination level Tab autocomplete; the wedge holds. Ovo's trust ladder and teach-never-again feedback rules are worth stealing for V1.
 
+## Scope decision, 2026-08-04 evening
+
+Codex-internal targets are dropped from V1 entirely, per Dylan. The expressive tier drives other apps only. Rationale: Codex-internal carried the three hardest open problems (the host cannot drive Codex, the Claude fallback leg takes over the display, and exact in-Codex grounding), while Dylan's usage pattern means he is usually already in Codex, so the valuable expressive actions are on the other screen surfaces anyway. The ambient tier's existing codex deep link navigation is unaffected and stays: it is built, certified, and carries the V5-proven habitual signal.
+
+Cascade: the Claude leg is removed from the ladder, not just demoted. Probe A drops the can-it-drive-Codex dimension and now tests only: app-server reachability of the computer use plugin, latency in default and fast mode, interrupt behavior, approval pre-approval, and Electron focus-grab behavior on Arc. Probe B's five ledger moments should be non-Codex in-app actions (the T8 and T9 class), since that is the expressive tier's whole target class now. If the trial shows Dylan repeatedly wanting in-Codex actions the tier cannot reach, that ledger evidence funds the workaround as a V2 decision.
+
+## Final V1 shape, 2026-08-04 night: universal Tab, routed execution
+
+This section supersedes the two tier framing above. Approved by Dylan.
+
+**One pill grammar everywhere.** A single suggestion surface across all apps: the pill appears, names what will happen, Tab accepts, Escape kills, five seconds and it evaporates. The user never thinks in tiers. Some pills teleport (navigation), some pills do an errand while you watch (agent flight). Which one is invisible routing, not product surface.
+
+**Routed execution, not a new executor.** The predictor emits a typed intent; the existing executor validator dispatches to the cheapest tool that fulfills it:
+
+- Navigation intents (focus, activate, open, focus Codex task) route to the four certified native primitives. Sub second, verified, unchanged.
+- A new fifth action type, agent_action, routes to a Codex computer use flight through the app server: plain language atomic intent, host supplies eyes and cursor, Escape maps to turn interrupt, idle watchdog auto interrupts hung flights.
+
+This mirrors the host's own internal architecture (plugin first, computer use as fallback) and adds one enum variant plus one dispatch case to shipped code. Codex remains unreachable by the agent path by fact, and unneeded: going to Codex is always a navigation intent served natively.
+
+**V1 discipline: exactly one agent verb.** Single click on a visible control in another app. No typing, no multi step, no forms. Every additional verb must be funded by ledger evidence of Dylan reaching for it. Complexity varies across versions, never inside V1.
+
+**Build sequence, probe gated:**
+
+1. Probe first (one afternoon, declared window, ambient runtime stopped): app server reachability of the computer use plugin, latency in default and Spark fast mode, interrupt kill behavior, approval pre approval, Arc focus grab behavior. This is the only step that can kill the design, so it runs before any glue.
+2. Glue (three to five build days if the probe passes): agent_action schema variant, off the shelf app server SDK wired to turn start and turn interrupt, Escape watcher, intent prompt work. TDD, feature flagged, ambient runtime untouched.
+3. First felt moment: a pill reading click Subscribe while focused in Codex, Tab, ghost cursor executes in the background app.
+
+Estimated total: roughly ten days end to end from probe start, dominated by the trial week's schedule, not the code.
+
 ## Related
 
 [[computer-use-autocomplete-v0-design-2026-07-31]] · [[computer-use-autocomplete-runtime-decision-audit-2026-07-30]] · [[computer-use-nap-v5-expanded-history-results-2026-07-30]] · [[personal-ai-context-learning]]

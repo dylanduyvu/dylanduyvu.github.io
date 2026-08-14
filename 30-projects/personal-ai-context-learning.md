@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-07-22
-updated: 2026-08-08
+updated: 2026-08-12
 aliases:
   - Personal AI Context Learning
   - Niyant's personal-AI thesis
@@ -84,8 +84,8 @@ tags:
 > Direct Anthropic Haiku passed `5/5` warm calls at `2,045.63 ms` p50 with zero
 > tools; Codex read-derived identity passed `3/3`; all seven physical Tab cells
 > passed with exactly one consume and no focus theft; and all three privacy
-> boundaries found zero canary bytes. Phase zero is closed. Task 8—the runtime
-> ledger and five-axis state machine—is now the only next implementation task.
+> boundaries found zero canary bytes. Phase zero is closed. Task 8, the runtime
+> ledger and five-axis state machine, is now the only next implementation task.
 
 > [!success] V0 runtime ledger landed, 2026-08-02
 > Task 8 is committed at `29c8b03`: six exact SQLite tables, private WAL
@@ -93,8 +93,8 @@ tags:
 > five-axis episode reducer with deterministic restart/resync closure. Accepted
 > feedback survives prediction or execution failure, and stale episodes cannot
 > redisplay. The focused suite passes `22/22`, the repository passes `467/467`,
-> and phase zero remains frozen PASS. Task 9—context epochs, triggers, and
-> causal destination transitions—is now next.
+> and phase zero remains frozen PASS. Task 9, context epochs, triggers, and
+> causal destination transitions, is now next.
 
 > [!success] V0 causal opportunity state landed, 2026-08-02
 > Task 9 is committed at `6d0c7ee` after ledger index correction `eb75ac0`.
@@ -103,7 +103,7 @@ tags:
 > override/ignore feedback, and the bounded Codex/Arc lease loop. Tab acceptance
 > no longer invalidates its own accepted work; only verified navigation advances
 > the next epoch. `496/496` repository tests and the frozen phase-zero verifier
-> pass. Task 10—immutable live packets and frozen resolution catalogs—is next.
+> pass. Task 10, immutable live packets and frozen resolution catalogs, is next.
 
 > [!success] V0 immutable packets landed, 2026-08-02
 > Task 10 is committed at `35637e8`. The runtime now freezes one metadata-only
@@ -113,8 +113,8 @@ tags:
 > current-state data only while Codex is focused, and historical identities
 > cannot resolve in the state-only arm. Privacy suppression records only coarse
 > metadata and never invokes screenshot capture. `510/510` tests and the frozen
-> phase-zero verifier pass. Task 11—live proposal coordination, validation, and
-> local promise rendering—is next.
+> phase-zero verifier pass. Task 11, live proposal coordination, validation, and
+> local promise rendering, is next.
 
 > [!success] V0 live proposal coordination landed, 2026-08-02
 > Task 11 is committed at `dca267a`. The frozen direct Anthropic/Haiku provider
@@ -126,7 +126,7 @@ tags:
 > task names; model labels, malformed output, stale packets, and dormant
 > `open_url` remain silent. Cancellation races and late responses are
 > evidence-only. `525/525` repository tests and the frozen phase-zero verifier
-> pass. Task 12—three deterministic executors and exact endpoint verification—is
+> pass. Task 12, three deterministic executors and exact endpoint verification, is
 > next.
 
 > [!success] V0 deterministic execution landed, 2026-08-02
@@ -138,8 +138,8 @@ tags:
 > exact verification from Codex app-only partial observation, with no retry,
 > generic activation fallback, multi-step route, or URL execution. `75/75`
 > focused tests, `540/540` repository tests, and the unchanged frozen phase-zero
-> verifier pass. Task 13—runtime lifecycle wiring and the slim controlled sanity
-> run—is next.
+> verifier pass. Task 13, runtime lifecycle wiring and the slim controlled sanity
+> run, is next.
 
 > [!success] V0 controlled sanity passed and natural work is unlocked, 2026-08-03
 > The ordinary metadata-only product path is now running under the production
@@ -215,8 +215,8 @@ tags:
 > `51cc29d94f61c6142bd013a8868029942b5c1947b771818c3e3b9796d61328e7`,
 > binds those pairs to the unchanged privacy and synchronous Tab-predicate
 > hashes. Qualification V2 then made exactly five no-retry Haiku calls on the
-> richest schema-current real packets. Four were valid—three returned ranked
-> candidates and one abstained—and one completed in 2.683 seconds with an
+> richest schema-current real packets. Four were valid: three returned ranked
+> candidates and one abstained. One completed in 2.683 seconds with an
 > invalid response. The valid calls took 1.918, 1.944, 2.746, and 3.470
 > seconds. Terminal manifest
 > `c4fcd7aaf188be38c76a4930b0e7df1ada8be9e68b437b11b4ccdd12a9950d39`
@@ -342,7 +342,7 @@ tags:
 > parked supervision leaves `desired_running:false`, which makes the indicator
 > return `desired_disabled` before checking stale health or the missing lock.
 > Both are frozen supervisor-verdict evidence, not fix tickets. Under the new
-> day rule—≥4 live hours, ≥5 opportunities, and a direct-user-input hour—only
+> day rule (≥4 live hours, ≥5 opportunities, and a direct-user-input hour), only
 > Saturday qualifies; Sunday had six opportunities but only window events.
 > Current qualifying-day total: **1**. See
 > [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the exact outage,
@@ -405,6 +405,40 @@ tags:
 > is `ok`. The trial freeze resumes at `1d189e4`. See
 > [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|the exact Crash
 > 3 chain, exit-path matrix, qualification, and cutover evidence]].
+
+> [!info] 2026-08-11 executor-spike windows and actuator supersession
+> Session-reported pending the builder's evidence record. Spike windows 1
+> through 3 proved on the real Mac: full AX tree reads, real verified clicks
+> and scrolls in Slack and Arc at 210 to 430 ms, background clicks without
+> cursor theft (reads still need foreground), and a Haiku planner step of
+> about 2.7 s. The Codex computer-use path is dead as an executor host:
+> OpenAI policy forbids automating ChatGPT itself, launch-context and signing
+> fragility is confirmed, and Route 7's app-server planner turn died with
+> diagnostics discarded. The actuator is now axcli; v1 is click-only
+> multi-step with typing deferred to v2; ChatGPT and Claude desktop return to
+> scope untested. OpenAI's GA computer-use API is shelved as a post-felt-week
+> planner candidate. macOS 26 has a known silent tap-death bug family; a tap
+> health sentinel is on the candidate list, list only. Window 4 (held
+> consequential gate, second Tab release, background delivery, multi-step
+> navigation) was starting at the time of this entry. Cutover machinery was
+> rejected in review; its rebuild is the remaining gap to live. See
+> [[computer-use-autocomplete-executor-spike-session-2026-08-11|the session
+> record]] and [[computer-use-autocomplete-product-spec|the living spec]].
+
+> [!success] 2026-08-12 semantic candidate is live
+> The frozen V0 trial closed durably at 09:56 EDT after three qualifying days,
+> and the reviewed semantic candidate cut over at 11:16 EDT. Candidate
+> `9d9e604` is `ready:true` with ledger integrity `ok`. The installed
+> smoke proved the existing event tap alive, a rendered semantic pill, one
+> completed shadow, an exact consequential hold with zero release, and Escape
+> abort. V1 is foreground-only and non-authoring: click and scroll are the live
+> physical tools; `select_text` is contract-staged but the AXCLI adapter rejects
+> it before dispatch; typing, keypress, background execution, and unconfirmed
+> consequential action remain off. Full-tree AXCLI perception, stable-attribute identity,
+> fresh-read-per-action replanning, a one-use second-Tab release, and
+> complete-and-log shadows are now running together. Organic felt-loop quality
+> remains unproven. See [[computer-use-autocomplete-product-spec|the live
+> architecture, evidence boundary, and optimization queue]].
 
 The first expanded-history NAP comparison is complete. Its official exact
 top-three result is 0/10 for state-only and 5/10 for state plus history.
@@ -592,6 +626,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 
 ## Syntheses
 
+- [[computer-use-autocomplete-product-spec|Computer-use autocomplete: living product spec (kept verified against the running system; see its stamp)]]
 - [[nap-vs-gpu-configuration-experiment-fork|NAP versus GPU configuration experiment fork]]
 - [[niyant-personal-ai-thesis-study-guide|Niyant's personal-AI thesis: a beginner's study guide]]
 - [[personal-ai-phase-1-next-action-prediction|Phase 1: Can an AI learn what matters to you by watching you work?]]
@@ -627,6 +662,7 @@ A July 2026 Google DeepMind paper adds a failure-mode lens rather than evidence 
 - [[induction-labs-scaling-video-pretraining-with-imagination-models-2026-07-23|Induction Labs: Scaling Video Pretraining with Imagination Models]]
 - [[standard-intelligence-fdm-1-fully-general-computer-action-model-2026-02-23|Standard Intelligence: FDM-1, a fully general computer action model]]
 - [[compass-cotypist-for-computer-use-stack-and-weekend-plan-2026-08-10|Compass: Cotypist-for-computer-use stack and weekend build plan]]
+- [[computer-use-autocomplete-executor-spike-session-2026-08-11|Computer-use autocomplete executor-spike briefing and session record, August 10 to 11, 2026]]
 - [[google-deepmind-ai-value-alignment-for-evolving-social-norms-2026|Google DeepMind: AI Value Alignment for Evolving Social Norms]]
 - [World Models public notes](https://handsdiff.github.io/)
 - [Pinned public notes snapshot](https://github.com/handsdiff/notes/tree/3151afa93fd81719a6e9dc7862c269ea1f1a70e6)
