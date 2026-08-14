@@ -4,7 +4,7 @@ status: draft-v1 (text and links; diagrams as placeholders)
 created: 2026-08-14
 source: computer-use-autocomplete-blog-post-skeleton.md (reader order) and computer-use-autocomplete-blog-post-structure.md (decisions, evidence bank, draft harness); whole blog set moved to the vault 2026-08-14, path key in the structure file's move note
 register: simple declarative (harness sec 16); no em dashes; active voice; one idea per sentence
-notes: bracketed [NOTE] items are open verifies or fill-ins; [DIAGRAM n] items are the six decided visuals; [LINK: name] items need URLs from the provider map
+notes: "bracketed [NOTE] items are open verifies or fill-ins; [DIAGRAM n] items are the six decided visuals; [LINK: name] items need URLs from the provider map"
 revision history: commit checkpoints per harness sec 17 are Dylan's or a shell agent's to run
 ---
 
