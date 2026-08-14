@@ -8,11 +8,11 @@ updated: 2026-08-14
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 14, 2026, 6:59 PM EDT
+Generated: Aug 14, 2026, 7:00 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 15 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 16 note commits. The most recent movement is:
 
 - Source capture: capture Compass computer-use stack report.
 - Project decision: record unified armed exit repair.
@@ -26,6 +26,13 @@ In the past 7 days, the public vault changed through 15 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 14, 2026, 7:00 PM EDT - meta: add connective tissue drafting rule
+
+meta: add connective tissue drafting rule.
+
+Changed notes:
+  - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
 
 ### Aug 14, 2026, 6:59 PM EDT - fix: quote blog structure metadata
 
@@ -59,6 +66,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Aug 14, 2026: meta: add connective tissue drafting rule - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
 - Aug 14, 2026: fix: quote blog structure metadata - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 14, 2026: fix: quote blog draft metadata - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 14, 2026: publish: add computer-use autocomplete project record - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -77,6 +85,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Aug 14, 2026: meta: add connective tissue drafting rule - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
 - Aug 14, 2026: fix: quote blog structure metadata - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 14, 2026: fix: quote blog draft metadata - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 14, 2026: publish: add computer-use autocomplete project record - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -101,6 +110,5 @@ Changed notes:
 - Aug 4, 2026: project: start computer-use autocomplete qualifying week - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 - Aug 4, 2026: project: record V0 gate pass and deployment blocker - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 - Aug 4, 2026: project: record five-sample provider boundary - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
-- Aug 4, 2026: project: record twelve-choice boundary result - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 
-_Showing the newest 25 of 193 updates in this window._
+_Showing the newest 25 of 194 updates in this window._
