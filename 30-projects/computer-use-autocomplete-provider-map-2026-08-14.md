@@ -8,6 +8,9 @@ used-by: blog-post-structure.md (sec 7, sec 9), blog-post-skeleton.md
 
 # Provider map (as of 2026-08-14)
 
+
+[LINK FILL 2026-08-15: all seventeen draft placeholders filled. From this map: coast.app, pieces.app, usenocta.app, opencua.xlang.ai, github.com/TongUI-agent/TongUI-agent, cua.ai, getcovalent.co. Verified fresh by web search this pass: screenpi.pe (Screenpipe), arxiv.org/abs/2603.05923 (NAPsack, the paper), scribe.com (Scribe, moved from scribehow.com), openadapt.ai, inductionlabs.com/news/scaling-video-pretraining (Photon-1 announcement), github.com/bytedance/UI-TARS, tzafon.ai/blog/northstar-cua-fast (Northstar release post), platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool (Anthropic), adsideo.ai, autocomputer.ai, github.com/xlang-ai/VideoAgentTrek. Remaining sub-item: archive.org snapshots for the two fragile sec 2 links (the OpenAI forum thread and the tweet) need a save action from a browser or web-enabled agent; not fabricated here.]
+
 ## Predictor (Dylan's priority: callable models trained on computer-use video)
 
 **Video-native frontier, private:**
