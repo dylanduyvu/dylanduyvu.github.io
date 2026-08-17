@@ -39,11 +39,11 @@ The industry defaults to solving the trust problem with approval dialogs, allowl
 
 ## 4. The proposed product
 
-A prediction engine that ambiently watches two things: your current system state (the screen and the possible action pathways on it) and your action history. From those, it predicts what you are trying to do next. At a pause, a small **pill** appears with the predicted next step, a one-line suggestion floating where you work. Tab accepts one step (in the chain of steps, if the prediction is multi-step). Escape aborts. Ignoring it costs nothing.
+A prediction engine that ambiently watches two things: your current system state (the screen and the possible action pathways on it) and your action history. From those, it predicts what you are trying to do next. At natural pauses during your normal computer usage, a small **pill** appears with the predicted next step. Tab accepts one step (in the chain of steps, if the prediction is multi-step). Escape aborts. Ignoring it costs nothing.
 
 That is autocomplete for computer use. At the limit, it eliminates the need to touch your mouse or trackpad.
 
-I ran tests around several parts of this design; sections 6 and 8 carry what they taught me. As of August 2026, the full design remains unvalidated in ordinary use.
+I ran tests around several parts of this design; sections 6 and 8 detail what they taught me. That said, as of August 2026, the full design remains unvalidated in ordinary use.
 
 ## 5. The system this needs
 
@@ -51,9 +51,9 @@ The design needs four parts.
 
 [DIAGRAM 1: four boxes, one per part, each labeled with its ideal instantiation and an availability stamp: recorder partial, predictor private, interaction baseline proven, executor sealed. Dotted ambient-summarizer split inside the predictor box. Dotted preview layer inside the interaction box. Publish caption: The four parts, and what a builder can get today.]
 
-**Recorder.** **Ideal:** record everything. Screen video plus keylog, clicks, and accessibility data, organized into pairs: what the screen showed, and what you did next. **Today:** capture is cheap and shipping; the remaining work is turning the log into training-grade rows. A builder would start from the thinner event stream and add video only where events fail. **My tests:** both layers, events in live runs and screenshots in offline runs.
+**Recorder.** **Ideal:** record everything. Screen video plus keylog, clicks, and accessibility data, all on one synchronized timeline. **Today:** capture is cheap and shipping; the remaining work is turning the log into training-grade rows. A builder would start from events without video, and add video only where events fail. **My tests:** both branches, events in live runs and screenshots in offline runs.
 
-A **training-grade** row names the real target of the action, has true boundaries between one action and the next, has no gaps in the sequence, and confirms the action had its effect. If accuracy ends up requiring a personal action model, finetuned or continuously finetuned, possibly on top of a computer-use video model, these rows are its training set and its ongoing feed. Until then they are the context and the eval labels.
+A **training-grade** row names the real target of the action, has true boundaries between one action and the next, has no gaps in the sequence, and confirms the action had its effect. To illustrate the gap: OpenAI's new [Computer History](https://learn.chatgpt.com/docs/customization/computer-history) records each click with the app, the window, and the moment, but it names what you clicked only about half the time. A training-grade row should name the target every time. Today, these rows are context for the predictor. Prediction accuracy may end up requiring a personal action model finetuned on these rows, possibly continuously, possibly on top of a computer-use video model. If it does, the rows become its training set and its ongoing feed.
 
 [DIAGRAM 2: the recorder decision tree. Branch one, screen video plus vision: rich, slow, heavy. Branch two, interaction events plus accessibility: fast, thin visuals. My live focus trail and OpenAI's Computer History both sit on branch two. Publish caption: Two ways to record, rich video or thin events. I ran events live.]
 
