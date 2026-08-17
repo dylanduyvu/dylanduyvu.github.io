@@ -1,17 +1,20 @@
 ---
 type: blog-draft
-status: draft-v1 (text and links; diagrams as placeholders)
+status: draft-v1 (text, links, and publication images integrated)
 created: 2026-08-14
 source: computer-use-autocomplete-blog-post-skeleton.md (reader order) and computer-use-autocomplete-blog-post-structure.md (decisions, evidence bank, draft harness); whole blog set moved to the vault 2026-08-14, path key in the structure file's move note
 register: simple declarative (harness sec 16); no em dashes; active voice; one idea per sentence
 stance: "prospective (decided 2026-08-14): the post argues how this should be built; my own work appears as tests and learnings around its parts, never as a product build story. Reader-facing build-story language (we built, the project, the product) is out; tests-and-learnings language (my tests, this work) is in. First person singular throughout (decided 2026-08-15): solo work, solo pronouns."
-notes: "bracketed [NOTE] items are open verifies or fill-ins; [DIAGRAM n] items are the five decided visuals"
+notes: "bracketed [NOTE] items are open verifies or fill-ins; the banner and five publication diagrams are embedded at their intended positions"
+publication: Precursor Labs
 publish targets: "X articles and Substack (decided 2026-08-14). This markdown file stays canonical. Constrain the render to the shared feature set of both platforms: H2 headers, bold, italic, inline links, bulleted and numbered lists, images. No tables in the final render (the sec 6 spectrum ships as an image, DIAGRAM 5), no code formatting (commands go in quotes), no footnotes. Strip this frontmatter and all bracketed notes at export. Section numbers stay in the headers because neither platform gives in-page anchors and the post cross-references sections."
 dek: "Substack subtitle, X teaser: A design for Tab autocomplete on your next computer action: how it should work, the tests I ran around its parts, and the two pieces still missing."
 revision history: commit checkpoints per harness sec 17 are Dylan's or a shell agent's to run
 ---
 
 # How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action
+
+![A person stands beside a giant Tab key and a computer monitor showing predicted actions](../70-attachments/computer-use-autocomplete-banner-giant-monitor-v1.png)
 
 *This post owes its inspiration to three sources. [Niyant (handsdiff)](https://substack.com/@handsdiff) and his personal-AI thesis shaped this work, and his day-one objection, that history would only ever teach the model my habits, became the ceiling my tests measured (section 6) ([my study guide of the thesis](https://dylanduyvu.github.io/20-syntheses/niyant-personal-ai-thesis-study-guide)). [Cursor](https://cursor.com/tab) proved Tab autocomplete works as a product. [Cotypist](https://cotypist.app), by Daniel Alm of Accelerated Thought GmbH, took it beyond code, and I copied its interaction pattern.*
 
@@ -51,19 +54,43 @@ I ran tests around several parts of this design; sections 6 and 8 detail what th
 
 The design needs four parts.
 
-[DIAGRAM 1: four boxes, one per part, each labeled with its ideal instantiation and an availability stamp: recorder partial, predictor private, interaction baseline proven, executor sealed. Dotted ambient-summarizer split inside the predictor box. Dotted preview layer inside the interaction box. Publish caption: The four parts, and what a builder can get today.]
+![Four parts of the proposed system: recorder, predictor, interaction, and executor](../70-attachments/cua-diagram-1-four-parts.png)
 
-**Recorder.** **Ideal:** record everything. Screen video plus keylog, clicks, and accessibility data, all on one synchronized timeline. **Today:** capture is cheap and shipping; the remaining work is turning the log into training-grade rows. A builder would start from events without video, and add video only where events fail. **My tests:** both branches, events in live runs and screenshots in offline runs.
+*The four parts, and what a builder can get today.*
+
+**Recorder**
+
+**Ideal:** record everything. Screen video plus keylog, clicks, and accessibility data, all on one synchronized timeline.
+
+**Today:** capture is cheap and shipping; the remaining work is turning the log into training-grade rows. A builder would start from events without video, and add video only where events fail.
+
+**My tests:** both branches, events in live runs and screenshots in offline runs.
 
 A **training-grade** row names the real target of the action, has true boundaries between one action and the next, has no gaps in the sequence, and confirms the action had its effect. To illustrate the gap: OpenAI's new [Computer History](https://learn.chatgpt.com/docs/customization/computer-history) records each click with the app, the window, and the moment, but it names what you clicked only about half the time. A training-grade row should name the target every time. Today, these rows are context for the predictor. Prediction accuracy may end up requiring a personal action model finetuned on these rows, possibly continuously, possibly on top of a computer-use video model. If it does, the rows become its training data: the starting set, plus the new rows every day after.
 
-[DIAGRAM 2: the recorder decision tree. Branch one, screen video plus vision: rich, slow, heavy. Branch two, interaction events plus accessibility: fast, thin visuals. My live focus trail and OpenAI's Computer History both sit on branch two. Publish caption: Two ways to record, rich video or thin events. I ran events live.]
+![Two recorder paths: rich video with vision, or interaction events with accessibility data](../70-attachments/cua-diagram-2-recorder-tree.png)
 
-**Predictor.** **Ideal:** one model pretrained on computer-use video and actions. It reads the raw recording, understands the goals in play, predicts the next meaningful action, and knows you (next section). **Today:** at least two labs have trained such models, but neither has shipped them (section 7). So, for now, general-purpose models stand in. To cut latency and cost, you can split the predictor into an ambient summarizer feeding a lighter predictor. The summarizer continuously turns the recording into a short text account of what has happened and what the goals seem to be. And the lighter predictor samples these summaries and fires predictions when needed. **My tests:** running live forced a small fast model with no vision, and the strong frontier model was far too slow for a pill.
+*Two ways to record, rich video or thin events. I ran events live.*
 
-**Interaction.** **Ideal:** the pill plus a preview of what pressing Tab will do. Before you accept, the coming action is sketched on screen: a faint cursor moves to the spot it would click, the target lights up, and for motions like scrolls or drags a small hint shows the gesture. It is the visual analog of ghost text from Cotypist. **Today:** the pill and keys are proven, on text by Cotypist and in my own computer-use tests. The preview layer is unbuilt but buildable: unlike the private models and sealed apps, nothing blocks it except the work. Accepting one step at a time buys trust; free dismissal means a wrong pill charges you nothing but a glance.
+**Predictor**
 
-**Executor.** **Ideal:** hand the accepted step to an already-built, low-latency computer-use app. **Today:** most apps are sealed to their makers' front ends, and the one callable option is documented as too slow. Universal pixel drivers exist, but none is proven both callable and fast. Possible fallbacks here are raw input primitives on the accessibility layer, which are fast and exact but need apps to cooperate, introducing fragility.
+**Ideal:** one model pretrained on computer-use video and actions. It reads the raw recording, understands the goals in play, predicts the next meaningful action, and knows you (next section).
+
+**Today:** at least two labs have trained such models, but neither has shipped them (section 7). So, for now, general-purpose models stand in. To cut latency and cost, you can split the predictor into an ambient summarizer feeding a lighter predictor. The summarizer continuously turns the recording into a short text account of what has happened and what the goals seem to be. And the lighter predictor samples these summaries and fires predictions when needed.
+
+**My tests:** running live forced a small fast model with no vision, and the strong frontier model was far too slow for a pill.
+
+**Interaction**
+
+**Ideal:** the pill plus a preview of what pressing Tab will do. Before you accept, the coming action is sketched on screen: a faint cursor moves to the spot it would click, the target lights up, and for motions like scrolls or drags a small hint shows the gesture. It is the visual analog of ghost text from Cotypist.
+
+**Today:** the pill and keys are proven, on text by Cotypist and in my own computer-use tests. The preview layer is unbuilt but buildable: unlike the private models and sealed apps, nothing blocks it except the work. Accepting one step at a time buys trust; free dismissal means a wrong pill charges you nothing but a glance.
+
+**Executor**
+
+**Ideal:** hand the accepted step to an already-built, low-latency computer-use app.
+
+**Today:** most apps are sealed to their makers' front ends, and the one callable option is documented as too slow. Universal pixel drivers exist, but none is proven both callable and fast. Possible fallbacks here are raw input primitives on the accessibility layer, which are fast and exact but need apps to cooperate, introducing fragility.
 
 ## 6. Why the predictor has to know you
 
@@ -83,11 +110,15 @@ In navigation, you are mid-article when you decide to decline. The full task is 
 
 A confidence threshold helps here, and the design assumes one: like Cotypist staying silent after a single letter, the pill should not appear below confidence. That said, a threshold only decides when the system speaks; it does not create the goal information that confidence is made of.
 
-[DIAGRAM 3: the disclosure timeline. Two lanes. Text predicts step N after the goal is on the page. Navigation predicts step 1 before any click. Annotated with the Maya pair. Publish caption: Text predicts after the goal is disclosed. Navigation predicts before.]
+![Text prediction happens after a goal is disclosed, while navigation prediction happens before the first click](../70-attachments/cua-diagram-3-disclosure-timeline.png)
+
+*Text predicts after the goal is disclosed. Navigation predicts before.*
 
 Every autocomplete runs on two ingredients. The first is shared: a pretrained model reading whatever is in front of it right now. The second is personal: the signal only your own data can supply, your history, your voice, your goals, whether it arrives in the model's context or through finetuning. Products sit on a spectrum of how much the shared ingredient covers. Code sits at the lucky end. Its personal part is small because coding is standardized: most people reach for the same best libraries and functions, and programs are built from shared, modular pieces. What is personal, your names and your project's shape, lives in the repo, which tooling already reads. That is why [Cursor](https://cursor.com/tab)'s personalization comes free. [Cotypist](https://cotypist.app)'s personal part is your voice, phrases, tone, recipients, scattered across your machine, so it ships an opt-in collector. Computer use sits at the far end: its personal part, your goals, is large and mostly never recorded. Goals you declare in the course of work, task titles, calendar invites, are the exception, and they are exactly where the only wins in my tests came from.
 
-[DIAGRAM 5: the spectrum. A left-to-right track of how much the shared model covers: code with Cursor, then prose with Cotypist, then computer use at the far end, each with its personal part and capture status. Publish caption: How much the shared model covers, and what only your data can supply.]
+![A spectrum showing how much a shared model covers in code, prose, and computer use](../70-attachments/cua-diagram-5-spectrum.png)
+
+*How much the shared model covers, and what only your data can supply.*
 
 Even with capture closed, Cotypist wins me only 100 to 200 accepted words a day. That is respectable for a product with no finetuning, whose personalization is a local profile of your typing history plus context read off your screen. It means captured signal is a floor with plenty of headroom above it. Computer use autocomplete would face those same limits, and it starts below that floor: the signal it needs, your goals, mostly never gets recorded.
 
@@ -125,27 +156,41 @@ Training-grade rows for everything outside those routines remain the open questi
 - The one exception, [Anthropic's tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool): callable and accepts custom tools, so per my research it technically should be integrable. But their own docs warn it may be too slow for interactive use, so it fails on latency, not access.
 - New as of August 2026, an open driver layer: [Cua Driver](https://cua.ai) (cross-platform, MIT). It sends clicks and keys to a chosen window without taking your cursor, so an agent can act in the background while you keep working. It publishes no latency numbers, so whether it is fast enough for a pill is untested.
 
-**The market is waking up, and the space is still wide open.** [Adsideo](https://adsideo.ai) offers ambient suggestions you approve or ignore; [AutoComputer](https://www.autocomputer.ai) runs predicted action sequences accepted one keystroke at a time. [Covalent](https://getcovalent.co) attempted the furthest version, OS-wide text Tab plus one-click task suggestions from calls and tickets, but is no longer working on it; I will update this post as I learn more. It is genuinely cool that people are taking a stab at this already. All three built where your goal is already visible: in text you have started typing, in tasks you declared, in patterns you repeat. The hard version, predicting your next click from passive history before you have said anything, has no shipping entrant, because the two gaps in the next section block it for everyone. That is the open field.
+**The market is waking up, and the space is still wide open.**
+
+[Adsideo](https://adsideo.ai) offers ambient suggestions you approve or ignore; [AutoComputer](https://www.autocomputer.ai) runs predicted action sequences accepted one keystroke at a time. [Covalent](https://getcovalent.co) attempted the furthest version, OS-wide text Tab plus one-click task suggestions from calls and tickets, but is no longer working on it; I will update this post as I learn more. It is genuinely cool that people are taking a stab at this already. All three built where your goal is already visible: in text you have started typing, in tasks you declared, in patterns you repeat. The hard version, predicting your next click from passive history before you have said anything, has no shipping entrant, because the two gaps in the next section block it for everyone. That is the open field.
 
 ## 8. The two immediate bottlenecks
 
 These are the two immediate bottlenecks to this product existing, and they are the two things next-word (and next-few-words) prediction gets for free. Bottleneck 1 is the working context, which text models get free from wherever you are typing, the words already there, yours or not. For computer use, that context must be recorded. Bottleneck 2 is a model that already knows how people use computers before it ever sees you.
 
-**Bottleneck 1, the personal recorder.** Recorders exist, and each covers a piece. But none produces training-grade history: rows whose targets you can trust. (One partial exception, limited to routines, is noted above.)
+**Bottleneck 1, the personal recorder.**
+
+Recorders exist, and each covers a piece. But none produces training-grade history: rows whose targets you can trust. (One partial exception, limited to routines, is noted above.)
 
 The evidence from my own tests: assembling one day of usable history from a raw Screenpipe recording took three days. The only improvement ever measured ran on roughly 196 hand-labeled rows. My live runs collected rich signal (clicks, scrolls, keys, dwell) and then dropped most of it while building the prompt, sending only a 12-row focus trail (the last apps and windows in focus). Even the postmortem dataset needs re-stitching by timestamp, because the links from predictions to human events are empty on all 1,423 logged moments. [The Missing Step Between Recording and Prediction](https://dylanvu.substack.com/p/the-missing-step-between-recording) documents the three days and the five conversion steps.
 
 OpenAI's Computer History shipped continuous event capture the day this work ended. My full-day audit of it covered 2,198 events over 3.5 hours. The event stream is good enough to test prediction on two questions, which app comes next and what kind of action comes next. The hardest question, exactly what you will click, is scorable on only the half of clicks that carry an identifiable target.
 
-**Bottleneck 2, the pretrained action model.** Private only: FDM-1 and Photon-1, as of my August 17 review.
+**Bottleneck 2, the pretrained action model.**
 
-**Complementary, not independent.** The bottlenecks are coupled, and Bottleneck 1 has two escapes from hand-cleaning, neither available off the shelf. The first: a pretrained action model with a long context window could read your raw captured events directly and adapt to you from them. That shrinks Bottleneck 1 from hand-labeled history to reliable raw capture. You would still need your own data, but you might not need to clean it by hand.
+Private only: FDM-1 and Photon-1, as of my August 17 review.
 
-**The second escape, a shared missing primitive.** It is the obvious shortcut: screen-record everything and have a model turn the video into the dataset. It needs exactly one piece: automatic action labeling from raw recordings, called inverse dynamics. Off-the-shelf VLMs have now been [measured at the job](https://huggingface.co/datasets/p-doom/idm-eval-set) and err on roughly a quarter of clicks, and in one 2026 test, [training on VLM-labeled trajectories made the agent worse](https://openaccess.thecvf.com/content/CVPR2026/papers/Song_Watch_and_Learn_Learning_to_Use_Computers_from_Online_Videos_CVPR_2026_paper.pdf). So labs built purpose models to label their huge training videos automatically. The same capability would also make the personal recorder automatic. But today it ships as [open research code](https://github.com/xlang-ai/VideoAgentTrek), not as a product.
+**Complementary, not independent.**
 
-**The third (Bottleneck 3), after these two: latency.** Latency matters everywhere in this stack once you are building a product, but it is not what blocks accurate prediction today. Once the two bottlenecks fall, it becomes the biggest issue. In my own runs, one full predict-and-show cycle took 4.7 seconds at the median, and a pill needs to feel instant to be relevant. [Interaction models](https://thinkingmachines.ai/blog/interaction-models) are the candidate class to solve it (Thinking Machines, research preview, 0.40 s turn-taking, self-reported, partner-only). FDM-1's design is built for speed, per its maker: video-native, no chain of thought, and a reported 11 ms screen-to-action round trip in its own infrastructure. A hint the fight is winnable. The ordering is my judgment rather than a measurement. One scenario would overturn it: if accurate prediction turns out to require fast prediction, latency stops being third and becomes part of the accuracy problem itself. Until someone tests that, I rank it after the two bottlenecks.
+The bottlenecks are coupled, and Bottleneck 1 has two escapes from hand-cleaning, neither available off the shelf. The first: a pretrained action model with a long context window could read your raw captured events directly and adapt to you from them. That shrinks Bottleneck 1 from hand-labeled history to reliable raw capture. You would still need your own data, but you might not need to clean it by hand.
 
-[DIAGRAM 4: the loop with real latencies. Context assembly 817 ms, provider 3,752 ms, total 4,698 ms medians. Publish caption: Where 4.7 seconds went.]
+**The second escape, a shared missing primitive.**
+
+It is the obvious shortcut: screen-record everything and have a model turn the video into the dataset. It needs exactly one piece: automatic action labeling from raw recordings, called inverse dynamics. Off-the-shelf VLMs have now been [measured at the job](https://huggingface.co/datasets/p-doom/idm-eval-set) and err on roughly a quarter of clicks, and in one 2026 test, [training on VLM-labeled trajectories made the agent worse](https://openaccess.thecvf.com/content/CVPR2026/papers/Song_Watch_and_Learn_Learning_to_Use_Computers_from_Online_Videos_CVPR_2026_paper.pdf). So labs built purpose models to label their huge training videos automatically. The same capability would also make the personal recorder automatic. But today it ships as [open research code](https://github.com/xlang-ai/VideoAgentTrek), not as a product.
+
+**The third (Bottleneck 3), after these two: latency.**
+
+Latency matters everywhere in this stack once you are building a product, but it is not what blocks accurate prediction today. Once the two bottlenecks fall, it becomes the biggest issue. In my own runs, one full predict-and-show cycle took 4.7 seconds at the median, and a pill needs to feel instant to be relevant. [Interaction models](https://thinkingmachines.ai/blog/interaction-models) are the candidate class to solve it (Thinking Machines, research preview, 0.40 s turn-taking, self-reported, partner-only). FDM-1's design is built for speed, per its maker: video-native, no chain of thought, and a reported 11 ms screen-to-action round trip in its own infrastructure. A hint the fight is winnable. The ordering is my judgment rather than a measurement. One scenario would overturn it: if accurate prediction turns out to require fast prediction, latency stops being third and becomes part of the accuracy problem itself. Until someone tests that, I rank it after the two bottlenecks.
+
+![A latency breakdown from user pause through context assembly, provider call, and pill display](../70-attachments/cua-diagram-4-latency.png)
+
+*Where 4.7 seconds went.*
 
 ## 9. An invitation
 
