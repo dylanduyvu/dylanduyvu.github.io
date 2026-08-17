@@ -14,6 +14,12 @@ revision history: commit checkpoints per harness sec 17 are Dylan's or a shell a
 
 # How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action
 
+---
+
+*[Associated research](https://dylanduyvu.github.io/30-projects/computer-use-autocomplete-product-spec) | [Revision history](https://github.com/dylanduyvu/dylanduyvu.github.io/commits/main/30-projects/computer-use-autocomplete-blog-post-draft-v1.md) | [Disclosure](https://dylanvu.substack.com/about)*
+
+---
+
 ![A person stands beside a giant Tab key and a computer monitor showing predicted actions](../70-attachments/computer-use-autocomplete-banner-giant-monitor-v1.png)
 
 *This post owes its inspiration to three sources. [Niyant (handsdiff)](https://substack.com/@handsdiff) and his personal-AI thesis shaped this work, and his day-one objection, that history would only ever teach the model my habits, became the ceiling my tests measured (section 6) ([my study guide of the thesis](https://dylanduyvu.github.io/20-syntheses/niyant-personal-ai-thesis-study-guide)). [Cursor](https://cursor.com/tab) proved Tab autocomplete works as a product. [Cotypist](https://cotypist.app), by Daniel Alm of Accelerated Thought GmbH, took it beyond code, and I copied its interaction pattern.*
