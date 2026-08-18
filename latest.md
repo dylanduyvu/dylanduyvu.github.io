@@ -1,18 +1,18 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-08-17
+updated: 2026-08-18
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 17, 2026, 5:56 PM EDT
+Generated: Aug 18, 2026, 4:28 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 8 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 11 note commits. The most recent movement is:
 
 
 ## Current Hub Signals
@@ -20,6 +20,27 @@ In the past 7 days, the public vault changed through 8 note commits. The most re
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 18, 2026, 4:27 PM EDT - area: add inference research hub
+
+area: add inference research hub.
+
+Changed notes:
+  - [[inference|Inference]]
+
+### Aug 17, 2026, 7:01 PM EDT - publish: add autocomplete article disclosure links
+
+publish: add autocomplete article disclosure links.
+
+Changed notes:
+  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
+
+### Aug 17, 2026, 6:56 PM EDT - publish: align autocomplete draft formatting and figures
+
+publish: align autocomplete draft formatting and figures.
+
+Changed notes:
+  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 
 ### Aug 17, 2026, 5:56 PM EDT - publish: finish computer-use article lint pass
 
@@ -37,26 +58,11 @@ Changed notes:
   - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
   - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
 
-### Aug 17, 2026, 1:47 PM EDT - publish: revise computer-use autocomplete draft
-
-publish: revise computer-use autocomplete draft.
-
-Changed notes:
-  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-  - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
-
-### Aug 17, 2026, 10:45 AM EDT - publish: update computer-use autocomplete blog materials
-
-publish: update computer-use autocomplete blog materials.
-
-Changed notes:
-  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-  - [[computer-use-autocomplete-blog-post-skeleton|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-  - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
-  - [[computer-use-autocomplete-provider-map-2026-08-14|Provider map (as of 2026-08-14)]]
-
 ## Past 7 Days
 
+- Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
+- Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
+- Aug 17, 2026: publish: align autocomplete draft formatting and figures - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: finish computer-use article lint pass - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: refine computer-use autocomplete article - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: revise computer-use autocomplete draft - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -68,6 +74,9 @@ Changed notes:
 
 ## Past 30 Days
 
+- Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
+- Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
+- Aug 17, 2026: publish: align autocomplete draft formatting and figures - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: finish computer-use article lint pass - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: refine computer-use autocomplete article - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: revise computer-use autocomplete draft - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -90,8 +99,5 @@ Changed notes:
 - Aug 7, 2026: project: park supervisor migration at platform boundary - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 - Aug 6, 2026: project: record autocomplete recovery failure - [[computer-use-autocomplete-travel-day-operations-2026-08-04|Computer-use autocomplete travel-day operations]]
 - Aug 4, 2026: project: add autocomplete travel operations - [[computer-use-autocomplete-travel-day-operations-2026-08-04|Computer-use autocomplete travel-day operations]]
-- Aug 4, 2026: project: freeze autocomplete cutover blocker - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
-- Aug 4, 2026: project: verify live telemetry advance - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
-- Aug 4, 2026: project: record telemetry integrity cutover - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 
-_Showing the newest 25 of 185 updates in this window._
+_Showing the newest 25 of 188 updates in this window._
