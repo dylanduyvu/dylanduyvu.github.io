@@ -16,6 +16,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - **Source claim:** SemiAnalysis reports that many inference providers prefer contracts of one year or less, while the easiest GPU debt has several years of committed customer payments. This is evidence of a financing mismatch, but it is not a market-wide survey.
 - **Reasonable inference:** Workload shape connects serving technology to business structure. Stable workloads can support dedicated capacity. Variable or pooled workloads can favor cloud or serverless providers. Rental price risk and fleet-utilization risk are separate.
 - **Technical hypothesis:** One July 2026 neocloud snapshot found a narrow range of posted rents after adjustment for nameplate memory bandwidth. This can matter during decode, the stage that generates output tokens, because decode can be limited by data movement from memory. The result is not a universal pricing law or a transaction benchmark.
+- **Unverified source claim:** Two Compass reports say inference gateways can turn serving quality into distribution because routing can depend on price, uptime, throughput, and tool-call success. This is a research direction until the claims are checked against primary documentation and live routing data.
 - **Research gap:** The vault is stronger on ownership, demand, contracts, and financing than on serving engines, batching, scheduling, cache management, routing, reliability, and workload-level benchmarks.
 
 ## Key Insights
@@ -40,6 +41,8 @@ No inference-only project is active in the current vault record.
 - [[gpu-loans-without-long-term-customer-claim-ledger-2026-07-19|GPU loans without a long-term customer claim ledger]]: evidence grades for short-term demand, utilization, and financing.
 - [[semianalysis-nvidia-backstop-trinity-2026-07-06|SemiAnalysis: NVIDIA GPU debt backstop and AI Project Trinity]]: source claims on contract length, rental pricing, and financing structure.
 - [[ccir-gpu-compute-credit-research-audit-2026-07-22|CCIR GPU compute-credit research audit]]: pricing, contract-rollover, utilization, and collateral evidence.
+- [[compass-openrouter-and-ai-gateway-channel-playbooks-2026-08-18|Compass OpenRouter and AI gateway channel playbooks]]: raw automated research on provider channels, market gaps, and demand discovery. Not independently verified.
+- [[compass-openrouter-inference-provider-listing-guide-2026-08-18|Compass OpenRouter inference-provider listing guide]]: raw automated research on onboarding, routing, metrics, and channel economics. Not independently verified.
 
 ## Open Questions
 
@@ -50,6 +53,7 @@ No inference-only project is active in the current vault record.
 - At what sustained utilization does controlled capacity beat metered service after power, colocation, staff, failures, spare capacity, financing, and hardware obsolescence?
 - Can short-term inference demand support fleet financing? Which evidence, contract, reserve, guarantee, or operating history changes loan approval or terms?
 - Who should own the capacity and residual risk: the model company, a specialist provider, a lessor, or a special-purpose vehicle?
+- Can an inference gateway supply enough durable demand and margin for a new provider after price competition, routing rules, and channel dependence?
 
 ## Next Tests
 
@@ -58,6 +62,7 @@ No inference-only project is active in the current vault record.
 - Select one customer type and collect real prompt lengths, output lengths, concurrency, latency limits, traffic variation, reliability needs, geography, and budget before selecting hardware.
 - Build a rent-versus-control model from observed workload data. Include all operating costs, conservative utilization, downtime, financing, and resale downside.
 - Ask inference infrastructure and finance leaders for factual receipts on legal ownership, utilization before and after conversion, realized all-in cost, expansion after the first deployment, and remaining burst-cloud share.
+- Verify the OpenRouter provider requirements and routing rules against primary documentation. Then run one live model-gap scan that combines token demand, provider count, price, latency, throughput, uptime, and tool-call success.
 
 ## Related Areas
 
