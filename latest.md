@@ -8,18 +8,28 @@ updated: 2026-08-18
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 18, 2026, 4:28 PM EDT
+Generated: Aug 18, 2026, 5:15 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 11 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 12 note commits. The most recent movement is:
 
+- Source capture: capture OpenRouter provider research.
 
 ## Current Hub Signals
 
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 18, 2026, 5:14 PM EDT - source: capture OpenRouter provider research
+
+Source capture: capture OpenRouter provider research.
+
+Changed notes:
+  - [[inference|Inference]]
+  - [[compass-openrouter-and-ai-gateway-channel-playbooks-2026-08-18|Getting Listed on OpenRouter and Alternative AI Gateways: Channel Playbooks and Gap Analysis (August 18, 2026)]]
+  - [[compass-openrouter-inference-provider-listing-guide-2026-08-18|How to Become a Listed Inference Provider on OpenRouter: An Authoritative Guide]]
 
 ### Aug 18, 2026, 4:27 PM EDT - area: add inference research hub
 
@@ -60,6 +70,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
 - Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
 - Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: align autocomplete draft formatting and figures - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -74,6 +85,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
 - Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
 - Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: align autocomplete draft formatting and figures - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -98,6 +110,5 @@ Changed notes:
 - Aug 7, 2026: project: audit autocomplete packet fidelity - [[codex-thread-list-recency-reveals-desktop-originated-task-activity|Codex thread-list recency reveals desktop-originated task activity]]
 - Aug 7, 2026: project: park supervisor migration at platform boundary - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 - Aug 6, 2026: project: record autocomplete recovery failure - [[computer-use-autocomplete-travel-day-operations-2026-08-04|Computer-use autocomplete travel-day operations]]
-- Aug 4, 2026: project: add autocomplete travel operations - [[computer-use-autocomplete-travel-day-operations-2026-08-04|Computer-use autocomplete travel-day operations]]
 
-_Showing the newest 25 of 188 updates in this window._
+_Showing the newest 25 of 189 updates in this window._
