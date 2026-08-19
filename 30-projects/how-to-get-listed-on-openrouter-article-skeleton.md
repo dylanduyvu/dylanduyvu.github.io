@@ -40,6 +40,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 | Article claim | Evidence status | Main support |
 | --- | --- | --- |
 | OpenRouter has a provider backlog, currently prioritizes providers with proprietary models, and also gives priority to providers that fill network gaps. | Direct official evidence | [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]] |
+| Axios reported that Stripe confirmed its acquisition of OpenRouter on 2026-08-19, but the provider application page still showed the same rules that day. | Reported confirmation plus same-day page check | [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]] |
 | A provider must meet the technical requirements before OpenRouter reviews it. | Direct official evidence | [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]] |
 | A useful target needs demand and scarce qualified supply. | Reasonable decision rule | [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] |
 | Serious provider business development should start after repeatable internal proof. | Reasonable operating inference | [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan's build-first synthesis]] |
@@ -53,24 +54,24 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ### Opening: Getting listed starts before the application
 
-**Target:** 100 to 130 words.
+**Target:** 90 to 110 words.
 
 **Job:** Break the belief that the form is the main work.
 
-- OpenRouter has a large provider backlog.
-- OpenRouter currently prioritizes providers that bring models they own or control, so this guide focuses on the other route it names: filling a clear gap in its network.
+- As of 2026-08-19, OpenRouter had a large provider backlog. It prioritized providers that bring models they own or control and providers that fill clear gaps in its network. This guide focuses on the gap route.
+- Axios reported that Stripe confirmed its acquisition of OpenRouter on the same date. OpenRouter's provider application page still showed the same rules that day. Keep this to one dated sentence unless the rules change before publication.
 - A complete application for another crowded endpoint is weak positioning.
-- OpenRouter says it prioritizes providers that fill gaps in its network.
 - The useful question is not, "How do I complete the form?" It is, "What missing supply can I make live and testable?"
 - Preview the sequence: find, prove, begin BD while you build, launch, apply, follow up, and compete.
+- End with an action: write one sentence that names the demand, the missing supply, and the edge that you can prove.
 
 **Primary evidence:** [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]].
 
-**Required evidence note:** The provider requirements and review sequence come from OpenRouter. The launch, promotion, and outreach steps are the operating strategy that follows from those published rules.
+**Required evidence note:** The provider requirements and review sequence come from OpenRouter's page as checked on 2026-08-19. The launch, promotion, and outreach steps are the operating strategy that follows from those published rules.
 
 ### 1. Find a demand-backed gap
 
-**Target:** 180 to 220 words.
+**Target:** 170 to 200 words.
 
 **Job:** Give the reader a model-selection rule.
 
@@ -88,7 +89,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ### 2. Prove that you can serve the gap
 
-**Target:** 150 to 190 words.
+**Target:** 140 to 170 words.
 
 **Job:** Set the gate before serious outreach or public claims.
 
@@ -111,7 +112,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ### 3. Begin BD while you build the minimum review-ready endpoint
 
-**Target:** 210 to 250 words.
+**Target:** 200 to 230 words.
 
 **Job:** Start serious provider conversations from internal proof while completing the product that OpenRouter can inspect.
 
@@ -138,7 +139,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ### 4. Launch the service publicly
 
-**Target:** 300 to 360 words, including the performance dashboard and pricing aside.
+**Target:** 280 to 320 words, including the performance dashboard and pricing aside.
 
 **Job:** Turn technical readiness into visible proof and measurable demand.
 
@@ -167,11 +168,11 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - If metered demand becomes the stronger product, make pay-per-token pricing the default and retire the subscription.
 - The economic purpose is to subsidize early trial, create demand and operating data, and then reduce open-ended usage risk as the provider grows.
 
-**Internal evidence note, not reader-visible:** The Wafer research helped generate this hypothesis, but the article will not name or credit Wafer in this aside. The public evidence also does not prove the full pricing sequence.
+**Research provenance:** The Wafer research helped generate this hypothesis, but do not name or credit Wafer in the final article. The public evidence also does not prove the full pricing sequence.
 
 ### 5. Submit the OpenRouter application
 
-**Target:** 120 to 150 words.
+**Target:** 110 to 130 words.
 
 **Job:** Make the application easy to review.
 
@@ -193,7 +194,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ### 6. Follow up with the provider team using live evidence
 
-**Target:** 130 to 170 words.
+**Target:** 110 to 140 words.
 
 **Job:** Turn the earlier provider conversation into a specific post-application follow-up.
 
@@ -208,7 +209,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ### 7. Pass review, then win routed traffic
 
-**Target:** 170 to 210 words.
+**Target:** 150 to 180 words.
 
 **Job:** Separate acceptance from the business result.
 
@@ -226,7 +227,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ### Conclusion: Build the application that can be called
 
-**Target:** 70 to 100 words.
+**Target:** 60 to 80 words.
 
 **Job:** Compress the whole playbook into one operating rule.
 
@@ -236,12 +237,13 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - Launch, apply, and contact the provider team in one measured window.
 - Treat acceptance and routed traffic as separate gates.
 
-**Closing line candidate:** Do not ask OpenRouter to believe a future promise. Give it a useful gap, a live endpoint, a measurable edge, and a test key.
+**Closing line candidate:** Do not ask for a listing before the endpoint is callable. Give OpenRouter a useful gap, a live endpoint, a measurable edge, and a test key.
 
 ## V1 Supporting Element
 
 - Include one compact seven-step checklist at the end.
 - Include the short retail pricing ladder inside Step 4. Do not turn it into a company case-study sidebar.
+- Keep the checklist to 100 words or less. Keep the full article, including the checklist, below 1,800 words.
 
 Do not add a second table, a company sidebar, or a downloadable evidence-packet template in version one. These can become separate follow-up material.
 
@@ -270,6 +272,13 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - Whether to include the paid-promotion tactic in the title or only in step four.
 - Final wording of the required evidence note.
 
+## Publication-Day Checks
+
+- Confirm that the live provider page still contains both priority statements in one page version. Save the access date and an archive.
+- Check whether Stripe or OpenRouter has published a provider-rule change after the acquisition.
+- Recheck Shashank Goyal's and Tomas Oliva's public roles. Keep both named in the BD step.
+- Recheck Qwen3.8-27B provider supply before deciding whether to keep the worked screen.
+
 ## Updates
 
 - 2026-08-19: Created after Dylan approved a hybrid, 1,200-to-1,800-word, seven-step operator playbook for new inference providers seeking an OpenRouter listing.
@@ -283,3 +292,4 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - 2026-08-19: Added Shashank Goyal and Tomas Oliva as named public BD contacts in Step 3. Preserved that the new-model notification request came from Tomas, not Shashank, and that the named contacts do not replace the formal application channel.
 - 2026-08-19: Made a public live performance dashboard part of the launch package. Defined the minimum live metrics and separated it from the full customer account dashboard that can wait.
 - 2026-08-19: Completed a full outline review. Added a manual gap screen, load and overload tests, exact routing logic, the official provider email, a single-contact sequence, clearer privacy and payment requirements, and a worked Qwen screen. Defined the public dashboard as proof of the provider's claimed edge under declared serving conditions. Kept the seven-step sequence without failure branches and retained unlimited-token language for the flat-rate, request-capped launch offer.
+- 2026-08-19: Applied the post-review patch. Removed the repeated opening thesis, added a dated Stripe acquisition note without an unconfirmed sale price, reduced section targets so the checklist fits below 1,800 words, added publication-day source checks, and tightened the closing. Kept the two named BD contacts, the live dashboard, and the seven-step structure without a failure branch.

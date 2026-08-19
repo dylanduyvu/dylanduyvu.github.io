@@ -27,6 +27,14 @@ The check focused on network gaps, technical readiness before review, post-listi
 
 This directly supports gap-filling as a provider-selection factor. It does not prove that any specific gap, public launch, or outreach tactic causes acceptance.
 
+Both priority statements appeared in the same live page response during the 2026-08-19 check. Recheck and archive the page on the article publication date because OpenRouter can change its provider priorities.
+
+### Stripe acquisition adds new ownership context
+
+[Axios reported on 2026-08-19](https://www.axios.com/2026/08/19/stripe-payments-openrouter-singularity) that Stripe confirmed its acquisition of OpenRouter. Neither company disclosed the sale price in the confirmation cited by Axios.
+
+OpenRouter's live provider application page still showed the same backlog, technical requirements, and priority language during the same-day check. No provider-rule change is established from the acquisition. Recheck the page before publication.
+
 ### Technical readiness is required before review
 
 The same application page says all providers must meet its technical requirements before they are considered and that applications which do not meet the criteria will not be reviewed. The requirements include an OpenAI-compatible chat endpoint, streaming, usage counts, a model-list endpoint, pricing, automated payment, and a published privacy and retention policy.
