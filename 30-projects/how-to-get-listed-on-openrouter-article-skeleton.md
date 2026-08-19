@@ -111,6 +111,8 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 **Job:** Start serious provider conversations from internal proof while completing the product that OpenRouter can inspect.
 
 - Contact the provider team with the model, the network gap, and the repeatable internal result. State clearly that the public endpoint is still in progress.
+- Cite two named public contacts. [Shashank Goyal](https://www.linkedin.com/in/shashankgoyal1) is publicly identified as OpenRouter's Head of Provider Ecosystem. [Tomas Oliva](https://www.linkedin.com/posts/oliva-tomas_excited-to-share-that-today-marks-my-first-activity-7289788708579405824-tYx7) is publicly identified in provider operations and asked people to notify him when a new model drops.
+- Recheck both roles before publication. Their public roles make them relevant contacts, but they do not guarantee a response or replace the formal provider channel.
 - Ask whether the gap matters and whether provider intake is active. Do not ask for a listing promise before technical review.
 - Run the model on provider-controlled infrastructure.
 - Expose an authenticated public HTTPS endpoint.
@@ -185,11 +187,11 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - Discovery can happen before internal proof. The serious listing pitch begins after Step 2 and continues while the endpoint is built.
 - Send the live endpoint, the exact gap, the price, the benchmark, and a dedicated test key.
 - OpenRouter's job materials confirm that provider messages through X and LinkedIn are real inbound channels.
-- In a 2025 first-day post, Tomas Oliva, then identified publicly in provider operations, asked people to notify him when a new model drops. Recheck his role before publication.
+- Follow up with the same provider-ecosystem and provider-operations contacts named in Step 3. Use new launch evidence rather than repeating the earlier message.
 - Keep the customer-facing launch post clear. Use a reply, direct message, or separate note for the provider pitch when that reads better.
 - Follow up with new evidence, not repeated pressure.
 
-**Correction to preserve:** The new-model quote came from Tomas Oliva, not Shashank Goyal.
+**Attribution rule to preserve:** Shashank Goyal is the provider-ecosystem contact. The public request to report new model drops came from Tomas Oliva.
 
 ### 7. Pass review, then win routed traffic
 
@@ -264,3 +266,4 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - 2026-08-19: Moved the start of serious provider BD to immediately after internal proof. Step 3 now runs BD and the public endpoint build in parallel. Step 6 is the post-application follow-up with live evidence.
 - 2026-08-19: Added Dylan's Wafer-inspired retail pricing ladder to Step 4: temporary flat-rate access, a defined subscription allowance, pay-per-token overage, and a possible full move to pay-per-token pricing. Preserved that the public Wafer record does not prove this exact sequence.
 - 2026-08-19: Removed Wafer attribution from the reader-visible pricing aside. Preserved Wafer only as internal hypothesis provenance.
+- 2026-08-19: Added Shashank Goyal and Tomas Oliva as named public BD contacts in Step 3. Preserved that the new-model notification request came from Tomas, not Shashank, and that the named contacts do not replace the formal application channel.
