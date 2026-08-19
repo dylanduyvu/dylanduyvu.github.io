@@ -8,18 +8,18 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 5:54 PM EDT
+Generated: Aug 19, 2026, 6:31 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 39 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 40 note commits. The most recent movement is:
 
+- Project decision: start OpenRouter BD after internal proof.
 - Insight update: weaken common open-weight OpenRouter listing path.
 - Project decision: add OpenRouter provider article skeleton.
 - Project decision: stop inference radar at potential opportunities.
 - Source capture: record Qwen3.8 27B release date.
 - Insight update: add measured inference provider launch hypothesis.
-- Insight update: correct OpenRouter listing causal claim.
 
 ## Current Hub Signals
 
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 39 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 6:31 PM EDT - project: start OpenRouter BD after internal proof
+
+Project decision: start OpenRouter BD after internal proof.
+
+Changed notes:
+  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 
 ### Aug 19, 2026, 5:54 PM EDT - insight: weaken common open-weight OpenRouter listing path
 
@@ -144,20 +151,11 @@ Changed notes:
   - [[waferpass-anthropic-openclaw-event-timeline-2026-08-19|WaferPass launched soon after an Anthropic access change, but causation is unproven]]
   - [[wafer-ai|Wafer AI]]
 
-### Aug 19, 2026, 1:39 PM EDT - research: clarify retail pass as launch amplifier
-
-research: clarify retail pass as launch amplifier.
-
-Changed notes:
-  - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
-  - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-  - [[inference|Inference]]
-  - [[dylan-capped-retail-pass-gateway-launch-hypothesis-2026-08-19|Dylan: Add a capped retail offer to the paid inference-provider launch]]
-
-_Showing the newest 12 of 27 updates in this window._
+_Showing the newest 12 of 28 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: project: start OpenRouter BD after internal proof - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: insight: weaken common open-weight OpenRouter listing path - [[openrouters-proprietary-model-priority-weakens-the-common-open-weight-provider-path|OpenRouter's proprietary-model priority weakens the common open-weight provider path]]
 - Aug 19, 2026: project: add OpenRouter provider article skeleton - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: research: record OpenRouter model API discovery fields - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
@@ -182,12 +180,12 @@ _Showing the newest 12 of 27 updates in this window._
 - Aug 19, 2026: insight: add measured inference provider launch hypothesis - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 18, 2026: research: confirm OpenRouter listing process remains unpublished - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 18, 2026: research: add Featherless provider onboarding case study - [[a-working-client-integration-does-not-secure-hugging-face-provider-acceptance|A working client integration does not secure Hugging Face provider acceptance]]
-- Aug 18, 2026: insight: correct OpenRouter listing causal claim - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 
-_Showing the newest 25 of 39 updates in this window._
+_Showing the newest 25 of 40 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: project: start OpenRouter BD after internal proof - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: insight: weaken common open-weight OpenRouter listing path - [[openrouters-proprietary-model-priority-weakens-the-common-open-weight-provider-path|OpenRouter's proprietary-model priority weakens the common open-weight provider path]]
 - Aug 19, 2026: project: add OpenRouter provider article skeleton - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: research: record OpenRouter model API discovery fields - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
@@ -212,6 +210,5 @@ _Showing the newest 25 of 39 updates in this window._
 - Aug 19, 2026: insight: add measured inference provider launch hypothesis - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 18, 2026: research: confirm OpenRouter listing process remains unpublished - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 18, 2026: research: add Featherless provider onboarding case study - [[a-working-client-integration-does-not-secure-hugging-face-provider-acceptance|A working client integration does not secure Hugging Face provider acceptance]]
-- Aug 18, 2026: insight: correct OpenRouter listing causal claim - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 
 _Showing the newest 25 of 199 updates in this window._
