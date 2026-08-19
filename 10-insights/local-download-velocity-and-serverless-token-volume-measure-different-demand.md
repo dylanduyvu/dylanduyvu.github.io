@@ -41,7 +41,7 @@ The difference between those signals can reveal a possible distribution gap. A m
 - Treat absence from OpenRouter's daily top 50 as censored demand below the day's cutoff, not as zero.
 - Aggregate quantized and converted repositories under a canonical model while retaining each channel's raw count. Do not sum them as unique users.
 - Use a high-local, low-hosted result as a research trigger. Confirm conversion intent before committing capacity.
-- Combine demand with a scarcity score such as `1 / provider_count`, then apply separate edge-feasibility and unit-economics gates.
+- Combine demand with a scarcity score such as `1 / provider_count`, then flag the result as a potential opportunity. Do not infer hardware fit, an achievable service edge, or positive unit economics from the radar.
 
 ## Counterpoints / Uncertainty
 
@@ -62,3 +62,4 @@ The difference between those signals can reveal a possible distribution gap. A m
 ## Updates
 
 - 2026-08-19: Initial capture from Dylan's proposal to compare local downloads with serverless inference tokens.
+- 2026-08-19: Scope correction. The model-opportunity radar stops at potential-opportunity identification. Hardware fit, achievable differentiation, and unit economics require separate later evidence.

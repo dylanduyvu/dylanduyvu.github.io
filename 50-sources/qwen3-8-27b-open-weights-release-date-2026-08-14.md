@@ -70,7 +70,7 @@ The 2026-08-19 row was partial when checked and is excluded from the complete-da
 
 The page also listed Hermes Agent, pi, Qwen Code, omp, and bcode as its five largest visible public applications. OpenRouter's public application data excludes private and hidden applications.
 
-**Evidence boundary:** This is direct evidence of rapid hosted use on OpenRouter. It does not identify unique users, invoices, provider-level routing share, customer concentration, promotion effects, or whether the launch spike will persist. It also does not prove that a sixth provider can win traffic at a positive margin.
+**Evidence boundary:** This is direct evidence of rapid hosted use on OpenRouter. It does not identify unique users, invoices, provider-level routing share, customer concentration, promotion effects, or whether the launch spike will persist. It supports a potential-opportunity flag, not a claim that our hardware can win traffic or earn a positive margin.
 
 ## Local-Inference Activity Check
 
@@ -85,7 +85,7 @@ An Exa search on 2026-08-19 found a strong local-use signal:
 
 **Source claim:** Dylan reported that Jakub Janiak said many people like to run this model locally. The public local-download activity supports that direction, but it does not identify the users or why they chose local execution.
 
-**Reasonable inference:** High local activity, high early OpenRouter activity, and five visible providers make this a useful demand-adjusted gap candidate. The remaining decision is whether demand persists and whether a new endpoint can beat an important part of the existing price, performance, reliability, privacy, or geography frontier.
+**Reasonable inference:** High local activity, high early OpenRouter activity, and five visible providers make this a useful demand-adjusted gap candidate. Further market research should test demand persistence, supply growth, application mix, and the visible provider frontier. Whether our hardware can compete is a separate question that has not been tested.
 
 ## Primary Sources
 

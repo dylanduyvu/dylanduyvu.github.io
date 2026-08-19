@@ -19,7 +19,7 @@ tags: [hunch, qwen3-8-27b, openrouter, local-inference, provider-gap]
 
 Qwen3.8-27B is a strong candidate for a demand-adjusted OpenRouter gap. It had five visible providers on 2026-08-19, while both local-inference downloads and OpenRouter activity were already high five days after release.
 
-This is a candidate, not yet a build decision. The new OpenRouter activity data resolves the earlier question of whether hosted use exists. It does not show that demand will persist, that traffic is distributed across many paying customers, or that a sixth provider can win routing share.
+This is a potential opportunity, not a build decision. The new OpenRouter activity data resolves the earlier question of whether hosted use exists. It does not show that demand will persist, that traffic is distributed across many paying customers, or that our untested hardware and serving stack can compete.
 
 ## Origin
 
@@ -62,10 +62,9 @@ A hosted version may appeal to users who want the model's capabilities but do no
 1. Record OpenRouter activity, rank, app use, token volume if available, and provider changes each day for one week.
 2. Track LM Studio and the main Hugging Face model and quant repositories as separate activity signals. Do not treat downloads as unique users.
 3. Interview or survey local users about why they run Qwen3.8-27B, what hardware they use, and when they would pay for an API.
-4. Benchmark the intended serving stack against the current visible frontier. A useful offer needs a measurable edge in price, throughput, latency, uptime, tool-call reliability, long-context reliability, privacy, or geography.
-5. Test paid API demand with a small endpoint before making a large capacity commitment.
+4. Record the visible price, throughput, latency, uptime, tool-call reliability, long-context, privacy, and geography frontier without claiming that we can beat it.
 
-Promote this hunch if the activity persists, customer evidence shows paid intent, and a service edge is achievable. Demote it if demand decays after launch or current providers already serve the important workload well.
+Promote this hunch to a potential opportunity if activity persists, customer evidence shows paid intent, and supply remains scarce or incomplete. Demote it if demand decays after launch or the apparent supply gap closes.
 
 ## Screenshot
 
@@ -88,3 +87,7 @@ Initial capture as a medium-confidence opportunity hunch. Local activity is dire
 ### 2026-08-19: OpenRouter activity strengthens the candidate
 
 OpenRouter's public model page showed approximately 24.60 billion prompt-plus-completion tokens and 1.49 million requests for the complete 2026-08-18 UTC day. This replaces the earlier statement that hosted demand was unknown. Durability, customer concentration, provider share, and a defensible new-provider edge remain unverified.
+
+### 2026-08-19: Scope stops before hardware feasibility
+
+The radar can flag Qwen3.8-27B as a potential opportunity from demand, scarcity, and visible provider gaps. It cannot say that our hardware can serve it competitively or that the unit economics work. Those require separate later tests.

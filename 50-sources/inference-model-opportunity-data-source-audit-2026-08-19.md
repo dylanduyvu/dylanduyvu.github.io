@@ -156,16 +156,16 @@ The search found several tools that already cover parts of the proposed radar. T
 
 ### What remains unbuilt
 
-No tool found in this pass combines all of these in one candidate record:
+No tool found in this pass combines all of these in one potential-opportunity record:
 
 1. release timing and prior-family momentum;
 2. OpenRouter demand and application mix;
 3. qualified supply across OpenRouter, Hugging Face, and Vercel;
 4. local download velocity with repository-lineage handling;
-5. a service edge that the provider can realistically beat; and
-6. hardware cost, utilization, and unit economics.
+5. the visible provider frontier and possible market gap; and
+6. evidence confidence and the next research test.
 
-The radar should therefore reuse or validate against existing dashboards where possible. Its unique job is to join model identity across sources, score the gap, preserve measurement limits, and produce the next test.
+The radar should therefore reuse or validate against existing dashboards where possible. Its unique job is to join model identity across sources, score potential gaps, preserve measurement limits, and produce the next research test. It should not match opportunities to our hardware or estimate our unit economics until those capabilities have been proved separately.
 
 ## Measurement Method
 
@@ -226,16 +226,17 @@ Provider count is only the first supply measure. Also record:
 - spread between the best and median latency and throughput; and
 - change in provider count after release.
 
-### Separate opportunity from feasibility
+### Stop at potential opportunity
 
-A useful model-opportunity score needs four separate gates:
+A useful radar needs three market signals:
 
 1. demand;
 2. provider scarcity;
-3. a measurable service edge; and
-4. positive unit economics on available hardware.
+3. an observable gap in the current provider frontier.
 
-The performance edge can be price, time to first token, throughput, uptime, context, tool-call reliability, privacy, or geography. The dashboard should show the edge as a gap to beat, not assume that another provider can achieve it.
+The observable gap can be price, time to first token, throughput, uptime, context, tool-call reliability, privacy, or geography. The dashboard should record the gap without assuming that we can fill it.
+
+Hardware fit, serving-engine performance, achievable differentiation, capacity, and unit economics are separate downstream validation stages. The team has not yet proved those capabilities. They must not be part of the radar score or its opportunity claim.
 
 ## Recommended Dashboard Views
 
@@ -243,7 +244,7 @@ The performance edge can be price, time to first token, throughput, uptime, cont
 2. **Demand-scarcity table:** hosted tokens, local score, provider count, and demand multiplied by scarcity.
 3. **Local versus hosted map:** the four groups above.
 4. **Provider frontier:** price, latency, throughput, uptime, context, tools, privacy, geography, and quantization for each endpoint.
-5. **Opportunity watchlist:** candidates with a written thesis, missing evidence, service edge to beat, hardware estimate, and next test.
+5. **Opportunity watchlist:** candidates with a written thesis, visible provider frontier, possible gap, missing evidence, and next research test.
 
 ## Evidence Boundary
 

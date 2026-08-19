@@ -17,10 +17,9 @@ Build a daily dashboard that identifies open-weight models with:
 
 1. strong current or expected demand;
 2. scarce qualified serverless supply;
-3. a visible service metric that a new provider can beat; and
-4. plausible positive unit economics on available hardware.
+3. a visible market gap in price, performance, reliability, context, tools, privacy, or geography.
 
-The radar should support both day-zero model launches and existing underserved models.
+The radar should support both day-zero model launches and existing underserved models. It should flag potential opportunities. It should not claim that our hardware can serve them, that we can beat an existing provider, or that the opportunity has positive unit economics.
 
 ## Current State
 
@@ -75,10 +74,8 @@ Each opportunity should have:
 
 - one-sentence demand thesis;
 - direct evidence, source claims, inference, and speculation kept separate;
-- service edge to beat;
+- visible provider frontier and possible market gap;
 - intended customer and workload;
-- hardware and serving-engine assumption;
-- estimated gross margin at conservative utilization;
 - missing evidence; and
 - next cheapest test.
 
@@ -96,14 +93,17 @@ Each opportunity should have:
 
 ## Decision Logic
 
-Use four independent gates:
+Use three independent opportunity signals:
 
 1. **Demand:** hosted tokens, local adoption, target-use share, and release momentum.
 2. **Scarcity:** count only providers that meet the target workload's context, reliability, tools, privacy, and geography requirements.
-3. **Edge feasibility:** compare the intended endpoint with the best current provider on one important metric and minimum standards on the rest.
-4. **Economics:** confirm achievable margin and capacity before a public build.
+3. **Visible gap:** record where current supply appears weak or narrow without claiming that we can fill the gap.
 
 Provider count must reduce the opportunity score. Use demand divided by provider count or demand multiplied by `1 / provider_count`. Do not use literal demand multiplied by provider count.
+
+## Scope Boundary
+
+The radar ends with a ranked potential-opportunity list and an evidence record. Hardware fit, serving-engine performance, achievable differentiation, capacity planning, and unit economics are separate downstream work. They should begin only after we have a real serving configuration to test.
 
 ## V0 Scope
 
@@ -127,7 +127,7 @@ The first version should not scrape every gateway or build a universal market es
 - Which local source has the most stable downloadable metric and access method?
 - How should the score handle models outside the daily top 50?
 - Can public app and task-classification data identify coding and agent demand for a specific model?
-- Which hardware-cost source is accurate enough for the first unit-economics gate?
+- What evidence threshold is sufficient to promote a model from watchlist to potential opportunity?
 - Can existing dashboard data be reused legally and reliably, or should it be used only for validation against official sources?
 - How often do unofficial OpenRouter scrapers miss a new model or break when a provider page changes?
 
@@ -137,7 +137,7 @@ The first version should not scrape every gateway or build a universal market es
 - Build a one-day endpoint table for those models and calculate qualified provider count.
 - Map ten models to Hugging Face, LM Studio, and Ollama by hand before automating identity resolution.
 - Test the local-versus-hosted classification on Qwen3.8-27B, Qwen3.6-27B, GLM-5.1, and two weak-demand control models.
-- Define the minimum service edge and economics fields needed before a model becomes a build candidate.
+- Define the evidence fields needed before a model becomes a potential opportunity.
 - Compare the first ranked table with OpenRouter Inference Provider Market Share, CodeSOTA, token.app, and Artificial Analysis. Investigate disagreements instead of averaging them away.
 
 ## Sources
@@ -152,3 +152,7 @@ The first version should not scrape every gateway or build a universal market es
 
 - [[inference|Inference]]
 - [[gpu-finance|GPU Finance]]
+
+## Updates
+
+- 2026-08-19: Scope correction from Dylan. The radar now stops at potential-opportunity identification. Hardware fit, a realizable serving edge, and unit economics are separate later validation stages because the team has not yet proved its hardware or serving performance.
