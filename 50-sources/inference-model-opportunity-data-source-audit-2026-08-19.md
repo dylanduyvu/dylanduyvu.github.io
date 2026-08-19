@@ -72,6 +72,10 @@ These sources help test whether a model's demand matches the intended customer. 
 
 It also supports an RSS response. This makes it suitable for a day-zero release watchlist.
 
+A second live schema check on 2026-08-19 found additional model-list fields and filters. Model records now include `hugging_face_id` and benchmark objects. The request supports `region=eu|us` and minimum or maximum `tool_success_rate` filters. A live Qwen3.8-27B check returned the model without filters and with `min_tool_success_rate=0`, but not with `min_tool_success_rate=1`. Region-filtered Qwen3.8-27B queries returned no row for either US or EU in that check.
+
+These are useful aggregate discovery filters. They do not identify which endpoint or provider meets the region or tool-success condition. `hugging_face_id` is also a discovery claim from OpenRouter, not proof that the repository is official. The radar must check the model lab's official Hugging Face publisher before it uses that repository as the canonical identity.
+
 ### Provider count and endpoint attributes
 
 [The endpoint-list API](https://openrouter.ai/docs/api/api-reference/endpoints/list-endpoints) returns the providers for one model. A direct check for `qwen/qwen3.8-27b` on 2026-08-19 returned five endpoints and these machine-readable fields:
@@ -255,7 +259,12 @@ Hardware fit, serving-engine performance, achievable differentiation, capacity, 
 - Private applications and direct provider traffic are missing.
 - Provider share inside one model is not available in the official public datasets found here. Unofficial dashboards reconstruct it by scraping OpenRouter provider pages, with narrower model-detail coverage and scraper fragility.
 - Tool-call metrics test schema validity, not whether the tool selection was useful or correct.
+- Model-list region and tool-success filters show model-level eligibility only. They cannot produce a qualified provider-organization count.
 - Social attention is an event signal, not paid demand.
+
+## Updates
+
+- 2026-08-19: Added the live model-list schema change. OpenRouter now exposes `hugging_face_id`, benchmark objects, `region`, and `tool_success_rate` filters. This strengthens official-API discovery but does not remove endpoint-level geography, provider identity, or tool-reliability limits.
 
 ## Links
 
