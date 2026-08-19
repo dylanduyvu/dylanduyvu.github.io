@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 11:35 AM EDT
+Generated: Aug 19, 2026, 11:37 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 19 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 20 note commits. The most recent movement is:
 
 - Insight update: add measured inference provider launch hypothesis.
 - Insight update: correct OpenRouter listing causal claim.
@@ -26,6 +26,15 @@ In the past 7 days, the public vault changed through 19 note commits. The most r
 
 ## Past 24 Hours
 
+### Aug 19, 2026, 11:37 AM EDT - research: refine OpenRouter model gap strategy
+
+research: refine OpenRouter model gap strategy.
+
+Changed notes:
+  - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
+  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on OpenRouter business development]]
+  - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]
+
 ### Aug 19, 2026, 11:32 AM EDT - research: refine build-first gateway listing strategy
 
 research: refine build-first gateway listing strategy.
@@ -33,7 +42,7 @@ research: refine build-first gateway listing strategy.
 Changed notes:
   - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
   - [[inference|Inference]]
-  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on gateway business development]]
+  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on OpenRouter business development]]
   - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]
 
 ### Aug 19, 2026, 11:06 AM EDT - insight: add measured inference provider launch hypothesis
@@ -113,6 +122,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Aug 19, 2026: research: refine OpenRouter model gap strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: refine build-first gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: insight: add measured inference provider launch hypothesis - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 18, 2026: research: confirm OpenRouter listing process remains unpublished - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
@@ -135,6 +145,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Aug 19, 2026: research: refine OpenRouter model gap strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: refine build-first gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: insight: add measured inference provider launch hypothesis - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 18, 2026: research: confirm OpenRouter listing process remains unpublished - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
@@ -159,6 +170,5 @@ Changed notes:
 - Aug 10, 2026: project: record final autocomplete expiry repair - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
 - Aug 10, 2026: project: record independent autocomplete runtime crash - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
 - Aug 10, 2026: project: record ingress liveness repair - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
-- Aug 10, 2026: project: log autocomplete lifecycle trial fault - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
 
-_Showing the newest 25 of 195 updates in this window._
+_Showing the newest 25 of 196 updates in this window._
