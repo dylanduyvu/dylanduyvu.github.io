@@ -1,19 +1,20 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-08-18
+updated: 2026-08-19
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 18, 2026, 10:28 PM EDT
+Generated: Aug 19, 2026, 11:07 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 17 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 18 note commits. The most recent movement is:
 
+- Insight update: add measured inference provider launch hypothesis.
 - Insight update: correct OpenRouter listing causal claim.
 - Insight update: define shipping as a live priced inference API.
 - Source capture: capture AI gateway provider case studies.
@@ -24,6 +25,15 @@ In the past 7 days, the public vault changed through 17 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 11:06 AM EDT - insight: add measured inference provider launch hypothesis
+
+Insight update: add measured inference provider launch hypothesis.
+
+Changed notes:
+  - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
+  - [[inference|Inference]]
+  - [[dylan-public-endpoint-paid-launch-gateway-distribution-hypothesis-2026-08-19|Dylan: Build, prove, amplify, apply, and follow up with gateways]]
 
 ### Aug 18, 2026, 10:26 PM EDT - research: confirm OpenRouter listing process remains unpublished
 
@@ -93,6 +103,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Aug 19, 2026: insight: add measured inference provider launch hypothesis - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 18, 2026: research: confirm OpenRouter listing process remains unpublished - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 18, 2026: research: add Featherless provider onboarding case study - [[a-working-client-integration-does-not-secure-hugging-face-provider-acceptance|A working client integration does not secure Hugging Face provider acceptance]]
 - Aug 18, 2026: insight: correct OpenRouter listing causal claim - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
@@ -113,6 +124,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Aug 19, 2026: insight: add measured inference provider launch hypothesis - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 18, 2026: research: confirm OpenRouter listing process remains unpublished - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 18, 2026: research: add Featherless provider onboarding case study - [[a-working-client-integration-does-not-secure-hugging-face-provider-acceptance|A working client integration does not secure Hugging Face provider acceptance]]
 - Aug 18, 2026: insight: correct OpenRouter listing causal claim - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
@@ -137,6 +149,5 @@ Changed notes:
 - Aug 10, 2026: project: record ingress liveness repair - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
 - Aug 10, 2026: project: log autocomplete lifecycle trial fault - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
 - Aug 8, 2026: project: record three-arm replay results - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
-- Aug 8, 2026: project: start full-fidelity autocomplete trial - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
 
 _Showing the newest 25 of 194 updates in this window._
