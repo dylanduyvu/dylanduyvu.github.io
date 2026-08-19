@@ -17,10 +17,14 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - **Format:** A short, chronological operator playbook.
 - **Target length:** 1,200 to 1,800 words. Draft toward 1,500.
 - **Reader promise:** The best available process for selecting a useful model, proving an edge, shipping a review-ready endpoint, applying, and earning routed traffic.
-- **Core thesis:** OpenRouter has a large provider backlog. It currently says it prioritizes providers with proprietary models and also gives priority to providers that fill gaps in its network. An open-weight provider should therefore enter with demand-backed scarce supply and a live, measurable service instead of joining a crowded model price war.
+- **Core thesis:** OpenRouter has a large provider backlog. It currently says it prioritizes providers with proprietary models, meaning models that the provider owns or controls rather than unchanged public weights that many companies can host. It also gives priority to providers that fill gaps in its network. An open-weight provider should therefore enter with demand-backed scarce supply and a live, measurable service instead of joining a crowded model price war.
 
 ## Writing Rules
 
+- Follow the full [[blogpost-drafting-harness|Blogpost Drafting Harness]] for drafting, revision, evidence checks, normal-English checks, and pre-publish review.
+- Use ASD-STE100 Simplified Technical English for all reader-visible prose. Prefer common words, active voice, simple sentence structure, and one main idea per sentence.
+- Use the shortest connective word that states the logical relationship between sentences. Use words such as `but`, `and`, `so`, `because`, `still`, `instead`, `for example`, or `that said` when the relationship is not already clear.
+- Do not stack connective words. Do not begin two sentences in sequence with connective words. Join the second relationship inside the sentence when this reads better.
 - Use normal English. Explain gateway and inference terms on first use.
 - Keep the article practical. Every section must end with an action or decision.
 - State OpenRouter's published requirements and process as facts.
@@ -52,7 +56,8 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 **Job:** Break the belief that the form is the main work.
 
 - OpenRouter has a large provider backlog.
-- It currently says it prioritizes providers with proprietary models. This makes the case harder for a new open-weight provider.
+- It currently says it prioritizes providers with proprietary models. OpenRouter does not define the exact boundary on the application page. In this article, the term means an original model, private fine-tune, or exclusive model that the provider owns or controls. Serving unchanged Qwen, Llama, or GLM weights faster does not make the model proprietary.
+- This priority makes the case harder for a new open-weight provider.
 - A complete application for another crowded endpoint is weak positioning.
 - OpenRouter says it prioritizes providers that fill gaps in its network.
 - The useful question is not, "How do I complete the form?" It is, "What missing supply can I make live and testable?"
@@ -238,3 +243,5 @@ Do not add a second table, a WaferPass sidebar, or a downloadable evidence-packe
 
 - 2026-08-19: Created after Dylan approved a hybrid, 1,200-to-1,800-word, seven-step operator playbook for new inference providers seeking an OpenRouter listing.
 - 2026-08-19: Added OpenRouter's proprietary-model priority, corrected the proposed radar status, separated official application fields from the recommended evidence packet, added quality and tool-call tests, dated the Qwen and Tomas examples, and limited version one to one supporting checklist.
+- 2026-08-19: Made the vault's Blogpost Drafting Harness controlling for the article. Added ASD-STE100 Simplified Technical English and explicit connective-word rules for reader-visible prose.
+- 2026-08-19: Defined `proprietary model` for this article and preserved that OpenRouter does not publish an exact boundary for the term.
