@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-19
 domains: [inference, ai-infrastructure, model-serving, compute-economics]
 projects: []
 tags: [inference, serving, infrastructure, operations, unit-economics]
@@ -18,6 +18,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - **Technical hypothesis:** One July 2026 neocloud snapshot found a narrow range of posted rents after adjustment for nameplate memory bandwidth. This can matter during decode, the stage that generates output tokens, because decode can be limited by data movement from memory. The result is not a universal pricing law or a transaction benchmark.
 - **Working definition:** Shipping an inference model means that it runs on provider hardware behind an authenticated, priced, public-internet API with machine-readable metadata and a published privacy policy. The website is not the product surface.
 - **Belief correction:** Current provider cases support day-0 shipping as a post-listing growth tactic, not as a demonstrated path to approval. The current research found no public first-hand account of how a provider moved from application to OpenRouter acceptance.
+- **Go-to-market hypothesis:** Build a differentiated public endpoint, publish reproducible statistics, amplify the launch with a defined paid X campaign, apply to relevant gateways, and run direct follow-up in one measured window. This can test demand and gateway response, but it is not a verified route to acceptance.
 - **Direct evidence:** Featherless has a public provider-authored implementation trail for Hugging Face Inference Providers. It shows named reviewers, live tests, staging, client integrations, documentation, and a coordinated launch. It does not expose the initial partnership decision. Later working provider integrations show that Hugging Face can stop onboarding at a separate server-side partner-selection gate.
 - **Unverified source claim:** Two Compass reports say inference gateways can turn serving quality into distribution because routing can depend on price, uptime, throughput, and tool-call success. This is a research direction until the claims are checked against primary documentation and live routing data.
 - **Research gap:** The vault is stronger on ownership, demand, contracts, and financing than on serving engines, batching, scheduling, cache management, routing, reliability, and workload-level benchmarks.
@@ -34,6 +35,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[day-zero-shipping-is-evidenced-after-listing-not-as-a-path-to-approval|Day-0 shipping is evidenced after listing, not as a path to approval]]
 - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - [[a-working-client-integration-does-not-secure-hugging-face-provider-acceptance|A working client integration does not secure Hugging Face provider acceptance]]
+- [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 
 ## Active Projects
 
@@ -77,6 +79,7 @@ No inference-only project is active in the current vault record.
 - Ask inference infrastructure and finance leaders for factual receipts on legal ownership, utilization before and after conversion, realized all-in cost, expansion after the first deployment, and remaining burst-cloud share.
 - Verify the OpenRouter provider requirements and routing rules against primary documentation. Then run one live model-gap scan that combines token demand, provider count, price, latency, throughput, uptime, and tool-call success.
 - Run and document a real provider application. Record the channel, contacts, elapsed time, review requests, technical tests, decision, and post-listing traffic as separate evidence.
+- Run one measured provider launch: ship a gap-filling endpoint, publish reproducible statistics, use a defined paid X budget, apply to relevant gateways, and track public traffic, gateway tests, responses, acceptance, and routed traffic as separate outcomes.
 - Before building every gateway integration, confirm that partner intake is open and ask which supply gap the gateway wants. Track partner selection separately from client-code acceptance.
 
 ## Related Areas
