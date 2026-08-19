@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 4:21 PM EDT
+Generated: Aug 19, 2026, 4:55 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 36 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 37 note commits. The most recent movement is:
 
 - Project decision: stop inference radar at potential opportunities.
 - Source capture: record Qwen3.8 27B release date.
@@ -27,6 +27,14 @@ In the past 7 days, the public vault changed through 36 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 4:54 PM EDT - research: record OpenRouter model API discovery fields
+
+research: record OpenRouter model API discovery fields.
+
+Changed notes:
+  - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
+  - [[inference-opportunity-radar-pre-scope-design-audit-2026-08-19|Pre-scope design audit: the automated opportunity radar is buildable through label 3]]
 
 ### Aug 19, 2026, 4:20 PM EDT - research: correct inference opportunity radar evidence gates
 
@@ -148,18 +156,11 @@ Changed notes:
   - [[waferpass-bootstrap-public-evidence-check-2026-08-19|WaferPass bootstrap hypothesis and public evidence check]]
   - [[wafer-ai|Wafer AI]]
 
-### Aug 19, 2026, 12:10 PM EDT - research: capture sent gateway listing strategy
-
-research: capture sent gateway listing strategy.
-
-Changed notes:
-  - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on gateway business development]]
-
 _Showing the newest 12 of 26 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: research: record OpenRouter model API discovery fields - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
 - Aug 19, 2026: research: correct inference opportunity radar evidence gates - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: project: stop inference radar at potential opportunities - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: research: map inference opportunity dashboards - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
@@ -184,12 +185,12 @@ _Showing the newest 12 of 26 updates in this window._
 - Aug 18, 2026: insight: correct OpenRouter listing causal claim - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 18, 2026: insight: define shipping as a live priced inference API - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
 - Aug 18, 2026: source: capture AI gateway provider case studies - [[inference|Inference]]
-- Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
 
-_Showing the newest 25 of 36 updates in this window._
+_Showing the newest 25 of 37 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: research: record OpenRouter model API discovery fields - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
 - Aug 19, 2026: research: correct inference opportunity radar evidence gates - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: project: stop inference radar at potential opportunities - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: research: map inference opportunity dashboards - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
@@ -214,6 +215,5 @@ _Showing the newest 25 of 36 updates in this window._
 - Aug 18, 2026: insight: correct OpenRouter listing causal claim - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 18, 2026: insight: define shipping as a live priced inference API - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
 - Aug 18, 2026: source: capture AI gateway provider case studies - [[inference|Inference]]
-- Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
 
-_Showing the newest 25 of 200 updates in this window._
+_Showing the newest 25 of 199 updates in this window._
