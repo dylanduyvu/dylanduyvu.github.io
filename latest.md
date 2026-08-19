@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 2:33 PM EDT
+Generated: Aug 19, 2026, 2:43 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 32 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 33 note commits. The most recent movement is:
 
 - Source capture: record Qwen3.8 27B release date.
 - Insight update: add measured inference provider launch hypothesis.
@@ -23,9 +23,22 @@ In the past 7 days, the public vault changed through 32 note commits. The most r
 
 ## Current Hub Signals
 
+- [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]: Proposed on 2026-08-19. No dashboard or automated collector has been built.
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 2:43 PM EDT - research: map inference model opportunity data
+
+research: map inference model opportunity data.
+
+Changed notes:
+  - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
+  - [[local-download-velocity-and-serverless-token-volume-measure-different-demand|Local download velocity and serverless token volume measure different demand]]
+  - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
+  - [[inference|Inference]]
+  - [[dave-friedman-hugging-face-downloads-compute-markets-2026-07-09|Dave Friedman: Reading Hugging Face's Download Distribution as a Signal About Compute Markets]]
+  - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
 
 ### Aug 19, 2026, 2:33 PM EDT - research: capture Qwen3.8 local demand signal
 
@@ -132,19 +145,11 @@ Changed notes:
   - [[inference|Inference]]
   - [[inference-gateway-provider-onboarding-models-2026-08-19|Inference gateway provider-onboarding models]]
 
-### Aug 19, 2026, 11:42 AM EDT - research: classify inference gateway onboarding models
-
-research: classify inference gateway onboarding models.
-
-Changed notes:
-  - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
-  - [[inference|Inference]]
-  - [[inference-gateway-provider-onboarding-models-2026-08-19|Inference gateway provider-onboarding models]]
-
-_Showing the newest 12 of 22 updates in this window._
+_Showing the newest 12 of 23 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: research: map inference model opportunity data - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: research: capture Qwen3.8 local demand signal - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: source: record Qwen3.8 27B release date - [[inference|Inference]]
 - Aug 19, 2026: research: document Wafer OpenCode catalog onboarding - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
@@ -169,12 +174,12 @@ _Showing the newest 12 of 22 updates in this window._
 - Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
 - Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: align autocomplete draft formatting and figures - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 17, 2026: publish: finish computer-use article lint pass - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 
-_Showing the newest 25 of 32 updates in this window._
+_Showing the newest 25 of 33 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: research: map inference model opportunity data - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: research: capture Qwen3.8 local demand signal - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: source: record Qwen3.8 27B release date - [[inference|Inference]]
 - Aug 19, 2026: research: document Wafer OpenCode catalog onboarding - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
@@ -199,6 +204,5 @@ _Showing the newest 25 of 32 updates in this window._
 - Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
 - Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: align autocomplete draft formatting and figures - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 17, 2026: publish: finish computer-use article lint pass - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 
-_Showing the newest 25 of 197 updates in this window._
+_Showing the newest 25 of 198 updates in this window._
