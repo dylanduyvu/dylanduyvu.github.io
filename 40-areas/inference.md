@@ -16,6 +16,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - **Source claim:** SemiAnalysis reports that many inference providers prefer contracts of one year or less, while the easiest GPU debt has several years of committed customer payments. This is evidence of a financing mismatch, but it is not a market-wide survey.
 - **Reasonable inference:** Workload shape connects serving technology to business structure. Stable workloads can support dedicated capacity. Variable or pooled workloads can favor cloud or serverless providers. Rental price risk and fleet-utilization risk are separate.
 - **Technical hypothesis:** One July 2026 neocloud snapshot found a narrow range of posted rents after adjustment for nameplate memory bandwidth. This can matter during decode, the stage that generates output tokens, because decode can be limited by data movement from memory. The result is not a universal pricing law or a transaction benchmark.
+- **Working definition:** Shipping an inference model means that it runs on provider hardware behind an authenticated, priced, public-internet API with machine-readable metadata and a published privacy policy. The website is not the product surface.
 - **Unverified source claim:** Two Compass reports say inference gateways can turn serving quality into distribution because routing can depend on price, uptime, throughput, and tool-call success. This is a research direction until the claims are checked against primary documentation and live routing data.
 - **Research gap:** The vault is stronger on ownership, demand, contracts, and financing than on serving engines, batching, scheduling, cache management, routing, reliability, and workload-level benchmarks.
 
@@ -27,6 +28,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[compute-price-futures-do-not-hedge-fleet-utilization-risk|Compute price futures do not hedge fleet utilization risk]]
 - [[cross-generation-gpu-rents-may-track-memory-bandwidth-more-closely-than-flops|Cross-generation GPU rents may track memory bandwidth more closely than FLOPs]]
 - [[funded-inference-platforms-are-traceable-gpu-demand-beacons|Funded inference platforms are traceable GPU-demand beacons]]
+- [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
 
 ## Active Projects
 
