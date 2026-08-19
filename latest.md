@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 1:43 PM EDT
+Generated: Aug 19, 2026, 1:50 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 29 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 30 note commits. The most recent movement is:
 
 - Insight update: add measured inference provider launch hypothesis.
 - Insight update: correct OpenRouter listing causal claim.
@@ -25,6 +25,20 @@ In the past 7 days, the public vault changed through 29 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 1:50 PM EDT - research: document Wafer OpenCode catalog onboarding
+
+research: document Wafer OpenCode catalog onboarding.
+
+Changed notes:
+  - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
+  - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
+  - [[wafer-entered-opencodes-open-provider-catalog-five-days-after-waferpass-launched|Wafer entered OpenCode's open provider catalog five days after WaferPass launched]]
+  - [[inference|Inference]]
+  - [[inference-gateway-provider-onboarding-models-2026-08-19|Inference gateway provider-onboarding models]]
+  - [[modelsdev-wafer-provider-pr-1488-2026-04-20|Models.dev PR 1488 added Wafer to OpenCode's provider catalog]]
+  - [[waferpass-anthropic-openclaw-event-timeline-2026-08-19|WaferPass launched soon after an Anthropic access change, but causation is unproven]]
+  - [[wafer-ai|Wafer AI]]
 
 ### Aug 19, 2026, 1:43 PM EDT - research: expand day-zero into event-zero launches
 
@@ -128,19 +142,11 @@ Changed notes:
   - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on gateway business development]]
   - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]
 
-### Aug 19, 2026, 11:06 AM EDT - insight: add measured inference provider launch hypothesis
-
-Insight update: add measured inference provider launch hypothesis.
-
-Changed notes:
-  - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-  - [[inference|Inference]]
-  - [[dylan-public-endpoint-paid-launch-gateway-distribution-hypothesis-2026-08-19|Dylan: Build, prove, amplify, apply, and follow up with gateways]]
-
-_Showing the newest 12 of 19 updates in this window._
+_Showing the newest 12 of 20 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: research: document Wafer OpenCode catalog onboarding - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
 - Aug 19, 2026: research: expand day-zero into event-zero launches - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: clarify retail pass as launch amplifier - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Aug 19, 2026: research: add capped retail launch strategy - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
@@ -165,12 +171,12 @@ _Showing the newest 12 of 19 updates in this window._
 - Aug 17, 2026: publish: finish computer-use article lint pass - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: refine computer-use autocomplete article - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: revise computer-use autocomplete draft - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 17, 2026: publish: update computer-use autocomplete blog materials - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 
-_Showing the newest 25 of 29 updates in this window._
+_Showing the newest 25 of 30 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: research: document Wafer OpenCode catalog onboarding - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
 - Aug 19, 2026: research: expand day-zero into event-zero launches - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: clarify retail pass as launch amplifier - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Aug 19, 2026: research: add capped retail launch strategy - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
@@ -195,6 +201,5 @@ _Showing the newest 25 of 29 updates in this window._
 - Aug 17, 2026: publish: finish computer-use article lint pass - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: refine computer-use autocomplete article - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: revise computer-use autocomplete draft - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 17, 2026: publish: update computer-use autocomplete blog materials - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 
-_Showing the newest 25 of 198 updates in this window._
+_Showing the newest 25 of 199 updates in this window._
