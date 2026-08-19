@@ -6,7 +6,7 @@ updated: 2026-08-19
 confidence: medium
 domains: [inference, distribution, go-to-market, inference-marketplaces]
 projects: []
-sources: [waferpass-anthropic-openclaw-event-timeline-2026-08-19]
+sources: [waferpass-anthropic-openclaw-event-timeline-2026-08-19, modelsdev-wafer-provider-pr-1488-2026-04-20]
 people: []
 orgs: [wafer-ai, anthropic, openclaw]
 aliases: [event-zero inference launch, market-event provider launch]
@@ -35,6 +35,7 @@ This makes day-zero model releases one event class rather than the full strategy
 
 - **Direct timing evidence:** Anthropic changed the use of Claude subscription limits for third-party harnesses on April 4, 2026. OpenClaw changed new-user onboarding in its April 6 release.
 - **Direct launch evidence:** WaferPass launched on Product Hunt on April 15. It directly targeted OpenClaw and coding-harness users with flat-rate access to optimized open models.
+- **Direct distribution evidence:** A Models.dev contributor opened a Wafer provider entry three days after the public launch, and it merged two days later. This made Wafer configurable in OpenCode, but it was an open Bring Your Own Key catalog integration rather than a curated gateway supply deal.
 - **Correction:** Wafer had an earlier product launch in December 2025. The evidence concerns the launch of WaferPass and Wafer's inference offer, not the start of the company.
 - **Reasonable inference:** The access change made a flat-rate OpenClaw alternative more timely and relevant.
 - **Open speculation:** Wafer intentionally built or timed WaferPass around the Anthropic event, and the event helped Wafer get gateway attention or acceptance.
@@ -45,6 +46,7 @@ This makes day-zero model releases one event class rather than the full strategy
 - The best event has a clear affected user group, urgent demand, a serviceable replacement need, and an edge that can be proved quickly.
 - The offer should name the new gap. A generic benchmark launch will waste the event's concentrated attention.
 - A retail plan can amplify the event response by giving affected users an immediate action and making public demand more visible.
+- Open client catalogs can add fast distribution during the event window. They need a different process from curated gateways and do not guarantee centralized routing demand.
 - The team should prepare compatibility, pricing, benchmark, and launch templates before an event occurs because the useful window can be short.
 
 ## Counterpoints / Uncertainty
@@ -64,6 +66,7 @@ For one event, run the same measured launch funnel used for the current gateway 
 ## Links
 
 - Source: [[waferpass-anthropic-openclaw-event-timeline-2026-08-19|WaferPass launched soon after an Anthropic access change, but causation is unproven]]
+- Client-catalog case: [[wafer-entered-opencodes-open-provider-catalog-five-days-after-waferpass-launched|Wafer entered OpenCode's open provider catalog five days after WaferPass launched]]
 - Launch strategy: [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Retail amplifier: [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Day-zero evidence boundary: [[day-zero-shipping-is-evidenced-after-listing-not-as-a-path-to-approval|Day-0 shipping is evidenced after listing, not as a path to approval]]
@@ -73,3 +76,4 @@ For one event, run the same measured launch funnel used for the current gateway 
 ## Updates
 
 - 2026-08-19: Created from Dylan's proposal to generalize day-zero shipping to any market event that creates a serviceable inference-demand gap. Added the WaferPass and Anthropic/OpenClaw timeline while preserving the missing causal link.
+- 2026-08-19: Added the public OpenCode distribution result. Wafer entered the open Models.dev provider catalog five days after WaferPass launched. Kept it separate from curated gateway acceptance.
