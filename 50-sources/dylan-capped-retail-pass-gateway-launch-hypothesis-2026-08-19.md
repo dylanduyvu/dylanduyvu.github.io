@@ -79,6 +79,20 @@ The retail offer is a demand and operating-proof experiment. It is not evidence 
 
 > yeah it's more of an aside. it's in the same vein as tweeting about your edge and boosting it. this just supercharges that workflow to get the attention of the gateway
 
+## Pricing-Ladder Follow-up
+
+> in step 4 i think we should mention a quick aside on the wafer strategy of going subscription unlimited -> subscription limited token usage -> ppt as people spill over subscription limits -> migrate fully to ppt structure to subsidize early usage and get off the ground
+
+### Evidence Boundary
+
+- **Verified Wafer history:** WaferPass had flat-rate pricing and rolling request caps. Wafer also offered per-token Serverless. Wafer's current site emphasizes per-token and dedicated service.
+- **Not verified as Wafer history:** a literal unlimited first stage, a later change from unlimited to token allowances, automatic pay-per-token overage after the allowance, or a planned full migration caused by this ladder.
+- **Strategy hypothesis:** A new provider can test this staged retail ladder to reduce initial trial friction, collect workload data, and move toward safer metered pricing. The first stage must still have cohort, concurrency, request, context, output, duration, and total-loss controls.
+
+### Durable Delta
+
+The article's launch section should include the ladder as a short Wafer-inspired aside. Spell out `pay per token` before using an abbreviation. Present the ladder as a tactic for subsidizing early trial and reducing risk over time, not as a confirmed account of Wafer's product history.
+
 ## Links
 
 - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]

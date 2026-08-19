@@ -130,7 +130,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ### 4. Launch the service publicly
 
-**Target:** 150 to 190 words.
+**Target:** 220 to 270 words, including the pricing aside.
 
 **Job:** Turn technical readiness into visible proof and measurable demand.
 
@@ -143,6 +143,16 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - Keep retail traffic separate from gateway test traffic.
 
 **Evidence boundary:** Public launch and paid reach can produce attention and demand evidence. They are not established causes of provider acceptance.
+
+**Quick aside: A Wafer-inspired pricing ladder**
+
+- Present this as a provider tactic to test, not as Wafer's verified chronology.
+- Start with a small, time-limited flat-rate cohort. A temporary unlimited-token offer can reduce trial friction, but its terms must state the limits on cohort size, request rate, concurrency, context, output length, campaign duration, and total loss.
+- Move to a subscription with a defined token allowance when usage data shows the workload shape.
+- Charge per token when subscribers use more than the included allowance. Write `pay per token` on first use instead of `PPT`.
+- If metered demand becomes the stronger product, make pay-per-token pricing the default and retire the subscription.
+- The economic purpose is to subsidize early trial, create demand and operating data, and then reduce open-ended usage risk as the provider grows.
+- The verified Wafer record is narrower. WaferPass used flat-rate pricing with rolling request caps, Wafer also offered per-token Serverless, and its current site emphasizes per-token service. The public evidence does not prove the unlimited stage, the overage step, or the reason for the final product shift.
 
 ### 5. Submit the OpenRouter application
 
@@ -214,8 +224,9 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 ## V1 Supporting Element
 
 - Include one compact seven-step checklist at the end.
+- Include the short Wafer-inspired pricing ladder inside Step 4. Do not turn it into a full case-study sidebar.
 
-Do not add a second table, a WaferPass sidebar, or a downloadable evidence-packet template in version one. These can become separate follow-up material.
+Do not add a second table, a separate WaferPass sidebar, or a downloadable evidence-packet template in version one. These can become separate follow-up material.
 
 ## Main Evidence Set
 
@@ -238,7 +249,7 @@ Do not add a second table, a WaferPass sidebar, or a downloadable evidence-packe
 - Final title and subtitle.
 - Whether the opening should name the application backlog in its first sentence.
 - Whether to keep the dated Qwen3.8-27B example after its provider supply is checked again.
-- Whether WaferPass earns one sentence in the event-zero subsection. Do not add a sidebar in version one.
+- Exact compression of the Wafer-inspired pricing ladder inside Step 4.
 - Whether to include the paid-promotion tactic in the title or only in step four.
 - Final wording of the required evidence note.
 
@@ -250,3 +261,4 @@ Do not add a second table, a WaferPass sidebar, or a downloadable evidence-packe
 - 2026-08-19: Defined `proprietary model` for this article and preserved that OpenRouter does not publish an exact boundary for the term.
 - 2026-08-19: Replaced the detailed proprietary-model explanation with Dylan's approved one-sentence bridge into the network-gap playbook.
 - 2026-08-19: Moved the start of serious provider BD to immediately after internal proof. Step 3 now runs BD and the public endpoint build in parallel. Step 6 is the post-application follow-up with live evidence.
+- 2026-08-19: Added Dylan's Wafer-inspired retail pricing ladder to Step 4: temporary flat-rate access, a defined subscription allowance, pay-per-token overage, and a possible full move to pay-per-token pricing. Preserved that the public Wafer record does not prove this exact sequence.

@@ -5,7 +5,7 @@ created: 2026-08-19
 updated: 2026-08-19
 confidence: medium
 domains: [inference, inference-marketplaces, distribution, compute-economics]
-projects: []
+projects: [how-to-get-listed-on-openrouter-article-skeleton]
 sources: [dylan-capped-retail-pass-gateway-launch-hypothesis-2026-08-19, waferpass-bootstrap-public-evidence-check-2026-08-19]
 people: []
 orgs: [wafer-ai, openrouter]
@@ -20,6 +20,8 @@ tags: [retail-pass, paid-launch, subscriptions, demand-proof, provider-listing]
 A new inference provider can attach a limited, capped self-serve plan to its public endpoint launch. This is an optional amplifier inside the promoted-launch step, not a separate gateway-listing strategy. It gives retail developers a direct action after they see the promoted post and converts some attention into API use, revenue, workload data, and operating evidence.
 
 The provider can use the added public activity to make the same performance edge more visible and to give gateway teams more reasons to inspect the endpoint. This attention effect remains a hypothesis. The pass should be a controlled launch experiment, not an unlimited promise or an assumed permanent business model. Start with a small cohort. Increase paid distribution only after the service stays reliable and the measured GPU cost fits inside the plan economics.
+
+A more aggressive pricing ladder can start with a small, time-limited flat-rate cohort, move to a subscription with an included token allowance, charge per token for use above the allowance, and later make pay-per-token service the default. This is a Wafer-inspired strategy hypothesis. The current public evidence does not show that Wafer followed this exact sequence.
 
 ## Why It Matters
 
@@ -45,6 +47,8 @@ This strengthens the public-launch step in the build, prove, launch, apply, and 
 6. Stop or tighten the plan if reliability falls, queue time rises, the loss limit is reached, or a small group of heavy users dominates cost.
 7. Increase the paid X budget only after the canary shows acceptable reliability, activation, repeat use, and unit economics.
 8. Compare the capped plan with prepaid credits or a temporary credit match. The simpler offer can produce the same demand signal with less open-ended cost risk.
+9. If the flat-rate canary works, test a defined subscription allowance with pay-per-token overage. Compare activation, repeat use, gross margin, and churn with the flat-rate cohort.
+10. Make pay-per-token pricing the default only if metered users retain and the change improves reliability or unit economics without destroying demand.
 
 ## Implications
 
@@ -52,6 +56,7 @@ This strengthens the public-launch step in the build, prove, launch, apply, and 
 - Flat-rate pricing can reduce buyer hesitation, but quotas and admission control must bound the provider's exposure.
 - Prepaid credits may be a safer first offer than a subscription because the maximum liability is explicit.
 - Retail traffic can validate operations and reveal workload shape even if the final business moves to per-token or gateway distribution.
+- A staged subscription-to-metered ladder can subsidize early trial and then reduce open-ended cost risk as real usage data arrives.
 - Retail traction must be reported separately from gateway test traffic and gateway acceptance.
 
 ## Counterpoints / Uncertainty
@@ -62,6 +67,7 @@ This strengthens the public-launch step in the build, prove, launch, apply, and 
 - Wafer's reason for ending WaferPass is not confirmed by a first-party source in the current research.
 - A subscription can become a separate product and support burden that distracts from provider integration.
 - The strongest first test can be prepaid launch credits rather than a recurring pass.
+- Users can react badly if the provider markets unlimited use and later adds limits. State that the launch terms are temporary, and define the change conditions before the test begins.
 
 ## Links
 
@@ -74,3 +80,4 @@ This strengthens the public-launch step in the build, prove, launch, apply, and 
 
 - 2026-08-19: Created from Dylan's proposal to add a WaferPass-style retail offer to the paid provider launch. Added canary, cost, reliability, abuse, and measurement gates.
 - 2026-08-19: Clarified that the offer is an optional amplifier inside the promoted-launch step. Its intended purpose is to increase public activity around the provider's edge and attract gateway attention, not to form a separate listing strategy.
+- 2026-08-19: Added a Wafer-inspired pricing-ladder hypothesis: a time-limited flat-rate cohort, a subscription allowance, pay-per-token overage, and a possible full move to metered service. Preserved that the public evidence does not verify this as Wafer's exact chronology.
