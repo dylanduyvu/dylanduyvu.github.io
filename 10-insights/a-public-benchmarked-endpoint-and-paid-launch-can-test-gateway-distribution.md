@@ -58,6 +58,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - Publish the model ID, base URL, price, context limits, privacy policy, uptime, time to first token, output speed, test method, hardware, region, and available capacity.
 - Use an authenticated endpoint. Give each gateway a separate test key so its requests can be measured without exposing the service.
 - Use one tracked launch URL. Record organic and paid impressions, link visits, API-key requests, successful calls, repeat users, spend, and cost per qualified tester.
+- Optionally attach a capped retail plan or prepaid-credit offer to the launch. Test it with a small cohort first. Increase paid distribution only after activation, repeat use, reliability, and unit economics are acceptable. Keep retail and gateway review traffic separate.
 - For gateways with a formal provider application, submit from the same evidence packet. Where no public application exists, use the documented partnership or provider-ecosystem contact. Record the channel, named contacts, response time, review requests, test traffic, decision, and stated reason.
 - Keep public traffic, gateway test traffic, gateway acceptance, and post-listing routed traffic as separate outcomes. Do not claim that paid reach caused approval without direct evidence.
 
@@ -89,6 +90,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - Readiness definition: [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
 - Evidence boundary: [[day-zero-shipping-is-evidenced-after-listing-not-as-a-path-to-approval|Day-0 shipping is evidenced after listing, not as a path to approval]]
 - Research gap: [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
+- Retail launch layer: [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Area: [[inference|Inference]]
 
 ## Updates
@@ -99,3 +101,4 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - 2026-08-19: Generalized the action sequence to centrally curated inference gateways. Made formal applications conditional on a gateway having that channel. Kept OpenRouter's network-gap priority as OpenRouter-specific evidence.
 - 2026-08-19: Corrected the business-development sequence. Serious outreach now starts after repeatable internal proof, not before technical feasibility is known. It can still run while the public review-ready endpoint is completed.
 - 2026-08-19: Captured the version Dylan sent. Added demand-adjusted provider scarcity, geography as a possible edge, and selective gateway mentions outside the main launch post. Preserved maximum paid boosting as an unverified tactic.
+- 2026-08-19: Added an optional capped retail or prepaid-credit offer to convert paid launch attention into measurable demand. Required a canary and separate gateway review traffic before increasing paid distribution.

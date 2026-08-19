@@ -39,6 +39,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
 - [[waferpass-pooled-capped-subscription-demand-with-elastic-gpu-rentals-but-its-listing-role-is-unproven|WaferPass pooled capped subscription demand with elastic GPU rentals, but its listing role is unproven]]
+- [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 
 ## Active Projects
 
@@ -87,6 +88,7 @@ No inference-only project is active in the current vault record.
 - Verify the OpenRouter provider requirements and routing rules against primary documentation. Then run one live model-gap scan that combines token demand, provider count, price, latency, throughput, uptime, and tool-call success.
 - Run and document a real provider application. Record the channel, contacts, elapsed time, review requests, technical tests, decision, and post-listing traffic as separate evidence.
 - Run one measured provider launch: ship a gap-filling endpoint, publish reproducible statistics, use a defined paid X budget, apply to relevant gateways, and track public traffic, gateway tests, responses, acceptance, and routed traffic as separate outcomes.
+- Test a capped self-serve plan or prepaid-credit offer on a small retail cohort before the paid launch. Measure activation, repeat use, workload shape, GPU-hours, gross margin, reliability, and support cost. Keep gateway test traffic separate.
 - Do not gate the generic review-ready endpoint on pre-approval. During the build, confirm partner intake and the target gap. Gate gateway-specific work and large capacity commitments on stronger demand or partner evidence.
 - Classify each target gateway before outreach. Record whether it is centrally curated or customer-configured. For centrally curated gateways, record whether provider intake is public or private.
 - Reconstruct Wafer's timeline from WaferPass launch through OpenRouter listing. Ask Wafer for subscriber usage distribution, request-cap logic, spot-versus-dedicated capacity, gross-margin history, and what evidence OpenRouter reviewed.
