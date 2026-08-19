@@ -32,7 +32,7 @@ The difference between those signals can reveal a possible distribution gap. A m
 - LM Studio and Ollama display downloads or pulls for local model packages.
 - Hugging Face defines downloads as qualifying file requests, not unique users or model executions. GGUF requests can double count a full repository download.
 - OpenRouter states that different upstream tokenizers limit direct token comparisons across models.
-- The Qwen3.8-27B case showed the usefulness of both signals: high local download activity and only five visible OpenRouter providers five days after release. Paid hosted demand remained unknown.
+- The Qwen3.8-27B case showed the usefulness of both signals: high local download activity, substantial OpenRouter activity on 2026-08-18, and five visible providers in one 2026-08-19 snapshot. The earlier claim that hosted demand remained unknown is superseded. Durability, customer concentration, provider share, and unmet demand remain unknown.
 
 ## Implications
 
@@ -41,7 +41,7 @@ The difference between those signals can reveal a possible distribution gap. A m
 - Treat absence from OpenRouter's daily top 50 as censored demand below the day's cutoff, not as zero.
 - Aggregate quantized and converted repositories under a canonical model while retaining each channel's raw count. Do not sum them as unique users.
 - Use a high-local, low-hosted result as a research trigger. Confirm conversion intent before committing capacity.
-- Combine demand with a scarcity score such as `1 / provider_count`, then flag the result as a potential opportunity. Do not infer hardware fit, an achievable service edge, or positive unit economics from the radar.
+- Combine demand with qualified provider-organization count only after a named workload profile exists. Treat raw provider count as a descriptive signal, not proof of scarcity. Do not infer hardware fit, an achievable service edge, or positive unit economics from the radar.
 
 ## Counterpoints / Uncertainty
 
@@ -63,3 +63,4 @@ The difference between those signals can reveal a possible distribution gap. A m
 
 - 2026-08-19: Initial capture from Dylan's proposal to compare local downloads with serverless inference tokens.
 - 2026-08-19: Scope correction. The model-opportunity radar stops at potential-opportunity identification. Hardware fit, achievable differentiation, and unit economics require separate later evidence.
+- 2026-08-19: SUPERSEDED the earlier statement that Qwen3.8-27B hosted demand was unknown. Later captured model-page evidence showed approximately 24.60 billion tokens and 1.49 million requests for the complete 2026-08-18 UTC day. This proves realized OpenRouter activity, not durable or unmet demand.

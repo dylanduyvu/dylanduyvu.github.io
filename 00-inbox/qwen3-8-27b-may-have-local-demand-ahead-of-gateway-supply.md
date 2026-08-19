@@ -17,7 +17,7 @@ tags: [hunch, qwen3-8-27b, openrouter, local-inference, provider-gap]
 
 ## Claim
 
-Qwen3.8-27B is a strong candidate for a demand-adjusted OpenRouter gap. It had five visible providers on 2026-08-19, while both local-inference downloads and OpenRouter activity were already high five days after release.
+Qwen3.8-27B is a strong candidate for a demand-adjusted OpenRouter gap. A preserved 2:28 PM snapshot showed five providers on 2026-08-19, and a later same-day live page showed six. Both local-inference downloads and OpenRouter activity were already high five days after release.
 
 This is a potential opportunity, not a build decision. The new OpenRouter activity data resolves the earlier question of whether hosted use exists. It does not show that demand will persist, that traffic is distributed across many paying customers, or that our untested hardware and serving stack can compete.
 
@@ -45,14 +45,14 @@ Jakub Janiak told Dylan that Qwen3.8-27B is a model that many people like to run
 
 ## Reasonable Inference
 
-The combination of high local activity, rapid OpenRouter token growth, and only five visible providers makes Qwen3.8-27B more interesting than a model selected by provider count alone. Local activity shows that users are willing to install, quantize, and configure the model. OpenRouter activity shows that substantial hosted use also exists.
+The combination of high local activity and rapid OpenRouter token growth makes Qwen3.8-27B worth a qualified-supply test. The raw provider count changed within the day and does not prove scarcity. Local activity shows that users are willing to install, quantize, and configure the model. OpenRouter activity shows that substantial hosted use also exists.
 
 A hosted version may appeal to users who want the model's capabilities but do not want local memory limits, setup work, continuous uptime, high concurrency, or long-context operating costs. That conversion is plausible, not verified.
 
 ## Counterpoints / Uncertainty
 
 - Local users may choose the model because they value privacy, ownership, or zero marginal token cost. Those users may not convert to a paid API.
-- Five providers may be normal for a model that is only five days old. Provider supply can increase quickly.
+- Raw listed supply increased from five to six providers within the day. This shows why a point-in-time provider count cannot establish persistent or qualified scarcity.
 - Existing supply is not weak on every visible measure. Venice showed 126 output tokens per second at $0.45 input and $3.20 output per million tokens. A sixth provider needs a clear edge.
 - Aggregate OpenRouter activity does not show provider market share, customer concentration, gross margin, queueing, long-context reliability, or unmet geography.
 - Download totals across repositories must not be added as if they were unique users.
@@ -91,3 +91,7 @@ OpenRouter's public model page showed approximately 24.60 billion prompt-plus-co
 ### 2026-08-19: Scope stops before hardware feasibility
 
 The radar can flag Qwen3.8-27B as a potential opportunity from demand, scarcity, and visible provider gaps. It cannot say that our hardware can serve it competitively or that the unit economics work. Those require separate later tests.
+
+### 2026-08-19: Raw provider count no longer proves scarcity
+
+A later same-day OpenRouter page check showed six providers, up from five in Dylan's preserved screenshot. This strengthens the need for dated supply snapshots. The candidate now requires a named workload profile and qualified provider-organization count before the radar can claim scarce supply.

@@ -25,7 +25,7 @@ The radar should support both day-zero model launches and existing underserved m
 
 Proposed on 2026-08-19. No dashboard or automated collector has been built.
 
-The public-data audit found enough information for a useful first version. OpenRouter supplies daily top-model token totals and endpoint-level provider information. Hugging Face, LM Studio, and Ollama provide local-adoption signals. Artificial Analysis provides independent benchmark, price, and performance data.
+The public-data audit found enough information for a useful first version. OpenRouter supplies daily top-model token totals, exact filtered totals for context buckets and tool-calling requests, estimated weekly category totals, and endpoint-level provider information. Hugging Face, LM Studio, and Ollama provide local-adoption signals. Artificial Analysis provides independent benchmark, price, and performance data.
 
 OpenRouter is sufficient as the primary hosted-demand surface for a version-zero tool focused on winning an OpenRouter listing. It is not a total-market measure. All usage fields must retain the `OpenRouter` label, and broader conclusions need local signals and cross-gateway supply checks.
 
@@ -44,6 +44,8 @@ The dashboard search also found that much of the general charting layer already 
 ### Demand and Scarcity
 
 - OpenRouter tokens over one, three, seven, and 30 days;
+- context-bucket demand for 1K, 10K, 100K, 1M, and 10M requests;
+- tool-calling demand and labeled estimated programming demand;
 - local-adoption percentile;
 - qualified provider count;
 - demand multiplied by a scarcity score; and
@@ -99,20 +101,24 @@ Use three independent opportunity signals:
 2. **Scarcity:** count only providers that meet the target workload's context, reliability, tools, privacy, and geography requirements.
 3. **Visible gap:** record where current supply appears weak or narrow without claiming that we can fill the gap.
 
-Provider count must reduce the opportunity score. Use demand divided by provider count or demand multiplied by `1 / provider_count`. Do not use literal demand multiplied by provider count.
+Use two lanes. The **launch lane** uses expected demand, earlier-family demand, release attention, and day-zero supply. It can reach L1 or provisional L2 before history exists. The **structural-gap lane** uses observed demand, a named workload, supply history, attribute-specific demand where available, and public friction evidence. It can reach L3.
+
+Do not use one universal workload profile. A provider qualifies only against written requirements that come from observed demand, a named customer need, or an explicit research hypothesis. Store quantization and Auto Exacto evidence as facts, not universal pass-or-fail rules.
+
+Use qualified provider-organization count for a named workload profile, not raw endpoint count. Within a comparable profile, more qualified supply should reduce priority. If no profile exists, show raw endpoint and provider counts as descriptive facts only. Do not use raw provider count as proof of scarcity.
 
 ## Scope Boundary
 
-The radar ends with a ranked potential-opportunity list and an evidence record. Hardware fit, serving-engine performance, achievable differentiation, capacity planning, and unit economics are separate downstream work. They should begin only after we have a real serving configuration to test.
+The automated radar ends with a ranked potential-opportunity list at L3 and an evidence record. L4, confirmed underserved, requires a manual gateway, customer, or provider evidence record. Hardware fit, serving-engine performance, achievable differentiation, capacity planning, and unit economics are separate downstream work. They should begin only after we have a real serving configuration to test.
 
 ## V0 Scope
 
 Start with OpenRouter as the hosted-demand spine and text-generation models only. This scope is enough to choose an OpenRouter listing target. It is not enough to estimate total inference demand.
 
-1. Take a daily snapshot of the top-50 token dataset.
+1. Take a daily snapshot of the top-50 token dataset for total traffic, each context bucket, tool-calling traffic, and labeled estimated programming traffic.
 2. Take a daily snapshot of the model list and endpoint list.
 3. Map the top open-weight models to Hugging Face repositories and local-tool pages.
-4. Calculate release age, token velocity, local-download velocity, qualified provider count, and frontier gaps.
+4. Calculate release age, token velocity, attribute-specific demand where observable, local-download velocity, qualified provider count for named profiles, and frontier gaps.
 5. Produce one ranked table and one local-versus-hosted quadrant.
 6. Compare results with existing OpenRouter, Hugging Face, and performance dashboards.
 7. Manually review the top ten candidates before any build decision.
@@ -127,6 +133,7 @@ The first version should not scrape every gateway or build a universal market es
 - Which local source has the most stable downloadable metric and access method?
 - How should the score handle models outside the daily top 50?
 - Can public app and task-classification data identify coding and agent demand for a specific model?
+- How much useful model coverage remains after each context-bucket and tool-calling query applies its own top-50 cutoff?
 - What evidence threshold is sufficient to promote a model from watchlist to potential opportunity?
 - Can existing dashboard data be reused legally and reliably, or should it be used only for validation against official sources?
 - How often do unofficial OpenRouter scrapers miss a new model or break when a provider page changes?
@@ -134,7 +141,9 @@ The first version should not scrape every gateway or build a universal market es
 ## Next Tests
 
 - Pull 30 days of OpenRouter daily rankings and determine how many open-weight models appear.
+- Pull the same period for each context bucket, tool-calling traffic, programming category, and programming language. Record where top-50 censoring prevents a model result.
 - Build a one-day endpoint table for those models and calculate qualified provider count.
+- Complete one end-to-end candidate record for Qwen3.8-27B and one low-demand control before the database fields and promotion rules are frozen.
 - Map ten models to Hugging Face, LM Studio, and Ollama by hand before automating identity resolution.
 - Test the local-versus-hosted classification on Qwen3.8-27B, Qwen3.6-27B, GLM-5.1, and two weak-demand control models.
 - Define the evidence fields needed before a model becomes a potential opportunity.
@@ -143,6 +152,7 @@ The first version should not scrape every gateway or build a universal market es
 ## Sources
 
 - [[inference-model-opportunity-data-source-audit-2026-08-19|Inference model opportunity data-source audit]]
+- [[inference-opportunity-radar-pre-scope-design-audit-2026-08-19|Pre-scope design audit: evidence gates, data feasibility, and V0 scope]]
 - [[local-download-velocity-and-serverless-token-volume-measure-different-demand|Local download velocity and serverless token volume measure different demand]]
 - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]
 - [[dave-friedman-hugging-face-downloads-compute-markets-2026-07-09|Dave Friedman: Hugging Face downloads and compute markets]]
@@ -156,3 +166,4 @@ The first version should not scrape every gateway or build a universal market es
 ## Updates
 
 - 2026-08-19: Scope correction from Dylan. The radar now stops at potential-opportunity identification. Hardware fit, a realizable serving edge, and unit economics are separate later validation stages because the team has not yet proved its hardware or serving performance.
+- 2026-08-19: Pre-scope design audit completed and corrected. Verdict: build the collection spine now and cap automated labels at potential opportunity (L3). Missing official endpoint history is a cold-start limit, not a blocker. OpenRouter's current rankings API partly measures attribute demand through exact context-bucket and tool-calling filters plus sampled weekly categories. Universal workload thresholds were removed. L4 remains a manual BD or customer outcome. The Datasets endpoints are licensed CC BY 4.0 with a required citation string. See [[inference-opportunity-radar-pre-scope-design-audit-2026-08-19|the pre-scope design audit]] for the evidence gates, data limits, and week-1 tests.

@@ -33,7 +33,7 @@ The repository itself existed before this model release and contains news for se
 
 ## Action Relevance
 
-On 2026-08-19, the release was five days old. It was therefore a current candidate for the event-zero provider test: measure demand, provider count, gateway coverage, price, latency, throughput, context limits, uptime, and tool-call reliability before deciding whether a service gap exists.
+On 2026-08-19, the release was five days old. It was therefore a current candidate for the event-zero provider test: measure demand, dated endpoint and provider counts, qualified supply for a named workload, gateway coverage, price, latency, throughput, context limits, uptime, and tool-call reliability before deciding whether a service gap exists.
 
 ## OpenRouter Supply Snapshot
 
@@ -85,7 +85,7 @@ An Exa search on 2026-08-19 found a strong local-use signal:
 
 **Source claim:** Dylan reported that Jakub Janiak said many people like to run this model locally. The public local-download activity supports that direction, but it does not identify the users or why they chose local execution.
 
-**Reasonable inference:** High local activity, high early OpenRouter activity, and five visible providers make this a useful demand-adjusted gap candidate. Further market research should test demand persistence, supply growth, application mix, and the visible provider frontier. Whether our hardware can compete is a separate question that has not been tested.
+**Reasonable inference:** High local activity and high early OpenRouter activity make this a useful demand-adjusted gap candidate. The preserved screenshot showed five providers, while a later same-day live page showed six. Raw provider count does not prove scarce qualified supply. Further market research should test demand persistence, supply growth, application mix, and the qualified provider frontier for a named workload. Whether our hardware can compete is a separate question that has not been tested.
 
 ## Primary Sources
 
