@@ -43,6 +43,7 @@ No inference-only project is active in the current vault record.
 - [[ccir-gpu-compute-credit-research-audit-2026-07-22|CCIR GPU compute-credit research audit]]: pricing, contract-rollover, utilization, and collateral evidence.
 - [[compass-openrouter-and-ai-gateway-channel-playbooks-2026-08-18|Compass OpenRouter and AI gateway channel playbooks]]: raw automated research on provider channels, market gaps, and demand discovery. Not independently verified.
 - [[compass-openrouter-inference-provider-listing-guide-2026-08-18|Compass OpenRouter inference-provider listing guide]]: raw automated research on onboarding, routing, metrics, and channel economics. Not independently verified.
+- [[compass-ai-gateway-provider-listing-case-studies-2026-08-18|Compass AI gateway provider-listing case studies]]: raw automated case-study research on day-0 launches, pricing, compliance, and human review. Most metrics are provider self-reports and are not independently verified.
 
 ## Open Questions
 
