@@ -4,7 +4,7 @@ status: active
 created: 2026-08-18
 updated: 2026-08-19
 domains: [inference, ai-infrastructure, model-serving, compute-economics]
-projects: []
+projects: [inference-model-opportunity-radar]
 tags: [inference, serving, infrastructure, operations, unit-economics]
 ---
 
@@ -46,10 +46,13 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
 - [[wafer-entered-opencodes-open-provider-catalog-five-days-after-waferpass-launched|Wafer entered OpenCode's open provider catalog five days after WaferPass launched]]
 - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
+- [[local-download-velocity-and-serverless-token-volume-measure-different-demand|Local download velocity and serverless token volume measure different demand]]
 
 ## Active Projects
 
-No inference-only project is active in the current vault record.
+No inference-only build project is active in the current vault record.
+
+- **Proposed:** [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] would combine OpenRouter token demand and endpoint supply with Hugging Face, LM Studio, and Ollama local-adoption signals. It is specified but not built.
 
 - **Candidate, not started:** [[gpu-configuration-demand-gate|GPU configuration demand gate]] tests whether a small GPU server has enough workload-specific demand and conservative net economics to justify a purchase. The last update kept a no-buy result valid and did not record branch selection.
 
@@ -72,6 +75,7 @@ No inference-only project is active in the current vault record.
 - [[waferpass-anthropic-openclaw-event-timeline-2026-08-19|WaferPass and the Anthropic/OpenClaw event timeline]]: the close launch timing, direct user targeting, correction to the company-start claim, and missing evidence of causation.
 - [[modelsdev-wafer-provider-pr-1488-2026-04-20|Models.dev Wafer provider pull request]]: exact models, limits, endpoint metadata, contributor interaction, five-day launch-to-merge timing, and the boundary between client catalogs and curated gateways.
 - [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B open-weight release record]]: official confirmation that the model weights became available on Hugging Face Hub and ModelScope on 2026-08-14.
+- [[inference-model-opportunity-data-source-audit-2026-08-19|Inference model opportunity data-source audit]]: official public sources for model tokens, provider supply, serving performance, local downloads, and their measurement limits.
 
 ## Open Questions
 
@@ -104,6 +108,7 @@ No inference-only project is active in the current vault record.
 - Classify each target gateway before outreach. Record whether it is centrally curated or customer-configured. For centrally curated gateways, record whether provider intake is public or private.
 - Reconstruct Wafer's timeline from WaferPass launch through OpenRouter listing. Ask Wafer for subscriber usage distribution, request-cap logic, spot-versus-dedicated capacity, gross-margin history, and what evidence OpenRouter reviewed.
 - Continue the Qwen3.8-27B gap scan. Local download activity and a five-provider OpenRouter snapshot support further testing. Now measure OpenRouter activity, paid API intent, provider changes, tool-call success, and whether a new endpoint can beat the visible price, throughput, latency, uptime, long-context, privacy, or geography frontier.
+- Test the proposed model-opportunity radar with a 30-day OpenRouter token pull, daily endpoint snapshots, and manual local-source mapping for ten models. Use age-adjusted ranks instead of a raw downloads-to-tokens ratio.
 
 ## Related Areas
 

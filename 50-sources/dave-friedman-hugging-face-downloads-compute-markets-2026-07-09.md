@@ -2,10 +2,10 @@
 type: source
 status: captured
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-08-19
 source_date: 2026-07-09
 source_type: article
-projects: [gpu-residual-value-pricing, gpu-compute-derivatives]
+projects: [gpu-residual-value-pricing, gpu-compute-derivatives, inference-model-opportunity-radar]
 domains: [gpu-finance, ai-infrastructure, demand-structure]
 people: [dave-friedman]
 orgs: []
@@ -60,3 +60,10 @@ The data shows a POWER LAW: smooth monotonic decay, no bimodality, no hollow mid
 - Areas: [[gpu-finance|GPU Finance]]
 - People: [[dave-friedman|Dave Friedman]]
 - Related Insights: [[gpu-lending-has-a-tenor-mismatch-inference-rents-short-debt-runs-long|Tenor mismatch]], [[a-gpu-has-three-obsolescence-curves-not-one|Three obsolescence curves]], [[compute-derivatives-need-vintage-curves-not-a-generic-benchmark|Vintage curves]]
+- Follow-up: [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
+
+## Updates
+
+### 2026-08-19
+
+OpenRouter now publishes a daily top-50 model dataset with total inference tokens. This supplies a direct hosted-demand signal that the July download analysis lacked. Combining age-adjusted local-download ranks with OpenRouter token ranks can test local-first, hosted-first, and hybrid demand. The measurements remain different units and should not be divided into a literal conversion rate.

@@ -72,6 +72,8 @@ Promote this hunch if OpenRouter activity or direct user evidence shows paid API
 ## Links
 
 - [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B release and market snapshot]]
+- [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
+- [[local-download-velocity-and-serverless-token-volume-measure-different-demand|Local download velocity and serverless token volume measure different demand]]
 - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - [[inference|Inference]]
 
