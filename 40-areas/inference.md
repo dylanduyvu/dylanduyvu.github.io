@@ -38,6 +38,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[a-working-client-integration-does-not-secure-hugging-face-provider-acceptance|A working client integration does not secure Hugging Face provider acceptance]]
 - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
+- [[waferpass-pooled-capped-subscription-demand-with-elastic-gpu-rentals-but-its-listing-role-is-unproven|WaferPass pooled capped subscription demand with elastic GPU rentals, but its listing role is unproven]]
 
 ## Active Projects
 
@@ -60,6 +61,7 @@ No inference-only project is active in the current vault record.
 - [[featherless-reached-hugging-face-through-a-coordinated-provider-integration|Featherless provider-onboarding case study]]: synthesis of the public chronology, named people, supported edge tactics, and claims that remain unproven.
 - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]: current official evidence on gap priority, technical readiness, post-listing routing, social inbound, provider roles, and the remaining causal gaps.
 - [[inference-gateway-provider-onboarding-models-2026-08-19|Inference gateway provider-onboarding models]]: comparison of centrally curated and customer-configured gateways, including public and private intake subtypes.
+- [[waferpass-bootstrap-public-evidence-check-2026-08-19|WaferPass bootstrap hypothesis and public evidence check]]: public plan terms, elastic-capacity structure, current OpenRouter listing, and the missing causal link between subscription demand and provider acceptance.
 
 ## Open Questions
 
@@ -73,6 +75,7 @@ No inference-only project is active in the current vault record.
 - Can an inference gateway supply enough durable demand and margin for a new provider after price competition, routing rules, and channel dependence?
 - What actually happens between an OpenRouter provider application and acceptance, rejection, or silence?
 - Which partner-selection factors matter before a gateway enables the provider server-side, and which are only implementation requirements after acceptance?
+- Did WaferPass subscription traffic create operating proof or demand history that helped Wafer become a gateway provider, and why did Wafer later stop promoting the Pass?
 
 ## Next Tests
 
@@ -86,6 +89,7 @@ No inference-only project is active in the current vault record.
 - Run one measured provider launch: ship a gap-filling endpoint, publish reproducible statistics, use a defined paid X budget, apply to relevant gateways, and track public traffic, gateway tests, responses, acceptance, and routed traffic as separate outcomes.
 - Do not gate the generic review-ready endpoint on pre-approval. During the build, confirm partner intake and the target gap. Gate gateway-specific work and large capacity commitments on stronger demand or partner evidence.
 - Classify each target gateway before outreach. Record whether it is centrally curated or customer-configured. For centrally curated gateways, record whether provider intake is public or private.
+- Reconstruct Wafer's timeline from WaferPass launch through OpenRouter listing. Ask Wafer for subscriber usage distribution, request-cap logic, spot-versus-dedicated capacity, gross-margin history, and what evidence OpenRouter reviewed.
 
 ## Related Areas
 
