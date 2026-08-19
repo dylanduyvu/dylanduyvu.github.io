@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 2:05 PM EDT
+Generated: Aug 19, 2026, 2:33 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 31 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 32 note commits. The most recent movement is:
 
 - Source capture: record Qwen3.8 27B release date.
 - Insight update: add measured inference provider launch hypothesis.
@@ -26,6 +26,15 @@ In the past 7 days, the public vault changed through 31 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 2:33 PM EDT - research: capture Qwen3.8 local demand signal
+
+research: capture Qwen3.8 local demand signal.
+
+Changed notes:
+  - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
+  - [[inference|Inference]]
+  - [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B open weights released on August 14, 2026]]
 
 ### Aug 19, 2026, 2:02 PM EDT - source: record Qwen3.8 27B release date
 
@@ -132,19 +141,11 @@ Changed notes:
   - [[inference|Inference]]
   - [[inference-gateway-provider-onboarding-models-2026-08-19|Inference gateway provider-onboarding models]]
 
-### Aug 19, 2026, 11:37 AM EDT - research: refine OpenRouter model gap strategy
-
-research: refine OpenRouter model gap strategy.
-
-Changed notes:
-  - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on gateway business development]]
-  - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]
-
-_Showing the newest 12 of 21 updates in this window._
+_Showing the newest 12 of 22 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: research: capture Qwen3.8 local demand signal - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: source: record Qwen3.8 27B release date - [[inference|Inference]]
 - Aug 19, 2026: research: document Wafer OpenCode catalog onboarding - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
 - Aug 19, 2026: research: expand day-zero into event-zero launches - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
@@ -169,12 +170,12 @@ _Showing the newest 12 of 21 updates in this window._
 - Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: align autocomplete draft formatting and figures - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: finish computer-use article lint pass - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 17, 2026: publish: refine computer-use autocomplete article - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 
-_Showing the newest 25 of 31 updates in this window._
+_Showing the newest 25 of 32 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: research: capture Qwen3.8 local demand signal - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: source: record Qwen3.8 27B release date - [[inference|Inference]]
 - Aug 19, 2026: research: document Wafer OpenCode catalog onboarding - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
 - Aug 19, 2026: research: expand day-zero into event-zero launches - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
@@ -199,6 +200,5 @@ _Showing the newest 25 of 31 updates in this window._
 - Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: align autocomplete draft formatting and figures - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 17, 2026: publish: finish computer-use article lint pass - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 17, 2026: publish: refine computer-use autocomplete article - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 
-_Showing the newest 25 of 198 updates in this window._
+_Showing the newest 25 of 197 updates in this window._
