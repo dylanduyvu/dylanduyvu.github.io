@@ -19,7 +19,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - **Working definition:** Shipping an inference model means that it runs on provider hardware behind an authenticated, priced, public-internet API with machine-readable metadata and a published privacy policy. The website is not the product surface.
 - **Belief correction:** Current provider cases support day-0 shipping as a post-listing growth tactic, not as a demonstrated path to approval. The current research found no public first-hand account of how a provider moved from application to OpenRouter acceptance.
 - **Go-to-market synthesis:** OpenRouter requires technical readiness before it reviews an application and says it prioritizes providers that fill network gaps. The best current action is to select a demand-backed gap, build the minimum review-ready endpoint, and run launch, application, and business development in parallel. Day-zero acceptance and paid-launch effects remain unproven.
-- **Gateway taxonomy:** The full build, launch, apply, and business-development playbook transfers to curated supply marketplaces such as OpenRouter and, with different implementation work, Hugging Face Inference Providers. Customer-configured gateways such as Cloudflare and Portkey have no central listing gate; the provider must win customers instead.
+- **Gateway taxonomy:** There are two main types. Centrally curated gateways select providers through public or private intake; this includes OpenRouter, Hugging Face, Vercel, and Requesty. Customer-configured gateways such as Cloudflare and Portkey have no central listing gate; the provider must win customers instead.
 - **Direct evidence:** Featherless has a public provider-authored implementation trail for Hugging Face Inference Providers. It shows named reviewers, live tests, staging, client integrations, documentation, and a coordinated launch. It does not expose the initial partnership decision. Later working provider integrations show that Hugging Face can stop onboarding at a separate server-side partner-selection gate.
 - **Unverified source claim:** Two Compass reports say inference gateways can turn serving quality into distribution because routing can depend on price, uptime, throughput, and tool-call success. This is a research direction until the claims are checked against primary documentation and live routing data.
 - **Research gap:** The vault is stronger on ownership, demand, contracts, and financing than on serving engines, batching, scheduling, cache management, routing, reliability, and workload-level benchmarks.
@@ -59,7 +59,7 @@ No inference-only project is active in the current vault record.
 - [[exa-featherless-hugging-face-provider-onboarding-audit-2026-08-18|Featherless Hugging Face provider-onboarding audit]]: primary provider and gateway records for code review, staging, documentation, launch, failed comparators, and the remaining private approval gap.
 - [[featherless-reached-hugging-face-through-a-coordinated-provider-integration|Featherless provider-onboarding case study]]: synthesis of the public chronology, named people, supported edge tactics, and claims that remain unproven.
 - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]: current official evidence on gap priority, technical readiness, post-listing routing, social inbound, provider roles, and the remaining causal gaps.
-- [[inference-gateway-provider-onboarding-models-2026-08-19|Inference gateway provider-onboarding models]]: comparison of curated marketplaces, partner catalogs, and customer-configured gateways.
+- [[inference-gateway-provider-onboarding-models-2026-08-19|Inference gateway provider-onboarding models]]: comparison of centrally curated and customer-configured gateways, including public and private intake subtypes.
 
 ## Open Questions
 
@@ -85,7 +85,7 @@ No inference-only project is active in the current vault record.
 - Run and document a real provider application. Record the channel, contacts, elapsed time, review requests, technical tests, decision, and post-listing traffic as separate evidence.
 - Run one measured provider launch: ship a gap-filling endpoint, publish reproducible statistics, use a defined paid X budget, apply to relevant gateways, and track public traffic, gateway tests, responses, acceptance, and routed traffic as separate outcomes.
 - Do not gate the generic review-ready endpoint on pre-approval. During the build, confirm partner intake and the target gap. Gate gateway-specific work and large capacity commitments on stronger demand or partner evidence.
-- Classify each target gateway before outreach. Record whether it selects supply, runs a private partner catalog, or only lets customers configure custom endpoints.
+- Classify each target gateway before outreach. Record whether it is centrally curated or customer-configured. For centrally curated gateways, record whether provider intake is public or private.
 
 ## Related Areas
 

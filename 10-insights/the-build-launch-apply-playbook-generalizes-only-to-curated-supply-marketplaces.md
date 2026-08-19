@@ -25,11 +25,12 @@ For customer-configured gateways, there is no central provider listing to win. T
 
 “AI gateway” describes different businesses. Treating all of them as marketplaces can waste time on applications that do not exist and can mistake technical compatibility for distribution.
 
-The classification changes the go-to-market target:
+There are two main categories. The classification changes the go-to-market target:
 
-- curated marketplace: win provider selection and routing;
-- curated partner catalog: win a partnership and integration;
+- centrally curated gateway: win provider selection, integration, and routing;
 - customer-configured gateway: win end customers who bring the endpoint into their own gateway.
+
+Public application and private partner-led intake are two onboarding methods inside the centrally curated category. They are not separate gateway types.
 
 ## Evidence
 
@@ -37,14 +38,14 @@ The classification changes the go-to-market target:
 - **Direct evidence:** Hugging Face publishes a provider-registration process with task APIs, client pull requests, model mapping, billing, server-side enablement, documentation, and communication.
 - **Direct evidence:** Cloudflare and Portkey allow customers to configure custom HTTPS or privately hosted provider endpoints.
 - **Scoped search result:** Current Vercel and Requesty documentation explains customer access to approved provider catalogs. The search found no public provider application for entering those central catalogs.
-- **Reasonable inference:** A review-ready endpoint and direct business development transfer across curated marketplaces and partner catalogs, but each gateway needs its own selection evidence.
+- **Reasonable inference:** A review-ready endpoint and direct business development transfer across centrally curated gateways, but each gateway needs its own selection evidence and intake method.
 
 ## Implications
 
 - Classify the gateway before building gateway-specific work.
 - Do not assume that OpenRouter's network-gap priority applies to another gateway without a direct source.
 - For Hugging Face, plan for client integrations, billing, server-side enablement, organization requirements, documentation, and launch work in addition to the endpoint.
-- For Vercel or another private partner catalog, lead with the endpoint and user value, but expect a partnership path rather than a public form.
+- For Vercel or another centrally curated gateway with private intake, lead with the endpoint and user value, but expect a partnership path rather than a public form.
 - For Cloudflare, Portkey, LiteLLM, and similar configurable gateways, publish setup guides and sell to customers. Gateway-team approval is not the bottleneck.
 - Count routed marketplace demand separately from technical availability through a custom-provider feature.
 
@@ -65,3 +66,4 @@ The classification changes the go-to-market target:
 ## Updates
 
 - 2026-08-19: Created after classifying OpenRouter, Hugging Face, Vercel, Requesty, Cloudflare, and Portkey by provider-onboarding model.
+- 2026-08-19: Corrected the taxonomy from three main types to two. Private partner catalogs are centrally curated gateways with private intake, not a separate type.
