@@ -124,7 +124,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - Meet OpenRouter's current payment and operating requirements.
 - Confirm reliability before the launch window.
 
-**What can wait:** self-serve signup, a full dashboard, payment pages for retail users, and a large marketing site.
+**What can wait:** self-serve signup, a full customer account and billing dashboard, payment pages for retail users, and a large marketing site. The public live performance dashboard in Step 4 cannot wait for the launch.
 
 **Core line:** The endpoint is the application. The website supports trust and policy disclosure.
 
@@ -132,12 +132,16 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ### 4. Launch the service publicly
 
-**Target:** 220 to 270 words, including the pricing aside.
+**Target:** 260 to 320 words, including the performance dashboard and pricing aside.
 
 **Job:** Turn technical readiness into visible proof and measurable demand.
 
 - Announce the model, base URL, price, context limits, region, privacy terms, and available capacity.
 - Publish a reproducible benchmark method with time to first token, output speed, uptime, error rate, and the workload used.
+- Give users a public live performance dashboard and link it from the launch post, API documentation, and gateway evidence packet.
+- Show current service status, rolling uptime, error rate, median and 95th-percentile time to first token, and output tokens per second. Use clear one-hour, 24-hour, and seven-day windows.
+- State whether each metric comes from production traffic or a synthetic probe. Show the model version, region, measurement method, and last update time.
+- Do not expose prompts, customer data, gateway-specific traffic, credentials, or security-sensitive infrastructure details.
 - State the gap that the service fills.
 - Give testers a direct action. This can be API access, prepaid credit, or a small capped retail plan.
 - Use a defined X promotion budget. Track organic and paid impressions, link visits, key requests, successful calls, repeat use, spend, and cost per qualified tester.
@@ -267,3 +271,4 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - 2026-08-19: Added Dylan's Wafer-inspired retail pricing ladder to Step 4: temporary flat-rate access, a defined subscription allowance, pay-per-token overage, and a possible full move to pay-per-token pricing. Preserved that the public Wafer record does not prove this exact sequence.
 - 2026-08-19: Removed Wafer attribution from the reader-visible pricing aside. Preserved Wafer only as internal hypothesis provenance.
 - 2026-08-19: Added Shashank Goyal and Tomas Oliva as named public BD contacts in Step 3. Preserved that the new-model notification request came from Tomas, not Shashank, and that the named contacts do not replace the formal application channel.
+- 2026-08-19: Made a public live performance dashboard part of the launch package. Defined the minimum live metrics and separated it from the full customer account dashboard that can wait.

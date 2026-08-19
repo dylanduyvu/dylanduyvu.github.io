@@ -24,6 +24,16 @@ tags: [provider-listing, public-launch, paid-distribution, gateway-applications,
 - **Reasonable inference:** A coordinated launch can make the provider easier to inspect and can create public attention, test traffic, and a clearer business-development packet.
 - **Open speculation:** Paid reach, public tagging, or launch traffic may improve gateway response or acceptance. No evidence currently shows that causal effect.
 
+## Public Dashboard Follow-up
+
+> for the go public you should give users a public live performance dashboard
+
+### Durable Delta
+
+The public launch package should include a live performance dashboard, not only a static benchmark. At minimum, it should show service status, rolling uptime, error rate, median and 95th-percentile time to first token, output tokens per second, measurement windows, metric source, model version, region, method, and last update time.
+
+The dashboard should separate production measurements from synthetic probes. It must not expose prompts, customer data, gateway-specific traffic, credentials, or security-sensitive infrastructure details. Its purpose is to give users and gateway reviewers current operating evidence. It does not prove that the dashboard improves listing odds.
+
 ## Promoted Insight
 
 - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]

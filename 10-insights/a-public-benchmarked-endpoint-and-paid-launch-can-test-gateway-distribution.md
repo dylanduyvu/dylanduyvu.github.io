@@ -55,7 +55,8 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - Do not use provider count alone. It measures supply, not demand. Rank candidates by demand adjusted for provider scarcity, measurable edge, margin, and available capacity. If a numerical screen is useful, use demand divided by provider count or demand multiplied by a scarcity score. Literal provider count multiplied by demand points in the wrong direction because it rewards crowded models.
 - Check price and time to first token first. If those metrics are already saturated, test throughput, context length, uptime, tool-call reliability, region, privacy, or another supported capability. The endpoint needs one important, reproducible edge. It does not need to lead every metric.
 - Set an internal acceptance gate before serious outreach. Require a working private endpoint or test harness, repeated benchmark results on relevant hardware, plausible unit economics, and a model-license check. Record the test method and failure conditions.
-- Publish the model ID, base URL, price, context limits, privacy policy, uptime, time to first token, output speed, test method, hardware, region, and available capacity.
+- Publish the model ID, base URL, price, context limits, privacy policy, hardware, region, and available capacity. Provide a public live performance dashboard with current status, rolling uptime, error rate, median and 95th-percentile time to first token, output speed, measurement windows, metric source, model version, method, and last update time.
+- Separate production measurements from synthetic probes. Do not expose prompts, customer data, gateway-specific traffic, credentials, or security-sensitive infrastructure details.
 - Use an authenticated endpoint. Give each gateway a separate test key so its requests can be measured without exposing the service.
 - Use one tracked launch URL. Record organic and paid impressions, link visits, API-key requests, successful calls, repeat users, spend, and cost per qualified tester.
 - As an optional launch amplifier, attach a capped retail plan or prepaid-credit offer. Its purpose is to turn more of the promoted attention into visible activity around the provider's edge. Test it with a small cohort first. Increase paid distribution only after activation, repeat use, reliability, and unit economics are acceptable. Keep retail and gateway review traffic separate.
@@ -67,6 +68,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - A strong edge should map to a visible gateway supply gap, not only to a provider benchmark.
 - Gap-filling is a selection strategy. It does not remove later price competition. Once several providers serve the model, routing can again favor price, uptime, latency, throughput, and tool success.
 - The launch post should point to a callable product and reproducible evidence, not only to a throughput chart.
+- The launch post, API documentation, and gateway evidence packet should link to the same live performance dashboard so users and reviewers see current operating evidence.
 - The main launch post does not need to mention a gateway. A separate reply, direct message, or application can carry the targeted provider pitch without weakening the customer-facing announcement.
 - Paid distribution is useful only if it produces qualified testers, customer demand, or gateway attention at an acceptable cost.
 - A rejection or no response still produces useful evidence if the full sequence and funnel are recorded.
@@ -77,6 +79,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - Paid impressions can create attention without qualified demand.
 - A gateway may treat public tagging as useful proof, irrelevant marketing, or unwanted pressure.
 - Self-reported statistics can be discounted unless the method is reproducible and the endpoint performs under real traffic.
+- A live dashboard can still mislead if it mixes synthetic probes with production traffic, hides failed requests, uses unclear windows, or changes its method without notice.
 - Applying to every gateway can create shallow integrations. The provider should first confirm that each gateway is accepting partners and that the endpoint fills a relevant gap.
 - Discovery conversations can happen before internal proof, but the team should not pitch an unproven performance edge as deliverable. Serious provider-listing outreach should follow the internal acceptance gate.
 - A day-zero launch can force the team to serve an unfamiliar model before its kernels, tokenizer, license, reliability, and real demand are understood.
@@ -105,3 +108,4 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - 2026-08-19: Added an optional capped retail or prepaid-credit offer to convert paid launch attention into measurable demand. Required a canary and separate gateway review traffic before increasing paid distribution.
 - 2026-08-19: Clarified that the retail offer is an optional amplifier within the public-launch step, not a separate listing strategy. Gateway attention remains an unverified effect.
 - 2026-08-19: Expanded day-zero model service into an event-zero gap-selection arm for market events that create urgent unmet inference demand.
+- 2026-08-19: Added Dylan's requirement for a public live performance dashboard during launch. Defined minimum metrics, measurement labels, privacy limits, and common ways a dashboard can mislead.
