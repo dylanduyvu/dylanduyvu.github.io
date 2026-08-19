@@ -8,12 +8,13 @@ updated: 2026-08-18
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 18, 2026, 9:19 PM EDT
+Generated: Aug 18, 2026, 9:31 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 13 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 14 note commits. The most recent movement is:
 
+- Insight update: define shipping as a live priced inference API.
 - Source capture: capture AI gateway provider case studies.
 - Source capture: capture OpenRouter provider research.
 
@@ -22,6 +23,15 @@ In the past 7 days, the public vault changed through 13 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 18, 2026, 9:31 PM EDT - insight: define shipping as a live priced inference API
+
+Insight update: define shipping as a live priced inference API.
+
+Changed notes:
+  - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
+  - [[inference|Inference]]
+  - [[dylan-shipping-an-inference-model-means-a-live-priced-api-2026-08-18|Dylan: Shipping an inference model means a live priced API]]
 
 ### Aug 18, 2026, 9:19 PM EDT - source: capture AI gateway provider case studies
 
@@ -49,6 +59,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Aug 18, 2026: insight: define shipping as a live priced inference API - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
 - Aug 18, 2026: source: capture AI gateway provider case studies - [[inference|Inference]]
 - Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
 - Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
@@ -65,6 +76,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Aug 18, 2026: insight: define shipping as a live priced inference API - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
 - Aug 18, 2026: source: capture AI gateway provider case studies - [[inference|Inference]]
 - Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
 - Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
@@ -89,6 +101,5 @@ Changed notes:
 - Aug 8, 2026: project: record full-fidelity qualification result - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
 - Aug 7, 2026: project: record restored direct runtime - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 - Aug 7, 2026: project: audit autocomplete packet fidelity - [[codex-thread-list-recency-reveals-desktop-originated-task-activity|Codex thread-list recency reveals desktop-originated task activity]]
-- Aug 7, 2026: project: park supervisor migration at platform boundary - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 
-_Showing the newest 25 of 190 updates in this window._
+_Showing the newest 25 of 191 updates in this window._
