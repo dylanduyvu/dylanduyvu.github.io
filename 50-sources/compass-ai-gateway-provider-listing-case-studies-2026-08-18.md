@@ -1,6 +1,6 @@
 ---
 type: source
-status: raw
+status: contested
 created: 2026-08-18
 updated: 2026-08-18
 source_date: 2026-08-18
@@ -15,6 +15,9 @@ tags: [openrouter, ai-gateways, provider-listing, case-studies, day-zero-serving
 
 > [!warning] Evidence status
 > This note preserves a Compass-generated research artifact. It combines official process claims, provider self-reports, marketing claims, and automated synthesis. Its citations and time-sensitive figures have not been independently verified. Do not treat them as verified evidence until they are checked against the original sources.
+
+> [!danger] 2026-08-18 causal correction
+> The central claim that day-0 shipping is an application hook is unsupported by the cited cases. The cases show day-0 shipping after providers were already listed or had launch access. The official process and the post-listing growth evidence survive. The pre-listing approval mechanism remains unknown. The original report is preserved below for belief history.
 
 # How Inference Providers Get Listed on AI Gateways: First-Hand Case Studies
 
@@ -177,3 +180,7 @@ Benchmarks that would change the plan: if OpenRouter's backlog message stops "pr
 - Telnyx's evidence stops at the readiness stage. There is no public confirmation that it went live on OpenRouter.
 - **Wafer AI** (wafer.ai; also branded Herdora; San Francisco; about $4M raised; founded 2025) is an inference-optimization company that runs "Wafer Pass" endpoints and is integrated into third-party gateways such as TrueFoundry. It has published nothing first-hand about getting listed on OpenRouter or Hugging Face Inference Providers. This is an explicit dead end.
 - Dead ends (searched, no first-hand listing account found): Wafer AI; Targon/Manifold (listing mechanics); Requesty, Poe, Cloudflare Workers AI, and Vercel AI Gateway (from the provider side); DeepInfra; Hyperbolic and Nebius (beyond the batch blog); Atlas Cloud; NextBit; kluster.ai; Enfer; Ubicloud; Phala; Crusoe; Venice AI; Lambda; CentML; Avian; Mancer; Infermatic; AI Horde; Mokzu; and gcube-ai. These providers exist and are listed on gateways, but did not publish a first-person account of how they got listed.
+
+## Updates
+
+- 2026-08-18: Marked the report contested after a causal audit. The provider cases support day-0 shipping as a post-listing growth tactic, not as a demonstrated path to approval. The report's own caveats show that the approval mechanics were not public. See [[dylan-openrouter-listing-case-study-causal-audit-2026-08-18|the correction source]], [[day-zero-shipping-is-evidenced-after-listing-not-as-a-path-to-approval|the corrected day-0 claim]], and [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|the public-record gap]].

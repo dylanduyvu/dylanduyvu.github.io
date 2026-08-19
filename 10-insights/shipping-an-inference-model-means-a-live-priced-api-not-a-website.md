@@ -31,7 +31,7 @@ The minimum package is:
 
 ## Why It Matters
 
-This definition turns a vague website task into a provider-readiness test. Before gateway listing, the live endpoint can make the application concrete because a reviewer can test the model, price, latency, and throughput. After listing, a new model can become a capacity deployment plus a change to the provider's model manifest.
+This definition turns a vague website task into a provider-readiness test. A live endpoint makes an application testable because a reviewer can inspect the model, price, latency, and throughput. The current evidence does not show that this readiness causes acceptance. After listing, a new model can become a capacity deployment plus a change to the provider's model manifest.
 
 It also separates two actions:
 
@@ -43,16 +43,18 @@ The first is the operating product. The second is marketing.
 ## Evidence
 
 - **Direct decision record:** Dylan defined this minimum package in the 2026-08-18 chat capture and said that serving without a price is a demo, while serving with a price is shipping.
-- **Source support, not independently verified:** The captured Compass reports describe OpenRouter's API, model metadata, privacy, invoicing, test-traffic, and model-staging requirements. They also describe day-0 launch cases from provider self-reports.
+- **Official-process support, not independently rechecked:** The captured Compass reports describe OpenRouter's API, model metadata, privacy, invoicing, and test-traffic requirements.
+- **Counterevidence:** The provider cases describe day-0 launches after listing. They do not publish the application channel, approval timeline, or decision mechanism. They cannot show that a live endpoint caused acceptance.
 
 ## Implications
 
 - Do not make self-serve signup, dashboards, payment pages, or a large marketing site prerequisites for the first provider test.
 - Treat the privacy and data-retention page as the minimum website surface.
 - Give reviewers and testers scoped API keys. Never expose an unauthenticated endpoint.
-- Before listing, use a live model endpoint as the application proof.
+- Before listing, treat a live gap-filling endpoint as the best available application hypothesis, not a proven approval tactic.
 - After listing, pre-stage model metadata and capacity, then change readiness at launch only when the gateway process permits it.
 - Test demand and economics with a real price, not only a technical demo.
+- If the hypothesis is tested, document the full application process so the result does not inherit the same evidence gap.
 
 ## Counterpoints / Uncertainty
 
@@ -66,8 +68,11 @@ The first is the operating product. The second is marketing.
 - Source: [[dylan-shipping-an-inference-model-means-a-live-priced-api-2026-08-18|Dylan: Shipping an inference model means a live priced API]]
 - Related source: [[compass-openrouter-inference-provider-listing-guide-2026-08-18|Compass OpenRouter inference-provider listing guide]]
 - Related source: [[compass-ai-gateway-provider-listing-case-studies-2026-08-18|Compass AI gateway provider-listing case studies]]
+- Correction source: [[dylan-openrouter-listing-case-study-causal-audit-2026-08-18|Dylan: The OpenRouter case studies do not support the pre-listing causal claim]]
+- Related insight: [[day-zero-shipping-is-evidenced-after-listing-not-as-a-path-to-approval|Day-0 shipping is evidenced after listing, not as a path to approval]]
 - Area: [[inference|Inference]]
 
 ## Updates
 
 - 2026-08-18: Created from Dylan's explicit definition of shipping for an inference provider. Kept current OpenRouter process claims at medium confidence because the supporting automated research is not independently verified.
+- 2026-08-18: Corrected the pre-listing scope. A live priced endpoint remains the shipping definition and a reasonable application hypothesis. The case studies do not show that it causes provider approval.

@@ -1,6 +1,6 @@
 ---
 type: source
-status: captured
+status: contested
 created: 2026-08-18
 updated: 2026-08-18
 source_date: 2026-08-18
@@ -12,6 +12,9 @@ tags: [shipping, provider-readiness, openai-compatible-api, pricing, distributio
 ---
 
 # Dylan: Shipping an inference model means a live priced API
+
+> [!warning] 2026-08-18 scope correction
+> The product definition survives: shipping means a live, authenticated, priced API. The pre-listing causal claim does not. The current case studies show day-0 shipping after listing, not that a live endpoint caused acceptance. The original text is preserved below for belief history.
 
 ## Context
 
@@ -43,3 +46,7 @@ The public announcement (the LinkedIn post, the throughput chart) is a separate,
 - [[compass-openrouter-inference-provider-listing-guide-2026-08-18|Compass OpenRouter inference-provider listing guide]]
 - [[compass-ai-gateway-provider-listing-case-studies-2026-08-18|Compass AI gateway provider-listing case studies]]
 - [[inference|Inference]]
+
+## Updates
+
+- 2026-08-18: Marked the pre-listing application claim contested. “Ship a gap-filling model, then apply” remains a hypothesis based on OpenRouter's stated gap priority, not a result established by the provider case studies. See [[dylan-openrouter-listing-case-study-causal-audit-2026-08-18|the correction source]].
