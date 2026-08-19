@@ -8,12 +8,13 @@ updated: 2026-08-18
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 18, 2026, 9:31 PM EDT
+Generated: Aug 18, 2026, 9:58 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 14 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 15 note commits. The most recent movement is:
 
+- Insight update: correct OpenRouter listing causal claim.
 - Insight update: define shipping as a live priced inference API.
 - Source capture: capture AI gateway provider case studies.
 - Source capture: capture OpenRouter provider research.
@@ -23,6 +24,19 @@ In the past 7 days, the public vault changed through 14 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 18, 2026, 9:57 PM EDT - insight: correct OpenRouter listing causal claim
+
+Insight update: correct OpenRouter listing causal claim.
+
+Changed notes:
+  - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
+  - [[day-zero-shipping-is-evidenced-after-listing-not-as-a-path-to-approval|Day-0 shipping is evidenced after listing, not as a path to approval]]
+  - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
+  - [[inference|Inference]]
+  - [[compass-ai-gateway-provider-listing-case-studies-2026-08-18|How Inference Providers Get Listed on AI Gateways: First-Hand Case Studies]]
+  - [[dylan-openrouter-listing-case-study-causal-audit-2026-08-18|Dylan: The OpenRouter case studies do not support the pre-listing causal claim]]
+  - [[dylan-shipping-an-inference-model-means-a-live-priced-api-2026-08-18|Dylan: Shipping an inference model means a live priced API]]
 
 ### Aug 18, 2026, 9:31 PM EDT - insight: define shipping as a live priced inference API
 
@@ -59,6 +73,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Aug 18, 2026: insight: correct OpenRouter listing causal claim - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 18, 2026: insight: define shipping as a live priced inference API - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
 - Aug 18, 2026: source: capture AI gateway provider case studies - [[inference|Inference]]
 - Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
@@ -76,6 +91,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Aug 18, 2026: insight: correct OpenRouter listing causal claim - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 18, 2026: insight: define shipping as a live priced inference API - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
 - Aug 18, 2026: source: capture AI gateway provider case studies - [[inference|Inference]]
 - Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
@@ -100,6 +116,5 @@ Changed notes:
 - Aug 8, 2026: project: start full-fidelity autocomplete trial - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
 - Aug 8, 2026: project: record full-fidelity qualification result - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
 - Aug 7, 2026: project: record restored direct runtime - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
-- Aug 7, 2026: project: audit autocomplete packet fidelity - [[codex-thread-list-recency-reveals-desktop-originated-task-activity|Codex thread-list recency reveals desktop-originated task activity]]
 
-_Showing the newest 25 of 191 updates in this window._
+_Showing the newest 25 of 192 updates in this window._
