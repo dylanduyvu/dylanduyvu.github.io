@@ -55,7 +55,8 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - Do not use provider count alone. It measures supply, not demand. Rank candidates by demand adjusted for provider scarcity, measurable edge, margin, and available capacity. If a numerical screen is useful, use demand divided by provider count or demand multiplied by a scarcity score. Literal provider count multiplied by demand points in the wrong direction because it rewards crowded models.
 - Check price and time to first token first. If those metrics are already saturated, test throughput, context length, uptime, tool-call reliability, region, privacy, or another supported capability. The endpoint needs one important, reproducible edge. It does not need to lead every metric.
 - Set an internal acceptance gate before serious outreach. Require a working private endpoint or test harness, repeated benchmark results on relevant hardware, plausible unit economics, and a model-license check. Record the test method and failure conditions.
-- Publish the model ID, base URL, price, context limits, privacy policy, hardware, region, and available capacity. Provide a public live performance dashboard with current status, rolling uptime, error rate, median and 95th-percentile time to first token, output speed, measurement windows, metric source, model version, method, and last update time.
+- Publish the model ID, base URL, price, context limits, privacy policy, hardware, region, and available capacity. Provide a public live performance dashboard that lets users and reviewers verify the claimed edge under the serving conditions that define the offer. Show current status, rolling uptime, error rate, median and 95th-percentile time to first token, output speed, sample count, available measurement windows, metric source, model version, method, and last update time.
+- Choose a workload that represents the target user and state its concurrency, prompt and output lengths, warm or cold state, hardware class, quantization, serving engine, and region.
 - Separate production measurements from synthetic probes. Do not expose prompts, customer data, gateway-specific traffic, credentials, or security-sensitive infrastructure details.
 - Use an authenticated endpoint. Give each gateway a separate test key so its requests can be measured without exposing the service.
 - Use one tracked launch URL. Record organic and paid impressions, link visits, API-key requests, successful calls, repeat users, spend, and cost per qualified tester.
@@ -69,6 +70,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - Gap-filling is a selection strategy. It does not remove later price competition. Once several providers serve the model, routing can again favor price, uptime, latency, throughput, and tool success.
 - The launch post should point to a callable product and reproducible evidence, not only to a throughput chart.
 - The launch post, API documentation, and gateway evidence packet should link to the same live performance dashboard so users and reviewers see current operating evidence.
+- The dashboard should make the chosen serving conditions easy to inspect and reproduce. It is not only a general service-status page.
 - The main launch post does not need to mention a gateway. A separate reply, direct message, or application can carry the targeted provider pitch without weakening the customer-facing announcement.
 - Paid distribution is useful only if it produces qualified testers, customer demand, or gateway attention at an acceptable cost.
 - A rejection or no response still produces useful evidence if the full sequence and funnel are recorded.
@@ -109,3 +111,4 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - 2026-08-19: Clarified that the retail offer is an optional amplifier within the public-launch step, not a separate listing strategy. Gateway attention remains an unverified effect.
 - 2026-08-19: Expanded day-zero model service into an event-zero gap-selection arm for market events that create urgent unmet inference demand.
 - 2026-08-19: Added Dylan's requirement for a public live performance dashboard during launch. Defined minimum metrics, measurement labels, privacy limits, and common ways a dashboard can mislead.
+- 2026-08-19: Defined the dashboard's main purpose as public verification that the provider achieves its claimed edge under the workload and serving conditions that define the offer.

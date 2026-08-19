@@ -93,6 +93,14 @@ The retail offer is a demand and operating-proof experiment. It is not evidence 
 
 The article's launch section should include the ladder as a short Wafer-inspired aside. Spell out `pay per token` before using an abbreviation. Present the ladder as a tactic for subsidizing early trial and reducing risk over time, not as a confirmed account of Wafer's product history.
 
+## Article Wording Follow-up
+
+> in general, no need to overly hedge. unlimited is right ahead of flat rate request capped access
+
+### Durable Delta
+
+The first retail stage should use the direct phrase `unlimited-token access under a flat-rate, request-capped plan`. Unlimited describes token billing. The request rate, concurrency, context, output length, cohort size, campaign duration, and total loss remain capped.
+
 ## Links
 
 - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]

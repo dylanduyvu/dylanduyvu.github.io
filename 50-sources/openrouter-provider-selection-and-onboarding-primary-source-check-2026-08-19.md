@@ -37,6 +37,12 @@ The published sequence is application, technical review, integration and test tr
 
 This strongly supports building a minimum review-ready endpoint without waiting for formal approval. It does not require large permanent capacity before an application, and it does not prevent an informal business-development conversation before the endpoint is complete.
 
+### Capacity and overload behavior affect measured performance
+
+The current provider guide says OpenRouter measures output throughput across fetch latency, time to first token, and streaming time. Provider-side queueing therefore lowers the reported throughput. The guide says an early `429` capacity response is better than leaving a request in a long queue, although repeated rate limits can reduce the successful request volume used for evaluation.
+
+The same guide says OpenRouter begins its uptime calculation after 100 requests. It treats at least 95% uptime as normal, 80% to 94% as degraded, and less than 80% as fallback-only. These rules support testing a provider's concurrency limit, queue behavior, timeouts, and rate-limit response before application traffic begins.
+
 ### Competition matters after listing
 
 [OpenRouter's routing documentation](https://openrouter.ai/docs/guides/routing/provider-selection) says default routing favors stable, lower-priced endpoints. Users can instead sort for throughput or latency. The application page also says price, latency, throughput, and reliability affect traffic.
@@ -97,6 +103,7 @@ The revised synthesis correctly expands beyond price and latency when those attr
 - **Direct routing factors:** price, time to first token, throughput, and uptime.
 - **Capability gaps:** context length, supported parameters, region, privacy, and data-retention terms can make the endpoint eligible for requests that other providers cannot serve.
 - **Tool traffic:** OpenRouter's provider guide says tool-call success can change routing priority through Auto Exacto.
+- **Overload behavior:** Queueing reduces measured throughput. An early `429` response is the documented response when the provider cannot accept more traffic.
 
 The provider does not need to lead every metric. It needs one important, reproducible edge without failing the reliability, margin, and capacity requirements around it.
 

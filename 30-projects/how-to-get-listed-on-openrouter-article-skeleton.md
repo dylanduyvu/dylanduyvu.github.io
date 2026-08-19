@@ -33,6 +33,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - Do not turn provider count into demand. Combine demand, qualified supply scarcity, achievable edge, margin, and capacity.
 - Do not say that OpenRouter's gap priority applies to every inference gateway.
 - Do not use an unpublished or automated source as proof when an official source exists.
+- State an evidence boundary once, then continue with the operating advice. Do not repeat the same caution after every step.
 
 ## Claim Ledger
 
@@ -43,6 +44,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 | A useful target needs demand and scarce qualified supply. | Reasonable decision rule | [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] |
 | Serious provider business development should start after repeatable internal proof. | Reasonable operating inference | [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan's build-first synthesis]] |
 | Shipping means a live, authenticated, priced API rather than a marketing website. | Supported working definition | [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]] |
+| A public live dashboard lets users and reviewers verify the claimed serving edge under the provider's declared workload and operating conditions. | Operating recommendation | [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|Public endpoint and paid-launch hypothesis]] |
 | Public launch, paid promotion, and direct outreach can make a review-ready provider easier to notice and test. | Testable hypothesis | [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|Public endpoint and paid-launch hypothesis]] |
 | A provider can launch against a market demand shock, not only a new model release. | Testable hypothesis | [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Event-zero launch hypothesis]] |
 | Listing does not guarantee traffic. Price, reliability, latency, throughput, and tool-call success affect later routing. | Direct official evidence | [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]] |
@@ -79,9 +81,10 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
   2. **Event zero:** A policy, price, quota, outage, license, geography, model-removal, or client-adoption event that creates urgent demand.
   3. **Structural gap:** An existing model with measured use but too few providers that meet a named requirement.
 - Screen the candidate for demand, qualified supply, possible edge, margin, capacity, and license.
-- Use a manual candidate checklist now. The proposed [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] is the planned repeatable version, but no collector or dashboard exists yet.
+- Run a manual screen before the build. Measure recent token and request growth, then count the providers that meet the requirement that matters to the target workload. Compare their price, uptime, context, region, tool support, latency, and throughput. Estimate the price, capacity, and margin that you can achieve. Build only if one useful gap remains.
+- Use the proposed [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] as internal support for this screen.
 
-**Example option:** Qwen3.8-27B, released on 2026-08-14, as a time-bound release candidate. Recheck its provider supply before drafting. Do not treat it as proof of an OpenRouter listing tactic. Source: [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B release record]].
+**Worked-screen option:** Use Qwen3.8-27B, released on 2026-08-14, to show how to compare fast demand growth with provider supply that can fill just as fast. Recheck its current supply before drafting. Treat it as a screen, not an automatic build target. Source: [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B release record]].
 
 ### 2. Prove that you can serve the gap
 
@@ -93,11 +96,13 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - Require a working private endpoint or test harness.
 - Repeat the benchmark under a written workload. Record concurrency, prompt and output lengths, hardware, quantization, serving engine, and test duration.
 - Check time to first token, output throughput, error rate, uptime under load, GPU memory, and cost per million tokens.
+- Build a concurrency curve. Record sustainable input and output tokens per minute, warm and cold performance, queue time, timeout behavior, and the point at which the service begins to return an HTTP `429` response, which tells the caller that capacity is full.
+- Return an early `429` when the service is full instead of hiding overload in a long queue.
 - Run a repeatable quality regression test against the reference model. Quantization and serving changes must not create an unacceptable loss in output quality.
 - Test tool-call correctness if the offer includes tool use. Record valid calls, invalid calls, and execution failures separately.
 - Confirm model-license and data-policy constraints.
 - Calculate plausible unit economics and available capacity.
-- Choose one important edge. Price and latency are the first checks. Other edges can include throughput, context length, uptime, tool-call reliability, region, privacy, or Zero Data Retention.
+- Treat reliability as the gate. OpenRouter's normal routing favors lower prices among stable providers. Latency, throughput, tool-call quality, context length, region, privacy, and Zero Data Retention can win specific traffic or fill a capability gap.
 - Stop if the edge is not reproducible or the economics fail.
 
 **Core line:** Do not ask a gateway to diligence a benchmark that you cannot reproduce internally.
@@ -110,37 +115,39 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 **Job:** Start serious provider conversations from internal proof while completing the product that OpenRouter can inspect.
 
-- Contact the provider team with the model, the network gap, and the repeatable internal result. State clearly that the public endpoint is still in progress.
+- Contact the provider team with the model, the network gap, and the repeatable internal result. Use `providers@openrouter.ai` or one relevant public contact. State clearly that the public endpoint is still in progress.
 - Cite two named public contacts. [Shashank Goyal](https://www.linkedin.com/in/shashankgoyal1) is publicly identified as OpenRouter's Head of Provider Ecosystem. [Tomas Oliva](https://www.linkedin.com/posts/oliva-tomas_excited-to-share-that-today-marks-my-first-activity-7289788708579405824-tYx7) is publicly identified in provider operations and asked people to notify him when a new model drops.
 - Recheck both roles before publication. Their public roles make them relevant contacts, but they do not guarantee a response or replace the formal provider channel.
+- Contact one person first. Do not send the same pitch to several OpenRouter employees at once.
 - Ask whether the gap matters and whether provider intake is active. Do not ask for a listing promise before technical review.
-- Run the model on provider-controlled infrastructure.
+- Run the model on infrastructure that you operate, whether you own or rent it.
 - Expose an authenticated public HTTPS endpoint.
 - Support the required OpenAI-compatible chat interface.
 - Support streaming responses and accurate usage-token counts.
 - Expose machine-readable model information, including model ID, price, context limits, capacity, features, location, and compliance fields.
-- Publish privacy and data-retention terms.
+- Publish privacy and data-retention terms. State whether prompts are logged, how long data is kept, and whether it is used for training.
 - Provide a price and a test key.
-- Meet OpenRouter's current payment and operating requirements.
+- Support OpenRouter's current monthly invoices and automatic token-count reconciliation.
 - Confirm reliability before the launch window.
 
 **What can wait:** self-serve signup, a full customer account and billing dashboard, payment pages for retail users, and a large marketing site. The public live performance dashboard in Step 4 cannot wait for the launch.
 
-**Core line:** The endpoint is the application. The website supports trust and policy disclosure.
+**Core line:** The endpoint makes the application testable. The website supports trust and policy disclosure.
 
 **Evidence:** [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping means a live priced API]] and [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]].
 
 ### 4. Launch the service publicly
 
-**Target:** 260 to 320 words, including the performance dashboard and pricing aside.
+**Target:** 300 to 360 words, including the performance dashboard and pricing aside.
 
 **Job:** Turn technical readiness into visible proof and measurable demand.
 
 - Announce the model, base URL, price, context limits, region, privacy terms, and available capacity.
 - Publish a reproducible benchmark method with time to first token, output speed, uptime, error rate, and the workload used.
-- Give users a public live performance dashboard and link it from the launch post, API documentation, and gateway evidence packet.
-- Show current service status, rolling uptime, error rate, median and 95th-percentile time to first token, and output tokens per second. Use clear one-hour, 24-hour, and seven-day windows.
-- State whether each metric comes from production traffic or a synthetic probe. Show the model version, region, measurement method, and last update time.
+- Give users a public live performance dashboard so they can verify that the service achieves the claimed edge under the serving conditions that define the offer. Link it from the launch post, API documentation, and gateway evidence packet.
+- Choose the workload and operating conditions that matter to the target user. State them in full. Include concurrency, prompt and output lengths, warm or cold state, hardware class, quantization, serving engine, and region.
+- Show current service status, rolling uptime, error rate, median and 95th-percentile time to first token, output tokens per second, and sample count. Use clear one-hour, 24-hour, and seven-day windows when that history exists.
+- State whether each metric comes from production traffic or a synthetic probe. Show the model version, measurement method, and last update time.
 - Do not expose prompts, customer data, gateway-specific traffic, credentials, or security-sensitive infrastructure details.
 - State the gap that the service fills.
 - Give testers a direct action. This can be API access, prepaid credit, or a small capped retail plan.
@@ -153,7 +160,8 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 **Quick aside: A retail pricing ladder**
 
 - Present this as a provider tactic to test.
-- Start with a small, time-limited flat-rate cohort. A temporary unlimited-token offer can reduce trial friction, but its terms must state the limits on cohort size, request rate, concurrency, context, output length, campaign duration, and total loss.
+- Start with a small, time-limited unlimited-token offer under a flat-rate, request-capped plan. State the limits on cohort size, request rate, concurrency, context, output length, campaign duration, and total loss.
+- Issue keys manually to the first invite-only cohort so self-serve signup and a full billing dashboard can wait.
 - Move to a subscription with a defined token allowance when usage data shows the workload shape.
 - Charge per token when subscribers use more than the included allowance. Write `pay per token` on first use instead of `PPT`.
 - If metered demand becomes the stronger product, make pay-per-token pricing the default and retire the subscription.
@@ -168,11 +176,12 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 **Job:** Make the application easy to review.
 
 - Submit during the same window as the public launch, after the endpoint is testable.
-- Complete the official fields for infrastructure, endpoints, models, and data policies.
+- Complete the [official OpenRouter provider form](https://openrouter.ai/providers/apply/form) with the required infrastructure, endpoint, model, and data-policy information.
 - Add a recommended evidence packet for the form where possible and for later outreach. State:
   - the model and network gap;
   - the demand evidence;
   - the measurable edge and benchmark method;
+  - the public live dashboard;
   - the base URL and test key;
   - pricing, capacity, and location;
   - privacy and retention terms; and
@@ -189,9 +198,9 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 **Job:** Turn the earlier provider conversation into a specific post-application follow-up.
 
 - Discovery can happen before internal proof. The serious listing pitch begins after Step 2 and continues while the endpoint is built.
-- Send the live endpoint, the exact gap, the price, the benchmark, and a dedicated test key.
+- Send the live endpoint, the exact gap, the price, the benchmark, the public dashboard, and a dedicated test key.
 - OpenRouter's job materials confirm that provider messages through X and LinkedIn are real inbound channels.
-- Follow up with the same provider-ecosystem and provider-operations contacts named in Step 3. Use new launch evidence rather than repeating the earlier message.
+- Continue the existing provider email or contact thread. Follow up with the same provider-ecosystem or provider-operations contact named in Step 3. Use new launch evidence rather than repeating the earlier message.
 - Keep the customer-facing launch post clear. Use a reply, direct message, or separate note for the provider pitch when that reads better.
 - Follow up with new evidence, not repeated pressure.
 
@@ -209,7 +218,8 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - Record response time, review requests, test traffic, decision, and stated reason.
 - After listing, track routed requests, revenue, margin, error rate, and repeat demand.
 - Explain that a gap can close quickly when more providers add the model.
-- Normal routing then rewards stable, lower-priced endpoints. Users can also select for latency or throughput. Tool-call success can affect tool traffic.
+- OpenRouter removes recently unstable providers from the first routing group. Its normal routing then favors lower prices among stable providers. Users can instead select for latency or throughput. Auto Exacto uses tool-call quality and performance to route tool traffic.
+- Compare OpenRouter's public time-to-first-token, throughput, and uptime measurements with the provider's launch dashboard.
 - Keep four outcomes separate: public attention, endpoint use, listing acceptance, and routed demand.
 
 **Core line:** Listing gives the provider access to distribution. It does not guarantee distribution.
@@ -272,3 +282,4 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - 2026-08-19: Removed Wafer attribution from the reader-visible pricing aside. Preserved Wafer only as internal hypothesis provenance.
 - 2026-08-19: Added Shashank Goyal and Tomas Oliva as named public BD contacts in Step 3. Preserved that the new-model notification request came from Tomas, not Shashank, and that the named contacts do not replace the formal application channel.
 - 2026-08-19: Made a public live performance dashboard part of the launch package. Defined the minimum live metrics and separated it from the full customer account dashboard that can wait.
+- 2026-08-19: Completed a full outline review. Added a manual gap screen, load and overload tests, exact routing logic, the official provider email, a single-contact sequence, clearer privacy and payment requirements, and a worked Qwen screen. Defined the public dashboard as proof of the provider's claimed edge under declared serving conditions. Kept the seven-step sequence without failure branches and retained unlimited-token language for the flat-rate, request-capped launch offer.

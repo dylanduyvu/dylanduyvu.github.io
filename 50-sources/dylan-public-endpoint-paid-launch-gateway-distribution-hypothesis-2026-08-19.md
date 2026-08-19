@@ -34,6 +34,14 @@ The public launch package should include a live performance dashboard, not only 
 
 The dashboard should separate production measurements from synthetic probes. It must not expose prompts, customer data, gateway-specific traffic, credentials, or security-sensitive infrastructure details. Its purpose is to give users and gateway reviewers current operating evidence. It does not prove that the dashboard improves listing odds.
 
+## Dashboard Purpose Follow-up
+
+> the dashboard is more so that users and people can verify easily that you're serving optimally under the condition you want to
+
+### Durable Delta
+
+The dashboard is a public proof surface for the provider's claimed serving edge. The provider chooses the workload and operating conditions that matter to the target user, then states those conditions in full so users, reviewers, and other observers can verify the result. The dashboard should include concurrency, prompt and output lengths, warm or cold state, hardware class, quantization, serving engine, region, sample count, measurement source, and the available time history.
+
 ## Promoted Insight
 
 - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
