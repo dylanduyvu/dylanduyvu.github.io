@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 11:47 AM EDT
+Generated: Aug 19, 2026, 11:59 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 22 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 23 note commits. The most recent movement is:
 
 - Insight update: add measured inference provider launch hypothesis.
 - Insight update: correct OpenRouter listing causal claim.
@@ -25,6 +25,14 @@ In the past 7 days, the public vault changed through 22 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 11:59 AM EDT - research: generalize curated gateway listing strategy
+
+research: generalize curated gateway listing strategy.
+
+Changed notes:
+  - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
+  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on gateway business development]]
 
 ### Aug 19, 2026, 11:47 AM EDT - research: correct inference gateway taxonomy
 
@@ -50,7 +58,7 @@ research: refine OpenRouter model gap strategy.
 
 Changed notes:
   - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on OpenRouter business development]]
+  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on gateway business development]]
   - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]
 
 ### Aug 19, 2026, 11:32 AM EDT - research: refine build-first gateway listing strategy
@@ -60,7 +68,7 @@ research: refine build-first gateway listing strategy.
 Changed notes:
   - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
   - [[inference|Inference]]
-  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on OpenRouter business development]]
+  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on gateway business development]]
   - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]
 
 ### Aug 19, 2026, 11:06 AM EDT - insight: add measured inference provider launch hypothesis
@@ -131,15 +139,11 @@ Changed notes:
   - [[compass-openrouter-and-ai-gateway-channel-playbooks-2026-08-18|Getting Listed on OpenRouter and Alternative AI Gateways: Channel Playbooks and Gap Analysis (August 18, 2026)]]
   - [[compass-openrouter-inference-provider-listing-guide-2026-08-18|How to Become a Listed Inference Provider on OpenRouter: An Authoritative Guide]]
 
-### Aug 18, 2026, 4:27 PM EDT - area: add inference research hub
-
-area: add inference research hub.
-
-Changed notes:
-  - [[inference|Inference]]
+_Showing the newest 12 of 13 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: research: generalize curated gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: correct inference gateway taxonomy - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
 - Aug 19, 2026: research: classify inference gateway onboarding models - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
 - Aug 19, 2026: research: refine OpenRouter model gap strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
@@ -165,6 +169,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Aug 19, 2026: research: generalize curated gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: correct inference gateway taxonomy - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
 - Aug 19, 2026: research: classify inference gateway onboarding models - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
 - Aug 19, 2026: research: refine OpenRouter model gap strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
@@ -189,6 +194,5 @@ Changed notes:
 - Aug 14, 2026: publish: add computer-use autocomplete project record - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 10, 2026: source: capture Compass computer-use stack report - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete V1 brainstorm and scope]]
 - Aug 10, 2026: project: record unified armed exit repair - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
-- Aug 10, 2026: project: record final autocomplete expiry repair - [[computer-use-autocomplete-packet-fidelity-audit-2026-08-07|Computer-use autocomplete packet-fidelity audit]]
 
-_Showing the newest 25 of 198 updates in this window._
+_Showing the newest 25 of 199 updates in this window._
