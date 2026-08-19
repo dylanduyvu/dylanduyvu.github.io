@@ -17,7 +17,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - **Format:** A short, chronological operator playbook.
 - **Target length:** 1,200 to 1,800 words. Draft toward 1,500.
 - **Reader promise:** The best available process for selecting a useful model, proving an edge, shipping a review-ready endpoint, applying, and earning routed traffic.
-- **Core thesis:** OpenRouter has a large provider backlog. It currently says it prioritizes providers with proprietary models, meaning models that the provider owns or controls rather than unchanged public weights that many companies can host. It also gives priority to providers that fill gaps in its network. An open-weight provider should therefore enter with demand-backed scarce supply and a live, measurable service instead of joining a crowded model price war.
+- **Core thesis:** OpenRouter currently prioritizes providers that bring models they own or control, so this guide focuses on the other route it names: filling a clear gap in its network. An open-weight provider should enter with demand-backed scarce supply and a live, measurable service instead of joining a crowded model price war.
 
 ## Writing Rules
 
@@ -56,12 +56,11 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 **Job:** Break the belief that the form is the main work.
 
 - OpenRouter has a large provider backlog.
-- It currently says it prioritizes providers with proprietary models. OpenRouter does not define the exact boundary on the application page. In this article, the term means an original model, private fine-tune, or exclusive model that the provider owns or controls. Serving unchanged Qwen, Llama, or GLM weights faster does not make the model proprietary.
-- This priority makes the case harder for a new open-weight provider.
+- OpenRouter currently prioritizes providers that bring models they own or control, so this guide focuses on the other route it names: filling a clear gap in its network.
 - A complete application for another crowded endpoint is weak positioning.
 - OpenRouter says it prioritizes providers that fill gaps in its network.
 - The useful question is not, "How do I complete the form?" It is, "What missing supply can I make live and testable?"
-- Preview the sequence: find, prove, build, launch, apply, contact, and compete.
+- Preview the sequence: find, prove, begin BD while you build, launch, apply, follow up, and compete.
 
 **Primary evidence:** [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]].
 
@@ -103,12 +102,16 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 **Core line:** Do not ask a gateway to diligence a benchmark that you cannot reproduce internally.
 
-### 3. Build the minimum review-ready endpoint
+**BD gate:** If the internal proof passes, begin serious provider BD now while you complete the public endpoint. Earlier gateway conversations are discovery only.
+
+### 3. Begin BD while you build the minimum review-ready endpoint
 
 **Target:** 210 to 250 words.
 
-**Job:** Define the product that OpenRouter can inspect.
+**Job:** Start serious provider conversations from internal proof while completing the product that OpenRouter can inspect.
 
+- Contact the provider team with the model, the network gap, and the repeatable internal result. State clearly that the public endpoint is still in progress.
+- Ask whether the gap matters and whether provider intake is active. Do not ask for a listing promise before technical review.
 - Run the model on provider-controlled infrastructure.
 - Expose an authenticated public HTTPS endpoint.
 - Support the required OpenAI-compatible chat interface.
@@ -162,13 +165,13 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 **Possible insert:** A compact application-packet checklist.
 
-### 6. Contact the provider team with evidence
+### 6. Follow up with the provider team using live evidence
 
 **Target:** 130 to 170 words.
 
-**Job:** Define useful business development rather than generic follow-up.
+**Job:** Turn the earlier provider conversation into a specific post-application follow-up.
 
-- Start discovery earlier if useful, but begin the serious listing pitch only after repeatable internal proof.
+- Discovery can happen before internal proof. The serious listing pitch begins after Step 2 and continues while the endpoint is built.
 - Send the live endpoint, the exact gap, the price, the benchmark, and a dedicated test key.
 - OpenRouter's job materials confirm that provider messages through X and LinkedIn are real inbound channels.
 - In a 2025 first-day post, Tomas Oliva, then identified publicly in provider operations, asked people to notify him when a new model drops. Recheck his role before publication.
@@ -245,3 +248,5 @@ Do not add a second table, a WaferPass sidebar, or a downloadable evidence-packe
 - 2026-08-19: Added OpenRouter's proprietary-model priority, corrected the proposed radar status, separated official application fields from the recommended evidence packet, added quality and tool-call tests, dated the Qwen and Tomas examples, and limited version one to one supporting checklist.
 - 2026-08-19: Made the vault's Blogpost Drafting Harness controlling for the article. Added ASD-STE100 Simplified Technical English and explicit connective-word rules for reader-visible prose.
 - 2026-08-19: Defined `proprietary model` for this article and preserved that OpenRouter does not publish an exact boundary for the term.
+- 2026-08-19: Replaced the detailed proprietary-model explanation with Dylan's approved one-sentence bridge into the network-gap playbook.
+- 2026-08-19: Moved the start of serious provider BD to immediately after internal proof. Step 3 now runs BD and the public endpoint build in parallel. Step 6 is the post-application follow-up with live evidence.
