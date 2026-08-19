@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 12:06 PM EDT
+Generated: Aug 19, 2026, 12:10 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 24 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 25 note commits. The most recent movement is:
 
 - Insight update: add measured inference provider launch hypothesis.
 - Insight update: correct OpenRouter listing causal claim.
@@ -25,6 +25,14 @@ In the past 7 days, the public vault changed through 24 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 12:10 PM EDT - research: capture sent gateway listing strategy
+
+research: capture sent gateway listing strategy.
+
+Changed notes:
+  - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
+  - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on gateway business development]]
 
 ### Aug 19, 2026, 12:05 PM EDT - research: gate gateway outreach on internal proof
 
@@ -130,18 +138,11 @@ Changed notes:
   - [[inference|Inference]]
   - [[dylan-shipping-an-inference-model-means-a-live-priced-api-2026-08-18|Dylan: Shipping an inference model means a live priced API]]
 
-### Aug 18, 2026, 9:19 PM EDT - source: capture AI gateway provider case studies
-
-Source capture: capture AI gateway provider case studies.
-
-Changed notes:
-  - [[inference|Inference]]
-  - [[compass-ai-gateway-provider-listing-case-studies-2026-08-18|How Inference Providers Get Listed on AI Gateways: First-Hand Case Studies]]
-
-_Showing the newest 12 of 14 updates in this window._
+_Showing the newest 12 of 15 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: research: capture sent gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: gate gateway outreach on internal proof - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: generalize curated gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: correct inference gateway taxonomy - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
@@ -169,6 +170,7 @@ _Showing the newest 12 of 14 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: research: capture sent gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: gate gateway outreach on internal proof - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: generalize curated gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: correct inference gateway taxonomy - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
@@ -193,6 +195,5 @@ _Showing the newest 12 of 14 updates in this window._
 - Aug 14, 2026: fix: quote blog structure metadata - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 14, 2026: fix: quote blog draft metadata - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 14, 2026: publish: add computer-use autocomplete project record - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 10, 2026: source: capture Compass computer-use stack report - [[computer-use-autocomplete-v1-brainstorm-and-scope|Computer-use autocomplete V1 brainstorm and scope]]
 
 _Showing the newest 25 of 199 updates in this window._
