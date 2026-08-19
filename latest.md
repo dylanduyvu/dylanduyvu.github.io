@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 2:43 PM EDT
+Generated: Aug 19, 2026, 2:58 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 33 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 34 note commits. The most recent movement is:
 
 - Source capture: record Qwen3.8 27B release date.
 - Insight update: add measured inference provider launch hypothesis.
@@ -27,6 +27,18 @@ In the past 7 days, the public vault changed through 33 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 2:57 PM EDT - research: map inference opportunity dashboards
+
+research: map inference opportunity dashboards.
+
+Changed notes:
+  - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
+  - [[openrouter-is-enough-for-a-listing-radar-not-a-market-demand-estimate|OpenRouter is enough for a listing radar, not a market-demand estimate]]
+  - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
+  - [[inference|Inference]]
+  - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
+  - [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B open weights released on August 14, 2026]]
 
 ### Aug 19, 2026, 2:43 PM EDT - research: map inference model opportunity data
 
@@ -136,19 +148,11 @@ Changed notes:
   - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
   - [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on gateway business development]]
 
-### Aug 19, 2026, 11:47 AM EDT - research: correct inference gateway taxonomy
-
-research: correct inference gateway taxonomy.
-
-Changed notes:
-  - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
-  - [[inference|Inference]]
-  - [[inference-gateway-provider-onboarding-models-2026-08-19|Inference gateway provider-onboarding models]]
-
-_Showing the newest 12 of 23 updates in this window._
+_Showing the newest 12 of 24 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: research: map inference opportunity dashboards - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: research: map inference model opportunity data - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: research: capture Qwen3.8 local demand signal - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: source: record Qwen3.8 27B release date - [[inference|Inference]]
@@ -173,12 +177,12 @@ _Showing the newest 12 of 23 updates in this window._
 - Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
 - Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
 - Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 17, 2026: publish: align autocomplete draft formatting and figures - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 
-_Showing the newest 25 of 33 updates in this window._
+_Showing the newest 25 of 34 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: research: map inference opportunity dashboards - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: research: map inference model opportunity data - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: research: capture Qwen3.8 local demand signal - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: source: record Qwen3.8 27B release date - [[inference|Inference]]
@@ -203,6 +207,5 @@ _Showing the newest 25 of 33 updates in this window._
 - Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
 - Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
 - Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 17, 2026: publish: align autocomplete draft formatting and figures - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 
-_Showing the newest 25 of 198 updates in this window._
+_Showing the newest 25 of 199 updates in this window._
