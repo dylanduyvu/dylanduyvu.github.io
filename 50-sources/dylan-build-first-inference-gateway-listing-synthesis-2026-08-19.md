@@ -68,9 +68,22 @@ Later on 2026-08-19, Dylan generalized the action plan from OpenRouter to centra
 - When no public application exists, use the gateway's partnership or provider-ecosystem contact.
 - The sequence can transfer across this gateway type. OpenRouter's stated priority for network gaps does not transfer as verified evidence to every other gateway.
 
+## Internal-Proof Gate Correction
+
+Later on 2026-08-19, Dylan challenged the suggestion to begin serious business development before the build was complete:
+
+> Do not wait until the build is complete before starting BD. - why? we'd probably at least want some internal proof we can deliver on the gap right? that's what we'd wait for?
+
+### Correction Delta
+
+- Serious provider-listing outreach should wait for repeatable internal proof that the team can deliver the proposed edge.
+- The internal gate does not require a finished public or production-scale service. It requires a working private endpoint or test harness, reproducible results on relevant hardware, plausible unit economics, and no known model-license blocker.
+- Before this gate, gateway conversations should be limited to discovery. The team can ask about supply gaps and technical requirements, but it should not claim that the service is ready.
+- After the internal gate, the team can begin serious business development while it completes the public, review-ready endpoint. Formal application and public launch should wait for the required endpoint and evidence packet.
+
 ## Durable Delta
 
-Dylan's revised best-action synthesis is build first, then launch, use the available provider-intake path, and run business development in one coordinated window. The supply strategy has two arms: serve a high-interest new Chinese open model on day zero, or find an existing model with demand, too few providers, and a performance attribute that can lead its current provider set.
+Dylan's revised best-action synthesis is select a gap, prove the edge internally, then begin serious business development while completing the public endpoint. Launch and the available provider-intake path follow when the endpoint is review-ready. The supply strategy has two arms: serve a high-interest new Chinese open model on day zero, or find an existing model with demand, too few providers, and a performance attribute that can lead its current provider set.
 
 The synthesis rejects waiting for pre-approval before building a review-ready endpoint. It treats the endpoint and measured performance as the object that makes technical review possible.
 
@@ -78,6 +91,7 @@ The synthesis rejects waiting for pre-approval before building a review-ready en
 
 - **Direct official support:** OpenRouter says applications must meet its technical requirements before review and that it gives priority to providers that fill gaps in its network.
 - **Reasonable inference:** Building a minimum review-ready endpoint before formal approval is the strongest current action for OpenRouter.
+- **Reasonable inference:** A repeatable internal proof is the correct gate for serious business development. It prevents an unsupported performance pitch without requiring the full production build first.
 - **Transfer hypothesis:** The build, prove, launch, apply where possible, and follow-up sequence can transfer to other centrally curated inference gateways. Each gateway can have different selection criteria and integration work.
 - **Open hypothesis:** Day-zero service, paid X amplification, public tagging, or direct outreach improves acceptance odds or review speed.
 - **Required correction:** The public “ping me when a new model drops” statement came from Tomas Oliva in provider operations, not from Shashank Goyal, OpenRouter's Head of Provider Ecosystem.

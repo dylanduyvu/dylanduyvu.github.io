@@ -20,11 +20,12 @@ tags: [provider-listing, public-launch, paid-distribution, gateway-applications,
 The strongest current pre-listing action plan for centrally curated inference gateways is a coordinated sequence:
 
 1. select a model with demand, scarce provider supply, and a measurable edge;
-2. build a public, authenticated, priced inference endpoint that meets the gateway's review requirements;
-3. publish live or reproducible performance and operating statistics;
-4. announce the endpoint on X and use a defined paid-boost budget;
-5. apply through each gateway's formal provider channel during the same launch window, where such a channel exists; and
-6. tag relevant gateway teams and run direct business-development follow-up with a test key and evidence packet.
+2. establish repeatable internal proof that the edge is technically and economically deliverable on relevant hardware;
+3. after the proof passes, begin serious gateway business development while completing a public, authenticated, priced endpoint that meets review requirements;
+4. publish live or reproducible performance and operating statistics;
+5. announce the endpoint on X and use a defined paid-boost budget;
+6. apply through each gateway's formal provider channel during the same launch window, where such a channel exists; and
+7. tag relevant gateway teams and run direct business-development follow-up with a test key and evidence packet.
 
 OpenRouter's current rules directly support gap selection and technical readiness before review. The day-zero, paid-launch, tagging, and review-acceleration effects remain hypotheses.
 
@@ -34,7 +35,7 @@ The broader sequence is a reasonable transfer hypothesis for other centrally cur
 
 Gateway approval is currently a public black box. This sequence cannot remove that uncertainty, but it can turn one application into a measurable distribution experiment. The provider can observe public interest, real endpoint use, gateway responses, technical-review requests, and later routing traffic.
 
-OpenRouter says providers must meet its technical requirements before they are considered. This makes it wrong to wait for formal approval before building the minimum review-ready endpoint. Gap discovery and business development can still run in parallel, and large capacity commitments can wait for stronger evidence.
+OpenRouter says providers must meet its technical requirements before they are considered. This makes it wrong to wait for formal approval before building the minimum review-ready endpoint. Gap discovery can start earlier, but serious provider-listing outreach should start after repeatable internal proof. The public endpoint can then be completed in parallel with outreach, and large capacity commitments can wait for stronger external evidence.
 
 The endpoint remains the product. The launch and paid boost make the product visible.
 
@@ -45,7 +46,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - **Direct official evidence:** OpenRouter's provider-partnership job material treats X and LinkedIn pings as real inbound channels and describes first conversations, qualification, onboarding, tests, pricing, and launch work.
 - **Direct evidence from provider cases:** Providers publish day-zero launches, prices, performance, and traffic after listing. The public cases do not show that these actions caused approval.
 - **Role correction:** Tomas Oliva in provider operations, not Shashank Goyal, the Head of Provider Ecosystem, publicly asked people to notify him when a new model drops.
-- **Reasonable inference:** A live endpoint, clear price, reproducible statistics, and test key reduce the work needed to inspect a provider. A coordinated launch can also produce demand evidence for later business development. Gap research and business development should run during the build rather than block it.
+- **Reasonable inference:** A live endpoint, clear price, reproducible statistics, and test key reduce the work needed to inspect a provider. A coordinated launch can also produce demand evidence. Serious business development should follow internal proof, but it does not need to wait for the final public endpoint.
 - **Open speculation:** A large paid boost, public tags, or visible test traffic may move a gateway application forward.
 
 ## Test Design
@@ -53,6 +54,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - Use two model-selection arms: day-zero service for a high-interest new Chinese open model, or an existing model with demonstrated demand, too few providers, and a performance attribute that can lead its current provider set.
 - Do not use provider count alone. It measures supply, not demand. Rank candidates by demand, provider scarcity, measurable edge, margin, and available capacity.
 - Check price and time to first token first. If those metrics are already saturated, test throughput, context length, uptime, tool-call reliability, region, privacy, or another supported capability. The endpoint needs one important, reproducible edge. It does not need to lead every metric.
+- Set an internal acceptance gate before serious outreach. Require a working private endpoint or test harness, repeated benchmark results on relevant hardware, plausible unit economics, and a model-license check. Record the test method and failure conditions.
 - Publish the model ID, base URL, price, context limits, privacy policy, uptime, time to first token, output speed, test method, hardware, region, and available capacity.
 - Use an authenticated endpoint. Give each gateway a separate test key so its requests can be measured without exposing the service.
 - Use one tracked launch URL. Record organic and paid impressions, link visits, API-key requests, successful calls, repeat users, spend, and cost per qualified tester.
@@ -74,7 +76,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - A gateway may treat public tagging as useful proof, irrelevant marketing, or unwanted pressure.
 - Self-reported statistics can be discounted unless the method is reproducible and the endpoint performs under real traffic.
 - Applying to every gateway can create shallow integrations. The provider should first confirm that each gateway is accepting partners and that the endpoint fills a relevant gap.
-- A gateway can start an informal conversation before the endpoint is complete. The evidence supports not waiting for formal approval, not refusing early business development.
+- Discovery conversations can happen before internal proof, but the team should not pitch an unproven performance edge as deliverable. Serious provider-listing outreach should follow the internal acceptance gate.
 - A day-zero launch can force the team to serve an unfamiliar model before its kernels, tokenizer, license, reliability, and real demand are understood.
 - One campaign will be a case study, not a universal listing rule.
 
@@ -94,3 +96,4 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - 2026-08-19: Raised confidence from low-medium to medium after a primary-source check confirmed OpenRouter's gap priority, pre-review technical requirements, and formal handling of social inbound. Kept day-zero acceptance, paid amplification, tagging, and review acceleration as hypotheses. Corrected the new-model notification quote from Shashank Goyal to Tomas Oliva.
 - 2026-08-19: Incorporated Dylan's revised OpenRouter-specific version. The existing-model arm now seeks one leading, reproducible performance or capability metric when price and latency are already saturated. Preserved provider count as a supply signal, not proof of demand.
 - 2026-08-19: Generalized the action sequence to centrally curated inference gateways. Made formal applications conditional on a gateway having that channel. Kept OpenRouter's network-gap priority as OpenRouter-specific evidence.
+- 2026-08-19: Corrected the business-development sequence. Serious outreach now starts after repeatable internal proof, not before technical feasibility is known. It can still run while the public review-ready endpoint is completed.
