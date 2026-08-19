@@ -8,12 +8,13 @@ updated: 2026-08-18
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 18, 2026, 5:15 PM EDT
+Generated: Aug 18, 2026, 9:19 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 12 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 13 note commits. The most recent movement is:
 
+- Source capture: capture AI gateway provider case studies.
 - Source capture: capture OpenRouter provider research.
 
 ## Current Hub Signals
@@ -21,6 +22,14 @@ In the past 7 days, the public vault changed through 12 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 18, 2026, 9:19 PM EDT - source: capture AI gateway provider case studies
+
+Source capture: capture AI gateway provider case studies.
+
+Changed notes:
+  - [[inference|Inference]]
+  - [[compass-ai-gateway-provider-listing-case-studies-2026-08-18|How Inference Providers Get Listed on AI Gateways: First-Hand Case Studies]]
 
 ### Aug 18, 2026, 5:14 PM EDT - source: capture OpenRouter provider research
 
@@ -38,38 +47,9 @@ area: add inference research hub.
 Changed notes:
   - [[inference|Inference]]
 
-### Aug 17, 2026, 7:01 PM EDT - publish: add autocomplete article disclosure links
-
-publish: add autocomplete article disclosure links.
-
-Changed notes:
-  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-
-### Aug 17, 2026, 6:56 PM EDT - publish: align autocomplete draft formatting and figures
-
-publish: align autocomplete draft formatting and figures.
-
-Changed notes:
-  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-
-### Aug 17, 2026, 5:56 PM EDT - publish: finish computer-use article lint pass
-
-publish: finish computer-use article lint pass.
-
-Changed notes:
-  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-  - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
-
-### Aug 17, 2026, 5:47 PM EDT - publish: refine computer-use autocomplete article
-
-publish: refine computer-use autocomplete article.
-
-Changed notes:
-  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-  - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
-
 ## Past 7 Days
 
+- Aug 18, 2026: source: capture AI gateway provider case studies - [[inference|Inference]]
 - Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
 - Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
 - Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -85,6 +65,7 @@ Changed notes:
 
 ## Past 30 Days
 
+- Aug 18, 2026: source: capture AI gateway provider case studies - [[inference|Inference]]
 - Aug 18, 2026: source: capture OpenRouter provider research - [[inference|Inference]]
 - Aug 18, 2026: area: add inference research hub - [[inference|Inference]]
 - Aug 17, 2026: publish: add autocomplete article disclosure links - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -109,6 +90,5 @@ Changed notes:
 - Aug 7, 2026: project: record restored direct runtime - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
 - Aug 7, 2026: project: audit autocomplete packet fidelity - [[codex-thread-list-recency-reveals-desktop-originated-task-activity|Codex thread-list recency reveals desktop-originated task activity]]
 - Aug 7, 2026: project: park supervisor migration at platform boundary - [[computer-use-autocomplete-v0-design-2026-07-31|Computer-use autocomplete V0 design]]
-- Aug 6, 2026: project: record autocomplete recovery failure - [[computer-use-autocomplete-travel-day-operations-2026-08-04|Computer-use autocomplete travel-day operations]]
 
-_Showing the newest 25 of 189 updates in this window._
+_Showing the newest 25 of 190 updates in this window._
