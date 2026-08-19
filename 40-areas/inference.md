@@ -69,6 +69,7 @@ No inference-only project is active in the current vault record.
 - [[waferpass-bootstrap-public-evidence-check-2026-08-19|WaferPass bootstrap hypothesis and public evidence check]]: public plan terms, elastic-capacity structure, current OpenRouter listing, and the missing causal link between subscription demand and provider acceptance.
 - [[waferpass-anthropic-openclaw-event-timeline-2026-08-19|WaferPass and the Anthropic/OpenClaw event timeline]]: the close launch timing, direct user targeting, correction to the company-start claim, and missing evidence of causation.
 - [[modelsdev-wafer-provider-pr-1488-2026-04-20|Models.dev Wafer provider pull request]]: exact models, limits, endpoint metadata, contributor interaction, five-day launch-to-merge timing, and the boundary between client catalogs and curated gateways.
+- [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B open-weight release record]]: official confirmation that the model weights became available on Hugging Face Hub and ModelScope on 2026-08-14.
 
 ## Open Questions
 
@@ -100,6 +101,7 @@ No inference-only project is active in the current vault record.
 - Do not gate the generic review-ready endpoint on pre-approval. During the build, confirm partner intake and the target gap. Gate gateway-specific work and large capacity commitments on stronger demand or partner evidence.
 - Classify each target gateway before outreach. Record whether it is centrally curated or customer-configured. For centrally curated gateways, record whether provider intake is public or private.
 - Reconstruct Wafer's timeline from WaferPass launch through OpenRouter listing. Ask Wafer for subscriber usage distribution, request-cap logic, spot-versus-dedicated capacity, gross-margin history, and what evidence OpenRouter reviewed.
+- Run an immediate provider-gap scan for Qwen3.8-27B. Record model demand, provider count, gateway coverage, price, latency, throughput, context limits, uptime, and tool-call reliability before treating the five-day-old release as a service opportunity.
 
 ## Related Areas
 
