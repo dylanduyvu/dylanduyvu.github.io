@@ -21,6 +21,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - **Go-to-market synthesis:** OpenRouter requires technical readiness before it reviews an application and says it prioritizes providers that fill network gaps. The best current action is to select a demand-backed gap, build the minimum review-ready endpoint, and run launch, application, and business development in parallel. Day-zero acceptance and paid-launch effects remain unproven.
 - **Event-zero hypothesis:** New model releases are one type of launch event. Access restrictions, price or quota changes, outages, model removals, license or geography changes, and sudden client growth can also create urgent inference gaps. WaferPass launched 11 days after an Anthropic access change affected OpenClaw users, but no public evidence proves that the event caused Wafer's launch or gateway acceptance.
 - **Direct distribution evidence:** Wafer entered the open Models.dev provider catalog used by OpenCode five days after WaferPass launched. This was a public Bring Your Own Key client integration, not a curated gateway supply agreement.
+- **Candidate gap, not proof:** A 2026-08-19 snapshot showed five Qwen3.8-27B providers on OpenRouter, while LM Studio displayed 908,400 local downloads. This supports local interest and scarce early gateway supply. It does not yet show paid API demand or a defensible edge over the fastest current provider.
 - **Gateway taxonomy:** There are two main types. Centrally curated gateways select providers through public or private intake; this includes OpenRouter, Hugging Face, Vercel, and Requesty. Customer-configured gateways such as Cloudflare and Portkey have no central listing gate; the provider must win customers instead.
 - **Direct evidence:** Featherless has a public provider-authored implementation trail for Hugging Face Inference Providers. It shows named reviewers, live tests, staging, client integrations, documentation, and a coordinated launch. It does not expose the initial partnership decision. Later working provider integrations show that Hugging Face can stop onboarding at a separate server-side partner-selection gate.
 - **Unverified source claim:** Two Compass reports say inference gateways can turn serving quality into distribution because routing can depend on price, uptime, throughput, and tool-call success. This is a research direction until the claims are checked against primary documentation and live routing data.
@@ -44,6 +45,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
 - [[wafer-entered-opencodes-open-provider-catalog-five-days-after-waferpass-launched|Wafer entered OpenCode's open provider catalog five days after WaferPass launched]]
+- [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 
 ## Active Projects
 
@@ -101,7 +103,7 @@ No inference-only project is active in the current vault record.
 - Do not gate the generic review-ready endpoint on pre-approval. During the build, confirm partner intake and the target gap. Gate gateway-specific work and large capacity commitments on stronger demand or partner evidence.
 - Classify each target gateway before outreach. Record whether it is centrally curated or customer-configured. For centrally curated gateways, record whether provider intake is public or private.
 - Reconstruct Wafer's timeline from WaferPass launch through OpenRouter listing. Ask Wafer for subscriber usage distribution, request-cap logic, spot-versus-dedicated capacity, gross-margin history, and what evidence OpenRouter reviewed.
-- Run an immediate provider-gap scan for Qwen3.8-27B. Record model demand, provider count, gateway coverage, price, latency, throughput, context limits, uptime, and tool-call reliability before treating the five-day-old release as a service opportunity.
+- Continue the Qwen3.8-27B gap scan. Local download activity and a five-provider OpenRouter snapshot support further testing. Now measure OpenRouter activity, paid API intent, provider changes, tool-call success, and whether a new endpoint can beat the visible price, throughput, latency, uptime, long-context, privacy, or geography frontier.
 
 ## Related Areas
 
