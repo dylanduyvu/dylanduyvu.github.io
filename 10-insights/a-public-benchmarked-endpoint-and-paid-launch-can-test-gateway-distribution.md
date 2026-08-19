@@ -25,7 +25,7 @@ The strongest current pre-listing action plan for centrally curated inference ga
 4. publish live or reproducible performance and operating statistics;
 5. announce the endpoint on X and use a defined paid-boost budget;
 6. apply through each gateway's formal provider channel during the same launch window, where such a channel exists; and
-7. tag relevant gateway teams and run direct business-development follow-up with a test key and evidence packet.
+7. use gateway mentions or replies selectively and run direct business-development follow-up with a test key and evidence packet.
 
 OpenRouter's current rules directly support gap selection and technical readiness before review. The day-zero, paid-launch, tagging, and review-acceleration effects remain hypotheses.
 
@@ -52,7 +52,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 ## Test Design
 
 - Use two model-selection arms: day-zero service for a high-interest new Chinese open model, or an existing model with demonstrated demand, too few providers, and a performance attribute that can lead its current provider set.
-- Do not use provider count alone. It measures supply, not demand. Rank candidates by demand, provider scarcity, measurable edge, margin, and available capacity.
+- Do not use provider count alone. It measures supply, not demand. Rank candidates by demand adjusted for provider scarcity, measurable edge, margin, and available capacity. If a numerical screen is useful, use demand divided by provider count or demand multiplied by a scarcity score. Literal provider count multiplied by demand points in the wrong direction because it rewards crowded models.
 - Check price and time to first token first. If those metrics are already saturated, test throughput, context length, uptime, tool-call reliability, region, privacy, or another supported capability. The endpoint needs one important, reproducible edge. It does not need to lead every metric.
 - Set an internal acceptance gate before serious outreach. Require a working private endpoint or test harness, repeated benchmark results on relevant hardware, plausible unit economics, and a model-license check. Record the test method and failure conditions.
 - Publish the model ID, base URL, price, context limits, privacy policy, uptime, time to first token, output speed, test method, hardware, region, and available capacity.
@@ -66,6 +66,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - A strong edge should map to a visible gateway supply gap, not only to a provider benchmark.
 - Gap-filling is a selection strategy. It does not remove later price competition. Once several providers serve the model, routing can again favor price, uptime, latency, throughput, and tool success.
 - The launch post should point to a callable product and reproducible evidence, not only to a throughput chart.
+- The main launch post does not need to mention a gateway. A separate reply, direct message, or application can carry the targeted provider pitch without weakening the customer-facing announcement.
 - Paid distribution is useful only if it produces qualified testers, customer demand, or gateway attention at an acceptable cost.
 - A rejection or no response still produces useful evidence if the full sequence and funnel are recorded.
 - The resulting application history could become the first public OpenRouter provider case study found in the current research.
@@ -97,3 +98,4 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - 2026-08-19: Incorporated Dylan's revised OpenRouter-specific version. The existing-model arm now seeks one leading, reproducible performance or capability metric when price and latency are already saturated. Preserved provider count as a supply signal, not proof of demand.
 - 2026-08-19: Generalized the action sequence to centrally curated inference gateways. Made formal applications conditional on a gateway having that channel. Kept OpenRouter's network-gap priority as OpenRouter-specific evidence.
 - 2026-08-19: Corrected the business-development sequence. Serious outreach now starts after repeatable internal proof, not before technical feasibility is known. It can still run while the public review-ready endpoint is completed.
+- 2026-08-19: Captured the version Dylan sent. Added demand-adjusted provider scarcity, geography as a possible edge, and selective gateway mentions outside the main launch post. Preserved maximum paid boosting as an unverified tactic.

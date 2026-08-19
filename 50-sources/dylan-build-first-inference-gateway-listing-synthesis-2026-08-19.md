@@ -81,6 +81,28 @@ Later on 2026-08-19, Dylan challenged the suggestion to begin serious business d
 - Before this gate, gateway conversations should be limited to discovery. The team can ask about supply gaps and technical requirements, but it should not claim that the service is ready.
 - After the internal gate, the team can begin serious business development while it completes the public, review-ready endpoint. Formal application and public launch should wait for the required endpoint and evidence packet.
 
+## Sent Version
+
+Later on 2026-08-19, Dylan sent this version:
+
+> still researching, but my best foot forward action to get listed on curated provider gateways (like openrouter, huggingface, vercel, etc.) is:
+>
+> set up the infrastructure ready to serve an undeserved open source model. for these gateways, plugging provider network holes is the priority over competition and race to the bottom dynamics amongst already popular models. this can mainly be done via two strats:
+> 1/ day 0 service of a new chinese open source model with impressive performance on typical stats (i.e., cost, latency)
+> 2/ find underserved open source model (by provider # * demand - easiest to spot - or by underserved performance attribute), build the best metric on a primary parameter or alternative parameter if price and latency are farmed (i.e., context window, throughput, uptime, tool call reliability, geography) and serve it there
+> launch an inference endpoint publicly and announce it on twitter citing the hole that you're plugging - doesn't have to @ the gateways specifically. boost the tweet maximally to get eyeballs on it. tag target gateways in the tweet (maybe replies or something).
+> apply formally through application channels on these gateways (where they exist)
+> do bd with the target gateways (there are heads of provider eco that we can target) to speed up our application process; openrouter's provider eco head specifically asks to be notified when a new model drops for example
+>
+> notably, it's the wrong strategy to gate building the infra with bd. probably the move is identify gap, prove internally you can service the gap, bd with that and make it publicly serviceable, full retail strat push (tweet etc.) + formal application to provider. there is no shot that we get a confirmation that we can get listed as a provider ahead of a technical diligence of our performance
+
+### Sent-Version Delta
+
+- The internal proof is now an explicit gate before serious provider business development.
+- The existing-model screen now combines provider scarcity with demand and includes geography as a possible performance or capability edge.
+- The main launch post does not need to mention a gateway directly. Targeted mentions can be separate replies or follow-up.
+- “Provider count times demand” is best interpreted as demand adjusted for provider scarcity. A literal multiplication by provider count would rank crowded models higher, which is the opposite of the intended screen.
+
 ## Durable Delta
 
 Dylan's revised best-action synthesis is select a gap, prove the edge internally, then begin serious business development while completing the public endpoint. Launch and the available provider-intake path follow when the endpoint is review-ready. The supply strategy has two arms: serve a high-interest new Chinese open model on day zero, or find an existing model with demand, too few providers, and a performance attribute that can lead its current provider set.
