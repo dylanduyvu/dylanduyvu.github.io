@@ -53,7 +53,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 
 ## Active Projects
 
-No inference-only build project is active in the current vault record.
+- [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]: pre-draft skeleton for a short, seven-step operator playbook. The structure is ready for Dylan's review before prose drafting.
 
 - **Proposed:** [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] would combine OpenRouter token demand and endpoint supply with Hugging Face, LM Studio, and Ollama local-adoption signals. It is specified but not built.
 
