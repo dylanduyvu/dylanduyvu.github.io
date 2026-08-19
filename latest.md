@@ -8,18 +8,18 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 4:55 PM EDT
+Generated: Aug 19, 2026, 5:26 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 37 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 38 note commits. The most recent movement is:
 
+- Project decision: add OpenRouter provider article skeleton.
 - Project decision: stop inference radar at potential opportunities.
 - Source capture: record Qwen3.8 27B release date.
 - Insight update: add measured inference provider launch hypothesis.
 - Insight update: correct OpenRouter listing causal claim.
 - Insight update: define shipping as a live priced inference API.
-- Source capture: capture AI gateway provider case studies.
 
 ## Current Hub Signals
 
@@ -27,6 +27,14 @@ In the past 7 days, the public vault changed through 37 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 5:26 PM EDT - project: add OpenRouter provider article skeleton
+
+Project decision: add OpenRouter provider article skeleton.
+
+Changed notes:
+  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
+  - [[inference|Inference]]
 
 ### Aug 19, 2026, 4:54 PM EDT - research: record OpenRouter model API discovery fields
 
@@ -146,20 +154,11 @@ Changed notes:
   - [[inference|Inference]]
   - [[dylan-capped-retail-pass-gateway-launch-hypothesis-2026-08-19|Dylan: Add a capped retail offer to the paid inference-provider launch]]
 
-### Aug 19, 2026, 1:32 PM EDT - research: audit WaferPass provider bootstrap hypothesis
-
-research: audit WaferPass provider bootstrap hypothesis.
-
-Changed notes:
-  - [[waferpass-pooled-capped-subscription-demand-with-elastic-gpu-rentals-but-its-listing-role-is-unproven|WaferPass pooled capped subscription demand with elastic GPU rentals, but its listing role is unproven]]
-  - [[inference|Inference]]
-  - [[waferpass-bootstrap-public-evidence-check-2026-08-19|WaferPass bootstrap hypothesis and public evidence check]]
-  - [[wafer-ai|Wafer AI]]
-
 _Showing the newest 12 of 26 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: project: add OpenRouter provider article skeleton - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: research: record OpenRouter model API discovery fields - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
 - Aug 19, 2026: research: correct inference opportunity radar evidence gates - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: project: stop inference radar at potential opportunities - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
@@ -184,12 +183,12 @@ _Showing the newest 12 of 26 updates in this window._
 - Aug 18, 2026: research: add Featherless provider onboarding case study - [[a-working-client-integration-does-not-secure-hugging-face-provider-acceptance|A working client integration does not secure Hugging Face provider acceptance]]
 - Aug 18, 2026: insight: correct OpenRouter listing causal claim - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 18, 2026: insight: define shipping as a live priced inference API - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
-- Aug 18, 2026: source: capture AI gateway provider case studies - [[inference|Inference]]
 
-_Showing the newest 25 of 37 updates in this window._
+_Showing the newest 25 of 38 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: project: add OpenRouter provider article skeleton - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: research: record OpenRouter model API discovery fields - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
 - Aug 19, 2026: research: correct inference opportunity radar evidence gates - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: project: stop inference radar at potential opportunities - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
@@ -214,6 +213,5 @@ _Showing the newest 25 of 37 updates in this window._
 - Aug 18, 2026: research: add Featherless provider onboarding case study - [[a-working-client-integration-does-not-secure-hugging-face-provider-acceptance|A working client integration does not secure Hugging Face provider acceptance]]
 - Aug 18, 2026: insight: correct OpenRouter listing causal claim - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 18, 2026: insight: define shipping as a live priced inference API - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
-- Aug 18, 2026: source: capture AI gateway provider case studies - [[inference|Inference]]
 
-_Showing the newest 25 of 199 updates in this window._
+_Showing the newest 25 of 200 updates in this window._
