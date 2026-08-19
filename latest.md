@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 12:10 PM EDT
+Generated: Aug 19, 2026, 1:32 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 25 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 26 note commits. The most recent movement is:
 
 - Insight update: add measured inference provider launch hypothesis.
 - Insight update: correct OpenRouter listing causal claim.
@@ -25,6 +25,16 @@ In the past 7 days, the public vault changed through 25 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 1:32 PM EDT - research: audit WaferPass provider bootstrap hypothesis
+
+research: audit WaferPass provider bootstrap hypothesis.
+
+Changed notes:
+  - [[waferpass-pooled-capped-subscription-demand-with-elastic-gpu-rentals-but-its-listing-role-is-unproven|WaferPass pooled capped subscription demand with elastic GPU rentals, but its listing role is unproven]]
+  - [[inference|Inference]]
+  - [[waferpass-bootstrap-public-evidence-check-2026-08-19|WaferPass bootstrap hypothesis and public evidence check]]
+  - [[wafer-ai|Wafer AI]]
 
 ### Aug 19, 2026, 12:10 PM EDT - research: capture sent gateway listing strategy
 
@@ -129,19 +139,11 @@ Changed notes:
   - [[dylan-openrouter-listing-case-study-causal-audit-2026-08-18|Dylan: The OpenRouter case studies do not support the pre-listing causal claim]]
   - [[dylan-shipping-an-inference-model-means-a-live-priced-api-2026-08-18|Dylan: Shipping an inference model means a live priced API]]
 
-### Aug 18, 2026, 9:31 PM EDT - insight: define shipping as a live priced inference API
-
-Insight update: define shipping as a live priced inference API.
-
-Changed notes:
-  - [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
-  - [[inference|Inference]]
-  - [[dylan-shipping-an-inference-model-means-a-live-priced-api-2026-08-18|Dylan: Shipping an inference model means a live priced API]]
-
-_Showing the newest 12 of 15 updates in this window._
+_Showing the newest 12 of 16 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: research: audit WaferPass provider bootstrap hypothesis - [[waferpass-pooled-capped-subscription-demand-with-elastic-gpu-rentals-but-its-listing-role-is-unproven|WaferPass pooled capped subscription demand with elastic GPU rentals, but its listing role is unproven]]
 - Aug 19, 2026: research: capture sent gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: gate gateway outreach on internal proof - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: generalize curated gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
@@ -166,10 +168,12 @@ _Showing the newest 12 of 15 updates in this window._
 - Aug 14, 2026: meta: add connective tissue drafting rule - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
 - Aug 14, 2026: fix: quote blog structure metadata - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 14, 2026: fix: quote blog draft metadata - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 14, 2026: publish: add computer-use autocomplete project record - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
+
+_Showing the newest 25 of 26 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: research: audit WaferPass provider bootstrap hypothesis - [[waferpass-pooled-capped-subscription-demand-with-elastic-gpu-rentals-but-its-listing-role-is-unproven|WaferPass pooled capped subscription demand with elastic GPU rentals, but its listing role is unproven]]
 - Aug 19, 2026: research: capture sent gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: gate gateway outreach on internal proof - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: generalize curated gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
@@ -194,6 +198,5 @@ _Showing the newest 12 of 15 updates in this window._
 - Aug 14, 2026: meta: add connective tissue drafting rule - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
 - Aug 14, 2026: fix: quote blog structure metadata - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 14, 2026: fix: quote blog draft metadata - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-- Aug 14, 2026: publish: add computer-use autocomplete project record - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 
-_Showing the newest 25 of 199 updates in this window._
+_Showing the newest 25 of 196 updates in this window._
