@@ -8,7 +8,7 @@ domains: [inference, inference-marketplaces, distribution, go-to-market]
 projects: []
 sources: [dylan-public-endpoint-paid-launch-gateway-distribution-hypothesis-2026-08-19, dylan-build-first-inference-gateway-listing-synthesis-2026-08-19, openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19, dylan-openrouter-listing-case-study-causal-audit-2026-08-18, exa-featherless-hugging-face-provider-onboarding-audit-2026-08-18]
 people: [tomas-oliva, shashank-goyal]
-orgs: [openrouter]
+orgs: [openrouter, hugging-face, vercel]
 aliases: [build prove amplify apply and follow up, public endpoint paid launch gateway test]
 tags: [provider-listing, public-launch, paid-distribution, gateway-applications, business-development]
 ---
@@ -17,16 +17,18 @@ tags: [provider-listing, public-launch, paid-distribution, gateway-applications,
 
 ## Claim
 
-The strongest current pre-listing action plan is a coordinated sequence:
+The strongest current pre-listing action plan for centrally curated inference gateways is a coordinated sequence:
 
 1. select a model with demand, scarce provider supply, and a measurable edge;
 2. build a public, authenticated, priced inference endpoint that meets the gateway's review requirements;
 3. publish live or reproducible performance and operating statistics;
 4. announce the endpoint on X and use a defined paid-boost budget;
-5. apply to relevant gateways during the same launch window; and
+5. apply through each gateway's formal provider channel during the same launch window, where such a channel exists; and
 6. tag relevant gateway teams and run direct business-development follow-up with a test key and evidence packet.
 
 OpenRouter's current rules directly support gap selection and technical readiness before review. The day-zero, paid-launch, tagging, and review-acceleration effects remain hypotheses.
+
+The broader sequence is a reasonable transfer hypothesis for other centrally curated gateways, including Hugging Face Inference Providers and Vercel AI Gateway. It is not evidence that all gateways use OpenRouter's selection rules. Where no public provider application exists, the intake path can be a partnership or provider-ecosystem contact.
 
 ## Why It Matters
 
@@ -54,7 +56,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - Publish the model ID, base URL, price, context limits, privacy policy, uptime, time to first token, output speed, test method, hardware, region, and available capacity.
 - Use an authenticated endpoint. Give each gateway a separate test key so its requests can be measured without exposing the service.
 - Use one tracked launch URL. Record organic and paid impressions, link visits, API-key requests, successful calls, repeat users, spend, and cost per qualified tester.
-- Submit each gateway application from the same evidence packet. Record the channel, named contacts, response time, review requests, test traffic, decision, and stated reason.
+- For gateways with a formal provider application, submit from the same evidence packet. Where no public application exists, use the documented partnership or provider-ecosystem contact. Record the channel, named contacts, response time, review requests, test traffic, decision, and stated reason.
 - Keep public traffic, gateway test traffic, gateway acceptance, and post-listing routed traffic as separate outcomes. Do not claim that paid reach caused approval without direct evidence.
 
 ## Implications
@@ -91,3 +93,4 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - 2026-08-19: Created from Dylan's proposed build, public proof, paid launch, gateway application, tagging, and business-development sequence. Recorded as a testable hypothesis because no current case proves that the launch causes acceptance.
 - 2026-08-19: Raised confidence from low-medium to medium after a primary-source check confirmed OpenRouter's gap priority, pre-review technical requirements, and formal handling of social inbound. Kept day-zero acceptance, paid amplification, tagging, and review acceleration as hypotheses. Corrected the new-model notification quote from Shashank Goyal to Tomas Oliva.
 - 2026-08-19: Incorporated Dylan's revised OpenRouter-specific version. The existing-model arm now seeks one leading, reproducible performance or capability metric when price and latency are already saturated. Preserved provider count as a supply signal, not proof of demand.
+- 2026-08-19: Generalized the action sequence to centrally curated inference gateways. Made formal applications conditional on a gateway having that channel. Kept OpenRouter's network-gap priority as OpenRouter-specific evidence.

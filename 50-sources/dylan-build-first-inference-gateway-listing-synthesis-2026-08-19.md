@@ -7,11 +7,11 @@ source_date: 2026-08-19
 source_type: chat
 domains: [inference, inference-marketplaces, distribution, go-to-market]
 people: []
-orgs: [openrouter]
+orgs: [openrouter, hugging-face, vercel]
 tags: [provider-listing, gap-filling, day-zero-serving, paid-distribution, business-development]
 ---
 
-# Dylan: Build a gap-filling endpoint before relying on OpenRouter business development
+# Dylan: Build a gap-filling endpoint before relying on gateway business development
 
 ## Raw Context
 
@@ -51,9 +51,26 @@ Later on 2026-08-19, Dylan narrowed the target to OpenRouter and made the second
 - The existing-model strategy now requires a measurable performance edge. Price and latency are the first checks. If those are already saturated, the candidate edge can be context length, throughput, uptime, or tool-call reliability.
 - Provider count remains the easiest supply-gap signal, but it is not enough without demand.
 
+## Generalized Revision
+
+Later on 2026-08-19, Dylan generalized the action plan from OpenRouter to centrally curated inference gateways and made formal applications conditional on the gateway having a public application channel:
+
+> changing the breakdown to: apply formally through application channels on these gateways (where they exist)
+>
+> still researching, but my best foot forward action to get listed on curated provider gateways (like openrouter, huggingface, vercel, etc.) is:
+>
+> is probably good enough right? to generalized for the curated provider gateway strategy?
+
+### Generalized Revision Delta
+
+- The action plan now targets centrally curated inference gateways, including OpenRouter, Hugging Face Inference Providers, and Vercel AI Gateway.
+- A formal provider application is one possible intake path, not a feature of every gateway.
+- When no public application exists, use the gateway's partnership or provider-ecosystem contact.
+- The sequence can transfer across this gateway type. OpenRouter's stated priority for network gaps does not transfer as verified evidence to every other gateway.
+
 ## Durable Delta
 
-Dylan's revised best-action synthesis is build first, then launch, apply, and run business development in one coordinated OpenRouter window. The supply strategy has two arms: serve a high-interest new Chinese open model on day zero, or find an existing model with demand, too few providers, and a performance attribute that can lead its current provider set.
+Dylan's revised best-action synthesis is build first, then launch, use the available provider-intake path, and run business development in one coordinated window. The supply strategy has two arms: serve a high-interest new Chinese open model on day zero, or find an existing model with demand, too few providers, and a performance attribute that can lead its current provider set.
 
 The synthesis rejects waiting for pre-approval before building a review-ready endpoint. It treats the endpoint and measured performance as the object that makes technical review possible.
 
@@ -61,6 +78,7 @@ The synthesis rejects waiting for pre-approval before building a review-ready en
 
 - **Direct official support:** OpenRouter says applications must meet its technical requirements before review and that it gives priority to providers that fill gaps in its network.
 - **Reasonable inference:** Building a minimum review-ready endpoint before formal approval is the strongest current action for OpenRouter.
+- **Transfer hypothesis:** The build, prove, launch, apply where possible, and follow-up sequence can transfer to other centrally curated inference gateways. Each gateway can have different selection criteria and integration work.
 - **Open hypothesis:** Day-zero service, paid X amplification, public tagging, or direct outreach improves acceptance odds or review speed.
 - **Required correction:** The public “ping me when a new model drops” statement came from Tomas Oliva in provider operations, not from Shashank Goyal, OpenRouter's Head of Provider Ecosystem.
 
