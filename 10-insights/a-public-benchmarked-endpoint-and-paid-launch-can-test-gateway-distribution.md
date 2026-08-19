@@ -51,7 +51,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 
 ## Test Design
 
-- Use two model-selection arms: day-zero service for a high-interest new Chinese open model, or an existing model with demonstrated demand, too few providers, and a performance attribute that can lead its current provider set.
+- Use three gap-selection arms: day-zero service for a high-interest new Chinese open model; event-zero service when a policy, price, quota, outage, license, geography, model-removal, or client-adoption event creates urgent unmet demand; or an existing model with demonstrated demand, too few providers, and a performance attribute that can lead its current provider set.
 - Do not use provider count alone. It measures supply, not demand. Rank candidates by demand adjusted for provider scarcity, measurable edge, margin, and available capacity. If a numerical screen is useful, use demand divided by provider count or demand multiplied by a scarcity score. Literal provider count multiplied by demand points in the wrong direction because it rewards crowded models.
 - Check price and time to first token first. If those metrics are already saturated, test throughput, context length, uptime, tool-call reliability, region, privacy, or another supported capability. The endpoint needs one important, reproducible edge. It does not need to lead every metric.
 - Set an internal acceptance gate before serious outreach. Require a working private endpoint or test harness, repeated benchmark results on relevant hardware, plausible unit economics, and a model-license check. Record the test method and failure conditions.
@@ -91,6 +91,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - Evidence boundary: [[day-zero-shipping-is-evidenced-after-listing-not-as-a-path-to-approval|Day-0 shipping is evidenced after listing, not as a path to approval]]
 - Research gap: [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Retail launch layer: [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
+- Event-zero strategy: [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
 - Area: [[inference|Inference]]
 
 ## Updates
@@ -103,3 +104,4 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - 2026-08-19: Captured the version Dylan sent. Added demand-adjusted provider scarcity, geography as a possible edge, and selective gateway mentions outside the main launch post. Preserved maximum paid boosting as an unverified tactic.
 - 2026-08-19: Added an optional capped retail or prepaid-credit offer to convert paid launch attention into measurable demand. Required a canary and separate gateway review traffic before increasing paid distribution.
 - 2026-08-19: Clarified that the retail offer is an optional amplifier within the public-launch step, not a separate listing strategy. Gateway attention remains an unverified effect.
+- 2026-08-19: Expanded day-zero model service into an event-zero gap-selection arm for market events that create urgent unmet inference demand.

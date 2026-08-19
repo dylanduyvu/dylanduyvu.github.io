@@ -19,6 +19,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - **Working definition:** Shipping an inference model means that it runs on provider hardware behind an authenticated, priced, public-internet API with machine-readable metadata and a published privacy policy. The website is not the product surface.
 - **Belief correction:** Current provider cases support day-0 shipping as a post-listing growth tactic, not as a demonstrated path to approval. The current research found no public first-hand account of how a provider moved from application to OpenRouter acceptance.
 - **Go-to-market synthesis:** OpenRouter requires technical readiness before it reviews an application and says it prioritizes providers that fill network gaps. The best current action is to select a demand-backed gap, build the minimum review-ready endpoint, and run launch, application, and business development in parallel. Day-zero acceptance and paid-launch effects remain unproven.
+- **Event-zero hypothesis:** New model releases are one type of launch event. Access restrictions, price or quota changes, outages, model removals, license or geography changes, and sudden client growth can also create urgent inference gaps. WaferPass launched 11 days after an Anthropic access change affected OpenClaw users, but no public evidence proves that the event caused Wafer's launch or gateway acceptance.
 - **Gateway taxonomy:** There are two main types. Centrally curated gateways select providers through public or private intake; this includes OpenRouter, Hugging Face, Vercel, and Requesty. Customer-configured gateways such as Cloudflare and Portkey have no central listing gate; the provider must win customers instead.
 - **Direct evidence:** Featherless has a public provider-authored implementation trail for Hugging Face Inference Providers. It shows named reviewers, live tests, staging, client integrations, documentation, and a coordinated launch. It does not expose the initial partnership decision. Later working provider integrations show that Hugging Face can stop onboarding at a separate server-side partner-selection gate.
 - **Unverified source claim:** Two Compass reports say inference gateways can turn serving quality into distribution because routing can depend on price, uptime, throughput, and tool-call success. This is a research direction until the claims are checked against primary documentation and live routing data.
@@ -40,6 +41,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
 - [[waferpass-pooled-capped-subscription-demand-with-elastic-gpu-rentals-but-its-listing-role-is-unproven|WaferPass pooled capped subscription demand with elastic GPU rentals, but its listing role is unproven]]
 - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
+- [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
 
 ## Active Projects
 
@@ -63,6 +65,7 @@ No inference-only project is active in the current vault record.
 - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]: current official evidence on gap priority, technical readiness, post-listing routing, social inbound, provider roles, and the remaining causal gaps.
 - [[inference-gateway-provider-onboarding-models-2026-08-19|Inference gateway provider-onboarding models]]: comparison of centrally curated and customer-configured gateways, including public and private intake subtypes.
 - [[waferpass-bootstrap-public-evidence-check-2026-08-19|WaferPass bootstrap hypothesis and public evidence check]]: public plan terms, elastic-capacity structure, current OpenRouter listing, and the missing causal link between subscription demand and provider acceptance.
+- [[waferpass-anthropic-openclaw-event-timeline-2026-08-19|WaferPass and the Anthropic/OpenClaw event timeline]]: the close launch timing, direct user targeting, correction to the company-start claim, and missing evidence of causation.
 
 ## Open Questions
 
@@ -89,6 +92,7 @@ No inference-only project is active in the current vault record.
 - Run and document a real provider application. Record the channel, contacts, elapsed time, review requests, technical tests, decision, and post-listing traffic as separate evidence.
 - Run one measured provider launch: ship a gap-filling endpoint, publish reproducible statistics, use a defined paid X budget, apply to relevant gateways, and track public traffic, gateway tests, responses, acceptance, and routed traffic as separate outcomes.
 - As an optional paid-launch amplifier, test a capped self-serve plan or prepaid-credit offer on a small retail cohort. Measure whether it creates more visible use and gateway attention, while tracking workload shape, cost, and reliability. Keep gateway test traffic separate.
+- Maintain an event watchlist for policy, price, quota, outage, model-removal, license, geography, and agent-client changes. Predefine the affected user, replacement requirement, serviceable model, edge, and launch assets for each event.
 - Do not gate the generic review-ready endpoint on pre-approval. During the build, confirm partner intake and the target gap. Gate gateway-specific work and large capacity commitments on stronger demand or partner evidence.
 - Classify each target gateway before outreach. Record whether it is centrally curated or customer-configured. For centrally curated gateways, record whether provider intake is public or private.
 - Reconstruct Wafer's timeline from WaferPass launch through OpenRouter listing. Ask Wafer for subscriber usage distribution, request-cap logic, spot-versus-dedicated capacity, gross-margin history, and what evidence OpenRouter reviewed.
