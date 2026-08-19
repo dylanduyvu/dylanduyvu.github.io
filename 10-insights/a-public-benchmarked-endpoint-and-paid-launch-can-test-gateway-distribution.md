@@ -58,7 +58,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - Publish the model ID, base URL, price, context limits, privacy policy, uptime, time to first token, output speed, test method, hardware, region, and available capacity.
 - Use an authenticated endpoint. Give each gateway a separate test key so its requests can be measured without exposing the service.
 - Use one tracked launch URL. Record organic and paid impressions, link visits, API-key requests, successful calls, repeat users, spend, and cost per qualified tester.
-- Optionally attach a capped retail plan or prepaid-credit offer to the launch. Test it with a small cohort first. Increase paid distribution only after activation, repeat use, reliability, and unit economics are acceptable. Keep retail and gateway review traffic separate.
+- As an optional launch amplifier, attach a capped retail plan or prepaid-credit offer. Its purpose is to turn more of the promoted attention into visible activity around the provider's edge. Test it with a small cohort first. Increase paid distribution only after activation, repeat use, reliability, and unit economics are acceptable. Keep retail and gateway review traffic separate.
 - For gateways with a formal provider application, submit from the same evidence packet. Where no public application exists, use the documented partnership or provider-ecosystem contact. Record the channel, named contacts, response time, review requests, test traffic, decision, and stated reason.
 - Keep public traffic, gateway test traffic, gateway acceptance, and post-listing routed traffic as separate outcomes. Do not claim that paid reach caused approval without direct evidence.
 
@@ -102,3 +102,4 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - 2026-08-19: Corrected the business-development sequence. Serious outreach now starts after repeatable internal proof, not before technical feasibility is known. It can still run while the public review-ready endpoint is completed.
 - 2026-08-19: Captured the version Dylan sent. Added demand-adjusted provider scarcity, geography as a possible edge, and selective gateway mentions outside the main launch post. Preserved maximum paid boosting as an unverified tactic.
 - 2026-08-19: Added an optional capped retail or prepaid-credit offer to convert paid launch attention into measurable demand. Required a canary and separate gateway review traffic before increasing paid distribution.
+- 2026-08-19: Clarified that the retail offer is an optional amplifier within the public-launch step, not a separate listing strategy. Gateway attention remains an unverified effect.

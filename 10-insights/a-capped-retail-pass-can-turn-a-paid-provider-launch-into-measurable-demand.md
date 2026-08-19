@@ -17,15 +17,15 @@ tags: [retail-pass, paid-launch, subscriptions, demand-proof, provider-listing]
 
 ## Claim
 
-A new inference provider can attach a limited, capped self-serve plan to its public endpoint launch. This gives retail developers a direct action after they see the promoted post and converts some attention into API use, revenue, workload data, and operating evidence.
+A new inference provider can attach a limited, capped self-serve plan to its public endpoint launch. This is an optional amplifier inside the promoted-launch step, not a separate gateway-listing strategy. It gives retail developers a direct action after they see the promoted post and converts some attention into API use, revenue, workload data, and operating evidence.
 
-The pass should be a controlled launch experiment, not an unlimited promise or an assumed permanent business model. Start with a small cohort. Increase paid distribution only after the service stays reliable and the measured GPU cost fits inside the plan economics.
+The provider can use the added public activity to make the same performance edge more visible and to give gateway teams more reasons to inspect the endpoint. This attention effect remains a hypothesis. The pass should be a controlled launch experiment, not an unlimited promise or an assumed permanent business model. Start with a small cohort. Increase paid distribution only after the service stays reliable and the measured GPU cost fits inside the plan economics.
 
 ## Why It Matters
 
 A promoted post can produce impressions without proving demand. A purchasable endpoint creates a measurable funnel from impression to signup, successful call, repeat use, and paid retention. Real traffic also tests the same batching, scheduling, rate limits, error handling, and capacity controls that a gateway can inspect later.
 
-This adds a retail demand layer to the build, prove, launch, apply, and business-development sequence. It does not prove that retail traction will cause gateway acceptance.
+This strengthens the public-launch step in the build, prove, launch, apply, and business-development sequence. It does not replace that sequence, and it does not prove that retail traction will cause gateway attention or acceptance.
 
 ## Evidence
 
@@ -33,7 +33,7 @@ This adds a retail demand layer to the build, prove, launch, apply, and business
 - **Direct infrastructure evidence:** WaferPass and Wafer Serverless shared an elastic mix of spot and dedicated capacity according to Wafer's infrastructure partner.
 - **Direct current evidence:** Wafer now offers per-token serverless inference and appears on OpenRouter and other gateway catalogs.
 - **Reasonable inference:** A capped retail offer gives a promoted launch a stronger conversion target than a benchmark page alone and can generate demand and operating evidence.
-- **Open speculation:** Retail usage, revenue, or public attention improves gateway review speed or acceptance odds.
+- **Open speculation:** The added retail activity gets more gateway attention or improves review speed or acceptance odds.
 
 ## Test Design
 
@@ -73,3 +73,4 @@ This adds a retail demand layer to the build, prove, launch, apply, and business
 ## Updates
 
 - 2026-08-19: Created from Dylan's proposal to add a WaferPass-style retail offer to the paid provider launch. Added canary, cost, reliability, abuse, and measurement gates.
+- 2026-08-19: Clarified that the offer is an optional amplifier inside the promoted-launch step. Its intended purpose is to increase public activity around the provider's edge and attract gateway attention, not to form a separate listing strategy.

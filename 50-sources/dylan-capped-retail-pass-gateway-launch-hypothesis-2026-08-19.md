@@ -71,9 +71,13 @@ tags: [retail-pass, paid-launch, subscriptions, provider-listing, demand-proof]
 
 ## Durable Delta
 
-The paid X launch should not point only to a benchmark or application form. It can point to a callable endpoint and a limited self-serve offer. The offer should use rolling token, request, context, output, and concurrency controls. It should begin with a small canary cohort and expand only after reliability and unit economics are measured.
+The paid X launch should not point only to a benchmark or application form. It can point to a callable endpoint and a limited self-serve offer. This is an optional way to amplify the existing public-launch workflow and attract gateway attention. It is not a separate route to a listing. The offer should use rolling token, request, context, output, and concurrency controls. It should begin with a small canary cohort and expand only after reliability and unit economics are measured.
 
 The retail offer is a demand and operating-proof experiment. It is not evidence that a gateway will accept the provider, and it does not need to become the provider's permanent pricing model.
+
+## Follow-up Context
+
+> yeah it's more of an aside. it's in the same vein as tweeting about your edge and boosting it. this just supercharges that workflow to get the attention of the gateway
 
 ## Links
 
