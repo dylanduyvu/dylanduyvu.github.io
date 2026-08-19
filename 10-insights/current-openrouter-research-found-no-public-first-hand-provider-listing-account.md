@@ -6,7 +6,7 @@ updated: 2026-08-18
 confidence: medium-high
 domains: [inference, inference-marketplaces, distribution, research-methods]
 projects: []
-sources: [dylan-openrouter-listing-case-study-causal-audit-2026-08-18, compass-ai-gateway-provider-listing-case-studies-2026-08-18]
+sources: [dylan-openrouter-listing-case-study-causal-audit-2026-08-18, compass-ai-gateway-provider-listing-case-studies-2026-08-18, exa-featherless-hugging-face-provider-onboarding-audit-2026-08-18]
 people: []
 orgs: [openrouter]
 aliases: [openrouter listing is a public black box, no public provider listing case study found]
@@ -34,6 +34,9 @@ The research void also creates an article angle. A guide based on a real applica
 - Inceptron did not publish its application channel, contact, onboarding time, or sequence.
 - Telnyx published a readiness packet, then moved the work into a private repository before any public listing result.
 - The report's own caveats say approval mechanics are almost never published and list many dead ends.
+- Nextbit publicly said OpenRouter accepted it as an inference provider and described its owned data-center capacity. Its announcement did not explain the application, contacts, review, timing, or reason for acceptance.
+- Wafer's documentation confirms that it is listed on OpenRouter and explains user-side setup. It does not explain provider selection or onboarding.
+- A second Exa pass searched exact provider-side phrases about applying, onboarding, test traffic, listing, and acceptance. It found official OpenRouter requirements and post-acceptance provider announcements, but no provider-written application-to-acceptance chronology.
 
 ## Implications
 
@@ -60,3 +63,4 @@ The research void also creates an article angle. A guide based on a real applica
 
 - 2026-08-18: Created after the report audit separated the documented official process and post-listing evidence from the missing pre-listing case evidence.
 - 2026-08-18: An Exa pass found a partial first-hand onboarding chronology for Featherless on Hugging Face. It does not change the OpenRouter claim. Wafer is now live on OpenRouter, but its application and acceptance process remain unpublished.
+- 2026-08-18: A narrow follow-up search found Nextbit's public acceptance announcement and Wafer's listing documentation. Both confirm successful OpenRouter listings. Neither explains the path from application to acceptance.

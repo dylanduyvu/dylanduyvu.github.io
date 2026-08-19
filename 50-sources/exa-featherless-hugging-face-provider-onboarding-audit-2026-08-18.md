@@ -161,6 +161,18 @@ The process remains private. Exa found first-party setup docs, launch posts, ben
 
 The TrueFoundry case is slightly more open. Wafer's founder said the integration was built with the TrueFoundry team, and both sides published configuration details. It still does not expose the partner-selection or initial-contact sequence.
 
+## OpenRouter Follow-Up Search
+
+A second, narrow Exa pass on 2026-08-18 tested exact provider-side language such as “we applied,” “got listed,” “provider onboarding,” “test traffic,” and “accepted as an inference provider.” It searched for first-person details about initial contact, review, testing, selection, acceptance, and unpublished tactics.
+
+The search found more evidence that providers announce the result without explaining the process:
+
+- [Nextbit's provider announcement](https://www.linkedin.com/posts/nextbit256_ai-models-api-platform-activity-7338874268383858688-C3dP) says OpenRouter accepted Nextbit as an inference provider. It says Nextbit operates its own data center and had access to large OpenRouter traffic. It does not state how Nextbit applied, who it contacted, what OpenRouter reviewed, how long acceptance took, or what gave it an advantage.
+- [Wafer's router documentation](https://docs.wafer.ai/serverless/router-setup) confirms that Wafer is listed on OpenRouter and explains the user-side configuration. It does not explain the provider-selection process.
+- [OpenRouter's provider guide](https://openrouter.ai/docs/guides/community/for-providers) explains the form, technical interface, baseline tests, pricing, monitoring, and routing. This is gateway-written process documentation, not a provider's account of review and acceptance.
+
+No result in this pass supplied an application-to-acceptance chronology from an OpenRouter provider. This strengthens the scoped research finding. It still does not prove that no account exists in an unindexed page, deleted post, private community, email thread, or call.
+
 ## Research Conclusion
 
 The strongest verified lesson is not “submit better code and you get listed.” It is:
