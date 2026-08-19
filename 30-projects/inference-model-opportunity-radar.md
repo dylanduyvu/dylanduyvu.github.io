@@ -28,6 +28,10 @@ Proposed on 2026-08-19. No dashboard or automated collector has been built.
 
 The public-data audit found enough information for a useful first version. OpenRouter supplies daily top-model token totals and endpoint-level provider information. Hugging Face, LM Studio, and Ollama provide local-adoption signals. Artificial Analysis provides independent benchmark, price, and performance data.
 
+OpenRouter is sufficient as the primary hosted-demand surface for a version-zero tool focused on winning an OpenRouter listing. It is not a total-market measure. All usage fields must retain the `OpenRouter` label, and broader conclusions need local signals and cross-gateway supply checks.
+
+The dashboard search also found that much of the general charting layer already exists. OpenRouter Inference Provider Market Share covers host share and model-provider competition. CodeSOTA covers model churn, substitution, lifecycle, and application demand. token.app covers prices and OpenRouter rankings. ParaPulse and Open LLM Distribution Leaderboard cover Hugging Face download trends. Artificial Analysis covers provider performance. The proposed radar should join these surfaces into candidate decisions instead of cloning them.
+
 ## Core Views
 
 ### Release Radar
@@ -85,6 +89,9 @@ Each opportunity should have:
 - LM Studio model pages.
 - Ollama library pages.
 - Artificial Analysis model and provider data, subject to access tier.
+- Hugging Face Inference Providers mappings and provider performance fields.
+- Vercel AI Gateway's public model and provider catalog.
+- Existing OpenRouter dashboards as validation sources, not as the only raw-data dependency.
 - Official model-lab GitHub news, Hugging Face collections, ModelScope releases, and X posts for event timing.
 
 ## Decision Logic
@@ -100,14 +107,15 @@ Provider count must reduce the opportunity score. Use demand divided by provider
 
 ## V0 Scope
 
-Start with OpenRouter and text-generation models only.
+Start with OpenRouter as the hosted-demand spine and text-generation models only. This scope is enough to choose an OpenRouter listing target. It is not enough to estimate total inference demand.
 
 1. Take a daily snapshot of the top-50 token dataset.
 2. Take a daily snapshot of the model list and endpoint list.
 3. Map the top open-weight models to Hugging Face repositories and local-tool pages.
 4. Calculate release age, token velocity, local-download velocity, qualified provider count, and frontier gaps.
 5. Produce one ranked table and one local-versus-hosted quadrant.
-6. Manually review the top ten candidates before any build decision.
+6. Compare results with existing OpenRouter, Hugging Face, and performance dashboards.
+7. Manually review the top ten candidates before any build decision.
 
 The first version should not scrape every gateway or build a universal market estimate. OpenRouter is the first measurable hosted-demand surface.
 
@@ -120,6 +128,8 @@ The first version should not scrape every gateway or build a universal market es
 - How should the score handle models outside the daily top 50?
 - Can public app and task-classification data identify coding and agent demand for a specific model?
 - Which hardware-cost source is accurate enough for the first unit-economics gate?
+- Can existing dashboard data be reused legally and reliably, or should it be used only for validation against official sources?
+- How often do unofficial OpenRouter scrapers miss a new model or break when a provider page changes?
 
 ## Next Tests
 
@@ -128,6 +138,7 @@ The first version should not scrape every gateway or build a universal market es
 - Map ten models to Hugging Face, LM Studio, and Ollama by hand before automating identity resolution.
 - Test the local-versus-hosted classification on Qwen3.8-27B, Qwen3.6-27B, GLM-5.1, and two weak-demand control models.
 - Define the minimum service edge and economics fields needed before a model becomes a build candidate.
+- Compare the first ranked table with OpenRouter Inference Provider Market Share, CodeSOTA, token.app, and Artificial Analysis. Investigate disagreements instead of averaging them away.
 
 ## Sources
 

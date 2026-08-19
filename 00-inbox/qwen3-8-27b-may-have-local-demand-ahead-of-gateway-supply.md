@@ -17,9 +17,9 @@ tags: [hunch, qwen3-8-27b, openrouter, local-inference, provider-gap]
 
 ## Claim
 
-Qwen3.8-27B is a strong candidate for a demand-adjusted OpenRouter gap. It had five visible providers on 2026-08-19, while local-inference download activity was already high five days after release.
+Qwen3.8-27B is a strong candidate for a demand-adjusted OpenRouter gap. It had five visible providers on 2026-08-19, while both local-inference downloads and OpenRouter activity were already high five days after release.
 
-This is a candidate, not yet a build decision. Local downloads show attention and model-user fit. They do not prove that the same users will buy hosted API tokens.
+This is a candidate, not yet a build decision. The new OpenRouter activity data resolves the earlier question of whether hosted use exists. It does not show that demand will persist, that traffic is distributed across many paying customers, or that a sixth provider can win routing share.
 
 ## Origin
 
@@ -34,6 +34,8 @@ Dylan, 2026-08-19:
 - The visible median performance values ranged from 0.70 to 2.20 seconds of latency, 26 to 126 output tokens per second, and 97.60% to 99.35% uptime.
 - The LM Studio model page showed 908,400 downloads and 41 stars when checked on 2026-08-19. Its older Qwen3.6-27B page showed 1.4 million downloads in the same search pass. Qwen3.8-27B reached about two-thirds of that displayed count within five days.
 - The Hugging Face API showed more than four million downloads for the Unsloth GGUF repository, more than one million for the LM Studio GGUF repository, and more than one million for Qwen's official model repository when checked on 2026-08-19.
+- OpenRouter's public model page embedded daily activity rows for the model. The complete 2026-08-18 UTC row reported approximately 24.60 billion prompt-plus-completion tokens across 1.49 million requests. The 2026-08-17 row reported approximately 11.14 billion tokens across 540,586 requests. The 2026-08-19 row was partial when checked and must not be compared as a complete day.
+- The same page listed Hermes Agent, pi, Qwen Code, omp, and bcode as the five largest visible public applications for the model. Public-application data excludes private and hidden traffic.
 
 Hugging Face defines model downloads as qualifying HTTP requests, not unique users. Each GGUF file request counts. A full repository clone can count more than once. These figures are strong activity signals, but they are not user counts or paid-demand measurements.
 
@@ -43,7 +45,7 @@ Jakub Janiak told Dylan that Qwen3.8-27B is a model that many people like to run
 
 ## Reasonable Inference
 
-The combination of high local activity and only five visible OpenRouter providers makes Qwen3.8-27B more interesting than a model selected by provider count alone. Local activity is an early demand indicator because it shows that users are willing to install, quantize, and configure the model.
+The combination of high local activity, rapid OpenRouter token growth, and only five visible providers makes Qwen3.8-27B more interesting than a model selected by provider count alone. Local activity shows that users are willing to install, quantize, and configure the model. OpenRouter activity shows that substantial hosted use also exists.
 
 A hosted version may appeal to users who want the model's capabilities but do not want local memory limits, setup work, continuous uptime, high concurrency, or long-context operating costs. That conversion is plausible, not verified.
 
@@ -52,7 +54,7 @@ A hosted version may appeal to users who want the model's capabilities but do no
 - Local users may choose the model because they value privacy, ownership, or zero marginal token cost. Those users may not convert to a paid API.
 - Five providers may be normal for a model that is only five days old. Provider supply can increase quickly.
 - Existing supply is not weak on every visible measure. Venice showed 126 output tokens per second at $0.45 input and $3.20 output per million tokens. A sixth provider needs a clear edge.
-- OpenRouter provider count does not show routed demand, provider market share, queueing, errors, tool-call success, long-context reliability, or unmet geography.
+- Aggregate OpenRouter activity does not show provider market share, customer concentration, gross margin, queueing, long-context reliability, or unmet geography.
 - Download totals across repositories must not be added as if they were unique users.
 
 ## Cheapest Test
@@ -63,7 +65,7 @@ A hosted version may appeal to users who want the model's capabilities but do no
 4. Benchmark the intended serving stack against the current visible frontier. A useful offer needs a measurable edge in price, throughput, latency, uptime, tool-call reliability, long-context reliability, privacy, or geography.
 5. Test paid API demand with a small endpoint before making a large capacity commitment.
 
-Promote this hunch if OpenRouter activity or direct user evidence shows paid API demand and a service edge is achievable. Demote it if the demand remains local-only or current providers already serve the important workload well.
+Promote this hunch if the activity persists, customer evidence shows paid intent, and a service edge is achievable. Demote it if demand decays after launch or current providers already serve the important workload well.
 
 ## Screenshot
 
@@ -82,3 +84,7 @@ Promote this hunch if OpenRouter activity or direct user evidence shows paid API
 ### 2026-08-19
 
 Initial capture as a medium-confidence opportunity hunch. Local activity is directly supported. Paid API demand and a defensible serving edge remain unverified.
+
+### 2026-08-19: OpenRouter activity strengthens the candidate
+
+OpenRouter's public model page showed approximately 24.60 billion prompt-plus-completion tokens and 1.49 million requests for the complete 2026-08-18 UTC day. This replaces the earlier statement that hosted demand was unknown. Durability, customer concentration, provider share, and a defensible new-provider edge remain unverified.
