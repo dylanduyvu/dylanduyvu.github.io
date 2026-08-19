@@ -85,7 +85,7 @@ An Exa search on 2026-08-19 found a strong local-use signal:
 
 **Source claim:** Dylan reported that Jakub Janiak said many people like to run this model locally. The public local-download activity supports that direction, but it does not identify the users or why they chose local execution.
 
-**Reasonable inference:** High local activity and high early OpenRouter activity make this a useful demand-adjusted gap candidate. The preserved screenshot showed five providers, while a later same-day live page showed six. Raw provider count does not prove scarce qualified supply. Further market research should test demand persistence, supply growth, application mix, and the qualified provider frontier for a named workload. Whether our hardware can compete is a separate question that has not been tested.
+**Reasonable inference:** High local activity and high early OpenRouter activity make this a useful demand-adjusted gap candidate. The preserved screenshot showed five providers, while a later same-day live page showed six. A later check of OpenRouter's endpoint API on 2026-08-19 returned seven providers: Chutes, AkashML, Venice, Parasail, Reka, io.net, and Alibaba. Raw provider count does not prove scarce qualified supply. Further market research should test demand persistence, supply growth, application mix, and the qualified provider frontier for a named workload. Whether our hardware can compete is a separate question that has not been tested.
 
 ## Primary Sources
 

@@ -15,6 +15,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 - **Reader:** A new inference provider with access to GPUs that wants to become an OpenRouter provider.
 - **Format:** A short, chronological operator playbook.
+- **Draft:** [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider, draft v1]].
 - **Target length:** 1,200 to 1,800 words. Draft toward 1,500.
 - **Reader promise:** The best available process for selecting a useful model, proving an edge, shipping a review-ready endpoint, applying, and earning routed traffic.
 - **Core thesis:** OpenRouter currently prioritizes providers that bring models they own or control, so this guide focuses on the other route it names: filling a clear gap in its network. An open-weight provider should enter with demand-backed scarce supply and a live, measurable service instead of joining a crowded model price war.
@@ -293,3 +294,4 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - 2026-08-19: Made a public live performance dashboard part of the launch package. Defined the minimum live metrics and separated it from the full customer account dashboard that can wait.
 - 2026-08-19: Completed a full outline review. Added a manual gap screen, load and overload tests, exact routing logic, the official provider email, a single-contact sequence, clearer privacy and payment requirements, and a worked Qwen screen. Defined the public dashboard as proof of the provider's claimed edge under declared serving conditions. Kept the seven-step sequence without failure branches and retained unlimited-token language for the flat-rate, request-capped launch offer.
 - 2026-08-19: Applied the post-review patch. Removed the repeated opening thesis, added a dated Stripe acquisition note without an unconfirmed sale price, reduced section targets so the checklist fits below 1,800 words, added publication-day source checks, and tightened the closing. Kept the two named BD contacts, the live dashboard, and the seven-step structure without a failure branch.
+- 2026-08-19: Drafted the complete version-one article from this skeleton and linked it above. The draft retains the approved seven-step sequence, named provider contacts, live dashboard, retail pricing aside, and evidence boundaries.
