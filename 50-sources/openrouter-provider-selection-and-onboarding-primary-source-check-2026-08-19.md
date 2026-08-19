@@ -85,10 +85,20 @@ Rank candidates with four inputs:
 
 1. demand or release attention;
 2. provider scarcity;
-3. a measurable edge in price, latency, throughput, region, privacy, reliability, or capability; and
+3. a reproducible edge in price, latency, throughput, context, region, privacy, uptime, tool-call reliability, or another supported capability; and
 4. achievable margin and capacity.
 
 Build the minimum review-ready endpoint before approval. Do not make large, hard-to-reverse capacity commitments from provider scarcity alone.
+
+## Metric Hierarchy
+
+The revised synthesis correctly expands beyond price and latency when those attributes are already competitive:
+
+- **Direct routing factors:** price, time to first token, throughput, and uptime.
+- **Capability gaps:** context length, supported parameters, region, privacy, and data-retention terms can make the endpoint eligible for requests that other providers cannot serve.
+- **Tool traffic:** OpenRouter's provider guide says tool-call success can change routing priority through Auto Exacto.
+
+The provider does not need to lead every metric. It needs one important, reproducible edge without failing the reliability, margin, and capacity requirements around it.
 
 ## Links
 

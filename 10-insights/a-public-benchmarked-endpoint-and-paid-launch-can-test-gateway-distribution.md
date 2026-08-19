@@ -48,9 +48,9 @@ The endpoint remains the product. The launch and paid boost make the product vis
 
 ## Test Design
 
-- Use two model-selection arms: day-zero service for a high-interest new open model, or an existing model with demonstrated demand and too few providers or a weak performance attribute.
+- Use two model-selection arms: day-zero service for a high-interest new Chinese open model, or an existing model with demonstrated demand, too few providers, and a performance attribute that can lead its current provider set.
 - Do not use provider count alone. It measures supply, not demand. Rank candidates by demand, provider scarcity, measurable edge, margin, and available capacity.
-- Choose one edge that a gateway can verify, such as price, time to first token, output speed, region, privacy, capacity, or early access to a wanted model.
+- Check price and time to first token first. If those metrics are already saturated, test throughput, context length, uptime, tool-call reliability, region, privacy, or another supported capability. The endpoint needs one important, reproducible edge. It does not need to lead every metric.
 - Publish the model ID, base URL, price, context limits, privacy policy, uptime, time to first token, output speed, test method, hardware, region, and available capacity.
 - Use an authenticated endpoint. Give each gateway a separate test key so its requests can be measured without exposing the service.
 - Use one tracked launch URL. Record organic and paid impressions, link visits, API-key requests, successful calls, repeat users, spend, and cost per qualified tester.
@@ -90,3 +90,4 @@ The endpoint remains the product. The launch and paid boost make the product vis
 
 - 2026-08-19: Created from Dylan's proposed build, public proof, paid launch, gateway application, tagging, and business-development sequence. Recorded as a testable hypothesis because no current case proves that the launch causes acceptance.
 - 2026-08-19: Raised confidence from low-medium to medium after a primary-source check confirmed OpenRouter's gap priority, pre-review technical requirements, and formal handling of social inbound. Kept day-zero acceptance, paid amplification, tagging, and review acceleration as hypotheses. Corrected the new-model notification quote from Shashank Goyal to Tomas Oliva.
+- 2026-08-19: Incorporated Dylan's revised OpenRouter-specific version. The existing-model arm now seeks one leading, reproducible performance or capability metric when price and latency are already saturated. Preserved provider count as a supply signal, not proof of demand.

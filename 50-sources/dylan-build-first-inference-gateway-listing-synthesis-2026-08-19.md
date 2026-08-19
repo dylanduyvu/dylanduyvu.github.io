@@ -11,7 +11,7 @@ orgs: [openrouter]
 tags: [provider-listing, gap-filling, day-zero-serving, paid-distribution, business-development]
 ---
 
-# Dylan: Build a gap-filling endpoint before relying on gateway business development
+# Dylan: Build a gap-filling endpoint before relying on OpenRouter business development
 
 ## Raw Context
 
@@ -28,9 +28,32 @@ tags: [provider-listing, gap-filling, day-zero-serving, paid-distribution, busin
 >
 > wdyt about this^ my synthesis
 
+## Revised Raw Context
+
+Later on 2026-08-19, Dylan narrowed the target to OpenRouter and made the second model-selection strategy more specific:
+
+> still researching, but my best foot forward action to get listed on openrouter is:
+>
+> set up the infrastructure ready to serve an undeserved open source model. for these gateways, plugging provider network holes is the priority over competition and race to the bottom dynamics amongst already popular models. this can mainly be done via two strats:
+> 1/ day 0 service of a new chinese open source model with impressive performance on typical stats (i.e., cost, latency)
+> 2/ find underserved open source model (by provider # - easiest to spot - or by underserved performance attribute), build the best metric on a primary parameter or alternative parameter if price and latency are farmed (i.e., context window, throughput, uptime, tool call reliability) and serve it there
+> launch an inference endpoint publicly and announce it on twitter citing the hole that you're plugging. boost the tweet maximally to get eyeballs on it. tag target gateways in the tweet.
+> apply formally through application channels on these gateways
+> do bd with the target gateways (there are heads of provider eco that we can target) to speed up our application process; openrouter's provider eco head specifically asks to be notified when a new model drops for example
+>
+> notably, it's the wrong strategy to gate building the infra and endpoint before doing bd. there is no shot that we get a confirmation that we can get listed ahead of a technical diligence of our performance
+>
+> modified a bit^
+
+## Revision Delta
+
+- The target is now OpenRouter, not inference gateways as a general class.
+- The existing-model strategy now requires a measurable performance edge. Price and latency are the first checks. If those are already saturated, the candidate edge can be context length, throughput, uptime, or tool-call reliability.
+- Provider count remains the easiest supply-gap signal, but it is not enough without demand.
+
 ## Durable Delta
 
-Dylan's current best-action synthesis is build first, then launch, apply, and run business development in one coordinated window. The supply strategy has two arms: serve a high-interest new Chinese open model on day zero, or find an existing model with too few providers or a weak performance attribute and supply that gap.
+Dylan's revised best-action synthesis is build first, then launch, apply, and run business development in one coordinated OpenRouter window. The supply strategy has two arms: serve a high-interest new Chinese open model on day zero, or find an existing model with demand, too few providers, and a performance attribute that can lead its current provider set.
 
 The synthesis rejects waiting for pre-approval before building a review-ready endpoint. It treats the endpoint and measured performance as the object that makes technical review possible.
 
