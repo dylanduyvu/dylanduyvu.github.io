@@ -3,11 +3,11 @@ type: insight
 status: hypothesis
 created: 2026-08-19
 updated: 2026-08-19
-confidence: low-medium
+confidence: medium
 domains: [inference, inference-marketplaces, distribution, go-to-market]
 projects: []
-sources: [dylan-public-endpoint-paid-launch-gateway-distribution-hypothesis-2026-08-19, dylan-openrouter-listing-case-study-causal-audit-2026-08-18, exa-featherless-hugging-face-provider-onboarding-audit-2026-08-18]
-people: []
+sources: [dylan-public-endpoint-paid-launch-gateway-distribution-hypothesis-2026-08-19, dylan-build-first-inference-gateway-listing-synthesis-2026-08-19, openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19, dylan-openrouter-listing-case-study-causal-audit-2026-08-18, exa-featherless-hugging-face-provider-onboarding-audit-2026-08-18]
+people: [tomas-oliva, shashank-goyal]
 orgs: [openrouter]
 aliases: [build prove amplify apply and follow up, public endpoint paid launch gateway test]
 tags: [provider-listing, public-launch, paid-distribution, gateway-applications, business-development]
@@ -17,32 +17,39 @@ tags: [provider-listing, public-launch, paid-distribution, gateway-applications,
 
 ## Claim
 
-The strongest current pre-listing distribution test is a coordinated sequence:
+The strongest current pre-listing action plan is a coordinated sequence:
 
-1. build a public, authenticated, priced inference endpoint with a clear edge;
-2. publish live or reproducible performance and operating statistics;
-3. announce the endpoint on X and use a defined paid-boost budget;
-4. apply to relevant gateways during the same launch window; and
-5. tag relevant gateway teams and run direct business-development follow-up with a test key and evidence packet.
+1. select a model with demand, scarce provider supply, and a measurable edge;
+2. build a public, authenticated, priced inference endpoint that meets the gateway's review requirements;
+3. publish live or reproducible performance and operating statistics;
+4. announce the endpoint on X and use a defined paid-boost budget;
+5. apply to relevant gateways during the same launch window; and
+6. tag relevant gateway teams and run direct business-development follow-up with a test key and evidence packet.
 
-This is a go-to-market hypothesis. It is not a verified route to gateway acceptance.
+OpenRouter's current rules directly support gap selection and technical readiness before review. The day-zero, paid-launch, tagging, and review-acceleration effects remain hypotheses.
 
 ## Why It Matters
 
 Gateway approval is currently a public black box. This sequence cannot remove that uncertainty, but it can turn one application into a measurable distribution experiment. The provider can observe public interest, real endpoint use, gateway responses, technical-review requests, and later routing traffic.
+
+OpenRouter says providers must meet its technical requirements before they are considered. This makes it wrong to wait for formal approval before building the minimum review-ready endpoint. Gap discovery and business development can still run in parallel, and large capacity commitments can wait for stronger evidence.
 
 The endpoint remains the product. The launch and paid boost make the product visible.
 
 ## Evidence
 
 - **Direct observation:** Dylan saw a boosted X post from an inference provider. The post and its outcome were not captured, so it only generated the hypothesis.
-- **Direct evidence from current research:** Providers publish day-zero launches, prices, performance, and traffic after listing. The public cases do not show that these actions caused approval.
-- **Source claim from current research:** OpenRouter says it gives priority to providers that fill network gaps. This supports choosing a useful edge, but it does not prove that public attention or paid reach affects selection.
-- **Reasonable inference:** A live endpoint, clear price, reproducible statistics, and test key reduce the work needed to inspect a provider. A coordinated launch can also produce demand evidence for later business development.
+- **Direct official evidence:** OpenRouter says providers must meet its technical requirements before consideration and that it gives priority to providers that fill network gaps. Its application asks for infrastructure, endpoints, models, and data policies before technical review.
+- **Direct official evidence:** OpenRouter's provider-partnership job material treats X and LinkedIn pings as real inbound channels and describes first conversations, qualification, onboarding, tests, pricing, and launch work.
+- **Direct evidence from provider cases:** Providers publish day-zero launches, prices, performance, and traffic after listing. The public cases do not show that these actions caused approval.
+- **Role correction:** Tomas Oliva in provider operations, not Shashank Goyal, the Head of Provider Ecosystem, publicly asked people to notify him when a new model drops.
+- **Reasonable inference:** A live endpoint, clear price, reproducible statistics, and test key reduce the work needed to inspect a provider. A coordinated launch can also produce demand evidence for later business development. Gap research and business development should run during the build rather than block it.
 - **Open speculation:** A large paid boost, public tags, or visible test traffic may move a gateway application forward.
 
 ## Test Design
 
+- Use two model-selection arms: day-zero service for a high-interest new open model, or an existing model with demonstrated demand and too few providers or a weak performance attribute.
+- Do not use provider count alone. It measures supply, not demand. Rank candidates by demand, provider scarcity, measurable edge, margin, and available capacity.
 - Choose one edge that a gateway can verify, such as price, time to first token, output speed, region, privacy, capacity, or early access to a wanted model.
 - Publish the model ID, base URL, price, context limits, privacy policy, uptime, time to first token, output speed, test method, hardware, region, and available capacity.
 - Use an authenticated endpoint. Give each gateway a separate test key so its requests can be measured without exposing the service.
@@ -53,6 +60,7 @@ The endpoint remains the product. The launch and paid boost make the product vis
 ## Implications
 
 - A strong edge should map to a visible gateway supply gap, not only to a provider benchmark.
+- Gap-filling is a selection strategy. It does not remove later price competition. Once several providers serve the model, routing can again favor price, uptime, latency, throughput, and tool success.
 - The launch post should point to a callable product and reproducible evidence, not only to a throughput chart.
 - Paid distribution is useful only if it produces qualified testers, customer demand, or gateway attention at an acceptable cost.
 - A rejection or no response still produces useful evidence if the full sequence and funnel are recorded.
@@ -64,11 +72,15 @@ The endpoint remains the product. The launch and paid boost make the product vis
 - A gateway may treat public tagging as useful proof, irrelevant marketing, or unwanted pressure.
 - Self-reported statistics can be discounted unless the method is reproducible and the endpoint performs under real traffic.
 - Applying to every gateway can create shallow integrations. The provider should first confirm that each gateway is accepting partners and that the endpoint fills a relevant gap.
+- A gateway can start an informal conversation before the endpoint is complete. The evidence supports not waiting for formal approval, not refusing early business development.
+- A day-zero launch can force the team to serve an unfamiliar model before its kernels, tokenizer, license, reliability, and real demand are understood.
 - One campaign will be a case study, not a universal listing rule.
 
 ## Links
 
 - Source: [[dylan-public-endpoint-paid-launch-gateway-distribution-hypothesis-2026-08-19|Dylan: Build, prove, amplify, apply, and follow up with gateways]]
+- Refined synthesis: [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan: Build a gap-filling endpoint before relying on gateway business development]]
+- Primary-source check: [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]
 - Readiness definition: [[shipping-an-inference-model-means-a-live-priced-api-not-a-website|Shipping an inference model means a live priced API, not a website]]
 - Evidence boundary: [[day-zero-shipping-is-evidenced-after-listing-not-as-a-path-to-approval|Day-0 shipping is evidenced after listing, not as a path to approval]]
 - Research gap: [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
@@ -77,3 +89,4 @@ The endpoint remains the product. The launch and paid boost make the product vis
 ## Updates
 
 - 2026-08-19: Created from Dylan's proposed build, public proof, paid launch, gateway application, tagging, and business-development sequence. Recorded as a testable hypothesis because no current case proves that the launch causes acceptance.
+- 2026-08-19: Raised confidence from low-medium to medium after a primary-source check confirmed OpenRouter's gap priority, pre-review technical requirements, and formal handling of social inbound. Kept day-zero acceptance, paid amplification, tagging, and review acceleration as hypotheses. Corrected the new-model notification quote from Shashank Goyal to Tomas Oliva.
