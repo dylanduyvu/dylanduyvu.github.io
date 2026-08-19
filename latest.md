@@ -8,18 +8,18 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 6:36 PM EDT
+Generated: Aug 19, 2026, 6:39 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 41 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 42 note commits. The most recent movement is:
 
+- Project decision: remove Wafer credit from pricing aside.
 - Project decision: add Wafer-inspired launch pricing ladder.
 - Project decision: start OpenRouter BD after internal proof.
 - Insight update: weaken common open-weight OpenRouter listing path.
 - Project decision: add OpenRouter provider article skeleton.
 - Project decision: stop inference radar at potential opportunities.
-- Source capture: record Qwen3.8 27B release date.
 
 ## Current Hub Signals
 
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 41 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 6:39 PM EDT - project: remove Wafer credit from pricing aside
+
+Project decision: remove Wafer credit from pricing aside.
+
+Changed notes:
+  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 
 ### Aug 19, 2026, 6:36 PM EDT - project: add Wafer-inspired launch pricing ladder
 
@@ -135,24 +142,11 @@ Changed notes:
   - [[inference|Inference]]
   - [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B open weights released on August 14, 2026]]
 
-### Aug 19, 2026, 1:50 PM EDT - research: document Wafer OpenCode catalog onboarding
-
-research: document Wafer OpenCode catalog onboarding.
-
-Changed notes:
-  - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
-  - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
-  - [[wafer-entered-opencodes-open-provider-catalog-five-days-after-waferpass-launched|Wafer entered OpenCode's open provider catalog five days after WaferPass launched]]
-  - [[inference|Inference]]
-  - [[inference-gateway-provider-onboarding-models-2026-08-19|Inference gateway provider-onboarding models]]
-  - [[modelsdev-wafer-provider-pr-1488-2026-04-20|Models.dev PR 1488 added Wafer to OpenCode's provider catalog]]
-  - [[waferpass-anthropic-openclaw-event-timeline-2026-08-19|WaferPass launched soon after an Anthropic access change, but causation is unproven]]
-  - [[wafer-ai|Wafer AI]]
-
-_Showing the newest 12 of 29 updates in this window._
+_Showing the newest 12 of 30 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: project: remove Wafer credit from pricing aside - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: project: add Wafer-inspired launch pricing ladder - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Aug 19, 2026: project: start OpenRouter BD after internal proof - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: insight: weaken common open-weight OpenRouter listing path - [[openrouters-proprietary-model-priority-weakens-the-common-open-weight-provider-path|OpenRouter's proprietary-model priority weakens the common open-weight provider path]]
@@ -177,12 +171,12 @@ _Showing the newest 12 of 29 updates in this window._
 - Aug 19, 2026: research: refine OpenRouter model gap strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: refine build-first gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: insight: add measured inference provider launch hypothesis - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-- Aug 18, 2026: research: confirm OpenRouter listing process remains unpublished - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 
-_Showing the newest 25 of 41 updates in this window._
+_Showing the newest 25 of 42 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: project: remove Wafer credit from pricing aside - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: project: add Wafer-inspired launch pricing ladder - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Aug 19, 2026: project: start OpenRouter BD after internal proof - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: insight: weaken common open-weight OpenRouter listing path - [[openrouters-proprietary-model-priority-weakens-the-common-open-weight-provider-path|OpenRouter's proprietary-model priority weakens the common open-weight provider path]]
@@ -207,6 +201,5 @@ _Showing the newest 25 of 41 updates in this window._
 - Aug 19, 2026: research: refine OpenRouter model gap strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: refine build-first gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: insight: add measured inference provider launch hypothesis - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-- Aug 18, 2026: research: confirm OpenRouter listing process remains unpublished - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 
-_Showing the newest 25 of 200 updates in this window._
+_Showing the newest 25 of 201 updates in this window._
