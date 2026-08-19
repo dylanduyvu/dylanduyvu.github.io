@@ -7,7 +7,7 @@ source_date: 2026-08-18
 source_type: automated_research
 domains: [inference, model-serving, inference-marketplaces, compute-economics]
 people: []
-orgs: [openrouter, hugging-face, inceptron, chutes, parasail, baseten, siliconflow, telnyx]
+orgs: [openrouter, hugging-face, inceptron, chutes, parasail, baseten, siliconflow, telnyx, featherless-ai, wafer-ai]
 source_file: compass_artifact_wf-db8f8ab6-d159-50b7-9614-0c73a458ab5b_text_markdown.md
 source_sha256: e3c7879ac096fb4555dfc635e309a8b471de570377b5348fab8c99a6c811c5f1
 tags: [openrouter, ai-gateways, provider-listing, case-studies, day-zero-serving]
@@ -18,6 +18,9 @@ tags: [openrouter, ai-gateways, provider-listing, case-studies, day-zero-serving
 
 > [!danger] 2026-08-18 causal correction
 > The central claim that day-0 shipping is an application hook is unsupported by the cited cases. The cases show day-0 shipping after providers were already listed or had launch access. The official process and the post-listing growth evidence survive. The pre-listing approval mechanism remains unknown. The original report is preserved below for belief history.
+
+> [!note] 2026-08-18 provider-record update
+> A primary-source Exa audit verified and expanded the Featherless Hugging Face chronology. It also found that Wafer is now live on OpenRouter and Vercel AI Gateway. Wafer still has not published its application or acceptance process. The original report is preserved below.
 
 # How Inference Providers Get Listed on AI Gateways: First-Hand Case Studies
 
@@ -184,3 +187,4 @@ Benchmarks that would change the plan: if OpenRouter's backlog message stops "pr
 ## Updates
 
 - 2026-08-18: Marked the report contested after a causal audit. The provider cases support day-0 shipping as a post-listing growth tactic, not as a demonstrated path to approval. The report's own caveats show that the approval mechanics were not public. See [[dylan-openrouter-listing-case-study-causal-audit-2026-08-18|the correction source]], [[day-zero-shipping-is-evidenced-after-listing-not-as-a-path-to-approval|the corrected day-0 claim]], and [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|the public-record gap]].
+- 2026-08-18: Added the [[exa-featherless-hugging-face-provider-onboarding-audit-2026-08-18|primary-source Featherless audit]]. The successful Hugging Face case shows a coordinated partnership implementation, while later working integrations show that code and tests do not bypass the server-side partner-selection gate. The public record does not show when Hugging Face selected Featherless. Wafer's current docs and OpenRouter page now confirm a live listing, but Wafer's listing mechanics remain private.

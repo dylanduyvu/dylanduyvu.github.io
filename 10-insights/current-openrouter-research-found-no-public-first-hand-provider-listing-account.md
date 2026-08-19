@@ -53,8 +53,10 @@ The research void also creates an article angle. A guide based on a real applica
 - Correction source: [[dylan-openrouter-listing-case-study-causal-audit-2026-08-18|Dylan: The OpenRouter case studies do not support the pre-listing causal claim]]
 - Contested report: [[compass-ai-gateway-provider-listing-case-studies-2026-08-18|Compass AI gateway provider-listing case studies]]
 - Related insight: [[day-zero-shipping-is-evidenced-after-listing-not-as-a-path-to-approval|Day-0 shipping is evidenced after listing, not as a path to approval]]
+- Gateway contrast: [[featherless-reached-hugging-face-through-a-coordinated-provider-integration|Featherless reached Hugging Face through a coordinated provider integration]]
 - Area: [[inference|Inference]]
 
 ## Updates
 
 - 2026-08-18: Created after the report audit separated the documented official process and post-listing evidence from the missing pre-listing case evidence.
+- 2026-08-18: An Exa pass found a partial first-hand onboarding chronology for Featherless on Hugging Face. It does not change the OpenRouter claim. Wafer is now live on OpenRouter, but its application and acceptance process remain unpublished.
