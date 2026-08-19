@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 7:26 PM EDT
+Generated: Aug 19, 2026, 7:36 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 46 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 47 note commits. The most recent movement is:
 
 - Project decision: patch OpenRouter article review.
 - Project decision: strengthen OpenRouter article outline.
@@ -27,6 +27,16 @@ In the past 7 days, the public vault changed through 46 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 7:36 PM EDT - article: add OpenRouter provider draft v1
+
+article: add OpenRouter provider draft v1.
+
+Changed notes:
+  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
+  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
+  - [[inference|Inference]]
+  - [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B open weights released on August 14, 2026]]
 
 ### Aug 19, 2026, 7:26 PM EDT - project: patch OpenRouter article review
 
@@ -125,22 +135,11 @@ Changed notes:
   - [[inference-opportunity-radar-pre-scope-design-audit-2026-08-19|Pre-scope design audit: the automated opportunity radar is buildable through label 3]]
   - [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B open weights released on August 14, 2026]]
 
-### Aug 19, 2026, 3:03 PM EDT - project: stop inference radar at potential opportunities
-
-Project decision: stop inference radar at potential opportunities.
-
-Changed notes:
-  - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
-  - [[local-download-velocity-and-serverless-token-volume-measure-different-demand|Local download velocity and serverless token volume measure different demand]]
-  - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
-  - [[inference|Inference]]
-  - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
-  - [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B open weights released on August 14, 2026]]
-
-_Showing the newest 12 of 34 updates in this window._
+_Showing the newest 12 of 35 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: article: add OpenRouter provider draft v1 - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: project: patch OpenRouter article review - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: project: strengthen OpenRouter article outline - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Aug 19, 2026: project: require public live inference dashboard - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
@@ -165,12 +164,12 @@ _Showing the newest 12 of 34 updates in this window._
 - Aug 19, 2026: research: capture sent gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: gate gateway outreach on internal proof - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: generalize curated gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-- Aug 19, 2026: research: correct inference gateway taxonomy - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
 
-_Showing the newest 25 of 46 updates in this window._
+_Showing the newest 25 of 47 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: article: add OpenRouter provider draft v1 - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: project: patch OpenRouter article review - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: project: strengthen OpenRouter article outline - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Aug 19, 2026: project: require public live inference dashboard - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
@@ -195,6 +194,5 @@ _Showing the newest 25 of 46 updates in this window._
 - Aug 19, 2026: research: capture sent gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: gate gateway outreach on internal proof - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: generalize curated gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-- Aug 19, 2026: research: correct inference gateway taxonomy - [[the-build-launch-apply-playbook-generalizes-only-to-curated-supply-marketplaces|The build-launch-apply playbook generalizes only to curated supply marketplaces]]
 
-_Showing the newest 25 of 203 updates in this window._
+_Showing the newest 25 of 204 updates in this window._
