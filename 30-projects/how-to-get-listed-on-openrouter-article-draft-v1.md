@@ -88,7 +88,9 @@ Include a public live performance dashboard in the launch post, API documentatio
 - Median and 95th-percentile time to first token, output tokens per second, and sample count.
 - Concurrency, prompt and output lengths, warm or cold state, hardware class, quantization, serving software, and region.
 
-<!-- VISUAL 3 GOES HERE: Public performance dashboard wireframe. Show service status, uptime, error rate, time to first token, output speed, load, test conditions, model version, region, and last update time. -->
+![An example public inference performance dashboard shows service health, latency, output speed, sample count, traffic types, and declared test conditions.](../70-attachments/openrouter-public-performance-dashboard.png)
+
+*Figure 3. Example public performance dashboard. This is the author's recommended proof layout, not an OpenRouter requirement. Source: author design based on [OpenRouter's published provider review criteria](https://openrouter.ai/providers/apply).*
 
 Use clear time windows and label production traffic and automated tests separately. Show the model version, method, and last update time. Never expose prompts, customer data, credentials, or sensitive infrastructure details.
 

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title description">
+  <title id="title">Example public inference performance dashboard</title>
+  <desc id="description">A wireframe for a public performance dashboard that shows service status, uptime, error rate, median and 95th-percentile time to first token, output speed, sample count, production and automated test data, serving conditions, model version, method, region, and update time.</desc>
+
+  <rect width="1600" height="1000" rx="32" fill="#F6F0E6"/>
+  <rect x="1" y="1" width="1598" height="998" rx="31" fill="none" stroke="#D8CDBE" stroke-width="2"/>
+
+  <text x="76" y="60" fill="#B86643" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="2.7">PUBLIC PERFORMANCE DASHBOARD</text>
+  <text x="76" y="122" fill="#26211D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="49" font-weight="720" letter-spacing="-1.1">Make the serving claim easy to verify</text>
+  <text x="77" y="165" fill="#6F675E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="23">Pair live metrics with the conditions that produced them.</text>
+  <rect x="1294" y="61" width="230" height="42" rx="21" fill="#F2DDD1" stroke="#D5A38B" stroke-width="1.5"/>
+  <text x="1409" y="88" text-anchor="middle" fill="#A95434" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="750" letter-spacing="1.2">EXAMPLE · NOT LIVE DATA</text>
+
+  <rect x="70" y="210" width="1460" height="710" rx="25" fill="#FFFDF8" stroke="#D7CCBC" stroke-width="2"/>
+
+  <circle cx="108" cy="259" r="7" fill="#B86643"/>
+  <text x="127" y="267" fill="#26211D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="24" font-weight="750">MODEL ID · REGION</text>
+  <rect x="362" y="237" width="154" height="37" rx="18.5" fill="#F2DDD1"/>
+  <text x="439" y="261" text-anchor="middle" fill="#A95434" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="750" letter-spacing="1">OPERATIONAL</text>
+  <text x="1491" y="253" text-anchor="end" fill="#6F675E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16">VERSION v1.4 · 60s WINDOWS · UPDATED 14:32 UTC</text>
+  <text x="1491" y="277" text-anchor="end" fill="#92887D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14">PRODUCTION AND AUTOMATED TESTS SHOWN SEPARATELY</text>
+
+  <line x1="100" y1="300" x2="1500" y2="300" stroke="#D8CDBE" stroke-width="2"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <text x="105" y="337" fill="#8A8177" font-size="14" font-weight="750" letter-spacing="1.2">ROLLING UPTIME</text>
+    <text x="105" y="378" fill="#26211D" font-size="31" font-weight="750">99.82%</text>
+    <text x="105" y="402" fill="#8A8177" font-size="14">30 DAYS</text>
+    <line x1="315" y1="320" x2="315" y2="410" stroke="#E0D7CA" stroke-width="2"/>
+
+    <text x="350" y="337" fill="#8A8177" font-size="14" font-weight="750" letter-spacing="1.2">ERROR RATE</text>
+    <text x="350" y="378" fill="#26211D" font-size="31" font-weight="750">0.31%</text>
+    <text x="350" y="402" fill="#8A8177" font-size="14">24 HOURS</text>
+    <line x1="560" y1="320" x2="560" y2="410" stroke="#E0D7CA" stroke-width="2"/>
+
+    <text x="595" y="337" fill="#8A8177" font-size="14" font-weight="750" letter-spacing="1.2">P50 TTFT</text>
+    <text x="595" y="378" fill="#26211D" font-size="31" font-weight="750">0.42s</text>
+    <text x="595" y="402" fill="#8A8177" font-size="14">24 HOURS</text>
+    <line x1="805" y1="320" x2="805" y2="410" stroke="#E0D7CA" stroke-width="2"/>
+
+    <text x="840" y="337" fill="#8A8177" font-size="14" font-weight="750" letter-spacing="1.2">P95 TTFT</text>
+    <text x="840" y="378" fill="#26211D" font-size="31" font-weight="750">1.18s</text>
+    <text x="840" y="402" fill="#8A8177" font-size="14">24 HOURS</text>
+    <line x1="1050" y1="320" x2="1050" y2="410" stroke="#E0D7CA" stroke-width="2"/>
+
+    <text x="1085" y="337" fill="#8A8177" font-size="14" font-weight="750" letter-spacing="1.2">OUTPUT SPEED</text>
+    <text x="1085" y="378" fill="#26211D" font-size="31" font-weight="750">92.4 tok/s</text>
+    <text x="1085" y="402" fill="#8A8177" font-size="14">MEDIAN</text>
+    <line x1="1295" y1="320" x2="1295" y2="410" stroke="#E0D7CA" stroke-width="2"/>
+
+    <text x="1330" y="337" fill="#8A8177" font-size="14" font-weight="750" letter-spacing="1.2">SAMPLE COUNT</text>
+    <text x="1330" y="378" fill="#26211D" font-size="31" font-weight="750">18,642</text>
+    <text x="1330" y="402" fill="#8A8177" font-size="14">24 HOURS</text>
+  </g>
+
+  <line x1="100" y1="432" x2="1500" y2="432" stroke="#D8CDBE" stroke-width="2"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <text x="105" y="472" fill="#26211D" font-size="20" font-weight="750">PERFORMANCE OVER TIME</text>
+    <line x1="430" y1="465" x2="464" y2="465" stroke="#B86643" stroke-width="4" stroke-linecap="round"/>
+    <text x="476" y="472" fill="#6F675E" font-size="15">Production traffic</text>
+    <line x1="622" y1="465" x2="656" y2="465" stroke="#A49686" stroke-width="4" stroke-dasharray="7 7" stroke-linecap="round"/>
+    <text x="668" y="472" fill="#6F675E" font-size="15">Automated tests</text>
+
+    <text x="105" y="515" fill="#8A8177" font-size="14" font-weight="750" letter-spacing="1">TIME TO FIRST TOKEN</text>
+    <line x1="105" y1="548" x2="1010" y2="548" stroke="#E5DDD2" stroke-width="1.5"/>
+    <line x1="105" y1="596" x2="1010" y2="596" stroke="#E5DDD2" stroke-width="1.5"/>
+    <line x1="105" y1="644" x2="1010" y2="644" stroke="#E5DDD2" stroke-width="1.5"/>
+    <text x="94" y="553" text-anchor="end" fill="#92887D" font-size="13">2.0s</text>
+    <text x="94" y="601" text-anchor="end" fill="#92887D" font-size="13">1.0s</text>
+    <text x="94" y="649" text-anchor="end" fill="#92887D" font-size="13">0</text>
+    <path d="M105 615 C170 606 210 614 270 591 S380 602 440 578 S550 590 620 568 S735 585 800 560 S920 574 1010 551" fill="none" stroke="#B86643" stroke-width="4" stroke-linecap="round"/>
+    <path d="M105 592 C175 580 220 588 290 572 S410 584 470 561 S585 574 650 548 S780 568 850 540 S950 553 1010 531" fill="none" stroke="#A49686" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
+
+    <text x="105" y="691" fill="#8A8177" font-size="14" font-weight="750" letter-spacing="1">OUTPUT TOKENS PER SECOND</text>
+    <line x1="105" y1="724" x2="1010" y2="724" stroke="#E5DDD2" stroke-width="1.5"/>
+    <line x1="105" y1="772" x2="1010" y2="772" stroke="#E5DDD2" stroke-width="1.5"/>
+    <line x1="105" y1="820" x2="1010" y2="820" stroke="#E5DDD2" stroke-width="1.5"/>
+    <text x="94" y="729" text-anchor="end" fill="#92887D" font-size="13">120</text>
+    <text x="94" y="777" text-anchor="end" fill="#92887D" font-size="13">60</text>
+    <text x="94" y="825" text-anchor="end" fill="#92887D" font-size="13">0</text>
+    <path d="M105 775 C160 768 210 749 275 759 S390 738 450 748 S565 727 635 739 S760 716 825 730 S935 708 1010 719" fill="none" stroke="#B86643" stroke-width="4" stroke-linecap="round"/>
+    <path d="M105 750 C170 742 220 728 290 738 S410 715 480 725 S590 705 660 714 S780 696 850 704 S950 688 1010 695" fill="none" stroke="#A49686" stroke-width="3" stroke-dasharray="8 8" stroke-linecap="round"/>
+
+    <text x="105" y="850" fill="#92887D" font-size="13">00:00</text>
+    <text x="325" y="850" fill="#92887D" font-size="13">06:00</text>
+    <text x="548" y="850" fill="#92887D" font-size="13">12:00</text>
+    <text x="770" y="850" fill="#92887D" font-size="13">18:00</text>
+    <text x="1010" y="850" text-anchor="end" fill="#92887D" font-size="13">24:00</text>
+  </g>
+
+  <rect x="1060" y="458" width="435" height="402" rx="20" fill="#F1EBE1" stroke="#D7CCBC" stroke-width="2"/>
+  <text x="1092" y="498" fill="#26211D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="750">DECLARED TEST CONDITIONS</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="17">
+    <text x="1092" y="540" fill="#8A8177">TRAFFIC VIEW</text><text x="1463" y="540" text-anchor="end" fill="#26211D" font-weight="650">Production + test</text>
+    <line x1="1092" y1="554" x2="1463" y2="554" stroke="#D8CDBE"/>
+    <text x="1092" y="584" fill="#8A8177">CONCURRENCY</text><text x="1463" y="584" text-anchor="end" fill="#26211D" font-weight="650">16 requests</text>
+    <line x1="1092" y1="598" x2="1463" y2="598" stroke="#D8CDBE"/>
+    <text x="1092" y="628" fill="#8A8177">PROMPT / OUTPUT</text><text x="1463" y="628" text-anchor="end" fill="#26211D" font-weight="650">2,048 / 512 tokens</text>
+    <line x1="1092" y1="642" x2="1463" y2="642" stroke="#D8CDBE"/>
+    <text x="1092" y="672" fill="#8A8177">MODEL STATE</text><text x="1463" y="672" text-anchor="end" fill="#26211D" font-weight="650">Warm + cold</text>
+    <line x1="1092" y1="686" x2="1463" y2="686" stroke="#D8CDBE"/>
+    <text x="1092" y="716" fill="#8A8177">HARDWARE CLASS</text><text x="1463" y="716" text-anchor="end" fill="#26211D" font-weight="650">8 × GPU</text>
+    <line x1="1092" y1="730" x2="1463" y2="730" stroke="#D8CDBE"/>
+    <text x="1092" y="760" fill="#8A8177">QUANTIZATION</text><text x="1463" y="760" text-anchor="end" fill="#26211D" font-weight="650">FP8</text>
+    <line x1="1092" y1="774" x2="1463" y2="774" stroke="#D8CDBE"/>
+    <text x="1092" y="804" fill="#8A8177">SERVING SOFTWARE</text><text x="1463" y="804" text-anchor="end" fill="#26211D" font-weight="650">vLLM</text>
+    <line x1="1092" y1="818" x2="1463" y2="818" stroke="#D8CDBE"/>
+    <text x="1092" y="848" fill="#8A8177">REGION</text><text x="1463" y="848" text-anchor="end" fill="#26211D" font-weight="650">US East</text>
+  </g>
+
+  <line x1="100" y1="881" x2="1500" y2="881" stroke="#D8CDBE" stroke-width="2"/>
+  <circle cx="113" cy="902" r="6" fill="#B86643"/>
+  <text x="132" y="909" fill="#6F675E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16">Never show prompts, customer data, credentials, or sensitive infrastructure details.</text>
+</svg>
