@@ -22,7 +22,11 @@ A solo application won't get you noticed. It's best to: first, find a gap, prove
 
 ## 1. Find a gap with real demand
 
-Look in three places. First, a strong new open-weight model can create a day-zero opening on release day. Second, a policy, outage, price, quota, license, or popular client can create replacement demand. Third, an existing model can have users but lack one important provider feature.
+Look in three places:
+
+- A strong new open-weight model can create a day-zero opening on release day.
+- A policy, outage, price, quota, license, or popular client can create replacement demand.
+- An existing model can have users but lack one important provider feature.
 
 Do not confuse scarce supply with demand. A model with one provider and no users is not a useful gap. Check request growth, developer activity, local downloads, and direct user interest. Then compare qualified providers on price, uptime, context length, region, tool support, privacy, latency, and output speed.
 
