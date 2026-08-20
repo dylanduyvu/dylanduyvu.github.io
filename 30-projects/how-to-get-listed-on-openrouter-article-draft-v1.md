@@ -16,7 +16,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, draft-v1]
 
 I read through OpenRouter's provider documents and compiled every public source I could find from inference providers that have already been listed on OpenRouter or another gateway. I then compared their launches with OpenRouter's published rules. This is what I learned about how a new provider can put its best foot forward to get listed.
 
-[OpenRouter currently prioritizes](https://openrouter.ai/providers/apply) providers that bring models they own or control. But it also gives priority to providers that fill gaps in its network, which is the route this guide covers.
+[OpenRouter currently names two priorities](https://openrouter.ai/providers/apply): providers that bring models they own or control, and providers that fill gaps in its network. This guide covers the second.
 
 A standalone application won't get you noticed. It's best to: first, find a gap, prove that you can serve it, and launch a public endpoint with performance data that anyone can inspect. Then formally apply, contact the provider team, and give them an offer they can test.
 
@@ -24,19 +24,19 @@ A standalone application won't get you noticed. It's best to: first, find a gap,
 
 ## 1. Find a gap with real demand
 
-Look in three places:
+A gap can appear in three ways:
 
 - A strong, upcoming open-weight model release can create a day-zero opening.
 - A new policy, outage, price change, quota change, license change, or popular client blowup can create replacement demand.
 - An existing model can have users but still lack an important provider feature.
 
-Let's say you want to find a wedge today instead of waiting for a market change. Use this three-step screen:
+If you want to find a gap today instead of waiting for a market change, use this process:
 
 1. Use the [OpenRouter rankings](https://openrouter.ai/rankings) to find models with rising usage.
 2. Use the [OpenRouter Inference Provider Market Share dashboard](https://or-provider-dashboard.vercel.app/) to see which hosts serve the top models and how their routing share changes.
 3. Confirm each candidate on its OpenRouter model and endpoint pages. The provider dashboard is unofficial and its model view covers only the top models.
 
-<!-- VISUAL 2 GOES HERE: Demand-versus-qualified-provider-supply matrix. High demand and low supply is the best wedge. High demand and high supply needs a clear performance or product edge. Low demand and low supply is a false gap. Low demand and high supply should be avoided. -->
+<!-- VISUAL 2 GOES HERE: Demand-versus-qualified-provider-supply matrix. High demand and low supply is the best target. High demand and high supply needs a clear performance or product edge. Low demand and low supply is a false gap. Low demand and high supply should be avoided. -->
 
 Give your agent a prompt like this:
 
@@ -66,7 +66,7 @@ At the same time, finish the minimum product that OpenRouter can inspect.
 - Expose an authenticated public HTTPS endpoint that supports OpenAI-compatible chat requests, streaming answers, and accurate token counts.
 - Publish a `/models` endpoint with the model ID, price, context length, features, capacity, location, and data-handling fields.
 - Publish privacy terms that state whether you log prompts, how long you keep data, and whether you train on it.
-- Set a price, prepare a test key, and support monthly invoicing.
+- Set a price, prepare a separate OpenRouter test key, and support monthly invoicing.
 
 Self-serve signup, retail billing, and a large marketing site can wait. The endpoint makes the application testable. The website only needs to support trust, documentation, and policy disclosure.
 
@@ -94,7 +94,7 @@ Post the launch on X, state what makes your endpoint different from the other pr
 
 ### Get users onto the endpoint
 
-Subsidized tokens can help attract early users and show how they use the service. Start with a time-limited, unlimited-token offer under a flat-rate, request-capped plan. Limit the number of users, request rate, concurrency, campaign length, and total loss. Issue the first keys manually. Then move to a subscription with a token allowance and pay-per-token overage. If pay-per-token use becomes the stronger product, make it the default and retire the subscription plans.
+Subsidized tokens can help attract early users and show how they use the service. Start with a time-limited flat-rate plan. Do not meter tokens, but cap the number of users, request rate, concurrency, campaign length, and total loss. Issue the first keys manually. Then move to a subscription with a token allowance and pay-per-token overage. If pay-per-token use becomes the stronger product, make it the default and retire the subscription plans.
 
 This traffic can show that people want the service, but it does not guarantee OpenRouter acceptance. Buy traffic only after the service can handle it.
 
@@ -107,13 +107,13 @@ Put everything the reviewer needs in one place:
 - The model and the gap it fills.
 - Proof that people want it.
 - Your test result, how you ran the test, and the dashboard link.
-- The API URL and a separate API key for OpenRouter to test.
+- The API URL and a separate OpenRouter test key.
 - Your price and the amount of traffic you can handle.
 - Where the service runs, what you do with customer data, and who OpenRouter should contact if there is a problem.
 
 ## 6. Follow up when you have something new
 
-Use the same email or direct-message thread and the same contact from Step 3. Tell them that the service is live. Send the endpoint, the gap it fills, the price, the test result, the dashboard, and a separate API key for OpenRouter's tests.
+Use the same email or direct-message thread and the same contact from Step 3. Tell them that the service is live. Send the endpoint, the gap it fills, the price, the test result, the dashboard, and the same OpenRouter test key.
 
 After that, follow up only when you have new information, such as a better result or real users.
 
@@ -131,9 +131,9 @@ Listing makes your service available. Traffic and profit make the listing valuab
 
 ## Build the application that can be called
 
-Find a gap with demand, then prove one edge on the hardware you will use. Start focused provider outreach, finish the endpoint, and launch with public evidence. Then apply and follow up with a test key.
+Find a gap with demand, then prove one edge on the hardware you will use. Start focused provider outreach, finish the endpoint, and launch with public evidence. Then apply and follow up with a separate OpenRouter test key.
 
-Do not ask for a listing before the endpoint is callable. Give OpenRouter a useful gap, a live endpoint, a measurable edge, and a test key.
+Do not ask for a listing before the endpoint is callable. Give OpenRouter a useful gap, a live endpoint, a measurable edge, and a separate test key.
 
 ## Seven-step checklist
 
@@ -142,7 +142,7 @@ Do not ask for a listing before the endpoint is callable. Give OpenRouter a usef
 - Start focused outreach after internal proof.
 - Ship the priced endpoint and live dashboard.
 - Launch publicly and submit the form.
-- Follow up with new evidence and a test key.
+- Follow up with new evidence and a separate OpenRouter test key.
 - Measure acceptance and routed traffic separately.
 
 ## Related research
