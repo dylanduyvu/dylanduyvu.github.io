@@ -18,8 +18,6 @@ tags: [article, openrouter, provider-listing, operator-playbook, draft-v1]
 
 [OpenRouter's provider page](https://openrouter.ai/providers/apply) says it has a large application backlog. It currently gives priority to providers with models they own or control and to providers that fill gaps in its network. This guide focuses on the second route.
 
-[Axios reported](https://www.axios.com/2026/08/19/stripe-payments-openrouter-singularity) that Stripe confirmed its acquisition of OpenRouter on August 19, 2026. OpenRouter's provider page still showed the same rules that day.
-
 The technical requirements below come from OpenRouter. The launch and outreach sequence is an operating plan based on those rules. Start by writing one sentence that names the demand, the missing supply, and the edge you can prove.
 
 ## 1. Find a gap with real demand

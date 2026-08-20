@@ -41,7 +41,6 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 | Article claim | Evidence status | Main support |
 | --- | --- | --- |
 | OpenRouter has a provider backlog, currently prioritizes providers with proprietary models, and also gives priority to providers that fill network gaps. | Direct official evidence | [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]] |
-| Axios reported that Stripe confirmed its acquisition of OpenRouter on 2026-08-19, but the provider application page still showed the same rules that day. | Reported confirmation plus same-day page check | [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]] |
 | A provider must meet the technical requirements before OpenRouter reviews it. | Direct official evidence | [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]] |
 | A useful target needs demand and scarce qualified supply. | Reasonable decision rule | [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] |
 | Serious provider business development should start after repeatable internal proof. | Reasonable operating inference | [[dylan-build-first-inference-gateway-listing-synthesis-2026-08-19|Dylan's build-first synthesis]] |
@@ -60,7 +59,6 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 **Job:** Break the belief that the form is the main work.
 
 - As of 2026-08-19, OpenRouter had a large provider backlog. It prioritized providers that bring models they own or control and providers that fill clear gaps in its network. This guide focuses on the gap route.
-- Axios reported that Stripe confirmed its acquisition of OpenRouter on the same date. OpenRouter's provider application page still showed the same rules that day. Keep this to one dated sentence unless the rules change before publication.
 - A complete application for another crowded endpoint is weak positioning.
 - The useful question is not, "How do I complete the form?" It is, "What missing supply can I make live and testable?"
 - Preview the sequence: find, prove, begin BD while you build, launch, apply, follow up, and compete.
@@ -276,7 +274,6 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 ## Publication-Day Checks
 
 - Confirm that the live provider page still contains both priority statements in one page version. Save the access date and an archive.
-- Check whether Stripe or OpenRouter has published a provider-rule change after the acquisition.
 - Recheck Shashank Goyal's and Tomas Oliva's public roles. Keep both named in the BD step.
 - Recheck Qwen3.8-27B provider supply before deciding whether to keep the worked screen.
 
@@ -295,3 +292,4 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - 2026-08-19: Completed a full outline review. Added a manual gap screen, load and overload tests, exact routing logic, the official provider email, a single-contact sequence, clearer privacy and payment requirements, and a worked Qwen screen. Defined the public dashboard as proof of the provider's claimed edge under declared serving conditions. Kept the seven-step sequence without failure branches and retained unlimited-token language for the flat-rate, request-capped launch offer.
 - 2026-08-19: Applied the post-review patch. Removed the repeated opening thesis, added a dated Stripe acquisition note without an unconfirmed sale price, reduced section targets so the checklist fits below 1,800 words, added publication-day source checks, and tightened the closing. Kept the two named BD contacts, the live dashboard, and the seven-step structure without a failure branch.
 - 2026-08-19: Drafted the complete version-one article from this skeleton and linked it above. The draft retains the approved seven-step sequence, named provider contacts, live dashboard, retail pricing aside, and evidence boundaries.
+- 2026-08-19: Removed the Stripe acquisition sentence from the article and the drafting instructions because it did not change the provider-listing playbook. Kept the acquisition evidence in the source note.
