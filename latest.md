@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 9:53 PM EDT
+Generated: Aug 19, 2026, 9:56 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 51 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 52 note commits. The most recent movement is:
 
 - Project decision: patch OpenRouter article review.
 - Project decision: strengthen OpenRouter article outline.
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 51 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 9:56 PM EDT - article: format gap-selection paths as bullets
+
+article: format gap-selection paths as bullets.
+
+Changed notes:
+  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
 ### Aug 19, 2026, 9:53 PM EDT - article: remove forced definitions for provider audience
 
@@ -121,17 +128,11 @@ Changed notes:
   - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
   - [[dylan-capped-retail-pass-gateway-launch-hypothesis-2026-08-19|Dylan: Add a capped retail offer to the paid inference-provider launch]]
 
-### Aug 19, 2026, 6:31 PM EDT - project: start OpenRouter BD after internal proof
-
-Project decision: start OpenRouter BD after internal proof.
-
-Changed notes:
-  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
-
-_Showing the newest 12 of 37 updates in this window._
+_Showing the newest 12 of 38 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: article: format gap-selection paths as bullets - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove forced definitions for provider audience - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: tighten opening and remove redundant gateway definition - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: replace OpenRouter opening with research-led framing - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -156,12 +157,12 @@ _Showing the newest 12 of 37 updates in this window._
 - Aug 19, 2026: research: document Wafer OpenCode catalog onboarding - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
 - Aug 19, 2026: research: expand day-zero into event-zero launches - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: clarify retail pass as launch amplifier - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
-- Aug 19, 2026: research: add capped retail launch strategy - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 
-_Showing the newest 25 of 51 updates in this window._
+_Showing the newest 25 of 52 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: article: format gap-selection paths as bullets - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove forced definitions for provider audience - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: tighten opening and remove redundant gateway definition - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: replace OpenRouter opening with research-led framing - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -186,6 +187,5 @@ _Showing the newest 25 of 51 updates in this window._
 - Aug 19, 2026: research: document Wafer OpenCode catalog onboarding - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
 - Aug 19, 2026: research: expand day-zero into event-zero launches - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 - Aug 19, 2026: research: clarify retail pass as launch amplifier - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
-- Aug 19, 2026: research: add capped retail launch strategy - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 
-_Showing the newest 25 of 200 updates in this window._
+_Showing the newest 25 of 201 updates in this window._
