@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 10:08 PM EDT
+Generated: Aug 19, 2026, 10:10 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 53 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 54 note commits. The most recent movement is:
 
 - Project decision: patch OpenRouter article review.
 - Project decision: strengthen OpenRouter article outline.
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 53 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 10:10 PM EDT - article: clarify internal proof gate
+
+article: clarify internal proof gate.
+
+Changed notes:
+  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
 ### Aug 19, 2026, 10:08 PM EDT - article: add live wedge search and agent prompt
 
@@ -120,17 +127,11 @@ Project decision: add named OpenRouter BD contacts.
 Changed notes:
   - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 
-### Aug 19, 2026, 6:39 PM EDT - project: remove Wafer credit from pricing aside
-
-Project decision: remove Wafer credit from pricing aside.
-
-Changed notes:
-  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
-
-_Showing the newest 12 of 38 updates in this window._
+_Showing the newest 12 of 39 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: article: clarify internal proof gate - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: add live wedge search and agent prompt - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: format gap-selection paths as bullets - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove forced definitions for provider audience - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -155,12 +156,12 @@ _Showing the newest 12 of 38 updates in this window._
 - Aug 19, 2026: research: capture Qwen3.8 local demand signal - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: source: record Qwen3.8 27B release date - [[inference|Inference]]
 - Aug 19, 2026: research: document Wafer OpenCode catalog onboarding - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
-- Aug 19, 2026: research: expand day-zero into event-zero launches - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 
-_Showing the newest 25 of 53 updates in this window._
+_Showing the newest 25 of 54 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: article: clarify internal proof gate - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: add live wedge search and agent prompt - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: format gap-selection paths as bullets - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove forced definitions for provider audience - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -185,6 +186,5 @@ _Showing the newest 25 of 53 updates in this window._
 - Aug 19, 2026: research: capture Qwen3.8 local demand signal - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: source: record Qwen3.8 27B release date - [[inference|Inference]]
 - Aug 19, 2026: research: document Wafer OpenCode catalog onboarding - [[inference-providers-can-ship-against-demand-shocks-not-only-model-releases|Inference providers can ship against demand shocks, not only model releases]]
-- Aug 19, 2026: research: expand day-zero into event-zero launches - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 
-_Showing the newest 25 of 201 updates in this window._
+_Showing the newest 25 of 202 updates in this window._
