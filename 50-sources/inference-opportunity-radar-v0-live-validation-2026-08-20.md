@@ -54,6 +54,21 @@ No candidate reached L2 or L3. The run had no approved named workload profile, o
 
 The workflow status was `success`, all planned and actual counts matched, and the separate `evidence_complete` field was false. Expected cold-start evidence gaps did not turn a completed collection and report run into a workflow failure.
 
+## Provider-quality cadence check
+
+OpenRouter quality and provider-supply facts change on different timescales. Its [provider-routing documentation](https://openrouter.ai/docs/guides/routing/provider-selection) says the default router reacts to significant outages in the last 30 seconds and calculates the latency and throughput metrics used for performance preferences over a rolling five-minute window. The public [model-endpoints response](https://openrouter.ai/docs/api/api-reference/endpoints/list-all-endpoints-for-a-model) exposes latency and throughput fields labeled `last_30m`, plus uptime fields for five minutes, 30 minutes, and one day. The documentation does not state how often that public endpoint response itself refreshes.
+
+The stored live data provides one short empirical check. Three complete model-endpoint captures occurred at 14:26:53, 14:38:38, and 14:43:05 UTC on 2026-08-20. Across 265 stable endpoint identities present in the captures:
+
+- 263 had more than one recorded latency value;
+- 260 had more than one recorded throughput value;
+- 190 had more than one five-minute uptime value;
+- 227 had more than one 30-minute uptime value;
+- 259 had more than one one-day uptime value; and
+- 24 had more than one status value.
+
+Provider-organization count did not change for any of the 24 models during the same 16-minute span. This narrow check proves that the public quality values can change within minutes while provider coverage can remain stable. It does not establish a universal refresh schedule or a representative daily pattern. One daily endpoint capture can support provider-presence history, but it is too sparse to describe intraday quality variation. A longer hourly sampling test should measure how much additional information each capture adds before the permanent collection frequency is fixed.
+
 ### Superseded initial checkpoint
 
 The initial ten-model checkpoint completed 40 source calls, imported 96 snapshots, and produced nine L1 records plus one L0 record. Those facts remain valid for that earlier checkpoint. They are superseded as the current V0 totals by the expanded final run above.
@@ -96,4 +111,5 @@ An earlier informal pass claimed several provider-count matches and one GLM-5.2 
 
 ## Updates
 
+- 2026-08-20: Added a provider-quality cadence check from the three stored live endpoint captures. Quality values changed within 4 to 12 minutes, while provider counts stayed unchanged across the 16-minute window. Official OpenRouter documentation uses different windows for routing reactions, performance preferences, and public endpoint fields, and does not publish the endpoint-response refresh interval.
 - 2026-08-20: Final expanded live validation completed. It supersedes the initial ten-model counts as the current V0 result while preserving that checkpoint above. Retrodiction was corrected from L0 to `unavailable` when the checked mapping postdated the test. Manual dashboard claims were also narrowed to four dated `not_comparable` records.
