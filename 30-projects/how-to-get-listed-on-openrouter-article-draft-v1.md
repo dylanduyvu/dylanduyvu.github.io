@@ -46,13 +46,15 @@ Run the model on the hardware you plan to use through a private endpoint. Before
 
 Test how the endpoint behaves at that limit. When capacity is full, return an HTTP `429` response quickly instead of placing requests in a long hidden queue. A fast rejection gives clients a clear signal and prevents queue time from making the endpoint look slower than it is.
 
-Performance alone is not enough. Compare output quality with the unmodified model. If you offer tool use, count valid calls, invalid calls, and execution failures separately. Confirm that the model license and your data policy permit the service. Then compare expected revenue with GPU and operating costs. Start serious provider outreach only when the results are repeatable and the economics work.
+Performance alone is not enough. Compare output quality with the unmodified model. If you offer tool use, count valid calls, invalid calls, and execution failures separately. Confirm that the model license and your data policy permit the service. Then compare expected revenue with GPU and operating costs.
+
+Start serious provider outreach only when the results are repeatable and the economics work.
 
 ## 3. Start provider outreach while you finish the endpoint
 
-Once the internal test passes, start business development while you finish the public service. Send the model, network gap, measured result, and endpoint date. Ask whether the gap matters and whether OpenRouter is reviewing new providers. Do not ask for a listing promise before technical review.
+Once the internal test passes, start business development while you finish the public service. You'll want results as proof points to reac out with. Send the model, network gap, measured result, and endpoint date. Ask whether the gap matters and whether OpenRouter is reviewing new providers.
 
-You can use `providers@openrouter.ai`, but bespoke outreach also matters. [Shashank Goyal](https://www.linkedin.com/in/shashankgoyal1) is OpenRouter's Head of Provider Ecosystem. [Tomas Oliva](https://www.linkedin.com/posts/oliva-tomas_excited-to-share-that-today-marks-my-first-activity-7289788708579405824-tYx7) works in provider operations and has asked people to notify him when a new model drops. Contact one person first. Do not send the same pitch to several employees at once.
+You can use `providers@openrouter.ai`, but bespoke outreach also matters to expedite review. [Shashank Goyal](https://www.linkedin.com/in/shashankgoyal1) is OpenRouter's Head of Provider Ecosystem. [Tomas Oliva](https://www.linkedin.com/posts/oliva-tomas_excited-to-share-that-today-marks-my-first-activity-7289788708579405824-tYx7) works in provider operations and has asked people to notify him when a new model drops.
 
 At the same time, finish the minimum product that OpenRouter can inspect.
 
@@ -66,19 +68,29 @@ Self-serve signup, retail billing, and a large marketing site can wait. The endp
 
 ## 4. Launch with proof that anyone can inspect
 
-Announce the model, base URL, price, context limit, region, privacy terms, capacity, and the gap. Ask readers to request a key, buy credit, or join a small retail plan.
+### Make the offer easy to verify
 
-Publish the benchmark method, workload, and result. One speed number can hide low concurrency, short prompts, an already warm model, or a different setup.
+Announce the model, base URL, price, context limit, region, privacy terms, capacity, and the gap it fills. Give readers one direct action: request a key, buy credit, or join a small retail plan.
 
-The launch also needs a public live performance dashboard. It must show that the service meets the claimed edge under the conditions that define the offer. State concurrency, prompt and output lengths, warm or cold state, hardware class, quantization, serving software, and region.
+Publish the benchmark method, workload, and result. One speed number can hide low concurrency, short prompts, a warm model, or test conditions that do not match production.
 
-Show current status, rolling uptime, error rate, median and 95th-percentile time to first token, output tokens per second, and sample count. Use clear time windows and label production traffic and automated tests separately. Show the model version, method, and last update time. Never expose prompts, customer data, credentials, or sensitive infrastructure details.
+Link a public live performance dashboard from the launch post, API documentation, and application packet. It should show:
 
-Post the launch on X and link the same dashboard from the post, API documentation, and application packet. Set a promotion budget and track impressions, visits, key requests, successful calls, repeat use, and spend. Increase the budget only when the service stays reliable and produces useful demand evidence. Put a gateway mention in a reply or separate note if it weakens the customer post.
+- Current status, rolling uptime, and error rate.
+- Median and 95th-percentile time to first token, output tokens per second, and sample count.
+- Concurrency, prompt and output lengths, warm or cold state, hardware class, quantization, serving software, and region.
+
+Use clear time windows and label production traffic and automated tests separately. Show the model version, method, and last update time. Never expose prompts, customer data, credentials, or sensitive infrastructure details.
+
+### Send traffic to the endpoint
+
+Post the launch on X and link the dashboard. Set a promotion budget and track impressions, visits, key requests, successful calls, repeat use, and spend. Increase the budget only when the service stays reliable and produces useful demand evidence. If tagging a gateway weakens the customer post, tag it in a reply or a separate post.
+
+### Optional: use a retail pass
 
 A small retail pass can make the launch easier to test. Start with a time-limited, unlimited-token offer under a flat-rate, request-capped plan. Cap users, request rate, concurrency, campaign length, and total loss. Issue the first keys manually. Then move to a subscription with a token allowance and pay-per-token overage. If pay-per-token use becomes the stronger product, make it the default.
 
-Public attention and paid traffic can make the endpoint easier to notice and test. They do not establish that OpenRouter will accept it. Launch only after the service can survive the traffic you plan to buy.
+Paid promotion can make the endpoint easier to notice and test, but it does not guarantee acceptance. Buy traffic only when the service can handle it.
 
 ## 5. Submit one complete application
 

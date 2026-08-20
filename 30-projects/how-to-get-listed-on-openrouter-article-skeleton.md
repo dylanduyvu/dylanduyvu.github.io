@@ -147,18 +147,13 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 **Job:** Turn technical readiness into visible proof and measurable demand.
 
-- Announce the model, base URL, price, context limits, region, privacy terms, and available capacity.
-- Publish a reproducible benchmark method with time to first token, output speed, uptime, error rate, and the workload used.
-- Give users a public live performance dashboard so they can verify that the service achieves the claimed edge under the serving conditions that define the offer. Link it from the launch post, API documentation, and gateway evidence packet.
-- Choose the workload and operating conditions that matter to the target user. State them in full. Include concurrency, prompt and output lengths, warm or cold state, hardware class, quantization, serving engine, and region.
-- Show current service status, rolling uptime, error rate, median and 95th-percentile time to first token, output tokens per second, and sample count. Use clear one-hour, 24-hour, and seven-day windows when that history exists.
-- State whether each metric comes from production traffic or a synthetic probe. Show the model version, measurement method, and last update time.
-- Do not expose prompts, customer data, gateway-specific traffic, credentials, or security-sensitive infrastructure details.
-- State the gap that the service fills.
-- Give testers a direct action. This can be API access, prepaid credit, or a small capped retail plan.
-- Use a defined X promotion budget. Track organic and paid impressions, link visits, key requests, successful calls, repeat use, spend, and cost per qualified tester.
-- Increase spend only if real use, reliability, and economics justify it.
-- Keep retail traffic separate from gateway test traffic.
+Keep this as one section with three short parts:
+
+1. Make the offer easy to verify. Announce the offer and gap, publish the benchmark, and link a live performance dashboard. Group the dashboard fields into service health, performance, and test conditions.
+2. Send traffic to the endpoint. Post on X, use a defined promotion budget, and track demand and reliability.
+3. Add an optional retail pass. Present the pricing ladder as a launch tactic, not an OpenRouter requirement.
+
+Keep retail traffic separate from gateway test traffic. Do not expose prompts, customer data, gateway-specific traffic, credentials, or security-sensitive infrastructure details.
 
 **Evidence boundary:** Public launch and paid reach can produce attention and demand evidence. They are not established causes of provider acceptance.
 
