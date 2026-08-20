@@ -84,13 +84,13 @@ Use clear time windows and label production traffic and automated tests separate
 
 ### Send traffic to the endpoint
 
-Post the launch on X and link the dashboard. Set a promotion budget and track impressions, visits, key requests, successful calls, repeat use, and spend. Increase the budget only when the service stays reliable and produces useful demand evidence. If tagging a gateway weakens the customer post, tag it in a reply or a separate post.
+Post the launch on X, state what makes your endpoint different from the other providers, and link the dashboard. Set a promotion budget and track impressions, visits, key requests, successful calls, repeat use, and spend. Tag OpenRouter and one relevant provider-team contact so they can see the gap and test the endpoint.
 
-### Optional: use a retail pass
+### Get users onto the endpoint
 
-A small retail pass can make the launch easier to test. Start with a time-limited, unlimited-token offer under a flat-rate, request-capped plan. Cap users, request rate, concurrency, campaign length, and total loss. Issue the first keys manually. Then move to a subscription with a token allowance and pay-per-token overage. If pay-per-token use becomes the stronger product, make it the default.
+Subsidized tokens can help attract early users and produce usage evidence. Start with a time-limited, unlimited-token offer under a flat-rate, request-capped plan. Limit the number of users, request rate, concurrency, campaign length, and total loss. Issue the first keys manually. Then move to a subscription with a token allowance and pay-per-token overage. If pay-per-token use becomes the stronger product, make it the default and retire the subscription plans.
 
-Paid promotion can make the endpoint easier to notice and test, but it does not guarantee acceptance. Buy traffic only when the service can handle it.
+This traffic can produce demand evidence, but it does not guarantee OpenRouter acceptance. Buy traffic only after the service can handle it.
 
 ## 5. Submit one complete application
 
