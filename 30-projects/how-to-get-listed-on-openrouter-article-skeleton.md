@@ -70,7 +70,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ### 1. Find a demand-backed gap
 
-**Target:** 170 to 200 words.
+**Target:** 220 to 250 words.
 
 **Job:** Give the reader a model-selection rule.
 
@@ -83,8 +83,12 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - Screen the candidate for demand, qualified supply, possible edge, margin, capacity, and license.
 - Run a manual screen before the build. Measure recent token and request growth, then count the providers that meet the requirement that matters to the target workload. Compare their price, uptime, context, region, tool support, latency, and throughput. Estimate the price, capacity, and margin that you can achieve. Build only if one useful gap remains.
 - Use the proposed [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] as internal support for this screen.
+- Start the worked flow with, "Let's say you are trying to find a wedge today."
+- Link the [official OpenRouter rankings](https://openrouter.ai/rankings) for demand discovery.
+- Link the [OpenRouter Inference Provider Market Share dashboard](https://or-provider-dashboard.vercel.app/) for provider share and model-level host competition. State that it is unofficial and has limited model coverage, then verify candidates on OpenRouter.
+- Give the reader a short agent prompt that requests five candidates, current provider verification, performance and capability comparisons, source links, evidence dates, and a named unmet need. Tell the agent not to recommend a model only because it has few providers.
 
-**Worked-screen option:** Use Qwen3.8-27B, released on 2026-08-14, to show how to compare fast demand growth with provider supply that can fill just as fast. Recheck its current supply before drafting. Treat it as a screen, not an automatic build target. Source: [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B release record]].
+**Primary evidence:** [[inference-model-opportunity-data-source-audit-2026-08-19|Inference opportunity data-source audit]].
 
 ### 2. Prove that you can serve the gap
 
@@ -259,13 +263,12 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - [[waferpass-anthropic-openclaw-event-timeline-2026-08-19|WaferPass and Anthropic/OpenClaw timeline]]
 - [[exa-featherless-hugging-face-provider-onboarding-audit-2026-08-18|Featherless Hugging Face onboarding audit]]
 - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
-- [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B release record]]
+- [[inference-model-opportunity-data-source-audit-2026-08-19|Inference opportunity data-source audit]]
 - [[inference|Inference]]
 
 ## Open Draft Decisions
 
 - Final title and subtitle.
-- Whether to keep the dated Qwen3.8-27B example after its provider supply is checked again.
 - Exact compression of the retail pricing ladder inside Step 4.
 - Whether to include the paid-promotion tactic in the title or only in step four.
 - Final wording of the required evidence note.
@@ -274,7 +277,6 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 
 - Confirm that the live provider page still contains both priority statements in one page version. Save the access date and an archive.
 - Recheck Shashank Goyal's and Tomas Oliva's public roles. Keep both named in the BD step.
-- Recheck Qwen3.8-27B provider supply before deciding whether to keep the worked screen.
 
 ## Updates
 
@@ -294,3 +296,4 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - 2026-08-19: Removed the Stripe acquisition sentence from the article and the drafting instructions because it did not change the provider-listing playbook. Kept the acquisition evidence in the source note.
 - 2026-08-19: Replaced the policy-first opening with Dylan's research-led framing. The opening now starts with the provider documents and public case studies behind the guide, then states the network-gap playbook.
 - 2026-08-19: Calibrated definitions to the target reader after the draft overexplained basic inference terms. ASD-STE100 still controls sentence clarity, but the article now assumes that an inference provider understands standard serving vocabulary.
+- 2026-08-19: Replaced the dated Qwen example with a present-tense wedge search. Added the official OpenRouter rankings, the unofficial provider market-share dashboard, and a reusable agent prompt that joins demand, provider supply, operating edge, and source verification.

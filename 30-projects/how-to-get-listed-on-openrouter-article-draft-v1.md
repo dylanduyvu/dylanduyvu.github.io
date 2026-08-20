@@ -8,7 +8,7 @@ register: "ASD-STE100 Simplified Technical English; simple declarative; no em da
 domains: [inference, inference-marketplaces, distribution, go-to-market]
 people: [tomas-oliva, shashank-goyal]
 orgs: [openrouter]
-sources: [openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19, qwen3-8-27b-open-weights-release-date-2026-08-14]
+sources: [openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19, inference-model-opportunity-data-source-audit-2026-08-19]
 tags: [article, openrouter, provider-listing, operator-playbook, draft-v1]
 ---
 
@@ -22,17 +22,19 @@ A solo application won't get you noticed. It's best to: first, find a gap, prove
 
 ## 1. Find a gap with real demand
 
-Look in three places:
+Let's say you are trying to find a wedge today. Look in three places:
 
-- A strong new open-weight model can create a day-zero opening on release day.
-- A policy, outage, price, quota, license, or popular client can create replacement demand.
-- An existing model can have users but lack one important provider feature.
+- A strong, upcoming open-weight model release can create a day-zero opening.
+- A new policy, outage, price change, quota change, license change, or popular client blowup can create replacement demand.
+- An existing model can have users but still lack an important provider feature.
 
-Do not confuse scarce supply with demand. A model with one provider and no users is not a useful gap. Check request growth, developer activity, local downloads, and direct user interest. Then compare qualified providers on price, uptime, context length, region, tool support, privacy, latency, and output speed.
+Use the [OpenRouter rankings](https://openrouter.ai/rankings) to find models with rising usage. Then use the [OpenRouter Inference Provider Market Share dashboard](https://or-provider-dashboard.vercel.app/) to see which hosts serve the top models and how their routing share changes. The provider dashboard is unofficial and its model view covers the top models, so confirm each candidate on its OpenRouter model and endpoint pages.
 
-Qwen3.8-27B shows why speed matters. [Qwen released the weights on August 14, 2026](https://github.com/QwenLM/Qwen3.8). On OpenRouter, complete-day use rose from 3.13 billion prompt and completion tokens on August 15 to 24.60 billion on August 18. But the [OpenRouter endpoint list](https://openrouter.ai/api/v1/models/qwen/qwen3.8-27b/endpoints) already showed seven providers by August 19. Demand grew fast, and supply followed.
+Give your agent a prompt like this:
 
-Estimate your price, capacity, and gross margin. Proceed only if the demand is real and one useful gap remains open.
+> Using the OpenRouter rankings and provider market-share dashboard, find five open-weight models with rising OpenRouter usage and limited qualified provider supply. For each model, verify the current provider list on OpenRouter. Compare price, uptime, context length, region, privacy, latency, output speed, and tool support. Name the unmet need, cite each source, and state the evidence date. Do not recommend a model only because it has few providers.
+
+Use the result to choose one gap worth testing. Before you commit hardware, estimate the price, capacity, and gross margin you can achieve. If you cannot show demand and a profitable edge, keep looking.
 
 ## 2. Prove the edge on your hardware
 
@@ -124,5 +126,6 @@ Do not ask for a listing before the endpoint is callable. Give OpenRouter a usef
 
 - [[how-to-get-listed-on-openrouter-article-skeleton|Article skeleton and claim ledger]]
 - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding source check]]
+- [[inference-model-opportunity-data-source-audit-2026-08-19|Inference opportunity data-source audit]]
 - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|Public endpoint and paid-launch hypothesis]]
 - [[inference|Inference area]]
