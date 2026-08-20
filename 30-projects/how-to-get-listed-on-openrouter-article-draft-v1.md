@@ -20,7 +20,7 @@ I read through OpenRouter's provider documents and compiled every public source 
 
 A standalone application won't get you noticed. It's best to: first, find a gap, prove that you can serve it, and launch a public endpoint with performance data that anyone can inspect. Then formally apply, contact the provider team, and give them an offer they can test.
 
-<!-- VISUAL 1 GOES HERE: Hero strategy flow. Find a gap -> prove the edge -> start outreach and launch publicly -> apply -> get listed -> earn traffic -> reach profitability. -->
+![The seven-step OpenRouter provider path moves from finding a network gap to proving an edge, launching publicly, applying, getting listed, earning traffic, and reaching profitability.](../70-attachments/openrouter-provider-path.png)
 
 ## 1. Find a gap with real demand
 
