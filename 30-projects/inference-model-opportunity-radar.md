@@ -1,8 +1,8 @@
 ---
 type: project
-status: proposed
+status: active
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-08-20
 domains: [inference, model-serving, inference-marketplaces, market-research]
 people: []
 orgs: [openrouter, hugging-face, lm-studio, ollama, artificial-analysis]
@@ -23,13 +23,17 @@ The radar should support both day-zero model launches and existing underserved m
 
 ## Current State
 
-Proposed on 2026-08-19. No dashboard or automated collector has been built.
+V0 was built and live-tested on 2026-08-20 as an internal command-line evidence collector. It stores append-only raw snapshots, normalizes demand and supply facts, evaluates ten mapped models under the L0-L3 evidence gates, replays fixed historical cases, and writes deterministic reports and exports. A browser dashboard remains a later interface after the collection logic is validated.
+
+The first live run completed all 40 source calls and imported 96 raw snapshots. It produced nine L1 demand-signal records and one L0 watch record. No model reached L2 or L3 because the database had only one supply capture day, only one Hugging Face capture day, and no approved named workload profile. This is the intended conservative result, not a failed run. See [[inference-opportunity-radar-v0-live-validation-2026-08-20|the V0 live validation record]].
 
 The public-data audit found enough information for a useful first version. OpenRouter supplies daily top-model token totals, exact filtered totals for context buckets and tool-calling requests, estimated weekly category totals, and endpoint-level provider information. Hugging Face, LM Studio, and Ollama provide local-adoption signals. Artificial Analysis provides independent benchmark, price, and performance data.
 
 OpenRouter is sufficient as the primary hosted-demand surface for a version-zero tool focused on winning an OpenRouter listing. It is not a total-market measure. All usage fields must retain the `OpenRouter` label, and broader conclusions need local signals and cross-gateway supply checks.
 
 The dashboard search also found that much of the general charting layer already exists. OpenRouter Inference Provider Market Share covers host share and model-provider competition. CodeSOTA covers model churn, substitution, lifecycle, and application demand. token.app covers prices and OpenRouter rankings. ParaPulse and Open LLM Distribution Leaderboard cover Hugging Face download trends. Artificial Analysis covers provider performance. The proposed radar should join these surfaces into candidate decisions instead of cloning them.
+
+The live implementation confirmed that these surfaces do not all provide independent evidence. token.app republishes OpenRouter rankings. CodeSOTA is a benchmark registry rather than a demand or scarcity measure. Artificial Analysis adds performance and provider coverage, but it does not replace demand evidence. Dashboard disagreements must remain visible rather than averaged.
 
 ## Core Views
 
@@ -140,14 +144,12 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Next Tests
 
-- Pull 30 days of OpenRouter daily rankings and determine how many open-weight models appear.
-- Pull the same period for each context bucket, tool-calling traffic, programming category, and programming language. Record where top-50 censoring prevents a model result.
-- Build a one-day endpoint table for those models and calculate qualified provider count.
-- Complete one end-to-end candidate record for Qwen3.8-27B and one low-demand control before the database fields and promotion rules are frozen.
-- Map ten models to Hugging Face, LM Studio, and Ollama by hand before automating identity resolution.
-- Test the local-versus-hosted classification on Qwen3.8-27B, Qwen3.6-27B, GLM-5.1, and two weak-demand control models.
-- Define the evidence fields needed before a model becomes a potential opportunity.
-- Compare the first ranked table with OpenRouter Inference Provider Market Share, CodeSOTA, token.app, and Artificial Analysis. Investigate disagreements instead of averaging them away.
+- Continue daily endpoint snapshots until each model has at least three UTC capture days across a seven-day span.
+- Collect a second Hugging Face capture day before calculating local-download change.
+- Write one named workload profile only when each requirement has a customer, observed-demand, or explicit research-hypothesis basis.
+- Reconcile the GLM-5.2 count of 26 provider organizations with the OpenRouter Provider Market Share dashboard count of 28.
+- Add the browser dashboard only after the command-line reports remain stable through the first history window.
+- Keep hardware fit, achievable serving performance, capacity planning, and unit economics in a separate downstream test.
 
 ## Sources
 
@@ -157,6 +159,7 @@ The first version should not scrape every gateway or build a universal market es
 - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]
 - [[dave-friedman-hugging-face-downloads-compute-markets-2026-07-09|Dave Friedman: Hugging Face downloads and compute markets]]
 - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
+- [[inference-opportunity-radar-v0-live-validation-2026-08-20|Inference opportunity radar V0 live validation]]
 
 ## Related Areas
 
@@ -165,5 +168,6 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Updates
 
+- 2026-08-20: V0 built and live-tested. All planned source calls completed. The run stored 96 validated raw snapshots and produced nine L1 demand-signal records plus one L0 control. No L2 or L3 label was supported because supply history, local-download history, and a named workload profile were missing. Retrodiction correctly refused to use current snapshots as historical evidence. Manual dashboard checks found one open GLM-5.2 provider-count disagreement and confirmed that token.app is not an independent demand source.
 - 2026-08-19: Scope correction from Dylan. The radar now stops at potential-opportunity identification. Hardware fit, a realizable serving edge, and unit economics are separate later validation stages because the team has not yet proved its hardware or serving performance.
 - 2026-08-19: Pre-scope design audit completed and corrected. Verdict: build the collection spine now and cap automated labels at potential opportunity (L3). Missing official endpoint history is a cold-start limit, not a blocker. OpenRouter's current rankings API partly measures attribute demand through exact context-bucket and tool-calling filters plus sampled weekly categories. Universal workload thresholds were removed. L4 remains a manual BD or customer outcome. The Datasets endpoints are licensed CC BY 4.0 with a required citation string. See [[inference-opportunity-radar-pre-scope-design-audit-2026-08-19|the pre-scope design audit]] for the evidence gates, data limits, and week-1 tests.

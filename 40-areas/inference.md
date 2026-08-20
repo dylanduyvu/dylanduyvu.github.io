@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-08-18
-updated: 2026-08-19
+updated: 2026-08-20
 domains: [inference, ai-infrastructure, model-serving, compute-economics]
 projects: [inference-model-opportunity-radar]
 tags: [inference, serving, infrastructure, operations, unit-economics]
@@ -25,6 +25,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - **Potential opportunity, not a build recommendation:** A preserved 2026-08-19 snapshot showed five Qwen3.8-27B providers on OpenRouter; a later same-day live page showed six, and the endpoint API later returned seven. LM Studio displayed 908,400 local downloads, and OpenRouter reported approximately 24.60 billion prompt-plus-completion tokens and 1.49 million requests for 2026-08-18. This supports both local and hosted activity with fast-changing early listed supply. It does not prove scarce qualified supply, durable customer demand, hardware fit, achievable differentiation, or positive unit economics.
 - **Measurement scope:** OpenRouter is enough as the hosted-demand spine for a first radar whose decision is what to serve and pitch to OpenRouter. It is not a total-market estimate. Local distribution and other-gateway catalogs are required before generalizing the result.
 - **Radar scope:** The automated model-opportunity radar stops at L3, potential opportunity. It uses separate launch and structural-gap lanes. OpenRouter can partly measure long-context and tool-calling demand through filtered rankings, but public data cannot confirm unmet demand. L4 requires manual gateway, customer, or provider evidence. Hardware matching, serving benchmarks, and unit economics require a separate later evidence pass.
+- **Radar validation:** The first live V0 run completed all planned source calls and produced nine L1 demand-signal records plus one L0 watch record. No candidate reached L2 or L3 because there was only one supply day, one local-download day, and no approved workload profile. The result validates the conservative evidence boundary; it does not identify an underserved model yet.
 - **Gateway taxonomy:** There are two main types. Centrally curated gateways select providers through public or private intake; this includes OpenRouter, Hugging Face, Vercel, and Requesty. Customer-configured gateways such as Cloudflare and Portkey have no central listing gate; the provider must win customers instead.
 - **Direct evidence:** Featherless has a public provider-authored implementation trail for Hugging Face Inference Providers. It shows named reviewers, live tests, staging, client integrations, documentation, and a coordinated launch. It does not expose the initial partnership decision. Later working provider integrations show that Hugging Face can stop onboarding at a separate server-side partner-selection gate.
 - **Unverified source claim:** Two Compass reports say inference gateways can turn serving quality into distribution because routing can depend on price, uptime, throughput, and tool-call success. This is a research direction until the claims are checked against primary documentation and live routing data.
@@ -57,7 +58,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 
 - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]: complete first draft of the seven-step operator playbook, backed by the [[how-to-get-listed-on-openrouter-article-skeleton|claim ledger and skeleton]].
 
-- **Proposed:** [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] would combine OpenRouter token demand and endpoint supply with Hugging Face, LM Studio, and Ollama local-adoption signals. It is specified but not built.
+- **Active:** [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] has a live-tested V0 collection and reporting spine. The next evidence window needs seven days of endpoint history, a second local-download day, and one justified workload profile before any L2 or L3 result is possible.
 
 - **Candidate, not started:** [[gpu-configuration-demand-gate|GPU configuration demand gate]] tests whether a small GPU server has enough workload-specific demand and conservative net economics to justify a purchase. The last update kept a no-buy result valid and did not record branch selection.
 
@@ -82,6 +83,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B open-weight release record]]: official confirmation that the model weights became available on Hugging Face Hub and ModelScope on 2026-08-14.
 - [[inference-model-opportunity-data-source-audit-2026-08-19|Inference model opportunity data-source audit]]: official public sources for model tokens, provider supply, serving performance, local downloads, and their measurement limits.
 - [[inference-opportunity-radar-pre-scope-design-audit-2026-08-19|Inference opportunity radar pre-scope audit]]: corrected evidence gates, field-level demand limits, the supply-history cold start, and the minimum collection scope.
+- [[inference-opportunity-radar-v0-live-validation-2026-08-20|Inference opportunity radar V0 live validation]]: first live run, labels, database counts, retrodiction limits, API constraints, and dashboard disagreements.
 
 ## Open Questions
 
@@ -114,7 +116,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - Classify each target gateway before outreach. Record whether it is centrally curated or customer-configured. For centrally curated gateways, record whether provider intake is public or private.
 - Reconstruct Wafer's timeline from WaferPass launch through OpenRouter listing. Ask Wafer for subscriber usage distribution, request-cap logic, spot-versus-dedicated capacity, gross-margin history, and what evidence OpenRouter reviewed.
 - Continue the Qwen3.8-27B gap scan. Measure OpenRouter activity, paid API intent, provider changes, application mix, tool-call success, and the visible price, throughput, latency, uptime, long-context, privacy, and geography frontier. Stop at a potential-opportunity finding. Test our ability to compete only in a separate later project.
-- Test the proposed model-opportunity radar with a 30-day OpenRouter pull for total, context-bucket, tool-calling, and programming traffic; daily endpoint snapshots; and manual local-source mapping for ten models. Complete one full Qwen3.8-27B candidate record and one low-demand control before the schema and promotion rules are frozen.
+- Continue the model-opportunity radar collection until each mapped model has three endpoint capture days across seven calendar days and two Hugging Face capture days. Then apply one justified named workload profile, re-run the gates, and investigate the GLM-5.2 provider-count disagreement.
 
 ## Related Areas
 
