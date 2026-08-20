@@ -12,41 +12,51 @@ tags: [opportunity-radar, live-test, demand, provider-supply, retrodiction]
 
 ## Context
 
-The first live V0 run tested the [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] against ten manually mapped open-weight models. The tool is an internal evidence collector. It stops at L3, potential opportunity. It does not test hardware fit, achievable serving performance, capacity, or unit economics.
+The V0 validation began with ten manually mapped open-weight models and ended with 24 models after checked source evidence expanded the model map. The [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] is an internal evidence collector. It stops at L3, potential opportunity. It does not test hardware fit, achievable serving performance, capacity, or unit economics.
 
-The run collected public OpenRouter demand and supply data plus Hugging Face model data. It then normalized the snapshots, evaluated the ten candidates, replayed three historical test cases, and generated reports and exports.
+The final run collected public OpenRouter demand and supply data plus Hugging Face model data. It then normalized the snapshots, evaluated 24 candidates, replayed three historical test cases, and generated reports and exports.
 
 ## Direct Evidence
 
-The completed source and transformation calls were:
+Final run `run-20260820T144305.290706Z` completed all 330 planned stage operations:
 
 - 18 of 18 OpenRouter demand calls;
-- 12 of 12 OpenRouter supply calls;
-- 10 of 10 Hugging Face calls;
-- 96 of 96 raw snapshot imports;
-- 10 of 10 candidate evaluations; and
-- 3 of 3 retrodiction cases.
+- one of one OpenRouter model-list calls;
+- 25 of 25 OpenRouter endpoint and Zero Data Retention calls;
+- 24 of 24 Hugging Face calls;
+- 228 of 228 raw snapshot imports;
+- 24 of 24 candidate evaluations;
+- three of three retrodiction cases; and
+- seven of seven report-output groups.
 
-The append-only store contained 96 validated raw snapshots, 586,107 ranking observations, 828 model observations, 1,766 endpoint observations, 20 Hugging Face observations, and 12,587 preserved missing-data rows. A second import did not change any table count. SQLite integrity and foreign-key checks passed.
+The append-only store contained 228 validated raw snapshots, 589,575 ranking observations, 1,248 model observations, 3,078 endpoint observations, 96 Hugging Face observations, and 13,965 preserved missing-data rows. A second import did not change any table count. SQLite integrity and foreign-key checks passed. All 228 envelope IDs and hashes matched the SQLite snapshot manifest. All 103 immutable run artifacts matched their recorded hashes and byte counts. The exact live credential did not occur in tracked or ignored project files.
 
-The first live labels were:
+The final labels were 23 L1 demand signals and one L0 control. The top ten candidates and the two required Qwen records were:
 
 | Model | Label | Best exact paid-demand rank in tested profiles | Distinct OpenRouter provider organizations |
 | --- | --- | ---: | ---: |
-| DeepSeek-V4-Flash-0731 | L1 | 1 | 28 |
+| DeepSeek-V4-Flash-0731 | L1 | 1 | 30 |
 | Hy3 | L1 | 1 | 6 |
 | MiMo-V2.5 | L1 | 1 | 5 |
 | DeepSeek-V4-Flash | L1 | 1 | 18 |
 | GLM-5.2 | L1 | 3 | 26 |
+| DeepSeek-V4-Pro-0813 | L1 | 6 | 12 |
+| DeepSeek-V4-Pro | L1 | 6 | 18 |
 | MiniMax-M3 | L1 | 8 | 12 |
+| DeepSeek-V3.2 | L1 | 8 | 14 |
 | Kimi-K3 | L1 | 9 | 12 |
-| Qwen3.6-27B | L1 | 31 | 7 |
 | Qwen3.8-27B | L1 | 44 | 7 |
 | Qwen3-8B | L0 | not returned | 1 |
 
 The displayed demand rank is the best exact paid rank across the tested total, context-bucket, and tool-calling profiles. It is not a universal or total-week ranking. An absent top-50 row is censored data, not zero demand.
 
 No candidate reached L2 or L3. The run had no approved named workload profile, only one OpenRouter endpoint capture day, and only one Hugging Face capture day. Qualified supply and local-download velocity therefore remained unavailable.
+
+The workflow status was `success`, all planned and actual counts matched, and the separate `evidence_complete` field was false. Expected cold-start evidence gaps did not turn a completed collection and report run into a workflow failure.
+
+### Superseded initial checkpoint
+
+The initial ten-model checkpoint completed 40 source calls, imported 96 snapshots, and produced nine L1 records plus one L0 record. Those facts remain valid for that earlier checkpoint. They are superseded as the current V0 totals by the expanded final run above.
 
 The raw API work found two operational constraints:
 
@@ -55,15 +65,13 @@ The raw API work found two operational constraints:
 
 ## Retrodiction
 
-MiMo-V2.5, Qwen3.6-27B, and Qwen3.8-27B replayed as L0 at their historical test dates. This is not evidence that the models had no demand. Every stored snapshot was captured after the test date, so the current database cannot prove historical supply or demand at those dates. The report keeps unavailable evidence separate from evidence that was testable at the historical cutoff.
+MiMo-V2.5, Qwen3.6-27B, and Qwen3.8-27B replayed as `unavailable` at their historical test dates. Their checked model mappings and live snapshots postdated the test dates, so the current database cannot prove what label the radar would have assigned then. The earlier checkpoint rendered these cases as L0. That was corrected because missing historical evidence is not evidence of no demand.
 
 ## Manual Dashboard Cross-check
 
-The OpenRouter Provider Market Share dashboard matched the radar's distinct provider count for DeepSeek-V4-Flash-0731, Hy3, MiMo-V2.5, MiniMax-M3, and Kimi-K3. It showed 28 providers for GLM-5.2 while the radar showed 26. The dashboard says it rolls regional variants into a base provider, so identity rules or capture timing can explain the difference. The disagreement remains open.
+Four dated manual records checked OpenRouter's provider page, token.app, CodeSOTA, and Artificial Analysis. All four were `not_comparable` with the radar's model-level demand and qualified-supply decision. OpenRouter's provider page reports provider-wide traffic. token.app states that its rankings come from OpenRouter and is not independent demand evidence. CodeSOTA is a benchmark registry. Artificial Analysis compares provider price and performance, not OpenRouter demand. The radar stores these findings and does not scrape or average them.
 
-token.app's weekly OpenRouter view placed DeepSeek-V4-Flash, Hy3, MiMo-V2.5, GLM-5.2, MiniMax-M3, and Kimi-K3 at ranks 1, 2, 3, 5, 11, and 12. This supports the demand signal but is not independent evidence because token.app states that its rankings come from OpenRouter.
-
-CodeSOTA is a dated benchmark and capability registry. It does not measure served demand or provider scarcity. Artificial Analysis confirmed model performance and some provider coverage, but it did not supply independent demand evidence. It listed four API providers for Qwen3.6-27B while the radar observed seven distinct OpenRouter provider organizations, which is a coverage difference rather than a direct contradiction.
+An earlier informal pass claimed several provider-count matches and one GLM-5.2 disagreement. The final durable cross-check records supersede that interpretation because the available dashboard views were not directly comparable to the radar's model-level and workload-qualified fields.
 
 ## Interpretation
 
@@ -86,3 +94,6 @@ CodeSOTA is a dated benchmark and capability registry. It does not measure serve
 - [[inference-model-opportunity-data-source-audit-2026-08-19|Inference model opportunity data-source audit]]
 - [[inference|Inference]]
 
+## Updates
+
+- 2026-08-20: Final expanded live validation completed. It supersedes the initial ten-model counts as the current V0 result while preserving that checkpoint above. Retrodiction was corrected from L0 to `unavailable` when the checked mapping postdated the test. Manual dashboard claims were also narrowed to four dated `not_comparable` records.
