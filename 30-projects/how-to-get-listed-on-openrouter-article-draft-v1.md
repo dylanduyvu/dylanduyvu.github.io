@@ -14,15 +14,13 @@ tags: [article, openrouter, provider-listing, operator-playbook, draft-v1]
 
 # How to get listed on OpenRouter as an inference provider
 
-I read through OpenRouter's provider documents and compiled every public source I could find from inference providers that have already been listed on OpenRouter or another gateway. I then compared their launches with OpenRouter's published rules. This is what I learned about how a new provider can put its best foot forward.
+I read through OpenRouter's provider documents and compiled every public source I could find from inference providers that have already been listed on OpenRouter or another gateway. I then compared their launches with OpenRouter's published rules. This is what I learned about how a new provider can put its best foot forward to get listed.
 
 [OpenRouter currently prioritizes](https://openrouter.ai/providers/apply) providers that bring models they own or control. But it also gives priority to providers that fill gaps in its network, which is the route this guide covers.
 
-The application comes after the hard work. First, find a gap, prove that you can serve it, and launch a public endpoint with performance data that anyone can inspect. Then apply, contact the provider team, and give them an offer they can test.
+A solo application won't get you noticed. It's best to: first, find a gap, prove that you can serve it, and launch a public endpoint with performance data that anyone can inspect. Then apply, contact the provider team, and give them an offer they can test.
 
 ## 1. Find a gap with real demand
-
-OpenRouter is a gateway. It sends customer requests through an API, a software interface, to inference providers that run models on their own GPUs.
 
 Look in three places. First, a strong new open-weight model can create a day-zero opening on release day. Open-weight means that its trained weights are available to download. Second, a policy, outage, price, quota, license, or popular client can create replacement demand. Third, an existing model can have users but lack one important provider feature.
 
