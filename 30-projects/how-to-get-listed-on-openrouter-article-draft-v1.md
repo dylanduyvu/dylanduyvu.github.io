@@ -111,9 +111,7 @@ Answer each question directly. Do not make the reviewer search several pages. Do
 
 Use the same email or direct-message thread and the same contact from Step 3. Tell them that the service is live. Send the endpoint, the gap it fills, the price, the test result, the dashboard, and a separate API key for OpenRouter's tests.
 
-An OpenRouter [job post](https://jobs.ashbyhq.com/openrouter/99b31b81-5ee6-4f4a-990b-d4f4f1b65516) says the provider team receives messages through X and LinkedIn. You can contact the team on either site, but the post does not say that either one will speed up the review.
-
-After that, follow up only when you have new information, such as a better result or real users. Send the update once. Do not keep asking for a decision.
+After that, follow up only when you have new information, such as a better result or real users.
 
 ## 7. Treat listing and traffic as separate gates
 
