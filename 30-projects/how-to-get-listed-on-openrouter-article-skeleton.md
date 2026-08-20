@@ -83,7 +83,8 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - Screen the candidate for demand, qualified supply, possible edge, margin, capacity, and license.
 - Run a manual screen before the build. Measure recent token and request growth, then count the providers that meet the requirement that matters to the target workload. Compare their price, uptime, context, region, tool support, latency, and throughput. Estimate the price, capacity, and margin that you can achieve. Build only if one useful gap remains.
 - Use the proposed [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] as internal support for this screen.
-- Start the worked flow with, "Let's say you are trying to find a wedge today."
+- Start the worked flow with, "Let's say you want to find a wedge today instead of waiting for a market change."
+- Present demand discovery, provider-supply review, and OpenRouter verification as a numbered three-step screen.
 - Link the [official OpenRouter rankings](https://openrouter.ai/rankings) for demand discovery.
 - Link the [OpenRouter Inference Provider Market Share dashboard](https://or-provider-dashboard.vercel.app/) for provider share and model-level host competition. State that it is unofficial and has limited model coverage, then verify candidates on OpenRouter.
 - Give the reader a short agent prompt that requests five candidates, current provider verification, performance and capability comparisons, source links, evidence dates, and a named unmet need. Tell the agent not to recommend a model only because it has few providers.

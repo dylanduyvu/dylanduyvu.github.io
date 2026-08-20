@@ -22,13 +22,17 @@ A solo application won't get you noticed. It's best to: first, find a gap, prove
 
 ## 1. Find a gap with real demand
 
-Let's say you are trying to find a wedge today. Look in three places:
+Look in three places:
 
 - A strong, upcoming open-weight model release can create a day-zero opening.
 - A new policy, outage, price change, quota change, license change, or popular client blowup can create replacement demand.
 - An existing model can have users but still lack an important provider feature.
 
-Use the [OpenRouter rankings](https://openrouter.ai/rankings) to find models with rising usage. Then use the [OpenRouter Inference Provider Market Share dashboard](https://or-provider-dashboard.vercel.app/) to see which hosts serve the top models and how their routing share changes. The provider dashboard is unofficial and its model view covers the top models, so confirm each candidate on its OpenRouter model and endpoint pages.
+Let's say you want to find a wedge today instead of waiting for a market change. Use this three-step screen:
+
+1. Use the [OpenRouter rankings](https://openrouter.ai/rankings) to find models with rising usage.
+2. Use the [OpenRouter Inference Provider Market Share dashboard](https://or-provider-dashboard.vercel.app/) to see which hosts serve the top models and how their routing share changes.
+3. Confirm each candidate on its OpenRouter model and endpoint pages. The provider dashboard is unofficial and its model view covers only the top models.
 
 Give your agent a prompt like this:
 
