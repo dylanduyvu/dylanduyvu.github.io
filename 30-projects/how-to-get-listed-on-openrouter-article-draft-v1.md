@@ -38,19 +38,15 @@ Give your agent a prompt like this:
 
 > Using the OpenRouter rankings and provider market-share dashboard, find five open-weight models with rising OpenRouter usage and limited qualified provider supply. For each model, verify the current provider list on OpenRouter. Compare price, uptime, context length, region, privacy, latency, output speed, and tool support. Name the unmet need, cite each source, and state the evidence date. Do not recommend a model only because it has few providers.
 
-Use the result to choose one gap worth testing. Before you commit hardware, estimate the price, capacity, and gross margin you can achieve. If you cannot show demand and a profitable edge, keep looking.
+Use the result to choose a gap worth testing. Before you commit hardware, estimate the price, capacity, and gross margin you can achieve. If you cannot show demand and a profitable edge, keep looking. Maybe move outside of OpenRouter's network if necessary.
 
 ## 2. Prove the edge on your hardware
 
-Run the model on the planned hardware through a private endpoint. Before the test, record simultaneous requests, prompt and output lengths, hardware, serving software, duration, and quantization.
+Run the model on the hardware you plan to use through a private endpoint. Before each test, record the hardware, serving software, quantization, test duration, prompt and output lengths, and number of simultaneous requests. Repeat the test at several request levels. Measure time to first token, output speed, queue time, errors, GPU memory use, and cost per million tokens. This will show normal performance and the point where the service starts to fail.
 
-Measure time to first token. Also measure output speed, errors, queue time, GPU memory use, and cost per million tokens. Repeat the test at several request levels to find where the service starts to fail.
+Test how the endpoint behaves at that limit. When capacity is full, return an HTTP `429` response quickly instead of placing requests in a long hidden queue. A fast rejection gives clients a clear signal and prevents queue time from making the endpoint look slower than it is.
 
-When capacity is full, return an HTTP `429` response quickly. A long hidden queue makes the service look slow and reduces measured throughput.
-
-Compare output quality with the unmodified model. If you offer tool use, count valid calls, invalid calls, and execution failures separately. Also check the model license and your data policy.
-
-Stop if the result is not repeatable or the revenue cannot cover GPU and operating costs. Serious provider outreach should only start after this internal proof passes.
+Performance alone is not enough. Compare output quality with the unmodified model. If you offer tool use, count valid calls, invalid calls, and execution failures separately. Confirm that the model license and your data policy permit the service. Then compare expected revenue with GPU and operating costs. Start serious provider outreach only when the results are repeatable and the economics work.
 
 ## 3. Start provider outreach while you finish the endpoint
 
