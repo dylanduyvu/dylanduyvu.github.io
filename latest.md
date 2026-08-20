@@ -8,11 +8,11 @@ updated: 2026-08-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 20, 2026, 4:25 PM EDT
+Generated: Aug 20, 2026, 4:34 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 68 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 69 note commits. The most recent movement is:
 
 - Project decision: sequence radar collection before scarcity rules.
 - Project decision: patch OpenRouter article review.
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 68 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 20, 2026, 4:30 PM EDT - article: add demand-supply matrix and figure sources
+
+article: add demand-supply matrix and figure sources.
+
+Changed notes:
+  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
 ### Aug 20, 2026, 4:21 PM EDT - article: add OpenRouter provider-path figure
 
@@ -113,18 +120,11 @@ article: refine launch traffic and adoption guidance.
 Changed notes:
   - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
-### Aug 19, 2026, 10:30 PM EDT - article: organize launch section into three parts
-
-article: organize launch section into three parts.
-
-Changed notes:
-  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
-
-_Showing the newest 12 of 32 updates in this window._
+_Showing the newest 12 of 33 updates in this window._
 
 ## Past 7 Days
 
+- Aug 20, 2026: article: add demand-supply matrix and figure sources - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: add OpenRouter provider-path figure - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: simplify gap and test-key language - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: mark visual placements - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -149,12 +149,12 @@ _Showing the newest 12 of 32 updates in this window._
 - Aug 19, 2026: article: add OpenRouter provider draft v1 - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: project: patch OpenRouter article review - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: project: strengthen OpenRouter article outline - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
-- Aug 19, 2026: project: require public live inference dashboard - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 
-_Showing the newest 25 of 68 updates in this window._
+_Showing the newest 25 of 69 updates in this window._
 
 ## Past 30 Days
 
+- Aug 20, 2026: article: add demand-supply matrix and figure sources - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: add OpenRouter provider-path figure - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: simplify gap and test-key language - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: mark visual placements - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -179,6 +179,5 @@ _Showing the newest 25 of 68 updates in this window._
 - Aug 19, 2026: article: add OpenRouter provider draft v1 - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: project: patch OpenRouter article review - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: project: strengthen OpenRouter article outline - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
-- Aug 19, 2026: project: require public live inference dashboard - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 
-_Showing the newest 25 of 215 updates in this window._
+_Showing the newest 25 of 216 updates in this window._
