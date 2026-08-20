@@ -52,7 +52,7 @@ Use the result to choose a gap worth testing. Before you commit hardware, estima
 
 Run the model on the hardware you plan to use through a private endpoint. Before each test, record the hardware, serving software, quantization, test duration, prompt and output lengths, and number of simultaneous requests. Repeat the test at several request levels. Measure time to first token, output speed, queue time, errors, GPU memory use, and cost per million tokens. This will show normal performance and the point where the service starts to fail.
 
-Test how the endpoint behaves at that limit. When capacity is full, return an HTTP `429` response quickly instead of placing requests in a long hidden queue. A fast rejection gives clients a clear signal and prevents queue time from making the endpoint look slower than it is.
+Test how the endpoint behaves at that limit. When capacity is full, [return an HTTP `429` response quickly](https://openrouter.ai/docs/guides/community/for-providers#11-performance-metrics) instead of placing requests in a long hidden queue. A fast rejection gives clients a clear signal and prevents queue time from making the endpoint look slower than it is.
 
 Performance alone is not enough. Compare output quality with the unmodified model. If you offer tool use, count valid calls, invalid calls, and execution failures separately. Confirm that the model license and your data policy permit the service. Then compare expected revenue with GPU and operating costs.
 
@@ -62,7 +62,7 @@ Start serious provider outreach only when the results are repeatable and the eco
 
 Once the internal test passes, contact the provider team while you finish the public service. The test result gives them something concrete to review. Tell them which model you plan to serve, what OpenRouter is missing, what you measured, and when the endpoint will be live. Ask whether that gap matters and whether OpenRouter is reviewing new providers.
 
-You can email `providers@openrouter.ai`, and you can also contact one relevant person directly. [Shashank Goyal](https://www.linkedin.com/in/shashankgoyal1) is OpenRouter's Head of Provider Ecosystem. [Tomas Oliva](https://www.linkedin.com/posts/oliva-tomas_excited-to-share-that-today-marks-my-first-activity-7289788708579405824-tYx7) works in provider operations and has asked people to notify him when a new model drops.
+You can email `providers@openrouter.ai`, and you can also contact one relevant person directly. [Shashank Goyal](https://www.linkedin.com/in/shashankgoyal1) works on OpenRouter's provider ecosystem. [Tomas Oliva](https://www.linkedin.com/posts/oliva-tomas_excited-to-share-that-today-marks-my-first-activity-7289788708579405824-tYx7) works in operations, support, and developer relations and has asked people to notify him when a new model drops.
 
 At the same time, finish the minimum product that OpenRouter can inspect.
 
@@ -129,7 +129,7 @@ Once [OpenRouter lists your service](https://openrouter.ai/providers/apply), it 
 
 OpenRouter normally sends more requests to stable providers with lower prices. Users can also choose providers by response time or output speed. For requests that use tools, OpenRouter can consider how often the provider returns a valid tool call.
 
-Uptime directly affects traffic. OpenRouter starts measuring uptime after 100 requests. Providers at 95% uptime or higher receive normal traffic. Providers between 80% and 94% receive less. Below 80%, OpenRouter uses them only as a backup.
+Uptime directly affects traffic. [OpenRouter starts measuring uptime after 100 requests](https://openrouter.ai/docs/guides/community/for-providers#10-uptime-monitoring-and-traffic-routing). Providers at 95% uptime or higher receive normal traffic. Providers between 80% and 94% receive less. Below 80%, OpenRouter uses them only as a backup.
 
 After listing, track the requests OpenRouter sends you, revenue, GPU and operating costs, errors, and repeat use. Compare OpenRouter's speed and uptime numbers with your own dashboard. Other providers can also add the same model and remove your advantage.
 
