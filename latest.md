@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 10:30 PM EDT
+Generated: Aug 19, 2026, 10:41 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 57 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 58 note commits. The most recent movement is:
 
 - Project decision: patch OpenRouter article review.
 - Project decision: strengthen OpenRouter article outline.
@@ -27,6 +27,13 @@ In the past 7 days, the public vault changed through 57 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 10:41 PM EDT - article: refine launch traffic and adoption guidance
+
+article: refine launch traffic and adoption guidance.
+
+Changed notes:
+  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
 ### Aug 19, 2026, 10:30 PM EDT - article: organize launch section into three parts
 
@@ -114,18 +121,11 @@ Changed notes:
   - [[inference|Inference]]
   - [[qwen3-8-27b-open-weights-release-date-2026-08-14|Qwen3.8-27B open weights released on August 14, 2026]]
 
-### Aug 19, 2026, 7:26 PM EDT - project: patch OpenRouter article review
-
-Project decision: patch OpenRouter article review.
-
-Changed notes:
-  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
-  - [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter provider selection and onboarding primary-source check]]
-
-_Showing the newest 12 of 40 updates in this window._
+_Showing the newest 12 of 41 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: article: refine launch traffic and adoption guidance - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: organize launch section into three parts - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: improve hardware proof section flow - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: format wedge search as three steps - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -150,12 +150,12 @@ _Showing the newest 12 of 40 updates in this window._
 - Aug 19, 2026: research: correct inference opportunity radar evidence gates - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: project: stop inference radar at potential opportunities - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: research: map inference opportunity dashboards - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
-- Aug 19, 2026: research: map inference model opportunity data - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 
-_Showing the newest 25 of 57 updates in this window._
+_Showing the newest 25 of 58 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: article: refine launch traffic and adoption guidance - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: organize launch section into three parts - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: improve hardware proof section flow - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: format wedge search as three steps - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -180,6 +180,5 @@ _Showing the newest 25 of 57 updates in this window._
 - Aug 19, 2026: research: correct inference opportunity radar evidence gates - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: project: stop inference radar at potential opportunities - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - Aug 19, 2026: research: map inference opportunity dashboards - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
-- Aug 19, 2026: research: map inference model opportunity data - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 
 _Showing the newest 25 of 205 updates in this window._
