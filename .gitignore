@@ -16,3 +16,7 @@ quartz/cli/tui/dist/
 # Complete local Screenpipe project mirror. Keep it inside the vault for stable
 # agent access, but do not sweep raw screenshots/debug packets into public Git.
 screenpipe-datasets/
+
+# Build secrets: never publish. Exact file plus a catch-all pattern.
+30-projects/computer-use-autocomplete-v2-secrets.env
+*-secrets.env

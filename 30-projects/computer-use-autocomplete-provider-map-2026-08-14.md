@@ -8,6 +8,7 @@ used-by: blog-post-structure.md (sec 7, sec 9), blog-post-skeleton.md
 
 # Provider map (as of 2026-08-14)
 
+[STATUS NOTE 2026-08-15, private: Covalent is winding down per their direct email to Dylan (received 2026-08-14 22:25, hem juvvaladinne): cofounders split, direction changed, no demo. NOT public. The draft's Covalent sentence is site-attributed pending Dylan's exchange with the team. Do not cite Covalent as operational in new material.]
 
 [LINK FILL 2026-08-15: all seventeen draft placeholders filled. From this map: coast.app, pieces.app, usenocta.app, opencua.xlang.ai, github.com/TongUI-agent/TongUI-agent, cua.ai, getcovalent.co. Verified fresh by web search this pass: screenpi.pe (Screenpipe), arxiv.org/abs/2603.05923 (NAPsack, the paper), scribe.com (Scribe, moved from scribehow.com), openadapt.ai, inductionlabs.com/news/scaling-video-pretraining (Photon-1 announcement), github.com/bytedance/UI-TARS, tzafon.ai/blog/northstar-cua-fast (Northstar release post), platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool (Anthropic), adsideo.ai, autocomputer.ai, github.com/xlang-ai/VideoAgentTrek. Remaining sub-item: archive.org snapshots for the two fragile sec 2 links (the OpenAI forum thread and the tweet) need a save action from a browser or web-enabled agent; not fabricated here.]
 
