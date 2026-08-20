@@ -196,23 +196,20 @@ Keep retail traffic separate from gateway test traffic. Do not expose prompts, c
 
 **Attribution rule to preserve:** Shashank Goyal is the provider-ecosystem contact. The public request to report new model drops came from Tomas Oliva.
 
-### 7. Pass review, then win routed traffic
+### 7. Getting listed does not guarantee traffic
 
 **Target:** 150 to 180 words.
 
-**Job:** Separate acceptance from the business result.
+**Job:** Explain what determines traffic after acceptance.
 
-- Use OpenRouter's published sequence: application, technical review, integration and test traffic, then production.
-- Expect checks for API compatibility, reliability, pricing, and performance.
-- Give OpenRouter a separate key so gateway test calls can be measured.
-- Record response time, review requests, test traffic, decision, and stated reason.
-- After listing, track routed requests, revenue, margin, error rate, and repeat demand.
-- Explain that a gap can close quickly when more providers add the model.
-- OpenRouter removes recently unstable providers from the first routing group. Its normal routing then favors lower prices among stable providers. Users can instead select for latency or throughput. Auto Exacto uses tool-call quality and performance to route tool traffic.
-- Compare OpenRouter's public time-to-first-token, throughput, and uptime measurements with the provider's launch dashboard.
-- Keep four outcomes separate: public attention, endpoint use, listing acceptance, and routed demand.
+- State that acceptance makes the service available but does not guarantee requests.
+- Explain that price, uptime, response time, output speed, and valid tool calls can affect routing.
+- Keep the published uptime thresholds and explain them in normal English.
+- After listing, track requests, revenue, GPU and operating costs, errors, and repeat use.
+- Compare OpenRouter's public speed and uptime numbers with the provider's launch dashboard.
+- Explain that other providers can add the same model and remove the original advantage.
 
-**Core line:** Listing gives the provider access to distribution. It does not guarantee distribution.
+**Core line:** Listing makes the service available. Traffic and profit make the listing valuable.
 
 ### Conclusion: Build the application that can be called
 

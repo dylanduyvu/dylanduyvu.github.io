@@ -105,25 +105,23 @@ Put everything the reviewer needs in one place:
 - Your price and the amount of traffic you can handle.
 - Where the service runs, what you do with customer data, and who OpenRouter should contact if there is a problem.
 
-Answer each question directly. Do not make the reviewer search several pages. Do not buy or rent extra GPU capacity only because the model has few providers.
-
 ## 6. Follow up when you have something new
 
 Use the same email or direct-message thread and the same contact from Step 3. Tell them that the service is live. Send the endpoint, the gap it fills, the price, the test result, the dashboard, and a separate API key for OpenRouter's tests.
 
 After that, follow up only when you have new information, such as a better result or real users.
 
-## 7. Treat listing and traffic as separate gates
+## 7. Getting listed does not guarantee traffic
 
-[OpenRouter's published process](https://openrouter.ai/providers/apply) has four stages: application, technical review, integration and test traffic, then production. The review covers API compatibility, reliability, pricing, and performance. Give OpenRouter a separate key so you can measure its test calls without mixing them with retail traffic.
+Once [OpenRouter lists your service](https://openrouter.ai/providers/apply), it can start sending you requests. That does not mean you will receive enough traffic to build a business.
 
-Acceptance is not the business result. After listing, OpenRouter's normal routing favors lower prices among stable providers. Users can instead choose providers by latency or throughput. Tool requests can use Auto Exacto, which also considers tool-call success.
+OpenRouter normally sends more requests to stable providers with lower prices. Users can also choose providers by response time or output speed. For requests that use tools, OpenRouter can consider how often the provider returns a valid tool call.
 
-Reliability has hard effects. OpenRouter starts its uptime calculation after 100 requests. Providers at 95% uptime or higher keep normal routing priority. Providers between 80% and 94% receive less traffic, while providers below 80% are used only as fallback.
+Uptime directly affects traffic. OpenRouter starts measuring uptime after 100 requests. Providers at 95% uptime or higher receive normal traffic. Providers between 80% and 94% receive less. Below 80%, OpenRouter uses them only as a backup.
 
-Track routed requests, revenue, gross margin, errors, and repeat demand after listing. Compare OpenRouter's public time-to-first-token, throughput, and uptime figures with your dashboard. A gap can also close quickly when more providers add the same model.
+After listing, track the requests OpenRouter sends you, revenue, GPU and operating costs, errors, and repeat use. Compare OpenRouter's speed and uptime numbers with your own dashboard. Other providers can also add the same model and remove your advantage.
 
-Keep four outcomes separate: public attention, direct endpoint use, listing acceptance, and routed demand. Listing gives you access to distribution. It does not guarantee distribution.
+Listing makes your service available. Traffic and profit make the listing valuable.
 
 ## Build the application that can be called
 
