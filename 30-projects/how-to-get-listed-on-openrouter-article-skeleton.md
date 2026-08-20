@@ -171,38 +171,28 @@ Keep retail traffic separate from gateway test traffic. Do not expose prompts, c
 
 ### 5. Submit the OpenRouter application
 
-**Target:** 110 to 130 words.
+**Target:** 120 to 140 words.
 
 **Job:** Make the application easy to review.
 
-- Submit during the same window as the public launch, after the endpoint is testable.
-- Complete the [official OpenRouter provider form](https://openrouter.ai/providers/apply/form) with the required infrastructure, endpoint, model, and data-policy information.
-- Add a recommended evidence packet for the form where possible and for later outreach. State:
-  - the model and network gap;
-  - the demand evidence;
-  - the measurable edge and benchmark method;
-  - the public live dashboard;
-  - the base URL and test key;
-  - pricing, capacity, and location;
-  - privacy and retention terms; and
-  - the operating contact.
-- Do not make the reviewer reconstruct the offer from several pages.
-- Do not make large, hard-to-reverse capacity purchases from provider scarcity alone.
+- Submit when the public service is live and the current results are ready to test.
+- Complete the [official OpenRouter provider form](https://openrouter.ai/providers/apply/form).
+- Put everything the reviewer needs in one place. Include the model, the gap it fills, proof of demand, the test result and method, the live dashboard, the API URL, a separate test key, the price, the amount of traffic the service can handle, the service location, the customer-data rules, and a contact person.
+- Answer each question directly. Do not make the reviewer search several pages.
+- Do not buy or rent a large amount of GPU capacity only because the model has few providers.
 
-**Possible insert:** A compact application-packet checklist.
+### 6. Follow up when you have something new
 
-### 6. Follow up with the provider team using live evidence
-
-**Target:** 110 to 140 words.
+**Target:** 100 to 120 words.
 
 **Job:** Turn the earlier provider conversation into a specific post-application follow-up.
 
 - Discovery can happen before internal proof. The serious listing pitch begins after Step 2 and continues while the endpoint is built.
-- Send the live endpoint, the exact gap, the price, the benchmark, the public dashboard, and a dedicated test key.
-- OpenRouter's job materials confirm that provider messages through X and LinkedIn are real inbound channels.
-- Continue the existing provider email or contact thread. Follow up with the same provider-ecosystem or provider-operations contact named in Step 3. Use new launch evidence rather than repeating the earlier message.
+- Send the live endpoint, the gap it fills, the price, the test result, the public dashboard, and a separate test key.
+- OpenRouter's job post says the provider team receives messages through X and LinkedIn. It does not say that either channel speeds up review.
+- Continue the existing email or direct-message thread. Use the same contact from Step 3 and send new information instead of repeating the earlier message.
 - Keep the customer-facing launch post clear. Use a reply, direct message, or separate note for the provider pitch when that reads better.
-- Follow up with new evidence, not repeated pressure.
+- Follow up only when you have a new result or real users. Do not keep asking for a decision.
 
 **Attribution rule to preserve:** Shashank Goyal is the provider-ecosystem contact. The public request to report new model drops came from Tomas Oliva.
 

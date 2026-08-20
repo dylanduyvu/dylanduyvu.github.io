@@ -52,9 +52,9 @@ Start serious provider outreach only when the results are repeatable and the eco
 
 ## 3. Start provider outreach while you finish the endpoint
 
-Once the internal test passes, start business development while you finish the public service. You'll want results as proof points to reac out with. Send the model, network gap, measured result, and endpoint date. Ask whether the gap matters and whether OpenRouter is reviewing new providers.
+Once the internal test passes, contact the provider team while you finish the public service. The test result gives them something concrete to review. Tell them which model you plan to serve, what OpenRouter is missing, what you measured, and when the endpoint will be live. Ask whether that gap matters and whether OpenRouter is reviewing new providers.
 
-You can use `providers@openrouter.ai`, but bespoke outreach also matters to expedite review. [Shashank Goyal](https://www.linkedin.com/in/shashankgoyal1) is OpenRouter's Head of Provider Ecosystem. [Tomas Oliva](https://www.linkedin.com/posts/oliva-tomas_excited-to-share-that-today-marks-my-first-activity-7289788708579405824-tYx7) works in provider operations and has asked people to notify him when a new model drops.
+You can email `providers@openrouter.ai`, and you can also contact one relevant person directly. [Shashank Goyal](https://www.linkedin.com/in/shashankgoyal1) is OpenRouter's Head of Provider Ecosystem. [Tomas Oliva](https://www.linkedin.com/posts/oliva-tomas_excited-to-share-that-today-marks-my-first-activity-7289788708579405824-tYx7) works in provider operations and has asked people to notify him when a new model drops.
 
 At the same time, finish the minimum product that OpenRouter can inspect.
 
@@ -74,7 +74,7 @@ Announce the model, base URL, price, context limit, region, privacy terms, capac
 
 Publish the benchmark method, workload, and result. One speed number can hide low concurrency, short prompts, a warm model, or test conditions that do not match production.
 
-Link a public live performance dashboard from the launch post, API documentation, and application packet. It should show:
+Include a public live performance dashboard in the launch post, API documentation, and OpenRouter application. It should show:
 
 - Current status, rolling uptime, and error rate.
 - Median and 95th-percentile time to first token, output tokens per second, and sample count.
@@ -88,23 +88,32 @@ Post the launch on X, state what makes your endpoint different from the other pr
 
 ### Get users onto the endpoint
 
-Subsidized tokens can help attract early users and produce usage evidence. Start with a time-limited, unlimited-token offer under a flat-rate, request-capped plan. Limit the number of users, request rate, concurrency, campaign length, and total loss. Issue the first keys manually. Then move to a subscription with a token allowance and pay-per-token overage. If pay-per-token use becomes the stronger product, make it the default and retire the subscription plans.
+Subsidized tokens can help attract early users and show how they use the service. Start with a time-limited, unlimited-token offer under a flat-rate, request-capped plan. Limit the number of users, request rate, concurrency, campaign length, and total loss. Issue the first keys manually. Then move to a subscription with a token allowance and pay-per-token overage. If pay-per-token use becomes the stronger product, make it the default and retire the subscription plans.
 
-This traffic can produce demand evidence, but it does not guarantee OpenRouter acceptance. Buy traffic only after the service can handle it.
+This traffic can show that people want the service, but it does not guarantee OpenRouter acceptance. Buy traffic only after the service can handle it.
 
 ## 5. Submit one complete application
 
-Apply through the [official provider form](https://openrouter.ai/providers/apply/form) when the endpoint is live. Use the same launch window for the application, public announcement, and direct follow-up.
+Apply through the [official provider form](https://openrouter.ai/providers/apply/form) when the endpoint is live. Submit it when you announce the service so the reviewer can test the current service and results.
 
-Give the reviewer one evidence packet. It should state the model, the network gap, demand evidence, your measured edge, the benchmark method, and the dashboard link. Add the base URL, a dedicated test key, price, capacity, location, privacy terms, and an operating contact.
+Put everything the reviewer needs in one place:
 
-OpenRouter asks for infrastructure, endpoint, model, and data-policy information before technical review. Do not force the reviewer to rebuild the offer from several pages. But do not buy large, hard-to-reverse capacity only because the model has few providers. The application is evidence, not a purchase commitment.
+- The model and the gap it fills.
+- Proof that people want it.
+- Your test result, how you ran the test, and the dashboard link.
+- The API URL and a separate API key for OpenRouter to test.
+- Your price and the amount of traffic you can handle.
+- Where the service runs, what you do with customer data, and who OpenRouter should contact if there is a problem.
 
-## 6. Follow up with new evidence
+Answer each question directly. Do not make the reviewer search several pages. Do not buy or rent extra GPU capacity only because the model has few providers.
 
-Continue the same provider thread that you started after the internal test. Send the live endpoint, exact gap, price, benchmark, dashboard, and dedicated test key. OpenRouter's [partner-development job material](https://jobs.ashbyhq.com/openrouter/99b31b81-5ee6-4f4a-990b-d4f4f1b65516) confirms that provider messages through X and LinkedIn are real inbound channels.
+## 6. Follow up when you have something new
 
-Use the same relevant contact from Step 3. The launch gives you a reason to follow up because the offer is now public and callable. If the metrics improve, send the new result. If real users appear, send the usage evidence. Repeat evidence, not pressure.
+Use the same email or direct-message thread and the same contact from Step 3. Tell them that the service is live. Send the endpoint, the gap it fills, the price, the test result, the dashboard, and a separate API key for OpenRouter's tests.
+
+An OpenRouter [job post](https://jobs.ashbyhq.com/openrouter/99b31b81-5ee6-4f4a-990b-d4f4f1b65516) says the provider team receives messages through X and LinkedIn. You can contact the team on either site, but the post does not say that either one will speed up the review.
+
+After that, follow up only when you have new information, such as a better result or real users. Send the update once. Do not keep asking for a decision.
 
 ## 7. Treat listing and traffic as separate gates
 
