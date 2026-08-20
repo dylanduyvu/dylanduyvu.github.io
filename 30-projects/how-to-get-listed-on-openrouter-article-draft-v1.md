@@ -22,21 +22,21 @@ A solo application won't get you noticed. It's best to: first, find a gap, prove
 
 ## 1. Find a gap with real demand
 
-Look in three places. First, a strong new open-weight model can create a day-zero opening on release day. Open-weight means that its trained weights are available to download. Second, a policy, outage, price, quota, license, or popular client can create replacement demand. Third, an existing model can have users but lack one important provider feature.
+Look in three places. First, a strong new open-weight model can create a day-zero opening on release day. Second, a policy, outage, price, quota, license, or popular client can create replacement demand. Third, an existing model can have users but lack one important provider feature.
 
 Do not confuse scarce supply with demand. A model with one provider and no users is not a useful gap. Check request growth, developer activity, local downloads, and direct user interest. Then compare qualified providers on price, uptime, context length, region, tool support, privacy, latency, and output speed.
 
 Qwen3.8-27B shows why speed matters. [Qwen released the weights on August 14, 2026](https://github.com/QwenLM/Qwen3.8). On OpenRouter, complete-day use rose from 3.13 billion prompt and completion tokens on August 15 to 24.60 billion on August 18. But the [OpenRouter endpoint list](https://openrouter.ai/api/v1/models/qwen/qwen3.8-27b/endpoints) already showed seven providers by August 19. Demand grew fast, and supply followed.
 
-Estimate your price, capacity, and gross margin, which is the share of revenue left after serving costs. Proceed only if the demand is real and one useful gap remains open.
+Estimate your price, capacity, and gross margin. Proceed only if the demand is real and one useful gap remains open.
 
 ## 2. Prove the edge on your hardware
 
-Run the model on the planned hardware through a private endpoint. Before the test, record simultaneous requests, prompt and output lengths, hardware, serving software, duration, and quantization. Quantization lowers numerical precision to reduce memory use and cost.
+Run the model on the planned hardware through a private endpoint. Before the test, record simultaneous requests, prompt and output lengths, hardware, serving software, duration, and quantization.
 
-Measure time to first token, which is how long the user waits before the answer starts. Also measure output speed, errors, queue time, GPU memory use, and cost per million tokens. Repeat the test at several request levels to find where the service starts to fail.
+Measure time to first token. Also measure output speed, errors, queue time, GPU memory use, and cost per million tokens. Repeat the test at several request levels to find where the service starts to fail.
 
-When capacity is full, return an HTTP `429` response quickly. That response tells the caller to try again later. A long hidden queue makes the service look slow and reduces measured throughput.
+When capacity is full, return an HTTP `429` response quickly. A long hidden queue makes the service look slow and reduces measured throughput.
 
 Compare output quality with the unmodified model. If you offer tool use, count valid calls, invalid calls, and execution failures separately. Also check the model license and your data policy.
 
@@ -48,7 +48,7 @@ Once the internal test passes, start business development while you finish the p
 
 You can use `providers@openrouter.ai`, but bespoke outreach also matters. [Shashank Goyal](https://www.linkedin.com/in/shashankgoyal1) is OpenRouter's Head of Provider Ecosystem. [Tomas Oliva](https://www.linkedin.com/posts/oliva-tomas_excited-to-share-that-today-marks-my-first-activity-7289788708579405824-tYx7) works in provider operations and has asked people to notify him when a new model drops. Contact one person first. Do not send the same pitch to several employees at once.
 
-At the same time, finish the minimum product that OpenRouter can inspect. An endpoint is the internet address that receives API calls.
+At the same time, finish the minimum product that OpenRouter can inspect.
 
 - Run the model on infrastructure that you operate, whether you own or rent it.
 - Expose an authenticated public HTTPS endpoint that supports OpenAI-compatible chat requests, streaming answers, and accurate token counts.
@@ -66,7 +66,7 @@ Publish the benchmark method, workload, and result. One speed number can hide lo
 
 The launch also needs a public live performance dashboard. It must show that the service meets the claimed edge under the conditions that define the offer. State concurrency, prompt and output lengths, warm or cold state, hardware class, quantization, serving software, and region.
 
-Show current status, rolling uptime, error rate, median time to first token, output tokens per second, and sample count. Also show the 95th percentile, which is the time that 95% of requests stay below. Use clear time windows and label production traffic and automated tests separately. Show the model version, method, and last update time. Never expose prompts, customer data, credentials, or sensitive infrastructure details.
+Show current status, rolling uptime, error rate, median and 95th-percentile time to first token, output tokens per second, and sample count. Use clear time windows and label production traffic and automated tests separately. Show the model version, method, and last update time. Never expose prompts, customer data, credentials, or sensitive infrastructure details.
 
 Post the launch on X and link the same dashboard from the post, API documentation, and application packet. Set a promotion budget and track impressions, visits, key requests, successful calls, repeat use, and spend. Increase the budget only when the service stays reliable and produces useful demand evidence. Put a gateway mention in a reply or separate note if it weakens the customer post.
 

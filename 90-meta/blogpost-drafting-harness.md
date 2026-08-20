@@ -156,7 +156,7 @@ Write for a smart reader who has no finance background and has never seen the va
 This gate applies **before** any prose is shown to Dylan or written into a draft. It is not merely a final editing check. Do not use Dylan's reaction as the first test of whether the language is understandable.
 
 - Prefer the ordinary action to the industry label. Write "cash set aside for future loan payments" before `debt-service reserve`, "the share of the hardware cost the lender pays" before `advance rate`, and "a customer promises to pay for capacity for several years" before `offtake`.
-- If a technical term is necessary, define it in normal English the first time it appears. Do not make the reader wait for a later paragraph or glossary.
+- Set the target reader's baseline knowledge before drafting. Define a technical term only if that reader might not know it. Do not add glossary sentences for standard terms in the reader's field. ASD-STE100 controls clarity, not audience level.
 - Never use jargon to carry a logical step. The prose must say who pays whom, what could go wrong, and what changes as a result.
 - Keep one idea per sentence and one job per paragraph. Split a sentence when understanding it requires holding several new concepts at once.
 - Familiarity is not clarity. Run the final pass as someone who does not know the research, the companies, or the argument already.
@@ -215,7 +215,7 @@ Specificity:
 
 Normal English:
 
-- Circle every domain term. Replace it with the underlying action unless the term is necessary, then define it immediately.
+- Circle every domain term. Replace it with the underlying action unless the term is necessary. Define it only if the target reader might not know it.
 - For every paragraph, ask: who is doing what, why does it matter, and could a smart non-specialist paraphrase this after one reading?
 - Treat a failed paraphrase as a failed draft. Rewrite the paragraph before continuing the lint.
 

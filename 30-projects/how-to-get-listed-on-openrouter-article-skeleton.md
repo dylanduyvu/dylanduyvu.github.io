@@ -26,7 +26,7 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 - Use ASD-STE100 Simplified Technical English for all reader-visible prose. Prefer common words, active voice, simple sentence structure, and one main idea per sentence.
 - Use the shortest connective word that states the logical relationship between sentences. Use words such as `but`, `and`, `so`, `because`, `still`, `instead`, `for example`, or `that said` when the relationship is not already clear.
 - Do not stack connective words. Do not begin two sentences in sequence with connective words. Join the second relationship inside the sentence when this reads better.
-- Use normal English. Explain gateway and inference terms on first use.
+- Write for people who can operate an inference service. Do not define baseline terms such as open-weight, API, endpoint, quantization, time to first token, HTTP `429`, or 95th percentile. Define a term only when the intended reader might not know it.
 - Keep the article practical. Every section must end with an action or decision.
 - State OpenRouter's published requirements and process as facts.
 - Present provider actions as examples, not proof that the same action caused acceptance.
@@ -293,3 +293,4 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - 2026-08-19: Drafted the complete version-one article from this skeleton and linked it above. The draft retains the approved seven-step sequence, named provider contacts, live dashboard, retail pricing aside, and evidence boundaries.
 - 2026-08-19: Removed the Stripe acquisition sentence from the article and the drafting instructions because it did not change the provider-listing playbook. Kept the acquisition evidence in the source note.
 - 2026-08-19: Replaced the policy-first opening with Dylan's research-led framing. The opening now starts with the provider documents and public case studies behind the guide, then states the network-gap playbook.
+- 2026-08-19: Calibrated definitions to the target reader after the draft overexplained basic inference terms. ASD-STE100 still controls sentence clarity, but the article now assumes that an inference provider understands standard serving vocabulary.
