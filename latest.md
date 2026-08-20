@@ -8,18 +8,18 @@ updated: 2026-08-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 20, 2026, 10:52 AM EDT
+Generated: Aug 20, 2026, 3:06 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 63 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 64 note commits. The most recent movement is:
 
+- Project decision: sequence radar collection before scarcity rules.
 - Project decision: patch OpenRouter article review.
 - Project decision: strengthen OpenRouter article outline.
 - Project decision: require public live inference dashboard.
 - Project decision: add named OpenRouter BD contacts.
 - Project decision: remove Wafer credit from pricing aside.
-- Project decision: add Wafer-inspired launch pricing ladder.
 
 ## Current Hub Signals
 
@@ -27,6 +27,14 @@ In the past 7 days, the public vault changed through 63 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 20, 2026, 3:06 PM EDT - project: sequence radar collection before scarcity rules
+
+Project decision: sequence radar collection before scarcity rules.
+
+Changed notes:
+  - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
+  - [[inference|Inference]]
 
 ### Aug 20, 2026, 10:50 AM EDT - research: validate inference opportunity radar v0
 
@@ -114,17 +122,11 @@ Changed notes:
   - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
   - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 
-### Aug 19, 2026, 9:56 PM EDT - article: format gap-selection paths as bullets
-
-article: format gap-selection paths as bullets.
-
-Changed notes:
-  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-
-_Showing the newest 12 of 46 updates in this window._
+_Showing the newest 12 of 29 updates in this window._
 
 ## Past 7 Days
 
+- Aug 20, 2026: project: sequence radar collection before scarcity rules - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 20, 2026: research: validate inference opportunity radar v0 - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 19, 2026: research: validate inference opportunity radar v0 - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 19, 2026: article: focus post-listing section on traffic - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -149,12 +151,12 @@ _Showing the newest 12 of 46 updates in this window._
 - Aug 19, 2026: project: remove Wafer credit from pricing aside - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: project: add Wafer-inspired launch pricing ladder - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Aug 19, 2026: project: start OpenRouter BD after internal proof - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
-- Aug 19, 2026: insight: weaken common open-weight OpenRouter listing path - [[openrouters-proprietary-model-priority-weakens-the-common-open-weight-provider-path|OpenRouter's proprietary-model priority weakens the common open-weight provider path]]
 
-_Showing the newest 25 of 63 updates in this window._
+_Showing the newest 25 of 64 updates in this window._
 
 ## Past 30 Days
 
+- Aug 20, 2026: project: sequence radar collection before scarcity rules - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 20, 2026: research: validate inference opportunity radar v0 - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 19, 2026: research: validate inference opportunity radar v0 - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 19, 2026: article: focus post-listing section on traffic - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -179,6 +181,5 @@ _Showing the newest 25 of 63 updates in this window._
 - Aug 19, 2026: project: remove Wafer credit from pricing aside - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 - Aug 19, 2026: project: add Wafer-inspired launch pricing ladder - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Aug 19, 2026: project: start OpenRouter BD after internal proof - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
-- Aug 19, 2026: insight: weaken common open-weight OpenRouter listing path - [[openrouters-proprietary-model-priority-weakens-the-common-open-weight-provider-path|OpenRouter's proprietary-model priority weakens the common open-weight provider path]]
 
-_Showing the newest 25 of 210 updates in this window._
+_Showing the newest 25 of 211 updates in this window._
