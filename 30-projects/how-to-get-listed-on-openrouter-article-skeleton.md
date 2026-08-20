@@ -52,19 +52,19 @@ tags: [article, openrouter, provider-listing, operator-playbook, pre-draft]
 
 ## Article Skeleton
 
-### Opening: Getting listed starts before the application
+### Opening: The playbook comes from public provider research
 
-**Target:** 90 to 110 words.
+**Target:** 120 to 130 words.
 
-**Job:** Break the belief that the form is the main work.
+**Job:** Establish that the guide comes from direct work with the public record, then give the reader the operating thesis.
 
-- As of 2026-08-19, OpenRouter had a large provider backlog. It prioritized providers that bring models they own or control and providers that fill clear gaps in its network. This guide focuses on the gap route.
-- A complete application for another crowded endpoint is weak positioning.
-- The useful question is not, "How do I complete the form?" It is, "What missing supply can I make live and testable?"
-- Preview the sequence: find, prove, begin BD while you build, launch, apply, follow up, and compete.
-- End with an action: write one sentence that names the demand, the missing supply, and the edge that you can prove.
+- Say that the author read OpenRouter's provider documents and compiled the public sources he could find from inference providers that already earned gateway listings.
+- Say that he compared those provider launches with OpenRouter's published rules.
+- State that this article gives the resulting plan for how a new provider can put its best foot forward.
+- Preserve both current OpenRouter priorities, then state that the guide covers the network-gap route.
+- Preview the sequence: find a gap, prove it, launch a public endpoint with inspectable performance data, apply, and contact the provider team.
 
-**Primary evidence:** [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]].
+**Primary evidence:** [[openrouter-provider-selection-and-onboarding-primary-source-check-2026-08-19|OpenRouter primary-source check]], [[compass-ai-gateway-provider-listing-case-studies-2026-08-18|compiled provider case studies]], and [[exa-featherless-hugging-face-provider-onboarding-audit-2026-08-18|Featherless provider-onboarding audit]].
 
 **Required evidence note:** The provider requirements and review sequence come from OpenRouter's page as checked on 2026-08-19. The launch, promotion, and outreach steps are the operating strategy that follows from those published rules.
 
@@ -265,7 +265,6 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 ## Open Draft Decisions
 
 - Final title and subtitle.
-- Whether the opening should name the application backlog in its first sentence.
 - Whether to keep the dated Qwen3.8-27B example after its provider supply is checked again.
 - Exact compression of the retail pricing ladder inside Step 4.
 - Whether to include the paid-promotion tactic in the title or only in step four.
@@ -293,3 +292,4 @@ Do not add a second table, a company sidebar, or a downloadable evidence-packet 
 - 2026-08-19: Applied the post-review patch. Removed the repeated opening thesis, added a dated Stripe acquisition note without an unconfirmed sale price, reduced section targets so the checklist fits below 1,800 words, added publication-day source checks, and tightened the closing. Kept the two named BD contacts, the live dashboard, and the seven-step structure without a failure branch.
 - 2026-08-19: Drafted the complete version-one article from this skeleton and linked it above. The draft retains the approved seven-step sequence, named provider contacts, live dashboard, retail pricing aside, and evidence boundaries.
 - 2026-08-19: Removed the Stripe acquisition sentence from the article and the drafting instructions because it did not change the provider-listing playbook. Kept the acquisition evidence in the source note.
+- 2026-08-19: Replaced the policy-first opening with Dylan's research-led framing. The opening now starts with the provider documents and public case studies behind the guide, then states the network-gap playbook.

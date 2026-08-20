@@ -14,11 +14,11 @@ tags: [article, openrouter, provider-listing, operator-playbook, draft-v1]
 
 # How to get listed on OpenRouter as an inference provider
 
-*A strong OpenRouter application starts with a useful endpoint that the provider team can test.*
+I read through OpenRouter's provider documents and compiled every public source I could find from inference providers that have already been listed on OpenRouter or another gateway. I then compared their launches with OpenRouter's published rules. This is what I learned about how a new provider can put its best foot forward.
 
-[OpenRouter's provider page](https://openrouter.ai/providers/apply) says it has a large application backlog. It currently gives priority to providers with models they own or control and to providers that fill gaps in its network. This guide focuses on the second route.
+[OpenRouter currently prioritizes](https://openrouter.ai/providers/apply) providers that bring models they own or control. But it also gives priority to providers that fill gaps in its network, which is the route this guide covers.
 
-The technical requirements below come from OpenRouter. The launch and outreach sequence is an operating plan based on those rules. Start by writing one sentence that names the demand, the missing supply, and the edge you can prove.
+The application comes after the hard work. First, find a gap, prove that you can serve it, and launch a public endpoint with performance data that anyone can inspect. Then apply, contact the provider team, and give them an offer they can test.
 
 ## 1. Find a gap with real demand
 
