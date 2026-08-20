@@ -8,11 +8,11 @@ updated: 2026-08-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 20, 2026, 4:39 PM EDT
+Generated: Aug 20, 2026, 4:55 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 70 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 72 note commits. The most recent movement is:
 
 - Project decision: sequence radar collection before scarcity rules.
 - Project decision: patch OpenRouter article review.
@@ -27,6 +27,23 @@ In the past 7 days, the public vault changed through 70 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 20, 2026, 4:55 PM EDT - article: publish contact and source corrections
+
+article: publish contact and source corrections.
+
+Changed notes:
+  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
+  - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
+  - [[computer-use-autocomplete-provider-map-2026-08-14|Provider map (as of 2026-08-14)]]
+  - [[computer-use-autocomplete-v2-build-plan|Computer-use autocomplete, v2 build plan]]
+
+### Aug 20, 2026, 4:55 PM EDT - article: tighten contact roles and source provider metrics
+
+article: tighten contact roles and source provider metrics.
+
+Changed notes:
+  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
 ### Aug 20, 2026, 4:38 PM EDT - article: add public performance dashboard figure
 
@@ -105,25 +122,12 @@ Changed notes:
   - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
   - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 
-### Aug 19, 2026, 10:52 PM EDT - article: simplify provider follow-up guidance
-
-article: simplify provider follow-up guidance.
-
-Changed notes:
-  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-
-### Aug 19, 2026, 10:49 PM EDT - article: replace application and follow-up jargon
-
-article: replace application and follow-up jargon.
-
-Changed notes:
-  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
-
-_Showing the newest 12 of 34 updates in this window._
+_Showing the newest 12 of 35 updates in this window._
 
 ## Past 7 Days
 
+- Aug 20, 2026: article: publish contact and source corrections - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
+- Aug 20, 2026: article: tighten contact roles and source provider metrics - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: add public performance dashboard figure - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: add demand-supply matrix and figure sources - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: add OpenRouter provider-path figure - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -147,13 +151,13 @@ _Showing the newest 12 of 34 updates in this window._
 - Aug 19, 2026: article: tighten opening and remove redundant gateway definition - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: replace OpenRouter opening with research-led framing - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove irrelevant Stripe acquisition aside - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: add OpenRouter provider draft v1 - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: project: patch OpenRouter article review - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 
-_Showing the newest 25 of 70 updates in this window._
+_Showing the newest 25 of 72 updates in this window._
 
 ## Past 30 Days
 
+- Aug 20, 2026: article: publish contact and source corrections - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
+- Aug 20, 2026: article: tighten contact roles and source provider metrics - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: add public performance dashboard figure - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: add demand-supply matrix and figure sources - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: add OpenRouter provider-path figure - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -177,7 +181,5 @@ _Showing the newest 25 of 70 updates in this window._
 - Aug 19, 2026: article: tighten opening and remove redundant gateway definition - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: replace OpenRouter opening with research-led framing - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove irrelevant Stripe acquisition aside - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: add OpenRouter provider draft v1 - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: project: patch OpenRouter article review - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 
-_Showing the newest 25 of 217 updates in this window._
+_Showing the newest 25 of 219 updates in this window._
