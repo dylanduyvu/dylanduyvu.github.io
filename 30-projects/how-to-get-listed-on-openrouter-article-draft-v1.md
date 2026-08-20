@@ -2,7 +2,7 @@
 type: blog-draft
 status: draft-v1
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-08-20
 source: how-to-get-listed-on-openrouter-article-skeleton
 register: "ASD-STE100 Simplified Technical English; simple declarative; no em dashes"
 domains: [inference, inference-marketplaces, distribution, go-to-market]
@@ -18,7 +18,9 @@ I read through OpenRouter's provider documents and compiled every public source 
 
 [OpenRouter currently prioritizes](https://openrouter.ai/providers/apply) providers that bring models they own or control. But it also gives priority to providers that fill gaps in its network, which is the route this guide covers.
 
-A solo application won't get you noticed. It's best to: first, find a gap, prove that you can serve it, and launch a public endpoint with performance data that anyone can inspect. Then apply, contact the provider team, and give them an offer they can test.
+A standalone application won't get you noticed. It's best to: first, find a gap, prove that you can serve it, and launch a public endpoint with performance data that anyone can inspect. Then formally apply, contact the provider team, and give them an offer they can test.
+
+<!-- VISUAL 1 GOES HERE: Hero strategy flow. Find a gap -> prove the edge -> start outreach and launch publicly -> apply -> get listed -> earn traffic -> reach profitability. -->
 
 ## 1. Find a gap with real demand
 
@@ -33,6 +35,8 @@ Let's say you want to find a wedge today instead of waiting for a market change.
 1. Use the [OpenRouter rankings](https://openrouter.ai/rankings) to find models with rising usage.
 2. Use the [OpenRouter Inference Provider Market Share dashboard](https://or-provider-dashboard.vercel.app/) to see which hosts serve the top models and how their routing share changes.
 3. Confirm each candidate on its OpenRouter model and endpoint pages. The provider dashboard is unofficial and its model view covers only the top models.
+
+<!-- VISUAL 2 GOES HERE: Demand-versus-qualified-provider-supply matrix. High demand and low supply is the best wedge. High demand and high supply needs a clear performance or product edge. Low demand and low supply is a false gap. Low demand and high supply should be avoided. -->
 
 Give your agent a prompt like this:
 
@@ -79,6 +83,8 @@ Include a public live performance dashboard in the launch post, API documentatio
 - Current status, rolling uptime, and error rate.
 - Median and 95th-percentile time to first token, output tokens per second, and sample count.
 - Concurrency, prompt and output lengths, warm or cold state, hardware class, quantization, serving software, and region.
+
+<!-- VISUAL 3 GOES HERE: Public performance dashboard wireframe. Show service status, uptime, error rate, time to first token, output speed, load, test conditions, model version, region, and last update time. -->
 
 Use clear time windows and label production traffic and automated tests separately. Show the model version, method, and last update time. Never expose prompts, customer data, credentials, or sensitive infrastructure details.
 
