@@ -46,7 +46,7 @@ When capacity is full, return an HTTP `429` response quickly. A long hidden queu
 
 Compare output quality with the unmodified model. If you offer tool use, count valid calls, invalid calls, and execution failures separately. Also check the model license and your data policy.
 
-Stop if the result is not repeatable or the revenue cannot cover GPU and operating costs. Serious provider outreach starts only after this internal proof passes.
+Stop if the result is not repeatable or the revenue cannot cover GPU and operating costs. Serious provider outreach should only start after this internal proof passes.
 
 ## 3. Start provider outreach while you finish the endpoint
 
