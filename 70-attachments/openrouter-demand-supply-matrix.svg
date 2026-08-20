@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title description">
+  <title id="title">Demand versus qualified provider supply</title>
+  <desc id="description">A two-by-two matrix showing that the best inference-provider target has high demand and low qualified provider supply. High demand with high supply requires a clear edge. Low demand with low supply is a false gap. Low demand with high supply should be avoided.</desc>
+
+  <defs>
+    <marker id="axis-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#A49686"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1000" rx="32" fill="#F6F0E6"/>
+  <rect x="1" y="1" width="1598" height="998" rx="31" fill="none" stroke="#D8CDBE" stroke-width="2"/>
+
+  <text x="90" y="67" fill="#B86643" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="2.7">MODEL SELECTION SCREEN</text>
+  <text x="90" y="132" fill="#26211D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="52" font-weight="720" letter-spacing="-1.2">Demand alone does not define a gap</text>
+  <text x="91" y="177" fill="#6F675E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="24">The best target combines strong demand with limited qualified provider supply.</text>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <rect x="275" y="250" width="555" height="245" rx="22" fill="#F2DDD1" stroke="#B86643" stroke-width="3"/>
+    <text x="315" y="297" fill="#A95434" font-size="17" font-weight="750" letter-spacing="1.7">HIGH DEMAND · LOW SUPPLY</text>
+    <text x="315" y="358" fill="#26211D" font-size="38" font-weight="760">BEST TARGET</text>
+    <text x="315" y="411" fill="#5F574F" font-size="23">Demand is real, and few providers meet</text>
+    <text x="315" y="445" fill="#5F574F" font-size="23">the workload's actual requirement.</text>
+    <rect x="315" y="461" width="132" height="7" rx="3.5" fill="#B86643"/>
+
+    <rect x="860" y="250" width="555" height="245" rx="22" fill="#FFFDF8" stroke="#D7CCBC" stroke-width="2"/>
+    <text x="900" y="297" fill="#6A6258" font-size="17" font-weight="750" letter-spacing="1.7">HIGH DEMAND · HIGH SUPPLY</text>
+    <text x="900" y="358" fill="#26211D" font-size="38" font-weight="760">EDGE REQUIRED</text>
+    <text x="900" y="411" fill="#6F675E" font-size="23">Supply already exists. Enter only if you</text>
+    <text x="900" y="445" fill="#6F675E" font-size="23">can win on a feature that users value.</text>
+    <text x="900" y="474" fill="#8A8177" font-size="17">PRICE · SPEED · UPTIME · TOOLS · REGION · PRIVACY</text>
+
+    <rect x="275" y="525" width="555" height="245" rx="22" fill="#FBF8F2" stroke="#D7CCBC" stroke-width="2"/>
+    <text x="315" y="572" fill="#6A6258" font-size="17" font-weight="750" letter-spacing="1.7">LOW DEMAND · LOW SUPPLY</text>
+    <text x="315" y="633" fill="#26211D" font-size="38" font-weight="760">FALSE GAP</text>
+    <text x="315" y="686" fill="#6F675E" font-size="23">Few providers can mean that users do not</text>
+    <text x="315" y="720" fill="#6F675E" font-size="23">want the model. Verify demand first.</text>
+
+    <rect x="860" y="525" width="555" height="245" rx="22" fill="#F1EBE1" stroke="#D7CCBC" stroke-width="2"/>
+    <text x="900" y="572" fill="#6A6258" font-size="17" font-weight="750" letter-spacing="1.7">LOW DEMAND · HIGH SUPPLY</text>
+    <text x="900" y="633" fill="#26211D" font-size="38" font-weight="760">AVOID</text>
+    <text x="900" y="686" fill="#6F675E" font-size="23">Many providers compete for weak demand.</text>
+    <text x="900" y="720" fill="#6F675E" font-size="23">The likely result is a price war.</text>
+  </g>
+
+  <path d="M245 785 V242" fill="none" stroke="#A49686" stroke-width="4" marker-end="url(#axis-arrow)"/>
+  <text x="152" y="520" transform="rotate(-90 152 520)" text-anchor="middle" fill="#6A6258" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="750" letter-spacing="2">DEMAND</text>
+  <text x="226" y="770" text-anchor="end" fill="#8A8177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700">LOW</text>
+  <text x="226" y="269" text-anchor="end" fill="#8A8177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700">HIGH</text>
+
+  <path d="M260 810 H1435" fill="none" stroke="#A49686" stroke-width="4" marker-end="url(#axis-arrow)"/>
+  <text x="847" y="875" text-anchor="middle" fill="#6A6258" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="750" letter-spacing="2">QUALIFIED PROVIDER SUPPLY</text>
+  <text x="276" y="848" fill="#8A8177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700">LOW</text>
+  <text x="1414" y="848" text-anchor="end" fill="#8A8177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700">HIGH</text>
+
+  <line x1="90" y1="913" x2="1510" y2="913" stroke="#D8CDBE" stroke-width="2"/>
+  <circle cx="103" cy="955" r="7" fill="#B86643"/>
+  <text x="127" y="963" fill="#26211D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="750">COUNT QUALIFIED SUPPLY, NOT RAW PROVIDERS.</text>
+  <text x="720" y="963" fill="#6F675E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="20">A provider counts only if it meets the target workload's requirement.</text>
+</svg>

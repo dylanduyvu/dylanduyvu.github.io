@@ -22,6 +22,8 @@ A standalone application won't get you noticed. It's best to: first, find a gap,
 
 ![The seven-step OpenRouter provider path moves from finding a network gap to proving an edge, launching publicly, applying, getting listed, earning traffic, and reaching profitability.](../70-attachments/openrouter-provider-path.png)
 
+*Figure 1. Proposed provider path. This is the author's operating synthesis, not OpenRouter's official process. The official requirements and review stages come from [OpenRouter's provider page](https://openrouter.ai/providers/apply).*
+
 ## 1. Find a gap with real demand
 
 A gap can appear in three ways:
@@ -36,7 +38,9 @@ If you want to find a gap today instead of waiting for a market change, use this
 2. Use the [OpenRouter Inference Provider Market Share dashboard](https://or-provider-dashboard.vercel.app/) to see which hosts serve the top models and how their routing share changes.
 3. Confirm each candidate on its OpenRouter model and endpoint pages. The provider dashboard is unofficial and its model view covers only the top models.
 
-<!-- VISUAL 2 GOES HERE: Demand-versus-qualified-provider-supply matrix. High demand and low supply is the best target. High demand and high supply needs a clear performance or product edge. Low demand and low supply is a false gap. Low demand and high supply should be avoided. -->
+![A demand-versus-qualified-provider-supply matrix shows that high demand with low qualified supply is the best provider target.](../70-attachments/openrouter-demand-supply-matrix.png)
+
+*Figure 2. Demand and qualified provider supply screen. Source: author analysis using the [OpenRouter rankings](https://openrouter.ai/rankings) and the [unofficial provider market-share dashboard](https://or-provider-dashboard.vercel.app/).*
 
 Give your agent a prompt like this:
 
