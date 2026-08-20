@@ -35,6 +35,8 @@ The dashboard search also found that much of the general charting layer already 
 
 The live implementation confirmed that these surfaces do not all provide independent evidence. token.app republishes OpenRouter rankings. CodeSOTA is a benchmark registry rather than a demand or scarcity measure. Artificial Analysis adds performance and provider coverage, but it does not replace demand evidence. Dashboard disagreements must remain visible rather than averaged.
 
+Project sequencing is now explicit. First, make the existing collection workflow automatic, repeatable, and reliable so it continuously records market state and builds supply history. Only after that collection has run cleanly through a useful history window should the project define quantitative, workload-specific rules for flagging under-served models. The first live run was a demand screen, not a supply-shortage test.
+
 ## Core Views
 
 ### Release Radar
@@ -144,9 +146,10 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Next Tests
 
-- Continue daily endpoint snapshots until each model has at least three UTC capture days across a seven-day span.
+- Automate one daily run of the existing collection workflow. Preserve each dated run, detect incomplete stages, report stale data, and make reruns safe without replacing earlier evidence.
+- Keep the automatic collection running until each model has at least three UTC endpoint-capture days across a seven-day span.
 - Collect a second Hugging Face capture day before calculating local-download change.
-- Write one named workload profile only when each requirement has a customer, observed-demand, or explicit research-hypothesis basis.
+- After the collection workflow is stable, write one named workload profile and a quantitative provider threshold only when each requirement has a customer, observed-demand, or explicit research-hypothesis basis.
 - Find a model-level provider-organization cross-check before treating the earlier GLM-5.2 count difference as a real disagreement; the current provider-wide dashboard is not comparable.
 - Add the browser dashboard only after the command-line reports remain stable through the first history window.
 - Keep hardware fit, achievable serving performance, capacity planning, and unit economics in a separate downstream test.
@@ -168,6 +171,7 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Updates
 
+- 2026-08-20: Dylan set the next project order. First automate and harden recurring market-data collection so the radar builds reliable history. Then define quantitative, workload-specific under-service rules. The initial 23 L1 results remain demand signals only, not supply-shortage findings.
 - 2026-08-20: SUPERSEDED the initial ten-model live counts as the final V0 result. Run `run-20260820T144305.290706Z` completed all 330 planned operations: 68 source calls, 228 raw imports, 24 evaluations, three retrodictions, and seven report-output groups. All 228 snapshot envelopes matched the SQLite manifest, a second import left every table count unchanged, 103 immutable run artifacts matched their stored hashes and byte counts, and no credential was present. The final labels were 23 L1 and one L0. Evidence completeness remained false only because supply history, local-download history, and a named workload profile are still missing. The four durable dashboard checks are `not_comparable`; they supersede the earlier informal GLM-5.2 disagreement claim.
 - 2026-08-20: Initial live checkpoint, later superseded as the final V0 count. All planned source calls completed. The run stored 96 validated raw snapshots and produced nine L1 demand-signal records plus one L0 control. No L2 or L3 label was supported because supply history, local-download history, and a named workload profile were missing. Retrodiction correctly refused to use current snapshots as historical evidence. The informal dashboard pass reported one possible GLM-5.2 provider-count disagreement and confirmed that token.app is not an independent demand source.
 - 2026-08-19: Scope correction from Dylan. The radar now stops at potential-opportunity identification. Hardware fit, a realizable serving edge, and unit economics are separate later validation stages because the team has not yet proved its hardware or serving performance.

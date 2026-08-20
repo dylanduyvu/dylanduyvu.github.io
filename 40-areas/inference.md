@@ -58,7 +58,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 
 - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]: complete first draft of the seven-step operator playbook, backed by the [[how-to-get-listed-on-openrouter-article-skeleton|claim ledger and skeleton]].
 
-- **Active:** [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] has a live-tested V0 collection and reporting spine. The next evidence window needs seven days of endpoint history, a second local-download day, and one justified workload profile before any L2 or L3 result is possible.
+- **Active:** [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] has a live-tested V0 collection and reporting spine. The next project stage is to automate and harden recurring collection so the radar continuously records market state and builds reliable history. Quantitative, workload-specific under-service rules come after that collection stage is stable.
 
 - **Candidate, not started:** [[gpu-configuration-demand-gate|GPU configuration demand gate]] tests whether a small GPU server has enough workload-specific demand and conservative net economics to justify a purchase. The last update kept a no-buy result valid and did not record branch selection.
 
@@ -116,7 +116,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - Classify each target gateway before outreach. Record whether it is centrally curated or customer-configured. For centrally curated gateways, record whether provider intake is public or private.
 - Reconstruct Wafer's timeline from WaferPass launch through OpenRouter listing. Ask Wafer for subscriber usage distribution, request-cap logic, spot-versus-dedicated capacity, gross-margin history, and what evidence OpenRouter reviewed.
 - Continue the Qwen3.8-27B gap scan. Measure OpenRouter activity, paid API intent, provider changes, application mix, tool-call success, and the visible price, throughput, latency, uptime, long-context, privacy, and geography frontier. Stop at a potential-opportunity finding. Test our ability to compete only in a separate later project.
-- Continue the model-opportunity radar collection until each mapped model has three endpoint capture days across seven calendar days and two Hugging Face capture days. Then apply one justified named workload profile and re-run the gates. Treat the earlier GLM-5.2 provider-count difference as unconfirmed until a model-level provider-organization cross-check exists.
+- Automate one daily model-opportunity radar run with preserved dated evidence, incomplete-stage detection, stale-data reporting, and safe reruns. Continue until each mapped model has three endpoint capture days across seven calendar days and two Hugging Face capture days. Then define one justified quantitative workload profile and re-run the gates. Treat the earlier GLM-5.2 provider-count difference as unconfirmed until a model-level provider-organization cross-check exists.
 
 ## Related Areas
 
