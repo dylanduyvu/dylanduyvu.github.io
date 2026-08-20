@@ -8,11 +8,11 @@ updated: 2026-08-19
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 19, 2026, 9:35 PM EDT
+Generated: Aug 19, 2026, 9:42 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 48 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 49 note commits. The most recent movement is:
 
 - Project decision: patch OpenRouter article review.
 - Project decision: strengthen OpenRouter article outline.
@@ -27,6 +27,14 @@ In the past 7 days, the public vault changed through 48 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 19, 2026, 9:42 PM EDT - article: replace OpenRouter opening with research-led framing
+
+article: replace OpenRouter opening with research-led framing.
+
+Changed notes:
+  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
+  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
 
 ### Aug 19, 2026, 9:35 PM EDT - article: remove irrelevant Stripe acquisition aside
 
@@ -123,18 +131,11 @@ Changed notes:
   - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
   - [[inference|Inference]]
 
-### Aug 19, 2026, 4:54 PM EDT - research: record OpenRouter model API discovery fields
-
-research: record OpenRouter model API discovery fields.
-
-Changed notes:
-  - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
-  - [[inference-opportunity-radar-pre-scope-design-audit-2026-08-19|Pre-scope design audit: the automated opportunity radar is buildable through label 3]]
-
-_Showing the newest 12 of 34 updates in this window._
+_Showing the newest 12 of 35 updates in this window._
 
 ## Past 7 Days
 
+- Aug 19, 2026: article: replace OpenRouter opening with research-led framing - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove irrelevant Stripe acquisition aside - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: add OpenRouter provider draft v1 - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: project: patch OpenRouter article review - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
@@ -159,12 +160,12 @@ _Showing the newest 12 of 34 updates in this window._
 - Aug 19, 2026: research: add capped retail launch strategy - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Aug 19, 2026: research: audit WaferPass provider bootstrap hypothesis - [[waferpass-pooled-capped-subscription-demand-with-elastic-gpu-rentals-but-its-listing-role-is-unproven|WaferPass pooled capped subscription demand with elastic GPU rentals, but its listing role is unproven]]
 - Aug 19, 2026: research: capture sent gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-- Aug 19, 2026: research: gate gateway outreach on internal proof - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 
-_Showing the newest 25 of 48 updates in this window._
+_Showing the newest 25 of 49 updates in this window._
 
 ## Past 30 Days
 
+- Aug 19, 2026: article: replace OpenRouter opening with research-led framing - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove irrelevant Stripe acquisition aside - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: add OpenRouter provider draft v1 - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: project: patch OpenRouter article review - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
@@ -189,6 +190,5 @@ _Showing the newest 25 of 48 updates in this window._
 - Aug 19, 2026: research: add capped retail launch strategy - [[a-capped-retail-pass-can-turn-a-paid-provider-launch-into-measurable-demand|A capped retail pass can turn a paid provider launch into measurable demand]]
 - Aug 19, 2026: research: audit WaferPass provider bootstrap hypothesis - [[waferpass-pooled-capped-subscription-demand-with-elastic-gpu-rentals-but-its-listing-role-is-unproven|WaferPass pooled capped subscription demand with elastic GPU rentals, but its listing role is unproven]]
 - Aug 19, 2026: research: capture sent gateway listing strategy - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
-- Aug 19, 2026: research: gate gateway outreach on internal proof - [[a-public-benchmarked-endpoint-and-paid-launch-can-test-gateway-distribution|A public benchmarked endpoint and paid launch can test gateway distribution]]
 
 _Showing the newest 25 of 199 updates in this window._
