@@ -31,7 +31,7 @@ The initial ten-model checkpoint completed 40 source calls, imported 96 raw snap
 
 The public-data audit found enough information for a useful first version. OpenRouter supplies daily top-model token totals, exact filtered totals for context buckets and tool-calling requests, estimated weekly category totals, and endpoint-level provider information. Hugging Face, LM Studio, and Ollama provide local-adoption signals. Artificial Analysis provides independent benchmark, price, and performance data.
 
-OpenRouter is sufficient as the primary hosted-demand surface for a version-zero tool focused on winning an OpenRouter listing. It is not a total-market measure. All usage fields must retain the `OpenRouter` label, and broader conclusions need local signals and cross-gateway supply checks.
+OpenRouter is sufficient as the primary hosted-demand surface for a version-zero tool focused on winning an OpenRouter listing. It is not a total-market measure. A 2026-08-21 audit found additional public demand feeds from Vercel AI Gateway, AnyRouter, LLM Gateway, and BharatRouter. These can confirm rank and trend across routers, but their raw totals must remain source-labeled and must not be added together.
 
 The dashboard search also found that much of the general charting layer already exists. OpenRouter Inference Provider Market Share covers host share and model-provider competition. CodeSOTA covers model churn, substitution, lifecycle, and application demand. token.app covers prices and OpenRouter rankings. ParaPulse and Open LLM Distribution Leaderboard cover Hugging Face download trends. Artificial Analysis covers provider performance. The proposed radar should join these surfaces into candidate decisions instead of cloning them.
 
@@ -99,7 +99,11 @@ Each opportunity should have:
 - Ollama library pages.
 - Artificial Analysis model and provider data, subject to access tier.
 - Hugging Face Inference Providers mappings and provider performance fields.
-- Vercel AI Gateway's public model and provider catalog.
+- Vercel AI Gateway's public daily leaderboard export, model catalog, and provider-route endpoints.
+- AnyRouter's public network-statistics API.
+- LLM Gateway's public rankings JSON feed.
+- BharatRouter's public rankings and model-statistics APIs.
+- Requesty's public production-data exports and latency leaderboard.
 - Existing OpenRouter dashboards as validation sources, not as the only raw-data dependency.
 - Official model-lab GitHub news, Hugging Face collections, ModelScope releases, and X posts for event timing.
 
@@ -160,6 +164,9 @@ The first version should not scrape every gateway or build a universal market es
 - After the collection workflow is stable, write one named workload profile and a quantitative provider threshold only when each requirement has a customer, observed-demand, or explicit research-hypothesis basis.
 - Find a model-level provider-organization cross-check before treating the earlier GLM-5.2 count difference as a real disagreement; the current provider-wide dashboard is not comparable.
 - Add the browser dashboard only after the command-line reports remain stable through the first history window.
+- Add Vercel as the second demand collector. Then add AnyRouter, LLM Gateway, and BharatRouter as separate source-labeled panels. Calculate within-router rank, share, and trend before any cross-router confirmation score. Do not sum raw traffic.
+- Add Hugging Face Inference Providers and Requesty as supply and quality collectors. Keep them separate from demand unless they publish a verified platform-wide usage feed.
+- Check reuse terms for AnyRouter, LLM Gateway, BharatRouter, Requesty, Tangle, and AllToken before scheduled collection. OpenRouter and Vercel identify CC BY 4.0 for the checked demand exports.
 - Keep hardware fit, achievable serving performance, capacity planning, and unit economics in a separate downstream test.
 
 ## Sources
@@ -171,6 +178,8 @@ The first version should not scrape every gateway or build a universal market es
 - [[dave-friedman-hugging-face-downloads-compute-markets-2026-07-09|Dave Friedman: Hugging Face downloads and compute markets]]
 - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - [[inference-opportunity-radar-v0-live-validation-2026-08-20|Inference opportunity radar V0 live validation]]
+- [[public-inference-router-data-audit-2026-08-21|Public inference router data audit]]
+- [[public-router-demand-feeds-support-triangulation-not-market-summing|Public router demand feeds support triangulation, not market summing]]
 
 ## Related Areas
 
@@ -179,6 +188,7 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Updates
 
+- 2026-08-21: Exa and live endpoint checks found four additional public hosted-demand surfaces: Vercel AI Gateway, AnyRouter, LLM Gateway, and BharatRouter. Vercel is the next high-priority collector. Raw cross-router traffic will remain source-labeled and will not be summed.
 - 2026-08-21: Dylan narrowed the practical selection goal to finding the smallest model with the strongest demand, if the choice can be justified as optimal. The project now treats this as a demand-versus-size frontier first. It does not treat raw parameter count as a complete serving-cost measure, especially for mixture-of-experts models. The current radar can supply demand and provider evidence, but it still needs checked model-footprint facts and a later hardware benchmark before it can justify one model as optimal.
 - 2026-08-20: Dylan set the next project order. First automate and harden recurring market-data collection so the radar builds reliable history. Then define quantitative, workload-specific under-service rules. The initial 23 L1 results remain demand signals only, not supply-shortage findings.
 - 2026-08-20: SUPERSEDED the initial ten-model live counts as the final V0 result. Run `run-20260820T144305.290706Z` completed all 330 planned operations: 68 source calls, 228 raw imports, 24 evaluations, three retrodictions, and seven report-output groups. All 228 snapshot envelopes matched the SQLite manifest, a second import left every table count unchanged, 103 immutable run artifacts matched their stored hashes and byte counts, and no credential was present. The final labels were 23 L1 and one L0. Evidence completeness remained false only because supply history, local-download history, and a named workload profile are still missing. The four durable dashboard checks are `not_comparable`; they supersede the earlier informal GLM-5.2 disagreement claim.

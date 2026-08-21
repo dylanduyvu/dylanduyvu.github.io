@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-08-21
 source_date: 2026-08-19
 source_type: web-research
 domains: [inference, model-serving, inference-marketplaces, market-research]
@@ -154,7 +154,7 @@ The search found several tools that already cover parts of the proposed radar. T
 ### Cross-gateway supply and serving quality
 
 - [Hugging Face's Inference Providers Hub API](https://huggingface.co/docs/inference-providers/en/hub-api) exposes provider mappings, status, context, price, tool and structured-output support, time to first token, throughput, and whether the endpoint is first-party. It does not expose aggregate provider token demand.
-- [Vercel AI Gateway's public catalog](https://vercel.com/ai-gateway/models) exposes model, provider, price, context, capability, release, latency, and throughput fields. It is useful for cross-gateway supply comparison, but the search found no public aggregate market-demand dataset comparable with OpenRouter rankings.
+- **SUPERSEDED 2026-08-21:** [Vercel AI Gateway's public catalog](https://vercel.com/ai-gateway/models) exposes model, provider, price, context, capability, release, latency, and throughput fields. The 2026-08-19 search found no public aggregate demand dataset. A later live check found [Vercel's public leaderboards](https://vercel.com/docs/ai-gateway/leaderboards) and machine-readable export with daily model and lab shares for requests, tokens, and spend. It reports percentage share rather than absolute platform volume.
 - [Artificial Analysis](https://artificialanalysis.ai/) compares model quality, cost, latency, and output speed across direct inference providers. Its [performance method](https://artificialanalysis.ai/methodology/performance-benchmarking) tests one-thousand-, ten-thousand-, and one-hundred-thousand-token prompts, plus vision and parallel loads. Standard public measurements are represented as the median over the prior 72 hours. It measures endpoint performance, not demand.
 - [ModelUptime](https://www.modeluptime.com/methodology/) derives reliability from repeated AILatency probes through OpenRouter. The method is transparent, but the measured path includes the monitor, network, gateway, routing, and upstream endpoint. It cannot assign a slowdown or failure to one component.
 
@@ -265,6 +265,7 @@ Hardware fit, serving-engine performance, achievable differentiation, capacity, 
 ## Updates
 
 - 2026-08-19: Added the live model-list schema change. OpenRouter now exposes `hugging_face_id`, benchmark objects, `region`, and `tool_success_rate` filters. This strengthens official-API discovery but does not remove endpoint-level geography, provider identity, or tool-reliability limits.
+- 2026-08-21: SUPERSEDED the earlier negative Vercel demand finding. Vercel now publishes a daily leaderboard export. See [[public-inference-router-data-audit-2026-08-21|the public router data audit]].
 
 ## Links
 

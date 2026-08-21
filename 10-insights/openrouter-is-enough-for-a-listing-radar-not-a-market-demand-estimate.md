@@ -2,7 +2,7 @@
 type: insight
 status: active
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-08-21
 confidence: high
 domains: [inference, model-serving, inference-marketplaces, market-research]
 projects: [inference-model-opportunity-radar]
@@ -30,7 +30,7 @@ Calling that result `market demand` would create false confidence. Direct provid
 - OpenRouter publishes daily top-model token totals, application rankings, model catalogs, endpoint supply, and performance signals.
 - Unofficial dashboards can reconstruct host share and model-provider competition from OpenRouter provider pages. Their coverage and scraper reliability are weaker than official APIs.
 - CodeSOTA states directly that OpenRouter is one market slice and that direct API and first-party application traffic are missing.
-- Hugging Face and Vercel expose useful public provider and model catalogs, but the current search found no public aggregate token-demand dataset comparable with OpenRouter's.
+- **SUPERSEDED evidence state:** The 2026-08-19 search found no public Vercel demand dataset. A 2026-08-21 live check found Vercel's public leaderboard export with daily model and lab shares for requests, tokens, and spend. Vercel reports shares rather than absolute volume, so OpenRouter remains sufficient for an OpenRouter-listing radar but is no longer the only public hosted-demand surface.
 - Hugging Face, LM Studio, and Ollama expose local-distribution activity that OpenRouter cannot observe.
 
 ## Implications
@@ -54,7 +54,9 @@ Calling that result `market demand` would create false confidence. Direct provid
 - [[local-download-velocity-and-serverless-token-volume-measure-different-demand|Local download velocity and serverless token volume measure different demand]]
 - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - [[inference|Inference]]
+- [[public-router-demand-feeds-support-triangulation-not-market-summing|Public router demand feeds support triangulation, not market summing]]
 
 ## Updates
 
 - 2026-08-19: Initial capture after an Exa search of existing demand, provider-supply, local-adoption, price, and performance dashboards.
+- 2026-08-21: SUPERSEDED the earlier search result that Vercel exposed no public aggregate demand data. Vercel now has a public daily leaderboard export. The main claim remains active because OpenRouter alone is still sufficient for a listing-specific radar and neither source measures the total market.
