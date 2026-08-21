@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-08-19
-updated: 2026-08-20
+updated: 2026-08-21
 domains: [inference, model-serving, inference-marketplaces, market-research]
 people: []
 orgs: [openrouter, hugging-face, lm-studio, ollama, artificial-analysis]
@@ -21,6 +21,8 @@ Build a daily dashboard that identifies open-weight models with:
 
 The radar should support both day-zero model launches and existing underserved models. It should flag potential opportunities. It should not claim that our hardware can serve them, that we can beat an existing provider, or that the opportunity has positive unit economics.
 
+The current selection goal is narrower: find the smallest practical open-weight model with the strongest durable demand, then test whether it is the best model for an initial serving offer. “Smallest” is not yet defined. Raw parameter count, active parameters per token, weight memory, and the minimum hardware needed at a target context and speed can give different answers. The radar should preserve these measures separately rather than call one model optimal before the serving and economics tests exist.
+
 ## Current State
 
 V0 was built and live-tested on 2026-08-20 as an internal command-line evidence collector. It stores append-only raw snapshots, normalizes demand and supply facts, expands a checked manual model map from current source evidence, evaluates 24 mapped models under the L0-L3 evidence gates, replays fixed historical cases without backdating current evidence, and writes deterministic reports and exports. A browser dashboard remains a later interface after the collection logic is validated.
@@ -36,6 +38,8 @@ The dashboard search also found that much of the general charting layer already 
 The live implementation confirmed that these surfaces do not all provide independent evidence. token.app republishes OpenRouter rankings. CodeSOTA is a benchmark registry rather than a demand or scarcity measure. Artificial Analysis adds performance and provider coverage, but it does not replace demand evidence. Dashboard disagreements must remain visible rather than averaged.
 
 Project sequencing is now explicit. First, make the existing collection workflow automatic, repeatable, and reliable so it continuously records market state and builds supply history. Only after that collection has run cleanly through a useful history window should the project define quantitative, workload-specific rules for flagging under-served models. The first live run was a demand screen, not a supply-shortage test.
+
+The revised target does not replace the collection stage. The existing demand history can rank hosted use, and the provider history can show supply and quality. The missing input is a checked model-footprint layer. The current V0 records model identity and raw Hugging Face weight-file facts, but it does not normalize total parameters, active parameters for mixture-of-experts models, weight memory, or the minimum serving configuration. The first useful result should therefore be a demand-versus-size frontier, not one unsupported score.
 
 ## Core Views
 
@@ -143,10 +147,14 @@ The first version should not scrape every gateway or build a universal market es
 - What evidence threshold is sufficient to promote a model from watchlist to potential opportunity?
 - Can existing dashboard data be reused legally and reliably, or should it be used only for validation against official sources?
 - How often do unofficial OpenRouter scrapers miss a new model or break when a provider page changes?
+- Should “smallest” mean total parameters, active parameters per token, model-weight memory, or the minimum hardware needed to meet one defined serving target?
+- Which models sit on the demand-versus-size frontier, where no smaller measured model has more durable demand?
 
 ## Next Tests
 
 - Automate one daily run of the existing collection workflow. Preserve each dated run, detect incomplete stages, report stale data, and make reruns safe without replacing earlier evidence.
+- Add checked model-size facts without extracting parameter counts from model names. Keep total parameters, active parameters, weight bytes, quantization, and estimated serving memory separate, with unknown values left unknown.
+- Produce a demand-versus-size frontier after the collection schedule is stable. Do not choose one optimal model until a target workload and minimum serving performance are defined.
 - Keep the automatic collection running until each model has at least three UTC endpoint-capture days across a seven-day span.
 - Collect a second Hugging Face capture day before calculating local-download change.
 - After the collection workflow is stable, write one named workload profile and a quantitative provider threshold only when each requirement has a customer, observed-demand, or explicit research-hypothesis basis.
@@ -171,6 +179,7 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Updates
 
+- 2026-08-21: Dylan narrowed the practical selection goal to finding the smallest model with the strongest demand, if the choice can be justified as optimal. The project now treats this as a demand-versus-size frontier first. It does not treat raw parameter count as a complete serving-cost measure, especially for mixture-of-experts models. The current radar can supply demand and provider evidence, but it still needs checked model-footprint facts and a later hardware benchmark before it can justify one model as optimal.
 - 2026-08-20: Dylan set the next project order. First automate and harden recurring market-data collection so the radar builds reliable history. Then define quantitative, workload-specific under-service rules. The initial 23 L1 results remain demand signals only, not supply-shortage findings.
 - 2026-08-20: SUPERSEDED the initial ten-model live counts as the final V0 result. Run `run-20260820T144305.290706Z` completed all 330 planned operations: 68 source calls, 228 raw imports, 24 evaluations, three retrodictions, and seven report-output groups. All 228 snapshot envelopes matched the SQLite manifest, a second import left every table count unchanged, 103 immutable run artifacts matched their stored hashes and byte counts, and no credential was present. The final labels were 23 L1 and one L0. Evidence completeness remained false only because supply history, local-download history, and a named workload profile are still missing. The four durable dashboard checks are `not_comparable`; they supersede the earlier informal GLM-5.2 disagreement claim.
 - 2026-08-20: Initial live checkpoint, later superseded as the final V0 count. All planned source calls completed. The run stored 96 validated raw snapshots and produced nine L1 demand-signal records plus one L0 control. No L2 or L3 label was supported because supply history, local-download history, and a named workload profile were missing. Retrodiction correctly refused to use current snapshots as historical evidence. The informal dashboard pass reported one possible GLM-5.2 provider-count disagreement and confirmed that token.app is not an independent demand source.
