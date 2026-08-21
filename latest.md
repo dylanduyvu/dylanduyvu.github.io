@@ -1,25 +1,25 @@
 ---
 title: Latest Updates
 tags: [updates]
-updated: 2026-08-20
+updated: 2026-08-21
 ---
 
 # Latest Updates
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 20, 2026, 10:52 PM EDT
+Generated: Aug 21, 2026, 11:56 AM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 74 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 75 note commits. The most recent movement is:
 
+- Project decision: define first five inference customers plan.
 - Source capture: capture OpenRouter provider event remarks.
 - Project decision: sequence radar collection before scarcity rules.
 - Project decision: patch OpenRouter article review.
 - Project decision: strengthen OpenRouter article outline.
 - Project decision: require public live inference dashboard.
-- Project decision: add named OpenRouter BD contacts.
 
 ## Current Hub Signals
 
@@ -27,6 +27,15 @@ In the past 7 days, the public vault changed through 74 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 21, 2026, 11:55 AM EDT - project: define first five inference customers plan
+
+Project decision: define first five inference customers plan.
+
+Changed notes:
+  - [[first-five-inference-customers-plan|First Five Inference Customers Plan]]
+  - [[inference|Inference]]
+  - [[dylan-first-five-inference-customers-brief-2026-08-21|Dylan: Plan the smallest inference service and the first five customers by August 25]]
 
 ### Aug 20, 2026, 10:52 PM EDT - source: capture OpenRouter provider event remarks
 
@@ -116,19 +125,9 @@ Changed notes:
   - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
   - [[inference|Inference]]
 
-### Aug 20, 2026, 10:50 AM EDT - research: validate inference opportunity radar v0
-
-research: validate inference opportunity radar v0.
-
-Changed notes:
-  - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
-  - [[inference|Inference]]
-  - [[inference-opportunity-radar-v0-live-validation-2026-08-20|Inference opportunity radar V0 live validation]]
-
-_Showing the newest 12 of 14 updates in this window._
-
 ## Past 7 Days
 
+- Aug 21, 2026: project: define first five inference customers plan - [[first-five-inference-customers-plan|First Five Inference Customers Plan]]
 - Aug 20, 2026: source: capture OpenRouter provider event remarks - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 20, 2026: Revert "article: publish contact and source corrections" - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 20, 2026: article: publish contact and source corrections - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -153,12 +152,12 @@ _Showing the newest 12 of 14 updates in this window._
 - Aug 19, 2026: article: add live wedge search and agent prompt - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: format gap-selection paths as bullets - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove forced definitions for provider audience - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: tighten opening and remove redundant gateway definition - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
-_Showing the newest 25 of 74 updates in this window._
+_Showing the newest 25 of 75 updates in this window._
 
 ## Past 30 Days
 
+- Aug 21, 2026: project: define first five inference customers plan - [[first-five-inference-customers-plan|First Five Inference Customers Plan]]
 - Aug 20, 2026: source: capture OpenRouter provider event remarks - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 20, 2026: Revert "article: publish contact and source corrections" - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 20, 2026: article: publish contact and source corrections - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -183,6 +182,5 @@ _Showing the newest 25 of 74 updates in this window._
 - Aug 19, 2026: article: add live wedge search and agent prompt - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: format gap-selection paths as bullets - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove forced definitions for provider audience - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: tighten opening and remove redundant gateway definition - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
 _Showing the newest 25 of 220 updates in this window._
