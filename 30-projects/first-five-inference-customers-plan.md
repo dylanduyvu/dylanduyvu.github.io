@@ -52,6 +52,8 @@ Use [[inference-model-opportunity-radar|the model opportunity radar]] to generat
 
 For each finalist, calculate the minimum GPU memory and count. Test whether the serving engine, model format, quantization, attention kernels, and tool-call behavior work on the exact AMD hardware. Measure time to first token, output speed, total latency, error rate, memory use, and sustainable concurrency.
 
+For a model that can fit on eight GPUs, test whether one eight-GPU system can reach an acceptable price and performance point. Compare it with public results from larger rack-scale systems under the same model, precision, prompt length, output length, concurrency, and service target. Do not treat model fit, nameplate bandwidth, or rate limits as proof of competitive serving. See [[nvl72-expands-the-fast-gpu-domain-not-the-bandwidth-of-each-blackwell-gpu|the NVL72 bandwidth correction]].
+
 ### 4. Build the economic model
 
 Calculate monthly fixed and variable cash cost. Include GPU rent, storage, network traffic, observability, payment or gateway fees, idle capacity, failures, and the planned subsidy. Show:
@@ -95,6 +97,7 @@ Launch only if all of these gates pass:
 - Does a paid pilot count as one of the first five customers?
 - Is the first goal direct revenue, operating proof, gateway acceptance, or a ranked combination of these results?
 - Is AMD a requirement, or should it win against the best available NVIDIA rental?
+- What measured distance from the current price and performance frontier is acceptable for the first service?
 
 ## Related Work
 

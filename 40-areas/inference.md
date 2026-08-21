@@ -28,6 +28,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - **Radar scope:** The automated model-opportunity radar stops at L3, potential opportunity. It uses separate launch and structural-gap lanes. OpenRouter can partly measure long-context and tool-calling demand through filtered rankings, but public data cannot confirm unmet demand. L4 requires manual gateway, customer, or provider evidence. Hardware matching, serving benchmarks, and unit economics require a separate later evidence pass.
 - **Radar validation:** The final expanded V0 live workflow completed all 330 planned operations, including 68 source calls and 228 raw imports. It produced 23 L1 demand-signal records plus one L0 watch record. Qwen3.8-27B was L1 with exact paid-demand rank 44 in the tested 100K-context profile; Qwen3-8B was the L0 control. No candidate reached L2 or L3 because there was only one supply day, one local-download day, and no approved workload profile. The workflow succeeded, but evidence completeness remains false. The initial nine-L1 and one-L0 checkpoint is preserved in the validation note as superseded history.
 - **Provider-quality cadence:** OpenRouter documents outage reactions over seconds, performance-routing metrics over a rolling five-minute window, and public endpoint fields over five-minute to one-day windows. In three stored captures 4 to 12 minutes apart, most latency, throughput, and uptime values changed while provider count stayed unchanged for all 24 models. This supports separate collection cadences for provider presence and quality, but the short sample does not yet set the permanent schedule.
+- **Technical correction:** An eight-GPU B200 system and a GB200 NVL72 can each provide up to 1.8 TB/s of bidirectional fifth-generation NVLink bandwidth per GPU. The NVL72 expands one fast domain from eight GPUs to 72; its 130 TB/s figure is aggregate rack bandwidth. This can remove an external-network boundary for models that use more than eight GPUs, but it does not make one request nine times faster or prove better unit economics.
 - **Gateway taxonomy:** There are two main types. Centrally curated gateways select providers through public or private intake; this includes OpenRouter, Hugging Face, Vercel, and Requesty. Customer-configured gateways such as Cloudflare and Portkey have no central listing gate; the provider must win customers instead.
 - **Direct evidence:** Featherless has a public provider-authored implementation trail for Hugging Face Inference Providers. It shows named reviewers, live tests, staging, client integrations, documentation, and a coordinated launch. It does not expose the initial partnership decision. Later working provider integrations show that Hugging Face can stop onboarding at a separate server-side partner-selection gate.
 - **Unverified source claim:** Two Compass reports say inference gateways can turn serving quality into distribution because routing can depend on price, uptime, throughput, and tool-call success. This is a research direction until the claims are checked against primary documentation and live routing data.
@@ -55,6 +56,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[qwen3-8-27b-may-have-local-demand-ahead-of-gateway-supply|Qwen3.8-27B may have local demand ahead of gateway supply]]
 - [[local-download-velocity-and-serverless-token-volume-measure-different-demand|Local download velocity and serverless token volume measure different demand]]
 - [[openrouter-is-enough-for-a-listing-radar-not-a-market-demand-estimate|OpenRouter is enough for a listing radar, not a market-demand estimate]]
+- [[nvl72-expands-the-fast-gpu-domain-not-the-bandwidth-of-each-blackwell-gpu|NVL72 expands the fast GPU domain, not the bandwidth of each Blackwell GPU]]
 
 ## Active Projects
 
@@ -89,6 +91,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[inference-model-opportunity-data-source-audit-2026-08-19|Inference model opportunity data-source audit]]: official public sources for model tokens, provider supply, serving performance, local downloads, and their measurement limits.
 - [[inference-opportunity-radar-pre-scope-design-audit-2026-08-19|Inference opportunity radar pre-scope audit]]: corrected evidence gates, field-level demand limits, the supply-history cold start, and the minimum collection scope.
 - [[inference-opportunity-radar-v0-live-validation-2026-08-20|Inference opportunity radar V0 live validation]]: first live run, labels, database counts, retrodiction limits, API constraints, and dashboard disagreements.
+- [[nvidia-blackwell-eight-gpu-and-nvl72-bandwidth-check-2026-08-21|NVIDIA Blackwell eight-GPU and NVL72 bandwidth check]]: official specifications for per-GPU bandwidth, aggregate bandwidth, domain size, and the external-network boundary.
 
 ## Open Questions
 
@@ -108,6 +111,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 ## Next Tests
 
 - Complete the first-five-customer plan by 2026-08-25. Select one customer-workload-model combination, compare the smallest AMD and NVIDIA rental configurations, calculate normal and subsidized break-even utilization, set a maximum test loss, and define five direct paid-customer targets or profiles.
+- For one model that fits on eight GPUs, compare an eight-GPU node with a rack-scale serving result under the same workload. Measure achieved latency, throughput, cost, reliability, and the effect of the parallelism method. Do not infer the result from aggregate NVLink bandwidth alone.
 - Benchmark one open model and one defined workload across serving engines and hardware. Measure time to first token, output speed, total latency, GPU memory, error rate, and cost per million tokens.
 - Re-run the memory-bandwidth pricing test with current posted prices, more providers, and achieved workload performance. Keep price and utilization as separate variables.
 - Select one customer type and collect real prompt lengths, output lengths, concurrency, latency limits, traffic variation, reliability needs, geography, and budget before selecting hardware.
