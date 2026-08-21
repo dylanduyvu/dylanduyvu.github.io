@@ -2,9 +2,9 @@
 type: area
 status: active
 created: 2026-08-18
-updated: 2026-08-20
+updated: 2026-08-21
 domains: [inference, ai-infrastructure, model-serving, compute-economics]
-projects: [inference-model-opportunity-radar]
+projects: [inference-model-opportunity-radar, first-five-inference-customers-plan]
 tags: [inference, serving, infrastructure, operations, unit-economics]
 ---
 
@@ -62,6 +62,8 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 
 - **Active:** [[inference-model-opportunity-radar|Inference Model Opportunity Radar]] has a live-tested V0 collection and reporting spine. The next project stage is to automate and harden recurring collection so the radar continuously records market state and builds reliable history. Quantitative, workload-specific under-service rules come after that collection stage is stable.
 
+- **Active, due 2026-08-25:** [[first-five-inference-customers-plan|First Five Inference Customers Plan]] must select one customer, workload, and model combination; define the smallest viable rented GPU service and its loss limit; reconstruct Wafer's pre-OpenRouter record; and give a direct plan for five paying customers or pilots.
+
 - **Candidate, not started:** [[gpu-configuration-demand-gate|GPU configuration demand gate]] tests whether a small GPU server has enough workload-specific demand and conservative net economics to justify a purchase. The last update kept a no-buy result valid and did not record branch selection.
 
 ## Important Sources
@@ -105,6 +107,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 
 ## Next Tests
 
+- Complete the first-five-customer plan by 2026-08-25. Select one customer-workload-model combination, compare the smallest AMD and NVIDIA rental configurations, calculate normal and subsidized break-even utilization, set a maximum test loss, and define five direct paid-customer targets or profiles.
 - Benchmark one open model and one defined workload across serving engines and hardware. Measure time to first token, output speed, total latency, GPU memory, error rate, and cost per million tokens.
 - Re-run the memory-bandwidth pricing test with current posted prices, more providers, and achieved workload performance. Keep price and utilization as separate variables.
 - Select one customer type and collect real prompt lengths, output lengths, concurrency, latency limits, traffic variation, reliability needs, geography, and budget before selecting hardware.
