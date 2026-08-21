@@ -8,18 +8,18 @@ updated: 2026-08-20
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 20, 2026, 4:55 PM EDT
+Generated: Aug 20, 2026, 10:52 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 72 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 74 note commits. The most recent movement is:
 
+- Source capture: capture OpenRouter provider event remarks.
 - Project decision: sequence radar collection before scarcity rules.
 - Project decision: patch OpenRouter article review.
 - Project decision: strengthen OpenRouter article outline.
 - Project decision: require public live inference dashboard.
 - Project decision: add named OpenRouter BD contacts.
-- Project decision: remove Wafer credit from pricing aside.
 
 ## Current Hub Signals
 
@@ -27,6 +27,26 @@ In the past 7 days, the public vault changed through 72 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 20, 2026, 10:52 PM EDT - source: capture OpenRouter provider event remarks
+
+Source capture: capture OpenRouter provider event remarks.
+
+Changed notes:
+  - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
+  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
+  - [[inference|Inference]]
+  - [[dylan-openrouter-provider-event-remarks-2026-08-20|Dylan: OpenRouter receives about 40 provider applications per day and accepts about one]]
+
+### Aug 20, 2026, 4:56 PM EDT - Revert "article: publish contact and source corrections"
+
+Revert "article: publish contact and source corrections".
+
+Changed notes:
+  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
+  - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
+  - [[computer-use-autocomplete-provider-map-2026-08-14|Provider map (as of 2026-08-14)]]
+  - [[computer-use-autocomplete-v2-build-plan|Computer Use Autocomplete V2 Build Plan]]
 
 ### Aug 20, 2026, 4:55 PM EDT - article: publish contact and source corrections
 
@@ -36,7 +56,7 @@ Changed notes:
   - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
   - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
   - [[computer-use-autocomplete-provider-map-2026-08-14|Provider map (as of 2026-08-14)]]
-  - [[computer-use-autocomplete-v2-build-plan|Computer-use autocomplete, v2 build plan]]
+  - [[computer-use-autocomplete-v2-build-plan|Computer Use Autocomplete V2 Build Plan]]
 
 ### Aug 20, 2026, 4:55 PM EDT - article: tighten contact roles and source provider metrics
 
@@ -105,27 +125,12 @@ Changed notes:
   - [[inference|Inference]]
   - [[inference-opportunity-radar-v0-live-validation-2026-08-20|Inference opportunity radar V0 live validation]]
 
-### Aug 19, 2026, 11:59 PM EDT - research: validate inference opportunity radar v0
-
-research: validate inference opportunity radar v0.
-
-Changed notes:
-  - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
-  - [[inference|Inference]]
-  - [[inference-opportunity-radar-v0-live-validation-2026-08-20|Inference opportunity radar V0 live validation]]
-
-### Aug 19, 2026, 10:58 PM EDT - article: focus post-listing section on traffic
-
-article: focus post-listing section on traffic.
-
-Changed notes:
-  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-  - [[how-to-get-listed-on-openrouter-article-skeleton|How to Get Listed on OpenRouter as an Inference Provider]]
-
-_Showing the newest 12 of 35 updates in this window._
+_Showing the newest 12 of 14 updates in this window._
 
 ## Past 7 Days
 
+- Aug 20, 2026: source: capture OpenRouter provider event remarks - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
+- Aug 20, 2026: Revert "article: publish contact and source corrections" - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 20, 2026: article: publish contact and source corrections - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 20, 2026: article: tighten contact roles and source provider metrics - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: add public performance dashboard figure - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -149,13 +154,13 @@ _Showing the newest 12 of 35 updates in this window._
 - Aug 19, 2026: article: format gap-selection paths as bullets - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove forced definitions for provider audience - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: tighten opening and remove redundant gateway definition - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: replace OpenRouter opening with research-led framing - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: remove irrelevant Stripe acquisition aside - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
-_Showing the newest 25 of 72 updates in this window._
+_Showing the newest 25 of 74 updates in this window._
 
 ## Past 30 Days
 
+- Aug 20, 2026: source: capture OpenRouter provider event remarks - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
+- Aug 20, 2026: Revert "article: publish contact and source corrections" - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 20, 2026: article: publish contact and source corrections - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
 - Aug 20, 2026: article: tighten contact roles and source provider metrics - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 20, 2026: article: add public performance dashboard figure - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
@@ -179,7 +184,5 @@ _Showing the newest 25 of 72 updates in this window._
 - Aug 19, 2026: article: format gap-selection paths as bullets - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: remove forced definitions for provider audience - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: tighten opening and remove redundant gateway definition - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: replace OpenRouter opening with research-led framing - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: remove irrelevant Stripe acquisition aside - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
-_Showing the newest 25 of 219 updates in this window._
+_Showing the newest 25 of 220 updates in this window._
