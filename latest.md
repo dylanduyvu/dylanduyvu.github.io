@@ -8,18 +8,18 @@ updated: 2026-08-21
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 21, 2026, 11:56 AM EDT
+Generated: Aug 21, 2026, 12:04 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 75 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 76 note commits. The most recent movement is:
 
+- Insight update: correct NVL72 bandwidth interpretation.
 - Project decision: define first five inference customers plan.
 - Source capture: capture OpenRouter provider event remarks.
 - Project decision: sequence radar collection before scarcity rules.
 - Project decision: patch OpenRouter article review.
 - Project decision: strengthen OpenRouter article outline.
-- Project decision: require public live inference dashboard.
 
 ## Current Hub Signals
 
@@ -27,6 +27,16 @@ In the past 7 days, the public vault changed through 75 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 21, 2026, 12:04 PM EDT - insight: correct NVL72 bandwidth interpretation
+
+Insight update: correct NVL72 bandwidth interpretation.
+
+Changed notes:
+  - [[nvl72-expands-the-fast-gpu-domain-not-the-bandwidth-of-each-blackwell-gpu|NVL72 expands the fast GPU domain, not the bandwidth of each Blackwell GPU]]
+  - [[first-five-inference-customers-plan|First Five Inference Customers Plan]]
+  - [[inference|Inference]]
+  - [[nvidia-blackwell-eight-gpu-and-nvl72-bandwidth-check-2026-08-21|NVIDIA: Blackwell eight-GPU and NVL72 bandwidth check]]
 
 ### Aug 21, 2026, 11:55 AM EDT - project: define first five inference customers plan
 
@@ -117,16 +127,11 @@ Changed notes:
   - [[inference|Inference]]
   - [[inference-opportunity-radar-v0-live-validation-2026-08-20|Inference opportunity radar V0 live validation]]
 
-### Aug 20, 2026, 3:06 PM EDT - project: sequence radar collection before scarcity rules
-
-Project decision: sequence radar collection before scarcity rules.
-
-Changed notes:
-  - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
-  - [[inference|Inference]]
+_Showing the newest 12 of 13 updates in this window._
 
 ## Past 7 Days
 
+- Aug 21, 2026: insight: correct NVL72 bandwidth interpretation - [[nvl72-expands-the-fast-gpu-domain-not-the-bandwidth-of-each-blackwell-gpu|NVL72 expands the fast GPU domain, not the bandwidth of each Blackwell GPU]]
 - Aug 21, 2026: project: define first five inference customers plan - [[first-five-inference-customers-plan|First Five Inference Customers Plan]]
 - Aug 20, 2026: source: capture OpenRouter provider event remarks - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 20, 2026: Revert "article: publish contact and source corrections" - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -151,12 +156,12 @@ Changed notes:
 - Aug 19, 2026: article: clarify internal proof gate - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: add live wedge search and agent prompt - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: format gap-selection paths as bullets - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: remove forced definitions for provider audience - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
-_Showing the newest 25 of 75 updates in this window._
+_Showing the newest 25 of 76 updates in this window._
 
 ## Past 30 Days
 
+- Aug 21, 2026: insight: correct NVL72 bandwidth interpretation - [[nvl72-expands-the-fast-gpu-domain-not-the-bandwidth-of-each-blackwell-gpu|NVL72 expands the fast GPU domain, not the bandwidth of each Blackwell GPU]]
 - Aug 21, 2026: project: define first five inference customers plan - [[first-five-inference-customers-plan|First Five Inference Customers Plan]]
 - Aug 20, 2026: source: capture OpenRouter provider event remarks - [[current-openrouter-research-found-no-public-first-hand-provider-listing-account|Current OpenRouter research found no public first-hand provider-listing account]]
 - Aug 20, 2026: Revert "article: publish contact and source corrections" - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
@@ -181,6 +186,5 @@ _Showing the newest 25 of 75 updates in this window._
 - Aug 19, 2026: article: clarify internal proof gate - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: add live wedge search and agent prompt - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: format gap-selection paths as bullets - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: remove forced definitions for provider audience - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
 _Showing the newest 25 of 220 updates in this window._
