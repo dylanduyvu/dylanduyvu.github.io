@@ -8,11 +8,11 @@ updated: 2026-08-21
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 21, 2026, 4:42 PM EDT
+Generated: Aug 21, 2026, 6:36 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 77 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 78 note commits. The most recent movement is:
 
 - Project decision: narrow radar goal to demand versus model size.
 - Insight update: correct NVL72 bandwidth interpretation.
@@ -27,6 +27,18 @@ In the past 7 days, the public vault changed through 77 note commits. The most r
 - [[personal-ai-context-learning|Personal AI Context Learning]]: [!warning] 2026-08-07 packet-fidelity audit
 
 ## Past 24 Hours
+
+### Aug 21, 2026, 6:36 PM EDT - research: map public inference router data
+
+research: map public inference router data.
+
+Changed notes:
+  - [[openrouter-is-enough-for-a-listing-radar-not-a-market-demand-estimate|OpenRouter is enough for a listing radar, not a market-demand estimate]]
+  - [[public-router-demand-feeds-support-triangulation-not-market-summing|Public router demand feeds support triangulation, not market summing]]
+  - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
+  - [[inference|Inference]]
+  - [[inference-model-opportunity-data-source-audit-2026-08-19|Public data can support an inference-model opportunity radar]]
+  - [[public-inference-router-data-audit-2026-08-21|Several inference routers publish demand data, but their totals must not be added together]]
 
 ### Aug 21, 2026, 4:42 PM EDT - project: narrow radar goal to demand versus model size
 
@@ -65,35 +77,9 @@ Changed notes:
   - [[inference|Inference]]
   - [[dylan-openrouter-provider-event-remarks-2026-08-20|Dylan: OpenRouter receives about 40 provider applications per day and accepts about one]]
 
-### Aug 20, 2026, 4:56 PM EDT - Revert "article: publish contact and source corrections"
-
-Revert "article: publish contact and source corrections".
-
-Changed notes:
-  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-  - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
-  - [[computer-use-autocomplete-provider-map-2026-08-14|Provider map (as of 2026-08-14)]]
-  - [[computer-use-autocomplete-v2-build-plan|Computer Use Autocomplete V2 Build Plan]]
-
-### Aug 20, 2026, 4:55 PM EDT - article: publish contact and source corrections
-
-article: publish contact and source corrections.
-
-Changed notes:
-  - [[computer-use-autocomplete-blog-post-draft-v1|How Computer Use Crosses the Chasm: Tab Autocomplete for Your Next Action]]
-  - [[computer-use-autocomplete-blog-post-structure|Blog post structure]]
-  - [[computer-use-autocomplete-provider-map-2026-08-14|Provider map (as of 2026-08-14)]]
-  - [[computer-use-autocomplete-v2-build-plan|Computer Use Autocomplete V2 Build Plan]]
-
-### Aug 20, 2026, 4:55 PM EDT - article: tighten contact roles and source provider metrics
-
-article: tighten contact roles and source provider metrics.
-
-Changed notes:
-  - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-
 ## Past 7 Days
 
+- Aug 21, 2026: research: map public inference router data - [[openrouter-is-enough-for-a-listing-radar-not-a-market-demand-estimate|OpenRouter is enough for a listing radar, not a market-demand estimate]]
 - Aug 21, 2026: project: narrow radar goal to demand versus model size - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 21, 2026: insight: correct NVL72 bandwidth interpretation - [[nvl72-expands-the-fast-gpu-domain-not-the-bandwidth-of-each-blackwell-gpu|NVL72 expands the fast GPU domain, not the bandwidth of each Blackwell GPU]]
 - Aug 21, 2026: project: define first five inference customers plan - [[first-five-inference-customers-plan|First Five Inference Customers Plan]]
@@ -118,12 +104,12 @@ Changed notes:
 - Aug 19, 2026: article: improve hardware proof section flow - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: format wedge search as three steps - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: clarify internal proof gate - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: add live wedge search and agent prompt - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
-_Showing the newest 25 of 77 updates in this window._
+_Showing the newest 25 of 78 updates in this window._
 
 ## Past 30 Days
 
+- Aug 21, 2026: research: map public inference router data - [[openrouter-is-enough-for-a-listing-radar-not-a-market-demand-estimate|OpenRouter is enough for a listing radar, not a market-demand estimate]]
 - Aug 21, 2026: project: narrow radar goal to demand versus model size - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 21, 2026: insight: correct NVL72 bandwidth interpretation - [[nvl72-expands-the-fast-gpu-domain-not-the-bandwidth-of-each-blackwell-gpu|NVL72 expands the fast GPU domain, not the bandwidth of each Blackwell GPU]]
 - Aug 21, 2026: project: define first five inference customers plan - [[first-five-inference-customers-plan|First Five Inference Customers Plan]]
@@ -148,6 +134,5 @@ _Showing the newest 25 of 77 updates in this window._
 - Aug 19, 2026: article: improve hardware proof section flow - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: format wedge search as three steps - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: clarify internal proof gate - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: add live wedge search and agent prompt - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
-_Showing the newest 25 of 216 updates in this window._
+_Showing the newest 25 of 214 updates in this window._
