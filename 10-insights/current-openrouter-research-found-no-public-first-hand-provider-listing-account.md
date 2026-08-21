@@ -2,11 +2,11 @@
 type: insight
 status: distilled
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-20
 confidence: medium-high
 domains: [inference, inference-marketplaces, distribution, research-methods]
 projects: []
-sources: [dylan-openrouter-listing-case-study-causal-audit-2026-08-18, compass-ai-gateway-provider-listing-case-studies-2026-08-18, exa-featherless-hugging-face-provider-onboarding-audit-2026-08-18]
+sources: [dylan-openrouter-listing-case-study-causal-audit-2026-08-18, compass-ai-gateway-provider-listing-case-studies-2026-08-18, exa-featherless-hugging-face-provider-onboarding-audit-2026-08-18, dylan-openrouter-provider-event-remarks-2026-08-20]
 people: []
 orgs: [openrouter]
 aliases: [openrouter listing is a public black box, no public provider listing case study found]
@@ -37,6 +37,7 @@ The research void also creates an article angle. A guide based on a real applica
 - Nextbit publicly said OpenRouter accepted it as an inference provider and described its owned data-center capacity. Its announcement did not explain the application, contacts, review, timing, or reason for acceptance.
 - Wafer's documentation confirms that it is listed on OpenRouter and explains user-side setup. It does not explain provider selection or onboarding.
 - A second Exa pass searched exact provider-side phrases about applying, onboarding, test traffic, listing, and acceptance. It found official OpenRouter requirements and post-acceptance provider announcements, but no provider-written application-to-acceptance chronology.
+- At an OpenRouter event on 2026-08-20, the team reportedly said that it receives about 40 provider applications each day, accepts about one each day, and has a current bottleneck in provider legal review. This is first-hand event context reported by Dylan, not a public provider account or published OpenRouter process document. The daily flow figures are not an exact cohort acceptance rate, and the scope of the legal review remains unknown.
 
 ## Implications
 
@@ -64,3 +65,4 @@ The research void also creates an article angle. A guide based on a real applica
 - 2026-08-18: Created after the report audit separated the documented official process and post-listing evidence from the missing pre-listing case evidence.
 - 2026-08-18: An Exa pass found a partial first-hand onboarding chronology for Featherless on Hugging Face. It does not change the OpenRouter claim. Wafer is now live on OpenRouter, but its application and acceptance process remain unpublished.
 - 2026-08-18: A narrow follow-up search found Nextbit's public acceptance announcement and Wafer's listing documentation. Both confirm successful OpenRouter listings. Neither explains the path from application to acceptance.
+- 2026-08-20: Added Dylan's report from an OpenRouter event. The remarks add daily application and approval flow estimates and identify legal review as a bottleneck. They do not change the claim that no public first-hand provider application-to-acceptance account was found.

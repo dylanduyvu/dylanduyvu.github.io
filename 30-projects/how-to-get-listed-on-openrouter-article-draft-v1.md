@@ -18,6 +18,8 @@ I read through OpenRouter's provider documents and compiled every public source 
 
 [OpenRouter currently names two priorities](https://openrouter.ai/providers/apply): providers that bring models they own or control, and providers that fill gaps in its network. This guide covers the second.
 
+At an OpenRouter event on August 20, 2026, the team said that it receives about 40 provider applications each day and accepts about one. It also said that legal review of providers is the current bottleneck. These were event remarks, not published process data. The daily numbers compare new applications with approvals. They are not an exact acceptance rate for one group of applicants.
+
 A standalone application won't get you noticed. It's best to: first, find a gap, prove that you can serve it, and launch a public endpoint with performance data that anyone can inspect. Then formally apply, contact the provider team, and give them an offer they can test.
 
 ![The seven-step OpenRouter provider path moves from finding a network gap to proving an edge, launching publicly, applying, getting listed, earning traffic, and reaching profitability.](../70-attachments/openrouter-provider-path.png)
@@ -107,6 +109,8 @@ This traffic can show that people want the service, but it does not guarantee Op
 ## 5. Submit one complete application
 
 Apply through the [official provider form](https://openrouter.ai/providers/apply/form) when the endpoint is live. Submit it when you announce the service so the reviewer can test the current service and results.
+
+OpenRouter did not explain the legal review at the event. Prepare clear information about your legal business, ownership, right to serve the model, handling of customer data, compliance checks, and contract terms. This is a reasonable preparation list, not OpenRouter's published checklist.
 
 Put everything the reviewer needs in one place:
 
