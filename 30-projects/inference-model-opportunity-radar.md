@@ -25,7 +25,9 @@ The current selection goal is narrower: find the smallest practical open-weight 
 
 ## Current State
 
-V0 was built and live-tested on 2026-08-20 as an internal command-line evidence collector. It stores append-only raw snapshots, normalizes demand and supply facts, expands a checked manual model map from current source evidence, evaluates 24 mapped models under the L0-L3 evidence gates, replays fixed historical cases without backdating current evidence, and writes deterministic reports and exports. A browser dashboard remains a later interface after the collection logic is validated.
+V0 was built and live-tested on 2026-08-20 as an internal command-line evidence collector. It stores append-only raw snapshots, normalizes demand and supply facts, expands a checked manual model map from current source evidence, evaluates 24 mapped models under the L0-L3 evidence gates, replays fixed historical cases without backdating current evidence, and writes deterministic reports and exports. A browser dashboard now displays OpenRouter demand, model size and architecture, quantized checkpoints, and estimated memory requirements. The frontend is not yet publicly hosted.
+
+The automatic AWS collection spine became operational on 2026-08-24. A private EC2 host runs the collector. Private S3 buckets store raw evidence, SQLite backups, and validated export history. Private Aurora PostgreSQL records accepted snapshots, runs, exports, and the current publication. One manual demand run and one full catalog run passed before the daily and weekly timers were enabled. The final check matched the current export hash across EC2, S3 history, the S3 pointer, and Aurora. See [[model-demand-analytics-aws-deployment-validation-2026-08-24|the AWS deployment validation]].
 
 The initial ten-model checkpoint completed 40 source calls, imported 96 raw snapshots, and produced nine L1 records plus one L0 control. The final expanded V0 validation superseded those counts as the current result. Its live workflow completed all 330 planned stage operations, including 68 source calls and 228 raw snapshot imports. It produced 23 L1 demand-signal records and one L0 watch record. No model reached L2 or L3 because the database still has only one supply capture day, one Hugging Face capture day, and no approved named workload profile. The workflow succeeded, while its separate `evidence_complete` flag correctly remained false. See [[inference-opportunity-radar-v0-live-validation-2026-08-20|the V0 live validation record]].
 
@@ -173,14 +175,14 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Next Tests
 
-- Automate one daily run of the existing collection workflow. Preserve each dated run, detect incomplete stages, report stale data, and make reruns safe without replacing earlier evidence.
+- Observe the first unattended daily demand run and weekly catalog run. Confirm that each run publishes a new accepted record, advances the current pointer, preserves immutable evidence, and reports failure safely when a source is unavailable.
 - Add checked model-size facts without extracting parameter counts from model names. Keep total parameters, active parameters, weight bytes, quantization, and estimated serving memory separate, with unknown values left unknown.
 - Produce a demand-versus-size frontier after the collection schedule is stable. Do not choose one optimal model until a target workload and minimum serving performance are defined.
 - Keep the automatic collection running until each model has at least three UTC endpoint-capture days across a seven-day span.
 - Collect a second Hugging Face capture day before calculating local-download change.
 - After the collection workflow is stable, write one named workload profile and a quantitative provider threshold only when each requirement has a customer, observed-demand, or explicit research-hypothesis basis.
 - Find a model-level provider-organization cross-check before treating the earlier GLM-5.2 count difference as a real disagreement; the current provider-wide dashboard is not comparable.
-- Add the browser dashboard only after the command-line reports remain stable through the first history window.
+- Host the browser dashboard on Vercel after its AWS export access path is defined and the first unattended run passes.
 - Add Vercel as the second demand collector. Then add AnyRouter, LLM Gateway, and BharatRouter as separate source-labeled panels. Calculate within-router rank, share, and trend before any cross-router confirmation score. Do not sum raw traffic.
 - Add Hugging Face Inference Providers and Requesty as supply and quality collectors. Keep them separate from demand unless they publish a verified platform-wide usage feed.
 - Check reuse terms for AnyRouter, LLM Gateway, BharatRouter, Requesty, Tangle, and AllToken before scheduled collection. OpenRouter and Vercel identify CC BY 4.0 for the checked demand exports.
@@ -201,6 +203,7 @@ The first version should not scrape every gateway or build a universal market es
 - [[public-router-demand-feeds-support-triangulation-not-market-summing|Public router demand feeds support triangulation, not market summing]]
 - [[jakub-janiak-inference-data-source-list-2026-08-24|Jakub Janiak shared additional inference-demand and analytics sources]]
 - [[alex-janiak-openrouterlist-source-2026-08-24|Alex Janiak shared OpenRouterList as a model-catalog and price-history source]]
+- [[model-demand-analytics-aws-deployment-validation-2026-08-24|Model demand analytics AWS deployment validation]]
 
 ## Related Areas
 
@@ -209,6 +212,7 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Updates
 
+- 2026-08-24: The automatic AWS collector became operational. Manual demand and catalog runs passed, both schedules were enabled, and the current export hash matched across EC2, S3, and Aurora. The live catalog validation also corrected three production faults: missing older identity evidence, macOS metadata sidecars that looked like duplicate evidence, and reused demand timestamps on catalog exports. The frontend remains a separate Vercel deployment step.
 - 2026-08-24: Clarified the product boundary. OpenRouter remains the source of truth and serving layer. The current radar adds controlled demand history and analysis. The intended advantage is the checked join from demand to model hardware facts, then to provider supply and service-quality history. A future API would expose those decision-ready joins and their evidence, not replace OpenRouter's inference API.
 - 2026-08-24: Alex Janiak shared OpenRouterList. A live code and data check found a model-level price and catalog ledger from 2024-09-21, but no demand, provider-level price or quality, or model-footprint data. The current snapshot also lagged the official API. Keep it as an optional post-V1B history cross-check.
 - 2026-08-24: Jakub Janiak shared three source pages and five analytics layers. Live checks confirmed that Vercel is still the strongest next demand adapter. Tidelines and TKX mainly add derived analysis and cross-checks, Interconnects adds local-distribution data, and DeepInfra status adds provider-wide health. The OpenRouter V1B implementation remains first.
