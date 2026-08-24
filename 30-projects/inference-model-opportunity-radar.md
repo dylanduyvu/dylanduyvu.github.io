@@ -39,6 +39,8 @@ The live implementation confirmed that these surfaces do not all provide indepen
 
 A 2026-08-24 follow-up from Jakub Janiak reinforced this boundary. Tidelines derives from OpenRouter and Vercel; TKX's model-demand board currently uses OpenRouter; Interconnects measures Hugging Face distribution; and DeepInfra's checked status feed is provider-wide. These are useful validation or adjacent signals, not reasons to interrupt the OpenRouter V1B build. Vercel remains the next demand adapter after the OpenRouter dashboard is useful.
 
+Alex Janiak also shared OpenRouterList on 2026-08-24. It adds a public model-catalog and model-level price ledger that reaches back to 2024-09-21. It does not add demand, provider-level price and quality, or model-footprint facts. Its twice-daily current snapshot lagged the official API in a live comparison. It is a possible historical cross-check after V1B, not a reason to change the active implementation.
+
 Project sequencing is now explicit. First, make the existing collection workflow automatic, repeatable, and reliable so it continuously records market state and builds supply history. Only after that collection has run cleanly through a useful history window should the project define quantitative, workload-specific rules for flagging under-served models. The first live run was a demand screen, not a supply-shortage test.
 
 The revised target does not replace the collection stage. The existing demand history can rank hosted use, and the provider history can show supply and quality. The missing input is a checked model-footprint layer. The current V0 records model identity and raw Hugging Face weight-file facts, but it does not normalize total parameters, active parameters for mixture-of-experts models, weight memory, or the minimum serving configuration. The first useful result should therefore be a demand-versus-size frontier, not one unsupported score.
@@ -108,6 +110,7 @@ Each opportunity should have:
 - Requesty's public production-data exports and latency leaderboard.
 - Existing OpenRouter dashboards as validation sources, not as the only raw-data dependency.
 - Tidelines and TKX as calculation, archive, price, supply, and quality cross-checks rather than replacement demand sources.
+- OpenRouterList as an optional model-catalog, discontinuation, and model-level price-history cross-check after V1B.
 - Interconnects as a local-distribution cross-check for Hugging Face downloads and derivative repositories.
 - Official model-lab GitHub news, Hugging Face collections, ModelScope releases, and X posts for event timing.
 
@@ -172,6 +175,7 @@ The first version should not scrape every gateway or build a universal market es
 - Add Hugging Face Inference Providers and Requesty as supply and quality collectors. Keep them separate from demand unless they publish a verified platform-wide usage feed.
 - Check reuse terms for AnyRouter, LLM Gateway, BharatRouter, Requesty, Tangle, and AllToken before scheduled collection. OpenRouter and Vercel identify CC BY 4.0 for the checked demand exports.
 - After OpenRouter V1B passes, compare its calculations with Tidelines, test TKX field lineage, and test Interconnects family mapping before deciding whether any derived feed deserves an adapter.
+- After OpenRouter V1B passes, compare OpenRouterList's historical model and price change points with direct snapshots. Do not use it for demand or provider-level price and quality history.
 - Keep hardware fit, achievable serving performance, capacity planning, and unit economics in a separate downstream test.
 
 ## Sources
@@ -186,6 +190,7 @@ The first version should not scrape every gateway or build a universal market es
 - [[public-inference-router-data-audit-2026-08-21|Public inference router data audit]]
 - [[public-router-demand-feeds-support-triangulation-not-market-summing|Public router demand feeds support triangulation, not market summing]]
 - [[jakub-janiak-inference-data-source-list-2026-08-24|Jakub Janiak shared additional inference-demand and analytics sources]]
+- [[alex-janiak-openrouterlist-source-2026-08-24|Alex Janiak shared OpenRouterList as a model-catalog and price-history source]]
 
 ## Related Areas
 
@@ -194,6 +199,7 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Updates
 
+- 2026-08-24: Alex Janiak shared OpenRouterList. A live code and data check found a model-level price and catalog ledger from 2024-09-21, but no demand, provider-level price or quality, or model-footprint data. The current snapshot also lagged the official API. Keep it as an optional post-V1B history cross-check.
 - 2026-08-24: Jakub Janiak shared three source pages and five analytics layers. Live checks confirmed that Vercel is still the strongest next demand adapter. Tidelines and TKX mainly add derived analysis and cross-checks, Interconnects adds local-distribution data, and DeepInfra status adds provider-wide health. The OpenRouter V1B implementation remains first.
 - 2026-08-21: Exa and live endpoint checks found four additional public hosted-demand surfaces: Vercel AI Gateway, AnyRouter, LLM Gateway, and BharatRouter. Vercel is the next high-priority collector. Raw cross-router traffic will remain source-labeled and will not be summed.
 - 2026-08-21: Dylan narrowed the practical selection goal to finding the smallest model with the strongest demand, if the choice can be justified as optimal. The project now treats this as a demand-versus-size frontier first. It does not treat raw parameter count as a complete serving-cost measure, especially for mixture-of-experts models. The current radar can supply demand and provider evidence, but it still needs checked model-footprint facts and a later hardware benchmark before it can justify one model as optimal.

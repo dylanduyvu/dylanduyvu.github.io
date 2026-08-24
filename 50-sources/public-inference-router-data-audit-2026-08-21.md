@@ -120,6 +120,12 @@ A 2026-08-24 list from Jakub Janiak added Tidelines, TKX, OpenRouter Share, the 
 
 These findings do not change the build order. Finish OpenRouter V1B, then add Vercel as the second demand adapter. Use the derived layers as cross-checks unless they supply a distinct, tested field.
 
+## Catalog and Price-History Follow-up
+
+Alex Janiak shared [OpenRouterList](https://github.com/jvrck/openrouterlist) on 2026-08-24. Its scheduled job captures OpenRouter's default model list twice each day and reconstructs model-level prompt and completion price changes from Git history. The checked ledger covered 979 model identifiers from 2024-09-21 through 2026-08-24, including 561 that were no longer present.
+
+This is useful for catalog, discontinuation, and model-level price-history checks. It is not a demand source or a provider-level price and quality source. A same-day comparison also found normal snapshot lag: the repository had 419 current models, while a new call to the same official endpoint had 417; four model identifiers differed and five shared price objects had changed. Use official OpenRouter endpoints for current facts. Consider the repository only as a labeled historical cross-check or optional backfill after a terms and field-definition review.
+
 ## Links
 
 - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
@@ -128,3 +134,4 @@ These findings do not change the build order. Finish OpenRouter V1B, then add Ve
 - [[inference-model-opportunity-data-source-audit-2026-08-19|Inference model opportunity data-source audit]]
 - [[inference|Inference]]
 - [[jakub-janiak-inference-data-source-list-2026-08-24|Jakub Janiak shared additional inference-demand and analytics sources]]
+- [[alex-janiak-openrouterlist-source-2026-08-24|Alex Janiak shared OpenRouterList as a model-catalog and price-history source]]
