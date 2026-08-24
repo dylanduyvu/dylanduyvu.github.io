@@ -8,24 +8,33 @@ updated: 2026-08-24
 
 This page is generated automatically from git history and current hub notes. It updates during every publish and during the scheduled daily site build.
 
-Generated: Aug 24, 2026, 1:26 PM EDT
+Generated: Aug 24, 2026, 7:32 PM EDT
 
 ## State Shift Summary
 
-In the past 7 days, the public vault changed through 76 note commits. The most recent movement is:
+In the past 7 days, the public vault changed through 72 note commits. The most recent movement is:
 
+- Project decision: record hosted inference radar deployment.
 - Project decision: clarify model demand radar value.
 - Source capture: add OpenRouterList history check.
 - Source capture: add Jakub inference data-source review.
 - Project decision: narrow radar goal to demand versus model size.
 - Insight update: correct NVL72 bandwidth interpretation.
-- Project decision: define first five inference customers plan.
 
 ## Current Hub Signals
 
 - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]: V0 was built and live-tested on 2026-08-20 as an internal command-line evidence collector. It stores append-only raw snapshots, normalizes demand and supply facts, expands a checked manual model map from current source evidence, evaluates 24 mapped models under the L0-L3 evidence gates, replays fixed historical cases without backdating current evidence, and writes deterministic reports and...
 
 ## Past 24 Hours
+
+### Aug 24, 2026, 7:29 PM EDT - project: record hosted inference radar deployment
+
+Project decision: record hosted inference radar deployment.
+
+Changed notes:
+  - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
+  - [[inference|Inference]]
+  - [[model-demand-analytics-aws-deployment-validation-2026-08-24|Model demand analytics AWS deployment validation]]
 
 ### Aug 24, 2026, 1:26 PM EDT - project: clarify model demand radar value
 
@@ -55,6 +64,7 @@ Changed notes:
 
 ## Past 7 Days
 
+- Aug 24, 2026: project: record hosted inference radar deployment - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 24, 2026: project: clarify model demand radar value - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 24, 2026: source: add OpenRouterList history check - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 24, 2026: source: add Jakub inference data-source review - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
@@ -79,12 +89,12 @@ Changed notes:
 - Aug 19, 2026: article: simplify provider follow-up guidance - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: replace application and follow-up jargon - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: refine launch traffic and adoption guidance - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: organize launch section into three parts - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
-_Showing the newest 25 of 76 updates in this window._
+_Showing the newest 25 of 72 updates in this window._
 
 ## Past 30 Days
 
+- Aug 24, 2026: project: record hosted inference radar deployment - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 24, 2026: project: clarify model demand radar value - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 24, 2026: source: add OpenRouterList history check - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
 - Aug 24, 2026: source: add Jakub inference data-source review - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
@@ -109,6 +119,5 @@ _Showing the newest 25 of 76 updates in this window._
 - Aug 19, 2026: article: simplify provider follow-up guidance - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: replace application and follow-up jargon - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 - Aug 19, 2026: article: refine launch traffic and adoption guidance - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
-- Aug 19, 2026: article: organize launch section into three parts - [[how-to-get-listed-on-openrouter-article-draft-v1|How to get listed on OpenRouter as an inference provider]]
 
-_Showing the newest 25 of 207 updates in this window._
+_Showing the newest 25 of 208 updates in this window._
