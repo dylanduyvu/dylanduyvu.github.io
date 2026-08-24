@@ -2,7 +2,7 @@
 type: source
 status: captured
 created: 2026-08-21
-updated: 2026-08-21
+updated: 2026-08-24
 source_date: 2026-08-21
 source_type: web-research
 domains: [inference, model-serving, inference-marketplaces, market-research]
@@ -108,6 +108,18 @@ These sources support cross-router confirmation. They do not support one total-m
 3. Add Hugging Face Inference Providers and Requesty as supply and quality surfaces.
 4. Add Tangle and AllToken only after the stable feeds run correctly and their page parsers have tests.
 
+## Analytics-Layer Follow-up
+
+A 2026-08-24 list from Jakub Janiak added Tidelines, TKX, OpenRouter Share, the Interconnects Open Models Dashboard, and DeepInfra status to the review set.
+
+- Tidelines derives daily analytics from OpenRouter and Vercel. It is useful for archive and calculation checks, not independent demand.
+- TKX exposes public JSON and a source-labeled methodology. Its model-demand board currently uses OpenRouter usage, while some provider probes remain pending.
+- Interconnects tracks Hugging Face downloads and derivative repositories. It is a local-distribution signal, not hosted demand.
+- DeepInfra's checked status JSON is provider-wide health, not model demand or model-level quality.
+- OpenRouter Share could not be checked because its public page returned a Cloudflare challenge.
+
+These findings do not change the build order. Finish OpenRouter V1B, then add Vercel as the second demand adapter. Use the derived layers as cross-checks unless they supply a distinct, tested field.
+
 ## Links
 
 - [[inference-model-opportunity-radar|Inference Model Opportunity Radar]]
@@ -115,3 +127,4 @@ These sources support cross-router confirmation. They do not support one total-m
 - [[openrouter-is-enough-for-a-listing-radar-not-a-market-demand-estimate|OpenRouter is enough for a listing radar, not a market-demand estimate]]
 - [[inference-model-opportunity-data-source-audit-2026-08-19|Inference model opportunity data-source audit]]
 - [[inference|Inference]]
+- [[jakub-janiak-inference-data-source-list-2026-08-24|Jakub Janiak shared additional inference-demand and analytics sources]]

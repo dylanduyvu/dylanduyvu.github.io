@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-08-19
-updated: 2026-08-21
+updated: 2026-08-24
 domains: [inference, model-serving, inference-marketplaces, market-research]
 people: []
 orgs: [openrouter, hugging-face, lm-studio, ollama, artificial-analysis]
@@ -36,6 +36,8 @@ OpenRouter is sufficient as the primary hosted-demand surface for a version-zero
 The dashboard search also found that much of the general charting layer already exists. OpenRouter Inference Provider Market Share covers host share and model-provider competition. CodeSOTA covers model churn, substitution, lifecycle, and application demand. token.app covers prices and OpenRouter rankings. ParaPulse and Open LLM Distribution Leaderboard cover Hugging Face download trends. Artificial Analysis covers provider performance. The proposed radar should join these surfaces into candidate decisions instead of cloning them.
 
 The live implementation confirmed that these surfaces do not all provide independent evidence. token.app republishes OpenRouter rankings. CodeSOTA is a benchmark registry rather than a demand or scarcity measure. Artificial Analysis adds performance and provider coverage, but it does not replace demand evidence. Dashboard disagreements must remain visible rather than averaged.
+
+A 2026-08-24 follow-up from Jakub Janiak reinforced this boundary. Tidelines derives from OpenRouter and Vercel; TKX's model-demand board currently uses OpenRouter; Interconnects measures Hugging Face distribution; and DeepInfra's checked status feed is provider-wide. These are useful validation or adjacent signals, not reasons to interrupt the OpenRouter V1B build. Vercel remains the next demand adapter after the OpenRouter dashboard is useful.
 
 Project sequencing is now explicit. First, make the existing collection workflow automatic, repeatable, and reliable so it continuously records market state and builds supply history. Only after that collection has run cleanly through a useful history window should the project define quantitative, workload-specific rules for flagging under-served models. The first live run was a demand screen, not a supply-shortage test.
 
@@ -105,6 +107,8 @@ Each opportunity should have:
 - BharatRouter's public rankings and model-statistics APIs.
 - Requesty's public production-data exports and latency leaderboard.
 - Existing OpenRouter dashboards as validation sources, not as the only raw-data dependency.
+- Tidelines and TKX as calculation, archive, price, supply, and quality cross-checks rather than replacement demand sources.
+- Interconnects as a local-distribution cross-check for Hugging Face downloads and derivative repositories.
 - Official model-lab GitHub news, Hugging Face collections, ModelScope releases, and X posts for event timing.
 
 ## Decision Logic
@@ -167,6 +171,7 @@ The first version should not scrape every gateway or build a universal market es
 - Add Vercel as the second demand collector. Then add AnyRouter, LLM Gateway, and BharatRouter as separate source-labeled panels. Calculate within-router rank, share, and trend before any cross-router confirmation score. Do not sum raw traffic.
 - Add Hugging Face Inference Providers and Requesty as supply and quality collectors. Keep them separate from demand unless they publish a verified platform-wide usage feed.
 - Check reuse terms for AnyRouter, LLM Gateway, BharatRouter, Requesty, Tangle, and AllToken before scheduled collection. OpenRouter and Vercel identify CC BY 4.0 for the checked demand exports.
+- After OpenRouter V1B passes, compare its calculations with Tidelines, test TKX field lineage, and test Interconnects family mapping before deciding whether any derived feed deserves an adapter.
 - Keep hardware fit, achievable serving performance, capacity planning, and unit economics in a separate downstream test.
 
 ## Sources
@@ -180,6 +185,7 @@ The first version should not scrape every gateway or build a universal market es
 - [[inference-opportunity-radar-v0-live-validation-2026-08-20|Inference opportunity radar V0 live validation]]
 - [[public-inference-router-data-audit-2026-08-21|Public inference router data audit]]
 - [[public-router-demand-feeds-support-triangulation-not-market-summing|Public router demand feeds support triangulation, not market summing]]
+- [[jakub-janiak-inference-data-source-list-2026-08-24|Jakub Janiak shared additional inference-demand and analytics sources]]
 
 ## Related Areas
 
@@ -188,6 +194,7 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Updates
 
+- 2026-08-24: Jakub Janiak shared three source pages and five analytics layers. Live checks confirmed that Vercel is still the strongest next demand adapter. Tidelines and TKX mainly add derived analysis and cross-checks, Interconnects adds local-distribution data, and DeepInfra status adds provider-wide health. The OpenRouter V1B implementation remains first.
 - 2026-08-21: Exa and live endpoint checks found four additional public hosted-demand surfaces: Vercel AI Gateway, AnyRouter, LLM Gateway, and BharatRouter. Vercel is the next high-priority collector. Raw cross-router traffic will remain source-labeled and will not be summed.
 - 2026-08-21: Dylan narrowed the practical selection goal to finding the smallest model with the strongest demand, if the choice can be justified as optimal. The project now treats this as a demand-versus-size frontier first. It does not treat raw parameter count as a complete serving-cost measure, especially for mixture-of-experts models. The current radar can supply demand and provider evidence, but it still needs checked model-footprint facts and a later hardware benchmark before it can justify one model as optimal.
 - 2026-08-20: Dylan set the next project order. First automate and harden recurring market-data collection so the radar builds reliable history. Then define quantitative, workload-specific under-service rules. The initial 23 L1 results remain demand signals only, not supply-shortage findings.

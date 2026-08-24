@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-08-18
-updated: 2026-08-21
+updated: 2026-08-24
 domains: [inference, ai-infrastructure, model-serving, compute-economics]
 projects: [inference-model-opportunity-radar, first-five-inference-customers-plan]
 tags: [inference, serving, infrastructure, operations, unit-economics]
@@ -26,6 +26,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - **Potential opportunity, not a build recommendation:** A preserved 2026-08-19 snapshot showed five Qwen3.8-27B providers on OpenRouter; a later same-day live page showed six, and the endpoint API later returned seven. LM Studio displayed 908,400 local downloads, and OpenRouter reported approximately 24.60 billion prompt-plus-completion tokens and 1.49 million requests for 2026-08-18. This supports both local and hosted activity with fast-changing early listed supply. It does not prove scarce qualified supply, durable customer demand, hardware fit, achievable differentiation, or positive unit economics.
 - **Measurement scope:** OpenRouter is enough as the hosted-demand spine for a first radar whose decision is what to serve and pitch to OpenRouter. It is not a total-market estimate. Local distribution and other-gateway catalogs are required before generalizing the result.
 - **Cross-router correction:** Vercel AI Gateway, AnyRouter, LLM Gateway, and BharatRouter also publish usable public model-demand data. They can confirm a model's rank and trend outside OpenRouter. Their raw totals must remain source-labeled because user bases, time windows, token accounting, and upstream routes differ.
+- **Source-layer decision:** Vercel remains the next independent demand adapter after OpenRouter V1B. Tidelines and TKX are useful archive, calculation, price, supply, and quality cross-checks, but their current model-demand figures derive from OpenRouter or Vercel. Interconnects adds Hugging Face distribution data, and DeepInfra's checked status feed is provider-wide rather than model-level.
 - **Radar scope:** The automated model-opportunity radar stops at L3, potential opportunity. It uses separate launch and structural-gap lanes. OpenRouter can partly measure long-context and tool-calling demand through filtered rankings, but public data cannot confirm unmet demand. L4 requires manual gateway, customer, or provider evidence. Hardware matching, serving benchmarks, and unit economics require a separate later evidence pass.
 - **Radar validation:** The final expanded V0 live workflow completed all 330 planned operations, including 68 source calls and 228 raw imports. It produced 23 L1 demand-signal records plus one L0 watch record. Qwen3.8-27B was L1 with exact paid-demand rank 44 in the tested 100K-context profile; Qwen3-8B was the L0 control. No candidate reached L2 or L3 because there was only one supply day, one local-download day, and no approved workload profile. The workflow succeeded, but evidence completeness remains false. The initial nine-L1 and one-L0 checkpoint is preserved in the validation note as superseded history.
 - **Provider-quality cadence:** OpenRouter documents outage reactions over seconds, performance-routing metrics over a rolling five-minute window, and public endpoint fields over five-minute to one-day windows. In three stored captures 4 to 12 minutes apart, most latency, throughput, and uptime values changed while provider count stayed unchanged for all 24 models. This supports separate collection cadences for provider presence and quality, but the short sample does not yet set the permanent schedule.
@@ -95,6 +96,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[inference-opportunity-radar-pre-scope-design-audit-2026-08-19|Inference opportunity radar pre-scope audit]]: corrected evidence gates, field-level demand limits, the supply-history cold start, and the minimum collection scope.
 - [[inference-opportunity-radar-v0-live-validation-2026-08-20|Inference opportunity radar V0 live validation]]: first live run, labels, database counts, retrodiction limits, API constraints, and dashboard disagreements.
 - [[public-inference-router-data-audit-2026-08-21|Public inference router data audit]]: Exa and live endpoint checks of public demand, supply, and quality data from OpenRouter, Vercel, AnyRouter, LLM Gateway, BharatRouter, Hugging Face, Requesty, and smaller routers.
+- [[jakub-janiak-inference-data-source-list-2026-08-24|Jakub Janiak's inference data-source list]]: live classification of Vercel, LLM Gateway, DeepInfra, Tidelines, TKX, Requesty, Interconnects, and the unverified OpenRouter Share page.
 - [[nvidia-blackwell-eight-gpu-and-nvl72-bandwidth-check-2026-08-21|NVIDIA Blackwell eight-GPU and NVL72 bandwidth check]]: official specifications for per-GPU bandwidth, aggregate bandwidth, domain size, and the external-network boundary.
 
 ## Open Questions
