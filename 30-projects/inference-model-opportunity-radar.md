@@ -45,6 +45,16 @@ Project sequencing is now explicit. First, make the existing collection workflow
 
 The revised target does not replace the collection stage. The existing demand history can rank hosted use, and the provider history can show supply and quality. The missing input is a checked model-footprint layer. The current V0 records model identity and raw Hugging Face weight-file facts, but it does not normalize total parameters, active parameters for mixture-of-experts models, weight memory, or the minimum serving configuration. The first useful result should therefore be a demand-versus-size frontier, not one unsupported score.
 
+## Product Boundary
+
+OpenRouter is the source of truth for OpenRouter traffic, current model listings, prices, and provider performance. The radar does not replace OpenRouter's inference API or create a new demand source.
+
+The current demand dashboard is an internal analysis layer. It keeps a checked 30-day history, calculates model share and comparable seven-day trends, preserves reviewed model identity, and keeps missing or stale data visible. On its own, this is useful but is still close to a more controlled OpenRouter rankings view.
+
+The differentiated product begins when the same demand records are joined to checked deployment facts: weight access, parameter count, dense or mixture-of-experts architecture, normalized BF16 weight memory, exact quantized checkpoint availability and size, and theoretical full-sequence attention state. The next separate join is provider supply and service-quality history. That combination can identify models that have demand, are small enough to consider serving, and may have a persistent supply or quality gap.
+
+A future radar API would expose these normalized joins, calculations, evidence links, and explicit unknown states. It would be a market-intelligence API for model-selection work, not an inference API. Until supply and quality history exists, it must not call a model underserved.
+
 ## Core Views
 
 ### Release Radar
@@ -199,6 +209,7 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Updates
 
+- 2026-08-24: Clarified the product boundary. OpenRouter remains the source of truth and serving layer. The current radar adds controlled demand history and analysis. The intended advantage is the checked join from demand to model hardware facts, then to provider supply and service-quality history. A future API would expose those decision-ready joins and their evidence, not replace OpenRouter's inference API.
 - 2026-08-24: Alex Janiak shared OpenRouterList. A live code and data check found a model-level price and catalog ledger from 2024-09-21, but no demand, provider-level price or quality, or model-footprint data. The current snapshot also lagged the official API. Keep it as an optional post-V1B history cross-check.
 - 2026-08-24: Jakub Janiak shared three source pages and five analytics layers. Live checks confirmed that Vercel is still the strongest next demand adapter. Tidelines and TKX mainly add derived analysis and cross-checks, Interconnects adds local-distribution data, and DeepInfra status adds provider-wide health. The OpenRouter V1B implementation remains first.
 - 2026-08-21: Exa and live endpoint checks found four additional public hosted-demand surfaces: Vercel AI Gateway, AnyRouter, LLM Gateway, and BharatRouter. Vercel is the next high-priority collector. Raw cross-router traffic will remain source-labeled and will not be summed.
