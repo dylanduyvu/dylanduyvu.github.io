@@ -2,7 +2,7 @@
 type: area
 status: active
 created: 2026-08-18
-updated: 2026-08-24
+updated: 2026-08-25
 domains: [inference, ai-infrastructure, model-serving, compute-economics]
 projects: [inference-model-opportunity-radar, first-five-inference-customers-plan]
 tags: [inference, serving, infrastructure, operations, unit-economics]
@@ -61,6 +61,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[local-download-velocity-and-serverless-token-volume-measure-different-demand|Local download velocity and serverless token volume measure different demand]]
 - [[openrouter-is-enough-for-a-listing-radar-not-a-market-demand-estimate|OpenRouter is enough for a listing radar, not a market-demand estimate]]
 - [[public-router-demand-feeds-support-triangulation-not-market-summing|Public router demand feeds support triangulation, not market summing]]
+- [[demand-to-size-ratios-are-secondary-not-complete-opportunity-scores|Demand-to-size ratios are secondary, not complete opportunity scores]]
 - [[nvl72-expands-the-fast-gpu-domain-not-the-bandwidth-of-each-blackwell-gpu|NVL72 expands the fast GPU domain, not the bandwidth of each Blackwell GPU]]
 
 ## Active Projects
@@ -99,6 +100,7 @@ tags: [inference, serving, infrastructure, operations, unit-economics]
 - [[public-inference-router-data-audit-2026-08-21|Public inference router data audit]]: Exa and live endpoint checks of public demand, supply, and quality data from OpenRouter, Vercel, AnyRouter, LLM Gateway, BharatRouter, Hugging Face, Requesty, and smaller routers.
 - [[jakub-janiak-inference-data-source-list-2026-08-24|Jakub Janiak's inference data-source list]]: live classification of Vercel, LLM Gateway, DeepInfra, Tidelines, TKX, Requesty, Interconnects, and the unverified OpenRouter Share page.
 - [[model-demand-analytics-aws-deployment-validation-2026-08-24|Model demand analytics AWS deployment validation]]: hosted demand and catalog results, storage verification, schedules, and the three production corrections found during live validation.
+- [[analytics-dashboard-and-chart-design-research-2026-08-25|Analytics dashboard and chart design research]]: empirical, accessibility, and design-system rules for the model-demand dashboard, including the demand-versus-size Pareto frontier.
 - [[nvidia-blackwell-eight-gpu-and-nvl72-bandwidth-check-2026-08-21|NVIDIA Blackwell eight-GPU and NVL72 bandwidth check]]: official specifications for per-GPU bandwidth, aggregate bandwidth, domain size, and the external-network boundary.
 
 ## Open Questions

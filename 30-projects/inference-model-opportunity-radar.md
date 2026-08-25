@@ -2,7 +2,7 @@
 type: project
 status: active
 created: 2026-08-19
-updated: 2026-08-24
+updated: 2026-08-25
 domains: [inference, model-serving, inference-marketplaces, market-research]
 people: []
 orgs: [openrouter, hugging-face, lm-studio, ollama, artificial-analysis]
@@ -204,6 +204,7 @@ The first version should not scrape every gateway or build a universal market es
 - [[jakub-janiak-inference-data-source-list-2026-08-24|Jakub Janiak shared additional inference-demand and analytics sources]]
 - [[alex-janiak-openrouterlist-source-2026-08-24|Alex Janiak shared OpenRouterList as a model-catalog and price-history source]]
 - [[model-demand-analytics-aws-deployment-validation-2026-08-24|Model demand analytics AWS deployment validation]]
+- [[analytics-dashboard-and-chart-design-research-2026-08-25|Analytics dashboard and chart design research]]
 
 ## Related Areas
 
@@ -212,6 +213,11 @@ The first version should not scrape every gateway or build a universal market es
 
 ## Updates
 
+- 2026-08-25: Added an evidence-based dashboard design reference. The main
+  product correction is to treat demand per BF16 GiB as a secondary comparison,
+  not a complete opportunity score. The preferred first screen is a minimum
+  demand threshold plus a demand-versus-size Pareto frontier. Supply, quality,
+  workload fit, and economics remain separate evidence stages.
 - 2026-08-24: The automatic AWS collector became operational. Manual demand and catalog runs passed, both schedules were enabled, and the current export hash matched across EC2, S3, and Aurora. The live catalog validation also corrected three production faults: missing older identity evidence, macOS metadata sidecars that looked like duplicate evidence, and reused demand timestamps on catalog exports. The frontend remains a separate Vercel deployment step.
 - 2026-08-24: Clarified the product boundary. OpenRouter remains the source of truth and serving layer. The current radar adds controlled demand history and analysis. The intended advantage is the checked join from demand to model hardware facts, then to provider supply and service-quality history. A future API would expose those decision-ready joins and their evidence, not replace OpenRouter's inference API.
 - 2026-08-24: Alex Janiak shared OpenRouterList. A live code and data check found a model-level price and catalog ledger from 2024-09-21, but no demand, provider-level price or quality, or model-footprint data. The current snapshot also lagged the official API. Keep it as an optional post-V1B history cross-check.
